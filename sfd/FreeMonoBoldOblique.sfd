@@ -4,7 +4,7 @@ FullName: Free Monospaced Bold Oblique
 FamilyName: FreeMono
 Weight: Bold
 Copyright: Copyleft 2002, 2003 Free Software Foundation.
-Version: $Revision: 1.7 $
+Version: $Revision: 1.8 $
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -49,7 +49,8 @@ LangName: 3084 "" "" "Gras Italique" "" "Free Mono Gras Italique" "" "" "" "" ""
 Encoding: unicode
 DisplaySize: -36
 AntiAlias: 1
-WinInfo: 432 16 4
+FitToEm: 1
+WinInfo: 752 16 4
 BeginPrivate: 8
 UniqueID 7 5020948
 BlueValues 31 [-20 0 437 457 583 603 623 643]
@@ -60,7 +61,7 @@ StemSnapH 8 [93 101]
 StemSnapV 2 []
 ForceBold 5 false
 EndPrivate
-BeginChars: 65536 782
+BeginChars: 65536 783
 StartChar: space
 Encoding: 32 32 0
 Width: 600
@@ -2151,7 +2152,7 @@ EndChar
 StartChar: grave
 Encoding: 96 96 64
 Width: 600
-Flags: HW
+Flags: W
 DStem: 280 624 338 680 390 512 448 569
 Fore
 338 680 m 2
@@ -2164,7 +2165,6 @@ Fore
  264 675 286 696 310 696 c 0
  320 696 326 693 338 680 c 2
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: a
 Encoding: 97 97 65
@@ -3891,7 +3891,7 @@ EndChar
 StartChar: acute
 Encoding: 180 180 115
 Width: 600
-Flags: HW
+Flags: W
 DStem: 551 680 585 624 393 569 427 512
 Fore
 585 624 m 2
@@ -3904,7 +3904,6 @@ Fore
  604 696 616 684 616 667 c 0
  616 652 607 639 585 624 c 2
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: mu
 Encoding: 181 181 116
@@ -12461,7 +12460,7 @@ EndChar
 StartChar: circumflex
 Encoding: 710 710 327
 Width: 600
-Flags: HW
+Flags: W
 DStem: 430 607 449 696 522 510 573 567 449 696 430 607 269 567 296 510
 Fore
 430 607 m 1
@@ -12476,12 +12475,11 @@ Fore
  538 497 530 501 522 510 c 2
  430 607 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: caron
 Encoding: 711 711 328
 Width: 600
-Flags: HW
+Flags: W
 DStem: 281 625 332 682 407 497 425 586 558 682 585 625 425 586 407 497
 Fore
 617 667 m 0
@@ -12496,7 +12494,6 @@ Fore
  572 692 580 696 589 696 c 0
  605 696 617 684 617 667 c 0
 EndSplineSet
-MinimumDistance: x1,-1 
 EndChar
 StartChar: breve
 Encoding: 728 728 329
@@ -12519,16 +12516,14 @@ EndSplineSet
 EndChar
 StartChar: dotaccent
 Encoding: 729 729 330
-Width: 600
-Flags: HMW
-HStem: 534 120<420 432.5>
-VStem: 365 123<587.5 600.5>
+Width: 0
+Flags: W
 Fore
-439 654 m 0
- 468 654 488 634 488 606 c 0
- 488 569 452 534 413 534 c 0
- 386 534 365 555 365 582 c 0
- 365 619 401 654 439 654 c 0
+-161 654 m 0
+ -132 654 -112 634 -112 606 c 0
+ -112 569 -148 534 -187 534 c 0
+ -214 534 -235 555 -235 582 c 0
+ -235 619 -199 654 -161 654 c 0
 EndSplineSet
 EndChar
 StartChar: ring
@@ -12596,7 +12591,7 @@ EndChar
 StartChar: hungarumlaut
 Encoding: 733 733 334
 Width: 600
-Flags: HW
+Flags: W
 DStem: 392 679 423 622 267 569 298 512 557 679 587 622 431 569 462 512
 Fore
 423 622 m 2
@@ -12618,106 +12613,125 @@ Fore
  604 694 616 681 616 665 c 0
  616 650 612 645 587 622 c 2
 EndSplineSet
-MinimumDistance: x8,-1 
 EndChar
 StartChar: gravecomb
 Encoding: 768 768 335
-Width: 600
-Flags: HW
-Ref: 96 96 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+DStem: -320 624 -262 680 -210 512 -152 569
+Ref: 96 96 N 1 0 0 1 -600 0
 EndChar
 StartChar: acutecomb
 Encoding: 769 769 336
-Width: 600
-Flags: HW
-Ref: 180 180 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+DStem: -49 680 -15 624 -207 569 -173 512
+Ref: 180 180 N 1 0 0 1 -600 0
 EndChar
 StartChar: uni0302
 Encoding: 770 770 337
-Width: 600
-Flags: HW
-Ref: 710 710 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+DStem: -170 607 -151 696 -78 510 -27 567 -151 696 -170 607 -331 567 -304 510
+Ref: 710 710 N 1 0 0 1 -600 0
 EndChar
 StartChar: tildecomb
 Encoding: 771 771 338
-Width: 600
-Flags: HW
-Ref: 732 732 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+HStem: 587 68
+Ref: 732 732 N 1 0 0 1 -600 0
 EndChar
 StartChar: uni0304
 Encoding: 772 772 339
-Width: 600
-Flags: HW
-Ref: 175 175 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+HStem: 546 80<-289 -62>
+VStem: -351 351<579.5 593>
+Ref: 175 175 N 1 0 0 1 -600 0
 EndChar
 StartChar: uni0306
 Encoding: 774 774 340
-Width: 600
-Flags: HW
-Ref: 728 728 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+HStem: 503 68<-207 -161>
+VStem: -339 69<626 647>
+Ref: 728 728 N 1 0 0 1 -600 0
 EndChar
 StartChar: uni0307
 Encoding: 775 775 341
-Width: 600
-Flags: HW
+Width: 0
+Flags: W
 Ref: 729 729 N 1 0 0 1 0 0
 EndChar
 StartChar: dieresis
 Encoding: 776 776 342
-Width: 600
-Flags: HW
-Ref: 168 168 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+HStem: 534 120<-283.5 -271.5 -75.5 -63.5>
+VStem: -339 123<587.5 600> -131 123<587.5 600>
+Ref: 168 168 N 1 0 0 1 -600 0
 EndChar
 StartChar: dieresis
 Encoding: 778 778 343
-Width: 600
-Flags: HW
-Ref: 730 730 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+HStem: 486 54<-202.5 -164.5> 674 53<-179 -141>
+VStem: -297 54<579 615> -100 54<598.5 634.5>
+Ref: 730 730 N 1 0 0 1 -600 0
 EndChar
 StartChar: uni030B
 Encoding: 779 779 344
-Width: 600
-Flags: HW
-Ref: 733 733 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+DStem: -208 679 -177 622 -333 569 -302 512 -43 679 -13 622 -169 569 -138 512
+Ref: 733 733 N 1 0 0 1 -600 0
 EndChar
 StartChar: uni030C
 Encoding: 780 780 345
-Width: 600
-Flags: HW
-Ref: 711 711 N 1 0 0 1 0 0
+Width: 0
+Flags: W
+DStem: -319 625 -268 682 -193 497 -175 586 -42 682 -15 625 -175 586 -193 497
+Ref: 711 711 N 1 0 0 1 -600 0
 EndChar
 StartChar: uni030F
 Encoding: 783 783 346
-Width: 600
+Width: 0
 Flags: W
-DStem: 198 624 256 680 308 512 366 569 362 624 420 680 472 512 530 569
+DStem: -402 624 -344 680 -292 512 -234 569 -238 624 -180 680 -128 512 -70 569
 Fore
-420 680 m 2
- 530 569 l 1
- 541 559 546 549 546 540 c 0
- 546 517 523 496 500 496 c 0
- 491 496 484 500 472 512 c 2
- 362 624 l 1
- 351 634 346 644 346 652 c 0
- 346 675 368 696 392 696 c 0
- 402 696 408 693 420 680 c 2
-256 680 m 2
- 366 569 l 1
- 377 559 382 549 382 540 c 0
- 382 517 359 496 336 496 c 0
- 327 496 320 500 308 512 c 2
- 198 624 l 1
- 187 634 182 644 182 652 c 0
- 182 675 204 696 228 696 c 0
- 238 696 244 693 256 680 c 2
+-180 680 m 2
+ -70 569 l 1
+ -59 559 -54 549 -54 540 c 0
+ -54 517 -77 496 -100 496 c 0
+ -109 496 -116 500 -128 512 c 2
+ -238 624 l 1
+ -249 634 -254 644 -254 652 c 0
+ -254 675 -232 696 -208 696 c 0
+ -198 696 -192 693 -180 680 c 2
+-344 680 m 2
+ -234 569 l 1
+ -223 559 -218 549 -218 540 c 0
+ -218 517 -241 496 -264 496 c 0
+ -273 496 -280 500 -292 512 c 2
+ -402 624 l 1
+ -413 634 -418 644 -418 652 c 0
+ -418 675 -396 696 -372 696 c 0
+ -362 696 -356 693 -344 680 c 2
 EndSplineSet
-MinimumDistance: x1,-1 
+EndChar
+StartChar: uni0310
+Encoding: 784 784 65535
+Width: 0
+Flags: W
 EndChar
 StartChar: uni0311
 Encoding: 785 785 347
-Width: 600
-Flags: HW
-Ref: 728 728 N -1 0 0 -1 875 1190
+Width: 0
+Flags: W
+HStem: 619 68<-164 -118>
+VStem: -55 69<543 564>
+Ref: 728 728 N -1 0 0 -1 275 1190
 EndChar
 StartChar: tonos
 Encoding: 900 900 346
