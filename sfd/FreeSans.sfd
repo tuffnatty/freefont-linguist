@@ -4,7 +4,7 @@ FullName: Free Sans
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyright 2002 Free Software Foundation.
-Version: $Revision: 0.12 $
+Version: $Revision: 0.13 $
 ItalicAngle: 0
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -41,7 +41,7 @@ systemdict /internaldict known
 { true } ifelse { pop [85 94] } if
 ForceBold 5 false
 EndPrivate
-BeginChars: 65536 1369
+BeginChars: 65536 1376
 StartChar: space
 Encoding: 32 32
 Width: 278
@@ -1726,7 +1726,7 @@ Fore
 150 729 m 1
  150 624 l 1
  66 624 l 1
- 66 729 l 1
+ 66 729 l 5
  150 729 l 1
 EndSplineSet
 Kerns: 106 -3 84 -7
@@ -1734,7 +1734,7 @@ EndChar
 StartChar: j
 Encoding: 106 106
 Width: 222
-Flags: MW
+Flags: MWO
 HStem: -218 73<3.5 27.5> 624 105<70 153>
 VStem: 70 83<-76 524 624 729>
 Fore
@@ -1800,7 +1800,7 @@ HStem: 0 20 466 73<273 308 575 611.5> 504 20<70 147 147 147>
 VStem: 70 84<0 329> 70 77<450 524> 374 84<0 329> 678 84<0 361 361 393>
 Fore
 70 524 m 1
- 147 524 l 1
+ 147 524 l 5
  147 450 l 1
  192 513 238 539 308 539 c 0
  376 539 418 515 449 459 c 1
@@ -1971,23 +1971,23 @@ Flags: MW
 HStem: -23 73 456 68<14 85 168 254>
 VStem: 85 83<78.5 97 97 456 524 668>
 Fore
-254 524 m 5
- 254 456 l 5
- 168 456 l 5
- 168 97 l 6
- 168 60 178 50 214 50 c 4
- 230 50 243 51 254 54 c 5
- 254 -16 l 5
- 226 -21 206 -23 186 -23 c 4
- 121 -23 85 7 85 60 c 6
- 85 456 l 5
- 14 456 l 5
- 14 524 l 5
- 85 524 l 5
- 85 668 l 5
- 168 668 l 5
- 168 524 l 5
- 254 524 l 5
+254 524 m 1
+ 254 456 l 1
+ 168 456 l 1
+ 168 97 l 2
+ 168 60 178 50 214 50 c 0
+ 230 50 243 51 254 54 c 1
+ 254 -16 l 1
+ 226 -21 206 -23 186 -23 c 0
+ 121 -23 85 7 85 60 c 2
+ 85 456 l 1
+ 14 456 l 1
+ 14 524 l 1
+ 85 524 l 1
+ 85 668 l 1
+ 168 668 l 1
+ 168 524 l 1
+ 254 524 l 1
 EndSplineSet
 Kerns: 59 -28 8217 -1 246 -12 243 -12 111 -12 104 -3 233 -14 101 -14 58 -28 229 -1 230 2 228 -1 225 -1 97 -1 83 -8
 EndChar
@@ -2212,6 +2212,12 @@ Fore
  374 341 390 336 404 336 c 0
  441 336 456 358 455 411 c 1
 EndSplineSet
+EndChar
+StartChar: nonbreakingspace
+Encoding: 160 160
+Width: 278
+Flags: HW
+Ref: 32 N 1 0 0 1 0 0
 EndChar
 StartChar: exclamdown
 Encoding: 161 161
@@ -8902,6 +8908,45 @@ HStem: -23 77<267.5 340> 466 73<330 377.5>
 VStem: 105 83<120 132 132 154 257 351 257 257> 448 87<354.5 408.5>
 Ref: 97 N -1 0 0 -1 577 516
 EndChar
+StartChar: uni0251
+Encoding: 593 593
+Width: 556
+Flags: W
+HStem: -14 74<232 265> 0 21G<402 485> 471 67<233 265> 504 20G<402 485>
+VStem: 26 87<241 275> 402 83<0 57 458 524>
+Fore
+485 0 m 1
+ 402 0 l 1
+ 402 57 l 1
+ 355 12 314 -12 233 -14 c 0
+ 177 -14 128 14 86 72 c 0
+ 46 128 26 189 26 258 c 0
+ 26 328 40 388 69 438 c 0
+ 107 504 166 538 246 538 c 0
+ 306 538 358 511 402 458 c 1
+ 402 524 l 1
+ 485 524 l 1
+ 485 0 l 1
+397 263 m 0
+ 397 372 345 471 248 471 c 0
+ 159 471 113 363 113 261 c 0
+ 113 158 173 60 265 60 c 0
+ 356 60 397 160 397 263 c 0
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: uni0252
+Encoding: 594 594
+Width: 556
+Flags: HW
+Ref: 593 N -1 0 0 -1 553 524
+EndChar
+StartChar: uni0254
+Encoding: 596 596
+Width: 500
+Flags: HW
+Ref: 99 N -1 0 0 -1 508 516
+EndChar
 StartChar: uni0258
 Encoding: 600 600
 Width: 556
@@ -8915,6 +8960,37 @@ Width: 556
 Flags: W
 HStem: -23 77<233 316> 214 68<130 424> 462 77<238.5 298.5>
 Ref: 101 N -1 0 0 -1 553 516
+EndChar
+StartChar: uni025B
+Encoding: 603 603
+Width: 500
+Flags: HW
+Ref: 604 N -1 0 0 1 493 0
+EndChar
+StartChar: uni025C
+Encoding: 604 604
+Width: 500
+Flags: HW
+Ref: 1079 N 1 0 0 1 0 0
+EndChar
+StartChar: uni0269
+Encoding: 617 617
+Width: 222
+Flags: W
+HStem: -23 73<167 195> 504 20G<66 149>
+VStem: 66 83<88 524>
+Fore
+149 524 m 1
+ 149 97 l 2
+ 149 60 159 50 195 50 c 0
+ 211 50 224 51 235 54 c 1
+ 235 -16 l 1
+ 207 -21 187 -23 167 -23 c 0
+ 102 -23 66 7 66 60 c 2
+ 66 524 l 1
+ 149 524 l 1
+EndSplineSet
+MinimumDistance: x0,-1 
 EndChar
 StartChar: uni026F
 Encoding: 623 623
@@ -11308,7 +11384,9 @@ EndChar
 StartChar: uni0400
 Encoding: 1024 1024
 Width: 667
-Flags: HW
+Flags: W
+HStem: 0 82<183 613> 332 82<183 580> 647 82<183 595 183 183> 897 20<238 351 351 351>
+VStem: 90 93<82 332 414 647>
 Ref: 96 N 1 0 0 1 216 177
 Ref: 69 N 1 0 0 1 0 0
 EndChar
@@ -11450,9 +11528,9 @@ EndChar
 StartChar: afii10058
 Encoding: 1033 1033
 Width: 1080
-Flags: HMW
-HStem: 0 82<607 798 798 807> 0 94<83 145.5> 333 82<607 751> 647 82<288 513 288 288>
-VStem: 193 95 513 94<647 647> 929 93<189.5 208>
+Flags: W
+HStem: 0 82<607 820> 0 94<83.2503 94.5406> 333 82<607 788> 647 82<288 513>
+VStem: 193.085 94.9151<431 647> 513 94<82 333 414 647> 929 93<191 209>
 Fore
 514 0 m 1
  513 647 l 1
@@ -11476,6 +11554,7 @@ Fore
  607 333 l 1
  607 82 l 1
 EndSplineSet
+MinimumDistance: x9,-1 x5,7 y7,5 y7,6 
 EndChar
 StartChar: afii10059
 Encoding: 1034 1034
@@ -11558,9 +11637,10 @@ EndChar
 StartChar: uni040D
 Encoding: 1037 1037
 Width: 722
-Flags: HW
-HStem: 0 21<76 181 76 76 558 646 558 558> 709 20<76 164 164 164 545 646 646 646>
-VStem: 76 88<133 729> 558 88<0 591 591 591>
+Flags: W
+HStem: 0 21G<76 181 558 646> 709 20G<76 164 545 646>
+VStem: 76 88<133 729> 558 88<0 591>
+DStem: 545 729 558 591 164 133 181 0
 Fore
 76 729 m 1
  164 729 l 1
@@ -11579,6 +11659,7 @@ Fore
  257 917 l 1
  370 917 l 1
 EndSplineSet
+MinimumDistance: x4,-1 
 EndChar
 StartChar: afii10062
 Encoding: 1038 1038
@@ -11630,15 +11711,16 @@ EndChar
 StartChar: afii10017
 Encoding: 1040 1040
 Width: 667
-Flags: HMW
+Flags: W
+HStem: 0 20 219 78<216 448> 709 20<277 397 397 397>
 Ref: 65 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10018
 Encoding: 1041 1041
 Width: 667
-Flags: HMW
-HStem: 0 82<172 399 399 408> 353 82<172 352 352 399> 647 82<172 568 172 172>
-VStem: 79 93<82 353 435 647> 530 93<199.5 218>
+Flags: W
+HStem: 0 82<172 416> 353 82<172 384> 647 82<172 567>
+VStem: 79 93<82 353 434 647> 530 93<207 225>
 Fore
 623 218 m 0
  623 161 603 99 567 61 c 0
@@ -11660,11 +11742,14 @@ Fore
  172 353 l 1
  172 82 l 1
 EndSplineSet
+MinimumDistance: x0,-1 x7,5 x7,6 
 EndChar
 StartChar: afii10019
 Encoding: 1042 1042
 Width: 667
-Flags: HW
+Flags: W
+HStem: 0 82<172 399 399 408> 333 82<172 352 352 378> 647 82<172 352 172 172>
+VStem: 79 93<82 333 415 647> 498 93<511.5 551> 530 93<189.5 225>
 Ref: 66 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10020
@@ -11976,7 +12061,9 @@ EndChar
 StartChar: afii10035
 Encoding: 1057 1057
 Width: 722
-Flags: HMW
+Flags: W
+HStem: -23 82<329.5 417> 659 82<332 399.5>
+VStem: 48 93<296 415>
 Ref: 67 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10036
