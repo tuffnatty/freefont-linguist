@@ -4,7 +4,7 @@ FullName: Free Serif Bold
 FamilyName: FreeSerif
 Weight: Bold
 Copyright: Copyleft 2002, 2003 Free Software Foundation.
-Version: $Revision: 1.5 $
+Version: $Revision: 1.6 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -26,7 +26,8 @@ LangName: 1060 "" "" "polkrepko" "" "" "" "" "" "" "" "" "" "" "Dovoljena je upo
 Encoding: unicode
 DisplaySize: -36
 AntiAlias: 1
-WinInfo: 693 33 17
+FitToEm: 1
+WinInfo: 8400 16 14
 BeginPrivate: 8
 UniqueID 7 5020933
 BlueValues 23 [-20 0 461 481 676 696]
@@ -45,7 +46,7 @@ systemdict /internaldict known
 { true } ifelse { pop [140 163] } if
 ForceBold 5 false
 EndPrivate
-BeginChars: 65536 1495
+BeginChars: 65536 1546
 StartChar: space
 Encoding: 32 32 0
 Width: 250
@@ -3385,7 +3386,7 @@ HStem: 275 20<30 62>
 VStem: 30 243<275 295> 107 96<355 576 576 590>
 Fore
 273 295 m 1
- 273 275 l 1
+ 273 275 l 5
  30 275 l 1
  30 295 l 1
  94 295 107 305 107 355 c 2
@@ -22458,6 +22459,30 @@ Fore
 EndSplineSet
 MinimumDistance: x3,-1 
 EndChar
+StartChar: uni2010
+Encoding: 8208 8208 65535
+Width: 333
+Flags: HW
+Fore
+44 171 m 1
+ 44 287 l 1
+ 287 287 l 1
+ 287 171 l 1
+ 44 171 l 1
+EndSplineSet
+EndChar
+StartChar: uni2011
+Encoding: 8209 8209 65535
+Width: 333
+Flags: HW
+Fore
+44 171 m 1
+ 44 287 l 1
+ 287 287 l 1
+ 287 171 l 1
+ 44 171 l 1
+EndSplineSet
+EndChar
 StartChar: endash
 Encoding: 8211 8211 1209
 Width: 500
@@ -22800,6 +22825,19 @@ Fore
  76 101 l 1
 EndSplineSet
 EndChar
+StartChar: onedotenleader
+Encoding: 8228 8228 65535
+Width: 250
+Flags: H
+Ref: 46 46 N 1 0 0 1 0 0
+EndChar
+StartChar: twodotenleader
+Encoding: 8229 8229 65535
+Width: 500
+Flags: H
+Ref: 46 46 N 1 0 0 1 250 0
+Ref: 46 46 N 1 0 0 1 0 0
+EndChar
 StartChar: ellipsis
 Encoding: 8230 8230 1223
 Width: 1000
@@ -23046,6 +23084,13 @@ Fore
  554 182 518 219 518 266 c 0
 EndSplineSet
 MinimumDistance: x26,-1 
+EndChar
+StartChar: exclamdbl
+Encoding: 8252 8252 65535
+Width: 666
+Flags: H
+Ref: 33 33 N 1 0 0 1 333 0
+Ref: 33 33 N 1 0 0 1 0 0
 EndChar
 StartChar: uni203D
 Encoding: 8253 8253 1230
@@ -23306,6 +23351,27 @@ Fore
 EndSplineSet
 MinimumDistance: x0,-1 
 EndChar
+StartChar: uni2047
+Encoding: 8263 8263 65535
+Width: 1000
+Flags: H
+Ref: 63 63 N 1 0 0 1 500 0
+Ref: 63 63 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2048
+Encoding: 8264 8264 65535
+Width: 833
+Flags: H
+Ref: 33 33 N 1 0 0 1 500 0
+Ref: 63 63 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2049
+Encoding: 8265 8265 65535
+Width: 833
+Flags: H
+Ref: 63 63 N 1 0 0 1 333 0
+Ref: 33 33 N 1 0 0 1 0 0
+EndChar
 StartChar: uni204B
 Encoding: 8267 8267 1239
 Width: 540
@@ -23339,6 +23405,62 @@ Fore
  429 361 375 306 320 290 c 1
 EndSplineSet
 MinimumDistance: x7,-1 x16,18 y18,16 y18,17 
+EndChar
+StartChar: foursuperior
+Encoding: 8308 8308 65535
+Width: 300
+Flags: HW
+Fore
+258 428 m 5
+ 299 428 l 5
+ 299 362 l 5
+ 258 362 l 5
+ 258 275 l 5
+ 164 275 l 5
+ 164 362 l 5
+ 3 362 l 5
+ 3 429 l 5
+ 45 492 78 534 167 642 c 6
+ 206 688 l 5
+ 258 688 l 5
+ 258 428 l 5
+165 428 m 5
+ 165 603 l 5
+ 28 428 l 5
+ 165 428 l 5
+EndSplineSet
+EndChar
+StartChar: fivesuperior
+Encoding: 8309 8309 65535
+Width: 1000
+Flags: HW
+EndChar
+StartChar: oneinferior
+Encoding: 8321 8321 65535
+Width: 300
+Flags: HW
+Ref: 185 185 N 1 0 0 1 0 -475
+EndChar
+StartChar: twoinferior
+Encoding: 8322 8322 65535
+Width: 300
+Flags: HW
+HStem: -200 80<99 191 191 224> 145 68<120 130>
+VStem: 184 88<80 90>
+Ref: 178 178 N 1 0 0 1 0 -475
+EndChar
+StartChar: threeinferior
+Encoding: 8323 8323 65535
+Width: 300
+Flags: HW
+VStem: 176 95<114 122.5> 222 75<-94.5 -77>
+Ref: 179 179 N 1 0 0 1 0 -475
+EndChar
+StartChar: fourinferior
+Encoding: 8324 8324 65535
+Width: 300
+Flags: HW
+Ref: 8308 8308 N 1 0 0 1 0 -475
 EndChar
 StartChar: uni20A0
 Encoding: 8352 8352 1240
@@ -23860,6 +23982,13 @@ Fore
  150 -24 63 66 35 235 c 1
 EndSplineSet
 EndChar
+StartChar: uni2103
+Encoding: 8451 8451 65535
+Width: 1122
+Flags: H
+Ref: 67 67 N 1 0 0 1 400 0
+Ref: 176 176 N 1 0 0 1 0 0
+EndChar
 StartChar: afii61352
 Encoding: 8470 8470 1250
 Width: 954
@@ -24124,6 +24253,24 @@ Fore
  572 690 756 618 756 424 c 0
 EndSplineSet
 EndChar
+StartChar: uni2127
+Encoding: 8487 8487 65535
+Width: 811
+Flags: HW
+Ref: 8486 8486 S -1 0 0 -1 812 668
+EndChar
+StartChar: uni212A
+Encoding: 8490 8490 65535
+Width: 764
+Flags: H
+Ref: 75 75 N 1 0 0 1 0 0
+EndChar
+StartChar: uni212B
+Encoding: 8491 8491 65535
+Width: 722
+Flags: H
+Ref: 197 197 N 1 0 0 1 0 0
+EndChar
 StartChar: estimated
 Encoding: 8494 8494 1256
 Width: 551
@@ -24177,6 +24324,255 @@ Fore
  501 30 542 28 589 25 c 1
 EndSplineSet
 MinimumDistance: x18,-1 
+EndChar
+StartChar: uni215F
+Encoding: 8543 8543 65535
+Width: 750
+Flags: HW
+Fore
+615 688 m 1
+ 671 688 l 1
+ 232 -12 l 1
+ 174 -12 l 1
+ 615 688 l 1
+273 295 m 1
+ 273 275 l 1
+ 30 275 l 1
+ 30 295 l 1
+ 94 295 107 305 107 355 c 2
+ 107 576 l 2
+ 107 604 100 617 84 617 c 0
+ 75 617 59 613 41 607 c 0
+ 39 606 34 604 28 602 c 1
+ 28 623 l 1
+ 192 688 l 1
+ 203 688 l 1
+ 203 351 l 2
+ 203 305 214 296 273 295 c 1
+EndSplineSet
+LCarets: 0 65535 '    ' 1 0 
+Ligature: 0 1 'frac' one slash
+Ligature: 0 1 'frac' one fraction
+EndChar
+StartChar: uni2160
+Encoding: 8544 8544 65535
+Width: 386
+Flags: H
+Ref: 73 73 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2161
+Encoding: 8545 8545 65535
+Width: 772
+Flags: H
+Ref: 73 73 N 1 0 0 1 386 0
+Ref: 73 73 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2162
+Encoding: 8546 8546 65535
+Width: 1158
+Flags: H
+Ref: 73 73 N 1 0 0 1 772 0
+Ref: 73 73 N 1 0 0 1 386 0
+Ref: 73 73 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2163
+Encoding: 8547 8547 65535
+Width: 1108
+Flags: H
+Ref: 86 86 N 1 0 0 1 386 0
+Ref: 73 73 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2164
+Encoding: 8548 8548 65535
+Width: 722
+Flags: H
+Ref: 86 86 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2165
+Encoding: 8549 8549 65535
+Width: 1108
+Flags: H
+Ref: 73 73 N 1 0 0 1 722 0
+Ref: 86 86 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2166
+Encoding: 8550 8550 65535
+Width: 1494
+Flags: H
+Ref: 73 73 N 1 0 0 1 1108 0
+Ref: 73 73 N 1 0 0 1 722 0
+Ref: 86 86 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2167
+Encoding: 8551 8551 65535
+Width: 1880
+Flags: H
+Ref: 73 73 N 1 0 0 1 1494 0
+Ref: 73 73 N 1 0 0 1 1108 0
+Ref: 73 73 N 1 0 0 1 722 0
+Ref: 86 86 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2168
+Encoding: 8552 8552 65535
+Width: 1108
+Flags: H
+Ref: 88 88 N 1 0 0 1 386 0
+Ref: 73 73 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2169
+Encoding: 8553 8553 65535
+Width: 722
+Flags: H
+Ref: 88 88 N 1 0 0 1 0 0
+EndChar
+StartChar: uni216A
+Encoding: 8554 8554 65535
+Width: 1108
+Flags: H
+Ref: 73 73 N 1 0 0 1 722 0
+Ref: 88 88 N 1 0 0 1 0 0
+EndChar
+StartChar: uni216B
+Encoding: 8555 8555 65535
+Width: 1494
+Flags: H
+Ref: 73 73 N 1 0 0 1 1108 0
+Ref: 73 73 N 1 0 0 1 722 0
+Ref: 88 88 N 1 0 0 1 0 0
+EndChar
+StartChar: uni216C
+Encoding: 8556 8556 65535
+Width: 664
+Flags: H
+Ref: 76 76 N 1 0 0 1 0 0
+EndChar
+StartChar: uni216D
+Encoding: 8557 8557 65535
+Width: 722
+Flags: H
+Ref: 67 67 N 1 0 0 1 0 0
+EndChar
+StartChar: uni216E
+Encoding: 8558 8558 65535
+Width: 724
+Flags: H
+Ref: 68 68 N 1 0 0 1 0 0
+EndChar
+StartChar: uni216F
+Encoding: 8559 8559 65535
+Width: 943
+Flags: H
+Ref: 77 77 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2170
+Encoding: 8560 8560 65535
+Width: 278
+Flags: H
+Ref: 105 105 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2171
+Encoding: 8561 8561 65535
+Width: 556
+Flags: H
+Ref: 105 105 N 1 0 0 1 278 0
+Ref: 105 105 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2172
+Encoding: 8562 8562 65535
+Width: 834
+Flags: H
+Ref: 105 105 N 1 0 0 1 556 0
+Ref: 105 105 N 1 0 0 1 278 0
+Ref: 105 105 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2173
+Encoding: 8563 8563 65535
+Width: 778
+Flags: H
+Ref: 118 118 N 1 0 0 1 278 0
+Ref: 105 105 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2174
+Encoding: 8564 8564 65535
+Width: 500
+Flags: H
+Ref: 118 118 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2175
+Encoding: 8565 8565 65535
+Width: 778
+Flags: H
+Ref: 105 105 N 1 0 0 1 500 0
+Ref: 118 118 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2176
+Encoding: 8566 8566 65535
+Width: 1056
+Flags: H
+Ref: 105 105 N 1 0 0 1 778 0
+Ref: 105 105 N 1 0 0 1 500 0
+Ref: 118 118 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2177
+Encoding: 8567 8567 65535
+Width: 1334
+Flags: H
+Ref: 105 105 N 1 0 0 1 1056 0
+Ref: 105 105 N 1 0 0 1 778 0
+Ref: 105 105 N 1 0 0 1 500 0
+Ref: 118 118 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2178
+Encoding: 8568 8568 65535
+Width: 778
+Flags: H
+Ref: 120 120 N 1 0 0 1 278 0
+Ref: 105 105 N 1 0 0 1 0 0
+EndChar
+StartChar: uni2179
+Encoding: 8569 8569 65535
+Width: 500
+Flags: H
+Ref: 120 120 N 1 0 0 1 0 0
+EndChar
+StartChar: uni217A
+Encoding: 8570 8570 65535
+Width: 778
+Flags: H
+Ref: 105 105 N 1 0 0 1 500 0
+Ref: 120 120 N 1 0 0 1 0 0
+EndChar
+StartChar: uni217B
+Encoding: 8571 8571 65535
+Width: 1056
+Flags: H
+Ref: 105 105 N 1 0 0 1 778 0
+Ref: 105 105 N 1 0 0 1 500 0
+Ref: 120 120 N 1 0 0 1 0 0
+EndChar
+StartChar: uni217C
+Encoding: 8572 8572 65535
+Width: 278
+Flags: H
+Ref: 108 108 N 1 0 0 1 0 0
+EndChar
+StartChar: uni217D
+Encoding: 8573 8573 65535
+Width: 444
+Flags: H
+Ref: 99 99 N 1 0 0 1 0 0
+EndChar
+StartChar: uni217E
+Encoding: 8574 8574 65535
+Width: 556
+Flags: H
+Ref: 100 100 N 1 0 0 1 0 0
+EndChar
+StartChar: uni217F
+Encoding: 8575 8575 65535
+Width: 833
+Flags: H
+Ref: 109 109 N 1 0 0 1 0 0
 EndChar
 StartChar: partialdiff
 Encoding: 8706 8706 1258
