@@ -1,0 +1,401 @@
+%% -*-LaTeX-*-
+%%
+%% EuroTeX 2003 - Back to typography
+%% 14th European TeX conference, ENST Bretagne, Brest, June 24-27, 2003.
+%% http://omega.enstb.org/eurotex2003/
+%%
+%% $Id: freefont.tex,v 1.1 2003-04-02 15:54:49 peterlin Exp $
+\documentclass[english]{eurotex2003}
+\usepackage{url}
+\newfont{\cyr}{wncyr10}
+
+\begin{document}
+\frenchspacing
+
+\title{The Free UCS Outline Fonts project -- an attempt to create a global
+font}
+\author{Primo\v{z} Peterlin}
+\address{University of Ljubljana\\
+Faculty of Medicine, Institute of biophysics\\
+Lipi\v{c}eva 2, SI-1000 Ljubljana, Slovenia}
+\netaddress{primoz.peterlin@biofiz.mf.uni-lj.si}
+\personalURL{http://biofiz.mf.uni-lj.si/~peterlin/}
+
+\begin{abstract}
+In February 2002, the Free UCS (Universal Character Set) Outline Fonts
+project \url{http://savannah.gnu.org/projects/freefont/} was
+started. Exercising the open-source approach, its aim is to provide a
+set of free Times-, Helvetica- and Courier-lookalikes available in the
+OpenType format, and progressively cover the complete ISO
+10646/Unicode range. In this stage of the project, we focus mainly on
+two areas: collecting existing fonts that are both typographically and
+license-wise (i.e. GNU GPL) compatible and can be included to cover
+certain parts of the character set, and patching up smaller areas that
+are not yet covered. Planned future activities involve typographic
+refinement, including extending kerning information beyond basic Latin
+area, including TrueType hinting instructions and facilitating the
+usage of fonts with various application, including the \TeX/$\Omega$
+typesetting system.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+The aim set by the Free UCS Outline Font project is to provide a
+standardised set of glyphs, which make a harmonised design despite the
+fact that they include glyphs from different scripts (Latin, Cyrillic,
+Greek, Armenian etc.). It is clear that this requires compromises at
+the cost of typographic finesse (see
+\cite{Haralambous:UnicodeTypography} for a discussion of typographic
+compromises regarding the Greek alphabet), yet the end result must
+look acceptable for general use, including electronic mail, world-wide
+web and text editors.
+
+While this is clearly not the first attempt of creating a typeface
+covering glyphs beyond Latin, previous attempts are not as numerous as
+it might seem. Bigelow \cite{Bigelow:1993} quotes \emph{Romulus} by
+Jan van Krimpen from 1931 as one of the first examples. Another
+example is {\cyr Niko\-lai0 Nikolaevich Kudryashov}'s
+\emph{Encyclopaedia} ({\cyr Kud\-rya\-shov\-ska\-ya enciklo\-pedi\-cheskaya})
+family (1960--1974), originally designed for the 3rd edition of the
+Great Soviet encyclopaedia, which contains thousands of glyphs
+including Cyrillic, Latin and Greek letters in seriffed and sans-serif
+styles, as well as other special signs and symbols. Most popular
+typefaces such as Stanley Morison's Times Roman, Max Miedinger's
+Helvetica, Adrian Frutiger's Univers or Eric Gill's Gill Sans were
+originally designed in Latin alphabet and later, as they gained
+popularity, extended to Greek and Cyrillic alphabets.
+% See http://typo.mania.ru/FACES/b-kudrsh.htm for info on Kudryashov.
+
+A typeface covering the whole ISO 10646/Unicode range has to be
+designed flexible enough to allow addition of scripts not belonging to
+the Western typographic tradition. The task is not easy, and it is not
+surprising that so far, there are very few aesthetically satisfying
+typographic solutions. Among those one has to mention Bigelow and
+Holmes's \emph{Lucida Sans Unicode} \cite{Bigelow:1993} and
+Haralambous and Plaice with $\Omega$ \cite{Haralambous:1994}. Other
+solutions like \emph{Arial Unicode} \cite{ArialUnicode} and James
+Kass's compendium \emph{Code2000} \cite{Code2000} are too varied in
+style to form a unified typeface.
+
+\section{Design issues}
+
+\subsection{Historical and cultural context.}
+
+It is clear that a typeface aiming to cover ``all the scripts of the
+world'' can not rely on historical styles (e.g. Renaissance, Baroque
+etc.) known from the Western typography, as most of the world has not
+experienced this periods in the evolution of typography. Trying to
+extend them to non-European scripts\footnote{Even though historical
+styles differ throughout Europe, Europe is nevertheless treated here
+as a historical and cultural unity when contrasted with the rest of
+the world.} is equally inappropriate as, say, trying to design a Latin
+alphabet in Kufi style.
+
+Even apparently logical division into seriffed and sans-serif
+typefaces is eurocentric. To see why, one only has to think of the
+origin of Latin capital letters. Serifs are invention of Roman
+stone-carving technique -- a smaller stroke perpendicular to the main
+stroke was added to provide a uniform smooth finishing of the stroke.
+Here, the visual effect followed the available technology. The
+modulated stroke -- another ancient Roman typographic invention -- is
+an opposite example, where the technology followed the visual effect
+\cite{Jean}. The need to strengthen vertical strokes arose once the
+Romans started to erect monuments of monumental proportions, where the
+inscriptions were no longer in the eye-height. While the rain took
+away the paint from the vertical strokes, dirt and dust accumulated in
+the horizontal strokes, which thus appeared optically
+heavier. \emph{Physical} broadening of vertical strokes was introduced
+as a compensation, in order for the horizontal and vertical strokes to
+look \emph{optically} equivalent. The Roman technological innovations
+survived for $2\,000$ years in the European typography, surviving
+numerous revolutions the technology. However, in the lands, where
+the letters were painted with brush onto silk or carved with a needle
+onto a palm leaf rather than carved into the stone with mallet and
+chisel, such typographic development never happened.
+
+Similar concerns about eurocentrism are valid for the differing
+between the upright and the italic form, or for that matter, even
+between \emph{majuscules} and \emph{minuscules}, capital and small
+letters. Even differing between the upright and the slanted form is
+questionable, as slanted forms make no sense in, say, Far East
+scripts.
+
+The least questionable seems to be the differing based on the weight
+of the typefaces, which appears to be almost universal. The only
+exception known to the author is Ethiopic\footnote{Daniel Yacob, personal
+communication.}, where the words were traditionally
+emphasised by printing them in another colour (red in religious texts,
+blue in imperial decrees) or by underlining them or enclosing them in
+ovals.
+
+\subsection{Legibility.}
+
+A typeface which includes non-Latin scripts offers an opportunity for
+exploring the ``universal'' parameters of legibility. While there has
+been a wealth of publication on legibility centred on Latin script
+\cite{Tinker,Zachrisson,deLange,Lund}, exploring the factors like weight,
+serif vs. sans-serif faces, x-height, capitalisation etc., it is clear
+that such differences are minor compared to the differences in shape
+between Latin and, say, Hebrew, Arabic, Devanagari or Tamil, which
+nevertheless provide roughly the same level of legibility. Lacking
+comparative cross-script studies, the experiments in legibility remain
+in the realm of typographer's intuition. On the brighter side, making
+multi-script typefaces available, albeit not perfect, is a step
+towards the world where such cross-cultural studies will be easier to
+achieve.
+
+\section{Methodology}
+
+The basic idea behind the free UCS outline fonts project was to
+collect various available free outline fonts covering single national
+scripts and compile them into a large font using the ISO 10646/Unicode
+coded character set \cite{Unicode3}, taking into consideration
+typographic and legal compatibility and filling in the missing areas
+on the way. The whole development was planned to be carried in the
+open-source manner, with many developers centred around a central
+repository.
+
+The general requirement for technical realisation was that typefaces
+need to be available as scalable vector fonts. The actual technical
+realisation (Post\-Script Type~1 \cite{Adobe:Type1} uses cubic B\'ezier
+splines, while TrueType \cite{Apple:TrueType} uses quadratic ones) was
+considered secondary, because at least in principle it is possible
+to transform the fonts from one form to another. In reality, though,
+no known transformations is completely loss-less -- kerning and hints
+are usually the most volatile.
+
+\subsection{Licenses of used sources.} We anticipated that our result
+will contain glyphs from many different sources. Thus, a special
+attention was put to the license under which a font is released. The
+license we looked for should allow redistribution, modification and
+distribution of modified font files. Many free and open-source
+licenses fulfil this requirement. As the URW++ core PostScript fonts,
+the $\Omega$-Serif and some other major sources were released under
+GNU General Public License \cite{GNU:GPL}, we adopted it for our
+project as well. The license itself is suited for programs rather than
+typefaces and its application to fonts may be legally dubious, even
+though, say, PostScript Type~1 fonts are perfectly legal programs
+written in PostScript. We were not able to find any license in the
+same spirit pertaining specifically to fonts, though. It may be worth
+seeing the final license of the Bitstream Vera fonts, which were
+announced in January 2003 to be soon available under a license in the
+open-source spirit.
+
+We thus limited our search to fonts which were not only
+typographically compatible, but also specifically released under GNU
+GPL. In some cases, where the fonts were released under less clearly
+defined terms (``free'', ``public domain'' etc.), we contacted the
+authors and asked for permission to use their work under the terms GNU
+GPL. Most authors agreed, and while none disagreed, some of the emails
+remained unanswered. In such cases we were unable to confirm whether
+the recipient received our email at all. These fonts still wait to be
+included in the free UCS outline font collection.
+
+\subsection{Choice of typefaces.} Even though Bigelow and Holmes claim
+that their primary reason for choosing a sans-serif font is because it
+carries least historical and cultural associations
+\cite[p. 1003]{Bigelow:1993}, and despite the expressed concerns about
+eurocentrism, we decided to develop in parallel three different
+families, modelled after Times Roman, Helvetica and Courier, and
+specifically derived from URW++ typefaces Nimbus Roman No. 9, Nimbus
+Sans and Nimbus Mono. Reflecting the nature of the project, we dubbed
+them as Free Serif, Free Sans and Free Mono.
+
+Aside from covering three different letterforms -- one monospaced and
+two proportional, one with modulated stroke and another with
+unmodulated strokes -- the primary reason for choosing these three
+typefaces was their ubiquity. Since they are extremely popular for
+many decades and present in the desktop publishing world-wide for over
+twenty years, they inspired numerous local designs around the world,
+where non-Latin part was designed specifically to blend with one of
+named typefaces. While we realise that many of these designs introduce
+typographic practice alien to the local typographic practice, we
+nevertheless recognise that the designs done by native speakers
+reflect the local typographic knowledge and its evolving typographic
+rules.
+
+\subsection{Tools.} While we put special attention to the licensing of
+the used sources, no particular attention was put to the licensing
+issues of the used tools, as the font tools generally don't imply the
+licenses under which the fonts are released. Still, we ended up using
+exclusively open-sourced tools. The choice was clearly influenced by
+the fact that most participants of the project use Linux, and while
+none of the numerous popular font editors from other platforms was
+ported to this platform, we have some excellent free tools available.
+\begin{description}
+\item[PfaEdit] Without George Williams' excellent font editor PfaEdit
+(\url{http://pfaedit.sourceforge.net/}), this project could not have
+been possible at all. PfaEdit is a visual font editor that allows
+copying and modifying glyphs and most other things expected from a
+font editor, reads and writes most popular outline font formats and
+has proved to be stable enough to allow working on large glyph
+sets. Even though the program was mature enough to be actually used as
+a tool back in late 2001, the pace of its development has not
+diminished over the past year, and its author is very responsive to
+bug reports.
+
+Choosing PfaEdit as our main tool also influenced the decision of the
+native font format used in the free UCS outline fonts project. Since
+we use CVS repository for the book-keeping of font additions and
+modifications, we were looking for a format suitable for differential
+changes. A format was considered suitable if local changes in typeface
+design remained localised in the font file rather than propagating
+themselves across the file. This requirement ruled out compiled binary
+formats, as well as PostScript Type~1 \texttt{eexec} encoding. The
+PfaEdit's native format SFD, similar to Adobe's BDF format in its
+structure, proved to be a suitable choice. The fonts are thus archived
+in the SFD format, and PfaEdit is used to create fonts in other
+outline formats.
+
+PfaEdit's only major weakness may be its weak support for TrueType
+instructions or ``hints''. Since TrueType is not the native format
+used by the free UCS outline font project, we are looking either for
+automated generation of TrueType hints, or for separate files with
+TrueType instructions which could be compiled together with the glyph
+outlines in the SFD format to produce a hinted TrueType font. Any
+solution requiring manual modification of binary TrueType fonts is not
+acceptable, as TrueType fonts are created automatically each time from
+the SFD sources. While PfaEdit will probably eventually produce
+acceptable TrueType hints in an automated way, we are looking for
+other possibilities in the mean time.
+
+\item[TrueType tools] Rogier van Dalen's TrueType tools
+(\url{http://home.kabelfoon.nl/~slam/fonts/}) might be the proper
+solution for the TrueType hinting problem. Van Dalen's approach uses a
+separate file with TrueType instructions written in a high-level
+language not unlike C, which can be compiled together with an unhinted
+TrueType font file to produce a hinted TrueType font file. If this
+approach is adopted, each TrueType font file will be automatically
+produced from two source files: the SFD file containing the glyph
+outlines and the TTI file containing the TrueType instructions for
+hinting. At the moment of this writing, the main concern is the
+estimated amount of work needed for producing TrueType hinting
+instructions in a manual way.
+
+\item[TTX] While the SFD format fits present needs just fine, the
+future might require distributing font sources in some other open
+format. For this purpose we are ogling TTX, the TrueType to XML
+converter (\url{http://www.letterror.com/code/ttx/}). With the pace
+PfaEdit currently evolves, it may well be that PfaEdit itself will
+support XML before we will actually feel the need for it.
+
+\end{description}
+
+\subsection{Towards ISO 10646/Unicode compliance.}
+
+As of version 3.2, Unicode defines 95,156 encoded characters. Taking
+into account three families (Free Serif, Free Sans and Free Mono), two
+weights (normal and bold) and two shapes (regular and
+italic/ob\-lique), this means designing almost 1.2 million glyphs for
+the free UCS font project. Being a volunteer project, free UCS outline
+fonts project grows mainly in a non-systematic way -- when a suitable
+set of glyphs is found or donated, we add it to the font. Often, a
+wider community can benefit from solving one's own itch, e.g. creating
+a set of APL glyphs \cite{Chastney:1999,Chastney:2001}.
+
+Still, we felt the need to add the glyphs in a more systematic way in
+parallel to the spontaneous growth of the project. For that purpose,
+we found the multilingual European subsets as defined by Co\-mi\-t\'e
+Euro\-p\'en de Normalisation \cite{CWA13873} useful as milestones to
+follow:
+\begin{itemize}
+\item MES-1, a Latin repertoire based on ISO/IEC 6937:1994 (335
+characters)
+\item MES-2, a Latin, Cyrillic and Greek repertoire based on ENV
+1973:1996 (1062 characters)
+\item MES-3, a repertoire needed to write all the languages of Europe
+and transliterate between them. MES-3A is script-based and non-fixed
+collection, while MES-3B is a fixed subset of 2819 characters.
+\end{itemize}
+
+\subsection{Character-to-glyph translation.}
+
+As ISO 10646/Unicode standard encodes \emph{characters} rather than
+\emph{glyphs}, it is clear that for acceptable rendering of many
+langua\-ges more glyphs than those corresponding to Unicode characters
+are needed. This is particularly important for rendering Indic
+languages and Syriac, which contain numerous ligatures not encoded in
+the ISO 10646/Unicode standard.
+
+During 1990's, several initiatives for creating ``smart fonts'' were
+started, i.e. fonts that were not only containers of glyphs, but would
+also incorporate some logical rules for glyph substitution, glyph
+position, contextual rendering etc. Among those were Apple Advanced
+Typography \cite{Apple:AAT}, SIL Graphite \cite{SIL:Graphite} and
+Adobe/Microsoft OpenType \cite{Microsoft:OpenType}. From these three,
+OpenType seems to be grabbing the largest market share.
+
+\section{Results}
+
+The project was conceived in December 2001 and was approved for
+hosting on the Savannah Web site
+(\url{http://savannah.gnu.org/projects/freefont/}) in February
+2002. As of March 2003, the total of 17,794 characters are encoded. We
+are a couple of dozens of glyphs short of MES-1 compliance (in Free
+Serif and Free Sans, while Free Mono is MES-1 compliant) and
+approximately 3,500 glyphs short of MES-2 compliance.
+
+\subsection{Kerning.}
+Aside from the character set compliance and the already mentioned
+TrueType hinting problem, there is other work we need to tend to. One
+of them is kerning, which is currently present only in the Latin
+portions of font. Kerning non-Latin scripts also requires typographic
+knowledge we currently do not have. We believe that the open nature of
+the project will eventually attract somebody with the neccessary
+expertise, who will be willing to contribute.
+
+\section{Discussion}
+
+Open-source development model has not been previously tested for font
+development. While it may be arguable whether such development model
+can be applied at all to creation of works of art, it is also worth
+noting that most contributors come from technical and scientific
+background and probably none of them perceives him- or herself as an
+artist.
+
+While there is no doubt that a skilled typographer would be able to
+design a multi-script font vastly exceeding presented work in
+typographic beauty and consistence, we must not overlook the fact that
+designing 1,200,000 glyphs is probably beyond the capability of a
+single person, even if we neglect the financial part of such
+endeavour.
+
+\subsection{Free UCS outline fonts project and \TeX.}
+So far, the Free UCS outline fonts project has taken from the \TeX\
+community more than it repaid. Thanks to P\'eter Szab\'o and his
+{\TeX}trace program (\url{http://www.inf.bme.hu/~pts/textrace/})
+\cite{Szabo:TeXtrace}, it is easy to transform Metafonts into
+PostScript Type~1 fonts, which can be edited by PfaEdit. Karel
+Pi\v{s}ka demonstrated the technique for Indian metafonts on the TUG
+2002 conference in Thiruvanathapuram, India.
+
+Even though the free UCS outline fonts were designed primarily for
+screen use, we can certainly raise the question of using the fonts for
+typesetting with \TeX\ or $\Omega$. As of March 2003, this would
+require extensive works, such as splitting the fonts into smaller
+fonts containing no more than 256 glyphs. However, the current
+development \cite{Bella-Mehta} promises that there might be a more
+direct way of using OpenType fonts with $\Omega$ in the future.
+
+\section{Acknowledgment}
+
+I would like to thank the following authors, who contributed to the
+project by allowing their work to be included in the free UCS outline
+fonts project. In alphabetic order, they are: Berhanu Beyene, Daniel
+Shurovich Chirkov, Prasad A. Chodavarapu, Vyacheslav Dikonov, DMS
+Electronics, Valek Filippov, Shaheed R. Haque, Yannis Haralambous,
+Angelo Haritsis, Jeroen Hellingman, Maxim Iorsh, Mohamed Ishan,
+Manfred Kudlek, Harsh Kumar, Sushant Kumar Dash, Olaf Kummer, Noah
+Levitt, Jochen Metzinger, Anshuman Pandey, Hardip Singh Pannu, Tho\-mas
+Ridgeway, Young U. Ryu, Virach Sornlertlamvanich, M.S. Sridhar, Sam
+Stepanyan, URW++ Design \& Development GmbH, Frans Velthuis and the Wadalab
+Kanji Committee.
+
+
+
+\bibliographystyle{ltugbib}
+\bibliography{freefont}
+\end{document}
+
