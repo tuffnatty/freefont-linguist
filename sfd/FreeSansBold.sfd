@@ -4,7 +4,7 @@ FullName: Free Sans Bold
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyright 2002 Free Software Foundation.
-Version: $Revision: 0.7 $
+Version: $Revision: 0.8 $
 ItalicAngle: 0
 UnderlinePosition: -155
 UnderlineWidth: 69
@@ -37,7 +37,7 @@ systemdict /internaldict known
 StemSnapV 9 [141 151]
 ForceBold 5 false
 EndPrivate
-BeginChars: 65536 673
+BeginChars: 65536 740
 StartChar: space
 Encoding: 32 32
 Width: 278
@@ -6418,10 +6418,10 @@ EndChar
 StartChar: kgreenlandic
 Encoding: 312 312
 Width: 573
-Flags: HW
-HStem: 0 21<59 199 366 548> 520 20<59 199 361 509>
-VStem: 59 140<1 197 352 539>
-DStem: 199 198 295 296 366 0 548 0 361 540 509 540 199 351 295 296
+Flags: W
+HStem: 0 21<60 200 367 549> 520 20<60 200 362 510>
+VStem: 60 140<0 198 351 540>
+DStem: 200 198 296 296 367 0 549 0 362 540 510 540 200 351 296 296
 Ref: 1082 N 1 0 0 1 0 0
 EndChar
 StartChar: Lacute
@@ -10821,16 +10821,18 @@ EndChar
 StartChar: uni0400
 Encoding: 1024 1024
 Width: 667
-Flags: HW
+Flags: W
+HStem: 0 125<229 624> 314 125<229 578> 604 125<229 606 229 229>
+VStem: 79 150<125 314 439 604>
 Ref: 96 N 1 0 0 1 228 222
 Ref: 69 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10023
 Encoding: 1025 1025
 Width: 709
-Flags: HW
-HStem: 0 125<232 627> 314 125<232 581> 604 125<232 609 232 232> 800 122<200 310 386 496>
-VStem: 82 150<125 314 439 604> 200 110<800 922> 386 110<800 922>
+Flags: W
+HStem: 0 125<232 627> 314 125<232 581> 604 125<232 609> 800 122<200 310 386 496>
+VStem: 82 150<124 314 438 604> 200 110<800 922> 386 110<800 922>
 Fore
 232 314 m 1
  232 125 l 1
@@ -10856,40 +10858,48 @@ Fore
  386 922 l 1
  496 922 l 1
 EndSplineSet
+MinimumDistance: x2,-1 x8,6 x8,7 x1,3 x1,2 x0,10 x0,11 
 EndChar
 StartChar: afii10051
 Encoding: 1026 1026
-Width: 826
-Flags: HW
-HStem: 0 125<385 525 525 557> 344 125<385 525> 604 125<14 235 385 598 385 385>
-VStem: 235 150<125 344 469 604> 642 150<197.5 272>
+Width: 790
+Flags: W
+HStem: 0 21G<202 353> 379 125<353 529> 605 124<14 202 352 536>
+VStem: 202 151<0 378 503 605> 608 150<-1 327>
 Fore
-385 604 m 1
- 385 469 l 1
- 572 469 l 2
- 706 469 792 374 792 226 c 0
- 792 80 709 0 557 0 c 2
- 235 0 l 1
- 235 604 l 1
- 14 604 l 1
+352 504 m 1
+ 540 504 l 2
+ 607.333 504 663 482.333 707 439 c 0
+ 741 405.667 758 367.333 758 324 c 2
+ 758 323 l 1
+ 758 0 l 1
+ 750.98 -53.6063 747.366 -113.174 668 -146 c 5
+ 585.074 -165.096 586.861 -158.673 538 -163.136 c 5
+ 468 -164 l 5
+ 468 -70 l 5
+ 528 -70 l 5
+ 576.41 -69.3896 603.465 -51.1691 608 0 c 1
+ 608 317 l 2
+ 608 349 589.667 368.667 553 376 c 1
+ 528 379 l 1
+ 353 379 l 1
+ 353 0 l 1
+ 202 0 l 1
+ 202 605 l 1
+ 14 605 l 1
  14 729 l 1
- 598 729 l 1
- 598 604 l 1
- 385 604 l 1
-385 344 m 1
- 385 125 l 1
- 525 125 l 2
- 605 125 642 160 642 235 c 0
- 642 309 605 344 525 344 c 2
- 385 344 l 1
+ 536 729 l 1
+ 536 605 l 1
+ 352 605 l 1
+ 352 504 l 1
 EndSplineSet
-MinimumDistance: x13,-1 x12,10 y10,12 y10,11 x5,7 x5,6 
+MinimumDistance: x3,-1 y15,17 y15,16 x23,21 x23,22 x18,20 x18,19 
 EndChar
 StartChar: afii10052
 Encoding: 1027 1027
 Width: 611
-Flags: HW
-HStem: 0 21<74 224 74 74> 604 125<224 586 224 224>
+Flags: W
+HStem: 0 21G<74 224> 604 125<224 586>
 VStem: 74 150<0 604>
 Fore
 224 0 m 1
@@ -10905,13 +10915,13 @@ Fore
  302 979 l 1
  428 979 l 1
 EndSplineSet
+MinimumDistance: x3,-1 y5,1 y5,0 x5,3 x5,4 
 EndChar
 StartChar: afii10053
 Encoding: 1028 1028
 Width: 722
-Flags: HW
-HStem: -23 126<325.5 424.5> 311 125<197 488> 613 128<334.5 409>
-VStem: 44 444<311 436>
+Flags: W
+HStem: -23 126<363 397> 311 125<197 488> 613 128<363 397>
 Fore
 488 311 m 1
  196 311 l 1
@@ -10930,14 +10940,13 @@ Fore
  488 436 l 1
  488 311 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: afii10054
 Encoding: 1029 1029
 Width: 667
-Flags: HW
-HStem: -23 120<291 387.5> 621 120<275.5 361.5>
-VStem: 45 143<504.5 558.5> 489 143
+Flags: W
+HStem: -23 120<319 354> 621 120<303 336>
+VStem: 45 143<515 538> 489 143.371<193 202>
 Fore
 607 507 m 1
  467 507 l 1
@@ -10962,49 +10971,75 @@ EndChar
 StartChar: afii10055
 Encoding: 1030 1030
 Width: 278
-Flags: HW
+Flags: W
+HStem: 0 20 709 20<63 213 213 213>
+VStem: 63 150<0 729>
 Ref: 73 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10056
 Encoding: 1031 1031
 Width: 278
-Flags: HW
+Flags: W
+HStem: 0 20 709 20<63 213 213 213> 800 122<-9 101 177 287>
+VStem: -9 110<800 922> 63 150<0 729> 177 110<800 922>
 Ref: 168 N 1 0 0 1 -27 179
 Ref: 73 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10057
 Encoding: 1032 1032
 Width: 556
-Flags: HW
+Flags: W
+HStem: -23 128<226.5 281> 709 20<336 486 486 486>
+VStem: 24 150<198 200 200 270> 336 150<190 729>
 Ref: 74 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10058
 Encoding: 1033 1033
-Width: 722
-Flags: HW
-HStem: 0 145<46 46> 604 125<285 507 285 285>
-VStem: 135 150<461 604> 507 150<0 604 604 604>
+Width: 1110
+Flags: W
+HStem: 0 125<657 846> 0 145<46.0314 57.8374> 310 125<657 815> 604 125<284 507>
+VStem: 135 150<369.013 604> 507 150<125 309 434 604> 913 151<183 209>
 Fore
-507 604 m 1
+507 0 m 1
+ 507 604 l 1
  285 604 l 1
  285 414 l 2
- 285 237 258 0 46 0 c 1
+ 285 195.333 235.667 63.3333 137 18 c 0
+ 110.333 6 80 0 46 0 c 1
  46 145 l 1
- 117 144 135 255 135 461 c 2
+ 82.6667 144.333 107.333 176 120 240 c 0
+ 130 287.333 135 360.667 135 460 c 2
+ 135 461 l 1
  135 729 l 1
  657 729 l 1
- 657 0 l 1
+ 657 435 l 1
+ 844 435 l 2
+ 926.667 435 987.667 403 1027 339 c 0
+ 1051.67 299 1064 250.333 1064 193 c 2
+ 1064 192 l 2
+ 1064 80 1018.33 43.333 927 14 c 0
+ 898.333 4.66699 865.667 0 829 0 c 2
  507 0 l 1
- 507 604 l 1
+657 310 m 1
+ 657 125 l 1
+ 797 125 l 2
+ 869 125 907.667 121.667 913 183 c 0
+ 913.667 188.333 914 194 914 200 c 2
+ 914 201 l 2
+ 914 268.333 881 304.333 815 309 c 2
+ 814 309 l 1
+ 813 310 l 1
+ 797 310 l 1
+ 657 310 l 1
 EndSplineSet
-MinimumDistance: x3,-1 y0,2 y0,1 
+MinimumDistance: x15,-1 x18,1 y1,18 y1,0 x10,12 y12,10 y12,11 
 EndChar
 StartChar: afii10059
 Encoding: 1034 1034
 Width: 1113
-Flags: HW
-HStem: 0 125<657 797 797 829> 311 125<218 506> 344 125<657 797> 709 20<68 218 218 218 506 657 657 657>
-VStem: 68 150<0 311 436 729> 507 150<125 311 311 311> 914 150<197.5 272>
+Flags: W
+HStem: 0 125<657 805> 311 125<218 506> 344 125<657 805> 709 20G<68 218 506 657>
+VStem: 68 150<0 311 436 729> 507 150<125 311 468 729> 914 150<223 241>
 Fore
 657 729 m 1
  657 469 l 1
@@ -11029,33 +11064,45 @@ Fore
  914 309 877 344 797 344 c 2
  657 344 l 1
 EndSplineSet
-MinimumDistance: x17,-1 x6,19 y19,6 y19,5 y8,10 y8,9 y13,11 y13,12 x16,14 y14,16 y14,15 
+MinimumDistance: x3,-1 x14,1 x0,13 y1,0 y1,14 y12,10 y12,11 y7,9 y7,8 x4,6 y6,4 y6,5 
 EndChar
 StartChar: afii10060
 Encoding: 1035 1035
-Width: 611
-Flags: HW
-HStem: 0 21<235 385 235 235> 604 125<14 235 385 598 385 385>
-VStem: 235 150<0 604>
+Width: 790
+Flags: W
+HStem: 0 21G<202 353 608 758> 379 125<353 529> 605 124<14 202 352 536>
+VStem: 202 151<0 378 503 605> 608 150<0 327>
 Fore
-385 604 m 1
- 385 0 l 1
- 235 0 l 1
- 235 604 l 1
- 14 604 l 1
+352 504 m 1
+ 540 504 l 2
+ 607.333 504 663 482.333 707 439 c 0
+ 741 405.667 758 367.333 758 324 c 2
+ 758 323 l 1
+ 758 0 l 1
+ 608 0 l 1
+ 608 317 l 2
+ 608 349 589.667 368.667 553 376 c 1
+ 528 379 l 1
+ 353 379 l 1
+ 353 0 l 1
+ 202 0 l 1
+ 202 605 l 1
+ 14 605 l 1
  14 729 l 1
- 598 729 l 1
- 598 604 l 1
- 385 604 l 1
+ 536 729 l 1
+ 536 605 l 1
+ 352 605 l 1
+ 352 504 l 1
 EndSplineSet
-MinimumDistance: x2,-1 y0,6 y0,7 x0,2 x0,1 
+MinimumDistance: x3,-1 y10,12 y10,11 x18,16 x18,17 x13,15 x13,14 
 EndChar
 StartChar: afii10061
 Encoding: 1036 1036
 Width: 722
-Flags: HW
-HStem: 0 21<74 224 74 74 538 538 538 717> 709 20<74 224 224 224 509 686 686 686>
+Flags: W
+HStem: 0 21G<74 224 538 717> 709 20G<74 224 509 686>
 VStem: 74 150<0 285 450 729>
+DStem: 509 729 686 729 224 450 320 378
 Fore
 224 0 m 1
  74 0 l 1
@@ -11075,13 +11122,15 @@ Fore
  352 929 l 1
  478 929 l 1
 EndSplineSet
+MinimumDistance: x6,-1 
 EndChar
 StartChar: uni040D
 Encoding: 1037 1037
 Width: 726
-Flags: HW
-HStem: 0 21<68 218 68 68 511 511 511 661> 709 20<68 218 218 218 507 661 661 661>
-VStem: 68 150<233 729> 511 150<0 504 504 504>
+Flags: W
+HStem: 0 21G<68 218 511 661> 709 20G<68 218 507 661>
+VStem: 68 150<233 729> 511 150<0 504>
+DStem: 507 729 511 504 218 233 218 0
 Fore
 218 0 m 1
  68 0 l 1
@@ -11100,12 +11149,14 @@ Fore
  392 779 l 1
  266 929 l 1
 EndSplineSet
+MinimumDistance: x6,-1 
 EndChar
 StartChar: afii10062
 Encoding: 1038 1038
 Width: 718
-Flags: HW
-HStem: 0 21<154 328 154 154> 709 20<15 178 178 178 522 696 696 696> 779 77<334 379>
+Flags: W
+HStem: 0 21G<154 328> 709 20G<15 178 522 696> 779 77<348 368>
+DStem: 15 729 178 729 268 226 350 384 268 226 696 729 154 0 328 0 522 729 696 729 350 384 328 0
 Fore
 328 0 m 1
  154 0 l 1
@@ -11126,12 +11177,13 @@ Fore
  401 856 424 876 432 922 c 1
  488 922 l 1
 EndSplineSet
+MinimumDistance: x7,-1 
 EndChar
 StartChar: afii10145
 Encoding: 1039 1039
 Width: 722
-Flags: HW
-HStem: 0 125<218 298 428 508 428 428> 709 20<68 218 218 218 508 658 658 658>
+Flags: W
+HStem: 0 125<217 298 428 508> 709 20G<68 218 508 658>
 VStem: 68 150<125 729> 298 130<-150 0> 508 150<125 729>
 Fore
 428 0 m 1
@@ -11148,21 +11200,22 @@ Fore
  658 0 l 1
  428 0 l 1
 EndSplineSet
-MinimumDistance: x2,-1 y5,7 y5,6 y0,10 y0,11 y2,0 x0,2 x0,1 
+MinimumDistance: x10,-1 y8,10 y8,9 y7,5 y7,6 y0,2 y0,1 y5,3 x3,5 x3,4 y10,0 x0,10 x0,11 
 EndChar
 StartChar: afii10017
 Encoding: 1040 1040
 Width: 722
-Flags: HW
+Flags: W
+HStem: 0 20 147 125<270 460> 537 20<365 365> 709 20<285 451 451 451>
 Ref: 65 N 1 0 0 1 0 0
 Kerns: 1058 -81
 EndChar
 StartChar: afii10018
 Encoding: 1041 1041
 Width: 722
-Flags: HW
-HStem: 0 125<232 410> 338 125<232 395 395 411> 604 125<232 594 232 232>
-VStem: 82 150<125 338 463 604> 522 144<200.5 258>
+Flags: W
+HStem: 0 125<232 419> 338 125<232 419> 604 125<232 594>
+VStem: 82 150<125 337 462 604> 522 144<220 241>
 Fore
 395 463 m 2
  618 463 666 294 666 222 c 0
@@ -11182,19 +11235,21 @@ Fore
  522 293 484 338 411 338 c 2
  232 338 l 1
 EndSplineSet
-MinimumDistance: x14,-1 x7,9 x7,8 
+MinimumDistance: x1,-1 x8,6 x8,7 
 EndChar
 StartChar: afii10019
 Encoding: 1042 1042
 Width: 722
-Flags: HW
+Flags: W
+HStem: 0 125<232 410> 314 125<232 395 395 411> 604 125<232 232 232 395>
+VStem: 82 150<125 314 439 604> 501 144<506 548> 522 144<188.5 246>
 Ref: 66 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10020
 Encoding: 1043 1043
 Width: 611
-Flags: HW
-HStem: 0 21<82 232 82 82> 604 125<232 594 232 232>
+Flags: W
+HStem: 0 21G<82 232> 604 125<232 594>
 VStem: 82 150<0 604>
 Fore
 232 0 m 1
@@ -11205,14 +11260,14 @@ Fore
  232 604 l 1
  232 0 l 1
 EndSplineSet
-MinimumDistance: x3,-1 y1,5 y1,0 x1,3 x1,2 
+MinimumDistance: x3,-1 y5,1 y5,0 x5,3 x5,4 
 EndChar
 StartChar: afii10021
 Encoding: 1044 1044
 Width: 900
-Flags: HW
-HStem: -150 258<35 139 139 165 750 865> 0 125<333 600> 604 125<380 600 380 380>
-VStem: 35 130<-150 0> 230 150<461 604> 600 150<125 604 604 604> 735 130<-150 0 0 0>
+Flags: W
+HStem: 0 125<333 600> 604 125<379 600>
+VStem: 35 130<-150 0> 230 150<409 603> 600 150<125 603> 735 130<-150 0>
 Fore
 139 108 m 2
  192 108 230 255 230 461 c 2
@@ -11235,7 +11290,7 @@ Fore
  380 414 l 2
  380 319 373 209 333 125 c 1
 EndSplineSet
-MinimumDistance: x11,-1 y14,16 y14,15 x7,9 x8,6 y5,8 y5,7 x9,11 x9,10 x6,16 x6,17 
+MinimumDistance: x5,-1 y9,11 y9,10 y8,6 y8,7 y6,4 x4,6 x4,5 y11,0 x1,11 x1,12 
 Back
 315 82 m 5
  646 82 l 5
@@ -11260,9 +11315,9 @@ EndChar
 StartChar: afii10022
 Encoding: 1045 1045
 Width: 709
-Flags: HW
-HStem: 0 125<232 627> 314 125<232 581> 604 125<232 609 232 232>
-VStem: 82 150<125 314 439 604>
+Flags: W
+HStem: 0 125<232 627> 314 125<232 581> 604 125<232 609>
+VStem: 82 150<124 314 438 604>
 Fore
 232 314 m 1
  232 125 l 1
@@ -11278,13 +11333,15 @@ Fore
  581 314 l 1
  232 314 l 1
 EndSplineSet
+MinimumDistance: x2,-1 x8,6 x8,7 x1,3 x1,2 x0,10 x0,11 
 EndChar
 StartChar: afii10024
 Encoding: 1046 1046
 Width: 1093
-Flags: HW
-HStem: 0 21<22 206 22 22 475 475 475 625 894 894 894 1078> 709 20<66 230 230 230 475 625 625 625 870 1034 1034 1034>
+Flags: W
+HStem: 0 21G<22 206 475 625 894 1078> 709 20G<66 230 475 625 870 1034>
 VStem: 475 150<0 285 450 729>
+DStem: 66 729 230 729 379 378 475 450 379 378 475 285 22 0 206 0 625 285 721 378 894 0 1078 0 870 729 1034 729 625 450 721 378
 Fore
 475 285 m 1
  206 0 l 1
@@ -11306,14 +11363,14 @@ Fore
  475 0 l 1
  475 285 l 1
 EndSplineSet
-MinimumDistance: x5,-1 
+MinimumDistance: x13,-1 
 EndChar
 StartChar: afii10025
 Encoding: 1047 1047
 Width: 672
-Flags: HW
-HStem: -23 120<291 387.5> 308 120<250 326 326 352> 621 120<290.5 376.5>
-VStem: 464 143<504.5 558.5> 489 143
+Flags: W
+HStem: -23 120<319 354> 621 120<319 354>
+VStem: 464 143<515 538> 489 143.371<193 202>
 Fore
 250 428 m 1
  326 428 l 2
@@ -11339,9 +11396,10 @@ EndChar
 StartChar: afii10026
 Encoding: 1048 1048
 Width: 757
-Flags: HW
-HStem: 0 21<82 232 82 82 525 525 525 675> 709 20<82 232 232 232 521 675 675 675>
-VStem: 82 150<233 729> 525 150<0 504 504 504>
+Flags: W
+HStem: 0 21G<82 232 525 675> 709 20G<82 232 521 675>
+VStem: 82 150<233 729> 525 150<0 504>
+DStem: 521 729 525 504 232 233 232 0
 Fore
 232 0 m 1
  82 0 l 1
@@ -11355,14 +11413,15 @@ Fore
  525 504 l 1
  232 0 l 1
 EndSplineSet
-MinimumDistance: x4,-1 
+MinimumDistance: x6,-1 
 EndChar
 StartChar: afii10027
 Encoding: 1049 1049
 Width: 757
-Flags: HW
-HStem: 0 21<82 232 82 82 525 525 525 675> 709 20<82 232 232 232 521 675 675 675> 784 77<353 398>
-VStem: 82 150<233 729> 525 150<0 504 504 504>
+Flags: W
+HStem: 0 21G<82 232 525 675> 709 20G<82 232 521 675> 784 77<369 387>
+VStem: 82 150<233 729> 525 150<0 504>
+DStem: 521 729 525 504 232 233 232 0
 Fore
 507 927 m 1
  507 916 l 2
@@ -11385,14 +11444,15 @@ Fore
  525 504 l 1
  232 0 l 1
 EndSplineSet
-MinimumDistance: x4,-1 
+MinimumDistance: x14,-1 
 EndChar
 StartChar: afii10028
 Encoding: 1050 1050
 Width: 750
-Flags: HW
-HStem: 0 21<82 232 82 82 525 525 525 725> 709 20<82 232 232 232 517 694 694 694>
+Flags: W
+HStem: 0 21G<82 232 525 725> 709 20G<82 232 517 694>
 VStem: 82 150<0 285 450 729>
+DStem: 232 285 328 378 525 0 725 0 517 729 694 729 232 450 328 378
 Fore
 232 0 m 1
  82 0 l 1
@@ -11407,14 +11467,14 @@ Fore
  232 285 l 1
  232 0 l 1
 EndSplineSet
-MinimumDistance: x3,-1 
+MinimumDistance: x8,-1 
 EndChar
 StartChar: afii10029
 Encoding: 1051 1051
 Width: 729
-Flags: HW
-HStem: -12 145<36 36> 0 21<497 647 497 497> 604 125<275 497 275 275>
-VStem: 125 150<447 604> 497 150<0 604 604 604>
+Flags: W
+HStem: -12 145<36.2504 48.8969> 0 21G<497 647> 604 125<274 497>
+VStem: 125 150<371 604> 497 150<0 604>
 Fore
 497 604 m 1
  275 604 l 1
@@ -11428,7 +11488,7 @@ Fore
  497 0 l 1
  497 604 l 1
 EndSplineSet
-MinimumDistance: x3,-1 y0,2 y0,1 
+MinimumDistance: x7,-1 y0,8 y0,9 
 Back
 520 647 m 1
  258 647 l 1
@@ -11444,9 +11504,10 @@ EndChar
 StartChar: afii10030
 Encoding: 1052 1052
 Width: 874
-Flags: HW
-HStem: 0 21<82 232 82 82 363 363 363 513 642 642 642 792> 709 20<82 306 306 306 566 792 792 792>
-VStem: 82 150<0 568> 642 150<0 568 568 568>
+Flags: W
+HStem: 0 21G<82 232 363 513 642 792> 709 20G<82 306 566 792>
+VStem: 82 150<0 568> 642 150<0 568>
+DStem: 232 568 306 729 363 0 438 149 566 729 642 568 438 149 513 0
 Fore
 232 568 m 1
  232 0 l 1
@@ -11463,13 +11524,14 @@ Fore
  363 0 l 1
  232 568 l 1
 EndSplineSet
+MinimumDistance: x7,-1 
 EndChar
 StartChar: afii10031
 Encoding: 1053 1053
 Width: 753
-Flags: HW
-HStem: 0 21<82 232 82 82 521 521 521 671> 331 125<232 520> 709 20<82 232 232 232 520 671 671 671>
-VStem: 82 150<0 331 456 729> 521 150<0 331 331 331>
+Flags: W
+HStem: 0 21G<82 232 521 671> 331 125<232 520> 709 20G<82 232 520 671>
+VStem: 82 150<0 331 456 729> 521 150<0 331 456 729>
 Fore
 521 331 m 1
  232 331 l 1
@@ -11485,19 +11547,22 @@ Fore
  521 0 l 1
  521 331 l 1
 EndSplineSet
+MinimumDistance: x9,-1 x9,7 y7,9 y7,8 y6,4 y6,5 y1,3 y1,2 y0,10 y0,11 
 EndChar
 StartChar: afii10032
 Encoding: 1054 1054
 Width: 778
-Flags: HW
+Flags: W
+HStem: -23 128<339 443> 613 128<339 442.5>
+VStem: 40 150<304.5 413.5> 592 150<302.5 411>
 Ref: 79 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10033
 Encoding: 1055 1055
 Width: 753
-Flags: HW
-HStem: 0 21<82 232 82 82 521 521 521 671> 604 125<232 521 232 232>
-VStem: 82 150<0 604> 521 150<0 604 604 604>
+Flags: W
+HStem: 0 21G<82 232 521 671> 604 125<232 521>
+VStem: 82 150<0 604> 521 150<0 604>
 Fore
 521 604 m 1
  232 604 l 1
@@ -11509,14 +11574,14 @@ Fore
  521 0 l 1
  521 604 l 1
 EndSplineSet
-MinimumDistance: x3,-1 y7,5 y7,6 y0,2 y0,1 
+MinimumDistance: x5,-1 y1,3 y1,2 y0,6 y0,7 
 EndChar
 StartChar: afii10034
 Encoding: 1056 1056
 Width: 671
-Flags: HW
-HStem: 0 21<82 232 82 82> 260 125<232 372 372 412> 604 125<232 372 232 232>
-VStem: 82 150<0 260 385 604> 489 150<457 531.5>
+Flags: W
+HStem: 0 21G<82 232> 260 125<232 387> 604 125<232 387>
+VStem: 82 150<0 260 385 604> 489 150<479 513>
 Fore
 232 260 m 1
  232 0 l 1
@@ -11533,25 +11598,31 @@ Fore
  232 604 l 1
  232 385 l 1
 EndSplineSet
+MinimumDistance: x5,-1 y0,2 y0,1 
 EndChar
 StartChar: afii10035
 Encoding: 1057 1057
 Width: 722
-Flags: HW
+Flags: W
+HStem: -23 126<320 424.5> 613 128<324 409>
+VStem: 44 150<276.5 436.5>
 Ref: 67 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10036
 Encoding: 1058 1058
 Width: 611
-Flags: HW
+Flags: W
+HStem: 0 20 604 125<14 235 385 598 385 385>
+VStem: 235 150<0 604>
 Ref: 84 N 1 0 0 1 0 0
 Kerns: 1040 -88
 EndChar
 StartChar: afii10037
 Encoding: 1059 1059
 Width: 718
-Flags: HW
-HStem: 0 21<154 328 154 154> 709 20<15 178 178 178 522 696 696 696>
+Flags: W
+HStem: 0 21G<154 328> 709 20G<15 178 522 696>
+DStem: 15 729 178 729 268 226 350 384 268 226 696 729 154 0 328 0 522 729 696 729 350 384 328 0
 Fore
 328 0 m 1
  154 0 l 1
@@ -11563,14 +11634,14 @@ Fore
  696 729 l 1
  328 0 l 1
 EndSplineSet
-MinimumDistance: x1,-1 
+MinimumDistance: x7,-1 
 EndChar
 StartChar: afii10038
 Encoding: 1060 1060
 Width: 892
-Flags: HW
-HStem: 0 21<371 371 371 521> 94 94<340 371 521 552> 540 98<342.5 371 521 549.5> 709 20<371 521 521 521>
-VStem: 30 134<270 459> 371 150<0 94 188 540 638 729> 728 134<270 459>
+Flags: W
+HStem: 0 21G<371 521> 94 94<317 371 521.062 588.056> 540 98<333 371 521.124 570.889> 709 20G<371 521>
+VStem: 30 134<351 385> 371 150<0 94 188 540 637 729> 728 134<351 385>
 Fore
 371 0 m 1
  371 94 l 1
@@ -11592,20 +11663,21 @@ Fore
  728 548 578 540 521 540 c 1
  521 188 l 1
 EndSplineSet
-MinimumDistance: x9,-1 
+MinimumDistance: x7,-1 
 EndChar
 StartChar: afii10039
 Encoding: 1061 1061
 Width: 667
-Flags: HW
+Flags: W
+HStem: 0 20 709 20<30 208 208 208 470 644 644 644>
 Ref: 88 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10040
 Encoding: 1062 1062
 Width: 816
-Flags: HW
-HStem: -150 258<671 781> 0 125<232 521> 709 20<82 232 232 232 521 671 671 671>
-VStem: 82 150<125 729> 521 150<125 729> 651 130<-150 0 0 0>
+Flags: W
+HStem: 0 125<231 521> 709 20G<82 232 521 671>
+VStem: 82 150<125 729> 521 150<125 729> 651 130<-150 0>
 Fore
 521 125 m 1
  521 729 l 1
@@ -11621,14 +11693,14 @@ Fore
  232 125 l 1
  521 125 l 1
 EndSplineSet
-MinimumDistance: x8,-1 y1,3 y1,2 y5,7 y5,6 y9,11 y9,10 x9,7 x9,8 
+MinimumDistance: x4,-1 y11,9 y11,10 y7,5 y7,6 y0,2 y0,1 y9,7 x7,9 x7,8 y5,3 x3,5 x3,4 
 EndChar
 StartChar: afii10041
 Encoding: 1063 1063
 Width: 685
-Flags: HW
-HStem: 0 21<474 624 474 474> 225 125<298 473> 709 20<68 218 218 218 473 624 624 624>
-VStem: 68 150<406 412 412 729> 474 150<0 225 225 225>
+Flags: W
+HStem: 0 21G<474 624> 225 125<284 473> 709 20G<68 218 473 624>
+VStem: 68 150<404 729> 474 150<0 225 350 729>
 Fore
 474 225 m 1
  286 225 l 2
@@ -11644,13 +11716,13 @@ Fore
  474 0 l 1
  474 225 l 1
 EndSplineSet
-MinimumDistance: x3,-1 y6,8 y6,7 y0,2 y0,1 
+MinimumDistance: x9,-1 x9,7 y7,9 y7,8 y6,3 y6,4 y0,10 y0,11 
 EndChar
 StartChar: afii10042
 Encoding: 1064 1064
 Width: 1057
-Flags: HW
-HStem: 0 125<218 437 587 817> 709 20<68 218 218 218 437 587 587 587 817 967 967 967>
+Flags: W
+HStem: 0 125<217 437 586 817> 709 20G<68 218 437 587 817 967>
 VStem: 68 150<125 729> 437 150<125 729> 817 150<125 729>
 Fore
 967 0 m 1
@@ -11667,14 +11739,14 @@ Fore
  967 729 l 1
  967 0 l 1
 EndSplineSet
-MinimumDistance: x0,-1 y4,6 y4,5 y8,10 y8,9 
+MinimumDistance: x0,-1 y9,11 y9,10 y5,7 y5,6 y4,2 y4,3 
 EndChar
 StartChar: afii10043
 Encoding: 1065 1065
 Width: 1183
-Flags: HW
-HStem: -150 258<977 1097> 0 125<218 447 597 827> 709 20<68 218 218 218 447 597 597 597 827 977 977 977>
-VStem: 68 150<125 729> 447 150<125 729> 827 150<125 729> 962 135<-150 0 0 0>
+Flags: W
+HStem: 0 125<217 447 596 827> 709 20G<68 218 447 597 827 977>
+VStem: 68 150<125 729> 447 150<125 729> 827 150<125 729> 962 135<-150 0>
 Fore
 962 0 m 1
  68 0 l 1
@@ -11694,14 +11766,14 @@ Fore
  962 -150 l 1
  962 0 l 1
 EndSplineSet
-MinimumDistance: x3,-1 y8,10 y8,9 y12,14 y12,13 y0,2 y0,1 y4,6 y4,5 x4,2 x4,3 
+MinimumDistance: x13,-1 y9,11 y9,10 y5,7 y5,6 y4,2 y4,3 y0,14 y0,15 y2,0 x0,2 x0,1 y14,12 x12,14 x12,13 
 EndChar
 StartChar: afii10044
 Encoding: 1066 1066
 Width: 928
-Flags: HW
-HStem: 0 125<394 534 534 566> 344 125<394 534> 604 125<244 244>
-VStem: 244 150<125 344 469 604 604 604> 651 150<197.5 272>
+Flags: W
+HStem: 0 125<394 543> 344 125<394 543> 604 125<14 244>
+VStem: 244 150<125 344 468 604> 651 150<223 241>
 Fore
 394 469 m 1
  581 469 l 2
@@ -11720,14 +11792,14 @@ Fore
  651 309 614 344 534 344 c 2
  394 344 l 1
 EndSplineSet
-MinimumDistance: x12,-1 x7,5 y5,7 y5,6 
+MinimumDistance: x2,-1 x7,0 y0,7 y0,8 
 EndChar
 StartChar: afii10045
 Encoding: 1067 1067
 Width: 949
-Flags: HW
-HStem: 0 125<218 358 358 390> 344 125<218 358> 709 20<68 218 218 218 734 884 884 884>
-VStem: 68 150<125 344 469 729> 475 150<197.5 272> 734 150<0 729>
+Flags: W
+HStem: 0 125<218 373> 344 125<218 373> 709 20G<68 218 734 884>
+VStem: 68 150<125 344 468 729> 475 150<223 241> 734 150<0 729>
 Fore
 884 729 m 1
  884 0 l 1
@@ -11749,14 +11821,14 @@ Fore
  475 309 438 344 358 344 c 2
  218 344 l 1
 EndSplineSet
-MinimumDistance: x12,-1 y5,7 y5,6 
+MinimumDistance: x0,-1 y4,9 y4,10 
 EndChar
 StartChar: afii10046
 Encoding: 1068 1068
 Width: 687
-Flags: HW
-HStem: 0 125<226 366 366 398> 344 125<226 366> 709 20<76 226 226 226>
-VStem: 76 150<125 344 469 729> 483 150<197.5 272>
+Flags: W
+HStem: 0 125<226 381> 344 125<226 381> 709 20G<76 226>
+VStem: 76 150<125 344 468 729> 483 150<223 241>
 Fore
 226 469 m 1
  413 469 l 2
@@ -11773,14 +11845,13 @@ Fore
  483 309 446 344 366 344 c 2
  226 344 l 1
 EndSplineSet
-MinimumDistance: x10,-1 y5,7 y5,6 
+MinimumDistance: x2,-1 y0,5 y0,6 
 EndChar
 StartChar: afii10047
 Encoding: 1069 1069
 Width: 722
-Flags: HW
-HStem: -23 126<304.5 403.5> 311 125<241 532> 613 128<320 394.5>
-VStem: 241 444<311 436 436 436>
+Flags: W
+HStem: -23 126<331 365> 311 125<241 532> 613 128<331 365>
 Fore
 241 311 m 1
  241 436 l 1
@@ -11799,14 +11870,13 @@ Fore
  456 103 521 179 533 311 c 1
  241 311 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: afii10048
 Encoding: 1070 1070
 Width: 1109
-Flags: HW
-HStem: -23 128<650 754> 0 21<68 218 68 68> 311 125<218 364> 613 128<650 753.5> 709 20<68 218 218 218>
-VStem: 68 150<0 311 436 729> 893 150<302.5 411>
+Flags: W
+HStem: -23 128<691 709> 0 21G<68 218> 311 125<218 364> 613 128<691 709> 709 20G<68 218>
+VStem: 68 150<0 311 436 729> 893 150<328 378>
 Fore
 367 436 m 1
  380 515 414 587 463 640 c 0
@@ -11830,14 +11900,15 @@ Fore
  822 105 893 206 893 355 c 0
  893 513 825 613 702 613 c 0
 EndSplineSet
-MinimumDistance: x15,-1 y5,7 y5,6 y10,8 y10,9 
+MinimumDistance: x4,-1 y14,12 y14,13 y9,11 y9,10 
 EndChar
 StartChar: afii10049
 Encoding: 1071 1071
 Width: 698
-Flags: HW
-HStem: 0 21<22 201 22 22 483 483 483 633> 260 125<422 422 422 483> 604 125<311 343 343 483>
-VStem: 76 150<457 531.5> 483 150<0 260 260 260 385 604 604 604>
+Flags: W
+HStem: 0 21G<22 201 483 633> 604 125<325 483>
+VStem: 76 150<479 513> 483 150<0 260 385 604>
+DStem: 242 265 422 260 22 0 201 0
 Fore
 422 260 m 1
  201 0 l 1
@@ -11857,20 +11928,22 @@ Fore
  226 420 263 385 343 385 c 2
  483 385 l 1
 EndSplineSet
-MinimumDistance: x9,-1 y6,8 y6,7 
+MinimumDistance: x6,-1 
 EndChar
 StartChar: afii10065
 Encoding: 1072 1072
 Width: 556
-Flags: HW
+Flags: W
+HStem: -23 113<220.5 222> 436 113<239.5 301>
+VStem: 28 140<135 176> 355 137<217 255 255 255 373 383>
 Ref: 97 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10066
 Encoding: 1073 1073
 Width: 606
-Flags: HW
-HStem: -23 117<271.5 341.5> 432 117<304.5 341.5>
-VStem: 51 138 425 140<213 299.5>
+Flags: W
+HStem: -23 117<303 309> 432 117<307 338>
+VStem: 50.5392 138.461<260 282> 425 140<248 282>
 Fore
 438 776 m 1
  542 777 l 1
@@ -11891,14 +11964,14 @@ Fore
  376 94 425 164 425 262 c 0
  425 362 376 432 307 432 c 0
 EndSplineSet
-MinimumDistance: x9,-1 
+MinimumDistance: x7,-1 
 EndChar
 StartChar: afii10067
 Encoding: 1074 1074
 Width: 572
-Flags: HW
-HStem: 0 110<200 300 300 327> 223 110<200 294 294 300> 430 110<200 200 200 294>
-VStem: 60 140<110 223 333 430> 368 135<375 400> 379 139<147.5 181.5>
+Flags: W
+HStem: 0 110<200 317> 223 110<200 317> 430 110<200 317>
+VStem: 60 140<110 223 333 430> 368 135<379 398> 379 139<155 172>
 Fore
 60 0 m 1
  60 540 l 1
@@ -11923,13 +11996,13 @@ Fore
  379 216 354 223 300 223 c 2
  200 223 l 1
 EndSplineSet
-MinimumDistance: x13,-1 
+MinimumDistance: x6,-1 
 EndChar
 StartChar: afii10068
 Encoding: 1075 1075
 Width: 454
-Flags: HW
-HStem: 0 21<60 200 60 60> 427 113<200 408 200 200>
+Flags: W
+HStem: 0 21G<60 200> 427 113<200 408>
 VStem: 60 140<0 427>
 Fore
 408 540 m 1
@@ -11940,14 +12013,14 @@ Fore
  60 540 l 1
  408 540 l 1
 EndSplineSet
-MinimumDistance: x0,-1 y4,2 y4,3 x4,0 x4,5 
+MinimumDistance: x0,-1 y2,4 y2,3 x2,0 x2,1 
 EndChar
 StartChar: afii10069
 Encoding: 1076 1076
 Width: 685
-Flags: HW
-HStem: -125 226<23 85 580 662> 0 113<263 440> 427 113<302 440 302 302>
-VStem: 23 110<-125 0> 162 140<388 427> 440 140<113 427 427 427> 552 110<-125 0 0 0>
+Flags: W
+HStem: 0 113<263 440> 427 113<301 440>
+VStem: 23 110<-125 0> 162 140<354 427> 440 140<113 427> 552 110<-125 0>
 Fore
 580 101 m 1
  662 101 l 1
@@ -11970,20 +12043,22 @@ Fore
  302 376 l 2
  302 259 290 174 263 113 c 1
 EndSplineSet
-MinimumDistance: x17,-1 y13,11 y13,12 y14,16 y14,15 x7,5 y5,7 y5,6 x5,16 x5,17 
+MinimumDistance: x1,-1 y5,7 y5,6 y4,2 y4,3 y2,0 x0,2 x0,1 
 EndChar
 StartChar: afii10070
 Encoding: 1077 1077
 Width: 556
-Flags: HW
+Flags: W
+HStem: -23 107<254 299.5> 226 93<164 379> 442 107<239 287.5>
 Ref: 101 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10072
 Encoding: 1078 1078
 Width: 809
-Flags: HW
-HStem: 0 21<16 195 16 16 332 332 332 472 609 609 609 788> 520 20<52 200 200 200 332 472 472 472 604 752 752 752>
+Flags: W
+HStem: 0 21G<16 195 332 472 609 788> 520 20G<52 200 332 472 604 752>
 VStem: 332 140<0 198 351 540>
+DStem: 52 540 200 540 229 296 332 351 229 296 332 198 16 0 195 0 472 198 575 296 609 0 788 0 604 540 752 540 472 351 575 296
 Fore
 332 198 m 1
  195 0 l 1
@@ -12005,14 +12080,14 @@ Fore
  332 0 l 1
  332 198 l 1
 EndSplineSet
-MinimumDistance: x5,-1 
+MinimumDistance: x13,-1 
 EndChar
 StartChar: afii10073
 Encoding: 1079 1079
 Width: 546
-Flags: HW
-HStem: -23 110<258 308.5> 208 110<206 298> 439 110<250.5 308.5>
-VStem: 48 135<366 366> 365 140<378 404> 380 140<133.5 151>
+Flags: W
+HStem: -23 110<268 300> 439 110<268 302>
+VStem: 48 135<366 378> 365 140<360 389> 380 140<139 160>
 Fore
 206 208 m 1
  206 318 l 1
@@ -12036,14 +12111,15 @@ Fore
  380 162 382 208 298 208 c 2
  206 208 l 1
 EndSplineSet
-MinimumDistance: x9,-1 
+MinimumDistance: x11,-1 
 EndChar
 StartChar: afii10074
 Encoding: 1080 1080
 Width: 615
-Flags: HW
-HStem: 0 21<60 220 60 60 415 555 415 415> 520 20<60 200 200 200 395 555 555 555>
-VStem: 60 140<202 540> 415 140<0 338 338 338>
+Flags: W
+HStem: 0 21G<60 220 415 555> 520 20G<60 200 395 555>
+VStem: 60 140<202 540> 415 140<0 337>
+DStem: 395 540 415 338 200 202 220 0
 Fore
 60 540 m 1
  200 540 l 1
@@ -12057,14 +12133,15 @@ Fore
  60 0 l 1
  60 540 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
+MinimumDistance: x4,-1 
 EndChar
 StartChar: afii10075
 Encoding: 1081 1081
 Width: 615
-Flags: HW
-HStem: 0 21<60 220 60 60 415 555 415 415> 520 20<60 200 200 200 395 555 555 555> 580 77<286 331> 703 20<176 232 232 232 384 440 440 440>
-VStem: 60 140<202 540> 415 140<0 338 338 338>
+Flags: W
+HStem: 0 21G<60 220 415 555> 520 20G<60 200 395 555> 580 77<299 317> 703 20G<176 232 384 440>
+VStem: 60 140<202 540> 415 140<0 337>
+DStem: 395 540 415 338 200 202 220 0
 Fore
 60 540 m 1
  200 540 l 1
@@ -12087,14 +12164,15 @@ Fore
  353 657 376 677 384 723 c 1
  440 723 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
+MinimumDistance: x4,-1 
 EndChar
 StartChar: afii10076
 Encoding: 1082 1082
 Width: 573
-Flags: HW
-HStem: 0 21<60 200 60 60 367 549 367 367> 520 20<60 200 200 200 362 510 510 510>
+Flags: W
+HStem: 0 21G<60 200 367 549> 520 20G<60 200 362 510>
 VStem: 60 140<0 198 351 540>
+DStem: 200 198 296 296 367 0 549 0 362 540 510 540 200 351 296 296
 Fore
 200 351 m 1
  362 540 l 1
@@ -12109,14 +12187,14 @@ Fore
  200 540 l 1
  200 351 l 1
 EndSplineSet
-MinimumDistance: x7,-1 
+MinimumDistance: x4,-1 
 EndChar
 StartChar: afii10077
 Encoding: 1083 1083
 Width: 577
-Flags: HW
-HStem: 0 21<377 517 377 377> 427 113<244 377 244 244>
-VStem: 104 140<378 427> 377 140<0 427 427 427>
+Flags: W
+HStem: -10 135<29 31> 0 21G<377 517> 427 113<243 377>
+VStem: 104 140<325 427> 377 140<0 427>
 Fore
 104 540 m 1
  517 540 l 1
@@ -12130,7 +12208,7 @@ Fore
  102 126 104 242 104 378 c 2
  104 540 l 1
 EndSplineSet
-MinimumDistance: x9,-1 y6,8 y6,7 
+MinimumDistance: x1,-1 y4,2 y4,3 
 Back
 148 524 m 5
  487 524 l 5
@@ -12146,9 +12224,10 @@ EndChar
 StartChar: afii10078
 Encoding: 1084 1084
 Width: 666
-Flags: HW
-HStem: 0 21<60 200 60 60 297 369 297 297 466 466 466 606> 520 20<60 235 235 235 431 606 606 606>
-VStem: 60 140<0 297> 466 140<0 297 297 297>
+Flags: W
+HStem: 0 21G<60 200 297 369 466 606> 520 20G<60 235 431 606>
+VStem: 60 140<0 297> 466 140<0 297>
+DStem: 200 297 235 540 297 0 333 213 431 540 466 297 333 213 369 0
 Fore
 369 0 m 1
  297 0 l 1
@@ -12165,14 +12244,14 @@ Fore
  466 297 l 1
  369 0 l 1
 EndSplineSet
-MinimumDistance: x5,-1 
+MinimumDistance: x9,-1 
 EndChar
 StartChar: afii10079
 Encoding: 1085 1085
 Width: 603
-Flags: HW
-HStem: 0 21<60 200 60 60 403 543 403 403> 207 113<200 403> 520 20<60 200 200 200 403 543 543 543>
-VStem: 60 140<0 207 320 540> 403 140<0 207 207 207 320 540>
+Flags: W
+HStem: 0 21G<60 200 403 543> 207 113<200 403> 520 20G<60 200 403 543>
+VStem: 60 140<0 207 320 540> 403 140<0 207 320 540>
 Fore
 60 540 m 1
  200 540 l 1
@@ -12188,20 +12267,22 @@ Fore
  60 0 l 1
  60 540 l 1
 EndSplineSet
-MinimumDistance: x7,-1 y3,1 y3,2 y4,6 y4,5 y10,0 y10,11 
+MinimumDistance: x5,-1 y9,11 y9,10 y8,6 y8,7 y3,5 y3,4 y2,0 y2,1 
 EndChar
 StartChar: afii10080
 Encoding: 1086 1086
 Width: 611
-Flags: HW
+Flags: W
+HStem: -23 113<264 339.5> 436 113<264 340.5>
+VStem: 35 140<211.5 314.5> 429 140<210.5 314>
 Ref: 111 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10081
 Encoding: 1087 1087
 Width: 603
-Flags: HW
-HStem: 0 21<60 200 60 60 403 543 403 403> 427 113<200 403 200 200>
-VStem: 60 140<0 427> 403 140<0 427 427 427>
+Flags: W
+HStem: 0 21G<60 200 403 543> 427 113<200 403>
+VStem: 60 140<0 427> 403 140<0 427>
 Fore
 60 540 m 1
  543 540 l 1
@@ -12213,14 +12294,14 @@ Fore
  60 0 l 1
  60 540 l 1
 EndSplineSet
-MinimumDistance: x7,-1 y3,1 y3,2 y4,6 y4,5 
+MinimumDistance: x1,-1 y5,7 y5,6 y4,2 y4,3 
 EndChar
 StartChar: afii10082
 Encoding: 1088 1088
 Width: 611
-Flags: HW
-HStem: -24 117<316 352.5> 432 117<316 353.5>
-VStem: 60 140<-218 64 211.5 312.5 460 540> 436 140<211 300>
+Flags: W
+HStem: -24 117<317 350> 432 117<317 350> 520 20G<60 200>
+VStem: 60 140<-218 64 245 279 460 540> 436 140<245 279>
 Fore
 200 540 m 1
  200 460 l 1
@@ -12239,18 +12320,21 @@ Fore
  387 93 436 162 436 260 c 0
  436 363 389 432 318 432 c 0
 EndSplineSet
+MinimumDistance: x4,-1 
 EndChar
 StartChar: afii10083
 Encoding: 1089 1089
 Width: 556
-Flags: HW
+Flags: W
+HStem: -23 113<252.5 315> 436 113<268 316.5>
+VStem: 34 140<206.5 284.5>
 Ref: 99 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10084
 Encoding: 1090 1090
 Width: 454
-Flags: HW
-HStem: 0 21<156 296 156 156> 427 113<21 156 296 431 296 296>
+Flags: W
+HStem: 0 21G<156 296> 427 113<21 156 296 431>
 VStem: 156 140<0 427>
 Fore
 431 540 m 1
@@ -12263,20 +12347,21 @@ Fore
  21 540 l 1
  431 540 l 1
 EndSplineSet
-MinimumDistance: x0,-1 y6,4 y6,5 x6,0 x6,7 
+MinimumDistance: x0,-1 y2,4 y2,3 x5,7 x5,6 x2,0 x2,1 
 EndChar
 StartChar: afii10085
 Encoding: 1091 1091
 Width: 556
-Flags: HW
+Flags: W
+HStem: -219 103<127.5 147.5> 520 20<9 163 163 163 394 538 538 538>
 Ref: 121 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10086
 Encoding: 1092 1092
 Width: 957
-Flags: HW
-HStem: -24 117<251.5 288 660 696.5> 432 117<250.5 288 660 697.5>
-VStem: 28 140<211 300> 404 140<-218 64 211.5 312.5 460 719> 780 140<211 300>
+Flags: W
+HStem: -24 117<254 286 662 694> 432 117<254 286 662 694> 699 20G<404 544>
+VStem: 28 140<245 279> 404 140<-218 64 245 279 460 719> 780 140<245 279>
 Fore
 404 64 m 1
  370 4 322 -24 254 -24 c 0
@@ -12306,20 +12391,21 @@ Fore
  731 93 780 162 780 260 c 0
  780 363 733 432 662 432 c 0
 EndSplineSet
-MinimumDistance: x13,-1 
+MinimumDistance: x11,-1 
 EndChar
 StartChar: afii10087
 Encoding: 1093 1093
 Width: 556
-Flags: HW
+Flags: W
+HStem: 0 20 520 20<20 188 188 188 363 531 531 531>
 Ref: 120 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10088
 Encoding: 1094 1094
 Width: 652
-Flags: HW
-HStem: -125 226<543 629> 0 113<200 403> 520 20<60 200 200 200 403 543 543 543>
-VStem: 60 140<113 540> 403 140<113 540> 519 110<-125 0 0 0>
+Flags: W
+HStem: 0 113<199 403> 520 20G<60 200 403 543>
+VStem: 60 140<113 540> 403 140<113 540> 519 110<-125 0>
 Fore
 60 0 m 1
  60 540 l 1
@@ -12335,14 +12421,14 @@ Fore
  519 0 l 1
  60 0 l 1
 EndSplineSet
-MinimumDistance: x4,-1 y1,3 y1,2 y9,11 y9,10 y5,7 y5,6 x5,3 x5,4 
+MinimumDistance: x8,-1 y11,9 y11,10 y4,6 y4,5 y3,1 y3,2 y1,11 x11,1 x11,0 y9,7 x7,9 x7,8 
 EndChar
 StartChar: afii10089
 Encoding: 1095 1095
 Width: 578
-Flags: HW
-HStem: 0 21<378 518 378 378> 165 113<258 260 260 378> 520 20<60 200 200 200 378 518 518 518>
-VStem: 60 140<325 326 326 540> 378 140<0 165 165 165 278 540>
+Flags: W
+HStem: 0 21G<378 518> 165 113<235.722 378> 520 20G<60 200 378 518>
+VStem: 60 140<319 540> 378 140<0 165 278 540>
 Fore
 60 540 m 1
  200 540 l 1
@@ -12358,13 +12444,13 @@ Fore
  170 165 60 194 60 325 c 2
  60 540 l 1
 EndSplineSet
-MinimumDistance: x6,-1 y3,5 y3,4 y9,0 y9,10 
+MinimumDistance: x6,-1 y9,7 y9,8 y4,6 y4,5 y3,0 y3,1 
 EndChar
 StartChar: afii10090
 Encoding: 1096 1096
 Width: 886
-Flags: HW
-HStem: 0 113<200 371 511 686> 520 20<60 200 200 200 371 511 511 511 686 826 826 826>
+Flags: W
+HStem: 0 113<199 371 510 687> 520 20G<60 200 371 511 686 826>
 VStem: 60 140<113 540> 371 140<113 540> 686 140<113 540>
 Fore
 826 0 m 1
@@ -12381,14 +12467,14 @@ Fore
  826 540 l 1
  826 0 l 1
 EndSplineSet
-MinimumDistance: x0,-1 y4,6 y4,5 y8,10 y8,9 
+MinimumDistance: x0,-1 y9,11 y9,10 y5,7 y5,6 y4,2 y4,3 
 EndChar
 StartChar: afii10091
 Encoding: 1097 1097
 Width: 968
-Flags: HW
-HStem: -125 226<835 945 835 835> 0 101<825 835> 0 113<200 371 511 685> 520 20<60 200 200 200 371 511 511 511 685 825 825 825>
-VStem: 60 140<113 540> 371 140<113 540> 685 140<113 540> 835 110<-125 0 0 0>
+Flags: W
+HStem: 0 113<199 371 510 685> 520 20G<60 200 371 511 685 825>
+VStem: 60 140<113 540> 371 140<113 540> 685 140<113 540> 835 110<-125 0>
 Fore
 835 0 m 1
  60 0 l 1
@@ -12408,14 +12494,14 @@ Fore
  835 -125 l 1
  835 0 l 1
 EndSplineSet
-MinimumDistance: x3,-1 y8,10 y8,9 y12,14 y12,13 y0,2 y0,1 y4,6 y4,5 x4,2 x4,3 
+MinimumDistance: x13,-1 y9,11 y9,10 y5,7 y5,6 y4,2 y4,3 y0,14 y0,15 y2,0 x0,2 x0,1 y14,12 x12,14 x12,13 
 EndChar
 StartChar: afii10092
 Encoding: 1098 1098
 Width: 693
-Flags: HW
-HStem: 0 110<331 440 440 467> 249 110<331 435> 427 113<20 191>
-VStem: 191 140<110 249 359 427 427 427> 524 139<157.5 203>
+Flags: W
+HStem: 0 110<331 453> 249 110<331 453> 427 113<20 191>
+VStem: 191 140<110 249 358 427> 524 139<166 182>
 Fore
 191 0 m 1
  191 427 l 1
@@ -12435,14 +12521,14 @@ Fore
  524 226 489 249 435 249 c 2
  331 249 l 1
 EndSplineSet
-MinimumDistance: x9,7 y7,9 y7,8 x5,13 y13,5 y13,14 
+MinimumDistance: x7,-1 x9,1 y1,9 y1,0 x3,5 y5,3 y5,4 x1,3 x1,2 
 EndChar
 StartChar: afii10093
 Encoding: 1099 1099
 Width: 811
-Flags: HW
-HStem: 0 110<200 309 309 336> 249 110<200 304> 520 20<60 200 200 200 578 718 718 718>
-VStem: 60 140<110 249 359 540> 393 139<157.5 203> 578 140<0 540>
+Flags: W
+HStem: 0 110<200 317> 249 110<200 317> 520 20G<60 200 578 718>
+VStem: 60 140<110 249 358 540> 393 139<166 182> 578 140<0 540>
 Fore
 308 359 m 2
  455 359 532 278 532 168 c 0
@@ -12465,14 +12551,14 @@ Fore
  578 540 l 1
  718 540 l 1
 EndSplineSet
-MinimumDistance: x13,-1 y6,8 y6,7 
+MinimumDistance: x13,-1 y7,5 y7,6 
 EndChar
 StartChar: afii10094
 Encoding: 1100 1100
 Width: 562
-Flags: HW
-HStem: 0 110<200 309 309 336> 249 110<200 304> 520 20<60 200 200 200>
-VStem: 60 140<110 249 359 540> 393 139<157.5 203>
+Flags: W
+HStem: 0 110<200 317> 249 110<200 317> 520 20G<60 200>
+VStem: 60 140<110 249 358 540> 393 139<166 182>
 Fore
 308 359 m 2
  455 359 532 278 532 168 c 0
@@ -12490,14 +12576,13 @@ Fore
  393 226 358 249 304 249 c 2
  200 249 l 1
 EndSplineSet
-MinimumDistance: x7,-1 y6,8 y6,7 
+MinimumDistance: x1,-1 y7,5 y7,6 
 EndChar
 StartChar: afii10095
 Encoding: 1101 1101
 Width: 564
-Flags: HW
-HStem: -23 113<241 297> 207 113<203 377> 436 113<239.5 288>
-VStem: 203 319<207 320 320 320>
+Flags: W
+HStem: -23 113<257 275> 207 113<203 377> 436 113<257 275>
 Fore
 203 207 m 1
  203 320 l 1
@@ -12515,14 +12600,13 @@ Fore
  326 90 366 133 378 207 c 1
  203 207 l 1
 EndSplineSet
-MinimumDistance: x6,-1 
 EndChar
 StartChar: afii10096
 Encoding: 1102 1102
 Width: 908
-Flags: HW
-HStem: -23 113<517 592.5> 0 21<60 200 60 60> 207 113<200 302> 436 113<517 593.5> 520 20<60 200 200 200>
-VStem: 60 140<0 207 320 540> 672 140<210.5 314>
+Flags: W
+HStem: -23 113<539 558> 0 21G<60 200> 436 113<539 558> 520 20G<60 200>
+VStem: 60 140<0 207 320 540> 672 140<248 282>
 Fore
 302 207 m 1
  200 207 l 1
@@ -12542,14 +12626,15 @@ Fore
  630 90 672 160 672 261 c 0
  672 367 632 436 555 436 c 0
 EndSplineSet
-MinimumDistance: x6,-1 y9,11 y9,10 y14,12 y14,13 
+MinimumDistance: x9,-1 
 EndChar
 StartChar: afii10097
 Encoding: 1103 1103
 Width: 596
-Flags: HW
-HStem: 0 21<25 204 25 25 391 391 391 531> 207 110<347 347 347 391> 430 110<242 269 269 391>
-VStem: 51 139<385 392.5> 391 140<0 207 207 207 317 430 430 430>
+Flags: W
+HStem: 0 21G<25 204 391 531> 430 110<248 391>
+VStem: 51 139<367 385> 391 140<0 207 317 430>
+DStem: 180 218 347 207 25 0 204 0
 Fore
 347 207 m 1
  204 0 l 1
@@ -12570,46 +12655,68 @@ Fore
  190 324 215 317 269 317 c 2
  391 317 l 1
 EndSplineSet
-MinimumDistance: x9,-1 y6,8 y6,7 
+MinimumDistance: x7,-1 
 EndChar
 StartChar: uni0450
 Encoding: 1104 1104
 Width: 556
-Flags: HW
+Flags: W
+HStem: -23 107<254 299.5> 226 93<164 379> 442 107<239 287.5>
 Ref: 96 N 1 0 0 1 145 33
 Ref: 101 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10071
 Encoding: 1105 1105
 Width: 556
-Flags: HW
+Flags: W
+HStem: -23 107<254 299.5> 226 93<164 379> 442 107<239 287.5> 621 122<132 242 318 428>
+VStem: 132 110<621 743> 318 110<621 743>
 Ref: 168 N 1 0 0 1 114 0
 Ref: 101 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10099
 Encoding: 1106 1106
-Width: 480
-Flags: HW
-HStem: 0 21<171 311 171 171> 427 113<36 171 311 446 311 311>
-VStem: 171 140<0 427>
+Width: 606
+Flags: W
+HStem: 0 21G<92 232> 421 119<341 391> 567 104<22 92 232 402> 709 20G<92 232>
+VStem: 92 140<0 323 453 567 671 729> 427 140<132 339>
 Fore
-446 540 m 1
- 446 427 l 1
- 311 427 l 1
- 311 0 l 1
- 171 0 l 1
- 171 427 l 1
- 36 427 l 1
- 36 540 l 1
- 446 540 l 1
+568 132 m 1
+ 567 353 l 1
+ 567 354 l 2
+ 567 420 548.667 468.333 512 499 c 0
+ 479.333 526.333 439 540 391 540 c 0
+ 324.333 540 270.667 511 232 453 c 1
+ 232 567 l 1
+ 402 567 l 1
+ 402 671 l 1
+ 232 671 l 1
+ 232 729 l 1
+ 92 729 l 1
+ 92 671 l 1
+ 22 671 l 1
+ 22 567 l 1
+ 92 567 l 1
+ 92 0 l 1
+ 232 0 l 1
+ 232 315 l 1
+ 232 315 l 2
+ 232 334.333 237.333 353 246 369 c 0
+ 265.333 403.667 297 421 341 421 c 0
+ 371.667 421 395 410 411 388 c 0
+ 421.667 372 427.089 349.667 427 321 c 2
+ 428.001 112 l 1
+ 423.116 -24.9238 324 -108 268 -110 c 1
+ 268 -172 l 1
+ 331.234 -186.044 557.939 -57.9502 568 132 c 1
 EndSplineSet
-MinimumDistance: x0,-1 y6,4 y6,5 x6,0 x6,7 
+MinimumDistance: x1,-1 y15,17 y15,16 y9,11 y9,10 x12,14 x12,13 x6,8 x6,7 
 EndChar
 StartChar: afii10100
 Encoding: 1107 1107
 Width: 454
-Flags: HW
-HStem: 0 21<60 200 60 60> 427 113<200 408 200 200>
+Flags: W
+HStem: 0 21G<60 200> 427 113<200 408>
 VStem: 60 140<0 427>
 Fore
 408 540 m 1
@@ -12625,13 +12732,13 @@ Fore
  206 790 l 1
  332 790 l 1
 EndSplineSet
+MinimumDistance: x0,-1 y2,4 y2,3 x2,0 x2,1 
 EndChar
 StartChar: afii10101
 Encoding: 1108 1108
 Width: 556
-Flags: HW
-HStem: -23 113<259 315> 207 113<179 353> 436 113<268 316.5>
-VStem: 34 319<207 320>
+Flags: W
+HStem: -23 113<273 291> 207 113<179 353> 436 113<273 291>
 Fore
 353 207 m 1
  178 207 l 1
@@ -12649,14 +12756,13 @@ Fore
  353 320 l 1
  353 207 l 1
 EndSplineSet
-MinimumDistance: x0,-1 
 EndChar
 StartChar: afii10102
 Encoding: 1109 1109
 Width: 556
-Flags: HW
-HStem: -23 110<258 308.5> 439 110<244.5 302.5>
-VStem: 48 140<378 404> 370 135<366 366> 380 140<133.5 151>
+Flags: W
+HStem: -23 110<267 286> 439 110<252 286>
+VStem: 48 140<368 389> 370 135<366 378> 380 140<140 160>
 Fore
 505 366 m 1
  370 366 l 1
@@ -12679,95 +12785,154 @@ Fore
  48 480 133 549 270 549 c 0
  415 549 503 480 505 366 c 1
 EndSplineSet
+MinimumDistance: x6,-1 
 EndChar
 StartChar: afii10103
 Encoding: 1110 1110
 Width: 278
-Flags: HW
+Flags: W
+HStem: 0 20 604 125<67 207>
+VStem: 67 140<0 540 604 729>
 Ref: 105 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10104
 Encoding: 1111 1111
 Width: 278
-Flags: HW
+Flags: W
+HStem: 0 20 520 20<67 207 207 207> 621 122<-9 101 177 287>
+VStem: -9 110<621 743> 67 140<0 540> 177 110<621 743>
 Ref: 168 N 1 0 0 1 -27 0
 Ref: 305 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10105
 Encoding: 1112 1112
 Width: 278
-Flags: HW
+Flags: W
+HStem: -218 20 604 125<70 210>
+VStem: 70 140<-63 540 604 729>
 Ref: 106 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10106
 Encoding: 1113 1113
-Width: 608
-Flags: HW
-HStem: 0 21<29 105.5 403 543 403 403> 427 113<244 403 244 244>
-VStem: 104 140<388 427> 403 140<0 427 427 427>
+Width: 900
+Flags: W
+HStem: 0 110<543 688> 0 135<29 31> 209 110<543 669> 427 113<243 403>
+VStem: 104 140<335 427> 403 140<110 208 318 427> 739 123.009<151 162>
 Fore
-104 540 m 1
- 543 540 l 1
- 543 0 l 1
- 403 0 l 1
+403 0 m 1
  403 427 l 1
  244 427 l 1
  244 376 l 2
- 244 112 182 0 29 0 c 1
+ 244 203.333 214.333 91.6667 155 41 c 0
+ 126.333 16.3333 89.6667 2.66667 45 0 c 2
+ 29 0 l 1
  29 135 l 1
- 102 136 104 252 104 388 c 2
+ 67 135.667 90.3333 171.333 99 242 c 0
+ 102.333 271.333 104 319.667 104 387 c 2
+ 104 388 l 1
  104 540 l 1
+ 543 540 l 1
+ 543 319 l 1
+ 651 319 l 2
+ 746.333 319 812.333 288.333 849 227 c 0
+ 866.333 198.333 862 184.667 862 148 c 2
+ 862 147 l 2
+ 862 107 852.667 89 830 57 c 0
+ 824 48.333 817.667 41.333 811 36 c 0
+ 780.333 10 746 0 686 0 c 1
+ 403 0 l 1
+543 209 m 1
+ 543 110 l 1
+ 652 110 l 2
+ 703.333 110 734.333 110.333 739 151 c 1
+ 739 160 l 2
+ 739 198.667 713.667 201.333 669 208 c 0
+ 662.333 208.667 655 209 647 209 c 2
+ 543 209 l 1
 EndSplineSet
-MinimumDistance: x9,-1 y6,8 y6,7 
+MinimumDistance: x16,-1 x20,1 y1,20 y1,0 x11,13 y13,11 y13,12 
 EndChar
 StartChar: afii10107
 Encoding: 1114 1114
 Width: 611
-Flags: HW
-HStem: 0 21<63 203 63 63 406 546 406 406> 207 113<203 406> 520 20<63 203 203 203 406 546 546 546>
-VStem: 63 140<0 207 320 540> 406 140<0 207 207 207 320 540>
+Flags: W
+HStem: 0 110<546 692> 207 113<203 406 546 672> 520 20G<63 203 406 546>
+VStem: 63 140<0 207 320 540> 406 140<110 207 320 540> 742 123.009<151 162>
 Fore
-63 540 m 1
- 203 540 l 1
- 203 320 l 1
- 406 320 l 1
- 406 540 l 1
- 546 540 l 1
- 546 0 l 1
- 406 0 l 1
- 406 207 l 1
+546 540 m 5
+ 546 319 l 5
+ 654 319 l 6
+ 749.333 319 815.333 288.333 852 227 c 4
+ 869.333 198.333 865 184.667 865 148 c 6
+ 865 147 l 6
+ 865 107 855.667 89 833 57 c 4
+ 827 48.333 820.667 41.333 814 36 c 4
+ 783.333 10 749 0 689 0 c 5
+ 406 0 l 5
+ 406 207 l 5
  203 207 l 1
  203 0 l 1
  63 0 l 1
  63 540 l 1
+ 203 540 l 1
+ 203 320 l 1
+ 406 320 l 5
+ 406 540 l 5
+ 546 540 l 5
+546 209 m 5
+ 546 110 l 5
+ 655 110 l 6
+ 706.333 110 737.333 110.333 742 151 c 5
+ 742 160 l 6
+ 742 198.667 716.667 201.333 672 208 c 4
+ 665.333 208.667 658 209 650 209 c 6
+ 546 209 l 5
 EndSplineSet
-MinimumDistance: x7,-1 y3,1 y3,2 y4,6 y4,5 y10,0 y10,11 
+MinimumDistance: y16,14 y16,15 y11,13 y11,12 x8,10 y10,8 y10,9 y17,18 y17,0 
 EndChar
 StartChar: afii10108
 Encoding: 1115 1115
-Width: 480
-Flags: HW
-HStem: 0 21<171 311 171 171> 427 113<36 171 311 446 311 311>
-VStem: 171 140<0 427>
+Width: 606
+Flags: W
+HStem: 0 21G<92 232 426 566> 421 119<341 391> 567 104<22 92 232 402> 709 20G<92 232>
+VStem: 92 140<0 323 453 567 671 729> 426 140<0 337>
 Fore
-446 540 m 1
- 446 427 l 1
- 311 427 l 1
- 311 0 l 1
- 171 0 l 1
- 171 427 l 1
- 36 427 l 1
- 36 540 l 1
- 446 540 l 1
+92 729 m 5
+ 232 729 l 5
+ 232 671 l 5
+ 402 671 l 5
+ 402 567 l 5
+ 232 567 l 5
+ 232 453 l 5
+ 270.667 511 324.333 540 391 540 c 4
+ 439 540 479.333 526.333 512 499 c 4
+ 548.667 468.333 567 420 567 354 c 6
+ 567 353 l 5
+ 566 0 l 5
+ 426 0 l 5
+ 427 321 l 6
+ 427 349.667 421.667 372 411 388 c 4
+ 395 410 371.667 421 341 421 c 4
+ 297 421 265.333 403.667 246 369 c 4
+ 237.333 353 232 334.333 232 315 c 6
+ 232 315 l 5
+ 232 0 l 5
+ 92 0 l 5
+ 92 567 l 5
+ 22 567 l 5
+ 22 671 l 5
+ 92 671 l 5
+ 92 729 l 5
 EndSplineSet
-MinimumDistance: x0,-1 y6,4 y6,5 x6,0 x6,7 
+MinimumDistance: x11,-1 y21,19 y21,20 y2,0 y2,1 x21,23 x21,22 x2,4 x2,3 
 EndChar
 StartChar: afii10109
 Encoding: 1116 1116
 Width: 573
-Flags: HW
-HStem: 0 21<59 199 59 59 366 548 366 366> 520 20<59 199 199 199 361 509 509 509>
+Flags: W
+HStem: 0 21G<59 199 366 548> 520 20G<59 199 361 509>
 VStem: 59 140<0 198 351 540>
+DStem: 199 198 295 296 366 0 548 0 361 540 509 540 199 351 295 296
 Fore
 199 351 m 1
  361 540 l 1
@@ -12787,13 +12952,15 @@ Fore
  256 790 l 1
  382 790 l 1
 EndSplineSet
+MinimumDistance: x4,-1 
 EndChar
 StartChar: uni045D
 Encoding: 1117 1117
 Width: 608
-Flags: HW
-HStem: 0 21<60 215 60 60 403 543 403 403> 520 20<60 200 200 200 388 543 543 543>
-VStem: 60 140<197 540> 403 140<0 343 343 343>
+Flags: W
+HStem: 0 21G<60 215 403 543> 520 20G<60 200 388 543>
+VStem: 60 140<197 540> 403 140<0 343>
+DStem: 388 540 403 343 200 197 215 0
 Fore
 60 540 m 1
  200 540 l 1
@@ -12812,19 +12979,21 @@ Fore
  330 640 l 1
  204 790 l 1
 EndSplineSet
+MinimumDistance: x4,-1 
 EndChar
 StartChar: afii10110
 Encoding: 1118 1118
 Width: 556
-Flags: HW
+Flags: W
+HStem: -219 103<127.5 147.5> 520 20<9 163 163 163 394 538 538 538> 640 77<251 296> 763 20<141 197 197 197 349 405 405 405>
 Ref: 728 N 1 0 0 1 106 35
 Ref: 121 N 1 0 0 1 0 0
 EndChar
 StartChar: afii10193
 Encoding: 1119 1119
 Width: 608
-Flags: HW
-HStem: -125 238<247 357 247 247> 0 113<200 247 357 404 357 357> 520 20<60 200 200 200 404 544 544 544>
+Flags: W
+HStem: -20 20G<60 247> 0 21G<357 544> 520 20G<60 200 404 544>
 VStem: 60 140<113 540> 247 110<-125 0> 404 140<113 540>
 Fore
 357 0 m 1
@@ -12841,7 +13010,7 @@ Fore
  544 0 l 1
  357 0 l 1
 EndSplineSet
-MinimumDistance: x2,-1 y0,10 y0,11 y5,7 y5,6 y2,0 x0,2 x0,1 
+MinimumDistance: x10,-1 y0,2 y0,1 y5,3 x3,5 x3,4 y10,0 x0,10 x0,11 
 EndChar
 StartChar: uni048C
 Encoding: 1164 1164
@@ -13759,19 +13928,17 @@ EndChar
 StartChar: uni04C1
 Encoding: 1217 1217
 Width: 1093
-Flags: H
-HStem: 0 21<22 201 475 625 899 1078> 709 20<66 230 475 625 870 1034> 779 77<528 573> 902 20<418 474 474 474 626 682 682 682>
-VStem: 475 150<1 284 451 728>
-DStem: 66 729 230 729 379 378 475 450 379 378 475 285 22 0 201 0 625 285 721 378 899 0 1078 0 870 729 1034 729 625 450 721 378
+HStem: 0 21<22 206 475 625 894 1078> 709 20<66 230 475 625 870 1034> 779 77<528 573> 902 20<418 474 474 474 626 682 682 682>
+VStem: 475 150<0 285 450 729>
+DStem: 66 729 230 729 379 378 475 450 379 378 475 285 22 0 206 0 625 285 721 378 894 0 1078 0 870 729 1034 729 625 450 721 378
 Ref: 728 N 1 0 0 1 383 174
 Ref: 1046 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04C2
 Encoding: 1218 1218
 Width: 809
-Flags: H
 HStem: 0 21<16 195 332 472 609 788> 520 20<52 200 332 472 604 752> 590 77<380 425> 713 20<270 326 326 326 478 534 534 534>
-VStem: 332 140<1 197 352 539>
+VStem: 332 140<0 198 351 540>
 DStem: 52 540 200 540 229 296 332 351 229 296 332 198 16 0 195 0 472 198 575 296 609 0 788 0 604 540 752 540 472 351 575 296
 Ref: 728 N 1 0 0 1 235 -15
 Ref: 1078 N 1 0 0 1 0 0
@@ -14012,16 +14179,15 @@ EndChar
 StartChar: uni04D6
 Encoding: 1238 1238
 Width: 709
-Flags: HW
-HStem: 0 125<229 624> 314 125<229 578> 604 125<229 606 229 229> 779 77<320.5 365.5> 902 20<210.5 266.5 266.5 266.5 418.5 474.5 474.5 474.5>
-VStem: 79 150<125 314 439 604>
+Flags: W
+HStem: 0 125<232 627> 314 125<232 581> 604 125<232 609> 779 77<320.5 365.5> 902 20<210.5 266.5 266.5 266.5 418.5 474.5 474.5 474.5>
+VStem: 82 150<124 314 438 604>
 Ref: 728 N 1 0 0 1 175.5 174
 Ref: 1045 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04D7
 Encoding: 1239 1239
 Width: 556
-Flags: H
 HStem: -23 107<254 299.5> 226 93<164 379> 442 107<239 287.5> 590 77<238.5 283.5> 713 20<128.5 184.5 184.5 184.5 336.5 392.5 392.5 392.5>
 Ref: 728 N 1 0 0 1 93.5 -15
 Ref: 1077 N 1 0 0 1 0 0
@@ -14097,19 +14263,17 @@ EndChar
 StartChar: uni04DC
 Encoding: 1244 1244
 Width: 1093
-Flags: H
-HStem: 0 21<22 201 475 625 899 1078> 709 20<66 230 475 625 870 1034> 779 122<402 512 588 698>
-VStem: 402 110<779 901> 475 150<1 284 451 728> 588 110<779 901>
-DStem: 66 729 230 729 379 378 475 450 379 378 475 285 22 0 201 0 625 285 721 378 899 0 1078 0 870 729 1034 729 625 450 721 378
+HStem: 0 21<22 206 475 625 894 1078> 709 20<66 230 475 625 870 1034> 779 122<402 512 588 698>
+VStem: 402 110<779 901> 475 150<0 285 450 729> 588 110<779 901>
+DStem: 66 729 230 729 379 378 475 450 379 378 475 285 22 0 206 0 625 285 721 378 894 0 1078 0 870 729 1034 729 625 450 721 378
 Ref: 168 N 1 0 0 1 384 158
 Ref: 1046 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04DD
 Encoding: 1245 1245
 Width: 809
-Flags: H
 HStem: 0 21<16 195 332 472 609 788> 520 20<52 200 332 472 604 752> 590 122<254 364 440 550>
-VStem: 254 110<590 712> 332 140<1 197 352 539> 440 110<590 712>
+VStem: 254 110<590 712> 332 140<0 198 351 540> 440 110<590 712>
 DStem: 52 540 200 540 229 296 332 351 229 296 332 198 16 0 195 0 472 198 575 296 609 0 788 0 604 540 752 540 472 351 575 296
 Ref: 168 N 1 0 0 1 236 -31
 Ref: 1078 N 1 0 0 1 0 0
@@ -14117,18 +14281,16 @@ EndChar
 StartChar: uni04DE
 Encoding: 1246 1246
 Width: 672
-Flags: H
-HStem: -23 120<320 354> 308 120<251 351> 621 120<320 354> 779 122<106.5 216.5 292.5 402.5>
-VStem: 106.5 110<779 901> 292.5 110<779 901> 464 143<516 537> 489 143.371<194 201>
+HStem: -23 120<319 354> 621 120<319 354> 779 122<106.5 216.5 292.5 402.5>
+VStem: 106.5 110<779 901> 292.5 110<779 901> 464 143<515 538> 489 143.371<193 202>
 Ref: 168 N 1 0 0 1 88.5 158
 Ref: 1047 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04DF
 Encoding: 1247 1247
 Width: 546
-Flags: H
-HStem: -23 110<269 300> 208 110<207 302> 439 110<269 302> 590 122<126 236 312 422>
-VStem: 48 135<367 377> 126 110<590 712> 312 110<590 712> 365 140<361 389> 380.003 139.997<140 160>
+HStem: -23 110<268 300> 439 110<268 302> 590 122<126 236 312 422>
+VStem: 48 135<366 378> 126 110<590 712> 312 110<590 712> 365 140<360 389> 380 140<139 160>
 Ref: 168 N 1 0 0 1 108 -31
 Ref: 1079 N 1 0 0 1 0 0
 EndChar
@@ -14194,40 +14356,40 @@ EndChar
 StartChar: uni04E2
 Encoding: 1250 1250
 Width: 757
-Flags: HW
-HStem: 0 21<68 218 511 661> 709 20<68 218 507 661> 779 79<215 514>
-VStem: 68 150<234 728> 511 150<1 503>
-DStem: 507 729 511 504 218 233 218 0
+Flags: W
+HStem: 0 21<82 232 525 675> 709 20<82 232 521 675> 779 79<215 514>
+VStem: 82 150<233 729> 525 150<0 504>
+DStem: 521 729 525 504 232 233 232 0
 Ref: 175 N 1 0 0 1 199 139
 Ref: 1048 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04E3
 Encoding: 1251 1251
 Width: 615
-Flags: HW
-HStem: 0 21<60 215 403 543> 520 20<60 200 388 543> 590 79<152 451>
-VStem: 60 140<198 539> 403 140<1 342>
-DStem: 388 540 403 343 200 197 215 0
+Flags: W
+HStem: 0 21<60 220 415 555> 520 20<60 200 395 555> 590 79<152 451>
+VStem: 60 140<202 540> 415 140<0 337>
+DStem: 395 540 415 338 200 202 220 0
 Ref: 175 N 1 0 0 1 136 -50
 Ref: 1080 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04E4
 Encoding: 1252 1252
 Width: 757
-Flags: HW
-HStem: 0 21<68 218 511 661> 709 20<68 218 507 661> 779 122<216.5 326.5 402.5 512.5>
-VStem: 68 150<234 728> 216.5 110<779 901> 402.5 110<779 901> 511 150<1 503>
-DStem: 507 729 511 504 218 233 218 0
+Flags: W
+HStem: 0 21<82 232 525 675> 709 20<82 232 521 675> 779 122<216.5 326.5 402.5 512.5>
+VStem: 82 150<233 729> 216.5 110<779 901> 402.5 110<779 901> 525 150<0 504>
+DStem: 521 729 525 504 232 233 232 0
 Ref: 168 N 1 0 0 1 198.5 158
 Ref: 1048 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04E5
 Encoding: 1253 1253
 Width: 615
-Flags: HW
-HStem: 0 21<60 215 403 543> 520 20<60 200 388 543> 590 122<153.5 263.5 339.5 449.5>
-VStem: 60 140<198 539> 153.5 110<590 712> 339.5 110<590 712> 403 140<1 342>
-DStem: 388 540 403 343 200 197 215 0
+Flags: W
+HStem: 0 21<60 220 415 555> 520 20<60 200 395 555> 590 122<153.5 263.5 339.5 449.5>
+VStem: 60 140<202 540> 153.5 110<590 712> 339.5 110<590 712> 415 140<0 337>
+DStem: 395 540 415 338 200 202 220 0
 Ref: 168 N 1 0 0 1 135.5 -31
 Ref: 1080 N 1 0 0 1 0 0
 EndChar
@@ -14316,25 +14478,22 @@ EndChar
 StartChar: uni04EC
 Encoding: 1260 1260
 Width: 722
-Flags: H
-HStem: -23 126<332 364> 311 125<242 531> 613 128<332 364> 779 122<141.5 251.5 327.5 437.5>
-VStem: 141.5 110<779 901> 241 444<329 393> 327.5 110<779 901>
+HStem: -23 126<331 365> 311 125<241 532> 613 128<331 365> 779 122<141.5 251.5 327.5 437.5>
+VStem: 141.5 110<779 901> 327.5 110<779 901>
 Ref: 168 N 1 0 0 1 123.5 158
 Ref: 1069 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04ED
 Encoding: 1261 1261
 Width: 564
-Flags: H
-HStem: -23 113<258 274> 207 113<204 376> 436 113<258 274> 590 122<113.5 223.5 299.5 409.5>
-VStem: 113.5 110<590 712> 203 319<233 281> 299.5 110<590 712>
+HStem: -23 113<257 275> 207 113<203 377> 436 113<257 275> 590 122<113.5 223.5 299.5 409.5>
+VStem: 113.5 110<590 712> 299.5 110<590 712>
 Ref: 168 N 1 0 0 1 95.5 -31
 Ref: 1101 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04EE
 Encoding: 1262 1262
 Width: 718
-Flags: H
 HStem: 0 21<154 328> 709 20<15 178 522 696> 779 79<206 505>
 DStem: 15 729 178 729 268 226 350 384 268 226 696 729 154 0 328 0 522 729 696 729 350 384 328 0
 Ref: 175 S 1 0 0 1 190 139
@@ -14343,7 +14502,7 @@ EndChar
 StartChar: uni04EF
 Encoding: 1263 1263
 Width: 556
-Flags: HW
+Flags: W
 HStem: -219 103<127.5 147.5> 520 20<9 163 163 163 394 538 538 538> 590 79<130 429>
 Ref: 175 S 1 0 0 1 114 -50
 Ref: 1091 N 1 0 0 1 0 0
@@ -14351,7 +14510,6 @@ EndChar
 StartChar: uni04F0
 Encoding: 1264 1264
 Width: 718
-Flags: H
 HStem: 0 21<154 328> 709 20<15 178 522 696> 779 122<207.5 317.5 393.5 503.5>
 VStem: 207.5 110<779 901> 393.5 110<779 901>
 DStem: 15 729 178 729 268 226 350 384 268 226 696 729 154 0 328 0 522 729 696 729 350 384 328 0
@@ -14361,7 +14519,7 @@ EndChar
 StartChar: uni04F1
 Encoding: 1265 1265
 Width: 556
-Flags: HW
+Flags: W
 HStem: -219 103<127.5 147.5> 520 20<9 163 163 163 394 538 538 538> 590 122<131.5 241.5 317.5 427.5>
 VStem: 131.5 110<590 712> 317.5 110<590 712>
 Ref: 168 N 1 0 0 1 113.5 -31
@@ -14370,7 +14528,6 @@ EndChar
 StartChar: uni04F2
 Encoding: 1266 1266
 Width: 718
-Flags: H
 HStem: 0 21<154 328> 709 20<15 178 522 696>
 DStem: 15 729 178 729 268 226 350 384 268 226 696 729 154 0 328 0 522 729 696 729 350 384 328 0
 Ref: 733 N 1 0 0 1 207.5 169
@@ -14379,7 +14536,7 @@ EndChar
 StartChar: uni04F3
 Encoding: 1267 1267
 Width: 556
-Flags: HW
+Flags: W
 HStem: -219 103<127.5 147.5> 520 20<9 163 163 163 394 538 538 538>
 Ref: 733 N 1 0 0 1 131.5 -20
 Ref: 1091 N 1 0 0 1 0 0
@@ -14387,45 +14544,383 @@ EndChar
 StartChar: uni04F4
 Encoding: 1268 1268
 Width: 685
-Flags: HW
-HStem: 0 21<464 614> 274 125<218 463> 274 455<212 217> 779 122<193 303 379 489>
-VStem: 68 150<400 728> 193 110<779 901> 379 110<779 901> 464 150<1 274 400 728>
+Flags: W
+HStem: 0 21<474 624> 225 125<284 473> 709 20<68 218 473 624> 779 122<193 303 379 489>
+VStem: 68 150<404 729> 193 110<779 901> 379 110<779 901> 474 150<0 225 350 729>
 Ref: 168 N 1 0 0 1 175 158
 Ref: 1063 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04F5
 Encoding: 1269 1269
 Width: 578
-Flags: HW
-HStem: 0 21<378 518> 165 113<200 378> 165 375<188 199> 590 122<141 251 327 437>
-VStem: 60 140<279 539> 141 110<590 712> 327 110<590 712> 378 140<1 165 279 539>
+Flags: W
+HStem: 0 21<378 518> 165 113<235.722 378> 520 20<60 200 378 518> 590 122<141 251 327 437>
+VStem: 60 140<319 540> 141 110<590 712> 327 110<590 712> 378 140<0 165 278 540>
 Ref: 168 N 1 0 0 1 123 -31
 Ref: 1095 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04F8
 Encoding: 1272 1272
 Width: 949
-Flags: H
-HStem: 0 125<219 372> 344 125<218 372> 709 20<68 218 734 884> 779 122<328 438 514 624>
-VStem: 68 150<126 343 469 728> 328 110<779 901> 475 150<224 240> 514 110<779 901> 734 150<1 728>
+HStem: 0 125<218 373> 344 125<218 373> 709 20<68 218 734 884> 779 122<328 438 514 624>
+VStem: 68 150<125 344 468 729> 328 110<779 901> 475 150<223 241> 514 110<779 901> 734 150<0 729>
 Ref: 168 N 1 0 0 1 310 158
 Ref: 1067 N 1 0 0 1 0 0
 EndChar
 StartChar: uni04F9
 Encoding: 1273 1273
 Width: 811
-Flags: H
-HStem: 0 110<201 332> 223 110<200 332> 520 20<60 200 606 746> 590 122<255 365 441 551>
-VStem: 60 140<111 222 333 539> 255 110<590 712> 441 110<590 712> 606 140<1 539>
+HStem: 0 110<200 317> 249 110<200 317> 520 20<60 200 578 718> 590 122<255 365 441 551>
+VStem: 60 140<110 249 358 540> 255 110<590 712> 393 139<166 182> 441 110<590 712> 578 140<0 540>
 Ref: 168 N 1 0 0 1 237 -31
 Ref: 1099 N 1 0 0 1 0 0
+EndChar
+StartChar: afii57799
+Encoding: 1456 1456
+Width: 82
+Flags: W
+VStem: 0 82<-254 -173 -142 -61>
+Fore
+0 -172 m 1
+ 82 -172 l 1
+ 82 -254 l 1
+ 0 -254 l 1
+ 0 -172 l 1
+0 -60 m 1
+ 82 -60 l 1
+ 82 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+EndSplineSet
+EndChar
+StartChar: afii57801
+Encoding: 1457 1457
+Width: 347
+Flags: W
+HStem: -254 82<65 147 265 347> -142 82<0 81 129 212 265 347>
+VStem: 265 82<-254 -173 -142 -61>
+Fore
+65 -172 m 1
+ 147 -172 l 1
+ 147 -254 l 1
+ 65 -254 l 1
+ 65 -172 l 1
+0 -60 m 1
+ 82 -60 l 1
+ 82 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+129 -60 m 1
+ 212 -60 l 1
+ 212 -142 l 1
+ 129 -142 l 1
+ 129 -60 l 1
+265 -60 m 1
+ 347 -60 l 1
+ 347 -142 l 1
+ 265 -142 l 1
+ 265 -60 l 1
+265 -172 m 1
+ 347 -172 l 1
+ 347 -254 l 1
+ 265 -254 l 1
+ 265 -172 l 1
+EndSplineSet
+EndChar
+StartChar: afii57800
+Encoding: 1458 1458
+Width: 341
+Flags: W
+HStem: -254 82<259 341> -142 82<0 200 259 341>
+VStem: 259 82<-254 -173 -142 -61>
+Fore
+0 -60 m 1
+ 200 -60 l 1
+ 200 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+259 -60 m 1
+ 341 -60 l 1
+ 341 -142 l 1
+ 259 -142 l 1
+ 259 -60 l 1
+259 -172 m 1
+ 341 -172 l 1
+ 341 -254 l 1
+ 259 -254 l 1
+ 259 -172 l 1
+EndSplineSet
+EndChar
+StartChar: afii57802
+Encoding: 1459 1459
+Width: 341
+Flags: W
+HStem: -254 82<259 341> -142 82<0 59 141 200 259 341>
+VStem: 59 82<-248 -142> 259 82<-254 -173 -142 -61>
+Fore
+259 -172 m 1
+ 341 -172 l 1
+ 341 -254 l 1
+ 259 -254 l 1
+ 259 -172 l 1
+259 -60 m 1
+ 341 -60 l 1
+ 341 -142 l 1
+ 259 -142 l 1
+ 259 -60 l 1
+141 -142 m 1
+ 141 -248 l 1
+ 59 -248 l 1
+ 59 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+ 200 -60 l 1
+ 200 -142 l 1
+ 141 -142 l 1
+EndSplineSet
+MinimumDistance: y8,10 y8,9 x11,13 x11,12 x8,14 x8,15 
+EndChar
+StartChar: afii57793
+Encoding: 1460 1460
+Width: 82
+Flags: W
+Fore
+0 -60 m 1
+ 82 -60 l 1
+ 82 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+EndSplineSet
+EndChar
+StartChar: afii57794
+Encoding: 1461 1461
+Width: 211
+Flags: W
+HStem: -142 82<0 81 129 212>
+Fore
+0 -60 m 1
+ 82 -60 l 1
+ 82 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+129 -60 m 1
+ 212 -60 l 1
+ 212 -142 l 1
+ 129 -142 l 1
+ 129 -60 l 1
+EndSplineSet
+EndChar
+StartChar: afii57795
+Encoding: 1462 1462
+Width: 211
+Flags: W
+HStem: -254 82<65 147> -142 82<0 81 129 212>
+Fore
+65 -172 m 1
+ 147 -172 l 1
+ 147 -254 l 1
+ 65 -254 l 1
+ 65 -172 l 1
+0 -60 m 1
+ 82 -60 l 1
+ 82 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+129 -60 m 1
+ 212 -60 l 1
+ 212 -142 l 1
+ 129 -142 l 1
+ 129 -60 l 1
+EndSplineSet
+EndChar
+StartChar: afii57798
+Encoding: 1463 1463
+Width: 200
+Flags: W
+HStem: -142 82<0 200>
+Fore
+0 -60 m 1
+ 200 -60 l 1
+ 200 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+EndSplineSet
+EndChar
+StartChar: afii57797
+Encoding: 1464 1464
+Width: 200
+Flags: W
+HStem: -142 82<0 59 141 200>
+VStem: 59 82<-248 -142>
+Fore
+141 -142 m 1
+ 141 -248 l 1
+ 59 -248 l 1
+ 59 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+ 200 -60 l 1
+ 200 -142 l 1
+ 141 -142 l 1
+EndSplineSet
+MinimumDistance: y0,2 y0,1 x3,5 x3,4 x0,6 x0,7 
+EndChar
+StartChar: afii57806
+Encoding: 1465 1465
+Width: 82
+Flags: W
+HStem: 722 20G<0 82>
+Fore
+0 742 m 1
+ 82 742 l 1
+ 82 660 l 1
+ 0 660 l 1
+ 0 742 l 1
+EndSplineSet
+EndChar
+StartChar: afii57796
+Encoding: 1467 1467
+Width: 341
+Flags: W
+HStem: -254 82<259 341> -195 82<129 212>
+Fore
+259 -172 m 1
+ 341 -172 l 1
+ 341 -254 l 1
+ 259 -254 l 1
+ 259 -172 l 1
+129 -113 m 1
+ 212 -113 l 1
+ 212 -195 l 1
+ 129 -195 l 1
+ 129 -113 l 1
+0 -60 m 1
+ 82 -60 l 1
+ 82 -142 l 1
+ 0 -142 l 1
+ 0 -60 l 1
+EndSplineSet
+EndChar
+StartChar: afii57807
+Encoding: 1468 1468
+Width: 82
+Flags: W
+Fore
+0 339 m 1
+ 82 339 l 1
+ 82 257 l 1
+ 0 257 l 1
+ 0 339 l 1
+EndSplineSet
+EndChar
+StartChar: afii57839
+Encoding: 1469 1469
+Width: 82
+Flags: W
+VStem: 0 82<-248 -60>
+Fore
+82 -60 m 1
+ 82 -248 l 1
+ 0 -248 l 1
+ 0 -60 l 1
+ 82 -60 l 1
+EndSplineSet
+EndChar
+StartChar: afii57645
+Encoding: 1470 1470
+Width: 516
+Flags: W
+HStem: 485 115<63 444>
+Fore
+63 485 m 1
+ 63 600 l 1
+ 444 600 l 1
+ 444 485 l 1
+ 63 485 l 1
+EndSplineSet
+EndChar
+StartChar: afii57841
+Encoding: 1471 1471
+Width: 200
+Flags: W
+HStem: 660 82<0 200>
+Fore
+0 742 m 1
+ 200 742 l 1
+ 200 660 l 1
+ 0 660 l 1
+ 0 742 l 1
+EndSplineSet
+EndChar
+StartChar: afii57842
+Encoding: 1472 1472
+Width: 297
+Flags: W
+HStem: 680 20G<79 218>
+VStem: 79 139<-100 700>
+Fore
+79 -100 m 1
+ 79 700 l 1
+ 218 700 l 1
+ 218 -100 l 1
+ 79 -100 l 1
+EndSplineSet
+MinimumDistance: x2,-1 
+EndChar
+StartChar: afii57804
+Encoding: 1473 1473
+Width: 1038
+Flags: W
+HStem: 701 20G<650 732>
+Fore
+650 721 m 1
+ 732 721 l 1
+ 732 639 l 1
+ 650 639 l 1
+ 650 721 l 1
+EndSplineSet
+EndChar
+StartChar: afii57803
+Encoding: 1474 1474
+Width: 1038
+Flags: W
+HStem: 701 20G<101 183>
+Fore
+101 721 m 1
+ 183 721 l 1
+ 183 639 l 1
+ 101 639 l 1
+ 101 721 l 1
+EndSplineSet
+EndChar
+StartChar: afii57658
+Encoding: 1475 1475
+Width: 333
+Flags: W
+HStem: 0 146<113 263> 374 146<113 263>
+VStem: 113 150<0 146 374 520>
+Ref: 58 N 1 0 0 1 0 0
+EndChar
+StartChar: uni05C4
+Encoding: 1476 1476
+Width: 82
+Flags: W
+HStem: 722 20G<0 82>
+Fore
+0 742 m 1
+ 82 742 l 1
+ 82 660 l 1
+ 0 660 l 1
+ 0 742 l 1
+EndSplineSet
 EndChar
 StartChar: afii57664
 Encoding: 1488 1488
 Width: 714
-Flags: HW
-HStem: 0 115 485 115
-VStem: 89 139<0 148> 482 139<444 600>
+Flags: W
+HStem: 0 21G<89 228 487 650>
+VStem: 89 139<0 148> 482 139<443 600>
+DStem: 61 600 222 600 212 388 425 315 286 285 498 212 487 0 650 0
 Fore
 286 285 m 1
  247 237 241 207 228 148 c 1
@@ -14447,532 +14942,556 @@ Fore
  487 0 l 1
  286 285 l 1
 EndSplineSet
+MinimumDistance: x16,-1 
 EndChar
 StartChar: afii57665
 Encoding: 1489 1489
-Width: 650
-Flags: HW
-HStem: 0 115<76 379 518 609> 485 115<76 246>
-VStem: 379 139<115 365 365 365>
+Width: 651
+Flags: W
+HStem: 0 115<77 380 518 610> 485 115<77 247>
+VStem: 380 139<115 365>
 Fore
-379 115 m 1
- 379 365 l 1
- 371 400 370 415 349 444 c 0
- 339 457 345 451 332 459 c 0
- 300 477 283 478 246 485 c 1
- 76 485 l 1
- 76 600 l 1
- 258 600 l 1
- 319 593 356 584 408 556 c 0
- 433 544 457 522 469 502 c 1
- 502 456 510 425 518 374 c 1
- 518 115 l 1
- 609 115 l 1
- 609 0 l 1
- 76 0 l 1
- 76 115 l 1
- 379 115 l 1
+380 115 m 1
+ 380 365 l 1
+ 372 400 371 415 350 444 c 0
+ 340 457 346 451 333 459 c 0
+ 301 477 284 478 247 485 c 1
+ 77 485 l 1
+ 77 600 l 1
+ 259 600 l 1
+ 320 593 357 584 409 556 c 0
+ 434 544 458 522 470 502 c 1
+ 503 456 511 425 519 374 c 1
+ 519 115 l 1
+ 610 115 l 1
+ 610 0 l 1
+ 77 0 l 1
+ 77 115 l 1
+ 380 115 l 1
 EndSplineSet
+MinimumDistance: x12,-1 x11,13 x11,12 x0,14 x0,15 
 EndChar
 StartChar: afii57666
 Encoding: 1490 1490
-Width: 555
-Flags: HW
-HStem: 485 115<113 186>
+Width: 557
+Flags: W
+HStem: 0 21G<47 220 363 503>
+DStem: 224 194 347 138 47 0 220 0 322 361 460 378 341 194 503 0
 Fore
-345 138 m 1
- 218 0 l 1
- 45 0 l 1
- 222 194 l 1
- 339 194 l 1
- 320 361 l 1
- 310 401 309 416 290 444 c 1
- 279 457 286 451 272 459 c 0
- 240 477 223 478 186 485 c 1
- 113 485 l 1
- 113 600 l 1
- 198 600 l 1
- 260 593 296 584 348 556 c 0
- 373 544 397 522 410 502 c 0
- 443 455 447 422 458 378 c 1
- 501 0 l 1
- 361 0 l 1
- 345 138 l 1
+347 138 m 1
+ 220 0 l 1
+ 47 0 l 1
+ 224 194 l 1
+ 341 194 l 1
+ 322 361 l 1
+ 312 401 311 416 292 444 c 1
+ 281 457 288 451 274 459 c 0
+ 242 477 225 478 188 485 c 1
+ 115 485 l 1
+ 115 600 l 1
+ 200 600 l 1
+ 262 593 298 584 350 556 c 0
+ 375 544 399 522 412 502 c 0
+ 445 455 449 422 460 378 c 1
+ 503 0 l 1
+ 363 0 l 1
+ 347 138 l 1
 EndSplineSet
+MinimumDistance: x15,-1 
 EndChar
 StartChar: afii57667
 Encoding: 1491 1491
-Width: 637
-Flags: HW
-HStem: 485 115<62 343 482 482 482 565>
-VStem: 343 139<0 485>
+Width: 638
+Flags: W
+HStem: 0 21G<344 483> 485 115<63 344 483 566>
+VStem: 344 139<0 485>
 Fore
-343 485 m 1
- 62 485 l 1
- 62 600 l 1
- 565 600 l 1
- 565 485 l 1
- 482 485 l 1
- 482 0 l 1
- 343 0 l 1
- 343 485 l 1
+344 485 m 1
+ 63 485 l 1
+ 63 600 l 1
+ 566 600 l 1
+ 566 485 l 1
+ 483 485 l 1
+ 483 0 l 1
+ 344 0 l 1
+ 344 485 l 1
 EndSplineSet
+MinimumDistance: x3,-1 y0,6 y0,7 x5,3 x5,4 x0,2 x0,1 
 EndChar
 StartChar: afii57668
 Encoding: 1492 1492
-Width: 680
-Flags: HW
-HStem: 0 349<78 217> 485 115<78 339>
-VStem: 78 139<0 349> 472 139<0 365 365 365>
+Width: 682
+Flags: W
+HStem: 0.40625 21G<79 218 473 612> 485.406 115<79 340>
+VStem: 79 139<15 337> 473 139<15 365>
 Fore
-611 374 m 1
- 611 0 l 1
- 472 0 l 1
- 472 365 l 1
- 464 400 463 415 442 444 c 0
- 432 457 439 451 425 459 c 0
- 393 477 376 478 339 485 c 1
- 78 485 l 1
- 78 600 l 1
- 351 600 l 1
- 412 593 449 584 501 556 c 0
- 526 544 550 522 563 502 c 0
- 595 456 603 425 611 374 c 1
-78 0 m 1
- 78 349 l 1
- 217 349 l 1
- 217 0 l 1
- 78 0 l 1
+612 374 m 2
+ 612 374.406 l 1
+ 612 0.40625 l 1
+ 473 0.40625 l 1
+ 473 365.406 l 1
+ 465 400.406 464 415.406 443 444.406 c 0
+ 433 457.406 440 451.406 426 459.406 c 0
+ 394 477.406 377 478.406 340 485.406 c 1
+ 79 485.406 l 1
+ 79 600.406 l 1
+ 352 600.406 l 1
+ 413 593.406 450 584.406 502 556.406 c 0
+ 527 544.406 551 522.406 564 502.406 c 0
+ 596 456.406 604 425.406 612 374 c 2
+79 0.40625 m 1
+ 79 349.406 l 1
+ 218 349.406 l 1
+ 218 0.40625 l 1
+ 79 0.40625 l 1
 EndSplineSet
+MinimumDistance: x0,-1 
 EndChar
 StartChar: afii57669
 Encoding: 1493 1493
-Width: 295
-Flags: HW
-HStem: 0 115 485 115
-VStem: 78 139<0 600>
+Width: 297
+Flags: W
+HStem: 0 21G<79 218>
+VStem: 79 139<0 600>
 Fore
-78 0 m 1
- 78 600 l 1
- 217 600 l 1
- 217 0 l 1
- 78 0 l 1
+79 0 m 1
+ 79 600 l 1
+ 218 600 l 1
+ 218 0 l 1
+ 79 0 l 1
 EndSplineSet
+MinimumDistance: x2,-1 
 EndChar
 StartChar: afii57670
 Encoding: 1494 1494
-Width: 442
-Flags: HW
-HStem: 485 115<62 148 287 287 287 370>
-VStem: 148 139<0 485>
+Width: 443
+Flags: W
+HStem: 0 21G<149 288> 485 115<63 149 288 371>
+VStem: 149 139<0 485>
 Fore
-148 485 m 1
- 62 485 l 1
- 62 600 l 1
- 370 600 l 1
- 370 485 l 1
- 287 485 l 1
- 287 0 l 1
- 148 0 l 1
- 148 485 l 1
+149 485 m 1
+ 63 485 l 1
+ 63 600 l 1
+ 371 600 l 1
+ 371 485 l 1
+ 288 485 l 1
+ 288 0 l 1
+ 149 0 l 1
+ 149 485 l 1
 EndSplineSet
+MinimumDistance: x3,-1 y0,6 y0,7 x5,3 x5,4 x0,2 x0,1 
 EndChar
 StartChar: afii57671
 Encoding: 1495 1495
-Width: 680
-Flags: HW
-HStem: 485 115<217 339 217 217>
-VStem: 78 139<0 485> 472 139<0 365 365 365>
+Width: 682
+Flags: W
+HStem: 0 21G<79 218 473 612> 485 115<218 340>
+VStem: 79 139<0 485> 473 139<0 365>
 Fore
-611 374 m 1
- 611 0 l 1
- 472 0 l 1
- 472 365 l 1
- 464 400 463 415 442 444 c 0
- 432 457 439 451 425 459 c 0
- 393 477 376 478 339 485 c 1
- 217 485 l 1
- 217 0 l 1
- 78 0 l 1
- 78 600 l 1
- 351 600 l 1
- 413 597 449 584 501 556 c 0
- 526 544 550 522 563 502 c 0
- 595 456 603 425 611 374 c 1
+612 374 m 1
+ 612 0 l 1
+ 473 0 l 1
+ 473 365 l 1
+ 465 400 464 415 443 444 c 0
+ 433 457 440 451 426 459 c 0
+ 394 477 377 478 340 485 c 1
+ 218 485 l 1
+ 218 0 l 1
+ 79 0 l 1
+ 79 600 l 1
+ 352 600 l 1
+ 414 597 450 584 502 556 c 0
+ 527 544 551 522 564 502 c 0
+ 596 456 604 425 612 374 c 1
 EndSplineSet
+MinimumDistance: x0,-1 y7,9 y7,8 
 EndChar
 StartChar: afii57672
 Encoding: 1496 1496
-Width: 669
-Flags: HW
-HStem: 485 115<328 359.5>
-VStem: 76 139<235 600> 470 139<235 365 365 365>
+Width: 670
+Flags: W
+HStem: 485 115<331 348>
+VStem: 76.1875 139.001<234 600>
 Fore
-340 485 m 0
- 313 485 294 473 294 473 c 1
- 294 595 l 1
- 307 597 311 600 345 600 c 0
- 406 600 456 580 499 556 c 1
- 524 544 547 522 560 502 c 0
- 592 456 601 425 609 374 c 1
- 609 226 l 1
- 601 175 592 144 560 98 c 0
- 547 78 524 56 499 44 c 1
- 458 21 407 0 342 0 c 0
- 278 0 227 21 186 44 c 1
- 161 56 138 78 125 98 c 0
- 93 144 84 175 76 226 c 1
- 76 600 l 1
- 215 600 l 1
- 215 235 l 1
- 223 200 224 185 245 156 c 1
- 256 143 249 149 262 141 c 0
- 306 118 307 116 342 115 c 1
- 378 116 379 118 422 141 c 0
- 436 149 429 143 440 156 c 1
- 461 185 462 200 470 235 c 1
- 470 365 l 1
- 462 400 461 415 440 444 c 1
- 429 457 436 451 422 459 c 0
- 381 480 379 485 340 485 c 0
+340 485 m 2
+ 340.188 485 l 2
+ 313.188 485 294.188 473 294.188 473 c 1
+ 294.188 595 l 1
+ 307.188 597 311.188 600 345.188 600 c 0
+ 406.188 600 456.188 580 499.188 556 c 1
+ 524.188 544 547.188 522 560.188 502 c 0
+ 592.188 456 601.188 425 609.188 374 c 1
+ 609.188 226 l 1
+ 601.188 175 592.188 144 560.188 98 c 0
+ 547.188 78 524.188 56 499.188 44 c 1
+ 458.188 21 407.188 0 342.188 0 c 0
+ 278.188 0 227.188 21 186.188 44 c 1
+ 161.188 56 138.188 78 125.188 98 c 0
+ 93.1875 144 84.1875 175 76.1875 226 c 1
+ 76.1875 600 l 1
+ 215.188 600 l 1
+ 215.188 235 l 1
+ 223.188 200 224.188 185 245.188 156 c 1
+ 256.188 143 249.188 149 262.188 141 c 0
+ 306.188 118 307.188 116 342.188 115 c 1
+ 378.188 116 379.188 118 422.188 141 c 0
+ 436.188 149 429.188 143 440.188 156 c 1
+ 461.188 185 462.188 200 470.188 235 c 1
+ 470.188 365 l 1
+ 462.188 400 461.188 415 440.188 444 c 1
+ 429.188 457 436.188 451 422.188 459 c 0
+ 381.188 480 379.188 485 340 485 c 2
 EndSplineSet
+MinimumDistance: x16,-1 
 EndChar
 StartChar: afii57673
 Encoding: 1497 1497
-Width: 283
-Flags: HW
-HStem: 485 115
-VStem: 72 139<333 600>
+Width: 284
+Flags: W
+VStem: 73 139<332 600>
 Fore
-211 333 m 1
- 72 276 l 1
- 72 600 l 1
- 211 600 l 1
- 211 333 l 1
+212 333 m 1
+ 73 276 l 1
+ 73 600 l 1
+ 212 600 l 1
+ 212 333 l 1
 EndSplineSet
+MinimumDistance: x0,-1 
 EndChar
 StartChar: afii57674
 Encoding: 1498 1498
-Width: 589
-Flags: HW
-HStem: 485 115<61 247>
-VStem: 380 139<-200 365 365 365>
+Width: 590
+Flags: W
+HStem: 485 115<62 248>
+VStem: 381 139<-200 365>
 Fore
-380 -200 m 1
- 380 365 l 1
- 372 400 371 415 350 444 c 1
- 339 457 346 451 332 459 c 0
- 301 477 284 478 247 485 c 1
- 61 485 l 1
- 61 600 l 1
- 258 600 l 1
- 320 593 356 584 409 556 c 0
- 434 544 457 522 470 502 c 0
- 502 456 511 425 519 374 c 1
- 519 -200 l 1
- 380 -200 l 1
+381 -200 m 1
+ 381 365 l 1
+ 373 400 372 415 351 444 c 1
+ 340 457 347 451 333 459 c 0
+ 302 477 285 478 248 485 c 1
+ 62 485 l 1
+ 62 600 l 1
+ 259 600 l 1
+ 321 593 357 584 410 556 c 0
+ 435 544 458 522 471 502 c 0
+ 503 456 512 425 520 374 c 1
+ 520 -200 l 1
+ 381 -200 l 1
 EndSplineSet
+MinimumDistance: x10,-1 
 EndChar
 StartChar: afii57675
 Encoding: 1499 1499
-Width: 593
-Flags: HW
-HStem: 0 115<75 261> 485 115<75 261>
-VStem: 394 139<235 365 365 365>
+Width: 595
+Flags: W
+HStem: 0 115<90 261> 485 115<90 261>
 Fore
-272 0 m 1
- 75 0 l 1
- 75 115 l 1
- 261 115 l 1
- 298 122 315 123 346 141 c 0
- 360 149 353 143 364 156 c 1
- 385 185 386 200 394 235 c 1
- 394 365 l 1
- 386 400 385 415 364 444 c 1
- 353 457 360 451 346 459 c 0
- 315 477 298 478 261 485 c 1
- 75 485 l 1
- 75 600 l 1
- 272 600 l 1
- 334 593 370 584 423 556 c 0
- 448 544 471 522 484 502 c 0
- 516 456 525 425 533 374 c 1
- 533 226 l 1
- 525 175 516 144 484 98 c 0
- 471 78 448 56 423 44 c 0
- 370 16 334 7 272 0 c 1
+273 0 m 2
+ 272.625 0 l 1
+ 75.625 0 l 1
+ 75.625 115 l 1
+ 261.625 115 l 1
+ 298.625 122 315.625 123 346.625 141 c 0
+ 360.625 149 353.625 143 364.625 156 c 1
+ 385.625 185 386.625 200 394.625 235 c 1
+ 394.625 365 l 1
+ 386.625 400 385.625 415 364.625 444 c 1
+ 353.625 457 360.625 451 346.625 459 c 0
+ 315.625 477 298.625 478 261.625 485 c 1
+ 75.625 485 l 1
+ 75.625 600 l 1
+ 272.625 600 l 1
+ 334.625 593 370.625 584 423.625 556 c 0
+ 448.625 544 471.625 522 484.625 502 c 0
+ 516.625 456 525.625 425 533.625 374 c 1
+ 533.625 226 l 1
+ 525.625 175 516.625 144 484.625 98 c 0
+ 471.625 78 448.625 56 423.625 44 c 0
+ 370.625 16 334.625 7 273 0 c 2
 EndSplineSet
 EndChar
 StartChar: afii57676
 Encoding: 1500 1500
-Width: 666
-Flags: HW
-HStem: 485 115<200 455> 485 265<61 200>
-VStem: 61 139<600 750> 270 139<0 101> 455 139<419 485 485 485>
+Width: 667
+Flags: W
+HStem: 0 21G<271 410> 485 115<200 456> 730 20G<62 201>
+VStem: 62 139<599 750>
 Fore
-409 101 m 2
- 409 0 l 1
- 270 0 l 1
- 270 107 l 1
- 276 154 274 188 306 233 c 0
- 354 299 416 312 432 337 c 0
- 451 365 449 380 455 419 c 1
- 455 485 l 1
- 61 485 l 1
- 61 750 l 1
- 200 750 l 1
- 200 600 l 1
- 594 600 l 1
- 594 412 l 1
- 591 372 589 333 558 287 c 0
- 512 218 448 202 432 183 c 0
- 411 157 409 141 409 101 c 2
+410 101 m 2
+ 410 0 l 1
+ 271 0 l 1
+ 271 107 l 1
+ 277 154 275 188 307 233 c 0
+ 355 299 417 312 433 337 c 0
+ 452 365 450 380 456 419 c 1
+ 456 485 l 1
+ 62 485 l 1
+ 62 750 l 1
+ 201 750 l 1
+ 201 600 l 1
+ 595 600 l 1
+ 595 412 l 1
+ 592 372 590 333 559 287 c 0
+ 513 218 449 202 433 183 c 0
+ 412 157 410 141 410 101 c 2
 EndSplineSet
+MinimumDistance: x12,-1 y11,9 y11,10 y13,11 x11,13 x11,12 
 EndChar
 StartChar: afii57677
 Encoding: 1501 1501
-Width: 682
-Flags: HW
-HStem: 0 115<218 473> 485 115<218 345 218 218>
-VStem: 79 139<115 485> 473 139<115 369>
+Width: 683
+Flags: W
+HStem: 0 115<219 474> 485 115<219 346>
+VStem: 80 139<115 485> 474 139<115 369>
 Fore
-612 0 m 1
- 79 0 l 1
- 79 600 l 1
- 345 600 l 2
- 418 600 472 575 502 556 c 0
- 555 523 612 454 612 369 c 2
- 612 0 l 1
-473 115 m 1
- 473 369 l 1
- 471 407 449 445 425 459 c 0
- 399 475 372 484 345 485 c 2
- 218 485 l 1
- 218 115 l 1
- 473 115 l 1
+613 0 m 1
+ 80 0 l 1
+ 80 600 l 1
+ 346 600 l 2
+ 419 600 473 575 503 556 c 0
+ 556 523 613 454 613 369 c 2
+ 613 0 l 1
+474 115 m 1
+ 474 369 l 1
+ 472 407 450 445 426 459 c 0
+ 400 475 374 484 346 485 c 2
+ 219 485 l 1
+ 219 115 l 1
+ 474 115 l 1
 EndSplineSet
+MinimumDistance: x0,-1 
 EndChar
 StartChar: afii57678
 Encoding: 1502 1502
-Width: 690
-Flags: HW
-HStem: 0 115<306 473> 485 115
-VStem: 79 139<0 196 493 600> 473 139<115 482 482 482>
+Width: 704
+Flags: W
+HStem: 0 115<363 494> 485 115<67 158 297 388>
+VStem: 494 139<115 385>
+DStem: 158 485 298 485 86 0 226 0
 Fore
-169 438 m 1
- 79 438 l 1
- 79 600 l 1
- 218 600 l 1
- 218 493 l 1
- 288 566 375 600 471 600 c 2
- 612 600 l 1
- 612 0 l 1
- 306 0 l 1
- 306 115 l 1
- 473 115 l 1
- 473 482 l 1
- 438 475 385 460 348 436 c 0
- 324 420 303 401 282 368 c 0
- 252 324 217 252 218 196 c 1
- 218 0 l 1
- 79 0 l 1
- 79 196 l 1
- 80 288 128 381 169 438 c 1
+298 485 m 1
+ 226 0 l 1
+ 86 0 l 1
+ 158 485 l 1
+ 67 485 l 1
+ 67 600 l 1
+ 367 600 l 2
+ 397 600 443 597 490 575 c 0
+ 543 551 581 516 606 474 c 0
+ 631 434 633 395 633 369 c 2
+ 633 0 l 1
+ 363 0 l 1
+ 363 115 l 1
+ 494 115 l 1
+ 494 369 l 2
+ 494 390 492 404 482 420 c 0
+ 459 454 458 456 421 475 c 0
+ 405 483 387 485 367 485 c 2
+ 298 485 l 1
 EndSplineSet
+MinimumDistance: x9,-1 x13,11 x13,12 
 EndChar
 StartChar: afii57679
 Encoding: 1503 1503
-Width: 295
-Flags: HW
-HStem: -200 115 485 115
-VStem: 78 139<-200 600>
+Width: 297
+Flags: W
+VStem: 79 139<-200 600>
 Fore
-78 -200 m 1
- 78 600 l 1
- 217 600 l 1
- 217 -200 l 1
- 78 -200 l 1
+79 -200 m 1
+ 79 600 l 1
+ 218 600 l 1
+ 218 -200 l 1
+ 79 -200 l 1
 EndSplineSet
+MinimumDistance: x2,-1 
 EndChar
 StartChar: afii57680
 Encoding: 1504 1504
-Width: 428
-Flags: HW
-HStem: 0 115<72 219> 485 115<83 97.5>
-VStem: 219 139<115 365 365 365>
+Width: 429
+Flags: W
+HStem: 0 115<73 220> 485 115<84.0626 100.532>
+VStem: 220 139<115 365>
 Fore
-358 0 m 1
- 72 0 l 1
- 72 115 l 1
- 219 115 l 1
- 219 365 l 1
- 211 400 210 415 189 444 c 0
- 180 455 185 450 169 461 c 1
- 145 475 112 485 83 485 c 1
- 83 600 l 1
- 152 600 214 576 250 555 c 0
- 271 543 295 524 309 502 c 0
- 341 456 355 425 358 374 c 1
- 358 0 l 1
+359 0 m 1
+ 73 0 l 1
+ 73 115 l 1
+ 220 115 l 1
+ 220 365 l 1
+ 212 400 211 415 190 444 c 0
+ 181 455 186 450 170 461 c 1
+ 146 475 113 485 84 485 c 1
+ 84 600 l 1
+ 153 600 215 576 251 555 c 0
+ 272 543 296 524 310 502 c 0
+ 342 456 356 425 359 374 c 1
+ 359 0 l 1
 EndSplineSet
+MinimumDistance: x0,-1 x3,1 x3,2 
 EndChar
 StartChar: afii57681
 Encoding: 1505 1505
-Width: 669
-Flags: HW
-HStem: 485 115<215 337 215 215>
-VStem: 76 139<235 485> 470 139<235 365 365 365>
+Width: 670
+Flags: W
+HStem: 0 21G<341.516 342> 485 115<218 336>
+VStem: 75.5156 139<234 485>
 Fore
-342 0 m 1
- 278 -1 227 21 186 44 c 1
- 161 56 138 78 125 98 c 0
- 93 144 79 175 76 226 c 1
- 76 600 l 1
- 348 600 l 1
- 410 597 446 584 499 556 c 0
- 524 544 547 522 560 502 c 0
- 592 456 601 425 609 374 c 1
- 609 226 l 1
- 601 175 592 144 560 98 c 0
- 547 78 524 56 499 44 c 1
- 458 21 407 -1 342 0 c 1
-342 115 m 1
- 378 116 379 118 422 141 c 0
- 436 149 429 143 440 156 c 1
- 461 185 462 200 470 235 c 1
- 470 365 l 1
- 462 400 461 415 440 444 c 1
- 429 457 436 451 422 459 c 0
- 391 477 374 478 337 485 c 1
- 215 485 l 1
- 215 235 l 1
- 223 200 224 185 245 156 c 1
- 256 143 249 149 262 141 c 0
- 306 118 307 116 342 115 c 1
+342 0 m 2
+ 341.516 0 l 2
+ 277.516 -1 226.516 21 185.516 44 c 1
+ 160.516 56 137.516 78 124.516 98 c 0
+ 92.5156 144 78.5156 175 75.5156 226 c 1
+ 75.5156 600 l 1
+ 347.516 600 l 1
+ 409.516 597 445.516 584 498.516 556 c 0
+ 523.516 544 546.516 522 559.516 502 c 0
+ 591.516 456 600.516 425 608.516 374 c 1
+ 608.516 226 l 1
+ 600.516 175 591.516 144 559.516 98 c 0
+ 546.516 78 523.516 56 498.516 44 c 1
+ 457.516 21 406.516 -1 342 0 c 2
+341.516 115 m 1
+ 377.516 116 378.516 118 421.516 141 c 0
+ 435.516 149 428.516 143 439.516 156 c 1
+ 460.516 185 461.516 200 469.516 235 c 1
+ 469.516 365 l 1
+ 461.516 400 460.516 415 439.516 444 c 1
+ 428.516 457 435.516 451 421.516 459 c 0
+ 390.516 477 373.516 478 336.516 485 c 1
+ 214.516 485 l 1
+ 214.516 235 l 1
+ 222.516 200 223.516 185 244.516 156 c 1
+ 255.516 143 248.516 149 261.516 141 c 0
+ 305.516 118 306.516 116 341.516 115 c 1
 EndSplineSet
+MinimumDistance: x21,-1 
 EndChar
 StartChar: afii57682
 Encoding: 1506 1506
-Width: 651
-Flags: HW
-HStem: 485 115
-VStem: 439 139<262 600>
+Width: 653
+Flags: W
+VStem: 440 139<261 600>
+DStem: 99 600 241 600 212 101 346 136
 Fore
-345 136 m 1
- 375 148 388 153 404 171 c 0
- 430 198 429 216 439 262 c 1
- 439 600 l 1
- 578 600 l 1
- 578 252 l 1
- 568 197 564 155 515 101 c 0
- 471 53 428 41 376 21 c 1
- 59 -55 l 1
- 59 65 l 1
- 211 101 l 1
- 98 600 l 1
- 240 600 l 1
- 345 136 l 1
+346 136 m 1
+ 376 148 389 153 405 171 c 0
+ 431 198 430 216 440 262 c 1
+ 440 600 l 1
+ 579 600 l 1
+ 579 252 l 1
+ 569 197 565 155 516 101 c 0
+ 472 53 429 41 377 21 c 1
+ 60 -55 l 1
+ 60 65 l 1
+ 212 101 l 1
+ 99 600 l 1
+ 241 600 l 1
+ 346 136 l 1
 EndSplineSet
+MinimumDistance: x4,-1 
 EndChar
 StartChar: afii57683
 Encoding: 1507 1507
-Width: 659
-Flags: HW
-HStem: 485 115<210 317 210 210>
-VStem: 71 139<416 485> 450 139<-200 364 364 364>
+Width: 661
+Flags: W
+HStem: 241 115<254 319> 486 115<211.062 297.221>
+VStem: 72 139<391 486> 451 139<-200 368>
 Fore
-589 -200 m 1
- 450 -200 l 1
- 450 364 l 1
- 442 399 441 414 420 443 c 1
- 409 456 416 450 403 459 c 1
- 371 476 354 478 317 485 c 1
- 210 485 l 1
- 210 416 l 1
- 216 394 214 388 226 376 c 0
- 242 359 237 363 265 352 c 0
- 270 349 319 347 319 347 c 1
- 319 232 l 1
- 315 233 266 229 212 245 c 0
- 176 256 138 278 113 308 c 0
- 83 343 75 370 71 406 c 1
- 71 600 l 1
- 329 600 l 1
- 384 595 426 583 479 555 c 0
- 503 543 527 521 540 501 c 0
- 572 455 581 424 589 373 c 1
- 589 -200 l 1
+451 -200 m 1
+ 451 367 l 1
+ 447 399 449 407 439 421 c 0
+ 416 455 415 457 377 476 c 0
+ 358 486 258 486 211 486 c 1
+ 211 407 l 2
+ 211 385 212 371 222 364 c 0
+ 233 356 241 356 266 356 c 2
+ 319 356 l 1
+ 319 241 l 1
+ 254 241 l 1
+ 217 246 171 244 121 284 c 1
+ 72 328 72 370 72 398 c 2
+ 72 601 l 1
+ 328 601 l 2
+ 364 600 399 598 447 576 c 0
+ 500 552 538 517 563 475 c 0
+ 589 433 586 404 590 373 c 1
+ 590 -200 l 1
+ 451 -200 l 1
 EndSplineSet
+MinimumDistance: x17,-1 
 EndChar
 StartChar: afii57684
 Encoding: 1508 1508
-Width: 656
-Flags: HW
-HStem: 0 115<78 324> 485 115<217 324 217 217>
-VStem: 78 139<424 485> 457 139<235 364 364 364>
+Width: 660
+Flags: W
+HStem: 0 115<94 327> 240 115<261 320> 485 115<218.312 304.48>
+VStem: 79.2656 139<383 485>
 Fore
-336 0 m 1
- 78 0 l 1
- 78 115 l 1
- 324 115 l 1
- 361 122 378 123 410 140 c 1
- 423 149 416 143 427 156 c 1
- 448 185 449 200 457 235 c 1
- 457 364 l 1
- 449 399 448 414 427 443 c 1
- 416 456 423 450 410 459 c 1
- 378 476 361 478 324 485 c 1
- 217 485 l 1
- 217 424 l 1
- 223 402 222 396 233 384 c 0
- 250 367 245 371 272 360 c 0
- 277 357 327 355 327 355 c 1
- 327 241 l 1
- 322 241 273 237 219 253 c 0
- 183 265 145 286 121 316 c 0
- 91 351 83 381 78 414 c 1
- 78 600 l 1
- 336 600 l 1
- 399 593 434 583 486 555 c 0
- 510 543 534 521 547 501 c 0
- 579 455 588 424 596 373 c 1
- 596 226 l 1
- 588 175 579 144 547 98 c 0
- 534 78 510 56 486 44 c 0
- 434 16 397 7 336 0 c 1
+335 0 m 2
+ 335.266 0 l 1
+ 79.2656 0 l 1
+ 79.2656 115 l 1
+ 327.266 115 l 1
+ 363.266 119 370.266 117 384.266 125 c 0
+ 421.266 144 423.266 146 446.266 180 c 0
+ 456.266 194 454.266 201 458.266 234 c 1
+ 458.266 366 l 1
+ 454.266 399 456.266 406 446.266 420 c 0
+ 423.266 454 422.266 456 384.266 475 c 0
+ 365.266 485 265.266 485 218.266 485 c 1
+ 218.266 406 l 2
+ 218.266 384 219.266 371 229.266 364 c 0
+ 240.266 355 248.266 355 273.266 355 c 2
+ 326.266 355 l 1
+ 326.266 240 l 1
+ 261.266 240 l 1
+ 224.266 245 178.266 243 128.266 283 c 1
+ 79.2656 328 79.2656 369 79.2656 397 c 2
+ 79.2656 600 l 1
+ 335.266 600 l 2
+ 371.266 599 406.266 598 454.266 575 c 0
+ 507.266 551 545.266 516 570.266 474 c 0
+ 596.266 432 593.266 403 597.266 372 c 1
+ 597.266 228 l 1
+ 593.266 197 596.266 168 570.266 126 c 0
+ 545.266 84 507.266 49 454.266 25 c 0
+ 406.266 2 371.266 3 335 0 c 2
 EndSplineSet
+MinimumDistance: x11,-1 
 EndChar
 StartChar: afii57685
 Encoding: 1509 1509
-Width: 618
-Flags: HW
-HStem: 485 115
-VStem: 230 139<-200 249> 407 139<444 600>
+Width: 616
+Flags: W
+VStem: 228 139<-200 249> 405 139<443 600>
+DStem: 27 600 185 600 228 286 337 362
 Fore
-339 362 m 1
- 351 363 361 365 364 368 c 0
- 371 372 377 378 381 382 c 0
- 398 400 403 420 407 444 c 1
- 407 600 l 1
- 546 600 l 1
- 546 433 l 1
- 537 384 524 359 496 321 c 0
- 486 306 465 281 432 267 c 0
- 410 258 388 252 369 249 c 1
- 369 -200 l 1
- 230 -200 l 1
- 230 286 l 1
- 29 600 l 1
- 187 600 l 1
- 339 362 l 1
+337 362 m 1
+ 349 363 359 365 362 368 c 0
+ 369 372 375 378 379 382 c 0
+ 396 400 401 420 405 444 c 1
+ 405 600 l 1
+ 544 600 l 1
+ 544 433 l 1
+ 535 384 522 359 494 321 c 0
+ 484 306 463 281 430 267 c 0
+ 408 258 386 252 367 249 c 1
+ 367 -200 l 1
+ 228 -200 l 1
+ 228 286 l 1
+ 27 600 l 1
+ 185 600 l 1
+ 337 362 l 1
 EndSplineSet
+MinimumDistance: x5,-1 
 EndChar
 StartChar: afii57686
 Encoding: 1510 1510
 Width: 671
-Flags: HW
-HStem: 0 115<86 374> 485 115
-VStem: 440 139<444 600>
+Flags: W
+HStem: 0 115<86 373>
+VStem: 440 139<443 600>
+DStem: 61 600 219 600 374 115 373 362
 Fore
 373 362 m 1
  384 363 394 365 397 368 c 0
@@ -14991,102 +15510,108 @@ Fore
  219 600 l 1
  373 362 l 1
 EndSplineSet
+MinimumDistance: x5,-1 
 EndChar
 StartChar: afii57687
 Encoding: 1511 1511
-Width: 670
-Flags: HW
-HStem: 50 115 485 115<79 459>
-VStem: 79 139<-200 371> 459 139<285 485 485 485>
+Width: 672
+Flags: W
+HStem: 485.141 115<95 449>
+VStem: 80.3594 139<-185 361> 460.359 139<284 485>
 Fore
-488 94 m 0
- 436 65 402 51 334 49 c 1
- 334 165 l 1
- 340 164 l 1
- 377 171 380 168 411 190 c 0
- 424 200 418 193 429 206 c 1
- 450 235 451 250 459 285 c 1
- 459 485 l 1
- 79 485 l 1
- 79 600 l 1
- 598 600 l 1
- 598 276 l 1
- 591 226 581 194 549 148 c 0
- 536 128 512 107 488 94 c 0
-218 371 m 1
- 218 -200 l 1
- 79 -200 l 1
- 79 371 l 1
- 218 371 l 1
+489 94 m 2
+ 489.359 94.1406 l 2
+ 437.359 65.1406 403.359 51.1406 335.359 49.1406 c 1
+ 335.359 165.141 l 1
+ 341.359 164.141 l 1
+ 378.359 171.141 381.359 168.141 412.359 190.141 c 0
+ 425.359 200.141 419.359 193.141 430.359 206.141 c 1
+ 451.359 235.141 452.359 250.141 460.359 285.141 c 1
+ 460.359 485.141 l 1
+ 80.3594 485.141 l 1
+ 80.3594 600.141 l 1
+ 599.359 600.141 l 1
+ 599.359 276.141 l 1
+ 592.359 226.141 582.359 194.141 550.359 148.141 c 0
+ 537.359 128.141 513.359 107.141 489 94 c 2
+219.359 371.141 m 1
+ 219.359 -199.859 l 1
+ 80.3594 -199.859 l 1
+ 80.3594 371.141 l 1
+ 219.359 371.141 l 1
 EndSplineSet
+MinimumDistance: x11,-1 x8,10 x8,9 
 EndChar
 StartChar: afii57688
 Encoding: 1512 1512
-Width: 598
-Flags: HW
-HStem: 485 115<62 257>
-VStem: 390 139<0 365 365 365>
+Width: 600
+Flags: W
+HStem: 0.40625 21G<391 530> 485.406 115<63 258>
+VStem: 391 139<15 365>
 Fore
-529 374 m 1
- 529 0 l 1
- 390 0 l 1
- 390 365 l 1
- 382 400 381 415 360 444 c 0
- 350 457 357 451 343 459 c 0
- 311 477 294 478 257 485 c 1
- 62 485 l 1
- 62 600 l 1
- 269 600 l 1
- 330 593 367 584 419 556 c 0
- 444 544 468 522 481 502 c 0
- 513 456 521 425 529 374 c 1
+530 374 m 2
+ 530 374.406 l 1
+ 530 0.40625 l 1
+ 391 0.40625 l 1
+ 391 365.406 l 1
+ 383 400.406 382 415.406 361 444.406 c 0
+ 351 457.406 358 451.406 344 459.406 c 0
+ 312 477.406 295 478.406 258 485.406 c 1
+ 63 485.406 l 1
+ 63 600.406 l 1
+ 270 600.406 l 1
+ 331 593.406 368 584.406 420 556.406 c 0
+ 445 544.406 469 522.406 482 502.406 c 0
+ 514 456.406 522 425.406 530 374 c 2
 EndSplineSet
+MinimumDistance: x0,-1 
 EndChar
 StartChar: afii57689
 Encoding: 1513 1513
-Width: 839
-Flags: HW
-HStem: 0 115<348 494> 208 115 485 115
-VStem: 76 139<323 600> 351 139<392 600> 627 139<235 600>
+Width: 840
+Flags: W
+HStem: 0 115<363 477>
+VStem: 76 139<323 600> 351 139<383 600> 627 139<255 600>
 Fore
 215 323 m 1
- 276 322 l 1
- 311 330 320 329 331 340 c 1
- 345 350 343 359 351 392 c 1
+ 283 323 l 2
+ 305 323 320 329 331 340 c 0
+ 345 352 351 368 351 387 c 2
  351 600 l 1
  490 600 l 1
- 490 381 l 1
- 483 341 480 303 432 260 c 1
- 384 220 340 215 290 208 c 1
- 221 208 l 1
- 225 190 230 176 245 156 c 0
- 256 143 249 149 262 141 c 0
- 294 123 311 122 348 115 c 1
- 494 115 l 1
- 531 122 548 123 580 141 c 0
- 594 149 587 143 597 156 c 0
- 618 185 619 200 627 235 c 1
+ 490 387 l 2
+ 490 345 476 296 432 260 c 1
+ 397 226 338 205 283 208 c 1
+ 230 208 l 1
+ 236 198 l 1
+ 263 160 268 156 310 133 c 1
+ 345 117 363 115 382 115 c 2
+ 461 115 l 2
+ 478 115 499 117 532 133 c 0
+ 575 156 580 160 606 198 c 1
+ 625 229 627 248 627 265 c 2
  627 600 l 1
  766 600 l 1
- 766 226 l 1
- 758 175 750 144 718 98 c 0
- 705 78 681 56 656 44 c 0
- 604 16 567 7 506 0 c 1
- 337 0 l 1
- 275 7 238 16 186 44 c 0
- 161 56 138 78 125 98 c 0
- 93 144 84 175 76 226 c 1
+ 766 265 l 1
+ 767 221 755 181 728 142 c 1
+ 699 97 661 61 605 34 c 1
+ 562 11 512 0 461 0 c 2
+ 382 0 l 2
+ 330 0 279 12 237 34 c 1
+ 181 61 143 97 114 142 c 1
+ 87 181 76 223 76 265 c 2
  76 600 l 1
  215 600 l 1
  215 323 l 1
 EndSplineSet
+MinimumDistance: x18,-1 
 EndChar
 StartChar: afii57690
 Encoding: 1514 1514
-Width: 754
-Flags: HW
-HStem: 485 115<123 189 328 413 328 328>
-VStem: 189 139<233 485> 546 139<0 366 366 366>
+Width: 756
+Flags: W
+HStem: 0 21G<546 685> 485 115<123 189 327 413>
+VStem: 189 139<232 485> 546 139<0 366>
 Fore
 328 485 m 1
  328 229 l 1
@@ -15114,70 +15639,72 @@ Fore
  467 478 450 478 413 485 c 1
  328 485 l 1
 EndSplineSet
+MinimumDistance: x17,-1 x11,13 x11,12 
 EndChar
 StartChar: afii57716
 Encoding: 1520 1520
-Width: 502
-Flags: HW
-HStem: 0 115 485 115
-VStem: 80 139<0 600> 319 139
+Width: 554
+Flags: W
+HStem: 0 21G<79 218 336 475>
+VStem: 79 139<0 600> 336 139<0 600>
 Fore
-80 0 m 1
- 80 600 l 1
- 219 600 l 1
- 219 0 l 1
- 80 0 l 1
-320 0 m 1
- 320 600 l 1
- 459 600 l 1
- 459 0 l 1
- 320 0 l 1
+79 0 m 1
+ 79 600 l 1
+ 218 600 l 1
+ 218 0 l 1
+ 79 0 l 1
+336 0 m 1
+ 336 600 l 1
+ 475 600 l 1
+ 475 0 l 1
+ 336 0 l 1
 EndSplineSet
+MinimumDistance: x6,-1 
 EndChar
 StartChar: afii57717
 Encoding: 1521 1521
-Width: 469
-Flags: HW
-HStem: 0 115 485 115
-VStem: 126 139<333 600> 321 139<0 600>
+Width: 550
+Flags: W
+HStem: 0 21G<332 471>
+VStem: 73 139<332 600> 332 139<0 600>
 Fore
-265 333 m 1
- 126 276 l 1
- 126 600 l 1
- 265 600 l 1
- 265 333 l 1
-321 0 m 1
- 321 600 l 1
- 460 600 l 1
- 460 0 l 1
- 321 0 l 1
+212 333 m 1
+ 73 276 l 1
+ 73 600 l 1
+ 212 600 l 1
+ 212 333 l 1
+332 0 m 1
+ 332 600 l 1
+ 471 600 l 1
+ 471 0 l 1
+ 332 0 l 1
 EndSplineSet
+MinimumDistance: x6,-1 
 EndChar
 StartChar: afii57718
 Encoding: 1522 1522
-Width: 488
-Flags: HW
-HStem: 485 115
-VStem: 72 139<333 600> 312 139<333 600>
+Width: 542
+Flags: W
+VStem: 73 139<332 600> 331 139<332 600>
 Fore
-211 333 m 1
- 72 276 l 1
- 72 600 l 1
- 211 600 l 1
- 211 333 l 1
-451 333 m 1
- 312 276 l 1
- 312 600 l 1
- 451 600 l 1
- 451 333 l 1
+212 333 m 1
+ 73 276 l 1
+ 73 600 l 1
+ 212 600 l 1
+ 212 333 l 1
+470 333 m 1
+ 331 276 l 1
+ 331 600 l 1
+ 470 600 l 1
+ 470 333 l 1
 EndSplineSet
+MinimumDistance: x4,-1 
 EndChar
 StartChar: uni05F3
 Encoding: 1523 1523
 Width: 238
-Flags: HW
-HStem: 470 259<90 146 90 90>
-VStem: 50 138<599 729>
+Flags: W
+HStem: 709 20G<50 188>
 Fore
 188 729 m 1
  188 599 l 1
@@ -15191,9 +15718,8 @@ EndChar
 StartChar: uni05F4
 Encoding: 1524 1524
 Width: 474
-Flags: HW
-HStem: 470 259<90 146 90 90 326 326 326 382>
-VStem: 50 138<599 729> 286 138<599 729>
+Flags: W
+HStem: 709 20G<50 188 286 424>
 Fore
 188 729 m 1
  188 599 l 1
@@ -16104,6 +16630,44 @@ Fore
  250 715 l 1
 EndSplineSet
 EndChar
+StartChar: afii57636
+Encoding: 8362 8362
+Width: 1049
+Flags: W
+HStem: 0 115<474 713> 485 115<219 545>
+VStem: 80 139<0 485> 336 139<115 378> 588 139<218 449> 840 139<230 600>
+Fore
+840 231 m 1
+ 840 600 l 1
+ 979 600 l 1
+ 979 231 l 2
+ 979 198 975 161 952 126 c 1
+ 927 84 889 49 836 25 c 1
+ 795 4 750 -1 713 0 c 2
+ 336 0 l 1
+ 336 378 l 1
+ 475 378 l 1
+ 475 115 l 1
+ 713 115 l 1
+ 735 117 753 119 767 125 c 0
+ 796 137 817 155 828 180 c 0
+ 837 199 838 210 840 231 c 1
+727 438 m 2
+ 727 218 l 1
+ 588 218 l 1
+ 588 438 l 2
+ 588 456 585 466 577 473 c 0
+ 570 480 550 485 540 485 c 2
+ 219 485 l 1
+ 219 0 l 1
+ 80 0 l 1
+ 80 600 l 1
+ 540 600 l 2
+ 579 600 633 591 678 552 c 0
+ 722 513 727 467 727 438 c 2
+EndSplineSet
+MinimumDistance: x2,-1 y20,22 y20,21 y10,8 y10,9 
+EndChar
 StartChar: Euro
 Encoding: 8364 8364
 Width: 556
@@ -16453,6 +17017,1480 @@ Fore
  311 529 l 1
 EndSplineSet
 Ligature: f l
+EndChar
+StartChar: uniFB1D
+Encoding: 64285 64285
+Width: 284
+Flags: W
+HStem: 142 82<104 186>
+VStem: 73 139<332 600>
+Fore
+212 333 m 1
+ 73 276 l 1
+ 73 600 l 1
+ 212 600 l 1
+ 212 333 l 1
+104 224 m 1
+ 186 224 l 1
+ 186 142 l 1
+ 104 142 l 1
+ 104 224 l 1
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: uniFB1E
+Encoding: 64286 64286
+Width: 305
+Flags: W
+Fore
+100 813 m 1
+ 0 813 l 1
+ 0 813 6 760 24 731 c 0
+ 37 708 48 697 71 684 c 0
+ 100 666 119 660 153 660 c 0
+ 187 660 206 666 235 684 c 0
+ 258 697 269 708 282 731 c 0
+ 300 760 306 813 306 813 c 1
+ 206 813 l 1
+ 206 813 204 789 194 778 c 0
+ 182 764 171 760 153 760 c 0
+ 135 760 124 764 112 778 c 0
+ 102 789 100 813 100 813 c 1
+EndSplineSet
+EndChar
+StartChar: afii57705
+Encoding: 64287 64287
+Width: 542
+Flags: W
+HStem: 140 82<166 366>
+VStem: 73 139<332 600> 331 139<332 600>
+Fore
+212 333 m 1
+ 73 276 l 1
+ 73 600 l 1
+ 212 600 l 1
+ 212 333 l 1
+470 333 m 1
+ 331 276 l 1
+ 331 600 l 1
+ 470 600 l 1
+ 470 333 l 1
+166 222 m 1
+ 366 222 l 1
+ 366 140 l 1
+ 166 140 l 1
+ 166 222 l 1
+EndSplineSet
+MinimumDistance: x4,-1 
+EndChar
+StartChar: uniFB20
+Encoding: 64288 64288
+Width: 653
+Flags: W
+HStem: 0 115<86 209>
+VStem: 440 139<230 600>
+DStem: 99 600 241 600 209 115 350 118
+Fore
+350 118 m 1
+ 361 120 371 125 381 131 c 0
+ 402 144 417 159 427 178 c 0
+ 436 195 440 212 440 231 c 2
+ 440 600 l 1
+ 579 600 l 1
+ 579 231 l 1
+ 580 199 574 163 552 128 c 1
+ 533 92 504 60 461 36 c 0
+ 425 15 380 -1 332 0 c 2
+ 86 0 l 1
+ 86 115 l 1
+ 209 115 l 1
+ 99 600 l 1
+ 241 600 l 1
+ 350 118 l 1
+EndSplineSet
+MinimumDistance: x5,-1 
+EndChar
+StartChar: uniFB21
+Encoding: 64289 64289
+Width: 964
+Flags: W
+HStem: 0 21G<89 228 700 900>
+VStem: 89 139<0 148> 732 139<443 600>
+DStem: 61 600 256 600 252 421 623 258 342 337 256 600 700 0 623 258 342 337 704 183 700 0 900 0
+Fore
+342 337 m 1
+ 284 287 247 255 228 148 c 1
+ 228 0 l 1
+ 89 0 l 1
+ 89 158 l 1
+ 103 236 116 282 170 349 c 0
+ 183 365 238 411 252 421 c 1
+ 61 600 l 1
+ 256 600 l 1
+ 623 258 l 1
+ 693 324 719 369 732 444 c 1
+ 732 600 l 1
+ 871 600 l 1
+ 871 433 l 1
+ 857 357 841 314 790 250 c 0
+ 777 235 743 202 704 183 c 1
+ 900 0 l 1
+ 700 0 l 1
+ 342 337 l 1
+EndSplineSet
+MinimumDistance: x16,-1 
+EndChar
+StartChar: uniFB22
+Encoding: 64290 64290
+Width: 888
+Flags: W
+HStem: 0 21G<594 733> 485 115<63 594 733 816>
+VStem: 594 139<0 485>
+Fore
+594 485 m 1
+ 63 485 l 1
+ 63 600 l 1
+ 816 600 l 1
+ 816 485 l 1
+ 733 485 l 1
+ 733 0 l 1
+ 594 0 l 1
+ 594 485 l 1
+EndSplineSet
+MinimumDistance: x3,-1 y0,6 y0,7 x5,3 x5,4 x0,2 x0,1 
+EndChar
+StartChar: uniFB23
+Encoding: 64291 64291
+Width: 932
+Flags: W
+HStem: 0 21G<79 218 723 862> 485 115<79 590>
+VStem: 79 139<0 349> 723 139<0 365>
+Fore
+862 374 m 1
+ 862 0 l 1
+ 723 0 l 1
+ 723 365 l 1
+ 715 400 714 415 693 444 c 0
+ 683 457 690 451 676 459 c 0
+ 644 477 627 478 590 485 c 1
+ 79 485 l 1
+ 79 600 l 1
+ 602 600 l 1
+ 663 593 700 584 752 556 c 0
+ 777 544 801 522 814 502 c 0
+ 846 456 854 425 862 374 c 1
+79 0 m 1
+ 79 349 l 1
+ 218 349 l 1
+ 218 0 l 1
+ 79 0 l 1
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: uniFB24
+Encoding: 64292 64292
+Width: 845
+Flags: W
+HStem: 0 115<76 512> 485 115<76 512>
+Fore
+523 0 m 1
+ 76 0 l 1
+ 76 115 l 1
+ 512 115 l 1
+ 549 122 566 123 597 141 c 0
+ 611 149 604 143 615 156 c 1
+ 636 185 637 200 645 235 c 1
+ 645 365 l 1
+ 637 400 636 415 615 444 c 1
+ 604 457 611 451 597 459 c 0
+ 566 477 549 478 512 485 c 1
+ 76 485 l 1
+ 76 600 l 1
+ 523 600 l 1
+ 585 593 621 584 674 556 c 0
+ 699 544 722 522 735 502 c 0
+ 767 456 776 425 784 374 c 1
+ 784 226 l 1
+ 776 175 767 144 735 98 c 0
+ 722 78 699 56 674 44 c 0
+ 621 16 585 7 523 0 c 1
+EndSplineSet
+EndChar
+StartChar: uniFB25
+Encoding: 64293 64293
+Width: 917
+Flags: W
+HStem: 0 21G<396 535> 485 115<200 706> 730 20G<62 201>
+VStem: 62 139<599 750>
+Fore
+535 101 m 1
+ 535 0 l 1
+ 396 0 l 1
+ 396 107 l 2
+ 396 156 428 202 466 240 c 0
+ 524 298 608 326 638 340 c 0
+ 668 354 700 380 706 419 c 1
+ 706 485 l 1
+ 62 485 l 1
+ 62 750 l 1
+ 201 750 l 1
+ 201 600 l 1
+ 845 600 l 1
+ 845 412 l 1
+ 844 352 811 318 764 288 c 0
+ 696 244 630 230 586 196 c 0
+ 561 177 532 142 535 101 c 1
+EndSplineSet
+MinimumDistance: x12,-1 y11,9 y11,10 y13,11 x11,13 x11,12 
+EndChar
+StartChar: uniFB26
+Encoding: 64294 64294
+Width: 933
+Flags: W
+HStem: 0 115<219 724> 485 115<219 596>
+VStem: 80 139<115 485> 724 139<115 369>
+Fore
+863 0 m 1
+ 80 0 l 1
+ 80 600 l 1
+ 596 600 l 2
+ 669 600 723 575 753 556 c 0
+ 806 523 863 454 863 369 c 2
+ 863 0 l 1
+724 115 m 1
+ 724 369 l 1
+ 722 407 700 445 676 459 c 0
+ 650 475 624 484 596 485 c 2
+ 219 485 l 1
+ 219 115 l 1
+ 724 115 l 1
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: uniFB27
+Encoding: 64295 64295
+Width: 850
+Flags: W
+HStem: 0 21G<641 780> 485 115<63 508>
+VStem: 641 139<0 365>
+Fore
+780 374 m 1
+ 780 0 l 1
+ 641 0 l 1
+ 641 365 l 1
+ 633 400 632 415 611 444 c 0
+ 601 457 608 451 594 459 c 0
+ 562 477 545 478 508 485 c 1
+ 63 485 l 1
+ 63 600 l 1
+ 520 600 l 1
+ 581 593 618 584 670 556 c 0
+ 695 544 719 522 732 502 c 0
+ 764 456 772 425 780 374 c 1
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: uniFB28
+Encoding: 64296 64296
+Width: 1006
+Flags: W
+HStem: 0 21G<796 935> 485 115<123 189 327 663>
+VStem: 189 139<232 485> 796 139<0 366>
+Fore
+328 485 m 1
+ 328 229 l 1
+ 324 192 333 156 301 102 c 1
+ 288 76 259 55 237 44 c 0
+ 185 17 152 4 90 0 c 0
+ 79 -1 62 5 62 5 c 1
+ 62 121 l 1
+ 62 121 79 115 90 115 c 0
+ 114 115 115 113 148 129 c 0
+ 161 135 170 144 176 153 c 0
+ 190 174 185 186 189 233 c 1
+ 189 485 l 1
+ 123 485 l 1
+ 123 600 l 1
+ 675 600 l 1
+ 736 593 773 584 825 557 c 0
+ 850 544 874 523 887 503 c 0
+ 919 457 927 426 935 374 c 1
+ 935 0 l 1
+ 796 0 l 1
+ 796 366 l 1
+ 788 400 787 416 766 445 c 0
+ 756 458 763 452 749 460 c 0
+ 717 478 700 478 663 485 c 1
+ 328 485 l 1
+EndSplineSet
+MinimumDistance: x17,-1 x11,13 x11,12 
+EndChar
+StartChar: uniFB29
+Encoding: 64297 64297
+Width: 584
+Flags: W
+HStem: 172 119<50 232 350 533>
+VStem: 232 119<291 473>
+Fore
+533 291 m 1
+ 533 172 l 1
+ 50 172 l 1
+ 50 291 l 1
+ 232 291 l 1
+ 232 473 l 1
+ 351 473 l 1
+ 351 291 l 1
+ 533 291 l 1
+EndSplineSet
+MinimumDistance: x0,-1 y4,6 y4,5 x7,1 x7,0 x4,2 x4,3 
+EndChar
+StartChar: afii57694
+Encoding: 64298 64298
+Width: 840
+Flags: W
+HStem: 0 115<363 477> 639 82<650 732>
+VStem: 76 139<323 600> 351 139<383 600> 627 139<255 600> 650 82<639 721>
+Fore
+215 323 m 1
+ 283 323 l 2
+ 305 323 320 329 331 340 c 0
+ 345 352 351 368 351 387 c 2
+ 351 600 l 1
+ 490 600 l 1
+ 490 387 l 2
+ 490 345 476 296 432 260 c 1
+ 397 226 338 205 283 208 c 1
+ 230 208 l 1
+ 236 198 l 1
+ 263 160 268 156 310 133 c 1
+ 345 117 363 115 382 115 c 2
+ 461 115 l 2
+ 478 115 499 117 532 133 c 0
+ 575 156 580 160 606 198 c 1
+ 625 229 627 248 627 265 c 2
+ 627 600 l 1
+ 766 600 l 1
+ 766 265 l 1
+ 767 221 755 181 728 142 c 1
+ 699 97 661 61 605 34 c 1
+ 562 11 512 0 461 0 c 2
+ 382 0 l 2
+ 330 0 279 12 237 34 c 1
+ 181 61 143 97 114 142 c 1
+ 87 181 76 223 76 265 c 2
+ 76 600 l 1
+ 215 600 l 1
+ 215 323 l 1
+650 721 m 1
+ 732 721 l 1
+ 732 639 l 1
+ 650 639 l 1
+ 650 721 l 1
+EndSplineSet
+MinimumDistance: x30,-1 
+EndChar
+StartChar: afii57695
+Encoding: 64299 64299
+Width: 840
+Flags: W
+HStem: 0 115<363 477> 639 82<101 183>
+VStem: 76 139<323 600> 101 82<639 721> 351 139<383 600> 627 139<255 600>
+Fore
+215 323 m 1
+ 283 323 l 2
+ 305 323 320 329 331 340 c 0
+ 345 352 351 368 351 387 c 2
+ 351 600 l 1
+ 490 600 l 1
+ 490 387 l 2
+ 490 345 476 296 432 260 c 1
+ 397 226 338 205 283 208 c 1
+ 230 208 l 1
+ 236 198 l 1
+ 263 160 268 156 310 133 c 1
+ 345 117 363 115 382 115 c 2
+ 461 115 l 2
+ 478 115 499 117 532 133 c 0
+ 575 156 580 160 606 198 c 1
+ 625 229 627 248 627 265 c 2
+ 627 600 l 1
+ 766 600 l 1
+ 766 265 l 1
+ 767 221 755 181 728 142 c 1
+ 699 97 661 61 605 34 c 1
+ 562 11 512 0 461 0 c 2
+ 382 0 l 2
+ 330 0 279 12 237 34 c 1
+ 181 61 143 97 114 142 c 1
+ 87 181 76 223 76 265 c 2
+ 76 600 l 1
+ 215 600 l 1
+ 215 323 l 1
+101 721 m 1
+ 183 721 l 1
+ 183 639 l 1
+ 101 639 l 1
+ 101 721 l 1
+EndSplineSet
+MinimumDistance: x18,-1 
+EndChar
+StartChar: uniFB2C
+Encoding: 64300 64300
+Width: 840
+Flags: W
+HStem: 0 115<363 476> 181 82<474 556> 639 82<650 732>
+VStem: 76 139<323 600> 351 139<383 600> 627 139<255 600> 650 82<639 721>
+Fore
+215 323 m 1
+ 283 323 l 2
+ 305 323 320 329 331 340 c 0
+ 345 352 351 368 351 387 c 2
+ 351 600 l 1
+ 490 600 l 1
+ 490 387 l 2
+ 490 345 476 296 432 260 c 1
+ 397 226 338 205 283 208 c 1
+ 230 208 l 1
+ 236 198 l 1
+ 263 160 268 156 310 133 c 1
+ 345 117 363 115 382 115 c 2
+ 461 115 l 2
+ 478 115 499 117 532 133 c 0
+ 575 156 580 160 606 198 c 1
+ 625 229 627 248 627 265 c 2
+ 627 600 l 1
+ 766 600 l 1
+ 766 265 l 1
+ 767 221 755 181 728 142 c 1
+ 699 97 661 61 605 34 c 1
+ 562 11 512 0 461 0 c 2
+ 382 0 l 2
+ 330 0 279 12 237 34 c 1
+ 181 61 143 97 114 142 c 1
+ 87 181 76 223 76 265 c 2
+ 76 600 l 1
+ 215 600 l 1
+ 215 323 l 1
+474 263 m 1
+ 556 263 l 1
+ 556 181 l 1
+ 474 181 l 1
+ 474 263 l 1
+650 721 m 1
+ 732 721 l 1
+ 732 639 l 1
+ 650 639 l 1
+ 650 721 l 1
+EndSplineSet
+MinimumDistance: x34,-1 
+EndChar
+StartChar: uniFB2D
+Encoding: 64301 64301
+Width: 840
+Flags: W
+HStem: 0 115<363 476> 181 82<474 556> 639 82<101 183>
+VStem: 76 139<323 600> 101 82<639 721> 351 139<383 600> 627 139<255 600>
+Fore
+215 323 m 1
+ 283 323 l 2
+ 305 323 320 329 331 340 c 0
+ 345 352 351 368 351 387 c 2
+ 351 600 l 1
+ 490 600 l 1
+ 490 387 l 2
+ 490 345 476 296 432 260 c 1
+ 397 226 338 205 283 208 c 1
+ 230 208 l 1
+ 236 198 l 1
+ 263 160 268 156 310 133 c 1
+ 345 117 363 115 382 115 c 2
+ 461 115 l 2
+ 478 115 499 117 532 133 c 0
+ 575 156 580 160 606 198 c 1
+ 625 229 627 248 627 265 c 2
+ 627 600 l 1
+ 766 600 l 1
+ 766 265 l 1
+ 767 221 755 181 728 142 c 1
+ 699 97 661 61 605 34 c 1
+ 562 11 512 0 461 0 c 2
+ 382 0 l 2
+ 330 0 279 12 237 34 c 1
+ 181 61 143 97 114 142 c 1
+ 87 181 76 223 76 265 c 2
+ 76 600 l 1
+ 215 600 l 1
+ 215 323 l 1
+474 263 m 1
+ 556 263 l 1
+ 556 181 l 1
+ 474 181 l 1
+ 474 263 l 1
+101 721 m 1
+ 183 721 l 1
+ 183 639 l 1
+ 101 639 l 1
+ 101 721 l 1
+EndSplineSet
+MinimumDistance: x18,-1 
+EndChar
+StartChar: uniFB2E
+Encoding: 64302 64302
+Width: 714
+Flags: W
+HStem: -142 82<256 456> 0 21G<89 228 487 650>
+VStem: 89 139<0 149> 482 139<443 600>
+DStem: 61 600 222 600 212 388 425 315 286 285 498 212 487 0 650 0
+Fore
+286 285 m 1
+ 247 237 241 207 228 148 c 1
+ 228 0 l 1
+ 89 0 l 1
+ 89 158 l 1
+ 103 236 116 282 170 349 c 0
+ 183 365 198 378 212 388 c 1
+ 61 600 l 1
+ 222 600 l 1
+ 425 315 l 1
+ 463 362 469 389 482 444 c 1
+ 482 600 l 1
+ 621 600 l 1
+ 621 433 l 1
+ 607 357 591 314 540 250 c 0
+ 527 235 512 222 498 212 c 1
+ 650 0 l 1
+ 487 0 l 1
+ 286 285 l 1
+256 -60 m 1
+ 456 -60 l 1
+ 456 -142 l 1
+ 256 -142 l 1
+ 256 -60 l 1
+EndSplineSet
+MinimumDistance: x16,-1 
+EndChar
+StartChar: uniFB2F
+Encoding: 64303 64303
+Width: 714
+Flags: W
+HStem: -142 82<264 323 405 464> 0 21G<89 228 487 650>
+VStem: 89 139<0 148> 323 82<-248 -142> 482 139<443 600>
+DStem: 61 600 222 600 212 388 425 315 286 285 498 212 487 0 650 0
+Fore
+286 285 m 1
+ 247 237 241 207 228 148 c 1
+ 228 0 l 1
+ 89 0 l 1
+ 89 158 l 1
+ 103 236 116 282 170 349 c 0
+ 183 365 198 378 212 388 c 1
+ 61 600 l 1
+ 222 600 l 1
+ 425 315 l 1
+ 463 362 469 389 482 444 c 1
+ 482 600 l 1
+ 621 600 l 1
+ 621 433 l 1
+ 607 357 591 314 540 250 c 0
+ 527 235 512 222 498 212 c 1
+ 650 0 l 1
+ 487 0 l 1
+ 286 285 l 1
+405 -142 m 1
+ 405 -248 l 1
+ 323 -248 l 1
+ 323 -142 l 1
+ 264 -142 l 1
+ 264 -60 l 1
+ 464 -60 l 1
+ 464 -142 l 1
+ 405 -142 l 1
+EndSplineSet
+MinimumDistance: x16,-1 y18,20 y18,19 x21,23 x21,22 x18,24 x18,25 
+EndChar
+StartChar: uniFB30
+Encoding: 64304 64304
+Width: 714
+Flags: W
+HStem: 0 21G<89 228 487 650> 71 82<270 352>
+VStem: 89 139<0 148> 270 82<71 153> 482 139<443 600>
+DStem: 61 600 222 600 212 388 425 315 286 285 498 212 487 0 650 0
+Fore
+286 285 m 1
+ 247 237 241 207 228 148 c 1
+ 228 0 l 1
+ 89 0 l 1
+ 89 158 l 1
+ 103 236 116 282 170 349 c 0
+ 183 365 198 378 212 388 c 1
+ 61 600 l 1
+ 222 600 l 1
+ 425 315 l 1
+ 463 362 469 389 482 444 c 1
+ 482 600 l 1
+ 621 600 l 1
+ 621 433 l 1
+ 607 357 591 314 540 250 c 0
+ 527 235 512 222 498 212 c 1
+ 650 0 l 1
+ 487 0 l 1
+ 286 285 l 1
+270 153 m 1
+ 352 153 l 1
+ 352 71 l 1
+ 270 71 l 1
+ 270 153 l 1
+EndSplineSet
+MinimumDistance: x16,-1 
+EndChar
+StartChar: uniFB31
+Encoding: 64305 64305
+Width: 651
+Flags: W
+HStem: 0 115<77 380 518 610> 257 82<216 298> 485 115<77 247>
+VStem: 216 82<257 339> 380 139<115 365>
+Fore
+380 115 m 1
+ 380 365 l 1
+ 372 400 371 415 350 444 c 0
+ 340 457 346 451 333 459 c 0
+ 301 477 284 478 247 485 c 1
+ 77 485 l 1
+ 77 600 l 1
+ 259 600 l 1
+ 320 593 357 584 409 556 c 0
+ 434 544 458 522 470 502 c 1
+ 503 456 511 425 519 374 c 1
+ 519 115 l 1
+ 610 115 l 1
+ 610 0 l 1
+ 77 0 l 1
+ 77 115 l 1
+ 380 115 l 1
+216 339 m 1
+ 298 339 l 1
+ 298 257 l 1
+ 216 257 l 1
+ 216 339 l 1
+EndSplineSet
+MinimumDistance: x12,-1 x11,13 x11,12 x0,14 x0,15 
+EndChar
+StartChar: uniFB32
+Encoding: 64306 64306
+Width: 557
+Flags: W
+HStem: 0 21G<47 220 363 503> 257 82<190 272>
+VStem: 190 82<257 339>
+DStem: 224 194 347 138 47 0 220 0 322 361 460 378 341 194 503 0
+Fore
+347 138 m 1
+ 220 0 l 1
+ 47 0 l 1
+ 224 194 l 1
+ 341 194 l 1
+ 322 361 l 1
+ 312 401 311 416 292 444 c 1
+ 281 457 288 451 274 459 c 0
+ 242 477 225 478 188 485 c 1
+ 115 485 l 1
+ 115 600 l 1
+ 200 600 l 1
+ 262 593 298 584 350 556 c 0
+ 375 544 399 522 412 502 c 0
+ 445 455 449 422 460 378 c 1
+ 503 0 l 1
+ 363 0 l 1
+ 347 138 l 1
+190 339 m 1
+ 272 339 l 1
+ 272 257 l 1
+ 190 257 l 1
+ 190 339 l 1
+EndSplineSet
+MinimumDistance: x15,-1 
+EndChar
+StartChar: uniFB33
+Encoding: 64307 64307
+Width: 638
+Flags: W
+HStem: 0 21G<344 483> 257 82<206 288> 485 115<63 344 483 566>
+VStem: 206 82<257 339> 344 139<0 485>
+Fore
+344 485 m 1
+ 63 485 l 1
+ 63 600 l 1
+ 566 600 l 1
+ 566 485 l 1
+ 483 485 l 1
+ 483 0 l 1
+ 344 0 l 1
+ 344 485 l 1
+206 339 m 1
+ 288 339 l 1
+ 288 257 l 1
+ 206 257 l 1
+ 206 339 l 1
+EndSplineSet
+MinimumDistance: x3,-1 y0,6 y0,7 x5,3 x5,4 x0,2 x0,1 
+EndChar
+StartChar: uniFB34
+Encoding: 64308 64308
+Width: 682
+Flags: W
+HStem: 0.40625 21G<79 218 473 612> 257.406 82<304 386> 485.406 115<79 340>
+VStem: 79 139<15 342> 473 139<15 365>
+Fore
+612 374 m 2
+ 612 374.406 l 1
+ 612 0.40625 l 1
+ 473 0.40625 l 1
+ 473 365.406 l 1
+ 465 400.406 464 415.406 443 444.406 c 0
+ 433 457.406 440 451.406 426 459.406 c 0
+ 394 477.406 377 478.406 340 485.406 c 1
+ 79 485.406 l 1
+ 79 600.406 l 1
+ 352 600.406 l 1
+ 413 593.406 450 584.406 502 556.406 c 0
+ 527 544.406 551 522.406 564 502.406 c 0
+ 596 456.406 604 425.406 612 374 c 2
+79 0.40625 m 1
+ 79 349.406 l 1
+ 218 349.406 l 1
+ 218 0.40625 l 1
+ 79 0.40625 l 1
+304 339.406 m 1
+ 386 339.406 l 1
+ 386 257.406 l 1
+ 304 257.406 l 1
+ 304 339.406 l 1
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: afii57723
+Encoding: 64309 64309
+Width: 367
+Flags: W
+HStem: 0 21G<149 288>
+VStem: 30 82<257 339> 149 139<0 600>
+Fore
+149 0 m 1
+ 149 600 l 1
+ 288 600 l 1
+ 288 0 l 1
+ 149 0 l 1
+30 339 m 1
+ 112 339 l 1
+ 112 257 l 1
+ 30 257 l 1
+ 30 339 l 1
+EndSplineSet
+MinimumDistance: x2,-1 
+EndChar
+StartChar: uniFB36
+Encoding: 64310 64310
+Width: 443
+Flags: W
+HStem: 0 21G<149 288> 485 115<63 149 288 371>
+VStem: 26 82<257 339> 149 139<0 485>
+Fore
+149 485 m 1
+ 63 485 l 1
+ 63 600 l 1
+ 371 600 l 1
+ 371 485 l 1
+ 288 485 l 1
+ 288 0 l 1
+ 149 0 l 1
+ 149 485 l 1
+26 339 m 1
+ 108 339 l 1
+ 108 257 l 1
+ 26 257 l 1
+ 26 339 l 1
+EndSplineSet
+MinimumDistance: x3,-1 y0,6 y0,7 x5,3 x5,4 x0,2 x0,1 
+EndChar
+StartChar: uniFB38
+Encoding: 64312 64312
+Width: 670
+Flags: W
+HStem: 485 115<331 348>
+VStem: 76.1875 139.001<234 600> 300.188 82<257 339>
+Fore
+340 485 m 2
+ 340.188 485 l 2
+ 313.188 485 294.188 473 294.188 473 c 1
+ 294.188 595 l 1
+ 307.188 597 311.188 600 345.188 600 c 0
+ 406.188 600 456.188 580 499.188 556 c 1
+ 524.188 544 547.188 522 560.188 502 c 0
+ 592.188 456 601.188 425 609.188 374 c 1
+ 609.188 226 l 1
+ 601.188 175 592.188 144 560.188 98 c 0
+ 547.188 78 524.188 56 499.188 44 c 1
+ 458.188 21 407.188 0 342.188 0 c 0
+ 278.188 0 227.188 21 186.188 44 c 1
+ 161.188 56 138.188 78 125.188 98 c 0
+ 93.1875 144 84.1875 175 76.1875 226 c 1
+ 76.1875 600 l 1
+ 215.188 600 l 1
+ 215.188 235 l 1
+ 223.188 200 224.188 185 245.188 156 c 1
+ 256.188 143 249.188 149 262.188 141 c 0
+ 306.188 118 307.188 116 342.188 115 c 1
+ 378.188 116 379.188 118 422.188 141 c 0
+ 436.188 149 429.188 143 440.188 156 c 1
+ 461.188 185 462.188 200 470.188 235 c 1
+ 470.188 365 l 1
+ 462.188 400 461.188 415 440.188 444 c 1
+ 429.188 457 436.188 451 422.188 459 c 0
+ 381.188 480 379.188 485 340 485 c 2
+300.188 339 m 1
+ 382.188 339 l 1
+ 382.188 257 l 1
+ 300.188 257 l 1
+ 300.188 339 l 1
+EndSplineSet
+MinimumDistance: x28,-1 
+EndChar
+StartChar: uniFB39
+Encoding: 64313 64313
+Width: 354
+Flags: W
+VStem: 34 82<355 437> 143 139<332 600>
+Fore
+282 333 m 1
+ 143 276 l 1
+ 143 600 l 1
+ 282 600 l 1
+ 282 333 l 1
+34 437 m 1
+ 116 437 l 1
+ 116 355 l 1
+ 34 355 l 1
+ 34 437 l 1
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: uniFB3A
+Encoding: 64314 64314
+Width: 590
+Flags: W
+HStem: 257 82<216 298> 485 115<62 248>
+VStem: 216 82<257 339> 381 139<-200 365>
+Fore
+381 -200 m 1
+ 381 365 l 1
+ 373 400 372 415 351 444 c 1
+ 340 457 347 451 333 459 c 0
+ 302 477 285 478 248 485 c 1
+ 62 485 l 1
+ 62 600 l 1
+ 259 600 l 1
+ 321 593 357 584 410 556 c 0
+ 435 544 458 522 471 502 c 0
+ 503 456 512 425 520 374 c 1
+ 520 -200 l 1
+ 381 -200 l 1
+216 339 m 1
+ 298 339 l 1
+ 298 257 l 1
+ 216 257 l 1
+ 216 339 l 1
+EndSplineSet
+MinimumDistance: x10,-1 
+EndChar
+StartChar: uniFB3B
+Encoding: 64315 64315
+Width: 595
+Flags: W
+HStem: 0 115<90 261> 485 115<90 261>
+VStem: 211.625 82<257 339>
+Fore
+273 0 m 2
+ 272.625 0 l 1
+ 75.625 0 l 1
+ 75.625 115 l 1
+ 261.625 115 l 1
+ 298.625 122 315.625 123 346.625 141 c 0
+ 360.625 149 353.625 143 364.625 156 c 1
+ 385.625 185 386.625 200 394.625 235 c 1
+ 394.625 365 l 1
+ 386.625 400 385.625 415 364.625 444 c 1
+ 353.625 457 360.625 451 346.625 459 c 0
+ 315.625 477 298.625 478 261.625 485 c 1
+ 75.625 485 l 1
+ 75.625 600 l 1
+ 272.625 600 l 1
+ 334.625 593 370.625 584 423.625 556 c 0
+ 448.625 544 471.625 522 484.625 502 c 0
+ 516.625 456 525.625 425 533.625 374 c 1
+ 533.625 226 l 1
+ 525.625 175 516.625 144 484.625 98 c 0
+ 471.625 78 448.625 56 423.625 44 c 0
+ 370.625 16 334.625 7 273 0 c 2
+211.625 339 m 1
+ 293.625 339 l 1
+ 293.625 257 l 1
+ 211.625 257 l 1
+ 211.625 339 l 1
+EndSplineSet
+MinimumDistance: x22,-1 
+EndChar
+StartChar: uniFB3C
+Encoding: 64316 64316
+Width: 667
+Flags: W
+HStem: 0 21G<271 410> 337 82<232 314> 485 115<200 456> 730 20G<62 201>
+VStem: 62 139<599 750> 232 82<337 419>
+Fore
+232 419 m 1
+ 314 419 l 1
+ 314 337 l 1
+ 232 337 l 1
+ 232 419 l 1
+410 101 m 2
+ 410 0 l 1
+ 271 0 l 1
+ 271 107 l 1
+ 277 154 275 188 307 233 c 0
+ 355 299 417 312 433 337 c 0
+ 452 365 450 380 456 419 c 1
+ 456 485 l 1
+ 62 485 l 1
+ 62 750 l 1
+ 201 750 l 1
+ 201 600 l 1
+ 595 600 l 1
+ 595 412 l 1
+ 592 372 590 333 559 287 c 0
+ 513 218 449 202 433 183 c 0
+ 412 157 410 141 410 101 c 2
+EndSplineSet
+MinimumDistance: x16,-1 y15,13 y15,14 y17,15 x15,17 x15,16 
+EndChar
+StartChar: uniFB3E
+Encoding: 64318 64318
+Width: 704
+Flags: W
+HStem: 0 115<363 494> 257 82<336 418> 485 115<67 158 297 388>
+VStem: 336 82<257 339> 494 139<115 385>
+DStem: 158 485 298 485 86 0 226 0
+Fore
+298 485 m 1
+ 226 0 l 1
+ 86 0 l 1
+ 158 485 l 1
+ 67 485 l 1
+ 67 600 l 1
+ 367 600 l 2
+ 397 600 443 597 490 575 c 0
+ 543 551 581 516 606 474 c 0
+ 631 434 633 395 633 369 c 2
+ 633 0 l 1
+ 363 0 l 1
+ 363 115 l 1
+ 494 115 l 1
+ 494 369 l 2
+ 494 390 492 404 482 420 c 0
+ 459 454 458 456 421 475 c 0
+ 405 483 387 485 367 485 c 2
+ 298 485 l 1
+336 339 m 1
+ 418 339 l 1
+ 418 257 l 1
+ 336 257 l 1
+ 336 339 l 1
+EndSplineSet
+MinimumDistance: x9,-1 x13,11 x13,12 
+EndChar
+StartChar: uniFB40
+Encoding: 64320 64320
+Width: 429
+Flags: W
+HStem: 0 115<73 220> 257 82<77 159> 485 115<84.0626 100.532>
+VStem: 77 82<257 339> 220 139<115 365>
+Fore
+359 0 m 1
+ 73 0 l 1
+ 73 115 l 1
+ 220 115 l 1
+ 220 365 l 1
+ 212 400 211 415 190 444 c 0
+ 181 455 186 450 170 461 c 1
+ 146 475 113 485 84 485 c 1
+ 84 600 l 1
+ 153 600 215 576 251 555 c 0
+ 272 543 296 524 310 502 c 0
+ 342 456 356 425 359 374 c 1
+ 359 0 l 1
+77 339 m 1
+ 159 339 l 1
+ 159 257 l 1
+ 77 257 l 1
+ 77 339 l 1
+EndSplineSet
+MinimumDistance: x0,-1 x3,1 x3,2 
+EndChar
+StartChar: uniFB41
+Encoding: 64321 64321
+Width: 670
+Flags: W
+HStem: 0 21G<341.516 342> 485 115<218 336>
+VStem: 75.5156 139<234 485> 299.516 82<257 339>
+Fore
+342 0 m 2
+ 341.516 0 l 2
+ 277.516 -1 226.516 21 185.516 44 c 1
+ 160.516 56 137.516 78 124.516 98 c 0
+ 92.5156 144 78.5156 175 75.5156 226 c 1
+ 75.5156 600 l 1
+ 347.516 600 l 1
+ 409.516 597 445.516 584 498.516 556 c 0
+ 523.516 544 546.516 522 559.516 502 c 0
+ 591.516 456 600.516 425 608.516 374 c 1
+ 608.516 226 l 1
+ 600.516 175 591.516 144 559.516 98 c 0
+ 546.516 78 523.516 56 498.516 44 c 1
+ 457.516 21 406.516 -1 342 0 c 2
+341.516 115 m 1
+ 377.516 116 378.516 118 421.516 141 c 0
+ 435.516 149 428.516 143 439.516 156 c 1
+ 460.516 185 461.516 200 469.516 235 c 1
+ 469.516 365 l 1
+ 461.516 400 460.516 415 439.516 444 c 1
+ 428.516 457 435.516 451 421.516 459 c 0
+ 390.516 477 373.516 478 336.516 485 c 1
+ 214.516 485 l 1
+ 214.516 235 l 1
+ 222.516 200 223.516 185 244.516 156 c 1
+ 255.516 143 248.516 149 261.516 141 c 0
+ 305.516 118 306.516 116 341.516 115 c 1
+299.516 339 m 1
+ 381.516 339 l 1
+ 381.516 257 l 1
+ 299.516 257 l 1
+ 299.516 339 l 1
+EndSplineSet
+MinimumDistance: x26,-1 
+EndChar
+StartChar: uniFB43
+Encoding: 64323 64323
+Width: 661
+Flags: W
+HStem: 241 115<254 319> 314 82<339 421> 486 115<211.062 297.221>
+VStem: 72 139<391 486> 339 82<314 396> 451 139<-200 368>
+Fore
+451 -200 m 1
+ 451 367 l 1
+ 447 399 449 407 439 421 c 0
+ 416 455 415 457 377 476 c 0
+ 358 486 258 486 211 486 c 1
+ 211 407 l 2
+ 211 385 212 371 222 364 c 0
+ 233 356 241 356 266 356 c 2
+ 319 356 l 1
+ 319 241 l 1
+ 254 241 l 1
+ 217 246 171 244 121 284 c 1
+ 72 328 72 370 72 398 c 2
+ 72 601 l 1
+ 328 601 l 2
+ 364 600 399 598 447 576 c 0
+ 500 552 538 517 563 475 c 0
+ 589 433 586 404 590 373 c 1
+ 590 -200 l 1
+ 451 -200 l 1
+339 396 m 1
+ 421 396 l 1
+ 421 314 l 1
+ 339 314 l 1
+ 339 396 l 1
+EndSplineSet
+MinimumDistance: x17,-1 
+EndChar
+StartChar: uniFB44
+Encoding: 64324 64324
+Width: 660
+Flags: W
+HStem: 0 115<94 327> 240 115<261 320> 485 115<218.312 304.48>
+VStem: 79.2656 139<383 485> 352.266 82<307 389>
+Fore
+335 0 m 2
+ 335.266 0 l 1
+ 79.2656 0 l 1
+ 79.2656 115 l 1
+ 327.266 115 l 1
+ 363.266 119 370.266 117 384.266 125 c 0
+ 421.266 144 423.266 146 446.266 180 c 0
+ 456.266 194 454.266 201 458.266 234 c 1
+ 458.266 366 l 1
+ 454.266 399 456.266 406 446.266 420 c 0
+ 423.266 454 422.266 456 384.266 475 c 0
+ 365.266 485 265.266 485 218.266 485 c 1
+ 218.266 406 l 2
+ 218.266 384 219.266 371 229.266 364 c 0
+ 240.266 355 248.266 355 273.266 355 c 2
+ 326.266 355 l 1
+ 326.266 240 l 1
+ 261.266 240 l 1
+ 224.266 245 178.266 243 128.266 283 c 1
+ 79.2656 328 79.2656 369 79.2656 397 c 2
+ 79.2656 600 l 1
+ 335.266 600 l 2
+ 371.266 599 406.266 598 454.266 575 c 0
+ 507.266 551 545.266 516 570.266 474 c 0
+ 596.266 432 593.266 403 597.266 372 c 1
+ 597.266 228 l 1
+ 593.266 197 596.266 168 570.266 126 c 0
+ 545.266 84 507.266 49 454.266 25 c 0
+ 406.266 2 371.266 3 335 0 c 2
+352.266 389 m 1
+ 434.266 389 l 1
+ 434.266 307 l 1
+ 352.266 307 l 1
+ 352.266 389 l 1
+EndSplineSet
+MinimumDistance: x29,-1 
+EndChar
+StartChar: uniFB46
+Encoding: 64326 64326
+Width: 671
+Flags: W
+HStem: 0 115<86 373> 205 82<118 200>
+VStem: 118 82<205 287> 440 139<443 600>
+DStem: 61 600 219 600 374 115 373 362
+Fore
+373 362 m 1
+ 384 363 394 365 397 368 c 0
+ 404 372 397 365 411 382 c 0
+ 431 408 433 421 440 444 c 1
+ 440 600 l 1
+ 579 600 l 1
+ 579 433 l 1
+ 570 384 557 359 529 321 c 0
+ 510 293 482 271 440 258 c 1
+ 606 0 l 1
+ 86 0 l 1
+ 86 115 l 1
+ 374 115 l 1
+ 61 600 l 1
+ 219 600 l 1
+ 373 362 l 1
+118 287 m 1
+ 200 287 l 1
+ 200 205 l 1
+ 118 205 l 1
+ 118 287 l 1
+EndSplineSet
+MinimumDistance: x5,-1 
+EndChar
+StartChar: uniFB47
+Encoding: 64327 64327
+Width: 672
+Flags: W
+HStem: 485.141 115<95 449>
+VStem: 80.3594 139<-185 369> 460.359 139<284 485>
+Fore
+489 94 m 2
+ 489.359 94.1406 l 2
+ 437.359 65.1406 403.359 51.1406 335.359 49.1406 c 1
+ 335.359 165.141 l 1
+ 341.359 164.141 l 1
+ 378.359 171.141 381.359 168.141 412.359 190.141 c 0
+ 425.359 200.141 419.359 193.141 430.359 206.141 c 1
+ 451.359 235.141 452.359 250.141 460.359 285.141 c 1
+ 460.359 485.141 l 1
+ 80.3594 485.141 l 1
+ 80.3594 600.141 l 1
+ 599.359 600.141 l 1
+ 599.359 276.141 l 1
+ 592.359 226.141 582.359 194.141 550.359 148.141 c 0
+ 537.359 128.141 513.359 107.141 489 94 c 2
+219.359 371.141 m 1
+ 219.359 -199.859 l 1
+ 80.3594 -199.859 l 1
+ 80.3594 371.141 l 1
+ 219.359 371.141 l 1
+294.359 366.141 m 1
+ 376.359 366.141 l 1
+ 376.359 284.141 l 1
+ 294.359 284.141 l 1
+ 294.359 366.141 l 1
+EndSplineSet
+MinimumDistance: x11,-1 x8,10 x8,9 
+EndChar
+StartChar: uniFB48
+Encoding: 64328 64328
+Width: 600
+Flags: W
+HStem: 0.40625 21G<391 530> 257.406 82<216 298> 485.406 115<63 258>
+VStem: 391 139<15 365>
+Fore
+530 374 m 2
+ 530 374.406 l 1
+ 530 0.40625 l 1
+ 391 0.40625 l 1
+ 391 365.406 l 1
+ 383 400.406 382 415.406 361 444.406 c 0
+ 351 457.406 358 451.406 344 459.406 c 0
+ 312 477.406 295 478.406 258 485.406 c 1
+ 63 485.406 l 1
+ 63 600.406 l 1
+ 270 600.406 l 1
+ 331 593.406 368 584.406 420 556.406 c 0
+ 445 544.406 469 522.406 482 502.406 c 0
+ 514 456.406 522 425.406 530 374 c 2
+216 339.406 m 1
+ 298 339.406 l 1
+ 298 257.406 l 1
+ 216 257.406 l 1
+ 216 339.406 l 1
+EndSplineSet
+MinimumDistance: x0,-1 
+EndChar
+StartChar: uniFB49
+Encoding: 64329 64329
+Width: 840
+Flags: W
+HStem: 0 115<363 476> 181 82<474 556>
+VStem: 76 139<323 600> 351 139<383 600> 627 139<255 600>
+Fore
+215 323 m 1
+ 283 323 l 2
+ 305 323 320 329 331 340 c 0
+ 345 352 351 368 351 387 c 2
+ 351 600 l 1
+ 490 600 l 1
+ 490 387 l 2
+ 490 345 476 296 432 260 c 1
+ 397 226 338 205 283 208 c 1
+ 230 208 l 1
+ 236 198 l 1
+ 263 160 268 156 310 133 c 1
+ 345 117 363 115 382 115 c 2
+ 461 115 l 2
+ 478 115 499 117 532 133 c 0
+ 575 156 580 160 606 198 c 1
+ 625 229 627 248 627 265 c 2
+ 627 600 l 1
+ 766 600 l 1
+ 766 265 l 1
+ 767 221 755 181 728 142 c 1
+ 699 97 661 61 605 34 c 1
+ 562 11 512 0 461 0 c 2
+ 382 0 l 2
+ 330 0 279 12 237 34 c 1
+ 181 61 143 97 114 142 c 1
+ 87 181 76 223 76 265 c 2
+ 76 600 l 1
+ 215 600 l 1
+ 215 323 l 1
+474 263 m 1
+ 556 263 l 1
+ 556 181 l 1
+ 474 181 l 1
+ 474 263 l 1
+EndSplineSet
+MinimumDistance: x18,-1 
+EndChar
+StartChar: uniFB4A
+Encoding: 64330 64330
+Width: 756
+Flags: W
+HStem: 0 21G<546 685> 257 82<395 477> 485 115<123 189 327 413>
+VStem: 189 139<232 485> 395 82<257 339> 546 139<0 366>
+Fore
+328 485 m 1
+ 328 229 l 1
+ 324 192 333 156 301 102 c 1
+ 288 76 259 55 237 44 c 0
+ 185 17 152 4 90 0 c 0
+ 79 -1 62 5 62 5 c 1
+ 62 121 l 1
+ 62 121 79 115 90 115 c 0
+ 114 115 115 113 148 129 c 0
+ 161 135 170 144 176 153 c 0
+ 190 174 185 186 189 233 c 1
+ 189 485 l 1
+ 123 485 l 1
+ 123 600 l 1
+ 425 600 l 1
+ 486 593 523 584 575 557 c 0
+ 600 544 624 523 637 503 c 0
+ 669 457 677 426 685 374 c 1
+ 685 0 l 1
+ 546 0 l 1
+ 546 366 l 1
+ 538 400 537 416 516 445 c 0
+ 506 458 513 452 499 460 c 0
+ 467 478 450 478 413 485 c 1
+ 328 485 l 1
+395 339 m 1
+ 477 339 l 1
+ 477 257 l 1
+ 395 257 l 1
+ 395 339 l 1
+EndSplineSet
+MinimumDistance: x17,-1 x11,13 x11,12 
+EndChar
+StartChar: afii57700
+Encoding: 64331 64331
+Width: 297
+Flags: W
+HStem: 0 21G<79 218> 660 82<104 186>
+VStem: 79 139<0 600> 104 82<660 742>
+Fore
+79 0 m 1
+ 79 600 l 1
+ 218 600 l 1
+ 218 0 l 1
+ 79 0 l 1
+104 742 m 1
+ 186 742 l 1
+ 186 660 l 1
+ 104 660 l 1
+ 104 742 l 1
+EndSplineSet
+MinimumDistance: x5,-1 
+EndChar
+StartChar: uniFB4C
+Encoding: 64332 64332
+Width: 651
+Flags: W
+HStem: 0 115<77 380 518 610> 485 115<77 247> 660 82<166 366>
+VStem: 380 139<115 365>
+Fore
+380 115 m 1
+ 380 365 l 1
+ 372 400 371 415 350 444 c 0
+ 340 457 346 451 333 459 c 0
+ 301 477 284 478 247 485 c 1
+ 77 485 l 1
+ 77 600 l 1
+ 259 600 l 1
+ 320 593 357 584 409 556 c 0
+ 434 544 458 522 470 502 c 1
+ 503 456 511 425 519 374 c 1
+ 519 115 l 1
+ 610 115 l 1
+ 610 0 l 1
+ 77 0 l 1
+ 77 115 l 1
+ 380 115 l 1
+166 742 m 1
+ 366 742 l 1
+ 366 660 l 1
+ 166 660 l 1
+ 166 742 l 1
+EndSplineSet
+MinimumDistance: x12,-1 x11,13 x11,12 x0,14 x0,15 
+EndChar
+StartChar: uniFB4D
+Encoding: 64333 64333
+Width: 595
+Flags: W
+HStem: 0 115<90 261> 485 115<90 261> 660 82<170 366>
+Fore
+273 0 m 2
+ 272.625 0 l 1
+ 75.625 0 l 1
+ 75.625 115 l 1
+ 261.625 115 l 1
+ 298.625 122 315.625 123 346.625 141 c 0
+ 360.625 149 353.625 143 364.625 156 c 1
+ 385.625 185 386.625 200 394.625 235 c 1
+ 394.625 365 l 1
+ 386.625 400 385.625 415 364.625 444 c 1
+ 353.625 457 360.625 451 346.625 459 c 0
+ 315.625 477 298.625 478 261.625 485 c 1
+ 75.625 485 l 1
+ 75.625 600 l 1
+ 272.625 600 l 1
+ 334.625 593 370.625 584 423.625 556 c 0
+ 448.625 544 471.625 522 484.625 502 c 0
+ 516.625 456 525.625 425 533.625 374 c 1
+ 533.625 226 l 1
+ 525.625 175 516.625 144 484.625 98 c 0
+ 471.625 78 448.625 56 423.625 44 c 0
+ 370.625 16 334.625 7 273 0 c 2
+167.625 742 m 1
+ 367.625 742 l 1
+ 367.625 660 l 1
+ 167.625 660 l 1
+ 167.625 742 l 1
+EndSplineSet
+EndChar
+StartChar: uniFB4E
+Encoding: 64334 64334
+Width: 660
+Flags: W
+HStem: 0 115<94 327> 240 115<261 320> 485 115<218.312 304.48> 660 82<216 400>
+VStem: 79.2656 139<383 485>
+Fore
+335 0 m 2
+ 335.266 0 l 1
+ 79.2656 0 l 1
+ 79.2656 115 l 1
+ 327.266 115 l 1
+ 363.266 119 370.266 117 384.266 125 c 0
+ 421.266 144 423.266 146 446.266 180 c 0
+ 456.266 194 454.266 201 458.266 234 c 1
+ 458.266 366 l 1
+ 454.266 399 456.266 406 446.266 420 c 0
+ 423.266 454 422.266 456 384.266 475 c 0
+ 365.266 485 265.266 485 218.266 485 c 1
+ 218.266 406 l 2
+ 218.266 384 219.266 371 229.266 364 c 0
+ 240.266 355 248.266 355 273.266 355 c 2
+ 326.266 355 l 1
+ 326.266 240 l 1
+ 261.266 240 l 1
+ 224.266 245 178.266 243 128.266 283 c 1
+ 79.2656 328 79.2656 369 79.2656 397 c 2
+ 79.2656 600 l 1
+ 335.266 600 l 2
+ 371.266 599 406.266 598 454.266 575 c 0
+ 507.266 551 545.266 516 570.266 474 c 0
+ 596.266 432 593.266 403 597.266 372 c 1
+ 597.266 228 l 1
+ 593.266 197 596.266 168 570.266 126 c 0
+ 545.266 84 507.266 49 454.266 25 c 0
+ 406.266 2 371.266 3 335 0 c 2
+214.266 742 m 1
+ 414.266 742 l 1
+ 414.266 660 l 1
+ 214.266 660 l 1
+ 214.266 742 l 1
+EndSplineSet
+MinimumDistance: x11,-1 
+EndChar
+StartChar: uniFB4F
+Encoding: 64335 64335
+Width: 714
+Flags: W
+HStem: 0 21G<487 650> 730 20G<83 222>
+VStem: 83 139<599 750> 482 139<443 600>
+DStem: 83 569 222 600 487 0 425 315 83 569 498 212 487 0 650 0
+Fore
+83 569 m 1
+ 83 750 l 1
+ 222 750 l 1
+ 222 600 l 1
+ 425 315 l 1
+ 463 362 469 389 482 444 c 1
+ 482 600 l 1
+ 621 600 l 1
+ 621 433 l 1
+ 607 357 591 314 540 250 c 0
+ 527 235 512 222 498 212 c 1
+ 650 0 l 1
+ 487 0 l 1
+ 83 569 l 1
+EndSplineSet
+MinimumDistance: x11,-1 
+Ligature: afii57664 afii57676
 EndChar
 StartChar: uniFE9E
 Encoding: 65182 65182
