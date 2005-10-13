@@ -4,7 +4,7 @@ FullName: Free Serif
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003 Free Software Foundation.
-Version: $Revision: 1.18 $
+Version: $Revision: 1.19 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -53,7 +53,7 @@ UnicodeInterp: none
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 336 16 17
+WinInfo: 448 16 14
 BeginPrivate: 8
 UniqueID 7 5020931
 BlueValues 23 [-20 0 450 470 662 682]
@@ -73,7 +73,7 @@ systemdict /internaldict known
 ForceBold 5 false
 EndPrivate
 TeXData: 1 0 0 262144 131072 87381 471859 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 65537 3513
+BeginChars: 65537 3519
 StartChar: space
 Encoding: 32 32 0
 Width: 250
@@ -1865,7 +1865,7 @@ HStem: -10 57 -10 58 -10 57 -10 58 436 24<191 235.5>
 VStem: 56 83 287 81<123 268 268 268 292 300>
 Fore
 442 66 m 1
- 442 40 l 1
+ 442 40 l 5
  407 2 386 -10 352 -10 c 0
  311 -10 293 11 288 63 c 1
  227 11 186 -10 142 -10 c 0
@@ -80220,39 +80220,27 @@ EndSplineSet
 EndChar
 StartChar: uni22A2
 Encoding: 8866 8866 2492
-Width: 466
-Flags: W
-HStem: 0 21G<62 118> 229 56<118 403>
-VStem: 62 56<1 229 285 513> 62 342<230 284>
+Width: 600
+Flags: HW
+HStem: 0 21G<62 118> 229 56<118 534>
+VStem: 62 56<0 514>
 Fore
-404 229 m 1
+534 229 m 1
  118 229 l 1
  118 0 l 1
  62 0 l 1
  62 514 l 1
  118 514 l 1
  118 285 l 1
- 404 285 l 1
- 404 229 l 1
+ 534 285 l 1
+ 534 229 l 1
 EndSplineSet
 EndChar
 StartChar: uni22A3
 Encoding: 8867 8867 2493
-Width: 466
-Flags: W
-HStem: 0 21G<348 404> 229 56<63 348>
-VStem: 348 56<1 228 286 513>
-Fore
-404 0 m 1
- 348 0 l 1
- 348 229 l 1
- 62 229 l 1
- 62 285 l 1
- 348 285 l 1
- 348 514 l 1
- 404 514 l 1
- 404 0 l 1
-EndSplineSet
+Width: 600
+Flags: HW
+Refer: 2492 8866 N -1 0 0 -1 596 514 2
 EndChar
 StartChar: uni22A4
 Encoding: 8868 8868 2494
@@ -88599,7 +88587,7 @@ EndChar
 StartChar: uni2657
 Encoding: 9815 9815 2800
 Width: 800
-Flags: W
+Flags: HW
 HStem: 85 33<215 242> 145 23<394 399> 208 29<366 444> 271 29<362 430> 349 126<379 415> 393 39<346 379 415 448> 633 37<394 404>
 VStem: 240 39<179 185> 327 39<601 610> 345 104<393 432> 379 36<350 393 432 474> 428 38<601 611> 499 35<249 258> 514 40<180 185>
 Back
@@ -115326,11 +115314,12 @@ Encoding: 9134 9134 3486
 Width: 686
 Flags: W
 TeX: 0 0 0 0
-VStem: 332 83<-83 800>
+HStem: 0 21G<332 415>
+VStem: 332 83<0 800>
 Fore
 415 800 m 9
- 415 -83 l 1
- 332 -83 l 1
+ 415 0 l 1
+ 332 0 l 1
  332 800 l 17
  333 799 417 798 415 800 c 9
 EndSplineSet
@@ -115887,25 +115876,9 @@ Encoding: 596 596 3508
 Width: 444
 Flags: HW
 TeX: 117 0 0 0
-HStem: 388 72<199.5 225.5> -10 29<181 217.5>
-VStem: 335 77<197.5 250.5>
-Fore
-39 294 m 1
- 25 303 l 1
- 55 362 74 389 101 413 c 0
- 137 444 177 460 222 460 c 0
- 333 460 412 367 412 237 c 0
- 412 158 384 90 334 46 c 0
- 293 10 242 -10 193 -10 c 0
- 109 -10 39 37 39 93 c 0
- 39 116 61 135 87 135 c 0
- 108 135 126 117 134 89 c 2
- 140 67 l 2
- 150 30 163 19 199 19 c 0
- 280 19 335 90 335 193 c 0
- 335 308 271 388 180 388 c 0
- 123 388 87 364 39 294 c 1
-EndSplineSet
+HStem: -10 72<211.5 237.5> 431 29<219.5 256>
+VStem: 25 77<199.5 252.5>
+Refer: 67 99 S -1 0 0 -1 437 450 2
 EndChar
 StartChar: uni0186
 Encoding: 390 390 3509
@@ -115988,6 +115961,105 @@ TeX: 117 0 0 0
 HStem: -10 36<210 244> 228 24<200 219> 437 24<207 234>
 VStem: 48 92<335 343>
 Refer: 561 949 S 1 0 0 1 0 0 2
+EndChar
+StartChar: uni22A6
+Encoding: 8870 8870 3513
+Width: 466
+Flags: HW
+TeX: 117 0 0 0
+HStem: 0 21G<62 118> 229 56<118 403>
+VStem: 62 56<1 229 285 513> 62 342<230 284>
+Fore
+404 229 m 1
+ 118 229 l 1
+ 118 0 l 1
+ 62 0 l 1
+ 62 514 l 1
+ 118 514 l 1
+ 118 285 l 1
+ 404 285 l 1
+ 404 229 l 1
+EndSplineSet
+EndChar
+StartChar: uni0275
+Encoding: 629 629 3514
+Width: 500
+Flags: HW
+TeX: 117 0 0 0
+Refer: 702 1139 N 1 0 0 1 0 0 2
+EndChar
+StartChar: uni0250
+Encoding: 592 592 3515
+Width: 444
+Flags: HW
+TeX: 117 0 0 0
+Refer: 65 97 N -1 0 0 -1 445 450 2
+EndChar
+StartChar: uni0258
+Encoding: 600 600 3516
+Width: 444
+Flags: HW
+TeX: 117 0 0 0
+Fore
+41 164 m 1
+ 89 88 132 59 196 59 c 0
+ 253 59 296 88 325 145 c 0
+ 343 183 350 216 352 277 c 1
+ 44 277 l 1
+ 52 342 62 371 87 403 c 0
+ 117 439 163 460 215 460 c 0
+ 265 460 312 442 350 408 c 0
+ 397 367 424 296 424 214 c 0
+ 424 76 352 -10 237 -10 c 0
+ 142 -10 67 49 25 157 c 1
+ 41 164 l 1
+350 309 m 1
+ 339 387 305 424 244 424 c 128
+ 183 424 159 396 146 309 c 1
+ 350 309 l 1
+EndSplineSet
+EndChar
+StartChar: uni0259
+Encoding: 601 601 3517
+Width: 444
+Flags: HW
+TeX: 117 0 0 0
+Refer: 69 101 N -1 0 0 -1 442 450 2
+EndChar
+StartChar: uni0251
+Encoding: 593 593 3518
+Width: 500
+Flags: W
+TeX: 117 0 0 0
+HStem: -11 49<135.5 220.5> 419 22<187 264.5>
+VStem: 38 84<118.5 241> 336 69<246 349>
+Fore
+430 41 m 0
+ 442 41 451 54 492 110 c 1
+ 506 100 l 1
+ 457 9 437 -10 397 -10 c 0
+ 369 -10 353 2 346 31 c 0
+ 339 55 339 68 338 146 c 1
+ 283 22 249 -11 179 -11 c 0
+ 92 -11 38 64 38 173 c 0
+ 38 309 131 441 243 441 c 0
+ 286 441 321 420 338 383 c 1
+ 337 431 l 1
+ 339 434 l 1
+ 398 441 l 1
+ 409 437 406 439 405 417 c 0
+ 405 390 405 362 405 336 c 0
+ 405 195 408 71 413 54 c 0
+ 415 47 422 41 430 41 c 0
+122 173 m 0
+ 122 67 172 38 206 38 c 0
+ 235 38 264 55 281 82 c 0
+ 317 135 336 211 336 281 c 0
+ 336 337 326 415 255 419 c 0
+ 253 419 251 419 250 419 c 0
+ 211 419 175 388 151 332 c 0
+ 132 289 122 226 122 173 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
