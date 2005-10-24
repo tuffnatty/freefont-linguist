@@ -4,7 +4,7 @@ FullName: Free Sans Oblique
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003 Free Software Foundation.
-Version: $Revision: 1.14 $
+Version: $Revision: 1.15 $
 ItalicAngle: -12
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -38,6 +38,19 @@ ScriptLang: 5
  1 hebr 1 dflt 
  1 DFLT 1 dflt 
  1 grek 1 dflt 
+ChainSub: class 0 0 'ccmp' 3 0 3 1
+  Class: 3 i j
+  Class: 101 gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 uni030A uni030B uni030F uni0311
+  FClass: 3 i j
+  FClass: 101 gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 uni030A uni030B uni030F uni0311
+ 1 0 1
+  ClsList: 1
+  BClsList:
+  FClsList: 2
+ 1
+  SeqLookup: 0 's001'
+EndFPST
+GenTags: 1 sb's001'
 LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "The use of this font is granted subject to GNU General Public License." "http://www.gnu.org/copyleft/gpl.html" "" "" "" "" "The quick brown fox jumps over the lazy dog." 
 LangName: 1060 "" "" "le+AX4A-e+AQ0A-e" "" "" "" "" "" "" "" "" "" "" "Dovoljena je uporaba v skladu z licenco GNU General Public License." "http://www.gnu.org/copyleft/gpl.html" "" "" "" "" "+AWAA-erif bo za vajo spet kuhal doma+AQ0A-e +AX4A-gance." 
 Encoding: UnicodeBmp
@@ -45,7 +58,7 @@ UnicodeInterp: none
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 496 16 9
+WinInfo: 752 16 9
 BeginPrivate: 8
 UniqueID 7 5020908
 BlueValues 31 [-23 0 524 544 729 749 686 709]
@@ -1810,43 +1823,33 @@ EndChar
 StartChar: i
 Encoding: 105 105 73
 Width: 222
-Flags: W
+Flags: HW
 HStem: 0 21G<66 150> 504 20G<177 261> 626 103<221 283>
 Fore
-261 524 m 1
- 150 0 l 1
- 66 0 l 1
- 177 524 l 1
- 261 524 l 1
 305 729 m 1
  283 626 l 1
  199 626 l 1
  221 729 l 1
  305 729 l 1
 EndSplineSet
+Refer: 238 305 N 1 0 0 1 -28.5 0 2
 KernsSLIFO: 52 -16 0 0 74 -10 0 0
+Substitution: 0 65534 's001' dotlessi
 EndChar
 StartChar: j
 Encoding: 106 106 74
 Width: 222
-Flags: W
+Flags: HW
 HStem: -217.878 71.8777<-33 -17> 504 20G<180 264> 626 103<224 286>
 Fore
-180 524 m 1
- 264 524 l 1
- 130 -109 l 1
- 112 -191 69 -218 -46 -218 c 0
- -55 -218 -58 -217 -65 -215 c 1
- -50 -144 l 1
- -32 -146 -30 -146 -25 -146 c 0
- 26 -146 41 -132 53 -76 c 2
- 180 524 l 1
 308 729 m 1
  286 626 l 1
  202 626 l 1
  224 729 l 1
  308 729 l 1
 EndSplineSet
+Refer: 1087 63166 N 1 0 0 1 0 0 2
+Substitution: 0 65534 's001' dotlessj
 EndChar
 StartChar: k
 Encoding: 107 107 75
@@ -6363,6 +6366,7 @@ EndChar
 StartChar: itilde
 Encoding: 297 297 230
 Width: 278
+Flags: H
 HStem: 0 21<94 178> 507 20<206 290> 625 70<341.817 351.817> 657 70<205.817 221.817>
 Refer: 978 732 N 1 0 0 1 -20.1827 13 2
 Refer: 238 305 N 1 0 0 1 0 0 2
@@ -6414,6 +6418,7 @@ EndChar
 StartChar: ibreve
 Encoding: 301 301 234
 Width: 278
+Flags: H
 HStem: 0 21<94 178> 507 20<206 290> 624 72<268.034 286.034> 739 20<147.034 200.034 392.034 448.034>
 VStem: 142.039 57.9958<723 746>
 Refer: 974 728 N 1 0 0 1 -22.9657 30 2
@@ -6489,14 +6494,14 @@ EndChar
 StartChar: dotlessi
 Encoding: 305 305 238
 Width: 278
-Flags: W
+Flags: HW
 HStem: 0 21G<94 178> 507 20G<206 290>
 Fore
-290 527 m 1
- 178 0 l 1
- 94 0 l 1
- 206 527 l 1
- 290 527 l 1
+289.361 524 m 1
+ 178.361 0 l 1
+ 94.3613 0 l 1
+ 205.361 524 l 1
+ 289.361 524 l 1
 EndSplineSet
 EndChar
 StartChar: IJ
@@ -6512,7 +6517,7 @@ EndChar
 StartChar: ij
 Encoding: 307 307 240
 Width: 362
-Flags: W
+Flags: HW
 HStem: -217.878 71.8777<102 118> 0 21<66 150> 504 20<177 261 315 399> 626 103<221 283 359 421>
 Refer: 74 106 N 1 0 0 1 135 0 2
 Refer: 73 105 N 1 0 0 1 0 0 2

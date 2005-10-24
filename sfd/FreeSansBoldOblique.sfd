@@ -4,7 +4,7 @@ FullName: Free Sans Bold Oblique
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyleft 2002, 2003 Free Software Foundation.
-Version: $Revision: 1.13 $
+Version: $Revision: 1.14 $
 ItalicAngle: -12
 UnderlinePosition: -111
 UnderlineWidth: 69
@@ -36,6 +36,22 @@ ScriptLang: 3
  1 latn 1 dflt 
  1 hebr 1 dflt 
  1 DFLT 1 dflt 
+ChainSub: class 0 0 'ccmp' 3 1 3 1
+  Class: 3 i j
+  Class: 109 gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 uni030A uni030B uni030C uni030F uni0311
+  FClass: 3 i j
+  FClass: 109 gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 uni030A uni030B uni030C uni030F uni0311
+ 1 0 1
+  ClsList: 1
+  BClsList:
+  FClsList: 2
+ 1
+  SeqLookup: 0 's001'
+EndFPST
+GenTags: 1 sb's001'
+TtfTable: cvt  4
+!$MDh
+EndTtf
 LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "The use of this font is granted subject to GNU General Public License." "http://www.gnu.org/copyleft/gpl.html" "" "" "" "" "The quick brown fox jumps over the lazy dog." 
 LangName: 1060 "" "" "polkrepko le+AX4A-e+AQ0A-e" "" "" "" "" "" "" "" "" "" "" "Dovoljena je uporaba v skladu z licenco GNU General Public License." "http://www.gnu.org/copyleft/gpl.html" "" "" "" "" "+AWAA-erif bo za vajo spet kuhal doma+AQ0A-e +AX4A-gance." 
 Encoding: UnicodeBmp
@@ -43,7 +59,7 @@ UnicodeInterp: none
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 688 16 11
+WinInfo: 736 16 11
 BeginPrivate: 8
 UniqueID 7 5020910
 BlueValues 31 [-23 0 540 560 729 749 701 724]
@@ -1763,26 +1779,23 @@ EndChar
 StartChar: i
 Encoding: 105 105 73
 Width: 278
-Flags: W
+Flags: HWO
 HStem: 0 21G<67 207> 520 20G<182 322> 604 125<222 335>
 Fore
-322 540 m 1
- 207 0 l 1
- 67 0 l 1
- 182 540 l 1
- 322 540 l 1
 362 729 m 1
  335 604 l 1
  195 604 l 1
  222 729 l 1
  362 729 l 1
 EndSplineSet
+Refer: 238 305 N 1 0 0 1 0 0 2
 KernsSLIFO: 52 -12 0 0 74 -7 0 0
+Substitution: 0 65534 's001' dotlessi
 EndChar
 StartChar: j
 Encoding: 106 106 74
 Width: 278
-Flags: W
+Flags: HWO
 HStem: -218 112<-11 8> 520 20G<185 325> 604 125<225 338>
 Fore
 365 729 m 1
@@ -1790,16 +1803,9 @@ Fore
  198 604 l 1
  225 729 l 1
  365 729 l 1
-325 540 m 1
- 190 -94 l 1
- 172 -181 116 -218 2 -218 c 0
- -17 -218 -29 -217 -43 -213 c 1
- -19 -102 l 1
- -15 -105 -8 -106 6 -106 c 0
- 36 -106 50 -94 57 -62 c 2
- 185 540 l 1
- 325 540 l 1
 EndSplineSet
+Refer: 937 63166 N 1 0 0 1 0 0 2
+Substitution: 0 65534 's001' dotlessj
 EndChar
 StartChar: k
 Encoding: 107 107 75
@@ -6373,7 +6379,7 @@ EndChar
 StartChar: ij
 Encoding: 307 307 240
 Width: 278
-Flags: W
+Flags: HW
 HStem: 0 21<67 207> 520 20<182 322> 604 125<222 335>
 Refer: 73 105 N 1 0 0 1 0 0 2
 Ligature: 8 0 'liga' i j
@@ -17832,15 +17838,15 @@ Width: 278
 Flags: W
 HStem: -218 112<-12 8> 520 20G<185 325>
 Fore
-325 540 m 1
- 190 -94 l 1
- 172 -181 116 -218 2 -218 c 0
- -17 -218 -29 -217 -43 -213 c 1
- -19 -102 l 1
- -15 -105 -8 -106 6 -106 c 0
- 36 -106 50 -94 57 -62 c 2
- 185 540 l 1
- 325 540 l 1
+325 540 m 5
+ 190 -94 l 5
+ 172 -181 116 -218 2 -218 c 4
+ -17 -218 -29 -217 -43 -213 c 5
+ -19 -102 l 5
+ -15 -105 -8 -106 6 -106 c 4
+ 36 -106 50 -94 57 -62 c 6
+ 185 540 l 5
+ 325 540 l 5
 EndSplineSet
 EndChar
 StartChar: commaaccent
