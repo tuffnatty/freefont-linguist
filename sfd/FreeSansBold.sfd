@@ -4,7 +4,7 @@ FullName: Free Sans Bold
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyleft 2002, 2003 Free Software Foundation.
-Version: $Revision: 1.19 $
+Version: $Revision: 1.20 $
 ItalicAngle: 0
 UnderlinePosition: -155
 UnderlineWidth: 69
@@ -60,7 +60,7 @@ UnicodeInterp: none
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 832 16 11
+WinInfo: 8144 16 11
 BeginPrivate: 8
 UniqueID 7 5020904
 BlueValues 31 [-23 0 540 560 729 749 701 724]
@@ -76,7 +76,7 @@ StemSnapV 9 [141 151]
 ForceBold 5 false
 EndPrivate
 AnchorClass: "1 top" abvm 0 3 0 0 
-BeginChars: 65536 1201
+BeginChars: 65536 1213
 StartChar: space
 Encoding: 32 32 0
 Width: 278
@@ -386,7 +386,7 @@ Fore
  214 146 l 1
  214 9 l 2
  214 -69 200 -106 160 -137 c 0
- 133 -158 105 -169 64 -174 c 1
+ 133 -158 105 -169 64 -174 c 5
  64 -118 l 1
  123 -106 150 -71 150 -3 c 2
  150 0 l 1
@@ -498,7 +498,7 @@ Fore
  174 462 l 1
  40 462 l 1
  39 473 39 481 39 487 c 0
- 39 637 125 724 272 724 c 0
+ 39 637 125 724 272 724 c 4
  421 724 515 636 515 499 c 0
  515 403 479 349 356 259 c 0
  252 183 230 163 212 125 c 1
@@ -538,7 +538,7 @@ EndChar
 StartChar: four
 Encoding: 52 52 20
 Width: 556
-Flags: HMW
+Flags: HMWO
 HStem: 0 20 157 116<123 308 448 522>
 VStem: 308 140<0 157 273 576 576 576>
 Fore
@@ -554,10 +554,10 @@ Fore
  448 709 l 1
  448 273 l 1
  522 273 l 1
-308 273 m 1
+308 273 m 5
  308 576 l 1
  123 273 l 1
- 308 273 l 1
+ 308 273 l 5
 EndSplineSet
 EndChar
 StartChar: five
@@ -2725,7 +2725,7 @@ HStem: 284 81<139 326> 644 74<153 191>
 VStem: 21 91<573.5 595.5> 233 95<557.5 600>
 Fore
 326 365 m 1
- 326 284 l 1
+ 326 284 l 5
  16 284 l 1
  19 365 42 403 120 453 c 1
  219 519 233 535 233 580 c 0
@@ -15977,21 +15977,8 @@ StartChar: uni215F
 Encoding: 8543 8543 1012
 Width: 869
 Flags: HW
-Fore
-147 573 m 1
- 40 573 l 1
- 40 634 l 1
- 118 634 164 659 178 709 c 1
- 242 709 l 1
- 242 284 l 1
- 147 284 l 1
- 147 573 l 1
-593 715 m 1
- 680 715 l 1
- 257 -20 l 1
- 170 -20 l 1
- 593 715 l 1
-EndSplineSet
+Refer: 118 185 N 1 0 0 1 0 0 2
+Refer: 1201 8725 N 1 0 0 1 -30 0 2
 LCarets: 0 65535 '    ' 1 0 
 Ligature: 0 2 'frac' one slash
 Ligature: 0 2 'frac' one fraction
@@ -16029,7 +16016,7 @@ EndChar
 StartChar: Delta
 Encoding: 8710 8710 1014
 Width: 729
-Flags: MW
+Flags: HMW
 HStem: 0 125<205 524> 709 20<268 461 461 461>
 Fore
 8 0 m 1
@@ -19801,6 +19788,119 @@ Width: 778
 Flags: HW
 TeX: 112 0 0 0
 Refer: 1199 632 N 1 0 0 1 0 0 2
+EndChar
+StartChar: uni2215
+Encoding: 8725 8725 1201
+Width: 869
+Flags: W
+TeX: 117 0 0 0
+HStem: -20 21G<202 289> 695 20G<625 712>
+Fore
+625 715 m 1
+ 712 715 l 1
+ 289 -20 l 1
+ 202 -20 l 1
+ 625 715 l 1
+EndSplineSet
+EndChar
+StartChar: twothirds
+Encoding: 8532 8532 1202
+Width: 869
+Flags: W
+TeX: 116 0 0 0
+HStem: -20 21<202 289> -13 77<676 715> 284 81<139 326> 361 73<680 708> 644 74<153 191> 695 20<625 712>
+VStem: 21 91<573.5 595.5> 233 95<557.5 600> 745 95<298 323.5> 759 95<106.5 144.5>
+Refer: 112 179 N 1 0 0 1 525 -284 2
+Refer: 111 178 N 1 0 0 1 0 0 2
+Refer: 1201 8725 N 1 0 0 1 0 0 2
+LCarets: 0 65535 '    ' 2 0 0 
+Ligature: 0 2 'frac' two slash three
+Ligature: 0 2 'frac' two fraction three
+EndChar
+StartChar: onethird
+Encoding: 8531 8531 1203
+Width: 869
+Flags: HW
+TeX: 111 0 0 0
+Refer: 112 179 N 1 0 0 1 525 -284 2
+Refer: 1201 8725 N 1 0 0 1 -30 0 2
+Refer: 118 185 N 1 0 0 1 0 0 2
+LCarets: 0 65535 '    ' 2 0 0 
+Ligature: 0 2 'frac' one slash three
+Ligature: 0 2 'frac' one fraction three
+EndChar
+StartChar: afii00208
+Encoding: 8213 8213 1204
+Width: 1000
+Flags: HW
+TeX: 97 0 0 0
+Refer: 989 8212 N 1 0 0 1 0 0 2
+EndChar
+StartChar: figuredash
+Encoding: 8210 8210 1205
+Width: 556
+Flags: HW
+TeX: 102 0 0 0
+Refer: 988 8211 N 1 0 0 1 0 0 2
+EndChar
+StartChar: uni2010
+Encoding: 8208 8208 1206
+Width: 333
+Flags: HW
+TeX: 117 0 0 0
+Fore
+298 311 m 1
+ 298 207 l 1
+ 26 207 l 1
+ 26 311 l 1
+ 298 311 l 1
+EndSplineSet
+EndChar
+StartChar: uni2011
+Encoding: 8209 8209 1207
+Width: 333
+Flags: HW
+TeX: 117 0 0 0
+Refer: 1206 8208 N 1 0 0 1 0 0 2
+EndChar
+StartChar: minute
+Encoding: 8242 8242 1208
+Width: 238
+Flags: H
+TeX: 109 0 0 0
+Refer: 7 39 N 1 0 0 1 0 0 3
+EndChar
+StartChar: exclamdbl
+Encoding: 8252 8252 1209
+Width: 666
+Flags: H
+TeX: 101 0 0 0
+Refer: 1 33 N 1 0 0 1 333 0 2
+Refer: 1 33 N 1 0 0 1 0 0 2
+EndChar
+StartChar: uni2047
+Encoding: 8263 8263 1210
+Width: 1222
+Flags: H
+TeX: 117 0 0 0
+Refer: 31 63 N 1 0 0 1 611 0 2
+Refer: 31 63 N 1 0 0 1 0 0 2
+EndChar
+StartChar: uni2048
+Encoding: 8264 8264 1211
+Width: 944
+Flags: H
+TeX: 117 0 0 0
+Refer: 1 33 N 1 0 0 1 611 0 2
+Refer: 31 63 N 1 0 0 1 0 0 2
+EndChar
+StartChar: uni2049
+Encoding: 8265 8265 1212
+Width: 944
+Flags: H
+TeX: 117 0 0 0
+Refer: 31 63 N 1 0 0 1 333 0 2
+Refer: 1 33 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
