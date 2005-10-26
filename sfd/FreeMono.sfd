@@ -4,7 +4,7 @@ FullName: Free Monospaced
 FamilyName: FreeMono
 Weight: Medium
 Copyright: Copyleft 2002, 2003 Free Software Foundation.
-Version: $Revision: 1.12 $
+Version: $Revision: 1.13 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -66,7 +66,7 @@ UnicodeInterp: none
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8672 16 11
+WinInfo: 576 16 11
 BeginPrivate: 8
 UniqueID 7 5020945
 BlueValues 31 [-20 0 417 437 563 583 603 623]
@@ -77,7 +77,8 @@ StemSnapH 4 [43]
 StemSnapV 4 [41]
 ForceBold 5 false
 EndPrivate
-BeginChars: 65537 2560
+AnchorClass: "above" mark 0 0 1 0 "below" mark 0 0 2 0 "abovemk" mkmk 0 0 3 1 "belowmk" mkmk 0 0 4 1 
+BeginChars: 65537 2561
 StartChar: space
 Encoding: 32 32 0
 Width: 600
@@ -933,6 +934,7 @@ Encoding: 65 65 33
 Width: 600
 Flags: HMW
 HStem: 0 41<36 67 108 187 408 484 527 564> 188 41<178 413> 522 41<126 246 286 286 286 301>
+AnchorPoint: "above" 260 563 basechar 0
 Fore
 428 188 m 1
  162 188 l 1
@@ -1007,6 +1009,7 @@ Width: 600
 Flags: HW
 HStem: -16 41<263 354> 397 20 535 41<271.5 338> 543 20<492 505.5>
 VStem: 63 41<242 248 248 319> 478 41<507 536>
+AnchorPoint: "above" 305 574 basechar 0
 Fore
 478 507 m 1
  478 536 l 2
@@ -1929,6 +1932,7 @@ Width: 600
 Flags: HW
 HStem: -16 41<192.5 262.5> 0 41<460 514> 217 41<238 306> 390 41<280.5 332.5>
 VStem: 72 41<85 142.5> 419 41<41 67 67 67 112 202 202 202 237 308> 419 122<14 27.5> 419 41
+AnchorPoint: "above" 295 431 basechar 0
 Fore
 419 0 m 1
  419 67 l 1
@@ -1993,6 +1997,7 @@ Width: 600
 Flags: HW
 HStem: -16 41<256.5 342> 390 41<256 344.5> 397 20<484 497.5>
 VStem: 84 41<152.5 260> 470 41<376 389>
+AnchorPoint: "above" 314 431 basechar 0
 Fore
 470 376 m 1
  470 389 l 2
@@ -16924,6 +16929,7 @@ StartChar: circumflex
 Encoding: 710 710 578
 Width: 600
 Flags: HW
+AnchorPoint: "above" 297 428 basechar 0
 Fore
 300 639 m 1
  432 531 l 2
@@ -16942,6 +16948,7 @@ StartChar: caron
 Encoding: 711 711 579
 Width: 600
 Flags: HW
+AnchorPoint: "above" 297 429 basechar 0
 Fore
 300 490 m 1
  168 599 l 1
@@ -17295,18 +17302,23 @@ StartChar: gravecomb
 Encoding: 768 768 600
 Width: 0
 Flags: HW
+AnchorPoint: "above" -300 417 mark 0
+AnchorPoint: "abovemk" -300 417 mark 0
 Refer: 64 96 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: acutecomb
 Encoding: 769 769 601
 Width: 0
 Flags: HW
+AnchorPoint: "abovemk" -300 417 mark 0
+AnchorPoint: "above" -300 417 mark 0
 Refer: 115 180 S 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni0302
 Encoding: 770 770 602
 Width: 0
 Flags: HW
+AnchorPoint: "above" -300 417 mark 0
 Refer: 578 710 S 1 0 0 1 -600 0 2
 EndChar
 StartChar: tildecomb
@@ -17314,6 +17326,7 @@ Encoding: 771 771 603
 Width: 0
 Flags: HW
 HStem: 516 41<-244.5 -229.5> 564 41<-370 -354>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 596 732 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni0304
@@ -17321,6 +17334,7 @@ Encoding: 772 772 604
 Width: 0
 Flags: HW
 HStem: 536 40<-418 -182>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 110 175 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni0305
@@ -17328,6 +17342,7 @@ Encoding: 773 773 605
 Width: 0
 Flags: HMW
 HStem: 536 40<-528.57 -80>
+AnchorPoint: "above" -300 417 mark 0
 Fore
 -82 536 m 2
  -518 536 l 2
@@ -17343,12 +17358,14 @@ Encoding: 774 774 606
 Width: 0
 Flags: HW
 HStem: 490 41<-328 -272>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 592 728 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni0307
 Encoding: 775 775 607
 Width: 0
 Flags: HW
+AnchorPoint: "above" -300 417 mark 0
 Refer: 593 729 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni0308
@@ -17356,14 +17373,16 @@ Encoding: 776 776 608
 Width: 0
 Flags: HW
 VStem: -460 100<547.5 574> -239 100<547.5 574>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 103 168 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: hookabovecomb
 Encoding: 777 777 609
 Width: 0
-Flags: W
+Flags: HW
 HStem: 666 42<-300 -288.147>
 VStem: -396 42<613 625> -320 40<501 529>
+AnchorPoint: "above" -300 417 mark 0
 Fore
 -280 525 m 2
  -280 501 l 2
@@ -17387,18 +17406,21 @@ Width: 0
 Flags: HW
 HStem: 480 33<-316.5 -283.5> 628 33<-316.5 -283.5>
 VStem: -393 33<555 586.5> -240 33<554.5 586>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 594 730 S 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni030B
 Encoding: 779 779 611
 Width: 0
 Flags: HW
+AnchorPoint: "above" -300 417 mark 0
 Refer: 597 733 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni030C
 Encoding: 780 780 612
 Width: 0
 Flags: HW
+AnchorPoint: "above" -300 417 mark 0
 Refer: 579 711 S 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni030D
@@ -17406,6 +17428,7 @@ Encoding: 781 781 613
 Width: 0
 Flags: HMW
 VStem: -320 40<513 618>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 580 712 N 1 0 0 1 -600 0 2
 EndChar
 StartChar: uni030E
@@ -17413,6 +17436,7 @@ Encoding: 782 782 614
 Width: 0
 Flags: HMW
 VStem: -380 40<513 618> -260 40<513 618>
+AnchorPoint: "above" -300 417 mark 0
 Fore
 -220 611 m 2
  -220 513 l 1
@@ -17433,7 +17457,8 @@ EndChar
 StartChar: uni030F
 Encoding: 783 783 615
 Width: 0
-Flags: W
+Flags: HW
+AnchorPoint: "above" -300 417 mark 0
 Fore
 -291 593 m 2
  -301 603 -303 606 -303 612 c 0
@@ -17460,6 +17485,7 @@ Encoding: 784 784 616
 Width: 0
 Flags: HW
 HStem: 490 41<-328 -272>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 593 729 N 1 0 0 1 -600 64 2
 Refer: 592 728 N 1 0 0 1 -600 0 2
 EndChar
@@ -17468,6 +17494,7 @@ Encoding: 785 785 617
 Width: 0
 Flags: HW
 HStem: 579 41<-328 -272>
+AnchorPoint: "above" -300 417 mark 0
 Refer: 592 728 N 1 0 0 -1 -600 1110 2
 EndChar
 StartChar: uni031B
@@ -63130,6 +63157,33 @@ Fore
  339 -14 330 -5 330 6 c 0
  330 9 331 15 332 19 c 2
  437 358 l 1
+EndSplineSet
+EndChar
+StartChar: uni0298
+Encoding: 664 664 2560
+Width: 600
+Flags: HW
+TeX: 117 0 0 0
+HStem: -16 41<248 351.5> 390 41<248 352.5>
+VStem: 72 41<157 258.5> 487 41<155.5 257.5>
+Fore
+295 268 m 2
+ 305 268 l 2
+ 344 268 374 240 374 203 c 0
+ 374 165 344 137 305 137 c 2
+ 295 137 l 2
+ 256 137 226 166 226 203 c 0
+ 226 240 256 268 295 268 c 2
+300 431 m 0
+ 428 431 528 332 528 205 c 0
+ 528 83 426 -16 300 -16 c 0
+ 173 -16 72 83 72 208 c 0
+ 72 331 173 431 300 431 c 0
+300 390 m 0
+ 196 390 113 309 113 208 c 0
+ 113 106 196 25 300 25 c 0
+ 403 25 487 106 487 205 c 0
+ 487 310 405 390 300 390 c 0
 EndSplineSet
 EndChar
 EndChars
