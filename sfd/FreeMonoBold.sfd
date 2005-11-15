@@ -4,7 +4,7 @@ FullName: Free Monospaced Bold
 FamilyName: FreeMono
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005 Free Software Foundation.
-Version: $Revision: 1.12 $
+Version: $Revision: 1.13 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -66,7 +66,7 @@ UnicodeInterp: none
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 224 16 12
+WinInfo: 864 16 12
 BeginPrivate: 8
 UniqueID 7 5020946
 BlueValues 31 [-20 0 437 457 583 603 623 643]
@@ -2236,7 +2236,7 @@ Width: 600
 Flags: W
 HStem: 0 100<22 136 141 160.5 346 371 557 582> 350 100<203.5 245.5 411.5 469.5>
 VStem: 41 100<100 337> 252 100<0 325> 463 100<0 356.5>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 48 0 m 2
  12 0 -19 11 -19 50 c 0
@@ -10993,7 +10993,7 @@ Width: 600
 Flags: W
 HStem: -13 100<134.5 192.5 358.5 400.5> 483 100<22 47 233 258 443.5 463 468 582>
 VStem: 41 100<80.5 583> 252 100<112 583> 463 100<100 483>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 556 583 m 2
  592 583 623 572 623 533 c 0
@@ -13524,7 +13524,7 @@ Width: 600
 Flags: W
 HStem: -13 100<134.5 192.5 358.5 400.5> 337 100<22 47 233 258 443.5 463 468 582>
 VStem: 41 100<80.5 437> 252 100<112 437> 463 100<100 337>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Refer: 77 109 S -1 0 0 -1 604 437 2
 EndChar
 StartChar: uni0270
@@ -13533,7 +13533,7 @@ Width: 600
 Flags: W
 HStem: -13 100<134.5 192.5 358.5 400.5> 337 100<22 47 233 258 443.5 463 468 582>
 VStem: 41 100<80.5 437> 252 100<112 437> 463 100<-205 337 -105 337>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 556 437 m 2
  592 437 623 426 623 387 c 0
@@ -13573,7 +13573,7 @@ Width: 600
 Flags: W
 HStem: -203 100<349.5 437.5> 0 100<22 136 141 160.5 346 371> 350 100<203.5 245.5 411.5 469.5>
 VStem: 41 100<100 337> 252 100<0 325> 463 100<-14 356.5>
-CounterMasks: 1 1c
+CounterMasks: 1 00
 Fore
 48 0 m 2
  12 0 -19 11 -19 50 c 0
@@ -14540,7 +14540,7 @@ Width: 0
 Flags: W
 HStem: 451 21G<-307.5 -292.5> 674 53<-334.5 -268>
 VStem: -423 53<597.5 640.5> -326 52<478 531.5> -230 53<564.5 643.5>
-CounterMasks: 1 38
+CounterMasks: 1 00
 AnchorPoint: "above" -300 424 mark 0
 Fore
 -326 484 m 2
@@ -14701,7 +14701,7 @@ StartChar: uni0321
 Encoding: 801 801 547
 Width: 0
 Flags: HW
-Refer: 548 802 N -1 0 0 1 600 0 2
+Refer: 548 802 S -1 0 0 1 -600 0 2
 EndChar
 StartChar: uni0322
 Encoding: 802 802 548
@@ -14795,24 +14795,32 @@ StartChar: tonos
 Encoding: 900 900 556
 Width: 600
 Flags: W
-VStem: -340 80<554 703>
-Refer: 541 781 N 1 0 0 1 0 0 2
+Fore
+344 637 m 2
+ 302 499 l 2
+ 295 477 272 459 250 459 c 0
+ 232 459 220 471 220 487 c 0
+ 220 491 221 495 222 499 c 2
+ 264 637 l 2
+ 271 659 294 677 316 677 c 0
+ 334 677 346 665 346 649 c 0
+ 346 645 345 641 344 637 c 2
+EndSplineSet
 EndChar
 StartChar: dieresistonos
 Encoding: 901 901 557
 Width: 600
 Flags: W
 HStem: 534 120<179.5 213 387.5 421>
-VStem: 260 80<566 715>
+Refer: 556 900 S 1 0 0 1 32 75 2
 Refer: 103 168 N 1 0 0 1 0 0 3
-Refer: 541 781 N 1 0 0 1 600 12 2
 EndChar
 StartChar: Alphatonos
 Encoding: 902 902 558
 Width: 600
 Flags: HW
 VStem: -40 80<457 606>
-Refer: 556 900 S 1 0 0 1 300 -97 2
+Refer: 556 900 S 1 0 0 1 -290 -97 2
 Refer: 567 913 N 1 0 0 1 0 0 3
 EndChar
 StartChar: anoteleia
@@ -14826,7 +14834,7 @@ Encoding: 904 904 560
 Width: 600
 Flags: HW
 VStem: -641 80<419 568>
-Refer: 556 900 N 1 0 0 1 -301 -135 2
+Refer: 556 900 S 1 0 0 1 -351 -85 2
 Refer: 571 917 N 1 0 0 1 0 0 2
 EndChar
 StartChar: Etatonos
@@ -14834,7 +14842,7 @@ Encoding: 905 905 561
 Width: 600
 Flags: HW
 VStem: -635 80<419 568>
-Refer: 556 900 S 1 0 0 1 -295 -135 2
+Refer: 556 900 S 1 0 0 1 -318 -95 2
 Refer: 573 919 N 1 0 0 1 0 0 2
 EndChar
 StartChar: Iotatonos
@@ -14842,7 +14850,7 @@ Encoding: 906 906 562
 Width: 600
 Flags: HW
 VStem: -603 80<419 568>
-Refer: 556 900 S 1 0 0 1 -263 -135 2
+Refer: 556 900 S 1 0 0 1 -273 -91 2
 Refer: 575 921 N 1 0 0 1 0 0 2
 EndChar
 StartChar: Omicrontonos
@@ -14850,7 +14858,7 @@ Encoding: 908 908 563
 Width: 600
 Flags: HW
 VStem: -650 80<419 568>
-Refer: 556 900 S 1 0 0 1 -310 -135 2
+Refer: 556 900 S 1 0 0 1 -310 -85 2
 Refer: 581 927 N 1 0 0 1 0 0 2
 EndChar
 StartChar: Upsilontonos
@@ -14858,7 +14866,7 @@ Encoding: 910 910 564
 Width: 600
 Flags: HW
 VStem: -656 80<419 568>
-Refer: 556 900 N 1 0 0 1 -316 -135 2
+Refer: 556 900 S 1 0 0 1 -326 -85 2
 Refer: 586 933 N 1 0 0 1 0 0 2
 EndChar
 StartChar: Omegatonos
@@ -14866,18 +14874,17 @@ Encoding: 911 911 565
 Width: 600
 Flags: HW
 VStem: -651 80<419 568>
-Refer: 556 900 S 1 0 0 1 -311 -135 2
+Refer: 556 900 S 1 0 0 1 -281 -85 2
 Refer: 590 937 N 1 0 0 1 0 0 2
 EndChar
 StartChar: iotadieresistonos
 Encoding: 912 912 566
 Width: 600
 Flags: W
-HStem: -16 100<375.5 463.5> 337 100<153.5 250> 502 120<179.5 213 387.5 421>
-VStem: -340 80<534 683> 250 100<119.5 437>
-Refer: 103 168 S 1 0 0 1 0 -32 2
-Refer: 541 781 S 1 0 0 1 0 -20 2
-Refer: 481 617 N 1 0 0 1 0 0 2
+HStem: -16 100<375.5 463.5> 337 100<153.5 250> 510 120<140.5 174 348.5 382>
+VStem: 250 100<119.5 437>
+Refer: 557 901 N 1 0 0 1 -39 -24 2
+Refer: 606 953 N 1 0 0 1 0 0 3
 EndChar
 StartChar: Alpha
 Encoding: 913 913 567
@@ -15234,7 +15241,7 @@ Width: 600
 Flags: W
 HStem: 0 100<205.5 250 225 397> 483 100<32 50 229.5 369.5 550 567.5>
 VStem: 50 100<300.5 583> 250 100<100 143 247 483> 450 100<344 583>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 550 583 m 2
  585 583 616 575 616 533 c 0
@@ -15379,42 +15386,41 @@ Encoding: 940 940 593
 Width: 600
 Flags: HW
 VStem: -343 80<555 704>
-Refer: 556 900 S 1 0 0 1 -3 1 2
-Refer: 598 945 N 1 0 0 1 0 0 2
+Refer: 556 900 S 1 0 0 1 28 68 2
+Refer: 598 945 N 1 0 0 1 0 0 3
 EndChar
 StartChar: epsilontonos
 Encoding: 941 941 594
 Width: 600
 Flags: HW
 VStem: -341 80<553 702>
-Refer: 556 900 N 1 0 0 1 -1 -1 2
-Refer: 602 949 N 1 0 0 1 0 0 2
+Refer: 556 900 N 1 0 0 1 97.5 51 2
+Refer: 602 949 N 1 0 0 1 0 0 3
 EndChar
 StartChar: etatonos
 Encoding: 942 942 595
 Width: 600
 Flags: HW
 VStem: -308 80<538 687>
-Refer: 556 900 N 1 0 0 1 32 -16 2
-Refer: 604 951 N 1 0 0 1 0 0 2
+Refer: 556 900 N 1 0 0 1 49 51 2
+Refer: 604 951 N 1 0 0 1 0 0 3
 EndChar
 StartChar: iotatonos
 Encoding: 943 943 596
 Width: 600
 Flags: HW
 VStem: -379 80<538 687>
-Refer: 556 900 N 1 0 0 1 -39 -16 2
-Refer: 606 953 N 1 0 0 1 0 0 2
+Refer: 556 900 N 1 0 0 1 -22 51 2
+Refer: 606 953 N 1 0 0 1 0 0 3
 EndChar
 StartChar: upsilondieresistonos
 Encoding: 944 944 597
 Width: 600
-Flags: HW
-HStem: 502 120<179.5 213 387.5 421>
-VStem: -340 80<534 683>
-Refer: 103 168 S 1 0 0 1 0 -32 2
-Refer: 541 781 S 1 0 0 1 0 -20 2
-Refer: 618 965 N 1 0 0 1 0 0 2
+Flags: W
+HStem: -16 100<232.5 357> 337 100<56.5 92 367.5 539.5> 510 120<178 211.5 386 419.5>
+VStem: 92 100<104 437> 405 100<104 337>
+Refer: 557 901 N 1 0 0 1 -1.5 -24 2
+Refer: 618 965 N 1 0 0 1 0 0 3
 EndChar
 StartChar: alpha
 Encoding: 945 945 598
@@ -15982,7 +15988,7 @@ EndChar
 StartChar: xi
 Encoding: 958 958 611
 Width: 600
-Flags: W
+Flags: HW
 HStem: -224 86<332.5 376> 291 87<331 431> 551 86<117 282>
 VStem: 117 84<506 551> 128 78<112.5 211.5> 236 79<424.5 465> 418 81<-86.5 -30>
 Fore
@@ -15990,9 +15996,9 @@ Fore
  320 -224 298 -216 298 -181 c 0
  298 -144 318 -138 347 -138 c 2
  376 -138 l 1
- 413 -93 416 -94 418 -79 c 0
- 418 -8 268 -32 177 15 c 0
- 144 31 128 76 128 149 c 0xee
+ 413 -93 418 -94.1327 418 -79 c 0
+ 418 -13 237 -42 177 15 c 0
+ 150.411 40.2594 128 76 128 149 c 0xee
  128 274 235 348 269 357 c 1
  247 377 236 403 236 446 c 0
  236 468 235 501 282 551 c 1
@@ -16011,8 +16017,8 @@ Fore
  479 307 451 291 431 291 c 2
  384 291 l 2
  278 291 206 245 206 149 c 0
- 206 86 229 47 274 32 c 0
- 408 14 499 13 499 -73 c 0
+ 206 86 231 56 318 42 c 0
+ 415.238 26.3526 499 22 499 -73 c 0
  499 -100 487 -121 476 -138 c 1
  506 -139 522 -160 522 -181 c 0
  522 -209 489 -224 472 -224 c 2
@@ -16385,7 +16391,7 @@ Width: 600
 Flags: W
 HStem: -4 100<192.5 250 350 379.5> 337 100<25 60> 618 20G<286 314>
 VStem: 60 100<132 437> 250 100<-156 -4 96 588> 440 100<132 439>
-CounterMasks: 1 1c
+CounterMasks: 1 00
 Fore
 -22 387 m 0
  -22 428 7 437 44 437 c 2
@@ -16459,37 +16465,37 @@ EndChar
 StartChar: iotadieresis
 Encoding: 970 970 623
 Width: 600
-Flags: W
+Flags: HW
 HStem: -16 100<375.5 463.5> 337 100<153.5 250> 490 120<140.5 174 348.5 382>
 VStem: 250 100<119.5 437>
-Refer: 103 168 N 1 0 0 1 -39 -44 2
-Refer: 606 953 N 1 0 0 1 0 0 2
+Refer: 103 168 N 1 0 0 1 -39 -24 2
+Refer: 606 953 N 1 0 0 1 0 0 3
 EndChar
 StartChar: upsilondieresis
 Encoding: 971 971 624
 Width: 600
-Flags: W
+Flags: HW
 HStem: -16 100<232.5 357> 337 100<56.5 92 367.5 539.5> 490 120<177.5 211 385.5 419>
 VStem: 92 100<104 437> 405 100<104 337>
-Refer: 103 168 N 1 0 0 1 -2 -44 2
-Refer: 618 965 N 1 0 0 1 0 0 2
+Refer: 103 168 N 1 0 0 1 -1.5 -24 2
+Refer: 618 965 N 1 0 0 1 0 0 3
 EndChar
 StartChar: omicrontonos
 Encoding: 972 972 625
 Width: 600
-Flags: W
+Flags: HW
 HStem: -16 100<228 372> 350 100<229 373.5>
 VStem: 42 100<152 283> 263 80<550 699> 458 100<152 281.5>
-Refer: 556 900 N 1 0 0 1 603 -4 2
+Refer: 556 900 N 1 0 0 1 20 51 2
 Refer: 612 959 N 1 0 0 1 0 0 3
 EndChar
 StartChar: upsilontonos
 Encoding: 973 973 626
 Width: 600
-Flags: W
+Flags: HW
 HStem: -16 100<232.5 357> 337 100<56.5 92 367.5 539.5>
 VStem: 92 100<104 437> 258 80<550 699> 405 100<104 337>
-Refer: 556 900 N 1 0 0 1 598 -4 2
+Refer: 556 900 N 1 0 0 1 15.5 51 2
 Refer: 618 965 N 1 0 0 1 0 0 3
 EndChar
 StartChar: omegatonos
@@ -16497,8 +16503,8 @@ Encoding: 974 974 627
 Width: 600
 Flags: W
 HStem: -40 87<123.5 231> 364 87<150 203>
-VStem: 19 83<145 246.5> 257 85<89.5 255> 422 80<553 702> 493 84<148.5 249.5>
-Refer: 556 900 N 1 0 0 1 762 -1 2
+VStem: 19 83<145 246.5> 257 85<89.5 255> 493 84<148.5 249.5>
+Refer: 556 900 S 1 0 0 1 49 54 2
 Refer: 622 969 N 1 0 0 1 0 0 3
 EndChar
 StartChar: uni03D0
@@ -16570,7 +16576,7 @@ Width: 600
 Flags: W
 HStem: -3 100<160 250 350 440> 337 100<162 250 218 250 350 438> 619 20G<286 314>
 VStem: -4 100<149.5 275.5> 250 100<-155 -3 97 337 437 589> 504 100<149.5 275.5>
-CounterMasks: 1 1c
+CounterMasks: 1 00
 Fore
 250 337 m 1
  218 337 l 2
@@ -17173,7 +17179,7 @@ Width: 600
 Flags: W
 HStem: 0 100<193 407> 483 100<68.5 226.5 373.5 531.5>
 VStem: 93 100<100 483> 258 84<-58 -38> 407 100<100 483>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 559 50 m 2
  559 -2 518 5 493 0 c 2
@@ -17749,7 +17755,7 @@ Width: 600
 Flags: W
 HStem: 0 100<129.5 250 149 473> 121 100<204 250 350 396> 362 100<204 250 350 396> 483 100<149 470>
 VStem: 4 100<210.5 381> 250 100<100 121 221 362 462 483> 496 100<210.5 381>
-CounterMasks: 1 0e
+CounterMasks: 1 00
 Fore
 350 362 m 1
  350 221 l 1
@@ -17876,7 +17882,7 @@ Width: 600
 Flags: W
 HStem: 0 100<44 573.5> 483 100<4.5 110 122 136.5 231 250 268 369 463 564 578 594.5>
 VStem: 22 100<100 483> 250 100<100 483> 478 100<100 483>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 202 533 m 0
  202 574 233 583 268 583 c 2
@@ -18715,7 +18721,7 @@ Width: 600
 Flags: W
 HStem: 1 100<230.5 256 350 378> 245 193<62 538>
 VStem: 62 100<292.5 337> 250 100<101 337> 438 100<292 337>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 411 53 m 0
  411 31 402 1 354 1 c 0
@@ -18752,7 +18758,7 @@ Width: 600
 Flags: W
 HStem: -205 100<215.5 250 234 426> 10 100<186 250 350 414> 350 100<138 250 350 462> 548 100<215 250>
 VStem: -36 100<162.5 288.5> 250 100<-105 10 110 350 450 548> 536 100<162.5 288.5>
-CounterMasks: 1 0e
+CounterMasks: 1 00
 Back
 414 350 m 2
  350 350 l 1
@@ -23316,7 +23322,7 @@ Width: 600
 Flags: W
 HStem: -236 58<292 308> -119 59<233 249 351 367>
 VStem: 212 59<-97.5 -81> 271 58<-215 -199> 329 59<-97.5 -81>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 300 -178 m 0
  316 -178 329 -191 329 -207 c 0
@@ -23391,7 +23397,7 @@ Width: 600
 Flags: W
 HStem: -236 58<409.5 426> -178 59<292 308> -119 59<174 190.5>
 VStem: 153 59<-97.5 -81> 271 58<-156 -140> 388 59<-215 -199>
-CounterMasks: 1 1c
+CounterMasks: 1 00
 Fore
 300 -119 m 0
  316 -119 329 -132 329 -148 c 0
@@ -24114,7 +24120,7 @@ Width: 600
 Flags: W
 HStem: -0 100<96 110 110 363 363 405> 190 100<199 290> 380 100<96 148 289 292>
 VStem: 440 100<102 177>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 440 303 m 2
  439 361 429 381 362 381 c 0
@@ -24957,7 +24963,7 @@ Encoding: 7743 7743 944
 Width: 600
 HStem: 0 100<22 136 141 160.5 346 371 557 582> 350 100<203.5 245.5 411.5 469.5>
 VStem: 41 100<100 337> 252 100<0 325> 463 100<0 356.5>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Refer: 115 180 N 1 0 0 1 42 -6 2
 Refer: 77 109 N 1 0 0 1 0 0 2
 EndChar
@@ -24974,7 +24980,7 @@ Encoding: 7745 7745 946
 Width: 600
 HStem: 0 100<22 136 141 160.5 346 371 557 582> 350 100<203.5 245.5 411.5 469.5>
 VStem: 41 100<100 337> 252 100<0 325> 463 100<0 356.5>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Refer: 523 729 N 1 0 0 1 29 -44 2
 Refer: 77 109 N 1 0 0 1 0 0 2
 EndChar
@@ -24991,7 +24997,7 @@ Encoding: 7747 7747 948
 Width: 600
 HStem: 0 100<22 136 141 160.5 346 371 557 582> 350 100<203.5 245.5 411.5 469.5>
 VStem: 41 100<100 337> 252 100<0 325> 463 100<0 356.5>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Refer: 523 729 N 1 0 0 1 2 -694 2
 Refer: 77 109 N 1 0 0 1 0 0 2
 EndChar
@@ -25708,7 +25714,7 @@ Encoding: 7842 7842 1038
 Width: 600
 HStem: 0 100<27.5 46 45 196.5 388 571> 158 100<178 416> 483 100<119.5 201> 637 21<-361.5 -346.5> 860 53<-388.5 -322>
 VStem: -477 53<783.5 826.5> -380 52<664 717.5> -284 53<750.5 829.5>
-CounterMasks: 1 07
+CounterMasks: 1 00
 Refer: 537 777 N 1 0 0 1 -54 186 2
 Refer: 33 65 N 1 0 0 1 0 0 2
 EndChar
@@ -25760,7 +25766,7 @@ Width: 600
 Flags: H
 HStem: 0 100<27.5 46 45 196.5 388 571> 158 100<178 416> 483 100<119.5 201> 640 21<133.5 147.5 420 434> 879 21<-323.5 -308.5> 1102 53<-350.5 -284>
 VStem: -439 53<1025.5 1068.5> -342 52<906 959.5> -246 53<992.5 1071.5>
-CounterMasks: 1 0380
+CounterMasks: 1 00
 Refer: 537 777 N 1 0 0 1 -16 428 2
 Refer: 129 194 N 1 0 0 1 0 0 2
 EndChar
@@ -25845,7 +25851,7 @@ Width: 600
 Flags: H
 HStem: 0 100<27.5 46 45 196.5 388 571> 158 100<178 416> 483 100<119.5 201> 647 68<254 346> 769 21<-319.5 -304.5> 992 53<-346.5 -280>
 VStem: -435 53<915.5 958.5> -338 52<796 849.5> -242 53<882.5 961.5>
-CounterMasks: 1 0380
+CounterMasks: 1 00
 Refer: 537 777 S 1 0 0 1 -12 318 2
 Refer: 193 258 N 1 0 0 1 0 0 2
 EndChar
@@ -26413,7 +26419,7 @@ Encoding: 7927 7927 1123
 Width: 600
 HStem: -205 100<54.5 320> 337 100<397.5 421> 490 21<-307.5 -292.5> 713 53<-334.5 -268>
 VStem: -423 53<636.5 679.5> -326 52<517 570.5> -230 53<603.5 682.5>
-CounterMasks: 1 0e
+CounterMasks: 1 00
 Refer: 537 777 N 1 0 0 1 0 39 2
 Refer: 89 121 N 1 0 0 1 0 0 2
 EndChar
@@ -28755,7 +28761,7 @@ Encoding: 8801 8801 1222
 Width: 600
 Flags: W
 HStem: 46 100<88.5 492> 230 100<88.5 492> 414 100<88.5 492>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 42 280 m 0
  42 321 69 330 108 330 c 2
@@ -33486,7 +33492,7 @@ Width: 600
 Flags: W
 HStem: 0 88<50 550> 412 88<50 550>
 VStem: 50 88<0 500> 256 88<88 412> 462 88<0 500>
-CounterMasks: 1 38
+CounterMasks: 1 00
 Fore
 50 0 m 25
  50 500 l 25
@@ -33556,7 +33562,7 @@ Width: 600
 Flags: W
 HStem: 0 88<50 550> 206 88<138 344> 412 88<50 550 344 462>
 VStem: 50 88<0 500 88 206> 256 88<206 412> 462 88<0 500>
-CounterMasks: 1 fc
+CounterMasks: 1 00
 Fore
 50 0 m 25
  50 500 l 25
@@ -33583,7 +33589,7 @@ Width: 600
 Flags: W
 HStem: 0 88<50 550 344 462> 206 88<138 344> 412 88<50 550>
 VStem: 50 88<0 500 294 412> 256 88<88 294> 462 88<0 500>
-CounterMasks: 1 fc
+CounterMasks: 1 00
 Refer: 1442 9712 N 1 0 0 -1 0 500 2
 EndChar
 StartChar: uni25F2
@@ -33592,7 +33598,7 @@ Width: 600
 Flags: W
 HStem: 0 88<50 550 138 256> 206 88<256 462> 412 88<50 550>
 VStem: 50 88<0 500> 256 88<88 294> 462 88<0 500 294 412>
-CounterMasks: 1 fc
+CounterMasks: 1 00
 Refer: 1442 9712 N -1 -0 0 -1 600 500 2
 EndChar
 StartChar: uni25F3
@@ -33601,7 +33607,7 @@ Width: 600
 Flags: W
 HStem: 0 88<50 550> 206 88<256 462> 412 88<50 550 138 256>
 VStem: 50 88<0 500> 256 88<206 412> 462 88<0 500 88 206>
-CounterMasks: 1 fc
+CounterMasks: 1 00
 Refer: 1442 9712 N -1 0 0 1 600 0 2
 EndChar
 StartChar: uni25F4
@@ -33717,7 +33723,7 @@ Width: 600
 Flags: W
 HStem: -2 84<226 373.5> 216 100<286 314.5> 448 84<229 375.5>
 VStem: 33 84<192.5 341> 250 100<252 280.5> 483 84<191.5 338>
-CounterMasks: 1 1c
+CounterMasks: 1 00
 Fore
 301 316 m 0
  328 316 350 293 350 266 c 0
@@ -33741,7 +33747,7 @@ Encoding: 9776 9776 1453
 Width: 600
 Flags: W
 HStem: 0 100<50 550> 200 100<50 550> 400 100<50 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 50 0 m 25
  50 100 l 25
@@ -33765,7 +33771,7 @@ Encoding: 9777 9777 1454
 Width: 600
 Flags: W
 HStem: 0 100<50 550> 200 100<50 550> 400 100<50 250 350 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 350 400 m 1
  350 500 l 1
@@ -33794,7 +33800,7 @@ Encoding: 9778 9778 1455
 Width: 600
 Flags: W
 HStem: 0 100<50 550> 200 100<50 250 350 550> 400 100<50 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 50 0 m 25
  50 100 l 25
@@ -33823,7 +33829,7 @@ Encoding: 9779 9779 1456
 Width: 600
 Flags: W
 HStem: 0 100<50 550> 200 100<50 250 350 550> 400 100<50 250 350 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 350 400 m 1
  350 500 l 1
@@ -33857,7 +33863,7 @@ Encoding: 9780 9780 1457
 Width: 600
 Flags: W
 HStem: 0 100<50 250 350 550> 200 100<50 550> 400 100<50 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 250 100 m 1
  250 0 l 1
@@ -33886,7 +33892,7 @@ Encoding: 9781 9781 1458
 Width: 600
 Flags: W
 HStem: 0 100<50 250 350 550> 200 100<50 550> 400 100<50 250 350 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 350 400 m 1
  350 500 l 1
@@ -33920,7 +33926,7 @@ Encoding: 9782 9782 1459
 Width: 600
 Flags: W
 HStem: 0 100<50 250 350 550> 200 100<50 250 350 550> 400 100<50 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 350 100 m 1
  550 100 l 9
@@ -33954,7 +33960,7 @@ Encoding: 9783 9783 1460
 Width: 600
 Flags: W
 HStem: 0 100<50 250 350 550> 200 100<50 250 350 550> 400 100<50 250 350 550>
-CounterMasks: 1 e0
+CounterMasks: 1 00
 Fore
 350 400 m 1
  350 500 l 1
