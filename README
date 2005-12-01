@@ -1,12 +1,12 @@
 -*-text-*-
-$Id: README,v 1.1 2002-11-28 10:10:30 peterlin Exp $
+$Id: README,v 1.2 2005-12-01 15:00:24 peterlin Exp $
 
-Summary: This project aims to privide a set of free scalable
-(PostScript Type0, TrueType, OpenType...) fonts covering the ISO
-10646/Unicode UCS (Universal Character Set).
+Summary: This project aims to privide a set of free scalable (i.e.,
+OpenType) fonts covering the ISO 10646/Unicode UCS (Universal
+Character Set).
 
 
-Why do we need free scalable UCS fonts?
+WHY DO WE NEED FREE SCALABLE UCS FONTS?
 
 A large number of free software users switched from free X11
 bitmapped fonts to proprietary Microsoft Truetype fonts, as a) they
@@ -43,11 +43,11 @@ resources for other national scripts, many of them aiming to be a
 suitable match for Latin fonts like Times or Helvetica.
 
 
-What do we plan to achieve, and how?
+WHAT DO WE PLAN TO ACHIEVE, AND HOW?
 
 Our aim is to collect available resources, fill in the missing pieces,
-and provide a set of free high-quality scalable (Type 1 and Truetype)
-UCS fonts, released under GPL. 
+and provide a set of free high-quality scalable (Opentype) UCS fonts,
+released under GNU General Public License.
 
 Free UCS scalable fonts will cover the following character sets
 
@@ -67,8 +67,8 @@ Free UCS scalable fonts will cover the following character sets
 * APL symbols
   etc.
 
-A free Postscript font editor, George Williams's Pfaedit
-<http://pfaedit.sourceforge.net/> will be used for creating new
+A free outline font editor, George Williams's FontForge
+<http://fontforge.sourceforge.net/> will be used for creating new
 glyphs.
 
 Which font shapes should be made? As historical style terms like
@@ -87,11 +87,40 @@ applications like xterm, users are referred to the existing UCS bitmap
 fonts, <http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html>.
 
 
-What do the file suffices mean?
+LICENSING
 
-The files with .sfd (Spline Font Database) are in PfaEdit's native
-format. Please use these if you plan to modify the font files. PfaEdit
-can export these to mostly any existing font file format.
+Free UCS scalable fonts is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the
+License, or (at your option) any later version.
+
+The fonts are distributed in the hope that they will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+02110-1301, USA.
+
+As a special exception, if you create a document which uses this font,
+and embed this font or unaltered portions of this font into the
+document, this font does not by itself cause the resulting document to
+be covered by the GNU General Public License. This exception does not
+however invalidate any other reasons why the document might be covered
+by the GNU General Public License. If you modify this font, you may
+extend this exception to your version of the font, but you are not
+obligated to do so. If you do not wish to do so, delete this exception
+statement from your version.
+
+
+WHAT DO THE FILE SUFFICES MEAN?
+
+The files with .sfd (Spline Font Database) are in FontForge's native
+format. Please use these if you plan to modify the font
+files. FontForge can export these to mostly any existing font file
+format.
 
 TrueType fonts for immediate consumption are the files with the .ttf
 (TrueType Font) suffix. You can use them directly, e.g. with the X
@@ -104,10 +133,10 @@ for overview, which glyphs are contained in which font file.
 You may have noticed the lacking of PostScript Type 1 (.pfa/.pfb) font
 files. Type 1 format does not support large (> 256) encoding vectors,
 so they can not be used with ISO 10646 encoding. If your printer
-supports it, you can use Type 0 format, though. Please use PfaEdit for
-conversion to Type 0.
+supports it, you can use Type 0 format, though. Please use FontForge
+for conversion to Type 0.
 
 
 Primoz Peterlin, <primoz.peterlin@biofiz.mf.uni-lj.si>
 
-Free UCS scalable fonts: ftp://biofiz.mf.uni-lj.si/pub/fonts/elbrus/
+Free UCS scalable fonts: http://savannah.nongnu.org/projects/freefont/
