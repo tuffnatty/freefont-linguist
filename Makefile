@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1 2005-12-01 15:03:24 peterlin Exp $
+# $Id: Makefile,v 1.2 2005-12-03 09:25:44 peterlin Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog
 SFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd \
@@ -10,8 +10,9 @@ RELEASE=freefont-$(DATE)
 VPATH=sfd
 BUILDDIR=$(PWD)
 TMPDIR=$(BUILDDIR)/$(RELEASE)
-ZIPFILE=$(RELEASE).zip
-TARFILE=$(RELEASE).tar.gz
+ZIPFILE=freefont-ttf-$(DATE).zip
+TARFILE=freefont-ttf-$(DATE).tar.gz
+SRCTARFILE=freefont-sfd-$(DATE).tar.gz
 
 .sfd.ttf:
 	cd $(BUILDDIR)/sfd
@@ -19,7 +20,7 @@ TARFILE=$(RELEASE).tar.gz
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf
 
-all: zip tar
+all: zip tar srctar
 
 ttf: $(SFDS)
 	cd $(BUILDDIR)/sfd
@@ -32,13 +33,19 @@ zip: $(TTFS)
 	zip -r $(ZIPFILE) $(RELEASE)/
 
 tar: $(TTFS)
-	rm -rf $(TMPDIR) $(ZIPFILE)
+	rm -rf $(TMPDIR) $(TARFILE)
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) $(TTFS) $(TMPDIR)
 	tar czf $(TARFILE) $(RELEASE)/
 
+srctar: $(SFDS)
+	rm -rf $(TMPDIR) $(SRCTARFILE)
+	mkdir $(TMPDIR)
+	cp -a $(ADMIN) sfd/*.sfd $(TMPDIR)
+	tar czf $(SRCTARFILE) $(RELEASE)/
+
 clean:
-	rm -rf $(TMPDIR) $(ZIPFILE)
+	rm -rf $(TMPDIR) $(ZIPFILE) $(TARFILE) $(SRCTARFILE)
 
 distclean:
-	rm -rf $(TMPDIR) $(ZIPFILE) $(TTFS)
+	rm -rf $(TMPDIR) $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(TTFS)
