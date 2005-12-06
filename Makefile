@@ -1,6 +1,6 @@
-# $Id: Makefile,v 1.2 2005-12-03 09:25:44 peterlin Exp $
+# $Id: Makefile,v 1.3 2005-12-06 10:52:07 peterlin Exp $
 
-ADMIN=README AUTHORS CREDITS COPYING ChangeLog
+ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 SFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd \
 FreeSansBoldOblique.sfd FreeSansBold.sfd FreeSansOblique.sfd FreeSans.sfd \
 FreeSerifBoldItalic.sfd FreeSerifBold.sfd FreeSerifItalic.sfd FreeSerif.sfd
@@ -13,6 +13,10 @@ TMPDIR=$(BUILDDIR)/$(RELEASE)
 ZIPFILE=freefont-ttf-$(DATE).zip
 TARFILE=freefont-ttf-$(DATE).tar.gz
 SRCTARFILE=freefont-sfd-$(DATE).tar.gz
+ZIPSIG=freefont-ttf-$(DATE).zip.sig
+TARSIG=freefont-ttf-$(DATE).tar.gz.sig
+SRCTARSIG=freefont-sfd-$(DATE).tar.gz.sig
+SIGS=$(ZIPSIG) $(TARSIG) $(SRCTARSIG)
 
 .sfd.ttf:
 	cd $(BUILDDIR)/sfd
@@ -20,7 +24,7 @@ SRCTARFILE=freefont-sfd-$(DATE).tar.gz
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf
 
-all: zip tar srctar
+all: tar srctar
 
 ttf: $(SFDS)
 	cd $(BUILDDIR)/sfd
@@ -45,7 +49,7 @@ srctar: $(SFDS)
 	tar czf $(SRCTARFILE) $(RELEASE)/
 
 clean:
-	rm -rf $(TMPDIR) $(ZIPFILE) $(TARFILE) $(SRCTARFILE)
+	rm -rf $(TMPDIR) $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(SIGS)
 
 distclean:
-	rm -rf $(TMPDIR) $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(TTFS)
+	rm -rf $(TMPDIR) $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(SIGS) $(TTFS)
