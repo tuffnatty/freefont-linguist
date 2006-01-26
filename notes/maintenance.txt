@@ -1,4 +1,4 @@
-$Id: maintenance.txt,v 1.1 2005-04-07 13:45:03 peterlin Exp $
+$Id: maintenance.txt,v 1.2 2006-01-26 22:32:11 peterlin Exp $
 
 1)  Using Change Log mode in Emacs
 
@@ -9,19 +9,29 @@ $Id: maintenance.txt,v 1.1 2005-04-07 13:45:03 peterlin Exp $
     export CVS_RSH=ssh
     cvs -z3 -d peterlin@savannah.nongnu.org:/cvsroot/freefont co freefont
     cd freefont/sfd
-    cvs -z3 -d peterlin@savannah.nongnu.org:/cvsroot/freefont commit FreeSansBold.sfd
+    cvs -z3 -d peterlin@savannah.nongnu.org:/cvsroot/freefont commit FreeSans.sfd
 
-3)  Creating detached signature file
+3)  Makefile
 
-    gpg -b freefont-ttf.tar.gz
+    "make" creates two compressed tar files: one with sources (SFD
+    files) and one with TrueType fonts. The naming convention is:
+
+    freefont-sfd-yyyymmdd.tar.gz
+    freefont-ttf-yyyymmdd.tar.gz
+
+    yyyymmdd is the year, month and date of release.
+
+4)  Creating detached signature file
+
+    gpg -b freefont-ttf-20060126.tar.gz
 
     This creates a file named freefont-ttf.tar.gz.sig. Option -ba
     creates an ASCII signature (with suffix .asc); Savannah
     documentation however requires binary detached signature (see
     https://savannah.gnu.org/faq/?admin=&group_id=5802&question=How_do_I_add_files_in_the_download_area.txt)
 
-4)  Adding files to the download area
+5)  Adding files to the download area
 
     * ftp savannah.gnu.org
     * cd incoming/savannah/freefont
-    * mput freefont-ttf.tar.gz freefont-ttf.tar.gz.sig
+    * mput freefont-ttf-20060126.tar.gz freefont-ttf-20060126.tar.gz.sig
