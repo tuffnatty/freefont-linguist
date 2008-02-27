@@ -4,7 +4,7 @@ FullName: Free Sans Oblique
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005 Free Software Foundation.
-Version: $Revision: 1.41 $
+Version: $Revision: 1.42 $
 ItalicAngle: -12
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1203625371
+ModificationTime: 1204057799
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -71,6 +71,7 @@ Lookup: 4 0 0 "'haln' Halant Forms in Bengali lookup 18"  {"'haln' Halant Forms 
 Lookup: 1 0 0 "'aalt' Access All Alternates in Latin lookup 19"  {"'aalt' Access All Alternates in Latin lookup 19 subtable"  } ['aalt' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "Single Substitution lookup 20"  {"Single Substitution lookup 20 subtable"  } []
 Lookup: 260 0 0 "'abvm' Above Base Mark in Greek lookup 0"  {"'abvm' Above Base Mark in Greek lookup 0 subtable"  } ['abvm' ('grek' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 1"  {"'kern' Horizontal Kerning in Latin lookup 1 subtable"  } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 2"  {"'kern' Horizontal Kerning lookup 2 subtable"  } ['kern' ('DFLT' <'dflt' > ) ]
 DEI: 0
@@ -94,7 +95,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 864 16 10
+WinInfo: 0 16 10
 BeginPrivate: 8
 UniqueID 7 5020908
 BlueValues 31 [-23 0 524 544 729 749 686 709]
@@ -109,7 +110,7 @@ systemdict /internaldict known
 StemSnapV 2 []
 ForceBold 5 false
 EndPrivate
-AnchorClass2: "1 Top"  "'abvm' Above Base Mark in Greek lookup 0 subtable" 
+AnchorClass2: "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin subtable" "1 Top"  "'abvm' Above Base Mark in Greek lookup 0 subtable" 
 BeginChars: 66002 1981
 
 StartChar: space
@@ -2136,6 +2137,8 @@ Width: 556
 Flags: W
 HStem: -23 77<213.867 367.547> 462 77<288.846 441.626>
 VStem: 80 88<101.865 296.807> 488 88<218.308 414.476>
+AnchorPoint: "below" 276 2 basechar 0
+AnchorPoint: "above" 382 537 basechar 0
 LayerCount: 2
 Fore
 SplineSet
