@@ -4,7 +4,7 @@ FullName: Free Monospaced Oblique
 FamilyName: FreeMono
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.35 $
+Version: $Revision: 1.36 $
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1205438249
+ModificationTime: 1205450625
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -53,9 +53,290 @@ OS2Vendor: 'GNU '
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew lookup 0"  {"'dlig' Discretionary Ligatures in Hebrew lookup 0 subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions lookup 1"  {"'frac' Diagonal Fractions lookup 1 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 DEI: 0
-ShortTable: cvt  2
-  33
-  633
+ShortTable: maxp 16
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  2
+  1
+  0
+  9
+  0
+  256
+  0
+  0
+  0
+EndShort
+TtTable: prep
+PUSHW_1
+ 511
+SCANCTRL
+SVTCA[y-axis]
+MPPEM
+PUSHB_1
+ 8
+LT
+IF
+PUSHB_2
+ 1
+ 1
+INSTCTRL
+EIF
+PUSHB_2
+ 70
+ 6
+CALL
+IF
+POP
+PUSHB_1
+ 16
+EIF
+MPPEM
+PUSHB_1
+ 20
+GT
+IF
+POP
+PUSHB_1
+ 128
+EIF
+SCVTCI
+PUSHB_1
+ 6
+CALL
+NOT
+IF
+SVTCA[y-axis]
+PUSHB_1
+ 4
+DUP
+RCVT
+PUSHB_1
+ 3
+CALL
+WCVTP
+SVTCA[x-axis]
+PUSHB_1
+ 5
+DUP
+RCVT
+PUSHB_1
+ 3
+CALL
+WCVTP
+EIF
+EndTTInstrs
+TtTable: fpgm
+PUSHB_1
+ 0
+FDEF
+PUSHB_1
+ 0
+SZP0
+MPPEM
+PUSHB_1
+ 42
+LT
+IF
+PUSHB_1
+ 74
+SROUND
+EIF
+PUSHB_1
+ 0
+SWAP
+MIAP[rnd]
+RTG
+PUSHB_1
+ 6
+CALL
+IF
+RTDG
+EIF
+MPPEM
+PUSHB_1
+ 42
+LT
+IF
+RDTG
+EIF
+DUP
+MDRP[rp0,rnd,grey]
+PUSHB_1
+ 1
+SZP0
+MDAP[no-rnd]
+RTG
+ENDF
+PUSHB_1
+ 1
+FDEF
+DUP
+DUP
+MDRP[rp0,min,white]
+MDAP[rnd]
+PUSHB_1
+ 7
+CALL
+NOT
+IF
+DUP
+DUP
+GC[orig]
+SWAP
+GC[cur]
+SUB
+ROUND[White]
+DUP
+IF
+DUP
+ABS
+DIV
+SHPIX
+ELSE
+POP
+POP
+EIF
+ELSE
+POP
+EIF
+ENDF
+PUSHB_1
+ 2
+FDEF
+MPPEM
+GT
+IF
+RCVT
+SWAP
+EIF
+POP
+ENDF
+PUSHB_1
+ 3
+FDEF
+ROUND[Black]
+RTG
+DUP
+PUSHB_1
+ 64
+LT
+IF
+POP
+PUSHB_1
+ 64
+EIF
+ENDF
+PUSHB_1
+ 4
+FDEF
+PUSHB_1
+ 6
+CALL
+IF
+POP
+SWAP
+POP
+ROFF
+IF
+MDRP[rp0,min,rnd,black]
+ELSE
+MDRP[min,rnd,black]
+EIF
+ELSE
+MPPEM
+GT
+IF
+IF
+MIRP[rp0,min,rnd,black]
+ELSE
+MIRP[min,rnd,black]
+EIF
+ELSE
+POP
+PUSHB_1
+ 5
+CALL
+IF
+PUSHB_1
+ 70
+SROUND
+EIF
+IF
+MDRP[rp0,min,rnd,black]
+ELSE
+MDRP[min,rnd,black]
+EIF
+EIF
+EIF
+RTG
+ENDF
+PUSHB_1
+ 5
+FDEF
+GFV
+NOT
+AND
+ENDF
+PUSHB_1
+ 6
+FDEF
+PUSHB_2
+ 34
+ 1
+GETINFO
+LT
+IF
+PUSHB_1
+ 32
+GETINFO
+NOT
+NOT
+ELSE
+PUSHB_1
+ 0
+EIF
+ENDF
+PUSHB_1
+ 7
+FDEF
+PUSHB_2
+ 36
+ 1
+GETINFO
+LT
+IF
+PUSHB_1
+ 64
+GETINFO
+NOT
+NOT
+ELSE
+PUSHB_1
+ 0
+EIF
+ENDF
+PUSHB_1
+ 8
+FDEF
+SRP2
+SRP1
+DUP
+IP
+MDAP[rnd]
+ENDF
+EndTTInstrs
+ShortTable: cvt  6
+  0
+  417
+  563
+  603
+  41
+  43
 EndShort
 LangName: 1066 "" "" "nghi+AOoA-ng" "" "Free Mono nghi+AOoA-ng" "" "" "" "" "" "" "" "" "" "http://www.gnu.org/copyleft/gpl.html" 
 LangName: 1055 "" "" "+ATAA-talik" "" "Free Mono +ATAA-talik" "" "" "" "" "" "" "" "" "" "http://www.gnu.org/copyleft/gpl.html" 
@@ -83,6 +364,7 @@ LangName: 1029 "" "" "kurz+AO0A-va" "" "Free Mono kurz+AO0A-va" "" "" "" "" "" "
 LangName: 1027 "" "" "Cursiva" "" "Free Mono Cursiva" "" "" "" "" "" "" "" "" "" "http://www.gnu.org/copyleft/gpl.html" 
 LangName: 1069 "" "" "Etzana" "" "Free Mono Etzana" "" "" "" "" "" "" "" "" "" "http://www.gnu.org/copyleft/gpl.html" 
 LangName: 1033 "" "" "" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "The use of this font is granted subject to GNU General Public License." "http://www.gnu.org/copyleft/gpl.html" "" "" "" "" "The quick brown fox jumps over the lazy dog." 
+GaspTable: 2 8 2 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
@@ -45722,7 +46004,7 @@ EndChar
 StartChar: breveinvertedcmb
 Encoding: 785 785 1782
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
