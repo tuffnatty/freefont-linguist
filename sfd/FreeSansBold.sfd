@@ -4,7 +4,7 @@ FullName: Free Sans Bold
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.66 $
+Version: $Revision: 1.67 $
 ItalicAngle: 0
 UnderlinePosition: -155
 UnderlineWidth: 69
@@ -82,9 +82,406 @@ ChainSub2: class "'ccmp' Glyph Composition/Decomposition in Latin lookup 0 subta
  1
   SeqLookup: 0 "Single Substitution lookup 11" 
 EndFPST
-ShortTable: cvt  2
-  33
-  633
+ShortTable: maxp 16
+  0
+  0
+  0
+  0
+  0
+  0
+  0
+  2
+  1
+  0
+  9
+  0
+  256
+  0
+  0
+  0
+EndShort
+TtTable: prep
+PUSHW_1
+ 511
+SCANCTRL
+SVTCA[y-axis]
+MPPEM
+PUSHB_1
+ 8
+LT
+IF
+PUSHB_2
+ 1
+ 1
+INSTCTRL
+EIF
+PUSHB_2
+ 70
+ 6
+CALL
+IF
+POP
+PUSHB_1
+ 16
+EIF
+MPPEM
+PUSHB_1
+ 20
+GT
+IF
+POP
+PUSHB_1
+ 128
+EIF
+SCVTCI
+PUSHB_1
+ 6
+CALL
+NOT
+IF
+SVTCA[y-axis]
+PUSHB_1
+ 4
+DUP
+RCVT
+PUSHB_1
+ 3
+CALL
+WCVTP
+PUSHB_1
+ 8
+DUP
+RCVT
+PUSHB_3
+ 4
+ 140
+ 2
+CALL
+PUSHB_1
+ 3
+CALL
+WCVTP
+PUSHB_1
+ 7
+DUP
+RCVT
+PUSHB_3
+ 8
+ 47
+ 2
+CALL
+PUSHB_1
+ 3
+CALL
+WCVTP
+PUSHB_1
+ 6
+DUP
+RCVT
+PUSHB_3
+ 7
+ 13
+ 2
+CALL
+PUSHB_1
+ 3
+CALL
+WCVTP
+PUSHB_1
+ 5
+DUP
+RCVT
+PUSHW_3
+ 6
+ 374
+ 2
+CALL
+PUSHB_1
+ 3
+CALL
+WCVTP
+PUSHB_1
+ 9
+DUP
+RCVT
+PUSHB_3
+ 4
+ 63
+ 2
+CALL
+PUSHB_1
+ 3
+CALL
+WCVTP
+PUSHB_1
+ 10
+DUP
+RCVT
+PUSHW_3
+ 9
+ 32767
+ 2
+CALL
+PUSHB_1
+ 3
+CALL
+WCVTP
+SVTCA[x-axis]
+PUSHB_1
+ 11
+DUP
+RCVT
+PUSHB_1
+ 3
+CALL
+WCVTP
+PUSHB_1
+ 12
+DUP
+RCVT
+PUSHW_3
+ 11
+ 32767
+ 2
+CALL
+PUSHB_2
+ 3
+ 70
+SROUND
+CALL
+WCVTP
+PUSHB_1
+ 13
+DUP
+RCVT
+PUSHB_3
+ 12
+ 53
+ 2
+CALL
+PUSHB_2
+ 3
+ 70
+SROUND
+CALL
+WCVTP
+EIF
+EndTTInstrs
+TtTable: fpgm
+PUSHB_1
+ 0
+FDEF
+PUSHB_1
+ 0
+SZP0
+MPPEM
+PUSHB_1
+ 42
+LT
+IF
+PUSHB_1
+ 74
+SROUND
+EIF
+PUSHB_1
+ 0
+SWAP
+MIAP[rnd]
+RTG
+PUSHB_1
+ 6
+CALL
+IF
+RTDG
+EIF
+MPPEM
+PUSHB_1
+ 42
+LT
+IF
+RDTG
+EIF
+DUP
+MDRP[rp0,rnd,grey]
+PUSHB_1
+ 1
+SZP0
+MDAP[no-rnd]
+RTG
+ENDF
+PUSHB_1
+ 1
+FDEF
+DUP
+DUP
+MDRP[rp0,min,white]
+MDAP[rnd]
+PUSHB_1
+ 7
+CALL
+NOT
+IF
+DUP
+DUP
+GC[orig]
+SWAP
+GC[cur]
+SUB
+ROUND[White]
+DUP
+IF
+DUP
+ABS
+DIV
+SHPIX
+ELSE
+POP
+POP
+EIF
+ELSE
+POP
+EIF
+ENDF
+PUSHB_1
+ 2
+FDEF
+MPPEM
+GT
+IF
+RCVT
+SWAP
+EIF
+POP
+ENDF
+PUSHB_1
+ 3
+FDEF
+ROUND[Black]
+RTG
+DUP
+PUSHB_1
+ 64
+LT
+IF
+POP
+PUSHB_1
+ 64
+EIF
+ENDF
+PUSHB_1
+ 4
+FDEF
+PUSHB_1
+ 6
+CALL
+IF
+POP
+SWAP
+POP
+ROFF
+IF
+MDRP[rp0,min,rnd,black]
+ELSE
+MDRP[min,rnd,black]
+EIF
+ELSE
+MPPEM
+GT
+IF
+IF
+MIRP[rp0,min,rnd,black]
+ELSE
+MIRP[min,rnd,black]
+EIF
+ELSE
+POP
+PUSHB_1
+ 5
+CALL
+IF
+PUSHB_1
+ 70
+SROUND
+EIF
+IF
+MDRP[rp0,min,rnd,black]
+ELSE
+MDRP[min,rnd,black]
+EIF
+EIF
+EIF
+RTG
+ENDF
+PUSHB_1
+ 5
+FDEF
+GFV
+NOT
+AND
+ENDF
+PUSHB_1
+ 6
+FDEF
+PUSHB_2
+ 34
+ 1
+GETINFO
+LT
+IF
+PUSHB_1
+ 32
+GETINFO
+NOT
+NOT
+ELSE
+PUSHB_1
+ 0
+EIF
+ENDF
+PUSHB_1
+ 7
+FDEF
+PUSHB_2
+ 36
+ 1
+GETINFO
+LT
+IF
+PUSHB_1
+ 64
+GETINFO
+NOT
+NOT
+ELSE
+PUSHB_1
+ 0
+EIF
+ENDF
+PUSHB_1
+ 8
+FDEF
+SRP2
+SRP1
+DUP
+IP
+MDAP[rnd]
+ENDF
+EndTTInstrs
+ShortTable: cvt  14
+  0
+  540
+  701
+  729
+  118
+  2
+  4
+  106
+  114
+  127
+  127
+  141
+  141
+  151
 EndShort
 LangName: 1060 "" "" "polkrepko" "" "" "" "" "" "" "" "" "" "" "Dovoljena je uporaba v skladu z licenco GNU General Public License." "http://www.gnu.org/copyleft/gpl.html" "" "" "" "" "+AWAA-erif bo za vajo spet kuhal doma+AQ0A-e +AX4A-gance." 
 LangName: 1033 "" "" "" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "The use of this font is granted subject to GNU General Public License." "http://www.gnu.org/copyleft/gpl.html" "" "" "" "" "The quick brown fox jumps over the lazy dog." 
@@ -95,7 +492,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65408 16 12
+WinInfo: 64 16 12
 BeginPrivate: 8
 UniqueID 7 5020904
 BlueValues 31 [-23 0 540 560 701 724 729 749]
@@ -1918,7 +2315,7 @@ EndChar
 StartChar: i
 Encoding: 105 105 73
 Width: 278
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -1941,7 +2338,7 @@ EndChar
 StartChar: j
 Encoding: 106 106 74
 Width: 278
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -5067,7 +5464,7 @@ EndChar
 StartChar: ij
 Encoding: 307 307 240
 Width: 492
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -6311,7 +6708,7 @@ EndChar
 StartChar: uni01C8
 Encoding: 456 456 322
 Width: 889
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -6322,7 +6719,7 @@ EndChar
 StartChar: uni01C9
 Encoding: 457 457 323
 Width: 556
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -6344,7 +6741,7 @@ EndChar
 StartChar: uni01CB
 Encoding: 459 459 325
 Width: 1000
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -6355,7 +6752,7 @@ EndChar
 StartChar: uni01CC
 Encoding: 460 460 326
 Width: 889
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -6960,7 +7357,7 @@ EndChar
 StartChar: iota
 Encoding: 953 953 378
 Width: 346
-Flags: HMW
+Flags: MW
 Validated: 1
 AnchorPoint: "abovegrk" 96 568 basechar 0
 LayerCount: 2
@@ -7398,7 +7795,7 @@ EndChar
 StartChar: iotadieresis
 Encoding: 970 970 395
 Width: 346
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -9160,7 +9557,7 @@ EndChar
 StartChar: afii10099
 Encoding: 1106 1106 482
 Width: 606
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -9243,7 +9640,7 @@ EndChar
 StartChar: afii10103
 Encoding: 1110 1110 486
 Width: 278
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -9264,7 +9661,7 @@ EndChar
 StartChar: afii10105
 Encoding: 1112 1112 488
 Width: 278
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -9307,7 +9704,7 @@ EndChar
 StartChar: afii10107
 Encoding: 1114 1114 490
 Width: 900
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -12565,7 +12962,7 @@ EndChar
 StartChar: afii57683
 Encoding: 1507 1507 634
 Width: 661
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -12592,7 +12989,7 @@ EndChar
 StartChar: afii57684
 Encoding: 1508 1508 635
 Width: 660
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -12754,7 +13151,7 @@ EndChar
 StartChar: afii57690
 Encoding: 1514 1514 641
 Width: 756
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -13148,7 +13545,7 @@ StartChar: afii57419
 Encoding: 1579 1579 656
 Width: 922
 VWidth: 2048
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -15110,7 +15507,7 @@ EndChar
 StartChar: uni1FB3
 Encoding: 8115 8115 825
 Width: 656
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15121,7 +15518,7 @@ EndChar
 StartChar: uni1FB4
 Encoding: 8116 8116 826
 Width: 660
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15219,7 +15616,7 @@ EndChar
 StartChar: uni1FBE
 Encoding: 8126 8126 835
 Width: 346
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15281,7 +15678,7 @@ EndChar
 StartChar: uni1FC3
 Encoding: 8131 8131 840
 Width: 586
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15292,7 +15689,7 @@ EndChar
 StartChar: uni1FC4
 Encoding: 8132 8132 841
 Width: 560
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15303,7 +15700,7 @@ EndChar
 StartChar: uni1FC6
 Encoding: 8134 8134 842
 Width: 586
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15314,7 +15711,7 @@ EndChar
 StartChar: uni1FC7
 Encoding: 8135 8135 843
 Width: 586
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15369,7 +15766,7 @@ EndChar
 StartChar: uni1FCC
 Encoding: 8140 8140 848
 Width: 968
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -15413,7 +15810,7 @@ EndChar
 StartChar: uni1FD0
 Encoding: 8144 8144 852
 Width: 346
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15424,7 +15821,7 @@ EndChar
 StartChar: uni1FD1
 Encoding: 8145 8145 853
 Width: 346
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15457,7 +15854,7 @@ EndChar
 StartChar: uni1FD6
 Encoding: 8150 8150 856
 Width: 346
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15468,7 +15865,7 @@ EndChar
 StartChar: uni1FD7
 Encoding: 8151 8151 857
 Width: 346
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15721,7 +16118,7 @@ EndChar
 StartChar: uni1FEF
 Encoding: 8175 8175 880
 Width: 333
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -15737,7 +16134,7 @@ EndChar
 StartChar: uni1FF2
 Encoding: 8178 8178 881
 Width: 800
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15748,7 +16145,7 @@ EndChar
 StartChar: uni1FF3
 Encoding: 8179 8179 882
 Width: 800
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15759,7 +16156,7 @@ EndChar
 StartChar: uni1FF4
 Encoding: 8180 8180 883
 Width: 1125
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15781,7 +16178,7 @@ EndChar
 StartChar: uni1FF7
 Encoding: 8183 8183 885
 Width: 800
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15792,7 +16189,7 @@ EndChar
 StartChar: uni1FF8
 Encoding: 8184 8184 886
 Width: 778
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -15814,7 +16211,7 @@ EndChar
 StartChar: uni1FFA
 Encoding: 8186 8186 888
 Width: 780
-Flags: HM
+Flags: M
 Validated: 1
 LayerCount: 2
 Fore
@@ -15836,7 +16233,7 @@ EndChar
 StartChar: uni1FFC
 Encoding: 8188 8188 890
 Width: 1111
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -15863,7 +16260,7 @@ EndChar
 StartChar: uni1FFE
 Encoding: 8190 8190 892
 Width: 278
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -16441,7 +16838,7 @@ EndChar
 StartChar: uni037A
 Encoding: 890 890 935
 Width: 333
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -17300,7 +17697,7 @@ EndChar
 StartChar: eta
 Encoding: 951 951 984
 Width: 586
-Flags: HMW
+Flags: MW
 Validated: 1
 AnchorPoint: "belowgrk" 144 -24 basechar 0
 AnchorPoint: "abovegrk" 312 568 basechar 0
@@ -18365,7 +18762,7 @@ EndChar
 StartChar: uniFB1E
 Encoding: 64286 64286 1034
 Width: 305
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -18605,7 +19002,7 @@ EndChar
 StartChar: uniFB28
 Encoding: 64296 64296 1044
 Width: 1006
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -19321,7 +19718,7 @@ EndChar
 StartChar: uniFB43
 Encoding: 64323 64323 1067
 Width: 661
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -19353,7 +19750,7 @@ EndChar
 StartChar: uniFB44
 Encoding: 64324 64324 1068
 Width: 660
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -19517,7 +19914,7 @@ EndChar
 StartChar: uniFB4A
 Encoding: 64330 64330 1073
 Width: 756
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -19632,7 +20029,7 @@ EndChar
 StartChar: uniFB4E
 Encoding: 64334 64334 1077
 Width: 660
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -19855,7 +20252,7 @@ EndChar
 StartChar: uni0258
 Encoding: 600 600 1087
 Width: 556
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -20394,7 +20791,7 @@ EndChar
 StartChar: uni0261
 Encoding: 609 609 1121
 Width: 611
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -20674,7 +21071,7 @@ EndChar
 StartChar: uni0269
 Encoding: 617 617 1130
 Width: 344
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -20720,7 +21117,7 @@ EndChar
 StartChar: uni01A7
 Encoding: 423 423 1132
 Width: 667
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -20749,7 +21146,7 @@ EndChar
 StartChar: uni01A8
 Encoding: 424 424 1133
 Width: 556
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -20881,7 +21278,7 @@ EndChar
 StartChar: uni0274
 Encoding: 628 628 1139
 Width: 615
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -20904,7 +21301,7 @@ EndChar
 StartChar: uni029F
 Encoding: 671 671 1140
 Width: 454
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -20956,7 +21353,7 @@ EndChar
 StartChar: uni0280
 Encoding: 640 640 1144
 Width: 620
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -21200,7 +21597,7 @@ EndChar
 StartChar: uni018C
 Encoding: 396 396 1153
 Width: 611
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -21229,7 +21626,7 @@ EndChar
 StartChar: uni018E
 Encoding: 398 398 1154
 Width: 667
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -21562,7 +21959,7 @@ EndChar
 StartChar: uni027E
 Encoding: 638 638 1166
 Width: 455
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -21584,7 +21981,7 @@ EndChar
 StartChar: uni027F
 Encoding: 639 639 1167
 Width: 455
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -21618,7 +22015,7 @@ EndChar
 StartChar: uni01AC
 Encoding: 428 428 1169
 Width: 742
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -21736,7 +22133,7 @@ EndChar
 StartChar: uni018B
 Encoding: 395 395 1173
 Width: 722
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -21935,7 +22332,7 @@ EndChar
 StartChar: uni0285
 Encoding: 645 645 1181
 Width: 333
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23131,7 +23528,7 @@ EndChar
 StartChar: uni2170
 Encoding: 8560 8560 1250
 Width: 278
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23142,7 +23539,7 @@ EndChar
 StartChar: uni2171
 Encoding: 8561 8561 1251
 Width: 556
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23154,7 +23551,7 @@ EndChar
 StartChar: uni2172
 Encoding: 8562 8562 1252
 Width: 834
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23167,7 +23564,7 @@ EndChar
 StartChar: uni2173
 Encoding: 8563 8563 1253
 Width: 834
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23190,7 +23587,7 @@ EndChar
 StartChar: uni2175
 Encoding: 8565 8565 1255
 Width: 834
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23202,7 +23599,7 @@ EndChar
 StartChar: uni2176
 Encoding: 8566 8566 1256
 Width: 1112
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23215,7 +23612,7 @@ EndChar
 StartChar: uni2177
 Encoding: 8567 8567 1257
 Width: 1390
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23229,7 +23626,7 @@ EndChar
 StartChar: uni2178
 Encoding: 8568 8568 1258
 Width: 834
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23252,7 +23649,7 @@ EndChar
 StartChar: uni217A
 Encoding: 8570 8570 1260
 Width: 834
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -23264,7 +23661,7 @@ EndChar
 StartChar: uni217B
 Encoding: 8571 8571 1261
 Width: 1112
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -25814,7 +26211,7 @@ EndChar
 StartChar: uni1E2D
 Encoding: 7725 7725 1408
 Width: 278
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -27506,7 +27903,7 @@ EndChar
 StartChar: uni1ECB
 Encoding: 7883 7883 1549
 Width: 278
-Flags: HM
+Flags: M
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -28276,7 +28673,7 @@ EndChar
 StartChar: uni01A6
 Encoding: 422 422 1597
 Width: 722
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -28576,7 +28973,7 @@ EndChar
 StartChar: musicalnote
 Encoding: 9834 9834 1610
 Width: 556
-Flags: HMW
+Flags: MW
 TeX: 109 0
 Validated: 1
 LayerCount: 2
@@ -28631,7 +29028,7 @@ EndChar
 StartChar: uni266C
 Encoding: 9836 9836 1612
 Width: 778
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -28663,7 +29060,7 @@ EndChar
 StartChar: uni266D
 Encoding: 9837 9837 1613
 Width: 556
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -28824,7 +29221,7 @@ EndChar
 StartChar: uni0574
 Encoding: 1396 1396 1618
 Width: 611
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 AnchorPoint: "above" 306 550 basechar 0
@@ -28910,7 +29307,7 @@ EndChar
 StartChar: uni056A
 Encoding: 1386 1386 1621
 Width: 722
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -29021,7 +29418,7 @@ EndChar
 StartChar: uni0569
 Encoding: 1385 1385 1626
 Width: 667
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -29059,7 +29456,7 @@ EndChar
 StartChar: uni0571
 Encoding: 1393 1393 1627
 Width: 611
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
@@ -29929,7 +30326,7 @@ EndChar
 StartChar: uni0A1B
 Encoding: 2587 2587 1658
 Width: 693
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -30071,7 +30468,7 @@ EndChar
 StartChar: uni0A1F
 Encoding: 2591 2591 1662
 Width: 686
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -31338,7 +31735,7 @@ EndChar
 StartChar: uni0A68
 Encoding: 2664 2664 1703
 Width: 696
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -31366,7 +31763,7 @@ EndChar
 StartChar: uni0A69
 Encoding: 2665 2665 1704
 Width: 690
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -31594,7 +31991,7 @@ StartChar: uni0A70
 Encoding: 2672 2672 1711
 Width: 9
 GlyphClass: 4
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -31674,7 +32071,7 @@ EndChar
 StartChar: uni0A73
 Encoding: 2675 2675 1714
 Width: 760
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -31712,7 +32109,7 @@ EndChar
 StartChar: uni0A74
 Encoding: 2676 2676 1715
 Width: 1110
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -31964,7 +32361,7 @@ StartChar: uni2740
 Encoding: 10048 10048 1720
 Width: 1453
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -32130,7 +32527,7 @@ StartChar: uni2741
 Encoding: 10049 10049 1721
 Width: 1454
 GlyphClass: 2
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -32448,7 +32845,7 @@ EndChar
 StartChar: gurm_glyph155
 Encoding: 65543 -1 1729
 Width: 8
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -32724,7 +33121,7 @@ EndChar
 StartChar: uni0A28_uni0A42_uni0A70.abvs
 Encoding: 65554 -1 1740
 Width: 692
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -32808,7 +33205,7 @@ EndChar
 StartChar: uni0A09_uni0A71.psts
 Encoding: 65556 -1 1742
 Width: 999
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -32868,7 +33265,7 @@ EndChar
 StartChar: uni0A0A_uni0A71.psts
 Encoding: 65557 -1 1743
 Width: 1000
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -32935,7 +33332,7 @@ EndChar
 StartChar: uni0A13_uni0A71.psts
 Encoding: 65558 -1 1744
 Width: 1060
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33023,7 +33420,7 @@ EndChar
 StartChar: uni0A1A_uni0A3C.nukt
 Encoding: 65562 -1 1748
 Width: 725
-Flags: MWO
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33036,7 +33433,7 @@ EndChar
 StartChar: uni0A1B_uni0A3C.nukt
 Encoding: 65563 -1 1749
 Width: 696
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33072,7 +33469,7 @@ EndChar
 StartChar: uni0A1F_uni0A3C.nukt
 Encoding: 65566 -1 1752
 Width: 687
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33300,7 +33697,7 @@ EndChar
 StartChar: uni0A06_uni0A3C.nukt
 Encoding: 65585 -1 1771
 Width: 1160
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33353,7 +33750,7 @@ EndChar
 StartChar: uni0A07_uni0A3C.nukt
 Encoding: 65586 -1 1772
 Width: 929
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33406,7 +33803,7 @@ EndChar
 StartChar: uni0A08_uni0A3C.nukt
 Encoding: 65587 -1 1773
 Width: 983
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33459,7 +33856,7 @@ EndChar
 StartChar: uni0A09_uni0A3C.nukt
 Encoding: 65588 -1 1774
 Width: 765
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -33472,7 +33869,7 @@ EndChar
 StartChar: uni0A0A_uni0A3C.nukt
 Encoding: 65589 -1 1775
 Width: 756
-Flags: HMW
+Flags: MW
 Validated: 1
 LayerCount: 2
 Fore
@@ -36230,7 +36627,7 @@ EndChar
 StartChar: uni10F3
 Encoding: 4339 4339 1862
 Width: 479
-Flags: HMW
+Flags: MW
 TeX: 117 0
 Validated: 1
 LayerCount: 2
