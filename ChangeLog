@@ -1,4 +1,209 @@
-$Id: ChangeLog,v 1.245 2006-09-20 11:37:42 peterlin Exp $
+$Id: ChangeLog,v 1.246 2008-03-16 20:09:44 Stevan_White Exp $
+
+2008-03-16  Steve White
+	* sfd/FreeMono.sfd:
+		cleanup of many path problems "points too close"
+
+		strove to make accents Latin Extended range legible at 
+		small point sizes
+
+	At this point, all fonts are passing FontForge Validate.
+
+2008-03-15  Steve White
+	* sfd/FreeSerif.sfd: CJK punctuation: made some of the very high
+	glyphs smaller (under 900EM)
+	The brackets in Sans were very ugly, and not even Sans-serif.
+	Serif: added extensible square brackets, diddled with integral
+	corrected direction of some added glyphs
+
+	Several bugs having to do with missing glyphs in Tamil range.
+	Also a buggy ligature in Devangari.
+
+	Shortened names of many lookup tables
+
+	Futzt with some combining diacriticals
+
+	Added extensible square brackets.
+
+	* sfd/FreeSans.sfd: Changed names of a bunch of glyphs with invalid
+	TrueType names, in range 0x1025f+ (not real Unicode).
+	Took pains to retain information contained in the names.
+	Wonder if these glyphs have ever been of any use.
+
+	CJK Punctuation: brackets were hand-drawn and very ugly.  Improved.
+
+	* sfd/*.sfd:
+	Set OS/2 Metrics back to absolute 900/300.  Offsets are not 
+	interpreted uniformly.
+
+	cleanup of many path problems up to extrema and self-intersecting
+
+	Ordered PS Blue values.
+
+2008-03-14  Steve White
+	* sfd/FreeSerif.sfd:
+		got rid of mixed references and contours
+		cleanup of many path problems "points too close"
+
+		Started clean-up to satisfy FontForge Validate
+
+		Changed names of three glyphs in the
+		Tamil ligatures range...all clearly bugs. 
+	* sfd/FreeSans.sfd:
+		added slanted-hyphen
+
+	* sfd/*.sfd:
+		unified OS/2 Metrics
+		added Grid Fit
+
+2008-03-13  Steve White
+	* sfd/FreeSans.sfd: Rearranged PS BluesValues so they were in
+		increasing order, Made all 20 in width. 
+
+2008-03-12  Steve White
+	* sfd/FreeSans.sfd, FreeMono.sfd: added TrueType hinting tables.
+		Fixed glyphs that didn't convert well to quadratics
+		Got rid of mixed contours and refs
+
+	* sfd/FreeSerifBold.sfd: cleanup of path problems
+
+2008-03-11  Steve White
+	* sfd/FreeMonoOblique.sfd: cleanup of path problems
+
+2008-03-09  Steve White
+	* sfd/FreeSerif.sfd: corrected L-dot
+		further cleanup of path/ref problems
+
+		Found several ligatures that referred to a missing glyph "ZWJ".
+		Took this to mean the "zero width joiner" u+200D
+
+	* sfd/*.sfd:
+		changed OS/2 metrics to be absolute 900/300
+
+	* sfd/FreeSerifItalic.sfd: Added Greek lunate epsilon
+
+	* sfd/FreeMono.sfd: many additions in math range
+	        reduced size of binary union, intersection, vee, wedge
+		corrected empty set
+		corrected logical 'assert' relations, etc. 22a2-22af
+		efforts to make Math glyphs legible at small point sizes
+
+	* sfd/FreeSans.sfd: added Greek lunate epsilon and rho symbol
+		unstacked more stacked diacriticals
+
+		further cleanup of path/reference problems
+
+2008-03-08  Steve White
+	* sfd/FreeSans.sfd, FreeSerif.sfd:
+		Added some "n-ary" Math operators
+
+	* sfd/FreeSerif.sfd: Further clean-up of path problems...up to
+	Ethiopic
+
+	Started adding and correcting Math operators for LaTeX 2e
+
+		Corrected n-ary union, intersection, and spikes to be larger
+		than the binary operators
+
+		Made (many of) the operators based on + - = to use those
+		symbols directly (by reference or copying).
+
+		Added lunate epsilon
+		Corrected empty set
+
+		tightened up spacing of some other technical characters
+		worked on some more math operators involving =
+
+		triangle
+		several arrows
+		Supplemental Arrows-A
+
+	* sfd/FreeSans.sfd: Clean-up of font paths
+	        open self-intersecting outermost-clockwise missing-extrema
+		also flipped references (unlinked)
+
+		Added Greek lunate epsilon and rho symbol
+
+2008-03-06  Steve White
+	* sfd/FreeSerif.sfd: Shortened and thickened the combining hook mark,
+	U+0309, to make more like Unicode samples.
+	Also see (bug #22499) un-stacked incorrectly stacked accents
+
+2008-03-05  Steve White
+	* sfd/FreeSerif.sfd: vertical lines: combining diacritical marks
+	corrected 0300 030D 0329 0348 (were rendered as straight apostrophes)
+	Spacing Modifier letters added 02C8 02CC 
+		02B9 02Ba prime and double-prime
+	Fixed positioning U+1EC8, 9, I with hook above
+
+2008-03-03  Steve White
+	* sfd/FreeSerif.sfd: TT strings updates.
+		updated Copyright to 2008
+		Added Vendor URL as the Savannah freefont site
+	* sfd/FreeMono.sfd: A standard pangram as the Sample Text for Russian
+		It reads: In the thickets of the South once there was a citrus
+		...--yes, but a fake specimen!
+	* sfd/*.sfd: Set the OS/2 Sup/Sub settings, which by default looked
+		like random trash.
+
+2008-03-02  Steve White
+	* sfd/FreeSerif.sfd: began cleanup of problems given by FontForge
+	"Find Problems" feature.  (bug #22454)
+		
+2008-03-01  Steve White
+	* sfd/FreeSerif.sfd: made Arabic work for text display (bug #22329)
+		Added required contextual replacement tables,
+		Made a few missing characters,
+	* sfd/*.sfd: Removde all back layers from glyphs that had them.
+
+2008-02-27  Steve White
+	* sfd/FreeSans.sfd: filled in Combining Diacriticals
+	* sfd/FreeSerif.sfd: shifted whole Arabic range down by 200EM.
+
+2008-02-26  Steve White
+	* sfd/FreeSerif.sfd: enabled DPOS table.
+
+2008-02-24  Steve White
+	* sfd/*.sfd: Much fiddling with the "combining diacriticals"
+		range 0300-036F.  Made to align with medium-size lowercase
+		preceding character if not using DPOS table.
+
+2008-02-23  Steve White
+	* sfd/FreeSerif.sfd, FreeSans.sfd, FreeMono.sfd: (bug #21784) Filled
+	in set of HTML 4 Character Entities.
+
+	* sfd/FreeSerif.sfd, FreeSans.sfd, FreeMono.sfd: (bug  #18413)
+	undertie too low -- went on to tidy other similar characters in
+	Combining Diacriticals range.
+	
+2008-02-21  Steve White
+	* sfd/*.sfd: Moved capital Greek letters with tonos so tonos doesn't
+	cover preceding letter (bug #12798)
+
+	* sfd/FreeSerif.sfd, FreeSans.sfd: (bug #13370) made extended
+	integrals to line up.
+	
+2008-02-20  Steve White
+	* sfd/*.sfd: started removing glyphs with back layers (printing bug)
+	* sfd/*.sfd: adjusted vulgar fractions (bug #17756)
+	* sfd/*.sfd: adjusted numerical superscripts (bug #20278)
+
+2008-02-18  Steve White
+	* sfd/FreeSerif.sfd: Offset Hiragana and Katakana ranges (bug #22326)
+	* sfd/FreeSerif.sfd: U+30FB, KATAKANA MIDDLE DOT to be full width
+				(bug #18326)
+
+	* sfd/FreeSerif.sfd: Re-promoted
+	        ff ffi ffl fi fl
+		as standard ligatures in Latin.
+
+2008-02-17  Steve White
+	* sfd/*.sfd: committed to FontForge Spline Font Database (SFD) 2
+	format.
+	
+2008-02-10  Steve White
+	* sfd/*.sfd: brought into line with Debian ttf-freefont
+	Deleted a couple of patches, and applied those applied to Debian.
 
 2006-09-20  Primoz Peterlin  <primoz.peterlin@biofiz.mf.uni-lj.si>
 
@@ -1297,7 +1502,7 @@ $Id: ChangeLog,v 1.245 2006-09-20 11:37:42 peterlin Exp $
 2002-04-12  Primoz Peterlin  <primoz.peterlin@biofiz.mf.uni-lj.si>
 
 	* sfd/FreeSerif.sfd - Added Ethiopian glyphs, converted from the
-	Metafont sources from TGI, Universit‰t Hamburg (authors Berhanu
+	Metafont sources from TGI, Universit√§t Hamburg (authors Berhanu
 	Beyene, Prof. Dr. Manfred Kudlek, Olaf Kummer, and Jochen
 	Metzinger) using Szabo's TeXtrace and retouched using
 	PfaEdit. Ethiopian metafonts are released under GNU GPL,
