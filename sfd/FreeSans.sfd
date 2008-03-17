@@ -4,7 +4,7 @@ FullName: Free Sans
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.119 $
+Version: $Revision: 1.120 $
 ItalicAngle: 0
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1205796291
+ModificationTime: 1205796822
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -80,7 +80,6 @@ Lookup: 4 8 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"
 Lookup: 4 0 0 "'vatu' Vattu Variants"  {"'vatu' Vattu Variants subtable"  } ['vatu' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "'vatu' Vattu Variants in Gujarati"  {"'vatu' Vattu Variants in Gujarati subtable"  } ['vatu' ('gujr' <'dflt' > ) ]
 Lookup: 4 8 0 "'vatu' Vattu Variants in Devanagari"  {"'vatu' Vattu Variants in Devanagari subtable"  } ['vatu' ('deva' <'dflt' > ) ]
-Lookup: 4 0 0 "'vatu' Vattu Variants in Devanagari"  {"'vatu' Vattu Variants in Devanagari subtable"  } ['vatu' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "'vatu' Vattu Variants in Bengali"  {"'vatu' Vattu Variants in Bengali subtable"  } ['vatu' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'pres' Pre Base Substitutions in Gujarati"  {"'pres' Pre Base Substitutions in Gujarati subtable"  } ['pres' ('gujr' <'dflt' > ) ]
 Lookup: 4 0 0 "'pres' Pre Base Substitutions"  {"'pres' Pre Base Substitutions subtable"  } ['pres' ('DFLT' <'dflt' > ) ]
@@ -99,8 +98,7 @@ Lookup: 4 0 0 "'psts' Post Base Substitutions in Bengali"  {"'psts' Post Base Su
 Lookup: 4 0 0 "'haln' Halant Forms in Devanagari"  {"'haln' Halant Forms in Devanagari subtable"  } ['haln' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "'haln' Halant Forms in Bengali"  {"'haln' Halant Forms in Bengali subtable"  } ['haln' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "Ligature Substitution in Devanagari"  {"Ligature Substitution in Devanagari subtable"  } ['reph' ('deva' <'dflt' > ) ]
-Lookup: 1 0 0 "'aalt' Access All Alternates in Latin"  {"'aalt' Access All Alternates in Latin subtable"  } ['aalt' ('latn' <'dflt' > ) ]
-Lookup: 1 0 0 "Single Substitution"  {"Single Substitution subtable"  } []
+Lookup: 1 0 0 "'aalt' Access All Alternates in Bengali"  {"'aalt' Access All Alternates in Bengali subtable"  } ['aalt' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin"  {"'mkmk' Mark to Mark in Latin subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Gujarati"  {"'blwm' Below Base Mark in Gujarati subtable"  } ['blwm' ('gujr' <'dflt' > ) ]
@@ -122,7 +120,7 @@ ChainSub2: class "'ccmp' Glyph Composition/Decomposition in Latin subtable"  3 0
   BClsList:
   FClsList: 2
  1
-  SeqLookup: 0 "Single Substitution" 
+  SeqLookup: 0 "o+BcAAo+ALcA" 
 EndFPST
 ShortTable: maxp 16
   0
@@ -2493,7 +2491,6 @@ SplineSet
  150 729 l 1
 EndSplineSet
 Kerns2: 74 -3 "'kern' Horizontal Kerning in Latin subtable"  52 -7 "'kern' Horizontal Kerning in Latin subtable" 
-Substitution2: "Single Substitution subtable" dotlessi
 EndChar
 
 StartChar: j
@@ -2521,7 +2518,6 @@ SplineSet
  70 729 l 1
  153 729 l 1
 EndSplineSet
-Substitution2: "Single Substitution subtable" dotlessj
 EndChar
 
 StartChar: k
@@ -22535,7 +22531,7 @@ SplineSet
  90 151 142 51 199 51 c 0
 EndSplineSet
 Substitution2: "'init' Initial Forms in Bengali subtable" bn_initekaar
-Substitution2: "'aalt' Access All Alternates in Latin subtable" bn_initekaar
+Substitution2: "'aalt' Access All Alternates in Bengali subtable" bn_initekaar
 EndChar
 
 StartChar: bn_aikaar
@@ -22574,7 +22570,7 @@ SplineSet
  50 0 20 183 20 234 c 0
 EndSplineSet
 Substitution2: "'init' Initial Forms in Bengali subtable" bn_initaikaar
-Substitution2: "'aalt' Access All Alternates in Latin subtable" bn_initaikaar
+Substitution2: "'aalt' Access All Alternates in Bengali subtable" bn_initaikaar
 EndChar
 
 StartChar: bn_okaar
