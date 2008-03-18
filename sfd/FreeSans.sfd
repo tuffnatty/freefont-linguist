@@ -4,7 +4,7 @@ FullName: Free Sans
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.123 $
+Version: $Revision: 1.124 $
 ItalicAngle: 0
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1205796291
+ModificationTime: 1205866818
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -76,7 +76,7 @@ Lookup: 4 0 0 "'half' Half Forms in Bengali lookup 20"  {"'half' Half Forms in B
 Lookup: 4 0 0 "'pstf' Post Base Forms in Gurmukhi lookup 21"  {"'pstf' Post Base Forms in Gurmukhi lookup 21 subtable"  } ['pstf' ('guru' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' Post Base Forms in Bengali lookup 22"  {"'pstf' Post Base Forms in Bengali lookup 22 subtable"  } ['pstf' ('beng' <'dflt' > ) ]
 Lookup: 4 8 0 "'frac' Diagonal Fractions lookup 23"  {"'frac' Diagonal Fractions lookup 23 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
-Lookup: 4 0 0 "'vatu' Vattu Variants lookup 24"  {"'vatu' Vattu Variants lookup 24 subtable"  } ['vatu' ('DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'vatu' Vattu Variants in Gugarati 2"  {"'vatu' Vattu Variants in Gugarati 2 subtable"  } ['vatu' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "'vatu' Vattu Variants in Gujarati lookup 25"  {"'vatu' Vattu Variants in Gujarati lookup 25 subtable"  } ['vatu' ('gujr' <'dflt' > ) ]
 Lookup: 4 8 0 "'vatu' Vattu Variants in Devanagari lookup 26"  {"'vatu' Vattu Variants in Devanagari lookup 26 subtable"  } ['vatu' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "'vatu' Vattu Variants in Devanagari lookup 27"  {"'vatu' Vattu Variants in Devanagari lookup 27 subtable"  } ['vatu' ('deva' <'dflt' > ) ]
@@ -97,9 +97,8 @@ Lookup: 4 0 0 "'psts' Post Base Substitutions in Gujarati lookup 41"  {"'psts' P
 Lookup: 4 0 0 "'psts' Post Base Substitutions in Bengali lookup 42"  {"'psts' Post Base Substitutions in Bengali lookup 42 subtable"  } ['psts' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'haln' Halant Forms in Devanagari lookup 43"  {"'haln' Halant Forms in Devanagari lookup 43 subtable"  } ['haln' ('deva' <'dflt' > ) ]
 Lookup: 4 0 0 "'haln' Halant Forms in Bengali lookup 44"  {"'haln' Halant Forms in Bengali lookup 44 subtable"  } ['haln' ('beng' <'dflt' > ) ]
-Lookup: 4 0 0 "Ligature Substitution in Devanagari lookup 45"  {"Ligature Substitution in Devanagari lookup 45 subtable"  } ['reph' ('deva' <'dflt' > ) ]
-Lookup: 1 0 0 "'aalt' Access All Alternates in Latin lookup 46"  {"'aalt' Access All Alternates in Latin lookup 46 subtable"  } ['aalt' ('latn' <'dflt' > ) ]
-Lookup: 1 0 0 "Single Substitution lookup 47"  {"Single Substitution lookup 47 subtable"  } []
+Lookup: 4 0 0 "'reph' Reph Form in Devanagari"  {"'reph' Reph Form in Devanagari subtable"  } ['reph' ('deva' <'dflt' > ) ]
+Lookup: 1 0 0 "'aalt' Access All Alternates in Bengali"  {"'aalt' Access All Alternates in Bengali subtable"  } ['aalt' ('beng' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin"  {"'mkmk' Mark to Mark in Latin subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Gujarati lookup 4"  {"'blwm' Below Base Mark in Gujarati lookup 4 subtable"  } ['blwm' ('gujr' <'dflt' > ) ]
@@ -22520,7 +22519,7 @@ SplineSet
  90 151 142 51 199 51 c 0
 EndSplineSet
 Substitution2: "'init' Initial Forms in Bengali lookup 1 subtable" bn_initekaar
-Substitution2: "'aalt' Access All Alternates in Latin lookup 46 subtable" bn_initekaar
+Substitution2: "'aalt' Access All Alternates in Bengali subtable" bn_initekaar
 EndChar
 
 StartChar: bn_aikaar
@@ -22559,7 +22558,7 @@ SplineSet
  50 0 20 183 20 234 c 0
 EndSplineSet
 Substitution2: "'init' Initial Forms in Bengali lookup 1 subtable" bn_initaikaar
-Substitution2: "'aalt' Access All Alternates in Latin lookup 46 subtable" bn_initaikaar
+Substitution2: "'aalt' Access All Alternates in Bengali subtable" bn_initaikaar
 EndChar
 
 StartChar: bn_okaar
@@ -84204,7 +84203,7 @@ SplineSet
  786 224 l 1
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "Ligature Substitution in Devanagari lookup 45 subtable" uni090B uni0930_uni094D.rphf
+Ligature2: "'reph' Reph Form in Devanagari subtable" uni090B uni0930_uni094D.rphf
 EndChar
 
 StartChar: glyph241
@@ -84268,7 +84267,7 @@ SplineSet
  786 224 l 1
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "Ligature Substitution in Devanagari lookup 45 subtable" uni0960 uni0930_uni094D.rphf
+Ligature2: "'reph' Reph Form in Devanagari subtable" uni0960 uni0930_uni094D.rphf
 EndChar
 
 StartChar: uni0908_uni0902.abvs
@@ -89410,7 +89409,7 @@ SplineSet
  -23 805 l 1
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "Ligature Substitution in Devanagari lookup 45 subtable" uni0930_uni094D.rphf uni0902
+Ligature2: "'reph' Reph Form in Devanagari subtable" uni0930_uni094D.rphf uni0902
 EndChar
 
 StartChar: uni939_930_94D.blwf.blws
@@ -96980,7 +96979,7 @@ SplineSet
  16 244 -20 281 -20 356 c 0
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "'vatu' Vattu Variants lookup 24 subtable" uni0A9C_uni0ACD.half uni0AB0_uni0ACD.blwf
+Ligature2: "'vatu' Vattu Variants in Gugarati 2 subtable" uni0A9C_uni0ACD.half uni0AB0_uni0ACD.blwf
 EndChar
 
 StartChar: uAA5_ACD.half_AB0_ACD.blwf.vatu
@@ -98431,7 +98430,7 @@ SplineSet
  426 227 406 283 284 283 c 0
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "'vatu' Vattu Variants lookup 24 subtable" uni0AB9 uni0AB0_uni0ACD.blwf
+Ligature2: "'vatu' Vattu Variants in Gugarati 2 subtable" uni0AB9 uni0AB0_uni0ACD.blwf
 EndChar
 
 StartChar: uniAB9_ACD.half_AAE.pres
@@ -99351,7 +99350,7 @@ SplineSet
  162 338 119 320 119 237 c 0
 EndSplineSet
 LCarets2: 1 0 
-Ligature2: "'vatu' Vattu Variants lookup 24 subtable" uni0AB5 uni0AB0_uni0ACD.blwf
+Ligature2: "'vatu' Vattu Variants in Gugarati 2 subtable" uni0AB5 uni0AB0_uni0ACD.blwf
 EndChar
 
 StartChar: uniAB6_ACD.half_AB5.pres
