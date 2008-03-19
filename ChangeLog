@@ -1,11 +1,38 @@
-$Id: ChangeLog,v 1.246 2008-03-16 20:09:44 Stevan_White Exp $
+$Id: ChangeLog,v 1.247 2008-03-19 08:21:20 Stevan_White Exp $
+
+2008-03-18  Steve White
+	* sfd/FreeSans.sfd:
+	Something was causing crashing effects in Windows.  Cleanup of
+	problems eventually made it go away.  Now works well.
+
+	Cleaned up many "points too close"
+
+	Cleaned up all ATT problems, of which there were many and various.
+
+	# Incorrectly labelled zero-width joiner used in a ligature
+
+	# Incorrect substitution of dotlessi and dotlessj with i and j was
+	  somehow connected with FontForge crash.  Attemts to remove the
+	  substitution would damage a 'ccmp' table; subsequent changes would
+	  result in FontForge crashing on save, and truncating the sfd file. 
+	  Surgically removed with vi.
+
+	# A couple of Indic lookups had incorrect script DFLT; one had 'latn'.
+
+	# Don't understand why there are scripts named
+		dev2 bng2 grj2 gur2 when there are already deva beng gurj guru
+	  But anyway, lots of 'vatu' 'pres' 'haln' and 'liga' lookups contained
+	  characters in the '2' scripts but were lablled only for the 'non-2' 
+	  ones.  Added the '2' scripts to all these lookups. Suspect a mistake.
+
+	Note: several of these problems are repeated in other Sans faces.
 
 2008-03-16  Steve White
 	* sfd/FreeMono.sfd:
-		cleanup of many path problems "points too close"
+	cleanup of many path problems "points too close"
 
-		strove to make accents Latin Extended range legible at 
-		small point sizes
+	strove to make accents Latin Extended range legible at 
+	small point sizes
 
 	At this point, all fonts are passing FontForge Validate.
 
