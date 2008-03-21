@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.4 2008-03-21 20:16:59 Stevan_White Exp $
+# $Id: Makefile,v 1.5 2008-03-21 21:51:54 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 SFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd \
@@ -22,7 +22,7 @@ FF=fontforge -lang=ff -script
 .SUFFIXES: $(SUFFIXES) .sfd .ttf
 
 %.ttf : %.sfd
-	$(FF) tools/GenerateTrueType $<
+	@ $(FF) tools/GenerateTrueType $< 2>> build.log
 
 all: ttf
 
@@ -52,8 +52,8 @@ srctar: $(SFDS)
 
 clean:
 	rm -rf $(TMPDIR) 
-	rm -f $(TTFS) $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(SIGS)
+	rm -f $(TTFS) $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(SIGS) build.log
 
 distclean:
 	rm -rf $(TMPDIR) 
-	rm -f $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(SIGS) $(TTFS)
+	rm -f $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(SIGS) $(TTFS) build.log
