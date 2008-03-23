@@ -1,9 +1,8 @@
-# $Id: Makefile,v 1.6 2008-03-21 23:49:16 Stevan_White Exp $
+# $Id: Makefile,v 1.7 2008-03-23 18:11:32 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
 RELEASE=freefont-$(DATE)
-VPATH=sfd	# make's search path for dependencies
 BUILDDIR=$(PWD)
 TMPDIR=$(BUILDDIR)/$(RELEASE)
 ZIPFILE=freefont-ttf-$(DATE).zip
