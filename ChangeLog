@@ -1,4 +1,80 @@
-$Id: ChangeLog,v 1.247 2008-03-19 08:21:20 Stevan_White Exp $
+$Id: ChangeLog,v 1.248 2008-03-23 18:04:28 Stevan_White Exp $
+
+2008-03-23  Steve White
+	* sfd/FreeSerif.sfd:
+	Last of Find Problems -> ATT
+	'mark' Latin lookup: afii10026 is in 'cyrl', also afii10074
+	Upper and lower Cyrillic i.  Just removed mark from both letters.
+
+	'half' Bengali lookup Khanda_Ta is in 'bng2'. Added bng2 to lookup
+	Added TtTable etc
+
+	Clean-up of Points too Close through to end of font.
+	This episode completes the paths/points clean-up of Serif.
+	But note: many ranges, esp. Ethiopic, Japanese, and Indic, have way
+	too many points, resulting in lumpiness.
+
+	At this point, FontForge can convert splines to quadratic, auto-hint,
+	and auto-instrument without segfault.
+
+	* Makefile, sfd/Makefile, tools/GenerateTrueType:
+	Alterations to build process: added a Makefile, and made to work
+	on my system.  Now auto-hints before generating TrueType.
+
+2008-03-22  Steve White
+	* sfd/FreeSans.sfd:
+	Lots of additions of math characters.  Should complete for
+	LaTeX 2e, except for extensible brackets.
+
+2008-03-21  Steve White
+	* sfd/*.sfd:
+	Regularized stacking of accents in Latin Extended Additional
+	Changed name of 00B5 from 'mu' to 'micro',
+		2206 from 'Delta' to 'Delta.math',
+		0308 from 'diaerisis' to 'diaerisiscomb'
+
+	* sfd/FreeMono.sfd:
+	additions to IPA
+
+	* sfd/FreeMonoBoldOblique.sfd:
+	Moved dotlessj from Corporate Use,
+	Deleted commaaccent there
+	Fixed mis-named glyphs tcommaaccent, Tcommaaccent
+	Changed name of 030A from 'dieresis' to 'ringcomb'
+
+	* sfd/FreeSans.sfd:
+	Added some arrows, and a couple of blackboard bold characters
+
+	Several characters in U+F600 Corporate Use range
+	        dotlessj, onefitted, commaaccent
+
+		dotlessj referred to by: jcircumflex, uni01F0:  
+		renamed it to uFFFF, re-linked others by hand
+
+		commaaccent
+			http://diacritics.typo.cz/index.php?id=9
+		should be u+0326 but wasn't linked to anything 
+
+	* sfd/FreeSansBold.sfd:
+	U+0617 etc: read glyphs "4GWglm". It should be Arabic.  Deleted
+
+	* sfd/FreeSansBold.sfd, FreeSansOblique.sfd,FreeSansBoldOblique.sfd:
+	removed bogus glyphs for 200C 200D, ZWJ and ZWNJ
+
+	* sfd/FreeSerif.sfd:
+	Split lookup for ligatures in latin into two classes;
+	ff, ffl, fl which are appropriate for all languages,
+	and fi, ffi, which are not appropriate in Turkish (due to distinction
+	between short and long i)
+	Needs to be done for other faces.
+
+	Filled set of extensible brackets in Miscellaneous Technical
+
+	Think IPA is now complete.
+	
+2008-03-18  Steve White
+	* sfd/FreeSans.sfd:
+	clean-up of all path issues and points too close
 
 2008-03-18  Steve White
 	* sfd/FreeSans.sfd:
@@ -31,8 +107,9 @@ $Id: ChangeLog,v 1.247 2008-03-19 08:21:20 Stevan_White Exp $
 	* sfd/FreeMono.sfd:
 	cleanup of many path problems "points too close"
 
-	strove to make accents Latin Extended range legible at 
-	small point sizes
+	strove to make accents Latin Extended range legible at small sizes
+
+	named some unnamed characters; removed a duplicate
 
 	At this point, all fonts are passing FontForge Validate.
 
