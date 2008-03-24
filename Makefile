@@ -1,12 +1,13 @@
-# $Id: Makefile,v 1.7 2008-03-23 18:11:32 Stevan_White Exp $
+# $Id: Makefile,v 1.8 2008-03-24 11:59:49 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
 RELEASE=freefont-$(DATE)
 BUILDDIR=$(PWD)
 TMPDIR=$(BUILDDIR)/$(RELEASE)
-ZIPFILE=freefont-ttf-$(DATE).zip
-TARFILE=freefont-ttf-$(DATE).tar.gz
+OTFZIPFILE=freefont-otf-$(DATE).zip
+TTFZIPFILE=freefont-ttf-$(DATE).zip
+TTFTARFILE=freefont-ttf-$(DATE).tar.gz
 SRCTARFILE=freefont-sfd-$(DATE).tar.gz
 ZIPSIG=freefont-ttf-$(DATE).zip.sig
 TARSIG=freefont-ttf-$(DATE).tar.gz.sig
@@ -18,19 +19,29 @@ all: ttf
 ttf: 
 	( cd sfd; $(MAKE) ttf )
 
-package: tar srctar
+otf: 
+	( cd sfd; $(MAKE) otf )
 
-zip: ttf
-	rm -rf $(TMPDIR) $(ZIPFILE)
+
+package: ttftar otfzip srctar
+
+ttfzip: ttf
+	rm -rf $(TMPDIR) $(TTFZIPFILE)
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
-	zip -r $(ZIPFILE) $(RELEASE)/
+	zip -r $(TTFZIPFILE) $(RELEASE)/
 
-tar: ttf
-	rm -rf $(TMPDIR) $(TARFILE)
+otfzip: otf
+	rm -rf $(TMPDIR) $(OTFZIPFILE)
+	mkdir $(TMPDIR)
+	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
+	zip -r $(OTFZIPFILE) $(RELEASE)/
+
+ttftar: ttf
+	rm -rf $(TMPDIR) $(TTFTARFILE)
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
-	tar czf $(TARFILE) $(RELEASE)/
+	tar czf $(TTFTARFILE) $(RELEASE)/
 
 srctar:
 	rm -rf $(TMPDIR) $(SRCTARFILE)
@@ -40,7 +51,7 @@ srctar:
 
 clean:
 	rm -rf $(TMPDIR) 
-	rm -f $(ZIPFILE) $(TARFILE) $(SRCTARFILE) $(SIGS) 
+	rm -f $(TTFZIPFILE) $(TTFTARFILE) $(OTFTARFILE) $(SRCTARFILE) $(SIGS) 
 	( cd sfd; $(MAKE) clean )
 
 distclean:
