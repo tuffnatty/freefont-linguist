@@ -1,3 +1,11 @@
+"""
+Makes an HTML table showing how many glyphs are in each range in each font,
+and tries to collate that with the OS/2 character range support bit flags.
+
+$Id: ranges.py,v 1.2 2008-04-28 22:15:40 Stevan_White Exp $
+"""
+__author__ = "Stevan White <stevan.white@googlemail.com>"
+
 import fontforge
 import sys
 
@@ -16,6 +24,8 @@ http://shlimazl.nm.ru/eng/fonts_ttf.htm
 
 The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
+
+This is a hack--in no way authoritative.  Lots of guesswork; much is wrong.
 """
 ulUnicodeRange = [
 [0,	'Basic Latin', [interval(0x0020, 0x007E)] ],
@@ -187,10 +197,14 @@ def count_glyphs_in_intervals( font, intervals ):
 			num += 1
 	return num
 
-def collect_range_info( fontSupport, font, os2bit, supports, intervals ):
+def collect_range_info( fontSupport, font, r, bit, offset ):
+	supports = ( r[0] & (1 << bit) ) != 0
+	index = bit + offset
+	rangeName = ulUnicodeRange[index][1]
+	intervals = ulUnicodeRange[index][2]
+	nglyphs = count_glyphs_in_intervals( font, intervals )
 
-	fontSupport.setRangeSupport( os2bit, supports,
-			count_glyphs_in_intervals( font, intervals ) )
+	fontSupport.setRangeSupport( bit, supports, nglyphs )
 
 
 class SupportInfo:
@@ -214,58 +228,53 @@ class FontSupport:
 
 fontSupportList = []
 
-def collect_font_range_report( fontName ):
+def collect_font_range_report( fontPath ):
 
-	font = fontforge.open( fontName )
+	font = fontforge.open( fontPath )
 
 	r = font.os2_unicoderanges
 
-	fontSupport = FontSupport( fontName )
+	fontSupport = FontSupport( font.fontname )
 	fontSupportList.append( fontSupport )
 
 	for bit in xrange(0,32):
-		supports = ( r[0] & (1 << bit) ) != 0
-		index = bit
-		rangeName = ulUnicodeRange[index][1]
-		intervals = ulUnicodeRange[index][2]
-
-		collect_range_info( fontSupport, font, index, supports, intervals )
+		collect_range_info( fontSupport, font, r, bit, 0 )
 
 	for bit in xrange(0,32):
-		supports = ( r[1] & (1 << bit) ) != 0
-		index = bit + 32
-		rangeName = ulUnicodeRange[index][1]
-		intervals = ulUnicodeRange[index][2]
-
-		collect_range_info( fontSupport, font, index, supports, intervals )
+		collect_range_info( fontSupport, font, r, bit, 32 )
 
 	for bit in xrange(0,6):
-		supports = ( r[2] & (1 << bit) ) != 0
-		index = bit + 64
-		rangeName = ulUnicodeRange[index][1]
-		intervals = ulUnicodeRange[index][2]
-
-		collect_range_info( fontSupport, font, index, supports, intervals )
+		collect_range_info( fontSupport, font, r, bit, 64 )
 
 def print_font_range_report():
 	print '<table class="fontrangereport" frame="box" rules="all">'
 	print '<caption>'
 	print "Unicode 1.1 ranges  " 
 	print '</caption>'
+	print '<thead>'
+	print '<tr><th>OS/2 character range</th>' 
+	for fsl in fontSupportList:
+		print '<th colspan="2">' + fsl.name + '</th>' 
+	print '<th>range<br />total</th>' 
+	print '</tr>'
+	print '</thead>'
 	for r in ulUnicodeRange:
 		bit = r[0]
 		range_name = r[1]
 		intervals = r[2]
-		print '<tr><td>' + str( bit ) + ' ' + range_name + '</td>' 
+#		print '<tr><td>' + str( bit ) + ' ' + range_name + '</td>' 
+		print '<tr><td>' + range_name + '</td>' 
 		for fsl in fontSupportList:
 			supportInfo = fsl.getInfo( bit )
-			supportString = 'N'
+			supportString = ''
 			if supportInfo.supports:
-				supportString = 'Y'
+				supportString = '&bull;'
 			#print supportString + ' ' + str( len( fsl.myInfos ) )
-			print '<td>' + supportString \
-				+ '</td><td class="num">' +	\
-				str( supportInfo.total ) + '</td>'
+			print '<td class="num">' \
+				+ str( supportInfo.total ) \
+				+ '</td><td>'	\
+				+ supportString \
+				+ '</td>'
 
 		print '<td class="num">' + str( total_intervals( intervals ) ) \
 			+ '</td></tr>'
@@ -280,6 +289,8 @@ print '<html>'
 print '<head>'
 print '<style type="text/css">'
 print '	td.num { text-align: right }'
+print '	th { padding: 0.5em }'
+print '	caption { font-size: larger; font-weight: bold; }'
 print '</style>'
 print '</head>'
 print '<body>'
