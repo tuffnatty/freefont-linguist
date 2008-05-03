@@ -5,7 +5,7 @@ and tries to collate that with the OS/2 character range support bit flags.
 Runs under FontForge.
 	fontforge -script ranges.py
 
-$Id: ranges.py,v 1.4 2008-05-03 11:46:57 Stevan_White Exp $
+$Id: ranges.py,v 1.5 2008-05-03 11:55:56 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -311,9 +311,10 @@ def print_font_range_report():
 	print '</caption>'
 	print '<thead>'
 	print '<tr><th>OS/2 character range</th>' 
+	print '<th>range<br />total</th>' 
+	print '<td></td>' 
 	for fsl in fontSupportList:
 		print '<th colspan="2">' + fsl.short + '</th>' 
-	print '<th>range<br />total</th>' 
 	print '</tr>'
 	print '</thead>'
 	for r in ulUnicodeRange:
@@ -322,6 +323,9 @@ def print_font_range_report():
 		intervals = r[2]
 #		print '<tr><td>' + str( bit ) + ' ' + range_name + '</td>' 
 		print '<tr><td>' + range_name + '</td>' 
+		print '<td class="num">' + str( total_intervals( intervals ) ) \
+			+ '</td>'
+		print '<td></td>' 
 		for fsl in fontSupportList:
 			supportInfo = fsl.getInfo( bit )
 			supportString = ''
@@ -338,8 +342,7 @@ def print_font_range_report():
 				+ supportString \
 				+ '</td>'
 
-		print '<td class="num">' + str( total_intervals( intervals ) ) \
-			+ '</td></tr>'
+		print '</tr>'
 	print '</table>'
 
 #	print 'os2 range %+0.4X %+0.4X %0.4X %0.4X' %(r[0], r[1], r[2], r[3])
