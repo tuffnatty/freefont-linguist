@@ -5,7 +5,7 @@ and tries to collate that with the OS/2 character range support bit flags.
 Runs under FontForge.
 	fontforge -script ranges.py
 
-$Id: ranges.py,v 1.5 2008-05-03 11:55:56 Stevan_White Exp $
+$Id: ranges.py,v 1.6 2008-05-03 15:00:32 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -23,6 +23,8 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 This is a hack--in no way authoritative.  Lots of guesswork; much is wrong.
+
+See below a list of TrueType OS/2 character ranges I was working from.
 """
 class interval:
 	def __init__( self, begin, end ):
@@ -321,7 +323,6 @@ def print_font_range_report():
 		bit = r[0]
 		range_name = r[1]
 		intervals = r[2]
-#		print '<tr><td>' + str( bit ) + ' ' + range_name + '</td>' 
 		print '<tr><td>' + range_name + '</td>' 
 		print '<td class="num">' + str( total_intervals( intervals ) ) \
 			+ '</td>'
@@ -331,7 +332,6 @@ def print_font_range_report():
 			supportString = ''
 			if supportInfo.supports:
 				supportString = '&bull;'
-			#print supportString + ' ' + str( len( fsl.myInfos ) )
 			totalStr = str( supportInfo.total )
 			if not supportInfo.total:
 				totalStr = '&nbsp;'
@@ -345,8 +345,6 @@ def print_font_range_report():
 		print '</tr>'
 	print '</table>'
 
-#	print 'os2 range %+0.4X %+0.4X %0.4X %0.4X' %(r[0], r[1], r[2], r[3])
-
 collect_font_range_report( '../sfd/FreeSerif.sfd', 'Srf' )
 collect_font_range_report( '../sfd/FreeSerifItalic.sfd', 'Srf I' )
 collect_font_range_report( '../sfd/FreeSerifBold.sfd', 'Srf B' )
@@ -359,7 +357,7 @@ collect_font_range_report( '../sfd/FreeMono.sfd', 'Mono' )
 collect_font_range_report( '../sfd/FreeMonoOblique.sfd', 'Mono O' )
 collect_font_range_report( '../sfd/FreeMonoBold.sfd', 'Mono B' )
 collect_font_range_report( '../sfd/FreeMonoBoldOblique.sfd', 'Mono BO' )
-#collect_font_range_report( '/usr/local/fonts/Cyberbit.ttf' )
+
 print '<html>'
 print '<head>'
 print '<title>'
@@ -379,6 +377,17 @@ print_font_range_report()
 print '<p>'
 print "Ranges for which (FontForge reports that) the font's OS/2 support bit is"
 print "set are marked with a bullet."
+print '</p>'
+print '<p>'
+print "Why Unicode 1.1?  Because that was the latest version at the time the"
+print "OS/2 character range support indicator was included in the TrueType"
+print "standard.  This indicator was unfortunately not designed for much"
+print "expansion, and unfortunately has not been updated in succeeding standards."
+print '</p>'
+print '<p>'
+print "For many ranges, I took the liberty of reducing the set of characters"
+print "considered to the ones listed for the range in the current Unicode"
+print "charts, so the number of characters is less than the width of the range."
 print '</p>'
 print '<p>'
 print "Note that there is a discrepancy in the Greek Symbols, Hebrew Extended."
