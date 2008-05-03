@@ -2,7 +2,10 @@
 Makes an HTML table showing how many glyphs are in each range in each font,
 and tries to collate that with the OS/2 character range support bit flags.
 
-$Id: ranges.py,v 1.3 2008-05-03 11:45:04 Stevan_White Exp $
+Runs under FontForge.
+	fontforge -script ranges.py
+
+$Id: ranges.py,v 1.4 2008-05-03 11:46:57 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -21,6 +24,13 @@ listed the ranges that have characters assigned to them.
 
 This is a hack--in no way authoritative.  Lots of guesswork; much is wrong.
 """
+class interval:
+	def __init__( self, begin, end ):
+		self.begin = begin
+		self.end = end
+	def len( self ):
+		return 1 + self.end - self.begin
+
 ulUnicodeRange = [
 [0,	'Basic Latin', [interval(0x0020, 0x007E)] ],
 [1,	'Latin-1 Supplement',[interval(0x00A0, 0x00FF)] ],
@@ -228,13 +238,6 @@ FC--FD  Arabic Presentation Forms-A
 FE      Combining Half Marks, CJK Compatibility Forms, Small Forms, Arabic-B
 FF      Halfwidth and Fullwidth Forms, Specials
 """
-
-class interval:
-	def __init__( self, begin, end ):
-		self.begin = begin
-		self.end = end
-	def len( self ):
-		return 1 + self.end - self.begin
 
 def total_intervals( intervals ):
 	num = 0
