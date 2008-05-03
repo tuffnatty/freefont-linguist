@@ -2,19 +2,13 @@
 Makes an HTML table showing how many glyphs are in each range in each font,
 and tries to collate that with the OS/2 character range support bit flags.
 
-$Id: ranges.py,v 1.2 2008-04-28 22:15:40 Stevan_White Exp $
+$Id: ranges.py,v 1.3 2008-05-03 11:45:04 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
 import fontforge
 import sys
-
-class interval:
-	def __init__( self, begin, end ):
-		self.begin = begin
-		self.end = end
-	def len( self ):
-		return 1 + self.end - self.begin
+import time
 
 
 """ OS/2 bit encoding of Unicode character ranges
@@ -115,7 +109,7 @@ ulUnicodeRange = [
 [31,	'General Punctuation',     [interval(0x2000, 0x2060)]],
 [32,	'Superscripts And Subscripts',     [interval(0x2070, 0x2071),
 		interval(0x2074, 0x208E),
-		interval(0x2070, 0x2074)
+		interval(0x2080, 0x2084)
 	]
 	],
 [33,	'Currency Symbols',     [interval(0x20A0, 0x20B5)]],
@@ -181,6 +175,66 @@ ulUnicodeRange = [
 [69,	'Specials', [interval(0xFFF0, 0xFFFD)]]
 ]
 
+"""
+Overview of the BMP (group=00, plane=00)
+
+======= A-ZONE (alphabetical characters and symbols) =======================
+00      (Control characters,) Basic Latin, Latin-1 Supplement (=ISO/IEC 8859-1)
+01      Latin Extended-A, Latin Extended-B
+02      Latin Extended-B, IPA Extensions, Spacing Modifier Letters
+03      Combining Diacritical Marks, Basic Greek, Greek Symbols and Coptic
+04      Cyrillic
+05      Armenian, Hebrew
+06      Basic Arabic, Arabic Extended
+07--08  (Reserved for future standardization)
+09      Devanagari, Bengali
+0A      Gumukhi, Gujarati
+0B      Oriya, Tamil
+0C      Telugu, Kannada
+0D      Malayalam
+0E      Thai, Lao
+0F      (Reserved for future standardization)
+10      Georgian
+11      Hangul Jamo
+12--1D  (Reserved for future standardization)
+1E      Latin Extended Additional
+1F      Greek Extended
+20      General Punctuation, Super/subscripts, Currency, Combining Symbols
+21      Letterlike Symbols, Number Forms, Arrows
+22      Mathematical Operators
+23      Miscellaneous Technical Symbols
+24      Control Pictures, OCR, Enclosed Alphanumerics
+25      Box Drawing, Block Elements, Geometric Shapes
+26      Miscellaneous Symbols
+27      Dingbats
+28--2F  (Reserved for future standardization)
+30      CJK Symbols and Punctuation, Hiragana, Katakana
+31      Bopomofo, Hangul Compatibility Jamo, CJK Miscellaneous
+32      Enclosed CJK Letters and Months
+33      CJK Compatibility
+34--4D  Hangul
+
+======= I-ZONE (ideographic characters) ===================================
+4E--9F  CJK Unified Ideographs
+
+======= O-ZONE (open zone) ================================================
+A0--DF  (Reserved for future standardization)
+
+======= R-ZONE (restricted use zone) ======================================
+E0--F8  (Private Use Area)
+F9--FA  CJK Compatibility Ideographs
+FB      Alphabetic Presentation Forms, Arabic Presentation Forms-A
+FC--FD  Arabic Presentation Forms-A
+FE      Combining Half Marks, CJK Compatibility Forms, Small Forms, Arabic-B
+FF      Halfwidth and Fullwidth Forms, Specials
+"""
+
+class interval:
+	def __init__( self, begin, end ):
+		self.begin = begin
+		self.end = end
+	def len( self ):
+		return 1 + self.end - self.begin
 
 def total_intervals( intervals ):
 	num = 0
@@ -197,8 +251,8 @@ def count_glyphs_in_intervals( font, intervals ):
 			num += 1
 	return num
 
-def collect_range_info( fontSupport, font, r, bit, offset ):
-	supports = ( r[0] & (1 << bit) ) != 0
+def collect_range_info( fontSupport, font, os2supportbit, bit, offset ):
+	supports = ( os2supportbit & (1 << bit) ) != 0
 	index = bit + offset
 	rangeName = ulUnicodeRange[index][1]
 	intervals = ulUnicodeRange[index][2]
@@ -214,8 +268,9 @@ class SupportInfo:
 		self.total = total
 
 class FontSupport:
-	def __init__( self, name ):
+	def __init__( self, name, short ):
 		self.name = name
+		self.short = short
 		self.myInfos = []
 
 	def setRangeSupport( self, os2bit, supports, total ):
@@ -228,33 +283,33 @@ class FontSupport:
 
 fontSupportList = []
 
-def collect_font_range_report( fontPath ):
+def collect_font_range_report( fontPath, short ):
 
 	font = fontforge.open( fontPath )
 
 	r = font.os2_unicoderanges
 
-	fontSupport = FontSupport( font.fontname )
+	fontSupport = FontSupport( font.fontname, short )
 	fontSupportList.append( fontSupport )
 
 	for bit in xrange(0,32):
-		collect_range_info( fontSupport, font, r, bit, 0 )
+		collect_range_info( fontSupport, font, r[0], bit, 0 )
 
 	for bit in xrange(0,32):
-		collect_range_info( fontSupport, font, r, bit, 32 )
+		collect_range_info( fontSupport, font, r[1], bit, 32 )
 
 	for bit in xrange(0,6):
-		collect_range_info( fontSupport, font, r, bit, 64 )
+		collect_range_info( fontSupport, font, r[2], bit, 64 )
 
 def print_font_range_report():
 	print '<table class="fontrangereport" frame="box" rules="all">'
 	print '<caption>'
-	print "Unicode 1.1 ranges  " 
+	print "Unicode 1.1 character ranges vs. FreeFont faces " 
 	print '</caption>'
 	print '<thead>'
 	print '<tr><th>OS/2 character range</th>' 
 	for fsl in fontSupportList:
-		print '<th colspan="2">' + fsl.name + '</th>' 
+		print '<th colspan="2">' + fsl.short + '</th>' 
 	print '<th>range<br />total</th>' 
 	print '</tr>'
 	print '</thead>'
@@ -270,8 +325,12 @@ def print_font_range_report():
 			if supportInfo.supports:
 				supportString = '&bull;'
 			#print supportString + ' ' + str( len( fsl.myInfos ) )
+			totalStr = str( supportInfo.total )
+			if not supportInfo.total:
+				totalStr = '&nbsp;'
+
 			print '<td class="num">' \
-				+ str( supportInfo.total ) \
+				+ totalStr \
 				+ '</td><td>'	\
 				+ supportString \
 				+ '</td>'
@@ -282,11 +341,24 @@ def print_font_range_report():
 
 #	print 'os2 range %+0.4X %+0.4X %0.4X %0.4X' %(r[0], r[1], r[2], r[3])
 
-collect_font_range_report( '../sfd/FreeSerif.sfd' )
-collect_font_range_report( '../sfd/FreeSans.sfd' )
-collect_font_range_report( '../sfd/FreeMono.sfd' )
+collect_font_range_report( '../sfd/FreeSerif.sfd', 'Srf' )
+collect_font_range_report( '../sfd/FreeSerifItalic.sfd', 'Srf I' )
+collect_font_range_report( '../sfd/FreeSerifBold.sfd', 'Srf B' )
+collect_font_range_report( '../sfd/FreeSerifBoldItalic.sfd', 'Srf BI' )
+collect_font_range_report( '../sfd/FreeSans.sfd', 'Sans' )
+collect_font_range_report( '../sfd/FreeSansOblique.sfd', 'Sans O' )
+collect_font_range_report( '../sfd/FreeSansBold.sfd', 'Sans B' )
+collect_font_range_report( '../sfd/FreeSansBoldOblique.sfd', 'Sans BO' )
+collect_font_range_report( '../sfd/FreeMono.sfd', 'Mono' )
+collect_font_range_report( '../sfd/FreeMonoOblique.sfd', 'Mono O' )
+collect_font_range_report( '../sfd/FreeMonoBold.sfd', 'Mono B' )
+collect_font_range_report( '../sfd/FreeMonoBoldOblique.sfd', 'Mono BO' )
+#collect_font_range_report( '/usr/local/fonts/Cyberbit.ttf' )
 print '<html>'
 print '<head>'
+print '<title>'
+print 'Gnu FreeFont character range support'
+print '</title>'
 print '<style type="text/css">'
 print '	td.num { text-align: right }'
 print '	th { padding: 0.5em }'
@@ -294,6 +366,24 @@ print '	caption { font-size: larger; font-weight: bold; }'
 print '</style>'
 print '</head>'
 print '<body>'
+print '<h1>'
+print 'Gnu FreeFont support for Unicode 1.1 character ranges'
+print '</h1>'
 print_font_range_report()
+print '<p>'
+print "Ranges for which (FontForge reports that) the font's OS/2 support bit is"
+print "set are marked with a bullet."
+print '</p>'
+print '<p>'
+print "Note that there is a discrepancy in the Greek Symbols, Hebrew Extended."
+print "and Arabic Extended ranges, between what FontForge reports here and in"
+print "its Font Info window under OS/2 Character Ranges."
+print "I don't know why, but these ranges are also not well defined in the"
+print "TrueType standard."
+print '</p>'
+print '<p>'
+time.tzset()
+print 'Generated by <code>ranges.py</code> on ' + time.strftime('%X %x %Z') + '.'
+print '</p>'
 print '</body>'
 print '</html>'
