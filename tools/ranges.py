@@ -5,7 +5,7 @@ and tries to collate that with the OS/2 character range support bit flags.
 Runs under FontForge.
 	fontforge -script ranges.py
 
-$Id: ranges.py,v 1.10 2008-05-04 11:02:11 Stevan_White Exp $
+$Id: ranges.py,v 1.11 2008-05-04 11:25:44 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -17,6 +17,7 @@ import time
 """ OS/2 bit encoding of Unicode character ranges
 http://www.w3.org/TR/REC-CSS2/notes.html
 http://shlimazl.nm.ru/eng/fonts_ttf.htm
+http://www.evertype.com/standards/iso10646/ucs-collections.html
 
 The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
@@ -129,11 +130,13 @@ ulUnicodeRange = [
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
 [36,	'Number Forms',     [interval(0x2153, 0x2188)]],
 [37,	'Arrows',     [interval(0x2190, 0x21FF)]],
-#FIXME this comprises
-#	Supplemental Mathematical Operators
-#	Miscellaneous Mathematical Symbols-A
-#  	Miscellaneous Mathematical Symbols-B
-[38,	'Mathematical Operators',     [interval(0x2200, 0x22FF)]],
+[38,	'Mathematical Operators',     [ #FIXME there are subranges
+	interval(0x2200, 0x22FF),
+	interval(0x2A00, 0x2AFF),	# Supplemental Mathematical Operators
+	interval(0x27C0, 0x27EF),	# Miscellaneous Mathematical Symbols-A
+	interval(0x2980, 0x29FF),	# Miscellaneous Mathematical Symbols-B
+	]
+		],
 [39,	'Miscellaneous Technical',     [interval(0x2300, 0x23FF)]],
 [40,	'Control Pictures',     [interval(0x2400, 0x243F)]],
 [41,	'Optical Character Recognition',     [interval(0x2440, 0x245F)]],
@@ -141,32 +144,35 @@ ulUnicodeRange = [
 [43,	'Box Drawing',     [interval(0x2500, 0x257F)]],
 [44,	'Block Elements',     [interval(0x2580, 0x259F)]],
 [45,	'Geometric Shapes',     [interval(0x25A0, 0x25FF)]],
-[46,	'Miscellaneous Symbols',     [interval(0x2600, 0x269D),
-			interval(0x26A0, 0x26C3)]],
+[46,	'Miscellaneous Symbols',     [
+			interval(0x2600, 0x269D),
+			interval(0x26A0, 0x26C3)
+			]
+			],
 [47,	'Dingbats',     [interval(0x2701, 0x27BF)]],	#FIXME several intervals
 [48,	'CJK Symbols And Punctuation', [interval(0x3000, 0x303F)]],
 [49,	'Hiragana', [interval(0x3040, 0x309F)]],
 [50,	'Katakana', [interval(0x30A0, 0x30FF)]],
 [51,	'Bopomofo', [interval(0x3100, 0x312F)]],
 [52,	'Hangul Compatibility Jamo', [interval(0x3130, 0x318F)]],
-[53,	'CJK Miscellaneous', []],
+[53,	'CJK Miscellaneous', [interval(0x3190, 0x319F)]],
 [54,	'Enclosed CJK Letters And Months', [interval(0x3200, 0x32FF)]],
 [55,	'CJK Compatibility', [interval(0x3300, 0x33FF)]],
-[56,	'Hangul', [interval(0xAC00, 0xD7FF)]],
-[57,	'Reserved for Unicode SubRanges', []],
-[58,	'Reserved for Unicode SubRanges', []],
+[56,	'Hangul', [interval(0x3400, 0x3D2D)]],
+[57,	'Hangul Supplementary-A', [interval(0x3D2E, 0x44B7)]],
+[58,	'Hangul Supplementary-B', [interval(0x44B8, 0x4DFF)]],
 [59,	'CJK Unified Ideographs', [interval(0x4E00, 0x9FFF)]],
 [60,	'Private Use Area', [interval(0xE800, 0xF8FF)]],
 [61,	'CJK Compatibility Ideographs', [interval(0xF900, 0xFAFF)]],
 [62,	'Alphabetic Presentation Forms', [
-		interval(0xFB00, 0xFB06),
-		interval(0xFB13, 0xFB17),
-		interval(0xFB1D, 0xFB36),
-		interval(0xFB38, 0xFB3C),
-		interval(0xFB3E, 0xFB3E),
-		interval(0xFB40, 0xFB41),
-		interval(0xFB43, 0xFB44),
-		interval(0xFB46, 0xFB4F),
+			interval(0xFB00, 0xFB06),
+			interval(0xFB13, 0xFB17),
+			interval(0xFB1D, 0xFB36),
+			interval(0xFB38, 0xFB3C),
+			interval(0xFB3E, 0xFB3E),
+			interval(0xFB40, 0xFB41),
+			interval(0xFB43, 0xFB44),
+			interval(0xFB46, 0xFB4F),
 		]],
 [63,	'Arabic Presentation Forms-A', [interval(0xFB50, 0xFBB1),
 				interval(0xFBD3, 0xFD3F),
@@ -189,7 +195,7 @@ ulUnicodeRange = [
 		],
 [68,	'Halfwidth And Fullwidth Forms', [interval(0xFF00, 0xFFEF)]],
 [69,	'Specials', [interval(0xFFF0, 0xFFFD)]],
-[70, 	'Tibetan', [interval(0xF000, 0xFFFF)]],
+[70, 	'Tibetan', [interval(0x0F00, 0x0FFF)]],
 [71, 	'Syriac', [interval(0x0700, 0x074F)]],
 [72, 	'Thaana', [interval(0x0780, 0x0781)]],
 [73, 	'Sinhala', [interval(0x0D80, 0x0DFF)]],
