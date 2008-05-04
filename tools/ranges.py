@@ -5,7 +5,7 @@ and tries to collate that with the OS/2 character range support bit flags.
 Runs under FontForge.
 	fontforge -script ranges.py
 
-$Id: ranges.py,v 1.7 2008-05-03 19:54:26 Stevan_White Exp $
+$Id: ranges.py,v 1.8 2008-05-04 10:32:25 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -48,7 +48,7 @@ ulUnicodeRange = [
 			interval(0x038C, 0x038C),
 			interval(0x038E, 0x03A1),
 			interval(0x03A3, 0x03CF)] ],
-[8,	'Greek Symbols And Coptic',     [interval(0x03D0, 0x03EF)]],	# this is quite unclear.  Range isn't in Unicode 2.0.  
+[8,	'Greek Symbols And Coptic',     [interval(0x03D0, 0x03FF)]],	# this is quite unclear.  Range isn't in Unicode 2.0.  
 [9,	'Cyrillic',     [
 	interval(0x0400, 0x04FF),	# Cyrillic
 #	interval(0x0500, 0x0523)	# Cyrillic Supplement
@@ -65,17 +65,17 @@ ulUnicodeRange = [
 			interval(0x05F0, 0x05F4)
 	]
 	],
-[12,	'Hebrew Extended (A and B blocks combined)',     [interval(0xFB00, 0xFB4F)]],	#FIXME this isn't right: also this range isn't in Unicode 2.0
+[12,	'Hebrew Extended (A and B blocks combined)',    
+	[interval(0x0590, 0x05CF),
+	interval(0x05EB, 0x05FF),
+		]], # See http://webcenter.ru/~kazarn/eng/ululinks.htm
 [13,	'Basic Arabic',     [interval(0x0600, 0x0603),
 				interval(0x0606, 0x061B),
 				interval(0x061E, 0x061F),
-				interval(0x0621, 0x065E),
-				interval(0x0660, 0x066F)
+				interval(0x0621, 0x0652)
 	]
 	],
-[14,	'Arabic Extended', [interval(0x0670, 0x06FF)]],	#FIXME unclear. range not in Unicode 2.0
-	# Syriac?
-	#Thaana?
+[14,	'Arabic Extended', [interval(0x0653, 0x06FF)]],	#FIXME unclear. range not in Unicode 2.0
 [15,	'Devanagari',     [interval(0x0901, 0x0939),
 			interval(0x093C, 0x094D),
 			interval(0x0950, 0x0954),
@@ -95,7 +95,6 @@ ulUnicodeRange = [
 			]
 		],
 [25,	'Lao',     [interval(0x0E80, 0x0EFF)]],
-	#Tibetan? Myanmar?
 [26,	'Basic Georgian',     [interval(0x10A0, 0x10C5),
 			interval(0x10D0, 0x10FC)]],
 [27,	'Georgian Extended', [interval(0x2D00, 0x2D25)]],	#??
@@ -129,6 +128,10 @@ ulUnicodeRange = [
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
 [36,	'Number Forms',     [interval(0x2153, 0x2188)]],
 [37,	'Arrows',     [interval(0x2190, 0x21FF)]],
+#FIXME this comprises
+#	Supplemental Mathematical Operators
+#	Miscellaneous Mathematical Symbols-A
+#  	Miscellaneous Mathematical Symbols-B
 [38,	'Mathematical Operators',     [interval(0x2200, 0x22FF)]],
 [39,	'Miscellaneous Technical',     [interval(0x2300, 0x23FF)]],
 [40,	'Control Pictures',     [interval(0x2400, 0x243F)]],
@@ -184,9 +187,177 @@ ulUnicodeRange = [
 				]
 		],
 [68,	'Halfwidth And Fullwidth Forms', [interval(0xFF00, 0xFFEF)]],
-[69,	'Specials', [interval(0xFFF0, 0xFFFD)]]
+[69,	'Specials', [interval(0xFFF0, 0xFFFD)]],
+[70, 	'Tibetan', [interval(0xF000, 0xFFFF)]],
+[71, 	'Syriac', [interval(0x0700, 0x074F)]],
+[72, 	'Thaana', [interval(0x0780, 0x0781)]],
+[73, 	'Sinhala', [interval(0x0D80, 0x0DFF)]],
+[74, 	'Myanmar', [interval(0x1000, 0x109F)]],
+[75, 	'Ethiopic', [
+		interval(0x1200, 0x1248),
+		interval(0x124A, 0x124D),
+		interval(0x1250, 0x1256),
+		interval(0x1258, 0x1258),
+		interval(0x125A, 0x125D),
+		interval(0x1260, 0x1288),
+		interval(0x128A, 0x128D),
+		interval(0x1290, 0x12B0),
+		interval(0x12B2, 0x12B5),
+		interval(0x12B8, 0x12BE)
+		]
+		],
+[76,	'Cherokee', [interval(0x125A, 0x13F4)]],
+[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x1D4F)]],
+[78, 	'Ogham', [interval(0x1680, 0x169F)]],
+[79, 	'Runic', [interval(0x16A0, 0x16F1)]],
+[80, 	'Khmer', [interval(0x1780, 0x17FF)]],
+[81, 	'Mongolian', [interval(0x1800, 0x18AF)]],	#FIXME ranges
+[82, 	'Braille Patterns', [interval(0x2800, 0x28FF)]],
+[83, 	'Yi Syllables, Radicals', [interval(0xA000, 0xA0EF),
+		interval(0xA490, 0xA4CF)]
+		],
+[84, 	'Tagalog Hanunoo Buhid Tagbanwa', 
+		[interval(0x1700, 0x1714),
+		interval(0x1720, 0x1736),
+		interval(0x1740, 0x1753),
+		interval(0x1750, 0x1773)
+		]
+		],
+[85, 	'Old Italic', [interval(0x10300, 0x10320)]],
+[86, 	'Gothic', [interval(0x10330, 0x1034A)]],
+[87, 	'Deseret', [interval(0x10400, 0x1044F)]],
+[88, 	'Byzantine & Western Musical Symbols', [interval(0x1D000, 0x1D0F5),
+			interval(0x1D100, 0x1D1DD)]],
+[89, 	'Mathematical Alphanumeric Symbols', [interval(0x1D400, 0x1D4FF)]],
+[90, 	'Private Use (plane 15,16)', []],
+[91, 	'Variation Selectors', []],
+[92, 	'Tags', []],
+[93, 	'Reserved for Unicode SubRanges', []],
+[94, 	'Reserved for Unicode SubRanges', []],
+[95, 	'Reserved for Unicode SubRanges', []],
+#[96-127, 	'Reserved for Unicode SubRanges', []]
 ]
 
+"""
+This is from the OpenType standard 
+http://www.microsoft.com/OpenType/OTSpec/os2.htm
+
+0 	Basic Latin
+1 	Latin-1 Supplement
+2 	Latin Extended-A
+3 	Latin Extended-B
+4 	IPA Extensions
+5 	Spacing Modifier Letters
+6 	Combining Diacritical Marks
+7 	Greek and Coptic
+8 	Reserved for Unicode SubRanges
+9 	Cyrillic
+  	Cyrillic Supplementary
+10 	Armenian
+11 	Hebrew
+12 	Reserved for Unicode SubRanges
+13 	Arabic
+14 	Reserved for Unicode SubRanges
+15 	Devanagari
+16 	Bengali
+17 	Gurmukhi
+18 	Gujarati
+19 	Oriya
+20 	Tamil
+21 	Telugu
+22 	Kannada
+23 	Malayalam
+24 	Thai
+25 	Lao
+26 	Georgian
+27 	Reserved for Unicode SubRanges
+28 	Hangul Jamo
+29 	Latin Extended Additional
+30 	Greek Extended
+31 	General Punctuation
+32 	Superscripts And Subscripts
+33 	Currency Symbols
+34 	Combining Diacritical Marks For Symbols
+35 	Letterlike Symbols
+36 	Number Forms
+37 	Arrows
+  	Supplemental Arrows-A
+  	Supplemental Arrows-B
+38 	Mathematical Operators
+  	Supplemental Mathematical Operators
+  	Miscellaneous Mathematical Symbols-A
+  	Miscellaneous Mathematical Symbols-B
+39 	Miscellaneous Technical
+40 	Control Pictures
+41 	Optical Character Recognition
+42 	Enclosed Alphanumerics
+43 	Box Drawing
+44 	Block Elements
+45 	Geometric Shapes
+46 	Miscellaneous Symbols
+47 	Dingbats
+48 	CJK Symbols And Punctuation
+49 	Hiragana
+50 	Katakana
+  	Katakana Phonetic Extensions
+51 	Bopomofo
+  	Bopomofo Extended
+52 	Hangul Compatibility Jamo
+3 	Reserved for Unicode SubRanges
+54 	Enclosed CJK Letters And Months
+55 	CJK Compatibility
+56 	Hangul Syllables
+57 	Non-Plane 0 *
+58 	Reserved for Unicode SubRanges
+59 	CJK Unified Ideographs
+  	CJK Radicals Supplement
+  	Kangxi Radicals
+  	Ideographic Description Characters
+  	CJK Unified Ideograph Extension A
+  	CJK Unified Ideographs Extension B
+  	Kanbun
+60 	Private Use Area
+61 	CJK Compatibility Ideographs
+  	CJK Compatibility Ideographs Supplement
+62 	Alphabetic Presentation Forms
+63 	Arabic Presentation Forms-A
+64 	Combining Half Marks
+65 	CJK Compatibility Forms
+66 	Small Form Variants
+67 	Arabic Presentation Forms-B
+68 	Halfwidth And Fullwidth Forms
+69 	Specials
+70 	Tibetan
+71 	Syriac
+72 	Thaana
+73 	Sinhala
+74 	Myanmar
+75 	Ethiopic
+76	Cherokee
+77 	Unified Canadian Aboriginal Syllabics
+78 	Ogham
+79 	Runic
+80 	Khmer
+81 	Mongolian
+82 	Braille Patterns
+83 	Yi Syllables
+  	Yi Radicals
+84 	Tagalog
+  	Hanunoo
+  	Buhid
+  	Tagbanwa
+85 	Old Italic
+86 	Gothic
+87 	Deseret
+88 	Byzantine Musical Symbols
+  	Musical Symbols
+89 	Mathematical Alphanumeric Symbols
+90 	Private Use (plane 15)
+  	Private Use (plane 16)
+91 	Variation Selectors
+92 	Tags
+93-127 	Reserved for Unicode SubRanges
+"""
 """
 Overview of the BMP (group=00, plane=00)
 
@@ -241,6 +412,20 @@ FE      Combining Half Marks, CJK Compatibility Forms, Small Forms, Arabic-B
 FF      Halfwidth and Fullwidth Forms, Specials
 """
 
+"""
+See also
+http://developer.apple.com/textfonts/TTRefMan/RM06/Chap6OS2.html
+Says 128 bits are split into 96 and 32 bits.
+96 is Unicode block, 32 for script sets...
+
+This talks about TrueType and OpenType versions
+http://webcenter.ru/~kazarn/eng/fonts_ttf.htm#os2tab
+and this says what the ranges of Hebrew, Greek etc are
+
+OK, the right thing is here: the OpenType specs
+http://www.microsoft.com/OpenType/OTSpec/os2.htm
+"""
+
 def total_intervals( intervals ):
 	num = 0
 	for i in intervals:
@@ -250,10 +435,15 @@ def total_intervals( intervals ):
 def count_glyphs_in_intervals( font, intervals ):
 	num = 0
 	for r in intervals:
-		font.selection.select( ( 'ranges', None ), r.begin, r.end )
-		g = font.selection.byGlyphs
-		for e in g:
-			num += 1
+		try: 
+			font.selection.select( ( 'ranges', None ), r.begin, r.end )
+			g = font.selection.byGlyphs
+			for e in g:
+				num += 1
+		except ValueError:
+			print >> sys.stderr, "Problem with interval"
+			print >> sys.stderr, font.fontname
+			print >> sys.stderr, str( r.begin ) + " " + str( r.end )
 	return num
 
 def collect_range_info( fontSupport, font, os2supportbit, bit, offset ):
@@ -289,6 +479,8 @@ class FontSupport:
 fontSupportList = []
 
 def collect_font_range_report( fontPath, short ):
+	""" Currently searches the first 96 bits of the os2_unicoderanges
+	"""
 
 	font = fontforge.open( fontPath )
 
@@ -303,7 +495,7 @@ def collect_font_range_report( fontPath, short ):
 	for bit in xrange(0,32):
 		collect_range_info( fontSupport, font, r[1], bit, 32 )
 
-	for bit in xrange(0,6):
+	for bit in xrange(0,32):
 		collect_range_info( fontSupport, font, r[2], bit, 64 )
 
 def print_font_range_table():
