@@ -5,7 +5,7 @@ and tries to collate that with the OS/2 character range support bit flags.
 Runs under FontForge.
 	fontforge -script ranges.py
 
-$Id: ranges.py,v 1.8 2008-05-04 10:32:25 Stevan_White Exp $
+$Id: ranges.py,v 1.9 2008-05-04 10:34:27 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -15,7 +15,6 @@ import time
 
 
 """ OS/2 bit encoding of Unicode character ranges
-Note this is bound to Unicode 1.1.
 http://www.w3.org/TR/REC-CSS2/notes.html
 http://shlimazl.nm.ru/eng/fonts_ttf.htm
 
@@ -23,8 +22,6 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 This is a hack--in no way authoritative.  Lots of guesswork; much is wrong.
-
-See below a list of TrueType OS/2 character ranges I was working from.
 """
 class interval:
 	def __init__( self, begin, end ):
@@ -501,7 +498,7 @@ def collect_font_range_report( fontPath, short ):
 def print_font_range_table():
 	print '<table class="fontrangereport" frame="box" rules="all">'
 	print '<caption>'
-	print "Unicode 1.1 character ranges vs. FreeFont faces " 
+	print "OS/2 character ranges vs. FreeFont faces " 
 	print '</caption>'
 	print '<thead>'
 	print '<tr><th>OS/2 character range</th>' 
@@ -542,13 +539,6 @@ Ranges for which (FontForge reports that) the font's OS/2 support
 bit is set are marked with a bullet.
 </p>
 <p>
-Why Unicode 1.1?  Because that was the latest version at the
-time the OS/2 character range support indicator was included
-in the TrueType standard.  This indicator was unfortunately not
-designed for much expansion, and unfortunately has not been
-updated in succeeding standards.
-</p>
-<p>
 For many ranges, I took the liberty of reducing the set of 
 characters considered to the ones listed for the range in the
 current Unicode charts, so the number of characters is less than
@@ -577,7 +567,7 @@ def print_font_range_report():
 	print '</head>'
 	print '<body>'
 	print '<h1>'
-	print 'Gnu FreeFont support for Unicode 1.1 character ranges'
+	print 'Gnu FreeFont support for OpenType OS/2 character ranges'
 	print '</h1>'
 	print_font_range_table()
 	print bla
