@@ -5,7 +5,7 @@ and tries to collate that with the OS/2 character range support bit flags.
 Runs under FontForge.
 	fontforge -script ranges.py
 
-$Id: ranges.py,v 1.9 2008-05-04 10:34:27 Stevan_White Exp $
+$Id: ranges.py,v 1.10 2008-05-04 11:02:11 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -27,8 +27,12 @@ class interval:
 	def __init__( self, begin, end ):
 		self.begin = begin
 		self.end = end
+
 	def len( self ):
 		return 1 + self.end - self.begin
+
+	def __str__( self ):
+		return '[' + str( self.begin ) + ',' + str( self.end ) + ']'
 
 ulUnicodeRange = [
 [0,	'Basic Latin', [interval(0x0020, 0x007E)] ],
@@ -203,8 +207,8 @@ ulUnicodeRange = [
 		interval(0x12B8, 0x12BE)
 		]
 		],
-[76,	'Cherokee', [interval(0x125A, 0x13F4)]],
-[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x1D4F)]],
+[76,	'Cherokee', [interval(0x13A0, 0x13F4)]],
+[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x14DF)]],
 [78, 	'Ogham', [interval(0x1680, 0x169F)]],
 [79, 	'Runic', [interval(0x16A0, 0x16F1)]],
 [80, 	'Khmer', [interval(0x1780, 0x17FF)]],
@@ -432,24 +436,29 @@ def total_intervals( intervals ):
 def count_glyphs_in_intervals( font, intervals ):
 	num = 0
 	for r in intervals:
-		try: 
-			font.selection.select( ( 'ranges', None ), r.begin, r.end )
-			g = font.selection.byGlyphs
-			for e in g:
-				num += 1
-		except ValueError:
-			print >> sys.stderr, "Problem with interval"
-			print >> sys.stderr, font.fontname
-			print >> sys.stderr, str( r.begin ) + " " + str( r.end )
+		font.selection.select( ( 'ranges', None ), r.begin, r.end )
+		g = font.selection.byGlyphs
+		for e in g:
+			num += 1
 	return num
+
+def intervals_to_stderr( intervals ):
+	for r in intervals:
+		print >> sys.stderr, r
 
 def collect_range_info( fontSupport, font, os2supportbit, bit, offset ):
 	supports = ( os2supportbit & (1 << bit) ) != 0
 	index = bit + offset
 	rangeName = ulUnicodeRange[index][1]
 	intervals = ulUnicodeRange[index][2]
-	nglyphs = count_glyphs_in_intervals( font, intervals )
-
+	nglyphs = 0
+	try: 
+		nglyphs = count_glyphs_in_intervals( font, intervals )
+	except ValueError:
+		print >> sys.stderr, "Problem with interval"
+		print >> sys.stderr, font.fontname
+		print >> sys.stderr, rangeName
+		intervals_to_stderr( intervals )
 	fontSupport.setRangeSupport( bit, supports, nglyphs )
 
 
