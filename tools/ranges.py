@@ -5,7 +5,18 @@ and tries to collate that with the OS/2 character range support bit flags.
 Runs under FontForge.
 	fontforge -script ranges.py
 
-$Id: ranges.py,v 1.11 2008-05-04 11:25:44 Stevan_White Exp $
+This is a hack--in no way authoritative.  Lots of guesswork; much is wrong.
+
+See
+http://www.w3.org/TR/REC-CSS2/notes.html
+http://shlimazl.nm.ru/eng/fonts_ttf.htm
+http://www.evertype.com/standards/iso10646/ucs-collections.html
+
+The intervals are partly just the assigned interval, but often I have
+listed the ranges that have characters assigned to them.
+
+
+$Id: ranges.py,v 1.12 2008-05-04 11:43:47 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -14,16 +25,6 @@ import sys
 import time
 
 
-""" OS/2 bit encoding of Unicode character ranges
-http://www.w3.org/TR/REC-CSS2/notes.html
-http://shlimazl.nm.ru/eng/fonts_ttf.htm
-http://www.evertype.com/standards/iso10646/ucs-collections.html
-
-The intervals are partly just the assigned interval, but often I have
-listed the ranges that have characters assigned to them.
-
-This is a hack--in no way authoritative.  Lots of guesswork; much is wrong.
-"""
 class interval:
 	def __init__( self, begin, end ):
 		self.begin = begin
@@ -40,7 +41,7 @@ ulUnicodeRange = [
 [1,	'Latin-1 Supplement',[interval(0x00A0, 0x00FF)] ],
 [2,	'Latin Extended-A',	[interval(0x0100, 0x017F)] ],
 [3,	'Latin Extended-B',     [interval(0x0180, 0x024F)]],
-#extended C and D?
+#Latin Extended C and D?
 [4,	'IPA Extensions',     [interval(0x0250, 0x02AF)]],
 [5,	'Spacing Modifier Letters',     [interval(0x02B0, 0x02FF)]],
 [6,	'Combining Diacritical Marks',     [interval(0x0300, 0x036F)]],
@@ -50,7 +51,7 @@ ulUnicodeRange = [
 			interval(0x038C, 0x038C),
 			interval(0x038E, 0x03A1),
 			interval(0x03A3, 0x03CF)] ],
-[8,	'Greek Symbols And Coptic',     [interval(0x03D0, 0x03FF)]],	# this is quite unclear.  Range isn't in Unicode 2.0.  
+[8,	'Greek Symbols And Coptic',     [interval(0x03D0, 0x03FF)]],	# unclear.
 [9,	'Cyrillic',     [
 	interval(0x0400, 0x04FF),	# Cyrillic
 #	interval(0x0500, 0x0523)	# Cyrillic Supplement
@@ -77,7 +78,7 @@ ulUnicodeRange = [
 				interval(0x0621, 0x0652)
 	]
 	],
-[14,	'Arabic Extended', [interval(0x0653, 0x06FF)]],	#FIXME unclear. range not in Unicode 2.0
+[14,	'Arabic Extended', [interval(0x0653, 0x06FF)]],	# unclear
 [15,	'Devanagari',     [interval(0x0901, 0x0939),
 			interval(0x093C, 0x094D),
 			interval(0x0950, 0x0954),
@@ -99,7 +100,7 @@ ulUnicodeRange = [
 [25,	'Lao',     [interval(0x0E80, 0x0EFF)]],
 [26,	'Basic Georgian',     [interval(0x10A0, 0x10C5),
 			interval(0x10D0, 0x10FC)]],
-[27,	'Georgian Extended', [interval(0x2D00, 0x2D25)]],	#??
+[27,	'Georgian Extended', [interval(0x10A0, 0x10CF)]],	# unclear
 [28,	'Hangul Jamo',     [interval(0x1100, 0x11FF)]],
 [29,	'Latin Extended Additional',     [interval(0x1E00, 0x1EFF)]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
@@ -246,7 +247,7 @@ ulUnicodeRange = [
 ]
 
 """
-This is from the OpenType standard 
+From the OpenType standard 
 http://www.microsoft.com/OpenType/OTSpec/os2.htm
 
 0 	Basic Latin
