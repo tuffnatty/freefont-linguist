@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.8 2008-03-24 11:59:49 Stevan_White Exp $
+# $Id: Makefile,v 1.9 2008-05-20 06:37:52 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
@@ -49,6 +49,8 @@ srctar:
 	cp -a $(ADMIN) sfd/*.sfd $(TMPDIR)
 	tar czf $(SRCTARFILE) $(RELEASE)/
 
+tests:
+	cd tools; ./isMonoMono.py; ./validate.py
 clean:
 	rm -rf $(TMPDIR) 
 	rm -f $(TTFZIPFILE) $(TTFTARFILE) $(OTFTARFILE) $(SRCTARFILE) $(SIGS) 
