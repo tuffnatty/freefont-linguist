@@ -4,7 +4,7 @@ FullName: Free Sans Oblique
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.75 $
+Version: $Revision: 1.76 $
 ItalicAngle: -12
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1213982895
+ModificationTime: 1214045585
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -50,13 +50,13 @@ OS2SupYOff: 479
 OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2Vendor: 'GNU '
-Lookup: 1 0 0 "'init' Initial Forms in Bengali lookup 1"  {"'init' Initial Forms in Bengali lookup 1 subtable"  } ['init' ('beng' <'dflt' > ) ]
+Lookup: 1 0 0 "'init' Initial Forms in Bengali lookup 1"  {"'init' Initial Forms in Bengali lookup 1 subtable"  } ['init' ('bng2' <'dflt' > 'beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' Akhand in Bengali lookup 3"  {"'akhn' Akhand in Bengali lookup 3 subtable"  } ['akhn' ('beng' <'dflt' > ) ]
 Lookup: 4 8 1 "'liga' Standard Ligatures in Armenian lookup 5"  {"'liga' Standard Ligatures in Armenian lookup 5 subtable"  } ['liga' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Bengali lookup 6"  {"'rphf' Reph Form in Bengali lookup 6 subtable"  } ['rphf' ('beng' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew lookup 7"  {"'dlig' Discretionary Ligatures in Hebrew lookup 7 subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' Below Base Forms in Bengali lookup 10"  {"'blwf' Below Base Forms in Bengali lookup 10 subtable"  } ['blwf' ('beng' <'dflt' > ) ]
-Lookup: 4 0 0 "'half' Half Forms in Bengali lookup 11"  {"'half' Half Forms in Bengali lookup 11 subtable"  } ['half' ('beng' <'dflt' > ) ]
+Lookup: 4 0 0 "'half' Half Forms in Bengali"  {"'half' Half Forms in Bengali subtable"  } ['half' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' Post Base Forms in Bengali lookup 12"  {"'pstf' Post Base Forms in Bengali lookup 12 subtable"  } ['pstf' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions lookup 13"  {"'frac' Diagonal Fractions lookup 13 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "'vatu' Vattu Variants in Bengali lookup 14"  {"'vatu' Vattu Variants in Bengali lookup 14 subtable"  } ['vatu' ('beng' <'dflt' > ) ]
@@ -64,7 +64,7 @@ Lookup: 4 0 0 "'pres' Pre Base Substitutions in Bengali lookup 15"  {"'pres' Pre
 Lookup: 4 0 0 "'blws' Below Base Substitutions in Bengali lookup 16"  {"'blws' Below Base Substitutions in Bengali lookup 16 subtable"  } ['blws' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' Post Base Substitutions in Bengali lookup 17"  {"'psts' Post Base Substitutions in Bengali lookup 17 subtable"  } ['psts' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'haln' Halant Forms in Bengali lookup 18"  {"'haln' Halant Forms in Bengali lookup 18 subtable"  } ['haln' ('beng' <'dflt' > ) ]
-Lookup: 1 0 0 "'aalt' Access All Alternates in Latin lookup 19"  {"'aalt' Access All Alternates in Latin lookup 19 subtable"  } ['aalt' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'aalt' Access All Alternates in Bengali"  {"'aalt' Access All Alternates in Bengali subtable"  } ['aalt' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Greek lookup 0"  {"'abvm' Above Base Mark in Greek lookup 0 subtable"  } ['abvm' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 1"  {"'kern' Horizontal Kerning in Latin lookup 1 subtable"  } ['kern' ('latn' <'dflt' > ) ]
@@ -448,7 +448,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8048 16 10
+WinInfo: 65856 16 10
 BeginPrivate: 7
 UniqueID 7 5020908
 BlueValues 31 [-23 0 524 544 686 709 729 749]
@@ -28459,7 +28459,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 Substitution2: "'init' Initial Forms in Bengali lookup 1 subtable" bn_initekaar
-Substitution2: "'aalt' Access All Alternates in Latin lookup 19 subtable" bn_initekaar
+Substitution2: "'aalt' Access All Alternates in Bengali subtable" bn_initekaar
 EndChar
 
 StartChar: bn_aikaar
@@ -28500,7 +28500,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 Substitution2: "'init' Initial Forms in Bengali lookup 1 subtable" bn_initaikaar
-Substitution2: "'aalt' Access All Alternates in Latin lookup 19 subtable" bn_initaikaar
+Substitution2: "'aalt' Access All Alternates in Bengali subtable" bn_initaikaar
 EndChar
 
 StartChar: bn_okaar
@@ -30141,7 +30141,7 @@ SplineSet
  95 373 89 370 86 367 c 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ka bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ka bn_hasanta
 EndChar
 
 StartChar: bn_half_kha
@@ -30178,7 +30178,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_kha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_kha bn_hasanta
 EndChar
 
 StartChar: bn_half_ga
@@ -30210,7 +30210,7 @@ SplineSet
  42 344 15 355 15 393 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ga bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ga bn_hasanta
 EndChar
 
 StartChar: bn_half_gha
@@ -30252,7 +30252,7 @@ SplineSet
  87 411 50 433 50 467 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_gha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_gha bn_hasanta
 EndChar
 
 StartChar: bn_half_nga
@@ -30291,7 +30291,7 @@ SplineSet
  267 452 287 450 299 450 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_nga bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_nga bn_hasanta
 EndChar
 
 StartChar: bn_half_ca
@@ -30320,7 +30320,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ca bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ca bn_hasanta
 EndChar
 
 StartChar: bn_half_ca1
@@ -30398,7 +30398,7 @@ SplineSet
  116 372 121 364 130 364 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_cha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_cha bn_hasanta
 EndChar
 
 StartChar: bn_half_ja
@@ -30434,7 +30434,7 @@ SplineSet
  152 304 114 318 114 370 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ja bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ja bn_hasanta
 EndChar
 
 StartChar: bn_half_jha
@@ -30473,7 +30473,7 @@ SplineSet
  225 439 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_jha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_jha bn_hasanta
 EndChar
 
 StartChar: bn_half_nya
@@ -30535,7 +30535,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_nya bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_nya bn_hasanta
 EndChar
 
 StartChar: bn_half_tta
@@ -30580,7 +30580,7 @@ SplineSet
  97 715 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_tta bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_tta bn_hasanta
 EndChar
 
 StartChar: bn_half_ttha
@@ -30620,7 +30620,7 @@ SplineSet
  20 207 53 198 80 198 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ttha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ttha bn_hasanta
 EndChar
 
 StartChar: bn_half_dda
@@ -30656,7 +30656,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_dda bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_dda bn_hasanta
 EndChar
 
 StartChar: bn_half_ddha
@@ -30687,7 +30687,7 @@ SplineSet
  270 438 282 410 282 382 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ddha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ddha bn_hasanta
 EndChar
 
 StartChar: bn_half_nna
@@ -30711,7 +30711,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_nna bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_nna bn_hasanta
 EndChar
 
 StartChar: bn_half_ta
@@ -30742,7 +30742,7 @@ SplineSet
  183 445 189 399 238 399 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ta bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ta bn_hasanta
 EndChar
 
 StartChar: bn_half_tha
@@ -30781,7 +30781,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_tha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_tha bn_hasanta
 EndChar
 
 StartChar: bn_half_dha
@@ -30818,7 +30818,7 @@ SplineSet
  253 449 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_dha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_dha bn_hasanta
 EndChar
 
 StartChar: bn_half_da
@@ -30848,7 +30848,7 @@ SplineSet
  288 263 292 339 323 395 c 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_da bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_da bn_hasanta
 EndChar
 
 StartChar: bn_half_na
@@ -30875,7 +30875,7 @@ SplineSet
  46 291 37 309 37 329 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_na bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_na bn_hasanta
 EndChar
 
 StartChar: bn_half_pa
@@ -30911,7 +30911,7 @@ SplineSet
  207 524 174 509 148 479 c 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_pa bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_pa bn_hasanta
 EndChar
 
 StartChar: bn_half_pha
@@ -30950,7 +30950,7 @@ SplineSet
  353 485 418 466 418 392 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_pha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_pha bn_hasanta
 EndChar
 
 StartChar: bn_half_ba
@@ -30981,7 +30981,7 @@ SplineSet
  178 413 113 386 93 369 c 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ba bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ba bn_hasanta
 EndChar
 
 StartChar: bn_half_bha
@@ -31016,7 +31016,7 @@ SplineSet
  12 507 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_bha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_bha bn_hasanta
 EndChar
 
 StartChar: bn_half_ma
@@ -31055,7 +31055,7 @@ SplineSet
  192 294 152 376 114 376 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ma bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ma bn_hasanta
 EndChar
 
 StartChar: bn_half_ya
@@ -31093,7 +31093,7 @@ SplineSet
  159 507 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ya bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ya bn_hasanta
 EndChar
 
 StartChar: bn_half_ra
@@ -31110,7 +31110,7 @@ SplineSet
  -233 565 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ra bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ra bn_hasanta
 EndChar
 
 StartChar: bn_half_la
@@ -31145,7 +31145,7 @@ SplineSet
  1 260 -5 287 -5 310 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_la bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_la bn_hasanta
 EndChar
 
 StartChar: bn_half_sha
@@ -31183,7 +31183,7 @@ SplineSet
  53 379 57 375 73 363 c 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_sha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_sha bn_hasanta
 EndChar
 
 StartChar: bn_half_ssa
@@ -31215,7 +31215,7 @@ SplineSet
  125 290 60 307 60 372 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ssa bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ssa bn_hasanta
 EndChar
 
 StartChar: bn_half_sa
@@ -31254,7 +31254,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_sa bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_sa bn_hasanta
 EndChar
 
 StartChar: bn_half_ha
@@ -31290,7 +31290,7 @@ SplineSet
  21 507 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_ha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_ha bn_hasanta
 EndChar
 
 StartChar: bn_half_rra
@@ -31332,7 +31332,7 @@ SplineSet
  133 50 120 62 120 80 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_rra bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_rra bn_hasanta
 EndChar
 
 StartChar: bn_half_rha
@@ -31370,7 +31370,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 LCarets2: 1 0 
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_rha bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_rha bn_hasanta
 EndChar
 
 StartChar: bn_half_yya
@@ -31407,7 +31407,7 @@ SplineSet
  147 507 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_yya bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_yya bn_hasanta
 EndChar
 
 StartChar: bn_half_asamira
@@ -31424,7 +31424,7 @@ SplineSet
  -233 565 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_asamira bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_asamira bn_hasanta
 EndChar
 
 StartChar: bn_half_asamiba
@@ -31460,7 +31460,7 @@ SplineSet
  178 413 112 386 92 369 c 1
 EndSplineSet
 Validated: 1
-Ligature2: "'half' Half Forms in Bengali lookup 11 subtable" bn_asamiba bn_hasanta
+Ligature2: "'half' Half Forms in Bengali subtable" bn_asamiba bn_hasanta
 EndChar
 
 StartChar: bn_khaphala
