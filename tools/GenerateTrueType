@@ -1,5 +1,5 @@
 ##!/usr/bin/env fontforge
-# $Id: GenerateTrueType,v 1.3 2008-03-24 11:59:49 Stevan_White Exp $
+# $Id: GenerateTrueType,v 1.4 2008-08-12 20:41:39 Stevan_White Exp $
 #
 # Convert fonts from FontForge's native SFD format to TrueType format
 # First auto-hints whole font
@@ -12,8 +12,9 @@ if ( $argc > 1 )
 	Open( $argv[i] )
 	ttfile = $fontname + ".ttf"
 	Print( "Generating TrueType file ", ttfile )
+	SetFontOrder( 2 )	# otherwise can't put in TT instructions
 	SelectAll()
-	AutoHint()
+	AutoInstr()	# insert TrueType instructions (similar to hinting)
 	Generate( ttfile )
 	Close()
 	i++
