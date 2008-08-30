@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.9 2008-05-20 06:37:52 Stevan_White Exp $
+# $Id: Makefile,v 1.10 2008-08-30 11:02:59 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
@@ -14,7 +14,7 @@ TARSIG=freefont-ttf-$(DATE).tar.gz.sig
 SRCTARSIG=freefont-sfd-$(DATE).tar.gz.sig
 SIGS=$(ZIPSIG) $(TARSIG) $(SRCTARSIG)
 
-all: ttf
+all: ttf otf
 
 ttf: 
 	( cd sfd; $(MAKE) ttf )
@@ -50,7 +50,8 @@ srctar:
 	tar czf $(SRCTARFILE) $(RELEASE)/
 
 tests:
-	cd tools; ./isMonoMono.py; ./validate.py
+	( cd sfd; $(MAKE) tests )
+
 clean:
 	rm -rf $(TMPDIR) 
 	rm -f $(TTFZIPFILE) $(TTFTARFILE) $(OTFTARFILE) $(SRCTARFILE) $(SIGS) 

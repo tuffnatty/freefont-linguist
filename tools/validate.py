@@ -64,9 +64,9 @@ def dealWithValidationState( state, e ):
 		print e.glyphname + " fpgm or prep tables longer than allowed" )
 	"""
 
-def validate( fontPath ):
-	print "Validating " + fontPath
-	font = fontforge.open( fontPath )
+def validate( dir, fontFile ):
+	print "Validating " + fontFile
+	font = fontforge.open( dir + fontFile )
 
 	g = font.selection.all()
 	g = font.selection.byGlyphs
@@ -77,18 +77,45 @@ def validate( fontPath ):
 		if state != 0:
 			dealWithValidationState( state, e )
 	font.validate
-#validate( '../sfd/FreeSerif.sfd' )
-validate( '../sfd/FreeSerifItalic.sfd' )
-validate( '../sfd/FreeSerifBold.sfd' )
-validate( '../sfd/FreeSerifBoldItalic.sfd' )
-validate( '../sfd/FreeSans.sfd' )
-validate( '../sfd/FreeSansOblique.sfd' )
-validate( '../sfd/FreeSansBold.sfd' )
-validate( '../sfd/FreeSansBoldOblique.sfd' )
-validate( '../sfd/FreeMono.sfd' )
-validate( '../sfd/FreeMonoOblique.sfd' )
-validate( '../sfd/FreeMonoBold.sfd' )
-validate( '../sfd/FreeMonoBoldOblique.sfd' )
+validate( '../sfd/', 'FreeSerif.sfd' )
+validate( '../sfd/', 'FreeSerifItalic.sfd' )
+validate( '../sfd/', 'FreeSerifBold.sfd' )
+validate( '../sfd/', 'FreeSerifBoldItalic.sfd' )
+validate( '../sfd/', 'FreeSans.sfd' )
+validate( '../sfd/', 'FreeSansOblique.sfd' )
+validate( '../sfd/', 'FreeSansBold.sfd' )
+validate( '../sfd/', 'FreeSansBoldOblique.sfd' )
+validate( '../sfd/', 'FreeMono.sfd' )
+validate( '../sfd/', 'FreeMonoOblique.sfd' )
+validate( '../sfd/', 'FreeMonoBold.sfd' )
+validate( '../sfd/', 'FreeMonoBoldOblique.sfd' )
+
+validate( '../sfd/', 'FreeSerif.ttf' )
+validate( '../sfd/', 'FreeSerifItalic.ttf' )
+validate( '../sfd/', 'FreeSerifBold.ttf' )
+validate( '../sfd/', 'FreeSerifBoldItalic.ttf' )
+validate( '../sfd/', 'FreeSans.ttf' )
+validate( '../sfd/', 'FreeSansOblique.ttf' )
+validate( '../sfd/', 'FreeSansBold.ttf' )
+validate( '../sfd/', 'FreeSansBoldOblique.ttf' )
+validate( '../sfd/', 'FreeMono.ttf' )
+validate( '../sfd/', 'FreeMonoOblique.ttf' )
+validate( '../sfd/', 'FreeMonoBold.ttf' )
+validate( '../sfd/', 'FreeMonoBoldOblique.ttf' )
+
+validate( '../sfd/', 'FreeSerif.otf' )
+validate( '../sfd/', 'FreeSerifItalic.otf' )
+validate( '../sfd/', 'FreeSerifBold.otf' )
+validate( '../sfd/', 'FreeSerifBoldItalic.otf' )
+validate( '../sfd/', 'FreeSans.otf' )
+validate( '../sfd/', 'FreeSansOblique.otf' )
+validate( '../sfd/', 'FreeSansBold.otf' )
+validate( '../sfd/', 'FreeSansBoldOblique.otf' )
+validate( '../sfd/', 'FreeMono.otf' )
+validate( '../sfd/', 'FreeMonoOblique.otf' )
+validate( '../sfd/', 'FreeMonoBold.otf' )
+validate( '../sfd/', 'FreeMonoBoldOblique.otf' )
+
 
 if problem:
 	sys.exit( 1 )

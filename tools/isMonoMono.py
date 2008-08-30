@@ -12,9 +12,9 @@ import sys
 
 problem = False
 
-def ismonomono( fontPath ):
-	print "Checking " + fontPath + " is monospaced"
-	font = fontforge.open( fontPath )
+def ismonomono( dir, fontfile ):
+	print "Checking character widths: " + fontfile
+	font = fontforge.open( dir + fontfile )
 
 	g = font.selection.all()
 	g = font.selection.byGlyphs
@@ -31,10 +31,10 @@ def ismonomono( fontPath ):
 						+ str( nonzero )
 				problem = True
 
-ismonomono( '../sfd/FreeMono.sfd' )
-ismonomono( '../sfd/FreeMonoOblique.sfd' )
-ismonomono( '../sfd/FreeMonoBold.sfd' )
-ismonomono( '../sfd/FreeMonoBoldOblique.sfd' )
+ismonomono( '../sfd/', 'FreeMono.sfd' )
+ismonomono( '../sfd/', 'FreeMonoOblique.sfd' )
+ismonomono( '../sfd/', 'FreeMonoBold.sfd' )
+ismonomono( '../sfd/', 'FreeMonoBoldOblique.sfd' )
 
 if problem:
 	sys.exit( 1 )
