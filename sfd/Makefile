@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.3 2008-08-30 11:02:59 Stevan_White Exp $
+# $Id: Makefile,v 1.4 2008-09-07 21:07:25 Stevan_White Exp $
 
 SFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd \
 FreeSansBoldOblique.sfd FreeSansBold.sfd FreeSansOblique.sfd FreeSans.sfd \
@@ -10,7 +10,7 @@ FF=fontforge -lang=ff -script
 .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf
 
 %.otf : %.sfd
-	@ $(FF) ../tools/GenerateOpenType $< 2>> build.log
+	@ fontforge -script ../tools/GenerateOpenType.py $< 2>> build.log
 
 %.ttf : %.sfd
 	@ $(FF) ../tools/GenerateTrueType $< 2>> build.log

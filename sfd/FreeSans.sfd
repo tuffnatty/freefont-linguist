@@ -4,7 +4,7 @@ FullName: Free Sans
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.203 $
+Version: $Revision: 1.204 $
 ItalicAngle: 0
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1220427702
+ModificationTime: 1220808847
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -96,6 +96,7 @@ Lookup: 4 0 0 "'haln' Halant Forms in Devanagari"  {"'haln' Halant Forms in Deva
 Lookup: 4 0 0 "'haln' Halant Forms in Bengali"  {"'haln' Halant Forms in Bengali subtable"  } ['haln' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'reph' Reph Form in Devanagari"  {"'reph' Reph Form in Devanagari subtable"  } ['reph' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 1 0 0 "'aalt' Access All Alternates in Bengali"  {"'aalt' Access All Alternates in Bengali subtable"  } ['aalt' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin"  {"'mkmk' Mark to Mark in Latin subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'beng' <'dflt' > 'bng2' <'dflt' > 'cyrl' <'dflt' > 'dev2' <'dflt' > 'deva' <'dflt' > 'geor' <'dflt' > 'gjr2' <'dflt' > 'grek' <'dflt' > 'gujr' <'dflt' > 'gur2' <'dflt' > 'hebr' <'dflt' > 'kana' <'dflt' > 'knd2' <'dflt' > 'latn' <'dflt' > 'ory2' <'dflt' > 'syrc' <'dflt' > 'tml2' <'dflt' > ) ]
@@ -605,7 +606,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 9712 16 11
+WinInfo: 1008 16 11
 BeginPrivate: 8
 UniqueID 7 5020902
 BlueValues 31 [-20 0 524 544 686 709 729 749]
@@ -624,7 +625,7 @@ systemdict /internaldict known
 { true } ifelse { pop [85 94] } if
 ForceBold 5 false
 EndPrivate
-AnchorClass2: "middle"  "'mark' Mark Positioning" "ogonek"  "'mark' Mark Positioning in Latin subtable" "dvng-0"  "'abvm' Above Base Mark in Devanagari subtable" "gujr-0"  "'abvm' Above Base Mark in Gujarati subtable" "dvng-1"  "'blwm' Below Base Mark in Devanagari subtable" "gujr-1"  "'blwm' Below Base Mark in Gujarati subtable" "above"  "'mark' Mark Positioning in Latin subtable" "below"  "'mark' Mark Positioning in Latin subtable" "abovemk"  "'mkmk' Mark to Mark in Latin subtable" "belowmk"  "'mkmk' Mark to Mark in Latin subtable" 
+AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning" "ogonek"  "'mark' Mark Positioning in Latin subtable" "dvng-0"  "'abvm' Above Base Mark in Devanagari subtable" "gujr-0"  "'abvm' Above Base Mark in Gujarati subtable" "dvng-1"  "'blwm' Below Base Mark in Devanagari subtable" "gujr-1"  "'blwm' Below Base Mark in Gujarati subtable" "above"  "'mark' Mark Positioning in Latin subtable" "below"  "'mark' Mark Positioning in Latin subtable" "abovemk"  "'mkmk' Mark to Mark in Latin subtable" "belowmk"  "'mkmk' Mark to Mark in Latin subtable" 
 BeginChars: 67479 3925
 
 StartChar: space
@@ -6984,7 +6985,6 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 584 1041 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni0183
@@ -8731,7 +8731,6 @@ AnchorPoint: "above" 250 538 basechar 0
 LayerCount: 2
 Fore
 Refer: 622 1079 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni0260
@@ -9453,7 +9452,6 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 628 1085 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni029E
@@ -9615,27 +9613,27 @@ EndChar
 StartChar: gravecomb
 Encoding: 768 768 480
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" -172 555 mark 0
 AnchorPoint: "abovemk" -171 538 mark 0
 AnchorPoint: "abovemk" -171 740 basemark 0
 AnchorPoint: "above" -171 538 mark 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 -333 0 0
-Validated: 32769
 EndChar
 
 StartChar: acutecomb
 Encoding: 769 769 481
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" -172 555 mark 0
 AnchorPoint: "abovemk" -171 538 mark 0
 AnchorPoint: "abovemk" -171 740 basemark 0
 AnchorPoint: "above" -171 538 mark 0
 LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -333 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni0302
@@ -9680,14 +9678,14 @@ EndChar
 StartChar: uni0306
 Encoding: 774 774 485
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" -172 555 mark 0
 AnchorPoint: "abovemk" -171 538 mark 0
 AnchorPoint: "abovemk" -171 729 basemark 0
 AnchorPoint: "above" -171 538 mark 0
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 -333 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni0307
@@ -9706,14 +9704,14 @@ EndChar
 StartChar: diaeresiscomb
 Encoding: 776 776 487
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" -172 555 mark 0
 AnchorPoint: "abovemk" -171 538 mark 0
 AnchorPoint: "abovemk" -171 710 basemark 0
 AnchorPoint: "above" -171 538 mark 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -333 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni030A
@@ -9913,7 +9911,6 @@ LayerCount: 2
 Fore
 Refer: 512 919 N 1 0 0 1 133 0 2
 Refer: 481 769 N 1 0 0 1 201 0 2
-Validated: 32769
 EndChar
 
 StartChar: Iotatonos
@@ -9924,7 +9921,6 @@ LayerCount: 2
 Fore
 Refer: 514 921 N 1 0 0 1 115 0 2
 Refer: 1424 900 N 1 0 0 1 -155 0 2
-Validated: 32769
 EndChar
 
 StartChar: Omicrontonos
@@ -9955,7 +9951,6 @@ LayerCount: 2
 Fore
 Refer: 481 769 N 1 0 0 1 201 0 2
 Refer: 529 937 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: iotadieresistonos
@@ -10382,7 +10377,6 @@ LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 150 0 0
 Refer: 537 945 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: epsilontonos
@@ -10393,7 +10387,6 @@ LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 123 0 0
 Refer: 541 949 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: etatonos
@@ -10404,7 +10397,6 @@ LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 133 6 0
 Refer: 543 951 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: iotatonos
@@ -10415,7 +10407,6 @@ LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 -25 4 0
 Refer: 545 953 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: upsilondieresistonos
@@ -11110,34 +11101,31 @@ EndChar
 StartChar: omicrontonos
 Encoding: 972 972 564
 Width: 546
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 144 4 0
 Refer: 551 959 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: upsilontonos
 Encoding: 973 973 565
 Width: 538
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 113 4 0
 Refer: 557 965 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: omegatonos
 Encoding: 974 974 566
 Width: 740
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 238 4 0
 Refer: 561 969 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni0400
@@ -11159,13 +11147,13 @@ LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 180 189 0
 Refer: 588 1045 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10051
 Encoding: 1026 1026 569
 Width: 766
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 373 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11191,7 +11179,6 @@ SplineSet
  321 454 l 1
  553 454 l 2
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10052
@@ -11202,13 +11189,13 @@ LayerCount: 2
 Fore
 Refer: 1419 714 N 1 0 0 1 138 176 0
 Refer: 586 1043 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10053
 Encoding: 1028 1028 571
 Width: 722
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 381 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11227,17 +11214,16 @@ SplineSet
  541 741 633 663 662 503 c 1
  567 503 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10054
 Encoding: 1029 1029 572
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 328 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 51 83 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10055
@@ -11274,7 +11260,8 @@ EndChar
 StartChar: afii10058
 Encoding: 1033 1033 576
 Width: 1080
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 449 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11300,13 +11287,13 @@ SplineSet
  607 82 l 1
  798 82 l 2
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10059
 Encoding: 1034 1034 577
 Width: 1014
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 373 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11334,7 +11321,6 @@ SplineSet
  574 82 l 1
  748 82 l 2
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10060
@@ -11373,7 +11359,6 @@ LayerCount: 2
 Fore
 Refer: 1419 714 N 1 0 0 1 170 176 0
 Refer: 593 1050 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni040D
@@ -11384,7 +11369,6 @@ LayerCount: 2
 Fore
 Refer: 1420 715 N 1 0 0 1 233 176 0
 Refer: 591 1048 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10062
@@ -11395,13 +11379,13 @@ LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 157 172 0
 Refer: 602 1059 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10145
 Encoding: 1039 1039 582
 Width: 722
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 373 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11419,23 +11403,23 @@ SplineSet
  645 0 l 1
  404 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10017
 Encoding: 1040 1040 583
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 339 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10018
 Encoding: 1041 1041 584
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 339 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11457,23 +11441,23 @@ SplineSet
  399 82 l 2
  510 82 530 165 530 217 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10019
 Encoding: 1042 1042 585
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 309 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 34 66 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10020
 Encoding: 1043 1043 586
 Width: 581
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 322 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11485,13 +11469,13 @@ SplineSet
  172 647 l 1
  172 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10021
 Encoding: 1044 1044 587
 Width: 812
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 454 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11516,23 +11500,23 @@ SplineSet
  34 74 l 1
  126 74 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10022
 Encoding: 1045 1045 588
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 339 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10024
 Encoding: 1046 1046 589
 Width: 1023
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 499 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11556,13 +11540,13 @@ SplineSet
  459 0 l 1
  459 324 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10025
 Encoding: 1047 1047 590
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 339 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11586,13 +11570,13 @@ SplineSet
  136 230 136 229 136 227 c 0
  136 153 177 59 342 59 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10026
 Encoding: 1048 1048 591
 Width: 728
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 382 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11608,24 +11592,23 @@ SplineSet
  79 0 l 1
  79 729 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10027
 Encoding: 1049 1049 592
 Width: 728
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 198 192 0
 Refer: 591 1048 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10028
 Encoding: 1050 1050 593
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 322 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11642,13 +11625,13 @@ SplineSet
  172 333 l 1
  172 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10029
 Encoding: 1051 1051 594
 Width: 673
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 370 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11664,43 +11647,43 @@ SplineSet
  500 0 l 1
  500 647 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10030
 Encoding: 1052 1052 595
 Width: 833
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 435 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 45 77 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10031
 Encoding: 1053 1053 596
 Width: 722
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 371 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 40 72 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10032
 Encoding: 1054 1054 597
 Width: 778
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 389 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10033
 Encoding: 1055 1055 598
 Width: 719
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 351 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11714,43 +11697,43 @@ SplineSet
  546 0 l 1
  546 647 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10034
 Encoding: 1056 1056 599
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 328 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 48 80 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10035
 Encoding: 1057 1057 600
 Width: 722
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 377 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 35 67 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10036
 Encoding: 1058 1058 601
 Width: 611
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 310 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 52 84 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10037
 Encoding: 1059 1059 602
 Width: 650
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 326 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11764,13 +11747,13 @@ SplineSet
  619 729 l 1
  252 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10038
 Encoding: 1060 1060 603
 Width: 936
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 443 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11796,23 +11779,23 @@ SplineSet
  342 554 164 540 164 365 c 0
  164 190 342 176 399 176 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10039
 Encoding: 1061 1061 604
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 339 728 basechar 0
 LayerCount: 2
 Fore
 Refer: 56 88 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10040
 Encoding: 1062 1062 605
 Width: 741
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 339 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11830,13 +11813,13 @@ SplineSet
  173 82 l 1
  546 82 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10041
 Encoding: 1063 1063 606
 Width: 648
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 339 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11854,13 +11837,13 @@ SplineSet
  476 0 l 1
  476 275 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10042
 Encoding: 1064 1064 607
 Width: 828
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 414 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11878,13 +11861,13 @@ SplineSet
  461 729 l 1
  461 82 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10043
 Encoding: 1065 1065 608
 Width: 850
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 408 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11906,13 +11889,13 @@ SplineSet
  736 -135 l 1
  736 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10044
 Encoding: 1066 1066 609
 Width: 897
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 527 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11934,13 +11917,13 @@ SplineSet
  405 369 l 1
  405 82 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10045
 Encoding: 1067 1067 610
 Width: 872
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 442 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11965,13 +11948,13 @@ SplineSet
  699 729 l 1
  793 729 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10046
 Encoding: 1068 1068 611
 Width: 667
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 365 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11991,13 +11974,13 @@ SplineSet
  172 369 l 1
  172 82 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10047
 Encoding: 1069 1069 612
 Width: 722
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 351 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12016,13 +11999,13 @@ SplineSet
  170 -23 70 73 48 266 c 1
  144 266 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10048
 Encoding: 1070 1070 613
 Width: 1032
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 364 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12044,13 +12027,13 @@ SplineSet
  780 59 865 179 865 355 c 0
  865 539 783 659 625 659 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10049
 Encoding: 1071 1071 614
 Width: 702
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 390 728 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12072,23 +12055,23 @@ SplineSet
  303 647 l 2
  198 647 172 573 172 521 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10065
 Encoding: 1072 1072 615
 Width: 556
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10066
 Encoding: 1073 1073 616
 Width: 556
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 752 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12108,13 +12091,13 @@ SplineSet
  365 54 423 132 423 255 c 0
  423 385 367 462 273 462 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10067
 Encoding: 1074 1074 617
 Width: 522
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 244 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12140,13 +12123,13 @@ SplineSet
  342 76 377 108 377 155 c 0
  377 161 l 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10068
 Encoding: 1075 1075 618
 Width: 430
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 232 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12158,13 +12141,13 @@ SplineSet
  70 0 l 1
  70 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10069
 Encoding: 1076 1076 619
 Width: 602
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 337 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12188,23 +12171,23 @@ SplineSet
  252 430 252 389 252 389 c 2
  252 286 247 156 203 76 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10070
 Encoding: 1077 1077 620
 Width: 556
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10072
 Encoding: 1078 1078 621
 Width: 837
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 419 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12228,13 +12211,13 @@ SplineSet
  375 524 l 1
  458 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10073
 Encoding: 1079 1079 622
 Width: 500
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 241 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12257,13 +12240,13 @@ SplineSet
  106 -23 38 35 34 156 c 1
  122 156 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10074
 Encoding: 1080 1080 623
 Width: 567
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 278 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12279,24 +12262,23 @@ SplineSet
  70 0 l 1
  70 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10075
 Encoding: 1081 1081 624
 Width: 567
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 118 -33 0
 Refer: 623 1080 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10076
 Encoding: 1082 1082 625
 Width: 510
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 252 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12313,13 +12295,13 @@ SplineSet
  70 524 l 1
  153 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10077
 Encoding: 1083 1083 626
 Width: 557
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 321 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12335,13 +12317,13 @@ SplineSet
  146 70 148 242 148 441 c 2
  148 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10078
 Encoding: 1084 1084 627
 Width: 618
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 321 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12360,13 +12342,13 @@ SplineSet
  70 0 l 1
  70 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10079
 Encoding: 1085 1085 628
 Width: 558
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 279 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12384,23 +12366,23 @@ SplineSet
  70 0 l 1
  70 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10080
 Encoding: 1086 1086 629
 Width: 556
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 273 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10081
 Encoding: 1087 1087 630
 Width: 557
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12414,33 +12396,33 @@ SplineSet
  70 0 l 1
  70 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10082
 Encoding: 1088 1088 631
 Width: 556
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 294 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 80 112 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10083
 Encoding: 1089 1089 632
 Width: 500
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 267 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 67 99 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10084
 Encoding: 1090 1090 633
 Width: 496
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 245 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12454,23 +12436,23 @@ SplineSet
  60 448 l 1
  60 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10085
 Encoding: 1091 1091 634
 Width: 500
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 244 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10086
 Encoding: 1092 1092 635
 Width: 912
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 454 675 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12500,23 +12482,23 @@ SplineSet
  369 55 412 135 412 255 c 0
  412 381 370 461 281 461 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10087
 Encoding: 1093 1093 636
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 256 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 88 120 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10088
 Encoding: 1094 1094 637
 Width: 578
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12534,13 +12516,13 @@ SplineSet
  478 0 l 1
  70 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10089
 Encoding: 1095 1095 638
 Width: 520
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12558,13 +12540,13 @@ SplineSet
  141 201 70 244 70 324 c 2
  70 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10090
 Encoding: 1096 1096 639
 Width: 692
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 344 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12582,13 +12564,13 @@ SplineSet
  388 524 l 1
  388 76 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10091
 Encoding: 1097 1097 640
 Width: 712
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 343 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12610,13 +12592,13 @@ SplineSet
  612 -120 l 1
  612 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10092
 Encoding: 1098 1098 641
 Width: 734
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 415 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12638,13 +12620,13 @@ SplineSet
  324 265 l 1
  324 76 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10093
 Encoding: 1099 1099 642
 Width: 690
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 367 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12669,13 +12651,13 @@ SplineSet
  537 524 l 1
  620 524 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10094
 Encoding: 1100 1100 643
 Width: 552
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 264 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12695,13 +12677,13 @@ SplineSet
  154 265 l 1
  154 76 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10095
 Encoding: 1101 1101 644
 Width: 500
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 247 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12720,13 +12702,13 @@ SplineSet
  175 462 131 421 121 348 c 1
  37 348 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10096
 Encoding: 1102 1102 645
 Width: 758
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12748,13 +12730,13 @@ SplineSet
  576 54 634 132 634 255 c 0
  634 385 578 462 484 462 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10097
 Encoding: 1103 1103 646
 Width: 543
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 315 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12777,7 +12759,6 @@ SplineSet
  196 449 161 417 161 370 c 0
  161 364 l 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni0450
@@ -12845,13 +12826,13 @@ LayerCount: 2
 Fore
 Refer: 1419 714 N 1 0 0 1 22 -28 0
 Refer: 618 1075 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10101
 Encoding: 1108 1108 651
 Width: 500
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 266 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12870,38 +12851,37 @@ SplineSet
  344 309 l 1
  344 232 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10102
 Encoding: 1109 1109 652
 Width: 500
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 246 545 basechar 0
 LayerCount: 2
 Fore
 Refer: 83 115 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10103
 Encoding: 1110 1110 653
 Width: 222
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 118 736 basechar 0
 LayerCount: 2
 Fore
 Refer: 73 105 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10104
 Encoding: 1111 1111 654
 Width: 278
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 143 719 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -27 -7 0
 Refer: 240 305 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: afii10105
@@ -12917,7 +12897,8 @@ EndChar
 StartChar: afii10106
 Encoding: 1113 1113 656
 Width: 840
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 379 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12942,13 +12923,13 @@ SplineSet
  681 76 725 88 725 151 c 0
  725 204 702 234 611 234 c 2
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10107
 Encoding: 1114 1114 657
 Width: 850
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 336 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12975,7 +12956,6 @@ SplineSet
  682 76 726 86 726 152 c 0
  726 202 703 234 612 234 c 2
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: afii10108
@@ -13018,18 +12998,16 @@ LayerCount: 2
 Fore
 Refer: 1419 714 N 1 0 0 1 60 -32 0
 Refer: 625 1082 N 1 0 0 1 -5 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni045D
 Encoding: 1117 1117 660
 Width: 567
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1420 715 N 1 0 0 1 154 -27 0
 Refer: 623 1080 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: afii10110
@@ -13046,7 +13024,8 @@ EndChar
 StartChar: afii10193
 Encoding: 1119 1119 662
 Width: 556
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 277 545 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13064,7 +13043,6 @@ SplineSet
  488 0 l 1
  314 0 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni048C
@@ -14549,23 +14527,21 @@ EndChar
 StartChar: uni04C1
 Encoding: 1217 1217 714
 Width: 1023
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 340 172 0
 Refer: 589 1046 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04C2
 Encoding: 1218 1218 715
 Width: 837
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 251 -34 0
 Refer: 621 1078 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04C3
@@ -14743,45 +14719,41 @@ EndChar
 StartChar: uni04D0
 Encoding: 1232 1232 722
 Width: 667
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 172 204 0
 Refer: 583 1040 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04D1
 Encoding: 1233 1233 723
 Width: 556
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 110 2 0
 Refer: 615 1072 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04D2
 Encoding: 1234 1234 724
 Width: 667
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 174 189 0
 Refer: 583 1040 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04D3
 Encoding: 1235 1235 725
 Width: 556
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 112 -13 0
 Refer: 615 1072 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04D4
@@ -14861,23 +14833,21 @@ EndChar
 StartChar: uni04D6
 Encoding: 1238 1238 728
 Width: 667
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 166 204 0
 Refer: 588 1045 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04D7
 Encoding: 1239 1239 729
 Width: 556
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 474 728 N 1 0 0 1 114 2 0
 Refer: 620 1077 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04D8
@@ -14956,45 +14926,41 @@ EndChar
 StartChar: uni04DC
 Encoding: 1244 1244 734
 Width: 1023
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 342 189 0
 Refer: 589 1046 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04DD
 Encoding: 1245 1245 735
 Width: 837
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 254 -13 0
 Refer: 621 1078 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04DE
 Encoding: 1246 1246 736
 Width: 667
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 174 189 0
 Refer: 590 1047 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04DF
 Encoding: 1247 1247 737
 Width: 500
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 74 -13 0
 Refer: 622 1079 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04E0
@@ -15020,67 +14986,61 @@ EndChar
 StartChar: uni04E2
 Encoding: 1250 1250 740
 Width: 728
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1882 713 N 1 0 0 1 199 170 0
 Refer: 591 1048 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04E3
 Encoding: 1251 1251 741
 Width: 567
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1882 713 N 1 0 0 1 118 -32 0
 Refer: 623 1080 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04E4
 Encoding: 1252 1252 742
 Width: 728
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 201 189 0
 Refer: 591 1048 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04E5
 Encoding: 1253 1253 743
 Width: 567
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 120 -13 0
 Refer: 623 1080 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04E6
 Encoding: 1254 1254 744
 Width: 778
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 226 189 0
 Refer: 597 1054 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04E7
 Encoding: 1255 1255 745
 Width: 556
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 109 -13 0
 Refer: 629 1086 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04E8
@@ -15156,133 +15116,121 @@ EndChar
 StartChar: uni04EC
 Encoding: 1260 1260 750
 Width: 722
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 181 189 0
 Refer: 612 1069 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04ED
 Encoding: 1261 1261 751
 Width: 500
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 81 -13 0
 Refer: 644 1101 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04EE
 Encoding: 1262 1262 752
 Width: 650
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1882 713 N 1 0 0 1 158 170 0
 Refer: 602 1059 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04EF
 Encoding: 1263 1263 753
 Width: 500
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1882 713 N 1 0 0 1 84 -32 0
 Refer: 634 1091 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F0
 Encoding: 1264 1264 754
 Width: 650
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 160 189 0
 Refer: 602 1059 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F1
 Encoding: 1265 1265 755
 Width: 500
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 86 -13 0
 Refer: 634 1091 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F2
 Encoding: 1266 1266 756
 Width: 650
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 479 733 N 1 0 0 1 240 211 0
 Refer: 602 1059 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F3
 Encoding: 1267 1267 757
 Width: 500
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 479 733 N 1 0 0 1 167 9 0
 Refer: 634 1091 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F4
 Encoding: 1268 1268 758
 Width: 648
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 161 189 0
 Refer: 606 1063 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F5
 Encoding: 1269 1269 759
 Width: 520
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 97 -13 0
 Refer: 638 1095 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F8
 Encoding: 1272 1272 760
 Width: 872
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 273 189 0
 Refer: 610 1067 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni04F9
 Encoding: 1273 1273 761
 Width: 690
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 182 -13 0
 Refer: 642 1099 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni0531
@@ -31665,11 +31613,10 @@ EndChar
 StartChar: tonos
 Encoding: 900 900 1424
 Width: 333
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 481 769 N 1 0 0 1 356 0 2
-Validated: 32769
 EndChar
 
 StartChar: dieresistonos
@@ -31732,7 +31679,6 @@ LayerCount: 2
 Fore
 Refer: 510 917 N 1 0 0 1 122 0 2
 Refer: 1424 900 N 1 0 0 1 -155 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E00
@@ -38992,7 +38938,6 @@ TeX: 117 0
 LayerCount: 2
 Fore
 Refer: 646 1103 N -1 0 0 -1 527 524 0
-Validated: 32769
 EndChar
 
 StartChar: uni0274
@@ -39028,7 +38973,6 @@ TeX: 117 0
 LayerCount: 2
 Fore
 Refer: 617 1074 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni0262
@@ -40096,8 +40040,9 @@ EndChar
 StartChar: uni033E
 Encoding: 830 830 1930
 Width: 0
-Flags: MW
+Flags: HMW
 TeX: 117 0
+AnchorPoint: "abovecyr" -172 555 mark 0
 AnchorPoint: "abovemk" -171 538 mark 0
 AnchorPoint: "abovemk" -171 850 basemark 0
 AnchorPoint: "above" -171 538 mark 0
@@ -40114,7 +40059,6 @@ SplineSet
  -144 800 -156 792 -156 778 c 0
  -156 750 -119 681 -119 646 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni0361
@@ -56412,12 +56356,11 @@ EndChar
 StartChar: uni0341
 Encoding: 833 833 2534
 Width: 0
-Flags: MW
+Flags: HMW
 AnchorPoint: "above" -190 528 mark 0
 LayerCount: 2
 Fore
 Refer: 481 769 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni0342
@@ -61666,7 +61609,6 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 646 1103 N -0.65 0 0 -0.65 423.775 741.3 0
-Validated: 32769
 EndChar
 
 StartChar: uni02B8
@@ -63468,7 +63410,6 @@ LayerCount: 2
 Fore
 Refer: 1424 900 N 1 0 0 1 -105 -1 0
 Refer: 2498 978 N 1 0 0 1 186 0 0
-Validated: 32769
 EndChar
 
 StartChar: Upsilonhookdiaeresis
