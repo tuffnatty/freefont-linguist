@@ -1,4 +1,172 @@
-$Id: ChangeLog,v 1.249 2008-08-06 07:05:05 Stevan_White Exp $
+$Id: ChangeLog,v 1.250 2008-09-11 20:49:38 Stevan_White Exp $
+2008-09-11 Stevan_White
+	* FreeSerif.sfd:
+
+	Removed pointless entries from Latin kern table
+	
+	Tidied points in Sinhala
+
+2008-09-07 Stevan_White
+	* FreeSerif.sfd:
+
+	Tidied up Tamil ligatures EEA8-EEAB to fix TT build warning
+		"MonotonicFindAlong: Never found our spline."
+
+	* FreeMono.sfd, FreeMonoBold.sfd, FreeMonoBoldOblique.sfd, FreeSans.sfd, FreeSerif.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd, Makefile:
+
+	
+	Added APL characters to FreeMono (why?...)
+	
+	Fixed several last-minute problems, including
+	
+	Serif: Tweeked GPOS mark table for Cyrillic
+	Sans: Added a GPOS table for Cyrillic (but several diacritics are missing)
+	
+	Serif, Mono: tweeked some bugs in extensible brackets & integrals
+	
+	Serif: Vietnamese o circumflex: accent was a bit high. fixed.
+	
+	MonoBoldOblique OTF build
+		uni213b intersects self
+	
+	Generation of TT fonts complains about several things to stderr, including
+	
+	SerifBold: "There exists a 'fpgm' code that seems incompatible with FontForge's. Instructions generated will be of lower quality. If legacy hinting is to be scrapped, it is suggested to clear the `fpgm` and repeat autoinstructing. It will be then possible to append user's code to FontForge's 'fpgm', but due to possible future updates, it is extremely advised to use high numbers for user's functions."
+	Probably has been there since I first copied the TT instructions in. 
+	Just repeated the copying process carefully, and the warning went away.
+	
+	Serif:  "FindMatchingHVEdge fell into an impossible position"
+	        fixed a bunch of point too close
+	
+	REMAINING PROBLEM in Serif TT build
+		"MonotonicFindAlong: Never found our spline."
+		        fixed several bad TT matrices-- there are several more
+			fixed many "control points too close" no luck
+
+2008-09-03 Stevan_White
+	* FreeSans.sfd, FreeSansOblique.sfd:
+
+	Added/corrected some Misc. Symbols by copying from Serif.
+	Note this is only a stopgap solution.  Want real sans-serif symbols.
+
+	* FreeMono.sfd, FreeMonoBold.sfd, FreeMonoBoldOblique.sfd, FreeMonoOblique.sfd, FreeSans.sfd, FreeSansBold.sfd, FreeSansBoldOblique.sfd, FreeSansOblique.sfd, FreeSerifBoldItalic.sfd, FreeSerifItalic.sfd:
+
+	Added minimal Miscellaneous Symbols: card suites and some musical notes.
+	Note not happy with shapes...some I just drew.  Sans isn't really sans.
+	
+	Fixed one APL symbol in Mono so it verified in OTF version
+
+2008-08-31 Stevan_White
+	* FreeMono.sfd:
+
+	Built set of APL symbols.
+
+2008-08-30 Stevan_White
+	* FreeSans.sfd:
+
+	Un-linked references in uni02B2 and uni02B5, because when validating the
+	TrueType version, FontForge gave an error "is drawn in wrong direction".
+	I suspect a bug in FontForge.  Other similar glyphs make no errors.
+
+	* FreeSerif.sfd:
+
+	Fixed missing extrema in TrueType.
+	These were the last cases being reported by validate in all the faces.
+
+	* FreeSerifItalic.sfd:
+
+	fixed last missing extrema in TrueType
+
+	* Makefile:
+
+	restructured validation to look in a directory
+
+	* FreeSans.sfd, FreeSansOblique.sfd, FreeSerif.sfd:
+
+	Fixed missing extrema in TrueType versions
+
+2008-08-15 Stevan_White
+	* FreeSans.sfd:
+
+	Same problem with uni0A83 as with bn_llikaar.  Just made zero-width.
+
+2008-08-14 Stevan_White
+	* FreeSans.sfd, FreeSansOblique.sfd:
+
+	Glyph bn_llikaar, U+09E3 BENGALI VOWEL SIGN VOCALIC LL,
+	has right bound positioned far into the negative.  Causes a warning in
+	FontForge when opening OTF version.
+	Comparing with other fonts supporting Bengali, found no others that do this.
+	Serif makes glyph width 0 (which sounds right according to Unicode)
+	and puts glyph wholly to left of 0.  But, I haven't found this letter
+	in text anywhere.  I wonder if it is really used in writing.
+
+	* FreeSans.sfd, FreeSansOblique.sfd, FreeSerif.sfd, FreeSerifItalic.sfd:
+
+	Further TrueType validation fixes. 
+	Sans still has two glyps in wrong direction.
+
+	* FreeSans.sfd, FreeSerif.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd, FreeSerifItalic.sfd:
+
+	Fixed more TrueType problems...all missing extrema in TTF validation
+
+2008-08-13 Stevan_White
+	* FreeSans.sfd, FreeSansOblique.sfd, FreeSerif.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd, FreeSerifItalic.sfd:
+
+	fixed all the TrueType validation problems of type "intersects itself"
+	and all but two of the "wrong directions", as well as a lot of
+	"missing extrema".  But there remain hundreds of missing extrema in the
+	TrueType version.
+	Also, bn_llikaar in Sans and Oblique still has a problem in OTF version.
+
+	* FreeMono.sfd, FreeMonoBoldOblique.sfd, FreeMonoOblique.sfd, FreeSansBold.sfd, FreeSansBoldOblique.sfd:
+
+	Made .ttf files to validate.  Other faces have many more problems still.
+
+2008-08-12 Stevan_White
+	* FreeMonoOblique.sfd, FreeSerif.sfd, FreeSerifItalic.sfd:
+
+	Continuing to make OTF versions validate.
+	
+	* FreeMonoOblique.sfd:
+		lots of missing points at extrema
+	* FreeSerif.sfd:
+		12 wrong directions, 1 missing extrema
+	* FreeSerifItalic.sfd:
+		many missing points at extrema, 1 self-intersecting
+	
+	What was wrong: in several oblique cases, an already-italic glyph was
+	made more italic, thereby fouling up extrema (although why it passed
+	validation in the SFD I don't know).  Some glyphs were
+	overly-complicated with many near points.  Cleaned up, rounded to int.
+	
+	Remaining problem: OTF FreeSansOblique FreeSans. one Bengali glyph in
+	each whose advance width and htmx don't match.
+	
+	Moral of story: validate the OTF and TTF versions too before a release.
+
+	* FreeSansOblique.sfd:
+
+	Reverse a mistake from last commit: somehow this file was converted to
+	quadratic, or something.
+
+2008-08-11 Stevan_White
+	* FreeMonoBoldOblique.sfd, FreeSans.sfd, FreeSansOblique.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd:
+
+	Found that SFD files that validated produced OpenType files that don't.
+	These represent the easy fixes.  Some were result of conversion to
+	quadratic; some shouldn't have validated in the SFD...
+	
+	* MonoBoldOblique: uni0250 missing pts at extrema [reference glyph rotated...]
+	* Sans:            uni0AC4 wrong direction [simplified, rounded to int]
+	* SansOblique:     uni01EA wrong direction [rounded to int]
+	* SerifBold:       uni023f wrong direction [round to int]
+	* SerifBoldItalic: uni0245 missing pts at extrema [ungrouped ref, added extrema]
+
+2008-08-06 Stevan_White
+	* FreeMono.sfd, FreeMonoBold.sfd, FreeMonoOblique.sfd:
+
+	Re-set font metrics, which were somehow making uneven vertical spacing.
 
 2008-06-22 Steve White
 	* FreeSerifBold.sfd, FreeSerifBoldItalic.sfd:
