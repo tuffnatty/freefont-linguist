@@ -4,8 +4,8 @@
     Takes one or two numerical arguments.
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
-__date__ = "$Date: 2008-04-06 16:20:17 $"
-__version__ = "$Revision: 1.1 $"
+__date__ = "$Date: 2008-09-19 09:48:19 $"
+__version__ = "$Revision: 1.2 $"
 
 import sys
 
@@ -19,7 +19,7 @@ postfix = ''
 prefix = '&#x'
 postfix = ';'
 
-def explain_error_and_quit( e):
+def explain_error_and_quit( e ):
 	if e:
 		print 'Error: ', e
 	print "Usage:"
