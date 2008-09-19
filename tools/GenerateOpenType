@@ -1,5 +1,5 @@
 ##!/usr/bin/env fontforge
-# $Id: GenerateOpenType,v 1.1 2008-03-24 11:59:49 Stevan_White Exp $
+# $Id: GenerateOpenType,v 1.2 2008-09-19 09:51:03 Stevan_White Exp $
 #
 # Convert fonts from FontForge's native SFD format to OpenType format
 # First auto-hints whole font
@@ -14,7 +14,7 @@ if ( $argc > 1 )
 	Print( "Generating OpenType file ", otfile )
 	SelectAll()
 	AutoHint()
-	Generate( otfile )
+	Generate( otfile, "", 0x800 )	# old-style kerning
 	Close()
 	i++
     endloop
