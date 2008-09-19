@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.16 2008-06-22 09:08:54 Stevan_White Exp $
+$Id: ranges.py,v 1.17 2008-09-19 09:46:42 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -278,7 +278,7 @@ ulUnicodeRange = [
 		],
 [39,	'Miscellaneous Technical',     [interval(0x2300, 0x23E7)]],
 [40,	'Control Pictures',     [interval(0x2400, 0x2426)]],
-[41,	'Optical Character Recognition',     [interval(0x2440, 0x245F)]],
+[41,	'Optical Character Recognition',     [interval(0x2440, 0x244A)]],
 [42,	'Enclosed Alphanumerics',     [interval(0x2460, 0x24FF)]],
 [43,	'Box Drawing',     [interval(0x2500, 0x257F)]],
 [44,	'Block Elements',     [interval(0x2580, 0x259F)]],
@@ -310,7 +310,8 @@ ulUnicodeRange = [
 [55,	'CJK Compatibility', [interval(0x3300, 0x33FF)]],
 [56,	'Hangul', [interval(0x3400, 0x3D2D)]],
 [57,	'Non-Plane 0', [interval(0xD800, 0xDFFF)]],
-[58,	'Phoenician', [interval(0x10900, 0x1091F)], True],
+[58,	'Phoenician', [interval(0x10900, 0x1091B), 
+		interval(0x1091F, 0x1091F)], True],
 [59,	'CJK Unified Ideographs', [interval(0x4E00, 0x9FFF)]], #FIXME complex
 [60,	'Private Use Area', [interval(0xE800, 0xF8FF)]],
 [61,	'CJK Compatibility Ideographs', [interval(0xF900, 0xFAFF)]],
@@ -393,8 +394,8 @@ ulUnicodeRange = [
 [86, 	'Gothic', [interval(0x10330, 0x1034A)], True],
 [87, 	'Deseret', [interval(0x10400, 0x1044F)], True],
 [88, 	'Byzantine &amp; Western Musical Symbols', [interval(0x1D000, 0x1D0F5),
-			interval(0x1D100, 0x1D1DD),
-			interval(0x1D200, 0x1D24F)
+			interval(0x1D100, 0x1D126),
+			interval(0x1D129, 0x1D1DD)
 			], True],
 [89, 	'Mathematical Alphanumeric Symbols', [interval(0x1D400, 0x1D4FF)], True],
 [90, 	'Private Use (plane 15,16)', [
@@ -410,7 +411,8 @@ ulUnicodeRange = [
 		interval(0x1970, 0x1974)
 	]],
 [95, 	'New Tai Lue', [interval(0x1980, 0x19DF)]],
-[96, 	'Buginese', [interval(0x1A00, 0x1A1F)]],
+[96, 	'Buginese', [interval(0x1A00, 0x1A1B),
+		interval(0x1A1E, 0x1A1F)]],
 [97, 	'Glagolitic', [interval(0x2C00, 0x2C5F)]],
 [98, 	'Tifinagh', [interval(0x2D30, 0x2D7F)]],
 [99, 	'Ying Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
@@ -440,11 +442,12 @@ ulUnicodeRange = [
 [119, 	'Ancient Symbols', [interval(0x10190, 0x101CF)], True],
 [120, 	'Phaistos Disc', [interval(0x101D0, 0x101FF)], True],
 [121, 	'Carian, Lycian, Lydian', [interval(0x102A0, 0x102DF),
-		interval(0x10280, 0x1029F),      # Lycian
-		interval(0x10920, 0x1093F)      # Lydian
+		interval(0x10280, 0x1029F),	# Lycian
+		interval(0x10920, 0x1093F)	# Lydian
 	], True],
-[122, 	'Domino and Mahjong Tiles', [interval(0x1F030, 0x1F09F),	# Domino
-		interval(0x1F000, 0x1F02F)      # Mahjong
+[122, 	'Domino and Mahjong Tiles', [
+		interval(0x1F000, 0x1F02B),	# Mahjong
+		interval(0x1F030, 0x1F093)	# Domino
 	], True],
 #[96-127, 	'Reserved for Unicode SubRanges', []]
 ]
@@ -658,16 +661,8 @@ def count_glyphs_in_intervals( font, intervals ):
 			except ValueError:
 				print >> sys.stderr, "interval " + str( r ) \
 				+ " not representable in " + font.fontname
+				exit( 1 )
 	return num
-
-def collect_range_info( fontSupport, font, os2supportbit, bit, offset ):
-	supports = ( os2supportbit & (1 << bit) ) != 0
-	index = bit + offset
-	rangeName = ulUnicodeRange[index][1]
-	intervals = ulUnicodeRange[index][2]
-	nglyphs = 0
-	nglyphs = count_glyphs_in_intervals( font, intervals )
-	fontSupport.setRangeSupport( bit, supports, nglyphs )
 
 class SupportInfo:
 	def __init__( self, os2bit, supports, total ):
@@ -676,47 +671,50 @@ class SupportInfo:
 		self.total = total
 
 class FontSupport:
-	def __init__( self, name, short ):
-		self.name = name
-		self.short = short
-		self.myInfos = []
-
-	def setRangeSupport( self, os2bit, supports, total ):
-		self.myInfos.append( SupportInfo( os2bit, supports, total ) )
-
-
-	def getInfo( self, os2bit ):
-		#FIXME this is cheating with the bit
-		return self.myInfos[ os2bit ]
-
-fontSupportList = []
-
-def collect_font_range_report( fontPath, short ):
-	""" Currently searches the first 96 bits of the os2_unicoderanges
+	""" A record of support for all OS/2 ranges within a single font.
+	    Uses a dictionary internally, to avoid loss of the index info.
 	"""
+	def __init__( self, fontPath, short ):
+		font = fontforge.open( fontPath )
+		self.name = font.fontname
+		self.short = short
+		self.myInfos = {}
 
-	font = fontforge.open( fontPath )
+		r = font.os2_unicoderanges
 
-	r = font.os2_unicoderanges
+#		print >> sys.stderr, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] );
 
-#	print >> sys.stderr, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] );
+		nRanges = len( ulUnicodeRange )
 
-	fontSupport = FontSupport( font.fontname, short )
-	fontSupportList.append( fontSupport )
+		for rangeNumber in range( 0, nRanges ):
+			byte = rangeNumber % 4
+			bit = rangeNumber % 32
+			offset = ( rangeNumber / 32 ) * 32
 
-	for bit in range(0,32):
-		collect_range_info( fontSupport, font, r[0], bit, 0 )
+			self.collectRangeInfo( font, r[byte], bit, offset )
 
-	for bit in range(0,32):
-		collect_range_info( fontSupport, font, r[1], bit, 32 )
 
-	for bit in range(0,32):
-		collect_range_info( fontSupport, font, r[2], bit, 64 )
+	def setRangeSupport( self, idx, supports, total ):
+		if self.myInfos.has_key( idx ):
+			print >> sys.stderr, "OS/2 index", idx, " duplicated"
+			exit( 1 )
+		self.myInfos[idx] = SupportInfo( idx, supports, total )
 
-	for bit in range(0,27):
-		collect_range_info( fontSupport, font, r[3], bit, 96 )
+	def getInfo( self, idx ):
+		if not self.myInfos.has_key( idx ):
+			print >> sys.stderr, "OS/2 index", idx, " not found"
+			exit( 1 )
+		return self.myInfos[ idx ]
 
-def print_font_range_table():
+	def collectRangeInfo( self, font, os2supportbyte, bit, offset ):
+		supports = ( os2supportbyte & (1 << bit) ) != 0
+		index = bit + offset
+		rangeName = ulUnicodeRange[index][1]
+		intervals = ulUnicodeRange[index][2]
+		nglyphs = count_glyphs_in_intervals( font, intervals )
+		self.setRangeSupport( index, supports, nglyphs )
+
+def print_font_range_table( fontSupportList ):
 	print '<table class="fontrangereport" frame="box" rules="all">'
 	print '<caption>'
 	print "OS/2 character ranges vs. FreeFont faces " 
@@ -730,12 +728,12 @@ def print_font_range_table():
 	print '</tr>'
 	print '</thead>'
 	for r in ulUnicodeRange:
-		bit = r[0]
+		idx = r[0]
 		range_name = r[1]
 		intervals = r[2]
 
 		rowclass = ' class="low"'
-		if len( ulUnicodeRange[bit] ) > 3 and ulUnicodeRange[ bit ][3]:
+		if len( ulUnicodeRange[idx] ) > 3 and ulUnicodeRange[ idx ][3]:
 			rowclass = ' class="high"'
 			
 		print '<tr' + rowclass + '><td>' + range_name + '</td>' 
@@ -743,7 +741,7 @@ def print_font_range_table():
 			+ '</td>'
 		print '<td></td>' 
 		for fsl in fontSupportList:
-			supportInfo = fsl.getInfo( bit )
+			supportInfo = fsl.getInfo( idx )
 			supportString = ''
 			if supportInfo.supports:
 				supportString = '&bull;'
@@ -759,36 +757,43 @@ def print_font_range_table():
 
 		print '</tr>'
 	print '</table>'
+table_introduction = """
+For historical reasons, TrueType classifies Unicode ranges according to
+an extension of the old OS/2 character ranges.  This table shows how many
+characters FontForge finds in each of the ranges for each font.
+"""
+
 table_explanation = """
 <p>
 Ranges for which (FontForge reports that) the font's OS/2 support
 bit is set are marked with a bullet.
 </p>
 <p>
-For many ranges, I took the liberty of reducing the set of 
-characters considered to the ones listed for the range in the
-current Unicode charts, so the number of characters is less than
-the width of the range.
+For many ranges, I took the liberty of reducing the set of characters
+considered to those listed for the range in the current Unicode charts.
+The number of characters supported can thus be less than the width of the range.
 </p>
 <p>
-Note that there is a discrepancy in the Greek Symbols, Hebrew 
-Extended and Arabic Extended ranges, between what FontForge 
-reports here and in its Font Info window under OS/2 Character 
-Ranges. I don't know why, but these ranges are also not well
-defined in the TrueType standard.
+Note that there is a discrepancy in the Greek Symbols, Hebrew Extended and
+Arabic Extended ranges, between what FontForge reports here and in its Font
+Info window under OS/2 Character Ranges. I don't know why, but these ranges
+are also not well defined in the TrueType standard.
 </p>
 <p>
-Note the 2 characters from Devanagri.  These are the danda and double-danda
+Note the two characters from Devanagri.  These are the danda and double-danda
 used by other Inidic scripts.
 </p>
 <p>
-The ranges <span style="color: gray">beyond Unicode 0xFFFF</span>, are shaded.
-</p>
+The ranges <span style="color: gray">beyond Unicode point 0xFFFF</span>, are
+shaded.  </p>
 """
 
-def print_font_range_report():
+def print_font_range_report( fontSupportList ):
 	print '<html>'
 	print '<head>'
+	print '<p>'
+	print table_introduction
+	print '</p>'
 	print '<title>'
 	print 'Gnu FreeFont character range support'
 	print '</title>'
@@ -803,7 +808,7 @@ def print_font_range_report():
 	print '<h1>'
 	print 'Gnu FreeFont support for OpenType OS/2 character ranges'
 	print '</h1>'
-	print_font_range_table()
+	print_font_range_table( fontSupportList )
 	print '<p>'
 	print table_explanation
 	time.tzset()
@@ -813,17 +818,18 @@ def print_font_range_report():
 	print '</body>'
 	print '</html>'
 
-collect_font_range_report( '../sfd/FreeSerif.sfd', 'Srf' )
-collect_font_range_report( '../sfd/FreeSerifItalic.sfd', 'Srf I' )
-collect_font_range_report( '../sfd/FreeSerifBold.sfd', 'Srf B' )
-collect_font_range_report( '../sfd/FreeSerifBoldItalic.sfd', 'Srf BI' )
-collect_font_range_report( '../sfd/FreeSans.sfd', 'Sans' )
-collect_font_range_report( '../sfd/FreeSansOblique.sfd', 'Sans O' )
-collect_font_range_report( '../sfd/FreeSansBold.sfd', 'Sans B' )
-collect_font_range_report( '../sfd/FreeSansBoldOblique.sfd', 'Sans BO' )
-collect_font_range_report( '../sfd/FreeMono.sfd', 'Mono' )
-collect_font_range_report( '../sfd/FreeMonoOblique.sfd', 'Mono O' )
-collect_font_range_report( '../sfd/FreeMonoBold.sfd', 'Mono B' )
-collect_font_range_report( '../sfd/FreeMonoBoldOblique.sfd', 'Mono BO' )
+supportList = []
+supportList.append( FontSupport( '../sfd/FreeSerif.sfd', 'Srf' ) )
+supportList.append( FontSupport( '../sfd/FreeSerifItalic.sfd', 'Srf I' ) )
+supportList.append( FontSupport( '../sfd/FreeSerifBold.sfd', 'Srf B' ) )
+supportList.append( FontSupport( '../sfd/FreeSerifBoldItalic.sfd', 'Srf BI' ) )
+supportList.append( FontSupport( '../sfd/FreeSans.sfd', 'Sans' ) )
+supportList.append( FontSupport( '../sfd/FreeSansOblique.sfd', 'Sans O' ) )
+supportList.append( FontSupport( '../sfd/FreeSansBold.sfd', 'Sans B' ) )
+supportList.append( FontSupport( '../sfd/FreeSansBoldOblique.sfd', 'Sans BO' ) )
+supportList.append( FontSupport( '../sfd/FreeMono.sfd', 'Mono' ) )
+supportList.append( FontSupport( '../sfd/FreeMonoOblique.sfd', 'Mono O' ) )
+supportList.append( FontSupport( '../sfd/FreeMonoBold.sfd', 'Mono B' ) )
+supportList.append( FontSupport( '../sfd/FreeMonoBoldOblique.sfd', 'Mono BO' ) )
 
-print_font_range_report()
+print_font_range_report( supportList )
