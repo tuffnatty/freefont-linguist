@@ -1,8 +1,10 @@
 ##!/usr/bin/env fontforge
-# $Id: GenerateTrueType,v 1.4 2008-08-12 20:41:39 Stevan_White Exp $
+# $Id: GenerateTrueType,v 1.5 2008-09-19 09:50:08 Stevan_White Exp $
 #
 # Convert fonts from FontForge's native SFD format to TrueType format
 # First auto-hints whole font
+#
+# According to the FAQ, need to pass Flags=(apple) to build Mac fonts.
 
 scriptname=$argv[0];
 
@@ -14,6 +16,7 @@ if ( $argc > 1 )
 	Print( "Generating TrueType file ", ttfile )
 	SetFontOrder( 2 )	# otherwise can't put in TT instructions
 	SelectAll()
+	AutoHint()	# instructions are based on hints (but hints are lost)
 	AutoInstr()	# insert TrueType instructions (similar to hinting)
 	Generate( ttfile )
 	Close()
