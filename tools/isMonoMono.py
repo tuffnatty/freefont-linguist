@@ -12,9 +12,9 @@ import sys
 
 problem = False
 
-def ismonomono( dir, fontfile ):
-	print "Checking character widths: " + fontfile
-	font = fontforge.open( dir + fontfile )
+def ismonomono( fontfilename ):
+	print "Checking character widths: " + fontfilename
+	font = fontforge.open( fontfilename )
 
 	g = font.selection.all()
 	g = font.selection.byGlyphs
@@ -31,10 +31,12 @@ def ismonomono( dir, fontfile ):
 						+ str( nonzero )
 				problem = True
 
-ismonomono( '../sfd/', 'FreeMono.sfd' )
-ismonomono( '../sfd/', 'FreeMonoOblique.sfd' )
-ismonomono( '../sfd/', 'FreeMonoBold.sfd' )
-ismonomono( '../sfd/', 'FreeMonoBoldOblique.sfd' )
+scriptname = sys.argv[0];
+argc = len( sys.argv )
+
+if argc > 1:
+	for i in range( 1, argc ):
+		ismonomono( sys.argv[i] )
 
 if problem:
 	sys.exit( 1 )
