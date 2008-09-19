@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.17 2008-09-19 09:46:42 Stevan_White Exp $
+$Id: ranges.py,v 1.18 2008-09-19 20:36:38 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -686,13 +686,18 @@ class FontSupport:
 
 		nRanges = len( ulUnicodeRange )
 
-		for rangeNumber in range( 0, nRanges ):
-			byte = rangeNumber % 4
-			bit = rangeNumber % 32
-			offset = ( rangeNumber / 32 ) * 32
+		for index in range( 0, nRanges ):
+			byte = index / 32
+			bit = index % 32
 
-			self.collectRangeInfo( font, r[byte], bit, offset )
+			self.collectRangeInfo( font, r[byte], bit, index )
 
+	def collectRangeInfo( self, font, os2supportbyte, bit, index ):
+		supports = ( os2supportbyte & (1 << bit) ) != 0
+		rangeName = ulUnicodeRange[index][1]
+		intervals = ulUnicodeRange[index][2]
+		nglyphs = count_glyphs_in_intervals( font, intervals )
+		self.setRangeSupport( index, supports, nglyphs )
 
 	def setRangeSupport( self, idx, supports, total ):
 		if self.myInfos.has_key( idx ):
@@ -705,14 +710,6 @@ class FontSupport:
 			print >> sys.stderr, "OS/2 index", idx, " not found"
 			exit( 1 )
 		return self.myInfos[ idx ]
-
-	def collectRangeInfo( self, font, os2supportbyte, bit, offset ):
-		supports = ( os2supportbyte & (1 << bit) ) != 0
-		index = bit + offset
-		rangeName = ulUnicodeRange[index][1]
-		intervals = ulUnicodeRange[index][2]
-		nglyphs = count_glyphs_in_intervals( font, intervals )
-		self.setRangeSupport( index, supports, nglyphs )
 
 def print_font_range_table( fontSupportList ):
 	print '<table class="fontrangereport" frame="box" rules="all">'
