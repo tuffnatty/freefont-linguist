@@ -15,6 +15,13 @@ import sys
 
 problem = False
 
+def inPrivateUseRange( glyph ):
+	e = glyph.encoding
+
+	return ( e >= 0xE800 and e <= 0xF8FF ) \
+	    or ( e >= 0xFF000 and e <= 0xFFFFD ) \
+	    or ( e >= 0x100000 and e <= 0x10FFFD )
+
 def checkGlyphNumbers( dir, fontFile ):
 	print "Checking slot numbers in " + fontFile
 	font = fontforge.open( dir + fontFile )
@@ -24,15 +31,15 @@ def checkGlyphNumbers( dir, fontFile ):
 
 	valid = True
 	for glyph in g:
-		if  glyph.encoding < 0xE800 or glyph.encoding > 0xF8FF:
-			if glyph.encoding != glyph.unicode:
-				print "Glyph at slot " + str( glyph.encoding ) \
-					+ " has wrong Unicode"
-				problem = True
-		else:
+		if inPrivateUseRange( glyph ):
 			if glyph.unicode != -1:
 				print "Glyph at slot " + str( glyph.encoding ) \
 					+ " is Private Use but has Unicode"
+				problem = True
+		else:
+			if glyph.encoding != glyph.unicode:
+				print "Glyph at slot " + str( glyph.encoding ) \
+					+ " has wrong Unicode"
 				problem = True
 
 checkGlyphNumbers( '../sfd/', 'FreeSerif.sfd' )
