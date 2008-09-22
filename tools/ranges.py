@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.18 2008-09-19 20:36:38 Stevan_White Exp $
+$Id: ranges.py,v 1.19 2008-09-22 22:06:51 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -37,6 +37,10 @@ class interval:
 
 	def __str__( self ):
 		return '[' + str( self.begin ) + ',' + str( self.end ) + ']'
+
+	def contains( self, val ):
+		return val <= self.end and val >= self.begin
+
 
 # NOTE the OpenType spec is much more thorough
 # http://www.microsoft.com/OpenType/OTSpec/os2.htm
@@ -250,12 +254,13 @@ ulUnicodeRange = [
 		interval(0x1FF2, 0x1FF4),
 		interval(0x1FF6, 0x1FFE)
 	]],
-[31,	'General Punctuation (+suppl)',     [interval(0x2000, 0x2060),
-		interval(0x2E00, 0x2E7F),	# Supplemental
+[31,	'General Punctuation (+suppl)',     [interval(0x2000, 0x2064),
+		interval(0x206A, 0x206F),
+		interval(0x2E00, 0x2E30),	# Supplemental
 	]],
 [32,	'Superscripts and Subscripts',     [interval(0x2070, 0x2071),
 		interval(0x2074, 0x208E),
-		interval(0x2080, 0x2084)
+		interval(0x2090, 0x2094)
 	]
 	],
 [33,	'Currency Symbols',     [interval(0x20A0, 0x20B5)]],
@@ -367,6 +372,13 @@ ulUnicodeRange = [
 		interval(0x1290, 0x12B0),
 		interval(0x12B2, 0x12B5),
 		interval(0x12B8, 0x12BE),
+		interval(0x12C0, 0x12C0),	# page 2
+		interval(0x12C2, 0x12C5),
+		interval(0x12C8, 0x12D6),
+		interval(0x12D8, 0x1310),
+		interval(0x1312, 0x1315),
+		interval(0x1318, 0x135A),
+		interval(0x135F, 0x137C),
 		interval(0x1380, 0x139F),	# supplement
 		interval(0x2D80, 0x2DDF)	# extended
 		]
@@ -397,7 +409,31 @@ ulUnicodeRange = [
 			interval(0x1D100, 0x1D126),
 			interval(0x1D129, 0x1D1DD)
 			], True],
-[89, 	'Mathematical Alphanumeric Symbols', [interval(0x1D400, 0x1D4FF)], True],
+[89, 	'Mathematical Alphanumeric Symbols', [interval(0x1D400, 0x1D454),
+		interval(0x1D456, 0x1D49C),
+		interval(0x1D49E, 0x1D49F),
+		interval(0x1D4A2, 0x1D4A2),
+		interval(0x1D4A5, 0x1D4A6),
+		interval(0x1D4A9, 0x1D4AC),
+		interval(0x1D4AE, 0x1D4B9),
+		interval(0x1D4BB, 0x1D4BB),
+		interval(0x1D4BD, 0x1D4C3),
+		interval(0x1D4C4, 0x1D4FF),
+		interval(0x1D500, 0x1D505),	# page 2
+		interval(0x1D507, 0x1D50A),
+		interval(0x1D50D, 0x1D514),
+		interval(0x1D516, 0x1D51C),
+		interval(0x1D51E, 0x1D539),
+		interval(0x1D53B, 0x1D53E),
+		interval(0x1D540, 0x1D544),
+		interval(0x1D546, 0x1D546),
+		interval(0x1D54A, 0x1D550),
+		interval(0x1D552, 0x1D5FF),	
+		interval(0x1D600, 0x1D6A5),	# page 3
+		interval(0x1D6A8, 0x1D6FF),
+		interval(0x1D700, 0x1D7CB),	# page 4
+		interval(0x1D7CE, 0x1D7FF),
+	], True],
 [90, 	'Private Use (plane 15,16)', [
 		interval(0xFF000, 0xFFFFD),	# plane 15
 		interval(0x100000, 0x10FFFD)	# plane 16
@@ -413,7 +449,8 @@ ulUnicodeRange = [
 [95, 	'New Tai Lue', [interval(0x1980, 0x19DF)]],
 [96, 	'Buginese', [interval(0x1A00, 0x1A1B),
 		interval(0x1A1E, 0x1A1F)]],
-[97, 	'Glagolitic', [interval(0x2C00, 0x2C5F)]],
+[97, 	'Glagolitic', [ interval(0x2C00, 0x2C2E),
+		interval(0x2C30, 0x2C5E) ]],
 [98, 	'Tifinagh', [interval(0x2D30, 0x2D7F)]],
 [99, 	'Ying Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
 [100, 	'Syloti Nagri', [interval(0xA800, 0xA82F)]],
@@ -664,6 +701,14 @@ def count_glyphs_in_intervals( font, intervals ):
 				exit( 1 )
 	return num
 
+def glyphHasRange( encoding ):
+	for ulr in ulUnicodeRange:
+		ranges = ulr[2]
+		for r in ranges:
+			if r.contains( encoding ):
+				return True
+	return False
+
 class SupportInfo:
 	def __init__( self, os2bit, supports, total ):
 		self.os2bit = os2bit
@@ -679,10 +724,12 @@ class FontSupport:
 		self.name = font.fontname
 		self.short = short
 		self.myInfos = {}
+		self.totalGlyphs = 0
+		self.fontTotalGlyphs = 0
 
 		r = font.os2_unicoderanges
 
-#		print >> sys.stderr, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] );
+		# print >> sys.stderr, font.fontname, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] );
 
 		nRanges = len( ulUnicodeRange )
 
@@ -692,12 +739,18 @@ class FontSupport:
 
 			self.collectRangeInfo( font, r[byte], bit, index )
 
+		for f in font.glyphs():
+			self.fontTotalGlyphs += 1
+			if not glyphHasRange( f.encoding ):
+				print >> sys.stderr, font.fontname, "no range", f.encoding
+
 	def collectRangeInfo( self, font, os2supportbyte, bit, index ):
 		supports = ( os2supportbyte & (1 << bit) ) != 0
 		rangeName = ulUnicodeRange[index][1]
 		intervals = ulUnicodeRange[index][2]
 		nglyphs = count_glyphs_in_intervals( font, intervals )
 		self.setRangeSupport( index, supports, nglyphs )
+		self.totalGlyphs += nglyphs
 
 	def setRangeSupport( self, idx, supports, total ):
 		if self.myInfos.has_key( idx ):
@@ -753,6 +806,20 @@ def print_font_range_table( fontSupportList ):
 				+ '</td>'
 
 		print '</tr>'
+	print '<tr' + rowclass + '><th colspan="3">ranges total</th>' 
+	for fsl in fontSupportList:
+		print '<td class="num" colspan="2">' \
+			+ str( fsl.totalGlyphs ) \
+			+ '&nbsp;</td>'
+	print '</tr>'
+	print '<tr' + rowclass + '><th colspan="3">font total</th>' 
+	for fsl in fontSupportList:
+		print '<td class="num" colspan="2">' \
+			+ str( fsl.fontTotalGlyphs ) \
+			+ '&nbsp;</td>'
+	print '</tr>'
+	# Would also like to total glyphs in ranges for each font,
+	# and also print total glyphs in each font.
 	print '</table>'
 table_introduction = """
 For historical reasons, TrueType classifies Unicode ranges according to
