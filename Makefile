@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.10 2008-08-30 11:02:59 Stevan_White Exp $
+# $Id: Makefile,v 1.11 2008-09-22 14:29:53 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
@@ -17,10 +17,10 @@ SIGS=$(ZIPSIG) $(TARSIG) $(SRCTARSIG)
 all: ttf otf
 
 ttf: 
-	( cd sfd; $(MAKE) ttf )
+	@ ( cd sfd; $(MAKE) ttf )
 
 otf: 
-	( cd sfd; $(MAKE) otf )
+	@ ( cd sfd; $(MAKE) otf )
 
 
 package: ttftar otfzip srctar
@@ -41,13 +41,13 @@ ttftar: ttf
 	rm -rf $(TMPDIR) $(TTFTARFILE)
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
-	tar czf $(TTFTARFILE) $(RELEASE)/
+	tar czvf $(TTFTARFILE) $(RELEASE)/
 
 srctar:
 	rm -rf $(TMPDIR) $(SRCTARFILE)
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.sfd $(TMPDIR)
-	tar czf $(SRCTARFILE) $(RELEASE)/
+	tar czvf $(SRCTARFILE) $(RELEASE)/
 
 tests:
 	( cd sfd; $(MAKE) tests )
