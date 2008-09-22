@@ -1,23 +1,32 @@
-##!/usr/bin/env fontforge
-# $Id: GenerateOpenType,v 1.2 2008-09-19 09:51:03 Stevan_White Exp $
-#
-# Convert fonts from FontForge's native SFD format to OpenType format
-# First auto-hints whole font
+#!/usr/local/bin/fontforge -script 
+"""
+Convert fonts from FontForge's native SFD format to OpenType format
 
-scriptname=$argv[0];
+Issues:  Currently, FontForge does not include gasp tables in OpenType fonts.
+However, in Windows, that functionality is clearly present in other fonts.
+The result, I think, is that hinting is applied to small font sizes when
+it is inappropriate.
 
-if ( $argc > 1 )
-    i = 1;
-    while ( i < $argc )
-	Open( $argv[i] )
-	otfile = $fontname + ".otf"
-	Print( "Generating OpenType file ", otfile )
-	SelectAll()
-	AutoHint()
-	Generate( otfile, "", 0x800 )	# old-style kerning
-	Close()
-	i++
-    endloop
-else
-    Print( "Usage: ", scriptname, " font.sfd [font.sfd ...]" )
-endif
+Therefore, hinting is presently turned off
+
+"""
+__author__ = "Stevan White <stevan.white@googlemail.com>"
+__version__ = "$Revision: 1.3 $"
+
+import fontforge
+import sys
+
+scriptname = sys.argv[0];
+argc = len( sys.argv )
+
+if argc > 1:
+	for i in range( 1, argc ):
+		f = fontforge.open( sys.argv[i] )
+		otfile = f.fontname + ".otf"
+		print "Generating OpenType file " + otfile
+#		f.selection.all()
+#		f.autoHint()	# because without gasp table, small sizes ugly
+		f.generate( otfile, flags=('opentype','old-kern') )
+		f.close()
+else:
+	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"
