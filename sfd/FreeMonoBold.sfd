@@ -4,7 +4,7 @@ FullName: Free Monospaced Bold
 FamilyName: FreeMono
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.87 $
+Version: $Revision: 1.88 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1224142714
+ModificationTime: 1224182288
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -399,7 +399,7 @@ StemSnapV 5 [101]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "above"  "'mark' Mark Positioning in Latin lookup 1 subtable" "below"  "'mark' Mark Positioning in Latin lookup 0 subtable" 
-BeginChars: 65536 1839
+BeginChars: 65536 1844
 
 StartChar: space
 Encoding: 32 32 0
@@ -23760,17 +23760,17 @@ EndChar
 StartChar: emdash
 Encoding: 8212 8212 1091
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-629 279 m 0
- 629 239 600 229 563 229 c 2
- 37 229 l 2
- 0 229 -29 238 -29 279 c 0
- -29 320 -2 329 37 329 c 2
- 563 329 l 2
- 601 329 629 320 629 279 c 0
+600 279 m 4
+ 600 239 571 229 534 229 c 6
+ 66 229 l 2
+ 29 229 0 238 0 279 c 0
+ 0 320 27 329 66 329 c 2
+ 534 329 l 6
+ 572 329 600 320 600 279 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -23778,10 +23778,10 @@ EndChar
 StartChar: afii00208
 Encoding: 8213 8213 1092
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1091 8212 N 1 0 0 1 0 0 0
+Refer: 1091 8212 S 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
@@ -41976,6 +41976,116 @@ SplineSet
  388.685 -213 376.425 -207.414 367.212 -185.906 c 2
  301.724 -33.0225 l 1
  232.674 -186.166 l 2
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni2038
+Encoding: 8248 8248 1839
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+441.499 -112.391 m 6
+ 449.722 -119.118 460 -130 460 -145 c 4
+ 460 -162 445 -180 425 -180 c 4
+ 419.528 -180 410.173 -179.006 397.877 -168.896 c 6
+ 300 -88.4209 l 5
+ 202.123 -168.896 l 6
+ 194.808 -173.756 185.849 -180 175 -180 c 4
+ 155.652 -180 140 -165 140 -145 c 4
+ 140 -133 146.561 -123.258 158.242 -113.611 c 6
+ 299.956 3.41699 l 5
+ 441.499 -112.391 l 6
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni204C
+Encoding: 8268 8268 1840
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+500 485 m 6
+ 524.074 485 540 470.641 540 450 c 4
+ 540 428.4 524 414 500 414 c 6
+ 454 414 l 5
+ 454 182 l 5
+ 500 182 l 6
+ 524 182 540 167.6 540 146 c 4
+ 540 125 524 111 500 111 c 6
+ 286 111 l 6
+ 136.856 111 66 200.162 66 272 c 6
+ 66 319 l 6
+ 66 418.581 152.816 476.281 285.509 484.984 c 6
+ 500 485 l 6
+342 414 m 5
+ 342 182 l 5
+ 384 182 l 5
+ 384 414 l 5
+ 342 414 l 5
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni204d
+Encoding: 8269 8269 1841
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1840 8268 S -1 0 0 -1 600 596 2
+Validated: 32769
+EndChar
+
+StartChar: uni2016
+Encoding: 8214 8214 1842
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1091 8212 S 0 1 -1 0 492 -21 0
+Refer: 1091 8212 S 0 1 -1 0 666 -21 0
+Validated: 32769
+EndChar
+
+StartChar: uni203D
+Encoding: 8253 8253 1843
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+314 100 m 6
+ 356 100 386 74 386 35 c 4
+ 386 -3 356 -30 314 -30 c 6
+ 287 -30 l 6
+ 245 -30 215 -4 215 35 c 4
+ 215 74 245 100 287 100 c 6
+ 314 100 l 6
+309 592 m 4
+ 423 592 502 524 502 423 c 4
+ 502 344 460 297 337 238 c 5
+ 337 206 l 6
+ 337 172 316 164 302 164 c 4
+ 275 164 266 185 266 206 c 6
+ 246 429 l 6
+ 245 437 245 442 245 447 c 4
+ 245 480 271 501 300 501 c 4
+ 328 501 354 476 354 447 c 4
+ 354 442 354 436 353 429 c 6
+ 342 320 l 5
+ 408 355 431 387 431 423 c 4
+ 431 482 377 521 304 521 c 4
+ 263 521 236 515 190 493 c 5
+ 190 461 l 6
+ 190 427 169 419 155 419 c 4
+ 128 419 119 440 119 461 c 6
+ 119 540 l 5
+ 178 559 219 592 309 592 c 4
 EndSplineSet
 Validated: 3073
 EndChar
