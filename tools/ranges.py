@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.20 2008-10-16 06:46:01 Stevan_White Exp $
+$Id: ranges.py,v 1.21 2008-10-16 06:48:27 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -823,13 +823,13 @@ def print_font_range_table( fontSupportList ):
 				+ '</td>'
 
 		print '</tr>'
-	print '<tr' + rowclass + '><th colspan="3">ranges total</th>' 
+	print '<tr><th colspan="3">ranges total</th>' 
 	for fsl in fontSupportList:
 		print '<td class="num" colspan="2">' \
 			+ str( fsl.totalGlyphs ) \
 			+ '&nbsp;</td>'
 	print '</tr>'
-	print '<tr' + rowclass + '><th colspan="3">font total</th>' 
+	print '<tr><th colspan="3">font total</th>' 
 	for fsl in fontSupportList:
 		print '<td class="num" colspan="2">' \
 			+ str( fsl.fontTotalGlyphs ) \
