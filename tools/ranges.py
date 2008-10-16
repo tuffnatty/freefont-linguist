@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.19 2008-09-22 22:06:51 Stevan_White Exp $
+$Id: ranges.py,v 1.20 2008-10-16 06:46:01 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -70,7 +70,9 @@ ulUnicodeRange = [
 	interval(0x0400, 0x04FF),	# Cyrillic
 	interval(0x0500, 0x0523),	# Cyrillic Supplement
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
-	interval(0xA640, 0xA69F)	# Cyrillic Extended-B
+	interval(0xA640, 0xA65F),	# Cyrillic Extended-B
+	interval(0xA662, 0xA673),
+	interval(0xA67C, 0xA697)
 	]
 	],
 [10,	'Armenian',     [interval(0x0531, 0x0556),
@@ -765,10 +767,25 @@ class FontSupport:
 		return self.myInfos[ idx ]
 
 def print_font_range_table( fontSupportList ):
-	print '<table class="fontrangereport" frame="box" rules="all">'
+	print '<table class="fontrangereport" cellspacing="0" cellpadding="0" frame="box" rules="all">'
 	print '<caption>'
 	print "OS/2 character ranges vs. FreeFont faces " 
 	print '</caption>'
+	print '<colgroup>'
+	print '<col /><col /><col />'
+	print '</colgroup>'
+	print '<colgroup>'
+	print '<col class="roman"/><col /><col /><col />'
+	print '<col /><col /><col /><col />'
+	print '</colgroup>'
+	print '<colgroup>'
+	print '<col class="roman"/><col /><col /><col />'
+	print '<col /><col /><col /><col />'
+	print '</colgroup>'
+	print '<colgroup>'
+	print '<col class="roman"/><col /><col /><col />'
+	print '<col /><col /><col /><col />'
+	print '</colgroup>'
 	print '<thead>'
 	print '<tr><th>OS/2 character range</th>' 
 	print '<th>range<br />total</th>' 
@@ -824,7 +841,7 @@ def print_font_range_table( fontSupportList ):
 table_introduction = """
 For historical reasons, TrueType classifies Unicode ranges according to
 an extension of the old OS/2 character ranges.  This table shows how many
-characters FontForge finds in each of the ranges for each font.
+characters FontForge finds in each of the ranges for each face in the family.
 """
 
 table_explanation = """
@@ -864,7 +881,9 @@ def print_font_range_report( fontSupportList ):
 	print '<style type="text/css">'
 	print '	tr.high { color: gray }'
 	print '	td.num { text-align: right }'
-	print '	th { padding: 0.5em }'
+	print '	td { padding-right: 0.25ex }'
+	print '	th { padding: 0.25ex }'
+	print '	.roman { border-left: medium black solid; }'
 	print '	caption { font-size: larger; font-weight: bold; }'
 	print '</style>'
 	print '</head>'
