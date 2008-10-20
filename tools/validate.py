@@ -77,6 +77,7 @@ def validate( dir, fontFile ):
 		if state != 0:
 			dealWithValidationState( state, e )
 	font.validate
+
 validate( '../sfd/', 'FreeSerif.sfd' )
 validate( '../sfd/', 'FreeSerifItalic.sfd' )
 validate( '../sfd/', 'FreeSerifBold.sfd' )

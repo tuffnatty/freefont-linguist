@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.21 2008-10-16 06:48:27 Stevan_White Exp $
+$Id: ranges.py,v 1.22 2008-10-20 17:33:32 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -49,7 +49,7 @@ ulUnicodeRange = [
 [1,	'Latin-1 Supplement',[interval(0x00A0, 0x00FF)] ],
 [2,	'Latin Extended-A',	[interval(0x0100, 0x017F)] ],
 [3,	'Latin Extended-B',     [interval(0x0180, 0x024F)]],
-[4,	'IPA and Phoetic Extensions',     [interval(0x0250, 0x02AF),
+[4,	'IPA and Phonetic Extensions',     [interval(0x0250, 0x02AF),
 			interval(0x1D00, 0x1D7F),	# Phonetic Extensions
 			interval(0x1D80, 0x1DBF)	# Phonetic Extensions S.
 	]],
@@ -420,7 +420,7 @@ ulUnicodeRange = [
 		interval(0x1D4AE, 0x1D4B9),
 		interval(0x1D4BB, 0x1D4BB),
 		interval(0x1D4BD, 0x1D4C3),
-		interval(0x1D4C4, 0x1D4FF),
+		interval(0x1D4C5, 0x1D4FF),
 		interval(0x1D500, 0x1D505),	# page 2
 		interval(0x1D507, 0x1D50A),
 		interval(0x1D50D, 0x1D514),
@@ -744,7 +744,8 @@ class FontSupport:
 		for f in font.glyphs():
 			self.fontTotalGlyphs += 1
 			if not glyphHasRange( f.encoding ):
-				print >> sys.stderr, font.fontname, "no range", f.encoding
+				print >> sys.stderr, font.fontname, \
+					"no range for", hex( f.encoding )
 
 	def collectRangeInfo( self, font, os2supportbyte, bit, index ):
 		supports = ( os2supportbyte & (1 << bit) ) != 0
