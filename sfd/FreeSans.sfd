@@ -4,7 +4,7 @@ FullName: Free Sans
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.219 $
+Version: $Revision: 1.220 $
 ItalicAngle: 0
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1224624355
+ModificationTime: 1225063883
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -58,6 +58,7 @@ Lookup: 4 0 0 "'akhn' Akhand in Gujarati"  {"'akhn' Akhand in Gujarati subtable"
 Lookup: 4 0 0 "'akhn' Akhand in Devanagari"  {"'akhn' Akhand in Devanagari subtable"  } ['akhn' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' Akhand in Bengali"  {"'akhn' Akhand in Bengali subtable"  } ['akhn' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 8 1 "'liga' Standard Ligatures in Armenian"  {"'liga' Standard Ligatures in Armenian subtable"  } ['liga' ('armn' <'dflt' > ) ]
+Lookup: 4 0 0 "'hlig' Historic Ligatures in Armenian"  {"'hlig' Historic Ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Gujarati"  {"'rphf' Reph Form in Gujarati subtable"  } ['rphf' ('gujr' <'dflt' > 'gjr2' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Devanagari"  {"'rphf' Reph Form in Devanagari subtable"  } ['rphf' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Bengali"  {"'rphf' Reph Form in Bengali subtable"  } ['rphf' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
@@ -604,10 +605,10 @@ GaspTable: 2 8 2 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -48
+DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 2672 16 11
+WinInfo: 64256 16 11
 BeginPrivate: 8
 UniqueID 7 5020902
 BlueValues 31 [-20 0 524 544 686 709 729 749]
@@ -627,7 +628,7 @@ systemdict /internaldict known
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "topright"  "'mark' Mark Positioning in Latin lookup 2" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning" "ogonek"  "'mark' Mark Positioning in Latin subtable" "dvng-0"  "'abvm' Above Base Mark in Devanagari subtable" "gujr-0"  "'abvm' Above Base Mark in Gujarati subtable" "dvng-1"  "'blwm' Below Base Mark in Devanagari subtable" "gujr-1"  "'blwm' Below Base Mark in Gujarati subtable" "above"  "'mark' Mark Positioning in Latin subtable" "below"  "'mark' Mark Positioning in Latin subtable" "abovemk"  "'mkmk' Mark to Mark in Latin subtable" "belowmk"  "'mkmk' Mark to Mark in Latin subtable" 
-BeginChars: 69525 3983
+BeginChars: 69525 3988
 
 StartChar: space
 Encoding: 32 32 0
@@ -16525,7 +16526,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0565
+StartChar: echarmenian
 Encoding: 1381 1381 809
 Width: 546
 Flags: HMW
@@ -16697,7 +16698,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni056B
+StartChar: iniarmenian
 Encoding: 1387 1387 815
 Width: 552
 Flags: HMW
@@ -16739,7 +16740,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni056D
+StartChar: xeharmenian
 Encoding: 1389 1389 817
 Width: 795
 Flags: HMW
@@ -16931,7 +16932,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0574
+StartChar: menarmenian
 Encoding: 1396 1396 824
 Width: 531
 Flags: HMW
@@ -16981,7 +16982,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0576
+StartChar: nowarmenian
 Encoding: 1398 1398 826
 Width: 527
 Flags: HMW
@@ -17198,7 +17199,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni057E
+StartChar: vewarmenian
 Encoding: 1406 1406 834
 Width: 584
 Flags: HMW
@@ -17477,8 +17478,8 @@ SplineSet
  338 28 316 -4 216 -8 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Armenian subtable" echarmenian uni0582
 LCarets2: 1 0 
-Ligature2: "'liga' Standard Ligatures in Armenian subtable" uni0565 uni0582
 EndChar
 
 StartChar: uni0589
@@ -108247,6 +108248,243 @@ LayerCount: 2
 Fore
 Refer: 327 415 N 1 0 0 1 0 0 2
 Validated: 32769
+EndChar
+
+StartChar: m_n_armenian
+Encoding: 64275 64275 3983
+Width: 1004
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+635 524 m 1
+ 635 148 l 2
+ 635 81 672.5 63 732 63 c 0
+ 828 63 845 164 851 198 c 1
+ 851 524 l 1
+ 939 524 l 1
+ 939 0 l 1
+ 859 0 l 1
+ 859 83 l 1
+ 799 19 747.5 -10 693 -10 c 0
+ 604 -10 547 45 547 112 c 2
+ 547 436 l 1
+ 460.963 436 l 1
+ 461 0 l 1
+ 377 0 l 1
+ 377 56 l 1
+ 315.58 16.5156 287.406 -10 212 -10 c 0
+ 124 -10 65 43.9932 65 115 c 2
+ 65 381 l 5
+ 153 381 l 5
+ 153 153 l 2
+ 153 95 174 65 231 65 c 0
+ 354 65 368 148 373 214 c 2
+ 373 436 l 1
+ 254 436 l 2
+ 208 436 65 471 65 618 c 2
+ 65 683 l 1
+ 126 683 l 1
+ 126 549 171 524 254 524 c 2
+ 320.339 524 l 1
+ 281.723 558.81 236 593.72 236 659 c 0
+ 236 735 309 744 380 744 c 2
+ 457 744 l 1
+ 457 676 l 1
+ 373 676 l 2
+ 342 676 319 670.5 319 653 c 0
+ 319 615.689 383.338 577.678 425.4 524 c 1
+ 635 524 l 1
+EndSplineSet
+Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Armenian subtable" menarmenian nowarmenian
+EndChar
+
+StartChar: m_e_armenian
+Encoding: 64276 64276 3984
+Width: 1038
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+373 436 m 2
+ 373 524 236 546 236 659 c 0
+ 236 735 309 744 380 744 c 2
+ 380 744 624.5 744 636 744 c 1
+ 636 483 l 1
+ 973 483 l 1
+ 973 417 l 1
+ 636 417 l 1
+ 636 204 l 2
+ 636 121 658 65 744 65 c 0
+ 849 65 882 138 882 236 c 2
+ 882 333 l 1
+ 969 333 l 1
+ 969 0 l 1
+ 890 0 l 1
+ 890 74 l 1
+ 852 18 798 -11 725 -11 c 0
+ 550.391 -11 548 123.94 548 200 c 2
+ 548 676 l 1
+ 373 676 l 2
+ 342 676 319 670.5 319 653 c 0
+ 319 597.57 461 540.594 461 433 c 2
+ 461 0 l 1
+ 377 0 l 1
+ 377 56 l 1
+ 315.58 16.5156 287.406 -10 212 -10 c 0
+ 124 -10 66 44 65 115 c 2
+ 65 524 l 1
+ 153 524 l 1
+ 153 153 l 2
+ 153 95 174 65 231 65 c 0
+ 354 65 368 148 373 214 c 2
+ 373 436 l 2
+EndSplineSet
+Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Armenian subtable" menarmenian echarmenian
+EndChar
+
+StartChar: m_i_armenian
+Encoding: 64277 64277 3985
+Width: 1020
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+373 436 m 2
+ 373 524 236 546 236 659 c 0
+ 236 735 309 744 380 744 c 2
+ 380 744 609.5 744 621 744 c 1
+ 621 459 l 5
+ 662 506 714 530 776 530 c 0
+ 919 530 955 446 955 329 c 2
+ 955 0 l 1
+ 867 0 l 1
+ 867 329 l 2
+ 867 412 834 453 758 455 c 0
+ 703 455 621 429 621 284 c 2
+ 621 -200 l 1
+ 533 -200 l 1
+ 533 676 l 1
+ 373 676 l 2
+ 342 676 319 670.5 319 653 c 0
+ 319 597.57 461 540.594 461 433 c 2
+ 461 0 l 1
+ 377 0 l 1
+ 377 56 l 1
+ 315.58 16.5156 287.406 -10 212 -10 c 0
+ 124 -10 66 44 65 115 c 2
+ 65 524 l 1
+ 153 524 l 1
+ 153 153 l 2
+ 153 95 174 65 231 65 c 0
+ 354 65 368 148 373 214 c 2
+ 373 436 l 2
+EndSplineSet
+Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Armenian subtable" menarmenian iniarmenian
+EndChar
+
+StartChar: v_n_armenian
+Encoding: 64278 64278 3986
+Width: 1030
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+661 524 m 1
+ 661 148 l 2
+ 661 81 698.5 63 758 63 c 0
+ 854 63 871 164 877 198 c 1
+ 877 524 l 1
+ 965 524 l 1
+ 965 0 l 1
+ 885 0 l 1
+ 885 83 l 1
+ 825 19 773.5 -10 719 -10 c 0
+ 630 -10 573 45 573 112 c 2
+ 573 436 l 1
+ 488 436 l 1
+ 488 -144 l 1
+ 574 -144 l 1
+ 574 -200 l 1
+ 400 -200 l 1
+ 400 66 l 1
+ 359 19 307 -4 244 -5 c 0
+ 96 -5 65 84.9824 65 197 c 2
+ 65 381 l 5
+ 153 381 l 5
+ 153 197 l 2
+ 153 115 187 71 263 71 c 0
+ 316 71 400 97 400 242 c 2
+ 400 436 l 1
+ 254 436 l 2
+ 108 436 65 504.918 65 574 c 0
+ 65 641.088 90 716 254 716 c 2
+ 488 716 l 1
+ 488 524 l 1
+ 661 524 l 1
+126 574 m 0
+ 126 545 171 524 254 524 c 2
+ 400 524 l 1
+ 400 628 l 1
+ 254 628 l 2
+ 171 628 126 608 126 574 c 0
+EndSplineSet
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Armenian subtable" vewarmenian nowarmenian
+EndChar
+
+StartChar: m_x_armenian
+Encoding: 64279 64279 3987
+Width: 1256
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+373 436 m 2
+ 373 524 236 546 236 659 c 0
+ 236 735 309 744 380 744 c 2
+ 380 744 607.5 744 619 744 c 1
+ 619 524 l 5
+ 858 524 l 1
+ 858 202 l 2
+ 858 125 873 67 965 63 c 0
+ 1069 63 1103 133 1103 234 c 2
+ 1103 524 l 1
+ 1191 524 l 1
+ 1191 -1 l 1
+ 1112 -1 l 1
+ 1112 73 l 1
+ 1074 16 1019.01 -13 947 -13 c 0
+ 779 -13 770.549 96.002 770 219 c 2
+ 769 443 l 1
+ 619 443 l 1
+ 619 -200 l 1
+ 531 -200 l 1
+ 531 676 l 1
+ 373 676 l 2
+ 342 676 319 670.5 319 653 c 0
+ 319 597.57 461 540.594 461 433 c 2
+ 461 0 l 1
+ 377 0 l 1
+ 377 56 l 1
+ 315.58 16.5156 287.406 -10 212 -10 c 0
+ 124 -10 66 44 65 115 c 2
+ 65 524 l 1
+ 153 524 l 1
+ 153 153 l 2
+ 153 95 174 65 231 65 c 0
+ 354 65 368 148 373 214 c 2
+ 373 436 l 2
+EndSplineSet
+Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Armenian subtable" menarmenian xeharmenian
 EndChar
 EndChars
 EndSplineFont
