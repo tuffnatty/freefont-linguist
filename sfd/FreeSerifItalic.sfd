@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.129 $
+Version: $Revision: 1.130 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1225053593
+ModificationTime: 1225479503
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -68,9 +68,9 @@ Lookup: 4 0 0 "'psts' Post Base Substitutions in Bengali lookup 13"  {"'psts' Po
 Lookup: 4 0 0 "'haln' Halant Forms in Bengali lookup 14"  {"'haln' Halant Forms in Bengali lookup 14 subtable"  } ['haln' ('beng' <'dflt' > ) ]
 Lookup: 1 0 0 "'aalt' Access All Alternates in Latin lookup 15"  {"'aalt' Access All Alternates in Latin lookup 15 subtable"  } ['aalt' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Thai"  {"'blwm' Below Base Mark in Thai subtable"  } ['blwm' ('thai' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Mark Positioning in Thai"  {"'mark' Mark Positioning in Thai subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai"  {"'mkmk' Mark to Mark in Thai subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
-Lookup: 260 0 0 "'abvm' Above Base Mark in Latin"  {"'abvm' Above Base Mark in subtable"  } ['abvm' ('latn' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Thai"  {"'mark' Mark Positioning in Thai subtable"  "'mark' Mark Positioning in Thai 1 subtable"  } ['mark' ('thai' <'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 2"  {"'mkmk' Mark to Mark in Thai subtable 1"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin lookup 1"  {"'kern' Horizontal Kerning in Latin lookup 1 subtable"  } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning lookup 2"  {"'kern' Horizontal Kerning lookup 2 subtable"  } ['kern' ('DFLT' <'dflt' > ) ]
@@ -526,7 +526,7 @@ Grid
 -1000 900 m 0
  2000 900 l 0
 EndSplineSet
-AnchorClass2: "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_tone"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin subtable" "abovemk"  "'abvm' Above Base Mark in subtable" 
+AnchorClass2: "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin subtable" 
 BeginChars: 65980 2690
 
 StartChar: space
@@ -17798,10 +17798,10 @@ Encoding: 3585 3585 758
 Width: 512
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 482 534 basechar 0
 AnchorPoint: "thai_below" 334 -20 basechar 0
-AnchorPoint: "thai_vowel_centered" 484 528 basechar 0
+AnchorPoint: "thai_vowel_centered" 482 528 basechar 0
 AnchorPoint: "thai_vowel" 476 534 basechar 0
-AnchorPoint: "thai_tone" 475 535 basechar 0 {} {150-150 -6}
 LayerCount: 2
 Fore
 SplineSet
@@ -17830,10 +17830,10 @@ Encoding: 3586 3586 759
 Width: 453
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 433 525 basechar 0
 AnchorPoint: "thai_below" 268 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 432 528 basechar 0
-AnchorPoint: "thai_vowel" 433 521 basechar 0
-AnchorPoint: "thai_tone" 431 522 basechar 0
+AnchorPoint: "thai_vowel" 433 521 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -17864,6 +17864,7 @@ SplineSet
  118 463 97 423 97 395 c 0
  97 378 104 368 120 365 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E03
@@ -17871,10 +17872,10 @@ Encoding: 3587 3587 760
 Width: 512
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 482 524 basechar 0
 AnchorPoint: "thai_below" 325 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 485 528 basechar 0
-AnchorPoint: "thai_vowel" 481 522 basechar 0
-AnchorPoint: "thai_tone" 480 522 basechar 0
+AnchorPoint: "thai_vowel" 481 522 basechar 0 {} {150-150 1}
 LayerCount: 2
 Fore
 SplineSet
@@ -17913,6 +17914,7 @@ SplineSet
  115 463 94 423 94 395 c 0
  94 378 101 368 117 365 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E04
@@ -17920,10 +17922,10 @@ Encoding: 3588 3588 761
 Width: 519
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 487 526 basechar 0
 AnchorPoint: "thai_below" 350 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 490 528 basechar 0
 AnchorPoint: "thai_vowel" 488 523 basechar 0
-AnchorPoint: "thai_tone" 484 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17952,6 +17954,7 @@ SplineSet
  233 350 223 295 223 280 c 0
  223 265 232 256 246 252 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E05
@@ -17959,10 +17962,10 @@ Encoding: 3589 3589 762
 Width: 529
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 493 526 basechar 0
 AnchorPoint: "thai_below" 350 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 497 528 basechar 0
 AnchorPoint: "thai_vowel" 492 520 basechar 0
-AnchorPoint: "thai_tone" 492 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18004,10 +18007,10 @@ Encoding: 3590 3590 763
 Width: 561
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 536 525 basechar 0
 AnchorPoint: "thai_below" 386 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 538 528 basechar 0
-AnchorPoint: "thai_vowel" 535 519 basechar 0
-AnchorPoint: "thai_tone" 532 522 basechar 0
+AnchorPoint: "thai_vowel" 535 519 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -18049,6 +18052,7 @@ SplineSet
  114 58 126 67 131 86 c 2
  156 179 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E07
@@ -18056,10 +18060,10 @@ Encoding: 3591 3591 764
 Width: 411
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 392 523 basechar 0
 AnchorPoint: "thai_below" 242 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 392 528 basechar 0
 AnchorPoint: "thai_vowel" 388 519 basechar 0
-AnchorPoint: "thai_tone" 387 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18082,6 +18086,7 @@ SplineSet
  252 418 259 400 272 400 c 0
  272 400 272 400 273 400 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E08
@@ -18089,10 +18094,10 @@ Encoding: 3592 3592 765
 Width: 437
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 403 525 basechar 0
 AnchorPoint: "thai_below" 264 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 397 528 basechar 0
 AnchorPoint: "thai_vowel" 398 519 basechar 0
-AnchorPoint: "thai_tone" 395 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18119,6 +18124,7 @@ SplineSet
  172 330 135 303 135 257 c 0
  135 240 142 232 158 232 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E09
@@ -18126,10 +18132,10 @@ Encoding: 3593 3593 766
 Width: 552
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 462 524 basechar 0
 AnchorPoint: "thai_below" 337 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 463 528 basechar 0
-AnchorPoint: "thai_vowel" 461 519 basechar 0
-AnchorPoint: "thai_tone" 459 522 basechar 0
+AnchorPoint: "thai_vowel" 461 519 basechar 0 {} {150-150 -1}
 LayerCount: 2
 Fore
 SplineSet
@@ -18170,6 +18176,7 @@ SplineSet
  394 81 394 76 394 73 c 0
  394 62 400 58 409 58 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E0A
@@ -18177,10 +18184,10 @@ Encoding: 3594 3594 767
 Width: 452
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 432 571 basechar 0
 AnchorPoint: "thai_below" 261 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 433 572 basechar 0
-AnchorPoint: "thai_vowel" 433 564 basechar 0
-AnchorPoint: "thai_tone" 433 565 basechar 0
+AnchorPoint: "thai_vowel" 433 564 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -18219,6 +18226,7 @@ SplineSet
  211 27 l 2
  237 27 261 53 266 75 c 2
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E0B
@@ -18226,10 +18234,10 @@ Encoding: 3595 3595 768
 Width: 509
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 494 571 basechar 0
 AnchorPoint: "thai_below" 324 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 487 576 basechar 0
-AnchorPoint: "thai_vowel" 497 566 basechar 0
-AnchorPoint: "thai_tone" 485 563 basechar 0
+AnchorPoint: "thai_vowel" 497 566 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -18275,6 +18283,7 @@ SplineSet
  268 27 l 2
  291 27 317 56 323 76 c 2
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E0C
@@ -18282,10 +18291,10 @@ Encoding: 3596 3596 769
 Width: 707
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 676 529 basechar 0
 AnchorPoint: "thai_below" 532 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 676 528 basechar 0
 AnchorPoint: "thai_vowel" 684 520 basechar 0
-AnchorPoint: "thai_tone" 672 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18331,6 +18340,7 @@ SplineSet
  155.42 21 171 61.2754 171 84 c 0
  171 98 166 118 149 118 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E0D
@@ -18338,9 +18348,9 @@ Encoding: 3597 3597 770
 Width: 707
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 686 524 basechar 0
 AnchorPoint: "thai_vowel_centered" 682 528 basechar 0
 AnchorPoint: "thai_vowel" 685 518 basechar 0
-AnchorPoint: "thai_tone" 673 518 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18371,27 +18381,28 @@ SplineSet
  88 322 124 357 183 374 c 1
  165 392 129 402 78 402 c 1
  99.4961 446.474 197.309 527 318 527 c 0
-364 -64 m 4
- 392 -64 405 -88 405 -117 c 4
- 405 -158 371.25 -217 321 -217 c 4
- 317.25 -217 314 -216.625 310 -216 c 5
- 321 -235 341 -247 369 -247 c 4
- 412 -247 471 -183 492 -64 c 5
- 562 -64 l 5
- 525 -204 454 -273 350 -273 c 4
- 272.4 -273 253 -218.331 253 -184 c 4
- 253 -161.018 269.791 -64 364 -64 c 4
+364 -64 m 0
+ 392 -64 405 -88 405 -117 c 0
+ 405 -158 371.25 -217 321 -217 c 0
+ 317.25 -217 314 -216.625 310 -216 c 1
+ 321 -235 341 -247 369 -247 c 0
+ 412 -247 471 -183 492 -64 c 1
+ 562 -64 l 1
+ 525 -204 454 -273 350 -273 c 0
+ 272.4 -273 253 -218.331 253 -184 c 0
+ 253 -161.018 269.791 -64 364 -64 c 0
 122 19 m 0
  149 19 171 60 171 85 c 0
  171 101 163 117 149 117 c 0
  127 116 101 79 101 54 c 0
  101 40 105.2 19 122 19 c 0
-327 -197 m 4
- 354 -197 382 -153 382 -123 c 4
- 382 -101 372 -87 356 -87 c 4
- 322 -87 305 -141 303 -157 c 4
- 304 -176 311 -195 327 -197 c 4
+327 -197 m 0
+ 354 -197 382 -153 382 -123 c 0
+ 382 -101 372 -87 356 -87 c 0
+ 322 -87 305 -141 303 -157 c 0
+ 304 -176 311 -195 327 -197 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E0E
@@ -18399,8 +18410,8 @@ Encoding: 3598 3598 771
 Width: 574
 VWidth: 930
 Flags: HMW
-AnchorPoint: "thai_vowel_centered" 525 499 basechar 0
-AnchorPoint: "thai_tone" 522 490 basechar 0 {} {150-150 2}
+AnchorPoint: "thai_tone" 522 497 basechar 0
+AnchorPoint: "thai_vowel_centered" 525 499 basechar 0 {} {150-150 3}
 LayerCount: 2
 Fore
 SplineSet
@@ -18444,6 +18455,7 @@ SplineSet
  153.237 -169 194.2 -159.6 223 -102 c 1
  203 -85 171 -76 141 -76 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E0F
@@ -18451,9 +18463,9 @@ Encoding: 3599 3599 772
 Width: 570
 VWidth: 930
 Flags: HMW
-AnchorPoint: "thai_vowel_centered" 528 501 basechar 0
+AnchorPoint: "thai_tone" 526 491 basechar 0
+AnchorPoint: "thai_vowel_centered" 528 501 basechar 0 {} {150-150 2}
 AnchorPoint: "thai_vowel" 520 487 basechar 0 {} {150-150 5}
-AnchorPoint: "thai_tone" 516 489 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -18503,6 +18515,7 @@ SplineSet
  33 -150 56.161 -172 79 -172 c 0
  113 -172 143 -149 166 -106 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E10
@@ -18510,74 +18523,75 @@ Encoding: 3600 3600 773
 Width: 406
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 383 517 basechar 0
 AnchorPoint: "thai_vowel_centered" 468 528 basechar 0
 AnchorPoint: "thai_vowel" 342 471 basechar 0 {} {150-150 6}
-AnchorPoint: "thai_tone" 335 473 basechar 0 {} {150-150 6}
 LayerCount: 2
 Fore
 SplineSet
-112 146 m 4
- 76.7998 146 68 180.825 68 199 c 4
- 68 222 88 302 169 302 c 4
- 200 302 243 289 247 221 c 5
- 263 277 l 6
- 264.453 282.085 265 289 265 294 c 4
- 265 367 113 377 62 385 c 5
- 90 464 155 528 254 529 c 4
- 309 529 352 479 380 477 c 4
- 406 477 428 492 448 520 c 5
- 478 520 l 5
- 452 466 416 443 368 443 c 4
- 340 443 337 446 235 471 c 4
- 168 471 132 450 112 409 c 5
- 268 409 347 376 347 306 c 4
- 347 297 344.969 287.075 342 276 c 6
- 268 0 l 5
- 191 0 l 5
- 208 67 218 122 218 165 c 4
- 218 207 209 237 193 255 c 5
- 193.696 251.913 194 249.565 194 247 c 4
- 194 187 144 146 112 146 c 4
-80 -118 m 4
- 80 -97 100 -22 171 -22 c 4
- 216 -22 239 -41 239 -79 c 4
- 239 -90 237.829 -102.184 234 -116 c 6
- 183 -300 l 5
- 118 -300 l 5
- 93 -245 l 5
- 44 -300 l 5
- 13 -300 l 5
- 15 -294 16 -290 16 -285 c 4
- 16 -272 10 -262 6 -252 c 5
- -24 -284 -52 -300 -78 -300 c 4
- -112 -300 -122 -275 -122 -257 c 4
- -122 -226 -89 -186 -42 -186 c 4
- -19 -186 2 -194 15 -208 c 5
- 46 -171 l 5
- 64 -184 l 5
- 28 -227 l 5
- 34 -235 39 -246 43 -264 c 5
- 105 -195 l 5
- 136 -255 l 5
- 164 -159 l 5
- 152 -169 135 -175 121 -175 c 4
- 89 -175 80 -138 80 -118 c 4
-95 201 m 4
- 95 183 107 171 121 171 c 4
- 137 171 167 205 167 237 c 4
- 167 249 162 271 144 271 c 4
- 118 271 95 229 95 201 c 4
-130 -147 m 4
- 162 -147 180 -94 180 -78 c 4
- 180 -61 171 -49 156 -48 c 4
- 145 -48 106 -76 106 -123 c 4
- 106 -140 114 -147 130 -147 c 4
--95 -253 m 4
- -95 -270 -79 -275 -69 -275 c 4
- -54 -275 -32 -259 -6 -232 c 5
- -17 -218 -34 -211 -50 -211 c 4
- -87 -211 -95 -245 -95 -253 c 4
+112 146 m 0
+ 76.7998 146 68 180.825 68 199 c 0
+ 68 222 88 302 169 302 c 0
+ 200 302 243 289 247 221 c 1
+ 263 277 l 2
+ 264.453 282.085 265 289 265 294 c 0
+ 265 367 113 377 62 385 c 1
+ 90 464 155 528 254 529 c 0
+ 309 529 352 479 380 477 c 0
+ 406 477 428 492 448 520 c 1
+ 478 520 l 1
+ 452 466 416 443 368 443 c 0
+ 340 443 337 446 235 471 c 0
+ 168 471 132 450 112 409 c 1
+ 268 409 347 376 347 306 c 0
+ 347 297 344.969 287.075 342 276 c 2
+ 268 0 l 1
+ 191 0 l 1
+ 208 67 218 122 218 165 c 0
+ 218 207 209 237 193 255 c 1
+ 193.696 251.913 194 249.565 194 247 c 0
+ 194 187 144 146 112 146 c 0
+80 -118 m 0
+ 80 -97 100 -22 171 -22 c 0
+ 216 -22 239 -41 239 -79 c 0
+ 239 -90 237.829 -102.184 234 -116 c 2
+ 183 -300 l 1
+ 118 -300 l 1
+ 93 -245 l 1
+ 44 -300 l 1
+ 13 -300 l 1
+ 15 -294 16 -290 16 -285 c 0
+ 16 -272 10 -262 6 -252 c 1
+ -24 -284 -52 -300 -78 -300 c 0
+ -112 -300 -122 -275 -122 -257 c 0
+ -122 -226 -89 -186 -42 -186 c 0
+ -19 -186 2 -194 15 -208 c 1
+ 46 -171 l 1
+ 64 -184 l 1
+ 28 -227 l 1
+ 34 -235 39 -246 43 -264 c 1
+ 105 -195 l 1
+ 136 -255 l 1
+ 164 -159 l 1
+ 152 -169 135 -175 121 -175 c 0
+ 89 -175 80 -138 80 -118 c 0
+95 201 m 0
+ 95 183 107 171 121 171 c 0
+ 137 171 167 205 167 237 c 0
+ 167 249 162 271 144 271 c 0
+ 118 271 95 229 95 201 c 0
+130 -147 m 0
+ 162 -147 180 -94 180 -78 c 0
+ 180 -61 171 -49 156 -48 c 0
+ 145 -48 106 -76 106 -123 c 0
+ 106 -140 114 -147 130 -147 c 0
+-95 -253 m 0
+ -95 -270 -79 -275 -69 -275 c 0
+ -54 -275 -32 -259 -6 -232 c 1
+ -17 -218 -34 -211 -50 -211 c 0
+ -87 -211 -95 -245 -95 -253 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E11
@@ -18585,10 +18599,10 @@ Encoding: 3601 3601 774
 Width: 607
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 567 534 basechar 0
 AnchorPoint: "thai_below" 432 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 573 528 basechar 0
-AnchorPoint: "thai_vowel" 587 520 basechar 0
-AnchorPoint: "thai_tone" 579 522 basechar 0
+AnchorPoint: "thai_vowel" 587 520 basechar 0 {} {150-150 1}
 LayerCount: 2
 Fore
 SplineSet
@@ -18628,6 +18642,7 @@ SplineSet
  112 462 89 426 89 400 c 0
  89 385 91 365 109 365 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E12
@@ -18635,10 +18650,10 @@ Encoding: 3602 3602 775
 Width: 686
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 662 527 basechar 0
 AnchorPoint: "thai_below" 511 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 664 528 basechar 0
-AnchorPoint: "thai_vowel" 663 520 basechar 0
-AnchorPoint: "thai_tone" 656 522 basechar 0
+AnchorPoint: "thai_vowel" 663 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -18688,6 +18703,7 @@ SplineSet
  288 44 298 54 304 77 c 2
  335 189 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E13
@@ -18695,10 +18711,10 @@ Encoding: 3603 3603 776
 Width: 749
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 679 523 basechar 0
 AnchorPoint: "thai_below" 535 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 677 528 basechar 0
-AnchorPoint: "thai_vowel" 678 520 basechar 0
-AnchorPoint: "thai_tone" 676 522 basechar 0
+AnchorPoint: "thai_vowel" 678 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -18746,6 +18762,7 @@ SplineSet
  103 40 108 20 123 20 c 0
  151.739 20 172.235 63.0479 172.235 83.9268 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E14
@@ -18753,10 +18770,10 @@ Encoding: 3604 3604 777
 Width: 494
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 468 524 basechar 0
 AnchorPoint: "thai_below" 324 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 464 528 basechar 0
 AnchorPoint: "thai_vowel" 463 520 basechar 0
-AnchorPoint: "thai_tone" 459 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18786,6 +18803,7 @@ SplineSet
  195 263.465 204.036 249 217 249 c 0
  244.031 249 267 295.971 267 317 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E15
@@ -18793,10 +18811,10 @@ Encoding: 3605 3605 778
 Width: 497
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 470 524 basechar 0
 AnchorPoint: "thai_below" 321 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 471 528 basechar 0
 AnchorPoint: "thai_vowel" 471 520 basechar 0
-AnchorPoint: "thai_tone" 467 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18831,6 +18849,7 @@ SplineSet
  215 350 189 310 189 283 c 0
  189 255 206 249 210 249 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E16
@@ -18838,10 +18857,10 @@ Encoding: 3606 3606 779
 Width: 509
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 478 525 basechar 0
 AnchorPoint: "thai_below" 338 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 477 528 basechar 0
 AnchorPoint: "thai_vowel" 476 520 basechar 0
-AnchorPoint: "thai_tone" 471 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18872,6 +18891,7 @@ SplineSet
  106 38 113 20 127 20 c 0
  158.119 20 176 67.9268 176 86 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E17
@@ -18879,10 +18899,10 @@ Encoding: 3607 3607 780
 Width: 552
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 523 524 basechar 0
 AnchorPoint: "thai_below" 380 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 522 528 basechar 0
 AnchorPoint: "thai_vowel" 520 520 basechar 0
-AnchorPoint: "thai_tone" 519 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18911,6 +18931,7 @@ SplineSet
  122 498 103 457 103 432 c 0
  103 416 111 400 126 399 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E18
@@ -18918,10 +18939,10 @@ Encoding: 3608 3608 781
 Width: 461
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 407 523 basechar 0
 AnchorPoint: "thai_below" 261 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 491 528 basechar 0
 AnchorPoint: "thai_vowel" 405 520 basechar 0
-AnchorPoint: "thai_tone" 401 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18951,6 +18972,7 @@ SplineSet
  203 26 l 2
  232 26 249 42 259 75 c 2
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E19
@@ -18958,10 +18980,10 @@ Encoding: 3609 3609 782
 Width: 565
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 482 526 basechar 0
 AnchorPoint: "thai_below" 345 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 486 528 basechar 0
-AnchorPoint: "thai_vowel" 481 520 basechar 0 {} {150-150 1}
-AnchorPoint: "thai_tone" 478 522 basechar 0
+AnchorPoint: "thai_vowel" 481 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -18996,6 +19018,7 @@ SplineSet
  393 49 399 44 411 44 c 0
  433 44 467 85 467 133 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E1A
@@ -19003,10 +19026,10 @@ Encoding: 3610 3610 783
 Width: 527
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 503 528 basechar 0
 AnchorPoint: "thai_below" 340 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 501 528 basechar 0
-AnchorPoint: "thai_vowel" 510 520 basechar 0
-AnchorPoint: "thai_tone" 498 522 basechar 0
+AnchorPoint: "thai_vowel" 510 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19033,6 +19056,7 @@ SplineSet
  120 499 102 447 102 432 c 0
  102 416 110 401 125 400 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E1B
@@ -19040,10 +19064,10 @@ Encoding: 3611 3611 784
 Width: 523
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 342 534 basechar 0
 AnchorPoint: "thai_below" 350 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 274 528 basechar 0
 AnchorPoint: "thai_vowel" 392 520 basechar 0
-AnchorPoint: "thai_tone" 253 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19070,6 +19094,7 @@ SplineSet
  98 408.514 110.551 402.161 121 401 c 0
  147.075 401 169 443.219 169 465 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E1C
@@ -19077,10 +19102,10 @@ Encoding: 3612 3612 785
 Width: 556
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 523 526 basechar 0
 AnchorPoint: "thai_below" 388 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 524 528 basechar 0
-AnchorPoint: "thai_vowel" 530 520 basechar 0
-AnchorPoint: "thai_tone" 521 522 basechar 0
+AnchorPoint: "thai_vowel" 530 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19106,6 +19131,7 @@ SplineSet
  278 474 276 498 257 499 c 0
  226 499 206 457 206 432 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E1D
@@ -19113,10 +19139,10 @@ Encoding: 3613 3613 786
 Width: 551
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 365 525 basechar 0
 AnchorPoint: "thai_below" 380 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 310 528 basechar 0
 AnchorPoint: "thai_vowel" 410 520 basechar 0
-AnchorPoint: "thai_tone" 281 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19142,6 +19168,7 @@ SplineSet
  273 485 264 500 248 500 c 0
  227 500 202 468 202 432 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E1E
@@ -19149,10 +19176,10 @@ Encoding: 3614 3614 787
 Width: 570
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 543 526 basechar 0
 AnchorPoint: "thai_below" 390 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 539 528 basechar 0
-AnchorPoint: "thai_vowel" 548 520 basechar 0
-AnchorPoint: "thai_tone" 539 522 basechar 0
+AnchorPoint: "thai_vowel" 548 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19179,6 +19206,7 @@ SplineSet
  168 474 166 498 147 499 c 0
  115 499 97 446 97 432 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E1F
@@ -19186,10 +19214,10 @@ Encoding: 3615 3615 788
 Width: 570
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 383 534 basechar 0
 AnchorPoint: "thai_below" 394 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 325 528 basechar 0
 AnchorPoint: "thai_vowel" 401 520 basechar 0
-AnchorPoint: "thai_tone" 384 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19216,6 +19244,7 @@ SplineSet
  97 416 105 401 120 401 c 0
  145 401 169 440 169 466 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E20
@@ -19223,10 +19252,10 @@ Encoding: 3616 3616 789
 Width: 571
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 536 525 basechar 0
 AnchorPoint: "thai_below" 395 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 539 528 basechar 0
 AnchorPoint: "thai_vowel" 541 520 basechar 0
-AnchorPoint: "thai_tone" 535 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19256,6 +19285,7 @@ SplineSet
  65 118 28 93 28 51 c 0
  28 32 39 20 53 20 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E21
@@ -19263,10 +19293,10 @@ Encoding: 3617 3617 790
 Width: 531
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 508 527 basechar 0
 AnchorPoint: "thai_below" 355 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 510 528 basechar 0
-AnchorPoint: "thai_vowel" 510 520 basechar 0
-AnchorPoint: "thai_tone" 503 522 basechar 0
+AnchorPoint: "thai_vowel" 510 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19299,6 +19329,7 @@ SplineSet
  132 189 l 1
  56 170 41 96 41 73 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E22
@@ -19306,10 +19337,10 @@ Encoding: 3618 3618 791
 Width: 493
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 471 525 basechar 0
 AnchorPoint: "thai_below" 315 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 475 528 basechar 0
 AnchorPoint: "thai_vowel" 473 520 basechar 0
-AnchorPoint: "thai_tone" 466 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19341,6 +19372,7 @@ SplineSet
  219 502 202 446 202 431 c 0
  202 414 209 405 225 403 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E23
@@ -19348,10 +19380,10 @@ Encoding: 3619 3619 792
 Width: 433
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 356 527 basechar 0
 AnchorPoint: "thai_below" 192 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 467 528 basechar 0
 AnchorPoint: "thai_vowel" 353 520 basechar 0
-AnchorPoint: "thai_tone" 346 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19380,6 +19412,7 @@ SplineSet
  132 42 140 22 153 22 c 0
  167.095 22 203 49.9072 203 87 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E24
@@ -19387,9 +19420,9 @@ Encoding: 3620 3620 793
 Width: 513
 VWidth: 930
 Flags: HMW
-AnchorPoint: "thai_vowel_centered" 457 503 basechar 0
-AnchorPoint: "thai_vowel" 457 486 basechar 0 {} {150-150 2}
-AnchorPoint: "thai_tone" 445 488 basechar 0 {} {150-150 4}
+AnchorPoint: "thai_tone" 458 492 basechar 0
+AnchorPoint: "thai_vowel_centered" 457 503 basechar 0 {} {150-150 3}
+AnchorPoint: "thai_vowel" 457 486 basechar 0 {} {150-150 3}
 LayerCount: 2
 Fore
 SplineSet
@@ -19421,6 +19454,7 @@ SplineSet
  107 37 114 18 128 18 c 0
  137 18 156 21 175 68 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E25
@@ -19428,10 +19462,10 @@ Encoding: 3621 3621 794
 Width: 491
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 448 525 basechar 0
 AnchorPoint: "thai_below" 320 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 448 528 basechar 0
-AnchorPoint: "thai_vowel" 446 520 basechar 0
-AnchorPoint: "thai_tone" 443 522 basechar 0
+AnchorPoint: "thai_vowel" 446 520 basechar 0 {} {150-150 -1}
 LayerCount: 2
 Fore
 SplineSet
@@ -19464,6 +19498,7 @@ SplineSet
  104 33 112 22 127 20 c 0
  155.361 20 178 68.1074 178 95 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E26
@@ -19471,9 +19506,9 @@ Encoding: 3622 3622 795
 Width: 571
 VWidth: 930
 Flags: HMW
-AnchorPoint: "thai_vowel_centered" 527 501 basechar 0
-AnchorPoint: "thai_vowel" 527 488 basechar 0 {} {150-150 2}
-AnchorPoint: "thai_tone" 520 490 basechar 0
+AnchorPoint: "thai_tone" 521 497 basechar 0
+AnchorPoint: "thai_vowel_centered" 527 501 basechar 0 {} {150-150 3}
+AnchorPoint: "thai_vowel" 527 488 basechar 0 {} {150-150 3}
 LayerCount: 2
 Fore
 SplineSet
@@ -19503,6 +19538,7 @@ SplineSet
  63 119 26 94 26 52 c 0
  26 32 38 20 51 20 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E27
@@ -19510,10 +19546,10 @@ Encoding: 3623 3623 796
 Width: 439
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 408 522 basechar 0
 AnchorPoint: "thai_below" 257 -20 basechar 0
-AnchorPoint: "thai_vowel_centered" 402 528 basechar 0
-AnchorPoint: "thai_vowel" 404 520 basechar 0
-AnchorPoint: "thai_tone" 402 522 basechar 0
+AnchorPoint: "thai_vowel_centered" 402 528 basechar 0 {} {150-150 -1}
+AnchorPoint: "thai_vowel" 404 520 basechar 0 {} {150-150 -1}
 LayerCount: 2
 Fore
 SplineSet
@@ -19537,6 +19573,7 @@ SplineSet
  205 117 183 78 183 53 c 0
  183 38 187 19 204 19 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E28
@@ -19544,10 +19581,10 @@ Encoding: 3624 3624 797
 Width: 510
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 516 555 basechar 0
 AnchorPoint: "thai_below" 337 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 518 556 basechar 0
-AnchorPoint: "thai_vowel" 521 553 basechar 0
-AnchorPoint: "thai_tone" 514 550 basechar 0
+AnchorPoint: "thai_vowel" 521 553 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19582,6 +19619,7 @@ SplineSet
  223 345 214 292 214 276 c 0
  214 260 221 251 237 248 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E29
@@ -19589,10 +19627,10 @@ Encoding: 3625 3625 798
 Width: 594
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 531 528 basechar 0
 AnchorPoint: "thai_below" 365 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 528 528 basechar 0
-AnchorPoint: "thai_vowel" 532 520 basechar 0
-AnchorPoint: "thai_tone" 525 522 basechar 0
+AnchorPoint: "thai_vowel" 532 520 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19637,6 +19675,7 @@ SplineSet
  339 379 300 351 300 307 c 0
  300 290 308 282 324 279 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E2A
@@ -19644,10 +19683,10 @@ Encoding: 3626 3626 799
 Width: 484
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 500 558 basechar 0
 AnchorPoint: "thai_below" 317 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 496 562 basechar 0
-AnchorPoint: "thai_vowel" 501 551 basechar 0
-AnchorPoint: "thai_tone" 492 551 basechar 0
+AnchorPoint: "thai_vowel" 501 551 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19687,6 +19726,7 @@ SplineSet
  138 115 101 88 101 46 c 0
  101 29 109 19 124 16 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E2B
@@ -19694,10 +19734,10 @@ Encoding: 3627 3627 800
 Width: 554
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 503 534 basechar 0
 AnchorPoint: "thai_below" 384 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 500 533 basechar 0
-AnchorPoint: "thai_vowel" 505 520 basechar 0 {} {150-150 2}
-AnchorPoint: "thai_tone" 498 522 basechar 0
+AnchorPoint: "thai_vowel" 505 520 basechar 0 {} {150-150 3}
 LayerCount: 2
 Fore
 SplineSet
@@ -19734,6 +19774,7 @@ SplineSet
  469.646 395.591 512 423.178 512 467 c 0
  512 486 500 497 485 497 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E2C
@@ -19741,10 +19782,10 @@ Encoding: 3628 3628 801
 Width: 616
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 320 526 basechar 0
 AnchorPoint: "thai_below" 403 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 264 528 basechar 0
-AnchorPoint: "thai_vowel" 389 520 basechar 0
-AnchorPoint: "thai_tone" 268 522 basechar 0 {150-150 8} {}
+AnchorPoint: "thai_vowel" 389 520 basechar 0 {150-150 -2} {}
 LayerCount: 2
 Fore
 SplineSet
@@ -19783,6 +19824,7 @@ SplineSet
  118 500 101 447 101 432 c 0
  101 416 109 402 125 401 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E2D
@@ -19790,10 +19832,10 @@ Encoding: 3629 3629 802
 Width: 493
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 456 525 basechar 0
 AnchorPoint: "thai_below" 312 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 454 528 basechar 0
 AnchorPoint: "thai_vowel" 453 520 basechar 0
-AnchorPoint: "thai_tone" 445 522 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19825,6 +19867,7 @@ SplineSet
  182 334 163 292 163 270 c 0
  163 257.571 167.142 233 184 233 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E2E
@@ -19832,10 +19875,10 @@ Encoding: 3630 3630 803
 Width: 496
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 494 562 basechar 0
 AnchorPoint: "thai_below" 322 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 493 568 basechar 0
-AnchorPoint: "thai_vowel" 491 562 basechar 0
-AnchorPoint: "thai_tone" 486 560 basechar 0
+AnchorPoint: "thai_vowel" 491 562 basechar 0 {} {150-150 2}
 LayerCount: 2
 Fore
 SplineSet
@@ -19876,6 +19919,7 @@ SplineSet
  181 307 152 272 152 244 c 0
  152 233 156 209 173 209 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E2F
@@ -19883,10 +19927,10 @@ Encoding: 3631 3631 804
 Width: 417
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_tone" 390 523 basechar 0
 AnchorPoint: "thai_below" 246 -20 basechar 0
 AnchorPoint: "thai_vowel_centered" 392 528 basechar 0
-AnchorPoint: "thai_vowel" 391 520 basechar 0
-AnchorPoint: "thai_tone" 386 522 basechar 0
+AnchorPoint: "thai_vowel" 391 520 basechar 0 {} {150-150 3}
 LayerCount: 2
 Fore
 SplineSet
@@ -19912,6 +19956,7 @@ SplineSet
  125 497 117 440 117 430 c 0
  117 414 124 405 139 402 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E30
@@ -19923,6 +19968,7 @@ LayerCount: 2
 Fore
 Refer: 806 3633 N 1 0 0 1 134 -461 2
 Refer: 806 3633 N 1 0 0 1 222 -147 2
+Validated: 32769
 EndChar
 
 StartChar: uni0E31
@@ -19930,8 +19976,9 @@ Encoding: 3633 3633 806
 Width: 0
 VWidth: 930
 Flags: HMW
+AnchorPoint: "thai_vowel_tone_right" 207 675 basemark 0
 AnchorPoint: "thai_vowel_centered" 12 429 mark 0
-AnchorPoint: "vowel_tone" 99 689 basemark 0
+AnchorPoint: "thai_vowel_tone" 99 671 basemark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19951,6 +19998,7 @@ SplineSet
  -66 640 -76 584 -76 571 c 0
  -76 555 -69 547 -54 547 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E32
@@ -19973,6 +20021,7 @@ SplineSet
  269 406 l 2
  271 414 272 420 272 426 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E33
@@ -19984,6 +20033,7 @@ LayerCount: 2
 Fore
 Refer: 830 3661 N 1 0 0 1 3 15 2
 Refer: 807 3634 S 1 0 0 1 1 0 2
+Validated: 32769
 EndChar
 
 StartChar: uni0E34
@@ -19991,24 +20041,25 @@ Encoding: 3636 3636 809
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" 11 558 basemark 0 {} {150-150 15}
+AnchorPoint: "thai_vowel_tone_right" 12 660 basemark 0
+AnchorPoint: "thai_vowel_tone" 8 666 basemark 0
 AnchorPoint: "thai_vowel" -33 432 mark 0
 LayerCount: 2
 Fore
 SplineSet
--180 620 m 4
- -242 620 -288 588 -288 565 c 4
- -288 556 -276 550 -251 550 c 4
- -142 550 -103 542 -37 499 c 5
- -52 580 -99 620 -178 620 c 4
- -179 620 -179 620 -180 620 c 4
--361 541 m 4
- -361 617 -224 659 -182 659 c 4
- -62 659 -3 602 -3 485 c 4
- -3 471 -4 455 -6 438 c 5
- -56 479 -160 512 -244 512 c 4
- -260 512 -293 511 -324 508 c 4
- -348 508 -361 519 -361 541 c 4
+-180 620 m 0
+ -242 620 -288 588 -288 565 c 0
+ -288 556 -276 550 -251 550 c 0
+ -142 550 -103 542 -37 499 c 1
+ -52 580 -99 620 -178 620 c 0
+ -179 620 -179 620 -180 620 c 0
+-361 541 m 0
+ -361 617 -224 659 -182 659 c 0
+ -62 659 -3 602 -3 485 c 0
+ -3 471 -4 455 -6 438 c 1
+ -56 479 -160 512 -244 512 c 0
+ -260 512 -293 511 -324 508 c 0
+ -348 508 -361 519 -361 541 c 0
 EndSplineSet
 EndChar
 
@@ -20017,7 +20068,8 @@ Encoding: 3637 3637 810
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" 18 690 basemark 0 {} {150-150 -1}
+AnchorPoint: "thai_vowel_tone_right" 24 690 basemark 0
+AnchorPoint: "thai_vowel_tone" 18 690 basemark 0
 AnchorPoint: "thai_vowel" -26 432 mark 0
 LayerCount: 2
 Fore
@@ -20039,6 +20091,7 @@ SplineSet
  -258 506 -297 505 -326 502 c 4
  -351 502 -363 513 -363 536 c 4
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E36
@@ -20046,7 +20099,8 @@ Encoding: 3638 3638 811
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" 47 690 basemark 0
+AnchorPoint: "thai_vowel_tone_right" 57 693 basemark 0
+AnchorPoint: "thai_vowel_tone" 47 690 basemark 0
 AnchorPoint: "thai_vowel" -24 432 mark 0
 LayerCount: 2
 Fore
@@ -20073,6 +20127,7 @@ SplineSet
  -263.149 507 -304.001 505.067 -327 502 c 4
  -351 502 -364 513 -364 535 c 4
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E37
@@ -20080,7 +20135,8 @@ Encoding: 3639 3639 812
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" 18 690 basemark 0
+AnchorPoint: "thai_vowel_tone_right" 18 693 basemark 0
+AnchorPoint: "thai_vowel_tone" 18 690 basemark 0
 AnchorPoint: "thai_vowel" -26 432 mark 0
 LayerCount: 2
 Fore
@@ -20106,6 +20162,7 @@ SplineSet
  -233 506 -262 505 -287 502 c 4
  -311 502 -322 512 -322 531 c 4
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E38
@@ -20132,6 +20189,7 @@ SplineSet
  -271 -76 -297 -117 -297 -147 c 4
  -297 -168 -281 -171 -271 -171 c 4
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E39
@@ -20167,6 +20225,7 @@ SplineSet
  -386.963 -184.456 -385.082 -185 -403 -185 c 4
  -434 -185 -442 -156 -442 -136 c 4
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E3A
@@ -20184,6 +20243,7 @@ SplineSet
  -246 -165 -263 -149 -263 -126 c 4
  -263 -86 -222 -59 -193 -59 c 4
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E3F
@@ -20351,6 +20411,7 @@ SplineSet
  157 58 148 5 148 -8 c 0
  148 -24 155 -33 169 -37 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E44
@@ -20389,6 +20450,7 @@ SplineSet
  155 57 146 2 146 -10 c 0
  146 -26 153 -34 168 -37 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E45
@@ -20411,6 +20473,7 @@ SplineSet
  -18 454 l 1
  20 513 94 562 170 562 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E46
@@ -20449,6 +20512,7 @@ SplineSet
  189 412 153 384 153 344 c 0
  153 327 162 319 178 319 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E47
@@ -20456,34 +20520,34 @@ Encoding: 3655 3655 824
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "thai_tone" -1 418 mark 0
+AnchorPoint: "thai_tone" 12 420 mark 0
 LayerCount: 2
 Fore
 SplineSet
--161 533 m 4
- -161 606 -100 678 3 678 c 4
- 21.6 678 77.4 674 96 674 c 4
- 128 674 149 692 159 727 c 5
- 208 734 l 5
- 187 650 122 641 64 641 c 4
- 47 641 38.5 642 5 642 c 4
- -69.2428 642 -111 593 -111 526 c 4
- -111 518 -109 511 -106 504 c 5
- -100 525 -85 537 -60 539 c 4
- -19 539 -24 482 14 482 c 4
- 20 482 25 484 33 489 c 5
- 10 489 -1 500 -1 523 c 4
- -1 544 12 620 82 620 c 4
- 107 620 129 601 129 575 c 4
- 129 533 82 450 12 449 c 4
- -46 449 -52 491 -65 509 c 5
- -86 509 -97 461 -97 450 c 5
- -135 455 -161 489 -161 533 c 4
-65 595 m 4
- 46 595 25 556 25 532 c 4
- 25 512.034 40.4399 512 48 512 c 4
- 68 512 86 539 86 569 c 4
- 86 590 73 595 65 595 c 4
+-161 533 m 0
+ -161 606 -100 678 3 678 c 0
+ 21.6 678 77.4 674 96 674 c 0
+ 128 674 149 692 159 727 c 1
+ 208 734 l 1
+ 187 650 122 641 64 641 c 0
+ 47 641 38.5 642 5 642 c 0
+ -69.2428 642 -111 593 -111 526 c 0
+ -111 518 -109 511 -106 504 c 1
+ -100 525 -85 537 -60 539 c 0
+ -19 539 -24 482 14 482 c 0
+ 20 482 25 484 33 489 c 1
+ 10 489 -1 500 -1 523 c 0
+ -1 544 12 620 82 620 c 0
+ 107 620 129 601 129 575 c 0
+ 129 533 82 450 12 449 c 0
+ -46 449 -52 491 -65 509 c 1
+ -86 509 -97 461 -97 450 c 1
+ -135 455 -161 489 -161 533 c 0
+65 595 m 0
+ 46 595 25 556 25 532 c 0
+ 25 512.034 40.4399 512 48 512 c 0
+ 68 512 86 539 86 569 c 0
+ 86 590 73 595 65 595 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -20493,18 +20557,19 @@ Encoding: 3656 3656 825
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" -13 636 mark 0
-AnchorPoint: "thai_tone" -20 618 mark 0
+AnchorPoint: "thai_tone" -15 625 mark 0
+AnchorPoint: "thai_vowel_tone" -13 636 mark 0
 LayerCount: 2
 Fore
 SplineSet
--24 680 m 4
- -24 697 -1 815 9 851 c 5
- 68 851 l 5
- 55 797 35 741 10 683 c 4
- 6 672 -1 667 -11 667 c 4
- -19 667 -24 671 -24 680 c 4
+-24 680 m 0
+ -24 697 -1 815 9 851 c 1
+ 68 851 l 1
+ 55 797 35 741 10 683 c 0
+ 6 672 -1 667 -11 667 c 0
+ -19 667 -24 671 -24 680 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E49
@@ -20512,29 +20577,28 @@ Encoding: 3657 3657 826
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" 138 636 mark 0
-AnchorPoint: "thai_tone" -2 618 mark 0
+AnchorPoint: "thai_vowel_tone_right" 144 630 mark 0
+AnchorPoint: "thai_tone" 132 623 mark 0
 LayerCount: 2
 Fore
 SplineSet
--33 763 m 4
- -33 800 -2 849 42 849 c 4
- 63 849 74 829 74 805 c 4
- 74 755 28 701 4 685 c 5
- 103 697 153 751 180 849 c 5
- 239 849 l 5
- 201 745 119 658 -34 658 c 4
- -46 658 -57 658 -70 658 c 5
- -63 682 l 5
- -38 685 -14 698 8 720 c 5
- -24.8 720 -33 741.044 -33 763 c 4
-8 743 m 4
- 33 743 49 777 49 801 c 4
- 49 814 44 822 32 825 c 4
- -5 825 -11 774 -11 764 c 4
- -11 750 -5 743 8 743 c 4
+-33 763 m 0
+ -33 800 -2 849 42 849 c 0
+ 63 849 74 829 74 805 c 0
+ 74 755 28 701 4 685 c 1
+ 103 697 153 751 180 849 c 1
+ 239 849 l 1
+ 201 745 119 658 -34 658 c 0
+ -46 658 -57 658 -70 658 c 1
+ -63 682 l 1
+ -38 685 -14 698 8 720 c 1
+ -24.8 720 -33 741.044 -33 763 c 0
+8 743 m 0
+ 33 743 49 777 49 801 c 0
+ 49 814 44 822 32 825 c 0
+ -5 825 -11 774 -11 764 c 0
+ -11 750 -5 743 8 743 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni0E4A
@@ -20542,8 +20606,8 @@ Encoding: 3658 3658 827
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" 160 636 mark 0
-AnchorPoint: "thai_tone" 2 618 mark 0
+AnchorPoint: "thai_vowel_tone_right" 165 618 mark 0 {} {150-150 5}
+AnchorPoint: "thai_tone" 150 616 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20574,7 +20638,6 @@ SplineSet
  -73 788 -81 737 -81 725 c 0
  -81 712 -74 705 -63 705 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni0E4B
@@ -20582,25 +20645,26 @@ Encoding: 3659 3659 828
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" -13 636 mark 0
-AnchorPoint: "thai_tone" -20 618 mark 0
+AnchorPoint: "thai_tone" -8 617 mark 0
+AnchorPoint: "thai_vowel_tone" -13 636 mark 0
 LayerCount: 2
 Fore
 SplineSet
-112 737 m 5
- 36 737 l 5
- 13 662 l 5
- -35 662 l 5
- -17 737 l 5
- -95 737 l 5
- -84 776 l 5
- -8 776 l 5
- 9 847 l 5
- 67 847 l 5
- 48 776 l 5
- 122 776 l 5
- 112 737 l 5
+112 737 m 1
+ 36 737 l 1
+ 13 662 l 1
+ -35 662 l 1
+ -17 737 l 1
+ -95 737 l 1
+ -84 776 l 1
+ -8 776 l 1
+ 9 847 l 1
+ 67 847 l 1
+ 48 776 l 1
+ 122 776 l 1
+ 112 737 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E4C
@@ -20608,27 +20672,28 @@ Encoding: 3660 3660 829
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" -11 659 mark 0
-AnchorPoint: "thai_tone" -19 651 mark 0 {} {150-150 -3}
+AnchorPoint: "thai_tone" -41 655 mark 0
+AnchorPoint: "thai_vowel_tone" -11 659 mark 0
 LayerCount: 2
 Fore
 SplineSet
--73 678 m 4
- -115.4 678 -126 709.905 -126 728 c 4
- -126 753 -105 845 14 845 c 4
- 49 845 87 850 100 894 c 5
- 153 900 l 5
- 140 850 101 823 38 820 c 6
- 8 819 l 6
- -4 819 -13 815 -21 808 c 5
- -3 804 5 793 5 773 c 4
- 5 731 -26 678 -73 678 c 4
--64 703 m 4
- -38 703 -22 741 -22 762 c 4
- -22 775 -28 783 -41 786 c 4
- -75 786 -83 738 -83 724 c 4
- -83 711 -77 703 -64 703 c 4
+-73 678 m 0
+ -115.4 678 -126 709.905 -126 728 c 0
+ -126 753 -105 845 14 845 c 0
+ 49 845 87 850 100 894 c 1
+ 153 900 l 1
+ 140 850 101 823 38 820 c 2
+ 8 819 l 2
+ -4 819 -13 815 -21 808 c 1
+ -3 804 5 793 5 773 c 0
+ 5 731 -26 678 -73 678 c 0
+-64 703 m 0
+ -38 703 -22 741 -22 762 c 0
+ -22 775 -28 783 -41 786 c 0
+ -75 786 -83 738 -83 724 c 0
+ -83 711 -77 703 -64 703 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E4D
@@ -20636,8 +20701,8 @@ Encoding: 3661 3661 830
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" -10 541 mark 0
-AnchorPoint: "thai_tone" -13 530 mark 0
+AnchorPoint: "thai_tone" -10 535 mark 0
+AnchorPoint: "thai_vowel_tone" -10 541 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20660,8 +20725,8 @@ Encoding: 3662 3662 831
 Width: 0
 VWidth: 930
 Flags: HMW
-AnchorPoint: "vowel_tone" -53 543 mark 0 {} {150-150 3}
-AnchorPoint: "thai_tone" -53 561 mark 0
+AnchorPoint: "thai_tone" -55 531 mark 0 {} {150-150 6}
+AnchorPoint: "thai_vowel_tone" -53 543 mark 0 {} {150-150 3}
 LayerCount: 2
 Fore
 SplineSet
@@ -20938,6 +21003,7 @@ SplineSet
  315 230 298 176 298 159 c 4
  298 142 305 134 321 131 c 4
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0E56
