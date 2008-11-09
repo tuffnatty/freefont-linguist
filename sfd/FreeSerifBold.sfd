@@ -4,7 +4,7 @@ FullName: Free Serif Bold
 FamilyName: FreeSerif
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.124 $
+Version: $Revision: 1.125 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1226272370
+ModificationTime: 1226274333
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -58,7 +58,7 @@ Lookup: 4 1 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary
 Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Thai"  {"'liga' Standard Ligatures in Thai subtable"  } ['liga' ('thai' <'dflt' > ) ]
 Lookup: 2 0 0 "'ccmp' Glyph Composition/Decomposition for Thai"  {"'ccmp' Glyph Composition/Decomposition for Thai subtable"  } ['ccmp' () ]
-Lookup: 260 0 0 "'blwm' Below Base Mark in Thai"  {"'blwm' Below Base Mark in Thai subtable"  } ['blwm' ('thai' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'mark' Mark Positioning in Thai 0 subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 2"  {"'mkmk' Mark to Mark in Thai 2 subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai"  {"'mark' Mark Positioning in Thai subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 1"  {"'mkmk' Mark to Mark in Thai 1 subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
@@ -652,7 +652,7 @@ systemdict /internaldict known
 { true } ifelse { pop [140 163] } if
 ForceBold 5 false
 EndPrivate
-AnchorClass2: "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 2 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_tone"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "above"  "'mark' Above Base Mark in Latin subtable" "below"  "'blwm' Below Base Mark in Latin subtable" 
+AnchorClass2: "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 2 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_tone"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_below"  "'mark' Mark Positioning in Thai 0 subtable" "above"  "'mark' Above Base Mark in Latin subtable" "below"  "'blwm' Below Base Mark in Latin subtable" 
 BeginChars: 66560 2584
 
 StartChar: space
