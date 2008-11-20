@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.146 $
+Version: $Revision: 1.147 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1227052763
+ModificationTime: 1227214533
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -67,6 +67,9 @@ Lookup: 4 0 0 "'psts' Post Base Substitutions in Bengali lookup 13"  {"'psts' Po
 Lookup: 4 0 0 "'haln' Halant Forms in Bengali lookup 14"  {"'haln' Halant Forms in Bengali lookup 14 subtable"  } ['haln' ('beng' <'dflt' > ) ]
 Lookup: 1 0 0 "'aalt' Access All Alternates in Indic"  {"'aalt' Access All Alternates in Indic subtable"  } ['aalt' ('beng' <'dflt' > 'bng2' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Thai"  {"'liga' Standard Ligatures in Thai subtable"  } ['liga' ('thai' <'dflt' > ) ]
+Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
+Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
+Lookup: 4 0 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'blwm' Below Base Mark in Thai subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai"  {"'mkmk' Mark to Mark in Thai subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai"  {"'mark' Mark Positioning in Thai subtable"  "'mark' Mark Positioning in Thai 1 subtable"  } ['mark' ('thai' <'dflt' > ) ]
@@ -507,7 +510,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1408 16 12
+WinInfo: 64256 16 12
 BeginPrivate: 7
 UniqueID 7 5020937
 BlueValues 23 [-20 0 432 452 653 673]
@@ -526,7 +529,7 @@ Grid
  2000 900 l 0
 EndSplineSet
 AnchorClass2: "middle"  "'mark' Mark Positioning in Latin subtable 2" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin subtable" 
-BeginChars: 65980 2715
+BeginChars: 65980 2758
 
 StartChar: space
 Encoding: 32 32 0
@@ -686,7 +689,7 @@ SplineSet
  131 289 79 346 79 419 c 0
  79 542 187 662 297 662 c 0
  323 662 351 653 365 641 c 2
- 383 625 l 2x60bff00a3881c908
+ 383 625 l 2
  395 614 420 608 452 608 c 0
  519 608 563 627 613 676 c 1
  653 676 l 1
@@ -16274,7 +16277,7 @@ Refer: 717 1460 S 1 0 0 1 -67 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii57798
+StartChar: patahhebrew
 Encoding: 1463 1463 720
 Width: 0
 Flags: HMW
@@ -16290,39 +16293,39 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57797
+StartChar: qamatshebrew
 Encoding: 1464 1464 721
 Width: 0
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-10 -111 m 5
- 24 -59 l 5
- 224 -59 l 5
- 210 -111 l 5
- 131 -111 l 5
- 131 -114 l 6
- 131 -136 117 -251 67 -251 c 4
- 52 -251 46 -240 46 -225 c 4
- 46 -180 90 -111 93 -111 c 6
- 10 -111 l 5
+77 -96 m 5
+ 91 -44 l 5
+ 291 -44 l 5
+ 277 -96 l 5
+ 198 -96 l 5
+ 198 -99 l 6
+ 198 -121 184 -236 134 -236 c 4
+ 119 -236 113 -225 113 -210 c 4
+ 113 -165 157 -96 160 -96 c 6
+ 77 -96 l 5
 EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57806
+StartChar: holamhebrew
 Encoding: 1465 1465 722
 Width: 0
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-265 798 m 4
- 243 798 233 812 233 828 c 4
- 233 851 253 878 287 878 c 4
- 309 878 319 865 319 849 c 4
- 319 826 298 798 265 798 c 4
+249 621 m 4
+ 227 621 217 635 217 651 c 4
+ 217 674 237 701 271 701 c 4
+ 293 701 303 688 303 672 c 4
+ 303 649 282 621 249 621 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -16376,7 +16379,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57664
+StartChar: alefhebrew
 Encoding: 1488 1488 726
 Width: 537
 Flags: HMW
@@ -16420,7 +16423,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57665
+StartChar: bethebrew
 Encoding: 1489 1489 727
 Width: 537
 Flags: HMW
@@ -16448,7 +16451,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57666
+StartChar: gimelhebrew
 Encoding: 1490 1490 728
 Width: 350
 Flags: HMW
@@ -16479,7 +16482,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57667
+StartChar: dalethebrew
 Encoding: 1491 1491 729
 Width: 537
 Flags: HMW
@@ -16504,7 +16507,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57668
+StartChar: hehebrew
 Encoding: 1492 1492 730
 Width: 537
 Flags: HMW
@@ -16539,7 +16542,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57669
+StartChar: vavhebrew
 Encoding: 1493 1493 731
 Width: 350
 Flags: HMW
@@ -16568,7 +16571,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57670
+StartChar: zayinhebrew
 Encoding: 1494 1494 732
 Width: 350
 Flags: HMW
@@ -16597,7 +16600,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57671
+StartChar: hethebrew
 Encoding: 1495 1495 733
 Width: 537
 Flags: HMW
@@ -16630,7 +16633,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57672
+StartChar: tethebrew
 Encoding: 1496 1496 734
 Width: 537
 Flags: HMW
@@ -16663,7 +16666,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57673
+StartChar: yodhebrew
 Encoding: 1497 1497 735
 Width: 350
 Flags: HMW
@@ -16685,7 +16688,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57674
+StartChar: finalkafhebrew
 Encoding: 1498 1498 736
 Width: 537
 Flags: HMW
@@ -16710,7 +16713,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57675
+StartChar: kafhebrew
 Encoding: 1499 1499 737
 Width: 537
 Flags: HMW
@@ -16736,43 +16739,43 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57676
+StartChar: lamedhebrew
 Encoding: 1500 1500 738
 Width: 537
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-246 811 m 0
- 246 824 256 843 270 843 c 2
- 272 843 l 2
- 305 843 301 818 308 793 c 0
- 309 790 309 788 309 786 c 0
- 309 764 276 757 247 653 c 2
- 229 588 l 1
- 490 588 l 2
- 517 588 535 569 535 545 c 0
- 535 539 534 533 532 525 c 2
- 485 321 l 1
- 470 256 300 141 232 88 c 0
- 170 40 209 25 159 25 c 0
- 143 25 137 29 137 35 c 0
- 137 59 220 114 245 133 c 0
- 314 185 448 258 458 321 c 0
- 476 434 l 2
- 476.193 435.451 476.293 436.92 476.293 438.392 c 0
- 476.293 452.13 467.582 466 445 466 c 2
- 143 468 l 2
- 142 468 142 469 142 472 c 0
- 142 478 144 489 148 503 c 0
- 208 694 l 2
- 221 738 263 745 263 781 c 0
- 263 799 246 787 246 811 c 0
+246 780 m 4
+ 246 793 256 812 270 812 c 6
+ 272 812 l 6
+ 305 812 301 787 308 762 c 4
+ 309 759 309 757 309 755 c 4
+ 309 733 276 726 247 622 c 6
+ 229 557 l 5
+ 490 557 l 6
+ 517 557 535 538 535 514 c 4
+ 535 508 534 502 532 494 c 6
+ 485 290 l 5
+ 470 225 300 110 232 57 c 4
+ 170 9 209 -6 159 -6 c 4
+ 143 -6 137 -2 137 4 c 4
+ 137 28 220 83 245 102 c 4
+ 314 154 448 227 458 290 c 4
+ 476 403 l 6
+ 476.193 404.451 476.293 405.92 476.293 407.392 c 4
+ 476.293 421.13 467.582 435 445 435 c 6
+ 143 437 l 6
+ 142 437 142 438 142 441 c 4
+ 142 447 144 458 148 472 c 4
+ 208 663 l 6
+ 221 707 263 714 263 750 c 4
+ 263 768 246 756 246 780 c 4
 EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57677
+StartChar: finalmemhebrew
 Encoding: 1501 1501 739
 Width: 537
 Flags: HMW
@@ -16805,7 +16808,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57678
+StartChar: memhebrew
 Encoding: 1502 1502 740
 Width: 537
 Flags: HMW
@@ -16843,7 +16846,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57679
+StartChar: finalnunhebrew
 Encoding: 1503 1503 741
 Width: 350
 Flags: HMW
@@ -16869,7 +16872,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57680
+StartChar: nunhebrew
 Encoding: 1504 1504 742
 Width: 350
 Flags: HMW
@@ -16896,7 +16899,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57681
+StartChar: samekhhebrew
 Encoding: 1505 1505 743
 Width: 537
 Flags: HMW
@@ -16930,7 +16933,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57682
+StartChar: ayinhebrew
 Encoding: 1506 1506 744
 Width: 537
 Flags: HMW
@@ -16963,7 +16966,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57683
+StartChar: finalpehebrew
 Encoding: 1507 1507 745
 Width: 537
 Flags: HMW
@@ -16995,7 +16998,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57684
+StartChar: pehebrew
 Encoding: 1508 1508 746
 Width: 537
 Flags: HMW
@@ -17032,7 +17035,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57685
+StartChar: finaltsadihebrew
 Encoding: 1509 1509 747
 Width: 537
 Flags: HMW
@@ -17069,7 +17072,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57686
+StartChar: tsadihebrew
 Encoding: 1510 1510 748
 Width: 537
 Flags: HMW
@@ -17109,7 +17112,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57687
+StartChar: qofhebrew
 Encoding: 1511 1511 749
 Width: 537
 Flags: HMW
@@ -17142,7 +17145,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57688
+StartChar: reshhebrew
 Encoding: 1512 1512 750
 Width: 537
 Flags: HMW
@@ -17170,7 +17173,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57689
+StartChar: shinhebrew
 Encoding: 1513 1513 751
 Width: 537
 Flags: HMW
@@ -17213,7 +17216,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57690
+StartChar: tavhebrew
 Encoding: 1514 1514 752
 Width: 537
 Flags: HMW
@@ -17246,7 +17249,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57716
+StartChar: vavvavhebrew
 Encoding: 1520 1520 753
 Width: 537
 Flags: HMW
@@ -17293,7 +17296,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57717
+StartChar: vavyodhebrew
 Encoding: 1521 1521 754
 Width: 537
 Flags: HMW
@@ -17332,7 +17335,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57718
+StartChar: yodyodhebrew
 Encoding: 1522 1522 755
 Width: 537
 Flags: HMW
@@ -17365,7 +17368,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni05F3
+StartChar: gereshhebrew
 Encoding: 1523 1523 756
 Width: 396
 Flags: HMW
@@ -17382,7 +17385,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni05F4
+StartChar: gershayimhebrew
 Encoding: 1524 1524 757
 Width: 396
 Flags: HMW
@@ -81997,7 +82000,7 @@ EndChar
 StartChar: uni048e
 Encoding: 1166 1166 2643
 Width: 611
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82037,7 +82040,7 @@ EndChar
 StartChar: uni048f
 Encoding: 1167 1167 2644
 Width: 500
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82080,7 +82083,7 @@ EndChar
 StartChar: uni04E0
 Encoding: 1248 1248 2645
 Width: 556
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1492 439 N 1 0 0 1 0 0 0
@@ -82090,7 +82093,7 @@ EndChar
 StartChar: uni04E1
 Encoding: 1249 1249 2646
 Width: 389
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 400 658 N 1 0 0 1 0 0 0
@@ -82100,7 +82103,7 @@ EndChar
 StartChar: uni04b4
 Encoding: 1204 1204 2647
 Width: 798
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82145,7 +82148,7 @@ EndChar
 StartChar: uni04c3
 Encoding: 1219 1219 2648
 Width: 664
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82189,7 +82192,7 @@ EndChar
 StartChar: uni04c4
 Encoding: 1220 1220 2649
 Width: 491
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82229,7 +82232,7 @@ EndChar
 StartChar: uni04cb
 Encoding: 1227 1227 2650
 Width: 666
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82273,7 +82276,7 @@ EndChar
 StartChar: uni048a
 Encoding: 1162 1162 2651
 Width: 720
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82327,7 +82330,7 @@ EndChar
 StartChar: uni048b
 Encoding: 1163 1163 2652
 Width: 500
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82374,7 +82377,7 @@ EndChar
 StartChar: uni04c5
 Encoding: 1221 1221 2653
 Width: 719
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82414,7 +82417,7 @@ EndChar
 StartChar: uni04c6
 Encoding: 1222 1222 2654
 Width: 487
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82452,7 +82455,7 @@ EndChar
 StartChar: uni04c7
 Encoding: 1223 1223 2655
 Width: 722
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82495,7 +82498,7 @@ EndChar
 StartChar: uni04c8
 Encoding: 1224 1224 2656
 Width: 500
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82528,7 +82531,7 @@ EndChar
 StartChar: uni04c9
 Encoding: 1225 1225 2657
 Width: 722
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82575,7 +82578,7 @@ EndChar
 StartChar: uni04ca
 Encoding: 1226 1226 2658
 Width: 500
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82613,7 +82616,7 @@ EndChar
 StartChar: uni04cd
 Encoding: 1229 1229 2659
 Width: 828
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82656,7 +82659,7 @@ EndChar
 StartChar: uni04ce
 Encoding: 1230 1230 2660
 Width: 624
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82700,7 +82703,7 @@ EndChar
 StartChar: uni04cf
 Encoding: 1231 1231 2661
 Width: 339
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 676 1216 N 1 0 0 1 0 0 2
@@ -82710,7 +82713,7 @@ EndChar
 StartChar: uni0485
 Encoding: 1157 1157 2662
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82732,7 +82735,7 @@ EndChar
 StartChar: uni0486
 Encoding: 1158 1158 2663
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82754,7 +82757,7 @@ EndChar
 StartChar: uni0487
 Encoding: 1159 1159 2664
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82772,7 +82775,7 @@ EndChar
 StartChar: cresc_cyrillic
 Encoding: 59649 -1 2665
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82790,7 +82793,7 @@ EndChar
 StartChar: dot_cyrillic
 Encoding: 59650 -1 2666
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82808,7 +82811,7 @@ EndChar
 StartChar: uni0488
 Encoding: 1160 1160 2667
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2665 -1 N 1 0 0 1 0 0 2
@@ -82825,7 +82828,7 @@ EndChar
 StartChar: uni0489
 Encoding: 1161 1161 2668
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82900,7 +82903,7 @@ EndChar
 StartChar: uni04f6
 Encoding: 1270 1270 2669
 Width: 611
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82933,7 +82936,7 @@ EndChar
 StartChar: uni04cc
 Encoding: 1228 1228 2670
 Width: 500
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -82974,7 +82977,7 @@ EndChar
 StartChar: uni04f7
 Encoding: 1271 1271 2671
 Width: 424
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83005,7 +83008,7 @@ EndChar
 StartChar: Haabkhasiancyrillic
 Encoding: 1192 1192 2672
 Width: 667
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83044,7 +83047,7 @@ EndChar
 StartChar: haabkhasiancyrillic
 Encoding: 1193 1193 2673
 Width: 531
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83079,7 +83082,7 @@ EndChar
 StartChar: tetsecyrillic
 Encoding: 1205 1205 2674
 Width: 581
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83129,7 +83132,7 @@ EndChar
 StartChar: uni0510
 Encoding: 1296 1296 2675
 Width: 532
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83161,7 +83164,7 @@ EndChar
 StartChar: uni0511
 Encoding: 1297 1297 2676
 Width: 409
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83191,7 +83194,7 @@ EndChar
 StartChar: uni0512
 Encoding: 1298 1298 2677
 Width: 719
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83227,7 +83230,7 @@ EndChar
 StartChar: uni0513
 Encoding: 1299 1299 2678
 Width: 487
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83260,7 +83263,7 @@ EndChar
 StartChar: uni051A
 Encoding: 1306 1306 2679
 Width: 722
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 49 81 N 1 0 0 1 0 0 2
@@ -83270,7 +83273,7 @@ EndChar
 StartChar: uni051B
 Encoding: 1307 1307 2680
 Width: 500
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 81 113 N 1 0 0 1 1 0 2
@@ -83280,7 +83283,7 @@ EndChar
 StartChar: uni051C
 Encoding: 1308 1308 2681
 Width: 833
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 55 87 N 1 0 0 1 0 0 2
@@ -83290,7 +83293,7 @@ EndChar
 StartChar: uni051D
 Encoding: 1309 1309 2682
 Width: 656
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 87 119 N 1 0 0 1 -11 0 2
@@ -83300,7 +83303,7 @@ EndChar
 StartChar: uni051e
 Encoding: 1310 1310 2683
 Width: 664
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83351,7 +83354,7 @@ EndChar
 StartChar: uni051f
 Encoding: 1311 1311 2684
 Width: 491
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83397,7 +83400,7 @@ EndChar
 StartChar: uni2055
 Encoding: 8277 8277 2685
 Width: 512
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83460,7 +83463,7 @@ StartChar: uni207D
 Encoding: 8317 8317 2686
 Width: 216
 VWidth: 919
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83479,7 +83482,7 @@ StartChar: uni207e
 Encoding: 8318 8318 2687
 Width: 216
 VWidth: 919
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2686 8317 S -1 0 0 -1 489.8 1068.35 2
@@ -83490,7 +83493,7 @@ StartChar: uni208d
 Encoding: 8333 8333 2688
 Width: 216
 VWidth: 919
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2686 8317 S 1 0 0 1 -112 -456 2
@@ -83501,7 +83504,7 @@ StartChar: uni208e
 Encoding: 8334 8334 2689
 Width: 216
 VWidth: 919
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2686 8317 S -1 0 0 -1 367.8 612.351 2
@@ -83754,7 +83757,7 @@ EndChar
 StartChar: dottedcircle
 Encoding: 9676 9676 2700
 Width: 791
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83854,7 +83857,7 @@ StartChar: thai_ru_saraaa
 Encoding: 61179 -1 2701
 Width: 814
 VWidth: 930
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 793 3620 N 1 0 0 1 0 0 2
@@ -83868,7 +83871,7 @@ StartChar: thai_lu_saraaa
 Encoding: 61180 -1 2702
 Width: 859
 VWidth: 930
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 795 3622 S 1 0 0 1 0 0 2
@@ -83882,7 +83885,7 @@ StartChar: titlo_cyrillic
 Encoding: 59651 -1 2703
 Width: 743
 VWidth: 1500
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83907,7 +83910,7 @@ EndChar
 StartChar: uni10f9
 Encoding: 4345 4345 2704
 Width: 544
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1734 4306 S -1 0 0 -1 587 140 2
@@ -83917,25 +83920,25 @@ EndChar
 StartChar: uni10fb
 Encoding: 4347 4347 2705
 Width: 410
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2066 8278 S -1 0 0 -1 574 577 2
 Validated: 32769
 EndChar
 
-StartChar: afii57807
+StartChar: dageshhebrew
 Encoding: 1468 1468 2706
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-100 190 m 4
- 78 190 73 203 73 214 c 4
- 73 232 89 254 116 254 c 4
- 134 254 142 243 142 231 c 4
- 142 213 125 190 100 190 c 4
+266 182 m 4
+ 242.99 182.859 231.814 197.737 231.814 214.593 c 0
+ 231.814 229.833 244.423 262 283.005 262 c 0
+ 305.976 262 316.46 247.524 316.46 230.888 c 0
+ 316.46 207.548 296.276 182 266 182 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -83943,7 +83946,7 @@ EndChar
 StartChar: afii57799
 Encoding: 1456 1456 2707
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 717 1460 S 1 0 0 1 -30 -108 2
@@ -83954,19 +83957,19 @@ EndChar
 StartChar: afii57802
 Encoding: 1459 1459 2708
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 721 1464 S 1 0 0 1 -10 0 2
-Refer: 717 1460 S 1 0 0 1 78 -88 2
-Refer: 717 1460 S 1 0 0 1 105 12 2
+Refer: 721 1464 S 1 0 0 1 -89 -18 2
+Refer: 717 1460 N 1 0 0 1 78 -88 2
+Refer: 717 1460 N 1 0 0 1 105 12 2
 Validated: 32769
 EndChar
 
 StartChar: afii57839
 Encoding: 1469 1469 2709
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -83979,10 +83982,10 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57841
+StartChar: rafehebrew
 Encoding: 1471 1471 2710
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 720 1463 S 1 0 0 1 180 770 2
@@ -83992,7 +83995,7 @@ EndChar
 StartChar: afii57645
 Encoding: 1470 1470 2711
 Width: 440
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -84005,40 +84008,610 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57804
+StartChar: shindothebrew
 Encoding: 1473 1473 2712
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-617 619 m 4
- 590 620 575 640 575 660 c 4
- 575 680 589 699 617 699 c 4
- 644 699 658 679 658 659 c 4
- 658 639 644 619 617 619 c 4
+561.572 619 m 4
+ 538.562 619.859 527.386 634.737 527.386 651.593 c 0
+ 527.386 666.833 539.995 699 578.577 699 c 0
+ 601.548 699 612.032 684.524 612.032 667.888 c 0
+ 612.032 644.548 591.848 619 561.572 619 c 4
 EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii57803
+StartChar: sindothebrew
 Encoding: 1474 1474 2713
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 2712 1473 S 1 0 0 1 -379 0 2
+Refer: 2712 1473 S 1 0 0 1 -350 0 2
 Validated: 32769
 EndChar
 
 StartChar: upperdothebrew
 Encoding: 1476 1476 2714
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2712 1473 S 1 0 0 1 -160 0 2
 Validated: 32769
+EndChar
+
+StartChar: yodhiraqhebrew
+Encoding: 64285 64285 2715
+Width: 350
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 735 1497 N 1 0 0 1 0 0 2
+Refer: 717 1460 S 1 0 0 1 -73 369 2
+Validated: 32769
+EndChar
+
+StartChar: unifb1e
+Encoding: 64286 64286 2716
+Width: 0
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+406.828 719 m 0
+ 341.138 719 279.321 748.966 279.321 802.823 c 0
+ 279.321 819.513 287.829 865 321.861 865 c 4
+ 340.875 865 346.209 846.327 346.209 836.093 c 0
+ 346.209 821.867 334.391 800.673 334.391 790.531 c 0
+ 334.391 768.879 381.017 763 416.181 763 c 0
+ 453.137 763 505.881 771 510.77 794 c 0
+ 512.022 799.893 512.299 803.214 512.299 805.927 c 0
+ 512.299 808.08 512.125 809.851 512.125 812.221 c 0
+ 512.125 848.954 539.477 865 552.861 865 c 0
+ 567.201 865 577.113 856.115 577.113 836.324 c 0
+ 577.113 768.691 494.431 719 406.828 719 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: yodyodpatahhebrew
+Encoding: 64287 64287 2717
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 755 1522 N 1 0 0 1 0 0 2
+Refer: 720 1463 S 1 0 0 1 58 363 2
+Validated: 32769
+Ligature2: "'liga' Standard Ligatures in Hebrew subtable" yodyodhebrew patahhebrew
+EndChar
+
+StartChar: ayinaltonehebrew
+Encoding: 64288 64288 2718
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+533.882 564 m 0
+ 571.652 564 588.3 556.87 588.3 527.037 c 0
+ 588.3 449.244 433.347 93.3675 380.753 60 c 0
+ 365.639 50.9092 290.153 48.4297 212.302 48.4297 c 0
+ 118.881 48.4297 22.0527 52 22.0527 52 c 1
+ 48.0674 85 86.7334 154 88.8594 164 c 0
+ 225.072 165 l 1
+ 211.846 218.663 185.184 274.648 185.184 316.615 c 0
+ 185.184 367.605 246.936 428.541 252.1 438 c 1
+ 252.1 438 247.888 437 242.888 437 c 0
+ 208.784 437 197.742 453.848 197.742 479.522 c 0
+ 197.742 517.053 221.593 591.302 246.321 599 c 1
+ 245.867 596.863 245.584 594.656 245.584 592.451 c 0
+ 245.584 580.206 254.296 568 290.732 568 c 1
+ 324.579 568 352.715 557.976 352.715 517.935 c 0
+ 352.715 472.368 316.893 415.441 311.573 412 c 1
+ 311.61 412.172 311.628 412.36 311.628 412.562 c 0
+ 311.628 418.219 297.084 435 258.462 435 c 1
+ 257.883 432.278 211.787 366.658 211.787 319.833 c 0
+ 211.787 288.232 234.053 274.867 248.497 167 c 1
+ 250.314 167 270.59 166.736 296.064 166.736 c 4
+ 340.647 166.736 401.158 167.545 406.56 172 c 1
+ 484.494 262.126 526.026 386.434 526.026 413.077 c 0
+ 526.026 431.653 507.808 434.015 481.253 434.015 c 0
+ 457.39 434.015 429.607 439.492 429.607 477.287 c 0
+ 429.607 516.681 459.982 588.086 487.534 600 c 1
+ 487.526 599.962 487.522 599.92 487.522 599.876 c 0
+ 487.522 597.615 497.988 587.75 498.22 575 c 1
+ 501.352 564.106 517.469 564 533.882 564 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: unifb29
+Encoding: 64297 64297 2719
+Width: 564
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+249 286 m 1
+ 249 506 l 1
+ 315 506 l 1
+ 315 286 l 1
+ 534 286 l 1
+ 534 220 l 1
+ 30 220 l 1
+ 30 286 l 1
+ 249 286 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: shinshindothebrew
+Encoding: 64298 64298 2720
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 751 1513 N 1 0 0 1 0 0 0
+Refer: 2712 1473 S 1 0 0 1 34 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shinhebrew shindothebrew
+EndChar
+
+StartChar: shinsindothebrew
+Encoding: 64299 64299 2721
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 751 1513 N 1 0 0 1 0 0 0
+Refer: 2712 1473 S 1 0 0 1 -338 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shinhebrew sindothebrew
+EndChar
+
+StartChar: shindageshshindothebrew
+Encoding: 64300 64300 2722
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 S 1 0 0 1 39 0 2
+Refer: 751 1513 N 1 0 0 1 0 0 0
+Refer: 2712 1473 N 1 0 0 1 43 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shindageshhebrew shindothebrew
+EndChar
+
+StartChar: shindageshsindothebrew
+Encoding: 64301 64301 2723
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 751 1513 N 1 0 0 1 0 0 0
+Refer: 2706 1468 S 1 0 0 1 54 0 2
+Refer: 2713 1474 N 1 0 0 1 0 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shindageshhebrew sindothebrew
+EndChar
+
+StartChar: alefpatahhebrew
+Encoding: 64302 64302 2724
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 726 1488 N 1 0 0 1 0 0 0
+Refer: 720 1463 S 1 0 0 1 21 64 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" alefhebrew patahhebrew
+EndChar
+
+StartChar: alefqamatshebrew
+Encoding: 64303 64303 2725
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 721 1464 N 1 0 0 1 0 0 2
+Refer: 726 1488 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" alefhebrew qamatshebrew
+EndChar
+
+StartChar: alefdageshhebrew
+Encoding: 64304 64304 2726
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 726 1488 N 1 0 0 1 0 0 0
+Refer: 2706 1468 S 1 0 0 1 -89 -315 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" alefhebrew dageshhebrew
+EndChar
+
+StartChar: betdageshhebrew
+Encoding: 64305 64305 2727
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 0 0 2
+Refer: 727 1489 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" bethebrew dageshhebrew
+EndChar
+
+StartChar: gimeldageshhebrew
+Encoding: 64306 64306 2728
+Width: 350
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -156 0 2
+Refer: 728 1490 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" gimelhebrew dageshhebrew
+EndChar
+
+StartChar: daletdageshhebrew
+Encoding: 64307 64307 2729
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -39 0 2
+Refer: 729 1491 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" dalethebrew dageshhebrew
+EndChar
+
+StartChar: hedageshhebrew
+Encoding: 64308 64308 2730
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -45 0 2
+Refer: 730 1492 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" hehebrew dageshhebrew
+EndChar
+
+StartChar: vavdageshhebrew
+Encoding: 64309 64309 2731
+Width: 350
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -185 0 2
+Refer: 731 1493 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" vavhebrew dageshhebrew
+EndChar
+
+StartChar: zayindageshhebrew
+Encoding: 64310 64310 2732
+Width: 350
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -215 0 2
+Refer: 732 1494 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" zayinhebrew dageshhebrew
+EndChar
+
+StartChar: NameMe.64311
+Encoding: 64311 -1 2733
+Width: 1000
+VWidth: 0
+Flags: HMW
+LayerCount: 2
+EndChar
+
+StartChar: tetdageshhebrew
+Encoding: 64312 64312 2734
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 10 0 2
+Refer: 734 1496 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" tethebrew dageshhebrew
+EndChar
+
+StartChar: yoddageshhebrew
+Encoding: 64313 64313 2735
+Width: 350
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 S 1 0 0 1 -183 167 2
+Refer: 735 1497 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" yodhebrew dageshhebrew
+EndChar
+
+StartChar: finalkafdageshhebrew
+Encoding: 64314 64314 2736
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 0 0 2
+Refer: 736 1498 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" finalkafhebrew dageshhebrew
+EndChar
+
+StartChar: kafdageshhebrew
+Encoding: 64315 64315 2737
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 0 0 2
+Refer: 737 1499 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" kafhebrew dageshhebrew
+EndChar
+
+StartChar: lameddageshhebrew
+Encoding: 64316 64316 2738
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 S 1 0 0 1 -83 0 2
+Refer: 738 1500 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" lamedhebrew dageshhebrew
+EndChar
+
+StartChar: .notdef
+Encoding: 64317 -1 2739
+Width: 1000
+VWidth: 0
+Flags: HMW
+LayerCount: 2
+EndChar
+
+StartChar: memdageshhebrew
+Encoding: 64318 64318 2740
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 740 1502 N 1 0 0 1 0 0 0
+Refer: 2706 1468 S 1 0 0 1 -31 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" memhebrew dageshhebrew
+EndChar
+
+StartChar: NameMe.64319
+Encoding: 64319 -1 2741
+Width: 1000
+VWidth: 0
+Flags: HMW
+LayerCount: 2
+EndChar
+
+StartChar: nundageshhebrew
+Encoding: 64320 64320 2742
+Width: 350
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -167 0 2
+Refer: 742 1504 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" nunhebrew dageshhebrew
+EndChar
+
+StartChar: samekhdageshhebrew
+Encoding: 64321 64321 2743
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 S 1 0 0 1 -29 0 2
+Refer: 743 1505 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" samekhhebrew dageshhebrew
+EndChar
+
+StartChar: NameMe.64322
+Encoding: 64322 -1 2744
+Width: 1000
+VWidth: 0
+Flags: HMW
+LayerCount: 2
+EndChar
+
+StartChar: pefinaldageshhebrew
+Encoding: 64323 64323 2745
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 96 0 2
+Refer: 745 1507 N 1 0 0 1 0 0 0
+Validated: 32769
+EndChar
+
+StartChar: pedageshhebrew
+Encoding: 64324 64324 2746
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 57 0 2
+Refer: 746 1508 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" pehebrew dageshhebrew
+EndChar
+
+StartChar: NameMe.64325
+Encoding: 64325 -1 2747
+Width: 1000
+VWidth: 0
+Flags: HMW
+LayerCount: 2
+EndChar
+
+StartChar: tsadidageshhebrew
+Encoding: 64326 64326 2748
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -218 0 2
+Refer: 748 1510 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" tsadihebrew dageshhebrew
+EndChar
+
+StartChar: qofdageshhebrew
+Encoding: 64327 64327 2749
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 0 0 2
+Refer: 749 1511 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" qofhebrew dageshhebrew
+EndChar
+
+StartChar: reshdageshhebrew
+Encoding: 64328 64328 2750
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 -25 0 2
+Refer: 750 1512 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" reshhebrew dageshhebrew
+EndChar
+
+StartChar: shindageshhebrew
+Encoding: 64329 64329 2751
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 45 0 2
+Refer: 751 1513 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shinhebrew dageshhebrew
+EndChar
+
+StartChar: tavdageshhebrew
+Encoding: 64330 64330 2752
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 2706 1468 N 1 0 0 1 0 0 2
+Refer: 752 1514 N 1 0 0 1 0 0 0
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" tavhebrew dageshhebrew
+EndChar
+
+StartChar: vavholamhebrew
+Encoding: 64331 64331 2753
+Width: 350
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 731 1493 N 1 0 0 1 0 0 0
+Refer: 722 1465 N 1 0 0 1 0 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" vavhebrew holamhebrew
+EndChar
+
+StartChar: betrafehebrew
+Encoding: 64332 64332 2754
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 727 1489 N 1 0 0 1 0 0 0
+Refer: 2710 1471 S 1 0 0 1 -10 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" bethebrew rafehebrew
+EndChar
+
+StartChar: kafrafehebrew
+Encoding: 64333 64333 2755
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 737 1499 N 1 0 0 1 0 0 0
+Refer: 2710 1471 S 1 0 0 1 -6 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" kafhebrew rafehebrew
+EndChar
+
+StartChar: perafehebrew
+Encoding: 64334 64334 2756
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 746 1508 N 1 0 0 1 0 0 0
+Refer: 2710 1471 N 1 0 0 1 -27 0 2
+Validated: 32769
+MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" pehebrew rafehebrew
+EndChar
+
+StartChar: aleflamedhebrew
+Encoding: 64335 64335 2757
+Width: 537
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+240 843 m 0
+ 279 843 280 780 280 780 c 1
+ 276 762 247 748 227 653 c 0
+ 213.265 591.19 209 580.18 209 540 c 0
+ 209 462 358 340 365 340 c 1
+ 431 411 l 1
+ 426.285 411 367.328 459.907 367.328 498.186 c 0
+ 367.328 528.378 416.931 584 450 584 c 0
+ 453.467 584 454.661 582.82 454.661 579.725 c 0
+ 454.661 574.76 451.087 562.346 451.087 554.898 c 0
+ 451.087 501.606 572.646 478.961 572.646 406.885 c 0
+ 572.646 345.874 499.022 291 476 291 c 0
+ 474.714 291 474.347 292.469 474.347 297.219 c 0
+ 474.347 303.551 475 315.714 475 338 c 0
+ 475 384 448 398 448 398 c 1
+ 382 321 l 1
+ 386.585 321 512.269 240.268 512.269 129.702 c 0
+ 512.269 99.1319 492.991 -5 443 -5 c 0
+ 436 -5 435.313 -4.75 435.313 -2.98985 c 0
+ 435.313 1.39002 437.443 12.6003 437.443 27.3999 c 0
+ 437.443 52.8191 431.159 88.8266 397 119 c 0
+ 168.233 322.991 125.67 395.343 125.67 450.969 c 0
+ 125.67 487.055 140.18 513.013 186 694 c 0
+ 197.48 743.052 234.529 738.652 234.529 780.307 c 0
+ 234.529 799.835 214.77 789.144 214.77 809.604 c 0
+ 214.77 818.806 219.816 843 240 843 c 0
+EndSplineSet
+Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'dlig' Discretionary Ligatures in Hebrew subtable" alefhebrew lamedhebrew
 EndChar
 EndChars
 EndSplineFont
