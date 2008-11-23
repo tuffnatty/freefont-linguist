@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: range_report,v 1.1 2008-11-23 20:16:47 Stevan_White Exp $
+$Id: range_report.py,v 1.1 2008-11-23 20:18:48 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
