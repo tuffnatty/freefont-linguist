@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.152 $
+Version: $Revision: 1.153 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1227653981
+ModificationTime: 1227724901
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -70,6 +70,7 @@ Lookup: 4 0 1 "'liga' Standard Ligatures in Thai"  {"'liga' Standard Ligatures i
 Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic subtable"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'blwm' Below Base Mark in Thai subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai"  {"'mkmk' Mark to Mark in Thai subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai"  {"'mark' Mark Positioning in Thai subtable"  "'mark' Mark Positioning in Thai 1 subtable"  } ['mark' ('thai' <'dflt' > ) ]
@@ -79,18 +80,40 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning 
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin 2"  {"'mkmk' Mark to Mark in Latin 2 subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin subtable 2"  "'kern' Horizontal Kerning in Latin classes"  } ['kern' ('DFLT' <'dflt' > ) ]
 DEI: 0
-KernClass2: 5 7 "'kern' Horizontal Kerning in Latin classes" 
+KernClass2: 9 9 "'kern' Horizontal Kerning in Cyrillic subtable" 
+ 9 Acyrillic
+ 70 Ecyrillic Ocyrillic Escyrillic Efcyrillic Ereversedcyrillic IUcyrillic
+ 57 Ljecyrillic Njecyrillic Hardsigncyrillic Softsigncyrillic
+ 34 Kjecyrillic Zhecyrillic Kacyrillic
+ 75 becyrillic gecyrillic iecyrillic zecyrillic ocyrillic escyrillic iucyrillic
+ 46 zhecyrillic kacyrillic khacyrillic kjecyrillic
+ 57 hardsigncyrillic softsigncyrillic ljecyrillic njecyrillic
+ 33 Gjecyrillic Gecyrillic Tecyrillic
+ 59 Ecyrillic Ocyrillic Escyrillic Efcyrillic Ereversedcyrillic
+ 10 Decyrillic
+ 23 Zhecyrillic Khacyrillic
+ 10 Elcyrillic
+ 24 Ushortcyrillic Ucyrillic
+ 11 Checyrillic
+ 92 acyrillic vecyrillic iecyrillic ocyrillic escyrillic efcyrillic uni0450 iocyrillic ecyrillic
+ 21 elcyrillic emcyrillic
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} -5 {} -10 {} -120 {} -120 {} -20 {} 0 {} 0 {} 0 {} -40 {} -80 {} -10 {} -40 {} -60 {} 0 {} 0 {} 0 {} -30 {} -40 {} -60 {} -10 {} -100 {} -100 {} 0 {} 0 {} 0 {} -40 {} -10 {} 0 {} -40 {} -40 {} -40 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -80 {}
+KernClass2: 8 8 "'kern' Horizontal Kerning in Latin classes" 
  58 A Agrave Aacute Acircumflex Atilde Adieresis Aring uni0226
- 24 V W Y Yacute Ycircumflex
+ 31 V W Y Yacute Ygrave Ycircumflex
  1 T
  1 y
+ 11 b c e g o p
+ 1 L
+ 3 K X
  59 A Agrave Aacute Acircumflex Atilde Adieresis Aring uni0226 
- 24 V W Y Yacute Ycircumflex
+ 31 V W Y Yacute Ygrave Ycircumflex
  1 T
  1 y
  3 v w
  15 a c d e g o q s
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} -80 {} -60 {} -20 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {}
+ 7 C G O Q
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} -80 {} -60 {} -20 {} -60 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} -40 {} -40 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -80 {}
 ShortTable: maxp 16
   0
   0
@@ -524,7 +547,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 16 12
+WinInfo: 1024 16 12
 BeginPrivate: 7
 UniqueID 7 5020937
 BlueValues 23 [-20 0 432 452 653 673]
@@ -914,7 +937,7 @@ SplineSet
  282 255 l 1
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -53 "'kern' Horizontal Kerning in Latin subtable 2"  55 -34 "'kern' Horizontal Kerning in Latin subtable 2"  54 -43 "'kern' Horizontal Kerning in Latin subtable 2"  52 -46 "'kern' Horizontal Kerning in Latin subtable 2"  131 -23 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 52 -46 "'kern' Horizontal Kerning in Latin subtable 2"  131 -23 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: period
@@ -4220,7 +4243,7 @@ SplineSet
  129 400 132 403 136 403 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -81 "'kern' Horizontal Kerning in Latin subtable 2"  55 -67 "'kern' Horizontal Kerning in Latin subtable 2"  54 -76 "'kern' Horizontal Kerning in Latin subtable 2"  52 -77 "'kern' Horizontal Kerning in Latin subtable 2"  130 -25 "'kern' Horizontal Kerning in Latin subtable 2"  129 -25 "'kern' Horizontal Kerning in Latin subtable 2"  126 -25 "'kern' Horizontal Kerning in Latin subtable 2"  131 -51 "'kern' Horizontal Kerning in Latin subtable 2"  33 -25 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 57 -81 "'kern' Horizontal Kerning in Latin subtable 2"  52 -77 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: onequarter
@@ -12325,7 +12348,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10061
+StartChar: Kjecyrillic
 Encoding: 1036 1036 560
 Width: 664
 Flags: HMW
@@ -12347,7 +12370,7 @@ Refer: 64 96 S 1 0 0 1 28 212 2
 Validated: 32769
 EndChar
 
-StartChar: afii10062
+StartChar: Ushortcyrillic
 Encoding: 1038 1038 562
 Width: 728
 Flags: HMW
@@ -12358,7 +12381,7 @@ Refer: 2133 -1 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10145
+StartChar: Dzhecyrillic
 Encoding: 1039 1039 563
 Width: 728
 Flags: HMW
@@ -12401,7 +12424,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10017
+StartChar: Acyrillic
 Encoding: 1040 1040 564
 Width: 611
 Flags: HMW
@@ -12411,7 +12434,7 @@ Refer: 33 65 S 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10018
+StartChar: Becyrillic
 Encoding: 1041 1041 565
 Width: 610
 Flags: HMW
@@ -12448,7 +12471,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10019
+StartChar: Vecyrillic
 Encoding: 1042 1042 566
 Width: 611
 Flags: HMW
@@ -12458,7 +12481,7 @@ Refer: 34 66 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10020
+StartChar: Gecyrillic
 Encoding: 1043 1043 567
 Width: 611
 Flags: HMW
@@ -12468,7 +12491,7 @@ Refer: 491 915 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10021
+StartChar: Decyrillic
 Encoding: 1044 1044 568
 Width: 682
 Flags: HMW
@@ -12510,7 +12533,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10022
+StartChar: Iecyrillic
 Encoding: 1045 1045 569
 Width: 604
 Flags: HMW
@@ -12520,7 +12543,7 @@ Refer: 37 69 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10024
+StartChar: Zhecyrillic
 Encoding: 1046 1046 570
 Width: 976
 Flags: HMW
@@ -12582,7 +12605,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10025
+StartChar: Zecyrillic
 Encoding: 1047 1047 571
 Width: 592
 Flags: HMW
@@ -12614,7 +12637,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10026
+StartChar: Iicyrillic
 Encoding: 1048 1048 572
 Width: 720
 Flags: HMW
@@ -12656,7 +12679,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10027
+StartChar: Iishortcyrillic
 Encoding: 1049 1049 573
 Width: 720
 Flags: HMW
@@ -12667,7 +12690,7 @@ Refer: 572 1048 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10028
+StartChar: Kacyrillic
 Encoding: 1050 1050 574
 Width: 664
 Flags: HMW
@@ -12711,7 +12734,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10029
+StartChar: Elcyrillic
 Encoding: 1051 1051 575
 Width: 719
 Flags: HMW
@@ -12748,7 +12771,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10030
+StartChar: Emcyrillic
 Encoding: 1052 1052 576
 Width: 828
 Flags: HMW
@@ -12758,7 +12781,7 @@ Refer: 45 77 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10031
+StartChar: Encyrillic
 Encoding: 1053 1053 577
 Width: 722
 Flags: HMW
@@ -12768,7 +12791,7 @@ Refer: 40 72 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10032
+StartChar: Ocyrillic
 Encoding: 1054 1054 578
 Width: 722
 Flags: HMW
@@ -12778,7 +12801,7 @@ Refer: 47 79 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10033
+StartChar: Pecyrillic
 Encoding: 1055 1055 579
 Width: 749
 Flags: HMW
@@ -12788,7 +12811,7 @@ Refer: 504 928 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10034
+StartChar: Ercyrillic
 Encoding: 1056 1056 580
 Width: 603
 Flags: HMW
@@ -12798,7 +12821,7 @@ Refer: 48 80 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10035
+StartChar: Escyrillic
 Encoding: 1057 1057 581
 Width: 667
 Flags: HMW
@@ -12808,7 +12831,7 @@ Refer: 35 67 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10036
+StartChar: Tecyrillic
 Encoding: 1058 1058 582
 Width: 556
 Flags: HMW
@@ -12818,7 +12841,7 @@ Refer: 52 84 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10037
+StartChar: Ucyrillic
 Encoding: 1059 1059 583
 Width: 728
 Flags: HMW
@@ -12854,7 +12877,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10038
+StartChar: Efcyrillic
 Encoding: 1060 1060 584
 Width: 722
 Flags: HMW
@@ -12864,7 +12887,7 @@ Refer: 509 934 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10039
+StartChar: Khacyrillic
 Encoding: 1061 1061 585
 Width: 611
 Flags: HMW
@@ -12874,7 +12897,7 @@ Refer: 56 88 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10040
+StartChar: Tsecyrillic
 Encoding: 1062 1062 586
 Width: 728
 Flags: HMW
@@ -12915,7 +12938,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10041
+StartChar: Checyrillic
 Encoding: 1063 1063 587
 Width: 666
 Flags: HMW
@@ -12956,7 +12979,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10042
+StartChar: Shacyrillic
 Encoding: 1064 1064 588
 Width: 997
 Flags: HMW
@@ -13006,7 +13029,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10043
+StartChar: Shchacyrillic
 Encoding: 1065 1065 589
 Width: 1005
 Flags: HMW
@@ -13059,7 +13082,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni042a
+StartChar: Hardsigncyrillic
 Encoding: 1066 1066 590
 Width: 710
 Flags: HMW
@@ -13096,7 +13119,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10045
+StartChar: Yericyrillic
 Encoding: 1067 1067 591
 Width: 891
 Flags: HMW
@@ -13145,7 +13168,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10046
+StartChar: Softsigncyrillic
 Encoding: 1068 1068 592
 Width: 594
 Flags: HMW
@@ -13179,7 +13202,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10047
+StartChar: Ereversedcyrillic
 Encoding: 1069 1069 593
 Width: 632
 Flags: HMW
@@ -13212,7 +13235,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10048
+StartChar: IUcyrillic
 Encoding: 1070 1070 594
 Width: 1024
 Flags: HMW
@@ -13251,7 +13274,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10049
+StartChar: IAcyrillic
 Encoding: 1071 1071 595
 Width: 696
 Flags: HMW
@@ -13291,7 +13314,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10065
+StartChar: acyrillic
 Encoding: 1072 1072 596
 Width: 500
 Flags: HMW
@@ -13301,7 +13324,7 @@ Refer: 65 97 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10066
+StartChar: becyrillic
 Encoding: 1073 1073 597
 Width: 496
 Flags: HMW
@@ -13328,7 +13351,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10067
+StartChar: vecyrillic
 Encoding: 1074 1074 598
 Width: 442
 Flags: HMW
@@ -13359,7 +13382,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10068
+StartChar: gecyrillic
 Encoding: 1075 1075 599
 Width: 344
 Flags: HMW
@@ -13385,7 +13408,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10069
+StartChar: decyrillic
 Encoding: 1076 1076 600
 Width: 500
 Flags: HMW
@@ -13412,7 +13435,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10070
+StartChar: iecyrillic
 Encoding: 1077 1077 601
 Width: 444
 Flags: HMW
@@ -13422,7 +13445,7 @@ Refer: 69 101 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10072
+StartChar: zhecyrillic
 Encoding: 1078 1078 602
 Width: 932
 Flags: HMW
@@ -13470,7 +13493,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10073
+StartChar: zecyrillic
 Encoding: 1079 1079 603
 Width: 396
 Flags: HMW
@@ -13501,7 +13524,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10074
+StartChar: iicyrillic
 Encoding: 1080 1080 604
 Width: 500
 Flags: HMW
@@ -13511,7 +13534,7 @@ Refer: 85 117 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10075
+StartChar: iishortcyrillic
 Encoding: 1081 1081 605
 Width: 500
 Flags: HMW
@@ -13522,7 +13545,7 @@ Refer: 604 1080 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10076
+StartChar: kacyrillic
 Encoding: 1082 1082 606
 Width: 491
 Flags: HMW
@@ -13561,7 +13584,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10077
+StartChar: elcyrillic
 Encoding: 1083 1083 607
 Width: 487
 Flags: HMW
@@ -13596,7 +13619,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10078
+StartChar: emcyrillic
 Encoding: 1084 1084 608
 Width: 624
 Flags: HMW
@@ -13637,7 +13660,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10079
+StartChar: encyrillic
 Encoding: 1085 1085 609
 Width: 500
 Flags: HMW
@@ -13672,7 +13695,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10080
+StartChar: ocyrillic
 Encoding: 1086 1086 610
 Width: 500
 Flags: HMW
@@ -13682,7 +13705,7 @@ Refer: 79 111 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10081
+StartChar: pecyrillic
 Encoding: 1087 1087 611
 Width: 500
 Flags: HMW
@@ -13692,7 +13715,7 @@ Refer: 78 110 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10082
+StartChar: ercyrillic
 Encoding: 1088 1088 612
 Width: 500
 Flags: HMW
@@ -13702,7 +13725,7 @@ Refer: 80 112 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10083
+StartChar: escyrillic
 Encoding: 1089 1089 613
 Width: 444
 Flags: HMW
@@ -13712,7 +13735,7 @@ Refer: 67 99 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10084
+StartChar: tecyrillic
 Encoding: 1090 1090 614
 Width: 722
 Flags: HMW
@@ -13722,7 +13745,7 @@ Refer: 77 109 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10085
+StartChar: ucyrillic
 Encoding: 1091 1091 615
 Width: 500
 Flags: HMW
@@ -13760,7 +13783,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10086
+StartChar: efcyrillic
 Encoding: 1092 1092 616
 Width: 741
 Flags: HMW
@@ -13810,7 +13833,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10087
+StartChar: khacyrillic
 Encoding: 1093 1093 617
 Width: 444
 Flags: HMW
@@ -13820,7 +13843,7 @@ Refer: 88 120 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10088
+StartChar: tsecyrillic
 Encoding: 1094 1094 618
 Width: 500
 Flags: HMW
@@ -13862,7 +13885,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10089
+StartChar: checyrillic
 Encoding: 1095 1095 619
 Width: 500
 Flags: HMW
@@ -13896,7 +13919,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10090
+StartChar: shacyrillic
 Encoding: 1096 1096 620
 Width: 750
 Flags: HMW
@@ -13940,7 +13963,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10091
+StartChar: shchacyrillic
 Encoding: 1097 1097 621
 Width: 750
 Flags: HMW
@@ -13992,7 +14015,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10092
+StartChar: hardsigncyrillic
 Encoding: 1098 1098 622
 Width: 545
 Flags: HMW
@@ -14028,7 +14051,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10093
+StartChar: yericyrillic
 Encoding: 1099 1099 623
 Width: 683
 Flags: HMW
@@ -14075,7 +14098,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10094
+StartChar: softsigncyrillic
 Encoding: 1100 1100 624
 Width: 433
 Flags: HMW
@@ -14106,7 +14129,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10095
+StartChar: ereversedcyrillic
 Encoding: 1101 1101 625
 Width: 430
 Flags: HMW
@@ -14138,7 +14161,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10096
+StartChar: iucyrillic
 Encoding: 1102 1102 626
 Width: 699
 Flags: HMW
@@ -14174,7 +14197,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10097
+StartChar: iacyrillic
 Encoding: 1103 1103 627
 Width: 503
 Flags: HMW
@@ -14226,7 +14249,7 @@ Refer: 69 101 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10071
+StartChar: iocyrillic
 Encoding: 1105 1105 629
 Width: 444
 Flags: HMW
@@ -14237,7 +14260,7 @@ Refer: 102 168 N 1 0 0 1 88 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10099
+StartChar: dje
 Encoding: 1106 1106 630
 Width: 500
 Flags: HMW
@@ -14279,7 +14302,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10100
+StartChar: gjecyrillic
 Encoding: 1107 1107 631
 Width: 344
 Flags: HMW
@@ -14290,7 +14313,7 @@ Refer: 113 180 S 1 0 0 1 -32 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10101
+StartChar: ecyrillic
 Encoding: 1108 1108 632
 Width: 442
 Flags: HMW
@@ -14323,7 +14346,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10102
+StartChar: dzecyrillic
 Encoding: 1109 1109 633
 Width: 389
 Flags: HMW
@@ -14333,7 +14356,7 @@ Refer: 83 115 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10103
+StartChar: icyrillic
 Encoding: 1110 1110 634
 Width: 278
 Flags: HMW
@@ -14343,7 +14366,7 @@ Refer: 73 105 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10104
+StartChar: yicyrillic
 Encoding: 1111 1111 635
 Width: 278
 Flags: HMW
@@ -14354,7 +14377,7 @@ Refer: 102 168 S 1 0 0 1 -52 6 2
 Validated: 32769
 EndChar
 
-StartChar: afii10105
+StartChar: jecyrillic
 Encoding: 1112 1112 636
 Width: 278
 Flags: HMW
@@ -14364,7 +14387,7 @@ Refer: 74 106 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10106
+StartChar: ljecyrillic
 Encoding: 1113 1113 637
 Width: 686
 Flags: HMW
@@ -14404,7 +14427,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10107
+StartChar: njecyrillic
 Encoding: 1114 1114 638
 Width: 696
 Flags: HMW
@@ -14443,7 +14466,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10108
+StartChar: tshecyrillic
 Encoding: 1115 1115 639
 Width: 500
 Flags: HMW
@@ -14484,7 +14507,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10109
+StartChar: kjecyrillic
 Encoding: 1116 1116 640
 Width: 491
 Flags: HMW
@@ -14506,7 +14529,7 @@ Refer: 64 96 S 1 0 0 1 -191 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10110
+StartChar: ushortcyrillic
 Encoding: 1118 1118 642
 Width: 500
 Flags: HMW
@@ -14517,7 +14540,7 @@ Refer: 615 1091 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10193
+StartChar: dzhecyrillic
 Encoding: 1119 1119 643
 Width: 500
 Flags: HMW
@@ -26433,7 +26456,7 @@ SplineSet
  258 614 235 587 235 560 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -15 "'kern' Horizontal Kerning in Latin subtable 2"  54 -8 "'kern' Horizontal Kerning in Latin subtable 2"  52 -9 "'kern' Horizontal Kerning in Latin subtable 2"  130 -78 "'kern' Horizontal Kerning in Latin subtable 2"  129 -78 "'kern' Horizontal Kerning in Latin subtable 2"  126 -78 "'kern' Horizontal Kerning in Latin subtable 2"  131 -78 "'kern' Horizontal Kerning in Latin subtable 2"  33 -78 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 131 -78 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quoteright
@@ -26452,7 +26475,7 @@ SplineSet
  203 488 226 515 226 541 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 14 -78 "'kern' Horizontal Kerning in Latin subtable 2"  12 -73 "'kern' Horizontal Kerning in Latin subtable 2"  89 -28 "'kern' Horizontal Kerning in Latin subtable 2"  87 -26 "'kern' Horizontal Kerning in Latin subtable 2"  86 -28 "'kern' Horizontal Kerning in Latin subtable 2"  84 -49 "'kern' Horizontal Kerning in Latin subtable 2"  83 -63 "'kern' Horizontal Kerning in Latin subtable 2"  82 -57 "'kern' Horizontal Kerning in Latin subtable 2"  79 -78 "'kern' Horizontal Kerning in Latin subtable 2"  68 -79 "'kern' Horizontal Kerning in Latin subtable 2"  130 -87 "'kern' Horizontal Kerning in Latin subtable 2"  129 -87 "'kern' Horizontal Kerning in Latin subtable 2"  126 -87 "'kern' Horizontal Kerning in Latin subtable 2"  131 -87 "'kern' Horizontal Kerning in Latin subtable 2"  33 -87 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 14 -78 "'kern' Horizontal Kerning in Latin subtable 2"  12 -73 "'kern' Horizontal Kerning in Latin subtable 2"  89 -28 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotesinglbase
@@ -26515,7 +26538,7 @@ SplineSet
  462 614 439 587 439 560 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -25 "'kern' Horizontal Kerning in Latin subtable 2"  55 -15 "'kern' Horizontal Kerning in Latin subtable 2"  54 -17 "'kern' Horizontal Kerning in Latin subtable 2"  52 -19 "'kern' Horizontal Kerning in Latin subtable 2"  130 -88 "'kern' Horizontal Kerning in Latin subtable 2"  129 -88 "'kern' Horizontal Kerning in Latin subtable 2"  126 -88 "'kern' Horizontal Kerning in Latin subtable 2"  131 -88 "'kern' Horizontal Kerning in Latin subtable 2"  33 -88 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 33 -88 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotedblright
@@ -26541,7 +26564,7 @@ SplineSet
  412 488 435 515 435 541 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -30 "'kern' Horizontal Kerning in Latin subtable 2"  55 -19 "'kern' Horizontal Kerning in Latin subtable 2"  54 -22 "'kern' Horizontal Kerning in Latin subtable 2"  52 -21 "'kern' Horizontal Kerning in Latin subtable 2"  130 -94 "'kern' Horizontal Kerning in Latin subtable 2"  129 -94 "'kern' Horizontal Kerning in Latin subtable 2"  126 -94 "'kern' Horizontal Kerning in Latin subtable 2"  131 -147 "'kern' Horizontal Kerning in Latin subtable 2"  33 -94 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 131 -147 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotedblbase
@@ -26567,7 +26590,7 @@ SplineSet
  318 -77 341 -50 341 -23 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -69 "'kern' Horizontal Kerning in Latin subtable 2"  55 -84 "'kern' Horizontal Kerning in Latin subtable 2"  54 -96 "'kern' Horizontal Kerning in Latin subtable 2"  52 -64 "'kern' Horizontal Kerning in Latin subtable 2"  131 -13 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 131 -13 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: uni201F
@@ -26854,7 +26877,7 @@ SplineSet
  126 400 129 403 133 403 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -80 "'kern' Horizontal Kerning in Latin subtable 2"  55 -66 "'kern' Horizontal Kerning in Latin subtable 2"  54 -75 "'kern' Horizontal Kerning in Latin subtable 2"  52 -76 "'kern' Horizontal Kerning in Latin subtable 2"  130 -24 "'kern' Horizontal Kerning in Latin subtable 2"  129 -24 "'kern' Horizontal Kerning in Latin subtable 2"  126 -24 "'kern' Horizontal Kerning in Latin subtable 2"  131 -50 "'kern' Horizontal Kerning in Latin subtable 2"  33 -24 "'kern' Horizontal Kerning in Latin subtable 2" 
+Kerns2: 57 -80 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: uni203B
@@ -27698,7 +27721,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0400
+StartChar: E_grave
 Encoding: 1024 1024 1333
 Width: 604
 Flags: HMW
@@ -27709,7 +27732,7 @@ Refer: 37 69 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10023
+StartChar: Iocyrillic
 Encoding: 1025 1025 1334
 Width: 604
 Flags: HMW
@@ -27720,7 +27743,7 @@ Refer: 102 168 S 1 0 0 1 188 242 2
 Validated: 32769
 EndChar
 
-StartChar: afii10051
+StartChar: Djecyrillic
 Encoding: 1026 1026 1335
 Width: 668
 Flags: HMW
@@ -27757,7 +27780,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10052
+StartChar: Gjecyrillic
 Encoding: 1027 1027 1336
 Width: 611
 Flags: HMW
@@ -27768,7 +27791,7 @@ Refer: 567 1043 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10053
+StartChar: Ecyrillic
 Encoding: 1028 1028 1337
 Width: 666
 Flags: HMW
@@ -27800,7 +27823,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10054
+StartChar: Dzecyrillic
 Encoding: 1029 1029 1338
 Width: 500
 Flags: HMW
@@ -27810,7 +27833,7 @@ Refer: 51 83 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10055
+StartChar: Icyrillic
 Encoding: 1030 1030 1339
 Width: 339
 Flags: HMW
@@ -27820,7 +27843,7 @@ Refer: 41 73 S 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10056
+StartChar: Yicyrillic
 Encoding: 1031 1031 1340
 Width: 339
 Flags: HMW
@@ -27831,7 +27854,7 @@ Refer: 41 73 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10057
+StartChar: Jecyrillic
 Encoding: 1032 1032 1341
 Width: 444
 Flags: HMW
@@ -27841,7 +27864,7 @@ Refer: 42 74 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
-StartChar: afii10058
+StartChar: Ljecyrillic
 Encoding: 1033 1033 1342
 Width: 972
 Flags: HMW
@@ -27886,7 +27909,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10059
+StartChar: Njecyrillic
 Encoding: 1034 1034 1343
 Width: 977
 Flags: HMW
@@ -27938,7 +27961,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10060
+StartChar: Tshecyrillic
 Encoding: 1035 1035 1344
 Width: 703
 Flags: HMW
