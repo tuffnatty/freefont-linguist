@@ -4,7 +4,7 @@ FullName: Free Serif Bold
 FamilyName: FreeSerif
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.134 $
+Version: $Revision: 1.135 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1227307018
+ModificationTime: 1227607536
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -60,6 +60,8 @@ Lookup: 4 0 1 "'liga' Standard Ligatures in Thai"  {"'liga' Standard Ligatures i
 Lookup: 2 0 0 "'ccmp' Glyph Composition/Decomposition for Thai"  {"'ccmp' Glyph Composition/Decomposition for Thai subtable"  } ['ccmp' () ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin"  {"'mkmk' Mark to Mark in Latin subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Latin 4"  {"'mark' Mark Positioning in Latin 2 subtable 2"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 1"  {"'mark' Mark Positioning in Thai 1 subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 1"  {"'mkmk' Mark to Mark in Thai 1 subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 2"  {"'mark' Mark Positioning in Thai 2 subtable"  } ['mark' ('thai' <'dflt' > ) ]
@@ -634,7 +636,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64272 16 11
+WinInfo: 784 16 11
 BeginPrivate: 8
 UniqueID 7 5020933
 BlueValues 23 [-20 0 461 481 676 696]
@@ -653,7 +655,7 @@ systemdict /internaldict known
 { true } ifelse { pop [140 163] } if
 ForceBold 5 false
 EndPrivate
-AnchorClass2: "middle"  "'mark' Mark Positioning subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 2 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 2 subtable" "thai_below"  "'mark' Mark Positioning in Thai 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" 
+AnchorClass2: "tilde"  "'mkmk' Mark to Mark in Latin subtable" "acute"  "'mkmk' Mark to Mark in Latin subtable" "grave"  "'mkmk' Mark to Mark in Latin subtable" "hook"  "'mkmk' Mark to Mark in Latin subtable" "righthorn"  "'mark' Mark Positioning in Latin 2 subtable 2" "ogonek"  "'mark' Mark Positioning in Latin 1 subtable" "middle"  "'mark' Mark Positioning subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 2 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 2 subtable" "thai_below"  "'mark' Mark Positioning in Thai 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" 
 BeginChars: 66560 2597
 
 StartChar: space
@@ -1495,9 +1497,10 @@ StartChar: A
 Encoding: 65 65 33
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 576 0 basechar 0
 AnchorPoint: "middle" 294 222 basechar 0
 AnchorPoint: "below" 351 0 basechar 0
-AnchorPoint: "above" 343 660 basechar 0
+AnchorPoint: "above" 343 660 basechar 0 {} {150-150 1}
 LayerCount: 2
 Fore
 SplineSet
@@ -1632,6 +1635,7 @@ StartChar: E
 Encoding: 69 69 37
 Width: 667
 Flags: HMW
+AnchorPoint: "ogonek" 565 0 basechar 0
 AnchorPoint: "middle" 314 351 basechar 0
 AnchorPoint: "below" 339 0 basechar 0
 AnchorPoint: "above" 343 674 basechar 0
@@ -1786,6 +1790,7 @@ StartChar: I
 Encoding: 73 73 41
 Width: 386
 Flags: HMW
+AnchorPoint: "ogonek" 276 0 basechar 0
 AnchorPoint: "middle" 192 351 basechar 0
 AnchorPoint: "below" 191 0 basechar 0
 AnchorPoint: "above" 193 675 basechar 0
@@ -1995,6 +2000,8 @@ StartChar: O
 Encoding: 79 79 47
 Width: 778
 Flags: HMW
+AnchorPoint: "ogonek" 450 0 basechar 0
+AnchorPoint: "righthorn" 602 620 basechar 0 {} {150-150 -6}
 AnchorPoint: "middle" 392 351 basechar 0
 AnchorPoint: "below" 390 0 basechar 0
 AnchorPoint: "above" 393 658 basechar 0
@@ -2193,6 +2200,8 @@ StartChar: U
 Encoding: 85 85 53
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 450 0 basechar 0
+AnchorPoint: "righthorn" 609 544 basechar 0 {} {150-150 -12}
 AnchorPoint: "middle" 385 351 basechar 0
 AnchorPoint: "below" 366 0 basechar 0
 AnchorPoint: "above" 389 660 basechar 0
@@ -2357,6 +2366,7 @@ StartChar: Y
 Encoding: 89 89 57
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 450 0 basechar 0
 AnchorPoint: "middle" 364 351 basechar 0
 AnchorPoint: "below" 356 0 basechar 0
 AnchorPoint: "above" 389 660 basechar 0
@@ -2540,6 +2550,7 @@ StartChar: a
 Encoding: 97 97 65
 Width: 500
 Flags: HMW
+AnchorPoint: "ogonek" 381 0 basechar 0
 AnchorPoint: "middle" 246 244 basechar 0
 AnchorPoint: "below" 257 0 basechar 0
 AnchorPoint: "above" 244 470 basechar 0
@@ -2675,6 +2686,7 @@ StartChar: e
 Encoding: 101 101 69
 Width: 444
 Flags: HMW
+AnchorPoint: "ogonek" 275 0 basechar 0
 AnchorPoint: "middle" 246 244 basechar 0
 AnchorPoint: "below" 236 0 basechar 0
 AnchorPoint: "above" 244 470 basechar 0
@@ -2824,6 +2836,7 @@ StartChar: i
 Encoding: 105 105 73
 Width: 278
 Flags: HMW
+AnchorPoint: "ogonek" 194 0 basechar 0
 AnchorPoint: "middle" 139 244 basechar 0
 AnchorPoint: "below" 138 0 basechar 0
 AnchorPoint: "above" 134 691 basechar 0
@@ -3042,6 +3055,8 @@ StartChar: o
 Encoding: 111 111 79
 Width: 500
 Flags: HMW
+AnchorPoint: "ogonek" 296 0 basechar 0
+AnchorPoint: "righthorn" 374 418 basechar 0 {150-150 3} {150-150 -6}
 AnchorPoint: "middle" 247 244 basechar 0
 AnchorPoint: "below" 259 0 basechar 0
 AnchorPoint: "above" 252 470 basechar 0
@@ -3234,6 +3249,8 @@ StartChar: u
 Encoding: 117 117 85
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 417 5 basechar 0
+AnchorPoint: "righthorn" 466 426 basechar 0 {} {150-150 -6}
 AnchorPoint: "middle" 247 244 basechar 0
 AnchorPoint: "below" 286 0 basechar 0
 AnchorPoint: "above" 259 470 basechar 0
@@ -3392,6 +3409,7 @@ StartChar: y
 Encoding: 121 121 89
 Width: 500
 Flags: HMW
+AnchorPoint: "ogonek" 379 0 basechar 0
 AnchorPoint: "middle" 246 244 basechar 0
 AnchorPoint: "below" 362 0 basechar 0
 AnchorPoint: "above" 244 470 basechar 0
@@ -4454,11 +4472,11 @@ StartChar: Agrave
 Encoding: 192 192 125
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 340 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
 Refer: 64 96 N 1 0 0 1 160 187 0
-Validated: 32769
 Kerns2: 35 -73 "'kern' Horizontal Kerning in Latin subtable"  39 -68 "'kern' Horizontal Kerning in Latin subtable"  47 -68 "'kern' Horizontal Kerning in Latin subtable"  49 -68 "'kern' Horizontal Kerning in Latin subtable"  52 -59 "'kern' Horizontal Kerning in Latin subtable"  53 -66 "'kern' Horizontal Kerning in Latin subtable"  54 -130 "'kern' Horizontal Kerning in Latin subtable"  55 -116 "'kern' Horizontal Kerning in Latin subtable"  57 -74 "'kern' Horizontal Kerning in Latin subtable"  12 1 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4466,11 +4484,11 @@ StartChar: Aacute
 Encoding: 193 193 126
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 343 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
 Refer: 113 180 N 1 0 0 1 176 187 0
-Validated: 32769
 Kerns2: 35 -73 "'kern' Horizontal Kerning in Latin subtable"  39 -68 "'kern' Horizontal Kerning in Latin subtable"  47 -68 "'kern' Horizontal Kerning in Latin subtable"  49 -68 "'kern' Horizontal Kerning in Latin subtable"  52 -59 "'kern' Horizontal Kerning in Latin subtable"  53 -66 "'kern' Horizontal Kerning in Latin subtable"  54 -130 "'kern' Horizontal Kerning in Latin subtable"  55 -116 "'kern' Horizontal Kerning in Latin subtable"  57 -74 "'kern' Horizontal Kerning in Latin subtable"  65 -5 "'kern' Horizontal Kerning in Latin subtable"  66 -22 "'kern' Horizontal Kerning in Latin subtable"  67 -35 "'kern' Horizontal Kerning in Latin subtable"  12 1 "'kern' Horizontal Kerning in Latin subtable"  68 -28 "'kern' Horizontal Kerning in Latin subtable"  69 -32 "'kern' Horizontal Kerning in Latin subtable"  71 -7 "'kern' Horizontal Kerning in Latin subtable"  105 -53 "'kern' Horizontal Kerning in Latin subtable"  1217 -67 "'kern' Horizontal Kerning in Latin subtable"  13 -30 "'kern' Horizontal Kerning in Latin subtable"  79 -37 "'kern' Horizontal Kerning in Latin subtable"  81 -38 "'kern' Horizontal Kerning in Latin subtable"  1202 -108 "'kern' Horizontal Kerning in Latin subtable"  84 -27 "'kern' Horizontal Kerning in Latin subtable"  85 -30 "'kern' Horizontal Kerning in Latin subtable"  86 -84 "'kern' Horizontal Kerning in Latin subtable"  87 -79 "'kern' Horizontal Kerning in Latin subtable"  89 -83 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4478,6 +4496,11 @@ StartChar: Acircumflex
 Encoding: 194 194 127
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 348 0 basechar 0
+AnchorPoint: "tilde" 344 888 basemark 0 {} {150-150 2}
+AnchorPoint: "acute" 510 764 basemark 0
+AnchorPoint: "grave" 183 770 basemark 0
+AnchorPoint: "hook" 546 744 basemark 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
@@ -4490,11 +4513,11 @@ StartChar: Atilde
 Encoding: 195 195 128
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 338 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
 Refer: 412 732 N 1 0 0 1 183 176 0
-Validated: 32769
 Kerns2: 35 -73 "'kern' Horizontal Kerning in Latin subtable"  39 -68 "'kern' Horizontal Kerning in Latin subtable"  47 -68 "'kern' Horizontal Kerning in Latin subtable"  49 -68 "'kern' Horizontal Kerning in Latin subtable"  52 -59 "'kern' Horizontal Kerning in Latin subtable"  53 -66 "'kern' Horizontal Kerning in Latin subtable"  54 -130 "'kern' Horizontal Kerning in Latin subtable"  55 -116 "'kern' Horizontal Kerning in Latin subtable"  57 -74 "'kern' Horizontal Kerning in Latin subtable"  12 1 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4502,11 +4525,11 @@ StartChar: Adieresis
 Encoding: 196 196 129
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 342 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 175 182 0
-Validated: 32769
 Kerns2: 35 -73 "'kern' Horizontal Kerning in Latin subtable"  39 -68 "'kern' Horizontal Kerning in Latin subtable"  47 -68 "'kern' Horizontal Kerning in Latin subtable"  49 -68 "'kern' Horizontal Kerning in Latin subtable"  52 -59 "'kern' Horizontal Kerning in Latin subtable"  53 -66 "'kern' Horizontal Kerning in Latin subtable"  54 -130 "'kern' Horizontal Kerning in Latin subtable"  55 -116 "'kern' Horizontal Kerning in Latin subtable"  57 -74 "'kern' Horizontal Kerning in Latin subtable"  65 -5 "'kern' Horizontal Kerning in Latin subtable"  66 -22 "'kern' Horizontal Kerning in Latin subtable"  67 -35 "'kern' Horizontal Kerning in Latin subtable"  12 1 "'kern' Horizontal Kerning in Latin subtable"  68 -28 "'kern' Horizontal Kerning in Latin subtable"  71 -7 "'kern' Horizontal Kerning in Latin subtable"  105 -53 "'kern' Horizontal Kerning in Latin subtable"  1217 -67 "'kern' Horizontal Kerning in Latin subtable"  13 -30 "'kern' Horizontal Kerning in Latin subtable"  79 -37 "'kern' Horizontal Kerning in Latin subtable"  81 -38 "'kern' Horizontal Kerning in Latin subtable"  1206 -76 "'kern' Horizontal Kerning in Latin subtable"  1202 -108 "'kern' Horizontal Kerning in Latin subtable"  84 -27 "'kern' Horizontal Kerning in Latin subtable"  85 -30 "'kern' Horizontal Kerning in Latin subtable"  86 -84 "'kern' Horizontal Kerning in Latin subtable"  87 -79 "'kern' Horizontal Kerning in Latin subtable"  89 -83 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4514,11 +4537,11 @@ StartChar: Aring
 Encoding: 197 197 130
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 346 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
 Refer: 410 730 N 1 0 0 1 175 157 0
-Validated: 32769
 Kerns2: 35 -73 "'kern' Horizontal Kerning in Latin subtable"  39 -68 "'kern' Horizontal Kerning in Latin subtable"  47 -68 "'kern' Horizontal Kerning in Latin subtable"  49 -68 "'kern' Horizontal Kerning in Latin subtable"  52 -59 "'kern' Horizontal Kerning in Latin subtable"  53 -66 "'kern' Horizontal Kerning in Latin subtable"  54 -130 "'kern' Horizontal Kerning in Latin subtable"  55 -116 "'kern' Horizontal Kerning in Latin subtable"  57 -74 "'kern' Horizontal Kerning in Latin subtable"  65 -5 "'kern' Horizontal Kerning in Latin subtable"  66 -22 "'kern' Horizontal Kerning in Latin subtable"  67 -35 "'kern' Horizontal Kerning in Latin subtable"  12 1 "'kern' Horizontal Kerning in Latin subtable"  68 -28 "'kern' Horizontal Kerning in Latin subtable"  69 -32 "'kern' Horizontal Kerning in Latin subtable"  71 -7 "'kern' Horizontal Kerning in Latin subtable"  105 -53 "'kern' Horizontal Kerning in Latin subtable"  1217 -67 "'kern' Horizontal Kerning in Latin subtable"  13 -30 "'kern' Horizontal Kerning in Latin subtable"  79 -37 "'kern' Horizontal Kerning in Latin subtable"  81 -38 "'kern' Horizontal Kerning in Latin subtable"  1206 -76 "'kern' Horizontal Kerning in Latin subtable"  1202 -108 "'kern' Horizontal Kerning in Latin subtable"  84 -27 "'kern' Horizontal Kerning in Latin subtable"  85 -30 "'kern' Horizontal Kerning in Latin subtable"  86 -84 "'kern' Horizontal Kerning in Latin subtable"  87 -79 "'kern' Horizontal Kerning in Latin subtable"  89 -83 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4616,88 +4639,96 @@ StartChar: Egrave
 Encoding: 200 200 133
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 360 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 64 96 N 1 0 0 1 160 187 0
-Validated: 32769
 EndChar
 
 StartChar: Eacute
 Encoding: 201 201 134
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 360 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 113 180 N 1 0 0 1 160 187 0
-Validated: 32769
 EndChar
 
 StartChar: Ecircumflex
 Encoding: 202 202 135
 Width: 667
 Flags: HMW
+AnchorPoint: "hook" 527 744 basemark 0
+AnchorPoint: "grave" 164 770 basemark 0
+AnchorPoint: "acute" 491 764 basemark 0
+AnchorPoint: "tilde" 325 888 basemark 0 {} {150-150 2}
+AnchorPoint: "below" 329 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 406 710 N 1 0 0 1 161 195 0
-Validated: 32769
 EndChar
 
 StartChar: Edieresis
 Encoding: 203 203 136
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 360 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 161 183 0
-Validated: 32769
 EndChar
 
 StartChar: Igrave
 Encoding: 204 204 137
 Width: 389
 Flags: HMW
+AnchorPoint: "below" 194 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
 Refer: 64 96 N 1 0 0 1 16 186 0
-Validated: 32769
 EndChar
 
 StartChar: Iacute
 Encoding: 205 205 138
 Width: 389
 Flags: HMW
+AnchorPoint: "below" 194 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
 Refer: 113 180 N 1 0 0 1 25 187 0
-Validated: 32769
 EndChar
 
 StartChar: Icircumflex
 Encoding: 206 206 139
 Width: 389
 Flags: HMW
+AnchorPoint: "hook" 393 744 basemark 0
+AnchorPoint: "grave" 30 770 basemark 0
+AnchorPoint: "acute" 357 764 basemark 0
+AnchorPoint: "tilde" 191 888 basemark 0 {} {150-150 2}
+AnchorPoint: "below" 195 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
 Refer: 406 710 N 1 0 0 1 24 196 0
-Validated: 32769
 EndChar
 
 StartChar: Idieresis
 Encoding: 207 207 140
 Width: 389
 Flags: HMW
+AnchorPoint: "below" 194 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 24 192 0
-Validated: 32769
 EndChar
 
 StartChar: Eth
@@ -4750,11 +4781,11 @@ StartChar: Ograve
 Encoding: 210 210 143
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 389 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
 Refer: 64 96 N 1 0 0 1 216 187 0
-Validated: 32769
 Kerns2: 52 -9 "'kern' Horizontal Kerning in Latin subtable"  54 -60 "'kern' Horizontal Kerning in Latin subtable"  57 -59 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4762,11 +4793,11 @@ StartChar: Oacute
 Encoding: 211 211 144
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 389 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
 Refer: 113 180 N 1 0 0 1 216 187 0
-Validated: 32769
 Kerns2: 33 -55 "'kern' Horizontal Kerning in Latin subtable"  52 -9 "'kern' Horizontal Kerning in Latin subtable"  54 -60 "'kern' Horizontal Kerning in Latin subtable"  55 -54 "'kern' Horizontal Kerning in Latin subtable"  57 -59 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4774,11 +4805,15 @@ StartChar: Ocircumflex
 Encoding: 212 212 145
 Width: 778
 Flags: HMW
+AnchorPoint: "hook" 594 744 basemark 0
+AnchorPoint: "grave" 231 770 basemark 0
+AnchorPoint: "acute" 558 764 basemark 0
+AnchorPoint: "tilde" 392 888 basemark 0 {} {150-150 2}
+AnchorPoint: "below" 396 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
 Refer: 406 710 N 1 0 0 1 227 195 0
-Validated: 32769
 Kerns2: 52 -9 "'kern' Horizontal Kerning in Latin subtable"  54 -60 "'kern' Horizontal Kerning in Latin subtable"  57 -59 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4786,11 +4821,11 @@ StartChar: Otilde
 Encoding: 213 213 146
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 389 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
 Refer: 412 732 N 1 0 0 1 224 178 0
-Validated: 32769
 Kerns2: 52 -9 "'kern' Horizontal Kerning in Latin subtable"  54 -60 "'kern' Horizontal Kerning in Latin subtable"  57 -59 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4798,11 +4833,11 @@ StartChar: Odieresis
 Encoding: 214 214 147
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 389 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 215 187 0
-Validated: 32769
 Kerns2: 33 -55 "'kern' Horizontal Kerning in Latin subtable"  52 -9 "'kern' Horizontal Kerning in Latin subtable"  54 -60 "'kern' Horizontal Kerning in Latin subtable"  55 -54 "'kern' Horizontal Kerning in Latin subtable"  56 -51 "'kern' Horizontal Kerning in Latin subtable"  57 -59 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4869,11 +4904,11 @@ StartChar: Ugrave
 Encoding: 217 217 150
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 369 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 53 85 N 1 0 0 1 0 0 0
 Refer: 64 96 N 1 0 0 1 202 187 0
-Validated: 32769
 Kerns2: 33 -54 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4881,11 +4916,11 @@ StartChar: Uacute
 Encoding: 218 218 151
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 369 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 53 85 N 1 0 0 1 0 0 0
 Refer: 113 180 N 1 0 0 1 222 187 0
-Validated: 32769
 Kerns2: 33 -54 "'kern' Horizontal Kerning in Latin subtable"  12 -17 "'kern' Horizontal Kerning in Latin subtable"  77 -23 "'kern' Horizontal Kerning in Latin subtable"  78 -25 "'kern' Horizontal Kerning in Latin subtable"  80 -28 "'kern' Horizontal Kerning in Latin subtable"  14 -18 "'kern' Horizontal Kerning in Latin subtable"  82 -29 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4893,11 +4928,15 @@ StartChar: Ucircumflex
 Encoding: 219 219 152
 Width: 722
 Flags: HMW
+AnchorPoint: "hook" 591 744 basemark 0
+AnchorPoint: "grave" 228 770 basemark 0
+AnchorPoint: "acute" 555 764 basemark 0
+AnchorPoint: "tilde" 389 888 basemark 0 {} {150-150 2}
+AnchorPoint: "below" 393 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 53 85 N 1 0 0 1 0 0 0
 Refer: 406 710 N 1 0 0 1 223 196 0
-Validated: 32769
 Kerns2: 33 -54 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -4905,11 +4944,11 @@ StartChar: Udieresis
 Encoding: 220 220 153
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 369 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 53 85 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 215 187 0
-Validated: 32769
 Kerns2: 33 -54 "'kern' Horizontal Kerning in Latin subtable"  66 10 "'kern' Horizontal Kerning in Latin subtable"  12 -17 "'kern' Horizontal Kerning in Latin subtable"  77 -23 "'kern' Horizontal Kerning in Latin subtable"  78 -25 "'kern' Horizontal Kerning in Latin subtable"  80 -28 "'kern' Horizontal Kerning in Latin subtable"  14 -18 "'kern' Horizontal Kerning in Latin subtable"  82 -29 "'kern' Horizontal Kerning in Latin subtable" 
 EndChar
 
@@ -5019,6 +5058,11 @@ StartChar: acircumflex
 Encoding: 226 226 159
 Width: 500
 Flags: HMW
+AnchorPoint: "hook" 448 561 basemark 0
+AnchorPoint: "grave" 85 587 basemark 0
+AnchorPoint: "acute" 412 581 basemark 0
+AnchorPoint: "tilde" 246 705 basemark 0
+AnchorPoint: "below" 250 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 65 97 N 1 0 0 1 0 0 0
@@ -5168,6 +5212,11 @@ StartChar: ecircumflex
 Encoding: 234 234 167
 Width: 444
 Flags: HMW
+AnchorPoint: "below" 239 0 basechar 0
+AnchorPoint: "tilde" 235 705 basemark 0
+AnchorPoint: "acute" 385 581 basemark 0
+AnchorPoint: "grave" 74 587 basemark 0
+AnchorPoint: "hook" 437 561 basemark 0
 LayerCount: 2
 Fore
 Refer: 69 101 N 1 0 0 1 0 0 0
@@ -5213,6 +5262,11 @@ StartChar: icircumflex
 Encoding: 238 238 171
 Width: 278
 Flags: HMW
+AnchorPoint: "below" 135 0 basechar 0
+AnchorPoint: "tilde" 131 705 basemark 0
+AnchorPoint: "acute" 297 581 basemark 0
+AnchorPoint: "grave" -30 587 basemark 0
+AnchorPoint: "hook" 333 561 basemark 0
 LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 0
@@ -5303,6 +5357,11 @@ StartChar: ocircumflex
 Encoding: 244 244 177
 Width: 500
 Flags: HMW
+AnchorPoint: "below" 255 0 basechar 0
+AnchorPoint: "tilde" 251 705 basemark 0
+AnchorPoint: "acute" 405 581 basemark 0
+AnchorPoint: "grave" 90 587 basemark 0
+AnchorPoint: "hook" 453 561 basemark 0
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
@@ -5421,6 +5480,11 @@ StartChar: ucircumflex
 Encoding: 251 251 184
 Width: 556
 Flags: HMW
+AnchorPoint: "below" 281 0 basechar 0
+AnchorPoint: "tilde" 277 705 basemark 0
+AnchorPoint: "acute" 443 581 basemark 0
+AnchorPoint: "grave" 116 587 basemark 0
+AnchorPoint: "hook" 479 561 basemark 0
 LayerCount: 2
 Fore
 Refer: 85 117 N 1 0 0 1 0 0 0
@@ -5520,6 +5584,11 @@ StartChar: Abreve
 Encoding: 258 258 191
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 339 0 basechar 0
+AnchorPoint: "hook" 344 817 basemark 0
+AnchorPoint: "grave" 390 822 basemark 0
+AnchorPoint: "acute" 298 822 basemark 0
+AnchorPoint: "tilde" 340 892 basemark 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
@@ -5531,6 +5600,11 @@ StartChar: abreve
 Encoding: 259 259 192
 Width: 500
 Flags: HMW
+AnchorPoint: "below" 254 0 basechar 0
+AnchorPoint: "tilde" 241 700 basemark 0
+AnchorPoint: "acute" 197 630 basemark 0
+AnchorPoint: "grave" 299 630 basemark 0
+AnchorPoint: "hook" 245 625 basemark 0
 LayerCount: 2
 Fore
 Refer: 65 97 N 1 0 0 1 0 0 0
@@ -5809,6 +5883,11 @@ StartChar: Ebreve
 Encoding: 276 276 209
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 339 0 basechar 0
+AnchorPoint: "tilde" 321 891 basemark 0
+AnchorPoint: "acute" 281 821 basemark 0
+AnchorPoint: "grave" 370 821 basemark 0
+AnchorPoint: "hook" 325 816 basemark 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
@@ -5820,6 +5899,11 @@ StartChar: ebreve
 Encoding: 277 277 210
 Width: 444
 Flags: HMW
+AnchorPoint: "hook" 217 625 basemark 0
+AnchorPoint: "grave" 278 630 basemark 0
+AnchorPoint: "acute" 168 630 basemark 0
+AnchorPoint: "tilde" 213 700 basemark 0
+AnchorPoint: "below" 226 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 69 101 N 1 0 0 1 0 0 0
@@ -6198,6 +6282,11 @@ StartChar: Ibreve
 Encoding: 300 300 233
 Width: 389
 Flags: HMW
+AnchorPoint: "below" 192 0 basechar 0
+AnchorPoint: "tilde" 190 892 basemark 0
+AnchorPoint: "acute" 144 822 basemark 0
+AnchorPoint: "grave" 240 822 basemark 0
+AnchorPoint: "hook" 194 817 basemark 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
@@ -6209,6 +6298,11 @@ StartChar: ibreve
 Encoding: 301 301 234
 Width: 278
 Flags: HMW
+AnchorPoint: "hook" 128 625 basemark 0
+AnchorPoint: "grave" 194 630 basemark 0
+AnchorPoint: "acute" 77 630 basemark 0
+AnchorPoint: "tilde" 124 700 basemark 0
+AnchorPoint: "below" 137 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 0
@@ -6323,6 +6417,7 @@ Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
 Refer: 42 74 N 1 0 0 1 378 0 0
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin for Dutch" I J
 EndChar
 
@@ -6754,6 +6849,11 @@ StartChar: Obreve
 Encoding: 334 334 267
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 390 0 basechar 0
+AnchorPoint: "tilde" 385 892 basemark 0
+AnchorPoint: "acute" 337 822 basemark 0
+AnchorPoint: "grave" 436 822 basemark 0
+AnchorPoint: "hook" 389 817 basemark 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
@@ -6765,6 +6865,11 @@ StartChar: obreve
 Encoding: 335 335 268
 Width: 500
 Flags: HMW
+AnchorPoint: "hook" 246 625 basemark 0
+AnchorPoint: "grave" 308 630 basemark 0
+AnchorPoint: "acute" 195 630 basemark 0
+AnchorPoint: "tilde" 242 700 basemark 0
+AnchorPoint: "below" 255 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
@@ -7309,6 +7414,11 @@ StartChar: Ubreve
 Encoding: 364 364 297
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 365 0 basechar 0
+AnchorPoint: "tilde" 354 892 basemark 0
+AnchorPoint: "acute" 304 822 basemark 0
+AnchorPoint: "grave" 401 822 basemark 0
+AnchorPoint: "hook" 358 817 basemark 0
 LayerCount: 2
 Fore
 Refer: 53 85 N 1 0 0 1 0 0 0
@@ -7320,6 +7430,11 @@ StartChar: ubreve
 Encoding: 365 365 298
 Width: 556
 Flags: HMW
+AnchorPoint: "hook" 278 625 basemark 0
+AnchorPoint: "grave" 335 630 basemark 0
+AnchorPoint: "acute" 215 630 basemark 0
+AnchorPoint: "tilde" 274 700 basemark 0
+AnchorPoint: "below" 287 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 85 117 N 1 0 0 1 0 0 0
@@ -7472,6 +7587,11 @@ StartChar: Ycircumflex
 Encoding: 374 374 307
 Width: 722
 Flags: HMW
+AnchorPoint: "hook" 556 744 basemark 0
+AnchorPoint: "grave" 193 770 basemark 0
+AnchorPoint: "acute" 520 764 basemark 0
+AnchorPoint: "tilde" 354 888 basemark 0 {} {150-150 2}
+AnchorPoint: "below" 358 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 57 89 N 1 0 0 1 0 0 0
@@ -7483,6 +7603,11 @@ StartChar: ycircumflex
 Encoding: 375 375 308
 Width: 500
 Flags: HMW
+AnchorPoint: "below" 386 0 basechar 0
+AnchorPoint: "tilde" 246 705 basemark 0
+AnchorPoint: "acute" 412 581 basemark 0
+AnchorPoint: "grave" 85 587 basemark 0
+AnchorPoint: "hook" 448 561 basemark 0
 LayerCount: 2
 Fore
 Refer: 89 121 N 1 0 0 1 0 0 0
@@ -9141,19 +9266,20 @@ EndChar
 StartChar: ogonek
 Encoding: 731 731 411
 Width: 333
-Flags: MW
+Flags: HMW
+AnchorPoint: "ogonek" 160 1 mark 0
 LayerCount: 2
 Fore
 SplineSet
-237 -104 m 0
- 265 -104 285 -89 297 -84 c 1
- 319 -98 l 1
- 294 -144 246 -173 196 -173 c 0
- 135 -173 90 -139 90 -92 c 0
- 90 -40 135 -3 158 32 c 1
- 191 44 l 1
- 189 32 174 -15 174 -40 c 0
- 174 -81 196 -104 237 -104 c 0
+237 -122 m 0
+ 265 -122 285 -107 297 -102 c 1
+ 319 -116 l 1
+ 294 -162 246 -191 196 -191 c 0
+ 135 -191 90 -157 90 -110 c 0
+ 90 -58 135 -21 158 14 c 1
+ 191 26 l 1
+ 189 14 174 -33 174 -58 c 0
+ 174 -99 196 -122 237 -122 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -9197,6 +9323,7 @@ StartChar: gravecomb
 Encoding: 768 768 414
 Width: 0
 Flags: HMW
+AnchorPoint: "grave" -126 492 mark 0
 AnchorPoint: "above" -144 483 mark 0
 LayerCount: 2
 Fore
@@ -9208,6 +9335,7 @@ StartChar: acutecomb
 Encoding: 769 769 415
 Width: 0
 Flags: HMW
+AnchorPoint: "acute" -196 501 mark 0
 AnchorPoint: "above" -180 481 mark 0
 LayerCount: 2
 Fore
@@ -9219,6 +9347,10 @@ StartChar: circumflexcmb
 Encoding: 770 770 416
 Width: 0
 Flags: HMW
+AnchorPoint: "hook" 30 552 basemark 0
+AnchorPoint: "grave" -333 578 basemark 0
+AnchorPoint: "acute" -2 572 basemark 0
+AnchorPoint: "tilde" -172 696 basemark 0 {} {150-150 2}
 AnchorPoint: "above" -167 482 mark 0
 LayerCount: 2
 Fore
@@ -9230,6 +9362,7 @@ StartChar: tildecomb
 Encoding: 771 771 417
 Width: 0
 Flags: HMW
+AnchorPoint: "tilde" -168 519 mark 0
 AnchorPoint: "above" -164 481 mark 0
 LayerCount: 2
 Fore
@@ -9268,7 +9401,11 @@ EndChar
 StartChar: brevecmb
 Encoding: 774 774 420
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "tilde" -172 690 basemark 0
+AnchorPoint: "acute" -210 620 basemark 0
+AnchorPoint: "grave" -113 620 basemark 0
+AnchorPoint: "hook" -168 615 basemark 0
 AnchorPoint: "above" -167 470 mark 0
 LayerCount: 2
 Fore
@@ -9310,7 +9447,8 @@ StartChar: hookabovecomb
 Encoding: 777 777 423
 Width: 0
 Flags: HMW
-AnchorPoint: "above" -167 478 mark 0
+AnchorPoint: "hook" -172 504 mark 0
+AnchorPoint: "above" -167 478 mark 0 {} {150-150 -1}
 LayerCount: 2
 Fore
 SplineSet
@@ -9429,7 +9567,7 @@ StartChar: commaturnedabovecmb
 Encoding: 786 786 432
 Width: 0
 Flags: HMW
-AnchorPoint: "above" -164 460 mark 0 {} {150-150 -2}
+AnchorPoint: "above" -164 460 mark 0 {} {150-150 -1}
 LayerCount: 2
 Fore
 Refer: 2331 699 S 1 0 0 1 -291 45 0
@@ -9440,7 +9578,7 @@ StartChar: commaabovecmb
 Encoding: 787 787 433
 Width: 0
 Flags: HMW
-AnchorPoint: "above" -164 460 mark 0 {} {150-150 -3}
+AnchorPoint: "above" -164 460 mark 0
 LayerCount: 2
 Fore
 Refer: 2194 700 S 1 0 0 1 -279 42 0
@@ -9552,10 +9690,11 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni031B
+StartChar: horncmb
 Encoding: 795 795 441
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "righthorn" -44 394 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -9690,7 +9829,7 @@ Flags: HMW
 AnchorPoint: "below" -202 0 mark 0
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 -371 -716 0
+Refer: 409 729 S 1 0 0 1 -371 -716 0
 Validated: 32769
 EndChar
 
@@ -19930,9 +20069,8 @@ Width: 722
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 182 -716 0
+Refer: 449 803 S 1 0 0 1 535 0 2
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EA1
@@ -19941,9 +20079,8 @@ Width: 500
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 89 -719 0
+Refer: 449 803 S 1 0 0 1 452 0 2
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EA2
@@ -20109,7 +20246,6 @@ LayerCount: 2
 Fore
 Refer: 406 710 N 1 0 0 1 182 188 0
 Refer: 925 7840 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EAD
@@ -20120,7 +20256,6 @@ LayerCount: 2
 Fore
 Refer: 406 710 N 1 0 0 1 90 -27 0
 Refer: 926 7841 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EAE
@@ -20381,7 +20516,6 @@ LayerCount: 2
 Fore
 Refer: 408 728 N 1 0 0 1 182 188 0
 Refer: 925 7840 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EB7
@@ -20392,7 +20526,6 @@ LayerCount: 2
 Fore
 Refer: 408 728 N 1 0 0 1 90 -1 0
 Refer: 926 7841 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EB8
@@ -20401,9 +20534,8 @@ Width: 667
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 161 -716 0
+Refer: 449 803 S 1 0 0 1 534 0 2
 Refer: 37 69 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EB9
@@ -20412,9 +20544,8 @@ Width: 444
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 58 -720 0
+Refer: 449 803 S 1 0 0 1 424 0 2
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EBA
@@ -20469,7 +20600,6 @@ LayerCount: 2
 Fore
 Refer: 113 180 N 1 0 0 1 413 187 0
 Refer: 135 202 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EBF
@@ -20491,7 +20621,6 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 -94 187 0
 Refer: 135 202 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EC1
@@ -20513,7 +20642,6 @@ LayerCount: 2
 Fore
 Refer: 423 777 N 1 0 0 1 740 203 0
 Refer: 135 202 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EC3
@@ -20602,7 +20730,6 @@ LayerCount: 2
 Fore
 Refer: 406 710 N 1 0 0 1 162 188 0
 Refer: 949 7864 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EC7
@@ -20613,7 +20740,6 @@ LayerCount: 2
 Fore
 Refer: 406 710 N 1 0 0 1 59 -27 0
 Refer: 950 7865 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EC8
@@ -20644,9 +20770,8 @@ Width: 386
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 24 -716 0
+Refer: 449 803 S 1 0 0 1 390 0 2
 Refer: 41 73 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1ECB
@@ -20655,9 +20780,8 @@ Width: 278
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 -32 -716 0
+Refer: 449 803 S 1 0 0 1 335 0 2
 Refer: 73 105 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1ECC
@@ -20666,9 +20790,8 @@ Width: 778
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 222 -718 0
+Refer: 449 803 S 1 0 0 1 578 0 2
 Refer: 47 79 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1ECD
@@ -20677,9 +20800,8 @@ Width: 500
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 83 -721 0
+Refer: 449 803 S 1 0 0 1 449 0 2
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1ECE
@@ -20712,7 +20834,6 @@ LayerCount: 2
 Fore
 Refer: 113 180 N 1 0 0 1 475 187 0
 Refer: 145 212 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1ED1
@@ -20734,7 +20855,6 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 -42 187 0
 Refer: 145 212 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1ED3
@@ -20756,7 +20876,6 @@ LayerCount: 2
 Fore
 Refer: 423 777 N 1 0 0 1 821 203 2
 Refer: 145 212 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1ED5
@@ -20831,7 +20950,6 @@ LayerCount: 2
 Fore
 Refer: 406 710 N 1 0 0 1 222 188 0
 Refer: 969 7884 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1ED9
@@ -20842,7 +20960,6 @@ LayerCount: 2
 Fore
 Refer: 406 710 N 1 0 0 1 84 -27 0
 Refer: 970 7885 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE4
@@ -20851,9 +20968,8 @@ Width: 722
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 191 -719 0
+Refer: 449 803 S 1 0 0 1 578 0 2
 Refer: 53 85 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE5
@@ -20862,9 +20978,8 @@ Width: 556
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 109 -718 0
+Refer: 449 803 S 1 0 0 1 476 0 2
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE6
@@ -20917,9 +21032,8 @@ Width: 722
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 190 -716 0
+Refer: 449 803 S 1 0 0 1 557 0 2
 Refer: 57 89 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EF5
@@ -20928,9 +21042,8 @@ Width: 500
 Flags: HM
 LayerCount: 2
 Fore
-Refer: 409 729 N 1 0 0 1 233 -723 0
+Refer: 449 803 S 1 0 0 1 579 0 2
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EF6
@@ -24494,7 +24607,6 @@ Flags: HM
 LayerCount: 2
 Fore
 Refer: 130 197 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni2160
@@ -30541,6 +30653,7 @@ Encoding: 431 431 1530
 Width: 839
 Flags: HMW
 TeX: 85 0
+AnchorPoint: "below" 360 0 basechar 0
 AnchorPoint: "above" 389 660 basechar 0
 LayerCount: 2
 Fore
@@ -30572,7 +30685,6 @@ SplineSet
  354 676 l 1
  354 651 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uhorn
@@ -30580,6 +30692,7 @@ Encoding: 432 432 1531
 Width: 629
 Flags: HMW
 TeX: 117 0
+AnchorPoint: "below" 271 0 basechar 0
 AnchorPoint: "above" 259 470 basechar 0 {150-150 -6} {}
 LayerCount: 2
 Fore
@@ -30612,7 +30725,6 @@ SplineSet
  342 421 330 433 280 437 c 1
  280 461 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni018D
@@ -30782,7 +30894,8 @@ Encoding: 416 416 1537
 Width: 778
 Flags: HMW
 TeX: 79 0
-AnchorPoint: "above" 393 658 basechar 0
+AnchorPoint: "below" 390 0 basechar 0
+AnchorPoint: "above" 393 663 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -30805,7 +30918,6 @@ SplineSet
  729 852 774 784.5 774 688 c 0
  774 615.993 731 584 652 581 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ohorn
@@ -30813,6 +30925,7 @@ Encoding: 417 417 1538
 Width: 550
 Flags: HMW
 TeX: 111 0
+AnchorPoint: "below" 256 0 basechar 0
 AnchorPoint: "above" 252 470 basechar 0 {150-150 -9} {}
 LayerCount: 2
 Fore
@@ -30836,7 +30949,6 @@ SplineSet
  504 622 549 556 549 458 c 0
  549 392.992 513 360 447 353 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni2669
@@ -32238,7 +32350,6 @@ LayerCount: 2
 Fore
 Refer: 415 769 N 1 0 0 1 560 187 2
 Refer: 1537 416 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EDB
@@ -32250,7 +32361,6 @@ LayerCount: 2
 Fore
 Refer: 415 769 N 1 0 0 1 400 0 2
 Refer: 1538 417 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EDC
@@ -32262,7 +32372,6 @@ LayerCount: 2
 Fore
 Refer: 414 768 N 1 0 0 1 560 187 2
 Refer: 1537 416 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EDD
@@ -32274,7 +32383,6 @@ LayerCount: 2
 Fore
 Refer: 414 768 N 1 0 0 1 402 0 2
 Refer: 1538 417 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EDE
@@ -32286,7 +32394,6 @@ LayerCount: 2
 Fore
 Refer: 423 777 N 1 0 0 1 560 188 2
 Refer: 1537 416 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EDF
@@ -32298,7 +32405,6 @@ LayerCount: 2
 Fore
 Refer: 423 777 N 1 0 0 1 419 0 2
 Refer: 1538 417 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EE0
@@ -32310,7 +32416,6 @@ LayerCount: 2
 Fore
 Refer: 417 771 N 1 0 0 1 560 222 2
 Refer: 1537 416 N 1 0 0 1 0 0 3
-Validated: 32769
 EndChar
 
 StartChar: uni1EE1
@@ -32322,7 +32427,6 @@ LayerCount: 2
 Fore
 Refer: 1538 417 N 1 0 0 1 0 0 2
 Refer: 417 771 N 1 0 0 1 393 100 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EE2
@@ -32334,7 +32438,6 @@ LayerCount: 2
 Fore
 Refer: 449 803 N 1 0 0 1 588 0 2
 Refer: 1537 416 N 1 0 0 1 0 0 3
-Validated: 32769
 EndChar
 
 StartChar: uni1EE3
@@ -32346,7 +32449,6 @@ LayerCount: 2
 Fore
 Refer: 449 803 N 1 0 0 1 457 5 2
 Refer: 1538 417 N 1 0 0 1 0 0 3
-Validated: 32769
 EndChar
 
 StartChar: uni1EE8
@@ -32358,7 +32460,6 @@ LayerCount: 2
 Fore
 Refer: 415 769 N 1 0 0 1 556 187 2
 Refer: 1530 431 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EE9
@@ -32370,7 +32471,6 @@ LayerCount: 2
 Fore
 Refer: 415 769 N 1 0 0 1 399 0 2
 Refer: 1531 432 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EEA
@@ -32382,7 +32482,6 @@ LayerCount: 2
 Fore
 Refer: 414 768 N 1 0 0 1 556 187 2
 Refer: 1530 431 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EEB
@@ -32394,7 +32493,6 @@ LayerCount: 2
 Fore
 Refer: 414 768 N 1 0 0 1 426 0 2
 Refer: 1531 432 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EEC
@@ -32406,7 +32504,6 @@ LayerCount: 2
 Fore
 Refer: 423 777 N 1 0 0 1 556 190 2
 Refer: 1530 431 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EED
@@ -32418,7 +32515,6 @@ LayerCount: 2
 Fore
 Refer: 423 777 N 1 0 0 1 426 0 2
 Refer: 1531 432 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EEE
@@ -32430,7 +32526,6 @@ LayerCount: 2
 Fore
 Refer: 417 771 N 1 0 0 1 558 208 2
 Refer: 1530 431 N 1 0 0 1 0 0 3
-Validated: 32769
 EndChar
 
 StartChar: uni1EEF
@@ -32442,7 +32537,6 @@ LayerCount: 2
 Fore
 Refer: 417 771 N 1 0 0 1 383 99 2
 Refer: 1531 432 N 1 0 0 1 0 0 3
-Validated: 32769
 EndChar
 
 StartChar: uni1EF0
@@ -32454,7 +32548,6 @@ LayerCount: 2
 Fore
 Refer: 1530 431 N 1 0 0 1 0 0 2
 Refer: 449 803 N 1 0 0 1 572 6 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EF1
@@ -32466,7 +32559,6 @@ LayerCount: 2
 Fore
 Refer: 1531 432 N 1 0 0 1 0 0 2
 Refer: 449 803 N 1 0 0 1 481 6 2
-Validated: 32769
 EndChar
 
 StartChar: rupee
@@ -32685,6 +32777,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1611 1430 N -1 0 0 -1 265 620 2
+Validated: 32769
 EndChar
 
 StartChar: uni059A
@@ -32722,6 +32815,7 @@ LayerCount: 2
 Fore
 Refer: 1640 1460 N 1 0 0 1 -95 -36 2
 Refer: 1625 1445 N 1 0 0 1 68 0 2
+Validated: 32769
 EndChar
 
 StartChar: uni059C
@@ -32898,6 +32992,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1617 1436 N -1 0 0 -1 533 620 2
+Validated: 32769
 EndChar
 
 StartChar: uni05A6
@@ -32909,6 +33004,7 @@ LayerCount: 2
 Fore
 Refer: 1625 1445 S 1 0 0 1 -25 0 2
 Refer: 1625 1445 S 1 0 0 1 73 0 2
+Validated: 32769
 EndChar
 
 StartChar: uni05A7
@@ -32993,6 +33089,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1606 1425 N -1 0 0 -1 602 -280 2
+Validated: 32769
 EndChar
 
 StartChar: uni05AB
@@ -53149,8 +53246,8 @@ EndChar
 StartChar: uni0351
 Encoding: 849 849 2412
 Width: 0
-Flags: MW
-AnchorPoint: "above" -205 460 mark 0
+Flags: HMW
+AnchorPoint: "above" -205 454 mark 0
 LayerCount: 2
 Fore
 Refer: 2242 702 S -1 0 0 -1 -17 1213 2
@@ -58566,7 +58663,7 @@ StartChar: uni035e
 Encoding: 862 862 2588
 Width: 0
 Flags: HMW
-AnchorPoint: "above" -304 640 mark 0 {} {150-150 -5}
+AnchorPoint: "above" -304 640 mark 0
 LayerCount: 2
 Fore
 SplineSet

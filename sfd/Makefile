@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.5 2008-09-22 14:29:30 Stevan_White Exp $
+# $Id: Makefile,v 1.6 2008-11-26 00:32:42 Stevan_White Exp $
 
 SFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd \
 FreeSansBoldOblique.sfd FreeSansBold.sfd FreeSansOblique.sfd FreeSans.sfd \
@@ -15,7 +15,7 @@ FFPY=fontforge -lang=py -script
 	@ ( $(FFPY) ../tools/GenerateOpenType $< 2>/dev/stdout 1>/dev/stderr | tail -n +4 ) 2>&1 
 
 %.ttf : %.sfd
-	@ ( $(FF) ../tools/GenerateTrueType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	@ ( $(FFPY) ../tools/GenerateTrueType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
 
 all: ttf otf
 
