@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.153 $
+Version: $Revision: 1.154 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1227724901
+ModificationTime: 1227734885
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -70,7 +70,6 @@ Lookup: 4 0 1 "'liga' Standard Ligatures in Thai"  {"'liga' Standard Ligatures i
 Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic subtable"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'blwm' Below Base Mark in Thai subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai"  {"'mkmk' Mark to Mark in Thai subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai"  {"'mark' Mark Positioning in Thai subtable"  "'mark' Mark Positioning in Thai 1 subtable"  } ['mark' ('thai' <'dflt' > ) ]
@@ -78,9 +77,10 @@ Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 2"  {"'mkmk' Mark to Mark in Thai s
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  "'mark' Mark Positioning in Latin subtable 2"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin 2"  {"'mkmk' Mark to Mark in Latin 2 subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic subtable"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin subtable 2"  "'kern' Horizontal Kerning in Latin classes"  } ['kern' ('DFLT' <'dflt' > ) ]
 DEI: 0
-KernClass2: 9 9 "'kern' Horizontal Kerning in Cyrillic subtable" 
+KernClass2: 10 10 "'kern' Horizontal Kerning in Cyrillic subtable" 
  9 Acyrillic
  70 Ecyrillic Ocyrillic Escyrillic Efcyrillic Ereversedcyrillic IUcyrillic
  57 Ljecyrillic Njecyrillic Hardsigncyrillic Softsigncyrillic
@@ -89,6 +89,7 @@ KernClass2: 9 9 "'kern' Horizontal Kerning in Cyrillic subtable"
  46 zhecyrillic kacyrillic khacyrillic kjecyrillic
  57 hardsigncyrillic softsigncyrillic ljecyrillic njecyrillic
  33 Gjecyrillic Gecyrillic Tecyrillic
+ 24 ucyrillic ushortcyrillic
  59 Ecyrillic Ocyrillic Escyrillic Efcyrillic Ereversedcyrillic
  10 Decyrillic
  23 Zhecyrillic Khacyrillic
@@ -97,7 +98,8 @@ KernClass2: 9 9 "'kern' Horizontal Kerning in Cyrillic subtable"
  11 Checyrillic
  92 acyrillic vecyrillic iecyrillic ocyrillic escyrillic efcyrillic uni0450 iocyrillic ecyrillic
  21 elcyrillic emcyrillic
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} -5 {} -10 {} -120 {} -120 {} -20 {} 0 {} 0 {} 0 {} -40 {} -80 {} -10 {} -40 {} -60 {} 0 {} 0 {} 0 {} -30 {} -40 {} -60 {} -10 {} -100 {} -100 {} 0 {} 0 {} 0 {} -40 {} -10 {} 0 {} -40 {} -40 {} -40 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -80 {}
+ 24 ucyrillic ushortcyrillic
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} -5 {} -10 {} -120 {} -120 {} -20 {} 0 {} -50 {} 0 {} 0 {} -40 {} -80 {} -10 {} -40 {} -60 {} 0 {} 0 {} -30 {} 0 {} -30 {} -40 {} -60 {} -10 {} -100 {} -100 {} 0 {} 0 {} -20 {} 0 {} -40 {} -10 {} 0 {} -40 {} -40 {} -40 {} -40 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -30 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -80 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {}
 KernClass2: 8 8 "'kern' Horizontal Kerning in Latin classes" 
  58 A Agrave Aacute Acircumflex Atilde Adieresis Aring uni0226
  31 V W Y Yacute Ygrave Ycircumflex
