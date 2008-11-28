@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.154 $
+Version: $Revision: 1.155 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1227734885
+ModificationTime: 1227830451
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -100,22 +100,23 @@ KernClass2: 10 10 "'kern' Horizontal Kerning in Cyrillic subtable"
  21 elcyrillic emcyrillic
  24 ucyrillic ushortcyrillic
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} -5 {} -10 {} -120 {} -120 {} -20 {} 0 {} -50 {} 0 {} 0 {} -40 {} -80 {} -10 {} -40 {} -60 {} 0 {} 0 {} -30 {} 0 {} -30 {} -40 {} -60 {} -10 {} -100 {} -100 {} 0 {} 0 {} -20 {} 0 {} -40 {} -10 {} 0 {} -40 {} -40 {} -40 {} -40 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -30 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -80 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {}
-KernClass2: 8 8 "'kern' Horizontal Kerning in Latin classes" 
+KernClass2: 9 8 "'kern' Horizontal Kerning in Latin classes" 
  58 A Agrave Aacute Acircumflex Atilde Adieresis Aring uni0226
  31 V W Y Yacute Ygrave Ycircumflex
  1 T
- 1 y
- 11 b c e g o p
+ 37 y yacute ygrave ycircumflex ydieresis
+ 104 b c e g o p eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
  1 L
  3 K X
- 59 A Agrave Aacute Acircumflex Atilde Adieresis Aring uni0226 
+ 3 d l
+ 66 A Agrave Aacute Acircumflex Atilde Adieresis Abreve Aring uni0226 
  31 V W Y Yacute Ygrave Ycircumflex
  1 T
- 1 y
+ 37 y yacute ygrave ycircumflex ydieresis
  3 v w
- 15 a c d e g o q s
- 7 C G O Q
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} -80 {} -60 {} -20 {} -60 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} -40 {} -40 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -80 {}
+ 151 a c d e g o q s aacute agrave acircumflex adieresis abreve eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
+ 57 C G O Q Ograve Oacute Ocircumflex Otilde Odieresis Obreve
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} -80 {} -60 {} -20 {} -60 {} 0 {} -80 {} 0 {} 0 {} -20 {} -20 {} -40 {} -40 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -20 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 ShortTable: maxp 16
   0
   0
@@ -549,7 +550,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1024 16 12
+WinInfo: 8192 16 12
 BeginPrivate: 7
 UniqueID 7 5020937
 BlueValues 23 [-20 0 432 452 653 673]
@@ -26444,18 +26445,18 @@ EndChar
 
 StartChar: quoteleft
 Encoding: 8216 8216 1275
-Width: 333
+Width: 250
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-235 560 m 0
- 235 531 280 523 280 483 c 0
- 280 456 258 436 229 436 c 0
- 196 436 171 467 171 507 c 0
- 171 563 217 619 301 666 c 1
- 310 649 l 1
- 258 614 235 587 235 560 c 0
+264 560 m 4
+ 264 531 309 523 309 483 c 4
+ 309 456 287 436 258 436 c 4
+ 225 436 200 467 200 507 c 4
+ 200 563 246 619 330 666 c 5
+ 339 649 l 5
+ 287 614 264 587 264 560 c 4
 EndSplineSet
 Validated: 3073
 Kerns2: 131 -78 "'kern' Horizontal Kerning in Latin subtable 2" 
@@ -26463,7 +26464,7 @@ EndChar
 
 StartChar: quoteright
 Encoding: 8217 8217 1276
-Width: 333
+Width: 250
 Flags: HMW
 LayerCount: 2
 Fore
@@ -26482,20 +26483,12 @@ EndChar
 
 StartChar: quotesinglbase
 Encoding: 8218 8218 1277
-Width: 333
+Width: 250
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-119 -23 m 0
- 119 6 74 14 74 54 c 0
- 74 81 96 101 125 101 c 0
- 158 101 183 70 183 30 c 0
- 183 -26 137 -82 53 -129 c 1
- 44 -112 l 1
- 96 -77 119 -50 119 -23 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1275 8216 S -1 0 0 -1 383 537 2
+Validated: 32769
 EndChar
 
 StartChar: quotereversed
@@ -26519,107 +26512,49 @@ EndChar
 
 StartChar: quotedblleft
 Encoding: 8220 8220 1279
-Width: 556
+Width: 444
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-230 560 m 0
- 230 531 275 523 275 483 c 0
- 275 456 253 436 224 436 c 0
- 191 436 166 467 166 507 c 0
- 166 563 212 619 296 666 c 1
- 305 649 l 1
- 253 614 230 587 230 560 c 0
-439 560 m 0
- 439 531 484 523 484 483 c 0
- 484 456 462 436 433 436 c 0
- 400 436 375 467 375 507 c 0
- 375 563 421 619 505 666 c 1
- 514 649 l 1
- 462 614 439 587 439 560 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1275 8216 N 1 0 0 1 209 0 2
+Refer: 1275 8216 N 1 0 0 1 0 0 2
+Validated: 32769
 Kerns2: 33 -88 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotedblright
 Encoding: 8221 8221 1280
-Width: 556
+Width: 444
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-226 541 m 0
- 226 570 181 579 181 619 c 0
- 181 646 203 666 232 666 c 0
- 265 666 290 635 290 595 c 0
- 290 539 244 482 160 436 c 1
- 151 453 l 1
- 203 488 226 515 226 541 c 0
-435 541 m 0
- 435 570 390 579 390 619 c 0
- 390 646 412 666 441 666 c 0
- 474 666 499 635 499 595 c 0
- 499 539 453 482 369 436 c 1
- 360 453 l 1
- 412 488 435 515 435 541 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1276 8217 N 1 0 0 1 250 0 2
+Refer: 1276 8217 N 1 0 0 1 41 0 2
+Validated: 32769
 Kerns2: 131 -147 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotedblbase
 Encoding: 8222 8222 1281
-Width: 556
+Width: 444
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-132 -23 m 0
- 132 6 87 14 87 54 c 0
- 87 81 109 101 138 101 c 0
- 171 101 196 70 196 30 c 0
- 196 -26 150 -82 66 -129 c 1
- 57 -112 l 1
- 109 -77 132 -50 132 -23 c 0
-341 -23 m 0
- 341 6 296 14 296 54 c 0
- 296 81 318 101 347 101 c 0
- 380 101 405 70 405 30 c 0
- 405 -26 359 -82 275 -129 c 1
- 266 -112 l 1
- 318 -77 341 -50 341 -23 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1277 8218 N 1 0 0 1 200 0 2
+Refer: 1277 8218 N 1 0 0 1 -9 0 2
+Validated: 32769
 Kerns2: 131 -13 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: uni201F
 Encoding: 8223 8223 1282
-Width: 556
+Width: 444
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-248 666 m 0
- 282 666 302 635 302 614 c 0
- 302 561 223 570 209 551 c 0
- 202 542 199 529 199 515 c 0
- 199 485 212 451 217 436 c 1
- 199 428 l 1
- 182 462 168 510 168 554 c 0
- 168 648 231 666 248 666 c 0
-458 666 m 0
- 492 666 512 635 512 614 c 0
- 512 561 433 570 419 551 c 0
- 412 542 409 529 409 515 c 0
- 409 485 422 451 427 436 c 1
- 409 428 l 1
- 392 462 378 510 378 554 c 0
- 378 648 441 666 458 666 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1278 8219 N 1 0 0 1 252 0 2
+Refer: 1278 8219 N 1 0 0 1 42 0 2
+Validated: 32769
 EndChar
 
 StartChar: dagger
