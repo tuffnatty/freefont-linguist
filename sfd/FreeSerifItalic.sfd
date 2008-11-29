@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.155 $
+Version: $Revision: 1.156 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1227830451
+ModificationTime: 1227966184
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -78,7 +78,7 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin 2"  {"'mkmk' Mark to Mark in Latin 2 subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic subtable"  } ['kern' ('cyrl' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin subtable 2"  "'kern' Horizontal Kerning in Latin classes"  } ['kern' ('DFLT' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-capital"  "'kern' Horizontal Kerning in Latin-small"  "'kern' Horizontal Kerning in Latin-rightpunct"  "'kern' Horizontal Kerning in Latin-leftpunct"  } ['kern' ('DFLT' <'dflt' > ) ]
 DEI: 0
 KernClass2: 10 10 "'kern' Horizontal Kerning in Cyrillic subtable" 
  9 Acyrillic
@@ -100,23 +100,89 @@ KernClass2: 10 10 "'kern' Horizontal Kerning in Cyrillic subtable"
  21 elcyrillic emcyrillic
  24 ucyrillic ushortcyrillic
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} -5 {} -10 {} -120 {} -120 {} -20 {} 0 {} -50 {} 0 {} 0 {} -40 {} -80 {} -10 {} -40 {} -60 {} 0 {} 0 {} -30 {} 0 {} -30 {} -40 {} -60 {} -10 {} -100 {} -100 {} 0 {} 0 {} -20 {} 0 {} -40 {} -10 {} 0 {} -40 {} -40 {} -40 {} -40 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -30 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -80 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {}
-KernClass2: 9 8 "'kern' Horizontal Kerning in Latin classes" 
- 58 A Agrave Aacute Acircumflex Atilde Adieresis Aring uni0226
- 31 V W Y Yacute Ygrave Ycircumflex
- 1 T
- 37 y yacute ygrave ycircumflex ydieresis
- 104 b c e g o p eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
- 1 L
+KernClass2: 11 15 "'kern' Horizontal Kerning in Latin-capital" 
+ 57 A Agrave Aacute Acircumflex Atilde Abreve Adieresis Aring
+ 1 B
+ 12 C G Ccedilla
+ 55 D O Q Ograve Oacute Ocircumflex Otilde Odieresis Obreve
+ 1 F
  3 K X
- 3 d l
- 66 A Agrave Aacute Acircumflex Atilde Adieresis Abreve Aring uni0226 
+ 1 L
+ 1 P
+ 1 T
+ 31 V W Y Yacute Ygrave Ycircumflex
+ 69 A AE Agrave Aacute Acircumflex Atilde Adieresis Abreve Aring uni0226 
  31 V W Y Yacute Ygrave Ycircumflex
  1 T
  37 y yacute ygrave ycircumflex ydieresis
  3 v w
- 151 a c d e g o q s aacute agrave acircumflex adieresis abreve eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
- 57 C G O Q Ograve Oacute Ocircumflex Otilde Odieresis Obreve
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} -80 {} -60 {} -20 {} -60 {} 0 {} -80 {} 0 {} 0 {} -20 {} -20 {} -40 {} -40 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -20 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
+ 170 a c d e g o q ae oe aacute agrave acircumflex adieresis abreve aring ccedilla eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
+ 69 C G O Q OE Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Obreve
+ 1 X
+ 10 m n ntilde
+ 8 s scaron
+ 8 z zcaron
+ 1 t
+ 1 f
+ 1 x
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} -80 {} -60 {} -20 {} -60 {} 0 {} -30 {} -30 {} -20 {} -50 {} -20 {} 0 {} 0 {} -50 {} -80 {} -20 {} -30 {} -40 {} -20 {} -40 {} -50 {} -30 {} -40 {} -40 {} -40 {} -20 {} -40 {} 0 {} 0 {} 0 {} -20 {} -30 {} -30 {} -40 {} -60 {} -40 {} -60 {} -60 {} -60 {} -40 {} -40 {} -50 {} 0 {} -60 {} -70 {} -40 {} -10 {} -10 {} -40 {} -20 {} -80 {} -30 {} -70 {} -40 {} -30 {} 0 {} -50 {} 0 {} -100 {} -40 {} -30 {} -50 {} -50 {} -90 {} -70 {} -20 {} -70 {} -100 {} -100 {} -70 {} -50 {} -70 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -80 {} 0 {} -30 {} -40 {} -20 {} -60 {} -20 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -20 {} 0 {} -10 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -100 {} -60 {} -20 {} -20 {} -20 {} -90 {} -40 {} -60 {} -40 {} -90 {} -60 {} -40 {} -20 {} -50 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} 0 {} -20 {} -70 {} -60 {} -20 {} -20 {} -30 {} 0 {} -80 {} 0 {} 0 {} -20 {} -20 {} -40 {} -40 {} 0 {} -60 {} -80 {} -70 {} -40 {} -20 {} -40 {}
+KernClass2: 14 11 "'kern' Horizontal Kerning in Latin-small" 
+ 37 y yacute ygrave ycircumflex ydieresis
+ 110 b c e g o p ae oe eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
+ 3 d l
+ 51 a aacute agrave acircumflex adieresis abreve aring 
+ 1 f
+ 1 t
+ 3 k x
+ 5 h m n
+ 1 i
+ 1 q
+ 44 u uacute ugrave ucircumflex ubreve udieresis
+ 8 z zcaron
+ 8 s scaron
+ 37 y yacute ygrave ycircumflex ydieresis
+ 3 v w
+ 161 a c d e g o q ae oe aacute agrave acircumflex adieresis abreve aring eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
+ 1 j
+ 1 i
+ 44 u uacute ugrave ucircumflex ubreve udieresis
+ 8 s scaron
+ 8 z zcaron
+ 1 f
+ 1 t
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -40 {} -40 {} -40 {} -60 {} -40 {} 0 {} -40 {} 0 {} -10 {} -10 {} 0 {} -50 {} -30 {} -30 {} -40 {} -40 {} -30 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -30 {} -40 {} -40 {} -20 {} -20 {} 0 {} -20 {} -20 {} -20 {} -40 {} -30 {} -20 {} -40 {} -40 {} -20 {} -20 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} -40 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -20 {} -10 {} -40 {} -30 {} 0 {} -10 {} 0 {} 0 {} 0 {} -20 {} -40 {} -20 {} -20 {} -30 {} -40 {} -10 {} -20 {} 0 {} -40 {} -40 {} -20 {} -40 {} -40 {} -30 {} -30 {} -40 {} -30 {} -20 {} 0 {} -40 {} -40 {} -40 {} -40 {} -30 {} -40 {} -30 {} -40 {} -20 {} -20 {} 0 {} -10 {} -20 {} -40 {} 0 {} -40 {} -40 {} -60 {} -40 {} 0 {} -20 {} 0 {} -20 {} -30 {} -30 {} -40 {} -40 {} -40 {} -40 {} -40 {} -20 {} -20 {} 0 {} -10 {} -20 {} -30 {} 0 {} -30 {} -30 {} -20 {} -10 {} 0 {} -20 {} 0 {} -20 {} -20 {} -30 {} -40 {} -40 {} -40 {} -40 {} -40 {} -20 {} -20 {}
+KernClass2: 5 10 "'kern' Horizontal Kerning in Latin-leftpunct" 
+ 22 quoteleft quotedblleft
+ 36 hyphen guillemotright guilsinglright
+ 27 quotesinglbase quotedblbase
+ 10 quoteright
+ 69 A AE Agrave Aacute Acircumflex Atilde Adieresis Abreve Aring uni0226 
+ 31 V W Y Yacute Ygrave Ycircumflex
+ 1 T
+ 37 y yacute ygrave ycircumflex ydieresis
+ 3 v w
+ 161 a c d e g o q ae oe aacute agrave acircumflex adieresis abreve aring eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
+ 60 C G O Q OE Ograve Oacute Ocircumflex Otilde Odieresis Obreve
+ 1 s
+ 1 S
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -60 {} -40 {} 0 {} -60 {} -100 {} -60 {} -80 {} -80 {} -20 {} -50 {} 0 {} 0 {} 0 {} 0 {} -120 {} -40 {} -60 {} -80 {} -40 {} -90 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} -90 {} -60 {} -80 {} -40 {}
+KernClass2: 12 5 "'kern' Horizontal Kerning in Latin-rightpunct" 
+ 57 A Agrave Aacute Acircumflex Atilde Abreve Adieresis Aring
+ 3 K X
+ 1 L
+ 1 T
+ 31 V W Y Yacute Ygrave Ycircumflex
+ 110 b c e g o p ae oe eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
+ 3 d l
+ 41 v w y yacute ygrave ycircumflex ydieresis
+ 1 F
+ 50 E OE AE Eacute Egrave Ecircumflex Edieresis Ebreve
+ 8 S Scaron
+ 12 period comma
+ 20 hyphen guillemotleft
+ 37 quoteright quotedblright quotedblleft
+ 29 guillemotright guilsinglright
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -80 {} -140 {} -80 {} 0 {} -40 {} -90 {} -80 {} -70 {} 0 {} 0 {} -20 {} -90 {} -20 {} 0 {} -70 {} -70 {} -40 {} -90 {} 0 {} -90 {} -100 {} -60 {} -90 {} 0 {} -60 {} -20 {} -120 {} -40 {} 0 {} -20 {} -40 {} -70 {} -50 {} 0 {} -60 {} -50 {} -100 {} -80 {} 0 {} -110 {} -100 {} -90 {} -120 {} 0 {} -20 {} -60 {} -80 {} -60 {} 0 {} -40 {} -60 {} -90 {} -70 {}
 ShortTable: maxp 16
   0
   0
@@ -923,7 +989,6 @@ SplineSet
  48 -77 71 -50 71 -23 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 1276 -39 "'kern' Horizontal Kerning in Latin subtable 2"  1280 -39 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: hyphen
@@ -940,7 +1005,6 @@ SplineSet
  282 255 l 1
 EndSplineSet
 Validated: 3073
-Kerns2: 52 -46 "'kern' Horizontal Kerning in Latin subtable 2"  131 -23 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: period
@@ -957,7 +1021,6 @@ SplineSet
  27 74 52 100 82 100 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 1276 -38 "'kern' Horizontal Kerning in Latin subtable 2"  1280 -38 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: slash
@@ -4246,7 +4309,6 @@ SplineSet
  129 400 132 403 136 403 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -81 "'kern' Horizontal Kerning in Latin subtable 2"  52 -77 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: onequarter
@@ -26450,16 +26512,14 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-264 560 m 4
- 264 531 309 523 309 483 c 4
- 309 456 287 436 258 436 c 4
- 225 436 200 467 200 507 c 4
- 200 563 246 619 330 666 c 5
- 339 649 l 5
- 287 614 264 587 264 560 c 4
+226 560 m 4
+ 226 531 271 523 271 483 c 4
+ 271 456 249 436 220 436 c 4
+ 187 436 162 467 162 507 c 4
+ 162 563 208 619 292 666 c 5
+ 301 649 l 5
+ 249 614 226 587 226 560 c 4
 EndSplineSet
-Validated: 3073
-Kerns2: 131 -78 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quoteright
@@ -26478,7 +26538,6 @@ SplineSet
  203 488 226 515 226 541 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 14 -78 "'kern' Horizontal Kerning in Latin subtable 2"  12 -73 "'kern' Horizontal Kerning in Latin subtable 2"  89 -28 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotesinglbase
@@ -26487,13 +26546,12 @@ Width: 250
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1275 8216 S -1 0 0 -1 383 537 2
-Validated: 32769
+Refer: 1275 8216 S -1 0 0 -1 326 537 2
 EndChar
 
 StartChar: quotereversed
 Encoding: 8219 8219 1278
-Width: 333
+Width: 250
 Flags: HMW
 LayerCount: 2
 Fore
@@ -26507,7 +26565,6 @@ SplineSet
  182 462 168 510 168 554 c 0
  168 648 231 666 248 666 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: quotedblleft
@@ -26518,8 +26575,6 @@ LayerCount: 2
 Fore
 Refer: 1275 8216 N 1 0 0 1 209 0 2
 Refer: 1275 8216 N 1 0 0 1 0 0 2
-Validated: 32769
-Kerns2: 33 -88 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotedblright
@@ -26531,7 +26586,6 @@ Fore
 Refer: 1276 8217 N 1 0 0 1 250 0 2
 Refer: 1276 8217 N 1 0 0 1 41 0 2
 Validated: 32769
-Kerns2: 131 -147 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: quotedblbase
@@ -26542,8 +26596,6 @@ LayerCount: 2
 Fore
 Refer: 1277 8218 N 1 0 0 1 200 0 2
 Refer: 1277 8218 N 1 0 0 1 -9 0 2
-Validated: 32769
-Kerns2: 131 -13 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: uni201F
@@ -26554,7 +26606,6 @@ LayerCount: 2
 Fore
 Refer: 1278 8219 N 1 0 0 1 252 0 2
 Refer: 1278 8219 N 1 0 0 1 42 0 2
-Validated: 32769
 EndChar
 
 StartChar: dagger
@@ -26814,7 +26865,6 @@ SplineSet
  126 400 129 403 133 403 c 0
 EndSplineSet
 Validated: 3073
-Kerns2: 57 -80 "'kern' Horizontal Kerning in Latin subtable 2" 
 EndChar
 
 StartChar: uni203B
