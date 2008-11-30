@@ -4,7 +4,7 @@ FullName: Free Serif Bold
 FamilyName: FreeSerif
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.139 $
+Version: $Revision: 1.140 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1227953537
+ModificationTime: 1228077215
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -57,7 +57,7 @@ Lookup: 4 1 1 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures
 Lookup: 4 1 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Thai"  {"'liga' Standard Ligatures in Thai subtable"  } ['liga' ('thai' <'dflt' > ) ]
-Lookup: 2 0 0 "'ccmp' Glyph Composition/Decomposition for Thai"  {"'ccmp' Glyph Composition/Decomposition for Thai subtable"  } ['ccmp' () ]
+Lookup: 2 0 0 "'ccmp' Glyph Composition/Decomposition for Thai"  {"'ccmp' Glyph Composition/Decomposition for Thai subtable"  } ['ccmp' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin"  {"'mkmk' Mark to Mark in Latin subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
@@ -66,8 +66,8 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Thai 1"  {"'mark' Mark Positioning i
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 1"  {"'mkmk' Mark to Mark in Thai 1 subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 2"  {"'mark' Mark Positioning in Thai 2 subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 2"  {"'mkmk' Mark to Mark in Thai 2 subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin classes"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-small"  "'kern' Horizontal Kerning in Latin-capitals"  "'kern' Horizontal Kerning in Latin-rightpunct"  "'kern' Horizontal Kerning in Latin-leftpunct"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic subtable"  } ['kern' ('cyrl' <'dflt' > ) ]
 DEI: 0
 KernClass2: 10 14 "'kern' Horizontal Kerning in Cyrillic subtable" 
@@ -94,53 +94,143 @@ KernClass2: 10 14 "'kern' Horizontal Kerning in Cyrillic subtable"
  9 acyrillic
  11 checyrillic
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -120 {} -20 {} -30 {} -80 {} -80 {} -80 {} -20 {} -60 {} -20 {} -10 {} -40 {} -120 {} 0 {} -120 {} 0 {} -100 {} -120 {} -10 {} -80 {} -60 {} -80 {} -80 {} -100 {} -100 {} -100 {} -100 {} 0 {} -80 {} 0 {} -100 {} -120 {} 0 {} -40 {} -40 {} -40 {} -80 {} -80 {} -80 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -60 {} -60 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -40 {} -60 {} -60 {} -20 {} 0 {} 0 {} 0 {} -60 {} -20 {} -30 {} 0 {} -40 {} -50 {} -10 {} -70 {} -20 {} -10 {} -40 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} -40 {} -10 {} -10 {} -20 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -20 {} -40 {} -20 {} -10 {} -30 {} -20 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -20 {} -20 {} -10 {} -10 {} -20 {} -50 {}
-KernClass2: 27 20 "'kern' Horizontal Kerning in Latin classes" 
- 50 A Aacute Agrave Acircumflex Adieresis Abreve Aring
- 33 V W Y T Yacute Ygrave Ycircumflex
- 93 C G Ccedilla  Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent
- 1 L
- 1 P
+KernClass2: 31 5 "'kern' Horizontal Kerning in Latin-rightpunct" 
+ 73 A Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring Amacron Aogonek
+ 1 B
+ 92 C G Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent
+ 106 D O Q Eth Thorn Yogh Dcaron Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash
+ 73 E AE OE Eacute Egrave Ecircumflex Edieresis Etilde Ecaron Emacron Eogonek
+ 1 F
+ 41 H I M N Ntilde Ncommaaccent Nacute Ncaron
+ 16 K X Kcommaaccent
+ 8 L Lslash
+ 49 V W Y T Yacute Ygrave Ycircumflex Tcaron Tcedilla
+ 6 P Wynn
+ 8 R Rcaron
+ 24 S Scaron Scedilla Sacute
+ 72 U Uacute Ugrave Udieresis Ucircumflex Ubreve Umacron Uring Uhungarumlaut
+ 26 Z Zcaron Zacute Zdotaccent
+ 66 a aacute agrave acircumflex adieresis abreve aring amacron aogonek
  41 v w y yacute ygrave ycircumflex ydieresis
- 105 b e o p eacute egrave ecircumflex edieresis ecircumflex ebreve oacute ograve ocircumflex odieresis obreve
- 1 r
- 14 h n m q ntilde
- 7 H I M N
- 3 x k
- 3 i j
- 3 d l
- 1 s
+ 24 c ccedilla ccaron cacute
+ 187 b e o p ae oe eth eacute egrave ecircumflex edieresis ecircumflex ebreve ecaron emacron eogonek oacute ograve ocircumflex odieresis obreve otilde omacron oslash ohungarumlaut ssharp thorn
+ 8 r rcaron
+ 41 h n m q ntilde ncommaaccent nacute ncaron
+ 16 x k kcommaaccent
+ 22 i j dotlessi fi ffi ij
+ 26 g yogh gcommaaccent gbreve
+ 17 d l fl ffl dcaron
  1 f
- 44 u uacute ugrave udieresis ucircumflex ubreve
- 1 t
- 44 a aacute agrave acircumflex adieresis abreve
- 1 g
- 75 O Q Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut
- 21 hyphen guillemotright
- 9 quoteleft
+ 10 t tcedilla
+ 79 u uacute ugrave udieresis ucircumflex ubreve utilde umacron uring uhungarumlaut
+ 24 s scaron scedilla sacute
+ 26 z zcaron zacute zdotaccent
+ 12 period comma
+ 20 hyphen guillemotleft
+ 37 quoteright quotedblright quotedblleft
+ 29 guillemotright guilsinglright
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -100 {} -20 {} 0 {} -80 {} -40 {} -90 {} -60 {} 0 {} -40 {} -40 {} -40 {} 0 {} 0 {} -60 {} -20 {} -40 {} -20 {} 0 {} -40 {} -30 {} -40 {} -20 {} 0 {} -80 {} -50 {} 0 {} -10 {} 0 {} -40 {} -60 {} -20 {} -30 {} 0 {} -40 {} -70 {} -30 {} 0 {} 0 {} 0 {} -20 {} -80 {} -20 {} 0 {} -80 {} -80 {} -40 {} -60 {} 0 {} -60 {} -40 {} -40 {} -10 {} 0 {} -40 {} -70 {} -100 {} -20 {} 0 {} -70 {} -40 {} -60 {} -40 {} 0 {} -120 {} -80 {} -20 {} -30 {} 0 {} -40 {} -40 {} -40 {} -20 {} 0 {} -30 {} -30 {} -80 {} -10 {} 0 {} -100 {} -60 {} -40 {} -20 {} 0 {} -40 {} -30 {} -70 {} -30 {} 0 {} -50 {} 0 {} -60 {} -30 {} 0 {} -60 {} -20 {} -40 {} 0 {} 0 {} -40 {} -30 {} -120 {} -20 {} 0 {} -40 {} -60 {} -60 {} -30 {} 0 {} -30 {} -40 {} -40 {} -30 {} 0 {} -50 {} -40 {} -60 {} -20 {} 0 {} -30 {} -30 {} -40 {} -30 {} 0 {} -40 {} -40 {} 0 {} -10 {} 0 {} -20 {} -20 {} -60 {} -10 {} 0 {} -30 {} -30 {} -80 {} -20 {} 0 {} -40 {} -20 {} -80 {} -20 {} 0 {} -40 {} -60 {} -80 {} -20 {}
+KernClass2: 6 23 "'kern' Horizontal Kerning in Latin-leftpunct" 
+ 36 hyphen guillemotright guilsinglright
+ 22 quoteleft quotedblleft
  10 quoteright
  27 quotedblbase quotesinglbase
  27 guillemotleft guilsinglleft
- 11 c ccedilla 
- 46 A AE Aacute Agrave Acircumflex Adieresis Aring
- 34 V W Y T Yacute Ygrave Ycircumflex 
- 171 C G O Q OE Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Omacron Obreve Ohungarumlaut
- 12 period comma
- 20 hyphen guillemotleft
- 53 a ae aacute agrave acircumflex adieresis atilde aring
- 114 c d e o oe q ccedilla eacute egrave ecircumflex edieresis ebreve ecaron oacute ograve ocircumflex odieresis obreve
- 9 b h k l i
+ 69 A AE Aacute Agrave Acircumflex Adieresis Atilde Aring Amacron Aogonek
+ 49 V W Y T Yacute Ygrave Ycircumflex Tcaron Tcedilla
+ 178 C G O Q OE Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash
+ 66 a ae aacute agrave acircumflex abreve atilde aring amacron aogonek
+ 191 c d e o q oe eth ccedilla ccaron cacute dcaron eacute egrave ecircumflex edieresis ebreve ecaron emacron eogonek oacute ograve ocircumflex odieresis obreve otilde omacron oslash ohungarumlaut
+ 40 b h k l i ij dotlessi kcommaaccent thorn
  3 v w
- 1 y
- 14 m n p r ntilde
+ 37 y yacute ygrave ycircumflex ydieresis
+ 55 m n p r ntilde ncommaaccent nacute ncaron rcaron ssharp
  1 j
- 1 t
- 8 s scaron
- 1 g
- 1 u
- 1 f
- 37 quoteright quotedblright quotedblleft
- 29 guillemotright guilsinglright
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} 0 {} -60 {} 0 {} -20 {} -30 {} -60 {} -60 {} 0 {} 0 {} -40 {} -20 {} -40 {} -60 {} -10 {} -100 {} -20 {} 0 {} -100 {} 0 {} -40 {} -80 {} -80 {} -20 {} -60 {} 0 {} -30 {} -30 {} -60 {} -30 {} -40 {} -60 {} -80 {} -50 {} 0 {} -40 {} -60 {} 0 {} 0 {} -30 {} 0 {} -40 {} -40 {} -20 {} 0 {} -20 {} -40 {} -30 {} -40 {} -30 {} -20 {} -30 {} -40 {} -30 {} -30 {} -40 {} 0 {} 0 {} 0 {} -80 {} -20 {} 0 {} -20 {} 0 {} 0 {} -30 {} -40 {} -50 {} -20 {} -30 {} -20 {} -20 {} -40 {} -40 {} 0 {} -80 {} -20 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -50 {} 0 {} 0 {} -40 {} -10 {} 0 {} 0 {} 0 {} 0 {} -100 {} -60 {} -50 {} -40 {} -30 {} 0 {} 0 {} -20 {} -30 {} -20 {} -50 {} -60 {} -10 {} 0 {} -40 {} -20 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} -20 {} -10 {} -30 {} -30 {} -30 {} -30 {} -30 {} -20 {} -30 {} -30 {} -20 {} -20 {} -60 {} -30 {} 0 {} 0 {} 0 {} 0 {} -60 {} -20 {} -15 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -40 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -30 {} -10 {} -10 {} 0 {} -40 {} 0 {} -10 {} -20 {} -10 {} -40 {} -20 {} 0 {} -80 {} -20 {} 0 {} 0 {} 0 {} -30 {} -40 {} -60 {} -40 {} -40 {} 0 {} -50 {} -40 {} 0 {} 0 {} -20 {} -30 {} -40 {} -40 {} 0 {} -20 {} -30 {} 0 {} 0 {} 0 {} 0 {} -40 {} -60 {} -40 {} -40 {} -30 {} -50 {} -50 {} -20 {} -10 {} -40 {} -30 {} -50 {} -40 {} 0 {} -60 {} -30 {} 0 {} 0 {} 0 {} 0 {} -30 {} -40 {} -20 {} -10 {} -20 {} -40 {} -50 {} -10 {} -10 {} -20 {} -30 {} -40 {} -20 {} -20 {} -40 {} -30 {} 0 {} 0 {} 0 {} 0 {} -30 {} -30 {} -20 {} -20 {} -20 {} -40 {} -40 {} -10 {} -10 {} -20 {} -20 {} -40 {} -20 {} -10 {} -40 {} -30 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -20 {} -10 {} -20 {} -50 {} -50 {} -20 {} -20 {} -20 {} -40 {} -40 {} -20 {} -20 {} -80 {} -20 {} 0 {} 0 {} 0 {} 0 {} -40 {} -40 {} -30 {} -20 {} 0 {} 0 {} -20 {} -10 {} -20 {} -10 {} -30 {} -30 {} -10 {} -20 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -30 {} -30 {} -20 {} -20 {} -30 {} -50 {} -40 {} -10 {} -20 {} -20 {} -30 {} -20 {} -20 {} -20 {} -80 {} -20 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -15 {} -15 {} -10 {} 0 {} -10 {} 0 {} 0 {} -10 {} -20 {} -40 {} -10 {} 0 {} -60 {} -10 {} 0 {} 0 {} 0 {} 0 {} -30 {} -30 {} -20 {} -20 {} -20 {} -50 {} -40 {} -10 {} -10 {} -10 {} -10 {} -40 {} -20 {} -10 {} -80 {} -10 {} 0 {} 0 {} 0 {} 0 {} -50 {} -40 {} -40 {} -20 {} -20 {} -20 {} -20 {} -20 {} -20 {} -20 {} -40 {} -30 {} -10 {} -10 {} -60 {} -20 {} 0 {} -60 {} -60 {} 0 {} -60 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -30 {} 0 {} 0 {} -40 {} -20 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} -20 {} 0 {} -20 {} -50 {} -50 {} -30 {} -30 {} -20 {} -20 {} -40 {} -20 {} -20 {} -60 {} -40 {} 0 {} -120 {} -40 {} -30 {} 0 {} 0 {} -80 {} -60 {} -20 {} -20 {} -20 {} -20 {} 0 {} 0 {} -60 {} -60 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -60 {} 0 {} 0 {} -30 {} -40 {} -30 {} -80 {} -60 {} -20 {} -20 {} -60 {} -40 {} -30 {} -40 {} -20 {} 0 {} 0 {} 0 {} -20 {} -60 {} -20 {} 0 {} 0 {} -20 {} -20 {} -30 {} -30 {} -30 {} -10 {} -10 {} -10 {} -20 {} -30 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -30 {} -20 {} -30 {} -50 {} -50 {} -30 {} -30 {} -30 {} -30 {} -40 {} -30 {} -30 {} -70 {} -30 {}
+ 10 t tcedilla
+ 24 s scaron scedilla sacute
+ 21 g gcommaaccent gbreve
+ 79 u uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut
+ 18 f ff fi fl ffi ffl
+ 31 z zcaron zacute zdotaccent yogh
+ 26 Z Zcaron Zacute Zdotaccent
+ 6 J Yogh
+ 24 S Scaron Scedilla Sacute
+ 72 U Uacute Ugrave Ucircumflex Ubreve Udieresis Umacron Uring Uhungarumlaut
+ 200 B E F H I K L M N P R Eacute Egrave Ecircumflex Edieresis Etilde Ecaron Emacron Eogonek Iacute Igrave Icircumflex Idieresis Itilde Imacron Iogonek Kcommaaccent Ntilde Ncommaaccent Nacute Ncaron Rcaron
+ 1 x
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -60 {} 0 {} -20 {} 0 {} -20 {} -50 {} -50 {} -30 {} -30 {} -20 {} -20 {} -40 {} -20 {} -20 {} -80 {} -60 {} -60 {} -50 {} -60 {} -80 {} -50 {} 0 {} -120 {} -40 {} -30 {} -80 {} -60 {} -20 {} -20 {} -20 {} -20 {} 0 {} 0 {} -60 {} -60 {} -20 {} -20 {} -80 {} -40 {} -80 {} -50 {} -50 {} -60 {} -40 {} 0 {} -120 {} -20 {} -60 {} -90 {} -80 {} -20 {} -40 {} -50 {} -50 {} -20 {} -40 {} -90 {} -100 {} -50 {} -50 {} -90 {} -40 {} -80 {} -50 {} -50 {} -60 {} -60 {} 0 {} 0 {} -100 {} -60 {} -30 {} -40 {} -30 {} -80 {} -60 {} -20 {} -20 {} -60 {} -40 {} -30 {} -40 {} -20 {} -50 {} -20 {} 0 {} -40 {} -90 {} -40 {} -30 {} 0 {} -20 {} -60 {} -20 {} -20 {} -20 {} -20 {} -30 {} -30 {} -10 {} -10 {} -10 {} -20 {} -30 {} -10 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {}
+KernClass2: 16 17 "'kern' Horizontal Kerning in Latin-small" 
+ 73 a aacute agrave acircumflex adieresis atilde abreve aring amacron aogonek
+ 41 v w y yacute ygrave ycircumflex ydieresis
+ 24 c ccedilla ccaron cacute
+ 187 b e o p ae oe eth eacute egrave ecircumflex edieresis ecircumflex ebreve ecaron emacron eogonek oacute ograve ocircumflex odieresis obreve omacron oslash otilde ohungarumlaut ssharp thorn
+ 8 r rcaron
+ 50 h n m q dotlessi ntilde ncommaaccent nacute ncaron
+ 16 x k kcommaaccent
+ 13 i j fi ffi ij
+ 26 g yogh gcommaaccent gbreve
+ 17 d l fl ffl dcaron
+ 4 f ff
+ 10 t tcedilla
+ 72 u uacute ugrave udieresis ucircumflex ubreve umacron uring uhungarumlaut
+ 24 s scaron scedilla sacute
+ 26 z zcaron zacute zdotaccent
+ 66 a ae aacute agrave acircumflex abreve atilde aring amacron aogonek
+ 191 c d e o q oe eth ccedilla ccaron cacute dcaron eacute egrave ecircumflex edieresis ebreve emacron ecaron eogonek oacute ograve ocircumflex odieresis obreve omacron oslash otilde ohungarumlaut
+ 26 b h k l kcommaaccent thorn
+ 3 v w
+ 37 y yacute ygrave ycircumflex ydieresis
+ 48 m n p dotlessi ntilde ncommaaccent nacute ncaron
+ 1 j
+ 10 t tcedilla
+ 24 s scaron scedilla sacute
+ 21 g gcommaaccent gbreve
+ 79 u uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut
+ 18 f ff fi fl ffi ffl
+ 31 z zcaron zacute zdotaccent yogh
+ 15 r rcaron ssharp
+ 1 x
+ 4 i ij
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -15 {} -15 {} -50 {} -40 {} -15 {} -10 {} -25 {} -20 {} -40 {} -20 {} -10 {} -20 {} -5 {} -20 {} -20 {} 0 {} -60 {} -50 {} -50 {} -30 {} 0 {} -30 {} -30 {} -20 {} -50 {} -70 {} -10 {} 0 {} -60 {} -25 {} -30 {} -30 {} 0 {} -30 {} -20 {} -30 {} -50 {} -50 {} -30 {} -30 {} -30 {} -30 {} -40 {} -30 {} -30 {} -60 {} -35 {} -60 {} -35 {} 0 {} -20 {} 0 {} -20 {} -40 {} -30 {} -20 {} -30 {} -20 {} -30 {} -30 {} -20 {} -20 {} -40 {} -10 {} -50 {} -30 {} 0 {} -10 {} -5 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -40 {} 0 {} 0 {} -20 {} 0 {} -10 {} -5 {} 0 {} -30 {} -20 {} -20 {} -70 {} -40 {} 0 {} -10 {} -15 {} -20 {} -40 {} -20 {} 0 {} -20 {} -10 {} -20 {} -20 {} 0 {} -40 {} -40 {} -30 {} -50 {} -50 {} -20 {} -10 {} -40 {} -30 {} -50 {} -40 {} 0 {} -20 {} -20 {} -20 {} -30 {} 0 {} -30 {} -30 {} -20 {} -40 {} -50 {} -25 {} -40 {} -20 {} -35 {} -40 {} -20 {} -20 {} -30 {} -20 {} -20 {} -30 {} 0 {} -40 {} -20 {} -20 {} -20 {} -20 {} -20 {} -20 {} -20 {} -40 {} -30 {} -20 {} -10 {} -40 {} -30 {} -40 {} -40 {} 0 {} -15 {} -15 {} -20 {} -50 {} -40 {} -10 {} -10 {} -20 {} -35 {} -40 {} -20 {} -10 {} -30 {} -20 {} -30 {} -10 {} 0 {} -30 {} -20 {} 0 {} 0 {} -20 {} -10 {} -20 {} -10 {} -30 {} -30 {} -10 {} -20 {} -40 {} -30 {} -30 {} 0 {} 0 {} -15 {} -15 {} -10 {} -20 {} -20 {} 0 {} 0 {} -10 {} -20 {} -40 {} -10 {} 0 {} -30 {} -10 {} -30 {} -10 {} 0 {} -20 {} -20 {} -30 {} -50 {} -40 {} -10 {} -20 {} -15 {} -30 {} -20 {} -20 {} -20 {} -40 {} -10 {} -30 {} -30 {} 0 {} -20 {} -15 {} -20 {} -50 {} -50 {} -20 {} -20 {} -25 {} -40 {} -40 {} -20 {} -30 {} -40 {} -20 {} -60 {} -30 {} 0 {} -20 {} -20 {} -40 {} -40 {} -40 {} -40 {} -50 {} -30 {} -40 {} -60 {} -40 {} -40 {} -40 {} -20 {} -40 {} -40 {}
+KernClass2: 16 23 "'kern' Horizontal Kerning in Latin-capitals" 
+ 73 A Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring Amacron Aogonek
+ 1 B
+ 92 C G Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent
+ 99 D O Q Thorn Eth Yogh Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash
+ 73 E AE OE Eacute Egrave Ecircumflex Edieresis Etilde Ecaron Emacron Eogonek
+ 1 F
+ 41 H I M N Ntilde Ncommaaccent Nacute Ncaron
+ 8 L Lslash
+ 49 V W Y T Yacute Ygrave Ycircumflex Tcaron Tcedilla
+ 6 P Wynn
+ 8 R Rcaron
+ 24 S Scaron Scedilla Sacute
+ 72 U Uacute Ugrave Ucircumflex Ubreve Udieresis Umacron Uring Uhungarumlaut
+ 26 Z Zcaron Zacute Zdotaccent
+ 16 K X Kcommaaccent
+ 62 A AE Aacute Agrave Acircumflex Adieresis Aring Amacron Aogonek
+ 49 V W Y T Yacute Ygrave Ycircumflex Tcaron Tcedilla
+ 178 C G O Q OE Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Ograve Oacute Ocircumflex Otilde Odieresis Omacron Obreve Ohungarumlaut Oslash
+ 66 a ae aacute agrave acircumflex abreve atilde aring amacron aogonek
+ 184 c d e o q oe eth ccedilla ccaron cacute eacute egrave ecircumflex edieresis ebreve ecaron emacron eogonek oacute ograve ocircumflex odieresis obreve oslash otilde omacron ohungarumlaut
+ 37 b h k l i dotlessi kcommaaccent thorn
+ 3 v w
+ 37 y yacute ygrave ycircumflex ydieresis
+ 55 m n p r ntilde ncommaaccent nacute ncaron rcaron ssharp
+ 1 j
+ 10 t tcedilla
+ 24 s scaron scedilla sacute
+ 21 g gcommaaccent gbreve
+ 79 u uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut
+ 18 f ff fi fl ffi ffl
+ 31 z zcaron zacute zdotaccent yogh
+ 26 Z Zcaron Zacute Zdotaccent
+ 6 J Yogh
+ 24 S Scaron Scedilla Sacute
+ 72 U Uacute Ugrave Ucircumflex Ubreve Udieresis Umacron Uring Uhungarumlaut
+ 200 B E F H I K L M N P R Eacute Egrave Ecircumflex Edieresis Etilde Ecaron Emacron Eogonek Iacute Igrave Icircumflex Idieresis Itilde Imacron Iogonek Kcommaaccent Ntilde Ncommaaccent Nacute Ncaron Rcaron
+ 1 x
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -40 {} 0 {} -20 {} -30 {} -60 {} -60 {} 0 {} 0 {} -40 {} -20 {} -40 {} -60 {} -10 {} -20 {} 0 {} -10 {} -50 {} -90 {} -20 {} 0 {} 0 {} -100 {} -120 {} -40 {} -60 {} -40 {} -60 {} -90 {} -90 {} -60 {} -70 {} -60 {} -50 {} -70 {} -60 {} -80 {} -80 {} -60 {} -60 {} -70 {} -80 {} -90 {} -80 {} 0 {} 0 {} -30 {} 0 {} -20 {} 0 {} -20 {} -40 {} -30 {} -25 {} -30 {} -20 {} -30 {} -40 {} -30 {} -30 {} -40 {} -30 {} -30 {} -40 {} -30 {} -40 {} -40 {} 0 {} -60 {} -60 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -30 {} 0 {} 0 {} -50 {} -50 {} -50 {} -40 {} -40 {} -70 {} -30 {} 0 {} -40 {} -50 {} -40 {} -20 {} -10 {} -20 {} -50 {} -50 {} -25 {} -40 {} -10 {} -20 {} -40 {} -30 {} -30 {} -40 {} -20 {} -20 {} -30 {} -40 {} -50 {} -50 {} 0 {} -100 {} 0 {} -20 {} -40 {} -30 {} 0 {} -20 {} -20 {} -20 {} -20 {} -10 {} -40 {} -60 {} -20 {} -20 {} -40 {} 0 {} -60 {} -40 {} 0 {} -10 {} -40 {} 0 {} 0 {} 0 {} -30 {} -40 {} -40 {} 0 {} -50 {} -40 {} 0 {} 0 {} -20 {} -30 {} -40 {} -40 {} 0 {} -20 {} 0 {} -20 {} -40 {} 0 {} -10 {} -20 {} 0 {} 0 {} -80 {} -20 {} 0 {} 0 {} -30 {} -40 {} -50 {} -20 {} -30 {} -20 {} -20 {} -40 {} -40 {} 0 {} -40 {} -40 {} -20 {} -20 {} -60 {} -40 {} -40 {} 0 {} -100 {} 0 {} -40 {} -70 {} -70 {} -10 {} -60 {} -60 {} -60 {} -40 {} -50 {} -70 {} -80 {} -50 {} 0 {} -100 {} -50 {} -70 {} -90 {} -20 {} -20 {} -100 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -50 {} 0 {} 0 {} -50 {} -20 {} -80 {} -10 {} -30 {} -50 {} -10 {} 0 {} 0 {} -120 {} -80 {} -50 {} -60 {} -50 {} -90 {} -90 {} 0 {} -60 {} -60 {} -40 {} -60 {} -60 {} -10 {} -10 {} 0 {} -10 {} -40 {} -90 {} -10 {} -10 {} 0 {} -90 {} -90 {} -40 {} -40 {} -20 {} -40 {} -80 {} -80 {} -60 {} -60 {} -40 {} -40 {} -60 {} -40 {} -60 {} -40 {} -50 {} -50 {} -40 {} -60 {} -70 {} -60 {} 0 {} -100 {} 0 {} -40 {} -60 {} -50 {} -10 {} -50 {} -50 {} -60 {} -40 {} -40 {} -60 {} -80 {} -60 {} -40 {} -50 {} -30 {} -50 {} -70 {} -10 {} -20 {} -80 {} 0 {} -20 {} -30 {} -20 {} -20 {} -20 {} -10 {} -60 {} -50 {} -20 {} -40 {} -20 {} -30 {} -50 {} -40 {} -40 {} -40 {} -20 {} -10 {} -20 {} -20 {} -40 {} -40 {} 0 {} 0 {} -30 {} -80 {} -30 {} -40 {} -20 {} -80 {} -80 {} 0 {} -20 {} -30 {} -20 {} -30 {} -50 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} 0 {} 0 {}
 TtTable: prep
 PUSHW_1
  511
@@ -707,7 +797,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8192 16 11
+WinInfo: 336 16 11
 BeginPrivate: 8
 UniqueID 7 5020933
 BlueValues 23 [-20 0 461 481 676 696]
@@ -4993,7 +5083,7 @@ EndChar
 
 StartChar: Thorn
 Encoding: 222 222 155
-Width: 611
+Width: 632
 Flags: MW
 LayerCount: 2
 Fore
@@ -5026,7 +5116,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: germandbls
+StartChar: ssharp
 Encoding: 223 223 156
 Width: 556
 Flags: MW
@@ -7213,7 +7303,7 @@ Refer: 407 711 N 1 0 0 1 29 -1 0
 Validated: 32769
 EndChar
 
-StartChar: uni0162
+StartChar: Tcedilla
 Encoding: 354 354 287
 Width: 667
 Flags: MW
@@ -7252,7 +7342,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0163
+StartChar: tcedilla
 Encoding: 355 355 288
 Width: 333
 Flags: MW
@@ -8363,7 +8453,7 @@ EndChar
 
 StartChar: uni01EE
 Encoding: 494 494 349
-Width: 654
+Width: 593
 Flags: HMW
 LayerCount: 2
 Fore
@@ -8374,8 +8464,8 @@ EndChar
 
 StartChar: uni01EF
 Encoding: 495 495 350
-Width: 508
-Flags: HM
+Width: 502
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 407 711 N 1 0 0 1 92 -27 0
@@ -9155,34 +9245,34 @@ Refer: 89 121 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni0292
+StartChar: yogh
 Encoding: 658 658 405
-Width: 508
-Flags: MW
+Width: 502
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-450 432 m 1
- 266 256 l 1
- 281 259 296 261 312 261 c 0
- 428 261 486 154 486 50 c 0
- 486 -104 379 -217 223 -217 c 0
- 166 -217 30 -202 30 -122 c 0
- 30 -84 61 -53 99 -53 c 0
- 137 -53 168 -84 168 -122 c 0
- 168 -138 162 -154 152 -166 c 1
- 165 -181 186 -186 205 -186 c 0
- 322 -186 370 -99 370 8 c 0
- 370 106 322 172 219 172 c 0
- 195 172 171 163 148 158 c 1
- 132 180 l 1
- 281 323 l 1
- 137 323 l 2
- 89 323 81 301 62 260 c 1
- 37 260 l 1
- 108 462 l 1
- 450 462 l 1
- 450 432 l 1
+434 432 m 1
+ 250 256 l 1
+ 265 259 280 261 296 261 c 0
+ 412 261 470 154 470 50 c 0
+ 470 -104 363 -217 207 -217 c 0
+ 150 -217 14 -202 14 -122 c 0
+ 14 -84 45 -53 83 -53 c 0
+ 121 -53 152 -84 152 -122 c 0
+ 152 -138 146 -154 136 -166 c 1
+ 149 -181 170 -186 189 -186 c 0
+ 306 -186 354 -99 354 8 c 0
+ 354 106 306 172 203 172 c 0
+ 179 172 155 163 132 158 c 1
+ 116 180 l 1
+ 265 323 l 1
+ 121 323 l 2
+ 73 323 65 301 46 260 c 1
+ 21 260 l 1
+ 92 462 l 1
+ 434 462 l 1
+ 434 432 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -13246,29 +13336,29 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-211 226 m 5
- 211 82 l 6
- 211 52 218 32 258 32 c 4
- 324 32 354 64 354 130 c 4
- 354 184 328 226 246 226 c 6
- 211 226 l 5
-25 461 m 5
- 285 461 l 6
- 399 461 462 422 462 351 c 4
- 462 300 414 260 330 251 c 5
- 398 248 488 214 488 130 c 4
- 488 31 388 0 270 0 c 6
- 19 0 l 5
- 19 26 l 5
- 69 31 72 53 72 88 c 6
- 72 367 l 6
- 72 402 72 433 25 435 c 5
- 25 461 l 5
-211 362 m 6
- 211 258 l 5
- 280 258 334 266 334 353 c 4
- 334 410 300 429 249 429 c 4
- 212 429 211 408 211 362 c 6
+211 226 m 1
+ 211 82 l 2
+ 211 52 218 32 258 32 c 0
+ 324 32 354 64 354 130 c 0
+ 354 184 328 226 246 226 c 2
+ 211 226 l 1
+25 461 m 1
+ 285 461 l 2
+ 399 461 462 422 462 351 c 0
+ 462 300 414 260 330 251 c 1
+ 398 248 488 214 488 130 c 0
+ 488 31 388 0 270 0 c 2
+ 19 0 l 1
+ 19 26 l 1
+ 69 31 72 53 72 88 c 2
+ 72 367 l 2
+ 72 402 72 433 25 435 c 1
+ 25 461 l 1
+211 362 m 2
+ 211 258 l 1
+ 280 258 334 266 334 353 c 0
+ 334 410 300 429 249 429 c 0
+ 212 429 211 408 211 362 c 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -13280,21 +13370,21 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-211 81 m 6
- 211 44 223 29 260 24 c 5
- 260 0 l 5
- 19 0 l 5
- 19 23 l 5
- 64 32 72 42 72 84 c 6
- 72 380 l 6
- 72 417 59 434 25 438 c 5
- 25 461 l 5
- 406 461 l 5
- 413 319 l 5
- 387 319 l 5
- 362 414 338 429 249 429 c 4
- 214 429 211 399 211 368 c 6
- 211 81 l 6
+211 81 m 2
+ 211 44 223 29 260 24 c 1
+ 260 0 l 1
+ 19 0 l 1
+ 19 23 l 1
+ 64 32 72 42 72 84 c 2
+ 72 380 l 2
+ 72 417 59 434 25 438 c 1
+ 25 461 l 1
+ 406 461 l 1
+ 413 319 l 1
+ 387 319 l 1
+ 362 414 338 429 249 429 c 0
+ 214 429 211 399 211 368 c 2
+ 211 81 l 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -13447,33 +13537,33 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-351 380 m 5
- 351 422 341 434 302 437 c 5
- 302 461 l 5
- 539 461 l 5
- 539 437 l 5
- 500 434 490 422 490 380 c 6
- 490 81 l 6
- 490 39 500 27 539 24 c 5
- 539 0 l 5
- 304 0 l 5
- 304 24 l 5
- 338 28 351 44 351 81 c 6
- 351 329 l 5
- 211 81 l 5
- 211 44 223 29 260 24 c 5
- 260 0 l 5
- 19 0 l 5
- 19 24 l 5
- 64 33 72 42 72 84 c 6
- 72 380 l 6
- 72 417 59 433 25 437 c 5
- 25 461 l 5
- 260 461 l 5
- 260 437 l 5
- 221 434 211 422 211 380 c 6
- 211 140 l 5
- 351 380 l 5
+351 380 m 1
+ 351 422 341 434 302 437 c 1
+ 302 461 l 1
+ 539 461 l 1
+ 539 437 l 1
+ 500 434 490 422 490 380 c 2
+ 490 81 l 2
+ 490 39 500 27 539 24 c 1
+ 539 0 l 1
+ 304 0 l 1
+ 304 24 l 1
+ 338 28 351 44 351 81 c 2
+ 351 329 l 1
+ 211 81 l 1
+ 211 44 223 29 260 24 c 1
+ 260 0 l 1
+ 19 0 l 1
+ 19 24 l 1
+ 64 33 72 42 72 84 c 2
+ 72 380 l 2
+ 72 417 59 433 25 437 c 1
+ 25 461 l 1
+ 260 461 l 1
+ 260 437 l 1
+ 221 434 211 422 211 380 c 2
+ 211 140 l 1
+ 351 380 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -13496,36 +13586,36 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-67 377 m 6
- 67 416 52 434 19 437 c 5
- 19 461 l 5
- 258 461 l 5
- 258 437 l 5
- 211 430 206 424 206 377 c 6
- 206 256 l 5
- 227 256 l 6
- 289 256 322 332 338 368 c 4
- 374 450 423 470 460 470 c 4
- 504 470 534 441 534 400 c 4
- 534 354 506 334 476 334 c 4
- 457 334 438 346 428 362 c 4
- 420 374 420 396 409 396 c 4
- 372 396 368 293 302 252 c 5
- 302 248 l 5
- 433 221 438 116 494 50 c 4
- 504 38 516 24 543 24 c 5
- 543 0 l 5
- 378 0 l 5
- 289 174 l 6
- 271 200 260 216 229 216 c 6
- 206 216 l 5
- 206 84 l 6
- 206 37 211 31 258 24 c 5
- 258 0 l 5
- 19 0 l 5
- 19 24 l 5
- 52 27 67 45 67 84 c 6
- 67 377 l 6
+67 377 m 2
+ 67 416 52 434 19 437 c 1
+ 19 461 l 1
+ 258 461 l 1
+ 258 437 l 1
+ 211 430 206 424 206 377 c 2
+ 206 256 l 1
+ 227 256 l 2
+ 289 256 322 332 338 368 c 0
+ 374 450 423 470 460 470 c 0
+ 504 470 534 441 534 400 c 0
+ 534 354 506 334 476 334 c 0
+ 457 334 438 346 428 362 c 0
+ 420 374 420 396 409 396 c 0
+ 372 396 368 293 302 252 c 1
+ 302 248 l 1
+ 433 221 438 116 494 50 c 0
+ 504 38 516 24 543 24 c 1
+ 543 0 l 1
+ 378 0 l 1
+ 289 174 l 2
+ 271 200 260 216 229 216 c 2
+ 206 216 l 1
+ 206 84 l 2
+ 206 37 211 31 258 24 c 1
+ 258 0 l 1
+ 19 0 l 1
+ 19 24 l 1
+ 52 27 67 45 67 84 c 2
+ 67 377 l 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -13713,21 +13803,21 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-468 461 m 5
- 475 319 l 5
- 449 319 l 5
- 424 414 394 424 313 424 c 5
- 313 81 l 6
- 313 44 325 29 362 24 c 5
- 362 0 l 5
- 121 0 l 5
- 121 24 l 5
- 166 33 174 42 174 84 c 6
- 174 424 l 5
- 88 424 63 414 38 319 c 5
- 12 319 l 5
- 19 461 l 5
- 468 461 l 5
+468 461 m 1
+ 475 319 l 1
+ 449 319 l 1
+ 424 414 394 424 313 424 c 1
+ 313 81 l 2
+ 313 44 325 29 362 24 c 1
+ 362 0 l 1
+ 121 0 l 1
+ 121 24 l 1
+ 166 33 174 42 174 84 c 2
+ 174 424 l 1
+ 88 424 63 414 38 319 c 1
+ 12 319 l 1
+ 19 461 l 1
+ 468 461 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -14108,31 +14198,31 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-295 256 m 5
- 295 358 388 473 520 473 c 4
- 649 473 745 369 745 229 c 4
- 745 90 649 -14 520 -14 c 4
- 394 -14 295 84 295 216 c 5
- 213 216 l 5
- 213 81 l 6
- 213 44 225 29 262 24 c 5
- 262 0 l 5
- 21 0 l 5
- 21 24 l 5
- 66 33 74 42 74 84 c 6
- 74 380 l 6
- 74 417 61 433 27 437 c 5
- 27 461 l 5
- 262 461 l 5
- 262 437 l 5
- 223 434 213 422 213 380 c 6
- 213 256 l 5
- 295 256 l 5
-521 442 m 4
- 459 442 441 390 441 214 c 4
- 441 68 461 17 520 17 c 4
- 578 17 598 69 598 223 c 4
- 598 387 579 442 521 442 c 4
+295 256 m 1
+ 295 358 388 473 520 473 c 0
+ 649 473 745 369 745 229 c 0
+ 745 90 649 -14 520 -14 c 0
+ 394 -14 295 84 295 216 c 1
+ 213 216 l 1
+ 213 81 l 2
+ 213 44 225 29 262 24 c 1
+ 262 0 l 1
+ 21 0 l 1
+ 21 24 l 1
+ 66 33 74 42 74 84 c 2
+ 74 380 l 2
+ 74 417 61 433 27 437 c 1
+ 27 461 l 1
+ 262 461 l 1
+ 262 437 l 1
+ 223 434 213 422 213 380 c 2
+ 213 256 l 1
+ 295 256 l 1
+521 442 m 0
+ 459 442 441 390 441 214 c 0
+ 441 68 461 17 520 17 c 0
+ 578 17 598 69 598 223 c 0
+ 598 387 579 442 521 442 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -14376,42 +14466,42 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-488 224 m 5
- 488 73 l 6
- 488 43 495 32 535 32 c 4
- 601 32 631 78 631 130 c 4
- 631 184 605 224 523 224 c 6
- 488 224 l 5
-349 84 m 6
- 349 224 l 5
- 209 224 l 5
- 209 81 l 6
- 209 44 221 29 258 24 c 5
- 258 0 l 5
- 17 0 l 5
- 17 24 l 5
- 62 33 70 42 70 84 c 6
- 70 380 l 6
- 70 417 57 433 23 437 c 5
- 23 461 l 5
- 258 461 l 5
- 258 437 l 5
- 219 434 209 422 209 380 c 6
- 209 256 l 5
- 349 256 l 5
- 349 380 l 6
- 349 422 339 434 300 437 c 5
- 300 461 l 5
- 535 461 l 5
- 535 436 l 5
- 488 434 488 402 488 367 c 6
- 488 256 l 5
- 547 256 l 6
- 675.756 256 765 210.238 765 128 c 4
- 765 51 689 0 573 0 c 6
- 300 0 l 5
- 300 24 l 5
- 345 33 349 46 349 84 c 6
+488 224 m 1
+ 488 73 l 2
+ 488 43 495 32 535 32 c 0
+ 601 32 631 78 631 130 c 0
+ 631 184 605 224 523 224 c 2
+ 488 224 l 1
+349 84 m 2
+ 349 224 l 1
+ 209 224 l 1
+ 209 81 l 2
+ 209 44 221 29 258 24 c 1
+ 258 0 l 1
+ 17 0 l 1
+ 17 24 l 1
+ 62 33 70 42 70 84 c 2
+ 70 380 l 2
+ 70 417 57 433 23 437 c 1
+ 23 461 l 1
+ 258 461 l 1
+ 258 437 l 1
+ 219 434 209 422 209 380 c 2
+ 209 256 l 1
+ 349 256 l 1
+ 349 380 l 2
+ 349 422 339 434 300 437 c 1
+ 300 461 l 1
+ 535 461 l 1
+ 535 436 l 1
+ 488 434 488 402 488 367 c 2
+ 488 256 l 1
+ 547 256 l 2
+ 675.756 256 765 210.238 765 128 c 0
+ 765 51 689 0 573 0 c 2
+ 300 0 l 1
+ 300 24 l 1
+ 345 33 349 46 349 84 c 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -20595,7 +20685,7 @@ Refer: 69 101 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni1EBC
+StartChar: Etilde
 Encoding: 7868 7868 953
 Width: 667
 Flags: HM
@@ -23505,15 +23595,15 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-130 532 m 4
- 122 532 127 530 107 530 c 4
- 62 530 33 561 33 609 c 4
- 33 658 66 691 116 691 c 4
- 176 691 217 644 217 575 c 4
- 217 489 167 423 51 356 c 5
- 40 378 l 5
- 114 430 149 472 149 510 c 4
- 149 522 141 532 130 532 c 4
+130 532 m 0
+ 122 532 127 530 107 530 c 0
+ 62 530 33 561 33 609 c 0
+ 33 658 66 691 116 691 c 0
+ 176 691 217 644 217 575 c 0
+ 217 489 167 423 51 356 c 1
+ 40 378 l 1
+ 114 430 149 472 149 510 c 0
+ 149 522 141 532 130 532 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -23535,15 +23625,15 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-199 356 m 5
- 146 386 33 451 33 577 c 4
- 33 629 62 691 135 691 c 4
- 181 691 217 661 217 609 c 4
- 217 546 171 530 143 530 c 4
- 131 530 126 532 121 532 c 4
- 108 532 101 522 101 510 c 4
- 101 454 182 397 210 378 c 5
- 199 356 l 5
+199 356 m 1
+ 146 386 33 451 33 577 c 0
+ 33 629 62 691 135 691 c 0
+ 181 691 217 661 217 609 c 0
+ 217 546 171 530 143 530 c 0
+ 131 530 126 532 121 532 c 0
+ 108 532 101 522 101 510 c 0
+ 101 454 182 397 210 378 c 1
+ 199 356 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -26299,7 +26389,7 @@ EndChar
 
 StartChar: ff
 Encoding: 64256 64256 1348
-Width: 556
+Width: 613
 Flags: MW
 LayerCount: 2
 Fore
@@ -26346,12 +26436,13 @@ SplineSet
  348 494 348 527 355 560 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin subtable" f f
 EndChar
 
 StartChar: fi
 Encoding: 64257 64257 1349
-Width: 556
+Width: 558
 Flags: MW
 LayerCount: 2
 Fore
@@ -26387,12 +26478,13 @@ SplineSet
  369 539 343 561 343 593 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin subtable" f i
 EndChar
 
 StartChar: fl
 Encoding: 64258 64258 1350
-Width: 556
+Width: 559
 Flags: MW
 LayerCount: 2
 Fore
@@ -26431,12 +26523,13 @@ SplineSet
  336 563 327 578 327 594 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin subtable" f l
 EndChar
 
 StartChar: ffi
 Encoding: 64259 64259 1351
-Width: 834
+Width: 846
 Flags: MW
 LayerCount: 2
 Fore
@@ -26491,12 +26584,13 @@ SplineSet
  348 493 350 525 359 556 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 2 0 0 
 Ligature2: "'liga' Standard Ligatures in Latin subtable" f f i
 EndChar
 
 StartChar: ffl
 Encoding: 64260 64260 1352
-Width: 834
+Width: 836
 Flags: MW
 LayerCount: 2
 Fore
@@ -26552,6 +26646,7 @@ SplineSet
  348 493 350 525 358 556 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 2 0 0 
 Ligature2: "'liga' Standard Ligatures in Latin subtable" f f l
 EndChar
 
@@ -27141,14 +27236,14 @@ Refer: 407 711 N 1 0 0 1 16 -7 0
 Validated: 32769
 EndChar
 
-StartChar: uni01B7
+StartChar: Yogh
 Encoding: 439 439 1382
-Width: 654
+Width: 593
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 719 1248 N 1 0 0 1 0 0 0
+Refer: 719 1248 S 1 0 0 1 -23 0 0
 Validated: 32769
 EndChar
 
@@ -31971,7 +32066,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni01BF
+StartChar: wynn
 Encoding: 447 447 1572
 Width: 611
 Flags: MW
@@ -49390,9 +49485,9 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni01f7
+StartChar: Wynn
 Encoding: 503 503 2296
-Width: 628
+Width: 603
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
@@ -51136,7 +51231,7 @@ EndChar
 
 StartChar: uni03f7
 Encoding: 1015 1015 2350
-Width: 611
+Width: 632
 Flags: MW
 LayerCount: 2
 Fore
