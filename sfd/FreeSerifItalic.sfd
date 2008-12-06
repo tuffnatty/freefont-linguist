@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.160 $
+Version: $Revision: 1.161 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1228569630
+ModificationTime: 1228593426
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -176,7 +176,7 @@ KernClass2: 17 16 "'kern' Horizontal Kerning in Latin-small"
  74 a aacute agrave acircumflex adieresis abreve atilde aring  amacron aogonek
  187 b e o p ae oe eth eacute egrave ecircumflex edieresis ecircumflex ebreve ecaron emacron eogonek oacute ograve ocircumflex odieresis obreve omacron oslash otilde ohungarumlaut ssharp thorn
  24 c ccedilla ccaron cacute
- 17 d l fl ffl dcaron
+ 10 d l fl ffl
  4 f ff
  50 h m n q dotlessi ntilde ncommaaccent nacute ncaron
  26 g yogh gcommaaccent gbreve
@@ -249,7 +249,7 @@ KernClass2: 33 6 "'kern' Horizontal Kerning in Latin-rightpunct"
  26 Z Zcaron Zacute Zdotaccent
  66 a aacute agrave acircumflex adieresis abreve aring amacron aogonek
  187 b e o p ae oe eth eacute egrave ecircumflex edieresis ecircumflex ebreve ecaron emacron eogonek oacute ograve ocircumflex odieresis obreve otilde omacron oslash ohungarumlaut ssharp thorn
- 17 d l fl ffl dcaron
+ 10 d l fl ffl
  8 r rcaron
  41 v w y yacute ygrave ycircumflex ydieresis
  41 h n m q ntilde ncommaaccent nacute ncaron
@@ -270,7 +270,7 @@ KernClass2: 33 6 "'kern' Horizontal Kerning in Latin-rightpunct"
  37 quoteright quotedblright quotedblleft
  29 guillemotright guilsinglright
  27 quotedblbase quotesinglbase
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -80 {} -140 {} -80 {} -30 {} 0 {} -70 {} -60 {} -100 {} -90 {} -60 {} 0 {} -40 {} -60 {} -80 {} -90 {} -60 {} 0 {} -60 {} -30 {} -100 {} -90 {} -70 {} 0 {} -20 {} -60 {} -80 {} -60 {} -40 {} 0 {} -110 {} -100 {} -90 {} -120 {} -100 {} 0 {} -40 {} -90 {} -80 {} -70 {} -40 {} 0 {} 0 {} -20 {} -90 {} -20 {} 0 {} 0 {} -40 {} -80 {} -90 {} -70 {} -40 {} 0 {} -40 {} -60 {} -90 {} -70 {} -40 {} 0 {} -70 {} -70 {} -40 {} -90 {} -60 {} 0 {} -100 {} -100 {} -80 {} -120 {} -100 {} 0 {} -90 {} -100 {} -60 {} -90 {} -100 {} 0 {} 0 {} 0 {} -70 {} -20 {} 0 {} 0 {} -20 {} -60 {} -100 {} -60 {} -20 {} 0 {} -60 {} -20 {} -120 {} -40 {} -50 {} 0 {} -20 {} -40 {} -70 {} -50 {} -20 {} 0 {} -70 {} -40 {} -80 {} -50 {} -60 {} 0 {} -60 {} -50 {} -100 {} -80 {} -80 {} 0 {} -20 {} -60 {} -100 {} -20 {} -30 {} 0 {} -80 {} -60 {} -120 {} -70 {} -80 {} 0 {} -60 {} -70 {} -120 {} -80 {} -60 {} 0 {} -100 {} -80 {} -90 {} -60 {} -100 {} 0 {} -60 {} -80 {} -80 {} -50 {} -60 {} 0 {} -30 {} -60 {} -80 {} -40 {} -40 {} 0 {} -50 {} -40 {} 0 {} -20 {} -50 {} 0 {} -30 {} -50 {} -80 {} -40 {} -40 {} 0 {} -20 {} -50 {} -90 {} -20 {} -20 {} 0 {} -50 {} -70 {} -100 {} -50 {} -40 {} 0 {} -20 {} -60 {} -90 {} 0 {} 0 {} 0 {} -40 {} -50 {} -90 {} -20 {} -40 {} 0 {} -40 {} -40 {} -50 {} -40 {} -40 {}
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -80 {} -140 {} -80 {} -30 {} 0 {} -70 {} -60 {} -100 {} -90 {} -60 {} 0 {} -40 {} -60 {} -80 {} -90 {} -60 {} 0 {} -60 {} -30 {} -100 {} -90 {} -70 {} 0 {} -20 {} -60 {} -80 {} -60 {} -40 {} 0 {} -110 {} -100 {} -90 {} -120 {} -100 {} 0 {} -40 {} -90 {} -80 {} -70 {} -40 {} 0 {} 0 {} -20 {} -90 {} -20 {} 0 {} 0 {} -40 {} -80 {} -90 {} -70 {} -40 {} 0 {} -40 {} -60 {} -90 {} -70 {} -40 {} 0 {} -70 {} -70 {} -40 {} -90 {} -60 {} 0 {} -100 {} -100 {} -80 {} -120 {} -100 {} 0 {} -90 {} -100 {} -60 {} -90 {} -100 {} 0 {} 0 {} 0 {} -70 {} -20 {} 0 {} 0 {} -20 {} -60 {} -100 {} -60 {} -20 {} 0 {} -60 {} -20 {} -120 {} -40 {} -50 {} 0 {} -20 {} -40 {} -70 {} -50 {} -20 {} 0 {} -70 {} -40 {} -80 {} -50 {} -60 {} 0 {} -60 {} -50 {} -100 {} -80 {} -80 {} 0 {} -20 {} -60 {} -120 {} -20 {} -30 {} 0 {} -80 {} -60 {} -120 {} -70 {} -80 {} 0 {} -60 {} -70 {} -120 {} -80 {} -60 {} 0 {} -100 {} -80 {} -90 {} -60 {} -100 {} 0 {} -60 {} -80 {} -80 {} -50 {} -60 {} 0 {} -30 {} -60 {} -80 {} -40 {} -40 {} 0 {} -50 {} -40 {} 0 {} -20 {} -50 {} 0 {} -30 {} -50 {} -80 {} -40 {} -40 {} 0 {} -20 {} -50 {} -90 {} -20 {} -20 {} 0 {} -50 {} -70 {} -100 {} -50 {} -40 {} 0 {} -20 {} -60 {} -90 {} 0 {} 0 {} 0 {} -40 {} -50 {} -90 {} -20 {} -40 {} 0 {} -40 {} -40 {} -50 {} -40 {} -40 {}
 ShortTable: maxp 16
   0
   0
