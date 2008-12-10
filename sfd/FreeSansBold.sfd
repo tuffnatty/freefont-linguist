@@ -4,7 +4,7 @@ FullName: Free Sans Bold
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.139 $
+Version: $Revision: 1.140 $
 ItalicAngle: 0
 UnderlinePosition: -155
 UnderlineWidth: 69
@@ -62,7 +62,7 @@ Lookup: 4 0 0 "'pstf' Post Base Forms in Gurmukhi"  {"'pstf' Post Base Forms in 
 Lookup: 4 0 0 "'blws' Below Base Substitutions in Gurmukhi"  {"'blws' Below Base Substitutions in Gurmukhi subtable"  } ['blws' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
 Lookup: 4 0 0 "'abvs' Above Base Substitutions in Gurmukhi"  {"'abvs' Above Base Substitutions in Gurmukhi subtable"  } ['abvs' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' Post Base Substitutions in Gurmukhi"  {"'psts' Post Base Substitutions in Gurmukhi subtable"  } ['psts' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin classes"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-capital"  "'kern' Horizontal Kerning in Latin-small"  "'kern' Horizontal Kerning in Latin-rightpunct"  "'kern' Horizontal Kerning in Latin-leftpunct"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek 0"  {"'mark' Mark Positioning in Greek 0 subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek 2"  {"'mark' Mark Positioning in Greek 2 subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  "'mark' Mark Positioning in Latin 1 subtable 1"  } ['mark' ('latn' <'dflt' > ) ]
@@ -70,53 +70,106 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning 
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 3"  {"'mark' Mark Positioning in Latin 3 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'cyrl' <'dflt' > 'geor' <'dflt' > 'grek' <'dflt' > 'gur2' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
 DEI: 0
-KernClass2: 27 20 "'kern' Horizontal Kerning in Latin classes" 
- 57 A Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring
+KernClass2: 14 16 "'kern' Horizontal Kerning in Latin-capital" 
+ 73 A Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring Amacron Aogonek
  1 B
- 89 C D G O Q Ccedilla Ccaron Oacute Ograve Ocircumflex Odieresis Obreve Otilde Ohungarumlaut
+ 199 C D G O Q Thorn Eth Yogh Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Dcaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Oacute Ograve Ocircumflex Odieresis Obreve Otilde Omacron Ohungarumlaut Oslash
+ 73 E AE OE Eacute Egrave Ecircumflex Edieresis Etilde Ecaron Emacron Eogonek
  1 F
- 1 L
- 1 P
- 1 S
- 1 T
+ 1 J
+ 8 L Lslash
+ 6 P Wynn
+ 8 R Rcaron
+ 17 S Scaron Scedilla
+ 17 T Tcaron Tcedilla
  41 V W Y Yacute Ygrave Ycircumflex Ydieresis
- 5 K X Z
- 57 a aacute agrave acircumflex adieresis aring abreve atilde
- 144 b c e o p ccedilla ccircumflex ccaron eacute egrave ecircumflex ebreve edieresis oacute ograve ocircumflex odieresis obreve otilde ohungarumlaut
- 1 f
+ 25 K X Z Zcaron Kcommaaccent
+ 76 A AE Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring Amacron Aogonek
+ 41 V W Y Yacute Ygrave Ycircumflex Ydieresis
+ 178 C G O OE Q Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Oacute Ograve Ocircumflex Odieresis Obreve Otilde Omacron Ohungarumlaut Oslash
+ 189 c d e o q oe eth ccedilla ccaron ccircumflex dcaron eacute egrave ecircumflex edieresis ebreve emacron eogonek oacute ograve ocircumflex odieresis obreve omacron oslash otilde ohungarumlaut
+ 91 a g ae gcommaaccent aacute agrave acircumflex adieresis aring abreve atilde amacron aogonek
  41 v w y yacute ygrave ycircumflex ydieresis
- 12 h m n ntilde
- 60 g u uacute ugrave ucircumflex udieresis ubreve uhungarumlaut
- 3 k x
- 1 r
- 1 s
- 1 t
- 1 z
+ 10 T Tcedilla
+ 1 J
+ 1 j
+ 1 x
+ 130 m n p r u z ntilde ncommaaccent nacute ncaron uacute ugrave ucircumflex udieresis ubreve utilde umacron uring uhungarumlaut zcaron
+ 17 s scaron scedilla
+ 26 t f ff fi ffi ffl tcedilla
+ 10 X Z Zcaron
+ 17 S Scaron Scedilla
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} -40 {} -30 {} -30 {} -40 {} -60 {} 0 {} 0 {} -10 {} -40 {} -30 {} -30 {} -10 {} -40 {} 0 {} -40 {} -60 {} -40 {} 0 {} -20 {} -30 {} -60 {} 0 {} -30 {} -40 {} -30 {} -20 {} -10 {} -50 {} -20 {} 0 {} -50 {} -60 {} -30 {} 0 {} -40 {} -30 {} -40 {} 0 {} -30 {} -30 {} -30 {} -30 {} -20 {} -60 {} -20 {} 0 {} -30 {} -60 {} -60 {} -40 {} -40 {} -60 {} -40 {} -40 {} -30 {} -40 {} -60 {} -40 {} -30 {} -50 {} -70 {} 0 {} -40 {} -30 {} -30 {} -30 {} -30 {} -10 {} -20 {} -30 {} -20 {} -40 {} -40 {} -40 {} -20 {} -40 {} -60 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -30 {} -20 {} -40 {} -40 {} 0 {} -20 {} 0 {} -40 {} -20 {} -30 {} -30 {} -60 {} 0 {} -80 {} -40 {} -30 {} -40 {} -50 {} 0 {} -30 {} -60 {} 0 {} -40 {} -40 {} -40 {} 0 {} -60 {} -40 {} 0 {} -10 {} -30 {} -10 {} -10 {} -10 {} -10 {} -10 {} 0 {} -10 {} 0 {} -10 {} -10 {} 0 {} 0 {} -10 {} 0 {} -40 {} -60 {} -20 {} 0 {} 0 {} -20 {} -50 {} 0 {} -10 {} -50 {} -30 {} -10 {} -20 {} -60 {} -20 {} 0 {} -60 {} -10 {} -40 {} -60 {} -60 {} -20 {} 0 {} -40 {} 0 {} -30 {} -40 {} -40 {} -20 {} -40 {} -50 {} 0 {} -80 {} 0 {} -60 {} -60 {} -60 {} 0 {} 0 {} -30 {} 0 {} -40 {} -70 {} -40 {} -20 {} -30 {} -60 {} 0 {} 0 {} 0 {} -60 {} -40 {} -40 {} -40 {} -10 {} -20 {} -10 {} -20 {} -40 {} -30 {} -30 {} -20 {} -60 {}
+KernClass2: 12 9 "'kern' Horizontal Kerning in Latin-small" 
+ 73 a aacute agrave acircumflex adieresis aring abreve atilde amacron aogonek
+ 166 b c e o p ae oe ccedilla ccircumflex ccaron eacute egrave ecircumflex ebreve emacron edieresis oacute ograve ocircumflex odieresis obreve otilde omacron ohungarumlaut
+ 4 f ff
+ 41 v w y yacute ygrave ycircumflex ydieresis
+ 39 h m n ntilde ncommaaccent nacute ncaron
+ 101 g u gcommaaccent gbreve uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut
+ 16 k x kcommaaccent
+ 8 r rcaron
+ 17 s scaron scedilla
+ 10 t tcedilla
+ 26 z zcaron zacute zdotaccent
+ 170 c d e o oe q ccedilla ccaron ccircumflex dcaron eacute egrave ecircumflex edieresis ebreve emacron oacute ograve omacron ocircumflex odieresis obreve otilde ohungarumlaut
+ 98 a g ae gcommaaccent gbreve aacute agrave acircumflex adieresis aring abreve atilde amacron aogonek
+ 41 v w y yacute ygrave ycircumflex ydieresis
+ 1 j
+ 1 x
+ 160 m n p r u z ntilde ncommaaccent nacute ncaron rcaron uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut zcaron zacute zdotaccent yogh
+ 17 s scaron scedilla
+ 29 t f ff fl fi ffl ffi tcedilla
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} -10 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} -10 {} 0 {} -20 {} -10 {} -10 {} -10 {} 0 {} -20 {} -20 {} 0 {} 0 {} -30 {} -10 {} -20 {} -10 {} 0 {} -20 {} -20 {} 0 {} -20 {} -20 {} -20 {} -20 {} -10 {} 0 {} -10 {} 0 {} -20 {} -20 {} -20 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} -10 {} -10 {} -20 {} 0 {} 0 {} -10 {} -20 {} -20 {} -20 {} -40 {} -20 {} -20 {} -20 {} 0 {} -10 {} -10 {} 0 {} 0 {} -20 {} -10 {} -10 {} -15 {} 0 {} -20 {} -20 {} -20 {} -10 {} -20 {} -20 {} -20 {} -20 {}
+KernClass2: 6 16 "'kern' Horizontal Kerning in Latin-leftpunct" 
  10 quoteright
  36 hyphen guillemotright guilsinglright
  27 guillemotleft guilsinglleft
  22 quotedblleft quoteleft
- 12 period comma
- 44 A Aacute Agrave Acircumflex Adieresis Atilde
+ 27 quotesinglbase quotedblbase
+ 55 A AE Aacute Agrave Acircumflex Adieresis Atilde Amacron
  41 V W Y Yacute Ygrave Ycircumflex Ydieresis
- 80 C G O Q Ccedilla Oacute Ograve Ocircumflex Odieresis Obreve Otilde Ohungarumlaut
- 137 c d e o q ccedilla ccircumflex eacute egrave ecircumflex edieresis ebreve oacute ograve ocircumflex odieresis obreve otilde ohungarumlaut
- 59 a g aacute agrave acircumflex adieresis aring abreve atilde
+ 104 C G O Q OE Ccedilla Gcommaaccent Oacute Ograve Ocircumflex Odieresis Obreve Otilde Omacron Ohungarumlaut
+ 170 c d e o q oe ccedilla ccircumflex ccaron dcaron eacute egrave emacron ecircumflex edieresis ebreve oacute ograve ocircumflex odieresis obreve otilde omacron ohungarumlaut
+ 83 a g ae aacute agrave acircumflex adieresis aring abreve atilde amacron gcommaaccent
  41 v w y yacute ygrave ycircumflex ydieresis
- 1 T
- 12 period comma
- 34 hyphen guillemotleft guilsinglleft
+ 17 T Tcaron Tcedilla
  1 J
- 37 quoteright quotedblright quotedblleft
  1 j
  1 x
- 82 m n p r u z ntilde uacute ugrave ucircumflex udieresis ubreve utilde uhungarumlaut
- 1 s
- 3 t f
+ 110 m n p r u z ntilde ncommaaccent uacute ugrave ucircumflex udieresis ubreve utilde umacron uhungarumlaut zcaron
+ 17 s scaron scedilla
+ 12 t f tcedilla
+ 10 X Z Zcaron
+ 17 S Scaron Scedilla
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -90 {} -10 {} -60 {} -50 {} -60 {} -20 {} 0 {} 0 {} 0 {} -40 {} -60 {} -60 {} 0 {} 0 {} -60 {} 0 {} -60 {} -60 {} -20 {} 0 {} -40 {} -60 {} -50 {} -20 {} -30 {} -60 {} -40 {} -50 {} -50 {} -60 {} -60 {} 0 {} -40 {} -60 {} -30 {} -20 {} -30 {} -40 {} -50 {} 0 {} -10 {} -40 {} -30 {} 0 {} -20 {} -50 {} -30 {} 0 {} -60 {} 0 {} -30 {} -40 {} -30 {} 0 {} 0 {} -30 {} 0 {} 0 {} -20 {} -20 {} 0 {} -30 {} -30 {} 0 {} 0 {} -50 {} -30 {} -10 {} -10 {} -30 {} -30 {} 0 {} 0 {} -20 {} -30 {} -20 {} -40 {} -30 {} -40 {}
+KernClass2: 22 5 "'kern' Horizontal Kerning in Latin-rightpunct" 
+ 65 A Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring Amacron
+ 1 B
+ 117 C D G O Q Ccedilla Ccaron Dcaron Gcommaaccent Oacute Ograve Ocircumflex Odieresis Obreve Otilde Omacron Ohungarumlaut
+ 1 F
+ 8 L Lslash
+ 1 P
+ 17 S Scaron Scedilla
+ 10 T Tcedilla
+ 41 V W Y Yacute Ygrave Ycircumflex Ydieresis
+ 25 K X Z Kcommaaccent Zcaron
+ 65 a aacute agrave acircumflex adieresis aring abreve atilde amacron
+ 160 b c e o p ccedilla ccircumflex ccaron eacute egrave ecircumflex ebreve emacron edieresis oacute ograve ocircumflex odieresis obreve otilde omacron ohungarumlaut
+ 1 f
+ 41 v w y yacute ygrave ycircumflex ydieresis
+ 25 h m n ntilde ncommaaccent
+ 81 g u gcommaaccent uacute ugrave ucircumflex udieresis ubreve umacron uhungarumlaut
+ 16 k x kcommaaccent
+ 1 r
+ 17 s scaron scedilla
+ 10 t tcedilla
+ 8 z zcaron
+ 12 period comma
+ 34 hyphen guillemotleft guilsinglleft
+ 37 quoteright quotedblright quotedblleft
  29 guillemotright guilsinglright
- 3 X Z
- 1 S
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} -40 {} -30 {} -30 {} -40 {} -60 {} -20 {} -60 {} 0 {} -60 {} 0 {} -10 {} -40 {} -30 {} -30 {} -40 {} -10 {} -40 {} 0 {} -40 {} -60 {} -40 {} 0 {} -20 {} -30 {} -60 {} -60 {} -20 {} 0 {} -60 {} 0 {} -40 {} -30 {} -20 {} -10 {} -20 {} -50 {} -20 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} 0 {} 0 {} -40 {} 0 {} -30 {} -30 {} -30 {} 0 {} -20 {} -60 {} -20 {} 0 {} -40 {} 0 {} -30 {} -30 {} -30 {} -10 {} 0 {} -60 {} -30 {} -30 {} 0 {} 0 {} -40 {} -40 {} -40 {} -20 {} -50 {} -40 {} -60 {} 0 {} 0 {} -60 {} -40 {} -30 {} -20 {} -40 {} -40 {} -20 {} -60 {} 0 {} -60 {} 0 {} 0 {} -40 {} 0 {} 0 {} -40 {} -30 {} -60 {} 0 {} -80 {} -40 {} -30 {} -40 {} -50 {} 0 {} -30 {} -100 {} -80 {} -60 {} -20 {} 0 {} -40 {} -40 {} -40 {} 0 {} -60 {} -60 {} -40 {} 0 {} -40 {} -60 {} -20 {} 0 {} 0 {} -20 {} -50 {} -60 {} -30 {} 0 {} -70 {} -10 {} -50 {} -30 {} -10 {} -20 {} -30 {} -60 {} -20 {} 0 {} -60 {} 10 {} -40 {} -60 {} -60 {} -20 {} 0 {} -60 {} -60 {} -40 {} 0 {} 0 {} -30 {} -40 {} -40 {} -20 {} -40 {} -40 {} -50 {} 0 {} -80 {} 0 {} -60 {} -60 {} -60 {} 0 {} 10 {} -60 {} -60 {} -30 {} 0 {} 0 {} -40 {} -70 {} -40 {} -20 {} -80 {} -30 {} -60 {} 0 {} 0 {} 0 {} -60 {} -40 {} -40 {} -40 {} -10 {} -40 {} -60 {} -20 {} -40 {} -10 {} -20 {} -40 {} -30 {} -30 {} -40 {} -20 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -30 {} 0 {} -20 {} -60 {} 0 {} -60 {} 0 {} -10 {} -10 {} -10 {} -10 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -20 {} 0 {} 0 {} -40 {} 0 {} -40 {} -10 {} -10 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} -30 {} -10 {} -20 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -30 {} 0 {} -30 {} -30 {} -20 {} 0 {} -30 {} -20 {} -20 {} -30 {} -30 {} -10 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -40 {} 0 {} -30 {} -60 {} 0 {} -60 {} -20 {} -40 {} -10 {} -20 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -40 {} 0 {} -40 {} -60 {} 0 {} -40 {} 0 {} -40 {} -20 {} -10 {} -20 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -20 {} 0 {} -40 {} -80 {} 0 {} -60 {} 0 {} -20 {} -40 {} -30 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} -10 {} -10 {} -20 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} -20 {} 0 {} -40 {} -40 {} 0 {} -80 {} -20 {} -40 {} -20 {} -20 {} -30 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} -10 {} -15 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -30 {} 0 {} -40 {} -70 {} 0 {} -60 {} -30 {} -50 {} -40 {} -40 {} -20 {} -60 {} 0 {} 0 {} 0 {} -90 {} -40 {} -60 {} -70 {} -80 {} -30 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} -60 {} -60 {} -60 {} 0 {} -60 {} 0 {} -70 {} 0 {} -60 {} -60 {} -20 {} 0 {} -40 {} -60 {} -60 {} -80 {} -60 {} -20 {} -80 {} -40 {} -60 {} -40 {} -50 {} -50 {} -40 {} -60 {} -60 {} 0 {} -60 {} -80 {} -30 {} -30 {} -30 {} -40 {} -60 {} -80 {} -40 {} 0 {} 0 {} -20 {} -60 {} -30 {} 0 {} -20 {} 0 {} -60 {} -40 {} 0 {} -60 {} 0 {} -30 {} -40 {} -40 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} -20 {} -40 {} 0 {} -40 {} -30 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {}
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -60 {} -20 {} -60 {} -20 {} 0 {} -30 {} 0 {} -40 {} -20 {} 0 {} -60 {} -30 {} 0 {} -50 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -100 {} -80 {} -20 {} -60 {} 0 {} -60 {} -30 {} -70 {} -30 {} 0 {} -60 {} -60 {} 0 {} -40 {} 0 {} -60 {} -60 {} 0 {} -80 {} 0 {} -40 {} -60 {} -40 {} -40 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -20 {} 0 {} -40 {} -20 {} 0 {} -60 {} -60 {} 0 {} -20 {} 0 {} -30 {} -20 {} -30 {} -40 {} 0 {} -30 {} -60 {} -60 {} -30 {} 0 {} -40 {} -60 {} -40 {} -30 {} 0 {} -40 {} -80 {} -60 {} -60 {} 0 {} -60 {} -60 {} 0 {} -30 {} 0 {} -40 {} -40 {} -80 {} -30 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -40 {} -70 {} -60 {} -60 {}
 ShortTable: maxp 16
   0
   0
@@ -527,7 +580,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 7776 16 12
+WinInfo: 384 16 12
 BeginPrivate: 8
 UniqueID 7 5020904
 BlueValues 31 [-23 0 540 560 701 724 729 749]
@@ -36138,7 +36191,7 @@ Refer: 1 33 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni01f7
+StartChar: Wynn
 Encoding: 503 503 1894
 Width: 630
 Flags: HMW
