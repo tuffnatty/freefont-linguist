@@ -4,7 +4,7 @@ FullName: Free Sans
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008 Free Software Foundation.
-Version: $Revision: 1.248 $
+Version: $Revision: 1.249 $
 ItalicAngle: 0
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1228906847
+ModificationTime: 1229029757
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -110,19 +110,35 @@ Lookup: 260 0 0 "'blwm' Below Base Mark in Gujarati"  {"'blwm' Below Base Mark i
 Lookup: 260 0 0 "'blwm' Below Base Mark in Devanagari"  {"'blwm' Below Base Mark in Devanagari subtable"  } ['blwm' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Gujarati"  {"'abvm' Above Base Mark in Gujarati subtable"  } ['abvm' ('gujr' <'dflt' > 'gjr2' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Devanagari"  {"'abvm' Above Base Mark in Devanagari subtable"  } ['abvm' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic-small"  "'kern' Horizontal Kerning in Cyrillic-capital"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-capital"  "'kern' Horizontal Kerning in Latin-small"  "'kern' Horizontal Kerning in Latin-rightpunct"  "'kern' Horizontal Kerning in Latin-leftpunct"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 257 0 0 "'lfbd' Left Bounds in Devanagari"  {"'lfbd' Left Bounds in Devanagari subtable"  } ['lfbd' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
 Lookup: 257 0 0 "'rtbd' Right Bounds in Devanagari"  {"'rtbd' Right Bounds in Devanagari subtable"  } ['rtbd' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
 DEI: 0
-KernClass2: 14 18 "'kern' Horizontal Kerning in Latin-capital" 
+KernClass2: 5 5 "'kern' Horizontal Kerning in Cyrillic-capital" 
+ 33 Gecyrillic Tecyrillic Gjecyrillic
+ 24 Ucyrillic Ushortcyrillic
+ 10 Ercyrillic
+ 81 Ecyrillic Zecyrillic Ocyrillic Escyrillic Efcyrillic Ereversedcyrillic IAcyrillic
+ 571 acyrillic vecyrillic gecyrillic decyrillic iecyrillic zhecyrillic zecyrillic iicyrillic iishortcyrillic kacyrillic elcyrillic emcyrillic encyrillic ocyrillic pecyrillic ercyrillic escyrillic tecyrillic ucyrillic efcyrillic khacyrillic tsecyrillic checyrillic shacyrillic shchacyrillic hardsigncyrillic yericyrillic softsigncyrillic ereversedcyrillic iucyrillic iacyrillic iecyrillic_grave iocyrillic djecyrillic gjecyrillic ecyrillic dzecyrillic icyrillic yicyrillic jecyrillic ljecyrillic njecyrillic tshecyrillic kjecyrillic iicyrillic_grave ushortcyrillic dzhecyrillic
+ 81 Ecyrillic Zecyrillic Ocyrillic Escyrillic Efcyrillic Ereversedcyrillic IAcyrillic
+ 9 Acyrillic
+ 10 Tecyrillic
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -20 {} -30 {} 0 {} 0 {} -30 {} -30 {} -40 {} 0 {} 0 {} -20 {} -10 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {}
+KernClass2: 2 2 "'kern' Horizontal Kerning in Cyrillic-small" 
+ 21 gecyrillic tecyrillic
+ 10 decyrillic
+ 0 {} 0 {} 0 {} -40 {}
+KernClass2: 15 19 "'kern' Horizontal Kerning in Latin-capital" 
  73 A Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring Amacron Aogonek
  1 B
- 199 C D G O Q Thorn Eth Yogh Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Dcaron Gcircumflex Gbreve Gdotaccent Gcommaaccent Oacute Ograve Ocircumflex Odieresis Obreve Otilde Omacron Ohungarumlaut Oslash
+ 116 C D G Thorn Eth Yogh Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Dcaron Gcircumflex Gbreve Gdotaccent Gcommaaccent
  73 E AE OE Eacute Egrave Ecircumflex Edieresis Etilde Ecaron Emacron Eogonek
  1 F
  1 J
  8 L Lslash
  6 P Wynn
+ 82 Q O Oacute Ograve Ocircumflex Odieresis Obreve Otilde Omacron Ohungarumlaut Oslash
  8 R Rcaron
  17 S Scaron Scedilla
  17 T Tcaron Tcedilla
@@ -138,15 +154,16 @@ KernClass2: 14 18 "'kern' Horizontal Kerning in Latin-capital"
  1 J
  1 j
  1 x
- 126 m n u z ntilde ncommaaccent nacute ncaron uacute ugrave ucircumflex udieresis ubreve utilde umacron uring uhungarumlaut zcaron
+ 46 m n z ntilde ncommaaccent nacute ncaron zcaron
  17 s scaron scedilla
  26 t f ff fi ffi ffl tcedilla
  10 X Z Zcaron
  17 S Scaron Scedilla
  8 r rcaron
  1 p
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -20 {} -30 {} -40 {} 0 {} 0 {} 0 {} -30 {} -20 {} -30 {} -10 {} -30 {} -30 {} -20 {} 0 {} -30 {} -50 {} -30 {} 0 {} -10 {} -30 {} -50 {} 0 {} -20 {} -30 {} -30 {} -10 {} -10 {} -50 {} -20 {} -20 {} -10 {} 0 {} -40 {} -50 {} -20 {} 0 {} -20 {} -10 {} -40 {} 0 {} -30 {} -30 {} -30 {} -20 {} -20 {} -40 {} -10 {} -20 {} -20 {} 0 {} -30 {} -60 {} -40 {} -30 {} -30 {} -40 {} -20 {} -20 {} -30 {} -30 {} -30 {} -20 {} -30 {} -30 {} -50 {} -30 {} -20 {} 0 {} -40 {} -20 {} -30 {} -30 {} -30 {} -10 {} 0 {} -30 {} -20 {} -40 {} -50 {} -40 {} -20 {} -30 {} -40 {} -40 {} -30 {} 0 {} -30 {} -50 {} -30 {} -20 {} -30 {} -30 {} 0 {} 0 {} -20 {} -50 {} -40 {} -20 {} 0 {} -50 {} -30 {} -30 {} -20 {} 0 {} 0 {} -60 {} -40 {} -30 {} -20 {} -40 {} -40 {} 0 {} -10 {} 0 {} -40 {} -20 {} -30 {} 0 {} -40 {} -30 {} 0 {} 0 {} -60 {} -40 {} -20 {} -40 {} -50 {} 0 {} -30 {} -40 {} 0 {} -40 {} -40 {} -30 {} 0 {} -60 {} -30 {} -30 {} -20 {} 0 {} -10 {} -50 {} -10 {} -10 {} -10 {} -10 {} -20 {} 0 {} -10 {} 0 {} -10 {} -10 {} 0 {} -20 {} -20 {} -20 {} -10 {} 0 {} -30 {} -50 {} -20 {} 0 {} 0 {} -20 {} -40 {} 0 {} -10 {} -40 {} -20 {} 0 {} -10 {} -50 {} -10 {} -20 {} -10 {} 0 {} -50 {} -10 {} -40 {} -40 {} -40 {} -20 {} 0 {} -40 {} 0 {} -30 {} -40 {} -40 {} -20 {} -40 {} -40 {} -40 {} -30 {} 0 {} -60 {} 0 {} -50 {} -50 {} -50 {} 0 {} 0 {} -30 {} 0 {} -30 {} -60 {} -40 {} -20 {} -30 {} -50 {} -60 {} -40 {} 0 {} 0 {} 0 {} -50 {} -40 {} -30 {} -30 {} 0 {} 0 {} -10 {} -20 {} -40 {} -20 {} -30 {} 0 {} -50 {} -40 {} -30 {}
-KernClass2: 12 11 "'kern' Horizontal Kerning in Latin-small" 
+ 79 u uacute ugrave ucircumflex udieresis ubreve utilde umacron uring uhungarumlaut
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -40 {} -20 {} -20 {} -30 {} -40 {} 0 {} 0 {} 0 {} -30 {} -20 {} -30 {} -10 {} -30 {} -30 {} -20 {} -25 {} 0 {} -30 {} -50 {} -30 {} 0 {} -10 {} -30 {} -50 {} 0 {} -20 {} -30 {} -30 {} -10 {} -10 {} -50 {} -20 {} -20 {} -10 {} -20 {} 0 {} -40 {} -50 {} -20 {} 0 {} -20 {} -10 {} -40 {} 0 {} -30 {} -30 {} -30 {} -20 {} -20 {} -40 {} -10 {} -20 {} -20 {} -30 {} 0 {} -30 {} -50 {} -40 {} -30 {} -30 {} -40 {} -20 {} -20 {} -30 {} -30 {} -40 {} -20 {} -30 {} -30 {} -50 {} -30 {} -20 {} -45 {} 0 {} -40 {} -20 {} -30 {} -30 {} -30 {} -10 {} 0 {} -30 {} -20 {} -40 {} -50 {} -40 {} -20 {} -30 {} -40 {} -40 {} -30 {} -50 {} 0 {} -30 {} -50 {} -30 {} -20 {} -30 {} -30 {} 0 {} 0 {} -20 {} -50 {} -40 {} -20 {} 0 {} -50 {} -30 {} -30 {} -20 {} -40 {} 0 {} 0 {} -60 {} -40 {} -30 {} -20 {} -40 {} -40 {} 0 {} -10 {} 0 {} -40 {} -20 {} -30 {} 0 {} -40 {} -30 {} 0 {} -40 {} 0 {} -60 {} -40 {} -20 {} -40 {} -50 {} 0 {} -30 {} -40 {} 0 {} -40 {} -40 {} -30 {} 0 {} -60 {} -30 {} -30 {} -20 {} -40 {} 0 {} -30 {} -40 {} 0 {} 0 {} -20 {} 0 {} -40 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -50 {} -20 {} -20 {} -10 {} -15 {} 0 {} -10 {} -50 {} -10 {} -10 {} -10 {} -10 {} -20 {} 0 {} -10 {} 0 {} -10 {} -10 {} 0 {} -20 {} -20 {} -20 {} -10 {} -40 {} 0 {} -30 {} -50 {} -20 {} 0 {} 0 {} -20 {} -40 {} 0 {} -10 {} -40 {} -20 {} 0 {} -10 {} -50 {} -10 {} -20 {} -10 {} -25 {} 0 {} -50 {} -10 {} -40 {} -40 {} -40 {} -20 {} 0 {} -40 {} 0 {} -30 {} -40 {} -40 {} -20 {} -40 {} -40 {} -40 {} -30 {} -40 {} 0 {} -60 {} 0 {} -50 {} -50 {} -50 {} 0 {} 0 {} -30 {} 0 {} -30 {} -60 {} -40 {} -20 {} -30 {} -50 {} -60 {} -40 {} -50 {} 0 {} 0 {} 0 {} -50 {} -40 {} -30 {} -30 {} 0 {} 0 {} -10 {} -20 {} -40 {} -20 {} -30 {} 0 {} -50 {} -40 {} -30 {} -40 {}
+KernClass2: 12 12 "'kern' Horizontal Kerning in Latin-small" 
  73 a aacute agrave acircumflex adieresis aring abreve atilde amacron aogonek
  166 b c e o p ae oe ccedilla ccircumflex ccaron eacute egrave ecircumflex ebreve emacron edieresis oacute ograve ocircumflex odieresis obreve otilde omacron ohungarumlaut
  4 f ff
@@ -163,12 +180,13 @@ KernClass2: 12 11 "'kern' Horizontal Kerning in Latin-small"
  41 v w y yacute ygrave ycircumflex ydieresis
  1 j
  1 x
- 149 m n u z ntilde ncommaaccent nacute ncaron uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut zcaron zacute zdotaccent yogh
+ 69 m n z ntilde ncommaaccent nacute ncaron zcaron zacute zdotaccent yogh
  17 s scaron scedilla
  29 t f ff fl fi ffl ffi tcedilla
  8 r rcaron
  1 p
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} -10 {} -10 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -20 {} -10 {} -10 {} -10 {} -10 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} -10 {} 0 {} 0 {} -20 {} -20 {} 0 {} -20 {} -20 {} -40 {} -20 {} -10 {} -40 {} -30 {} 0 {} -10 {} 0 {} -20 {} -20 {} -20 {} -20 {} -20 {} 0 {} -20 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} -20 {} -10 {} 0 {} -20 {} -10 {} 0 {} -20 {} -20 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} -20 {} -40 {} -20 {} -10 {} -20 {} -20 {} -10 {} 0 {} -10 {} -10 {} 0 {} 0 {} -20 {} -10 {} -10 {} -15 {} -10 {} 0 {} 0 {} -20 {} -20 {} -20 {} -10 {} -20 {} -30 {} -20 {} -10 {} -30 {} -20 {}
+ 79 u uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} -10 {} -10 {} -10 {} -10 {} -10 {} 0 {} -10 {} 0 {} 0 {} 0 {} -10 {} 0 {} -20 {} -10 {} -10 {} -10 {} -10 {} 0 {} -5 {} 0 {} -20 {} -20 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} -10 {} 0 {} -5 {} 0 {} -20 {} -20 {} 0 {} -20 {} -20 {} -40 {} -20 {} -10 {} -25 {} -30 {} -30 {} 0 {} -10 {} 0 {} -20 {} -20 {} -20 {} -25 {} -20 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} -20 {} -10 {} 0 {} -20 {} -10 {} -20 {} 0 {} -20 {} -20 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} -10 {} -20 {} -20 {} -40 {} -20 {} -10 {} -20 {} -20 {} -10 {} -15 {} 0 {} -10 {} -10 {} 0 {} 0 {} -20 {} -10 {} -10 {} -15 {} -10 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} -10 {} -20 {} -30 {} -20 {} -10 {} -30 {} -20 {} -35 {}
 KernClass2: 6 16 "'kern' Horizontal Kerning in Latin-leftpunct" 
  10 quoteright
  36 hyphen guillemotright guilsinglright
@@ -217,7 +235,7 @@ KernClass2: 22 5 "'kern' Horizontal Kerning in Latin-rightpunct"
  34 hyphen guillemotleft guilsinglleft
  37 quoteright quotedblright quotedblleft
  29 guillemotright guilsinglright
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -60 {} -20 {} -60 {} -20 {} 0 {} -30 {} 0 {} -40 {} -20 {} 0 {} -60 {} -30 {} 0 {} -50 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -100 {} -80 {} -20 {} -60 {} 0 {} -60 {} -30 {} -70 {} -30 {} 0 {} -60 {} -60 {} 0 {} -40 {} 0 {} -60 {} -60 {} 0 {} -80 {} 0 {} -40 {} -60 {} -40 {} -40 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -20 {} 0 {} -40 {} -20 {} 0 {} -60 {} -60 {} 0 {} -20 {} 0 {} -30 {} -20 {} -30 {} -40 {} 0 {} -30 {} -60 {} -60 {} -30 {} 0 {} -40 {} -60 {} -40 {} -30 {} 0 {} -40 {} -80 {} -60 {} -60 {} 0 {} -60 {} -60 {} 0 {} -30 {} 0 {} -40 {} -40 {} -80 {} -30 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -40 {} -70 {} -60 {} -60 {}
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -60 {} -20 {} -60 {} -20 {} 0 {} -30 {} 0 {} -40 {} -20 {} 0 {} -60 {} -30 {} 0 {} -50 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -100 {} -80 {} -20 {} -60 {} 0 {} -60 {} -30 {} -70 {} -30 {} 0 {} -60 {} -60 {} 0 {} -40 {} 0 {} -60 {} -60 {} 0 {} -80 {} 0 {} -40 {} -60 {} -30 {} -40 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -20 {} 0 {} -40 {} -20 {} 0 {} -60 {} -60 {} 0 {} -20 {} 0 {} -30 {} -20 {} -20 {} -40 {} 0 {} -30 {} -60 {} -60 {} -30 {} 0 {} -40 {} -60 {} -40 {} -30 {} 0 {} -40 {} -60 {} -60 {} -60 {} 0 {} -60 {} -60 {} 0 {} -30 {} 0 {} -40 {} -40 {} -80 {} -30 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -40 {} -70 {} -40 {} -60 {}
 TtTable: prep
 PUSHW_1
  511
@@ -692,7 +710,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64 16 11
+WinInfo: 960 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 23 [-20 0 524 544 729 741]
@@ -11208,29 +11226,29 @@ Refer: 561 969 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni0400
+StartChar: Iecyrillic_grave
 Encoding: 1024 1024 567
 Width: 667
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 64 96 N 1 0 0 1 216 177 0
-Refer: 37 69 N 1 0 0 1 0 0 0
+Refer: 588 1045 N 1 0 0 1 0 0 2
+Refer: 64 96 S 1 0 0 1 216 177 0
 Validated: 32769
 EndChar
 
-StartChar: afii10023
+StartChar: Iocyrillic
 Encoding: 1025 1025 568
 Width: 657
 Flags: HMW
 LayerCount: 2
 Fore
+Refer: 588 1045 S 1 0 0 1 0 0 2
 Refer: 103 168 N 1 0 0 1 180 189 0
-Refer: 588 1045 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10051
+StartChar: Djecyrillic
 Encoding: 1026 1026 569
 Width: 766
 Flags: HMW
@@ -11263,7 +11281,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10052
+StartChar: Gjecyrillic
 Encoding: 1027 1027 570
 Width: 582
 Flags: HMW
@@ -11274,7 +11292,7 @@ Refer: 586 1043 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10053
+StartChar: Ecyrillic
 Encoding: 1028 1028 571
 Width: 722
 Flags: HMW
@@ -11300,7 +11318,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10054
+StartChar: Dzecyrillic
 Encoding: 1029 1029 572
 Width: 667
 Flags: HMW
@@ -11311,7 +11329,7 @@ Refer: 51 83 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10055
+StartChar: Icyrillic
 Encoding: 1030 1030 573
 Width: 278
 Flags: HMW
@@ -11322,7 +11340,7 @@ Refer: 41 73 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10056
+StartChar: Yicyrillic
 Encoding: 1031 1031 574
 Width: 278
 Flags: HMW
@@ -11333,7 +11351,7 @@ Refer: 41 73 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10057
+StartChar: Jecyrillic
 Encoding: 1032 1032 575
 Width: 500
 Flags: MW
@@ -11343,7 +11361,7 @@ Refer: 42 74 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10058
+StartChar: Ljecyrillic
 Encoding: 1033 1033 576
 Width: 1080
 Flags: HMW
@@ -11376,7 +11394,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10059
+StartChar: Njecyrillic
 Encoding: 1034 1034 577
 Width: 1014
 Flags: HMW
@@ -11411,7 +11429,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10060
+StartChar: Tshecyrillic
 Encoding: 1035 1035 578
 Width: 766
 Flags: MW
@@ -11439,7 +11457,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10061
+StartChar: Kjecyrillic
 Encoding: 1036 1036 579
 Width: 628
 Flags: HMW
@@ -11450,18 +11468,18 @@ Refer: 1414 714 N 1 0 0 1 170 176 0
 Validated: 32769
 EndChar
 
-StartChar: uni040D
+StartChar: Iicyrillic_grave
 Encoding: 1037 1037 580
 Width: 730
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1415 715 N 1 0 0 1 233 176 0
+Refer: 64 96 S 1 0 0 1 233 176 0
 Refer: 591 1048 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10062
+StartChar: Ushortcyrillic
 Encoding: 1038 1038 581
 Width: 613
 Flags: HMW
@@ -11472,7 +11490,7 @@ Refer: 602 1059 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10145
+StartChar: Dzhecyrillic
 Encoding: 1039 1039 582
 Width: 722
 Flags: HMW
@@ -11497,7 +11515,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10017
+StartChar: Acyrillic
 Encoding: 1040 1040 583
 Width: 666
 Flags: HMW
@@ -11508,7 +11526,7 @@ Refer: 33 65 N 1 0 0 1 -2 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10018
+StartChar: Becyrillic
 Encoding: 1041 1041 584
 Width: 668
 Flags: HMW
@@ -11537,7 +11555,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10019
+StartChar: Vecyrillic
 Encoding: 1042 1042 585
 Width: 668
 Flags: HMW
@@ -11548,7 +11566,7 @@ Refer: 34 66 S 1 0 0 1 1 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10020
+StartChar: Gecyrillic
 Encoding: 1043 1043 586
 Width: 582
 Flags: HMW
@@ -11567,7 +11585,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10021
+StartChar: Decyrillic
 Encoding: 1044 1044 587
 Width: 812
 Flags: HMW
@@ -11599,7 +11617,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10022
+StartChar: Iecyrillic
 Encoding: 1045 1045 588
 Width: 657
 Flags: HMW
@@ -11610,7 +11628,7 @@ Refer: 37 69 N 1 0 0 1 -10 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10024
+StartChar: Zhecyrillic
 Encoding: 1046 1046 589
 Width: 905
 Flags: HMW
@@ -11672,7 +11690,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10026
+StartChar: Iicyrillic
 Encoding: 1048 1048 591
 Width: 730
 Flags: HMW
@@ -11695,7 +11713,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10027
+StartChar: Iishortcyrillic
 Encoding: 1049 1049 592
 Width: 730
 Flags: HMW
@@ -11706,7 +11724,7 @@ Refer: 591 1048 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10028
+StartChar: Kacyrillic
 Encoding: 1050 1050 593
 Width: 632
 Flags: HMW
@@ -11730,7 +11748,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10029
+StartChar: Elcyrillic
 Encoding: 1051 1051 594
 Width: 674
 Flags: HMW
@@ -11753,7 +11771,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10030
+StartChar: Emcyrillic
 Encoding: 1052 1052 595
 Width: 846
 Flags: HMW
@@ -11764,7 +11782,7 @@ Refer: 45 77 N 1 0 0 1 5 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10031
+StartChar: Encyrillic
 Encoding: 1053 1053 596
 Width: 721
 Flags: HMW
@@ -11775,7 +11793,7 @@ Refer: 40 72 N 1 0 0 1 -3 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10032
+StartChar: Ocyrillic
 Encoding: 1054 1054 597
 Width: 796
 Flags: HMW
@@ -11786,7 +11804,7 @@ Refer: 47 79 N 1 0 0 1 8 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10033
+StartChar: Pecyrillic
 Encoding: 1055 1055 598
 Width: 721
 Flags: HMW
@@ -11807,7 +11825,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10034
+StartChar: Ercyrillic
 Encoding: 1056 1056 599
 Width: 654
 Flags: HMW
@@ -11818,7 +11836,7 @@ Refer: 48 80 N 1 0 0 1 -11 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10035
+StartChar: Escyrillic
 Encoding: 1057 1057 600
 Width: 722
 Flags: HMW
@@ -11829,7 +11847,7 @@ Refer: 35 67 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10036
+StartChar: Tecyrillic
 Encoding: 1058 1058 601
 Width: 611
 Flags: HMW
@@ -11840,7 +11858,7 @@ Refer: 52 84 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10037
+StartChar: Ucyrillic
 Encoding: 1059 1059 602
 Width: 613
 Flags: HMW
@@ -11861,7 +11879,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10038
+StartChar: Efcyrillic
 Encoding: 1060 1060 603
 Width: 861
 Flags: HMW
@@ -11894,7 +11912,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10039
+StartChar: Khacyrillic
 Encoding: 1061 1061 604
 Width: 657
 Flags: HMW
@@ -11905,7 +11923,7 @@ Refer: 56 88 N 1 0 0 1 -7 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10040
+StartChar: Tsecyrillic
 Encoding: 1062 1062 605
 Width: 742
 Flags: HMW
@@ -11930,7 +11948,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10041
+StartChar: Checyrillic
 Encoding: 1063 1063 606
 Width: 626
 Flags: HMW
@@ -11955,7 +11973,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10042
+StartChar: Shacyrillic
 Encoding: 1064 1064 607
 Width: 830
 Flags: HMW
@@ -11980,7 +11998,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10043
+StartChar: Shchacyrillic
 Encoding: 1065 1065 608
 Width: 851
 Flags: HMW
@@ -12009,7 +12027,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10044
+StartChar: Hardsigncyrillic
 Encoding: 1066 1066 609
 Width: 841
 Flags: HMW
@@ -12038,7 +12056,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10045
+StartChar: Yericyrillic
 Encoding: 1067 1067 610
 Width: 874
 Flags: HMW
@@ -12070,7 +12088,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10046
+StartChar: Softsigncyrillic
 Encoding: 1068 1068 611
 Width: 670
 Flags: HMW
@@ -12097,7 +12115,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10047
+StartChar: Ereversedcyrillic
 Encoding: 1069 1069 612
 Width: 717
 Flags: HMW
@@ -12123,7 +12141,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10048
+StartChar: IUcyrillic
 Encoding: 1070 1070 613
 Width: 1001
 Flags: HMW
@@ -12152,7 +12170,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10049
+StartChar: IAcyrillic
 Encoding: 1071 1071 614
 Width: 686
 Flags: HMW
@@ -12181,7 +12199,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10065
+StartChar: acyrillic
 Encoding: 1072 1072 615
 Width: 552
 Flags: HMW
@@ -12192,7 +12210,7 @@ Refer: 65 97 S 1 0 0 1 -4 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10066
+StartChar: becyrillic
 Encoding: 1073 1073 616
 Width: 550
 Flags: HMW
@@ -12219,9 +12237,10 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10067
+StartChar: vecyrillic
 Encoding: 1074 1074 617
 Width: 506
+UnlinkRmOvrlpSave: 1
 Flags: HMW
 AnchorPoint: "abovecyr" 244 545 basechar 0
 LayerCount: 2
@@ -12252,7 +12271,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10068
+StartChar: gecyrillic
 Encoding: 1075 1075 618
 Width: 404
 Flags: HMW
@@ -12271,7 +12290,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10069
+StartChar: decyrillic
 Encoding: 1076 1076 619
 Width: 602
 Flags: HMW
@@ -12302,7 +12321,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10070
+StartChar: iecyrillic
 Encoding: 1077 1077 620
 Width: 547
 Flags: HMW
@@ -12313,7 +12332,7 @@ Refer: 69 101 N 1 0 0 1 -2 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10072
+StartChar: zhecyrillic
 Encoding: 1078 1078 621
 Width: 755
 Flags: HMW
@@ -12374,7 +12393,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10074
+StartChar: iicyrillic
 Encoding: 1080 1080 623
 Width: 567
 Flags: HMW
@@ -12397,7 +12416,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10075
+StartChar: iishortcyrillic
 Encoding: 1081 1081 624
 Width: 567
 Flags: HMW
@@ -12408,7 +12427,7 @@ Refer: 623 1080 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10076
+StartChar: kacyrillic
 Encoding: 1082 1082 625
 Width: 489
 Flags: HMW
@@ -12432,7 +12451,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10077
+StartChar: elcyrillic
 Encoding: 1083 1083 626
 Width: 517
 Flags: HMW
@@ -12455,7 +12474,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10078
+StartChar: emcyrillic
 Encoding: 1084 1084 627
 Width: 618
 Flags: HMW
@@ -12481,7 +12500,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10079
+StartChar: encyrillic
 Encoding: 1085 1085 628
 Width: 558
 Flags: HMW
@@ -12506,7 +12525,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10080
+StartChar: ocyrillic
 Encoding: 1086 1086 629
 Width: 550
 Flags: HMW
@@ -12517,7 +12536,7 @@ Refer: 79 111 N 1 0 0 1 2 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10081
+StartChar: pecyrillic
 Encoding: 1087 1087 630
 Width: 557
 Flags: HMW
@@ -12538,7 +12557,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10082
+StartChar: ercyrillic
 Encoding: 1088 1088 631
 Width: 577
 Flags: HMW
@@ -12549,7 +12568,7 @@ Refer: 80 112 N 1 0 0 1 16 0 2
 Validated: 32769
 EndChar
 
-StartChar: afii10083
+StartChar: escyrillic
 Encoding: 1089 1089 632
 Width: 520
 Flags: HMW
@@ -12560,7 +12579,7 @@ Refer: 67 99 N 1 0 0 1 7 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10084
+StartChar: tecyrillic
 Encoding: 1090 1090 633
 Width: 444
 Flags: HMW
@@ -12581,7 +12600,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10085
+StartChar: ucyrillic
 Encoding: 1091 1091 634
 Width: 468
 Flags: HMW
@@ -12592,7 +12611,7 @@ Refer: 89 121 N 1 0 0 1 -15 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10086
+StartChar: efcyrillic
 Encoding: 1092 1092 635
 Width: 865
 Flags: HMW
@@ -12629,7 +12648,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10087
+StartChar: khacyrillic
 Encoding: 1093 1093 636
 Width: 466
 Flags: HMW
@@ -12640,7 +12659,7 @@ Refer: 88 120 N 1 0 0 1 -12 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10088
+StartChar: tsecyrillic
 Encoding: 1094 1094 637
 Width: 578
 Flags: HMW
@@ -12665,7 +12684,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10089
+StartChar: checyrillic
 Encoding: 1095 1095 638
 Width: 498
 Flags: HMW
@@ -12690,7 +12709,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10090
+StartChar: shacyrillic
 Encoding: 1096 1096 639
 Width: 692
 Flags: HMW
@@ -12715,7 +12734,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10091
+StartChar: shchacyrillic
 Encoding: 1097 1097 640
 Width: 712
 Flags: HMW
@@ -12744,7 +12763,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10092
+StartChar: hardsigncyrillic
 Encoding: 1098 1098 641
 Width: 664
 Flags: HMW
@@ -12772,7 +12791,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10093
+StartChar: yericyrillic
 Encoding: 1099 1099 642
 Width: 690
 Flags: HMW
@@ -12804,7 +12823,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10094
+StartChar: softsigncyrillic
 Encoding: 1100 1100 643
 Width: 521
 Flags: HMW
@@ -12831,7 +12850,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10095
+StartChar: ereversedcyrillic
 Encoding: 1101 1101 644
 Width: 520
 Flags: HMW
@@ -12857,7 +12876,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10096
+StartChar: iucyrillic
 Encoding: 1102 1102 645
 Width: 759
 Flags: HMW
@@ -12886,7 +12905,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10097
+StartChar: iacyrillic
 Encoding: 1103 1103 646
 Width: 543
 Flags: HMW
@@ -12916,29 +12935,29 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0450
+StartChar: iecyrillic_grave
 Encoding: 1104 1104 647
 Width: 549
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 64 96 N 1 0 0 1 114 0 0
-Refer: 69 101 N 1 0 0 1 -2 0 0
+Refer: 620 1077 N 1 0 0 1 0 0 2
+Refer: 64 96 S 1 0 0 1 114 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10071
+StartChar: iocyrillic
 Encoding: 1105 1105 648
 Width: 549
 Flags: HMW
 LayerCount: 2
 Fore
+Refer: 620 1077 S 1 0 0 1 0 0 2
 Refer: 103 168 N 1 0 0 1 121 1 0
-Refer: 69 101 N 1 0 0 1 -2 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10099
+StartChar: djecyrillic
 Encoding: 1106 1106 649
 Width: 577
 Flags: MW
@@ -12973,7 +12992,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10100
+StartChar: gjecyrillic
 Encoding: 1107 1107 650
 Width: 404
 Flags: HMW
@@ -12984,7 +13003,7 @@ Refer: 618 1075 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10101
+StartChar: ecyrillic
 Encoding: 1108 1108 651
 Width: 519
 Flags: HMW
@@ -13010,7 +13029,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10102
+StartChar: dzecyrillic
 Encoding: 1109 1109 652
 Width: 502
 Flags: HMW
@@ -13021,7 +13040,7 @@ Refer: 83 115 S 1 0 0 1 2 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10103
+StartChar: icyrillic
 Encoding: 1110 1110 653
 Width: 224
 Flags: HMW
@@ -13032,7 +13051,7 @@ Refer: 73 105 N 1 0 0 1 4 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10104
+StartChar: yicyrillic
 Encoding: 1111 1111 654
 Width: 278
 Flags: HMW
@@ -13044,7 +13063,7 @@ Refer: 240 305 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10105
+StartChar: jecyrillic
 Encoding: 1112 1112 655
 Width: 223
 Flags: HMW
@@ -13054,7 +13073,7 @@ Refer: 74 106 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10106
+StartChar: ljecyrillic
 Encoding: 1113 1113 656
 Width: 813
 Flags: HMW
@@ -13086,7 +13105,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10107
+StartChar: njecyrillic
 Encoding: 1114 1114 657
 Width: 853
 Flags: HMW
@@ -13120,7 +13139,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10108
+StartChar: tshecyrillic
 Encoding: 1115 1115 658
 Width: 577
 Flags: MW
@@ -13152,7 +13171,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: afii10109
+StartChar: kjecyrillic
 Encoding: 1116 1116 659
 Width: 489
 Flags: HMW
@@ -13163,18 +13182,18 @@ Refer: 625 1082 S 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: uni045D
+StartChar: iicyrillic_grave
 Encoding: 1117 1117 660
 Width: 567
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1415 715 N 1 0 0 1 154 -27 0
+Refer: 64 96 S 1 0 0 1 154 -27 0
 Refer: 623 1080 N 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
-StartChar: afii10110
+StartChar: ushortcyrillic
 Encoding: 1118 1118 661
 Width: 468
 Flags: HMW
@@ -13185,7 +13204,7 @@ Refer: 89 121 N 1 0 0 1 -15 0 0
 Validated: 32769
 EndChar
 
-StartChar: afii10193
+StartChar: dzhecyrillic
 Encoding: 1119 1119 662
 Width: 558
 Flags: HMW
