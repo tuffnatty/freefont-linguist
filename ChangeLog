@@ -1,5 +1,53 @@
-$Id: ChangeLog,v 1.251 2008-12-25 12:50:49 Stevan_White Exp $
+$Id: ChangeLog,v 1.252 2008-12-26 22:41:37 Stevan_White Exp $
+2008-12-26 Stevan_White
+	* FreeMono.sfd, FreeMonoBold.sfd, FreeMonoBoldOblique.sfd, FreeMonoOblique.sfd, FreeSans.sfd, FreeSansBold.sfd, FreeSansBoldOblique.sfd, FreeSansOblique.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd, FreeSerifItalic.sfd:
+
+	Final pre-release cleanup
+
+	* FreeSerif.sfd:
+
+	Buginese vowel u was misnamed
+
+	* FreeMono.sfd:
+
+	Yatcyrillic somehow was a mark character ... fixed
+
+	* FreeSans.sfd, FreeSansOblique.sfd:
+
+	Had to un-link references in
+	        Sans: uni02B2, uni02B5
+		SansOblique: uni0363
+	because validation of the TTF file said the glyph
+		"is drawn in wrong direction"
+	I would have preferred to have understand this...
+
+	* Makefile:
+
+	Added quick test for FontForge version.
+
+	* FreeMonoBold.sfd, FreeMonoBoldOblique.sfd:
+
+	Removed kerning tables (?? what were they doing here anyway??)
+
+	* FreeSerif.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd, FreeSerifItalic.sfd:
+
+	Kerning tables for Thai.
+	Handles one common case: short letter followed by a tall one with
+	an overhang to the left.
+
 2008-12-25 Stevan_White
+	* FreeSans.sfd, FreeSansBold.sfd, FreeSansBoldOblique.sfd, FreeSansOblique.sfd, FreeSerif.sfd, FreeSerifItalic.sfd:
+
+	More putzing with kerning tables
+
+	* FreeSans.sfd, FreeSansBold.sfd, FreeSansBoldOblique.sfd, FreeSansOblique.sfd, FreeSerif.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd, FreeSerifItalic.sfd:
+
+	Copied kerning classes
+		Serif -> SerifBold
+		SerifItalic -> SerifBoldItalic
+		Sans -> SansOblique SansBold SansBoldOblique
+	Some associated naming of characters, etc
+
 	* FreeSans.sfd, FreeSansBold.sfd, FreeSansBoldOblique.sfd, FreeSansOblique.sfd, FreeSerif.sfd, FreeSerifBold.sfd, FreeSerifBoldItalic.sfd, FreeSerifItalic.sfd:
 
 	Additions and correction in Spacing Modifier letters and IPA Extensions
