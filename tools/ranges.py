@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.22 2008-10-20 17:33:32 Stevan_White Exp $
+$Id: ranges.py,v 1.23 2008-12-26 19:43:23 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -851,6 +851,11 @@ Ranges for which (FontForge reports that) the font's OS/2 support
 bit is set are marked with a bullet.
 </p>
 <p>
+The "font total" row is the total number of glyphs in the font, whereas 
+"ranges total" is the total number of glyphs within the listed ranges.
+The numbers should be the same.
+</p>
+<p>
 For many ranges, I took the liberty of reducing the set of characters
 considered to those listed for the range in the current Unicode charts.
 The number of characters supported can thus be less than the width of the range.
@@ -863,7 +868,7 @@ are also not well defined in the TrueType standard.
 </p>
 <p>
 Note the two characters from Devanagri.  These are the danda and double-danda
-used by other Inidic scripts.
+used by other Indic scripts.
 </p>
 <p>
 The ranges <span style="color: gray">beyond Unicode point 0xFFFF</span>, are
