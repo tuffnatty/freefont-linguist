@@ -34,7 +34,7 @@ def ismonomono( fontfilename ):
 				problem = True
 
 		( xmin, ymin, xmax, ymax ) = e.boundingBox()
-		if ymin < -200 or ymax > 900:
+		if ymin < -200 or ymax > 800:
 			print '  ' + e.glyphname + ' goes between ' \
 				+ str( ymin )  + ' and ' + str( ymax )
 
