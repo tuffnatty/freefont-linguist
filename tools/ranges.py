@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.23 2008-12-26 19:43:23 Stevan_White Exp $
+$Id: ranges.py,v 1.24 2009-01-16 08:01:55 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -386,7 +386,7 @@ ulUnicodeRange = [
 		]
 		],
 [76,	'Cherokee', [interval(0x13A0, 0x13F4)]],
-[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x14DF)]],
+[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x1676)]],
 [78, 	'Ogham', [interval(0x1680, 0x169F)]],
 [79, 	'Runic', [interval(0x16A0, 0x16F1)]],
 [80, 	'Khmer (+symbols)', [interval(0x1780, 0x17FF),
