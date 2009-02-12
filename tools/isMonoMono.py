@@ -1,4 +1,4 @@
-#!/usr/local/bin/fontforge -script
+#!/usr/bin/fontforge -script
 """
 Diagnostic tool that checks that fonts are really monospace.
 

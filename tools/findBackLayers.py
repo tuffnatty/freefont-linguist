@@ -1,4 +1,4 @@
-#!/usr/local/bin/fontforge -script 
+#!/usr/bin/fontforge -script 
 
 """
 Check for glyphs with back layers.

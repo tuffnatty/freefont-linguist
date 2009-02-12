@@ -1,4 +1,4 @@
-#!/usr/local/bin/fontforge -script 
+#!/usr/bin/fontforge -script 
 """
 Runs the FontForge validate function on all the font faces.
 Prints report on standard output.

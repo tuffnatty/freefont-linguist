@@ -1,4 +1,4 @@
-#!/usr/local/bin/fontforge -script 
+#!/usr/bin/fontforge -script 
 """
 For most unicode ranges, glyph slot numbers should be the same as the
 Unicode value.

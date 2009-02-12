@@ -1,4 +1,4 @@
-#!/usr/local/bin/fontforge -script
+#!/usr/bin/fontforge -script
 """
 Makes an HTML table showing how many glyphs are in each range in each font,
 and tries to collate that with the OS/2 character range support bit flags.
@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: range_report.py,v 1.1 2008-11-23 20:18:48 Stevan_White Exp $
+$Id: range_report.py,v 1.2 2009-02-12 20:08:02 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
