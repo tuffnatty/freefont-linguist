@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.25 2009-02-12 20:08:02 Stevan_White Exp $
+$Id: ranges.py,v 1.26 2009-03-04 07:03:34 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -361,7 +361,17 @@ ulUnicodeRange = [
 		interval(0x074D, 0x074F)
 	]],
 [72, 	'Thaana', [interval(0x0780, 0x07B1)]],
-[73, 	'Sinhala', [interval(0x0D80, 0x0DFF)]],
+[73, 	'Sinhala', [interval(0x0D82, 0x0D83),
+		interval(0x0D85, 0x0D96),
+		interval(0x0D9A, 0x0DB1),
+		interval(0x0DB3, 0x0DBB),
+		interval(0x0DBD, 0x0DBD),
+		interval(0x0DC0, 0x0DC6),
+		interval(0x0DCA, 0x0DCA),
+		interval(0x0DCF, 0x0DD4),
+		interval(0x0DD6, 0x0DD6),
+		interval(0x0DD8, 0x0DDF),
+		interval(0x0DF2, 0x0DF4)]],
 [74, 	'Myanmar', [interval(0x1000, 0x109F)]],
 [75, 	'Ethiopic (+supplement, extended)', [
 		interval(0x1200, 0x1248),
