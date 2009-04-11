@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.26 2009-03-04 07:03:34 Stevan_White Exp $
+$Id: ranges.py,v 1.27 2009-04-11 11:42:41 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -86,7 +86,7 @@ ulUnicodeRange = [
 			interval(0x05D0, 0x05EA),
 			interval(0x05F0, 0x05F4)
 		]], # See http://webcenter.ru/~kazarn/eng/ululinks.htm
-[12,	'Vai',    [interval(0xA500, 0xA63F),
+[12,	'Vai',    [interval(0xA500, 0xA62B),
 		]],
 [13,	'Arabic (+supplement)',     [interval(0x0600, 0x0603),
 			interval(0x0606, 0x061B),
