@@ -4,7 +4,7 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009 Free Software Foundation.
-Version: $Revision: 1.187 $
+Version: $Revision: 1.188 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1239458348
+ModificationTime: 1240657688
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -76,6 +76,7 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Latin 2"  {"'mkmk' Mark to Mark in Latin 2 subtable"  } ['mkmk' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-capital"  "'kern' Horizontal Kerning in Latin-small"  "'kern' Horizontal Kerning in Latin-rightpunct"  "'kern' Horizontal Kerning in Latin-leftpunct"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic-capital"  "'kern' Horizontal Kerning in Cyrillic-small"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Thai"  {"'kern' Horizontal Kerning in Thai subtable"  } ['kern' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'blwm' Below Base Mark in Thai subtable"  } ['mark' ('thai' <'dflt' > ) ]
@@ -738,7 +739,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 4288 16 12
+WinInfo: 1104 16 12
 BeginPrivate: 7
 UniqueID 7 5020937
 BlueValues 23 [-20 0 432 452 653 673]
@@ -756,7 +757,7 @@ Grid
 -1000 900 m 0
  2000 900 l 0
 EndSplineSet
-AnchorClass2: "righthorn"  "'mark' Mark Positioning in Latin 2 subtable" "grave"  "'mkmk' Mark to Mark in Latin 2 subtable" "acute"  "'mkmk' Mark to Mark in Latin 2 subtable" "hook"  "'mkmk' Mark to Mark in Latin 2 subtable" "tilde"  "'mkmk' Mark to Mark in Latin 2 subtable" "middle"  "'mark' Mark Positioning in Latin subtable 2" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin subtable" 
+AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "righthorn"  "'mark' Mark Positioning in Latin 2 subtable" "grave"  "'mkmk' Mark to Mark in Latin 2 subtable" "acute"  "'mkmk' Mark to Mark in Latin 2 subtable" "hook"  "'mkmk' Mark to Mark in Latin 2 subtable" "tilde"  "'mkmk' Mark to Mark in Latin 2 subtable" "middle"  "'mark' Mark Positioning in Latin subtable 2" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin subtable" 
 BeginChars: 65980 3032
 
 StartChar: space
@@ -9352,6 +9353,7 @@ StartChar: gravecomb
 Encoding: 768 768 409
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 72 455 mark 0
 AnchorPoint: "grave" 120 489 mark 0
 AnchorPoint: "above" 59 444 mark 0
 LayerCount: 2
@@ -9364,6 +9366,7 @@ StartChar: acutecomb
 Encoding: 769 769 410
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 45 455 mark 0
 AnchorPoint: "acute" 30 486 mark 0
 AnchorPoint: "above" 42 444 mark 0
 LayerCount: 2
@@ -9427,10 +9430,11 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0306
+StartChar: brevecomb
 Encoding: 774 774 415
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 0 455 mark 0
 AnchorPoint: "tilde" 50 673 basemark 0
 AnchorPoint: "grave" 93 606 basemark 0
 AnchorPoint: "hook" 30 603 basemark 0 {} {150-150 1}
@@ -9457,6 +9461,7 @@ StartChar: diaeresiscomb
 Encoding: 776 776 417
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 0 455 mark 0
 AnchorPoint: "above" 0.375 444 mark 0
 LayerCount: 2
 Fore
@@ -9514,14 +9519,15 @@ Refer: 405 730 S 1 0 0 1 -286 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni030B
+StartChar: acutedblnosp
 Encoding: 779 779 420
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 5 455 mark 0
 AnchorPoint: "above" 0.0126953 447 mark 0
 LayerCount: 2
 Fore
-Refer: 408 733 S 1 0 0 1 -233 0 2
+Refer: 408 733 N 1 0 0 1 -233 0 2
 Validated: 32769
 EndChar
 
@@ -9602,10 +9608,11 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0311
+StartChar: breveinvertedcmb
 Encoding: 785 785 426
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 3 455 mark 0
 AnchorPoint: "above" 0 444 mark 0
 LayerCount: 2
 Fore
@@ -10489,6 +10496,7 @@ StartChar: uni033E
 Encoding: 830 830 471
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 26 455 mark 0
 AnchorPoint: "above" 15 444 mark 0
 LayerCount: 2
 Fore
@@ -12530,6 +12538,7 @@ StartChar: Dzhecyrillic
 Encoding: 1039 1039 563
 Width: 728
 Flags: HMW
+AnchorPoint: "abovecyr" 478 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12573,9 +12582,10 @@ StartChar: Acyrillic
 Encoding: 1040 1040 564
 Width: 611
 Flags: HMW
+AnchorPoint: "abovecyr" 380 672 basechar 0
 LayerCount: 2
 Fore
-Refer: 33 65 S 1 0 0 1 0 0 3
+Refer: 33 65 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
@@ -12583,6 +12593,7 @@ StartChar: Becyrillic
 Encoding: 1041 1041 565
 Width: 610
 Flags: HMW
+AnchorPoint: "abovecyr" 380 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12620,6 +12631,7 @@ StartChar: Vecyrillic
 Encoding: 1042 1042 566
 Width: 611
 Flags: HMW
+AnchorPoint: "abovecyr" 380 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 34 66 N 1 0 0 1 0 0 3
@@ -12630,6 +12642,7 @@ StartChar: Gecyrillic
 Encoding: 1043 1043 567
 Width: 611
 Flags: HMW
+AnchorPoint: "abovecyr" 423 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 491 915 N 1 0 0 1 0 0 3
@@ -12640,6 +12653,7 @@ StartChar: Decyrillic
 Encoding: 1044 1044 568
 Width: 682
 Flags: HMW
+AnchorPoint: "abovecyr" 485 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12682,6 +12696,7 @@ StartChar: Iecyrillic
 Encoding: 1045 1045 569
 Width: 604
 Flags: HMW
+AnchorPoint: "abovecyr" 399 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 3
@@ -12692,6 +12707,7 @@ StartChar: Zhecyrillic
 Encoding: 1046 1046 570
 Width: 976
 Flags: HMW
+AnchorPoint: "abovecyr" 610 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12754,6 +12770,7 @@ StartChar: Zecyrillic
 Encoding: 1047 1047 571
 Width: 592
 Flags: HMW
+AnchorPoint: "abovecyr" 380 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12786,6 +12803,7 @@ StartChar: Iicyrillic
 Encoding: 1048 1048 572
 Width: 720
 Flags: HMW
+AnchorPoint: "abovecyr" 449 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12839,6 +12857,7 @@ StartChar: Kacyrillic
 Encoding: 1050 1050 574
 Width: 664
 Flags: HMW
+AnchorPoint: "abovecyr" 432 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12883,6 +12902,7 @@ StartChar: Elcyrillic
 Encoding: 1051 1051 575
 Width: 719
 Flags: HMW
+AnchorPoint: "abovecyr" 517 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12920,6 +12940,7 @@ StartChar: Emcyrillic
 Encoding: 1052 1052 576
 Width: 828
 Flags: HMW
+AnchorPoint: "abovecyr" 507 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 45 77 N 1 0 0 1 0 0 3
@@ -12930,6 +12951,7 @@ StartChar: Encyrillic
 Encoding: 1053 1053 577
 Width: 722
 Flags: HMW
+AnchorPoint: "abovecyr" 472 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 40 72 N 1 0 0 1 0 0 3
@@ -12940,6 +12962,7 @@ StartChar: Ocyrillic
 Encoding: 1054 1054 578
 Width: 722
 Flags: HMW
+AnchorPoint: "abovecyr" 487 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 3
@@ -12950,6 +12973,7 @@ StartChar: Pecyrillic
 Encoding: 1055 1055 579
 Width: 749
 Flags: HMW
+AnchorPoint: "abovecyr" 480 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 504 928 N 1 0 0 1 0 0 3
@@ -12960,6 +12984,7 @@ StartChar: Ercyrillic
 Encoding: 1056 1056 580
 Width: 603
 Flags: HMW
+AnchorPoint: "abovecyr" 418 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 48 80 N 1 0 0 1 0 0 3
@@ -12970,6 +12995,7 @@ StartChar: Escyrillic
 Encoding: 1057 1057 581
 Width: 667
 Flags: HMW
+AnchorPoint: "abovecyr" 464 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 35 67 N 1 0 0 1 0 0 3
@@ -12980,6 +13006,7 @@ StartChar: Tecyrillic
 Encoding: 1058 1058 582
 Width: 556
 Flags: HMW
+AnchorPoint: "abovecyr" 382 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 52 84 N 1 0 0 1 0 0 3
@@ -12990,6 +13017,7 @@ StartChar: Ucyrillic
 Encoding: 1059 1059 583
 Width: 728
 Flags: HMW
+AnchorPoint: "abovecyr" 475 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13026,6 +13054,7 @@ StartChar: Efcyrillic
 Encoding: 1060 1060 584
 Width: 722
 Flags: HMW
+AnchorPoint: "abovecyr" 450 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 509 934 N 1 0 0 1 0 0 3
@@ -13036,6 +13065,7 @@ StartChar: Khacyrillic
 Encoding: 1061 1061 585
 Width: 611
 Flags: HMW
+AnchorPoint: "abovecyr" 405 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 56 88 N 1 0 0 1 0 0 3
@@ -13046,6 +13076,7 @@ StartChar: Tsecyrillic
 Encoding: 1062 1062 586
 Width: 728
 Flags: HMW
+AnchorPoint: "abovecyr" 457 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13087,6 +13118,7 @@ StartChar: Checyrillic
 Encoding: 1063 1063 587
 Width: 666
 Flags: HMW
+AnchorPoint: "abovecyr" 418 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13128,6 +13160,7 @@ StartChar: Shacyrillic
 Encoding: 1064 1064 588
 Width: 997
 Flags: HMW
+AnchorPoint: "abovecyr" 608 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13178,6 +13211,7 @@ StartChar: Shchacyrillic
 Encoding: 1065 1065 589
 Width: 1005
 Flags: HMW
+AnchorPoint: "abovecyr" 608 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13231,6 +13265,7 @@ StartChar: Hardsigncyrillic
 Encoding: 1066 1066 590
 Width: 710
 Flags: HMW
+AnchorPoint: "abovecyr" 478 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13268,6 +13303,7 @@ StartChar: Yericyrillic
 Encoding: 1067 1067 591
 Width: 891
 Flags: HMW
+AnchorPoint: "abovecyr" 553 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13317,6 +13353,7 @@ StartChar: Softsigncyrillic
 Encoding: 1068 1068 592
 Width: 594
 Flags: HMW
+AnchorPoint: "abovecyr" 413 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13351,6 +13388,7 @@ StartChar: Ereversedcyrillic
 Encoding: 1069 1069 593
 Width: 632
 Flags: HMW
+AnchorPoint: "abovecyr" 391 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13384,6 +13422,7 @@ StartChar: IUcyrillic
 Encoding: 1070 1070 594
 Width: 1024
 Flags: HMW
+AnchorPoint: "abovecyr" 507 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13423,6 +13462,7 @@ StartChar: IAcyrillic
 Encoding: 1071 1071 595
 Width: 696
 Flags: HMW
+AnchorPoint: "abovecyr" 494 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13463,6 +13503,7 @@ StartChar: acyrillic
 Encoding: 1072 1072 596
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 327 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 65 97 N 1 0 0 1 0 0 3
@@ -13473,6 +13514,7 @@ StartChar: becyrillic
 Encoding: 1073 1073 597
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 382 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13500,6 +13542,7 @@ StartChar: vecyrillic
 Encoding: 1074 1074 598
 Width: 442
 Flags: HMW
+AnchorPoint: "abovecyr" 327 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13531,6 +13574,7 @@ StartChar: gecyrillic
 Encoding: 1075 1075 599
 Width: 344
 Flags: HMW
+AnchorPoint: "abovecyr" 237 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13557,6 +13601,7 @@ StartChar: decyrillic
 Encoding: 1076 1076 600
 Width: 503
 Flags: HMW
+AnchorPoint: "abovecyr" 382 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13584,6 +13629,7 @@ StartChar: iecyrillic
 Encoding: 1077 1077 601
 Width: 440
 Flags: HMW
+AnchorPoint: "abovecyr" 321 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 69 101 N 1 0 0 1 -4 0 2
@@ -13594,6 +13640,7 @@ StartChar: zhecyrillic
 Encoding: 1078 1078 602
 Width: 932
 Flags: HMW
+AnchorPoint: "abovecyr" 514 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13642,6 +13689,7 @@ StartChar: zecyrillic
 Encoding: 1079 1079 603
 Width: 402
 Flags: HMW
+AnchorPoint: "abovecyr" 247 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13673,6 +13721,7 @@ StartChar: iicyrillic
 Encoding: 1080 1080 604
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 305 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 85 117 N 1 0 0 1 0 0 3
@@ -13694,6 +13743,7 @@ StartChar: kacyrillic
 Encoding: 1082 1082 606
 Width: 491
 Flags: HMW
+AnchorPoint: "abovecyr" 274 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13733,6 +13783,7 @@ StartChar: elcyrillic
 Encoding: 1083 1083 607
 Width: 487
 Flags: HMW
+AnchorPoint: "abovecyr" 323 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13768,6 +13819,7 @@ StartChar: emcyrillic
 Encoding: 1084 1084 608
 Width: 624
 Flags: HMW
+AnchorPoint: "abovecyr" 382 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13809,6 +13861,7 @@ StartChar: encyrillic
 Encoding: 1085 1085 609
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 300 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13844,6 +13897,7 @@ StartChar: ocyrillic
 Encoding: 1086 1086 610
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 325 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 3
@@ -13854,6 +13908,7 @@ StartChar: pecyrillic
 Encoding: 1087 1087 611
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 300 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 78 110 N 1 0 0 1 0 0 3
@@ -13864,6 +13919,7 @@ StartChar: ercyrillic
 Encoding: 1088 1088 612
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 312 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 80 112 N 1 0 0 1 0 0 3
@@ -13874,6 +13930,7 @@ StartChar: escyrillic
 Encoding: 1089 1089 613
 Width: 441
 Flags: HMW
+AnchorPoint: "abovecyr" 301 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 67 99 N 1 0 0 1 -3 0 2
@@ -13884,6 +13941,7 @@ StartChar: tecyrillic
 Encoding: 1090 1090 614
 Width: 722
 Flags: HMW
+AnchorPoint: "abovecyr" 406 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 77 109 N 1 0 0 1 0 0 3
@@ -13894,6 +13952,7 @@ StartChar: ucyrillic
 Encoding: 1091 1091 615
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 311 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13932,6 +13991,7 @@ StartChar: efcyrillic
 Encoding: 1092 1092 616
 Width: 741
 Flags: HMW
+AnchorPoint: "abovecyr" 488 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13982,6 +14042,7 @@ StartChar: khacyrillic
 Encoding: 1093 1093 617
 Width: 444
 Flags: HMW
+AnchorPoint: "abovecyr" 286 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 88 120 N 1 0 0 1 0 0 3
@@ -13992,6 +14053,7 @@ StartChar: tsecyrillic
 Encoding: 1094 1094 618
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 300 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14034,6 +14096,7 @@ StartChar: checyrillic
 Encoding: 1095 1095 619
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 310 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14068,6 +14131,7 @@ StartChar: shacyrillic
 Encoding: 1096 1096 620
 Width: 750
 Flags: HMW
+AnchorPoint: "abovecyr" 431 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14112,6 +14176,7 @@ StartChar: shchacyrillic
 Encoding: 1097 1097 621
 Width: 750
 Flags: HMW
+AnchorPoint: "abovecyr" 429 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14164,6 +14229,7 @@ StartChar: hardsigncyrillic
 Encoding: 1098 1098 622
 Width: 545
 Flags: HMW
+AnchorPoint: "abovecyr" 382 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14200,6 +14266,7 @@ StartChar: yericyrillic
 Encoding: 1099 1099 623
 Width: 683
 Flags: HMW
+AnchorPoint: "abovecyr" 401 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14247,6 +14314,7 @@ StartChar: softsigncyrillic
 Encoding: 1100 1100 624
 Width: 433
 Flags: HMW
+AnchorPoint: "abovecyr" 300 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14278,6 +14346,7 @@ StartChar: ereversedcyrillic
 Encoding: 1101 1101 625
 Width: 432
 Flags: HMW
+AnchorPoint: "abovecyr" 257 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14310,6 +14379,7 @@ StartChar: iucyrillic
 Encoding: 1102 1102 626
 Width: 700
 Flags: HMW
+AnchorPoint: "abovecyr" 333 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14346,6 +14416,7 @@ StartChar: iacyrillic
 Encoding: 1103 1103 627
 Width: 503
 Flags: HMW
+AnchorPoint: "abovecyr" 320 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14409,6 +14480,7 @@ StartChar: dje
 Encoding: 1106 1106 630
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 382 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14462,6 +14534,7 @@ StartChar: ecyrillic
 Encoding: 1108 1108 632
 Width: 442
 Flags: HMW
+AnchorPoint: "abovecyr" 300 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14495,6 +14568,7 @@ StartChar: dzecyrillic
 Encoding: 1109 1109 633
 Width: 389
 Flags: HMW
+AnchorPoint: "abovecyr" 257 453 basechar 0
 LayerCount: 2
 Fore
 Refer: 83 115 N 1 0 0 1 0 0 3
@@ -14505,6 +14579,7 @@ StartChar: icyrillic
 Encoding: 1110 1110 634
 Width: 278
 Flags: HMW
+AnchorPoint: "abovecyr" 232 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 73 105 N 1 0 0 1 0 0 3
@@ -14515,10 +14590,11 @@ StartChar: yicyrillic
 Encoding: 1111 1111 635
 Width: 278
 Flags: HMW
+AnchorPoint: "abovecyr" 232 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 3
-Refer: 102 168 S 1 0 0 1 -52 6 2
+Refer: 102 168 N 1 0 0 1 -52 6 2
 Validated: 32769
 EndChar
 
@@ -14526,6 +14602,7 @@ StartChar: jecyrillic
 Encoding: 1112 1112 636
 Width: 278
 Flags: HMW
+AnchorPoint: "abovecyr" 241 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 0 0 3
@@ -14536,6 +14613,7 @@ StartChar: ljecyrillic
 Encoding: 1113 1113 637
 Width: 686
 Flags: HMW
+AnchorPoint: "abovecyr" 411 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14576,6 +14654,7 @@ StartChar: njecyrillic
 Encoding: 1114 1114 638
 Width: 696
 Flags: HMW
+AnchorPoint: "abovecyr" 375 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14615,6 +14694,7 @@ StartChar: tshecyrillic
 Encoding: 1115 1115 639
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 382 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14689,6 +14769,7 @@ StartChar: dzhecyrillic
 Encoding: 1119 1119 643
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 300 453 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27823,6 +27904,7 @@ StartChar: Djecyrillic
 Encoding: 1026 1026 1335
 Width: 668
 Flags: HMW
+AnchorPoint: "abovecyr" 378 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27871,6 +27953,7 @@ StartChar: Ecyrillic
 Encoding: 1028 1028 1337
 Width: 666
 Flags: HMW
+AnchorPoint: "abovecyr" 485 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27903,6 +27986,7 @@ StartChar: Dzecyrillic
 Encoding: 1029 1029 1338
 Width: 500
 Flags: HMW
+AnchorPoint: "abovecyr" 339 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 51 83 N 1 0 0 1 0 0 3
@@ -27913,9 +27997,10 @@ StartChar: Icyrillic
 Encoding: 1030 1030 1339
 Width: 339
 Flags: HMW
+AnchorPoint: "abovecyr" 273 672 basechar 0
 LayerCount: 2
 Fore
-Refer: 41 73 S 1 0 0 1 0 0 3
+Refer: 41 73 N 1 0 0 1 0 0 3
 Validated: 32769
 EndChar
 
@@ -27934,6 +28019,7 @@ StartChar: Jecyrillic
 Encoding: 1032 1032 1341
 Width: 444
 Flags: HMW
+AnchorPoint: "abovecyr" 383 672 basechar 0
 LayerCount: 2
 Fore
 Refer: 42 74 N 1 0 0 1 0 0 3
@@ -27944,6 +28030,7 @@ StartChar: Ljecyrillic
 Encoding: 1033 1033 1342
 Width: 972
 Flags: HMW
+AnchorPoint: "abovecyr" 518 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27989,6 +28076,7 @@ StartChar: Njecyrillic
 Encoding: 1034 1034 1343
 Width: 977
 Flags: HMW
+AnchorPoint: "abovecyr" 474 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28041,6 +28129,7 @@ StartChar: Tshecyrillic
 Encoding: 1035 1035 1344
 Width: 703
 Flags: HMW
+AnchorPoint: "abovecyr" 377 672 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -51099,30 +51188,31 @@ StartChar: uni0483
 Encoding: 1155 1155 2170
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" -36 456 mark 0
 LayerCount: 2
 Fore
 SplineSet
--344 525 m 2
- -322 605 l 2
- -317.579 620.379 -312 623 -297 623 c 2
- -263 623 l 2
- -252 623 -241.713 616.193 -234 613 c 2
- -82 550 l 1
- -59 626 l 2
- -54.4512 641.031 -52 644 -37 644 c 2
- -1 644 l 2
- 10.0938 644 14.5732 641.59 14.5732 634.836 c 0
- 14.5732 632.458 14.0176 629.541 13 626 c 2
- -10 546 l 2
- -14.0801 531.81 -15 528 -31 528 c 2
- -68.5 528 l 2
- -78.5 528 -87.3213 531.59 -100 537 c 2
- -250 601 l 1
- -272 525 l 2
- -276.188 511.162 -280 507 -295 507 c 2
- -331 507 l 2
- -339.973 507 -345.307 509.439 -345.307 517.158 c 0
- -345.307 519.332 -344.884 521.925 -344 525 c 2
+-199 525 m 2
+ -177 605 l 2
+ -172.579 620.379 -167 623 -152 623 c 2
+ -118 623 l 2
+ -107 623 -96.7129 616.193 -89 613 c 2
+ 63 550 l 1
+ 86 626 l 2
+ 90.5488 641.031 93 644 108 644 c 2
+ 144 644 l 2
+ 155.094 644 159.573 641.59 159.573 634.836 c 0
+ 159.573 632.458 159.018 629.541 158 626 c 2
+ 135 546 l 2
+ 130.92 531.81 130 528 114 528 c 2
+ 76.5 528 l 2
+ 66.5 528 57.6787 531.59 45 537 c 2
+ -105 601 l 1
+ -127 525 l 2
+ -131.188 511.162 -135 507 -150 507 c 2
+ -186 507 l 2
+ -194.973 507 -200.307 509.439 -200.307 517.158 c 0
+ -200.307 519.332 -199.884 521.925 -199 525 c 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -51131,19 +51221,20 @@ StartChar: uni0484
 Encoding: 1156 1156 2171
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" -55 459 mark 0
 LayerCount: 2
 Fore
 SplineSet
--7 486 m 1
- -31 486 l 1
- -30.42 489.437 -30.2842 492.784 -30.2842 496.041 c 0
- -30.2842 498.909 -30.3896 501.709 -30.3896 504.44 c 0
- -30.3896 536 -62 599 -165 599 c 0
- -264 599 -333 558 -374 486 c 1
- -398 486 l 1
- -355 584 -262 657 -154 657 c 0
- -68 657 -5 605 -5 527 c 0
- -5 519 -6 496 -7 486 c 1
+129 486 m 1
+ 105 486 l 1
+ 105.58 489.438 105.716 492.784 105.716 496.041 c 0
+ 105.716 498.909 105.61 501.709 105.61 504.44 c 0
+ 105.61 536 74 599 -29 599 c 0
+ -128 599 -197 558 -238 486 c 1
+ -262 486 l 1
+ -219 584 -126 657 -18 657 c 0
+ 68 657 131 605 131 527 c 0
+ 131 519 130 496 129 486 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -82859,20 +82950,21 @@ StartChar: uni0485
 Encoding: 1157 1157 2662
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 14 455 mark 0
 LayerCount: 2
 Fore
 SplineSet
--55.9688 560 m 1
- -53.0693 536 l 1
- -75.9824 527 -99.833 523 -122.833 523 c 0
- -172.382 523 -204.993 560.026 -204.993 605.834 c 0
- -204.993 656.767 -164.582 738 -66.1328 738 c 0
- -43.8843 738 -22.2406 727.704 -22.2406 704.293 c 0
- -22.2406 692.587 -27.7819 653 -79.2002 653 c 0
- -95.2002 653 -99.1377 658 -113.138 658 c 0
- -153.918 658 -163.066 618.116 -163.066 600.45 c 0
- -163.066 571.32 -139.921 552 -112.669 552 c 0
- -89.6689 552 -73.2441 554 -55.9688 560 c 1
+120.031 560 m 1
+ 122.931 536 l 1
+ 100.018 527 76.167 523 53.167 523 c 0
+ 3.61816 523 -28.9932 560.026 -28.9932 605.834 c 0
+ -28.9932 656.767 11.418 738 109.867 738 c 0
+ 132.115 738 153.76 727.704 153.76 704.293 c 0
+ 153.76 692.587 148.218 653 96.7998 653 c 0
+ 80.7998 653 76.8623 658 62.8623 658 c 0
+ 22.082 658 12.9336 618.116 12.9336 600.45 c 0
+ 12.9336 571.32 36.0791 552 63.3311 552 c 0
+ 86.3311 552 102.756 554 120.031 560 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -82881,20 +82973,21 @@ StartChar: uni0486
 Encoding: 1158 1158 2663
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" 14 455 mark 0
 LayerCount: 2
 Fore
 SplineSet
--187.181 559 m 1
- -172.456 553 -156.881 551 -133.881 551 c 0
- -99.2815 551 -57.0167 581.83 -57.0167 628.075 c 0
- -57.0167 646.853 -66.8491 657 -88.3506 657 c 0
- -102.351 657 -108.413 652 -124.413 652 c 0
- -150.455 652 -163.96 661.174 -163.96 681.3 c 0
- -163.96 714.72 -136.13 737 -101.346 737 c 0
- -42.8403 737 -8.57391 707.523 -8.57391 655.885 c 0
- -8.57391 577.657 -76.7718 522 -136.046 522 c 0
- -159.046 522 -181.195 526 -200.282 535 c 1
- -187.181 559 l 1
+-30.1807 559 m 1
+ -15.4561 553 0.119141 551 23.1191 551 c 0
+ 57.7188 551 99.9834 581.83 99.9834 628.075 c 0
+ 99.9834 646.854 90.1514 657 68.6494 657 c 0
+ 54.6494 657 48.5869 652 32.5869 652 c 0
+ 6.54492 652 -6.95996 661.174 -6.95996 681.3 c 0
+ -6.95996 714.72 20.8701 737 55.6543 737 c 0
+ 114.16 737 148.426 707.523 148.426 655.885 c 0
+ 148.426 577.657 80.2285 522 20.9541 522 c 0
+ -2.0459 522 -24.1953 526 -43.2822 535 c 1
+ -30.1807 559 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -82903,16 +82996,17 @@ StartChar: uni0487
 Encoding: 1159 1159 2664
 Width: 0
 Flags: HMW
+AnchorPoint: "abovecyr" -181 455 mark 0
 LayerCount: 2
 Fore
 SplineSet
--476.606 557 m 1
- -477.93 579 l 1
- -370.051 649 -229.572 703 -93.5723 703 c 0
- 28.4277 703 126.438 656 181.746 601 c 1
- 167.795 573 144.969 555 113.269 547 c 1
- 17.4473 609 -32.8867 678 -142.887 678 c 0
- -263.887 678 -410.616 604 -476.606 557 c 1
+-418.606 557 m 5
+ -419.93 579 l 5
+ -312.051 649 -171.572 703 -35.5723 703 c 4
+ 86.4277 703 184.438 656 239.746 601 c 5
+ 225.795 573 202.969 555 171.269 547 c 5
+ 75.4473 609 25.1133 678 -84.8867 678 c 4
+ -205.887 678 -352.616 604 -418.606 557 c 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -93098,6 +93192,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 401 710 S 1 0 0 1 0 -609 2
+Validated: 32769
 EndChar
 
 StartChar: colonmodifier
@@ -93107,6 +93202,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 26 58 N 1 0 0 1 0 0 2
+Validated: 32769
 EndChar
 
 StartChar: shortequals
@@ -93116,6 +93212,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 29 61 N 0.5 0 0 1 0 0 2
+Validated: 32769
 EndChar
 
 StartChar: Saltillo
@@ -93132,6 +93229,7 @@ SplineSet
  245.166 730 271.543 760 304.543 760 c 4
  330.626 760 344.379 743.521 344.379 712.37 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: saltillo
@@ -93148,6 +93246,7 @@ SplineSet
  245.166 730 267.543 760 300.543 760 c 0
  325.486 760 337.001 744.93 337.001 716.37 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10fc
@@ -93158,6 +93257,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1744 4316 S 0.75 0 0 0.75 0 196 2
+Validated: 32769
 EndChar
 
 StartChar: uni10f6
@@ -93205,6 +93305,7 @@ SplineSet
  538.071 372 488.931 329 477.453 275 c 2
  446.845 131 l 6
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10f7
@@ -93240,6 +93341,7 @@ SplineSet
  315.255 -4.62374 306.033 16 304.401 16 c 1
  377.177 12.6976 399.639 -34.9087 399.639 -77.8621 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10f8
@@ -93274,6 +93376,7 @@ SplineSet
  395.814 374.376 386.591 395 384.96 395 c 1
  457.735 391.698 480.198 344.091 480.198 301.138 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10fa
@@ -93304,6 +93407,7 @@ SplineSet
  178.24 226.953 l 6
  171.28 194.208 167.128 165.857 167.128 140.934 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
