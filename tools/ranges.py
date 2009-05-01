@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: ranges.py,v 1.27 2009-04-11 11:42:41 Stevan_White Exp $
+$Id: ranges.py,v 1.28 2009-05-01 07:47:15 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -230,14 +230,17 @@ ulUnicodeRange = [
 			]
 		],
 [25,	'Lao',     [interval(0x0E80, 0x0EFF)]],
-[26,	'Georgian (+supplement)',     [interval(0x10D0, 0x10FC),
-		interval(0x10A0, 0x10CF)]],	# Supplement
+[26,	'Georgian (+supplement)',    [
+		interval(0x10A0, 0x10C5),
+		interval(0x10D0, 0x10FC)]],	# Supplement
 [27,	'Balinese', [interval(0x1B00, 0x1B7F)]],
 [28,	'Hangul Jamo',     [interval(0x1100, 0x11FF)]],
 [29,	'Latin Extended (Additional,C,D)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
-		interval(0x2C60, 0x2C7F),	# C
-		interval(0xA720, 0xA72F)	# D
+		interval(0x2C60, 0x2C6F),	# C
+		interval(0x2C71, 0x2C7D),	# C
+		interval(0xA720, 0xA78C),	# D
+		interval(0xA7FB, 0xA7FF)	# D
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
 		interval(0x1F18, 0x1F1D),
@@ -463,7 +466,9 @@ ulUnicodeRange = [
 		interval(0x1A1E, 0x1A1F)]],
 [97, 	'Glagolitic', [ interval(0x2C00, 0x2C2E),
 		interval(0x2C30, 0x2C5E) ]],
-[98, 	'Tifinagh', [interval(0x2D30, 0x2D7F)]],
+[98, 	'Tifinagh', [interval(0x2D30, 0x2D65),
+		interval(0x2D6F, 0x2D6F)
+	]],
 [99, 	'Ying Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
 [100, 	'Syloti Nagri', [interval(0xA800, 0xA82F)]],
 [101, 	'Linear B Syllabary etc', [interval(0x10000, 0x1013F)], True],
@@ -755,7 +760,8 @@ class FontSupport:
 			self.fontTotalGlyphs += 1
 			if not glyphHasRange( f.encoding ):
 				print >> sys.stderr, font.fontname, \
-					"no range for", hex( f.encoding )
+					"no range for", hex( f.encoding ) \
+					+ " '" + f.glyphname + "'"
 
 	def collectRangeInfo( self, font, os2supportbyte, bit, index ):
 		supports = ( os2supportbyte & (1 << bit) ) != 0
