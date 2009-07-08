@@ -4,7 +4,7 @@ FullName: Free Sans Bold
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009 Free Software Foundation.
-Version: $Revision: 1.167 $
+Version: $Revision: 1.168 $
 ItalicAngle: 0
 UnderlinePosition: -155
 UnderlineWidth: 69
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1246799221
+ModificationTime: 1247073709
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -53,6 +53,7 @@ OS2Vendor: 'GNU '
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin subtable"  } ['liga' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch subtable"  } ['liga' ('latn' <'nl  ' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Armenian"  {"'liga' Standard Ligatures in Armenian subtable"  } ['liga' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Armenian"  {"'hlig' Historic Ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
@@ -224,7 +225,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 288 16 12
+WinInfo: 0 16 12
 BeginPrivate: 10
 UniqueID 7 5020904
 BlueValues 23 [-24 0 540 550 730 744]
@@ -242,7 +243,7 @@ StemSnapV 9 [141 151]
 ForceBold 4 true
 EndPrivate
 AnchorClass2: "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "abovegrk"  "'mark' Mark Positioning in Greek 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "belowgrk"  "'mark' Mark Positioning in Greek 0 subtable" 
-BeginChars: 65600 2368
+BeginChars: 65600 2369
 
 StartChar: space
 Encoding: 32 32 0
@@ -2926,22 +2927,12 @@ EndChar
 StartChar: dieresis
 Encoding: 168 168 102
 Width: 333
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-128 743 m 1
- 128 621 l 1
- 18 621 l 1
- 18 743 l 1
- 128 743 l 1
-314 743 m 1
- 314 621 l 1
- 204 621 l 1
- 204 743 l 1
- 314 743 l 1
-EndSplineSet
-Validated: 1
+Refer: 900 729 N 1 0 0 1 92 0 2
+Refer: 900 729 N 1 0 0 1 -94 0 2
+Validated: 32769
 EndChar
 
 StartChar: copyright
@@ -4137,6 +4128,7 @@ SplineSet
  705 400 668 442 603 442 c 0
  539 442 502 400 496 319 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: ccedilla
@@ -4258,7 +4250,7 @@ LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 -27 0 0
 Refer: 238 305 N 1 0 0 1 0 0 0
-Validated: 1
+Validated: 32769
 EndChar
 
 StartChar: eth
@@ -5279,6 +5271,7 @@ SplineSet
  525 190 l 2
  525 54 440 -23 291 -23 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'liga' Standard Ligatures in Latin for Dutch subtable" I J
 EndChar
 
@@ -5290,6 +5283,7 @@ LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 208 0 0
 Refer: 73 105 N 1 0 0 1 0 0 0
+Validated: 32769
 Ligature2: "'liga' Standard Ligatures in Latin for Dutch subtable" i j
 EndChar
 
@@ -5762,6 +5756,7 @@ SplineSet
  614 442 578 397 571 319 c 1
  786 319 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: Racute
@@ -6782,6 +6777,7 @@ LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 270 -31 0
 Refer: 163 230 N 1 0 0 1 0 0 0
+Validated: 32769
 EndChar
 
 StartChar: Gcaron
@@ -7003,6 +6999,7 @@ LayerCount: 2
 Fore
 Refer: 113 180 N 1 0 0 1 280 2 0
 Refer: 163 230 N 1 0 0 1 0 0 0
+Validated: 32769
 EndChar
 
 StartChar: Oslashacute
@@ -9400,12 +9397,12 @@ EndChar
 StartChar: yicyrillic
 Encoding: 1111 1111 487
 Width: 278
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 -27 0 0
 Refer: 238 305 N 1 0 0 1 0 0 0
-Validated: 1
+Validated: 32769
 EndChar
 
 StartChar: jecyrillic
@@ -11503,23 +11500,23 @@ EndChar
 StartChar: uni04E4
 Encoding: 1252 1252 573
 Width: 757
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 198 158 0
 Refer: 424 1048 N 1 0 0 1 0 0 0
-Validated: 1
+Validated: 32769
 EndChar
 
 StartChar: uni04E5
 Encoding: 1253 1253 574
 Width: 615
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 136 -31 0
 Refer: 456 1080 N 1 0 0 1 0 0 0
-Validated: 1
+Validated: 32769
 EndChar
 
 StartChar: uni04E6
@@ -11708,7 +11705,7 @@ EndChar
 StartChar: uni04F9
 Encoding: 1273 1273 592
 Width: 778
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 237 -31 0
@@ -15775,7 +15772,7 @@ EndChar
 StartChar: diaeresiscomb
 Encoding: 776 776 911
 Width: 0
-Flags: MW
+Flags: HMW
 AnchorPoint: "abovegrk" -168 585 mark 0
 AnchorPoint: "above" -168 585 mark 0
 LayerCount: 2
@@ -45503,6 +45500,23 @@ SplineSet
  408 518 445 572 445 592 c 0
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: yi_yi_lig_ukrainian
+Encoding: 59654 -1 2368
+Width: 533
+Flags: W
+LayerCount: 2
+Fore
+Refer: 900 729 N 1 0 0 1 176 0 0
+Refer: 900 729 N 1 0 0 1 27 0 0
+Refer: 900 729 S 1 0 0 1 311 0 0
+Refer: 900 729 N 1 0 0 1 -112 0 0
+Refer: 238 305 N 1 0 0 1 275 0 0
+Refer: 238 305 N 1 0 0 1 -10 0 2
+Validated: 32769
+Ligature2: "'liga' Standard Ligatures in Cyrillic subtable" yicyrillic yicyrillic
+LCarets2: 1 0 
 EndChar
 EndChars
 EndSplineFont

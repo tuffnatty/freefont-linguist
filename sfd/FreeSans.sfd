@@ -4,7 +4,7 @@ FullName: Free Sans
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009 Free Software Foundation.
-Version: $Revision: 1.291 $
+Version: $Revision: 1.292 $
 ItalicAngle: 0
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1246713610
+ModificationTime: 1247073459
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -50,6 +50,7 @@ OS2SupYOff: 479
 OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2Vendor: 'GNU '
+Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
 Lookup: 1 0 0 "'init' Initial Forms in Bengali"  {"'init' Initial Forms in Bengali subtable"  } ['init' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'nukt' Nukta Forms in Gujarati"  {"'nukt' Nukta Forms in Gujarati subtable"  } ['nukt' ('gujr' <'dflt' > 'gjr2' <'dflt' > ) ]
 Lookup: 4 0 0 "'nukt' Nukta Forms in Devanagari"  {"'nukt' Nukta Forms in Devanagari subtable"  } ['nukt' ('deva' <'dflt' > 'dev2' <'dflt' > ) ]
@@ -290,7 +291,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 16 11
+WinInfo: 352 16 11
 BeginPrivate: 10
 UniqueID 7 5020902
 BlueValues 23 [-24 0 524 540 729 741]
@@ -304,7 +305,7 @@ StemSnapV 4 [93]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "vowel_below_yiddish"  "'mark' Mark Positioning in Yiddish" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_heb"  "'mark' Mark Positioning in Hebrew subtable" "abovemk_cyr"  "'mkmk' Mark to Mark in Cyrillic subtable" "grave"  "'mkmk' Mark to Mark in Latin subtable" "acute"  "'mkmk' Mark to Mark in Latin subtable" "tilde"  "'mkmk' Mark to Mark in Latin subtable" "hook"  "'mkmk' Mark to Mark in Latin subtable" "topright"  "'mark' Mark Positioning in Latin 2 subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin subtable 2" "dvng-0"  "'abvm' Above Base Mark in Devanagari subtable" "gujr-0"  "'abvm' Above Base Mark in Gujarati subtable" "dvng-1"  "'blwm' Below Base Mark in Devanagari subtable" "gujr-1"  "'blwm' Below Base Mark in Gujarati subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" "below"  "'mark' Mark Positioning in Latin subtable" 
-BeginChars: 69525 5092
+BeginChars: 69525 5093
 
 StartChar: space
 Encoding: 32 32 0
@@ -2987,19 +2988,9 @@ Width: 333
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-134 715 m 1
- 134 612 l 1
- 30 612 l 1
- 30 715 l 1
- 134 715 l 1
-296 715 m 1
- 296 612 l 1
- 192 612 l 1
- 192 715 l 1
- 296 715 l 1
-EndSplineSet
-Validated: 3073
+Refer: 475 729 N 1 0 0 1 77 0 2
+Refer: 475 729 N 1 0 0 1 -85 0 2
+Validated: 32769
 EndChar
 
 StartChar: copyright
@@ -9192,11 +9183,11 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-219 716 m 1
- 219 612 l 1
- 115 612 l 1
- 115 716 l 1
- 219 716 l 1
+219 716 m 5
+ 219 612 l 5
+ 115 612 l 5
+ 115 716 l 5
+ 219 716 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -135324,6 +135315,23 @@ SplineSet
  331 270 l 1
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: yi_yi_lig_ukrainian
+Encoding: 59654 -1 5092
+Width: 533
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 240 305 N 1 0 0 1 -10 0 2
+Refer: 240 305 N 1 0 0 1 275 0 0
+Refer: 475 729 N 1 0 0 1 -115 -8 0
+Refer: 475 729 N 1 0 0 1 314 -8 0
+Refer: 475 729 N 1 0 0 1 24 -8 0
+Refer: 475 729 N 1 0 0 1 176 -8 0
+Validated: 32769
+Ligature2: "'liga' Standard Ligatures in Cyrillic subtable" yicyrillic yicyrillic
+LCarets2: 1 0 
 EndChar
 EndChars
 EndSplineFont
