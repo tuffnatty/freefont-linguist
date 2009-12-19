@@ -29,7 +29,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: OpenType.py,v 1.1 2008-11-23 20:21:20 Stevan_White Exp $
+$Id: OpenType.py,v 1.2 2009-12-19 23:19:15 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -63,7 +63,10 @@ ulUnicodeRange = [
 [5,	'Spacing Modifier Letters',     [interval(0x02B0, 0x02FF),
 			interval(0xA700, 0xA71F)	# Modifier Tone Letters
 	]],
-[6,	'Combining Diacritical Marks',     [interval(0x0300, 0x036F)]],
+[6,	'Combining Diacritical Marks',     [interval(0x0300, 0x036F),
+			interval(0x1DC0, 0x1DE6),	# Supplement
+			interval(0x1DFE, 0x1DFF)	# Supplement
+			] ],
 [7,	'Greek and Coptic',     [interval(0x0370, 0x0377),
 			interval(0x037A, 0x037E),
 			interval(0x0384, 0x038A),
@@ -93,13 +96,14 @@ ulUnicodeRange = [
 			interval(0x05D0, 0x05EA),
 			interval(0x05F0, 0x05F4)
 		]], # See http://webcenter.ru/~kazarn/eng/ululinks.htm
-[12,	'Vai',    [interval(0xA500, 0xA63F),
+[12,	'Vai',    [interval(0xA500, 0xA62B),
 		]],
 [13,	'Arabic (+supplement)',     [interval(0x0600, 0x0603),
 			interval(0x0606, 0x061B),
 			interval(0x061E, 0x061F),
 			interval(0x0621, 0x0652),
-			interval(0x0653, 0x06FF),	# Supplement
+			interval(0x0653, 0x06FF),
+			interval(0x0750, 0x077F)	# Supplement
 	]
 	],
 [14,	'', [interval(0x07C0, 0x07FF)]],	# unclear ? Part of Arabic?
@@ -237,14 +241,19 @@ ulUnicodeRange = [
 			]
 		],
 [25,	'Lao',     [interval(0x0E80, 0x0EFF)]],
-[26,	'Georgian (+supplement)',     [interval(0x10D0, 0x10FC),
-		interval(0x10A0, 0x10CF)]],	# Supplement
+[26,	'Georgian (+supplement)',    [
+		interval(0x10A0, 0x10C5),
+		interval(0x10D0, 0x10FC),
+		interval(0x2D00, 0x2D25) # Supplement
+		]],
 [27,	'Balinese', [interval(0x1B00, 0x1B7F)]],
 [28,	'Hangul Jamo',     [interval(0x1100, 0x11FF)]],
 [29,	'Latin Extended (Additional,C,D)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
-		interval(0x2C60, 0x2C7F),	# C
-		interval(0xA720, 0xA72F)	# D
+		interval(0x2C60, 0x2C6F),	# C
+		interval(0x2C71, 0x2C7D),	# C
+		interval(0xA720, 0xA78C),	# D
+		interval(0xA7FB, 0xA7FF)	# D
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
 		interval(0x1F18, 0x1F1D),
@@ -264,7 +273,7 @@ ulUnicodeRange = [
 		interval(0x1FF6, 0x1FFE)
 	]],
 [31,	'General Punctuation (+suppl)',     [interval(0x2000, 0x2064),
-		interval(0x206A, 0x206F),
+		# interval(0x206A, 0x206F),	# deprecated
 		interval(0x2E00, 0x2E30),	# Supplemental
 	]],
 [32,	'Superscripts and Subscripts',     [interval(0x2070, 0x2071),
@@ -272,10 +281,10 @@ ulUnicodeRange = [
 		interval(0x2090, 0x2094)
 	]
 	],
-[33,	'Currency Symbols',     [interval(0x20A0, 0x20B5)]],
+[33,	'Currency Symbols',     [interval(0x20A0, 0x20B8)]],
 [34,	'Combining Diacritical Marks for Symbols',     [interval(0x20D0, 0x20F0)]],
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
-[36,	'Number Forms',     [interval(0x2153, 0x2188)]],
+[36,	'Number Forms',     [interval(0x2150, 0x2189)]],
 [37,	'Arrows (+suppl)',     [interval(0x2190, 0x21FF),
 	interval(0x27F0, 0x27FF),	# Supplemental Arrows-A
 	interval(0x2900, 0x297F),	# Supplemental Arrows-B
@@ -323,7 +332,7 @@ ulUnicodeRange = [
 [53,	'CJK Miscellaneous', [interval(0x3190, 0x319F)]],
 [54,	'Enclosed CJK Letters and Months', [interval(0x3200, 0x32FF)]],
 [55,	'CJK Compatibility', [interval(0x3300, 0x33FF)]],
-[56,	'Hangul', [interval(0x3400, 0x3D2D)]],
+[56,	'Hangul Syallables', [interval(0xAC00, 0xD7A3)]],
 [57,	'Non-Plane 0', [interval(0xD800, 0xDFFF)]],
 [58,	'Phoenician', [interval(0x10900, 0x1091B), 
 		interval(0x1091F, 0x1091F)], True],
@@ -353,7 +362,7 @@ ulUnicodeRange = [
 	]],
 [66,	'Small Form Variants', [interval(0xFE50, 0xFE52),
 				interval(0xFE54, 0xFE66),
-				interval(0xFE58, 0xFE5B)
+				interval(0xFE68, 0xFE6B)
 				]
 		],
 [67,	'Arabic Presentation Forms-B', [interval(0xFE70, 0xFE74),
@@ -369,7 +378,17 @@ ulUnicodeRange = [
 		interval(0x074D, 0x074F)
 	]],
 [72, 	'Thaana', [interval(0x0780, 0x07B1)]],
-[73, 	'Sinhala', [interval(0x0D80, 0x0DFF)]],
+[73, 	'Sinhala', [interval(0x0D82, 0x0D83),
+		interval(0x0D85, 0x0D96),
+		interval(0x0D9A, 0x0DB1),
+		interval(0x0DB3, 0x0DBB),
+		interval(0x0DBD, 0x0DBD),
+		interval(0x0DC0, 0x0DC6),
+		interval(0x0DCA, 0x0DCA),
+		interval(0x0DCF, 0x0DD4),
+		interval(0x0DD6, 0x0DD6),
+		interval(0x0DD8, 0x0DDF),
+		interval(0x0DF2, 0x0DF4)]],
 [74, 	'Myanmar', [interval(0x1000, 0x109F)]],
 [75, 	'Ethiopic (+supplement, extended)', [
 		interval(0x1200, 0x1248),
@@ -394,7 +413,7 @@ ulUnicodeRange = [
 		]
 		],
 [76,	'Cherokee', [interval(0x13A0, 0x13F4)]],
-[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x14DF)]],
+[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x167F)]],
 [78, 	'Ogham', [interval(0x1680, 0x169F)]],
 [79, 	'Runic', [interval(0x16A0, 0x16F1)]],
 [80, 	'Khmer (+symbols)', [interval(0x1780, 0x17FF),
@@ -461,7 +480,9 @@ ulUnicodeRange = [
 		interval(0x1A1E, 0x1A1F)]],
 [97, 	'Glagolitic', [ interval(0x2C00, 0x2C2E),
 		interval(0x2C30, 0x2C5E) ]],
-[98, 	'Tifinagh', [interval(0x2D30, 0x2D7F)]],
+[98, 	'Tifinagh', [interval(0x2D30, 0x2D65),
+		interval(0x2D6F, 0x2D6F)
+	]],
 [99, 	'Ying Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
 [100, 	'Syloti Nagri', [interval(0xA800, 0xA82F)]],
 [101, 	'Linear B Syllabary etc', [interval(0x10000, 0x1013F)], True],
