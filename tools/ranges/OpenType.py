@@ -29,7 +29,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: OpenType.py,v 1.2 2009-12-19 23:19:15 Stevan_White Exp $
+$Id: OpenType.py,v 1.3 2009-12-22 23:56:56 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -95,7 +95,7 @@ ulUnicodeRange = [
 			interval(0x0591, 0x05C7),
 			interval(0x05D0, 0x05EA),
 			interval(0x05F0, 0x05F4)
-		]], # See http://webcenter.ru/~kazarn/eng/ululinks.htm
+		]],
 [12,	'Vai',    [interval(0xA500, 0xA62B),
 		]],
 [13,	'Arabic (+supplement)',     [interval(0x0600, 0x0603),
@@ -699,10 +699,6 @@ See also
 http://developer.apple.com/textfonts/TTRefMan/RM06/Chap6OS2.html
 Says 128 bits are split into 96 and 32 bits.
 96 is Unicode block, 32 for script sets...
-
-This talks about TrueType and OpenType versions
-http://webcenter.ru/~kazarn/eng/fonts_ttf.htm#os2tab
-and this says what the ranges of Hebrew, Greek etc are
 
 OK, the right thing is here: the OpenType specs
 http://www.microsoft.com/OpenType/OTSpec/os2.htm
