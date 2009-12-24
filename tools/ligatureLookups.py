@@ -25,7 +25,7 @@ should be properly rendered by a browser.
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 __date__ = "Dec 2009"
-__version__ = $Revision: 1.1 $
+__version__ = "$Revision: 1.2 $"
 
 import fontforge
 import sys
