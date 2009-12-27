@@ -25,7 +25,7 @@ should be properly rendered by a browser.
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 __date__ = "Dec 2009"
-__version__ = "$Revision: 1.2 $"
+__version__ = "$Revision: 1.3 $"
 
 import fontforge
 import sys
@@ -73,6 +73,7 @@ postamble="""
 def print_ligatures( fontPath ):
 	subtables = []
 	font = fontforge.open( fontPath )
+
 	style = ''
 	if font.italicangle != 0.0:
 		style = "font-style: italic; "
@@ -155,8 +156,8 @@ def makeLigatureSubtable( font, subtable_name ):
 		if ligs:
 			ligature = Ligature( g )
 			for lr in ligs:
-				if lr[1] != 'Ligature':
-					sys.stderr.write( 'non-ligature' )
+				if len( lr ) < 3 or lr[1] != 'Ligature':
+					print >> sys.stderr, 'non-ligature: ' + g.glyphname
 					break
 				i = 2
 				while i < len( lr ):
@@ -204,7 +205,6 @@ Expands each ligature, then checks each component to see if it's Unicode.
 If not, it looks through all the ligature tables to expand it,
 and so on recursively until only Unicode characters remain.
 """
-
 def printnestedentity( font, subtable, a, subtables ):
 	s = font.findEncodingSlot( a )
 	if s >= 0xe000 and s <= 0xf8ff:
