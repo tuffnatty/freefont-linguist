@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: range_report.py,v 1.3 2009-12-19 23:20:45 Stevan_White Exp $
+$Id: range_report.py,v 1.4 2009-12-27 16:20:45 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -118,7 +118,7 @@ class FontSupport:
 def print_font_range_table( fontSupportList ):
 	print '<table class="fontrangereport" cellspacing="0" cellpadding="0" frame="box" rules="all">'
 	print '<caption>'
-	print "OS/2 character ranges vs. FreeFont faces " 
+	print "OS/2 character ranges vs. font faces " 
 	print '</caption>'
 	print '<colgroup>'
 	print '<col /><col /><col />'
