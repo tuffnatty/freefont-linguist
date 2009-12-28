@@ -29,7 +29,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: OpenType.py,v 1.4 2009-12-27 16:19:50 Stevan_White Exp $
+$Id: OpenType.py,v 1.5 2009-12-28 18:36:27 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -500,18 +500,25 @@ ulUnicodeRange = [
 [109, 	'Tai Xuan Jing Symbols', [interval(0x1D300, 0x1D35F)], True],
 [110, 	'Cuneiform (+numbers)', [interval(0x12000, 0x1247F)], True],
 [111, 	'Counting Rod Numerals', [interval(0x1D360, 0x1D37F)], True],
-[112, 	'Sundanese', [interval(0x1B80, 0x1BBF)]],
-[113, 	'Lepcha', [interval(0x1C00, 0x1C4F)]],
+[112, 	'Sundanese', [interval(0x1B80, 0x1BAA),
+		interval(0x1BAE, 0x1BB9)
+	]],
+[113, 	'Lepcha', [interval(0x1C00, 0x1C4F)]], # FIXME
 [114, 	'Ol Chiki', [interval(0x1C50, 0x1C7F)]],
-[115, 	'Saurashtra', [interval(0xA880, 0xA8DF)]],
+[115, 	'Saurashtra', [interval(0xA880, 0xA8C4),
+		interval(0xA8CE, 0xA8D9)
+	]],
 [116, 	'Kayah Li', [interval(0xA900, 0xA92F)]],
-[117, 	'Rejang', [interval(0xA930, 0xA95F)]],
-[118, 	'Cham', [interval(0xAA00, 0xAA5F)]],
+[117, 	'Rejang', [interval(0xA930, 0xA953),
+		interval(0xA95F, 0xA95F)
+	]],
+[118, 	'Cham', [interval(0xAA00, 0xAA5F)]], #FIXME more complex
 [119, 	'Ancient Symbols', [interval(0x10190, 0x101CF)], True],
 [120, 	'Phaistos Disc', [interval(0x101D0, 0x101FF)], True],
-[121, 	'Carian, Lycian, Lydian', [interval(0x102A0, 0x102DF),
-		interval(0x10280, 0x1029F),	# Lycian
-		interval(0x10920, 0x1093F)	# Lydian
+[121, 	'Carian, Lycian, Lydian', [interval(0x102A0, 0x102D0), #Carian
+		interval(0x10280, 0x1029C),	# Lycian
+		interval(0x10920, 0x10939),	# Lydian
+		interval(0x1093F, 0x1093F)
 	], True],
 [122, 	'Domino and Mahjong Tiles', [
 		interval(0x1F000, 0x1F02B),	# Mahjong
