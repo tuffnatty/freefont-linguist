@@ -29,14 +29,37 @@ def ismonomono( fontfilename ):
 				nonzero = e.width
 		else:
 			if e.width > 0 and e.width != nonzero:
-				print '  ' + e.glyphname + ' width is not ' \
-						+ str( nonzero )
+				print '  ' + e.glyphname \
+					+ '(' + str( e.encoding ) \
+					+ ') width is ' + str( e.width ) \
+					+ ' not ' + str( nonzero )
 				problem = True
 
 		( xmin, ymin, xmax, ymax ) = e.boundingBox()
 		if ymin < -200 or ymax > 800:
-			print '  ' + e.glyphname + ' goes between ' \
+			print '  ' + e.glyphname + ' goes between heights ' \
 				+ str( ymin )  + ' and ' + str( ymax )
+	""" 
+	For FontForge handling of TrueType/OpenType magic characters:
+	1) check that 0x0000 0x0001, 0x000D exist and have names
+		.notdef, .null, nonmarkingreturn
+	2) check that 0x0000 and 0x000D are width 600, and
+	0x0001 has no glyph and is width 0
+
+	Othewise complain that FontForge may not treat it right.
+	"""
+	if not font[0x0000] \
+		or font[0x0000].glyphname != '.notdef' \
+		or font[0x0000].width != nonzero:
+		print 'Should be full-width ".notdef" glyph at 0x0000.'
+	if not font[0x0001] \
+		or font[0x0001].glyphname != '.null' \
+		or font[0x0001].width != 0:
+		print 'Should be zero-width ".null" glyph at 0x0001.'
+	if not font[0x000D] \
+		or font[0x000D].glyphname != 'nonmarkingreturn' \
+		or font[0x000D].width != nonzero:
+		print 'Should be full-width "nonmarkingreturn" glyph at 0x000D.'
 
 scriptname = sys.argv[0];
 argc = len( sys.argv )
