@@ -4,7 +4,7 @@ FullName: Free Sans Oblique
 FamilyName: FreeSans
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009 Free Software Foundation.
-Version: $Revision: 1.161 $
+Version: $Revision: 1.162 $
 ItalicAngle: -12
 UnderlinePosition: -151
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1264631120
+ModificationTime: 1267516995
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -69,7 +69,8 @@ Lookup: 1 0 0 "'aalt' Access All Alternates in Bengali"  {"'aalt' Access All Alt
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
-Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Latin"  {"'dlig' Discretionary Ligatures in Latin subtable"  } ['dlig' ('latn' <'dflt' > ) ]
+Lookup: 4 8 1 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin subtable"  } ['liga' ('latn' <'dflt' > ) ]
+Lookup: 4 0 1 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch subtable"  } ['liga' ('latn' <'NLD ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek 0"  {"'mark' Mark Positioning in Greek 0 subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'beng' <'dflt' > 'bng2' <'dflt' > 'cyrl' <'dflt' > 'geor' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
@@ -230,7 +231,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 0 16 13
+WinInfo: 288 16 13
 BeginPrivate: 8
 UniqueID 7 5020908
 BlueValues 23 [-24 0 524 540 729 741]
@@ -5139,17 +5140,19 @@ Fore
 Refer: 42 74 N 1 0 0 1 231 0 0
 Refer: 41 73 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'liga' Standard Ligatures in Latin for Dutch subtable" I J
 EndChar
 
 StartChar: ij
 Encoding: 307 307 240
-Width: 357
+Width: 387
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 74 106 N 1 0 0 1 135 0 0
+Refer: 74 106 S 1 0 0 1 165 0 0
 Refer: 73 105 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'liga' Standard Ligatures in Latin for Dutch subtable" i j
 LCarets2: 1 0 
 EndChar
 
@@ -67645,7 +67648,7 @@ SplineSet
  586.38 524 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'dlig' Discretionary Ligatures in Latin subtable" f f
+Ligature2: "'liga' Standard Ligatures in Latin subtable" f f
 LCarets2: 1 0 
 EndChar
 
@@ -67678,7 +67681,7 @@ SplineSet
  505.38 524 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'dlig' Discretionary Ligatures in Latin subtable" f i
+Ligature2: "'liga' Standard Ligatures in Latin subtable" f i
 LCarets2: 1 0 
 EndChar
 
@@ -67713,7 +67716,7 @@ SplineSet
  451.862 658 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'dlig' Discretionary Ligatures in Latin subtable" f l
+Ligature2: "'liga' Standard Ligatures in Latin subtable" f l
 LCarets2: 1 0 
 EndChar
 
@@ -67760,7 +67763,7 @@ SplineSet
  734.954 729 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'dlig' Discretionary Ligatures in Latin subtable" f f i
+Ligature2: "'liga' Standard Ligatures in Latin subtable" f f i
 LCarets2: 2 0 0 
 EndChar
 
@@ -67806,7 +67809,7 @@ SplineSet
  603.38 524 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'dlig' Discretionary Ligatures in Latin subtable" f f l
+Ligature2: "'liga' Standard Ligatures in Latin subtable" f f l
 LCarets2: 2 0 0 
 EndChar
 
@@ -73164,7 +73167,8 @@ EndChar
 StartChar: .notdef
 Encoding: 0 -1 2890
 Width: 700
-Flags: HW
+Flags: W
+HStem: 0 72<186.304 544.304> 657 72<310.649 668.649>
 LayerCount: 2
 Fore
 SplineSet
@@ -73191,7 +73195,7 @@ EndChar
 
 StartChar: nonmarkingreturn
 Encoding: 13 -1 2892
-Width: 600
+Width: 500
 Flags: HW
 LayerCount: 2
 EndChar
