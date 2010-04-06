@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.7 2008-12-26 20:23:37 Stevan_White Exp $
+# $Id: Makefile,v 1.8 2010-04-06 19:33:54 Stevan_White Exp $
 
 SFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd \
 FreeSansBoldOblique.sfd FreeSansBold.sfd FreeSansOblique.sfd FreeSans.sfd \
@@ -9,7 +9,9 @@ OTFS=$(SFDS:.sfd=.otf)
 FF=fontforge -lang=ff -script 
 FFPY=fontforge -lang=py -script 
 
-TESTFF=if test `fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'` -lt 20080429 ; then echo FontForge version too old; exit 1; fi
+ffversion=`fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'`
+
+TESTFF=if test -z ${ffversion}; then echo Fontforge program is required to build FreeFont; exit 1; fi; if test `fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'` -lt 20080429 ; then echo FontForge version too old; exit 1; fi
 
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf
