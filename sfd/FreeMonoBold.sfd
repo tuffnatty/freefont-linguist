@@ -4,7 +4,7 @@ FullName: Free Monospaced Bold
 FamilyName: FreeMono
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009 Free Software Foundation.
-Version: $Revision: 1.126 $
+Version: $Revision: 1.127 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1270321762
+ModificationTime: 1270900503
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -113,7 +113,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64 16 13
+WinInfo: 8192 16 13
 BeginPrivate: 9
 UniqueID 7 5020946
 BlueValues 23 [-16 0 437 451 583 597]
@@ -2004,11 +2004,11 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-600 -75 m 1
- 600 -125 l 1
- 0 -125 l 1
- 0 -75 l 1
- 600 -75 l 1
+600 -100 m 1
+ 600 -200 l 1
+ 0 -200 l 1
+ 0 -100 l 1
+ 600 -100 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -2827,12 +2827,12 @@ Fore
 SplineSet
 77 -200 m 0
  32 -200 21 -169 21 -150 c 0
- 21 -109 50 -100 87 -100 c 2
+ 21 -109 50 -100 87 -100 c 6
  187 -100 l 1
  242 3 l 1
  70 337 l 1
  39 341 21 359 21 387 c 0
- 21 422 50 437 87 437 c 6
+ 21 422 50 437 87 437 c 2
  177 437 l 2
  215 437 243 428 243 387 c 0
  243 356 222 338 184 337 c 1
@@ -38735,7 +38735,7 @@ Width: 0
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 63 95 S 1 0 0 1 -604 -21 2
+Refer: 63 95 S 1 0 0 1 -600 0 2
 Validated: 32769
 EndChar
 
@@ -38955,8 +38955,7 @@ Flags: HMW
 AnchorPoint: "below" -288 0 mark 0
 LayerCount: 2
 Fore
-Refer: 63 95 S 1 0 0 1 -600 27 2
-Refer: 63 95 N 1 0 0 1 -600 -75 2
+Refer: 1814 8215 N 1 0 0 1 -600 0 2
 Validated: 32769
 EndChar
 
@@ -41220,13 +41219,13 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni203e
+StartChar: overline
 Encoding: 8254 8254 1808
 Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 63 95 S 1 0 0 1 0 783 2
+Refer: 63 95 S 1 0 0 1 0 833 2
 Validated: 32769
 EndChar
 
@@ -41368,9 +41367,19 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 63 95 N 1 0 0 1 0 21 2
-Refer: 63 95 N 1 0 0 1 0 -75 2
-Validated: 32769
+SplineSet
+600 -130 m 5
+ 600 -200 l 1
+ 0 -200 l 1
+ 0 -130 l 5
+ 600 -130 l 5
+600 -19 m 1
+ 600 -89 l 1
+ 0 -89 l 1
+ 0 -19 l 1
+ 600 -19 l 1
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni2053
