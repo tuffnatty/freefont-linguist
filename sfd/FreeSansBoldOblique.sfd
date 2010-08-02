@@ -4,7 +4,7 @@ FullName: Free Sans Bold Oblique
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009 Free Software Foundation.
-Version: $Revision: 1.146 $
+Version: $Revision: 1.147 $
 ItalicAngle: -12
 UnderlinePosition: -111
 UnderlineWidth: 69
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1275150999
+ModificationTime: 1280772228
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -51,6 +51,8 @@ OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2Vendor: 'GNU '
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin subtable"  } ['liga' ('latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 8 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures in Latin subtable"  } ['hlig' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch subtable"  } ['liga' ('latn' <'nl  ' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
@@ -243,7 +245,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 464 16 13
+WinInfo: 256 16 13
 BeginPrivate: 9
 UniqueID 7 5020910
 BlueValues 23 [-24 0 540 550 728 742]
@@ -1412,11 +1414,11 @@ AnchorPoint: "above" 533 723 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-538 741 m 4
+538 741 m 0
  721 741 828 635 828 455 c 0
  828 255.03 686.202 -23 395 -23 c 0
  217 -23 106 86 106 261 c 0
- 106 453.733 248.023 741 538 741 c 4
+ 106 453.733 248.023 741 538 741 c 0
 419 105 m 0
  638 105 679 371 679 437 c 0
  679 547 619 613 519 613 c 0
@@ -1594,7 +1596,7 @@ SplineSet
 659 729 m 1
  809 729 l 1
  704 235 l 2
- 662.827 45.1483 512.962 -23 366 -23 c 4
+ 662.827 45.1483 512.962 -23 366 -23 c 0
  215 -23 119 51 119 167 c 0
  119 189 123 222 130 255 c 2
  231 729 l 1
@@ -2257,7 +2259,7 @@ LayerCount: 2
 Fore
 SplineSet
 82 177 m 0
- 82 378 211 549 413 549 c 4
+ 82 378 211 549 413 549 c 0
  550 549 634 473 634 349 c 0
  634 143 502 -23 299 -23 c 0
  167 -23 82 55 82 177 c 0
@@ -3484,66 +3486,74 @@ StartChar: Agrave
 Encoding: 192 192 125
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 659 1 basechar 0
+AnchorPoint: "below" 375 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 255 167 2
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Aacute
 Encoding: 193 193 126
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 659 1 basechar 0
+AnchorPoint: "below" 375 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 216 173 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Acircumflex
 Encoding: 194 194 127
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 659 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 237 179 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" A circumflexcomb
 EndChar
 
 StartChar: Atilde
 Encoding: 195 195 128
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 659 1 basechar 0
+AnchorPoint: "below" 375 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 324 732 N 1 0 0 1 240 179 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Adieresis
 Encoding: 196 196 129
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 659 1 basechar 0
+AnchorPoint: "below" 375 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 33 65 S 1 0 0 1 0 0 2
-Refer: 102 168 S 1 0 0 1 240 180 0
-Validated: 32769
+Refer: 33 65 N 1 0 0 1 0 0 2
+Refer: 102 168 N 1 0 0 1 240 180 0
 EndChar
 
 StartChar: Aring
 Encoding: 197 197 130
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 659 1 basechar 0
+AnchorPoint: "below" 375 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 33 65 S 1 0 0 1 0 0 2
-Refer: 322 730 S 1 0 0 1 238 180 0
-Validated: 32769
+Refer: 33 65 N 1 0 0 1 0 0 2
+Refer: 322 730 N 1 0 0 1 238 180 0
 EndChar
 
 StartChar: AE
@@ -3617,88 +3627,100 @@ StartChar: Egrave
 Encoding: 200 200 133
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 255 166 2
 Refer: 37 69 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Eacute
 Encoding: 201 201 134
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 200 180 0
 Refer: 37 69 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Ecircumflex
 Encoding: 202 202 135
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 220 179 0
 Refer: 37 69 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" E circumflexcomb
 EndChar
 
 StartChar: Edieresis
 Encoding: 203 203 136
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 218 180 0
 Refer: 37 69 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Igrave
 Encoding: 204 204 137
 Width: 278
 Flags: HMW
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 29 169 2
 Refer: 41 73 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Iacute
 Encoding: 205 205 138
 Width: 278
 Flags: HMW
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 13 180 0
 Refer: 41 73 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Icircumflex
 Encoding: 206 206 139
 Width: 278
 Flags: HMW
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 14 179 0
 Refer: 41 73 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" I circumflexcomb
 EndChar
 
 StartChar: Idieresis
 Encoding: 207 207 140
 Width: 278
 Flags: HMW
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 13 180 0
 Refer: 41 73 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Eth
@@ -3749,55 +3771,62 @@ StartChar: Ograve
 Encoding: 210 210 143
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 255 169 2
 Refer: 47 79 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Oacute
 Encoding: 211 211 144
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 256 178 0
 Refer: 47 79 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Ocircumflex
 Encoding: 212 212 145
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 268 180 0
 Refer: 47 79 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" O circumflexcomb
 EndChar
 
 StartChar: Otilde
 Encoding: 213 213 146
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
-Refer: 47 79 S 1 0 0 1 0 0 2
-Refer: 324 732 S 1 0 0 1 269 179 0
-Validated: 32769
+Refer: 47 79 N 1 0 0 1 0 0 2
+Refer: 324 732 N 1 0 0 1 269 179 0
 EndChar
 
 StartChar: Odieresis
 Encoding: 214 214 147
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 2
 Refer: 102 168 N 1 0 0 1 267 180 0
-Validated: 32769
 EndChar
 
 StartChar: multiply
@@ -3865,55 +3894,62 @@ StartChar: Ugrave
 Encoding: 217 217 150
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 255 168 2
 Refer: 53 85 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Uacute
 Encoding: 218 218 151
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 217 180 0
 Refer: 53 85 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Ucircumflex
 Encoding: 219 219 152
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 242 179 0
 Refer: 53 85 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" U circumflexcomb
 EndChar
 
 StartChar: Udieresis
 Encoding: 220 220 153
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
-Refer: 53 85 S 1 0 0 1 0 0 2
-Refer: 102 168 S 1 0 0 1 240 180 0
-Validated: 32769
+Refer: 53 85 N 1 0 0 1 0 0 2
+Refer: 102 168 N 1 0 0 1 240 180 0
 EndChar
 
 StartChar: Yacute
 Encoding: 221 221 154
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 345 0 basechar 0
+AnchorPoint: "ogonek" 386 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 194 180 0
 Refer: 57 89 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Thorn
@@ -3978,66 +4014,74 @@ StartChar: agrave
 Encoding: 224 224 157
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 456 1 basechar 0
+AnchorPoint: "below" 258 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 96 0 2
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: aacute
 Encoding: 225 225 158
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 456 1 basechar 0
+AnchorPoint: "below" 258 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 113 1 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: acircumflex
 Encoding: 226 226 159
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 456 1 basechar 0
+AnchorPoint: "below" 258 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 112 -1 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" a circumflexcomb
 EndChar
 
 StartChar: atilde
 Encoding: 227 227 160
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 456 1 basechar 0
+AnchorPoint: "below" 258 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 324 732 N 1 0 0 1 104 -13 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: adieresis
 Encoding: 228 228 161
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 456 1 basechar 0
+AnchorPoint: "below" 258 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 114 -2 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: aring
 Encoding: 229 229 162
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 456 1 basechar 0
+AnchorPoint: "below" 258 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 322 730 N 1 0 0 1 115 1 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: ae
@@ -4127,88 +4171,100 @@ StartChar: egrave
 Encoding: 232 232 165
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 96 0 2
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: eacute
 Encoding: 233 233 166
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 88 2 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: ecircumflex
 Encoding: 234 234 167
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 102 0 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" e circumflexcomb
 EndChar
 
 StartChar: edieresis
 Encoding: 235 235 168
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 107 -2 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: igrave
 Encoding: 236 236 169
 Width: 278
 Flags: HMW
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 -14 0 2
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: iacute
 Encoding: 237 237 170
 Width: 278
 Flags: HMW
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 -27 0 0
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: icircumflex
 Encoding: 238 238 171
 Width: 278
 Flags: HMW
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 -27 -1 0
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" i circumflexcomb
 EndChar
 
 StartChar: idieresis
 Encoding: 239 239 172
 Width: 278
 Flags: HMW
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 102 168 S 1 0 0 1 -25 -1 0
+Refer: 102 168 N 1 0 0 1 -25 -1 0
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: eth
@@ -4258,55 +4314,62 @@ StartChar: ograve
 Encoding: 242 242 175
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 135 0 2
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: oacute
 Encoding: 243 243 176
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 125 1 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: ocircumflex
 Encoding: 244 244 177
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 142 0 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" o circumflexcomb
 EndChar
 
 StartChar: otilde
 Encoding: 245 245 178
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 324 732 N 1 0 0 1 131 -13 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: odieresis
 Encoding: 246 246 179
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 137 -2 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: divide
@@ -4373,61 +4436,68 @@ StartChar: ugrave
 Encoding: 249 249 182
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 166 0 2
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uacute
 Encoding: 250 250 183
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 114 1 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: ucircumflex
 Encoding: 251 251 184
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 131 0 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" u circumflexcomb
 EndChar
 
 StartChar: udieresis
 Encoding: 252 252 185
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 137 -2 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: yacute
 Encoding: 253 253 186
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 472 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 91 0 0
 Refer: 89 121 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: thorn
 Encoding: 254 254 187
 Width: 611
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -4447,29 +4517,30 @@ SplineSet
  420 89 494 197 494 323 c 0
  494 392 459 437 406 437 c 0
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: ydieresis
 Encoding: 255 255 188
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 472 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 114 0 0
 Refer: 89 121 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Amacron
 Encoding: 256 256 189
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 659 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 221 159 2
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: amacron
@@ -4487,22 +4558,28 @@ StartChar: Abreve
 Encoding: 258 258 191
 Width: 722
 Flags: HMW
+AnchorPoint: "ogonek" 659 1 basechar 0
+AnchorPoint: "below" 375 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 234 173 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" A brevecomb
 EndChar
 
 StartChar: abreve
 Encoding: 259 259 192
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 456 1 basechar 0
+AnchorPoint: "below" 258 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 131 -3 0
 Refer: 65 97 N 1 0 0 1 0 0 2
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" a brevecomb
 EndChar
 
 StartChar: Aogonek
@@ -4764,66 +4841,76 @@ StartChar: Emacron
 Encoding: 274 274 207
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 108 175 N 1 0 0 1 220 159 2
-Validated: 32769
 EndChar
 
 StartChar: emacron
 Encoding: 275 275 208
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 113 0 2
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Ebreve
 Encoding: 276 276 209
 Width: 667
 Flags: HM
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 234 173 0
 Refer: 37 69 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" E brevecomb
 EndChar
 
 StartChar: ebreve
 Encoding: 277 277 210
 Width: 556
 Flags: HM
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 111 -3 0
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" e brevecomb
 EndChar
 
 StartChar: Edotaccent
 Encoding: 278 278 211
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 321 729 N 1 0 0 1 226 181 0
 Refer: 37 69 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: edotaccent
 Encoding: 279 279 212
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 321 729 N 1 0 0 1 87 1 0
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Eogonek
@@ -4897,22 +4984,24 @@ StartChar: Ecaron
 Encoding: 282 282 215
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 589 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 319 711 N 1 0 0 1 217 174 2
-Validated: 32769
 EndChar
 
 StartChar: ecaron
 Encoding: 283 283 216
 Width: 556
 Flags: HMW
+AnchorPoint: "ogonek" 349 1 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 319 711 N 1 0 0 1 112 0 2
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Gcircumflex
@@ -5100,66 +5189,76 @@ StartChar: Itilde
 Encoding: 296 296 229
 Width: 278
 Flags: HM
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 324 732 N 1 0 0 1 14 177 0
 Refer: 41 73 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: itilde
 Encoding: 297 297 230
 Width: 278
 Flags: HM
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 324 732 N 1 0 0 1 -22 18 0
 Refer: 238 305 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Imacron
 Encoding: 298 298 231
 Width: 278
 Flags: HMW
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 9 159 2
 Refer: 41 73 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: imacron
 Encoding: 299 299 232
 Width: 278
 Flags: HMW
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 1
 Refer: 108 175 N 1 0 0 1 -25 0 2
-Validated: 32769
 EndChar
 
 StartChar: Ibreve
 Encoding: 300 300 233
 Width: 278
 Flags: HM
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 18 188 0
 Refer: 41 73 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" I brevecomb
 EndChar
 
 StartChar: ibreve
 Encoding: 301 301 234
 Width: 278
 Flags: HM
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 -21 29 0
 Refer: 238 305 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" i brevecomb
 EndChar
 
 StartChar: Iogonek
@@ -5219,17 +5318,20 @@ StartChar: Idotaccent
 Encoding: 304 304 237
 Width: 278
 Flags: HMW
+AnchorPoint: "below" 139 0 basechar 0
+AnchorPoint: "ogonek" 177 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 321 729 N 1 0 0 1 17 181 0
 Refer: 41 73 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: dotlessi
 Encoding: 305 305 238
 Width: 278
 Flags: HMW
+AnchorPoint: "ogonek" 177 1 basechar 0
+AnchorPoint: "below" 140 0 basechar 0
 AnchorPoint: "above" 261 550 basechar 0
 LayerCount: 2
 Fore
@@ -5240,7 +5342,6 @@ SplineSet
  182 540 l 1
  322 540 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: IJ
@@ -5271,6 +5372,7 @@ SplineSet
  530 729 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin for Dutch subtable" I J
 EndChar
 
@@ -5283,6 +5385,7 @@ Fore
 Refer: 74 106 N 1 0 0 1 210 0 2
 Refer: 73 105 N 1 0 0 1 0 0 0
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin for Dutch subtable" i j
 EndChar
 
@@ -5572,66 +5675,76 @@ StartChar: Omacron
 Encoding: 332 332 263
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 248 159 2
 Refer: 47 79 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: omacron
 Encoding: 333 333 264
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 128 0 2
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Obreve
 Encoding: 334 334 265
 Width: 778
 Flags: HM
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 270 189 0
 Refer: 47 79 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" O brevecomb
 EndChar
 
 StartChar: obreve
 Encoding: 335 335 266
 Width: 611
 Flags: HM
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 131 -3 0
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" o brevecomb
 EndChar
 
 StartChar: Ohungarumlaut
 Encoding: 336 336 267
 Width: 778
 Flags: HMW
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 325 733 N 1 0 0 1 320 162 2
 Refer: 47 79 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: ohungarumlaut
 Encoding: 337 337 268
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 325 733 N 1 0 0 1 205 0 2
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: OE
@@ -6023,110 +6136,124 @@ StartChar: Utilde
 Encoding: 360 360 289
 Width: 722
 Flags: HM
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 324 732 N 1 0 0 1 246 178 0
 Refer: 53 85 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: utilde
 Encoding: 361 361 290
 Width: 611
 Flags: HM
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 324 732 N 1 0 0 1 141 18 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Umacron
 Encoding: 362 362 291
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 234 159 2
 Refer: 53 85 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: umacron
 Encoding: 363 363 292
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 132 0 2
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Ubreve
 Encoding: 364 364 293
 Width: 722
 Flags: HM
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 239 174 0
 Refer: 53 85 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" U brevecomb
 EndChar
 
 StartChar: ubreve
 Encoding: 365 365 294
 Width: 611
 Flags: HM
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 320 728 N 1 0 0 1 131 -3 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" u brevecomb
 EndChar
 
 StartChar: Uring
 Encoding: 366 366 295
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 322 730 N 1 0 0 1 238 180 0
 Refer: 53 85 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uring
 Encoding: 367 367 296
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 322 730 N 1 0 0 1 137 -14 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Uhungarumlaut
 Encoding: 368 368 297
 Width: 722
 Flags: HMW
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 53 85 N 1 0 0 1 0 0 0
 Refer: 325 733 N 1 0 0 1 323 161 2
-Validated: 32769
 EndChar
 
 StartChar: uhungarumlaut
 Encoding: 369 369 298
 Width: 611
 Flags: HMW
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 85 117 N 1 0 0 1 0 0 0
 Refer: 325 733 N 1 0 0 1 213 0 2
-Validated: 32769
 EndChar
 
 StartChar: Uogonek
@@ -6222,33 +6349,36 @@ StartChar: Ycircumflex
 Encoding: 374 374 303
 Width: 667
 Flags: HM
+AnchorPoint: "below" 345 0 basechar 0
+AnchorPoint: "ogonek" 386 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 210 172 0
 Refer: 57 89 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: ycircumflex
 Encoding: 375 375 304
 Width: 556
 Flags: HM
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 472 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 318 710 N 1 0 0 1 116 30 0
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Ydieresis
 Encoding: 376 376 305
 Width: 667
 Flags: HMW
+AnchorPoint: "below" 345 0 basechar 0
+AnchorPoint: "ogonek" 386 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 214 180 2
 Refer: 57 89 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: Zacute
@@ -6599,7 +6729,7 @@ Refer: 113 180 N 1 0 0 1 -333 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni0302
+StartChar: circumflexcomb
 Encoding: 770 770 328
 Width: 0
 Flags: HMW
@@ -6621,7 +6751,7 @@ Refer: 324 732 S 1 0 0 1 -335 -9 0
 Validated: 32769
 EndChar
 
-StartChar: uni0304
+StartChar: macroncmb
 Encoding: 772 772 330
 Width: 0
 Flags: HMW
@@ -6632,7 +6762,7 @@ Refer: 108 175 S 1 0 0 1 -356 -24 0
 Validated: 32769
 EndChar
 
-StartChar: uni0306
+StartChar: brevecomb
 Encoding: 774 774 331
 Width: 0
 Flags: HMW
@@ -6643,7 +6773,7 @@ Refer: 320 728 N 1 0 0 1 -333 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni0307
+StartChar: dotaccentcmb
 Encoding: 775 775 332
 Width: 0
 Flags: HMW
@@ -6665,7 +6795,7 @@ Refer: 102 168 N 1 0 0 1 -333 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni030A
+StartChar: ringcmb
 Encoding: 778 778 334
 Width: 0
 Flags: HMW
@@ -6676,7 +6806,7 @@ Refer: 322 730 N 1 0 0 1 -333 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni030B
+StartChar: hungarumlautcmb
 Encoding: 779 779 335
 Width: 0
 Flags: HMW
@@ -6687,7 +6817,7 @@ Refer: 325 733 N 1 0 0 1 -333 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni030C
+StartChar: caroncmb
 Encoding: 780 780 336
 Width: 0
 Flags: HMW
@@ -9837,7 +9967,6 @@ Fore
 Refer: 321 729 S 1 0 0 1 61 0 2
 Refer: 321 729 N 1 0 0 1 -109 0 2
 Refer: 238 305 N 1 0 0 1 3 0 2
-Validated: 32769
 EndChar
 
 StartChar: jecyrillic
@@ -19335,7 +19464,6 @@ LayerCount: 2
 Fore
 Refer: 319 711 N 1 0 0 1 -28 -1 0
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni01D1
@@ -19562,7 +19690,6 @@ LayerCount: 2
 Fore
 Refer: 337 783 N 1 0 0 1 292 2 0
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni020A
@@ -19586,7 +19713,6 @@ LayerCount: 2
 Fore
 Refer: 338 785 N 1 0 0 1 281 -2 0
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni020C
@@ -20011,7 +20137,6 @@ LayerCount: 2
 Fore
 Refer: 1008 714 N 1 0 0 1 128 211 0
 Refer: 162 229 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: Oogonek
@@ -22924,6 +23049,9 @@ Encoding: 416 416 1267
 Width: 808
 Flags: HMW
 TeX: 79 0
+AnchorPoint: "above" 533 723 basechar 0
+AnchorPoint: "below" 403 0 basechar 0
+AnchorPoint: "ogonek" 493 1 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -22942,7 +23070,8 @@ SplineSet
  204 -23 102 90 102 257 c 0
  102 475.562 265.768 741 545 741 c 0
 EndSplineSet
-Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet horn" O horncmb
 EndChar
 
 StartChar: ohorn
@@ -22950,6 +23079,9 @@ Encoding: 417 417 1268
 Width: 673
 Flags: HMW
 TeX: 111 0
+AnchorPoint: "above" 424 552 basechar 0
+AnchorPoint: "ogonek" 375 1 basechar 0
+AnchorPoint: "below" 307 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -22968,7 +23100,8 @@ SplineSet
  624.73 503.979 632.934 547.291 635 585 c 1
  777 585 l 1
 EndSplineSet
-Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet horn" o horncmb
 EndChar
 
 StartChar: uni01A2
@@ -23012,6 +23145,9 @@ Encoding: 431 431 1270
 Width: 789
 Flags: HMW
 TeX: 85 0
+AnchorPoint: "above" 519 723 basechar 0
+AnchorPoint: "below" 375 0 basechar 0
+AnchorPoint: "ogonek" 459 1 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -23032,7 +23168,8 @@ SplineSet
  704 235 l 2
  660.199 28.957 483 -23 360 -23 c 0
 EndSplineSet
-Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet horn" U horncmb
 EndChar
 
 StartChar: uhorn
@@ -23040,6 +23177,9 @@ Encoding: 432 432 1271
 Width: 684
 Flags: HMW
 TeX: 117 0
+AnchorPoint: "above" 414 552 basechar 0
+AnchorPoint: "ogonek" 507 1 basechar 0
+AnchorPoint: "below" 289 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -23061,7 +23201,8 @@ SplineSet
  797 606 696 555 656 540 c 1
  541 0 l 1
 EndSplineSet
-Validated: 3073
+LCarets2: 1 0 
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet horn" u horncmb
 EndChar
 
 StartChar: uniFFFD
@@ -26371,7 +26512,6 @@ LayerCount: 2
 Fore
 Refer: 185 252 N 1 0 0 1 0 0 0
 Refer: 108 175 S 1 0 0 1 175 163 0
-Validated: 32769
 EndChar
 
 StartChar: uni01d7
@@ -26394,7 +26534,6 @@ LayerCount: 2
 Fore
 Refer: 185 252 N 1 0 0 1 0 0 0
 Refer: 113 180 S 1 0 0 1 169 196 0
-Validated: 32769
 EndChar
 
 StartChar: uni01d9
@@ -26417,7 +26556,6 @@ LayerCount: 2
 Fore
 Refer: 185 252 N 1 0 0 1 0 0 0
 Refer: 319 711 S 1 0 0 1 163 191 0
-Validated: 32769
 EndChar
 
 StartChar: uni01db
@@ -26440,7 +26578,6 @@ LayerCount: 2
 Fore
 Refer: 185 252 N 1 0 0 1 0 0 0
 Refer: 64 96 S 1 0 0 1 178 187 0
-Validated: 32769
 EndChar
 
 StartChar: uni01de
@@ -26463,7 +26600,6 @@ LayerCount: 2
 Fore
 Refer: 161 228 N 1 0 0 1 0 0 0
 Refer: 108 175 S 1 0 0 1 144 163 0
-Validated: 32769
 EndChar
 
 StartChar: uni01e0
@@ -26757,7 +26893,6 @@ LayerCount: 2
 Fore
 Refer: 179 246 N 1 0 0 1 0 0 1
 Refer: 1007 713 S 1 0 0 1 168 163 0
-Validated: 32769
 EndChar
 
 StartChar: uni022c
@@ -26780,7 +26915,6 @@ LayerCount: 2
 Fore
 Refer: 178 245 N 1 0 0 1 0 0 1
 Refer: 1007 713 S 1 0 0 1 159 169 0
-Validated: 32769
 EndChar
 
 StartChar: uni0230
@@ -28081,7 +28215,6 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 130 197 S 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: uni2132
@@ -28608,7 +28741,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0309
+StartChar: hookabovecomb
 Encoding: 777 777 1523
 Width: 0
 Flags: HMW
@@ -28689,7 +28822,7 @@ Refer: 117 184 N 1 0 0 1 -333 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni0323
+StartChar: dotbelowcomb
 Encoding: 803 803 1529
 Width: 0
 VWidth: 200
@@ -28697,11 +28830,10 @@ Flags: HMW
 AnchorPoint: "below" -166 0 mark 0
 LayerCount: 2
 Fore
-Refer: 321 729 S 1 0 0 1 -493 -794 0
-Validated: 32769
+Refer: 321 729 S 1 0 0 1 -494 -826 0
 EndChar
 
-StartChar: uni0324
+StartChar: dieresisbelowcmb
 Encoding: 804 804 1530
 Width: 0
 VWidth: 200
@@ -28709,8 +28841,7 @@ Flags: HMW
 AnchorPoint: "below" -166 0 mark 0
 LayerCount: 2
 Fore
-Refer: 102 168 S 1 0 0 1 -493 -790 0
-Validated: 32769
+Refer: 102 168 S 1 0 0 1 -498 -823 0
 EndChar
 
 StartChar: uni032c
@@ -31991,7 +32122,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni031b
+StartChar: horncmb
 Encoding: 795 795 1709
 Width: 0
 Flags: HMW
@@ -36171,7 +36302,6 @@ LayerCount: 2
 Fore
 Refer: 208 275 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 133 145 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E16
@@ -36194,7 +36324,6 @@ LayerCount: 2
 Fore
 Refer: 208 275 N 1 0 0 1 0 0 1
 Refer: 113 180 S 1 0 0 1 123 148 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E18
@@ -36484,7 +36613,6 @@ LayerCount: 2
 Fore
 Refer: 172 239 N 1 0 0 1 0 0 1
 Refer: 113 180 S 1 0 0 1 7 168 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E30
@@ -36815,7 +36943,6 @@ LayerCount: 2
 Fore
 Refer: 178 245 N 1 0 0 1 0 0 1
 Refer: 113 180 N 1 0 0 1 154 163 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E4E
@@ -36838,7 +36965,6 @@ LayerCount: 2
 Fore
 Refer: 178 245 N 1 0 0 1 0 0 1
 Refer: 102 168 S 1 0 0 1 161 158 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E50
@@ -36861,7 +36987,6 @@ LayerCount: 2
 Fore
 Refer: 264 333 N 1 0 0 1 0 0 1
 Refer: 64 96 N 1 0 0 1 168 154 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E52
@@ -36884,7 +37009,6 @@ LayerCount: 2
 Fore
 Refer: 264 333 N 1 0 0 1 0 0 1
 Refer: 113 180 N 1 0 0 1 129 149 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E54
@@ -37303,7 +37427,6 @@ LayerCount: 2
 Fore
 Refer: 290 361 N 1 0 0 1 0 0 1
 Refer: 113 180 N 1 0 0 1 183 150 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E7A
@@ -37326,7 +37449,6 @@ LayerCount: 2
 Fore
 Refer: 292 363 N 1 0 0 1 0 0 1
 Refer: 102 168 S 1 0 0 1 166 158 2
-Validated: 32769
 EndChar
 
 StartChar: uni1E7C
@@ -37735,6 +37857,7 @@ Refer: 33 65 N 1 0 0 1 0 0 1
 Refer: 318 710 S 1 0 0 1 228 150 0
 Refer: 113 180 S 1 0 0 1 432 167 0
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Acircumflex acutecomb
 EndChar
 
 StartChar: uni1EA5
@@ -37745,7 +37868,7 @@ LayerCount: 2
 Fore
 Refer: 159 226 N 1 0 0 1 0 0 1
 Refer: 113 180 S 1 0 0 1 308 43 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex acutecomb
 EndChar
 
 StartChar: uni1EA6
@@ -37758,6 +37881,7 @@ Refer: 33 65 N 1 0 0 1 0 0 1
 Refer: 318 710 S 1 0 0 1 233 150 0
 Refer: 64 96 S 1 0 0 1 17 150 2
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Acircumflex gravecomb
 EndChar
 
 StartChar: uni1EA7
@@ -37768,7 +37892,7 @@ LayerCount: 2
 Fore
 Refer: 159 226 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 -72 43 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex gravecomb
 EndChar
 
 StartChar: uni1ea8
@@ -37781,6 +37905,7 @@ Refer: 318 710 N 1 0 0 1 229 157 0
 Refer: 33 65 N 1 0 0 1 0 0 0
 Refer: 1523 777 N 1 0 0 1 842 185 0
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Acircumflex hookabovecomb
 EndChar
 
 StartChar: uni1ea9
@@ -37791,7 +37916,7 @@ LayerCount: 2
 Fore
 Refer: 1523 777 N 1 0 0 1 725 34 0
 Refer: 159 226 N 1 0 0 1 0 0 1
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex hookabovecomb
 EndChar
 
 StartChar: uni1EAA
@@ -37804,6 +37929,7 @@ Refer: 318 710 N 1 0 0 1 229 150 0
 Refer: 324 732 S 1 0 0 1 258 300 2
 Refer: 33 65 N 1 0 0 1 0 0 2
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Acircumflex tildecomb
 EndChar
 
 StartChar: uni1EAB
@@ -37814,7 +37940,7 @@ LayerCount: 2
 Fore
 Refer: 159 226 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 135 161 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex tildecomb
 EndChar
 
 StartChar: uni1EAC
@@ -37849,6 +37975,7 @@ Refer: 1008 714 S 1 0 0 1 230 286 0
 Refer: 320 728 S 1 0 0 1 230 150 0
 Refer: 33 65 N 1 0 0 1 0 0 2
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Abreve acutecomb
 EndChar
 
 StartChar: uni1EAF
@@ -37859,7 +37986,7 @@ LayerCount: 2
 Fore
 Refer: 192 259 N 1 0 0 1 0 0 1
 Refer: 1008 714 S 1 0 0 1 147 147 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve acutecomb
 EndChar
 
 StartChar: uni1EB0
@@ -37872,6 +37999,7 @@ Refer: 1009 715 S 1 0 0 1 263 274 0
 Refer: 320 728 S 1 0 0 1 222 150 0
 Refer: 33 65 N 1 0 0 1 0 0 2
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Abreve gravecomb
 EndChar
 
 StartChar: uni1EB1
@@ -37882,7 +38010,7 @@ LayerCount: 2
 Fore
 Refer: 192 259 N 1 0 0 1 0 0 1
 Refer: 1009 715 S 1 0 0 1 168 147 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve gravecomb
 EndChar
 
 StartChar: uni1eb2
@@ -37895,6 +38023,7 @@ Refer: 320 728 N 1 0 0 1 222 147 0
 Refer: 33 65 N 1 0 0 1 0 0 0
 Refer: 1523 777 S 1 0 0 1 649 309 0
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Abreve hookabovecomb
 EndChar
 
 StartChar: uni1eb3
@@ -37905,7 +38034,7 @@ LayerCount: 2
 Fore
 Refer: 1523 777 S 1 0 0 1 551 159 0
 Refer: 192 259 N 1 0 0 1 0 0 1
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve hookabovecomb
 EndChar
 
 StartChar: uni1EB4
@@ -37918,6 +38047,7 @@ Refer: 324 732 S 1 0 0 1 228 310 0
 Refer: 320 728 N 1 0 0 1 201 150 0
 Refer: 33 65 N 1 0 0 1 0 0 2
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Abreve tildecomb
 EndChar
 
 StartChar: uni1EB5
@@ -37928,7 +38058,7 @@ LayerCount: 2
 Fore
 Refer: 192 259 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 163 187 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve tildecomb
 EndChar
 
 StartChar: uni1EB6
@@ -38027,7 +38157,7 @@ LayerCount: 2
 Fore
 Refer: 135 202 N 1 0 0 1 0 0 1
 Refer: 113 180 S 1 0 0 1 435 180 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ecircumflex acutecomb
 EndChar
 
 StartChar: uni1EBF
@@ -38038,7 +38168,7 @@ LayerCount: 2
 Fore
 Refer: 167 234 N 1 0 0 1 0 0 1
 Refer: 113 180 N 1 0 0 1 300 43 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex acutecomb
 EndChar
 
 StartChar: uni1EC0
@@ -38049,7 +38179,7 @@ LayerCount: 2
 Fore
 Refer: 135 202 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 6 178 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ecircumflex gravecomb
 EndChar
 
 StartChar: uni1EC1
@@ -38060,7 +38190,7 @@ LayerCount: 2
 Fore
 Refer: 167 234 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 -73 43 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex gravecomb
 EndChar
 
 StartChar: uni1ec2
@@ -38073,6 +38203,7 @@ Refer: 318 710 N 1 0 0 1 168 157 0
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 1523 777 S 1 0 0 1 784 187 0
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ecircumflex hookabovecomb
 EndChar
 
 StartChar: uni1ec3
@@ -38083,7 +38214,7 @@ LayerCount: 2
 Fore
 Refer: 1523 777 N 1 0 0 1 717 7 0
 Refer: 167 234 N 1 0 0 1 0 0 1
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex hookabovecomb
 EndChar
 
 StartChar: uni1EC4
@@ -38096,6 +38227,7 @@ Refer: 324 732 S 1 0 0 1 241 305 2
 Refer: 37 69 N 1 0 0 1 0 0 0
 Refer: 318 710 S 1 0 0 1 208 160 0
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ecircumflex tildecomb
 EndChar
 
 StartChar: uni1EC5
@@ -38106,7 +38238,7 @@ LayerCount: 2
 Fore
 Refer: 167 234 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 145 152 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex tildecomb
 EndChar
 
 StartChar: uni1EC6
@@ -38150,7 +38282,6 @@ LayerCount: 2
 Fore
 Refer: 1523 777 N 1 0 0 1 362 14 0
 Refer: 238 305 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni1ECA
@@ -38227,7 +38358,7 @@ LayerCount: 2
 Fore
 Refer: 145 212 N 1 0 0 1 0 0 1
 Refer: 113 180 S 1 0 0 1 477 178 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ocircumflex acutecomb
 EndChar
 
 StartChar: uni1ED1
@@ -38238,7 +38369,7 @@ LayerCount: 2
 Fore
 Refer: 177 244 N 1 0 0 1 0 0 1
 Refer: 113 180 S 1 0 0 1 341 44 0
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex acutecomb
 EndChar
 
 StartChar: uni1ED2
@@ -38249,7 +38380,7 @@ LayerCount: 2
 Fore
 Refer: 145 212 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 56 178 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ocircumflex gravecomb
 EndChar
 
 StartChar: uni1ED3
@@ -38260,7 +38391,7 @@ LayerCount: 2
 Fore
 Refer: 177 244 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 -39 43 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex gravecomb
 EndChar
 
 StartChar: uni1ed4
@@ -38273,6 +38404,7 @@ Refer: 318 710 N 1 0 0 1 224 157 0
 Refer: 47 79 N 1 0 0 1 0 0 0
 Refer: 1523 777 N 1 0 0 1 840 187 0
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ocircumflex hookabovecomb
 EndChar
 
 StartChar: uni1ed5
@@ -38283,7 +38415,7 @@ LayerCount: 2
 Fore
 Refer: 1523 777 S 1 0 0 1 754 17 0
 Refer: 177 244 N 1 0 0 1 0 0 1
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex hookabovecomb
 EndChar
 
 StartChar: uni1ED6
@@ -38296,6 +38428,7 @@ Refer: 324 732 S 1 0 0 1 256 308 2
 Refer: 47 79 N 1 0 0 1 0 0 0
 Refer: 318 710 S 1 0 0 1 243 162 0
 Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Ocircumflex tildecomb
 EndChar
 
 StartChar: uni1ED7
@@ -38306,7 +38439,7 @@ LayerCount: 2
 Fore
 Refer: 177 244 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 166 152 2
-Validated: 32769
+Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex tildecomb
 EndChar
 
 StartChar: uni1ED8
@@ -38339,7 +38472,6 @@ LayerCount: 2
 Fore
 Refer: 1267 416 N 1 0 0 1 0 0 1
 Refer: 1008 714 S 1 0 0 1 243 198 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EDB
@@ -38350,7 +38482,6 @@ LayerCount: 2
 Fore
 Refer: 1268 417 N 1 0 0 1 0 0 1
 Refer: 1008 714 S 1 0 0 1 136 44 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EDC
@@ -38361,7 +38492,6 @@ LayerCount: 2
 Fore
 Refer: 1267 416 N 1 0 0 1 0 0 1
 Refer: 1009 715 S 1 0 0 1 264 195 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EDD
@@ -38372,7 +38502,6 @@ LayerCount: 2
 Fore
 Refer: 1268 417 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 156 -7 2
-Validated: 32769
 EndChar
 
 StartChar: uni1ede
@@ -38383,7 +38512,6 @@ LayerCount: 2
 Fore
 Refer: 1523 777 S 1 0 0 1 645 219 0
 Refer: 1267 416 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni1edf
@@ -38394,7 +38522,6 @@ LayerCount: 2
 Fore
 Refer: 1523 777 S 1 0 0 1 523 15 0
 Refer: 1268 417 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni1EE0
@@ -38405,7 +38532,6 @@ LayerCount: 2
 Fore
 Refer: 1267 416 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 260 181 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE1
@@ -38416,7 +38542,6 @@ LayerCount: 2
 Fore
 Refer: 1268 417 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 133 30 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE2
@@ -38427,7 +38552,6 @@ LayerCount: 2
 Fore
 Refer: 1267 416 N 1 0 0 1 0 0 1
 Refer: 321 729 S 1 0 0 1 43 -826 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE3
@@ -38438,7 +38562,6 @@ LayerCount: 2
 Fore
 Refer: 1268 417 N 1 0 0 1 0 0 1
 Refer: 321 729 S 1 0 0 1 -41 -826 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE4
@@ -38493,7 +38616,6 @@ LayerCount: 2
 Fore
 Refer: 1270 431 N 1 0 0 1 0 0 1
 Refer: 1008 714 S 1 0 0 1 195 193 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EE9
@@ -38504,7 +38626,6 @@ LayerCount: 2
 Fore
 Refer: 1271 432 N 1 0 0 1 0 0 1
 Refer: 1008 714 S 1 0 0 1 103 43 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EEA
@@ -38515,7 +38636,6 @@ LayerCount: 2
 Fore
 Refer: 1270 431 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 248 152 2
-Validated: 32769
 EndChar
 
 StartChar: uni1EEB
@@ -38526,7 +38646,6 @@ LayerCount: 2
 Fore
 Refer: 1271 432 N 1 0 0 1 0 0 1
 Refer: 64 96 S 1 0 0 1 130 -9 2
-Validated: 32769
 EndChar
 
 StartChar: uni1eec
@@ -38537,7 +38656,6 @@ LayerCount: 2
 Fore
 Refer: 1523 777 S 1 0 0 1 615 184 0
 Refer: 1270 431 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni1eed
@@ -38548,7 +38666,6 @@ LayerCount: 2
 Fore
 Refer: 1523 777 S 1 0 0 1 519 9 0
 Refer: 1271 432 N 1 0 0 1 0 0 1
-Validated: 32769
 EndChar
 
 StartChar: uni1EEE
@@ -38559,7 +38676,6 @@ LayerCount: 2
 Fore
 Refer: 1270 431 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 205 179 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EEF
@@ -38570,7 +38686,6 @@ LayerCount: 2
 Fore
 Refer: 1271 432 N 1 0 0 1 0 0 1
 Refer: 324 732 S 1 0 0 1 134 53 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EF0
@@ -38581,7 +38696,6 @@ LayerCount: 2
 Fore
 Refer: 1270 431 N 1 0 0 1 0 0 1
 Refer: 321 729 S 1 0 0 1 22 -826 0
-Validated: 32769
 EndChar
 
 StartChar: uni1EF1
@@ -38592,7 +38706,6 @@ LayerCount: 2
 Fore
 Refer: 1271 432 N 1 0 0 1 0 0 1
 Refer: 321 729 S 1 0 0 1 -43 -826 0
-Validated: 32769
 EndChar
 
 StartChar: Ygrave
@@ -41583,7 +41696,6 @@ Refer: 321 729 N 1 0 0 1 -112 0 0
 Refer: 321 729 N 1 0 0 1 311 0 0
 Refer: 321 729 N 1 0 0 1 27 0 0
 Refer: 321 729 N 1 0 0 1 176 0 0
-Validated: 32769
 Ligature2: "'liga' Standard Ligatures in Cyrillic subtable" yicyrillic yicyrillic
 LCarets2: 1 0 
 EndChar
