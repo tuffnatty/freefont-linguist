@@ -29,7 +29,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: OpenType.py,v 1.5 2009-12-28 18:36:27 Stevan_White Exp $
+$Id: OpenType.py,v 1.6 2010-08-02 09:43:14 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -106,7 +106,7 @@ ulUnicodeRange = [
 			interval(0x0750, 0x077F)	# Supplement
 	]
 	],
-[14,	'', [interval(0x07C0, 0x07FF)]],	# unclear ? Part of Arabic?
+[14,	'NKo', [interval(0x07C0, 0x07FF)]],	# unclear ? Part of Arabic?
 [15,	'Devanagari',     [interval(0x0900, 0x0939),
 			interval(0x093C, 0x094E),
 			interval(0x0950, 0x0955),
