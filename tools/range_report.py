@@ -1,4 +1,4 @@
-#!/usr/bin/fontforge -script
+#!/usr/local/bin/fontforge -script
 """
 Makes an HTML table showing how many glyphs are in each range in each font,
 and tries to collate that with the OS/2 character range support bit flags.
@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: range_report.py,v 1.4 2009-12-27 16:20:45 Stevan_White Exp $
+$Id: range_report.py,v 1.5 2010-08-02 09:41:38 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -51,13 +51,20 @@ def count_glyphs_in_intervals( font, intervals ):
 				exit( 1 )
 	return num
 
-def glyphHasRange( encoding ):
+def codepointIsInSomeRange( encoding ):
 	for ulr in ulUnicodeRange:
 		ranges = ulr[2]
 		for r in ranges:
 			if r.contains( encoding ):
 				return True
 	return False
+
+special_TT_points = ( 0x00, 0x01, 0x0D )
+
+def codepointIsSpecialTT( encoding ):
+	""" See Recommendations for OpenType Fonts
+	http://www.microsoft.com/typography/otspec/recom.htm """
+	return encoding in special_TT_points
 
 class SupportInfo:
 	def __init__( self, os2bit, supports, total ):
@@ -89,11 +96,22 @@ class FontSupport:
 
 			self.collectRangeInfo( font, r[byte], bit, index )
 
-		for f in font.glyphs():
+		for g in font.glyphs():
 			self.fontTotalGlyphs += 1
-			if not glyphHasRange( f.encoding ):
+			cp = g.encoding
+			if ( not codepointIsInSomeRange( cp )
+				and not codepointIsSpecialTT( cp ) ):
 				print >> sys.stderr, font.fontname, \
-					"no range for", hex( f.encoding )
+					"no range for", hex( cp )
+
+		""" '''Would like to check that special TT slots are
+		present, but don't know how...'''
+		for cp in special_TT_points:
+			font.selection.all()
+			if not cp in font.selection.byGlyphs:
+				print >> sys.stderr, font.fontname, \
+					"special TT glyph missing", hex( cp )
+		"""
 
 	def collectRangeInfo( self, font, os2supportbyte, bit, index ):
 		supports = ( os2supportbyte & (1 << bit) ) != 0
