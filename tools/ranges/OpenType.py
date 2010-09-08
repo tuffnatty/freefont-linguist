@@ -29,7 +29,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: OpenType.py,v 1.6 2010-08-02 09:43:14 Stevan_White Exp $
+$Id: OpenType.py,v 1.7 2010-09-08 07:41:53 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -413,7 +413,11 @@ ulUnicodeRange = [
 		]
 		],
 [76,	'Cherokee', [interval(0x13A0, 0x13F4)]],
-[77, 	'Unified Canadian Aboriginal Syllabics', [interval(0x1401, 0x167F)]],
+[77, 	'Unified Canadian Aboriginal Syllabics',
+		[interval(0x1401, 0x167F),
+		interval(0x18B0, 0x18F5)	# UCAS Extended
+		]
+		],
 [78, 	'Ogham', [interval(0x1680, 0x169F)]],
 [79, 	'Runic', [interval(0x16A0, 0x16F1)]],
 [80, 	'Khmer (+symbols)', [interval(0x1780, 0x17FF),
@@ -710,4 +714,13 @@ Says 128 bits are split into 96 and 32 bits.
 OK, the right thing is here: the OpenType specs
 http://www.microsoft.com/OpenType/OTSpec/os2.htm
 """
+
+
+def codepointIsInSomeRange( encoding ):
+	for ulr in ulUnicodeRange:
+		ranges = ulr[2]
+		for r in ranges:
+			if r.contains( encoding ):
+				return True
+	return False
 

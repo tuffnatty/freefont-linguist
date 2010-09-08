@@ -1,4 +1,4 @@
-#!/usr/local/bin/fontforge -script
+#!/usr/bin/fontforge -script
 """
 Makes an HTML table showing how many glyphs are in each range in each font,
 and tries to collate that with the OS/2 character range support bit flags.
@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: range_report.py,v 1.5 2010-08-02 09:41:38 Stevan_White Exp $
+$Id: range_report.py,v 1.6 2010-09-08 07:41:53 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -50,14 +50,6 @@ def count_glyphs_in_intervals( font, intervals ):
 				+ " not representable in " + font.fontname
 				exit( 1 )
 	return num
-
-def codepointIsInSomeRange( encoding ):
-	for ulr in ulUnicodeRange:
-		ranges = ulr[2]
-		for r in ranges:
-			if r.contains( encoding ):
-				return True
-	return False
 
 special_TT_points = ( 0x00, 0x01, 0x0D )
 
