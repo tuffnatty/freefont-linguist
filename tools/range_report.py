@@ -18,7 +18,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: range_report.py,v 1.6 2010-09-08 07:41:53 Stevan_White Exp $
+$Id: range_report.py,v 1.7 2010-09-08 08:18:53 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -182,13 +182,13 @@ def print_font_range_table( fontSupportList ):
 				+ '</td>'
 
 		print '</tr>'
-	print '<tr><th colspan="3">ranges total</th>' 
+	print '<tr><th colspan="3">total in ranges</th>' 
 	for fsl in fontSupportList:
 		print '<td class="num" colspan="2">' \
 			+ str( fsl.totalGlyphs ) \
 			+ '&nbsp;</td>'
 	print '</tr>'
-	print '<tr><th colspan="3">font total</th>' 
+	print '<tr><th colspan="3">total outside private use</th>' 
 	for fsl in fontSupportList:
 		print '<td class="num" colspan="2">' \
 			+ str( fsl.fontTotalGlyphs ) \
@@ -212,6 +212,15 @@ bit is set are marked with a bullet.
 For many ranges, I took the liberty of reducing the set of characters
 considered to those listed for the range in the current Unicode charts.
 The number of characters supported can thus be less than the width of the range.
+</p>
+<p>
+The totals do not include glyphs in the Private Use areas (where there
+are many ligatures, alternative forms, and glyph components)
+</p>
+<p>
+Three control characters are inserted at 0x00, 0x01 and 0x0d to satisfy the
+TrueType recommendations.  These are counted under Basic Latin, but other
+control characters there are not counted.
 </p>
 <p>
 Note that there is a discrepancy in the Greek Symbols, Hebrew Extended and
