@@ -29,7 +29,7 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: OpenType.py,v 1.7 2010-09-08 07:41:53 Stevan_White Exp $
+$Id: OpenType.py,v 1.8 2010-09-11 13:22:26 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -52,8 +52,11 @@ class interval:
 # http://www.microsoft.com/OpenType/OTSpec/os2.htm
 # http://www.microsoft.com/typography/OTSpec/os2.htm
 ulUnicodeRange = [
-[0,	'Basic Latin', [interval(0x0020, 0x007E)] ],
-[1,	'Latin-1 Supplement',[interval(0x00A0, 0x00FF)] ],
+[0,	'Basic Latin', [interval(0,1),	# Nul character, mapped to notdef
+					# and .nul requrired by TrueType
+			interval(0x0d, 0x0d),	# non-marking return
+	interval(0x20, 0x7E)] ],	# Latin range
+[1,	'Latin-1 Supplement',[interval(0xA0, 0xFF)] ],
 [2,	'Latin Extended-A',	[interval(0x0100, 0x017F)] ],
 [3,	'Latin Extended-B',     [interval(0x0180, 0x024F)]],
 [4,	'IPA and Phonetic Extensions',     [interval(0x0250, 0x02AF),
