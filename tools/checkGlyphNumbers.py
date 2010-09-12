@@ -18,9 +18,17 @@ problem = False
 def inPrivateUseRange( glyph ):
 	e = glyph.encoding
 
-	return ( e >= 0xE800 and e <= 0xF8FF ) \
-	    or ( e >= 0xFF000 and e <= 0xFFFFD ) \
-	    or ( e >= 0x100000 and e <= 0x10FFFD )
+	return ( ( e >= 0xE800 and e <= 0xF8FF )
+	    or ( e >= 0xFF000 and e <= 0xFFFFD )
+	    or ( e >= 0x100000 and e <= 0x10FFFD ) )
+
+def isSpecialTrueType( glyph ):
+	""" Fontforge treats three control characters as the special 
+	TrueType characters recommended by that standard
+	"""
+	e = glyph.encoding
+
+	return e == 0 or e == 1 or e == 0xD
 
 def checkGlyphNumbers( dir, fontFile ):
 	print "Checking slot numbers in " + fontFile
@@ -31,7 +39,10 @@ def checkGlyphNumbers( dir, fontFile ):
 
 	valid = True
 	for glyph in g:
-		if inPrivateUseRange( glyph ):
+		if isSpecialTrueType( glyph ):
+			# FIXME really should complain if it DOESNT exist
+			pass
+		elif inPrivateUseRange( glyph ):
 			if glyph.unicode != -1:
 				print "Glyph at slot " + str( glyph.encoding ) \
 					+ " is Private Use but has Unicode"
