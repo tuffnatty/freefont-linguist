@@ -4,22 +4,22 @@ FullName: Free Serif Italic
 FamilyName: FreeSerif
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009, 2010 Free Software Foundation.
-Version: $Revision: 1.232 $
+Version: $Revision: 1.233 $
 ItalicAngle: -15.5
 UnderlinePosition: -100
 UnderlineWidth: 50
 Ascent: 800
 Descent: 200
 LayerCount: 2
-Layer: 0 0 "Back" 
-Layer: 1 0 "Fore" 
+Layer: 0 0 "Back"  1
+Layer: 1 0 "Fore"  0
 NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1283078617
+ModificationTime: 1284319656
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -87,7 +87,7 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'blwm' Below Base Mark in
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai"  {"'mkmk' Mark to Mark in Thai subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai"  {"'mark' Mark Positioning in Thai subtable"  "'mark' Mark Positioning in Thai 1 subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 2"  {"'mkmk' Mark to Mark in Thai subtable 1"  } ['mkmk' ('thai' <'dflt' > ) ]
-DEI: 0
+DEI: 91125
 KernClass2: 2 2 "'kern' Horizontal Kerning in Thai subtable" 
  511 kokaithai khokhaithai khokhuatthai khokhwaithai khokhonthai khorakhangthai ngonguthai chochanthai chochingthai chochangthai sosothai chochoethai yoyingthai dochadathai topatakthai thothanthai thonangmonthothai thophuthaothai nonenthai dodekthai totaothai thothungthai thothahanthai thothongthai nonuthai bobaimaithai phophungthai phophanthai phosamphaothai momathai yoyakthai roruathai ruthai lolingthai luthai wowaenthai sosalathai sorusithai sosuathai hohipthai lochulathai oangthai honokhukthai paiyannoithai
  46 saraothai saraaimaimuanthai saraaimaimalaithai
@@ -356,7 +356,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8336 16 12
+WinInfo: 0 16 12
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -574,8 +574,8 @@ SplineSet
  530 350 l 5
  715 350 l 5
  715 333 l 5
- 680 328 659.5 322.5 648.804 300 c 4
- 631.746 264.119 594 212 520 125 c 5
+ 680 328 660 322 649 300 c 4
+ 632 264 594 212 520 125 c 5
  560 58 595 31 642 31 c 4
  665 31 683 39 712 61 c 5
  723 50 l 5
@@ -48458,12 +48458,12 @@ EndChar
 
 StartChar: uni214b
 Encoding: 8523 8523 2110
-Width: 688
+Width: 778
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 6 38 N -1 0 -0.212557 -1 872.925 663 2
-Validated: 32769
+Refer: 6 38 S -1 0 0 -1 889 648 2
+Validated: 98305
 EndChar
 
 StartChar: uni214d
@@ -52203,6 +52203,7 @@ SplineSet
  64 304 113 300 135 300 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Bengali lookup 6 subtable" bn_ha bn_hasanta
 EndChar
 
@@ -59379,7 +59380,7 @@ EndChar
 StartChar: bn_t_la
 Encoding: 60756 -1 2333
 Width: 551
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -59391,73 +59392,35 @@ SplineSet
 64 -103 m 0
  64 -27 132 23 182 23 c 0
  236 23 245 -23 249 -40 c 1
- 253 -26 278 5 304 5 c 2
- 308 5 l 2
- 317 5 337 -3 341 -55 c 1
+ 253 -26 278 5 304 5 c 0
+ 318 5 337 0 341 -55 c 1
  380 85 l 1
- 370 82 358 78 354 76 c 2
- 340 72 l 2
- 332 70 315 69 290 69 c 0
- 267 69 244 74 222 85 c 2
- 198 99 l 2
- 191 104 186 108 183 113 c 2
- 170 131 l 2
- 168 134 164 139 161 146 c 2
- 149 171 l 1
- 127 233 l 2
- 124 239 118 274 117 277 c 2
- 103 397 l 2
- 102 411 101 423 101 435 c 0
+ 349 73 334 69 290 69 c 0
+ 132 69 101 278 101 435 c 0
  101 450 102 464 103 479 c 1
  129 467 l 1
- 146 361 l 2
- 148 346 152 334 155 325 c 2
- 176 260 l 2
- 185 237 189 232 192 224 c 2
- 204 203 l 2
- 208 196 212 191 216 187 c 2
- 241 163 l 2
- 259 152 289 148 301 148 c 0
- 424 148 490 257 498 287 c 2
- 502 302 l 2
- 504 310 504 315 504 322 c 2
- 502 335 l 2
- 497 367 474 397 444 397 c 0
+ 155 353 164 148 301 148 c 0
+ 438 148 504 263 504 322 c 0
+ 504 360 481 397 444 397 c 0
  434 397 422 395 409 392 c 1
  414 382 416 372 416 361 c 0
- 416 326 394 278 344 267 c 2
- 325 264 l 1
- 307 263 l 2
- 259 263 253 302 253 327 c 0
- 253 333 253 339 253 342 c 2
- 257 361 l 2
- 262 379 271 395 284 409 c 2
- 309 431 l 2
- 337 453 370 464 402 464 c 2
- 425 462 l 1
- 446 458 l 2
- 504 443 543 389 543 316 c 0
+ 416 313.821 358 262.284 300.486 262.284 c 0
+ 272.052 262.284 253 303.735 253 327 c 0
+ 253 407 328 464 402 464 c 1
+ 490 456 543 410 543 316 c 0
  543 241 503 161 434 115 c 1
  355 -172 l 1
  325 -152 l 1
- 323 -104 l 2
- 320 -96 311 -63 293 -63 c 0
+ 324 -123 326 -63 293 -63 c 0
  270 -63 263 -91 258 -103 c 1
  233 -104 l 1
- 229 -91 l 1
- 225 -82 l 2
- 213 -52 189 -47 179 -47 c 2
- 171 -47 l 2
+ 221 -65 200 -47 171 -47 c 0
  135 -47 113 -77 113 -96 c 0
- 113 -109 115 -122 126 -128 c 1
- 127 -128 129 -129 129 -130 c 1
- 128.679 -127.596 128.526 -125.237 128.526 -122.931 c 0
- 128.526 -96.4615 148.763 -77 169 -77 c 0
- 174 -76 179 -76 183 -76 c 0
+ 113 -111 126 -125 129 -130 c 1
+ 129 -128 129 -125 129 -123 c 0
+ 129 -89 154 -76 183 -76 c 0
  198 -76 207 -92 207 -107 c 0
- 207 -110 207 -114 206 -117 c 2
- 198 -136 l 2
- 192 -145 170 -172 134 -172 c 0
+ 207 -138 181 -172 134 -172 c 0
  79 -172 64 -138 64 -103 c 0
 EndSplineSet
 Validated: 3073
@@ -84842,21 +84805,21 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-626.459 -59 m 2
- 628.698 -58.1162 630.672 -58 632.672 -58 c 0
- 641.249 -58 646.102 -61.6785 646.102 -68.4045 c 0
- 646.102 -73.9518 643.79 -83.1789 633.508 -87 c 2
- 503.88 -137 l 1
- 607.677 -185 l 2
- 614.737 -188.203 617.998 -192.474 617.998 -199.39 c 0
- 617.998 -201.365 617.732 -203.556 617.213 -206 c 2
- 615.088 -216 l 2
- 613.6 -223 609.962 -226 604.962 -226 c 0
- 602.962 -226 601.065 -225.842 599.175 -225 c 2
- 432.904 -151 l 2
- 427.288 -148.573 424.857 -145.851 424.857 -142.568 c 0
- 424.857 -135.627 434.238 -132.11 437.155 -131 c 2
- 626.459 -59 l 2
+624 -60 m 2
+ 627.828 -58.5466 632 -58 633 -58 c 0
+ 642 -58 646 -61 646 -68 c 0
+ 646 -74 644 -83 634 -87 c 2
+ 504 -137 l 1
+ 608 -185 l 2
+ 615 -188 618 -191 618 -198 c 0
+ 618 -200 617.769 -202.154 617 -206 c 2
+ 615 -216 l 2
+ 613.808 -221.962 610 -226 605 -226 c 4
+ 603 -226 599 -225 597 -224 c 6
+ 433 -151 l 2
+ 427 -148 425 -146 425 -143 c 0
+ 425 -136 434 -132 437 -131 c 2
+ 624 -60 l 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -94155,25 +94118,28 @@ SplineSet
  350 17 317 -11 271 -11 c 0
  244 -11 223 5 223 27 c 0
  223 46 243 108 246 121 c 2
- 317.65 396 l 1
- 210.514 396 l 1
+ 318 396 l 1
+ 211 396 l 1
  107 0 l 1
  31 0 l 1
  182 579 l 2
- 184.326 587.921 186 594 186 597 c 0
+ 184 588 186 594 186 597 c 0
  186 613 166 620 118 620 c 1
  118 636 l 1
- 279 655 266 671 279 658 c 1
- 218.878 428 l 1
- 325.93 428 l 1
+ 238.302 650.197 261.454 662.719 270.895 662.719 c 0
+ 274.089 662.719 275.714 661.286 279 658 c 1
+ 219 428 l 1
+ 326 428 l 1
  365 579 l 2
- 367.376 588.185 369 594 369 597 c 0
- 369 613 349 620 301 620 c 1
- 301 636 l 1
- 462.382 655.146 449.116 670.884 462 658 c 1
+ 367 588 369 594 369 597 c 0
+ 369 613 349 620 301 620 c 5
+ 301 636 l 5
+ 421.302 650.197 444.454 662.719 453.895 662.719 c 0
+ 457.089 662.719 458.714 661.286 462 658 c 5
  402 428 l 1
  482 428 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
