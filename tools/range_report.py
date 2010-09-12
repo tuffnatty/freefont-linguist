@@ -18,13 +18,13 @@ The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: range_report.py,v 1.7 2010-09-08 08:18:53 Stevan_White Exp $
+$Id: range_report.py,v 1.8 2010-09-12 15:01:05 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
 import fontforge
-import sys
-import time
+from sys import stderr
+from time import tzset, strftime
 from ranges.OpenType import *
 
 def total_intervals( intervals ):
@@ -36,9 +36,9 @@ def total_intervals( intervals ):
 def count_glyphs_in_intervals( font, intervals ):
 	num = 0
 	for r in intervals:
-		# select() will throw up if try to select value 
-		# beyond the range of the encoding
 		if r.begin < len( font ) and r.end < len( font ):
+			# select() will throw up if try to select value 
+			# beyond the range of the encoding
 			try: 
 				font.selection.select( ( 'ranges', None ),
 					r.begin, r.end )
@@ -46,7 +46,7 @@ def count_glyphs_in_intervals( font, intervals ):
 				for e in g:
 					num += 1
 			except ValueError:
-				print >> sys.stderr, "interval " + str( r ) \
+				print >> stderr, "interval " + str( r ) \
 				+ " not representable in " + font.fontname
 				exit( 1 )
 	return num
@@ -75,10 +75,11 @@ class FontSupport:
 		self.myInfos = {}
 		self.totalGlyphs = 0
 		self.fontTotalGlyphs = 0
+		self.privateUseGlyphs = 0
 
 		r = font.os2_unicoderanges
 
-		# print >> sys.stderr, font.fontname, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] );
+		# print >> stderr, font.fontname, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] );
 
 		nRanges = len( ulUnicodeRange )
 
@@ -93,7 +94,7 @@ class FontSupport:
 			cp = g.encoding
 			if ( not codepointIsInSomeRange( cp )
 				and not codepointIsSpecialTT( cp ) ):
-				print >> sys.stderr, font.fontname, \
+				print >> stderr, font.fontname, \
 					"no range for", hex( cp )
 
 		""" '''Would like to check that special TT slots are
@@ -101,7 +102,7 @@ class FontSupport:
 		for cp in special_TT_points:
 			font.selection.all()
 			if not cp in font.selection.byGlyphs:
-				print >> sys.stderr, font.fontname, \
+				print >> stderr, font.fontname, \
 					"special TT glyph missing", hex( cp )
 		"""
 
@@ -112,47 +113,55 @@ class FontSupport:
 		nglyphs = count_glyphs_in_intervals( font, intervals )
 		self.setRangeSupport( index, supports, nglyphs )
 		self.totalGlyphs += nglyphs
+		if index == 60 or index == 90:
+			self.privateUseGlyphs += nglyphs 
 
 	def setRangeSupport( self, idx, supports, total ):
 		if self.myInfos.has_key( idx ):
-			print >> sys.stderr, "OS/2 index", idx, " duplicated"
+			print >> stderr, "OS/2 index ", idx, " duplicated"
 			exit( 1 )
 		self.myInfos[idx] = SupportInfo( idx, supports, total )
 
 	def getInfo( self, idx ):
 		if not self.myInfos.has_key( idx ):
-			print >> sys.stderr, "OS/2 index", idx, " not found"
+			print >> stderr, "OS/2 index ", idx, " not found"
 			exit( 1 )
 		return self.myInfos[ idx ]
 
+table_head = '''
+<table class="fontrangereport" cellspacing="0" cellpadding="0" frame="box" rules="all">
+<caption>
+OS/2 character ranges vs. font faces
+</caption>
+<colgroup>
+<col /><col /><col />
+</colgroup>
+<colgroup>
+<col class="roman"/><col /><col /><col />
+<col /><col /><col /><col />
+</colgroup>
+<colgroup>
+<col class="roman"/><col /><col /><col />
+<col /><col /><col /><col />
+</colgroup>
+<colgroup>
+<col class="roman"/><col /><col /><col />
+<col /><col /><col /><col />
+</colgroup>
+<thead>
+<tr><th>OS/2 character range</th>
+<th>range<br />total</th>
+<td></td>
+%s
+</tr>
+</thead>'''
+
 def print_font_range_table( fontSupportList ):
-	print '<table class="fontrangereport" cellspacing="0" cellpadding="0" frame="box" rules="all">'
-	print '<caption>'
-	print "OS/2 character ranges vs. font faces " 
-	print '</caption>'
-	print '<colgroup>'
-	print '<col /><col /><col />'
-	print '</colgroup>'
-	print '<colgroup>'
-	print '<col class="roman"/><col /><col /><col />'
-	print '<col /><col /><col /><col />'
-	print '</colgroup>'
-	print '<colgroup>'
-	print '<col class="roman"/><col /><col /><col />'
-	print '<col /><col /><col /><col />'
-	print '</colgroup>'
-	print '<colgroup>'
-	print '<col class="roman"/><col /><col /><col />'
-	print '<col /><col /><col /><col />'
-	print '</colgroup>'
-	print '<thead>'
-	print '<tr><th>OS/2 character range</th>' 
-	print '<th>range<br />total</th>' 
-	print '<td></td>' 
+	headings = ''
 	for fsl in fontSupportList:
-		print '<th colspan="2">' + fsl.short + '</th>' 
-	print '</tr>'
-	print '</thead>'
+		headings += '<th colspan="2">' + fsl.short + '</th>' 
+	print table_head % ( headings )
+
 	for r in ulUnicodeRange:
 		idx = r[0]
 		range_name = r[1]
@@ -161,42 +170,45 @@ def print_font_range_table( fontSupportList ):
 		rowclass = ' class="low"'
 		if len( ulUnicodeRange[idx] ) > 3 and ulUnicodeRange[ idx ][3]:
 			rowclass = ' class="high"'
+		if idx == 60 or idx == 90:
+			rowclass = ' class="private"'
 			
-		print '<tr' + rowclass + '><td>' + range_name + '</td>' 
-		print '<td class="num">' + str( total_intervals( intervals ) ) \
-			+ '</td>'
+		print '<tr%s><td>%s</td>' % ( rowclass, range_name )
+		print '<td class="num">%i</td>' % (
+				total_intervals( intervals ) )
 		print '<td></td>' 
 		for fsl in fontSupportList:
 			supportInfo = fsl.getInfo( idx )
 			supportString = ''
 			if supportInfo.supports:
 				supportString = '&bull;'
-			totalStr = str( supportInfo.total )
-			if not supportInfo.total:
-				totalStr = '&nbsp;'
+			totalStr = '&nbsp;'
+			if supportInfo.total:
+				totalStr = str( supportInfo.total )
 
-			print '<td class="num">' \
-				+ totalStr \
-				+ '</td><td>'	\
-				+ supportString \
-				+ '</td>'
+			print '<td class="num">%s</td><td>%s</td>' % (
+					totalStr, supportString )
 
 		print '</tr>'
-	print '<tr><th colspan="3">total in ranges</th>' 
+	print '<tr><th colspan="3">total in Unicode ranges</th>' 
 	for fsl in fontSupportList:
-		print '<td class="num" colspan="2">' \
-			+ str( fsl.totalGlyphs ) \
-			+ '&nbsp;</td>'
+		print '<td class="num" colspan="2">%i&nbsp;</td>' % (
+					fsl.totalGlyphs )
 	print '</tr>'
-	print '<tr><th colspan="3">total outside private use</th>' 
+	print '<tr><th colspan="3">total in font</th>' 
 	for fsl in fontSupportList:
-		print '<td class="num" colspan="2">' \
-			+ str( fsl.fontTotalGlyphs ) \
-			+ '&nbsp;</td>'
+		print '<td class="num" colspan="2">%i&nbsp;</td>' % (
+					fsl.fontTotalGlyphs )
+	print '</tr>'
+	print '<tr><th colspan="3">total in Private Use</th>' 
+	for fsl in fontSupportList:
+		print '<td class="num" colspan="2">%i&nbsp;</td>' % (
+					fsl.privateUseGlyphs )
 	print '</tr>'
 	# Would also like to total glyphs in ranges for each font,
 	# and also print total glyphs in each font.
 	print '</table>'
+
 table_introduction = """
 For historical reasons, TrueType classifies Unicode ranges according to
 an extension of the old OS/2 character ranges.  This table shows how many
@@ -214,8 +226,9 @@ considered to those listed for the range in the current Unicode charts.
 The number of characters supported can thus be less than the width of the range.
 </p>
 <p>
-The totals do not include glyphs in the Private Use areas (where there
-are many ligatures, alternative forms, and glyph components)
+The totals include glyphs in the Private Use areas (where there
+are many ligatures, alternative forms, and glyph components).  The glyphs
+in these areas do not correspond to Unicode characters.
 </p>
 <p>
 Three control characters are inserted at 0x00, 0x01 and 0x0d to satisfy the
@@ -230,43 +243,50 @@ are also not well defined in the TrueType standard.
 </p>
 <p>
 Note the two characters from Devanagri.  These are the danda and double-danda
-used by other Inidic scripts.
+used by other Indic scripts.
 </p>
 <p>
-The ranges <span style="color: gray">beyond Unicode point 0xFFFF</span>, are
+The ranges <span style="color: #555">beyond Unicode point 0xFFFF</span>, are
 shaded.  </p>
 """
 
+html_heading = '''
+<html>
+<head>
+<title>
+Gnu FreeFont character range support
+</title>
+<style type="text/css">
+	tr.high { color: #555 }
+	tr.private { background-color: silver; }
+	td.num { text-align: right }
+	td { padding-right: 0.25ex }
+	th { padding: 0.25ex }
+	.roman { border-left: medium black solid; }
+	caption { font-size: larger; font-weight: bold; }
+</style>
+</head>
+'''
+
 def print_font_range_report( fontSupportList ):
-	print '<html>'
-	print '<head>'
-	print '<p>'
-	print table_introduction
-	print '</p>'
-	print '<title>'
-	print 'Gnu FreeFont character range support'
-	print '</title>'
-	print '<style type="text/css">'
-	print '	tr.high { color: gray }'
-	print '	td.num { text-align: right }'
-	print '	td { padding-right: 0.25ex }'
-	print '	th { padding: 0.25ex }'
-	print '	.roman { border-left: medium black solid; }'
-	print '	caption { font-size: larger; font-weight: bold; }'
-	print '</style>'
-	print '</head>'
+	print html_heading
+
 	print '<body>'
 	print '<h1>'
 	print 'Gnu FreeFont support for OpenType OS/2 character ranges'
 	print '</h1>'
+	print '<p>'
+	print table_introduction
+	print '</p>'
 	print_font_range_table( fontSupportList )
 	print '<p>'
 	print table_explanation
-	time.tzset()
-	print 'Generated by <code>range_report.py</code> on ' \
-			+ time.strftime('%X %x %Z') + '.'
+	tzset()
+	print 'Generated by <code>range_report.py</code> on %s.' % (
+			strftime('%X %x %Z') )
 	print '</p>'
 	print '</body>'
+
 	print '</html>'
 
 supportList = []
