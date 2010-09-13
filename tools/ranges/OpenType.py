@@ -23,13 +23,13 @@ This is complicated by:
 
 See
 http://www.w3.org/TR/REC-CSS2/notes.html
-http://www.evertype.com/standards/iso10646/ucs-collections.html
+http://www.unicode.org/roadmaps/bmp/
 
 The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
 
 
-$Id: OpenType.py,v 1.8 2010-09-11 13:22:26 Stevan_White Exp $
+$Id: OpenType.py,v 1.9 2010-09-13 08:25:14 Stevan_White Exp $
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
@@ -49,8 +49,7 @@ class interval:
 		return val <= self.end and val >= self.begin
 
 # NOTE the OpenType spec is much more thorough
-# http://www.microsoft.com/OpenType/OTSpec/os2.htm
-# http://www.microsoft.com/typography/OTSpec/os2.htm
+# http://www.microsoft.com/typography/otspec/os2.htm
 ulUnicodeRange = [
 [0,	'Basic Latin', [interval(0,1),	# Nul character, mapped to notdef
 					# and .nul requrired by TrueType
@@ -536,7 +535,7 @@ ulUnicodeRange = [
 
 """
 From the OpenType standard 
-http://www.microsoft.com/OpenType/OTSpec/os2.htm
+http://www.microsoft.com/typography/otspec/os2.htm
 
 0 	Basic Latin
 1 	Latin-1 Supplement
@@ -709,13 +708,17 @@ FF      Halfwidth and Fullwidth Forms, Specials
 """
 
 """
+ulUnicodeRange
+---------------
+
 See also
+FIXME can't find this --
 http://developer.apple.com/textfonts/TTRefMan/RM06/Chap6OS2.html
 Says 128 bits are split into 96 and 32 bits.
 96 is Unicode block, 32 for script sets...
 
 OK, the right thing is here: the OpenType specs
-http://www.microsoft.com/OpenType/OTSpec/os2.htm
+http://www.microsoft.com/typography/otspec/os2.htm
 """
 
 
