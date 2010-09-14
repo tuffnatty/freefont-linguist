@@ -1,5 +1,26 @@
 #!/usr/bin/fontforge -script
+__license__ = """
+This file is part of Gnu FreeFont.
+
+Gnu FreeFont is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Gnu FreeFont is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
 """
+__author__ = "Stevan White"
+__email__ = "stevan.white@googlemail.com"
+__copyright__ = "Copyright 2009, 2010, Stevan White"
+__date__ = "$Date: 2010-09-14 13:02:02 $"
+__version__ = "$Revision: 1.29 $"
+
+__doc__ = """
 Makes an HTML table showing how many glyphs are in each range in each font,
 and tries to collate that with the OS/2 character range support bit flags.
 
@@ -16,11 +37,7 @@ http://www.evertype.com/standards/iso10646/ucs-collections.html
 
 The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
-
-
-$Id: ranges.py,v 1.28 2009-05-01 07:47:15 Stevan_White Exp $
 """
-__author__ = "Stevan White <stevan.white@googlemail.com>"
 
 import fontforge
 import sys

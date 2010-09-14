@@ -1,5 +1,26 @@
 #!/usr/bin/fontforge -script
+__license__ = """
+This file is part of Gnu FreeFont.
+
+Gnu FreeFont is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Gnu FreeFont is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
 """
+__author__ = "Stevan White"
+__email__ = "stevan.white@googlemail.com"
+__copyright__ = "Copyright 2009, 2010, Stevan White"
+__date__ = "$Date: 2010-09-14 13:02:02 $"
+__version__ = "$Revision: 1.8 $"
+
+__doc__ = """
 Diagnostic tool that checks that fonts are really monospace.
 
 Allows characters to have 0 width though (note this is controversial)
@@ -7,7 +28,6 @@ Allows characters to have 0 width though (note this is controversial)
 Also: in order for box-drawing characters to connect properly, it is 
 important that the glyphs all lie between 800 and -200EM vertically.
 """
-__author__ = "Stevan White <stevan.white@googlemail.com>"
 
 import fontforge
 import sys

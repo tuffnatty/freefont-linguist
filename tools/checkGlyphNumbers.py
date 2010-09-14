@@ -1,5 +1,26 @@
 #!/usr/bin/fontforge -script 
+__license__ = """
+This file is part of Gnu FreeFont.
+
+Gnu FreeFont is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Gnu FreeFont is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
 """
+__author__ = "Stevan White"
+__email__ = "stevan.white@googlemail.com"
+__copyright__ = "Copyright 2009, 2010, Stevan White"
+__date__ = "$Date: 2010-09-14 13:02:02 $"
+__version__ = "$Revision: 1.5 $"
+
+__doc__ = """
 For most unicode ranges, glyph slot numbers should be the same as the
 Unicode value.
 The Private Use ranges are the exception: those characters should have a
@@ -8,7 +29,6 @@ definate non-Unicode number: -1
 This script checks that this is the case, and prints out a warning
 whenever it isn't.
 """
-__author__ = "Stevan White <stevan.white@googlemail.com>"
 
 import fontforge
 import sys

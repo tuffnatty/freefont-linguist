@@ -1,4 +1,25 @@
+__license__ = """
+This file is part of Gnu FreeFont.
+
+Gnu FreeFont is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+Gnu FreeFont is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
 """
+__author__ = "Stevan White"
+__email__ = "stevan.white@googlemail.com"
+__copyright__ = "Copyright 2009, 2010, Stevan White"
+__date__ = "$Date: 2010-09-14 13:02:02 $"
+__version__ = "$Revision: 1.10 $"
+
+__doc__ = """
 Encodes the correspondence between Unicode code intervals
 and the script support field 'ulUnicodeRange' of OpenType fonts.
 
@@ -27,12 +48,7 @@ http://www.unicode.org/roadmaps/bmp/
 
 The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
-
-
-$Id: OpenType.py,v 1.9 2010-09-13 08:25:14 Stevan_White Exp $
 """
-__author__ = "Stevan White <stevan.white@googlemail.com>"
-
 
 class interval:
 	def __init__( self, begin, end ):
@@ -712,13 +728,10 @@ ulUnicodeRange
 ---------------
 
 See also
-FIXME can't find this --
-http://developer.apple.com/textfonts/TTRefMan/RM06/Chap6OS2.html
+http://developer.apple.com/fonts/TTRefMan/RM06/Chap6.html
 Says 128 bits are split into 96 and 32 bits.
 96 is Unicode block, 32 for script sets...
 
-OK, the right thing is here: the OpenType specs
-http://www.microsoft.com/typography/otspec/os2.htm
 """
 
 
