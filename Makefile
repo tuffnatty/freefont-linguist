@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.11 2008-09-22 14:29:53 Stevan_White Exp $
+# $Id: Makefile,v 1.12 2010-09-14 13:01:22 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
@@ -7,6 +7,7 @@ BUILDDIR=$(PWD)
 TMPDIR=$(BUILDDIR)/$(RELEASE)
 OTFZIPFILE=freefont-otf-$(DATE).zip
 TTFZIPFILE=freefont-ttf-$(DATE).zip
+OTFTARFILE=freefont-otf-$(DATE).tar.gz
 TTFTARFILE=freefont-ttf-$(DATE).tar.gz
 SRCTARFILE=freefont-sfd-$(DATE).tar.gz
 ZIPSIG=freefont-ttf-$(DATE).zip.sig
@@ -23,7 +24,7 @@ otf:
 	@ ( cd sfd; $(MAKE) otf )
 
 
-package: ttftar otfzip srctar
+package: ttftar otfzip otftar srctar
 
 ttfzip: ttf
 	rm -rf $(TMPDIR) $(TTFZIPFILE)
@@ -42,6 +43,12 @@ ttftar: ttf
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
 	tar czvf $(TTFTARFILE) $(RELEASE)/
+
+otftar: otf
+	rm -rf $(TMPDIR) $(OTFTARFILE)
+	mkdir $(TMPDIR)
+	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
+	tar czvf $(OTFTARFILE) $(RELEASE)/
 
 srctar:
 	rm -rf $(TMPDIR) $(SRCTARFILE)
