@@ -1,18 +1,20 @@
-$Id: maintenance.txt,v 1.6 2008-12-26 22:33:55 Stevan_White Exp $
+$Id: maintenance.txt,v 1.7 2010-09-15 16:23:20 Stevan_White Exp $
 
 1)  Makefile
 
     The command
     	make
     will build the TrueType font files in the sfd directory.
-
-    "make package" creates three archive files: one with sources (SFD
-    files), one a tarball TrueType fonts, and one a zip file of OpenType
+    The command
+        make package
+    creates four archive files: one tarball of sources (SFD files), a
+    tarball of TrueType fonts, and a tarball and a zip file of OpenType
     fonts. The naming convention is:
 
-    freefont-sfd-yyyymmdd.tar.gz
-    freefont-ttf-yyyymmdd.tar.gz
-    freefont-otf-yyyymmdd.tar.gz
+        freefont-sfd-yyyymmdd.tar.gz
+        freefont-ttf-yyyymmdd.tar.gz
+        freefont-otf-yyyymmdd.tar.gz
+        freefont-otf-yyyymmdd.zip
 
     where yyyymmdd is the year, month and date of release.
 
@@ -25,7 +27,9 @@ $Id: maintenance.txt,v 1.6 2008-12-26 22:33:55 Stevan_White Exp $
     neatest way to upload files to Savannah.  You may have to acquire it
     from somebody.
 
-    /bin/sh ~/gnupload --to ftp.gnu.org:freefont freefont-otf-20080324.zip
+    Requires 'ncftp'
+
+    /bin/sh ~/bin/gnupload --to ftp.gnu.org:freefont freefont-otf-20080324.zip
 
     It prompts for a PGP password, creates the signature files required
     by the Savannah upload procedures, and uploads all of them.
@@ -63,11 +67,18 @@ $Id: maintenance.txt,v 1.6 2008-12-26 22:33:55 Stevan_White Exp $
     C-x 4 a adds a new entry to the change log file
 
 7)  New release procedures
+	Update the Changelog.
+	Review the AUTHORS and CREDITS files for competeness.
+        Ensure that "make tests" completes cleanly.
+
 	Tag new releases with tag named RELEASE_date, where date is the date.
 	Add release date field value to bug report field "Release".
+	Upload the archive files to Savannah.
+
 	Write to freefont-announce@gnu.org
 	Write to info-gnu@gnu.org
-	Mark "In CVS" bug reports as "Fixed"
 	Write to pkg-fonts-devel@lists.alioth.debian.org, 
 		and Debian freefont-ttf packager
+
+	Mark "In CVS" bug reports as "Fixed"
 
