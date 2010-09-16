@@ -4,7 +4,7 @@ FullName: Free Monospaced Bold Oblique
 FamilyName: FreeMono
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009, 2010 Free Software Foundation.
-Version: $Revision: 1.131 $
+Version: $Revision: 1.132 $
 ItalicAngle: -12
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1284331832
+ModificationTime: 1284591606
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -50,13 +50,15 @@ OS2SupYOff: 479
 OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2Vendor: 'GNU '
-Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
+Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2"  } ['mark' ('latn' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 ShortTable: maxp 16
   0
@@ -114,7 +116,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11792 16 12
+WinInfo: 496 16 12
 BeginPrivate: 8
 UniqueID 7 5020948
 BlueValues 23 [-20 0 437 457 623 643]
@@ -126,7 +128,7 @@ StemSnapH 8 [93 100]
 ForceBold 4 true
 EndPrivate
 AnchorClass2: "below"  "'mark' Mark Positioning in Latin 2" "above"  "'mark' Mark Positioning in Latin 1 subtable" 
-BeginChars: 65536 1692
+BeginChars: 65536 1694
 
 StartChar: space
 Encoding: 32 32 0
@@ -6462,41 +6464,37 @@ EndChar
 StartChar: Eng
 Encoding: 330 330 265
 Width: 600
-Flags: HMW
+Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-163 -146 m 0
- 163 -112 198 -86 223 -86 c 0
- 237 -86 254 -100 291 -100 c 0
- 337 -100 376 -67 388 -14 c 2
- 391 2 l 1
- 216 394 l 1
- 154 100 l 1
- 189 100 l 2
- 222 100 246 94 246 65 c 0
- 246 39 234 0 168 0 c 2
- 39 0 l 2
- 4 0 -19 9 -19 37 c 0
- -19 61 -5 100 54 100 c 1
- 135 483 l 1
- 120 483 l 2
- 88 483 63 490 63 519 c 0
- 63 567 96 583 142 583 c 2
- 257 583 l 1
- 431 191 l 1
- 493 483 l 1
- 458 483 l 2
- 426 483 401 490 401 519 c 0
- 401 567 434 583 480 583 c 2
- 610 583 l 2
- 640 583 667 577 667 547 c 0
- 667 522 652 483 593 483 c 1
- 488 -14 l 2
- 465 -121 371 -200 272 -200 c 0
- 202 -200 163 -180 163 -146 c 0
+255 -69 m 0
+ 255 -36 288 -9 315 -9 c 0
+ 329 -9 346 -23 383 -23 c 0
+ 430 -23 486 96 522 264 c 0
+ 534 321 539 366 539 402 c 0
+ 539 513 491 537 444 537 c 0
+ 398 537 353 520 295 469 c 1
+ 216 100 l 1
+ 219 100 l 2
+ 243 100 279 99 279 64 c 0
+ 279 13 239 0 201 0 c 2
+ 89 0 l 2
+ 55 0 32 10 32 37 c 0
+ 32 96 87 100 116 100 c 1
+ 206 524 l 1
+ 173 525 155 538 155 562 c 0
+ 155 607 193 624 234 624 c 2
+ 328 624 l 1
+ 317 576 l 1
+ 375 622 422 637 477 637 c 0
+ 550 637 642 603 642 429 c 0
+ 642 385 637 332 623 268 c 0
+ 552 -65 454 -123 365 -123 c 0
+ 295 -123 255 -103 255 -69 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms for Sami-1" Engsami
 EndChar
 
 StartChar: eng
@@ -38363,6 +38361,85 @@ SplineSet
  596.256 524.01 615.289 503.455 615.289 479.561 c 0
  615.289 451.921 592.95 436.012 565.635 421.699 c 2
 EndSplineSet
+Validated: 527361
+EndChar
+
+StartChar: Engsami
+Encoding: 63602 -1 1692
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+163 -146 m 0
+ 163 -112 198 -86 223 -86 c 0
+ 237 -86 254 -100 291 -100 c 0
+ 337 -100 376 -67 388 -14 c 2
+ 391 2 l 1
+ 216 394 l 1
+ 154 100 l 1
+ 189 100 l 2
+ 222 100 246 94 246 65 c 0
+ 246 39 234 0 168 0 c 2
+ 39 0 l 2
+ 4 0 -19 9 -19 37 c 0
+ -19 61 -5 100 54 100 c 1
+ 135 483 l 1
+ 120 483 l 2
+ 88 483 63 490 63 519 c 0
+ 63 567 96 583 142 583 c 2
+ 257 583 l 1
+ 431 191 l 1
+ 493 483 l 1
+ 458 483 l 2
+ 426 483 401 490 401 519 c 0
+ 401 567 434 583 480 583 c 2
+ 610 583 l 2
+ 640 583 667 577 667 547 c 0
+ 667 522 652 483 593 483 c 1
+ 488 -14 l 2
+ 465 -121 371 -200 272 -200 c 0
+ 202 -200 163 -180 163 -146 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni0220
+Encoding: 544 544 1693
+Width: 600
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+489.744 -100 m 1
+ 492.875 -99.999 l 0
+ 517.141 -99.999 552.764 -100.735 552.764 -135.734 c 0
+ 552.764 -186.413 512.429 -200 474.488 -200 c 2
+ 362.488 -200 l 2
+ 328.51 -200 305.575 -190.891 305.575 -163.414 c 0
+ 305.575 -104.363 360.833 -100 389.744 -100 c 1
+ 475.617 304 l 2
+ 489.95 371.432 497.509 420.594 497.509 455.871 c 0
+ 497.509 517.901 474.14 537 423.143 537 c 0
+ 377.143 537 331.529 520 273.689 469 c 1
+ 195.256 100 l 1
+ 198.387 100.001 l 0
+ 222.653 100.001 258.274 99.2646 258.274 64.2646 c 0
+ 258.274 13.5869 217.94 0 180 0 c 2
+ 68 0 l 2
+ 34.0205 0 11.0869 9.10938 11.0869 36.5859 c 0
+ 11.0869 95.6367 66.3447 100 95.2559 100 c 1
+ 185.38 524 l 1
+ 151.898 524.863 133.618 537.648 133.618 561.712 c 0
+ 133.618 606.765 171.262 624 212.636 624 c 2
+ 306.636 624 l 1
+ 296.433 576 l 1
+ 354.21 622 401.398 637 456.398 637 c 0
+ 541.971 637 599.714 613.6 599.714 486.509 c 0
+ 599.714 441.318 592.413 383.019 576.468 308 c 2
+ 489.744 -100 l 1
+EndSplineSet
+Validated: 527361
 EndChar
 EndChars
 EndSplineFont

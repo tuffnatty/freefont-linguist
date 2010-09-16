@@ -4,7 +4,7 @@ FullName: Free Monospaced
 FamilyName: FreeMono
 Weight: Medium
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009, 2010 Free Software Foundation.
-Version: $Revision: 1.214 $
+Version: $Revision: 1.215 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1284405369
+ModificationTime: 1284591657
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -50,14 +50,16 @@ OS2SupYOff: 479
 OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2Vendor: 'GNU '
-Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
+Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek"  {"'mark' Mark Positioning in Greek subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 ShortTable: maxp 16
   0
@@ -116,7 +118,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1024 16 10
+WinInfo: 528 16 10
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 23 [-20 0 417 437 563 583]
@@ -129,7 +131,7 @@ StemSnapV 4 [41]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 65536 3553
+BeginChars: 65536 3555
 
 StartChar: space
 Encoding: 32 32 0
@@ -6481,40 +6483,33 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-285 -145 m 0
- 298 -145 318 -158 355 -158 c 0
- 416 -158 460 -110 460 -42 c 2
- 460 0 l 1
- 449 0 l 1
- 144 504 l 1
- 144 41 l 1
- 219 41 l 2
- 237 41 246 34 246 21 c 0
- 246 7 236 0 219 0 c 2
- 69 0 l 2
- 51 0 42 7 42 21 c 0
- 42 34 51 41 69 41 c 2
- 103 41 l 1
- 103 522 l 1
- 49 522 l 2
- 31 522 22 529 22 543 c 0
- 22 556 31 563 49 563 c 2
- 155 563 l 1
- 460 59 l 1
- 460 522 l 1
- 386 522 l 2
- 367 522 358 529 358 543 c 0
- 358 556 367 563 386 563 c 2
- 535 563 l 2
- 553 563 562 556 562 543 c 0
- 562 529 553 522 535 522 c 2
- 501 522 l 1
- 501 -48 l 1
- 501 -132 436 -199 354 -199 c 0
- 335 -199 267 -192 267 -165 c 0
- 267 -154 275 -145 285 -145 c 0
+480 299 m 0
+ 480 456 417 536 339 536 c 0
+ 247 536 189 468 167 440 c 1
+ 167 41 l 1
+ 212 41 l 2
+ 230 41 239 34 239 21 c 0
+ 239 7 230 0 212 0 c 2
+ 81 0 l 2
+ 62 0 53 7 53 21 c 0
+ 53 34 62 41 81 41 c 2
+ 126 41 l 1
+ 126 522 l 1
+ 92 522 l 2
+ 74 522 65 529 65 543 c 0
+ 65 556 74 563 92 563 c 2
+ 167 563 l 1
+ 167 494 l 1
+ 225 558 281 577 343 577 c 0
+ 432 577 521 494 521 306 c 0
+ 521 159 500 -11 374 -11 c 0
+ 355 -11 287 -4 287 23 c 0
+ 287 34 295 43 305 43 c 0
+ 318 43 338 30 375 30 c 0
+ 459 30 480 150 480 299 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms for Sami-1" Engsami
 EndChar
 
 StartChar: eng
@@ -87216,7 +87211,89 @@ Fore
 Refer: 3222 1159 N 1 0 0 1 509 42 2
 Refer: 3221 1158 N 1 0 0 1 553 -90 2
 Refer: 3223 1121 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
+EndChar
+
+StartChar: Engsami
+Encoding: 63602 -1 3553
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+285 -145 m 0
+ 298 -145 318 -158 355 -158 c 0
+ 416 -158 460 -110 460 -42 c 2
+ 460 0 l 1
+ 449 0 l 1
+ 144 504 l 1
+ 144 41 l 1
+ 219 41 l 2
+ 237 41 246 34 246 21 c 0
+ 246 7 236 0 219 0 c 2
+ 69 0 l 2
+ 51 0 42 7 42 21 c 0
+ 42 34 51 41 69 41 c 2
+ 103 41 l 1
+ 103 522 l 1
+ 49 522 l 2
+ 31 522 22 529 22 543 c 0
+ 22 556 31 563 49 563 c 2
+ 155 563 l 1
+ 460 59 l 1
+ 460 522 l 1
+ 386 522 l 2
+ 367 522 358 529 358 543 c 0
+ 358 556 367 563 386 563 c 2
+ 535 563 l 2
+ 553 563 562 556 562 543 c 0
+ 562 529 553 522 535 522 c 2
+ 501 522 l 1
+ 501 -48 l 1
+ 501 -132 436 -199 354 -199 c 0
+ 335 -199 267 -192 267 -165 c 0
+ 267 -154 275 -145 285 -145 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni0220
+Encoding: 544 544 3554
+Width: 600
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+498 -145 m 1
+ 543 -145 l 2
+ 561 -145 570 -152 570 -165 c 0
+ 570 -179 561 -186 543 -186 c 2
+ 412 -186 l 2
+ 393 -186 384 -179 384 -165 c 0
+ 384 -152 393 -145 412 -145 c 2
+ 457 -145 l 1
+ 457 299 l 2
+ 457 456 394 536 316 536 c 0
+ 224 536 166 468 144 440 c 1
+ 144 41 l 1
+ 189 41 l 2
+ 207 41 216 34 216 21 c 0
+ 216 7 207 0 189 0 c 2
+ 58 0 l 2
+ 39 0 30 7 30 21 c 0
+ 30 34 39 41 58 41 c 2
+ 103 41 l 1
+ 103 522 l 1
+ 69 522 l 2
+ 51 522 42 529 42 543 c 0
+ 42 556 51 563 69 563 c 2
+ 144 563 l 1
+ 144 494 l 1
+ 202 558 258 577 320 577 c 0
+ 409 577 498 494 498 306 c 2
+ 498 -145 l 1
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont

@@ -4,7 +4,7 @@ FullName: Free Monospaced Bold
 FamilyName: FreeMono
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009, 2010 Free Software Foundation.
-Version: $Revision: 1.135 $
+Version: $Revision: 1.136 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1284331658
+ModificationTime: 1284591579
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -50,13 +50,15 @@ OS2SupYOff: 479
 OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2Vendor: 'GNU '
-Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
+Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 0"  {"'mark' Mark Positioning in Latin 0 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
+MarkAttachClasses: 1
 DEI: 91125
 ShortTable: maxp 16
   0
@@ -115,7 +117,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11760 16 13
+WinInfo: 528 16 13
 BeginPrivate: 9
 UniqueID 7 5020946
 BlueValues 23 [-16 0 437 451 583 597]
@@ -128,7 +130,7 @@ StemSnapV 5 [100]
 ForceBold 4 true
 EndPrivate
 AnchorClass2: "above"  "'mark' Mark Positioning in Latin 1 subtable" "below"  "'mark' Mark Positioning in Latin 0 subtable" 
-BeginChars: 65536 1969
+BeginChars: 65536 1971
 
 StartChar: space
 Encoding: 32 32 0
@@ -6319,12 +6321,12 @@ EndChar
 StartChar: Ncaron
 Encoding: 327 327 262
 Width: 600
-Flags: HMW
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 519 711 N 1 0 0 1 -8.5 105 0
 Refer: 46 78 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ncaron
@@ -6352,41 +6354,34 @@ EndChar
 StartChar: Eng
 Encoding: 330 330 265
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-282 -86 m 0
- 296 -86 316 -100 353 -100 c 0
- 399 -100 431 -67 431 -14 c 2
- 431 2 l 1
- 173 394 l 1
- 173 100 l 1
- 208 100 l 2
- 246 100 274 92 274 50 c 0
- 274 12 247 0 208 0 c 2
- 79 0 l 2
- 40 0 12 12 12 50 c 0
- 12 82 34 100 73 100 c 1
- 73 483 l 1
- 58 483 l 2
- 21 483 -8 492 -8 533 c 0
- -8 574 19 583 58 583 c 2
- 173 583 l 1
- 431 191 l 1
- 431 483 l 1
- 396 483 l 2
- 359 483 330 492 330 533 c 0
- 330 574 357 583 396 583 c 2
- 526 583 l 2
- 561 583 592 575 592 533 c 0
- 592 501 571 483 531 483 c 1
- 531 -14 l 2
- 531 -121 455 -200 356 -200 c 0
- 279 -200 234 -176 234 -136 c 0
- 234 -109 257 -86 282 -86 c 0
+466 264 m 0
+ 466 494 392 537 330 537 c 0
+ 284 537 242 520 195 469 c 1
+ 195 100 l 1
+ 242 100 267 94 267 50 c 0
+ 267 9 236 0 201 0 c 2
+ 89 0 l 2
+ 50 0 23 12 23 50 c 0
+ 23 94 68 100 95 100 c 1
+ 95 524 l 1
+ 56 525 34 542 34 574 c 0
+ 34 610 62 624 101 624 c 2
+ 195 624 l 1
+ 195 576 l 1
+ 243 622 287 637 342 637 c 0
+ 434 637 566 584 566 268 c 0
+ 566 -65 480 -123 391 -123 c 0
+ 314 -123 269 -99 269 -59 c 0
+ 269 -32 292 -9 317 -9 c 0
+ 331 -9 351 -23 388 -23 c 0
+ 435 -23 466 96 466 264 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms for Sami-1" Engsami
 EndChar
 
 StartChar: eng
@@ -43789,7 +43784,81 @@ SplineSet
  457.794 517.837 472.577 524.01 485.748 524.01 c 4
  505.798 524.01 531.42 498.817 531.42 471.792 c 4
 EndSplineSet
-Validated: 527361
+Validated: 3073
+EndChar
+
+StartChar: Engsami
+Encoding: 63602 -1 1969
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+282 -86 m 0
+ 296 -86 316 -100 353 -100 c 0
+ 399 -100 431 -67 431 -14 c 2
+ 431 2 l 1
+ 173 394 l 1
+ 173 100 l 1
+ 208 100 l 2
+ 246 100 274 92 274 50 c 0
+ 274 12 247 0 208 0 c 2
+ 79 0 l 2
+ 40 0 12 12 12 50 c 0
+ 12 82 34 100 73 100 c 1
+ 73 483 l 1
+ 58 483 l 2
+ 21 483 -8 492 -8 533 c 0
+ -8 574 19 583 58 583 c 2
+ 173 583 l 1
+ 431 191 l 1
+ 431 483 l 1
+ 396 483 l 2
+ 359 483 330 492 330 533 c 0
+ 330 574 357 583 396 583 c 2
+ 526 583 l 2
+ 561 583 592 575 592 533 c 0
+ 592 501 571 483 531 483 c 1
+ 531 -14 l 2
+ 531 -121 455 -200 356 -200 c 0
+ 279 -200 234 -176 234 -136 c 0
+ 234 -109 257 -86 282 -86 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni0220
+Encoding: 544 544 1970
+Width: 600
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+522 -100 m 1
+ 563 -100 594 -108 594 -150 c 0
+ 594 -191 563 -200 528 -200 c 2
+ 416 -200 l 2
+ 377 -200 350 -188 350 -150 c 0
+ 350 -100 395 -100 422 -100 c 1
+ 422 304 l 2
+ 422 490 400 537 320 537 c 0
+ 274 537 232 520 185 469 c 1
+ 185 100 l 5
+ 226 100 257 94 257 50 c 4
+ 257 9 226 0 191 0 c 6
+ 79 0 l 2
+ 40 0 13 12 13 50 c 0
+ 13 100 58 100 85 100 c 1
+ 85 524 l 1
+ 46 525 24 542 24 574 c 0
+ 24 610 52 624 91 624 c 2
+ 185 624 l 1
+ 185 576 l 1
+ 233 622 277 637 332 637 c 0
+ 448 637 522 594 522 308 c 2
+ 522 -100 l 1
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
