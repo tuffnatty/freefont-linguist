@@ -17,8 +17,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2010-09-18 07:54:19 $"
-__version__ = "$Revision: 1.5 $"
+__date__ = "$Date: 2010-09-18 08:50:42 $"
+__version__ = "$Revision: 1.6 $"
 
 __doc__ = """
 ligatureLookups
@@ -62,30 +62,33 @@ def get_ligature_lookups( font ):
 		print >> stderr, 'TypeError ' + str( t )
 	return None
 
-def makePreamble():
-	return """<?xml version="1.0" encoding="utf-8"?>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-	<title>Ligatures</title>
-	<style type="text/css">
-		.nonchar { background-color: red; }
-		table, tr, td { font-family: inherit; }
-		table, tr, td { font-style: inherit; }
-		table, tr, td { font-weight: inherit; }
-		td { text-align: right; }
-		td { line-height: 1; }
-		.ligatures td { width: 2em; }
-		.ligatures th { text-align: left; font-family: freemono, monospace; }
-	</style>
-	</head>
-	<body>
-	"""
-postamble="""
+_preamble= """<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ligatures</title>
+<style type="text/css">
+	.nonchar { background-color: red; }
+	table, tr, td { font-family: inherit; }
+	table, tr, td { font-style: inherit; }
+	table, tr, td { font-weight: inherit; }
+	td { text-align: right; }
+	td { line-height: 1; }
+	.ligatures td { width: 2em; }
+	.ligatures th { text-align: left; font-family: freemono, monospace; }
+</style>
+</head>
+<body>
+"""
+
+_postamble="""
 </body>
 </html>
 """
+
+_style_div_html = """<div style="font-family: '%s';%s%s">"""
+_lig_header_html = '<h2>Ligatures in %s</h2>'
 
 def print_ligatures( fontPath ):
 	subtables = []
@@ -98,17 +101,17 @@ def print_ligatures( fontPath ):
 	if font.weight == 'Bold':
 		weight = "font-weight: bold; "
 
-	print  """<div style="font-family: '%s';%s%s">""" % (
-					font.familyname, style, weight )
-	print  '<h2>Ligatures in  ' + font.fontname + '</h2>'
+	print _style_div_html % ( font.familyname, style, weight )
+	print _lig_header_html % ( font.fontname )
 
 	subtable_names = get_ligature_lookups( font )
 	for subtable_name in subtable_names:
 		subtables.append( makeLigatureSubtable( font, subtable_name ) )
 	for subtable in subtables:
-		printLigaturesOfSubtable( font, subtable, subtables )
-	print  '</div>'
-	stdout.flush()
+		out = htmlListOfLigSubtable( font, subtable, subtables )
+		stdout.writelines( out )
+		stdout.flush()
+	print '</div>'
 
 class Ligature:
 	def __init__( self, glyph ):
@@ -139,34 +142,37 @@ def findLigatureGlyph( g, subtables ):
 			return lig
 	return False
 
-"""
-From FontForge Python scripting doc
-
-glyph.getPosSub( lookup-subtable-name )
-
-Returns any positioning/substitution data attached to the glyph controlled by the lookup-subtable. If the name is "*" then returns data from all subtables.
-
-The data are returned as a tuple of tuples. 
-  The first element of the subtuples is the name of the lookup-subtable.
-  The second element will be one of the strings:
-  "Position", "Pair", "Substitution", "AltSubs", "MultSubs","Ligature".
-...
-   Ligature data will be followed by several strings each containing the name of a ligature component glyph.
-
-
-BUT...
-this info is attached to glyphs...
-which glyph is it attached to?  ones in the range, or the ligatures?
-how to get the glyphs in the range referred to by the lookup??
-
-Evidently, the library has stuff arranged internally to do the search
-efficiently in the backwards direction, from glyph to subtable.
-
-font.getLookupInfo gets a feature-script-lang-tuple, which in principle
-should be able to resolve a glyph list... but can't see how to use it...
-
-"""
 def makeLigatureSubtable( font, subtable_name ):
+	"""
+	From FontForge Python scripting doc
+
+	glyph.getPosSub( lookup-subtable-name )
+
+	Returns any positioning/substitution data attached to the glyph
+	controlled by the lookup-subtable. If the name is "*" then returns
+	data from all subtables.
+
+	The data are returned as a tuple of tuples. 
+	  The first element of the subtuples is the name of the lookup-subtable.
+	  The second element will be one of the strings:
+	  "Position", "Pair", "Substitution", "AltSubs", "MultSubs","Ligature".
+	...
+	   Ligature data will be followed by several strings each containing
+	   the name of a ligature component glyph.
+
+
+	BUT...
+	this info is attached to glyphs...
+	which glyph is it attached to?  ones in the range, or the ligatures?
+	how to get the glyphs in the range referred to by the lookup??
+
+	Evidently, the library has stuff arranged internally to do the search
+	efficiently in the backwards direction, from glyph to subtable.
+
+	font.getLookupInfo gets a feature-script-lang-tuple, which in principle
+	should be able to resolve a glyph list... but can't see how to use it...
+
+	"""
 	subtable = LigatureSubtable( "", subtable_name )
 	for g in font.glyphs():
 		ligs = g.getPosSub( subtable_name )
@@ -184,40 +190,44 @@ def makeLigatureSubtable( font, subtable_name ):
 			subtable.append( ligature )
 	return subtable
 
-def printLigaturesOfSubtable( font, subtable, subtables ):
-	print '<table class="ligatures" rules="groups">'
-	print '<caption>' + subtable.name + '</caption>'
-	print '<colgroup>'
-	print '<col style="width: 50ex" />'
-	print '</colgroup>'
-	print '<colgroup>'
-	print '<col style="width: 4ex" />'
-	print '</colgroup>'
-	for lig in subtable.ligatures:
-		print '<tr>'
-		stdout.write( '<th>' )
+_table_head_html =  '''<table class="ligatures" rules="groups">
+<caption>%s</caption>
+<colgroup>
+<col style="width: 50ex" />
+</colgroup>
+<colgroup>
+<col style="width: 4ex" />
+</colgroup>
+'''
 
+def htmlListOfLigSubtable( font, subtable, subtables ):
+	out = [ _table_head_html % ( subtable.name ) ]
+	for lig in subtable.ligatures:
+		out += [ '<tr>\n<th>' ]
+
+		# FIXME this will fail for high Unicode
 		if lig.glyph.unicode > -1:
 			s = font.findEncodingSlot( lig.glyph.unicode )
-			stdout.write( '%s%0.4x%s' %( "U+", s, " " ) )
+			out += [ '%s%0.4x%s' %( "U+", s, " " ) ]
 		else:
-			stdout.write( '%s%0.4x%s' %( "#", lig.glyph.encoding, " " ) )
-		stdout.write( lig.glyph.glyphname )
-		stdout.write( '</th>' )
+			out += [ '%s%0.4x%s' %( "#", lig.glyph.encoding, " " ) ]
+		out += [ lig.glyph.glyphname ]
+		out += [ '</th>' ]
 
-		stdout.write( '<td>' )
+		out += [ '<td>' ]
 		for p in lig.parts:
-			printnestedentity( font, subtable, p, subtables )
-		stdout.write( '</td>' )
+			out += [ nestedEntity( font, subtable, p, subtables ) ]
+		out += [ '</td>' ]
 
 		for p in lig.parts:
-			stdout.write( '<td>' )
-			printnestedentity( font, subtable, p, subtables )
-			stdout.write( '</td>' )
-		print '</tr>'
-	print "</table>"
+			out += [ '<td>' ]
+			out += [ nestedEntity( font, subtable, p, subtables ) ]
+			out += [ '</td>' ]
+		out += [ '</tr>\n' ]
+	out += [ "</table>" ]
+	return out
 
-def printnestedentity( font, subtable, a, subtables ):
+def nestedEntity( font, subtable, a, subtables ):
 	"""
 	Expands each ligature, then checks each component to see if it's
 	Unicode. 
@@ -230,30 +240,32 @@ def printnestedentity( font, subtable, a, subtables ):
 		if lig:
 			#print >> stderr, 'Nested glyph found: ' + a
 			for p in lig.parts:
-				printnestedentity( font, subtable, p, subtables )
+				return nestedEntity( font, subtable, p, subtables )
 		else:
 			print >> stderr, 'No nested glyph: ', a
-			stdout.write( '<span class="nonchar">&nbsp;</span>' )
+			return '<span class="nonchar">&nbsp;</span>'
 	else:
-		printentity( font, a )
+		return entityHTML( font, a )
 
-def printentity( font, a ):
+def entityHTML( font, a ):
 	s = font.findEncodingSlot( a )
 	if s == -1:
 		print >> stderr, 'Missing glyph: ', a
-		stdout.write( '<span class="nonchar">&nbsp;</span>' )
+		return '<span class="nonchar">&nbsp;</span>'
 	else:
-		stdout.write( formatted_hex_value( s ) )
+		return formatted_hex_value( s )
 
 def formatted_hex_value( n ):
 	return '%s%0.4x%s' %( "&#x", n, ";" )
 
+# --------------------------------------------------------------------------
 args = argv[1:]
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
 	exit( 0 )
 
-print makePreamble()
+print _preamble
 for font_name in args:
 	print_ligatures( font_name )
-print postamble
+print _postamble
+
