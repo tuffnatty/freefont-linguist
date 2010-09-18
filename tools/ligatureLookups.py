@@ -17,8 +17,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2010-09-14 13:02:02 $"
-__version__ = "$Revision: 1.4 $"
+__date__ = "$Date: 2010-09-18 07:54:19 $"
+__version__ = "$Revision: 1.5 $"
 
 __doc__ = """
 ligatureLookups
@@ -45,7 +45,7 @@ should be properly rendered by a browser.
 """
 
 import fontforge
-import sys
+from sys import stdout, stderr, argv, exit
 
 def get_ligature_lookups( font ):
 	try:
@@ -57,9 +57,9 @@ def get_ligature_lookups( font ):
 					tables.append( st )
 		return tables
 	except EnvironmentError, ( e ):
-		print >> sys.stderr, 'EnvironmentError ' + str( e )
+		print >> stderr, 'EnvironmentError ' + str( e )
 	except TypeError, ( t ):
-		print >> sys.stderr, 'TypeError ' + str( t )
+		print >> stderr, 'TypeError ' + str( t )
 	return None
 
 def makePreamble():
@@ -98,8 +98,8 @@ def print_ligatures( fontPath ):
 	if font.weight == 'Bold':
 		weight = "font-weight: bold; "
 
-	print  '<div style="font-family: \'' + font.familyname + '\'; ' \
-			+ style + weight + '\">'
+	print  """<div style="font-family: '%s';%s%s">""" % (
+					font.familyname, style, weight )
 	print  '<h2>Ligatures in  ' + font.fontname + '</h2>'
 
 	subtable_names = get_ligature_lookups( font )
@@ -108,7 +108,7 @@ def print_ligatures( fontPath ):
 	for subtable in subtables:
 		printLigaturesOfSubtable( font, subtable, subtables )
 	print  '</div>'
-	sys.stdout.flush()
+	stdout.flush()
 
 class Ligature:
 	def __init__( self, glyph ):
@@ -174,7 +174,7 @@ def makeLigatureSubtable( font, subtable_name ):
 			ligature = Ligature( g )
 			for lr in ligs:
 				if len( lr ) < 3 or lr[1] != 'Ligature':
-					print >> sys.stderr, 'non-ligature: ' + g.glyphname
+					print >> stderr, 'non-ligature: ', g.glyphname
 					break
 				i = 2
 				while i < len( lr ):
@@ -195,62 +195,63 @@ def printLigaturesOfSubtable( font, subtable, subtables ):
 	print '</colgroup>'
 	for lig in subtable.ligatures:
 		print '<tr>'
-		sys.stdout.write( '<th>' )
+		stdout.write( '<th>' )
 
 		if lig.glyph.unicode > -1:
 			s = font.findEncodingSlot( lig.glyph.unicode )
-			sys.stdout.write( '%s%0.4x%s' %( "U+", s, " " ) )
+			stdout.write( '%s%0.4x%s' %( "U+", s, " " ) )
 		else:
-			sys.stdout.write( '%s%0.4x%s' %( "#", lig.glyph.encoding, " " ) )
-		sys.stdout.write( lig.glyph.glyphname )
-		sys.stdout.write( '</th>' )
+			stdout.write( '%s%0.4x%s' %( "#", lig.glyph.encoding, " " ) )
+		stdout.write( lig.glyph.glyphname )
+		stdout.write( '</th>' )
 
-		sys.stdout.write( '<td>' )
+		stdout.write( '<td>' )
 		for p in lig.parts:
 			printnestedentity( font, subtable, p, subtables )
-		sys.stdout.write( '</td>' )
+		stdout.write( '</td>' )
 
 		for p in lig.parts:
-			sys.stdout.write( '<td>' )
+			stdout.write( '<td>' )
 			printnestedentity( font, subtable, p, subtables )
-			sys.stdout.write( '</td>' )
+			stdout.write( '</td>' )
 		print '</tr>'
 	print "</table>"
 
-"""
-Expands each ligature, then checks each component to see if it's Unicode. 
-If not, it looks through all the ligature tables to expand it,
-and so on recursively until only Unicode characters remain.
-"""
 def printnestedentity( font, subtable, a, subtables ):
+	"""
+	Expands each ligature, then checks each component to see if it's
+	Unicode. 
+	If not, it looks through all the ligature tables to expand it,
+	and so on recursively until only Unicode characters remain.
+	"""
 	s = font.findEncodingSlot( a )
 	if s >= 0xe000 and s <= 0xf8ff:
 		lig = findLigatureGlyph( s, subtables )
 		if lig:
-			#print >> sys.stderr, 'Nested glyph found: ' + a
+			#print >> stderr, 'Nested glyph found: ' + a
 			for p in lig.parts:
 				printnestedentity( font, subtable, p, subtables )
 		else:
-			print >> sys.stderr, 'No nested glyph: ' + a
-			sys.stdout.write( '<span class="nonchar">&nbsp;</span>' )
+			print >> stderr, 'No nested glyph: ', a
+			stdout.write( '<span class="nonchar">&nbsp;</span>' )
 	else:
 		printentity( font, a )
 
 def printentity( font, a ):
 	s = font.findEncodingSlot( a )
 	if s == -1:
-		print >> sys.stderr, 'Missing glyph: ' + a
-		sys.stdout.write( '<span class="nonchar">&nbsp;</span>' )
+		print >> stderr, 'Missing glyph: ', a
+		stdout.write( '<span class="nonchar">&nbsp;</span>' )
 	else:
-		sys.stdout.write( formatted_hex_value( s ) )
+		stdout.write( formatted_hex_value( s ) )
 
 def formatted_hex_value( n ):
 	return '%s%0.4x%s' %( "&#x", n, ";" )
 
-args = sys.argv[1:]
+args = argv[1:]
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
-	sys.exit( 0 )
+	exit( 0 )
 
 print makePreamble()
 for font_name in args:
