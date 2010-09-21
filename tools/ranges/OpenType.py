@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2010-09-14 13:02:02 $"
-__version__ = "$Revision: 1.10 $"
+__date__ = "$Date: 2010-09-21 19:31:51 $"
+__version__ = "$Revision: 1.11 $"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
@@ -268,8 +268,7 @@ ulUnicodeRange = [
 [28,	'Hangul Jamo',     [interval(0x1100, 0x11FF)]],
 [29,	'Latin Extended (Additional,C,D)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
-		interval(0x2C60, 0x2C6F),	# C
-		interval(0x2C71, 0x2C7D),	# C
+		interval(0x2C60, 0x2C7F),	# C
 		interval(0xA720, 0xA78C),	# D
 		interval(0xA7FB, 0xA7FF)	# D
 		]],
