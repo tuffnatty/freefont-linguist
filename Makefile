@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.12 2010-09-14 13:01:22 Stevan_White Exp $
+# $Id: Makefile,v 1.13 2010-09-22 06:09:49 Stevan_White Exp $
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
@@ -47,7 +47,7 @@ ttftar: ttf
 otftar: otf
 	rm -rf $(TMPDIR) $(OTFTARFILE)
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
+	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
 	tar czvf $(OTFTARFILE) $(RELEASE)/
 
 srctar:
