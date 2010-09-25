@@ -4,7 +4,7 @@ FullName: Free Sans Bold
 FamilyName: FreeSans
 Weight: Bold
 Copyright: Copyleft 2002, 2003, 2005, 2008, 2009, 2010 Free Software Foundation.
-Version: $Revision: 1.200 $
+Version: $Revision: 1.201 $
 ItalicAngle: 0
 UnderlinePosition: -155
 UnderlineWidth: 69
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1285423206
+ModificationTime: 1285439499
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -72,7 +72,7 @@ Lookup: 4 0 0 "'pstf' Post Base Forms in Gurmukhi"  {"'pstf' Post Base Forms in 
 Lookup: 4 0 0 "'blws' Below Base Substitutions in Gurmukhi"  {"'blws' Below Base Substitutions in Gurmukhi subtable"  } ['blws' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
 Lookup: 4 0 0 "'abvs' Above Base Substitutions in Gurmukhi"  {"'abvs' Above Base Substitutions in Gurmukhi subtable"  } ['abvs' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' Post Base Substitutions in Gurmukhi"  {"'psts' Post Base Substitutions in Gurmukhi subtable"  } ['psts' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-capital"  "'kern' Horizontal Kerning in Latin-small"  "'kern' Horizontal Kerning in Latin-rightpunct"  "'kern' Horizontal Kerning in Latin-leftpunct"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-capital"  "'kern' Horizontal Kerning in Latin-small" [150,0,0] "'kern' Horizontal Kerning in Latin-rightpunct"  "'kern' Horizontal Kerning in Latin-leftpunct"  } ['kern' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic-small"  "'kern' Horizontal Kerning in Cyrillic-capital"  } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek 0"  {"'mark' Mark Positioning in Greek 0 subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek 2"  {"'mark' Mark Positioning in Greek 2 subtable"  } ['mark' ('grek' <'dflt' > ) ]
@@ -156,7 +156,7 @@ KernClass2: 18 16 "'kern' Horizontal Kerning in Latin-small"
  45 s scaron scedilla sacute sdotbelow sdotaccent
  31 t tcedilla tdotaccent tdotbelow
  1 v
- 39 w y yacute ygrave ycircumflex ydieresis
+ 45 w y yacute ygrave ycircumflex ydieresis yhook
  26 z zcaron zacute zdotaccent
  106 c o oe ccedilla ccaron ccircumflex oacute ograve omacron ocircumflex odieresis obreve otilde ohungarumlaut
  109 a g ae gcommaaccent gbreve gdotaccent aacute agrave acircumflex adieresis aring abreve atilde amacron aogonek
@@ -282,7 +282,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 448 16 12
+WinInfo: 416 16 12
 BeginPrivate: 10
 UniqueID 7 5020904
 BlueValues 23 [-24 0 540 550 730 744]
@@ -2347,16 +2347,16 @@ AnchorPoint: "above" 305 550 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-301 549 m 0
- 470 549 569 442 569 259 c 0
- 569 86 466 -23 302 -23 c 0
- 136 -23 35 85 35 263 c 0
- 35 440 136 549 301 549 c 0
-302 436 m 0
- 226 436 175 366 175 263 c 0
- 175 160 226 90 302 90 c 0
- 377 90 429 160 429 261 c 0
- 429 367 379 436 302 436 c 0
+301 549 m 4
+ 470 549 569 442 569 259 c 4
+ 569 86 466 -23 302 -23 c 4
+ 136 -23 35 85 35 263 c 4
+ 35 440 136 549 301 549 c 4
+302 436 m 4
+ 226 436 175 366 175 263 c 4
+ 175 160 226 90 302 90 c 4
+ 377 90 429 160 429 261 c 4
+ 429 367 379 436 302 436 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -2406,7 +2406,7 @@ SplineSet
  404 540 l 1
  544 540 l 1
  544 -218 l 1
- 404 -218 l 1
+ 404 -218 l 5
  404 64 l 1
  371 5 321 -24 253 -24 c 0
 286 432 m 0
@@ -20218,33 +20218,31 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni01B4
+StartChar: yhook
 Encoding: 436 436 1135
-Width: 620
-Flags: MW
+Width: 643
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-283 204 m 1
- 379 462 l 2
- 397 511 415 551 479 551 c 0
- 505 551 540 540 586 516 c 1
- 553 404 l 1
- 548 407 518 425 505 425 c 0
- 500 425 497 422 487 395 c 2
- 341 6 l 2
- 304 -92 272 -201 150 -201 c 0
- 131 -201 107 -195 74 -183 c 1
- 59 -61 l 1
- 105 -65 107 -72 138 -72 c 0
- 168 -72 189 -65 212 11 c 2
- 216 23 l 1
- 17 540 l 1
- 161 540 l 1
- 283 204 l 1
+282 147 m 1
+ 408 589 l 2
+ 430.972 669.583 492 729 556 729 c 0
+ 582 729 590 730 638 726 c 1
+ 637 621 l 1
+ 624 623 609 624 596 624 c 0
+ 581 624 564.221 614.729 538 540 c 2
+ 345.018 -10 l 2
+ 311.996 -104.11 302 -220 150 -220 c 0
+ 131 -220 119 -224 86 -212 c 1
+ 86 -110 l 1
+ 103.667 -115.333 113 -115.668 124.333 -115.668 c 0
+ 153.333 -115.668 210.001 -95.6667 210.001 -22.3389 c 1
+ 9 540 l 1
+ 163 540 l 1
+ 282 147 l 1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: uni027E
@@ -23357,8 +23355,8 @@ EndChar
 
 StartChar: uni01A2
 Encoding: 418 418 1292
-Width: 1111
-Flags: MW
+Width: 1106
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
@@ -23371,8 +23369,8 @@ SplineSet
 40 359 m 0
  40 581 178 741 390 741 c 0
  482 741 555 717 615 664 c 1
- 637 695 692 752 808 752 c 0
- 957 752 1042 675 1042 539 c 2
+ 637 695 692 744 808 744 c 0
+ 957 744 1042 675 1042 539 c 2
  1042 -200 l 1
  892 -200 l 1
  892 539 l 2
@@ -23383,7 +23381,7 @@ SplineSet
  742 145 608 -23 391 -23 c 0
  177 -23 40 139 40 359 c 0
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: uni0185
@@ -35850,33 +35848,31 @@ EndChar
 
 StartChar: uni01a3
 Encoding: 419 419 1883
-Width: 722
+Width: 887
 Flags: HMW
 AnchorPoint: "above" 272 538 basechar 0
 AnchorPoint: "below" 273 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-273 437 m 0
- 196.913 437 148 372.882 148 258 c 0
- 148 142.28 196.771 79 273 79 c 0
- 348.116 79 398 143.064 398 255 c 0
- 398 336.833 373 437 273 437 c 0
-697 369 m 2
- 697 -225 l 1
- 563 -225 l 1
- 563 389 l 2
- 562.659 413.393 561.339 420.516 559.081 427.825 c 0
- 555.241 440.255 548.168 443.272 540.383 444.434 c 0
- 538.726 444.681 541.162 445 532 445 c 0
- 517.206 445 505.769 443.537 494.314 439.848 c 1
- 521.603 389.643 535 326.624 535 254 c 0
- 535 67.9473 433.767 -48 273 -48 c 0
- 110.204 -48 11 67.6465 11 258 c 0
- 11 448.437 111.088 564 272 564 c 0
- 325.541 564 373.267 551.907 412.675 527.637 c 1
- 446.701 547.205 489.224 564 538 564 c 0
- 659.716 564 697 494.261 697 369 c 2
+817 319 m 2
+ 817 -218 l 1
+ 683 -218 l 1
+ 683 339 l 2
+ 683 384.748 646.968 431 612 431 c 0
+ 570.517 431 554.354 406.797 542.925 402.646 c 1
+ 560.045 362.2 569 314.037 569 259 c 0
+ 569 86 466 -23 302 -23 c 0
+ 136 -23 35 85 35 263 c 0
+ 35 440 136 549 301 549 c 0
+ 388.181 549 456.733 520.526 502.677 467.833 c 1
+ 528.713 499.877 589.645 550 638 550 c 0
+ 759.716 550 817 444.261 817 319 c 2
+302 436 m 0
+ 226 436 175 366 175 263 c 0
+ 175 160 226 90 302 90 c 0
+ 377 90 429 160 429 261 c 0
+ 429 367 379 436 302 436 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -35898,11 +35894,8 @@ SplineSet
  36 672.391 102.915 740 184 740 c 0
  272.782 740 332 681.327 332 591 c 2
  332 -46 l 2
- 332 -53.0293 332.01 -60.4453 334.087 -69.6064 c 0
- 336.73 -81.2607 340.995 -85.4209 352.649 -87.9922 c 0
- 358.287 -89.2354 366.118 -90 376 -90 c 0
- 377.658 -90 379.353 -89.9365 394.532 -89.043 c 2
- 421 -87.4863 l 1
+ 332 -79.4309 340.25 -90 376 -90 c 0
+ 380.961 -90 411.817 -88.0264 421 -87.4863 c 1
  421 -205.495 l 1
  400.903 -209.515 l 2
  388.051 -212.085 382.085 -213 368 -213 c 0
@@ -35910,7 +35903,6 @@ SplineSet
  199 445.709 l 1
  194.257 445.246 189.27 445 184 445 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uni01b2
