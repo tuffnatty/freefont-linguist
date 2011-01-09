@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2010-09-21 19:31:51 $"
-__version__ = "$Revision: 1.11 $"
+__date__ = "$Date: 2011-01-09 15:08:35 $"
+__version__ = "$Revision: 1.12 $"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
@@ -298,7 +298,7 @@ ulUnicodeRange = [
 		interval(0x2090, 0x2094)
 	]
 	],
-[33,	'Currency Symbols',     [interval(0x20A0, 0x20B8)]],
+[33,	'Currency Symbols',     [interval(0x20A0, 0x20B9)]],
 [34,	'Combining Diacritical Marks for Symbols',     [interval(0x20D0, 0x20F0)]],
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
 [36,	'Number Forms',     [interval(0x2150, 0x2189)]],
@@ -312,7 +312,7 @@ ulUnicodeRange = [
 	interval(0x2A00, 0x2AFF),	# Supplemental Mathematical Operators
 	interval(0x27C0, 0x27CA),	# Miscellaneous Mathematical Symbols-A
 	interval(0x27CC, 0x27CC),
-	interval(0x27D0, 0x27EF),
+	interval(0x27CE, 0x27EF),
 	interval(0x2980, 0x29FF)	# Miscellaneous Mathematical Symbols-B
 	]
 		],
