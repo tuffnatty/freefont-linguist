@@ -1,4 +1,4 @@
-$Id: maintenance.txt,v 1.7 2010-09-15 16:23:20 Stevan_White Exp $
+$Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
 
 1)  Makefile
 
@@ -82,3 +82,13 @@ $Id: maintenance.txt,v 1.7 2010-09-15 16:23:20 Stevan_White Exp $
 
 	Mark "In CVS" bug reports as "Fixed"
 
+8) Adding ssh keys to Savannah
+	Otherwise get errors like
+		Permission denied (publickey).
+		cvs [checkout aborted]: end of file from server
+	Log in as Savannah project admin
+	Click My Account Conf (from menu list on far left)
+	Edit the (n) SSH Public Keys registered
+	Paste in a public rsa key (can have up to 5)
+	Click Update.
+	
