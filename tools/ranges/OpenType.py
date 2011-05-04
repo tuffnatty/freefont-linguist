@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2011-01-09 15:08:35 $"
-__version__ = "$Revision: 1.12 $"
+__date__ = "$Date: 2011-05-04 16:13:19 $"
+__version__ = "$Revision: 1.13 $"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
@@ -96,7 +96,7 @@ ulUnicodeRange = [
 [8,	'Coptic',     [interval(0x2C80, 0x2CFF)]],
 [9,	'Cyrillic',     [
 	interval(0x0400, 0x04FF),	# Cyrillic
-	interval(0x0500, 0x0523),	# Cyrillic Supplement
+	interval(0x0500, 0x0527),	# Cyrillic Supplement
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
 	interval(0xA640, 0xA65F),	# Cyrillic Extended-B
 	interval(0xA662, 0xA673),
