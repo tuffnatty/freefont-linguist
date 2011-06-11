@@ -9,7 +9,12 @@ UNIX/GNU/Linux/BSD Systems
 --------------------------
 
 FreeFont works with any system using the free font rasterizer FreeType
-<http://www.freetype.org/>.
+<http://www.freetype.org/>.  Some features such as glyph substitution and
+positioning may be handled by the text layout library
+Pango <http://www.pango.org/>.
+
+Most recent systems using FreeType2 and Pango handle OpenType fonts well,
+but on older systems TrueType may perform better.
 
 * Debian GNU/Linux
 
@@ -55,10 +60,10 @@ This is especially helpful for developers and testers.
 Microsoft Windows 95/98/NT/2000/XP; Vista
 -----------------------------------------
 
-Note that in at least Vista, XP and 2000, the OpenType versions perform much
-better than, and are recommended over, the TrueType ones.
+Note that in at least Windows 7, Vista, XP and 2000, the OpenType versions
+perform much better than, and are recommended over, the TrueType ones.
 
-* Vista:
+* Vista, Windows 7:
 	1) From the Start menu, open Control Panels
 	2) Drag-n-drop font files onto Fonts control panel
            You may get a dialog saying
@@ -77,10 +82,13 @@ better than, and are recommended over, the TrueType ones.
 Apple Mac OS X
 --------------
 
-Installing on Mac OS X consists of moving the .ttf files to either
+Support for OpenType on MacOS X started with OS 10.4, and has been improved
+gradually in later versions.
+
+Installing on Mac OS X consists of moving the font files to either
 	/Library/Fonts/  or  ~/Library/Fonts/
 depending on whether they should be available to all users on your system
-or just to yourself.
+or just to your own user.
 
 --------------------------------------------------------------------------
-$Id: INSTALL,v 1.9 2011-06-10 09:34:59 Stevan_White Exp $
+$Id: INSTALL,v 1.10 2011-06-11 08:12:26 Stevan_White Exp $
