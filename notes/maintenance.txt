@@ -1,4 +1,4 @@
-$Id: maintenance.txt,v 1.9 2011-07-16 08:33:48 Stevan_White Exp $
+            On preparing the FreeFont package for release.
 
 1)  Makefile
 
@@ -23,10 +23,11 @@ $Id: maintenance.txt,v 1.9 2011-07-16 08:33:48 Stevan_White Exp $
 
 2)  Checking for font problems
 
-    It is important for the font to pass all the tests available before
-    release.  Toward this goal it should also be checked before commits.
+    It is important to execute all the available tests before release,
+    and make the fonts pass all of them.  Toward this goal the fonts
+    should also be checked before commits.
 
-    First is the FontForge "Verifiy" command.
+    The first check is the FontForge "Verifiy" command.
     Beyond that are its checks in "Find Problems...".
 
     Several further FreeFont checks are executed by 
@@ -34,7 +35,8 @@ $Id: maintenance.txt,v 1.9 2011-07-16 08:33:48 Stevan_White Exp $
 
     Note that failure of some of these will result in visible problems
     when the font is used.  For example, failure of some of the "ATT"
-    checks may cause whole font features in the lookups to be shut off.
+    checks may cause whole font features in the lookups to be silently
+    shut off by the font rendering software.
 
 3)  Adding files to the download area
 
@@ -107,3 +109,4 @@ $Id: maintenance.txt,v 1.9 2011-07-16 08:33:48 Stevan_White Exp $
 	Paste in a public rsa key (can have up to 5)
 	Click Update.
 	
+$Id: maintenance.txt,v 1.10 2011-07-16 08:38:06 Stevan_White Exp $
