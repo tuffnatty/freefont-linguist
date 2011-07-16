@@ -1,4 +1,4 @@
-$Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
+$Id: maintenance.txt,v 1.9 2011-07-16 08:33:48 Stevan_White Exp $
 
 1)  Makefile
 
@@ -21,7 +21,22 @@ $Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
     The Makefile also has other targets, for building individual components
     of the distribution.
 
-2)  Adding files to the download area
+2)  Checking for font problems
+
+    It is important for the font to pass all the tests available before
+    release.  Toward this goal it should also be checked before commits.
+
+    First is the FontForge "Verifiy" command.
+    Beyond that are its checks in "Find Problems...".
+
+    Several further FreeFont checks are executed by 
+    	make tests
+
+    Note that failure of some of these will result in visible problems
+    when the font is used.  For example, failure of some of the "ATT"
+    checks may cause whole font features in the lookups to be shut off.
+
+3)  Adding files to the download area
 
     The gnupload script, which has some connection to automake, is the 
     neatest way to upload files to Savannah.  You may have to acquire it
@@ -34,7 +49,7 @@ $Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
     It prompts for a PGP password, creates the signature files required
     by the Savannah upload procedures, and uploads all of them.
 
-3)  Creating detached signature file, as in the "raw" upload procedures:
+4)  Creating detached signature file, as in the "raw" upload procedures:
 
     http://www.gnu.org/prep/maintain/maintain.html#Automated-Upload-Registration
 
@@ -42,7 +57,7 @@ $Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
 
     This creates a "detached GPD binary signature" file freefont-ttf.tar.gz.sig
 
-4)  Commiting a CVS file
+5)  Commiting a CVS file
 
     export CVS_RSH=ssh
     cvs -z3 -d user_name@savannah.gnu.org:/cvsroot/freefont co freefont
@@ -50,7 +65,7 @@ $Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
     cd freefont/sfd
     cvs commit FreeSans.sfd
 
-5)  Tagging a release in CVS
+6)  Tagging a release in CVS
 
     cvs rtag RELEASE_TAG_NAME freefont
 
@@ -62,11 +77,11 @@ $Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
 
     cvs checkout -P -r RELEASE_TAG_NAME freefont
 
-6)  Using Change Log mode in Emacs
+7)  Using Change Log mode in Emacs
 
     C-x 4 a adds a new entry to the change log file
 
-7)  New release procedures
+8)  New release procedures
 	Update the Changelog.
 	Review the AUTHORS and CREDITS files for competeness.
         Ensure that "make tests" completes cleanly.
@@ -82,7 +97,7 @@ $Id: maintenance.txt,v 1.8 2011-04-29 09:48:52 Stevan_White Exp $
 
 	Mark "In CVS" bug reports as "Fixed"
 
-8) Adding ssh keys to Savannah
+9) Adding ssh keys to Savannah
 	Otherwise get errors like
 		Permission denied (publickey).
 		cvs [checkout aborted]: end of file from server
