@@ -4,7 +4,7 @@ FullName: Free Monospaced
 FamilyName: FreeMono
 Weight: Medium
 Copyright: Copyright 2002, 2003, 2005, 2008, 2009, 2010, 2011 GNU Freefont contributors.
-Version: $Revision: 1.227 $
+Version: $Revision: 1.228 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1309517306
+ModificationTime: 1310811692
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -57,6 +57,8 @@ Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sa
 Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
+Lookup: 1 0 0 "'zero' Slashed Zero"  {"'zero' Slashed Zero subtable"  } ['zero' ('DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek"  {"'mark' Mark Positioning in Greek subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -119,7 +121,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64272 16 11
+WinInfo: 8512 16 11
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 23 [-20 0 417 437 563 583]
@@ -132,7 +134,7 @@ StemSnapV 4 [41]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 65539 3590
+BeginChars: 65539 3592
 
 StartChar: space
 Encoding: 32 32 0
@@ -588,6 +590,7 @@ SplineSet
  446 474 389 577 300 577 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'zero' Slashed Zero subtable" zeroslashed
 EndChar
 
 StartChar: one
@@ -3993,6 +3996,7 @@ SplineSet
  510 129 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'frac' Diagonal Fractions subtable" one slash four
 EndChar
 
 StartChar: onehalf
@@ -4044,6 +4048,7 @@ SplineSet
  362 249 354 257 354 266 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'frac' Diagonal Fractions subtable" one slash two
 EndChar
 
 StartChar: threequarters
@@ -4105,6 +4110,7 @@ SplineSet
  510 129 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'frac' Diagonal Fractions subtable" three slash four
 EndChar
 
 StartChar: questiondown
@@ -38295,6 +38301,7 @@ Fore
 Refer: 114 179 N 1 0 0 1 175 -261 0
 Refer: 1708 8543 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" one slash three
 EndChar
 
 StartChar: twothirds
@@ -38307,9 +38314,10 @@ Refer: 113 178 N 1 0 0 1 -167 2 0
 Refer: 114 179 N 1 0 0 1 175 -261 0
 Refer: 1813 8725 N 1 0 0 1 6 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" two slash three
 EndChar
 
-StartChar: uni2155
+StartChar: onefifth
 Encoding: 8533 8533 1698
 Width: 600
 Flags: HMW
@@ -38318,9 +38326,10 @@ Fore
 Refer: 1636 8309 N 1 0 0 1 182 -262 0
 Refer: 1708 8543 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" one slash five
 EndChar
 
-StartChar: uni2156
+StartChar: twofifths
 Encoding: 8534 8534 1699
 Width: 600
 Flags: MW
@@ -38330,9 +38339,10 @@ Refer: 1636 8309 N 1 0 0 1 182 -262 0
 Refer: 1813 8725 N 1 0 0 1 6 0 0
 Refer: 113 178 N 1 0 0 1 -167 2 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" two slash five
 EndChar
 
-StartChar: uni2157
+StartChar: threefifths
 Encoding: 8535 8535 1700
 Width: 600
 Flags: MW
@@ -38344,7 +38354,7 @@ Refer: 1813 8725 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni2158
+StartChar: fourfifths
 Encoding: 8536 8536 1701
 Width: 600
 Flags: MW
@@ -38354,9 +38364,10 @@ Refer: 1635 8308 N 1 0 0 1 -180 0 0
 Refer: 1813 8725 N 1 0 0 1 0 0 0
 Refer: 1636 8309 N 1 0 0 1 182 -262 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" four slash five
 EndChar
 
-StartChar: uni2159
+StartChar: onesixth
 Encoding: 8537 8537 1702
 Width: 600
 Flags: HMW
@@ -38366,9 +38377,10 @@ Refer: 1637 8310 N 1 0 0 1 170 -264 0
 Refer: 120 185 N 1 0 0 1 -168 0 0
 Refer: 1813 8725 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" one slash six
 EndChar
 
-StartChar: uni215A
+StartChar: fivesixths
 Encoding: 8538 8538 1703
 Width: 600
 Flags: MW
@@ -38378,6 +38390,7 @@ Refer: 1637 8310 N 1 0 0 1 170 -264 0
 Refer: 1636 8309 N 1 0 0 1 -175 1 0
 Refer: 1813 8725 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" five slash six
 EndChar
 
 StartChar: oneeighth
@@ -38390,6 +38403,7 @@ Refer: 1639 8312 N 1 0 0 1 176 -263 0
 Refer: 120 185 N 1 0 0 1 -168 0 0
 Refer: 1813 8725 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" one slash eight
 EndChar
 
 StartChar: threeeighths
@@ -38402,6 +38416,7 @@ Refer: 1639 8312 N 1 0 0 1 176 -263 0
 Refer: 1813 8725 N 1 0 0 1 0 0 0
 Refer: 114 179 N 1 0 0 1 -175 -1 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" three slash eight
 EndChar
 
 StartChar: fiveeighths
@@ -38414,6 +38429,7 @@ Refer: 1639 8312 N 1 0 0 1 176 -263 0
 Refer: 1636 8309 N 1 0 0 1 -175 1 0
 Refer: 1813 8725 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" five slash eight
 EndChar
 
 StartChar: seveneighths
@@ -38426,6 +38442,7 @@ Refer: 1638 8311 N 1 0 0 1 -127 0 0
 Refer: 1639 8312 N 1 0 0 1 176 -263 0
 Refer: 1813 8725 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions subtable" seven slash eight
 EndChar
 
 StartChar: onenumerator
@@ -57492,7 +57509,7 @@ SplineSet
  25 445 l 2
  20 449 20 453.917 20 460 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uniFB22
@@ -57545,7 +57562,7 @@ SplineSet
  29 439 20 448 20 460 c 4
  20 471 29 480 40 480 c 6
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uniFB24
@@ -57573,7 +57590,7 @@ SplineSet
  20 471 29 480 40 480 c 0
  92 480 369 480 421 480 c 4
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uniFB25
@@ -57630,7 +57647,7 @@ SplineSet
  20 471 29 480 40 480 c 2
  421 480 l 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uniFB27
@@ -57652,7 +57669,7 @@ SplineSet
  29 439 20 448 20 460 c 0
  20 471 29 480 40 480 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uniFB28
@@ -57681,9 +57698,9 @@ SplineSet
  77 439 l 2
  66 439 57 448 57 460 c 0
  57 471 66 480 77 480 c 2
- 77 480 421 480 421 480 c 6
+ 421 480 l 6
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uniFB29
@@ -84584,6 +84601,25 @@ LayerCount: 2
 Fore
 Refer: 3588 1477 S 1 0 0 1 -2 678 2
 Validated: 32769
+EndChar
+
+StartChar: NameMe.59497
+Encoding: 59497 -1 3590
+Width: 0
+VWidth: 0
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: zeroslashed
+Encoding: 59498 -1 3591
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 625 823 S 1 0 0 1 563 0 2
+Refer: 16 48 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont
