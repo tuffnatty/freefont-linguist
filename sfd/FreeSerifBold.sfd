@@ -4,7 +4,7 @@ FullName: Free Serif Bold
 FamilyName: FreeSerif
 Weight: Bold
 Copyright: Copyright 2002, 2003, 2005, 2008, 2009, 2010, 2011 GNU Freefont contributors.
-Version: $Revision: 1.254 $
+Version: $Revision: 1.255 $
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1310734629
+ModificationTime: 1311007517
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -61,6 +61,8 @@ Lookup: 4 0 0 "'ccmp' Glyph Composition/Decomposition in Latin - i"  {"'ccmp' Gl
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin subtable"  } ['liga' ('latn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch"  } ['liga' ('latn' <'NLD ' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures in Latin subtable"  } ['hlig' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'hist' Historical Forms in Latin"  {"'hist' Historical Forms in Latin subtable"  } ['hist' ('latn' <'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TRK ' 'dflt' > ) ]
+Lookup: 1 0 0 "'fina' Terminal Forms in Latin"  {"'fina' Terminal Forms in Latin subtable"  } ['fina' ('latn' <'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TRK ' 'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
@@ -394,7 +396,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 42880 16 12
+WinInfo: 59408 16 12
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 23 [-14 0 461 473 673 691]
@@ -2973,6 +2975,7 @@ SplineSet
  27 411 93 473 184 473 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'hist' Historical Forms in Latin subtable" longs
 Substitution2: "'smcp' Lowercase to Small Capitals in Latin subtable" sc.s
 EndChar
 
@@ -7588,6 +7591,7 @@ SplineSet
  293 529 267 553 267 584 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'fina' Terminal Forms in Latin subtable" s
 EndChar
 
 StartChar: uni01C2
@@ -9962,11 +9966,11 @@ AnchorPoint: "middle" -238 221 mark 0
 LayerCount: 2
 Fore
 SplineSet
--96 258 m 1
- -96 186 l 1
- -374 186 l 1
- -374 258 l 1
- -96 258 l 1
+-96 256 m 5
+ -96 184 l 5
+ -374 184 l 5
+ -374 256 l 5
+ -96 256 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -9975,15 +9979,15 @@ StartChar: barmidlongnosp
 Encoding: 822 822 468
 Width: 0
 Flags: HMW
-AnchorPoint: "middle" -262 222 mark 0
+AnchorPoint: "middle" -250 222 mark 0
 LayerCount: 2
 Fore
 SplineSet
--31 259 m 1
- -31 187 l 1
- -475 187 l 1
- -475 259 l 1
- -31 259 l 1
+-10 259 m 1
+ -10 187 l 1
+ -490 187 l 5
+ -490 259 l 5
+ -10 259 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -9996,11 +10000,11 @@ AnchorPoint: "middle" -259 215 mark 0
 LayerCount: 2
 Fore
 SplineSet
--67 348 m 1
- -37 283 l 1
- -439 95 l 1
- -469 161 l 1
- -67 348 l 1
+-77 345 m 1
+ -47 280 l 1
+ -429 92 l 5
+ -459 158 l 5
+ -77 345 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -10013,11 +10017,11 @@ AnchorPoint: "middle" -256 222 mark 0
 LayerCount: 2
 Fore
 SplineSet
--14 583 m 1
- -410 -127 l 1
- -492 -127 l 1
- -96 583 l 1
- -14 583 l 1
+-14 583 m 5
+ -410 -127 l 5
+ -492 -127 l 5
+ -96 583 l 5
+ -14 583 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -10143,19 +10147,19 @@ StartChar: uni0360
 Encoding: 864 864 478
 Width: 0
 Flags: HMW
-AnchorPoint: "above" -404 470 mark 0
+AnchorPoint: "above" -294 470 mark 0
 LayerCount: 2
 Fore
 SplineSet
--447 529 m 1
- -384 666 -307 700 -216 700 c 0
- -68 700 59 616 192 616 c 0
- 306 616 364 690 383 720 c 1
- 420 705 l 1
- 359 573 283 534 194 534 c 0
- 43 534 -80 616 -223 616 c 0
- -292 616 -361 595 -408 521 c 1
- -447 529 l 1
+-89 695 m 0
+ -12 695 30 641 106 641 c 0
+ 189 641 216 656 267 694 c 1
+ 286 679 l 1
+ 222 571 168 549 89 549 c 0
+ 10 549 -27 603 -109 603 c 0
+ -202 603 -210 590 -267 549 c 1
+ -286 564 l 1
+ -219 675 -162.007 695 -89 695 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -10164,18 +10168,18 @@ StartChar: uni0361
 Encoding: 865 865 479
 Width: 0
 Flags: HMW
-AnchorPoint: "abovegk" -250 476 mark 0
-AnchorPoint: "above" -403 469 mark 0
+AnchorPoint: "abovegk" -150 476 mark 0
+AnchorPoint: "above" -303 469 mark 0
 LayerCount: 2
 Fore
 SplineSet
--437 517 m 1
- -412 559 -288 764 4 764 c 0
- 86 764 300 736 425 517 c 1
- 397 517 l 1
- 338 601 267 651 -5 651 c 0
- -310 651 -354 587 -410 517 c 1
- -437 517 l 1
+296 544 m 5
+ 280 524 l 5
+ 193 588 72 595 -1 595 c 4
+ -66 595 -184 588 -280 524 c 5
+ -296 544 l 5
+ -205 652 -105 693 0 693 c 4
+ 99 693 211 649 296 544 c 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -58268,10 +58272,10 @@ StartChar: uni035c
 Encoding: 860 860 2586
 Width: 0
 Flags: HMW
-AnchorPoint: "below" -401 1 mark 0
+AnchorPoint: "below" -301 1 mark 0
 LayerCount: 2
 Fore
-Refer: 479 865 N -1 0 0 -1 -3 458 2
+Refer: 479 865 S -1 0 0 -1 -3 478 2
 Validated: 32769
 EndChar
 
@@ -58279,10 +58283,10 @@ StartChar: uni035d
 Encoding: 861 861 2587
 Width: 0
 Flags: HMW
-AnchorPoint: "above" -395 625 mark 0
+AnchorPoint: "above" -295 625 mark 0
 LayerCount: 2
 Fore
-Refer: 479 865 S -1 0 0 -1 10 1419 2
+Refer: 479 865 N -1 0 0 -1 10 1389 2
 Validated: 32769
 EndChar
 
@@ -58290,15 +58294,15 @@ StartChar: uni035e
 Encoding: 862 862 2588
 Width: 0
 Flags: HMW
-AnchorPoint: "above" -304 640 mark 0
+AnchorPoint: "above" -294 640 mark 0
 LayerCount: 2
 Fore
 SplineSet
-336 765 m 1
- 336 693 l 1
- -336 693 l 1
- -336 765 l 1
- 336 765 l 1
+326 765 m 5
+ 326 693 l 5
+ -326 693 l 1
+ -326 765 l 1
+ 326 765 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -58307,7 +58311,7 @@ StartChar: uni035f
 Encoding: 863 863 2589
 Width: 0
 Flags: HMW
-AnchorPoint: "below" -308 1 mark 0
+AnchorPoint: "below" -298 1 mark 0
 LayerCount: 2
 Fore
 Refer: 2588 862 N 1 0 0 1 3 -831 2
@@ -69152,7 +69156,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.a
-Encoding: 59424 59424 2958
+Encoding: 59424 -1 2958
 Width: 474
 VWidth: 684
 Flags: HMW
@@ -69192,7 +69196,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.b
-Encoding: 59425 59425 2959
+Encoding: 59425 -1 2959
 Width: 507
 VWidth: 684
 Flags: MW
@@ -69230,7 +69234,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.c
-Encoding: 59426 59426 2960
+Encoding: 59426 -1 2960
 Width: 492
 VWidth: 684
 Flags: MW
@@ -69259,7 +69263,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.d
-Encoding: 59427 59427 2961
+Encoding: 59427 -1 2961
 Width: 546
 VWidth: 684
 Flags: HMW
@@ -69290,7 +69294,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.e
-Encoding: 59428 59428 2962
+Encoding: 59428 -1 2962
 Width: 487
 VWidth: 684
 Flags: MW
@@ -69330,7 +69334,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.f
-Encoding: 59429 59429 2963
+Encoding: 59429 -1 2963
 Width: 448
 VWidth: 684
 Flags: MW
@@ -69366,7 +69370,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.g
-Encoding: 59430 59430 2964
+Encoding: 59430 -1 2964
 Width: 549
 VWidth: 684
 Flags: HMW
@@ -69402,7 +69406,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.h
-Encoding: 59431 59431 2965
+Encoding: 59431 -1 2965
 Width: 582
 VWidth: 684
 Flags: MW
@@ -69446,7 +69450,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.i
-Encoding: 59432 59432 2966
+Encoding: 59432 -1 2966
 Width: 293
 VWidth: 684
 Flags: MW
@@ -69475,7 +69479,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.j
-Encoding: 59433 59433 2967
+Encoding: 59433 -1 2967
 Width: 389
 VWidth: 684
 Flags: MW
@@ -69505,7 +69509,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.k
-Encoding: 59434 59434 2968
+Encoding: 59434 -1 2968
 Width: 556
 VWidth: 684
 Flags: MW
@@ -69550,7 +69554,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.l
-Encoding: 59435 59435 2969
+Encoding: 59435 -1 2969
 Width: 483
 VWidth: 684
 Flags: MW
@@ -69580,7 +69584,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.m
-Encoding: 59436 59436 2970
+Encoding: 59436 -1 2970
 Width: 683
 VWidth: 684
 Flags: MW
@@ -69621,7 +69625,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.n
-Encoding: 59437 59437 2971
+Encoding: 59437 -1 2971
 Width: 502
 VWidth: 684
 Flags: MW
@@ -69657,7 +69661,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.o
-Encoding: 59438 59438 2972
+Encoding: 59438 -1 2972
 Width: 552
 VWidth: 684
 Flags: MW
@@ -69683,7 +69687,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.p
-Encoding: 59439 59439 2973
+Encoding: 59439 -1 2973
 Width: 471
 VWidth: 684
 Flags: MW
@@ -69717,7 +69721,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.q
-Encoding: 59440 59440 2974
+Encoding: 59440 -1 2974
 Width: 552
 VWidth: 684
 Flags: MW
@@ -69746,7 +69750,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.r
-Encoding: 59441 59441 2975
+Encoding: 59441 -1 2975
 Width: 538
 VWidth: 684
 Flags: MW
@@ -69785,7 +69789,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.s
-Encoding: 59442 59442 2976
+Encoding: 59442 -1 2976
 Width: 380
 VWidth: 684
 Flags: HMW
@@ -69799,7 +69803,7 @@ Validated: 32769
 EndChar
 
 StartChar: sc.t
-Encoding: 59443 59443 2977
+Encoding: 59443 -1 2977
 Width: 448
 VWidth: 684
 Flags: MW
@@ -69829,7 +69833,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.u
-Encoding: 59444 59444 2978
+Encoding: 59444 -1 2978
 Width: 522
 VWidth: 684
 Flags: MW
@@ -69864,7 +69868,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.v
-Encoding: 59445 59445 2979
+Encoding: 59445 -1 2979
 Width: 474
 VWidth: 684
 Flags: HMW
@@ -69878,7 +69882,7 @@ Validated: 32769
 EndChar
 
 StartChar: sc.w
-Encoding: 59446 59446 2980
+Encoding: 59446 -1 2980
 Width: 696
 VWidth: 684
 Flags: HMW
@@ -69892,7 +69896,7 @@ Validated: 32769
 EndChar
 
 StartChar: sc.x
-Encoding: 59447 59447 2981
+Encoding: 59447 -1 2981
 Width: 496
 VWidth: 684
 Flags: HMW
@@ -69906,7 +69910,7 @@ Validated: 32769
 EndChar
 
 StartChar: sc.y
-Encoding: 59448 59448 2982
+Encoding: 59448 -1 2982
 Width: 518
 VWidth: 684
 Flags: MW
@@ -69947,7 +69951,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.z
-Encoding: 59449 59449 2983
+Encoding: 59449 -1 2983
 Width: 423
 VWidth: 684
 Flags: HMW
@@ -69961,7 +69965,7 @@ Validated: 32769
 EndChar
 
 StartChar: sc.oslash
-Encoding: 59451 59451 2984
+Encoding: 59451 -1 2984
 Width: 552
 VWidth: 684
 Flags: HMW
@@ -70000,7 +70004,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.ae
-Encoding: 59450 59450 2985
+Encoding: 59450 -1 2985
 Width: 774
 VWidth: 684
 Flags: HMW
@@ -70051,7 +70055,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.thorn
-Encoding: 59452 59452 2986
+Encoding: 59452 -1 2986
 Width: 481
 Flags: MW
 AnchorPoint: "below" 192 0 basechar 0
@@ -70085,7 +70089,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.ssharp
-Encoding: 59453 59453 2987
+Encoding: 59453 -1 2987
 Width: 588
 Flags: HMW
 LayerCount: 2
@@ -70121,7 +70125,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.eth
-Encoding: 59454 59454 2988
+Encoding: 59454 -1 2988
 Width: 546
 VWidth: 684
 Flags: HMW
@@ -70159,7 +70163,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.lslash
-Encoding: 59455 59455 2989
+Encoding: 59455 -1 2989
 Width: 483
 Flags: MW
 AnchorPoint: "below" 232 0 basechar 0
@@ -70195,7 +70199,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.ohorn
-Encoding: 59456 59456 2990
+Encoding: 59456 -1 2990
 Width: 554
 Flags: MW
 AnchorPoint: "below" 271 0 basechar 0
@@ -70228,7 +70232,7 @@ Validated: 3073
 EndChar
 
 StartChar: sc.uhorn
-Encoding: 59457 59457 2991
+Encoding: 59457 -1 2991
 Width: 557
 Flags: MW
 AnchorPoint: "above" 297 461 basechar 0
@@ -70306,7 +70310,7 @@ StartChar: uni0366
 Encoding: 870 870 2995
 Width: 0
 VWidth: 610
-Flags: W
+Flags: HW
 AnchorPoint: "above" -244 470 mark 0
 LayerCount: 2
 Fore
@@ -70318,7 +70322,7 @@ StartChar: uni0367
 Encoding: 871 871 2996
 Width: 0
 VWidth: 610
-Flags: W
+Flags: HW
 AnchorPoint: "above" -204 470 mark 0
 LayerCount: 2
 Fore
@@ -70330,11 +70334,11 @@ StartChar: uni0368
 Encoding: 872 872 2997
 Width: 0
 VWidth: 612
-Flags: W
+Flags: HW
 AnchorPoint: "above" -224 470 mark 0
 LayerCount: 2
 Fore
-Refer: 67 99 N 0.43 0 0 0.43 -329.455 503.25 2
+Refer: 67 99 S 0.43 0 0 0.43 -329.455 504.25 2
 Validated: 32769
 EndChar
 
@@ -70342,7 +70346,7 @@ StartChar: uni0369
 Encoding: 873 873 2998
 Width: 0
 VWidth: 665
-Flags: W
+Flags: HW
 AnchorPoint: "above" -224 470 mark 0
 LayerCount: 2
 Fore
@@ -70366,7 +70370,7 @@ StartChar: uni036B
 Encoding: 875 875 3000
 Width: 0
 VWidth: 613
-Flags: W
+Flags: HW
 AnchorPoint: "above" -214 470 mark 0
 LayerCount: 2
 Fore
@@ -70445,12 +70449,12 @@ Validated: 3073
 EndChar
 
 StartChar: sc.i_dot
-Encoding: 59458 59458 3006
+Encoding: 59458 -1 3006
 Width: 293
 Flags: W
 LayerCount: 2
 Fore
-Refer: 2966 59432 N 1 0 0 1 0 0 2
+Refer: 2966 -1 N 1 0 0 1 0 0 2
 Refer: 409 729 N 1 0 0 1 -20 0 2
 Validated: 32769
 EndChar
@@ -91611,6 +91615,7 @@ SplineSet
  487 33 504 47 504 96 c 2
  504 326 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: unia790
@@ -91645,6 +91650,7 @@ SplineSet
  19 676 l 1
  230 676 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: unia791
@@ -91669,7 +91675,7 @@ SplineSet
  212 386 l 1
  249 445 295 473 355 473 c 0
  437 473 490 418 490 332 c 2
- 490 332 490 81 490 81 c 2
+ 490 81 l 2
  490 44 495.406 28.217 539 24 c 1
  546 -142 l 1
  520 -142 l 1
@@ -91680,6 +91686,7 @@ SplineSet
  351 323 l 2
  351 379 334 406 299 406 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
