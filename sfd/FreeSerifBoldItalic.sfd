@@ -4,7 +4,7 @@ FullName: Free Serif Bold Italic
 FamilyName: FreeSerif
 Weight: Bold
 Copyright: Copyright 2002, 2003, 2005, 2008, 2009, 2010, 2011 GNU Freefont contributors.
-Version: $Revision: 1.221 $
+Version: $Revision: 1.222 $
 ItalicAngle: -15.3
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1312118862
+ModificationTime: 1312415348
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -40,13 +40,13 @@ HheadAOffset: 0
 HheadDescent: -300
 HheadDOffset: 0
 OS2SubXSize: 650
-OS2SubYSize: 699
-OS2SubXOff: 47
-OS2SubYOff: 140
+OS2SubYSize: 600
+OS2SubXOff: 0
+OS2SubYOff: -200
 OS2SupXSize: 650
-OS2SupYSize: 699
-OS2SupXOff: -163
-OS2SupYOff: 479
+OS2SupYSize: 600
+OS2SupXOff: 0
+OS2SupYOff: 390
 OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2FamilyClass: 261
@@ -251,7 +251,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8176 16 12
+WinInfo: 672 16 12
 BeginPrivate: 8
 UniqueID 7 5020939
 BlueValues 33 [-205 -200 -18 0 449 462 669 685]
@@ -266,6 +266,10 @@ systemdict /internaldict known
 { true } ifelse { pop [27 33] } if
 ForceBold 4 true
 EndPrivate
+Grid
+-1000 390 m 4
+ 2000 390 l 4
+EndSplineSet
 AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 0 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 1 subtable" "thai_below"  "'mark' Mark Positioning in Thai 0 subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" 
 BeginChars: 66560 2531
 
@@ -3459,10 +3463,15 @@ EndChar
 StartChar: ordfeminine
 Encoding: 170 170 104
 Width: 266
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
+261 342 m 5
+ 247 256 l 5
+ 1 256 l 5
+ 16 342 l 5
+ 261 342 l 5
 267 442 m 0
  279 442 311 482 313 484 c 1
  326 475 l 1
@@ -3484,7 +3493,7 @@ SplineSet
  94 458 105 445 118 445 c 0
  174 445 218 590 218 630 c 0
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: guillemotleft
@@ -3653,54 +3662,54 @@ EndChar
 StartChar: twosuperior
 Encoding: 178 178 111
 Width: 300
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-108 290 m 1
- 252 427 326 496 326 556 c 0
- 326 597 303 622 267 622 c 0
- 238 622 217 610 185 574 c 1
- 167 585 l 1
- 203 651 250 683 311 683 c 0
- 371 683 419 639 419 584 c 0
- 419 536 393 497 327 444 c 2
- 202 343 l 1
- 291 343 l 2
- 341 343 356 351 381 388 c 1
- 397 388 l 1
- 346 274 l 1
- 108 274 l 1
- 108 290 l 1
+138 406 m 5
+ 282 543 356 612 356 672 c 4
+ 356 713 333 738 297 738 c 4
+ 268 738 247 726 215 690 c 5
+ 197 701 l 5
+ 233 767 280 799 341 799 c 4
+ 401 799 449 755 449 700 c 4
+ 449 652 423 613 357 560 c 6
+ 232 459 l 5
+ 321 459 l 6
+ 371 459 386 467 411 504 c 5
+ 427 504 l 5
+ 376 390 l 5
+ 138 390 l 5
+ 138 406 l 5
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: threesuperior
 Encoding: 179 179 112
 Width: 300
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-150 356 m 0
- 197 356 190 298 236 298 c 0
- 275 298 306 338 306 390 c 0
- 306 448 273 478 206 481 c 1
- 208 495 l 1
- 290 510 329 537 329 580 c 0
- 329 612 308 632 274 632 c 0
- 246 632 227 622 199 590 c 1
- 185 603 l 1
- 225 659 265 683 318 683 c 0
- 374 683 417 648 417 602 c 0
- 417 562 401 547 338 511 c 1
- 376 485 390 462 390 423 c 0
- 390 336 304 265 198 265 c 0
- 145 265 113 284 113 315 c 0
- 113 339 129 356 150 356 c 0
+170 476 m 4
+ 217 476 210 418 256 418 c 4
+ 295 418 326 458 326 510 c 4
+ 326 568 293 598 226 601 c 5
+ 228 615 l 5
+ 310 630 349 657 349 700 c 4
+ 349 732 328 752 294 752 c 4
+ 266 752 247 742 219 710 c 5
+ 205 723 l 5
+ 245 779 285 803 338 803 c 4
+ 394 803 437 768 437 722 c 4
+ 437 682 421 667 358 631 c 5
+ 396 605 410 582 410 543 c 4
+ 410 456 324 385 218 385 c 4
+ 165 385 133 404 133 435 c 4
+ 133 459 149 476 170 476 c 4
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: acute
@@ -3835,35 +3844,40 @@ EndChar
 StartChar: onesuperior
 Encoding: 185 185 118
 Width: 272
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-264 612 m 0
- 264 617 259 634 238 634 c 0
- 232 634 221 633 206 632 c 2
- 195 631 l 1
- 197 652 l 1
- 269 663 311 670 374 683 c 1
- 274 353 l 1
- 270 341 268 328 268 319 c 0
- 268 297 278 293 327 293 c 1
- 327 274 l 1
- 103 274 l 1
- 103 293 l 1
- 181 293 175 327 204 414 c 0
- 228 485 264 602 264 612 c 0
+278 728 m 4
+ 278 733 273 750 252 750 c 4
+ 246 750 235 749 220 748 c 6
+ 209 747 l 5
+ 211 768 l 5
+ 283 779 325 786 388 799 c 5
+ 288 469 l 5
+ 284 457 282 444 282 435 c 4
+ 282 413 292 409 341 409 c 5
+ 341 390 l 5
+ 117 390 l 5
+ 117 409 l 5
+ 195 409 189 443 218 530 c 4
+ 242 601 278 718 278 728 c 4
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: ordmasculine
 Encoding: 186 186 119
 Width: 300
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
+287 342 m 5
+ 273 256 l 5
+ 27 256 l 5
+ 42 342 l 5
+ 287 342 l 5
 347 592 m 0
  347 511 271 400 162 400 c 0
  101 400 56 438 56 489 c 0
@@ -3875,7 +3889,7 @@ SplineSet
  137 433 148 420 165 420 c 0
  229 420 266 587 266 630 c 0
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: guillemotright
@@ -25309,35 +25323,35 @@ EndChar
 StartChar: oneinferior
 Encoding: 8321 8321 1302
 Width: 274
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 118 185 N 1 0 0 1 -106 -470 0
-Validated: 1
+Refer: 118 185 S 1 0 0 1 -126 -590 0
+Validated: 32769
 EndChar
 
 StartChar: twoinferior
 Encoding: 8322 8322 1303
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 111 178 N 1 0 0 1 -120 -470 0
-Validated: 1
+Refer: 111 178 S 1 0 0 1 -140 -590 0
+Validated: 32769
 EndChar
 
 StartChar: threeinferior
 Encoding: 8323 8323 1304
 Width: 300
 VWidth: 530
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 112 179 N 1 0 0 1 -124 -470 0
-Validated: 1
+Refer: 112 179 S 1 0 0 1 -144 -590 0
+Validated: 32769
 EndChar
 
 StartChar: onethird
@@ -25347,9 +25361,9 @@ Flags: HMW
 TeX: 111 0
 LayerCount: 2
 Fore
-Refer: 112 179 N 1 0 0 1 385 -274 0
+Refer: 112 179 S 1 0 0 1 365 -394 0
 Refer: 1306 8543 N 1 0 0 1 0 0 0
-Validated: 1
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" one slash three
 Ligature2: "'frac' Diagonal Fractions subtable" one fraction three
@@ -25362,9 +25376,9 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 118 185 N 1 0 0 1 -38 0 0
+Refer: 118 185 S 1 0 0 1 -38 -112 0
 Refer: 1307 8725 N 1 0 0 1 48 0 0
-Validated: 1
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'frac' Diagonal Fractions subtable" one slash
 Ligature2: "'frac' Diagonal Fractions subtable" one fraction
@@ -25394,10 +25408,10 @@ Flags: HMW
 TeX: 116 0
 LayerCount: 2
 Fore
-Refer: 112 179 N 1 0 0 1 370 -270 0
-Refer: 111 178 N 1 0 0 1 -30 1 0
+Refer: 112 179 N 1 0 0 1 370 -400 0
+Refer: 111 178 S 1 0 0 1 -36 -119 0
 Refer: 1307 8725 N 1 0 0 1 72 0 0
-Validated: 1
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" two slash three
 Ligature2: "'frac' Diagonal Fractions subtable" two fraction three
@@ -25406,40 +25420,40 @@ EndChar
 StartChar: foursuperior
 Encoding: 8308 8308 1309
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-411 423 m 1
- 394 362 l 1
- 350 362 l 1
- 322 274 l 1
- 236 274 l 1
- 263 362 l 1
- 104 362 l 1
- 120 429 l 1
- 398 684 l 1
- 444 684 l 1
- 366 423 l 1
- 411 423 l 1
-148 423 m 1
- 280 423 l 1
- 332 593 l 1
- 148 423 l 1
+441 539 m 5
+ 424 478 l 5
+ 380 478 l 5
+ 352 390 l 5
+ 266 390 l 5
+ 293 478 l 5
+ 134 478 l 5
+ 150 545 l 5
+ 428 800 l 5
+ 474 800 l 5
+ 396 539 l 5
+ 441 539 l 5
+178 539 m 5
+ 310 539 l 5
+ 362 709 l 5
+ 178 539 l 5
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: fourinferior
 Encoding: 8324 8324 1310
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1309 8308 N 1 0 0 1 -131 -470 0
-Validated: 1
+Refer: 1309 8308 S 1 0 0 1 -151 -590 0
+Validated: 32769
 EndChar
 
 StartChar: nonbreakingspace
@@ -25460,7 +25474,7 @@ Flags: MW
 TeX: 115 0
 LayerCount: 2
 Fore
-Refer: 13 45 N 1 0 0 1 0 0 0
+Refer: 13 45 S 1 0 0 1 0 0 0
 Validated: 1
 EndChar
 
@@ -25673,230 +25687,230 @@ EndChar
 StartChar: sevensuperior
 Encoding: 8311 8311 1327
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-181 560 m 1
- 164 560 l 1
- 221 674 l 1
- 472 674 l 1
- 221 273 l 1
- 161 273 l 1
- 379 606 l 1
- 292 606 l 2
- 223 606 206 599 181 560 c 1
+211 677 m 5
+ 194 677 l 5
+ 251 791 l 5
+ 502 791 l 5
+ 251 390 l 5
+ 191 390 l 5
+ 409 723 l 5
+ 322 723 l 6
+ 253 723 236 716 211 677 c 5
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: fivesuperior
 Encoding: 8309 8309 1328
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-324 396 m 0
- 324 438 295 502 170 505 c 1
- 257 684 l 1
- 443 684 l 1
- 419 618 l 1
- 252 618 l 1
- 230 573 l 1
- 339 551 393 519 393 432 c 0
- 393 343 309 274 201 274 c 0
- 149 274 115 294 115 322 c 0
- 115 342 132 356 154 356 c 0
- 201 356 200 298 236 298 c 0
- 282 298 324 345 324 396 c 0
+334 512 m 4
+ 334 554 305 618 180 621 c 5
+ 267 800 l 5
+ 453 800 l 5
+ 429 734 l 5
+ 262 734 l 5
+ 240 689 l 5
+ 349 667 403 635 403 548 c 4
+ 403 459 319 390 211 390 c 4
+ 159 390 125 410 125 438 c 4
+ 125 458 142 472 164 472 c 4
+ 211 472 210 414 246 414 c 4
+ 292 414 334 461 334 512 c 4
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: sixsuperior
 Encoding: 8310 8310 1329
 Width: 300
 VWidth: 732
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-444 688 m 1
- 448 674 l 1
- 359 643 305 599 265 526 c 1
- 285 532 293 534 306 534 c 0
- 367 534 405 495 405 432 c 0
- 405 343 333 272 243 272 c 0
- 171 272 128 319 128 398 c 0
- 128 456 160 640 444 688 c 1
-278 510 m 0
- 257 510 251 505 238 473 c 0
- 216 424 202 370 202 338 c 0
- 202 306 214 291 238 291 c 0
- 255 291 270 300 278 315 c 0
- 300 352 323 433 323 470 c 0
- 323 498 309 510 278 510 c 0
+458 798 m 5
+ 462 784 l 5
+ 373 753 319 709 279 636 c 5
+ 299 642 307 644 320 644 c 4
+ 381 644 419 605 419 542 c 4
+ 419 453 347 382 257 382 c 4
+ 185 382 142 429 142 508 c 4
+ 142 566 174 750 458 798 c 5
+292 620 m 4
+ 271 620 265 615 252 583 c 4
+ 230 534 216 480 216 448 c 4
+ 216 416 228 401 252 401 c 4
+ 269 401 284 410 292 425 c 4
+ 314 462 337 543 337 580 c 4
+ 337 608 323 620 292 620 c 4
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: eightsuperior
 Encoding: 8312 8312 1330
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-312 688 m 0
- 376 688 428 652 428 602 c 0
- 428 559 402 533 334 507 c 1
- 334 504 l 1
- 374 463 391 432 391 394 c 0
- 391 322 329 270 245 270 c 0
- 169 270 117 310 117 370 c 0
- 117 421 154 456 235 482 c 1
- 235 485 l 1
- 199 520 187 543 187 577 c 0
- 187 641 240 688 312 688 c 0
-252 471 m 1
- 234 458 181 428 181 363 c 0
- 181 316 206 288 246 288 c 0
- 287 288 316 321 316 366 c 0
- 316 397 309 409 252 471 c 1
-319 520 m 1
- 356 556 367 574 367 604 c 0
- 367 643 346 668 314 668 c 0
- 282 668 260 643 260 610 c 0
- 260 580 273 559 319 520 c 1
+332 804 m 4
+ 396 804 448 768 448 718 c 4
+ 448 675 422 649 354 623 c 5
+ 354 620 l 5
+ 394 579 411 548 411 510 c 4
+ 411 438 349 386 265 386 c 4
+ 189 386 137 426 137 486 c 4
+ 137 537 174 572 255 598 c 5
+ 255 601 l 5
+ 219 636 207 659 207 693 c 4
+ 207 757 260 804 332 804 c 4
+272 587 m 5
+ 254 574 201 544 201 479 c 4
+ 201 432 226 404 266 404 c 4
+ 307 404 336 437 336 482 c 4
+ 336 513 329 525 272 587 c 5
+339 636 m 5
+ 376 672 387 690 387 720 c 4
+ 387 759 366 784 334 784 c 4
+ 302 784 280 759 280 726 c 4
+ 280 696 293 675 339 636 c 5
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: ninesuperior
 Encoding: 8313 8313 1331
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-320 685 m 0
- 412 685 436 610 436 561 c 0
- 436 499 404 318 119 270 c 1
- 115 285 l 1
- 196 307 257 357 298 431 c 1
- 282 424 272 423 257 423 c 0
- 198 423 158 463 158 523 c 0
- 158 614 229 685 320 685 c 0
-330 666 m 0
- 273 666 240 548 240 487 c 0
- 240 462 255 448 283 448 c 0
- 311 448 316 454 334 502 c 0
- 342 523 362 572 362 625 c 0
- 362 652 351 666 330 666 c 0
+340 800 m 4
+ 432 800 456 725 456 676 c 4
+ 456 614 424 433 139 385 c 5
+ 135 400 l 5
+ 216 422 277 472 318 546 c 5
+ 302 539 292 538 277 538 c 4
+ 218 538 178 578 178 638 c 4
+ 178 729 249 800 340 800 c 4
+350 781 m 4
+ 293 781 260 663 260 602 c 4
+ 260 577 275 563 303 563 c 4
+ 331 563 336 569 354 617 c 4
+ 362 638 382 687 382 740 c 4
+ 382 767 371 781 350 781 c 4
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: zerosuperior
 Encoding: 8304 8304 1332
 Width: 300
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-129 402 m 0
- 129 521 210 689 333 689 c 0
- 392 689 431 632 431 544 c 0
- 431 431 352 270 234 270 c 0
- 171 270 129 323 129 402 c 0
-331 671 m 0
- 307 671 289 647 264 585 c 0
- 233 507 196 366 196 327 c 0
- 196 303 210 288 229 288 c 0
- 256 288 275 311 297 368 c 0
- 314 413 364 585 364 628 c 0
- 364 655 352 671 331 671 c 0
+159 518 m 4
+ 159 637 240 805 363 805 c 4
+ 422 805 461 748 461 660 c 4
+ 461 547 382 386 264 386 c 4
+ 201 386 159 439 159 518 c 4
+361 787 m 4
+ 337 787 319 763 294 701 c 4
+ 263 623 226 482 226 443 c 4
+ 226 419 240 404 259 404 c 4
+ 286 404 305 427 327 484 c 4
+ 344 529 394 701 394 744 c 4
+ 394 771 382 787 361 787 c 4
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: zeroinferior
 Encoding: 8320 8320 1333
 Width: 300
 VWidth: 526
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1332 8304 N 1 0 0 1 -129 -474 0
-Validated: 1
+Refer: 1332 8304 S 1 0 0 1 -159 -596 0
+Validated: 32769
 EndChar
 
 StartChar: fiveinferior
 Encoding: 8325 8325 1334
 Width: 300
 VWidth: 526
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1328 8309 N 1 0 0 1 -117 -474 0
-Validated: 1
+Refer: 1328 8309 S 1 0 0 1 -137 -594 0
+Validated: 32769
 EndChar
 
 StartChar: sixinferior
 Encoding: 8326 8326 1335
 Width: 300
 VWidth: 258
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1329 8310 N 1 0 0 1 -126 -474 0
-Validated: 1
+Refer: 1329 8310 S 1 0 0 1 -146 -586 0
+Validated: 32769
 EndChar
 
 StartChar: seveninferior
 Encoding: 8327 8327 1336
 Width: 300
 VWidth: 526
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1327 8311 N 1 0 0 1 -130 -474 0
-Validated: 1
+Refer: 1327 8311 S 1 0 0 1 -150 -590 0
+Validated: 32769
 EndChar
 
 StartChar: eightinferior
 Encoding: 8328 8328 1337
 Width: 300
 VWidth: 526
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1330 8312 N 1 0 0 1 -125 -474 0
-Validated: 1
+Refer: 1330 8312 S 1 0 0 1 -145 -591 0
+Validated: 32769
 EndChar
 
 StartChar: nineinferior
 Encoding: 8329 8329 1338
 Width: 300
 VWidth: 526
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1331 8313 N 1 0 0 1 -131 -474 0
-Validated: 1
+Refer: 1331 8313 S 1 0 0 1 -151 -590 0
+Validated: 32769
 EndChar
 
 StartChar: onesixth
@@ -25906,10 +25920,10 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1329 8310 N 1 0 0 1 355 -284 0
+Refer: 1329 8310 S 1 0 0 1 355 -394 0
 Refer: 1307 8725 N 1 0 0 1 44 0 0
-Refer: 118 185 N 1 0 0 1 -38 0 0
-Validated: 1
+Refer: 118 185 S 1 0 0 1 -38 -110 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" one slash six
 Ligature2: "'frac' Diagonal Fractions subtable" one fraction six
@@ -25922,10 +25936,10 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1328 8309 N 1 0 0 1 363 -284 0
+Refer: 1328 8309 S 1 0 0 1 343 -404 0
 Refer: 1307 8725 N 1 0 0 1 31 0 0
-Refer: 118 185 N 1 0 0 1 -44 0 0
-Validated: 1
+Refer: 118 185 N 1 0 0 1 -44 -117 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" one slash five
 Ligature2: "'frac' Diagonal Fractions subtable" one fraction five
@@ -25938,10 +25952,10 @@ Flags: HMW
 TeX: 111 0
 LayerCount: 2
 Fore
-Refer: 1330 8312 N 1 0 0 1 343 -284 0
+Refer: 1330 8312 S 1 0 0 1 343 -399 0
 Refer: 1307 8725 N 1 0 0 1 35 0 0
-Refer: 118 185 N 1 0 0 1 -45 0 0
-Validated: 1
+Refer: 118 185 S 1 0 0 1 -45 -115 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" one slash eight
 Ligature2: "'frac' Diagonal Fractions subtable" one fraction eight
@@ -25954,10 +25968,10 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 111 178 N 1 0 0 1 -31 4 0
+Refer: 111 178 N 1 0 0 1 -31 -116 0
 Refer: 1307 8725 N 1 0 0 1 75 0 0
-Refer: 1328 8309 N 1 0 0 1 364 -284 0
-Validated: 1
+Refer: 1328 8309 S 1 0 0 1 344 -404 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" two slash five
 Ligature2: "'frac' Diagonal Fractions subtable" two fraction five
@@ -25970,10 +25984,10 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 112 179 N 1 0 0 1 -31 4 0
+Refer: 112 179 S 1 0 0 1 -41 -120 0
 Refer: 1307 8725 N 1 0 0 1 64 0 0
-Refer: 1328 8309 N 1 0 0 1 362 -284 0
-Validated: 1
+Refer: 1328 8309 S 1 0 0 1 352 -408 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" three slash five
 Ligature2: "'frac' Diagonal Fractions subtable" three fraction five
@@ -25986,10 +26000,10 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1309 8308 N 1 0 0 1 -17 0 0
+Refer: 1309 8308 S 1 0 0 1 -27 -120 0
 Refer: 1307 8725 N 1 0 0 1 92 0 0
-Refer: 1328 8309 N 1 0 0 1 371 -284 0
-Validated: 1
+Refer: 1328 8309 S 1 0 0 1 361 -404 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" four slash five
 Ligature2: "'frac' Diagonal Fractions subtable" four fraction five
@@ -26002,10 +26016,10 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1328 8309 N 1 0 0 1 -29 0 0
+Refer: 1328 8309 S 1 0 0 1 -39 -128 0
 Refer: 1307 8725 N 1 0 0 1 59 0 0
-Refer: 1329 8310 N 1 0 0 1 356 -284 0
-Validated: 1
+Refer: 1329 8310 N 1 0 0 1 356 -400 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" five slash six
 Ligature2: "'frac' Diagonal Fractions subtable" five fraction six
@@ -26018,10 +26032,10 @@ Flags: HMW
 TeX: 116 0
 LayerCount: 2
 Fore
-Refer: 112 179 N 1 0 0 1 -27 4 0
+Refer: 112 179 S 1 0 0 1 -47 -116 0
 Refer: 1307 8725 N 1 0 0 1 56 0 0
-Refer: 1330 8312 N 1 0 0 1 364 -284 0
-Validated: 1
+Refer: 1330 8312 S 1 0 0 1 344 -404 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" three slash eight
 Ligature2: "'frac' Diagonal Fractions subtable" three fraction eight
@@ -26034,10 +26048,10 @@ Flags: HMW
 TeX: 102 0
 LayerCount: 2
 Fore
-Refer: 1328 8309 N 1 0 0 1 -33 0 0
+Refer: 1328 8309 N 1 0 0 1 -33 -128 0
 Refer: 1307 8725 N 1 0 0 1 60 0 0
-Refer: 1330 8312 N 1 0 0 1 368 -284 0
-Validated: 1
+Refer: 1330 8312 S 1 0 0 1 348 -401 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" five slash eight
 Ligature2: "'frac' Diagonal Fractions subtable" five fraction eight
@@ -26050,10 +26064,10 @@ Flags: HMW
 TeX: 115 0
 LayerCount: 2
 Fore
-Refer: 1327 8311 N 1 0 0 1 -21 0 0
+Refer: 1327 8311 N 1 0 0 1 -41 -120 0
 Refer: 1307 8725 N 1 0 0 1 27 0 0
-Refer: 1330 8312 N 1 0 0 1 360 -284 0
-Validated: 1
+Refer: 1330 8312 S 1 0 0 1 340 -401 0
+Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions subtable" seven slash eight
 Ligature2: "'frac' Diagonal Fractions subtable" seven fraction eight
@@ -26447,7 +26461,7 @@ Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 78 110 N 0.67 0 0 0.67 100 275 2
+Refer: 78 110 S 0.67 0 0 0.67 110 390 2
 Validated: 32769
 EndChar
 
@@ -41875,19 +41889,19 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-396.077 521 m 1
- 379.072 441 l 1
- 304.072 441 l 1
- 288.131 366 l 1
- 207.461 366 l 1
- 223.402 441 l 1
- 148.402 441 l 1
- 165.407 521 l 1
- 240.407 521 l 1
- 256.348 596 l 1
- 337.019 596 l 1
- 321.077 521 l 1
- 396.077 521 l 1
+416.077 611 m 5
+ 399.072 531 l 5
+ 324.072 531 l 5
+ 308.131 456 l 5
+ 227.461 456 l 5
+ 243.402 531 l 5
+ 168.402 531 l 5
+ 185.407 611 l 5
+ 260.407 611 l 5
+ 276.348 686 l 5
+ 357.019 686 l 5
+ 341.077 611 l 5
+ 416.077 611 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -41899,11 +41913,11 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-405.077 521 m 1
- 388.072 441 l 1
- 157.402 441 l 1
- 174.407 521 l 1
- 405.077 521 l 1
+425.077 611 m 5
+ 408.072 531 l 5
+ 177.402 531 l 5
+ 194.407 611 l 5
+ 425.077 611 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -41915,16 +41929,16 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-389.449 451 m 1
- 372.444 371 l 1
- 141.774 371 l 1
- 158.779 451 l 1
- 389.449 451 l 1
-420.705 591 m 5
- 403.701 511 l 5
- 173.03 511 l 5
- 190.035 591 l 5
- 420.705 591 l 5
+409.449 541 m 5
+ 392.444 461 l 5
+ 161.774 461 l 5
+ 178.779 541 l 5
+ 409.449 541 l 5
+440.705 681 m 5
+ 423.701 601 l 5
+ 193.03 601 l 5
+ 210.035 681 l 5
+ 440.705 681 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -41936,7 +41950,7 @@ VWidth: 919
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 8 40 N 0.67 0 0 0.67 131 333 2
+Refer: 8 40 S 0.67 0 0 0.67 151 442 2
 Validated: 32769
 EndChar
 
@@ -41947,7 +41961,7 @@ VWidth: 919
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1949 8317 N -1 0 0 -1 492.8 1008.35 2
+Refer: 1949 8317 S -1 0 0 -1 522.8 1222.35 2
 Validated: 32769
 EndChar
 
@@ -41958,7 +41972,7 @@ VWidth: 520
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1946 8314 S 1 0 0 1 -123 -480 2
+Refer: 1946 8314 S 1 0 0 1 -143 -570 2
 Validated: 32769
 EndChar
 
@@ -41969,7 +41983,7 @@ VWidth: 520
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1947 8315 S 1 0 0 1 -135 -480 2
+Refer: 1947 8315 S 1 0 0 1 -155 -570 2
 Validated: 32769
 EndChar
 
@@ -41980,7 +41994,7 @@ VWidth: 520
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1948 8316 S 1 0 0 1 -131 -480 2
+Refer: 1948 8316 S 1 0 0 1 -151 -580 2
 Validated: 32769
 EndChar
 
@@ -41991,7 +42005,7 @@ VWidth: 449
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1949 8317 S 1 0 0 1 -129 -470 2
+Refer: 1949 8317 S 1 0 0 1 -149 -622 2
 Validated: 32769
 EndChar
 
@@ -42002,7 +42016,7 @@ VWidth: 449
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1950 8318 S 1 0 0 1 -127 -470 2
+Refer: 1950 8318 S 1 0 0 1 -147 -620 2
 Validated: 32769
 EndChar
 
@@ -42013,7 +42027,7 @@ VWidth: 735
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 73 105 N 0.67 0 0 0.67 122 278 2
+Refer: 73 105 S 0.67 0 0 0.67 162 388 2
 Validated: 32769
 EndChar
 
@@ -55332,7 +55346,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 72 104 N 0.68 0 0 0.68 128 276 2
+Refer: 72 104 S 0.68 0 0 0.68 148 390 2
 Validated: 32769
 EndChar
 
@@ -55343,7 +55357,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 2408 614 S 0.68 0 0 0.68 128 276 2
+Refer: 2408 614 S 0.68 0 0 0.68 148 389 2
 Validated: 32769
 EndChar
 
@@ -55354,7 +55368,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 74 106 N 0.68 0 0 0.68 123 280 2
+Refer: 74 106 S 0.68 0 0 0.68 153 390 2
 Validated: 32769
 EndChar
 
@@ -55365,7 +55379,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 82 114 N 0.68 0 0 0.68 120 274 2
+Refer: 82 114 S 0.68 0 0 0.68 140 390 2
 Validated: 32769
 EndChar
 
@@ -55376,7 +55390,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1543 633 N 0.68 0 0 0.68 71 277 2
+Refer: 1543 633 S 0.68 0 0 0.68 91 383 2
 Validated: 32769
 EndChar
 
@@ -55387,7 +55401,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 2380 635 N 0.68 0 0 0.68 73 283 2
+Refer: 2380 635 S 0.68 0 0 0.68 93 379 2
 Validated: 32769
 EndChar
 
@@ -55398,7 +55412,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 2390 641 N 0.68 0 0 0.68 110 274 2
+Refer: 2390 641 S 0.68 0 0 0.68 130 390 2
 Validated: 32769
 EndChar
 
@@ -55409,7 +55423,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 87 119 N 0.68 0 0 0.68 133 279 2
+Refer: 87 119 S 0.68 0 0 0.68 153 395 2
 Validated: 32769
 EndChar
 
@@ -55420,7 +55434,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 89 121 N 0.68 0 0 0.68 135 280 2
+Refer: 89 121 S 0.68 0 0 0.68 155 396 2
 Validated: 32769
 EndChar
 
@@ -56132,7 +56146,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 526 947 N 0.68 0 0 0.68 133 380 2
+Refer: 526 947 S 0.68 0 0 0.68 153 476 2
 Validated: 32769
 EndChar
 
@@ -56143,7 +56157,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 76 108 N 0.68 0 0 0.68 133 276 2
+Refer: 76 108 S 0.68 0 0 0.68 153 372 2
 Validated: 32769
 EndChar
 
@@ -56154,7 +56168,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 83 115 N 0.68 0 0 0.68 115 279 2
+Refer: 83 115 S 0.68 0 0 0.68 135 383 2
 Validated: 32769
 EndChar
 
@@ -56165,7 +56179,7 @@ VWidth: 1060
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 88 120 N 0.68 0 0 0.68 118 279 2
+Refer: 88 120 S 0.68 0 0 0.68 138 389 2
 Validated: 32769
 EndChar
 
@@ -57883,26 +57897,26 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-367.784 626.375 m 4
- 367.784 667.612 406.239 672.085 406.239 696.465 c 4
- 406.239 710.184 392.124 719.04 370.037 719.04 c 4
- 316.31 719.04 291.547 645.02 291.547 607.323 c 4
- 291.547 546.558 348.455 524.668 348.455 476.993 c 4
- 348.455 461.568 343.881 455.226 338.962 432.08 c 6
- 317.715 332.12 l 6
- 316.694 327.32 316.185 322.94 316.185 318.982 c 4
- 316.185 302.191 325.363 292.971 343.722 291.32 c 5
- 340.253 275 l 5
- 177.733 275 l 5
- 181.202 291.32 l 5
- 203.786 292 217.412 304.92 223.194 332.12 c 6
- 244.441 432.08 l 6
- 247.986 448.761 250.64 462.031 250.64 473.524 c 4
- 250.64 523.501 189.762 520.103 189.762 602.432 c 4
- 189.762 687.085 262.692 743.52 352.8 743.52 c 4
- 419.354 743.52 461.816 711.219 461.816 663.86 c 4
- 461.816 623.905 434.257 593.92 402.602 593.92 c 4
- 380.645 593.92 367.784 606.685 367.784 626.375 c 4
+387.784 741.375 m 4
+ 387.784 782.612 426.239 787.085 426.239 811.465 c 4
+ 426.239 825.184 412.124 834.04 390.037 834.04 c 4
+ 336.31 834.04 311.547 760.02 311.547 722.323 c 4
+ 311.547 661.558 368.455 639.668 368.455 591.993 c 4
+ 368.455 576.568 363.881 570.226 358.962 547.08 c 6
+ 337.715 447.12 l 6
+ 336.694 442.32 336.185 437.94 336.185 433.982 c 4
+ 336.185 417.191 345.363 407.971 363.722 406.32 c 5
+ 360.253 390 l 5
+ 197.733 390 l 5
+ 201.202 406.32 l 5
+ 223.786 407 237.412 419.92 243.194 447.12 c 6
+ 264.441 547.08 l 6
+ 267.986 563.761 270.64 577.031 270.64 588.524 c 4
+ 270.64 638.501 209.762 635.104 209.762 717.432 c 4
+ 209.762 802.085 282.692 858.52 372.8 858.52 c 4
+ 439.354 858.52 481.816 826.219 481.816 778.86 c 4
+ 481.816 738.905 454.257 708.92 422.602 708.92 c 4
+ 400.645 708.92 387.784 721.685 387.784 741.375 c 4
 EndSplineSet
 Validated: 3073
 EndChar
