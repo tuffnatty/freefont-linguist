@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2011-08-14 08:53:43 $"
-__version__ = "$Revision: 1.14 $"
+__date__ = "$Date: 2011-08-14 08:55:20 $"
+__version__ = "$Revision: 1.15 $"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
@@ -90,8 +90,7 @@ ulUnicodeRange = [
 			interval(0x0384, 0x038A),
 			interval(0x038C, 0x038C),
 			interval(0x038E, 0x03A1),
-			interval(0x03A3, 0x03CF),
-			interval(0x03D0, 0x03FF)
+			interval(0x03A3, 0x03FF)
 			] ],
 [8,	'Coptic',     [interval(0x2C80, 0x2CFF)]],
 [9,	'Cyrillic',     [
@@ -113,6 +112,7 @@ ulUnicodeRange = [
 			interval(0x0591, 0x05C7),
 			interval(0x05D0, 0x05EA),
 			interval(0x05F0, 0x05F4)
+			# See also Alphabetic Presentation Forms
 		]],
 [12,	'Vai',    [interval(0xA500, 0xA62B),
 		]],
@@ -269,8 +269,10 @@ ulUnicodeRange = [
 [29,	'Latin Extended (Additional,C,D)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
 		interval(0x2C60, 0x2C7F),	# C
-		interval(0xA720, 0xA78C),	# D
-		interval(0xA7FB, 0xA7FF)	# D
+		interval(0xA720, 0xA78E),	# D
+		interval(0xA790, 0xA791),	# D
+		interval(0xA7A0, 0xA7A9),	# D
+		interval(0xA7FA, 0xA7FF)	# D
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
 		interval(0x1F18, 0x1F1D),
