@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2011-05-04 16:13:19 $"
-__version__ = "$Revision: 1.13 $"
+__date__ = "$Date: 2011-08-14 08:53:43 $"
+__version__ = "$Revision: 1.14 $"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
@@ -144,7 +144,7 @@ ulUnicodeRange = [
 		interval(0x09D7, 0x09D7),
 		interval(0x09DC, 0x09DD),
 		interval(0x09DF, 0x09E3),
-		interval(0x09E6, 0x09FA),
+		interval(0x09E6, 0x09FB),
 	]],
 [17,	'Gurmukhi',     [interval(0x0A01, 0x0A03),
 		interval(0x0A05, 0x0A0A),
