@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2011-08-14 08:55:20 $"
-__version__ = "$Revision: 1.15 $"
+__date__ = "$Date: 2011-08-29 23:44:47 $"
+__version__ = "$Revision: 1.16 $"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
@@ -124,7 +124,7 @@ ulUnicodeRange = [
 			interval(0x0750, 0x077F)	# Supplement
 	]
 	],
-[14,	'NKo', [interval(0x07C0, 0x07FF)]],	# unclear ? Part of Arabic?
+[14,	"N'Ko", [interval(0x07C0, 0x07FF)]],	# unclear ? Part of Arabic?
 [15,	'Devanagari',     [interval(0x0900, 0x0939),
 			interval(0x093C, 0x094E),
 			interval(0x0950, 0x0955),
@@ -433,7 +433,7 @@ ulUnicodeRange = [
 		],
 [76,	'Cherokee', [interval(0x13A0, 0x13F4)]],
 [77, 	'Unified Canadian Aboriginal Syllabics',
-		[interval(0x1401, 0x167F),
+		[interval(0x1400, 0x167F),
 		interval(0x18B0, 0x18F5)	# UCAS Extended
 		]
 		],
@@ -506,7 +506,7 @@ ulUnicodeRange = [
 [98, 	'Tifinagh', [interval(0x2D30, 0x2D65),
 		interval(0x2D6F, 0x2D6F)
 	]],
-[99, 	'Ying Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
+[99, 	'Yijing Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
 [100, 	'Syloti Nagri', [interval(0xA800, 0xA82F)]],
 [101, 	'Linear B Syllabary etc', [interval(0x10000, 0x1013F)], True],
 [102, 	'Ancient Greek Numbers', [interval(0x10140, 0x1018F)], True],
