@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2011-08-29 23:44:47 $"
-__version__ = "$Revision: 1.16 $"
+__date__ = "$Date: 2011-08-31 17:24:14 $"
+__version__ = "$Revision: 1.17 $"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
@@ -547,7 +547,7 @@ ulUnicodeRange = [
 		interval(0x1F000, 0x1F02B),	# Mahjong
 		interval(0x1F030, 0x1F093)	# Domino
 	], True],
-#[96-127, 	'Reserved for Unicode SubRanges', []]
+#[123-127, 	'Reserved for process-internal usage', []]
 ]
 
 """
@@ -559,17 +559,22 @@ http://www.microsoft.com/typography/otspec/os2.htm
 2 	Latin Extended-A
 3 	Latin Extended-B
 4 	IPA Extensions
+  	Phonetic Extensions
+	Phonetic Extensions Supplement
 5 	Spacing Modifier Letters
 6 	Combining Diacritical Marks
 7 	Greek and Coptic
 8 	Reserved for Unicode SubRanges
 9 	Cyrillic
-  	Cyrillic Supplementary
+  	Cyrillic Supplement
+	Cyrillic Extended-A
+	Cyrillic Extended-B
 10 	Armenian
 11 	Hebrew
-12 	Reserved for Unicode SubRanges
+12 	Vai
 13 	Arabic
-14 	Reserved for Unicode SubRanges
+  	Arabic Supplement
+14 	N'Ko
 15 	Devanagari
 16 	Bengali
 17 	Gurmukhi
@@ -582,11 +587,15 @@ http://www.microsoft.com/typography/otspec/os2.htm
 24 	Thai
 25 	Lao
 26 	Georgian
-27 	Reserved for Unicode SubRanges
+	Georgian Supplement
+27 	Balinese
 28 	Hangul Jamo
 29 	Latin Extended Additional
+	Latin Extended-C
+	Latin Extended-D
 30 	Greek Extended
 31 	General Punctuation
+	Supplemental Punctuation
 32 	Superscripts And Subscripts
 33 	Currency Symbols
 34 	Combining Diacritical Marks For Symbols
@@ -645,11 +654,14 @@ http://www.microsoft.com/typography/otspec/os2.htm
 73 	Sinhala
 74 	Myanmar
 75 	Ethiopic
+	Ethiopic Supplement
+	Ethiopic Extended
 76	Cherokee
 77 	Unified Canadian Aboriginal Syllabics
 78 	Ogham
 79 	Runic
 80 	Khmer
+	Khmer Symbol
 81 	Mongolian
 82 	Braille Patterns
 83 	Yi Syllables
@@ -663,12 +675,50 @@ http://www.microsoft.com/typography/otspec/os2.htm
 87 	Deseret
 88 	Byzantine Musical Symbols
   	Musical Symbols
+	Ancient Greek Musical Notation
 89 	Mathematical Alphanumeric Symbols
 90 	Private Use (plane 15)
   	Private Use (plane 16)
 91 	Variation Selectors
+	Variation Selectors Supplement
 92 	Tags
-93-127 	Reserved for Unicode SubRanges
+93 	Limbu 
+94 	Tai Le
+95 	New Tai Lue
+96 	Buginese
+97 	Glagolitic
+98 	Tifinagh
+99 	Yijing Hexagram Symbols 
+100 	Syloti Nagri 
+101 	Linear B Syllabary 
+	Linear B Ideograms 
+	Aegean Numbers
+102 	Ancient Greek Numbers
+103 	Ugaritic
+104 	Old Persian
+105 	Shavian
+106 	Osmanya
+107 	Cypriot Syllabary 
+108 	Kharoshthi 
+109 	Tai Xuan Jing Symbols
+110 	Cuneiform
+	Cuneiform Numbers and Punctuation
+111 	Counting Rod Numerals
+112 	Sundanese
+113 	Lepcha
+114 	Ol Chiki
+115 	Saurashtra
+116 	Kayah Li
+117 	Rejang
+118 	Cham
+119 	Ancient Symbols
+120 	Phaistos Disc
+121 	Carian
+  	Lycian
+	Lydian
+122 	Domino Tiles
+  	Mahjong Tiles
+123-127 	Reserved for process-internal usage
 """
 """
 Overview of the BMP (group=00, plane=00)
