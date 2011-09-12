@@ -124,7 +124,7 @@ ulUnicodeRange = [
 			interval(0x0750, 0x077F)	# Supplement
 	]
 	],
-[14,	"N'Ko", [interval(0x07C0, 0x07FF)]],	# unclear ? Part of Arabic?
+[14,	"N'Ko", [interval(0x07C0, 0x07FF)]],
 [15,	'Devanagari',     [interval(0x0900, 0x0939),
 			interval(0x093C, 0x094E),
 			interval(0x0950, 0x0955),
@@ -307,7 +307,8 @@ ulUnicodeRange = [
 [37,	'Arrows (+suppl)',     [interval(0x2190, 0x21FF),
 	interval(0x27F0, 0x27FF),	# Supplemental Arrows-A
 	interval(0x2900, 0x297F),	# Supplemental Arrows-B
-	interval(0x2B00, 0x2BFF)	# Miscellaneous Symbols and Arrows
+	interval(0x2B00, 0x2B4C),	# Miscellaneous Symbols and Arrows
+	interval(0x2B40, 0x2BF9)	# "
 	]],
 [38,	'Mathematical Operators',     [ 
 	interval(0x2200, 0x22FF),
@@ -326,22 +327,10 @@ ulUnicodeRange = [
 [44,	'Block Elements',     [interval(0x2580, 0x259F)]],
 [45,	'Geometric Shapes',     [interval(0x25A0, 0x25FF)]],
 [46,	'Miscellaneous Symbols',     [
-			interval(0x2600, 0x269D),
-			interval(0x26A0, 0x26BC),
-			interval(0x26C0, 0x26C3)
+			interval(0x2600, 0x26FF),
 			]
 			],
-[47,	'Dingbats',     [interval(0x2701, 0x2704),
-			interval(0x2706, 0x2709),
-			interval(0x270C, 0x2727),
-			interval(0x2729, 0x274B),
-			interval(0x274D, 0x274D),
-			interval(0x274F, 0x2752),
-			interval(0x2756, 0x2756),
-			interval(0x2758, 0x275E),
-			interval(0x2761, 0x2794),
-			interval(0x2798, 0x27AF),
-			interval(0x27B1, 0x27BE)
+[47,	'Dingbats',     [interval(0x2701, 0x27BF),
 	]],
 [48,	'CJK Symbols and Punctuation', [interval(0x3000, 0x303F)]],
 [49,	'Hiragana', [interval(0x3040, 0x309F)]],
