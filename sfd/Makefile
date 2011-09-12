@@ -18,11 +18,11 @@ TESTFF=if test -z ${ffversion}; then echo Fontforge program is required to build
 
 %.otf : %.sfd
 	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/GenerateOpenType $< 2>/dev/stdout 1>/dev/stderr | tail -n +4 ) 2>&1 
+	@ ( $(FFPY) ../tools/generate/OpenType $< 2>/dev/stdout 1>/dev/stderr | tail -n +4 ) 2>&1 
 
 %.ttf : %.sfd
 	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/GenerateTrueType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	@ ( $(FFPY) ../tools/generate/TrueType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
 
 all: ttf otf
 
@@ -32,9 +32,9 @@ otf: $(OTFS)
 
 tests:
 	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/isMonoMono.py $(MSFDS) 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
-	@ ../tools/checkGlyphNumbers.py 2>&1
-	@ ../tools/validate.py 2>&1
+	@ ( $(FFPY) ../tools/test/isMonoMono.py $(MSFDS) 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
+	@ ../tools/test/checkGlyphNumbers.py 2>&1
+	@ ../tools/test/validate.py 2>&1
 
 clean:
 	rm -f $(TTFS) $(OTFS) build.log

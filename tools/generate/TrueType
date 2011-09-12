@@ -17,33 +17,36 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2010-09-14 13:02:02 $"
-__version__ = "$Revision: 1.5 $"
+__date__ = "$Date$"
+__version__ = "$Revision$"
 __doc__ = """
-Convert fonts from FontForge's native SFD format to OpenType format
+Convert fonts from FontForge's native SFD format to TrueType format
+First auto-hints whole font
 
-Issues:  Currently, FontForge does not include gasp tables in OpenType fonts.
-However, in Windows, that functionality is clearly present in other fonts.
-The result, I think, is that hinting is applied to small font sizes when
-it is inappropriate.
+Old-style kern tables seem to be what is actually used by Windows and
+some Linux programs such as OpenOffice.
 
-Therefore, hinting is presently turned off
+According to the FAQ, need to pass Flags=(apple) to build Mac fonts.
+But this option seems to rule out old-style kern tables
 """
 
 import fontforge
-from sys import argv
+import sys
 
-scriptname = argv[0];
-argc = len( argv )
+scriptname = sys.argv[0];
+argc = len( sys.argv )
 
 if argc > 1:
 	for i in range( 1, argc ):
-		f = fontforge.open( argv[i] )
-		otfile = f.fontname + ".otf"
-		print "Generating OpenType file " + otfile
-#		f.selection.all()
-#		f.autoHint()	# because without gasp table, small sizes ugly
-		f.generate( otfile, flags=('opentype','old-kern') )
+		f = fontforge.open( sys.argv[i] )
+		ttfile = f.fontname + ".ttf"
+		print "Generating TrueType file " + ttfile
+		f.selection.all()
+		f.autoHint()
+		f.autoInstr()
+		f.generate( ttfile, flags=('opentype','old-kern') )
+		#ttfile = f.fontname + ".mac.ttf"
+		#f.generate( ttfile )
 		f.close()
 else:
 	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"

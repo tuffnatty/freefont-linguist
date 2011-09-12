@@ -18,8 +18,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2010-09-14 13:02:02 $"
-__version__ = "$Revision: 1.3 $"
+__date__ = "$Date$"
+__version__ = "$Revision$"
 
 __doc__ = """ Print out a range of hex values formatted for e.g. HTML.
     Takes one or two numerical arguments.

@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2011-08-31 17:24:14 $"
-__version__ = "$Revision: 1.17 $"
+__date__ = "$Date$"
+__version__ = "$Revision$"
 
 __doc__ = """
 Encodes the correspondence between Unicode code intervals
