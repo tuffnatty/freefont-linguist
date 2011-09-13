@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-#!/usr/bin/fontforge -script 
 __license__ = """
 This file is part of Gnu FreeFont.
 
@@ -17,12 +16,14 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2009, 2010, Stevan White"
+__copyright__ = "Copyright 2009, 2010, 2011 Stevan White"
 __date__ = "$Date$"
 __version__ = "$Revision$"
 
-__doc__ = """ Print out a range of hex values formatted for e.g. HTML.
-    Takes one or two numerical arguments.
+__doc__ = """Sends to standard output a range of hex values formatted
+    for e.g. HTML.
+    Takes one or two numerical arguments.  With one argument the output
+    is just the formatted value of the argument.
 """
 
 import sys
