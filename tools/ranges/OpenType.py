@@ -40,14 +40,25 @@ This is complicated by:
 	2) What is meant by "support"?  Is it enough to have a single
 	glyph in a range, to say it is supported?
 	3) both Unicode and OpenType are in a state of flux
-	
 
-See
-http://www.w3.org/TR/REC-CSS2/notes.html
+See 
+
+Roadmap tf the BMP
 http://www.unicode.org/roadmaps/bmp/
 
 The intervals are partly just the assigned interval, but often I have
 listed the ranges that have characters assigned to them.
+
+OpenType standard: OS/2 and Windows Metrics
+http://www.microsoft.com/typography/otspec/os2.htm
+
+Apple Developer: The TrueType Font File
+http://developer.apple.com/fonts/TTRefMan/RM06/Chap6.html
+Says 128 bits are split into 96 and 32 bits.
+96 is Unicode block, 32 for script sets...
+
+Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
+http://www.w3.org/TR/CSS2/
 """
 
 class interval:
@@ -65,7 +76,6 @@ class interval:
 		return val <= self.end and val >= self.begin
 
 # NOTE the OpenType spec is much more thorough
-# http://www.microsoft.com/typography/otspec/os2.htm
 ulUnicodeRange = [
 [0,	'Basic Latin', [interval(0,1),	# Nul character, mapped to notdef
 					# and .nul requrired by TrueType
@@ -538,241 +548,6 @@ ulUnicodeRange = [
 	], True],
 #[123-127, 	'Reserved for process-internal usage', []]
 ]
-
-"""
-From the OpenType standard 
-http://www.microsoft.com/typography/otspec/os2.htm
-
-0 	Basic Latin
-1 	Latin-1 Supplement
-2 	Latin Extended-A
-3 	Latin Extended-B
-4 	IPA Extensions
-  	Phonetic Extensions
-	Phonetic Extensions Supplement
-5 	Spacing Modifier Letters
-6 	Combining Diacritical Marks
-7 	Greek and Coptic
-8 	Reserved for Unicode SubRanges
-9 	Cyrillic
-  	Cyrillic Supplement
-	Cyrillic Extended-A
-	Cyrillic Extended-B
-10 	Armenian
-11 	Hebrew
-12 	Vai
-13 	Arabic
-  	Arabic Supplement
-14 	N'Ko
-15 	Devanagari
-16 	Bengali
-17 	Gurmukhi
-18 	Gujarati
-19 	Oriya
-20 	Tamil
-21 	Telugu
-22 	Kannada
-23 	Malayalam
-24 	Thai
-25 	Lao
-26 	Georgian
-	Georgian Supplement
-27 	Balinese
-28 	Hangul Jamo
-29 	Latin Extended Additional
-	Latin Extended-C
-	Latin Extended-D
-30 	Greek Extended
-31 	General Punctuation
-	Supplemental Punctuation
-32 	Superscripts And Subscripts
-33 	Currency Symbols
-34 	Combining Diacritical Marks For Symbols
-35 	Letterlike Symbols
-36 	Number Forms
-37 	Arrows
-  	Supplemental Arrows-A
-  	Supplemental Arrows-B
-38 	Mathematical Operators
-  	Supplemental Mathematical Operators
-  	Miscellaneous Mathematical Symbols-A
-  	Miscellaneous Mathematical Symbols-B
-39 	Miscellaneous Technical
-40 	Control Pictures
-41 	Optical Character Recognition
-42 	Enclosed Alphanumerics
-43 	Box Drawing
-44 	Block Elements
-45 	Geometric Shapes
-46 	Miscellaneous Symbols
-47 	Dingbats
-48 	CJK Symbols And Punctuation
-49 	Hiragana
-50 	Katakana
-  	Katakana Phonetic Extensions
-51 	Bopomofo
-  	Bopomofo Extended
-52 	Hangul Compatibility Jamo
-3 	Reserved for Unicode SubRanges
-54 	Enclosed CJK Letters And Months
-55 	CJK Compatibility
-56 	Hangul Syllables
-57 	Non-Plane 0 *
-58 	Reserved for Unicode SubRanges
-59 	CJK Unified Ideographs
-  	CJK Radicals Supplement
-  	Kangxi Radicals
-  	Ideographic Description Characters
-  	CJK Unified Ideograph Extension A
-  	CJK Unified Ideographs Extension B
-  	Kanbun
-60 	Private Use Area
-61 	CJK Compatibility Ideographs
-  	CJK Compatibility Ideographs Supplement
-62 	Alphabetic Presentation Forms
-63 	Arabic Presentation Forms-A
-64 	Combining Half Marks
-65 	CJK Compatibility Forms
-66 	Small Form Variants
-67 	Arabic Presentation Forms-B
-68 	Halfwidth And Fullwidth Forms
-69 	Specials
-70 	Tibetan
-71 	Syriac
-72 	Thaana
-73 	Sinhala
-74 	Myanmar
-75 	Ethiopic
-	Ethiopic Supplement
-	Ethiopic Extended
-76	Cherokee
-77 	Unified Canadian Aboriginal Syllabics
-78 	Ogham
-79 	Runic
-80 	Khmer
-	Khmer Symbol
-81 	Mongolian
-82 	Braille Patterns
-83 	Yi Syllables
-  	Yi Radicals
-84 	Tagalog
-  	Hanunoo
-  	Buhid
-  	Tagbanwa
-85 	Old Italic
-86 	Gothic
-87 	Deseret
-88 	Byzantine Musical Symbols
-  	Musical Symbols
-	Ancient Greek Musical Notation
-89 	Mathematical Alphanumeric Symbols
-90 	Private Use (plane 15)
-  	Private Use (plane 16)
-91 	Variation Selectors
-	Variation Selectors Supplement
-92 	Tags
-93 	Limbu 
-94 	Tai Le
-95 	New Tai Lue
-96 	Buginese
-97 	Glagolitic
-98 	Tifinagh
-99 	Yijing Hexagram Symbols 
-100 	Syloti Nagri 
-101 	Linear B Syllabary 
-	Linear B Ideograms 
-	Aegean Numbers
-102 	Ancient Greek Numbers
-103 	Ugaritic
-104 	Old Persian
-105 	Shavian
-106 	Osmanya
-107 	Cypriot Syllabary 
-108 	Kharoshthi 
-109 	Tai Xuan Jing Symbols
-110 	Cuneiform
-	Cuneiform Numbers and Punctuation
-111 	Counting Rod Numerals
-112 	Sundanese
-113 	Lepcha
-114 	Ol Chiki
-115 	Saurashtra
-116 	Kayah Li
-117 	Rejang
-118 	Cham
-119 	Ancient Symbols
-120 	Phaistos Disc
-121 	Carian
-  	Lycian
-	Lydian
-122 	Domino Tiles
-  	Mahjong Tiles
-123-127 	Reserved for process-internal usage
-"""
-"""
-Overview of the BMP (group=00, plane=00)
-
-======= A-ZONE (alphabetical characters and symbols) =======================
-00      (Control characters,) Basic Latin, Latin-1 Supplement (=ISO/IEC 8859-1)
-01      Latin Extended-A, Latin Extended-B
-02      Latin Extended-B, IPA Extensions, Spacing Modifier Letters
-03      Combining Diacritical Marks, Basic Greek, Greek Symbols and Coptic
-04      Cyrillic
-05      Armenian, Hebrew
-06      Basic Arabic, Arabic Extended
-07--08  (Reserved for future standardization)
-09      Devanagari, Bengali
-0A      Gumukhi, Gujarati
-0B      Oriya, Tamil
-0C      Telugu, Kannada
-0D      Malayalam
-0E      Thai, Lao
-0F      (Reserved for future standardization)
-10      Georgian
-11      Hangul Jamo
-12--1D  (Reserved for future standardization)
-1E      Latin Extended Additional
-1F      Greek Extended
-20      General Punctuation, Super/subscripts, Currency, Combining Symbols
-21      Letterlike Symbols, Number Forms, Arrows
-22      Mathematical Operators
-23      Miscellaneous Technical Symbols
-24      Control Pictures, OCR, Enclosed Alphanumerics
-25      Box Drawing, Block Elements, Geometric Shapes
-26      Miscellaneous Symbols
-27      Dingbats
-28--2F  (Reserved for future standardization)
-30      CJK Symbols and Punctuation, Hiragana, Katakana
-31      Bopomofo, Hangul Compatibility Jamo, CJK Miscellaneous
-32      Enclosed CJK Letters and Months
-33      CJK Compatibility
-34--4D  Hangul
-
-======= I-ZONE (ideographic characters) ===================================
-4E--9F  CJK Unified Ideographs
-
-======= O-ZONE (open zone) ================================================
-A0--DF  (Reserved for future standardization)
-
-======= R-ZONE (restricted use zone) ======================================
-E0--F8  (Private Use Area)
-F9--FA  CJK Compatibility Ideographs
-FB      Alphabetic Presentation Forms, Arabic Presentation Forms-A
-FC--FD  Arabic Presentation Forms-A
-FE      Combining Half Marks, CJK Compatibility Forms, Small Forms, Arabic-B
-FF      Halfwidth and Fullwidth Forms, Specials
-"""
-
-"""
-ulUnicodeRange
----------------
-
-See also
-http://developer.apple.com/fonts/TTRefMan/RM06/Chap6.html
-Says 128 bits are split into 96 and 32 bits.
-96 is Unicode block, 32 for script sets...
-
-"""
 
 
 def codepointIsInSomeRange( encoding ):
