@@ -1,3 +1,6 @@
+# This is an RPM 'spec' file, for use with the Redhat Package Manager
+# to make packages for that distribution.
+
 %define fontdir         %{_datadir}/fonts/freefont
 
 Name:      freefont-ttf
