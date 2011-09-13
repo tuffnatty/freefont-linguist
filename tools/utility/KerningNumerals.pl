@@ -1,7 +1,16 @@
 #!/usr/bin/perl
-# Move kerning information from ASCII numerals (U+0030...) to characters in
-# the Adobe corporate use area (U+F6xx).
-# $Id: KerningNumerals.pl,v 1.2 2003-05-15 12:04:41 peterlin Exp $
+=pod
+
+=head1 KerningNumerals.pl
+
+Move kerning information from ASCII numerals (U+0030...) to characters in
+the Adobe corporate use area (U+F6xx).
+
+By: Primož Peterlin, 2003
+
+$Id: KerningNumerals.pl,v 1.2 2003-05-15 12:04:41 peterlin Exp $
+
+=cut
 
 sub numerically { $a <=> $b; }
 
