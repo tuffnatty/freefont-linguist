@@ -128,9 +128,7 @@ ulUnicodeRange = [
 		]],
 [13,	'Arabic (+supplement)',     [interval(0x0600, 0x0603),
 			interval(0x0606, 0x061B),
-			interval(0x061E, 0x061F),
-			interval(0x0621, 0x0652),
-			interval(0x0653, 0x06FF),
+			interval(0x061E, 0x06FF),
 			interval(0x0750, 0x077F)	# Supplement
 	]
 	],
@@ -367,7 +365,7 @@ ulUnicodeRange = [
 			interval(0xFB43, 0xFB44),
 			interval(0xFB46, 0xFB4F),
 		]],
-[63,	'Arabic Presentation Forms-A', [interval(0xFB50, 0xFBB1),
+[63,	'Arabic Presentation Forms-A', [interval(0xFB50, 0xFBC1),
 				interval(0xFBD3, 0xFD3F),
 				interval(0xFD50, 0xFD8F),
 				interval(0xFD92, 0xFDC7),
