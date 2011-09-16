@@ -61,11 +61,10 @@
 
 5)  Commiting a CVS file
 
-    export CVS_RSH=ssh
-    cvs -z3 -d user_name@savannah.gnu.org:/cvsroot/freefont co freefont
+    svn co svn+ssh://user_name@svn.savannah.gnu.org/freefont/trunk/freefont
 
     cd freefont/sfd
-    cvs commit FreeSans.sfd
+    svn commit FreeSans.sfd
 
 6)  Tagging a release in CVS
 
@@ -75,7 +74,7 @@
 
     cvs rtag -d RELEASE_TAG_NAME freefont
 
-    Retreiving a tagged release
+    Retrieving a tagged release
 
     cvs checkout -P -r RELEASE_TAG_NAME freefont
 
