@@ -41,7 +41,7 @@ listed the ranges that have characters assigned to them.
 import fontforge
 from sys import stderr
 from time import tzset, strftime
-from ranges.OpenType import *
+from OpenType.UnicodeRanges import *
 
 def total_intervals( intervals ):
 	num = 0
