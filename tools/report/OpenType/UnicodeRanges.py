@@ -435,7 +435,7 @@ ulUnicodeRange = [
 		]
 		],
 [78, 	'Ogham', [interval(0x1680, 0x169F)]],
-[79, 	'Runic', [interval(0x16A0, 0x16F1)]],
+[79, 	'Runic', [interval(0x16A0, 0x16F0)]],
 [80, 	'Khmer (+symbols)', [interval(0x1780, 0x17FF),
 		interval(0x19E0, 0x19FF)	# symbols
 	]],
