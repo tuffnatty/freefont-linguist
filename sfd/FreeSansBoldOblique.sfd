@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1317411702
+ModificationTime: 1318168884
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -54,7 +54,7 @@ OS2Vendor: 'GNU '
 Lookup: 2 0 0 "Glyph Decomposition of iogonek"  {"Glyph Decomposition of iogonek-subtable"  } []
 Lookup: 6 0 0 "'ccmp' Contextual Chaining in Latin - iogonek"  {"'ccmp' Contextual Chaining in Latin - iogonek-subtable"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition/Decomposition in Latin - i"  {"'ccmp' Glyph Composition/Decomposition in Latin - i-subtable"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
-Lookup: 4 0 1 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin subtable"  } ['liga' ('latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin-commaright"  "'liga' Standard Ligatures in Latin subtable"  } ['liga' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 8 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures in Latin subtable"  } ['hlig' ('latn' <'dflt' > ) ]
@@ -204,14 +204,14 @@ LangName: 1029 "" "" "tu+AQ0A-n+AOkA kurz+AO0A-va" "" "Free Sans tu+AQ0A-n+AOkA 
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" "" "Free Sans +BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" 
 LangName: 1069 "" "" "Lodi etzana" "" "Free Sans Lodi etzana" 
 LangName: 1033 "" "" "" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this program.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 22 1 65535 3 0
+GaspTable: 3 9 2 22 1 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 48 16 12
+WinInfo: 80 16 12
 BeginPrivate: 9
 UniqueID 7 5020910
 BlueValues 23 [-24 0 540 550 728 742]
@@ -997,7 +997,7 @@ SplineSet
  526 444 410 331 410 213 c 0
  410 170 433 140 474 140 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: A
@@ -2372,10 +2372,10 @@ SplineSet
 414 529 m 1
  394 436 l 1
  316 436 l 1
- 254 142 l 6
- 250 125 248 113 248 108 c 4
- 248 93 263 83 286 83 c 4
- 297 83 305 84 319 86 c 5
+ 254 142 l 2
+ 250 125 248 113 248 108 c 0
+ 248 93 263 83 286 83 c 0
+ 297 83 305 84 319 86 c 1
  299 -12 l 1
  271 -20 247 -23 214 -23 c 0
  141 -23 101 8 101 63 c 0
@@ -4789,13 +4789,16 @@ EndChar
 
 StartChar: dcaron
 Encoding: 271 271 204
-Width: 722
+Width: 755
 Flags: HMW
 LayerCount: 2
 Fore
+Refer: 339 787 N 1 0 0 1 966 0 2
 Refer: 68 100 N 1 0 0 1 0 0 2
-Refer: 1346 700 N 1 0 0 1 505 3 2
 Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaaboverightcmb
+Ligature2: "'liga' Standard Ligatures in Latin-commaright" d commaabovecmb
 EndChar
 
 StartChar: Dcroat
@@ -5559,8 +5562,8 @@ Width: 611
 Flags: HMW
 LayerCount: 2
 Fore
+Refer: 339 787 N 1 0 0 1 736 0 2
 Refer: 44 76 N 1 0 0 1 0 0 0
-Refer: 1346 700 N 1 0 0 1 279 0 2
 Validated: 32769
 EndChar
 
@@ -5570,9 +5573,12 @@ Width: 444
 Flags: HMW
 LayerCount: 2
 Fore
+Refer: 339 787 S 1 0 0 1 646 0 2
 Refer: 76 108 N 1 0 0 1 0 0 0
-Refer: 1346 700 N 1 0 0 1 181 0 2
 Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaaboverightcmb
+Ligature2: "'liga' Standard Ligatures in Latin-commaright" l commaabovecmb
 EndChar
 
 StartChar: Ldot
@@ -6184,9 +6190,10 @@ StartChar: tcaron
 Encoding: 357 357 288
 Width: 444
 Flags: HMW
+AnchorPoint: "above" -165 538 mark 0
 LayerCount: 2
 Fore
-Refer: 1346 700 N 1 0 0 1 218 60 2
+Refer: 339 787 S 1 0 0 1 656 0 2
 Refer: 84 116 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -17709,15 +17716,17 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0259
+StartChar: schwa
 Encoding: 601 601 969
 Width: 556
 Flags: HMW
 TeX: 117 0
+AnchorPoint: "above" 382 552 basechar 0
+AnchorPoint: "below" 280 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 69 101 S -1 0 0 -1 641 526 0
-Validated: 32769
+Refer: 69 101 N -1 0 0 -1 661 526 0
+Validated: 98305
 EndChar
 
 StartChar: uni025B
@@ -22855,56 +22864,56 @@ EndChar
 
 StartChar: uni0294
 Encoding: 660 660 1256
-Width: 611
+Width: 563
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-403.989 626 m 4
- 345.901 626 284.048 579.17 263.169 481 c 5
- 127.169 481 l 5
- 178.206 707 329.071 744 426.071 744 c 4
- 553.37 744 631.939 673.508 631.939 566.293 c 4
- 631.939 409.281 503.932 344.04 464.947 320 c 4
- 396.02 278 386.682 267 372.652 201 c 6
- 329.929 0 l 5
- 205.929 0 l 5
- 248.652 201 l 6
- 296.075 424.105 487.586 385.764 487.586 538.854 c 4
- 487.586 589.749 455.078 626 403.989 626 c 4
+403.989 626 m 0
+ 345.901 626 284.048 579.17 263.169 481 c 1
+ 127.169 481 l 1
+ 178.206 707 329.071 744 426.071 744 c 0
+ 553.37 744 631.939 673.508 631.939 566.293 c 0
+ 631.939 409.281 503.932 344.04 464.947 320 c 0
+ 396.02 278 386.682 267 372.652 201 c 2
+ 329.929 0 l 1
+ 205.929 0 l 1
+ 248.652 201 l 2
+ 296.075 424.105 487.586 385.764 487.586 538.854 c 0
+ 487.586 589.749 455.078 626 403.989 626 c 0
 EndSplineSet
 Validated: 3073
 EndChar
 
 StartChar: uni02A1
 Encoding: 673 673 1257
-Width: 611
+Width: 546
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-424 626 m 4
- 366 626 304 579 283 481 c 5
- 147 481 l 5
- 198 707 349 744 446 744 c 4
- 573 744 652 674 652 566 c 4
- 652 409 524 344 485 320 c 4
- 416 278 407 267 393 201 c 6
- 389 183 l 5
- 475 183 l 5
- 455 90 l 5
- 369 90 l 5
- 350 0 l 5
- 226 0 l 5
- 245 90 l 5
- 156 90 l 5
- 176 183 l 5
- 265 183 l 5
- 269 201 l 6
- 316 424 508 386 508 539 c 4
- 508 590 475 626 424 626 c 4
+404 626 m 0
+ 346 626 284 579 263 481 c 1
+ 127 481 l 1
+ 178 707 329 744 426 744 c 0
+ 553 744 632 674 632 566 c 0
+ 632 409 504 344 465 320 c 0
+ 396 278 387 267 373 201 c 2
+ 369 183 l 1
+ 455 183 l 1
+ 435 90 l 1
+ 349 90 l 1
+ 330 0 l 1
+ 206 0 l 1
+ 225 90 l 1
+ 136 90 l 1
+ 156 183 l 1
+ 245 183 l 1
+ 249 201 l 2
+ 296 424 488 386 488 539 c 0
+ 488 590 455 626 404 626 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -22940,35 +22949,35 @@ EndChar
 
 StartChar: uni0295
 Encoding: 661 661 1259
-Width: 611
+Width: 563
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-394 626 m 4
- 316 626 262 548 262 486 c 4
- 262 398 376 396 376 264 c 4
- 376 246 374 225 369 201 c 6
- 326 0 l 5
- 202 0 l 5
- 245 201 l 6
- 249 221 251 236 251 249 c 4
- 251 326 118 335 118 461 c 4
- 118 477 120 495 124 514 c 4
- 153 650 275 744 422 744 c 4
- 506 744 618 716 618 563 c 4
- 618 539 615 512 609 481 c 5
- 473 481 l 5
- 477 497 480 510 480 528 c 4
- 480 586 447 626 394 626 c 4
+394 626 m 0
+ 316 626 262 548 262 486 c 0
+ 262 398 376 396 376 264 c 0
+ 376 246 374 225 369 201 c 2
+ 326 0 l 1
+ 202 0 l 1
+ 245 201 l 2
+ 249 221 251 236 251 249 c 0
+ 251 326 118 335 118 461 c 0
+ 118 477 120 495 124 514 c 0
+ 153 650 275 744 422 744 c 0
+ 506 744 618 716 618 563 c 0
+ 618 539 615 512 609 481 c 1
+ 473 481 l 1
+ 477 497 480 510 480 528 c 0
+ 480 586 447 626 394 626 c 0
 EndSplineSet
 Validated: 3073
 EndChar
 
 StartChar: uni0296
 Encoding: 662 662 1260
-Width: 611
+Width: 563
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
@@ -26055,10 +26064,11 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni019b
+StartChar: lambdastroke
 Encoding: 411 411 1355
 Width: 620
 Flags: HMW
+AnchorPoint: "above" 469 674 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -26388,7 +26398,7 @@ EndChar
 
 StartChar: uni01be
 Encoding: 446 446 1365
-Width: 581
+Width: 546
 Flags: HMW
 LayerCount: 2
 Fore
@@ -26433,34 +26443,34 @@ EndChar
 
 StartChar: uni02a2
 Encoding: 674 674 1368
-Width: 611
+Width: 546
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-617.239 479 m 5
- 481.239 479 l 5
- 485.161 497.447 486.958 513.889 486.958 528.459 c 4
- 486.958 596.82 447.398 624 402.061 624 c 4
- 328.089 624 269.707 549.777 269.707 483.271 c 4
- 269.707 395.787 384.124 395.842 384.124 264.636 c 4
- 384.124 246.213 381.868 225.203 376.724 201 c 6
- 372.897 183 l 5
- 460.897 183 l 5
- 441.13 90 l 5
- 353.13 90 l 5
- 334 0 l 5
- 210 0 l 5
- 229.13 90 l 5
- 142.13 90 l 5
- 161.897 183 l 5
- 248.897 183 l 5
- 252.724 201 l 6
- 256.985 221.047 259.489 235.983 259.489 248.253 c 4
- 259.489 320.201 125.882 341.494 125.882 459.514 c 4
- 125.882 587.917 235.948 742 430.143 742 c 4
- 513.448 742 627.093 714.71 627.093 563.848 c 4
- 627.093 539.047 624.021 510.907 617.239 479 c 5
+617.239 479 m 1
+ 481.239 479 l 1
+ 485.161 497.447 486.958 513.889 486.958 528.459 c 0
+ 486.958 596.82 447.398 624 402.061 624 c 0
+ 328.089 624 269.707 549.777 269.707 483.271 c 0
+ 269.707 395.787 384.124 395.842 384.124 264.636 c 0
+ 384.124 246.213 381.868 225.203 376.724 201 c 2
+ 372.897 183 l 1
+ 460.897 183 l 1
+ 441.13 90 l 1
+ 353.13 90 l 1
+ 334 0 l 1
+ 210 0 l 1
+ 229.13 90 l 1
+ 142.13 90 l 1
+ 161.897 183 l 1
+ 248.897 183 l 1
+ 252.724 201 l 2
+ 256.985 221.047 259.489 235.983 259.489 248.253 c 0
+ 259.489 320.201 125.882 341.494 125.882 459.514 c 0
+ 125.882 587.917 235.948 742 430.143 742 c 0
+ 513.448 742 627.093 714.71 627.093 563.848 c 0
+ 627.093 539.047 624.021 510.907 617.239 479 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -41708,7 +41718,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 969 601 S 0.65 0 0 0.65 -30 -201 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: planck
