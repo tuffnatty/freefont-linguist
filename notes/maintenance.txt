@@ -96,7 +96,7 @@
 	Write to pkg-fonts-devel@lists.alioth.debian.org, 
 		and Debian freefont-ttf packager
 
-	Mark "In CVS" bug reports as "Fixed"
+	Mark "Fix in source" bug reports as "Fixed"
 
 9) Adding ssh keys to Savannah
 	Otherwise get errors like
@@ -107,5 +107,10 @@
 	Edit the (n) SSH Public Keys registered
 	Paste in a public rsa key (can have up to 5)
 	Click Update.
-	
+
+10) Adding binaries (such as TrueType fonts) to CVS, as for web pages
+	Remember to add with the -kb flag,
+		cvs add -kb myfont.ttf
+	or it will mess the binary up and waste days of your life.
+
 $Id: maintenance.txt,v 1.10 2011-07-16 08:38:06 Stevan_White Exp $
