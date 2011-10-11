@@ -451,7 +451,9 @@ ulUnicodeRange = [
 		interval(0x1750, 0x1773)
 		]
 		],
-[85, 	'Old Italic', [interval(0x10300, 0x10320)], True],
+[85, 	'Old Italic', [interval(0x10300, 0x1031E),
+			interval(0x10320, 0x10323)
+	], True],
 [86, 	'Gothic', [interval(0x10330, 0x1034A)], True],
 [87, 	'Deseret', [interval(0x10400, 0x1044F)], True],
 [88, 	'Byzantine &amp; Western Musical Symbols', [interval(0x1D000, 0x1D0F5),
