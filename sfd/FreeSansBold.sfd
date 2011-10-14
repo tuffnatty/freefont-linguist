@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1318421164
+ModificationTime: 1318591416
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -65,6 +65,7 @@ Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Com
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch subtable"  } ['liga' ('latn' <'nl  ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms for Serbian-Macedonian"  {"'locl' Localized Forms for Serbian-Macedonian-1"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' Discretionary Ligatures in Armenian"  {"'dlig' Discretionary Ligatures in Armenian subtable"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Armenian"  {"'hlig' Historic Ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
@@ -260,7 +261,7 @@ Grid
  2000 390 l 4
 EndSplineSet
 AnchorClass2: "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "abovegrk"  "'mark' Mark Positioning in Greek 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "belowgrk"  "'mark' Mark Positioning in Greek 0 subtable" 
-BeginChars: 65600 2509
+BeginChars: 65600 2510
 
 StartChar: space
 Encoding: 32 32 0
@@ -8934,6 +8935,7 @@ SplineSet
  417 362 368 432 299 432 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms for Serbian-Macedonian-1" cyrillic_serb_be
 EndChar
 
 StartChar: vecyrillic
@@ -49683,6 +49685,37 @@ Width: 0
 VWidth: 0
 Flags: HW
 LayerCount: 2
+EndChar
+
+StartChar: cyrillic_serb_be
+Encoding: 59655 -1 2509
+Width: 593
+Flags: W
+HStem: -23 117<238.603 358.352> 432 117<237.497 357.922> 623.5 106<211.615 516.5>
+VStem: 42 139<160.429 364.417> 77.5 109<530.37 599.297> 417 140<162.56 361.037>
+LayerCount: 2
+Fore
+SplineSet
+299 432 m 0xf4
+ 229 432 181 363 181 265 c 0
+ 181 162 228 94 299 94 c 0
+ 368 94 417 164 417 262 c 0
+ 417 362 368 432 299 432 c 0xf4
+300 549 m 0
+ 458.003 549 557 432 557 263 c 0
+ 557 100 468 -23 297 -23 c 0
+ 135 -23 42 82 42 262 c 0xf4
+ 42 352.309 74.5569 429.3 128.077 480.735 c 1
+ 95.9593 509.008 77.5 537.396 77.5 587.5 c 0
+ 77.5 664 139.5 729.5 244.5 729.5 c 2
+ 516.5 729.5 l 1
+ 516.5 623.5 l 1
+ 266.5 623.5 l 2
+ 223.5 623.5 186.5 588 186.5 563.5 c 0xec
+ 186.5 549.875 192.466 538.459 201.995 529.564 c 1
+ 231.881 542.183 264.87 549 300 549 c 0
+EndSplineSet
+Validated: 527361
 EndChar
 EndChars
 EndSplineFont

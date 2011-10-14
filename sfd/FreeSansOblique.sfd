@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1318444199
+ModificationTime: 1318591587
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -61,6 +61,7 @@ Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sa
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions lookup 13"  {"'frac' Diagonal Fractions lookup 13 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms for Serbian-Macedonian"  {"'locl' Localized Forms for Serbian-Macedonian-1"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
@@ -296,7 +297,7 @@ Grid
  2000 380 l 0
 EndSplineSet
 AnchorClass2: "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "middle"  "'mark' Mark Positioning subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin subtable" "1 Top"  "'mark' Mark Positioning in Greek 0 subtable" 
-BeginChars: 66002 2908
+BeginChars: 66002 2909
 
 StartChar: space
 Encoding: 32 32 0
@@ -8953,6 +8954,7 @@ SplineSet
  176 103 217 54 291 54 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms for Serbian-Macedonian-1" cyrillic_serb_be
 EndChar
 
 StartChar: vecyrillic
@@ -73621,8 +73623,40 @@ Refer: 971 729 N 1 0 0 1 -115 -7 0
 Refer: 971 729 N 1 0 0 1 313 -7 0
 Refer: 971 729 N 1 0 0 1 24 -7 0
 Refer: 971 729 N 1 0 0 1 175 -7 0
+Validated: 32769
 Ligature2: "'liga' Standard Ligatures in Cyrillic subtable" yicyrillic yicyrillic
 LCarets2: 1 0 
+EndChar
+
+StartChar: cyrillic_serb_be
+Encoding: 59654 -1 2908
+Width: 552
+Flags: W
+HStem: -23 77<203.868 349.51> 462 77<293.105 437.047> 656 72<303.172 590>
+VStem: 71.8397 89.2183<97.341 296.162> 193.224 73.068<528.171 622.987> 480.059 89.189<215.623 418.524>
+LayerCount: 2
+Fore
+SplineSet
+368 462 m 0
+ 259.508 462 161.058 337.592 161.058 180.862 c 0
+ 161.058 100.513 200.719 54 273 54 c 0
+ 382.088 54 480.059 178.829 480.059 334.445 c 0
+ 480.059 415.759 440.845 462 368 462 c 0
+384 539 m 0
+ 504.77 539 569.248 472.473 569.248 353.233 c 0
+ 569.248 132.545 424.947 -23 256 -23 c 0
+ 136.652 -23 71.8397 44.3664 71.8397 161.627 c 0
+ 71.8397 306.013 142.308 428.376 222 486 c 1
+ 202.816 502.342 193.224 530.762 193.224 560.748 c 0
+ 193.224 670.123 272.066 728 375 728 c 2
+ 608 728 l 1
+ 590 656 l 5
+ 387 656 l 2
+ 319.324 656 266.292 629.015 266.292 570.917 c 0
+ 266.292 552.692 276.391 532.091 295 524 c 1
+ 323 534 353 539 384 539 c 0
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont

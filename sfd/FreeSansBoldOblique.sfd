@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1318422582
+ModificationTime: 1318591495
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -61,6 +61,7 @@ Lookup: 4 8 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures 
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch subtable"  } ['liga' ('latn' <'nl  ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms for Serbian-Macedonian"  {"'locl' Localized Forms for Serbian-Macedonian-1"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew lookup 4"  {"'dlig' Discretionary Ligatures in Hebrew lookup 4 subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
@@ -232,7 +233,7 @@ Grid
  2000 390 l 0
 EndSplineSet
 AnchorClass2: "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "middle"  "'mark' Mark Positioning subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin subtable" 
-BeginChars: 65536 2324
+BeginChars: 65536 2325
 
 StartChar: space
 Encoding: 32 32 0
@@ -9221,6 +9222,7 @@ SplineSet
  236 137 269 94 325 94 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms for Serbian-Macedonian-1" cyrillic_serb_be
 EndChar
 
 StartChar: vecyrillic
@@ -44641,6 +44643,35 @@ Width: 0
 VWidth: 0
 Flags: HW
 LayerCount: 2
+EndChar
+
+StartChar: cyrillic_serb_be
+Encoding: 59655 -1 2324
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+382 432 m 0
+ 298 432 217 325 217 202 c 0
+ 217 135 249 94 304 94 c 0
+ 385 94 468 199 468 322 c 0
+ 468 389 436 432 382 432 c 0
+410 549 m 0
+ 540 549 611 471 611 349 c 0
+ 611 138 464 -23 275 -23 c 0
+ 144 -23 74 45 74 167 c 0
+ 74 307 139 416 222 481 c 1
+ 203 502 192 522 192 552 c 0
+ 192 654 283 730 396 730 c 2
+ 668 730 l 1
+ 643 624 l 1
+ 393 624 l 2
+ 347 624 298 587 298 554 c 0
+ 298 545 301 537 307 530 c 1
+ 340 543 375 549 410 549 c 0
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
