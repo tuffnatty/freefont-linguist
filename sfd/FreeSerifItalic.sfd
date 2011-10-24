@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1319468302
+ModificationTime: 1319486787
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -55,6 +55,7 @@ Lookup: 2 0 0 "Glyph Decomposition of iogonek"  {"Glyph Decomposition of iogonek
 Lookup: 4 0 0 "'ccmp' Glyph Composition/Decomposition in Latin - i"  {"'ccmp' Glyph Composition/Decomposition in Latin - i-subtable"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 6 0 0 "'ccmp' Contextual Chaining in Latin - iogonek"  {"'ccmp' Contextual Chaining in Latin - iogonek-subtable"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms for Serbian-Macedonian"  {"'locl' Localized Forms for Serbian-Macedonian-1"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
+Lookup: 3 0 0 "'salt' Stylistic Alternatives in Cyrillic for Serbian"  {"'salt' Stylistic Alternatives in Cyrillic for Serbian-subtable"  } ['salt' ('cyrl' <'MKD ' 'SRB ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
@@ -356,7 +357,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 216497 262144 131072 87381 448791 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "topright"  "'mark' Mark Positioning subtable middle" "ogonek"  "'mark' Mark Positioning in Latin subtable 2" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable middle" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 65980 3130
+BeginChars: 65980 3131
 
 StartChar: space
 Encoding: 32 32 0
@@ -13616,6 +13617,7 @@ SplineSet
  112 343 117 368 117 376 c 0
 EndSplineSet
 Validated: 3073
+AlternateSubs2: "'salt' Stylistic Alternatives in Cyrillic for Serbian-subtable" cyrillic_serb_alt_sha
 EndChar
 
 StartChar: shchacyrillic
@@ -92641,7 +92643,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 108 175 S 1 0 0 1 189 0 0
-Refer: 620 1096 N 1 0 0 1 0 0 2
+Refer: 620 1096 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
@@ -93575,6 +93577,17 @@ SplineSet
  111 46 142 10 189 10 c 0
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: cyrillic_serb_alt_sha
+Encoding: 59655 -1 3130
+Width: 744
+Flags: W
+LayerCount: 2
+Fore
+Refer: 108 175 S 1 0 0 1 49 -660 0
+Refer: 620 1096 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont
