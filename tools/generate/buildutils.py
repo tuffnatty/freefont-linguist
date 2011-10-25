@@ -16,8 +16,8 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2011, Stevan White"
-__date__ = "$Date: 2011-09-12 14:25:06 +0200 (Mon, 12 Sep 2011) $"
-__version__ = "$Revision: 1822 $"
+__date__ = "$Date$"
+__version__ = "$Revision$"
 __doc__ = """
 Common tools used by the generate scripts.
 """
