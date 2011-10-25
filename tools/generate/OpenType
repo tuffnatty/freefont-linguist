@@ -16,7 +16,7 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2009, 2010, Stevan White"
+__copyright__ = "Copyright 2009, 2010, 2011, Stevan White"
 __date__ = "$Date$"
 __version__ = "$Revision$"
 __doc__ = """
@@ -32,6 +32,7 @@ Therefore, hinting is presently turned off
 
 import fontforge
 from sys import argv
+from buildutils import *
 
 scriptname = argv[0];
 argc = len( argv )
@@ -40,7 +41,8 @@ if argc > 1:
 	for i in range( 1, argc ):
 		f = fontforge.open( argv[i] )
 		otfile = f.fontname + ".otf"
-		print "Generating OpenType file " + otfile
+		vstr = trim_version_str( f )
+		print "Generating OpenType file ", otfile, ' ', vstr
 #		f.selection.all()
 #		f.autoHint()	# because without gasp table, small sizes ugly
 		f.generate( otfile, flags=('opentype','old-kern') )
