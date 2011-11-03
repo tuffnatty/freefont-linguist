@@ -85,18 +85,22 @@ def dealWithValidationState( state, e ):
 	"""
 
 def validate( dir, fontFile ):
-	print "Validating " + fontFile
-	font = fontforge.open( dir + fontFile )
+	try:
+		font = fontforge.open( dir + fontFile )
+		print "Validating " + fontFile
 
-	g = font.selection.all()
-	g = font.selection.byGlyphs
+		g = font.selection.all()
+		g = font.selection.byGlyphs
 
-	valid = True
-	for e in g:
-		state = e.validate()
-		if state != 0:
-			dealWithValidationState( state, e )
-	font.validate
+		valid = True
+		for e in g:
+			state = e.validate()
+			if state != 0:
+				dealWithValidationState( state, e )
+		font.validate
+	except Exception, e:
+		problem = True
+		print >> sys.stderr, str( e )
 
 validate( '../sfd/', 'FreeSerif.sfd' )
 validate( '../sfd/', 'FreeSerifItalic.sfd' )
