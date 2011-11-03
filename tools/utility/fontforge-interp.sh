@@ -1,5 +1,9 @@
-fontforge -script $@
 # fontforge as a script interpreter.
-# Exists because Linux /usr/bin/env won't allow arguments such as -script
-# on the command line, and it was desirable to launch fontforge scripts
-# as executables.
+#
+# Exists because
+# * It is desirable to launch fontforge scripts as executables.
+# * The usual #! interpreter-calling mechanism needs an explicit path,
+#   but custom-installed fontforge should be in a non-distro location.
+# * Linux /usr/bin/env won't allow arguments such as -script.
+
+fontforge -script $@
