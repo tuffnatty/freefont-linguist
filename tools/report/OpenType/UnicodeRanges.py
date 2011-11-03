@@ -78,7 +78,7 @@ class interval:
 # NOTE the OpenType spec is much more thorough
 ulUnicodeRange = [
 [0,	'Basic Latin', [interval(0,1),	# Nul character, mapped to notdef
-					# and .nul requrired by TrueType
+					# and .nul; required by TrueType
 			interval(0x0d, 0x0d),	# non-marking return
 	interval(0x20, 0x7E)] ],	# Latin range
 [1,	'Latin-1 Supplement',[interval(0xA0, 0xFF)] ],
