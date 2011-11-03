@@ -1,4 +1,4 @@
-#!/usr/bin/fontforge -script 
+#!/usr/bin/env ../utility/fontforge-interp.sh
 __license__ = """
 This file is part of Gnu FreeFont.
 
