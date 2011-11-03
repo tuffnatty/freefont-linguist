@@ -33,8 +33,8 @@ otf: $(OTFS)
 tests:
 	@ $(TESTFF)
 	@ ( $(FFPY) ../tools/test/isMonoMono.py $(MSFDS) 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
-	@ ../tools/test/checkGlyphNumbers.py 2>&1
-	@ ../tools/test/validate.py 2>&1
+	@ $(FFPY) ../tools/test/checkGlyphNumbers.py 2>&1
+	@ $(FFPY) ../tools/test/validate.py 2>&1
 
 clean:
 	rm -f $(TTFS) $(OTFS) build.log
