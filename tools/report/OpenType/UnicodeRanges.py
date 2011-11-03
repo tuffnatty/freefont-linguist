@@ -301,7 +301,7 @@ ulUnicodeRange = [
 	]],
 [31,	'General Punctuation (+suppl)',     [interval(0x2000, 0x2064),
 		# interval(0x206A, 0x206F),	# deprecated
-		interval(0x2E00, 0x2E30),	# Supplemental
+		interval(0x2E00, 0x2E31),	# Supplemental
 	]],
 [32,	'Superscripts and Subscripts',     [interval(0x2070, 0x2071),
 		interval(0x2074, 0x208E),
