@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1320257364
+ModificationTime: 1320417857
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -125,7 +125,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1520 16 11
+WinInfo: 65120 16 11
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 23 [-20 0 417 437 563 583]
@@ -138,7 +138,7 @@ StemSnapV 4 [41]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 67329 4121
+BeginChars: 67329 4127
 
 StartChar: space
 Encoding: 32 32 0
@@ -86564,7 +86564,9 @@ EndChar
 StartChar: unifbb2
 Encoding: 64434 64434 3660
 Width: 600
-Flags: HW
+Flags: W
+HStem: 416 100<270.5 329.5>
+VStem: 250 100<435.473 495.324>
 LayerCount: 2
 Fore
 SplineSet
@@ -86611,7 +86613,9 @@ EndChar
 StartChar: unifbb6
 Encoding: 64438 64438 3664
 Width: 600
-Flags: HW
+Flags: W
+HStem: 416 100<190.5 249.5 350.5 409.5> 486 100<270.5 329.5>
+VStem: 170 100<435.473 495.324> 250 100<505.473 565.324> 330 100<435.473 495.324>
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 0 70 2
@@ -87091,7 +87095,9 @@ EndChar
 StartChar: sheenarabic
 Encoding: 1588 1588 3690
 Width: 600
-Flags: HW
+Flags: W
+HStem: -124 47<75.4128 240.352> 0 40<313 430 470 551.748> 246 100<330.5 389.5 490.5 549.5> 316 100<410.5 469.5>
+VStem: 0 40<-41.8931 45> 27 41<136 149.98> 272 41<-45.0008 0 40 149.991> 310 100<265.473 325.324> 390 100<335.473 395.324> 430 40<40 179.991> 470 100<265.473 325.324> 559 41<46.3111 183.979>
 LayerCount: 2
 Fore
 Refer: 3664 64438 S 1 0 0 1 140 -170 2
@@ -87099,7 +87105,7 @@ Refer: 3694 1587 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" sheenfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" sheenmedialarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" sheenfinalarabic
+Substitution2: "'init' Initial Forms in Arabic subtable" sheeninitialarabic
 EndChar
 
 StartChar: dadarabic
@@ -87165,19 +87171,21 @@ EndChar
 StartChar: seenarabic
 Encoding: 1587 1587 3694
 Width: 600
-Flags: HW
+Flags: W
+HStem: -124 47<75.4128 240.352> 0 40<313 430 470 551.748>
+VStem: 0 40<-41.8931 45> 27 41<136 149.98> 272 41<-45.0008 0 40 149.991> 430 40<40 179.991> 559 41<46.3111 183.979>
 LayerCount: 2
 Fore
 SplineSet
-600 161 m 0
+600 161 m 0xee
  600 9 584 0 525 0 c 2
  525 0 374 0 313 0 c 1
  313 -82 234 -124 156 -124 c 0
  78 -124 0 -82 0 0 c 2
- 0 59 l 1
+ 0 59 l 1xee
  27 136 l 2
  30 146 39 150 47 150 c 0
- 57 150 68 143 68 131 c 0
+ 57 150 68 143 68 131 c 0xde
  68 128 67 125 66 122 c 2
  40 45 l 1
  40 0 l 2
@@ -87195,7 +87203,7 @@ SplineSet
  516 40 l 2
  556 40 559 54 559 162 c 0
  559 176 569 184 580 184 c 0
- 590 184 600 177 600 161 c 0
+ 590 184 600 177 600 161 c 0xee
 EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" seenfinalarabic
@@ -87228,6 +87236,7 @@ SplineSet
  464 250 474 244 474 227 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'fina' Terminal Forms in Arabic subtable" noonghunnafinaarabic
 EndChar
 
 StartChar: arabic_dotless_qaf
@@ -87358,7 +87367,9 @@ EndChar
 StartChar: heharabic
 Encoding: 1607 1607 3701
 Width: 600
-Flags: HW
+Flags: W
+HStem: -16 41<232.634 366.808>
+VStem: 182 41<35.6158 170.069> 377 41<36.2333 168.547>
 LayerCount: 2
 Fore
 SplineSet
@@ -87393,7 +87404,7 @@ Substitution2: "'medi' Medial Forms in Arabic subtable" uniFE93
 Substitution2: "'init' Initial Forms in Arabic subtable" uniFE93
 EndChar
 
-StartChar: uni06CC
+StartChar: yehfarsiarabic
 Encoding: 1740 1740 3703
 Width: 600
 Flags: HW
@@ -87424,9 +87435,9 @@ SplineSet
  433 81 458 81 474 81 c 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'fina' Terminal Forms in Arabic subtable" uniFBFD
-Substitution2: "'medi' Medial Forms in Arabic subtable" uniFBFF
-Substitution2: "'init' Initial Forms in Arabic subtable" uniFBFE
+Substitution2: "'init' Initial Forms in Arabic subtable" yehfarsiinitarabic
+Substitution2: "'medi' Medial Forms in Arabic subtable" yehfarsimediarabic
+Substitution2: "'fina' Terminal Forms in Arabic subtable" yehfarsifinaarabic
 EndChar
 
 StartChar: alefmaksuraarabic
@@ -87438,8 +87449,8 @@ Fore
 Refer: 3703 1740 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefmaksurafinalarabic
-Substitution2: "'medi' Medial Forms in Arabic subtable" unifbe9
-Substitution2: "'init' Initial Forms in Arabic subtable" unifbe8
+Substitution2: "'medi' Medial Forms in Arabic subtable" alefmaksuramediarabic
+Substitution2: "'init' Initial Forms in Arabic subtable" alefmaksurainitarabic
 EndChar
 
 StartChar: yeharabic
@@ -87629,7 +87640,7 @@ VWidth: 761
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 3714 1569 N 0.7203 0 0 0.7203 14 658 2
+Refer: 3714 1569 S 0.7203 0 0 0.7203 14 658 2
 Validated: 32769
 EndChar
 
@@ -87791,9 +87802,10 @@ Fore
 Refer: 3715 1620 S 1 0 0 1 30 -380 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'fina' Terminal Forms in Arabic subtable" wawhamzaabovefinalarabic
 EndChar
 
-StartChar: uni0653
+StartChar: maddaarabic
 Encoding: 1619 1619 3726
 Width: 0
 Flags: HW
@@ -88108,8 +88120,6 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" yehbarreefinaarabic
-Substitution2: "'medi' Medial Forms in Arabic subtable" uniFBFF
-Substitution2: "'init' Initial Forms in Arabic subtable" uniFBFE
 EndChar
 
 StartChar: uni06d3
@@ -88118,19 +88128,9 @@ Width: 600
 Flags: HW
 LayerCount: 2
 Fore
-SplineSet
-549 40 m 1
- 549 0 l 1
- 382 0 192 0 49 0 c 1
- 49 40 l 1
- 94 114 137 178 185 252 c 0
- 189 257 194 260 199 260 c 0
- 210 260 221 251 221 241 c 0
- 221 238 220 235 218 232 c 0
- 160 142 96 40 96 40 c 1
- 549 40 l 1
-EndSplineSet
-Validated: 3073
+Refer: 3749 1746 S 1 0 0 1 0 0 2
+Refer: 3715 1620 N 1 0 0 1 -150 -344 2
+Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifbb1
 EndChar
 
@@ -88382,7 +88382,7 @@ Refer: 3721 1603 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni06ad
+StartChar: ngarabic
 Encoding: 1709 1709 3770
 Width: 600
 Flags: HW
@@ -88391,9 +88391,9 @@ Fore
 Refer: 3664 64438 S 1 0 0 1 -60 190 2
 Refer: 3721 1603 S 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'fina' Terminal Forms in Arabic subtable" unifbd5
-Substitution2: "'medi' Medial Forms in Arabic subtable" unifbd6
-Substitution2: "'init' Initial Forms in Arabic subtable" unifbd3
+Substitution2: "'init' Initial Forms in Arabic subtable" nginitarabic
+Substitution2: "'medi' Medial Forms in Arabic subtable" ngmedialarabic
+Substitution2: "'fina' Terminal Forms in Arabic subtable" ngfinalarabic
 EndChar
 
 StartChar: uni06ca
@@ -88607,7 +88607,7 @@ Refer: 3700 1608 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni06c0
+StartChar: hehhamzaarabic
 Encoding: 1728 1728 3782
 Width: 600
 VWidth: 800
@@ -88617,6 +88617,7 @@ Fore
 Refer: 3715 1620 S 1 0 0 1 20 -344 2
 Refer: 3780 1749 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'fina' Terminal Forms in Arabic subtable" hehhamzafinalarabic
 EndChar
 
 StartChar: unifbc0
@@ -88761,6 +88762,7 @@ Fore
 Refer: 3783 64448 N 1 0 0 1 0 -166 2
 Refer: 3680 1585 S 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'fina' Terminal Forms in Arabic subtable" rrehfinaarabic
 EndChar
 
 StartChar: arab_reh_dot_above_below
@@ -88902,7 +88904,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni06bb
+StartChar: rnoonarabic
 Encoding: 1723 1723 3799
 Width: 600
 Flags: HW
@@ -88911,9 +88913,9 @@ Fore
 Refer: 3783 64448 S 1 0 0 1 0 -236 2
 Refer: 3695 1722 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'fina' Terminal Forms in Arabic subtable" unifba1
-Substitution2: "'medi' Medial Forms in Arabic subtable" unifba1
-Substitution2: "'init' Initial Forms in Arabic subtable" unifba2
+Substitution2: "'init' Initial Forms in Arabic subtable" rnooninitialarabic
+Substitution2: "'medi' Medial Forms in Arabic subtable" rnoonmedialarabic
+Substitution2: "'fina' Terminal Forms in Arabic subtable" rnoonfinalarabic
 EndChar
 
 StartChar: arab_noon_ring
@@ -89057,7 +89059,7 @@ Refer: 3700 1608 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: arab_yeh_tail
+StartChar: yehtailarabic
 Encoding: 1741 1741 3808
 Width: 600
 Flags: HW
@@ -89225,7 +89227,7 @@ Refer: 3700 1608 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: arab_e
+StartChar: earabic
 Encoding: 1744 1744 3819
 Width: 600
 Flags: HW
@@ -89234,9 +89236,9 @@ Fore
 Refer: 3671 64446 S 1 0 0 1 170 0 2
 Refer: 3703 1740 N 1 0 0 1 -60 0 2
 Validated: 32769
-Substitution2: "'fina' Terminal Forms in Arabic subtable" unifbe4
-Substitution2: "'medi' Medial Forms in Arabic subtable" unifbe7
-Substitution2: "'init' Initial Forms in Arabic subtable" unifbe6
+Substitution2: "'init' Initial Forms in Arabic subtable" einitialarabic
+Substitution2: "'medi' Medial Forms in Arabic subtable" emedialarabic
+Substitution2: "'fina' Terminal Forms in Arabic subtable" efinalarabic
 EndChar
 
 StartChar: uni06ae
@@ -89311,29 +89313,32 @@ Refer: 3700 1608 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: hehaltonearabic
+StartChar: hehgoalarabic
 Encoding: 1729 1729 3825
 Width: 600
-Flags: HW
+Flags: W
+HStem: 0 40<387.391 600> 15 40<359.44 591.062>
+VStem: 307 293
 LayerCount: 2
 Fore
 SplineSet
-600 0 m 1
- 455 0 l 2
+600 0 m 1xa0
+ 455 0 l 2xa0
  420 0 408 15 386 15 c 0
  367 15 341 -35 326 -35 c 0
  319 -35 307 -26 307 -10 c 0
- 307 -2 352 55 386 55 c 0
+ 307 -2 352 55 386 55 c 0x60
  416 55 425 40 459 40 c 2
  600 40 l 1
- 600 0 l 1
+ 600 0 l 1xa0
 EndSplineSet
 Validated: 3073
-Substitution2: "'medi' Medial Forms in Arabic subtable" hehmedialtonearabic
-Substitution2: "'init' Initial Forms in Arabic subtable" hehinitaltonearabic
+Substitution2: "'fina' Terminal Forms in Arabic subtable" hehgoalfinaarabic
+Substitution2: "'init' Initial Forms in Arabic subtable" hehgoalinitarabic
+Substitution2: "'medi' Medial Forms in Arabic subtable" hehgoalmedialarabic
 EndChar
 
-StartChar: uni06c2
+StartChar: hehgoalhamzaarabic
 Encoding: 1730 1730 3826
 Width: 600
 Flags: HW
@@ -89344,7 +89349,7 @@ Refer: 3825 1729 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni06c3
+StartChar: tehmarbutagoalarabic
 Encoding: 1731 1731 3827
 Width: 600
 Flags: HW
@@ -90134,7 +90139,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0671
+StartChar: alefwaslaarabic
 Encoding: 1649 1649 3872
 Width: 600
 Flags: HW
@@ -90143,6 +90148,7 @@ Fore
 Refer: 3658 1575 N 1 0 0 1 0 0 2
 Refer: 3871 -1 S 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'fina' Terminal Forms in Arabic subtable" alefwaslafinalarabic
 EndChar
 
 StartChar: unifb50
@@ -90161,7 +90167,7 @@ Width: 600
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 3872 1649 N 1 0 0 1 0 0 2
+Refer: 3727 1570 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
@@ -90232,7 +90238,7 @@ Width: 600
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 3871 -1 S 1 0 0 1 0 0 2
+Refer: 3726 1619 S 1 0 0 1 10 0 2
 Refer: 3876 65166 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -90617,19 +90623,21 @@ EndChar
 StartChar: seenfinalarabic
 Encoding: 65202 65202 3911
 Width: 600
-Flags: HW
+Flags: W
+HStem: -124 47<75.4128 240.352> 0 40<313 430 470 551.946 590.971 600>
+VStem: 0 40<-41.8931 45> 27 41<136 149.98> 272 41<-45.0008 0 40 149.991> 430 40<40 179.991> 559 41<43.875 183.979>
 LayerCount: 2
 Fore
 SplineSet
-600 40 m 1
+600 40 m 1xee
  600 0 l 1
  504.333 -0 408.667 0 313 0 c 1
  313 -82 234 -124 156 -124 c 0
  78 -124 0 -82 0 0 c 2
- 0 59 l 1
+ 0 59 l 1xee
  27 136 l 2
  30 146 39 150 47 150 c 0
- 57 150 68 143 68 131 c 0
+ 57 150 68 143 68 131 c 0xde
  68 128 67 125 66 122 c 2
  40 45 l 1
  40 0 l 2
@@ -90649,7 +90657,7 @@ SplineSet
  559 176 569 184 580 184 c 0
  590 184 600 177 600 161 c 0
  600 101.334 597.535 63.7021 590.971 40 c 1
- 600 40 l 1
+ 600 40 l 1xee
 EndSplineSet
 Validated: 3073
 EndChar
@@ -90727,7 +90735,9 @@ EndChar
 StartChar: sheenfinalarabic
 Encoding: 65206 65206 3915
 Width: 600
-Flags: HW
+Flags: W
+HStem: -124 47<75.4128 240.352> 0 40<313 430 470 551.946 590.971 600> 246 100<330.5 389.5 490.5 549.5> 316 100<410.5 469.5>
+VStem: 0 40<-41.8931 45> 27 41<136 149.98> 272 41<-45.0008 0 40 149.991> 310 100<265.473 325.324> 390 100<335.473 395.324> 430 40<40 179.991> 470 100<265.473 325.324> 559 41<43.875 183.979>
 LayerCount: 2
 Fore
 Refer: 3664 64438 S 1 0 0 1 140 -170 2
@@ -91917,27 +91927,29 @@ StartChar: hehfinalarabic
 Encoding: 65258 65258 3985
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: W
+HStem: -16 41<259.66 379.471> 0 40<487.358 600>
+VStem: 202 41<43.1062 115.717> 370 41<101.321 169 202.812 233.994>
 LayerCount: 2
 Fore
 SplineSet
-411 216 m 2
+411 216 m 2xb0
  411 146 l 2
  411 85 515.75 40 547 40 c 2
  600 40 l 1
  600 26 600 9 600 0 c 1
- 541 0 l 2
+ 541 0 l 2x70
  496.25 0 458.75 18.5 426.477 51.7142 c 1
  419.507 3.02955 388.455 -16 330 -16 c 0
  269 -16 202 3 202 78 c 0
  202 164 310 168 370 215 c 1
  370 227 380 234 391 234 c 0
- 402 234 411 226 411 216 c 2
+ 402 234 411 226 411 216 c 2xb0
 386.429 94.1951 m 1
  376.066 110.537 370 128.328 370 147 c 2
  370 169 l 1
  335 141 243 131.667 243 78 c 0
- 243 39 292 25 330 25 c 0
+ 243 39 292 25 330 25 c 0xb0
  370 25 387 40 387 75 c 0
  387 81.4418 386.801 87.875 386.429 94.1951 c 1
 EndSplineSet
@@ -91970,7 +91982,10 @@ EndChar
 StartChar: hehmedialarabic
 Encoding: 65260 65260 3988
 Width: 600
-Flags: HW
+Flags: W
+HStem: -200 42<270.326 357.152> 0 40<0 226 263.775 303.098 340 600> 198 42<270.326 357.152>
+VStem: 220 40<-146.744 0 40 186.744> 368 40<-146.689 -55.1885 95.1885 186.689>
+CounterMasks: 1 e0
 LayerCount: 2
 Fore
 SplineSet
@@ -92263,7 +92278,7 @@ Refer: 3785 1657 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifb51
+StartChar: alefwaslafinalarabic
 Encoding: 64337 64337 4013
 Width: 600
 Flags: HW
@@ -92295,7 +92310,7 @@ Refer: 3718 1611 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbe8
+StartChar: alefmaksurainitarabic
 Encoding: 64488 64488 4016
 Width: 600
 Flags: HW
@@ -92305,7 +92320,7 @@ Refer: 3888 -1 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbe9
+StartChar: alefmaksuramediarabic
 Encoding: 64489 64489 4017
 Width: 600
 Flags: HW
@@ -92383,7 +92398,7 @@ Refer: 4019 64431 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbe6
+StartChar: einitialarabic
 Encoding: 64486 64486 4022
 Width: 600
 Flags: HW
@@ -92394,7 +92409,7 @@ Refer: 3888 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbe7
+StartChar: emedialarabic
 Encoding: 64487 64487 4023
 Width: 600
 Flags: HW
@@ -92485,7 +92500,7 @@ Refer: 3671 64446 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: hehfinaaltonearabic
+StartChar: hehgoalfinaarabic
 Encoding: 64423 64423 4030
 Width: 600
 Flags: HW
@@ -92495,10 +92510,11 @@ Refer: 3825 1729 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: hehinitaltonearabic
+StartChar: hehgoalinitarabic
 Encoding: 64424 64424 4031
 Width: 600
-Flags: HW
+Flags: W
+HStem: 0 40<0 188.793>
 LayerCount: 2
 Fore
 SplineSet
@@ -92523,7 +92539,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: hehmedialtonearabic
+StartChar: hehgoalmedialarabic
 Encoding: 64425 64425 4032
 Width: 600
 Flags: HW
@@ -92870,7 +92886,7 @@ Refer: 3765 1702 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbd5
+StartChar: nginitarabic
 Encoding: 64469 64469 4059
 Width: 600
 Flags: HW
@@ -92950,8 +92966,8 @@ Width: 600
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 3852 1617 S 1 0 0 1 0 0 2
-Refer: 3710 1600 N 1 0 0 1 0 0 2
+Refer: 3852 1617 N 1 0 0 1 0 0 2
+Refer: 3710 1600 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
@@ -93468,7 +93484,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: unifba1
+StartChar: rnoonfinalarabic
 Encoding: 64417 64417 4102
 Width: 600
 Flags: HW
@@ -93479,7 +93495,7 @@ Refer: 4101 64415 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifba2
+StartChar: rnooninitialarabic
 Encoding: 64418 64418 4103
 Width: 600
 Flags: HW
@@ -93490,7 +93506,7 @@ Refer: 3888 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifba3
+StartChar: rnoonmedialarabic
 Encoding: 64419 64419 4104
 Width: 600
 Flags: HW
@@ -93512,7 +93528,7 @@ Refer: 3780 1749 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifba5
+StartChar: hehhamzafinalarabic
 Encoding: 64421 64421 4106
 Width: 600
 VWidth: 1024
@@ -93646,7 +93662,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: unifbd6
+StartChar: ngmedialarabic
 Encoding: 64470 64470 4112
 Width: 600
 Flags: HW
@@ -93657,7 +93673,7 @@ Refer: 4078 64401 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbe5
+StartChar: efinalarabic
 Encoding: 64485 64485 4113
 Width: 600
 Flags: HW
@@ -93668,7 +93684,7 @@ Refer: 3977 65264 N 1 0 0 1 0 -0.5 2
 Validated: 32769
 EndChar
 
-StartChar: uniFBFD
+StartChar: yehfarsifinaarabic
 Encoding: 64509 64509 4114
 Width: 600
 Flags: HW
@@ -93678,7 +93694,7 @@ Refer: 3977 65264 S 1 0 0 1 0 -0.5 2
 Validated: 32769
 EndChar
 
-StartChar: uniFBFE
+StartChar: yehfarsiinitarabic
 Encoding: 64510 64510 4115
 Width: 600
 Flags: HW
@@ -93689,7 +93705,7 @@ Refer: 3888 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFBFF
+StartChar: yehfarsimediarabic
 Encoding: 64511 64511 4116
 Width: 600
 Flags: HW
@@ -93706,12 +93722,11 @@ Width: 600
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 3671 64446 N 1 0 0 1 200 0 2
-Refer: 3976 65263 S 1 0 0 1 -50 0 2
+Refer: 3819 1744 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbd3
+StartChar: ngisoarabic
 Encoding: 64467 64467 4118
 Width: 600
 Flags: HW
@@ -93722,7 +93737,7 @@ Refer: 3721 1603 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: unifbd4
+StartChar: ngfinalarabic
 Encoding: 64468 64468 4119
 Width: 600
 Flags: HW
@@ -93751,6 +93766,113 @@ SplineSet
  190.059 -33.6508 216.666 17.3519 280.669 40.6465 c 6
  354.904 67.666 l 6
 EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: unifbfc
+Encoding: 64508 64508 4121
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 3703 1740 S 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: dammatanarabic
+Encoding: 1612 1612 4122
+Width: 0
+VWidth: 800
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+335 762 m 4
+ 329 762 319 759 319 751 c 4
+ 319 735 330 725 355 725 c 5
+ 353 739 348 762 335 762 c 4
+391 724 m 5
+ 412 724 l 6
+ 423.045 724 430 713 430 706 c 4
+ 430 698 424 687 414 687 c 6
+ 414 687 399 687 391 687 c 5
+ 388 644 372 617 348 583 c 5
+ 307 583 l 5
+ 274 625 239 664 227 720 c 5
+ 211 704 192 687 192 687 c 6
+ 190.971 686.03 186 684 185 684 c 4
+ 179 684 167 686 167 702 c 4
+ 167 711 178 720 182 726 c 5
+ 200 748 230 782 243 782 c 4
+ 247 782 258 773 258 763 c 4
+ 258 712 304 643 328 617 c 5
+ 343 639 352 653 355 687 c 5
+ 325 687 283 704 283 747 c 4
+ 283 773 310 800 335 800 c 4
+ 365 800 391 766 391 724 c 5
+EndSplineSet
+Validated: 527361
+EndChar
+
+StartChar: sukunarabic
+Encoding: 1618 1618 4123
+Width: 0
+VWidth: 761
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+246.076 717.688 m 0
+ 246.076 700 259.762 686.951 280.65 686.951 c 0
+ 300.819 686.951 315.225 701.357 315.225 723.687 c 0
+ 315.225 733.771 308.344 743.693 303.302 750.177 c 1
+ 301.141 752.337 299.421 755.938 299.421 759.54 c 0
+ 299.421 766.743 304.463 774.667 313.106 774.667 c 0
+ 318.868 774.667 324.864 769.101 328.512 764.582 c 0
+ 338.667 752 343.038 734.977 343.038 722.844 c 0
+ 343.038 682.076 314.901 657.419 280.65 657.419 c 0
+ 245.355 657.419 216.544 685.667 216.544 717.688 c 0
+ 216.544 732.812 225 746 234.229 754.743 c 0
+ 236.844 757.221 243.433 760.227 249.195 760.227 c 0
+ 257.839 760.227 263.601 753.743 263.601 746.54 c 0
+ 263.601 742.219 261.208 738.725 258 736.016 c 0
+ 251.667 730.667 246.076 726.33 246.076 717.688 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: unife7e
+Encoding: 65150 65150 4124
+Width: 600
+VWidth: 761
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4123 1618 N 1 0 0 1 0 0 2
+Validated: 98305
+EndChar
+
+StartChar: unife7f
+Encoding: 65151 65151 4125
+Width: 600
+VWidth: 761
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 3710 1600 S 1 0 0 1 0 0 2
+Refer: 4124 65150 N 1 0 0 1 0 0 2
+Validated: 98305
+EndChar
+
+StartChar: unife72
+Encoding: 65138 65138 4126
+Width: 600
+VWidth: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4122 1612 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont
