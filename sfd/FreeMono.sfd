@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1320445136
+ModificationTime: 1320505237
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -66,6 +66,8 @@ Lookup: 1 9 0 "'fina' Terminal Forms in Arabic"  {"'fina' Terminal Forms in Arab
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek"  {"'mark' Mark Positioning in Greek subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
+Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic"  {"'mkmk' Mark to Mark in Arabic subtable"  } ['mkmk' ('arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Arabic"  {"'mark' Mark Positioning in Arabic subtable"  } ['mark' ('arab' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ShortTable: maxp 16
@@ -125,7 +127,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1568 16 11
+WinInfo: 1520 16 11
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 23 [-20 0 417 437 563 583]
@@ -137,7 +139,7 @@ StemSnapH 4 [41]
 StemSnapV 4 [41]
 ForceBold 5 false
 EndPrivate
-AnchorClass2: "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
+AnchorClass2: "above_arabic"  "'mark' Mark Positioning in Arabic subtable" "below_arabic"  "'mark' Mark Positioning in Arabic subtable" "arab_diacritic"  "'mkmk' Mark to Mark in Arabic subtable" "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
 BeginChars: 67329 4150
 
 StartChar: space
@@ -86529,7 +86531,9 @@ EndChar
 StartChar: alefarabic
 Encoding: 1575 1575 3658
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -86550,12 +86554,14 @@ EndChar
 StartChar: beharabic
 Encoding: 1576 1576 3659
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -170 basechar 0
 LayerCount: 2
 Fore
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Refer: 3661 64435 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3661 64435 N 1 0 0 1 0 0 2
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" behfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" behmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" behinitialarabic
@@ -86564,9 +86570,7 @@ EndChar
 StartChar: unifbb2
 Encoding: 64434 64434 3660
 Width: 600
-Flags: W
-HStem: 416 100<270.5 329.5>
-VStem: 250 100<435.473 495.324>
+Flags: MW
 LayerCount: 2
 Fore
 SplineSet
@@ -86582,7 +86586,7 @@ EndChar
 StartChar: unifbb3
 Encoding: 64435 64435 3661
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 0 -574 2
@@ -86592,7 +86596,7 @@ EndChar
 StartChar: unifbb4
 Encoding: 64436 64436 3662
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3660 64434 S 1 0 0 1 70 0 2
@@ -86603,7 +86607,7 @@ EndChar
 StartChar: unifbb5
 Encoding: 64437 64437 3663
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3662 64436 S 1 0 0 1 0 -570 2
@@ -86613,9 +86617,7 @@ EndChar
 StartChar: unifbb6
 Encoding: 64438 64438 3664
 Width: 600
-Flags: W
-HStem: 416 100<190.5 249.5 350.5 409.5> 486 100<270.5 329.5>
-VStem: 170 100<435.473 495.324> 250 100<505.473 565.324> 330 100<435.473 495.324>
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 0 70 2
@@ -86627,7 +86629,7 @@ EndChar
 StartChar: unifbb7
 Encoding: 64439 64439 3665
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3664 64438 S 1 0 0 1 0 -616 2
@@ -86637,7 +86639,7 @@ EndChar
 StartChar: unifbb8
 Encoding: 64440 64440 3666
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3664 64438 S -1 0 0 -1 600 1002 2
@@ -86647,7 +86649,7 @@ EndChar
 StartChar: unifbb9
 Encoding: 64441 64441 3667
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3666 64440 S 1 0 0 1 0 -616 2
@@ -86657,7 +86659,7 @@ EndChar
 StartChar: arab_quad_dot
 Encoding: 64442 64442 3668
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3660 64434 S 0.8 0 0 0.8 60 86.2 2
@@ -86670,7 +86672,7 @@ EndChar
 StartChar: unifbbb
 Encoding: 64443 64443 3669
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3668 64442 S 1 0 0 1 0 -619 2
@@ -86680,7 +86682,7 @@ EndChar
 StartChar: unifbbd
 Encoding: 64445 64445 3670
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 40 0 2
@@ -86691,7 +86693,7 @@ EndChar
 StartChar: unifbbe
 Encoding: 64446 64446 3671
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3670 64445 S 1 0 0 1 0 -616 2
@@ -86701,12 +86703,14 @@ EndChar
 StartChar: teharabic
 Encoding: 1578 1578 3672
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Refer: 3662 64436 S 1 0 0 1 0 -180 2
-Validated: 32769
+Refer: 3662 64436 N 1 0 0 1 0 -180 2
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tehfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" tehmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" tehinitialarabic
@@ -86715,12 +86719,14 @@ EndChar
 StartChar: theharabic
 Encoding: 1579 1579 3673
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 500 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Refer: 3664 64438 S 1 0 0 1 0 -190 2
-Validated: 32769
+Refer: 3664 64438 N 1 0 0 1 0 -190 2
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" thehfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" thehmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" thehinitialarabic
@@ -86730,7 +86736,9 @@ StartChar: haharabic
 Encoding: 1581 1581 3674
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -86744,7 +86752,7 @@ SplineSet
  68 270 61 277 61 290 c 0
  61 303 68 310 81 310 c 2
  461 310 l 2
- 474 310 480 300.667 480 289 c 0
+ 474 310 480 301 480 289 c 0
  480 278 472 270 460 270 c 2
  307 270 l 2
  134 270 102 103 102 58 c 0
@@ -86760,10 +86768,12 @@ StartChar: jeemarabic
 Encoding: 1580 1580 3675
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 0 140 2
+Refer: 3661 64435 N 1 0 0 1 0 140 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" jeemfinalarabic
@@ -86775,10 +86785,12 @@ StartChar: khaharabic
 Encoding: 1582 1582 3676
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -30 2
+Refer: 3660 64434 N 1 0 0 1 0 -30 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" khahfinalarabic
@@ -86822,7 +86834,9 @@ EndChar
 StartChar: dalarabic
 Encoding: 1583 1583 3678
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -86848,12 +86862,14 @@ EndChar
 StartChar: thalarabic
 Encoding: 1584 1584 3679
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 500 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" thalfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" uniFEAB
 Substitution2: "'init' Initial Forms in Arabic subtable" uniFEAB
@@ -86862,7 +86878,9 @@ EndChar
 StartChar: reharabic
 Encoding: 1585 1585 3680
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -86886,12 +86904,14 @@ EndChar
 StartChar: zainarabic
 Encoding: 1586 1586 3681
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 500 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 50 -100 2
+Refer: 3660 64434 N 1 0 0 1 50 -100 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" zainfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" zainfinalarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" uniFEAF
@@ -86925,7 +86945,9 @@ EndChar
 StartChar: taharabic
 Encoding: 1591 1591 3683
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 440 420 basechar 0
+AnchorPoint: "below_arabic" 360 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -86960,12 +86982,14 @@ EndChar
 StartChar: zaharabic
 Encoding: 1592 1592 3684
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 390 560 basechar 0
+AnchorPoint: "below_arabic" 360 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 80 -100 2
+Refer: 3660 64434 N 1 0 0 1 80 -100 2
 Refer: 3683 1591 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" zahfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" zahmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" zahinitialarabic
@@ -86974,7 +86998,9 @@ EndChar
 StartChar: arab_dotless_beh
 Encoding: 1646 1646 3685
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 410 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -86999,7 +87025,9 @@ EndChar
 StartChar: keheharabic
 Encoding: 1705 1705 3686
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87033,21 +87061,25 @@ EndChar
 StartChar: uni063b
 Encoding: 1595 1595 3687
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 600 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3662 64436 N 1 0 0 1 -80 68 2
-Refer: 3686 1705 S 1 0 0 1 0 0 2
+Refer: 3686 1705 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
 StartChar: uni063c
 Encoding: 1596 1596 3688
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 0 0 2
+Refer: 3667 64441 N 1 0 0 1 0 0 2
 Refer: 3686 1705 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -87055,7 +87087,9 @@ EndChar
 StartChar: sadarabic
 Encoding: 1589 1589 3689
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 440 420 basechar 0
+AnchorPoint: "below_arabic" 460 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87095,14 +87129,14 @@ EndChar
 StartChar: sheenarabic
 Encoding: 1588 1588 3690
 Width: 600
-Flags: W
-HStem: -124 47<75.4128 240.352> 0 40<313 430 470 551.748> 246 100<330.5 389.5 490.5 549.5> 316 100<410.5 469.5>
-VStem: 0 40<-41.8931 45> 27 41<136 149.98> 272 41<-45.0008 0 40 149.991> 310 100<265.473 325.324> 390 100<335.473 395.324> 430 40<40 179.991> 470 100<265.473 325.324> 559 41<46.3111 183.979>
+Flags: HMW
+AnchorPoint: "above_arabic" 440 500 basechar 0
+AnchorPoint: "below_arabic" 450 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 140 -170 2
+Refer: 3664 64438 N 1 0 0 1 140 -170 2
 Refer: 3694 1587 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" sheenfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" sheenmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" sheeninitialarabic
@@ -87111,12 +87145,14 @@ EndChar
 StartChar: dadarabic
 Encoding: 1590 1590 3691
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 430 500 basechar 0
+AnchorPoint: "below_arabic" 460 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 130 -100 2
+Refer: 3660 64434 N 1 0 0 1 130 -100 2
 Refer: 3689 1589 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" dadfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" dadmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" dadinitialarabic
@@ -87125,7 +87161,9 @@ EndChar
 StartChar: lamarabic
 Encoding: 1604 1604 3692
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87157,12 +87195,14 @@ EndChar
 StartChar: noonarabic
 Encoding: 1606 1606 3693
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -180 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 40 -100 2
+Refer: 3660 64434 N 1 0 0 1 40 -100 2
 Refer: 3695 1722 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" noonfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" noonmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" nooninitialarabic
@@ -87171,21 +87211,21 @@ EndChar
 StartChar: seenarabic
 Encoding: 1587 1587 3694
 Width: 600
-Flags: W
-HStem: -124 47<75.4128 240.352> 0 40<313 430 470 551.748>
-VStem: 0 40<-41.8931 45> 27 41<136 149.98> 272 41<-45.0008 0 40 149.991> 430 40<40 179.991> 559 41<46.3111 183.979>
+Flags: HMW
+AnchorPoint: "above_arabic" 390 420 basechar 0
+AnchorPoint: "below_arabic" 450 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-600 161 m 0xee
+600 161 m 0
  600 9 584 0 525 0 c 2
  525 0 374 0 313 0 c 1
  313 -82 234 -124 156 -124 c 0
  78 -124 0 -82 0 0 c 2
- 0 59 l 1xee
+ 0 59 l 1
  27 136 l 2
  30 146 39 150 47 150 c 0
- 57 150 68 143 68 131 c 0xde
+ 57 150 68 143 68 131 c 0
  68 128 67 125 66 122 c 2
  40 45 l 1
  40 0 l 2
@@ -87203,7 +87243,7 @@ SplineSet
  516 40 l 2
  556 40 559 54 559 162 c 0
  559 176 569 184 580 184 c 0
- 590 184 600 177 600 161 c 0xee
+ 590 184 600 177 600 161 c 0
 EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" seenfinalarabic
@@ -87214,7 +87254,9 @@ EndChar
 StartChar: noonghunnaarabic
 Encoding: 1722 1722 3695
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87242,7 +87284,9 @@ EndChar
 StartChar: arabic_dotless_qaf
 Encoding: 1647 1647 3696
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87276,7 +87320,9 @@ EndChar
 StartChar: arab_dotless_feh
 Encoding: 1697 1697 3697
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 470 -20 basechar 0
+AnchorPoint: "above_arabic" 460 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87308,10 +87354,12 @@ EndChar
 StartChar: feharabic
 Encoding: 1601 1601 3698
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 460 560 basechar 0
+AnchorPoint: "below_arabic" 463 -117 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 170 -50 2
+Refer: 3660 64434 N 1 0 0 1 170 -50 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" fehfinalarabic
@@ -87322,10 +87370,12 @@ EndChar
 StartChar: qafarabic
 Encoding: 1602 1602 3699
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 380 420 basechar 0
+AnchorPoint: "below_arabic" 331 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 80 -180 2
+Refer: 3662 64436 N 1 0 0 1 80 -180 2
 Refer: 3696 1647 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" qaffinalarabic
@@ -87336,7 +87386,9 @@ EndChar
 StartChar: wawarabic
 Encoding: 1608 1608 3700
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87367,9 +87419,9 @@ EndChar
 StartChar: heharabic
 Encoding: 1607 1607 3701
 Width: 600
-Flags: W
-HStem: -16 41<232.634 366.808>
-VStem: 182 41<35.6158 170.069> 377 41<36.2333 168.547>
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87393,10 +87445,12 @@ EndChar
 StartChar: tehmarbutaarabic
 Encoding: 1577 1577 3702
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -80 2
+Refer: 3662 64436 N 1 0 0 1 0 -80 2
 Refer: 3701 1607 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tehmarbutafinalarabic
@@ -87407,7 +87461,9 @@ EndChar
 StartChar: yehfarsiarabic
 Encoding: 1740 1740 3703
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 440 -160 basechar 0
+AnchorPoint: "above_arabic" 314 411 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87443,7 +87499,9 @@ EndChar
 StartChar: alefmaksuraarabic
 Encoding: 1609 1609 3704
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 456 -167 basechar 0
 LayerCount: 2
 Fore
 Refer: 3703 1740 N 1 0 0 1 0 0 2
@@ -87456,10 +87514,12 @@ EndChar
 StartChar: yeharabic
 Encoding: 1610 1610 3705
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 450 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 180 -46 2
+Refer: 3663 64437 N 1 0 0 1 180 -46 2
 Refer: 3703 1740 N 1 0 0 1 -50 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" yehfinalarabic
@@ -87470,10 +87530,12 @@ EndChar
 StartChar: uni063d
 Encoding: 1597 1597 3706
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 basechar 0
+AnchorPoint: "below_arabic" 440 -120 basechar 0
 LayerCount: 2
 Fore
-Refer: 3817 1627 S 1 0 0 1 0 -276 2
+Refer: 3817 1627 N 1 0 0 1 0 -276 2
 Refer: 3703 1740 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -87481,29 +87543,33 @@ EndChar
 StartChar: uni063e
 Encoding: 1598 1598 3707
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 500 basechar 0
+AnchorPoint: "below_arabic" 440 -120 basechar 0
 LayerCount: 2
 Fore
 Refer: 3662 64436 N 1 0 0 1 -20 -100 2
-Refer: 3703 1740 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3703 1740 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uni063f
 Encoding: 1599 1599 3708
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 500 basechar 0
+AnchorPoint: "below_arabic" 440 -120 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 -20 -170 2
+Refer: 3664 64438 N 1 0 0 1 -20 -170 2
 Refer: 3703 1740 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni066d
 Encoding: 1645 1645 3709
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 10 42 S 1 0 0 1 0 -170 2
@@ -87513,7 +87579,9 @@ EndChar
 StartChar: tatweelarabic
 Encoding: 1600 1600 3710
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87529,7 +87597,9 @@ EndChar
 StartChar: meemarabic
 Encoding: 1605 1605 3711
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 170 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87556,7 +87626,9 @@ EndChar
 StartChar: ainarabic
 Encoding: 1593 1593 3712
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87592,12 +87664,14 @@ EndChar
 StartChar: ghainarabic
 Encoding: 1594 1594 3713
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 500 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 -20 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3712 1593 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ghainfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ghainmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" ghaininitialarabic
@@ -87606,29 +87680,31 @@ EndChar
 StartChar: hamzaarabic
 Encoding: 1569 1569 3714
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -90 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-381 126 m 0
- 349 126 330 107 330 78 c 0
- 330 50 350 30 381 30 c 0
- 395 30 406 34 415 41 c 1
- 418 44 423 45 428 45 c 0
- 438 45 449 38 449 26 c 0
- 449 18 442 10 435 6 c 1
- 386 -22 340 -49 292 -77 c 1
- 288 -79 284 -81 279 -81 c 0
- 270 -81 259 -73 259 -61 c 0
- 259 -53 265 -46 272 -42 c 2
- 341 -2 l 1
- 310 13 289 42 289 78 c 0
- 289 127 330 167 381 167 c 0
- 402 167 423 159 438 148 c 0
- 442 145 447 138 447 130 c 0
- 447 118 438 110 428 110 c 0
- 422 110 417 112 412 115 c 0
- 403 121 393 126 381 126 c 0
+327 126 m 4
+ 295 126 276 107 276 78 c 4
+ 276 50 296 30 327 30 c 4
+ 341 30 352 34 361 41 c 5
+ 364 44 369 45 374 45 c 4
+ 384 45 395 38 395 26 c 4
+ 395 18 388 10 381 6 c 5
+ 332 -22 286 -49 238 -77 c 5
+ 234 -79 230 -81 225 -81 c 4
+ 216 -81 205 -73 205 -61 c 4
+ 205 -53 211 -46 218 -42 c 6
+ 287 -2 l 5
+ 256 13 235 42 235 78 c 4
+ 235 127 276 167 327 167 c 4
+ 348 167 369 159 384 148 c 4
+ 388 145 393 138 393 130 c 4
+ 393 118 384 110 374 110 c 4
+ 368 110 363 112 358 115 c 4
+ 349 121 339 126 327 126 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -87637,28 +87713,32 @@ StartChar: uni0654
 Encoding: 1620 1620 3715
 Width: 0
 VWidth: 761
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 600 mark 0
 LayerCount: 2
 Fore
-Refer: 3714 1569 S 0.7203 0 0 0.7203 14 658 2
-Validated: 32769
+Refer: 3714 1569 N 0.7203 0 0 0.7203 64 658 2
+Validated: 98305
 EndChar
 
 StartChar: uni0655
 Encoding: 1621 1621 3716
 Width: 0
 VWidth: 761
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 0 mark 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 0 -799 2
-Validated: 32769
+Refer: 3715 1620 N 1 0 0 1 0 -799 2
+Validated: 98305
 EndChar
 
 StartChar: fathaarabic
 Encoding: 1614 1614 3717
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 670 mark 0
+AnchorPoint: "arab_diacritic" 300 684 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87678,38 +87758,44 @@ EndChar
 StartChar: fathatanarabic
 Encoding: 1611 1611 3718
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 600 mark 0
+AnchorPoint: "arab_diacritic" 300 584 mark 0
 LayerCount: 2
 Fore
-Refer: 3717 1614 S 1 0 0 1 0 -90 2
-Refer: 3717 1614 S 1 0 0 1 0 -1 2
+Refer: 3717 1614 N 1 0 0 1 0 -90 2
+Refer: 3717 1614 N 1 0 0 1 0 -1 2
 Validated: 32769
 EndChar
 
 StartChar: kasratanarabic
 Encoding: 1613 1613 3719
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 mark 0
 LayerCount: 2
 Fore
-Refer: 3718 1611 S 1 0 0 1 -20 -785 2
+Refer: 3718 1611 N 1 0 0 1 0 -805 2
 Validated: 32769
 EndChar
 
 StartChar: kasraarabic
 Encoding: 1616 1616 3720
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -70 mark 0
 LayerCount: 2
 Fore
-Refer: 3717 1614 N 1 0 0 1 -13 -895 2
+Refer: 3717 1614 S 1 0 0 1 0 -895 2
 Validated: 32769
 EndChar
 
 StartChar: kafarabic
 Encoding: 1603 1603 3721
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 240 590 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -87741,7 +87827,7 @@ SplineSet
  100 40 l 1
  476 40 l 1
  443 140 343 431 305 545 c 2
- 304.376 546.844 304 550 304 552 c 0
+ 304 547 304 550 304 552 c 0
  304 564 315 571 326 571 c 0
  333 571 341 567 344 559 c 2
 EndSplineSet
@@ -87754,12 +87840,14 @@ EndChar
 StartChar: alefhamzaabovearabic
 Encoding: 1571 1571 3722
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 790 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 0 0 2
+Refer: 3715 1620 N 1 0 0 1 0 0 2
 Refer: 3658 1575 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefhamzaabovefinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" alefhamzaabovefinalarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" uniFE83
@@ -87768,12 +87856,14 @@ EndChar
 StartChar: alefhamzabelowarabic
 Encoding: 1573 1573 3723
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3716 1621 S 1 0 0 1 50 0 2
+Refer: 3716 1621 N 1 0 0 1 50 0 2
 Refer: 3658 1575 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefhamzabelowfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" alefhamzabelowfinalarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" uniFE87
@@ -87782,12 +87872,14 @@ EndChar
 StartChar: yehhamzaabovearabic
 Encoding: 1574 1574 3724
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 430 -130 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 20 -380 2
+Refer: 3715 1620 N 1 0 0 1 20 -380 2
 Refer: 3704 1609 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" uniFE8A
 Substitution2: "'medi' Medial Forms in Arabic subtable" yehhamzaabovemedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" yehhamzaaboveinitialarabic
@@ -87796,19 +87888,21 @@ EndChar
 StartChar: wawhamzaabovearabic
 Encoding: 1572 1572 3725
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 30 -380 2
+Refer: 3715 1620 N 1 0 0 1 30 -380 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" wawhamzaabovefinalarabic
 EndChar
 
 StartChar: maddaarabic
 Encoding: 1619 1619 3726
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 603 771 S 0.75 0 0 0.75 525 260 2
@@ -87818,10 +87912,12 @@ EndChar
 StartChar: alefmaddaabovearabic
 Encoding: 1570 1570 3727
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 720 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3726 1619 S 1 0 0 1 10 0 2
+Refer: 3726 1619 N 1 0 0 1 10 0 2
 Refer: 3658 1575 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefmaddaabovefinalarabic
@@ -87842,10 +87938,12 @@ EndChar
 StartChar: gafarabic
 Encoding: 1711 1711 3729
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 620 basechar 0
 LayerCount: 2
 Fore
-Refer: 3814 -1 S 1 0 0 1 0 0 2
+Refer: 3814 -1 N 1 0 0 1 0 0 2
 Refer: 3686 1705 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" gaffinaarabic
@@ -87856,12 +87954,14 @@ EndChar
 StartChar: uni067f
 Encoding: 1663 1663 3730
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 0 -200 2
+Refer: 3668 64442 N 1 0 0 1 0 -200 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb63
 Substitution2: "'medi' Medial Forms in Arabic subtable" unifb65
 Substitution2: "'init' Initial Forms in Arabic subtable" unifb64
@@ -87870,12 +87970,14 @@ EndChar
 StartChar: peharabic
 Encoding: 1662 1662 3731
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 0 0 2
+Refer: 3667 64441 N 1 0 0 1 0 0 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" pehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" pehmediarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" pehinitarabic
@@ -87884,23 +87986,27 @@ EndChar
 StartChar: uni067d
 Encoding: 1661 1661 3732
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3666 64440 S 1 0 0 1 0 -200 2
+Refer: 3666 64440 N 1 0 0 1 0 -200 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni067b
 Encoding: 1659 1659 3733
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb53
 Substitution2: "'medi' Medial Forms in Arabic subtable" unifb55
 Substitution2: "'init' Initial Forms in Arabic subtable" unifb54
@@ -87909,12 +88015,14 @@ EndChar
 StartChar: uni067a
 Encoding: 1658 1658 3734
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3670 64445 S 1 0 0 1 0 -210 2
+Refer: 3670 64445 N 1 0 0 1 0 -210 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ttehehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ttehehmediarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" ttehehinitarabic
@@ -87923,12 +88031,14 @@ EndChar
 StartChar: uni0680
 Encoding: 1664 1664 3735
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 0 0 2
+Refer: 3669 64443 N 1 0 0 1 0 0 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb5b
 Substitution2: "'medi' Medial Forms in Arabic subtable" unifb5d
 Substitution2: "'init' Initial Forms in Arabic subtable" unifb5c
@@ -87938,22 +88048,26 @@ StartChar: arab_hah_hamza
 Encoding: 1665 1665 3736
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 0 -260 2
+Refer: 3715 1620 N 1 0 0 1 0 -260 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0682
 Encoding: 1666 1666 3737
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 620 basechar 0
 LayerCount: 2
 Fore
-Refer: 3670 64445 S 1 0 0 1 0 -30 2
+Refer: 3670 64445 N 1 0 0 1 0 -30 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -87962,10 +88076,12 @@ StartChar: uni0683
 Encoding: 1667 1667 3738
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 30 154 2
+Refer: 3663 64437 N 1 0 0 1 30 154 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb77
@@ -87977,10 +88093,12 @@ StartChar: uni0684
 Encoding: 1668 1668 3739
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 180 2
+Refer: 3671 64446 N 1 0 0 1 0 180 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb73
@@ -87992,22 +88110,26 @@ StartChar: arab_hah_tri_dot
 Encoding: 1669 1669 3740
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -40 2
+Refer: 3664 64438 N 1 0 0 1 0 -40 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tcheharabic
 Encoding: 1670 1670 3741
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 30 150 2
+Refer: 3667 64441 N 1 0 0 1 30 150 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tchehfinaarabic
@@ -88019,10 +88141,12 @@ StartChar: uni0687
 Encoding: 1671 1671 3742
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 30 160 2
+Refer: 3669 64443 N 1 0 0 1 30 160 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb7f
@@ -88033,32 +88157,38 @@ EndChar
 StartChar: uni068a
 Encoding: 1674 1674 3743
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3661 64435 N 1 0 0 1 0 0 2
-Refer: 3678 1583 S 1 0 0 1 0 0 2
+Refer: 3678 1583 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
 StartChar: uni068c
 Encoding: 1676 1676 3744
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -80 2
+Refer: 3662 64436 N 1 0 0 1 0 -80 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni068d
 Encoding: 1677 1677 3745
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88066,40 +88196,48 @@ EndChar
 StartChar: uni068e
 Encoding: 1678 1678 3746
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -70 2
+Refer: 3664 64438 N 1 0 0 1 0 -100 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni068f
 Encoding: 1679 1679 3747
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3666 64440 S 1 0 0 1 0 -60 2
+Refer: 3666 64440 N 1 0 0 1 0 -100 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0690
 Encoding: 1680 1680 3748
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 0 -90 2
+Refer: 3668 64442 N 1 0 0 1 0 -100 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yehbarreearabic
 Encoding: 1746 1746 3749
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 170 440 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88125,68 +88263,80 @@ EndChar
 StartChar: uni06d3
 Encoding: 1747 1747 3750
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 140 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3749 1746 S 1 0 0 1 0 0 2
+Refer: 3749 1746 N 1 0 0 1 0 0 2
 Refer: 3715 1620 N 1 0 0 1 -150 -344 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifbb1
 EndChar
 
 StartChar: uni0697
 Encoding: 1687 1687 3751
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 -20 -80 2
+Refer: 3662 64436 N 1 0 0 1 -20 -80 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: jeharabic
 Encoding: 1688 1688 3752
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 140 -100 2
+Refer: 3664 64438 N 1 0 0 1 0 -100 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" jehfinaarabic
 EndChar
 
 StartChar: uni0699
 Encoding: 1689 1689 3753
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 -12 -130 2
+Refer: 3668 64442 N 1 0 0 1 -2 -130 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: arab_seen_dot_above_below
 Encoding: 1690 1690 3754
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 450 -170 basechar 0
+AnchorPoint: "above_arabic" 420 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 150 0 2
+Refer: 3661 64435 N 1 0 0 1 150 0 2
 Refer: 3660 64434 N 1 0 0 1 120 -150 2
 Refer: 3694 1587 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni069b
 Encoding: 1691 1691 3755
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 450 -200 basechar 0
+AnchorPoint: "above_arabic" 420 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 150 0 2
+Refer: 3667 64441 N 1 0 0 1 150 0 2
 Refer: 3694 1587 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88194,22 +88344,26 @@ EndChar
 StartChar: uni069c
 Encoding: 1692 1692 3756
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 420 500 basechar 0
+AnchorPoint: "below_arabic" 450 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3664 64438 N 1 0 0 1 110 -170 2
-Refer: 3667 64441 S 1 0 0 1 150 0 2
+Refer: 3667 64441 N 1 0 0 1 150 0 2
 Refer: 3694 1587 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni069d
 Encoding: 1693 1693 3757
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 450 -160 basechar 0
+AnchorPoint: "above_arabic" 420 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 150 0 2
+Refer: 3663 64437 N 1 0 0 1 150 0 2
 Refer: 3689 1589 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88217,21 +88371,25 @@ EndChar
 StartChar: uni069e
 Encoding: 1694 1694 3758
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 420 500 basechar 0
+AnchorPoint: "below_arabic" 450 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 110 -170 2
+Refer: 3664 64438 N 1 0 0 1 110 -170 2
 Refer: 3689 1589 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni069f
 Encoding: 1695 1695 3759
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 420 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 80 -170 2
+Refer: 3664 64438 N 1 0 0 1 80 -170 2
 Refer: 3683 1591 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88239,21 +88397,25 @@ EndChar
 StartChar: uni06a0
 Encoding: 1696 1696 3760
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
 Refer: 3712 1593 N 1 0 0 1 0 0 2
-Refer: 3664 64438 S 1 0 0 1 -10 -90 2
+Refer: 3664 64438 N 1 0 0 1 -10 -90 2
 Validated: 32769
 EndChar
 
 StartChar: uni06a2
 Encoding: 1698 1698 3761
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 450 -160 basechar 0
+AnchorPoint: "above_arabic" 460 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 150 0 2
+Refer: 3661 64435 N 1 0 0 1 150 0 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88261,10 +88423,12 @@ EndChar
 StartChar: uni06a3
 Encoding: 1699 1699 3762
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 460 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 170 -80 2
+Refer: 3660 64434 N 1 0 0 1 170 -80 2
 Refer: 3661 64435 N 1 0 0 1 0 0 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
@@ -88273,12 +88437,14 @@ EndChar
 StartChar: uni06a4
 Encoding: 1700 1700 3763
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 460 -20 basechar 0
+AnchorPoint: "above_arabic" 460 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 150 -70 2
+Refer: 3664 64438 S 1 0 0 1 150 -100 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" vehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" vehmediarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" vehinitarabic
@@ -88287,10 +88453,12 @@ EndChar
 StartChar: uni06a5
 Encoding: 1701 1701 3764
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 450 -200 basechar 0
+AnchorPoint: "above_arabic" 460 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 150 0 2
+Refer: 3667 64441 N 1 0 0 1 150 0 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88298,10 +88466,12 @@ EndChar
 StartChar: uni06a6
 Encoding: 1702 1702 3765
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 470 -20 basechar 0
+AnchorPoint: "above_arabic" 460 570 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 168 -90 2
+Refer: 3668 64442 N 1 0 0 1 168 -90 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb6f
@@ -88312,10 +88482,12 @@ EndChar
 StartChar: uni06a7
 Encoding: 1703 1703 3766
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 390 -190 basechar 0
+AnchorPoint: "above_arabic" 360 440 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 70 -170 2
+Refer: 3660 64434 N 1 0 0 1 70 -170 2
 Refer: 3696 1647 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88323,10 +88495,12 @@ EndChar
 StartChar: uni06a8
 Encoding: 1704 1704 3767
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 390 -190 basechar 0
+AnchorPoint: "above_arabic" 390 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 90 -170 2
+Refer: 3664 64438 N 1 0 0 1 90 -170 2
 Refer: 3696 1647 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88334,7 +88508,9 @@ EndChar
 StartChar: arab_kaf_ring
 Encoding: 1707 1707 3768
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88374,23 +88550,27 @@ EndChar
 StartChar: uni06ac
 Encoding: 1708 1708 3769
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 740 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 200 2
-Refer: 3721 1603 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3660 64434 N 1 0 0 1 0 200 2
+Refer: 3721 1603 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: ngarabic
 Encoding: 1709 1709 3770
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 240 800 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 -60 190 2
-Refer: 3721 1603 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3664 64438 N 1 0 0 1 -60 190 2
+Refer: 3721 1603 N 1 0 0 1 0 0 2
+Validated: 98305
 Substitution2: "'init' Initial Forms in Arabic subtable" nginitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ngmedialarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ngfinalarabic
@@ -88399,52 +88579,60 @@ EndChar
 StartChar: uni06ca
 Encoding: 1738 1738 3771
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 440 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -140 2
+Refer: 3662 64436 N 1 0 0 1 0 -140 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06cb
 Encoding: 1739 1739 3772
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
 Refer: 3664 64438 N 1 0 0 1 0 -170 2
-Refer: 3700 1608 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3700 1608 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uni06b9
 Encoding: 1721 1721 3773
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
 Refer: 3661 64435 N 1 0 0 1 197 -42 2
-Refer: 3660 64434 S 1 0 0 1 0 -150 2
+Refer: 3660 64434 N 1 0 0 1 0 -150 2
 Refer: 3695 1722 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06bd
 Encoding: 1725 1725 3774
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -100 2
+Refer: 3664 64438 N 1 0 0 1 0 -100 2
 Refer: 3695 1722 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06D4
 Encoding: 1748 1748 3775
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -88464,7 +88652,9 @@ EndChar
 StartChar: teh_ring_arab
 Encoding: 1660 1660 3776
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -110 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88499,7 +88689,9 @@ EndChar
 StartChar: arab_reh_ring
 Encoding: 1683 1683 3777
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88530,7 +88722,9 @@ EndChar
 StartChar: uni06c4
 Encoding: 1732 1732 3778
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88567,10 +88761,12 @@ EndChar
 StartChar: uni0694
 Encoding: 1684 1684 3779
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 160 0 2
+Refer: 3661 64435 N 1 0 0 1 160 0 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88578,7 +88774,9 @@ EndChar
 StartChar: uni06d5
 Encoding: 1749 1749 3780
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88599,31 +88797,35 @@ EndChar
 StartChar: uni06cf
 Encoding: 1743 1743 3781
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -150 2
+Refer: 3660 64434 N 1 0 0 1 0 -150 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hehhamzaarabic
 Encoding: 1728 1728 3782
 Width: 600
 VWidth: 800
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 20 -344 2
+Refer: 3715 1620 N 1 0 0 1 20 -344 2
 Refer: 3780 1749 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" hehhamzafinalarabic
 EndChar
 
 StartChar: unifbc0
 Encoding: 64448 64448 3783
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -88655,7 +88857,7 @@ EndChar
 StartChar: unifbc1
 Encoding: 64449 64449 3784
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -88687,12 +88889,14 @@ EndChar
 StartChar: uni0679
 Encoding: 1657 1657 3785
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
 Refer: 3685 1646 N 1 0 0 1 0 0 2
-Refer: 3783 64448 S 1 0 0 1 0 -363 2
-Validated: 32769
+Refer: 3783 64448 N 1 0 0 1 0 -363 2
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ttehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ttehmediarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" ttehinitarabic
@@ -88701,18 +88905,22 @@ EndChar
 StartChar: ddalarabic
 Encoding: 1672 1672 3786
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -166 2
+Refer: 3783 64448 N 1 0 0 1 0 -236 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: arab_dal_ring
 Encoding: 1673 1673 3787
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -110 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88745,33 +88953,39 @@ EndChar
 StartChar: uni068b
 Encoding: 1675 1675 3788
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -166 2
+Refer: 3783 64448 S 1 0 0 1 0 -256 2
 Refer: 3743 1674 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: rreharabic
 Encoding: 1681 1681 3789
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 N 1 0 0 1 0 -166 2
-Refer: 3680 1585 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3783 64448 S 1 0 0 1 0 -246 2
+Refer: 3680 1585 N 1 0 0 1 0 0 2
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" rrehfinaarabic
 EndChar
 
 StartChar: arab_reh_dot_above_below
 Encoding: 1686 1686 3790
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 -80 58 2
+Refer: 3661 64435 N 1 0 0 1 -80 58 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
 Refer: 3661 64435 N 1 0 0 1 160 0 2
 Validated: 32769
@@ -88780,10 +88994,12 @@ EndChar
 StartChar: uni06b0
 Encoding: 1712 1712 3791
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 620 basechar 0
 LayerCount: 2
 Fore
-Refer: 3768 1707 S 1 0 0 1 0 0 2
+Refer: 3768 1707 N 1 0 0 1 0 0 2
 Refer: 3814 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88791,10 +89007,12 @@ EndChar
 StartChar: uni06b1
 Encoding: 1713 1713 3792
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 150 690 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 -160 120 2
+Refer: 3662 64436 N 1 0 0 1 -160 120 2
 Refer: 3729 1711 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb9b
@@ -88805,10 +89023,12 @@ EndChar
 StartChar: uni06b2
 Encoding: 1714 1714 3793
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -170 basechar 0
+AnchorPoint: "above_arabic" 300 610 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3729 1711 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -88816,10 +89036,12 @@ EndChar
 StartChar: uni06b3
 Encoding: 1715 1715 3794
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 620 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3729 1711 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" unifb97
@@ -88830,10 +89052,12 @@ EndChar
 StartChar: uni06b4
 Encoding: 1716 1716 3795
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 150 690 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 -160 80 2
+Refer: 3664 64438 N 1 0 0 1 -160 80 2
 Refer: 3729 1711 N 1 0 0 1 30 0 2
 Validated: 32769
 EndChar
@@ -88841,29 +89065,35 @@ EndChar
 StartChar: uni06b6
 Encoding: 1718 1718 3796
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 410 710 basechar 0
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 110 170 2
-Refer: 3692 1604 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3692 1604 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uni06b7
 Encoding: 1719 1719 3797
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 270 700 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 30 170 2
+Refer: 3664 64438 N 1 0 0 1 -30 120 2
 Refer: 3692 1604 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06b8
 Encoding: 1720 1720 3798
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88907,12 +89137,14 @@ EndChar
 StartChar: rnoonarabic
 Encoding: 1723 1723 3799
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -236 2
+Refer: 3783 64448 N 1 0 0 1 0 -266 2
 Refer: 3695 1722 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "'init' Initial Forms in Arabic subtable" rnooninitialarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" rnoonmedialarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" rnoonfinalarabic
@@ -88921,7 +89153,9 @@ EndChar
 StartChar: arab_noon_ring
 Encoding: 1724 1724 3800
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88957,7 +89191,9 @@ EndChar
 StartChar: uni0670
 Encoding: 1648 1648 3801
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 580 mark 0
+AnchorPoint: "arab_diacritic" 302 583 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -88976,50 +89212,58 @@ StartChar: uni0674
 Encoding: 1652 1652 3802
 Width: 600
 VWidth: 761
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3715 1620 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0675
 Encoding: 1653 1653 3803
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 670 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3715 1620 N 1 0 0 1 150 -120 2
-Refer: 3658 1575 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3658 1575 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uni0676
 Encoding: 1654 1654 3804
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 0 -344 2
+Refer: 3715 1620 N 1 0 0 1 0 -344 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0678
 Encoding: 1656 1656 3805
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 360 -160 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 250 -344 2
+Refer: 3715 1620 N 1 0 0 1 250 -344 2
 Refer: 3704 1609 N 1 0 0 1 -60 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06be
 Encoding: 1726 1726 3806
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -89051,18 +89295,22 @@ EndChar
 StartChar: uni06c8
 Encoding: 1736 1736 3807
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3801 1648 S 1 0 0 1 0 -330 2
+Refer: 3801 1648 N 1 0 0 1 0 -330 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yehtailarabic
 Encoding: 1741 1741 3808
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 470 -160 basechar 0
+AnchorPoint: "above_arabic" 370 421 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -89122,46 +89370,54 @@ EndChar
 StartChar: uni06ce
 Encoding: 1742 1742 3810
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 440 -160 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
 Refer: 3703 1740 N 1 0 0 1 0 0 2
-Refer: 3809 -1 S 1 0 0 1 0 -362 2
-Validated: 32769
+Refer: 3809 -1 N 1 0 0 1 0 -362 2
+Validated: 98305
 EndChar
 
 StartChar: uni06c6
 Encoding: 1734 1734 3811
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
 Refer: 3809 -1 N 1 0 0 1 0 -362 2
-Refer: 3700 1608 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3700 1608 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uni06b5
 Encoding: 1717 1717 3812
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 750 basechar 0
 LayerCount: 2
 Fore
-Refer: 3692 1604 S 1 0 0 1 0 0 2
-Refer: 3809 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3692 1604 N 1 0 0 1 0 0 2
+Refer: 3809 -1 N 1 0 0 1 0 -50 2
+Validated: 98305
 EndChar
 
 StartChar: uni06bf
 Encoding: 1727 1727 3813
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -30 2
+Refer: 3660 64434 N 1 0 0 1 0 -30 2
 Refer: 3741 1670 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: arab_gaf_decor
@@ -89187,7 +89443,8 @@ EndChar
 StartChar: uni0656
 Encoding: 1622 1622 3815
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 mark 0
 LayerCount: 2
 Fore
 Refer: 3801 1648 N 1 0 0 1 0 -790 2
@@ -89198,10 +89455,11 @@ StartChar: uni065a
 Encoding: 1626 1626 3816
 Width: 0
 VWidth: 800
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 580 mark 0
 LayerCount: 2
 Fore
-Refer: 3809 -1 S 1 0 0 1 0 0 2
+Refer: 3809 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
@@ -89209,31 +89467,36 @@ StartChar: uni065b
 Encoding: 1627 1627 3817
 Width: 0
 VWidth: 800
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 580 mark 0
 LayerCount: 2
 Fore
-Refer: 3816 1626 S -1 0 0 -1 600 1395 2
+Refer: 3816 1626 N -1 0 0 -1 600 1395 2
 Validated: 32769
 EndChar
 
 StartChar: uni06c9
 Encoding: 1737 1737 3818
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
-Refer: 3817 1627 S 1 0 0 1 0 -360 2
+Refer: 3817 1627 N 1 0 0 1 0 -360 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: earabic
 Encoding: 1744 1744 3819
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 440 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 170 0 2
+Refer: 3671 64446 N 1 0 0 1 170 0 2
 Refer: 3703 1740 N 1 0 0 1 -60 0 2
 Validated: 32769
 Substitution2: "'init' Initial Forms in Arabic subtable" einitialarabic
@@ -89244,19 +89507,23 @@ EndChar
 StartChar: uni06ae
 Encoding: 1710 1710 3820
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 250 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 -10 0 2
-Refer: 3721 1603 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3667 64441 S 1 0 0 1 0 0 2
+Refer: 3721 1603 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: dammaarabic
 Encoding: 1615 1615 3821
 Width: 0
 VWidth: 687
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 580 mark 0
+AnchorPoint: "arab_diacritic" 300 584 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -89284,7 +89551,9 @@ StartChar: uni0657
 Encoding: 1623 1623 3822
 Width: 0
 VWidth: 687
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 mark 0
+AnchorPoint: "arab_diacritic" 300 584 mark 0
 LayerCount: 2
 Fore
 Refer: 3821 1615 N -1 0 0 -1 585 1388 2
@@ -89293,19 +89562,23 @@ EndChar
 
 StartChar: uni0677
 Encoding: 1655 1655 3823
-Width: 0
-Flags: HW
+Width: 600
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3821 1615 S 1 0 0 1 140 -362 2
+Refer: 3821 1615 N 1 0 0 1 140 -362 2
 Refer: 3804 1654 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06c7
 Encoding: 1735 1735 3824
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 500 basechar 0
 LayerCount: 2
 Fore
 Refer: 3821 1615 N 1 0 0 1 10 -362 2
@@ -89316,23 +89589,23 @@ EndChar
 StartChar: hehgoalarabic
 Encoding: 1729 1729 3825
 Width: 600
-Flags: W
-HStem: 0 40<387.391 600> 15 40<359.44 591.062>
-VStem: 307 293
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -50 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-600 0 m 1xa0
- 455 0 l 2xa0
- 420 0 408 15 386 15 c 0
- 367 15 341 -35 326 -35 c 0
- 319 -35 307 -26 307 -10 c 0
- 307 -2 352 55 386 55 c 0x60
- 416 55 425 40 459 40 c 2
+600 0 m 1
+ 425 0 l 2
+ 390 0 378 15 356 15 c 0
+ 337 15 311 -35 296 -35 c 0
+ 289 -35 277 -26 277 -10 c 0
+ 277 -2 322 55 356 55 c 0
+ 386 55 395 40 429 40 c 2
  600 40 l 1
- 600 0 l 1xa0
+ 600 26.6667 600 13.3333 600 0 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Substitution2: "'fina' Terminal Forms in Arabic subtable" hehgoalfinaarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" hehgoalinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" hehgoalmedialarabic
@@ -89341,43 +89614,51 @@ EndChar
 StartChar: hehgoalhamzaarabic
 Encoding: 1730 1730 3826
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -60 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 110 -450 2
+Refer: 3715 1620 N 1 0 0 1 20 -450 2
 Refer: 3825 1729 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tehmarbutagoalarabic
 Encoding: 1731 1731 3827
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -60 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 110 -290 2
+Refer: 3662 64436 N 1 0 0 1 20 -290 2
 Refer: 3825 1729 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0692
 Encoding: 1682 1682 3828
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3816 1626 S 1 0 0 1 0 -231 2
+Refer: 3816 1626 S 1 0 0 1 0 -271 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0695
 Encoding: 1685 1685 3829
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3816 1626 S 1 0 0 1 158 -795 2
+Refer: 3816 1626 N 1 0 0 1 158 -795 2
 Refer: 3680 1585 N 1 0 0 1 -77 0 2
 Validated: 32769
 EndChar
@@ -89385,7 +89666,7 @@ EndChar
 StartChar: onearabic
 Encoding: 1633 1633 3830
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3658 1575 S 0.996195 0.0871557 -0.0871557 0.996195 0 -25 2
@@ -89395,7 +89676,7 @@ EndChar
 StartChar: twoarabic
 Encoding: 1634 1634 3831
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89422,7 +89703,7 @@ EndChar
 StartChar: fourarabic
 Encoding: 1636 1636 3832
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89455,7 +89736,9 @@ EndChar
 StartChar: uni06aa
 Encoding: 1706 1706 3833
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -89485,7 +89768,7 @@ EndChar
 StartChar: threearabic
 Encoding: 1635 1635 3834
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89521,7 +89804,7 @@ EndChar
 StartChar: fivearabic
 Encoding: 1637 1637 3835
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89542,7 +89825,7 @@ EndChar
 StartChar: sixarabic
 Encoding: 1638 1638 3836
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89563,7 +89846,7 @@ EndChar
 StartChar: zeroarabic
 Encoding: 1632 1632 3837
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89579,7 +89862,7 @@ EndChar
 StartChar: sevenarabic
 Encoding: 1639 1639 3838
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89603,7 +89886,7 @@ EndChar
 StartChar: eightarabic
 Encoding: 1640 1640 3839
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3838 1639 N -1 0 0 -1 600 563 2
@@ -89613,7 +89896,7 @@ EndChar
 StartChar: ninearabic
 Encoding: 1641 1641 3840
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89639,7 +89922,7 @@ EndChar
 StartChar: decimalseparatorarabic
 Encoding: 1643 1643 3841
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89660,7 +89943,7 @@ EndChar
 StartChar: uni066a
 Encoding: 1642 1642 3842
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3660 64434 S 1 0 0 1 136 -410 2
@@ -89672,7 +89955,7 @@ EndChar
 StartChar: zeropersian
 Encoding: 1776 1776 3843
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3837 1632 N 1 0 0 1 0 0 2
@@ -89682,7 +89965,7 @@ EndChar
 StartChar: onepersian
 Encoding: 1777 1777 3844
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3830 1633 N 1 0 0 1 0 0 2
@@ -89692,7 +89975,7 @@ EndChar
 StartChar: twopersian
 Encoding: 1778 1778 3845
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3831 1634 N 1 0 0 1 0 0 2
@@ -89702,7 +89985,7 @@ EndChar
 StartChar: threepersian
 Encoding: 1779 1779 3846
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3834 1635 N 1 0 0 1 0 0 2
@@ -89712,7 +89995,7 @@ EndChar
 StartChar: sevenpersian
 Encoding: 1783 1783 3847
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3838 1639 N 1 0 0 1 0 0 2
@@ -89722,7 +90005,7 @@ EndChar
 StartChar: eightpersian
 Encoding: 1784 1784 3848
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3839 1640 N 1 0 0 1 0 0 2
@@ -89732,7 +90015,7 @@ EndChar
 StartChar: ninepersian
 Encoding: 1785 1785 3849
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3840 1641 N 1 0 0 1 0 0 2
@@ -89742,10 +90025,12 @@ EndChar
 StartChar: uni06ee
 Encoding: 1774 1774 3850
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 630 basechar 0
 LayerCount: 2
 Fore
-Refer: 3817 1627 S 1 0 0 1 0 -236 2
+Refer: 3817 1627 N 1 0 0 1 0 -236 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -89753,10 +90038,12 @@ EndChar
 StartChar: uni06ef
 Encoding: 1775 1775 3851
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 640 basechar 0
 LayerCount: 2
 Fore
-Refer: 3817 1627 S 1 0 0 1 0 -236 2
+Refer: 3817 1627 N 1 0 0 1 0 -236 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -89764,32 +90051,34 @@ EndChar
 StartChar: shaddaarabic
 Encoding: 1617 1617 3852
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 580 mark 0
+AnchorPoint: "arab_diacritic" 300 710 basemark 0
 LayerCount: 2
 Fore
 SplineSet
-340 633 m 4
- 353 633 360 643 360 663 c 6
- 360 690 l 6
- 360 700 368 709 377 709 c 4
- 385 709 394 701 394 690 c 6
- 394 662 l 6
- 394 625 370 601 340 601 c 4
- 312 601 304 618 301 626 c 5
- 299 626 l 5
- 292 615 275 606 256 606 c 4
- 232 606 206 630 206 662 c 6
- 206 669 l 6
- 206 678 214 686 223 686 c 4
- 233 686 240 678 240 670 c 6
- 240 663 l 6
- 240 649 252 640 261 640 c 4
- 274 640 284 653 284 669 c 6
- 284 678 l 6
- 284 687 292 694 300 694 c 4
- 308 694 317 687 317 678 c 6
- 317 663 l 6
- 317 644 326 633 340 633 c 4
+340 633 m 0
+ 353 633 360 643 360 663 c 2
+ 360 690 l 2
+ 360 700 368 709 377 709 c 0
+ 385 709 394 701 394 690 c 2
+ 394 662 l 2
+ 394 625 370 601 340 601 c 0
+ 312 601 304 618 301 626 c 1
+ 299 626 l 1
+ 292 615 275 606 256 606 c 0
+ 232 606 206 630 206 662 c 2
+ 206 669 l 2
+ 206 678 214 686 223 686 c 0
+ 233 686 240 678 240 670 c 2
+ 240 663 l 2
+ 240 649 252 640 261 640 c 0
+ 274 640 284 653 284 669 c 2
+ 284 678 l 2
+ 284 687 292 694 300 694 c 0
+ 308 694 317 687 317 678 c 2
+ 317 663 l 2
+ 317 644 326 633 340 633 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -89824,10 +90113,12 @@ EndChar
 StartChar: uni06ff
 Encoding: 1791 1791 3855
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3817 1627 S 1 0 0 1 0 -276 2
+Refer: 3817 1627 N 1 0 0 1 0 -276 2
 Refer: 3806 1726 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -89835,40 +90126,48 @@ EndChar
 StartChar: uni06fa
 Encoding: 1786 1786 3856
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 420 560 basechar 0
+AnchorPoint: "below_arabic" 450 -170 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 150 0 2
+Refer: 3661 64435 N 1 0 0 1 150 0 2
 Refer: 3690 1588 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06fb
 Encoding: 1787 1787 3857
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 420 560 basechar 0
+AnchorPoint: "below_arabic" 450 -170 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 150 0 2
+Refer: 3661 64435 N 1 0 0 1 150 0 2
 Refer: 3691 1590 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06fc
 Encoding: 1788 1788 3858
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 60 30 2
+Refer: 3661 64435 N 1 0 0 1 60 30 2
 Refer: 3713 1594 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06c5
 Encoding: 1733 1733 3859
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -89901,7 +90200,7 @@ EndChar
 StartChar: fivepersian
 Encoding: 1781 1781 3860
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89926,7 +90225,7 @@ EndChar
 StartChar: fourpersian
 Encoding: 1780 1780 3861
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89960,7 +90259,7 @@ EndChar
 StartChar: sixpersian
 Encoding: 1782 1782 3862
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -89989,36 +90288,36 @@ EndChar
 
 StartChar: uni060b
 Encoding: 1547 1547 3863
-Width: 0
+Width: 600
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -30 2
+Refer: 3660 64434 N 1 0 0 1 0 -30 2
 Refer: 3815 1622 N 1 0 0 1 70 -10 2
 Refer: 3696 1647 N 1 0 0 1 0 150 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni06fd
 Encoding: 1789 1789 3864
-Width: 0
-Flags: HW
+Width: 600
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 3815 1622 S 1 0 0 1 46 270 2
-Refer: 3815 1622 S 1 0 0 1 -57 270 2
-Refer: 3714 1569 N 0.75 0 0 0.75 28.5 311.125 2
-Validated: 32769
+Refer: 3815 1622 N 1 0 0 1 46 270 2
+Refer: 3815 1622 N 1 0 0 1 -57 270 2
+Refer: 3714 1569 S 0.75 0 0 0.75 68.5 311.125 2
+Validated: 98305
 EndChar
 
 StartChar: uni06fe
 Encoding: 1790 1790 3865
-Width: 0
-Flags: HW
+Width: 600
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 3815 1622 S 1 0 0 1 101 270 2
-Refer: 3815 1622 S 1 0 0 1 -2 270 2
+Refer: 3815 1622 N 1 0 0 1 101 270 2
+Refer: 3815 1622 N 1 0 0 1 -2 270 2
 Refer: 3711 1605 N 0.75 0 0 0.75 77.5 186.25 2
 Validated: 32769
 EndChar
@@ -90027,7 +90326,8 @@ StartChar: uni065d
 Encoding: 1629 1629 3866
 Width: 0
 VWidth: 687
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90038,7 +90338,7 @@ SplineSet
  271 725 288 709 299 697 c 1
 225 625 m 1
  225 655 l 1
- 249.25 655 262.75 664.5 277 677 c 1
+ 249 655 263 665 277 677 c 1
  261 697 238 716 238 741 c 0
  238 769 268 800 300 800 c 0
  329 800 360 769 360 741 c 0
@@ -90046,7 +90346,7 @@ SplineSet
  379 605 l 1
  358 588 l 1
  298 655 l 1
- 274 633.25 256.5 625 225 625 c 1
+ 274 633 257 625 225 625 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -90055,17 +90355,18 @@ StartChar: uni065f
 Encoding: 1631 1631 3867
 Width: 0
 VWidth: 761
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 mark 0
 LayerCount: 2
 Fore
 SplineSet
 318 -74 m 0
  295 -74 281 -88 281 -109 c 0
  281 -129 296 -145 318 -145 c 0
- 328 -145 336.281 -141.844 343 -137 c 0
- 345.294 -135.346 348 -135 352 -135 c 0
+ 328 -145 336 -142 343 -137 c 0
+ 345 -135 348 -135 352 -135 c 0
  359 -135 367 -139 367 -148 c 0
- 367 -163 329 -200 299 -200 c 4
+ 367 -163 329 -200 299 -200 c 0
  264 -200 228 -164 206 -164 c 0
  172 -164 171 -198 150 -198 c 0
  142 -198 135 -191 135 -183 c 0
@@ -90085,21 +90386,25 @@ EndChar
 StartChar: uni0672
 Encoding: 1650 1650 3868
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 790 basechar 0
 LayerCount: 2
 Fore
 Refer: 3867 1631 N 1 0 0 1 0 820 2
-Refer: 3658 1575 S 1 0 0 1 0 0 2
+Refer: 3658 1575 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
 StartChar: uni0673
 Encoding: 1651 1651 3869
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 590 basechar 0
 LayerCount: 2
 Fore
-Refer: 3867 1631 S 1 0 0 1 10 0 2
+Refer: 3867 1631 N 1 0 0 1 10 0 2
 Refer: 3658 1575 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -90107,7 +90412,7 @@ EndChar
 StartChar: uni066c
 Encoding: 1644 1644 3870
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 574 700 N 1 0 0 1 0 0 2
@@ -90142,11 +90447,13 @@ EndChar
 StartChar: alefwaslaarabic
 Encoding: 1649 1649 3872
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 790 basechar 0
 LayerCount: 2
 Fore
 Refer: 3658 1575 N 1 0 0 1 0 0 2
-Refer: 3871 -1 S 1 0 0 1 0 0 2
+Refer: 3871 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefwaslafinalarabic
 EndChar
@@ -90154,37 +90461,45 @@ EndChar
 StartChar: unifb50
 Encoding: 64336 64336 3873
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 780 basechar 0
 LayerCount: 2
 Fore
-Refer: 3872 1649 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3872 1649 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFE81
 Encoding: 65153 65153 3874
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 740 basechar 0
 LayerCount: 2
 Fore
-Refer: 3727 1570 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3727 1570 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFE8D
 Encoding: 65165 65165 3875
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3658 1575 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3658 1575 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: aleffinalarabic
 Encoding: 65166 65166 3876
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90205,95 +90520,113 @@ EndChar
 StartChar: uniFE80
 Encoding: 65152 65152 3877
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -80 basechar 0
 LayerCount: 2
 Fore
 Refer: 3714 1569 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFE83
 Encoding: 65155 65155 3878
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 780 basechar 0
 LayerCount: 2
 Fore
-Refer: 3722 1571 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3722 1571 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFE87
 Encoding: 65159 65159 3879
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
 Refer: 3723 1573 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: alefmaddaabovefinalarabic
 Encoding: 65154 65154 3880
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 740 basechar 0
 LayerCount: 2
 Fore
-Refer: 3726 1619 S 1 0 0 1 10 0 2
+Refer: 3726 1619 N 1 0 0 1 10 0 2
 Refer: 3876 65166 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: alefhamzaabovefinalarabic
 Encoding: 65156 65156 3881
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 780 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 0 0 2
+Refer: 3715 1620 N 1 0 0 1 0 0 2
 Refer: 3876 65166 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFE89
 Encoding: 65161 65161 3882
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 430 -140 basechar 0
 LayerCount: 2
 Fore
 Refer: 3724 1574 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: alefhamzabelowfinalarabic
 Encoding: 65160 65160 3883
-Width: 600
-Flags: HW
+Width: 601
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 580 basechar 0
 LayerCount: 2
 Fore
-Refer: 3716 1621 S 1 0 0 1 30 0 2
+Refer: 3716 1621 N 1 0 0 1 30 0 2
 Refer: 3876 65166 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: behinitialarabic
 Encoding: 65169 65169 3884
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -170 basechar 0
 LayerCount: 2
 Fore
 Refer: 3661 64435 N 1 0 0 1 -30 0 2
-Refer: 3888 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3888 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFE8F
 Encoding: 65167 65167 3885
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -170 basechar 0
 LayerCount: 2
 Fore
 Refer: 3659 1576 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: NameMe.59686
@@ -90373,147 +90706,175 @@ EndChar
 StartChar: behfinalarabic
 Encoding: 65168 65168 3890
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -170 basechar 0
 LayerCount: 2
 Fore
 Refer: 3661 64435 N 1 0 0 1 0 0 2
-Refer: 3887 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3887 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: behmedialarabic
 Encoding: 65170 65170 3891
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -170 basechar 0
 LayerCount: 2
 Fore
 Refer: 3661 64435 N 1 0 0 1 0 0 2
-Refer: 3889 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3889 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFE95
 Encoding: 65173 65173 3892
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3672 1578 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tehfinalarabic
 Encoding: 65174 65174 3893
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -180 2
+Refer: 3662 64436 N 1 0 0 1 0 -180 2
 Refer: 3887 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tehinitialarabic
 Encoding: 65175 65175 3894
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3662 64436 N 1 0 0 1 0 -100 2
-Refer: 3888 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3888 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: tehmedialarabic
 Encoding: 65176 65176 3895
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -100 2
+Refer: 3662 64436 N 1 0 0 1 0 -100 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFE99
 Encoding: 65177 65177 3896
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3673 1579 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3673 1579 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: thehfinalarabic
 Encoding: 65178 65178 3897
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3664 64438 N 1 0 0 1 0 -190 2
-Refer: 3887 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3887 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: thehinitialarabic
 Encoding: 65179 65179 3898
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 N 1 0 0 1 0 -100 2
-Refer: 3888 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3664 64438 S 1 0 0 1 0 -160 2
+Refer: 3888 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: thehmedialarabic
 Encoding: 65180 65180 3899
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -100 2
+Refer: 3664 64438 N 1 0 0 1 0 -160 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yehhamzaaboveinitialarabic
 Encoding: 65163 65163 3900
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 0 -340 2
+Refer: 3715 1620 S 1 0 0 1 0 -360 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yehhamzaabovemedialarabic
 Encoding: 65164 65164 3901
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 N 1 0 0 1 0 -340 2
-Refer: 3889 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3715 1620 S 1 0 0 1 0 -360 2
+Refer: 3889 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFEA9
 Encoding: 65193 65193 3902
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3678 1583 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3678 1583 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: dalfinalarabic
 Encoding: 65194 65194 3903
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90531,44 +90892,52 @@ SplineSet
  360 260 430 154 430 40 c 1
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: thalfinalarabic
 Encoding: 65196 65196 3904
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3903 65194 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEAB
 Encoding: 65195 65195 3905
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3679 1584 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEAD
 Encoding: 65197 65197 3906
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: rehfinalarabic
 Encoding: 65198 65198 3907
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90586,44 +90955,52 @@ SplineSet
  400 40 l 1
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFEAF
 Encoding: 65199 65199 3908
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3681 1586 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zainfinalarabic
 Encoding: 65200 65200 3909
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 50 -100 2
+Refer: 3660 64434 N 1 0 0 1 50 -100 2
 Refer: 3907 65198 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEB1
 Encoding: 65201 65201 3910
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 410 410 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
 Refer: 3694 1587 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: seenfinalarabic
 Encoding: 65202 65202 3911
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above_arabic" 410 410 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90657,13 +91034,15 @@ SplineSet
  600 101.334 597.535 63.7021 590.971 40 c 1
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: seeninitialarabic
 Encoding: 65203 65203 3912
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 410 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90693,6 +91072,8 @@ StartChar: seenmedialarabic
 Encoding: 65204 65204 3913
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 410 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90717,66 +91098,78 @@ SplineSet
  530 101.334 527.535 63.7021 520.971 40 c 1
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFEB5
 Encoding: 65205 65205 3914
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 410 510 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
 Refer: 3690 1588 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: sheenfinalarabic
 Encoding: 65206 65206 3915
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above_arabic" 410 510 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 140 -170 2
+Refer: 3664 64438 N 1 0 0 1 140 -170 2
 Refer: 3911 65202 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: sheeninitialarabic
 Encoding: 65207 65207 3916
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 510 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 60 -170 2
+Refer: 3664 64438 N 1 0 0 1 20 -170 2
 Refer: 3912 65203 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: sheenmedialarabic
 Encoding: 65208 65208 3917
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 510 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 70 -170 2
+Refer: 3664 64438 S 1 0 0 1 0 -170 2
 Refer: 3913 65204 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEDD
 Encoding: 65245 65245 3918
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3692 1604 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: lamfinalarabic
 Encoding: 65246 65246 3919
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90810,6 +91203,8 @@ StartChar: laminitialarabic
 Encoding: 65247 65247 3920
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90826,13 +91221,15 @@ SplineSet
  280 142 280 376 280 564 c 1
  368 564 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: lammedialarabic
 Encoding: 65248 65248 3921
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90852,23 +91249,27 @@ SplineSet
  320 89 365 40 426 40 c 2
  426 40 587 40 600 40 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFEE1
 Encoding: 65249 65249 3922
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 170 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3711 1605 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: meemfinalarabic
 Encoding: 65250 65250 3923
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 240 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90891,13 +91292,15 @@ SplineSet
  346.995 40 l 1
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: meeminitialarabic
 Encoding: 65251 65251 3924
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90917,13 +91320,15 @@ SplineSet
  352 108 330 129 300 129 c 0
  268 129 248 109 248 80 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: meemmedialarabic
 Encoding: 65252 65252 3925
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -90948,33 +91353,39 @@ SplineSet
  352 108 330 129 300 129 c 0
  268 129 248 109 248 80 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFEB9
 Encoding: 65209 65209 3926
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 410 410 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
 Refer: 3689 1589 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEBD
 Encoding: 65213 65213 3927
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 410 510 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
 Refer: 3691 1590 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: sadfinalarabic
 Encoding: 65210 65210 3928
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 410 410 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91009,13 +91420,15 @@ SplineSet
  425 172 349 103 313 48 c 1
  313 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: sadinitialarabic
 Encoding: 65211 65211 3929
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 410 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91045,6 +91458,8 @@ StartChar: sadmedialarabic
 Encoding: 65212 65212 3930
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 410 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91071,66 +91486,78 @@ SplineSet
  305 172 229 103 193 48 c 1
  193 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: dadfinalarabic
 Encoding: 65214 65214 3931
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 410 510 basechar 0
+AnchorPoint: "below_arabic" 450 -60 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 130 -100 2
+Refer: 3660 64434 N 1 0 0 1 130 -100 2
 Refer: 3928 65210 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dadinitialarabic
 Encoding: 65215 65215 3932
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3929 65211 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dadmedialarabic
 Encoding: 65216 65216 3933
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 0 -100 2
-Refer: 3930 65212 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3930 65212 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFEC1
 Encoding: 65217 65217 3934
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3683 1591 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEC5
 Encoding: 65221 65221 3935
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3684 1592 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tahfinalarabic
 Encoding: 65218 65218 3936
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91160,13 +91587,15 @@ SplineSet
  434 25 460 59 460 102 c 0
  460 142 428 172 382 172 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: tahinitialarabic
 Encoding: 65219 65219 3937
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91191,13 +91620,15 @@ SplineSet
  434 25 460 59 460 102 c 0
  460 142 428 172 382 172 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: tahmedialarabic
 Encoding: 65220 65220 3938
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91226,76 +91657,90 @@ SplineSet
  434 25 460 59 460 102 c 0
  460 142 428 172 382 172 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: zahfinalarabic
 Encoding: 65222 65222 3939
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 80 -100 2
+Refer: 3660 64434 N 1 0 0 1 80 -100 2
 Refer: 3936 65218 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zahinitialarabic
 Encoding: 65223 65223 3940
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 80 -100 2
+Refer: 3660 64434 N 1 0 0 1 80 -100 2
 Refer: 3937 65219 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zahmedialarabic
 Encoding: 65224 65224 3941
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 360 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 80 -100 2
+Refer: 3660 64434 N 1 0 0 1 80 -100 2
 Refer: 3938 65220 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEC9
 Encoding: 65225 65225 3942
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3712 1593 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFECD
 Encoding: 65229 65229 3943
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3713 1594 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3713 1594 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: ainfinalarabic
 Encoding: 65226 65226 3944
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3942 65225 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: aininitialarabic
 Encoding: 65227 65227 3945
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91315,13 +91760,15 @@ SplineSet
  424 6 415 0 397 0 c 2
  0 0 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: ainmedialarabic
 Encoding: 65228 65228 3946
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91341,129 +91788,151 @@ SplineSet
  340.491 69.8777 378.367 40 426 40 c 2
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: ghainfinalarabic
 Encoding: 65230 65230 3947
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 -20 -100 2
+Refer: 3660 64434 N 1 0 0 1 -20 -100 2
 Refer: 3944 65226 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ghaininitialarabic
 Encoding: 65231 65231 3948
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3945 65227 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ghainmedialarabic
 Encoding: 65232 65232 3949
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3946 65228 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEE5
 Encoding: 65253 65253 3950
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3693 1606 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: noonfinalarabic
 Encoding: 65254 65254 3951
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -150 2
+Refer: 3660 64434 N 1 0 0 1 0 -150 2
 Refer: 4101 64415 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: nooninitialarabic
 Encoding: 65255 65255 3952
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 0 -100 2
-Refer: 3888 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3888 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: noonmedialarabic
 Encoding: 65256 65256 3953
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 0 -100 2
-Refer: 3889 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3889 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFED1
 Encoding: 65233 65233 3954
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 470 560 basechar 0
+AnchorPoint: "below_arabic" 470 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3698 1601 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: fehfinalarabic
 Encoding: 65234 65234 3955
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 470 560 basechar 0
+AnchorPoint: "below_arabic" 470 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 170 -50 2
+Refer: 3660 64434 N 1 0 0 1 170 -50 2
 Refer: 4051 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: fehinitialarabic
 Encoding: 65235 65235 3956
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 300 260 m 0,27,28
 EndSplineSet
-Refer: 3958 -1 S 1 0 0 1 0 0 2
-Refer: 3660 64434 N 1 0 0 1 10 -50 2
-Validated: 35841
+Refer: 3958 -1 N 1 0 0 1 0 0 2
+Refer: 3660 64434 S 1 0 0 1 10 -100 2
+Validated: 101377
 EndChar
 
 StartChar: fehmedialarabic
 Encoding: 65236 65236 3957
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3959 -1 S 1 0 0 1 0 0 2
-Refer: 3660 64434 N 1 0 0 1 10 -50 2
-Validated: 32769
+Refer: 3959 -1 N 1 0 0 1 0 0 2
+Refer: 3660 64434 N 1 0 0 1 10 -100 2
+Validated: 98305
 EndChar
 
 StartChar: arab_feh_qaf_init
@@ -91524,16 +91993,20 @@ StartChar: uniFED5
 Encoding: 65237 65237 3960
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 380 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3699 1602 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: qaffinalarabic
 Encoding: 65238 65238 3961
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 380 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91582,29 +92055,35 @@ StartChar: qafinitialarabic
 Encoding: 65239 65239 3962
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -80 2
+Refer: 3662 64436 N 1 0 0 1 0 -80 2
 Refer: 3958 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: qafmedialarabic
 Encoding: 65240 65240 3963
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -80 2
+Refer: 3662 64436 N 1 0 0 1 0 -80 2
 Refer: 3959 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hahfinalarabic
 Encoding: 65186 65186 3964
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91620,14 +92099,16 @@ SplineSet
  452 234 461 226 461 216 c 2
 EndSplineSet
 Refer: 3674 1581 N 1 0 0 1 0 0 2
-Validated: 35841
+Validated: 101377
 EndChar
 
 StartChar: hahinitialarabic
 Encoding: 65187 65187 3965
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91644,14 +92125,16 @@ SplineSet
  447 179 l 2
  306.5 179 239 0 0 0 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: hahmedialarabic
 Encoding: 65188 65188 3966
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91674,128 +92157,150 @@ SplineSet
  447 179 l 2
  306.5 179 239 0 0 0 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFEA5
 Encoding: 65189 65189 3967
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3676 1582 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEA1
 Encoding: 65185 65185 3968
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3674 1581 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3674 1581 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: uniFE9D
 Encoding: 65181 65181 3969
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3675 1580 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: jeemfinalarabic
 Encoding: 65182 65182 3970
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 0 140 2
+Refer: 3661 64435 N 1 0 0 1 0 140 2
 Refer: 3964 65186 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: khahfinalarabic
 Encoding: 65190 65190 3971
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -30 2
+Refer: 3660 64434 N 1 0 0 1 0 -30 2
 Refer: 3964 65186 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: jeeminitialarabic
 Encoding: 65183 65183 3972
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -120 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 0 58 2
+Refer: 3661 64435 N 1 0 0 1 0 58 2
 Refer: 3965 65187 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: khahinitialarabic
 Encoding: 65191 65191 3973
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3965 65187 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: jeemmedialarabic
 Encoding: 65184 65184 3974
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -120 basechar 0
 LayerCount: 2
 Fore
-Refer: 3661 64435 S 1 0 0 1 0 58 2
+Refer: 3661 64435 N 1 0 0 1 0 58 2
 Refer: 3966 65188 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: khahmedialarabic
 Encoding: 65192 65192 3975
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3660 64434 S 1 0 0 1 0 -100 2
+Refer: 3660 64434 N 1 0 0 1 0 -100 2
 Refer: 3966 65188 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEEF
 Encoding: 65263 65263 3976
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 420 420 basechar 0
+AnchorPoint: "below_arabic" 440 -149 basechar 0
 LayerCount: 2
 Fore
-Refer: 3704 1609 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3704 1609 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: alefmaksurafinalarabic
 Encoding: 65264 65264 3977
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 420 420 basechar 0
+AnchorPoint: "below_arabic" 408 -149 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91823,34 +92328,40 @@ SplineSet
  419.338 40 l 1
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFE8A
 Encoding: 65162 65162 3978
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 420 -140 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 20 -380 2
+Refer: 3715 1620 N 1 0 0 1 20 -380 2
 Refer: 3977 65264 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEED
 Encoding: 65261 65261 3979
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: wawfinalarabic
 Encoding: 65262 65262 3980
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91875,55 +92386,65 @@ SplineSet
  343 30 363 50 363 78 c 0
  363 106 341 129 311 129 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFE85
 Encoding: 65157 65157 3981
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3725 1572 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3725 1572 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: wawhamzaabovefinalarabic
 Encoding: 65158 65158 3982
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 30 -380 2
+Refer: 3715 1620 N 1 0 0 1 30 -380 2
 Refer: 3980 65262 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEE9
 Encoding: 65257 65257 3983
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3780 1749 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hehinitialarabic
 Encoding: 65259 65259 3984
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 4110 64428 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hehfinalarabic
 Encoding: 65258 65258 3985
 Width: 600
 VWidth: 1024
-Flags: MW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -91947,36 +92468,42 @@ SplineSet
  370 25 387 40 387 75 c 0
  387 81.4418 386.801 87.875 386.429 94.1951 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFE93
 Encoding: 65171 65171 3986
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -100 2
+Refer: 3662 64436 N 1 0 0 1 0 -100 2
 Refer: 3983 65257 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tehmarbutafinalarabic
 Encoding: 65172 65172 3987
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 30 -100 2
+Refer: 3662 64436 S 1 0 0 1 0 -100 2
 Refer: 3985 65258 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hehmedialarabic
 Encoding: 65260 65260 3988
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -92008,282 +92535,332 @@ SplineSet
  275 198 260 173.5 260 134 c 0
  260 107 261.5 74 266 40 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: pehfinaarabic
 Encoding: 64343 64343 3989
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3667 64441 N 1 0 0 1 0 0 2
-Refer: 3887 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3887 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: pehinitarabic
 Encoding: 64344 64344 3990
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3888 -1 S 1 0 0 1 0 0 2
+Refer: 3888 -1 N 1 0 0 1 0 0 2
 Refer: 3667 64441 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: pehmediarabic
 Encoding: 64345 64345 3991
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3889 -1 S 1 0 0 1 0 0 2
+Refer: 3889 -1 N 1 0 0 1 0 0 2
 Refer: 3667 64441 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFB56
 Encoding: 64342 64342 3992
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3731 1662 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb53
 Encoding: 64339 64339 3993
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3887 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb5b
 Encoding: 64347 64347 3994
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 0 0 2
+Refer: 3669 64443 N 1 0 0 1 0 0 2
 Refer: 3887 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ttehehfinaarabic
 Encoding: 64351 64351 3995
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3670 64445 S 1 0 0 1 0 -210 2
+Refer: 3670 64445 N 1 0 0 1 0 -210 2
 Refer: 3887 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb63
 Encoding: 64355 64355 3996
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 0 -200 2
+Refer: 3668 64442 N 1 0 0 1 0 -200 2
 Refer: 3887 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ttehfinaarabic
 Encoding: 64359 64359 3997
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 470 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -363 2
+Refer: 3783 64448 N 1 0 0 1 0 -363 2
 Refer: 3887 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb54
 Encoding: 64340 64340 3998
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3671 64446 S 1 0 0 1 0 0 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb64
 Encoding: 64356 64356 3999
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 460 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 N 1 0 0 1 0 -100 2
-Refer: 3888 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3668 64442 N 1 0 0 1 0 -150 2
+Refer: 3888 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: ttehinitarabic
 Encoding: 64360 64360 4000
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 520 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -238 2
+Refer: 3783 64448 N 1 0 0 1 0 -298 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb5c
 Encoding: 64348 64348 4001
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 0 0 2
+Refer: 3669 64443 N 1 0 0 1 0 0 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ttehehinitarabic
 Encoding: 64352 64352 4002
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3670 64445 S 1 0 0 1 -40 -100 2
+Refer: 3670 64445 N 1 0 0 1 -40 -120 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb55
 Encoding: 64341 64341 4003
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb5d
 Encoding: 64349 64349 4004
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 0 0 2
+Refer: 3669 64443 N 1 0 0 1 0 0 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ttehehmediarabic
 Encoding: 64353 64353 4005
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3670 64445 S 1 0 0 1 -40 -100 2
+Refer: 3670 64445 S 1 0 0 1 -40 -120 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb65
 Encoding: 64357 64357 4006
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 470 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 N 1 0 0 1 0 -100 2
-Refer: 3889 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3668 64442 N 1 0 0 1 0 -150 2
+Refer: 3889 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: ttehmediarabic
 Encoding: 64361 64361 4007
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 520 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 N 1 0 0 1 0 -238 2
-Refer: 3889 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3783 64448 N 1 0 0 1 0 -298 2
+Refer: 3889 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: unifb5a
 Encoding: 64346 64346 4008
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3735 1664 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb52
 Encoding: 64338 64338 4009
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3733 1659 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb5e
 Encoding: 64350 64350 4010
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3734 1658 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb62
 Encoding: 64354 64354 4011
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 440 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3730 1663 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb66
 Encoding: 64358 64358 4012
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 470 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3785 1657 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: alefwaslafinalarabic
 Encoding: 64337 64337 4013
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 basechar 0
+AnchorPoint: "above_arabic" 300 780 basechar 0
 LayerCount: 2
 Fore
-Refer: 3871 -1 S 1 0 0 1 0 0 2
+Refer: 3871 -1 N 1 0 0 1 0 0 2
 Refer: 3876 65166 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFE70
 Encoding: 65136 65136 4014
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3718 1611 N 1 0 0 1 0 0 2
@@ -92293,7 +92870,7 @@ EndChar
 StartChar: unife71
 Encoding: 65137 65137 4015
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3710 1600 N 1 0 0 1 0 0 2
@@ -92304,27 +92881,33 @@ EndChar
 StartChar: alefmaksurainitarabic
 Encoding: 64488 64488 4016
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 410 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3888 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3888 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: alefmaksuramediarabic
 Encoding: 64489 64489 4017
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 410 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3889 -1 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3889 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: unifbae
 Encoding: 64430 64430 4018
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 170 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -92349,7 +92932,9 @@ EndChar
 StartChar: yehbarreefinaarabic
 Encoding: 64431 64431 4019
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 170 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -92370,61 +92955,73 @@ EndChar
 StartChar: unifbb0
 Encoding: 64432 64432 4020
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 170 510 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 -150 -344 2
+Refer: 3715 1620 N 1 0 0 1 -150 -344 2
 Refer: 4018 64430 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbb1
 Encoding: 64433 64433 4021
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 170 510 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 -150 -344 2
+Refer: 3715 1620 N 1 0 0 1 -150 -344 2
 Refer: 4019 64431 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: einitialarabic
 Encoding: 64486 64486 4022
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: emedialarabic
 Encoding: 64487 64487 4023
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb8e
 Encoding: 64398 64398 4024
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3686 1705 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: kehehinitarabic
 Encoding: 64400 64400 4025
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -92449,81 +93046,92 @@ EndChar
 StartChar: uniFB92
 Encoding: 64402 64402 4026
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 220 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3729 1711 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3729 1711 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: gafinitarabic
 Encoding: 64404 64404 4027
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 220 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3814 -1 N 1 0 0 1 -40 0 2
-Refer: 4025 64400 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 4025 64400 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: unifb96
 Encoding: 64406 64406 4028
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 220 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 4024 64398 S 1 0 0 1 0 0 2
+Refer: 4024 64398 N 1 0 0 1 0 0 2
 Refer: 3814 -1 N 1 0 0 1 0 0 2
 Refer: 3671 64446 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb98
 Encoding: 64408 64408 4029
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 220 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 4025 64400 S 1 0 0 1 0 0 2
+Refer: 4025 64400 N 1 0 0 1 0 0 2
 Refer: 3814 -1 N 1 0 0 1 -40 0 2
 Refer: 3671 64446 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hehgoalfinaarabic
 Encoding: 64423 64423 4030
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -100 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3825 1729 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hehgoalinitarabic
 Encoding: 64424 64424 4031
 Width: 600
-Flags: W
-HStem: 0 40<0 188.793>
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 0 40 m 1
- 145 40 l 2
- 176 40 196 65 206 82 c 1
- 210 88 216 91 223 91 c 0
- 237 91 241 82 244 67 c 2
- 268 -72 l 1
- 300 -14 l 2
- 307 -3 312 1 322 1 c 0
- 332 1 343 -7 343 -19 c 0
- 343 -24 340 -28 336 -36 c 2
- 278 -139 l 2
- 272 -150 266 -154 256 -154 c 0
- 243 -154 237 -143 235 -130 c 2
- 210 20 l 1
- 186 7 156 0 141 0 c 2
+ 175 40 l 6
+ 206 40 226 65 236 82 c 5
+ 240 88 246 91 253 91 c 4
+ 267 91 271 82 274 67 c 6
+ 298 -72 l 5
+ 330 -14 l 6
+ 337 -3 342 1 352 1 c 4
+ 362 1 373 -7 373 -19 c 4
+ 373 -24 370 -28 366 -36 c 6
+ 308 -139 l 6
+ 302 -150 296 -154 286 -154 c 4
+ 273 -154 267 -143 265 -130 c 6
+ 240 20 l 5
+ 216 7 186 0 171 0 c 6
  0 0 l 1
  0 40 l 1
 EndSplineSet
@@ -92533,238 +93141,276 @@ EndChar
 StartChar: hehgoalmedialarabic
 Encoding: 64425 64425 4032
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 0 40 m 1
- 145 40 l 2
- 176 40 196 65 206 82 c 0
- 210 88 216 91 223 91 c 0
- 237 91 241 82 244 67 c 2
- 268 -72 l 1
- 311 26 l 2
- 316 38 323 40 335 40 c 2
+ 165 40 l 2
+ 196 40 216 65 226 82 c 0
+ 230 88 236 91 243 91 c 0
+ 257 91 261 82 264 67 c 2
+ 288 -72 l 1
+ 331 26 l 2
+ 336 38 343 40 355 40 c 2
  600 40 l 1
- 600 0 l 1
- 345 0 l 1
- 278 -139 l 2
- 272 -150 266 -154 256 -154 c 0
- 243 -154 237 -143 235 -130 c 2
- 210 20 l 1
- 186 7 156 0 141 0 c 2
+ 600 26.6667 600 13.3333 600 0 c 1
+ 365 0 l 1
+ 298 -139 l 2
+ 292 -150 286 -154 276 -154 c 0
+ 263 -154 257 -143 255 -130 c 2
+ 230 20 l 1
+ 206 7 176 0 161 0 c 2
  0 0 l 1
- 0 40 l 1
+ -0 13.3333 0 26.6667 0 40 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: kafinitialarabic
 Encoding: 65243 65243 4033
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 4025 64400 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 4025 64400 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: unifb73
 Encoding: 64371 64371 4034
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 180 2
+Refer: 3671 64446 N 1 0 0 1 0 180 2
 Refer: 3964 65186 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb72
 Encoding: 64370 64370 4035
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3739 1668 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb76
 Encoding: 64374 64374 4036
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3738 1667 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFB7A
 Encoding: 64378 64378 4037
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3741 1670 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb7e
 Encoding: 64382 64382 4038
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3742 1671 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb77
 Encoding: 64375 64375 4039
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 -10 154 2
+Refer: 3663 64437 N 1 0 0 1 -10 154 2
 Refer: 3964 65186 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tchehfinaarabic
 Encoding: 64379 64379 4040
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 -20 150 2
+Refer: 3667 64441 N 1 0 0 1 -20 150 2
 Refer: 3964 65186 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb7f
 Encoding: 64383 64383 4041
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 -10 160 2
+Refer: 3669 64443 N 1 0 0 1 -10 160 2
 Refer: 3964 65186 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb74
 Encoding: 64372 64372 4042
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3965 65187 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb78
 Encoding: 64376 64376 4043
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 298 -159 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3965 65187 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tchehinitarabic
 Encoding: 64380 64380 4044
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 0 0 2
+Refer: 3667 64441 N 1 0 0 1 0 0 2
 Refer: 3965 65187 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb80
 Encoding: 64384 64384 4045
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 0 0 2
+Refer: 3669 64443 N 1 0 0 1 0 0 2
 Refer: 3965 65187 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb75
 Encoding: 64373 64373 4046
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 0 0 2
+Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3966 65188 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb79
 Encoding: 64377 64377 4047
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 298 -159 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3966 65188 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tchehmediarabic
 Encoding: 64381 64381 4048
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3667 64441 S 1 0 0 1 0 0 2
+Refer: 3667 64441 N 1 0 0 1 0 0 2
 Refer: 3966 65188 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb81
 Encoding: 64385 64385 4049
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3669 64443 S 1 0 0 1 0 0 2
+Refer: 3669 64443 N 1 0 0 1 0 0 2
 Refer: 3966 65188 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb6a
 Encoding: 64362 64362 4050
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 450 560 basechar 0
+AnchorPoint: "below_arabic" 460 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3763 1700 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: arab_feh_qaf_final
@@ -92804,94 +93450,110 @@ EndChar
 StartChar: vehfinaarabic
 Encoding: 64363 64363 4052
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 460 -20 basechar 0
+AnchorPoint: "above_arabic" 450 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 170 -80 2
+Refer: 3664 64438 N 1 0 0 1 170 -100 2
 Refer: 4051 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: vehinitarabic
 Encoding: 64364 64364 4053
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -80 2
+Refer: 3664 64438 N 1 0 0 1 0 -100 2
 Refer: 3958 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: vehmediarabic
 Encoding: 64365 64365 4054
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -80 2
+Refer: 3664 64438 N 1 0 0 1 0 -100 2
 Refer: 3959 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb71
 Encoding: 64369 64369 4055
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 -10 -90 2
+Refer: 3668 64442 N 1 0 0 1 -10 -90 2
 Refer: 3959 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb70
 Encoding: 64368 64368 4056
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 -10 -90 2
+Refer: 3668 64442 N 1 0 0 1 -10 -90 2
 Refer: 3958 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb6f
 Encoding: 64367 64367 4057
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 460 -20 basechar 0
+AnchorPoint: "above_arabic" 450 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3668 64442 S 1 0 0 1 170 -90 2
+Refer: 3668 64442 N 1 0 0 1 170 -90 2
 Refer: 4051 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb6e
 Encoding: 64366 64366 4058
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 460 -20 basechar 0
+AnchorPoint: "above_arabic" 450 560 basechar 0
 LayerCount: 2
 Fore
 Refer: 3765 1702 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: nginitarabic
 Encoding: 64469 64469 4059
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 200 660 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 -120 70 2
+Refer: 3664 64438 N 1 0 0 1 -120 70 2
 Refer: 4025 64400 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFE76
 Encoding: 65142 65142 4060
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3717 1614 N 1 0 0 1 0 0 2
@@ -92901,7 +93563,7 @@ EndChar
 StartChar: unife77
 Encoding: 65143 65143 4061
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3717 1614 N 1 0 0 1 0 0 2
@@ -92912,7 +93574,7 @@ EndChar
 StartChar: uniFE78
 Encoding: 65144 65144 4062
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3821 1615 N 1 0 0 1 0 0 2
@@ -92922,7 +93584,7 @@ EndChar
 StartChar: unife79
 Encoding: 65145 65145 4063
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3821 1615 N 1 0 0 1 0 0 2
@@ -92933,7 +93595,7 @@ EndChar
 StartChar: uniFE7A
 Encoding: 65146 65146 4064
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3720 1616 N 1 0 0 1 0 0 2
@@ -92943,7 +93605,7 @@ EndChar
 StartChar: unife7b
 Encoding: 65147 65147 4065
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3720 1616 N 1 0 0 1 0 0 2
@@ -92954,7 +93616,7 @@ EndChar
 StartChar: unife7d
 Encoding: 65149 65149 4066
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3852 1617 N 1 0 0 1 0 0 2
@@ -92965,7 +93627,7 @@ EndChar
 StartChar: uniFE7C
 Encoding: 65148 65148 4067
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3852 1617 N 1 0 0 1 0 0 2
@@ -92976,32 +93638,38 @@ StartChar: yehinitialarabic
 Encoding: 65267 65267 4068
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -170 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yehmedialarabic
 Encoding: 65268 65268 4069
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -170 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFEF1
 Encoding: 65265 65265 4070
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 420 420 basechar 0
+AnchorPoint: "below_arabic" 400 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3705 1610 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3705 1610 N 1 0 0 1 0 0 2
+Validated: 98305
 Substitution2: "'fina' Terminal Forms in Arabic subtable" yehfinalarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" yehmedialarabic
 Substitution2: "'init' Initial Forms in Arabic subtable" yehinitialarabic
@@ -93011,17 +93679,21 @@ StartChar: yehfinalarabic
 Encoding: 65266 65266 4071
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 420 420 basechar 0
+AnchorPoint: "below_arabic" 390 -200 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 180 -46 2
+Refer: 3663 64437 N 1 0 0 1 180 -46 2
 Refer: 3977 65264 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: kafmedialarabic
 Encoding: 65244 65244 4072
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93046,6 +93718,8 @@ StartChar: uniFED9
 Encoding: 65241 65241 4073
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93081,13 +93755,15 @@ SplineSet
  264 564 275 571 286 571 c 0
  293 571 301 567 304 559 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: kaffinalarabic
 Encoding: 65242 65242 4074
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 300 590 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93129,23 +93805,23 @@ SplineSet
  533 40 l 1
  600 40 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFE74
 Encoding: 65140 65140 4075
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3719 1613 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unife73
 Encoding: 65139 65139 4076
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -93165,7 +93841,9 @@ EndChar
 StartChar: kehehfinaarabic
 Encoding: 64399 64399 4077
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93195,259 +93873,307 @@ EndChar
 StartChar: kehehmediarabic
 Encoding: 64401 64401 4078
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 4072 65244 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 4072 65244 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: gaffinaarabic
 Encoding: 64403 64403 4079
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 220 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 4077 64399 S 1 0 0 1 0 0 2
+Refer: 4077 64399 N 1 0 0 1 0 0 2
 Refer: 3814 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: gafmediarabic
 Encoding: 64405 64405 4080
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 220 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 4078 64401 S 1 0 0 1 0 0 2
+Refer: 4078 64401 N 1 0 0 1 0 0 2
 Refer: 3814 -1 N 1 0 0 1 -40 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb97
 Encoding: 64407 64407 4081
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 220 560 basechar 0
 LayerCount: 2
 Fore
 Refer: 4077 64399 N 1 0 0 1 0 0 2
-Refer: 3814 -1 S 1 0 0 1 10 0 2
+Refer: 3814 -1 N 1 0 0 1 10 0 2
 Refer: 3671 64446 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb82
 Encoding: 64386 64386 4082
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb84
 Encoding: 64388 64388 4083
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -50 2
+Refer: 3662 64436 N 1 0 0 1 0 -50 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb86
 Encoding: 64390 64390 4084
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -60 2
+Refer: 3664 64438 S 1 0 0 1 0 -90 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb88
 Encoding: 64392 64392 4085
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -240 2
+Refer: 3783 64448 N 1 0 0 1 0 -240 2
 Refer: 3678 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb83
 Encoding: 64387 64387 4086
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3903 65194 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb85
 Encoding: 64389 64389 4087
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 0 -50 2
+Refer: 3662 64436 N 1 0 0 1 0 -50 2
 Refer: 3903 65194 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb87
 Encoding: 64391 64391 4088
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 490 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -60 2
+Refer: 3664 64438 N 1 0 0 1 0 -90 2
 Refer: 3903 65194 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ddalfinaarabic
 Encoding: 64393 64393 4089
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -240 2
+Refer: 3783 64448 N 1 0 0 1 0 -240 2
 Refer: 3903 65194 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFB8A
 Encoding: 64394 64394 4090
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 490 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -60 2
+Refer: 3664 64438 N 1 0 0 1 0 -110 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb8c
 Encoding: 64396 64396 4091
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 520 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -240 2
+Refer: 3783 64448 N 1 0 0 1 0 -280 2
 Refer: 3680 1585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: jehfinaarabic
 Encoding: 64395 64395 4092
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 490 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -60 2
+Refer: 3664 64438 N 1 0 0 1 0 -120 2
 Refer: 3907 65198 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: rrehfinaarabic
 Encoding: 64397 64397 4093
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 520 basechar 0
 LayerCount: 2
 Fore
-Refer: 3907 65198 S 1 0 0 1 0 0 2
-Refer: 3783 64448 N 1 0 0 1 0 -240 2
-Validated: 32769
+Refer: 3907 65198 N 1 0 0 1 0 0 2
+Refer: 3783 64448 N 1 0 0 1 0 -280 2
+Validated: 98305
 EndChar
 
 StartChar: unifb99
 Encoding: 64409 64409 4094
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 220 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 4078 64401 S 1 0 0 1 0 0 2
+Refer: 4078 64401 N 1 0 0 1 0 0 2
 Refer: 3814 -1 N 1 0 0 1 -40 0 2
 Refer: 3671 64446 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb9a
 Encoding: 64410 64410 4095
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 650 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 -150 120 2
+Refer: 3662 64436 N 1 0 0 1 -150 120 2
 Refer: 4026 64402 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb9b
 Encoding: 64411 64411 4096
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 650 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 -150 120 2
+Refer: 3662 64436 N 1 0 0 1 -150 120 2
 Refer: 4079 64403 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb9c
 Encoding: 64412 64412 4097
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 650 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 -170 120 2
+Refer: 3662 64436 N 1 0 0 1 -170 120 2
 Refer: 4027 64404 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb9d
 Encoding: 64413 64413 4098
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 650 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3662 64436 S 1 0 0 1 -170 120 2
+Refer: 3662 64436 N 1 0 0 1 -170 120 2
 Refer: 4080 64405 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifb9e
 Encoding: 64414 64414 4099
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 Refer: 3695 1722 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifba0
 Encoding: 64416 64416 4100
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
 Refer: 3799 1723 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: noonghunnafinaarabic
 Encoding: 64415 64415 4101
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 420 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93478,83 +94204,99 @@ EndChar
 StartChar: rnoonfinalarabic
 Encoding: 64417 64417 4102
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 560 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -236 2
+Refer: 3783 64448 N 1 0 0 1 0 -266 2
 Refer: 4101 64415 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: rnooninitialarabic
 Encoding: 64418 64418 4103
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -236 2
+Refer: 3783 64448 N 1 0 0 1 0 -266 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: rnoonmedialarabic
 Encoding: 64419 64419 4104
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 560 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3783 64448 S 1 0 0 1 0 -236 2
+Refer: 3783 64448 N 1 0 0 1 0 -266 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifba4
 Encoding: 64420 64420 4105
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 510 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 20 -344 2
+Refer: 3715 1620 N 1 0 0 1 20 -344 2
 Refer: 3780 1749 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hehhamzafinalarabic
 Encoding: 64421 64421 4106
 Width: 600
 VWidth: 1024
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 510 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3715 1620 S 1 0 0 1 20 -344 2
+Refer: 3715 1620 N 1 0 0 1 20 -344 2
 Refer: 3985 65258 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifba6
 Encoding: 64422 64422 4107
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3780 1749 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbaa
 Encoding: 64426 64426 4108
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 Refer: 3806 1726 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbab
 Encoding: 64427 64427 4109
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93590,7 +94332,9 @@ EndChar
 StartChar: unifbac
 Encoding: 64428 64428 4110
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93621,7 +94365,9 @@ EndChar
 StartChar: unifbad
 Encoding: 64429 64429 4111
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 420 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93656,87 +94402,103 @@ EndChar
 StartChar: ngmedialarabic
 Encoding: 64470 64470 4112
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 200 650 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 -120 70 2
+Refer: 3664 64438 N 1 0 0 1 -120 70 2
 Refer: 4078 64401 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: efinalarabic
 Encoding: 64485 64485 4113
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 440 -200 basechar 0
+AnchorPoint: "above_arabic" 370 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3671 64446 S 1 0 0 1 200 0 2
+Refer: 3671 64446 N 1 0 0 1 200 0 2
 Refer: 3977 65264 N 1 0 0 1 0 -0.5 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yehfarsifinaarabic
 Encoding: 64509 64509 4114
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 440 -140 basechar 0
+AnchorPoint: "above_arabic" 370 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3977 65264 S 1 0 0 1 0 -0.5 2
-Validated: 32769
+Refer: 3977 65264 N 1 0 0 1 0 -0.5 2
+Validated: 98305
 EndChar
 
 StartChar: yehfarsiinitarabic
 Encoding: 64510 64510 4115
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3888 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yehfarsimediarabic
 Encoding: 64511 64511 4116
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -160 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3663 64437 S 1 0 0 1 0 0 2
+Refer: 3663 64437 N 1 0 0 1 0 0 2
 Refer: 3889 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbe4
 Encoding: 64484 64484 4117
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 440 -200 basechar 0
+AnchorPoint: "above_arabic" 370 410 basechar 0
 LayerCount: 2
 Fore
 Refer: 3819 1744 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ngisoarabic
 Encoding: 64467 64467 4118
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 200 580 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 -130 0 2
+Refer: 3664 64438 N 1 0 0 1 -130 0 2
 Refer: 3721 1603 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ngfinalarabic
 Encoding: 64468 64468 4119
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 200 580 basechar 0
+AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 -130 0 2
+Refer: 3664 64438 N 1 0 0 1 -130 0 2
 Refer: 4074 65242 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni060d
@@ -93746,16 +94508,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-354.904 67.666 m 6
- 357.138 68.4789 359.303 68.8439 361.367 68.8439 c 4
- 372.915 68.8439 381.255 58.4263 381.255 46.7464 c 4
- 381.255 39.5137 377.273 33.2408 367.646 29.7363 c 6
- 279.314 -2.41309 l 6
- 220.896 -23.6758 237.359 -105.655 217.156 -113.009 c 4
- 214.776 -113.875 209.57 -115.26 207.534 -115.26 c 4
- 198.312 -115.26 190.059 -107.804 190.059 -100.432 c 4
- 190.059 -33.6508 216.666 17.3519 280.669 40.6465 c 6
- 354.904 67.666 l 6
+355 68 m 6
+ 357 69 359 69 361 69 c 4
+ 373 69 381 59 381 47 c 4
+ 381 40 378 34 368 30 c 6
+ 279 -2 l 6
+ 221 -23 237 -106 217 -113 c 4
+ 215 -114 210 -115 208 -115 c 4
+ 199 -115 190 -107 190 -100 c 4
+ 190 -33 217 18 281 41 c 6
+ 355 68 l 6
 EndSplineSet
 Validated: 3073
 EndChar
@@ -93763,18 +94525,22 @@ EndChar
 StartChar: unifbfc
 Encoding: 64508 64508 4121
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 440 -140 basechar 0
+AnchorPoint: "above_arabic" 370 410 basechar 0
 LayerCount: 2
 Fore
-Refer: 3703 1740 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3703 1740 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: dammatanarabic
 Encoding: 1612 1612 4122
 Width: 0
 VWidth: 800
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 mark 0
+AnchorPoint: "arab_diacritic" 300 584 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -93784,14 +94550,14 @@ SplineSet
  353 739 348 762 335 762 c 0
 391 724 m 1
  412 724 l 2
- 423.045 724 430 713 430 706 c 0
+ 423 724 430 713 430 706 c 0
  430 698 424 687 414 687 c 2
  414 687 399 687 391 687 c 1
  388 644 372 617 348 583 c 1
- 307 583 l 5
+ 307 583 l 1
  274 625 239 664 227 720 c 1
  211 704 192 687 192 687 c 2
- 190.971 686.03 186 684 185 684 c 0
+ 191 686 186 684 185 684 c 0
  179 684 167 686 167 702 c 0
  167 711 178 720 182 726 c 1
  200 748 230 782 243 782 c 0
@@ -93809,25 +94575,27 @@ StartChar: sukunarabic
 Encoding: 1618 1618 4123
 Width: 0
 VWidth: 761
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 630 mark 0
+AnchorPoint: "arab_diacritic" 300 624 mark 0
 LayerCount: 2
 Fore
 SplineSet
-265 718 m 4
- 265 700 279 687 300 687 c 4
- 320 687 334 702 334 724 c 4
- 334 734 327 744 322 750 c 5
- 320 752 318 756 318 760 c 4
- 318 767 323 775 332 775 c 4
- 338 775 344 770 348 765 c 4
- 358 752 362 735 362 723 c 4
- 362 682 334 657 300 657 c 4
- 265 657 236 686 236 718 c 4
- 236 733 244 746 253 755 c 4
- 256 757 262 760 268 760 c 4
- 277 760 283 754 283 747 c 4
- 283 743 280 739 277 736 c 4
- 271 731 265 727 265 718 c 4
+265 718 m 0
+ 265 700 279 687 300 687 c 0
+ 320 687 334 702 334 724 c 0
+ 334 734 327 744 322 750 c 1
+ 320 752 318 756 318 760 c 0
+ 318 767 323 775 332 775 c 0
+ 338 775 344 770 348 765 c 0
+ 358 752 362 735 362 723 c 0
+ 362 682 334 657 300 657 c 0
+ 265 657 236 686 236 718 c 0
+ 236 733 244 746 253 755 c 0
+ 256 757 262 760 268 760 c 0
+ 277 760 283 754 283 747 c 0
+ 283 743 280 739 277 736 c 0
+ 271 731 265 727 265 718 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -93836,7 +94604,7 @@ StartChar: unife7e
 Encoding: 65150 65150 4124
 Width: 600
 VWidth: 761
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4123 1618 N 1 0 0 1 0 0 2
@@ -93847,7 +94615,7 @@ StartChar: unife7f
 Encoding: 65151 65151 4125
 Width: 600
 VWidth: 761
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3710 1600 S 1 0 0 1 0 0 2
@@ -93859,7 +94627,7 @@ StartChar: unife72
 Encoding: 65138 65138 4126
 Width: 600
 VWidth: 800
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4122 1612 N 1 0 0 1 0 0 2
@@ -93869,27 +94637,29 @@ EndChar
 StartChar: uni065e
 Encoding: 1630 1630 4127
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "above_arabic" 300 570 mark 0
 LayerCount: 2
 Fore
 Refer: 3660 64434 N 1 0 0 1 110 163 2
 Refer: 3660 64434 N 1 0 0 1 -90 283 2
-Refer: 3717 1614 S 1 0 0 1 0 -60 2
+Refer: 3717 1614 N 1 0 0 1 0 -60 2
 Validated: 32769
 EndChar
 
 StartChar: dotbelowarabic
 Encoding: 1628 1628 4128
 Width: 0
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -20 mark 0
 LayerCount: 2
 Fore
 SplineSet
-252 -101 m 4
- 252 -82 267 -51 300 -51 c 4
- 327 -51 350 -74 350 -101 c 4
- 350 -129 327 -151 300 -151 c 4
- 266 -151 252 -121 252 -101 c 4
+252 -101 m 0
+ 252 -82 267 -51 300 -51 c 0
+ 327 -51 350 -74 350 -101 c 0
+ 350 -129 327 -151 300 -151 c 0
+ 266 -151 252 -121 252 -101 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -93897,7 +94667,7 @@ EndChar
 StartChar: zwarakayarabic
 Encoding: 1625 1625 4129
 Width: 0
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 603 771 S 0.75 0 0 0.75 225 260 2
@@ -93911,28 +94681,28 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-387.92 462.765 m 4
- 387.92 415.195 432.14 381.025 491.1 381.025 c 6
- 564.8 381.025 l 6
- 576.19 381.025 584.23 378.345 584.23 367.625 c 4
- 584.23 358.245 578.2 353.555 566.14 353.555 c 6
- 489.09 353.555 l 6
- 413.38 353.555 357.77 401.795 357.77 462.095 c 4
- 357.77 518.375 399.31 555.225 414.72 561.255 c 5
- 414.72 565.275 l 5
- 392.61 578.675 373.85 605.475 373.85 644.335 c 4
- 373.85 687.885 422.76 733.445 488.42 733.445 c 6
- 517.9 733.445 l 6
- 529.96 733.445 535.99 728.755 535.99 720.045 c 4
- 535.99 712.005 531.3 705.975 520.58 705.975 c 6
- 491.1 705.975 l 6
- 441.52 705.975 404 671.135 404 642.325 c 4
- 404 613.515 424.1 576.665 503.16 576.665 c 6
- 535.32 576.665 l 6
- 547.38 576.665 553.41 571.975 553.41 563.265 c 4
- 553.41 553.885 547.38 549.195 535.32 549.195 c 6
- 489.76 549.195 l 6
- 418.07 549.195 387.92 503.635 387.92 462.765 c 4
+388 463 m 4
+ 388 415 432 381 491 381 c 6
+ 565 381 l 6
+ 576 381 584 379 584 368 c 4
+ 584 359 578 354 566 354 c 6
+ 489 354 l 6
+ 413 354 358 402 358 462 c 4
+ 358 518 400 555 415 561 c 5
+ 415 565 l 5
+ 393 578 374 605 374 644 c 4
+ 374 688 422 733 488 733 c 6
+ 518 733 l 6
+ 530 733 536 729 536 720 c 4
+ 536 712 532 706 521 706 c 6
+ 491 706 l 6
+ 441 706 404 671 404 642 c 4
+ 404 613 424 577 503 577 c 6
+ 535 577 l 6
+ 547 577 553 572 553 563 c 4
+ 553 554 547 549 535 549 c 6
+ 490 549 l 6
+ 418 549 388 504 388 463 c 4
 481 309 m 1
  578 309 l 2
  592 309 600 302 600 291 c 0
@@ -93960,19 +94730,18 @@ SplineSet
 539 40 m 2
  551 40 560 32 560 20 c 0
  560 9 551 0 539 0 c 2
- 474 -8.88178e-16 l 1
+ 474 -0 l 1
  474 -40 l 2
  474 -138 381 -184 288 -184 c 0
  195 -184 101 -146 101 -40 c 2
  101 19 l 1
- 110.166 45.1408 l 1
+ 110 45 l 1
  67 20 l 2
  63 18 59 17 55 17 c 0
  46 17 36 25 36 37 c 0
  36 44 40 51 47 55 c 2
- 138 108 l 2
- 138.033 107.942 138.066 107.884 138.099 107.826 c 0
- 141.243 109.322 144.706 110 148 110 c 0
+ 138 108 l 0
+ 140 109 145 110 148 110 c 0
  158 110 169 103 169 91 c 0
  169 88 168 85 167 82 c 2
  141 5 l 1
@@ -94002,31 +94771,31 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-494.955 730.055 m 6
- 494.955 711.295 l 6
- 494.955 699.905 492.944 689.185 489.595 679.805 c 5
- 494.285 666.405 502.995 655.685 529.795 655.685 c 4
- 560.615 655.685 569.325 681.145 569.325 711.295 c 6
- 569.325 728.715 l 6
- 569.325 738.765 576.024 742.115 583.395 742.115 c 4
- 590.095 742.115 597.465 738.095 597.465 730.055 c 6
- 597.465 711.295 l 6
- 597.465 659.035 579.375 628.215 529.125 628.215 c 4
- 499.645 628.215 487.585 640.945 474.854 654.345 c 5
- 462.125 638.935 444.705 628.215 419.915 628.215 c 4
- 395.795 628.215 385.745 633.575 369.665 652.335 c 5
- 395.125 364.905 l 6
- 395.795 358.875 392.444 350.835 383.064 350.165 c 4
- 373.685 349.495 368.995 355.525 368.325 362.225 c 6
- 335.495 738.095 l 6
- 334.825 745.465 338.175 752.165 347.555 752.835 c 4
- 356.935 753.505 361.625 747.475 362.295 740.775 c 6
- 364.305 712.635 l 5
- 375.024 674.445 386.415 655.685 420.585 655.685 c 4
- 451.404 655.685 466.814 681.145 466.814 711.295 c 6
- 466.814 728.715 l 6
- 466.814 738.765 473.515 742.115 480.885 742.115 c 4
- 487.585 742.115 494.955 738.095 494.955 730.055 c 6
+495 730 m 6
+ 495 711 l 6
+ 495 700 493 689 490 680 c 5
+ 495 667 503 656 530 656 c 4
+ 561 656 569 681 569 711 c 6
+ 569 729 l 6
+ 569 739 576 742 583 742 c 4
+ 590 742 597 738 597 730 c 6
+ 597 711 l 6
+ 597 659 579 628 529 628 c 4
+ 500 628 488 641 475 654 c 5
+ 462 639 445 628 420 628 c 4
+ 396 628 386 633 370 652 c 5
+ 395 365 l 6
+ 396 359 392 351 383 350 c 4
+ 374 349 369 355 368 362 c 6
+ 335 738 l 6
+ 334 745 339 752 348 753 c 4
+ 357 754 361 748 362 741 c 6
+ 364 713 l 5
+ 375 675 387 656 421 656 c 4
+ 452 656 467 681 467 711 c 6
+ 467 729 l 6
+ 467 739 474 742 481 742 c 4
+ 488 742 495 738 495 730 c 6
 481 309 m 5
  578 309 l 6
  592 309 600 302 600 291 c 4
@@ -94084,129 +94853,151 @@ EndChar
 StartChar: unifbd7
 Encoding: 64471 64471 4135
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3821 1615 S 1 0 0 1 0 -365 2
+Refer: 3821 1615 N 1 0 0 1 0 -365 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbd9
 Encoding: 64473 64473 4136
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3809 -1 S 1 0 0 1 0 -362 2
+Refer: 3809 -1 N 1 0 0 1 0 -362 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbdb
 Encoding: 64475 64475 4137
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3801 1648 S 1 0 0 1 0 -330 2
+Refer: 3801 1648 N 1 0 0 1 0 -330 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbdd
 Encoding: 64477 64477 4138
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3821 1615 S 1 0 0 1 0 -365 2
+Refer: 3821 1615 N 1 0 0 1 0 -365 2
 Refer: 3715 1620 N 1 0 0 1 180 -344 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbde
 Encoding: 64478 64478 4139
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -170 2
+Refer: 3664 64438 N 1 0 0 1 0 -170 2
 Refer: 3700 1608 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbe2
 Encoding: 64482 64482 4140
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
 Refer: 3817 1627 N 1 0 0 1 0 -366 2
-Refer: 3700 1608 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3700 1608 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: unifbd8
 Encoding: 64472 64472 4141
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3821 1615 S 1 0 0 1 0 -365 2
+Refer: 3821 1615 N 1 0 0 1 0 -365 2
 Refer: 3980 65262 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbda
 Encoding: 64474 64474 4142
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3809 -1 S 1 0 0 1 0 -362 2
+Refer: 3809 -1 N 1 0 0 1 0 -362 2
 Refer: 3980 65262 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbdc
 Encoding: 64476 64476 4143
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
 Refer: 3801 1648 N 1 0 0 1 0 -330 2
-Refer: 3980 65262 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3980 65262 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: unifbdf
 Encoding: 64479 64479 4144
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
-Refer: 3664 64438 S 1 0 0 1 0 -170 2
+Refer: 3664 64438 N 1 0 0 1 0 -170 2
 Refer: 3980 65262 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifbe3
 Encoding: 64483 64483 4145
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 510 basechar 0
 LayerCount: 2
 Fore
 Refer: 3817 1627 N 1 0 0 1 0 -366 2
-Refer: 3980 65262 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3980 65262 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: unifbbc
 Encoding: 64444 64444 4146
 Width: 600
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 614 782 S 1 0 0 1 465 -690 2
@@ -94216,7 +95007,9 @@ EndChar
 StartChar: unifbe0
 Encoding: 64480 64480 4147
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -94243,13 +95036,15 @@ SplineSet
  343 30 363 50 363 78 c 0
  363 106 341 129 311 129 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: unifbe1
 Encoding: 64481 64481 4148
 Width: 600
-Flags: HW
+Flags: HMW
+AnchorPoint: "below_arabic" 300 -200 basechar 0
+AnchorPoint: "above_arabic" 300 410 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -94279,7 +95074,7 @@ SplineSet
  343 30 363 50 363 78 c 0
  363 106 341 129 311 129 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: zerowidthjoiner
