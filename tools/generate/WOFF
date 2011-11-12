@@ -78,8 +78,6 @@ def fontInfo2WOFFxml( font ):
 	version = sfnt_strings['Version'].string
 	fontFamily = sfnt_strings['Family'].string
 	fontStyle = sfnt_strings['SubFamily'].string
-	for a in sfnt_strings.keys():
-		print a
 
 	doc = xml.dom.minidom.Document()
 	meta = doc.createElement( 'metadata' )
@@ -161,7 +159,6 @@ if argc > 1:
 		# Copy copyright info etc from the tt tables into the
 		# WOFF XML section.
 		xml = fontInfo2WOFFxml( f )
-		print xml
 		f.woffMajor = 1
 		f.woffMajor = 0
 		f.woffMetadata = xml
