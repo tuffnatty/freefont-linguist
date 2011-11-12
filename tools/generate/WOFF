@@ -24,15 +24,17 @@ __doc__ = """
 Convert fonts from FontForge's native SFD format to Web Open Font Format (WOFF)
 First auto-hints whole font
 
-Old-style kern tables seem to be what is actually used by Windows and
-some Linux programs such as OpenOffice.
+Mainly, this copies information out of the font's existing TT names strings,
+and uses them to generate XML information for the WOFF metadata.
+Then it just saves the file as *.woff.
+
+The settings should otherwise be like those for generic OpenType fonts.
 
 """
 
 import fontforge
 import sys
 import xml.dom.minidom
-import lxml.etree as etree
 from buildutils import *
 
 scriptname = sys.argv[0];
