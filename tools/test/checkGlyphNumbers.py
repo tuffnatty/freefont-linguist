@@ -16,7 +16,7 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2009, 2010, Stevan White"
+__copyright__ = "Copyright 2009, 2010, 2011 Stevan White"
 __date__ = "$Date$"
 __version__ = "$Revision$"
 
@@ -73,18 +73,18 @@ def checkGlyphNumbers( dir, fontFile ):
 					+ " has wrong Unicode"
 				problem = True
 
-checkGlyphNumbers( '../sfd/', 'FreeSerif.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeSerifItalic.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeSerifBold.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeSerifBoldItalic.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeSans.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeSansOblique.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeSansBold.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeSansBoldOblique.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeMono.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeMonoOblique.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeMonoBold.sfd' )
-checkGlyphNumbers( '../sfd/', 'FreeMonoBoldOblique.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSerif.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSerifItalic.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSerifBold.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSerifBoldItalic.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSans.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSansOblique.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSansBold.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeSansBoldOblique.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeMono.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeMonoOblique.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeMonoBold.sfd' )
+checkGlyphNumbers( '../../sfd/', 'FreeMonoBoldOblique.sfd' )
 
 if problem:
 	sys.exit( 1 )
