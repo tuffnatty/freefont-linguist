@@ -40,7 +40,7 @@ woff: $(WOFFS)
 tests:
 	@ $(TESTFF)
 	@ ( $(FFPY) ../tools/test/isMonoMono.py $(MSFDS) 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
-	@ $(FFPY) ../tools/test/checkGlyphNumbers.py 2>&1
+	@ $(FFPY) ../tools/test/checkGlyphNumbers.py `pwd` $(SFDS) 2>&1
 	@ $(FFPY) ../tools/test/validate.py 2>&1
 
 clean:

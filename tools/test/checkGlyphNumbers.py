@@ -50,9 +50,16 @@ def isSpecialTrueType( glyph ):
 
 	return e == 0 or e == 1 or e == 0xD
 
-def checkGlyphNumbers( dir, fontFile ):
+from os import path
+def checkGlyphNumbers( fontDir, fontFile ):
+	if isinstance( fontFile, ( list, tuple ) ):
+		print "In directory " + fontDir
+		for fontName in fontFile:
+			checkGlyphNumbers( fontDir, fontName )
+		return
+
 	print "Checking slot numbers in " + fontFile
-	font = fontforge.open( dir + fontFile )
+	font = fontforge.open( path.join( fontDir, fontFile ) )
 
 	g = font.selection.all()
 	g = font.selection.byGlyphs
@@ -73,18 +80,19 @@ def checkGlyphNumbers( dir, fontFile ):
 					+ " has wrong Unicode"
 				problem = True
 
-checkGlyphNumbers( '../../sfd/', 'FreeSerif.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeSerifItalic.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeSerifBold.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeSerifBoldItalic.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeSans.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeSansOblique.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeSansBold.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeSansBoldOblique.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeMono.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeMonoOblique.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeMonoBold.sfd' )
-checkGlyphNumbers( '../../sfd/', 'FreeMonoBoldOblique.sfd' )
+# --------------------------------------------------------------------------
+args = sys.argv[1:]
+
+if len( args ) < 1 or len( args[0].strip() ) == 0:
+	checkGlyphNumbers( '../../sfd/',
+		( 'FreeSerif.sfd', 'FreeSerifItalic.sfd',
+		'FreeSerifBold.sfd', 'FreeSerifBoldItalic.sfd',
+		'FreeSans.sfd', 'FreeSansOblique.sfd',
+		'FreeSansBold.sfd', 'FreeSansBoldOblique.sfd',
+		'FreeMono.sfd', 'FreeMonoOblique.sfd',
+		'FreeMonoBold.sfd', 'FreeMonoBoldOblique.sfd' ) )
+else:
+	checkGlyphNumbers( args[0], args[1:] )
 
 if problem:
 	sys.exit( 1 )
