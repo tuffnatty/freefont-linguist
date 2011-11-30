@@ -7,15 +7,17 @@ BUILDDIR=$(PWD)
 TMPDIR=$(BUILDDIR)/$(RELEASE)
 OTFZIPFILE=freefont-otf-$(DATE).zip
 TTFZIPFILE=freefont-ttf-$(DATE).zip
+WOFFZIPFILE=freefont-woff-$(DATE).zip
 OTFTARFILE=freefont-otf-$(DATE).tar.gz
 TTFTARFILE=freefont-ttf-$(DATE).tar.gz
+WOFFTARFILE=freefont-woff-$(DATE).tar.gz
 SRCTARFILE=freefont-sfd-$(DATE).tar.gz
 ZIPSIG=freefont-ttf-$(DATE).zip.sig
 TARSIG=freefont-ttf-$(DATE).tar.gz.sig
 SRCTARSIG=freefont-sfd-$(DATE).tar.gz.sig
 SIGS=$(ZIPSIG) $(TARSIG) $(SRCTARSIG)
 
-all: ttf otf
+all: ttf otf woff
 
 ttf: 
 	@ ( cd sfd; $(MAKE) ttf )
@@ -23,8 +25,11 @@ ttf:
 otf: 
 	@ ( cd sfd; $(MAKE) otf )
 
+woff: 
+	@ ( cd sfd; $(MAKE) woff )
 
-package: ttftar otfzip otftar srctar
+
+package: ttftar otfzip otftar woffzip wofftar srctar
 
 ttfzip: ttf
 	rm -rf $(TMPDIR) $(TTFZIPFILE)
@@ -38,6 +43,12 @@ otfzip: otf
 	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
 	zip -r $(OTFZIPFILE) $(RELEASE)/
 
+woffzip: woff
+	rm -rf $(TMPDIR) $(WOFFZIPFILE)
+	mkdir $(TMPDIR)
+	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/*.woff $(TMPDIR)
+	zip -r $(WOFFZIPFILE) $(RELEASE)/
+
 ttftar: ttf
 	rm -rf $(TMPDIR) $(TTFTARFILE)
 	mkdir $(TMPDIR)
@@ -50,6 +61,12 @@ otftar: otf
 	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
 	tar czvf $(OTFTARFILE) $(RELEASE)/
 
+wofftar: woff
+	rm -rf $(TMPDIR) $(WOFFTARFILE)
+	mkdir $(TMPDIR)
+	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/*.woff $(TMPDIR)
+	tar czvf $(WOFFTARFILE) $(RELEASE)/
+
 srctar:
 	rm -rf $(TMPDIR) $(SRCTARFILE)
 	mkdir $(TMPDIR)
@@ -61,7 +78,7 @@ tests:
 
 clean:
 	rm -rf $(TMPDIR) 
-	rm -f $(TTFZIPFILE) $(TTFTARFILE) $(OTFTARFILE) $(SRCTARFILE) $(SIGS) 
+	rm -f $(TTFZIPFILE) $(TTFTARFILE) $(OTFTARFILE) $(WOFFZIPFILE) $(WOFFTARFILE) $(SRCTARFILE) $(SIGS) 
 	( cd sfd; $(MAKE) clean )
 
 distclean:
