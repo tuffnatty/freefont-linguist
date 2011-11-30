@@ -372,7 +372,7 @@ ulUnicodeRange = [
 				interval(0xFDF0, 0xFDFD)
 				]
 		],
-[64,	'Combining Half Marks', [interval(0xFE20, 0xFE2F)]],
+[64,	'Combining Half Marks', [interval(0xFE20, 0xFE26)]],
 [65,	'CJK Compatibility Forms', [interval(0xFE10, 0xFE1F),	# Vertical forms
 		interval(0xFE30, 0xFE4F)	# Compatability forms
 	]],
