@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1323209087
+ModificationTime: 1323383471
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -66,6 +66,11 @@ Lookup: 1 0 0 "'hist' Historical Forms in Latin"  {"'hist' Historical Forms in L
 Lookup: 1 0 0 "'fina' Terminal Forms in Latin"  {"'fina' Terminal Forms in Latin subtable"  } ['fina' ('latn' <'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'dflt' > ) ]
 Lookup: 4 0 1 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch"  } ['liga' ('latn' <'NLD ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
+Lookup: 1 0 0 "'onum' Oldstyle Figures"  {"'onum' Oldstyle Figures subtable" ("oldstyle" ) } ['onum' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'pnum' Proportional Numbers"  {"'pnum' Proportional Numbers subtable"  } ['pnum' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'tnum' Tabular Numbers"  {"'tnum' Tabular Numbers-subtable"  } ['tnum' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'lnum' Lining Figures"  {"'lnum' Lining Figures-subtable"  } ['lnum' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'zero' Slashed Zero"  {"'zero' Slashed Zero subtable"  } ['zero' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions lookup 9 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'init' Initial Forms in Bengali"  {"'init' Initial Forms in Bengali subtable"  } ['init' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' Akhand in Bengali"  {"'akhn' Akhand in Bengali subtable"  } ['akhn' ('beng' <'dflt' > ) ]
@@ -340,7 +345,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 7408 16 11
+WinInfo: 59472 16 11
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -364,7 +369,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 216497 262144 131072 87381 448791 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "topright"  "'mark' Mark Positioning subtable middle" "ogonek"  "'mark' Mark Positioning in Latin subtable 2" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable middle" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 65980 3250
+BeginChars: 65980 3281
 
 StartChar: space
 Encoding: 32 32 0
@@ -777,18 +782,20 @@ AnchorPoint: "middle" 271 345 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-497 423 m 0
- 497 251 375 -7 193 -7 c 0
- 96 -7 32 81 32 213 c 0
- 32 448 184 676 341 676 c 0
- 438 676 497 581 497 423 c 0
-197 21 m 0
- 330 21 418 334 418 522 c 0
- 418 602 388 648 334 648 c 0
- 183 648 111 254 111 156 c 0
- 111 71 143 21 197 21 c 0
+497 423 m 4
+ 497 251 375 -7 193 -7 c 4
+ 96 -7 32 81 32 213 c 4
+ 32 448 184 676 341 676 c 4
+ 438 676 497 581 497 423 c 4
+197 21 m 4
+ 330 21 418 334 418 522 c 4
+ 418 602 388 648 334 648 c 4
+ 183 648 111 254 111 156 c 4
+ 111 71 143 21 197 21 c 4
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.0
+Substitution2: "'onum' Oldstyle Figures subtable" old.0
 EndChar
 
 StartChar: one
@@ -820,6 +827,8 @@ SplineSet
  49 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.1
+Substitution2: "'onum' Oldstyle Figures subtable" old.1
 EndChar
 
 StartChar: two
@@ -830,25 +839,27 @@ AnchorPoint: "middle" 230 345 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-80 516 m 1
- 130 640 211 676 290 676 c 0
- 381 676 452 602 452 506 c 0
- 452 440 420 390 303 273 c 2
- 111 81 l 1
- 111 76 l 1
- 301 76 l 2
- 355 76 376 89 400 139 c 1
- 417 132 l 1
- 367 0 l 1
- 12 0 l 1
- 12 17 l 1
- 222 241 l 2
- 340 366 366 433 366 481 c 0
- 366 551 312 603 241 603 c 0
- 181 603 138 574 101 509 c 1
- 80 516 l 1
+80 516 m 5
+ 130 640 211 676 290 676 c 4
+ 381 676 452 602 452 506 c 4
+ 452 440 420 390 303 273 c 6
+ 111 81 l 5
+ 111 76 l 5
+ 301 76 l 6
+ 355 76 376 89 400 139 c 5
+ 417 132 l 5
+ 367 0 l 5
+ 12 0 l 5
+ 12 17 l 5
+ 222 241 l 6
+ 340 366 366 433 366 481 c 4
+ 366 551 312 603 241 603 c 4
+ 181 603 138 574 101 509 c 5
+ 80 516 l 5
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.2
+Substitution2: "'onum' Oldstyle Figures subtable" old.2
 EndChar
 
 StartChar: three
@@ -878,6 +889,8 @@ SplineSet
  140 377 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.3
+Substitution2: "'onum' Oldstyle Figures subtable" old.3
 EndChar
 
 StartChar: four
@@ -908,6 +921,8 @@ SplineSet
  277 241 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.4
+Substitution2: "'onum' Oldstyle Figures subtable" old.4
 EndChar
 
 StartChar: five
@@ -935,6 +950,8 @@ SplineSet
  269 35 350 133 350 242 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.5
+Substitution2: "'onum' Oldstyle Figures subtable" old.5
 EndChar
 
 StartChar: six
@@ -963,6 +980,8 @@ SplineSet
  106 68 142 19 203 19 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.6
+Substitution2: "'onum' Oldstyle Figures subtable" old.6
 EndChar
 
 StartChar: seven
@@ -986,6 +1005,8 @@ SplineSet
  537 656 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.7
+Substitution2: "'onum' Oldstyle Figures subtable" old.7
 EndChar
 
 StartChar: eight
@@ -1018,6 +1039,8 @@ SplineSet
  216 498 233 472 311 399 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.8
+Substitution2: "'onum' Oldstyle Figures subtable" old.8
 EndChar
 
 StartChar: nine
@@ -1046,6 +1069,8 @@ SplineSet
  417 601 380 650 318 650 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.9
+Substitution2: "'onum' Oldstyle Figures subtable" old.9
 EndChar
 
 StartChar: colon
@@ -93196,7 +93221,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 33 65 N 0.66 0 0 0.66 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni1d04
@@ -93356,7 +93381,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1814 579 N 0.66 0 0 0.66 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni1d80
@@ -95471,7 +95496,7 @@ SplineSet
  358 400 415 461 415 538 c 4
  415 587 397 651 333 651 c 4
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: bulg.alt_zhe
@@ -95533,7 +95558,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 163 230 S -1 0 0 -1 663 430 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni1d08
@@ -95543,7 +95568,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1589 604 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni1d09
@@ -95553,7 +95578,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 73 105 N -1 0 0 -1 278 474 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni1d0c
@@ -95563,7 +95588,514 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 254 321 N 0.66 0 0 0.66 0 0 2
-Validated: 98305
+Validated: 32769
+EndChar
+
+StartChar: old.0
+Encoding: 59488 -1 3250
+Width: 500
+Flags: MW
+AnchorPoint: "middle" 257 215 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+483 293 m 0
+ 483 123 344.5 -7 179 -7 c 0
+ 82 -7 18 40 18 133 c 0
+ 18 316 161.5 443 327 443 c 0
+ 429.5 443 483 396 483 293 c 0
+183 21 m 0
+ 318.5 21 404 160 404 312 c 0
+ 404 356 374 415 320 415 c 0
+ 185.5 415 97 282 97 116 c 0
+ 97 77 129 21 183 21 c 0
+EndSplineSet
+Validated: 3073
+Substitution2: "'lnum' Lining Figures-subtable" zero
+Substitution2: "'tnum' Tabular Numbers-subtable" zero
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.0
+EndChar
+
+StartChar: old.1
+Encoding: 59489 -1 3251
+Width: 500
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+49 0 m 1
+ 49 14 l 1
+ 128 21 151 31 161 68 c 2
+ 234 326 l 2
+ 239 344 241 354 241 360 c 0
+ 241 378 227 391 205 391 c 0
+ 204 391 204 391 203 391 c 2
+ 146 389 l 1
+ 146 404 l 1
+ 157 406 165 408 167 408 c 2
+ 339 442 l 2
+ 342 442 344 439 344 435 c 0
+ 344 430 342 421 338 406 c 2
+ 260 121 l 2
+ 257 109 242 64 242 47 c 0
+ 242 19.6586 276.989 15 328 15 c 1
+ 328 0 l 1
+ 235 0 142 0 49 0 c 1
+EndSplineSet
+Validated: 3073
+Substitution2: "'lnum' Lining Figures-subtable" one
+Substitution2: "'tnum' Tabular Numbers-subtable" one
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.1
+EndChar
+
+StartChar: old.2
+Encoding: 59490 -1 3252
+Width: 500
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+50 282 m 1
+ 100 406 181 442 260 442 c 0
+ 364 442 422 382 422 302 c 0
+ 422 186.17 288 139 191 81 c 1
+ 191 76 l 1
+ 331 76 l 2
+ 385 76 406 89 430 139 c 1
+ 447 132 l 1
+ 397 0 l 1
+ 42 0 l 1
+ 42 17 l 1
+ 191 135 336 212 336 277 c 0
+ 336 338 290 369 211 369 c 0
+ 151 369 108 340 71 275 c 1
+ 50 282 l 1
+EndSplineSet
+Validated: 3073
+Substitution2: "'lnum' Lining Figures-subtable" two
+Substitution2: "'tnum' Tabular Numbers-subtable" two
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.2
+EndChar
+
+StartChar: old.3
+Encoding: 59491 -1 3253
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+140 143 m 1
+ 202 153 379 184 379 309 c 0
+ 379 363 343 400 290 400 c 0
+ 248 400 213 379 178 333 c 1
+ 162 338 l 1
+ 195 402 257 442 326 442 c 0
+ 406 442 466 388 466 315 c 0
+ 466 247 431 214 310 167 c 1
+ 310 164 l 1
+ 377 133 406 75 406 15 c 0
+ 406 -101 333 -208 151 -208 c 0
+ 80 -208 49 -192 12 -163 c 1
+ 17 -157 20.5 -153 25.5 -148 c 1
+ 76 -176.5 96 -184 150 -184 c 0
+ 253 -184 326 -125 326 -39 c 0
+ 326 95 252 127 140 127 c 1
+ 140 143 l 1
+EndSplineSet
+Validated: 3073
+Substitution2: "'lnum' Lining Figures-subtable" three
+Substitution2: "'tnum' Tabular Numbers-subtable" three
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.3
+EndChar
+
+StartChar: old.4
+Encoding: 59492 -1 3254
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+468 63 m 1
+ 455 0 l 1
+ 355 0 l 1
+ 302 -200 l 1
+ 223 -200 l 1
+ 278 0 l 1
+ 16 0 l 1
+ 36 67 l 1
+ 438 443 l 1
+ 479 443 l 1
+ 373 63 l 1
+ 468 63 l 1
+292 63 m 1
+ 373 330 l 1
+ 369 330 l 1
+ 80 67 l 1
+ 80 63 l 1
+ 292 63 l 1
+EndSplineSet
+Validated: 3073
+Substitution2: "'lnum' Lining Figures-subtable" four
+Substitution2: "'tnum' Tabular Numbers-subtable" four
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.4
+EndChar
+
+StartChar: old.5
+Encoding: 59493 -1 3255
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+326 4 m 0
+ 326 156 194 176 107 195 c 1
+ 107 210 l 1
+ 211 428 l 1
+ 467 428 l 1
+ 444 357 l 1
+ 214 357 l 1
+ 175 269 l 1
+ 256 249 292 233 329 198 c 0
+ 372 157 395 104 395 42 c 0
+ 395 -108.5 295.5 -207 118 -207 c 0
+ 57 -207 22.5 -187 -8 -162 c 1
+ -0.666992 -153.667 0 -153.333 5.5 -147 c 1
+ 41 -168 80 -182 125 -182 c 0
+ 231.5 -182 326 -92.5 326 4 c 0
+EndSplineSet
+Validated: 3073
+Substitution2: "'lnum' Lining Figures-subtable" five
+Substitution2: "'tnum' Tabular Numbers-subtable" five
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.5
+EndChar
+
+StartChar: old.6
+Encoding: 59494 -1 3256
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 22 54 N 1 0 0 1 0 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" six
+Substitution2: "'tnum' Tabular Numbers-subtable" six
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.6
+EndChar
+
+StartChar: old.7
+Encoding: 59495 -1 3257
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+517 418 m 1
+ 149 -200 l 1
+ 79 -200 l 1
+ 426 352 l 1
+ 424 355 l 1
+ 202 355 l 2
+ 144 355 117 340 69 283 c 1
+ 55 292 l 1
+ 136 428 l 1
+ 511 428 l 1
+ 517 418 l 1
+EndSplineSet
+Validated: 3073
+Substitution2: "'lnum' Lining Figures-subtable" seven
+Substitution2: "'tnum' Tabular Numbers-subtable" seven
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.7
+EndChar
+
+StartChar: old.8
+Encoding: 59496 -1 3258
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 24 56 N 1 0 0 1 0 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" eight
+Substitution2: "'tnum' Tabular Numbers-subtable" eight
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.8
+EndChar
+
+StartChar: old.9
+Encoding: 59497 -1 3259
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 25 57 S 1 0 0 1 -40 -216 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" nine
+Substitution2: "'tnum' Tabular Numbers-subtable" nine
+Substitution2: "'pnum' Proportional Numbers subtable" oldprop.9
+EndChar
+
+StartChar: fit.0
+Encoding: 59498 -1 3260
+Width: 483
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 16 48 S 1 0 0 1 3 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" zero
+Substitution2: "'tnum' Tabular Numbers-subtable" zero
+Substitution2: "'zero' Slashed Zero subtable" zeroslashed
+EndChar
+
+StartChar: fit.1
+Encoding: 59499 -1 3261
+Width: 342
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 17 49 N 1 0 0 1 -47 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" one
+Substitution2: "'tnum' Tabular Numbers-subtable" one
+EndChar
+
+StartChar: fit.2
+Encoding: 59500 -1 3262
+Width: 494
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 18 50 N 1 0 0 1 13 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" two
+Substitution2: "'tnum' Tabular Numbers-subtable" two
+EndChar
+
+StartChar: fit.3
+Encoding: 59501 -1 3263
+Width: 424
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 19 51 N 1 0 0 1 -13 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" three
+Substitution2: "'tnum' Tabular Numbers-subtable" three
+EndChar
+
+StartChar: fit.4
+Encoding: 59502 -1 3264
+Width: 488
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 20 52 N 1 0 0 1 8 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" four
+Substitution2: "'tnum' Tabular Numbers-subtable" four
+EndChar
+
+StartChar: fit.5
+Encoding: 59503 -1 3265
+Width: 429
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 21 53 N 1 0 0 1 -12 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" five
+Substitution2: "'tnum' Tabular Numbers-subtable" five
+EndChar
+
+StartChar: fit.6
+Encoding: 59504 -1 3266
+Width: 488
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 22 54 N 1 0 0 1 1 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" six
+Substitution2: "'tnum' Tabular Numbers-subtable" six
+EndChar
+
+StartChar: fit.7
+Encoding: 59505 -1 3267
+Width: 475
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 23 55 N 1 0 0 1 20 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" seven
+Substitution2: "'tnum' Tabular Numbers-subtable" seven
+EndChar
+
+StartChar: fit.8
+Encoding: 59506 -1 3268
+Width: 485
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 24 56 N 1 0 0 1 -11 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" eight
+Substitution2: "'tnum' Tabular Numbers-subtable" eight
+EndChar
+
+StartChar: fit.9
+Encoding: 59507 -1 3269
+Width: 480
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 25 57 N 1 0 0 1 15 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" nine
+Substitution2: "'tnum' Tabular Numbers-subtable" nine
+EndChar
+
+StartChar: oldprop.0
+Encoding: 59508 -1 3270
+Width: 501
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3250 -1 N 1 0 0 1 9 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" zero
+Substitution2: "'tnum' Tabular Numbers-subtable" zero
+EndChar
+
+StartChar: oldprop.1
+Encoding: 59509 -1 3271
+Width: 352
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3251 -1 N 1 0 0 1 -46 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" one
+Substitution2: "'tnum' Tabular Numbers-subtable" one
+EndChar
+
+StartChar: oldprop.2
+Encoding: 59510 -1 3272
+Width: 470
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3252 -1 N 1 0 0 1 -10 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" two
+Substitution2: "'tnum' Tabular Numbers-subtable" two
+EndChar
+
+StartChar: oldprop.3
+Encoding: 59511 -1 3273
+Width: 467
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3253 -1 N 1 0 0 1 -35 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" three
+Substitution2: "'tnum' Tabular Numbers-subtable" three
+EndChar
+
+StartChar: oldprop.4
+Encoding: 59512 -1 3274
+Width: 497
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3254 -1 N 1 0 0 1 -8 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" four
+Substitution2: "'tnum' Tabular Numbers-subtable" four
+EndChar
+
+StartChar: oldprop.5
+Encoding: 59513 -1 3275
+Width: 459
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3255 -1 N 1 0 0 1 -15 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" five
+Substitution2: "'tnum' Tabular Numbers-subtable" five
+EndChar
+
+StartChar: oldprop.6
+Encoding: 59514 -1 3276
+Width: 493
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3256 -1 N 1 0 0 1 6 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" six
+Substitution2: "'tnum' Tabular Numbers-subtable" six
+EndChar
+
+StartChar: oldprop.7
+Encoding: 59515 -1 3277
+Width: 480
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 23 55 S 1 0 0 1 -20 -212 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" seven
+Substitution2: "'tnum' Tabular Numbers-subtable" seven
+EndChar
+
+StartChar: oldprop.8
+Encoding: 59516 -1 3278
+Width: 475
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3258 -1 N 1 0 0 1 -11 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" eight
+Substitution2: "'tnum' Tabular Numbers-subtable" eight
+EndChar
+
+StartChar: oldprop.9
+Encoding: 59517 -1 3279
+Width: 490
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 3259 -1 N 1 0 0 1 5 0 2
+Validated: 32769
+Substitution2: "'lnum' Lining Figures-subtable" nine
+Substitution2: "'tnum' Tabular Numbers-subtable" nine
+EndChar
+
+StartChar: zeroslashed
+Encoding: 59519 -1 3280
+Width: 500
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+497 423 m 0
+ 497 251 375 -7 193 -7 c 0
+ 96 -7 32 81 32 213 c 0
+ 32 448 184 676 341 676 c 0
+ 438 676 497 581 497 423 c 0
+116.707 99.6424 m 1
+ 128.152 49.3487 156.339 21 197 21 c 0
+ 318.551 21 402.515 282.43 416.071 470.948 c 1
+ 116.707 99.6424 l 1
+113.285 194.8 m 1
+ 413.874 568.895 l 1
+ 403.944 619.702 376.354 648 334 648 c 0
+ 198.504 648 126.618 330.752 113.285 194.8 c 1
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
