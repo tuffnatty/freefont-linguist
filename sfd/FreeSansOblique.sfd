@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1322922659
+ModificationTime: 1323388911
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -60,6 +60,8 @@ Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures 
 Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'pnum' Proportional Numbers"  {"'pnum' Proportional Numbers subtable"  } ['pnum' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'zero' Slashed Zero"  {"'zero' Slashed Zero subtable"  } ['zero' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' Diagonal Fractions lookup 13"  {"'frac' Diagonal Fractions lookup 13 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms for Serbian-Macedonian"  {"'locl' Localized Forms for Serbian-Macedonian-1"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > ) ]
@@ -272,7 +274,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8528 16 12
+WinInfo: 48 16 12
 BeginPrivate: 8
 UniqueID 7 5020908
 BlueValues 23 [-24 0 524 540 729 741]
@@ -296,7 +298,7 @@ Grid
  2000 380 l 0
 EndSplineSet
 AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "middle"  "'mark' Mark Positioning subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin subtable" "1 Top"  "'mark' Mark Positioning in Greek 0 subtable" 
-BeginChars: 66002 3007
+BeginChars: 66002 3018
 
 StartChar: space
 Encoding: 32 32 0
@@ -683,6 +685,8 @@ SplineSet
  186 102 224 54 287 54 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'zero' Slashed Zero subtable" zeroslashed
+Substitution2: "'pnum' Proportional Numbers subtable" fit.0
 EndChar
 
 StartChar: one
@@ -703,6 +707,7 @@ SplineSet
  367 505 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.1
 EndChar
 
 StartChar: two
@@ -730,6 +735,7 @@ SplineSet
  186 632 274 709 428 709 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.2
 EndChar
 
 StartChar: three
@@ -762,6 +768,7 @@ SplineSet
  533 339 555 306 555 249 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.3
 EndChar
 
 StartChar: four
@@ -790,6 +797,7 @@ SplineSet
  379 248 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.4
 EndChar
 
 StartChar: five
@@ -819,6 +827,7 @@ SplineSet
  567 150.808 461.258 -23 271 -23 c 4
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.5
 EndChar
 
 StartChar: six
@@ -848,6 +857,7 @@ SplineSet
  478 321 432 365 364 365 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.6
 EndChar
 
 StartChar: seven
@@ -868,6 +878,7 @@ SplineSet
  671 709 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.7
 EndChar
 
 StartChar: eight
@@ -899,6 +910,7 @@ SplineSet
  472 292 422 334 344 334 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.8
 EndChar
 
 StartChar: nine
@@ -927,6 +939,7 @@ SplineSet
  511 581 460 632 392 632 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'pnum' Proportional Numbers subtable" fit.9
 EndChar
 
 StartChar: colon
@@ -74873,7 +74886,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 2995 8612 S -1 0 0 -1 1056 496 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: carriagereturn
@@ -75099,7 +75112,7 @@ LayerCount: 2
 Fore
 Refer: 2979 8637 N 1 0 0 1 -20 -87 2
 Refer: 2982 8640 S 1 0 0 1 20 86 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: arrowdblleft
@@ -75289,7 +75302,7 @@ SplineSet
  641.844 545 l 5
  135.844 545 l 5
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni21a4
@@ -75339,7 +75352,7 @@ SplineSet
  551.395 -207.5 l 5
  19.3945 -207.5 l 5
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni21a7
@@ -75349,7 +75362,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 2996 8613 S -1 0 0 -1 709 496 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni21C4
@@ -75360,7 +75373,7 @@ LayerCount: 2
 Fore
 Refer: 1273 8592 S 1 0 0 1 0 -170 2
 Refer: 1275 8594 N 1 0 0 1 40 170 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni21C6
@@ -75371,7 +75384,7 @@ LayerCount: 2
 Fore
 Refer: 1273 8592 S 1 0 0 1 50 171 2
 Refer: 1275 8594 N 1 0 0 1 0 -170 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni21c5
@@ -75382,7 +75395,7 @@ LayerCount: 2
 Fore
 Refer: 1276 8595 N 1 0 0 1 340 0 2
 Refer: 1274 8593 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni21dc
@@ -75392,7 +75405,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 2993 8669 N -1 0 0 -1 1103 510 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni21CB
@@ -75403,7 +75416,7 @@ LayerCount: 2
 Fore
 Refer: 2983 8641 N 1 0 0 1 0 -100 2
 Refer: 2978 8636 S 1 0 0 1 20 102 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni21c7
@@ -75442,6 +75455,106 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 3003 8647 N -1 0 0 -1 1060 656 2
+EndChar
+
+StartChar: fit.0
+Encoding: 59488 -1 3007
+Width: 544
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 16 48 S 1 0 0 1 -43 0 2
+EndChar
+
+StartChar: fit.1
+Encoding: 59489 -1 3008
+Width: 359
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 17 49 S 1 0 0 1 -102 0 2
+EndChar
+
+StartChar: fit.2
+Encoding: 59490 -1 3009
+Width: 557
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 18 50 S 1 0 0 1 -24 0 2
+EndChar
+
+StartChar: fit.3
+Encoding: 59491 -1 3010
+Width: 554
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 19 51 S 1 0 0 1 -32 0 2
+EndChar
+
+StartChar: fit.4
+Encoding: 59492 -1 3011
+Width: 552
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 20 52 S 1 0 0 1 -28 0 2
+EndChar
+
+StartChar: fit.5
+Encoding: 59493 -1 3012
+Width: 558
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 21 53 S 1 0 0 1 -25 0 2
+EndChar
+
+StartChar: fit.6
+Encoding: 59494 -1 3013
+Width: 550
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 22 54 S 1 0 0 1 -43 0 2
+EndChar
+
+StartChar: fit.7
+Encoding: 59495 -1 3014
+Width: 534
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 23 55 S 1 0 0 1 -46 0 2
+EndChar
+
+StartChar: fit.8
+Encoding: 59496 -1 3015
+Width: 556
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 24 56 S 1 0 0 1 -27 0 2
+EndChar
+
+StartChar: fit.9
+Encoding: 59497 -1 3016
+Width: 551
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 25 57 S 1 0 0 1 -28 0 2
+EndChar
+
+StartChar: zeroslashed
+Encoding: 59498 -1 3017
+Width: 556
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 16 48 N 1 0 0 1 0 0 2
+Refer: 116 183 S 1 0 0 1 117 90 2
 EndChar
 EndChars
 EndSplineFont
