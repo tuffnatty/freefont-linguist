@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1203284335
-ModificationTime: 1323426299
+ModificationTime: 1323446273
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -61,6 +61,7 @@ Lookup: 4 0 0 "'liga' Standard Ligatures in Cyrillic"  {"'liga' Standard Ligatur
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin subtable"  "'liga' Standard Ligatures in Latin-commaright"  } ['liga' ('latn' <'AFK ' 'CAT ' 'CSY ' 'DAN ' 'DEU ' 'ENG ' 'ESP ' 'FIN ' 'FLE ' 'FOS ' 'FRA ' 'FRI ' 'GAE ' 'HAI ' 'HRV ' 'HUN ' 'IRI ' 'IRT ' 'ITA ' 'JII ' 'LAT ' 'LTH ' 'LTZ ' 'LVI ' 'NLD ' 'NOR ' 'NTO ' 'NYN ' 'PLK ' 'PRO ' 'PTG ' 'RMS ' 'ROM ' 'ROY ' 'SKY ' 'SLV ' 'SRB ' 'SVE ' 'VIT ' 'WEL ' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin for German"  {"'hlig' Historic Ligatures in Latin for German subtable"  } ['hlig' ('latn' <'DEU ' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures in Latin subtable"  } ['hlig' ('latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'hist' Historical Forms in Latin"  {"'hist' Historical Forms in Latin subtable"  } ['hist' ('latn' <'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'dflt' > ) ]
 Lookup: 1 0 0 "'fina' Terminal Forms in Latin"  {"'fina' Terminal Forms in Latin subtable"  } ['fina' ('latn' <'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'dflt' > ) ]
@@ -71,7 +72,7 @@ Lookup: 1 0 0 "'pnum' Proportional Numbers"  {"'pnum' Proportional Numbers subta
 Lookup: 1 0 0 "'tnum' Tabular Numbers"  {"'tnum' Tabular Numbers-subtable"  } ['tnum' ('DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'lnum' Lining Figures"  {"'lnum' Lining Figures-subtable"  } ['lnum' ('DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'zero' Slashed Zero"  {"'zero' Slashed Zero subtable"  } ['zero' ('DFLT' <'dflt' > ) ]
-Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions lookup 9 subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 4 8 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions slash subtable"  "'frac' Diagonal Fractions fraction subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'init' Initial Forms in Bengali"  {"'init' Initial Forms in Bengali subtable"  } ['init' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' Akhand in Bengali"  {"'akhn' Akhand in Bengali subtable"  } ['akhn' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Bengali"  {"'rphf' Reph Form in Bengali subtable"  } ['rphf' ('beng' <'dflt' > ) ]
@@ -345,7 +346,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 42768 16 11
+WinInfo: 43056 16 11
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -4014,6 +4015,8 @@ Refer: 1378 8308 S 1 0 0 1 344 -391 0
 Refer: 1324 8725 N 1 0 0 1 59 0 0
 Refer: 118 185 N 1 0 0 1 -40 -120 2
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction four
+Ligature2: "'frac' Diagonal Fractions slash subtable" one slash four
 EndChar
 
 StartChar: onehalf
@@ -4025,6 +4028,8 @@ Fore
 Refer: 1320 8543 N 1 0 0 1 -10 0 2
 Refer: 111 178 S 1 0 0 1 350 -391 2
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction two
+Ligature2: "'frac' Diagonal Fractions slash subtable" one slash two
 EndChar
 
 StartChar: threequarters
@@ -4037,6 +4042,8 @@ Refer: 1378 8308 S 1 0 0 1 354 -391 0
 Refer: 1324 8725 N 1 0 0 1 59 0 0
 Refer: 112 179 N 1 0 0 1 -50 -124 2
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" three fraction four
+Ligature2: "'frac' Diagonal Fractions slash subtable" three slash four
 EndChar
 
 StartChar: questiondown
@@ -27074,8 +27081,6 @@ Refer: 118 185 S 1 0 0 1 -22 -119 0
 Refer: 1324 8725 N 1 0 0 1 29 0 0
 Validated: 32769
 LCarets2: 1 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one slash
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one fraction
 EndChar
 
 StartChar: Delta.math
@@ -29838,9 +29843,9 @@ Fore
 Refer: 112 179 S 1 0 0 1 329 -395 0
 Refer: 1320 8543 N 1 0 0 1 21 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction three
+Ligature2: "'frac' Diagonal Fractions slash subtable" one slash three
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one slash three
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one fraction three
 EndChar
 
 StartChar: onefifth
@@ -29853,9 +29858,9 @@ Fore
 Refer: 1307 8309 S 1 0 0 1 308 -391 0
 Refer: 1320 8543 N 1 0 0 1 0 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction five
+Ligature2: "'frac' Diagonal Fractions slash subtable" one slash five
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one slash five
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one fraction five
 EndChar
 
 StartChar: onesixth
@@ -29868,9 +29873,9 @@ Fore
 Refer: 1308 8310 S 1 0 0 1 318 -396 0
 Refer: 1320 8543 N 1 0 0 1 7 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction six
+Ligature2: "'frac' Diagonal Fractions slash subtable" one slash six
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one slash six
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one fraction six
 EndChar
 
 StartChar: oneeighth
@@ -29883,9 +29888,9 @@ Fore
 Refer: 1310 8312 S 1 0 0 1 342 -387 0
 Refer: 1320 8543 N 1 0 0 1 30 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction eight
+Ligature2: "'frac' Diagonal Fractions slash subtable" one slash eight
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one slash eight
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" one fraction eight
 EndChar
 
 StartChar: twothirds
@@ -29899,9 +29904,9 @@ Refer: 112 179 N 1 0 0 1 358 -389 0
 Refer: 111 178 N 1 0 0 1 -14 -121 0
 Refer: 1324 8725 N 1 0 0 1 89 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" two fraction three
+Ligature2: "'frac' Diagonal Fractions slash subtable" two slash three
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" two slash three
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" two fraction three
 EndChar
 
 StartChar: twofifths
@@ -29915,9 +29920,9 @@ Refer: 1307 8309 S 1 0 0 1 332 -391 0
 Refer: 1324 8725 N 1 0 0 1 83 0 0
 Refer: 111 178 N 1 0 0 1 -9 -121 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" two fraction five
+Ligature2: "'frac' Diagonal Fractions slash subtable" two slash five
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" two slash five
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" two fraction five
 EndChar
 
 StartChar: threefifths
@@ -29931,9 +29936,9 @@ Refer: 112 179 N 1 0 0 1 -15 -121 0
 Refer: 1324 8725 N 1 0 0 1 57 0 0
 Refer: 1307 8309 S 1 0 0 1 330 -390 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" three fraction five
+Ligature2: "'frac' Diagonal Fractions slash subtable" three slash five
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" three slash five
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" three fraction five
 EndChar
 
 StartChar: fourfifths
@@ -29947,9 +29952,9 @@ Refer: 1378 8308 N 1 0 0 1 -6 -120 0
 Refer: 1307 8309 N 1 0 0 1 333 -390 0
 Refer: 1324 8725 N 1 0 0 1 72 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" four fraction five
+Ligature2: "'frac' Diagonal Fractions slash subtable" four slash five
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" four slash five
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" four fraction five
 EndChar
 
 StartChar: fivesixths
@@ -29963,9 +29968,9 @@ Refer: 1308 8310 N 1 0 0 1 328 -396 0
 Refer: 1324 8725 N 1 0 0 1 74 0 0
 Refer: 1307 8309 S 1 0 0 1 2 -122 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" five fraction six
+Ligature2: "'frac' Diagonal Fractions slash subtable" five slash six
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" five slash six
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" five fraction six
 EndChar
 
 StartChar: threeeighths
@@ -29979,9 +29984,9 @@ Refer: 1310 8312 S 1 0 0 1 334 -386 0
 Refer: 112 179 N 1 0 0 1 -36 -121 0
 Refer: 1324 8725 N 1 0 0 1 42 0 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" three fraction eight
+Ligature2: "'frac' Diagonal Fractions slash subtable" three slash eight
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" three slash eight
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" three fraction eight
 EndChar
 
 StartChar: fiveeighths
@@ -29995,9 +30000,9 @@ Refer: 1307 8309 S 1 0 0 1 7 -120 0
 Refer: 1324 8725 N 1 0 0 1 71 0 0
 Refer: 1310 8312 S 1 0 0 1 346 -386 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" five fraction eight
+Ligature2: "'frac' Diagonal Fractions slash subtable" five slash eight
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" five slash eight
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" five fraction eight
 EndChar
 
 StartChar: seveneighths
@@ -30011,9 +30016,9 @@ Refer: 1309 8311 S 1 0 0 1 20 -120 0
 Refer: 1324 8725 N 1 0 0 1 59 0 0
 Refer: 1310 8312 S 1 0 0 1 341 -386 0
 Validated: 32769
+Ligature2: "'frac' Diagonal Fractions fraction subtable" seven fraction eight
+Ligature2: "'frac' Diagonal Fractions slash subtable" seven slash eight
 LCarets2: 2 0 0 
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" seven slash eight
-Ligature2: "'frac' Diagonal Fractions lookup 9 subtable" seven fraction eight
 EndChar
 
 StartChar: uni2160
@@ -90690,6 +90695,7 @@ SplineSet
  633 653 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Latin for German subtable" T z
 EndChar
 
 StartChar: tz
@@ -90734,6 +90740,7 @@ SplineSet
  415 428 476 405 476 327 c 4
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Latin for German subtable" t z
 EndChar
 
 StartChar: Tresillo
@@ -92560,6 +92567,8 @@ SplineSet
  171.015 33 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'frac' Diagonal Fractions fraction subtable" two fraction seven
+Ligature2: "'frac' Diagonal Fractions slash subtable" two slash seven
 EndChar
 
 StartChar: .null
