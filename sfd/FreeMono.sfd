@@ -19,7 +19,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1323992703
+ModificationTime: 1325608453
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -63,6 +63,7 @@ Lookup: 4 0 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions subtable"
 Lookup: 1 9 0 "'init' Initial Forms in Arabic"  {"'init' Initial Forms in Arabic subtable"  } ['init' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'medi' Medial Forms in Arabic"  {"'medi' Medial Forms in Arabic subtable"  } ['medi' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'fina' Terminal Forms in Arabic"  {"'fina' Terminal Forms in Arabic subtable"  } ['fina' ('arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek"  {"'mark' Mark Positioning in Greek subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -127,7 +128,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11792 16 11
+WinInfo: 1040 16 11
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 23 [-20 0 417 437 563 583]
@@ -139,7 +140,7 @@ StemSnapH 4 [41]
 StemSnapV 4 [41]
 ForceBold 5 false
 EndPrivate
-AnchorClass2: "above_arabic"  "'mark' Mark Positioning in Arabic subtable" "below_arabic"  "'mark' Mark Positioning in Arabic subtable" "arab_diacritic"  "'mkmk' Mark to Mark in Arabic subtable" "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
+AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "above_arabic"  "'mark' Mark Positioning in Arabic subtable" "below_arabic"  "'mark' Mark Positioning in Arabic subtable" "arab_diacritic"  "'mkmk' Mark to Mark in Arabic subtable" "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
 BeginChars: 67329 4169
 
 StartChar: space
@@ -1083,7 +1084,7 @@ SplineSet
  178 229 l 1
  413 229 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: B
@@ -2129,8 +2130,8 @@ EndChar
 StartChar: a
 Encoding: 97 97 65
 Width: 600
-Flags: MW
-AnchorPoint: "above" 295 431 basechar 0
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2164,7 +2165,8 @@ EndChar
 StartChar: b
 Encoding: 98 98 66
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 325 587 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2196,28 +2198,28 @@ EndChar
 StartChar: c
 Encoding: 99 99 67
 Width: 600
-Flags: MW
-AnchorPoint: "above" 314 431 basechar 0
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-535 88 m 0
- 535 67 445 -16 309 -16 c 0
- 178 -16 84 76 84 204 c 0
- 84 336 180 431 314 431 c 0
- 375 431 429 412 470 376 c 1
- 470 389 l 2
- 470 408 477 417 491 417 c 0
- 504 417 511 408 511 389 c 2
- 511 298 l 2
- 511 280 504 271 491 271 c 0
- 478 271 472 278 470 295 c 0
- 466 348 395 390 311 390 c 0
- 201 390 125 315 125 205 c 0
- 125 100 202 25 311 25 c 0
- 384 25 446 49 498 97 c 0
- 506 105 509 107 516 107 c 0
- 526 107 535 98 535 88 c 0
+535 88 m 4
+ 535 67 445 -16 309 -16 c 4
+ 178 -16 84 76 84 204 c 4
+ 84 336 180 431 314 431 c 4
+ 375 431 429 412 470 376 c 5
+ 470 389 l 6
+ 470 408 477 417 491 417 c 4
+ 504 417 511 408 511 389 c 6
+ 511 298 l 6
+ 511 280 504 271 491 271 c 4
+ 478 271 472 278 470 295 c 4
+ 466 348 395 390 311 390 c 4
+ 201 390 125 315 125 205 c 4
+ 125 100 202 25 311 25 c 4
+ 384 25 446 49 498 97 c 4
+ 506 105 509 107 516 107 c 4
+ 526 107 535 98 535 88 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -2225,7 +2227,8 @@ EndChar
 StartChar: d
 Encoding: 100 100 68
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 281 587 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2257,21 +2260,21 @@ EndChar
 StartChar: e
 Encoding: 101 101 69
 Width: 600
-Flags: MW
-AnchorPoint: "above" 291 431 basechar 0
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-520 199 m 1
- 104 199 l 1
- 118 94 198 25 306 25 c 0
- 368 25 441 47 481 79 c 0
- 488 84 492 86 497 86 c 0
- 507 86 516 77 516 66 c 0
- 516 31 396 -16 305 -16 c 0
- 170 -16 63 87 63 217 c 0
- 63 338 163 431 291 431 c 0
- 424 431 520 340 520 199 c 1
+520 199 m 5
+ 104 199 l 5
+ 118 94 198 25 306 25 c 4
+ 368 25 441 47 481 79 c 4
+ 488 84 492 86 497 86 c 4
+ 507 86 516 77 516 66 c 4
+ 516 31 396 -16 305 -16 c 4
+ 170 -16 63 87 63 217 c 4
+ 63 338 163 431 291 431 c 4
+ 424 431 520 340 520 199 c 5
 104 240 m 1
  478 240 l 1
  462 331 388 390 291 390 c 0
@@ -2283,7 +2286,8 @@ EndChar
 StartChar: f
 Encoding: 102 102 70
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 295 587 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2321,6 +2325,7 @@ StartChar: g
 Encoding: 103 103 71
 Width: 600
 Flags: HMW
+AnchorPoint: "above" 275 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2348,13 +2353,14 @@ SplineSet
  365 51 440 126 440 219 c 0
  440 316 367 390 272 390 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: h
 Encoding: 104 104 72
 Width: 600
 Flags: HMW
+AnchorPoint: "above" 315 587 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2395,7 +2401,7 @@ StartChar: i
 Encoding: 105 105 73
 Width: 600
 Flags: HMW
-AnchorPoint: "above" 291 603 basechar 0
+AnchorPoint: "above" 291 633 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2426,7 +2432,7 @@ StartChar: j
 Encoding: 106 106 74
 Width: 600
 Flags: HMW
-AnchorPoint: "above" 353 603 basechar 0
+AnchorPoint: "above" 353 633 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2455,7 +2461,8 @@ EndChar
 StartChar: k
 Encoding: 107 107 75
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 335 587 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2523,7 +2530,8 @@ EndChar
 StartChar: m
 Encoding: 109 109 77
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2569,7 +2577,8 @@ EndChar
 StartChar: n
 Encoding: 110 110 78
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 315 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2608,8 +2617,8 @@ EndChar
 StartChar: o
 Encoding: 111 111 79
 Width: 600
-Flags: MW
-AnchorPoint: "above" 295 431 basechar 0
+Flags: HMW
+AnchorPoint: "above" 300 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2630,7 +2639,8 @@ EndChar
 StartChar: p
 Encoding: 112 112 80
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 325 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2665,7 +2675,8 @@ EndChar
 StartChar: q
 Encoding: 113 113 81
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 285 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2700,7 +2711,8 @@ EndChar
 StartChar: r
 Encoding: 114 114 82
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 315 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2732,6 +2744,7 @@ StartChar: s
 Encoding: 115 115 83
 Width: 600
 Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2760,13 +2773,14 @@ SplineSet
  144 62 213 25 298 25 c 0
  386 25 452 64 452 117 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: t
 Encoding: 116 116 84
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 315 587 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2798,8 +2812,8 @@ EndChar
 StartChar: u
 Encoding: 117 117 85
 Width: 600
-Flags: MW
-AnchorPoint: "above" 291 431 basechar 0
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2832,7 +2846,8 @@ EndChar
 StartChar: v
 Encoding: 118 118 86
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2864,7 +2879,8 @@ EndChar
 StartChar: w
 Encoding: 119 119 87
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2901,7 +2917,8 @@ EndChar
 StartChar: x
 Encoding: 120 120 88
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -2949,7 +2966,8 @@ EndChar
 StartChar: y
 Encoding: 121 121 89
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 AnchorPoint: "below" 454 0 basechar 0
 LayerCount: 2
 Fore
@@ -2988,7 +3006,8 @@ EndChar
 StartChar: z
 Encoding: 122 122 90
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "above" 295 437 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -4177,7 +4196,7 @@ LayerCount: 2
 Fore
 Refer: 583 715 N 1 0 0 1 13 136 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Aacute
@@ -4188,7 +4207,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -28 133 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Acircumflex
@@ -4199,7 +4218,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -2 120 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" A circumflexcomb
 EndChar
 
@@ -4211,7 +4230,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 2 98 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Adieresis
@@ -4222,7 +4241,7 @@ LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -3 98 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Aring
@@ -4233,7 +4252,7 @@ LayerCount: 2
 Fore
 Refer: 594 730 N 1 0 0 1 -4 133 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: AE
@@ -4744,7 +4763,7 @@ LayerCount: 2
 Fore
 Refer: 583 715 N 1 0 0 1 20 1 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: aacute
@@ -4755,7 +4774,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -41 1 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: acircumflex
@@ -4766,7 +4785,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -11 -13 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" a circumflexcomb
 EndChar
 
@@ -4778,18 +4797,18 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -1 -25 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: adieresis
 Encoding: 228 228 163
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -12 -20 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: aring
@@ -4800,7 +4819,7 @@ LayerCount: 2
 Fore
 Refer: 594 730 N 1 0 0 1 -1 11 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ae
@@ -4894,7 +4913,7 @@ LayerCount: 2
 Fore
 Refer: 583 715 N 1 0 0 1 32 1 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: eacute
@@ -4905,7 +4924,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -29 1 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ecircumflex
@@ -4916,19 +4935,19 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 3 -15 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" e circumflexcomb
 EndChar
 
 StartChar: edieresis
 Encoding: 235 235 170
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 4 -20 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: igrave
@@ -5020,7 +5039,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -10 -25 0
 Refer: 78 110 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ograve
@@ -5031,7 +5050,7 @@ LayerCount: 2
 Fore
 Refer: 583 715 N 1 0 0 1 34 1 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: oacute
@@ -5042,7 +5061,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -35 1 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ocircumflex
@@ -5053,7 +5072,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 S 1 0 0 1 0 -9 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" o circumflexcomb
 EndChar
 
@@ -5065,18 +5084,18 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 0 -25 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: odieresis
 Encoding: 246 246 181
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -20 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: divide
@@ -5153,7 +5172,7 @@ LayerCount: 2
 Fore
 Refer: 583 715 N 1 0 0 1 26 1 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uacute
@@ -5164,7 +5183,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -50 1 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ucircumflex
@@ -5175,19 +5194,19 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -6 -13 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" u circumflexcomb
 EndChar
 
 StartChar: udieresis
 Encoding: 252 252 187
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -8 -20 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yacute
@@ -5198,7 +5217,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 0 1 0
 Refer: 89 121 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: thorn
@@ -5239,12 +5258,12 @@ EndChar
 StartChar: ydieresis
 Encoding: 255 255 190
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -20 0
 Refer: 89 121 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Amacron
@@ -5255,7 +5274,7 @@ LayerCount: 2
 Fore
 Refer: 581 713 N 1 0 0 1 -72 92 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: amacron
@@ -5266,7 +5285,7 @@ LayerCount: 2
 Fore
 Refer: 581 713 N 1 0 0 1 -1 -45 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Abreve
@@ -5277,7 +5296,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 -2 123 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" A brevecomb
 EndChar
@@ -5290,7 +5309,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 -1 3 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" a brevecomb
 EndChar
 
@@ -5402,7 +5421,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 0 1 0
 Refer: 67 99 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ccircumflex
@@ -5424,7 +5443,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 14 -16 0
 Refer: 67 99 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Cdotaccent
@@ -5446,7 +5465,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 14 -20 0
 Refer: 67 99 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ccaron
@@ -5468,7 +5487,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 30 1 0
 Refer: 67 99 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Dcaron
@@ -5490,7 +5509,7 @@ LayerCount: 2
 Fore
 Refer: 574 700 N 1 0 0 1 312 -60 0
 Refer: 68 100 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Dcroat
@@ -5564,7 +5583,7 @@ LayerCount: 2
 Fore
 Refer: 581 713 N 1 0 0 1 -9 -45 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ebreve
@@ -5587,7 +5606,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 -9 4 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" e brevecomb
 EndChar
 
@@ -5610,7 +5629,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -9 -7 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Eogonek
@@ -5714,7 +5733,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 -9 1 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Gcircumflex
@@ -5736,7 +5755,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -31 1 0
 Refer: 71 103 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Gbreve
@@ -5758,7 +5777,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 -1 1 0
 Refer: 71 103 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Gdotaccent
@@ -5780,7 +5799,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -31 -5 0
 Refer: 71 103 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Gcommaaccent
@@ -5802,7 +5821,7 @@ LayerCount: 2
 Fore
 Refer: 573 699 N 1 0 0 1 -44 1 0
 Refer: 71 103 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Hcircumflex
@@ -5824,7 +5843,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -3 147 0
 Refer: 72 104 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Hbar
@@ -6250,7 +6269,7 @@ LayerCount: 2
 Fore
 Refer: 2704 806 N 1 0 0 1 485 0 2
 Refer: 75 107 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: kgreenlandic
@@ -6449,7 +6468,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -3 1 0
 Refer: 78 110 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ncommaaccent
@@ -6471,7 +6490,7 @@ LayerCount: 2
 Fore
 Refer: 2704 806 N 1 0 0 1 485 0 2
 Refer: 78 110 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ncaron
@@ -6493,7 +6512,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 -3 1 0
 Refer: 78 110 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: napostrophe
@@ -6504,7 +6523,7 @@ LayerCount: 2
 Fore
 Refer: 78 110 N 1 0 0 1 0 0 0
 Refer: 574 700 N 1 0 0 1 -243 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Eng
@@ -6599,7 +6618,7 @@ LayerCount: 2
 Fore
 Refer: 581 713 N 1 0 0 1 0 -45 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Obreve
@@ -6622,7 +6641,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 0 1 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" o brevecomb
 EndChar
 
@@ -6645,7 +6664,7 @@ LayerCount: 2
 Fore
 Refer: 597 733 N 1 0 0 1 54 1 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: OE
@@ -6743,7 +6762,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 12 1 0
 Refer: 82 114 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rcommaaccent
@@ -6765,7 +6784,7 @@ LayerCount: 2
 Fore
 Refer: 2704 806 N 1 0 0 1 485 0 2
 Refer: 82 114 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rcaron
@@ -6787,7 +6806,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 12 1 0
 Refer: 82 114 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Sacute
@@ -6809,7 +6828,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -5 1 0
 Refer: 83 115 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Scircumflex
@@ -6831,7 +6850,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -5 -13 0
 Refer: 83 115 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Scedilla
@@ -6943,7 +6962,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 6 0 0
 Refer: 83 115 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tcedilla
@@ -6992,12 +7011,12 @@ EndChar
 StartChar: tcedilla
 Encoding: 355 355 290
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 119 184 N 1 0 0 1 -22 -16 0
 Refer: 84 116 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tcaron
@@ -7019,7 +7038,7 @@ LayerCount: 2
 Fore
 Refer: 574 700 N 1 0 0 1 144 -51 0
 Refer: 84 116 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tbar
@@ -7125,7 +7144,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -25 -25 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Umacron
@@ -7147,7 +7166,7 @@ LayerCount: 2
 Fore
 Refer: 581 713 N 1 0 0 1 -25 -45 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ubreve
@@ -7170,7 +7189,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 -25 1 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 1 subtable" u brevecomb
 EndChar
 
@@ -7193,7 +7212,7 @@ LayerCount: 2
 Fore
 Refer: 594 730 N 1 0 0 1 -25 11 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uhungarumlaut
@@ -7215,7 +7234,7 @@ LayerCount: 2
 Fore
 Refer: 597 733 N 1 0 0 1 30 1 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uogonek
@@ -7317,7 +7336,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 0 1 0
 Refer: 87 119 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ycircumflex
@@ -7339,7 +7358,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 0 1 0
 Refer: 89 121 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ydieresis
@@ -7372,7 +7391,7 @@ LayerCount: 2
 Fore
 Refer: 582 714 N 1 0 0 1 -46 1 0
 Refer: 90 122 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Zdotaccent
@@ -7394,7 +7413,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -1 -6 0
 Refer: 90 122 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Zcaron
@@ -7416,7 +7435,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 -1 1 0
 Refer: 90 122 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: longs
@@ -7542,7 +7561,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 725 1041 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: btopbar
@@ -10121,7 +10140,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 0 113 0
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: acaron
@@ -10132,7 +10151,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 6 -33 0
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Icaron
@@ -10176,7 +10195,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 0 -33 0
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ucaron
@@ -10198,7 +10217,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 -8 -33 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Udieresismacron
@@ -10215,12 +10234,12 @@ EndChar
 StartChar: udieresismacron
 Encoding: 470 470 405
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -8 108 0
 Refer: 187 252 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Udieresisacute
@@ -10284,7 +10303,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -19 130 0
 Refer: 187 252 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Udieresiscaron
@@ -10350,7 +10369,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 -8 103 0
 Refer: 187 252 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Udieresisgrave
@@ -10415,7 +10434,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 8 134 0
 Refer: 187 252 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: eturned
@@ -10451,18 +10470,18 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -25 224 0
 Refer: 131 196 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: adieresismacron
 Encoding: 479 479 414
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -10 108 0
 Refer: 163 228 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Adotmacron
@@ -10473,7 +10492,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 224 0
 Refer: 481 550 S 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: adotmacron
@@ -10484,7 +10503,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 6 111 0
 Refer: 482 551 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: AEmacron
@@ -10619,7 +10638,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 12 -22 0
 Refer: 71 103 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Kcaron
@@ -10641,7 +10660,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 2 145 0
 Refer: 75 107 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Oogonek
@@ -10663,7 +10682,7 @@ LayerCount: 2
 Fore
 Refer: 595 731 N 1 0 0 1 -42 -16 0
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Oogonekmacron
@@ -10685,7 +10704,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 -55 0
 Refer: 426 491 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Yoghhacek
@@ -10884,7 +10903,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -50 -33 0
 Refer: 71 103 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni01F6
@@ -10996,7 +11015,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 60 10 0
 Refer: 78 110 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Aringacute
@@ -11067,7 +11086,7 @@ Fore
 Refer: 594 730 N 1 0 0 1 0 -14 2
 Refer: 65 97 N 1 0 0 1 0 0 2
 Refer: 115 180 N 1 0 0 1 -74 161 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: AEacute
@@ -11122,7 +11141,7 @@ LayerCount: 2
 Fore
 Refer: 615 783 N 1 0 0 1 560 138 0
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: adblgrave
@@ -11133,7 +11152,7 @@ LayerCount: 2
 Fore
 Refer: 615 783 N 1 0 0 1 595 14 0
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ainvertedbreve
@@ -11144,7 +11163,7 @@ LayerCount: 2
 Fore
 Refer: 617 785 N 1 0 0 1 561 117 0
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ainvertedbreve
@@ -11155,7 +11174,7 @@ LayerCount: 2
 Fore
 Refer: 617 785 N 1 0 0 1 595 14 0
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Edblgrave
@@ -11177,7 +11196,7 @@ LayerCount: 2
 Fore
 Refer: 615 783 N 1 0 0 1 536 1 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Einvertedbreve
@@ -11199,7 +11218,7 @@ LayerCount: 2
 Fore
 Refer: 617 785 N 1 0 0 1 591 1 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Idblgrave
@@ -11265,7 +11284,7 @@ LayerCount: 2
 Fore
 Refer: 615 783 N 1 0 0 1 546 1 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Oinvertedbreve
@@ -11287,7 +11306,7 @@ LayerCount: 2
 Fore
 Refer: 617 785 N 1 0 0 1 600 1 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rdblgrave
@@ -11309,7 +11328,7 @@ LayerCount: 2
 Fore
 Refer: 615 783 N 1 0 0 1 558 1 0
 Refer: 82 114 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rinvertedbreve
@@ -11331,7 +11350,7 @@ LayerCount: 2
 Fore
 Refer: 617 785 N 1 0 0 1 612 1 0
 Refer: 82 114 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Udblgrave
@@ -11353,7 +11372,7 @@ LayerCount: 2
 Fore
 Refer: 615 783 N 1 0 0 1 520 1 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uinvertedbreve
@@ -11375,7 +11394,7 @@ LayerCount: 2
 Fore
 Refer: 617 785 N 1 0 0 1 575 1 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Scommaaccent
@@ -11397,7 +11416,7 @@ LayerCount: 2
 Fore
 Refer: 2704 806 N 1 0 0 1 485 0 2
 Refer: 83 115 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tcommabelow
@@ -11419,7 +11438,7 @@ LayerCount: 2
 Fore
 Refer: 84 116 N 1 0 0 1 0 0 2
 Refer: 2704 806 N 1 0 0 1 485 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni021C
@@ -11519,7 +11538,7 @@ LayerCount: 2
 Fore
 Refer: 579 711 N 1 0 0 1 -3 138 0
 Refer: 72 104 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0224
@@ -11600,7 +11619,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -5 95 0
 Refer: 33 65 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0227
@@ -11611,7 +11630,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -1 -20 0
 Refer: 65 97 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0228
@@ -11716,12 +11735,12 @@ EndChar
 StartChar: uni022B
 Encoding: 555 555 486
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 108 0
 Refer: 181 246 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni022C
@@ -11743,7 +11762,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 108 0
 Refer: 180 245 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni022E
@@ -11765,7 +11784,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -22 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0230
@@ -11787,7 +11806,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 117 0
 Refer: 490 559 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0232
@@ -11804,22 +11823,22 @@ EndChar
 StartChar: uni0233
 Encoding: 563 563 494
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 -55 0
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: aturn
 Encoding: 592 592 495
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 65 97 N -1 0 0 -1 613 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ascript
@@ -12052,11 +12071,11 @@ EndChar
 StartChar: schwa
 Encoding: 601 601 504
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 69 101 N -1 0 0 -1 583 415 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: schwahook
@@ -12413,7 +12432,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 72 104 N -1 0 0 -1 594 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hhook
@@ -12693,11 +12712,11 @@ EndChar
 StartChar: mturn
 Encoding: 623 623 523
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 77 109 N -1 0 0 -1 604 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: mturndescend
@@ -13017,11 +13036,11 @@ EndChar
 StartChar: rturn
 Encoding: 633 633 532
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 82 114 N -1 0 0 -1 625 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: rlonglegturned
@@ -13413,11 +13432,11 @@ EndChar
 StartChar: tturn
 Encoding: 647 647 546
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 84 116 N -1 0 0 -1 542 547 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: trthook
@@ -13503,31 +13522,31 @@ EndChar
 StartChar: vturn
 Encoding: 652 652 549
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 86 118 N -1 0 0 -1 600 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: wturn
 Encoding: 653 653 550
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 87 119 N -1 0 0 -1 600 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yturn
 Encoding: 654 654 551
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 89 121 N -1 0 0 -1 600 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ysmallcap
@@ -13970,11 +13989,11 @@ EndChar
 StartChar: kturn
 Encoding: 670 670 564
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 75 107 N -1 0 0 -1 604 417 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Lsmallcap
@@ -15311,7 +15330,7 @@ LayerCount: 2
 Fore
 Refer: 630 900 S 1 0 0 1 -265 -51 0
 Refer: 641 913 N 1 0 0 1 8 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: anoteleia
@@ -15417,7 +15436,7 @@ AnchorPoint: "abovegk" 30 482 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Beta
@@ -16514,7 +16533,7 @@ AnchorPoint: "abovegk" 297 439 basechar 0
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: pi
@@ -16898,7 +16917,7 @@ LayerCount: 2
 Fore
 Refer: 630 900 N 1 0 0 1 14 14 0
 Refer: 686 959 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: upsilontonos
@@ -17135,7 +17154,7 @@ LayerCount: 2
 Fore
 Refer: 729 1045 N 1 0 0 1 0 0 2
 Refer: 64 96 N 1 0 0 1 44 113 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Yo
@@ -17146,13 +17165,14 @@ LayerCount: 2
 Fore
 Refer: 729 1045 N 1 0 0 1 0 0 2
 Refer: 103 168 N 1 0 0 1 0 115 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Dje
 Encoding: 1026 1026 710
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17191,7 +17211,7 @@ SplineSet
  527 -56 444 -137 339 -137 c 1
  340 -96 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: Gje
@@ -17202,13 +17222,14 @@ LayerCount: 2
 Fore
 Refer: 727 1043 N 1 0 0 1 0 0 2
 Refer: 601 769 N 1 0 0 1 537 113 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Est_shirokij
 Encoding: 1028 1028 712
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17244,20 +17265,22 @@ StartChar: Dzelo
 Encoding: 1029 1029 713
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 51 83 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Izhei
 Encoding: 1030 1030 714
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Yi
@@ -17275,16 +17298,18 @@ StartChar: Jy
 Encoding: 1032 1032 716
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 42 74 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Lje
 Encoding: 1033 1033 717
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17329,7 +17354,8 @@ EndChar
 StartChar: Nje
 Encoding: 1034 1034 718
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17383,7 +17409,8 @@ EndChar
 StartChar: Tshe
 Encoding: 1035 1035 719
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17423,7 +17450,7 @@ SplineSet
  340 525 l 1
  216 525 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: Kje
@@ -17434,7 +17461,7 @@ LayerCount: 2
 Fore
 Refer: 734 1050 N 1 0 0 1 0 0 2
 Refer: 601 769 N 1 0 0 1 537 113 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Izhe_varija
@@ -17445,7 +17472,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 63 113 0
 Refer: 732 1048 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uk_kratkij
@@ -17456,13 +17483,14 @@ LayerCount: 2
 Fore
 Refer: 743 1059 N 1 0 0 1 0 0 2
 Refer: 606 774 N 1 0 0 1 600 134 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Dzhe
 Encoding: 1039 1039 723
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17498,23 +17526,25 @@ SplineSet
  165 522 l 1
  165 41 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: Az
 Encoding: 1040 1040 724
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Buky
 Encoding: 1041 1041 725
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17551,16 +17581,18 @@ StartChar: Vede
 Encoding: 1042 1042 726
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 34 66 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Glagol
 Encoding: 1043 1043 727
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17590,7 +17622,8 @@ EndChar
 StartChar: Dobro
 Encoding: 1044 1044 728
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17629,17 +17662,19 @@ EndChar
 StartChar: Est
 Encoding: 1045 1045 729
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Zhivete
 Encoding: 1046 1046 730
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17699,7 +17734,8 @@ EndChar
 StartChar: Zemlja
 Encoding: 1047 1047 731
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17740,7 +17776,8 @@ EndChar
 StartChar: Izhe
 Encoding: 1048 1048 732
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17788,18 +17825,19 @@ EndChar
 StartChar: Izhe_kratkij
 Encoding: 1049 1049 733
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 606 774 N 1 0 0 1 600 151 2
 Refer: 732 1048 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Kako
 Encoding: 1050 1050 734
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17843,7 +17881,8 @@ EndChar
 StartChar: Ljudi
 Encoding: 1051 1051 735
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 320 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17883,36 +17922,40 @@ StartChar: Myslete
 Encoding: 1052 1052 736
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 45 77 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Nash
 Encoding: 1053 1053 737
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 40 72 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: On
 Encoding: 1054 1054 738
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Pokoj
 Encoding: 1055 1055 739
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17951,36 +17994,40 @@ StartChar: Rtsy
 Encoding: 1056 1056 740
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 48 80 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Slovo
 Encoding: 1057 1057 741
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 35 67 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tverdo
 Encoding: 1058 1058 742
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 52 84 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uk
 Encoding: 1059 1059 743
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18019,6 +18066,7 @@ StartChar: Fert
 Encoding: 1060 1060 744
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18069,16 +18117,18 @@ StartChar: Kher
 Encoding: 1061 1061 745
 Width: 600
 Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 Refer: 56 88 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tsy
 Encoding: 1062 1062 746
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18118,7 +18168,8 @@ EndChar
 StartChar: Cherv
 Encoding: 1063 1063 747
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18160,7 +18211,8 @@ EndChar
 StartChar: Sha
 Encoding: 1064 1064 748
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18208,7 +18260,8 @@ EndChar
 StartChar: Shcha
 Encoding: 1065 1065 749
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18258,7 +18311,8 @@ EndChar
 StartChar: Hardsigncyrillic
 Encoding: 1066 1066 750
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18294,7 +18348,8 @@ EndChar
 StartChar: Ery
 Encoding: 1067 1067 751
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18345,7 +18400,8 @@ EndChar
 StartChar: Eri
 Encoding: 1068 1068 752
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18379,7 +18435,8 @@ EndChar
 StartChar: Est_obratnyj
 Encoding: 1069 1069 753
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18413,7 +18470,8 @@ EndChar
 StartChar: Yus
 Encoding: 1070 1070 754
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18453,7 +18511,8 @@ EndChar
 StartChar: Ya
 Encoding: 1071 1071 755
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovecyr" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18493,11 +18552,11 @@ EndChar
 StartChar: az
 Encoding: 1072 1072 756
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: buky
@@ -18638,11 +18697,11 @@ EndChar
 StartChar: est
 Encoding: 1077 1077 761
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zhivete
@@ -18990,11 +19049,11 @@ EndChar
 StartChar: on
 Encoding: 1086 1086 770
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: pokoj
@@ -19038,21 +19097,21 @@ EndChar
 StartChar: rtsy
 Encoding: 1088 1088 772
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 80 112 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: slovo
 Encoding: 1089 1089 773
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 67 99 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tverdo
@@ -19090,11 +19149,11 @@ EndChar
 StartChar: uk
 Encoding: 1091 1091 775
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: fert
@@ -19147,11 +19206,11 @@ EndChar
 StartChar: kher
 Encoding: 1093 1093 777
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 88 120 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tsy
@@ -19577,7 +19636,7 @@ LayerCount: 2
 Fore
 Refer: 761 1077 N 1 0 0 1 0 0 2
 Refer: 64 96 N 1 0 0 1 54 -19 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yo
@@ -19588,7 +19647,7 @@ LayerCount: 2
 Fore
 Refer: 761 1077 N 1 0 0 1 0 0 2
 Refer: 103 168 S 1 0 0 1 -9 -7 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dje
@@ -19690,7 +19749,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 83 115 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: izhei
@@ -19700,7 +19759,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 73 105 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yi
@@ -19721,7 +19780,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: lje
@@ -19904,7 +19963,7 @@ LayerCount: 2
 Fore
 Refer: 775 1091 N 1 0 0 1 0 0 2
 Refer: 592 728 S 1 0 0 1 0 -16 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dzhe
@@ -22475,12 +22534,12 @@ EndChar
 StartChar: Zhivete_kratkij
 Encoding: 1217 1217 862
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 0 113 0
 Refer: 730 1046 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zhivete_kratkij
@@ -22774,18 +22833,18 @@ LayerCount: 2
 Fore
 Refer: 724 1040 N 1 0 0 1 0 0 2
 Refer: 592 728 N 1 0 0 1 0 113 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: az_kratkij
 Encoding: 1233 1233 871
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 756 1072 N 1 0 0 1 0 0 2
 Refer: 592 728 N 1 0 0 1 7 -19 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Az_dvutochnyj
@@ -22796,7 +22855,7 @@ LayerCount: 2
 Fore
 Refer: 724 1040 N 1 0 0 1 0 0 2
 Refer: 103 168 N 1 0 0 1 -1 114 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: az_dvutochnyj
@@ -22807,7 +22866,7 @@ LayerCount: 2
 Fore
 Refer: 756 1072 N 1 0 0 1 0 0 2
 Refer: 103 168 S 1 0 0 1 6 -8 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Az_est
@@ -22833,12 +22892,12 @@ EndChar
 StartChar: Est_kratkij
 Encoding: 1238 1238 876
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 729 1045 N 1 0 0 1 0 0 2
 Refer: 592 728 N 1 0 0 1 -18 113 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: est_kratkij
@@ -22849,7 +22908,7 @@ LayerCount: 2
 Fore
 Refer: 761 1077 N 1 0 0 1 0 0 2
 Refer: 592 728 S 1 0 0 1 -8 -16 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Schwacyrillic
@@ -22885,11 +22944,11 @@ EndChar
 StartChar: schwacyrillic
 Encoding: 1241 1241 879
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 761 1077 N -1 0 0 -1 596 415 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Schwacyrillic_dvutochnyj
@@ -22911,18 +22970,18 @@ LayerCount: 2
 Fore
 Refer: 103 168 S 1 0 0 1 9 -5 0
 Refer: 879 1241 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Zhivete_dvutochnyj
 Encoding: 1244 1244 882
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 113 0
 Refer: 730 1046 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zhivete_dvutochnyj
@@ -22939,12 +22998,12 @@ EndChar
 StartChar: Zemlja_dvutochnyj
 Encoding: 1246 1246 884
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 2 105 0
 Refer: 731 1047 S 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zemlja_dvutochnyj
@@ -22981,12 +23040,12 @@ EndChar
 StartChar: Izhe_nadcherknutyj
 Encoding: 1250 1250 888
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 581 713 N 1 0 0 1 0 93 0
 Refer: 732 1048 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: izhe_nadcherknutyj
@@ -23003,12 +23062,12 @@ EndChar
 StartChar: Izhe_dvutochnyj
 Encoding: 1252 1252 890
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 111 0
 Refer: 732 1048 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: izhe_dvutochnyj
@@ -23041,7 +23100,7 @@ LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
 Refer: 103 168 S 1 0 0 1 0 -8 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: On_precherknutyj
@@ -23117,12 +23176,12 @@ EndChar
 StartChar: Est_obratnyj_dvutochnyj
 Encoding: 1260 1260 898
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 112 0
 Refer: 753 1069 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: est_obratnyj_dvutochnyj
@@ -23139,34 +23198,34 @@ EndChar
 StartChar: Uk_nadcherknutyj
 Encoding: 1262 1262 900
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 87 0
 Refer: 743 1059 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uk_nadcherknutyj
 Encoding: 1263 1263 901
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 0 -51 0
 Refer: 775 1091 S 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uk_dvutochnyj
 Encoding: 1264 1264 902
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 112 0
 Refer: 743 1059 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uk_dvutochnyj
@@ -23177,40 +23236,40 @@ LayerCount: 2
 Fore
 Refer: 103 168 S 1 0 0 1 0 -8 0
 Refer: 775 1091 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uk_dvuoksijnyj
 Encoding: 1266 1266 904
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 597 733 N 1 0 0 1 0 113 0
 Refer: 743 1059 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uk_dvuoksijnyj
 Encoding: 1267 1267 905
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 597 733 N 1 0 0 1 0 -33 0
 Refer: 775 1091 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Cherv_dvutochnyj
 Encoding: 1268 1268 906
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 111 0
 Refer: 747 1063 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: cherv_dvutochnyj
@@ -23227,12 +23286,12 @@ EndChar
 StartChar: Ery_dvutochnyj
 Encoding: 1272 1272 908
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 2 112 0
 Refer: 751 1067 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ery_dvutochnyj
@@ -25777,7 +25836,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 83 115 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: reharmenian
@@ -25827,7 +25886,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 71 103 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yiwnarmenian
@@ -25944,11 +26003,11 @@ EndChar
 StartChar: oharmenian
 Encoding: 1413 1413 984
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: feharmenian
@@ -29409,7 +29468,7 @@ LayerCount: 2
 Fore
 Refer: 594 730 S 1 0 0 1 0 -680 0
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: aringbelow
@@ -29420,7 +29479,7 @@ LayerCount: 2
 Fore
 Refer: 594 730 N 1 0 0 1 6 -680 0
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Bdotaccent
@@ -29442,7 +29501,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -15 115 0
 Refer: 66 98 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Bdotbelow
@@ -29464,7 +29523,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 2 -686 0
 Refer: 66 98 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Blinebelow
@@ -29486,7 +29545,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -7 -641 0
 Refer: 66 98 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ccedillaacute
@@ -29530,7 +29589,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -12 115 0
 Refer: 68 100 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ddotbelow
@@ -29552,7 +29611,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 7 -674 0
 Refer: 68 100 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Dlinebelow
@@ -29574,7 +29633,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 9 -637 0
 Refer: 68 100 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Dcedilla
@@ -29675,12 +29734,12 @@ EndChar
 StartChar: dcircumflexbelow
 Encoding: 7699 7699 1139
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 23 -690 0
 Refer: 68 100 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Emacrongrave
@@ -29750,7 +29809,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 54 113 0
 Refer: 210 275 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Emacronacute
@@ -29819,7 +29878,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -71 113 0
 Refer: 210 275 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ecircumflexbelow
@@ -29836,12 +29895,12 @@ EndChar
 StartChar: ecircumflexbelow
 Encoding: 7705 7705 1145
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -8 -690 0
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Etildebelow
@@ -29863,7 +29922,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -8 -667 0
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ecedillabreve
@@ -29907,7 +29966,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 23 152 0
 Refer: 70 102 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Gmacron
@@ -29929,7 +29988,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 12 -35 0
 Refer: 71 103 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Hdotaccent
@@ -29951,7 +30010,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 11 116 0
 Refer: 72 104 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Hdotbelow
@@ -29973,7 +30032,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -3 -683 0
 Refer: 72 104 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Hdieresis
@@ -29995,7 +30054,7 @@ LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -4 142 0
 Refer: 72 104 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Hcedilla
@@ -30127,7 +30186,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 -3 -644 0
 Refer: 72 104 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Itildebelow
@@ -30149,7 +30208,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 0 -662 0
 Refer: 73 105 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Idieresisacute
@@ -30229,7 +30288,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -40 132 0
 Refer: 75 107 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Kdotbelow
@@ -30246,12 +30305,12 @@ EndChar
 StartChar: kdotbelow
 Encoding: 7731 7731 1171
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 2 -661 0
 Refer: 75 107 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Klinebelow
@@ -30268,12 +30327,12 @@ EndChar
 StartChar: klinebelow
 Encoding: 7733 7733 1173
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 2 -629 0
 Refer: 75 107 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ldotbelow
@@ -30383,7 +30442,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -60 -12 0
 Refer: 77 109 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Mdotaccent
@@ -30405,7 +30464,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 2 -8 0
 Refer: 77 109 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Mdotbelow
@@ -30422,12 +30481,12 @@ EndChar
 StartChar: mdotbelow
 Encoding: 7747 7747 1187
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 2 -661 0
 Refer: 77 109 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ndotaccent
@@ -30449,7 +30508,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -3 -7 0
 Refer: 78 110 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ndotbelow
@@ -30466,12 +30525,12 @@ EndChar
 StartChar: ndotbelow
 Encoding: 7751 7751 1191
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -3 -657 0
 Refer: 78 110 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Nlinebelow
@@ -30488,12 +30547,12 @@ EndChar
 StartChar: nlinebelow
 Encoding: 7753 7753 1193
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -3 -633 0
 Refer: 78 110 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ncircumflexbelow
@@ -30510,12 +30569,12 @@ EndChar
 StartChar: ncircumflexbelow
 Encoding: 7755 7755 1195
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -3 -679 0
 Refer: 78 110 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Otildeacute
@@ -30565,7 +30624,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -10 144 0
 Refer: 180 245 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Otildedieresis
@@ -30611,12 +30670,12 @@ EndChar
 StartChar: otildedieresis
 Encoding: 7759 7759 1199
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 117 0
 Refer: 180 245 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Omacrongrave
@@ -30665,7 +30724,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 62 113 0
 Refer: 268 333 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Omacronacute
@@ -30713,7 +30772,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -62 113 0
 Refer: 268 333 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Pacute
@@ -30735,7 +30794,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -81 -14 0
 Refer: 80 112 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Pdotaccent
@@ -30757,7 +30816,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -18 -2 0
 Refer: 80 112 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rdotaccent
@@ -30779,7 +30838,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 12 -9 0
 Refer: 82 114 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rdotbelow
@@ -30796,12 +30855,12 @@ EndChar
 StartChar: rdotbelow
 Encoding: 7771 7771 1211
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 12 -656 0
 Refer: 82 114 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rdotbelowmacron
@@ -30818,12 +30877,12 @@ EndChar
 StartChar: rdotbelowmacron
 Encoding: 7773 7773 1213
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 12 -57 0
 Refer: 1211 7771 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Rlinebelow
@@ -30840,12 +30899,12 @@ EndChar
 StartChar: rlinebelow
 Encoding: 7775 7775 1215
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 12 -637 0
 Refer: 82 114 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Sdotaccent
@@ -30867,7 +30926,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -8 0
 Refer: 83 115 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Sdotbelow
@@ -30889,7 +30948,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -692 0
 Refer: 83 115 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Sacutedotaccent
@@ -30948,7 +31007,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 138 0
 Refer: 282 347 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Scarondotaccent
@@ -31009,7 +31068,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 136 0
 Refer: 288 353 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Sdotbelowdotaccent
@@ -31031,7 +31090,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -8 0
 Refer: 1219 7779 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tdotaccent
@@ -31048,12 +31107,12 @@ EndChar
 StartChar: tdotaccent
 Encoding: 7787 7787 1227
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -29 93 0
 Refer: 84 116 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tdotbelow
@@ -31070,12 +31129,12 @@ EndChar
 StartChar: tdotbelow
 Encoding: 7789 7789 1229
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -29 -673 0
 Refer: 84 116 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tlinebelow
@@ -31092,12 +31151,12 @@ EndChar
 StartChar: tlinebelow
 Encoding: 7791 7791 1231
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -29 -635 0
 Refer: 84 116 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Tcircumflexbelow
@@ -31114,12 +31173,12 @@ EndChar
 StartChar: tcircumflexbelow
 Encoding: 7793 7793 1233
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -29 -690 0
 Refer: 84 116 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Udieresisbelow
@@ -31141,7 +31200,7 @@ LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -8 -679 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Utildebelow
@@ -31158,12 +31217,12 @@ EndChar
 StartChar: utildebelow
 Encoding: 7797 7797 1237
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -8 -672 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ucircumflexbelow
@@ -31180,12 +31239,12 @@ EndChar
 StartChar: ucircumflexbelow
 Encoding: 7799 7799 1239
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -8 -690 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Utildeacute
@@ -31248,7 +31307,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -70 129 0
 Refer: 296 361 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Umacrondieresis
@@ -31305,12 +31364,12 @@ EndChar
 StartChar: umacrondieresis
 Encoding: 7803 7803 1243
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -8 92 0
 Refer: 298 363 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Vtilde
@@ -31327,12 +31386,12 @@ EndChar
 StartChar: vtilde
 Encoding: 7805 7805 1245
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 0 -42 0
 Refer: 86 118 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Vdotbelow
@@ -31349,12 +31408,12 @@ EndChar
 StartChar: vdotbelow
 Encoding: 7807 7807 1247
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -657 0
 Refer: 86 118 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Wgrave
@@ -31376,7 +31435,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 62 -33 0
 Refer: 87 119 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Wacute
@@ -31398,7 +31457,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -62 -33 0
 Refer: 87 119 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Wdieresis
@@ -31420,7 +31479,7 @@ LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -8 0
 Refer: 87 119 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Wdotaccent
@@ -31442,7 +31501,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -6 0
 Refer: 87 119 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Wdotbelow
@@ -31459,12 +31518,12 @@ EndChar
 StartChar: wdotbelow
 Encoding: 7817 7817 1257
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -651 0
 Refer: 87 119 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Xdotaccent
@@ -31486,7 +31545,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -8 0
 Refer: 88 120 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Xdieresis
@@ -31508,7 +31567,7 @@ LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -8 0
 Refer: 88 120 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ydotaccent
@@ -31530,7 +31589,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -7 0
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Zcircumflex
@@ -31552,7 +31611,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 2 -15 0
 Refer: 90 122 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Zdotbelow
@@ -31569,12 +31628,12 @@ EndChar
 StartChar: zdotbelow
 Encoding: 7827 7827 1267
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 2 -671 0
 Refer: 90 122 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Zlinebelow
@@ -31591,12 +31650,12 @@ EndChar
 StartChar: zlinebelow
 Encoding: 7829 7829 1269
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 2 -636 0
 Refer: 90 122 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hlinebelow
@@ -31607,18 +31666,18 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -3 -623 0
 Refer: 72 104 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tdieresis
 Encoding: 7831 7831 1271
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -30 92 0
 Refer: 84 116 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: wring
@@ -31629,7 +31688,7 @@ LayerCount: 2
 Fore
 Refer: 594 730 N 1 0 0 1 0 -9 0
 Refer: 87 119 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yring
@@ -31640,7 +31699,7 @@ LayerCount: 2
 Fore
 Refer: 594 730 N 1 0 0 1 0 -10 0
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: arighthalfring
@@ -31651,7 +31710,7 @@ LayerCount: 2
 Fore
 Refer: 576 702 S 1 0 0 1 157 0 0
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: slongdotaccent
@@ -31673,18 +31732,18 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -661 0
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: adotbelow
 Encoding: 7841 7841 1277
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 6 -675 0
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ahookabove
@@ -31695,18 +31754,18 @@ LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 560 118 0
 Refer: 33 65 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ahookabove
 Encoding: 7843 7843 1279
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 595 14 0
 Refer: 65 97 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Acircumflexacute
@@ -31717,7 +31776,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 S 1 0 0 1 167 161 0
 Refer: 129 194 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Acircumflex acutecomb
 EndChar
@@ -31730,7 +31789,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 S 1 0 0 1 57 138 0
 Refer: 161 226 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex acutecomb
 EndChar
@@ -31743,7 +31802,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 S 1 0 0 1 -155 161 0
 Refer: 129 194 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Acircumflex gravecomb
 EndChar
@@ -31756,7 +31815,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 S 1 0 0 1 -77 147 0
 Refer: 161 226 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex gravecomb
 EndChar
@@ -31769,7 +31828,7 @@ LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 817 118 0
 Refer: 129 194 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" Acircumflex hookabovecomb
 EndChar
@@ -31782,7 +31841,7 @@ LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 820 17 0
 Refer: 161 226 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex hookabovecomb
 EndChar
@@ -31857,7 +31916,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 6 163 0
 Refer: 161 226 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" acircumflex tildecomb
 EndChar
@@ -31870,18 +31929,18 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 0 123 0
 Refer: 1276 7840 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: acircumflexdotbelow
 Encoding: 7853 7853 1289
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 6 -15 0
 Refer: 1277 7841 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Abreveacute
@@ -31952,7 +32011,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 -2 97 0
 Refer: 194 259 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve acutecomb
 EndChar
@@ -32026,7 +32085,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 36 106 0
 Refer: 194 259 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve gravecomb
 EndChar
@@ -32105,7 +32164,7 @@ LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 595 114 0
 Refer: 194 259 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve hookabovecomb
 EndChar
@@ -32178,7 +32237,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -8 150 0
 Refer: 194 259 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" abreve tildecomb
 EndChar
@@ -32191,7 +32250,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 0 113 0
 Refer: 1276 7840 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: abrevedotbelow
@@ -32202,7 +32261,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 6 4 0
 Refer: 1277 7841 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Edotbelow
@@ -32219,12 +32278,12 @@ EndChar
 StartChar: edotbelow
 Encoding: 7865 7865 1301
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -8 -672 0
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ehookabove
@@ -32241,12 +32300,12 @@ EndChar
 StartChar: ehookabove
 Encoding: 7867 7867 1303
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 591 11 0
 Refer: 69 101 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Etilde
@@ -32263,12 +32322,12 @@ EndChar
 StartChar: etilde
 Encoding: 7869 7869 1305
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -8 -41 0
 Refer: 69 101 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ecircumflexacute
@@ -32292,7 +32351,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 57 138 0
 Refer: 169 234 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex acutecomb
 EndChar
@@ -32318,7 +32377,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 -77 147 0
 Refer: 169 234 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex gravecomb
 EndChar
@@ -32344,7 +32403,7 @@ LayerCount: 2
 Fore
 Refer: 609 777 S 1 0 0 1 768 99 0
 Refer: 169 234 N 1 0 0 1 -25 0 1
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex hookabovecomb
 EndChar
@@ -32421,7 +32480,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 -8 163 0
 Refer: 169 234 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ecircumflex tildecomb
 EndChar
@@ -32445,7 +32504,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 -8 -13 0
 Refer: 1301 7865 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ihookabove
@@ -32489,7 +32548,7 @@ LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -662 0
 Refer: 73 105 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Odotbelow
@@ -32506,12 +32565,12 @@ EndChar
 StartChar: odotbelow
 Encoding: 7885 7885 1321
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 0 -675 0
 Refer: 79 111 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ohookabove
@@ -32528,12 +32587,12 @@ EndChar
 StartChar: ohookabove
 Encoding: 7887 7887 1323
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 600 11 0
 Refer: 79 111 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ocircumflexacute
@@ -32557,7 +32616,7 @@ LayerCount: 2
 Fore
 Refer: 115 180 N 1 0 0 1 57 138 0
 Refer: 179 244 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex acutecomb
 EndChar
@@ -32583,7 +32642,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 -77 147 0
 Refer: 179 244 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex gravecomb
 EndChar
@@ -32608,7 +32667,7 @@ LayerCount: 2
 Fore
 Refer: 609 777 S 1 0 0 1 749 99 0
 Refer: 179 244 N 1 0 0 1 -24 0 1
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex hookabovecomb
 EndChar
@@ -32663,7 +32722,7 @@ LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 0 152 0
 Refer: 179 244 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 Ligature2: "'ccmp' Glyph Composition in Latin for Viet 2 subtable" ocircumflex tildecomb
 EndChar
 
@@ -32686,7 +32745,7 @@ LayerCount: 2
 Fore
 Refer: 578 710 N 1 0 0 1 0 -14 0
 Refer: 1321 7885 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ohornacute
@@ -32813,12 +32872,12 @@ EndChar
 StartChar: udotbelow
 Encoding: 7909 7909 1345
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 -8 -670 0
 Refer: 85 117 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uhookabove
@@ -32835,12 +32894,12 @@ EndChar
 StartChar: uhookabove
 Encoding: 7911 7911 1347
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 575 11 0
 Refer: 85 117 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Uhornacute
@@ -32972,7 +33031,7 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 40 -28 0
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ydotbelow
@@ -32989,12 +33048,12 @@ EndChar
 StartChar: ydotbelow
 Encoding: 7925 7925 1361
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 593 729 N 1 0 0 1 142 -672 0
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Yhookabove
@@ -33011,12 +33070,12 @@ EndChar
 StartChar: yhookabove
 Encoding: 7927 7927 1363
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 609 777 N 1 0 0 1 600 1 0
 Refer: 89 121 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Ytilde
@@ -33033,12 +33092,12 @@ EndChar
 StartChar: ytilde
 Encoding: 7929 7929 1365
 Width: 600
-Flags: M
+Flags: HM
 LayerCount: 2
 Fore
 Refer: 596 732 N 1 0 0 1 0 -41 0
 Refer: 89 121 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F00
@@ -33137,7 +33196,7 @@ LayerCount: 2
 Fore
 Refer: 1541 8127 S 1 0 0 1 -251 -64 0
 Refer: 641 913 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F09
@@ -33148,7 +33207,7 @@ LayerCount: 2
 Fore
 Refer: 1596 8190 S 1 0 0 1 -254 -62 0
 Refer: 641 913 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F0A
@@ -33159,7 +33218,7 @@ LayerCount: 2
 Fore
 Refer: 1554 8141 S 1 0 0 1 -219 -55 0
 Refer: 641 913 N 1 0 0 1 69 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F0B
@@ -33170,7 +33229,7 @@ LayerCount: 2
 Fore
 Refer: 1567 8157 S 1 0 0 1 -257 -38 0
 Refer: 641 913 N 1 0 0 1 69 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F0C
@@ -33181,7 +33240,7 @@ LayerCount: 2
 Fore
 Refer: 1555 8142 S 1 0 0 1 -238 -43 0
 Refer: 641 913 N 1 0 0 1 67 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F0D
@@ -33192,7 +33251,7 @@ LayerCount: 2
 Fore
 Refer: 1568 8158 S 1 0 0 1 -229 -42 0
 Refer: 641 913 N 1 0 0 1 64 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F0E
@@ -33203,7 +33262,7 @@ LayerCount: 2
 Fore
 Refer: 1556 8143 S 1 0 0 1 -187 -58 0
 Refer: 641 913 N 1 0 0 1 68 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F0F
@@ -33214,7 +33273,7 @@ LayerCount: 2
 Fore
 Refer: 1569 8159 S 1 0 0 1 -223 -42 0
 Refer: 641 913 N 1 0 0 1 74 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F10
@@ -33709,7 +33768,7 @@ LayerCount: 2
 Fore
 Refer: 1541 8127 N 1 0 0 1 -2 -10 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F41
@@ -33720,7 +33779,7 @@ LayerCount: 2
 Fore
 Refer: 1596 8190 N 1 0 0 1 6 -9 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F42
@@ -33731,7 +33790,7 @@ LayerCount: 2
 Fore
 Refer: 1554 8141 N 1 0 0 1 -15 -6 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F43
@@ -33742,7 +33801,7 @@ LayerCount: 2
 Fore
 Refer: 1567 8157 N 1 0 0 1 -15 -6 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F44
@@ -33753,7 +33812,7 @@ LayerCount: 2
 Fore
 Refer: 1555 8142 S 1 0 0 1 29 -6 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F45
@@ -33764,7 +33823,7 @@ LayerCount: 2
 Fore
 Refer: 1568 8158 S 1 0 0 1 47 -6 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Omicronlenis
@@ -34237,7 +34296,7 @@ LayerCount: 2
 Fore
 Refer: 1584 8175 N 1 0 0 1 14 -6 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F79
@@ -34248,7 +34307,7 @@ LayerCount: 2
 Fore
 Refer: 1595 8189 N 1 0 0 1 14 -6 0
 Refer: 686 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F7A
@@ -34391,7 +34450,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -224 -199 0
 Refer: 1374 7944 S 1 0 0 1 7 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F89
@@ -34402,7 +34461,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -218 -199 0
 Refer: 1375 7945 S 1 0 0 1 7 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F8A
@@ -34413,7 +34472,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -192 -199 0
 Refer: 1376 7946 N 1 0 0 1 -22 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F8B
@@ -34424,7 +34483,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -229 -199 0
 Refer: 1377 7947 S 1 0 0 1 -49 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F8C
@@ -34435,7 +34494,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 N 1 0 0 1 -204 -199 0
 Refer: 1378 7948 S 1 0 0 1 -41 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F8D
@@ -34446,7 +34505,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -198 -199 0
 Refer: 1379 7949 N 1 0 0 1 -24 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F8E
@@ -34457,7 +34516,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -217 -199 0
 Refer: 1380 7950 N 1 0 0 1 -55 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F8F
@@ -34468,7 +34527,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -215 -199 0
 Refer: 1381 7951 N 1 0 0 1 -63 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F90
@@ -34908,7 +34967,7 @@ LayerCount: 2
 Fore
 Refer: 592 728 N 1 0 0 1 -72 126 0
 Refer: 641 913 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FB9
@@ -34919,7 +34978,7 @@ LayerCount: 2
 Fore
 Refer: 110 175 N 1 0 0 1 -72 80 0
 Refer: 641 913 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FBA
@@ -34930,7 +34989,7 @@ LayerCount: 2
 Fore
 Refer: 1584 8175 S 1 0 0 1 -237 -49 0
 Refer: 641 913 S 1 0 0 1 4 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FBB
@@ -34941,7 +35000,7 @@ LayerCount: 2
 Fore
 Refer: 1595 8189 S 1 0 0 1 -229 -52 0
 Refer: 641 913 N 1 0 0 1 42 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FBC
@@ -34952,7 +35011,7 @@ LayerCount: 2
 Fore
 Refer: 1540 8126 S 1 0 0 1 -231 -202 0
 Refer: 641 913 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: prosgegrammeni
@@ -38283,7 +38342,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 132 197 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Fturn
@@ -68437,7 +68496,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 73 105 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: tworoman
@@ -68590,7 +68649,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 86 118 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: sixroman
@@ -68823,7 +68882,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 88 120 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: elevenroman
@@ -68968,7 +69027,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 67 99 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni217E
@@ -68978,7 +69037,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 68 100 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni217F
@@ -68988,7 +69047,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 77 109 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2064
@@ -72425,7 +72484,7 @@ LayerCount: 2
 Fore
 Refer: 65 97 S 0.65 0 0 0.65 95.5 339.9 2
 Refer: 1822 8744 S 1 0 0 1 0 -68 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2381
@@ -72439,7 +72498,7 @@ Refer: 593 729 S 0.65 0 0 0.65 355.85 -204.2 0
 Refer: 593 729 S 0.65 0 0 0.65 260.85 -204.2 0
 Refer: 593 729 S 0.65 0 0 0.65 169.85 -204.2 0
 Refer: 65 97 S 0.65 0 0 0.65 -40.5 139.9 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2382
@@ -72452,7 +72511,7 @@ Refer: 110 175 N 1 0 0 1 155 -536 0
 Refer: 110 175 N 1 0 0 1 -153 -536 0
 Refer: 65 97 S 0.65 0 0 0.65 246.8 136.9 2
 Refer: 65 97 S 0.65 0 0 0.65 -45.5 136.9 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2383
@@ -75616,7 +75675,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 81 113 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Wa
@@ -75636,7 +75695,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 87 119 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Kva
@@ -76551,7 +76610,7 @@ LayerCount: 2
 Fore
 Refer: 77 109 S 0.5 0 0 0.5 155 369.75 2
 Refer: 29 61 N 1 0 0 1 0 -68 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: measurequal
@@ -76564,7 +76623,7 @@ Refer: 70 102 S 0.4 0 0 0.4 367.8 415.2 2
 Refer: 69 101 S 0.4 0 0 0.4 195.9 413.5 2
 Refer: 68 100 S 0.4 0 0 0.4 -6.2 415.4 2
 Refer: 29 61 N 1 0 0 1 0 -68 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: questionequal
@@ -77912,11 +77971,11 @@ EndChar
 StartChar: uni13AA
 Encoding: 5034 5034 3332
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni13AB
@@ -79106,11 +79165,11 @@ EndChar
 StartChar: uni13CF
 Encoding: 5071 5071 3369
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 752 1068 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni13D0
@@ -81840,7 +81899,7 @@ Fore
 Refer: 1627 8260 N 1 0 0 1 -7 0 2
 Refer: 51 83 S 0.6 0 0 0.6 290 -2.2 2
 Refer: 33 65 N 0.6 0 0 0.6 2.6 382.6 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: lowcircumflex
@@ -82188,7 +82247,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 69 101 S 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni20E8
@@ -83127,7 +83186,7 @@ Fore
 Refer: 33 65 N 0.34 0 0 0.34 27.54 437.46 2
 Refer: 35 67 N 0.34 0 0 0.34 213.54 218.46 2
 Refer: 43 75 S 0.34 0 0 0.34 377.54 0.459991 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bell
@@ -83299,7 +83358,7 @@ Fore
 Refer: 33 65 S 0.34 0 0 0.34 199.54 221.46 2
 Refer: 43 75 N 0.34 0 0 0.34 367.54 0.459991 2
 Refer: 46 78 N 0.34 0 0 0.34 27.27 437.84 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: synch
@@ -83335,7 +83394,7 @@ Fore
 Refer: 35 67 S 0.34 0 0 0.34 9.54 435.46 2
 Refer: 33 65 S 0.34 0 0 0.34 179.54 220.46 2
 Refer: 46 78 S 0.34 0 0 0.34 379.27 -0.160034 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: endmedium
@@ -84042,7 +84101,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 65 97 N 0.43 0 0 0.43 -415.485 455.25 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0364
@@ -84054,7 +84113,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 69 101 S 0.43 0 0 0.43 -432.035 455.25 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0365
@@ -84066,7 +84125,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 73 105 S 0.43 0 0 0.43 -426.335 456.655 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0366
@@ -84078,7 +84137,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 79 111 S 0.43 0 0 0.43 -427.785 455.25 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0367
@@ -84090,7 +84149,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 85 117 N 0.43 0 0 0.43 -431.92 454.4 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0368
@@ -84102,7 +84161,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 67 99 S 0.43 0 0 0.43 -429.455 453.25 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0369
@@ -84114,7 +84173,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 68 100 S 0.43 0 0 0.43 -433.37 453.805 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni036A
@@ -84126,7 +84185,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 72 104 N 0.43 0 0 0.43 -421.64 456.655 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni036B
@@ -84138,7 +84197,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 77 109 S 0.43 0 0 0.43 -431.565 458.1 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni036C
@@ -84150,7 +84209,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 82 114 S 0.43 0 0 0.43 -425.1 458.1 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni036D
@@ -84162,7 +84221,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 84 116 S 0.43 0 0 0.43 -396.36 454.471 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni036E
@@ -84174,7 +84233,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 86 118 S 0.43 0 0 0.43 -423.64 454.26 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni036F
@@ -84186,7 +84245,7 @@ AnchorPoint: "above" -300 420 mark 0
 LayerCount: 2
 Fore
 Refer: 88 120 S 0.43 0 0 0.43 -423.64 456.25 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni035B
@@ -84436,7 +84495,7 @@ LayerCount: 2
 Fore
 Refer: 3188 820 N 1 0 0 1 590 -16 2
 Refer: 770 1086 S 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: jyus_malyj
