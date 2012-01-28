@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1327713843
+ModificationTime: 1327754002
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -96,8 +96,8 @@ Lookup: 1 0 0 "'tnum' Tabular Numbers"  {"'tnum' Tabular Numbers-subtable"  } ['
 Lookup: 1 0 0 "'lnum' Lining Figures"  {"'lnum' Lining Figures-subtable"  } ['lnum' ('DFLT' <'dflt' > ) ]
 Lookup: 4 8 0 "'frac' Diagonal Fractions"  {"'frac' Diagonal Fractions slash subtable"  "'frac' Diagonal Fractions fraction subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 1 0 0 "'zero' Slashed Zero"  {"'zero' Slashed Zero subtable"  } ['zero' ('DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "'subs' Subscript"  {"'subs' Subscript-subtable" ("inferior" ) } ['subs' ('DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "'sups' Superscript"  {"'sups' Superscript-subtable" ("superior" ) } ['sups' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'subs' Subscript"  {"'subs' Subscript-subtable" ("inferior" ) } ['subs' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'sups' Superscript"  {"'sups' Superscript-subtable" ("superior" ) } ['sups' ('DFLT' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' Discretionary Ligatures in Armenian"  {"'dlig' Discretionary Ligatures in Armenian subtable"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Armenian"  {"'hlig' Historic Ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
@@ -133,6 +133,11 @@ Lookup: 1 9 0 "'init' Initial Forms in Arabic"  {"'init' Initial Forms in Arabic
 Lookup: 1 9 0 "'medi' Medial Forms in Arabic"  {"'medi' Medial Forms in Arabic subtable"  } ['medi' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'fina' Terminal Forms in Arabic"  {"'fina' Terminal Forms in Arabic subtable"  } ['fina' ('arab' <'dflt' > ) ]
 Lookup: 4 0 0 "'rlig' Required Ligatures in Arabic"  {"'rlig' Required Ligatures in Arabic subtable"  } ['rlig' ('arab' <'dflt' > ) ]
+Lookup: 4 0 0 "FreeSerif-'blws' Below Base Substitutions in Devanagari"  {"FreeSerif-'blws' Below Base Substitutions in Devanagari-anudatta"  } ['blws' ('dev2' <'MAR ' 'SAN ' 'dflt' > 'deva' <'MAR ' 'SAN ' 'dflt' > ) ]
+Lookup: 4 0 0 "FreeSerif-'abvs' Above Base Substitutions in Devanagari"  {"FreeSerif-'abvs' Above Base Substitutions in Devanagari subtable"  } ['abvs' ('dev2' <'MAR ' 'SAN ' 'dflt' > 'deva' <'MAR ' 'SAN ' 'dflt' > ) ]
+Lookup: 1 0 0 "FreeSerif-Substitute rakaar blwf in Devanagari"  {"FreeSerif-Sutstitute rakaar blwf in Devanagari-subtable"  } []
+Lookup: 4 0 0 "FreeSerif-Substitute rakaar for virama-ra in Devanagari"  {"FreeSerif-Substitute rakaar for virama-ra in Devanagari-subtable"  } []
+Lookup: 4 0 0 "FreeSerif-'blwf' Below Base Forms in Devanagari"  {"FreeSerif-'blwf' Below Base Forms in Devanagari subtable"  } ['blwf' ('dev2' <'MAR ' 'SAN ' 'dflt' > 'deva' <'MAR ' 'SAN ' 'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Devanagari"  {"'abvm' Above Base Mark in Devanagari subtable"  } ['abvm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Devanagari"  {"'blwm' Below Base Mark in Devanagari-nukta"  "'blwm' Below Base Mark in Devanagari subtable"  "'blwm' Below Base Mark in Devanagari rakaar"  } ['blwm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Devanagari"  {"'mkmk' Mark to Mark in Devanagari-above"  } ['mkmk' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
@@ -633,7 +638,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 2288 16 10
+WinInfo: 61680 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 23 [-14 0 461 473 673 691]
@@ -661,7 +666,7 @@ Grid
  1333.2 259.974 l 0
 EndSplineSet
 AnchorClass2: "dev-abovemark"  "'mkmk' Mark to Mark in Devanagari-above" "dev-rakaar"  "'blwm' Below Base Mark in Devanagari rakaar" "dev-below"  "'blwm' Below Base Mark in Devanagari subtable" "dev-nukta"  "'blwm' Below Base Mark in Devanagari-nukta" "dev-above"  "'abvm' Above Base Mark in Devanagari subtable" "topright"  "'mark' Mark Positioning subtable" "arab_diacritic"  "'mkmk' Mark to Mark in Arabic subtable" "above_arabic"  "'mark' Mark Positioning in Arabic subtable" "below_arabic"  "'mark' Mark Positioning in Arabic subtable" "abovegk"  "'mark' Mark Positioning in Greek and Coptic subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "ogonek"  "'mark' Mark Positioning in Latin 1 subtable" "middle"  "'mark' Mark Positioning subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 2 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 2 subtable" "thai_below"  "'mark' Mark Positioning in Thai 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "below"  "'mark' Mark Positioning in Latin" 
-BeginChars: 66560 4599
+BeginChars: 66560 4618
 
 StartChar: space
 Encoding: 32 32 0
@@ -108095,25 +108100,25 @@ StartChar: usigndeva
 Encoding: 2369 2369 4322
 Width: 0
 Flags: HMW
-AnchorPoint: "dev-below" -180 -35 mark 0
+AnchorPoint: "dev-below" -180 -25 mark 0
 LayerCount: 2
 Fore
 SplineSet
-139 -108 m 0
- 139 -178 82 -211 11 -211 c 0
- -141 -211 -271 -84 -331 15 c 0
- -334 20 -338 30 -338 39 c 0
- -338 51 -331 55 -322 55 c 0
- -300 55 -276 29 -267 15 c 0
- -225 -56 -140 -132 -36 -132 c 0
- 15 -132 60 -109 60 -61 c 0
- 60 -49 57 -38 53 -33 c 0
- 50 -28 36 -25 24 -25 c 0
- -14 -25 -45 -45 -63 -69 c 0
- -65 -72 -69 -74 -76 -74 c 0
- -102 -74 -139 -37 -139 -11 c 0
- -139 3 -95 55 -24 55 c 0
- 56 55 139 -25 139 -108 c 0
+0 -197 m 0
+ 0 -267 -57 -300 -128 -300 c 0
+ -280 -300 -410 -173 -470 -74 c 0
+ -473 -69 -477 -59 -477 -50 c 0
+ -477 -38 -470 -34 -461 -34 c 0
+ -439 -34 -415 -60 -406 -74 c 0
+ -364 -145 -279 -221 -175 -221 c 0
+ -124 -221 -79 -198 -79 -150 c 0
+ -79 -138 -82 -127 -86 -122 c 0
+ -89 -117 -103 -114 -115 -114 c 0
+ -153 -114 -184 -134 -202 -158 c 0
+ -204 -161 -208 -163 -215 -163 c 0
+ -241 -163 -278 -126 -278 -100 c 0
+ -278 -86 -234 -34 -163 -34 c 0
+ -83 -34 0 -114 0 -197 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -108122,23 +108127,23 @@ StartChar: uusigndeva
 Encoding: 2370 2370 4323
 Width: 0
 Flags: HMW
-AnchorPoint: "dev-below" -285 -26 mark 0
+AnchorPoint: "dev-below" -245 -6 mark 0
 LayerCount: 2
 Fore
 SplineSet
-239 -208 m 0
- 239 -220 232 -224 223 -224 c 0
- 202 -224 180 -202 172 -190 c 0
- 131 -135 46 -7 -49 -7 c 0
- -83 -7 -120 -24 -120 -59 c 0
- -120 -88 -89 -103 -60 -103 c 0
- -38 -103 -34 -95 -24 -95 c 0
- 2 -95 40 -132 40 -158 c 0
- 40 -180 4 -182 -13 -182 c 0
- -94 -182 -199 -96 -199 -12 c 0
- -199 41 -153 72 -96 72 c 0
- 46 72 173 -103 227 -178 c 0
- 231 -184 239 -196 239 -208 c 0
+0 -284 m 0
+ 0 -296 -7 -300 -16 -300 c 0
+ -37 -300 -59 -278 -67 -266 c 0
+ -108 -211 -193 -83 -288 -83 c 0
+ -322 -83 -359 -100 -359 -135 c 0
+ -359 -164 -328 -179 -299 -179 c 0
+ -277 -179 -273 -171 -263 -171 c 0
+ -237 -171 -199 -208 -199 -234 c 0
+ -199 -256 -235 -258 -252 -258 c 0
+ -333 -258 -438 -172 -438 -88 c 0
+ -438 -35 -392 -4 -335 -4 c 0
+ -193 -4 -66 -179 -12 -254 c 0
+ -8 -260 0 -272 0 -284 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -109759,7 +109764,7 @@ EndChar
 
 StartChar: khadeva
 Encoding: 2326 2326 4368
-Width: 541
+Width: 797
 Flags: HMW
 AnchorPoint: "dev-rakaar" 526 210 basechar 0
 AnchorPoint: "dev-below" 540 -36 basechar 0
@@ -109768,9 +109773,19 @@ AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-594 529 m 0
- 594 519 589 517 582 517 c 2
- 224 517 l 1
+850 529 m 0xfa
+ 850 519 845 517 838 517 c 2
+ 594 517 l 1
+ 594 -41 l 2
+ 594 -50 589 -52 582 -52 c 0
+ 551 -52 489 10 489 41 c 2
+ 489 127 l 1
+ 480 126 470 125 460 125 c 0
+ 356 125 224 222 224 325 c 0
+ 224 402 302 444 379 444 c 0
+ 425 444 456 432 489 412 c 1
+ 489 517 l 1
+ 224 517 l 1xf6
  228 491 230 465 230 440 c 0
  230 369 212 249 126 233 c 1
  166 155 259 80 320 32 c 0
@@ -109784,22 +109799,15 @@ SplineSet
  41 517 l 2
  9 517 -52 579 -52 610 c 0
  -52 619 -47 622 -41 622 c 2
- 501 622 l 2
- 533 622 594 559 594 529 c 0
-594 244 m 0
- 594 161 521 121 450 121 c 0
- 386 121 332 151 288 195 c 0
- 258 224 224 270 224 325 c 0
- 224 408 296 448 368 448 c 0
- 432 448 486 419 530 375 c 0
- 560 345 594 299 594 244 c 0
-489 325 m 0
- 489 330 489 334 488 338 c 1
- 478 341 464 343 450 343 c 0
- 389 343 329 309 329 244 c 2
- 329 232 l 1
- 340 228 354 226 368 226 c 0
- 429 226 489 260 489 325 c 0
+ 757 622 l 2
+ 789 622 850 559 850 529 c 0xfa
+489 299 m 1
+ 489 337 l 1
+ 481 338 471 339 460 339 c 0
+ 399 339 329 304 329 244 c 2
+ 329 238 l 1
+ 343 233 361 230 379 230 c 0
+ 432 230 479 255 489 299 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -110275,7 +110283,7 @@ StartChar: anusvaradeva
 Encoding: 2306 2306 4380
 Width: 0
 Flags: HMW
-AnchorPoint: "dev-above" -190 610 mark 0
+AnchorPoint: "dev-above" -240 610 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -110798,44 +110806,11 @@ Flags: HMW
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-726 529 m 0
- 726 519 721 517 714 517 c 2
- 457 517 l 1
- 457 381 l 2
- 457 371 451 369 445 369 c 0
- 408 369 369 371 334 371 c 0
- 281 371 220 367 205 325 c 1
- 242 326 285 332 324 332 c 0
- 367 332 396 323 426 301 c 0
- 463 275 506 229 506 170 c 0
- 506 66 387 29 292 29 c 0
- 157 29 20 161 -2 288 c 0
- -3 294 -3 295 -3 297 c 0
- -3 306 2 309 9 309 c 0
- 39 309 97 251 102 219 c 0
- 105 199 115 169 125 159 c 0
- 140 144 183 134 211 134 c 0
- 290 134 380 161 398 227 c 1
- 361 227 317 220 279 220 c 0
- 233 220 205 230 177 251 c 0
- 141 277 97 324 97 382 c 0
- 97 465 171 476 253 476 c 0
- 286 476 320 474 352 474 c 1
- 352 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 633 622 l 2
- 665 622 726 559 726 529 c 0
-377 -99 m 1
- 306 -171 l 1
- 235 -99 l 1
- 306 -28 l 1
- 377 -99 l 1
-EndSplineSet
-Validated: 3073
+Refer: 4399 2364 S 1 0 0 1 425 -150 2
+Refer: 4358 2337 N 1 0 0 1 0 0 2
+Validated: 32769
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" ddadeva nuktadeva
+LCarets2: 1 0 
 EndChar
 
 StartChar: rhadeva
@@ -110845,43 +110820,11 @@ Flags: HMW
 AnchorPoint: "dev-above" 373 610 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-386 171 m 2
- 386 174 l 1
- 352 166 313 139 300 104 c 1
- 337 110 386 128 386 171 c 2
-661 529 m 0
- 661 519 656 517 649 517 c 2
- 425 517 l 1
- 425 369 l 2
- 425 360 420 357 413 357 c 2
- 393 357 l 2
- 236.5 357 102 350.9 102 227 c 0
- 102 191 111 153 124 136 c 1
- 141 122 181 110 212 106 c 1
- 202 122 192 144 192 167 c 0
- 192 226 259 281 323 281 c 0
- 386 281 442 223 466 182 c 0
- 481 157 491 129 491 90 c 0
- 491 20 410 -3 347 -3 c 0
- 247 -3 177 28 124 70 c 0
- 59 120 -3 201 -3 308 c 0
- -3 463 155 462 311 462 c 2
- 320 462 l 1
- 320 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 568 622 l 2
- 600 622 661 559 661 529 c 0
-377 -148 m 1
- 306 -219 l 1
- 235 -148 l 1
- 306 -76 l 1
- 377 -148 l 1
-EndSplineSet
-Validated: 3105
+Refer: 4399 2364 S 1 0 0 1 425 -194 2
+Refer: 4359 2338 N 1 0 0 1 0 0 2
+Validated: 32769
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" ddhadeva nuktadeva
+LCarets2: 1 0 
 EndChar
 
 StartChar: jhadeva
@@ -111174,50 +111117,9 @@ AnchorPoint: "dev-below" 320 -36 basechar 0
 AnchorPoint: "dev-above" 313 610 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-796 529 m 0
- 796 519 791 517 784 517 c 2
- 367 517 l 1
- 367 415 l 1
- 381 419 394 420 408 420 c 0
- 456 420 499 400 535 371 c 0
- 572 341 625 284 625 216 c 0
- 625 154 606 55 590 11 c 0
- 588 5 584 4 579 4 c 0
- 547 4 486 67 486 97 c 0
- 486 105 520 204 520 297 c 0
- 520 302 520 307 519 312 c 1
- 511 314 501 316 489 316 c 0
- 434 316 390 279 367 240 c 1
- 367 -41 l 2
- 367 -50 362 -52 355 -52 c 0
- 324 -52 262 10 262 41 c 2
- 262 119 l 1
- 248 116 233 114 217 114 c 0
- 148 114 96 147 58 185 c 0
- 30 213 -3 256 -3 308 c 0
- -3 390 93 442 174 442 c 0
- 208 442 237 434 262 419 c 1
- 262 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 703 622 l 2
- 734 622 796 559 796 529 c 0
-262 300 m 1
- 262 337 l 1
- 255 337 l 2
- 197 337 102 298 102 227 c 2
- 102 223 l 1
- 112 221 124 219 136 219 c 0
- 196 219 255 249 262 300 c 1
-215 49 m 1
- 144 -22 l 1
- 72 49 l 1
- 144 120 l 1
- 215 49 l 1
-EndSplineSet
-Validated: 3073
+Refer: 4399 2364 S 1 0 0 1 265 0 2
+Refer: 4387 2325 N 1 0 0 1 0 0 2
+Validated: 32769
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" kadeva nuktadeva
 LCarets2: 1 0 
 EndChar
@@ -111274,6 +111176,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" khadeva nuktadeva
+LCarets2: 1 0 
 EndChar
 
 StartChar: ghhadeva
@@ -111284,58 +111187,34 @@ AnchorPoint: "dev-below" 440 -36 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-747 529 m 0
- 747 519 741 517 735 517 c 2
- 491 517 l 1
- 491 -41 l 2
- 491 -50 485 -52 479 -52 c 0
- 447 -52 386 10 386 41 c 2
- 386 517 l 1
- 167 517 l 1
- 193 433 206 348 206 263 c 0
- 206 247 207 231 207 214 c 0
- 207 175 202 116 157 116 c 0
- 86 116 -3 198 -3 257 c 0
- -3 289 3 328 35 328 c 0
- 65 328 101 297 102 297 c 1
- 102 312 101 328 101 344 c 0
- 101 403 94 461 82 517 c 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 654 622 l 2
- 685 622 747 559 747 529 c 0
-333 49 m 1
- 262 -22 l 1
- 191 49 l 1
- 262 120 l 1
- 333 49 l 1
-EndSplineSet
-Validated: 3073
+Refer: 4399 2364 S 1 0 0 1 385 0 2
+Refer: 4350 2327 N 1 0 0 1 0 0 2
+Validated: 32769
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" gadeva nuktadeva
+LCarets2: 1 0 
 EndChar
 
 StartChar: zadeva
 Encoding: 2395 2395 4405
-Width: 813
+Width: 863
 Flags: HMW
-AnchorPoint: "dev-below" 560 -36 basechar 0
-AnchorPoint: "dev-above" 553 610 basechar 0
+AnchorPoint: "dev-below" 610 -36 basechar 0
+AnchorPoint: "dev-above" 603 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-866 529 m 0
- 866 519 861 517 854 517 c 2
- 610 517 l 1
- 610 -41 l 2
- 610 -50 605 -52 598 -52 c 0
- 568 -52 511 4 506 37 c 1
- 447 -22 l 1
- 375 49 l 1
- 447 120 l 1
- 505 62 l 1
- 505 323 l 1
+542 49 m 1
+ 471 -22 l 1
+ 400 49 l 1
+ 471 120 l 1
+ 542 49 l 1
+916 529 m 0
+ 916 519 911 517 904 517 c 2
+ 660 517 l 1
+ 660 -41 l 2
+ 660 -50 655 -52 648 -52 c 0
+ 617 -52 555 10 555 41 c 2
+ 555 323 l 1
  346 323 l 1
  374 290 421 223 421 150 c 0
  421 91 389 44 331 44 c 0
@@ -111349,16 +111228,17 @@ SplineSet
  266 335 226 352 204 396 c 0
  201 402 198 410 198 416 c 0
  198 426 204 428 210 428 c 2
- 505 428 l 1
- 505 517 l 1
+ 555 428 l 1
+ 555 517 l 1
  41 517 l 2
  9 517 -52 579 -52 610 c 0
  -52 619 -47 622 -41 622 c 2
- 773 622 l 2
- 805 622 866 559 866 529 c 0
+ 823 622 l 2
+ 855 622 916 559 916 529 c 0
 EndSplineSet
 Validated: 3073
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" jadeva nuktadeva
+LCarets2: 1 0 
 EndChar
 
 StartChar: fadeva
@@ -111369,47 +111249,11 @@ AnchorPoint: "dev-below" 360 -36 basechar 0
 AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-306 345 m 1
- 306 517 l 1
- 148 517 l 1
- 140 497 137 471 137 443 c 0
- 137 388 150 324 169 282 c 1
- 176 280 183 280 191 280 c 0
- 242 280 292 308 306 345 c 1
-841 529 m 0
- 841 519 835 517 829 517 c 2
- 411 517 l 1
- 411 442 l 1
- 425 446 440 448 454 448 c 0
- 502 448 545 427 580 399 c 0
- 617 369 670 312 670 244 c 0
- 670 175 649 62 632 11 c 0
- 630 5 626 4 621 4 c 0
- 589 4 528 67 528 97 c 0
- 528 101 565 224 565 325 c 0
- 565 330 565 335 564 339 c 1
- 556 341 546 343 536 343 c 0
- 476 343 432 302 411 257 c 1
- 411 -41 l 2
- 411 -50 406 -52 399 -52 c 0
- 367 -52 306 10 306 41 c 2
- 306 178 l 1
- 295 176 283 175 272 175 c 0
- 210 175 164 209 133 240 c 0
- 71 304 33 408 32 518 c 1
- 2 527 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 748 622 l 2
- 779 622 841 559 841 529 c 0
-251 49 m 1
- 180 -22 l 1
- 108 49 l 1
- 180 120 l 1
- 251 49 l 1
-EndSplineSet
-Validated: 3073
+Refer: 4399 2364 S 1 0 0 1 303 0 2
+Refer: 4361 2347 N 1 0 0 1 0 0 2
+Validated: 32769
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" phadeva nuktadeva
+LCarets2: 1 0 
 EndChar
 
 StartChar: eshortsigndeva
@@ -111420,15 +111264,15 @@ AnchorPoint: "dev-above" -130 610 mark 0
 LayerCount: 2
 Fore
 SplineSet
--115 625 m 1
- -147 625 l 1
- -147 680 -216 704 -267 704 c 0
- -304 704 -346 694 -387 694 c 0
- -468 694 -539 753 -539 870 c 1
- -507 870 l 1
- -507 817 -451 773 -396 773 c 0
- -358 773 -316 782 -276 782 c 0
- -232 782 -115 755 -115 625 c 1
+-115 625 m 5
+ -147 625 l 5
+ -147 680 -216 704 -267 704 c 4
+ -304 704 -346 694 -387 694 c 4
+ -468 694 -539 753 -539 870 c 5
+ -507 870 l 5
+ -507 817 -451 773 -396 773 c 4
+ -358 773 -316 782 -276 782 c 4
+ -232 782 -115 755 -115 625 c 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -111485,7 +111329,7 @@ SplineSet
  553 517 l 1
  475 517 l 2
  444 517 382 579 382 610 c 0
- 382 619 388 622 394 622 c 2
+ 382 619 388 622 394 622 c 6
  1051 622 l 2
  1082 622 1144 559 1144 529 c 0
 EndSplineSet
@@ -111736,8 +111580,8 @@ Width: 341
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 4342 2373 S 1 0 0 1 230 0 2
-Refer: 4371 2366 N 1 0 0 1 0 0 2
+Refer: 4342 2373 N 1 0 0 1 230 0 2
+Refer: 4371 2366 S 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
@@ -111923,8 +111767,182 @@ Refer: 4345 2309 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
+StartChar: openya
+Encoding: 61711 -1 4432
+Width: 694
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+747 529 m 0
+ 747 519 741 517 735 517 c 2
+ 491 517 l 1
+ 491 -41 l 2
+ 491 -50 485 -52 479 -52 c 0
+ 447 -52 386 10 386 41 c 2
+ 386 105 l 1
+ 357 89 323 81 288 81 c 0
+ 164 81 53 194 16 296 c 0
+ 14 301 13 305 13 308 c 0
+ 13 317 18 320 25 320 c 0
+ 81 320 122 343 149 371 c 1
+ -9 374 l 2
+ -38 375 -102 435 -102 467 c 0
+ -102 477 -97 479 -90 479 c 2
+ 205 474 l 2
+ 236 473 298 411 298 381 c 0
+ 298 380 298 380 293 355 c 0
+ 287 318 239 225 126 216 c 1
+ 128 213 129 211 132 207 c 1
+ 144 198 172 185 207 185 c 0
+ 306 185 376 262 386 355 c 1
+ 386 517 l 1
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 654 622 l 2
+ 685 622 747 559 747 529 c 0
+EndSplineSet
+Validated: 3073
+Ligature2: "Substitute openya for virama-ya in Devanagari-subtable" virama yadeva
+EndChar
+
+StartChar: dev_reph_ematra.abvs
+Encoding: 61697 -1 4433
+Width: 1000
+Flags: HMW
+AnchorPoint: "dev-above" -160 613 mark 0
+LayerCount: 2
+Fore
+Refer: 4325 2375 S 1 0 0 1 -40 0 2
+Refer: 4436 -1 N 1 0 0 1 -90 0 2
+Validated: 32769
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" ematradeva dev_ra.rphf
+LCarets2: 1 0 
+EndChar
+
+StartChar: dev_reph_aimatra.abvs
+Encoding: 61698 -1 4434
+Width: 0
+Flags: HMW
+AnchorPoint: "dev-above" -160 588 mark 0
+LayerCount: 2
+Fore
+Refer: 4436 -1 S 1 0 0 1 -90 0 2
+Refer: 4326 2376 N 1 0 0 1 -70 0 2
+Validated: 32769
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva dev_ra.rphf
+LCarets2: 1 0 
+EndChar
+
+StartChar: dev_rakaar
+Encoding: 61707 -1 4435
+Width: 0
+Flags: HMW
+AnchorPoint: "dev-rakaar" -150 207 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-92 204 m 0
+ -92 199 -92 195 -96 192 c 2
+ -377 -37 l 2
+ -381 -40 -383 -40 -386 -40 c 0
+ -412 -40 -450 -2 -450 24 c 0
+ -450 30 -448 33 -443 37 c 2
+ -167 263 l 2
+ -163 266 -160 267 -155 267 c 0
+ -129 267 -92 230 -92 204 c 0
+EndSplineSet
+Validated: 3073
+Ligature2: "'blwf' Below Base Forms in Devanagari subtable" radeva virama
+Ligature2: "Substitute rakaar for virama-ra in Devanagari-subtable" virama radeva
+Substitution2: "Sutstitute rakaar blwf in Devanagari-subtable" dev_rakaar.blwf
+Ligature2: "FreeSerif-Substitute rakaar for virama-ra in Devanagari-subtable" virama radeva
+LCarets2: 1 0 
+Ligature2: "FreeSerif-'blwf' Below Base Forms in Devanagari subtable" radeva virama
+Substitution2: "FreeSerif-Sutstitute rakaar blwf in Devanagari-subtable" dev_rakaar.blwf
+EndChar
+
+StartChar: dev_ra.rphf
+Encoding: 61703 -1 4436
+Width: 256
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+96 801 m 0
+ 96 790 89 786 81 786 c 0
+ 59 786 37 814 -33 814 c 0
+ -55 814 -69 792 -69 769 c 0
+ -69 720 -24 712 -5 702 c 0
+ 14 693 40 666 40 644 c 0
+ 40 632 33 628 24 628 c 0
+ 20 628 11 631 11 631 c 1
+ -43 649 -87 684 -117 727 c 0
+ -135 753 -148 784 -148 816 c 0
+ -148 859 -123 893 -81 893 c 0
+ -16 893 82 864 95 809 c 0
+ 96 805 96 803 96 801 c 0
+EndSplineSet
+Validated: 3073
+Ligature2: "'rphf' Reph Form in Devanagari subtable" radeva virama
+EndChar
+
+StartChar: dev_rakaar.blwf
+Encoding: 61708 -1 4437
+Width: 0
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+-63 -172 m 0
+ -63 -184 -70 -188 -79 -188 c 0
+ -90 -188 -102 -181 -109 -176 c 2
+ -205 -106 l 1
+ -333 -296 l 2
+ -335 -299 -338 -302 -346 -302 c 0
+ -372 -302 -409 -264 -409 -239 c 0
+ -409 -235 -408 -232 -406 -229 c 2
+ -267 -22 l 2
+ -265 -19 -261 -16 -254 -16 c 0
+ -242 -16 -230 -23 -224 -28 c 2
+ -96 -121 l 2
+ -84 -130 -63 -153 -63 -172 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: dev_ra__anusvara.rphf
+Encoding: 61702 -1 4438
+Width: 256
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+68 870 m 0
+ 68 858 61 854 52 854 c 0
+ 40 854 -6 871 -62 871 c 0
+ -96 871 -113 838 -113 807 c 0
+ -113 751 -69 722 -14 706 c 0
+ 9 699 40 668 40 644 c 0
+ 40 632 33 628 24 628 c 0
+ 8 628 -97 661 -156 748 c 0
+ -177 779 -192 816 -192 854 c 0
+ -192 907 -162 950 -109 950 c 0
+ -67 950 -26 941 13 932 c 0
+ 35 926 68 895 68 870 c 0
+96 768 m 1
+ 25 697 l 1
+ -46 768 l 1
+ 25 839 l 1
+ 96 768 l 1
+EndSplineSet
+Validated: 3073
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" dev_ra.rphf anusvaradeva
+EndChar
+
 StartChar: dev_ii_anusvara.abvs
-Encoding: 61712 -1 4432
+Encoding: 61712 -1 4439
 Width: 574
 Flags: MW
 LayerCount: 2
@@ -111988,7 +112006,7 @@ Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" iideva anusv
 EndChar
 
 StartChar: dev_ka__ka.akhn
-Encoding: 61713 -1 4433
+Encoding: 61713 -1 4440
 Width: 827
 Flags: MW
 LayerCount: 2
@@ -112051,7 +112069,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" kadeva virama kadeva
 EndChar
 
 StartChar: dev_ka__ta.akhn
-Encoding: 61714 -1 4434
+Encoding: 61714 -1 4441
 Width: 788
 Flags: MW
 LayerCount: 2
@@ -112102,7 +112120,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" kadeva virama tadeva
 EndChar
 
 StartChar: dev_ka__na.akhn
-Encoding: 61715 -1 4435
+Encoding: 61715 -1 4442
 Width: 743
 Flags: MW
 LayerCount: 2
@@ -112155,7 +112173,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" kadeva virama nad
 EndChar
 
 StartChar: dev_ka__ma.akhn
-Encoding: 61716 -1 4436
+Encoding: 61716 -1 4443
 Width: 1052
 Flags: MW
 LayerCount: 2
@@ -112211,7 +112229,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" kadeva virama mad
 EndChar
 
 StartChar: dev_ka__ya.akhn
-Encoding: 61717 -1 4437
+Encoding: 61717 -1 4444
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -112267,7 +112285,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" kadeva virama yadeva
 EndChar
 
 StartChar: dev_ka__la.akhn
-Encoding: 61718 -1 4438
+Encoding: 61718 -1 4445
 Width: 887
 Flags: MW
 LayerCount: 2
@@ -112326,7 +112344,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" kadeva virama lad
 EndChar
 
 StartChar: dev_ka__va.akhn
-Encoding: 61719 -1 4439
+Encoding: 61719 -1 4446
 Width: 827
 Flags: MW
 LayerCount: 2
@@ -112382,7 +112400,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" kadeva virama vad
 EndChar
 
 StartChar: dev_ka__ssa.akhn
-Encoding: 61720 -1 4440
+Encoding: 61720 -1 4447
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -112436,7 +112454,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" kadeva virama ssadeva
 EndChar
 
 StartChar: dev_gha__na.akhn
-Encoding: 61721 -1 4441
+Encoding: 61721 -1 4448
 Width: 694
 Flags: MW
 LayerCount: 2
@@ -112482,7 +112500,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" ghadeva virama na
 EndChar
 
 StartChar: dev_nga__ka.akhn
-Encoding: 61722 -1 4442
+Encoding: 61722 -1 4449
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -112554,7 +112572,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama kadeva
 EndChar
 
 StartChar: dev_nga__kha.akhn
-Encoding: 61723 -1 4443
+Encoding: 61723 -1 4450
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -112627,7 +112645,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama khadeva
 EndChar
 
 StartChar: dev_nga__ga.akhn
-Encoding: 61724 -1 4444
+Encoding: 61724 -1 4451
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -112687,7 +112705,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama gadeva
 EndChar
 
 StartChar: dev_nga__gha.akhn
-Encoding: 61725 -1 4445
+Encoding: 61725 -1 4452
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -112754,7 +112772,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama ghadeva
 EndChar
 
 StartChar: dev_nga__nga.akhn
-Encoding: 61726 -1 4446
+Encoding: 61726 -1 4453
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -112827,7 +112845,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama ngadeva
 EndChar
 
 StartChar: dev_nga__na.akhn
-Encoding: 61727 -1 4447
+Encoding: 61727 -1 4454
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -112885,7 +112903,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama nadeva
 EndChar
 
 StartChar: dev_nga__ma.akhn
-Encoding: 61728 -1 4448
+Encoding: 61728 -1 4455
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -112949,7 +112967,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama madeva
 EndChar
 
 StartChar: dev_nga__ya.akhn
-Encoding: 61729 -1 4449
+Encoding: 61729 -1 4456
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -113012,7 +113030,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ngadeva virama yadeva
 EndChar
 
 StartChar: dev_ca__ca.akhn
-Encoding: 61730 -1 4450
+Encoding: 61730 -1 4457
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -113064,7 +113082,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" cadeva virama cad
 EndChar
 
 StartChar: dev_ca__nya.akhn
-Encoding: 61731 -1 4451
+Encoding: 61731 -1 4458
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -113118,7 +113136,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" cadeva virama nya
 EndChar
 
 StartChar: dev_cha__ya.akhn
-Encoding: 61732 -1 4452
+Encoding: 61732 -1 4459
 Width: 1206
 Flags: MW
 LayerCount: 2
@@ -113179,7 +113197,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" chadeva virama yadeva
 EndChar
 
 StartChar: dev_ja__nya.akhn
-Encoding: 61733 -1 4453
+Encoding: 61733 -1 4460
 Width: 694
 Flags: MW
 LayerCount: 2
@@ -113226,7 +113244,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" jadeva virama nyadeva
 EndChar
 
 StartChar: dev_nya__ca.akhn
-Encoding: 61734 -1 4454
+Encoding: 61734 -1 4461
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -113282,7 +113300,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" nyadeva virama ca
 EndChar
 
 StartChar: dev_nya__ja.akhn
-Encoding: 61735 -1 4455
+Encoding: 61735 -1 4462
 Width: 813
 Flags: MW
 LayerCount: 2
@@ -113339,7 +113357,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" nyadeva virama ja
 EndChar
 
 StartChar: dev_tta__ka.akhn
-Encoding: 61736 -1 4456
+Encoding: 61736 -1 4463
 Width: 628
 Flags: MW
 LayerCount: 2
@@ -113395,7 +113413,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ttadeva virama kadeva
 EndChar
 
 StartChar: dev_tta__tta.akhn
-Encoding: 61737 -1 4457
+Encoding: 61737 -1 4464
 Width: 628
 Flags: MW
 LayerCount: 2
@@ -113441,7 +113459,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ttadeva virama ttadeva
 EndChar
 
 StartChar: dev_tta__ttha.akhn
-Encoding: 61738 -1 4458
+Encoding: 61738 -1 4465
 Width: 628
 Flags: MW
 LayerCount: 2
@@ -113491,7 +113509,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ttadeva virama tthadeva
 EndChar
 
 StartChar: dev_tta__ya.akhn
-Encoding: 61739 -1 4459
+Encoding: 61739 -1 4466
 Width: 973
 Flags: MW
 LayerCount: 2
@@ -113543,7 +113561,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ttadeva virama yadeva
 EndChar
 
 StartChar: dev_ttha__ya.akhn
-Encoding: 61740 -1 4460
+Encoding: 61740 -1 4467
 Width: 833
 Flags: MW
 LayerCount: 2
@@ -113591,7 +113609,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" tthadeva virama yadeva
 EndChar
 
 StartChar: dev_dda__ga.akhn
-Encoding: 61741 -1 4461
+Encoding: 61741 -1 4468
 Width: 673
 Flags: MW
 LayerCount: 2
@@ -113645,8 +113663,70 @@ Validated: 3073
 Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" ddadeva virama gadeva
 EndChar
 
+StartChar: dev_dda__gha.akhn
+Encoding: 61742 -1 4469
+Width: 673
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+726 529 m 0
+ 726 519 721 517 714 517 c 2
+ 457 517 l 1
+ 457 381 l 2
+ 457 371 451 369 445 369 c 0
+ 408 369 369 371 334 371 c 0
+ 285 371 219 368 205 323 c 1
+ 240 323 281 328 317 328 c 0
+ 353 328 377 323 401 311 c 0
+ 448 287 506 232 506 164 c 0
+ 506 124 487 96 464 77 c 1
+ 464 -329 l 2
+ 464 -339 458 -341 452 -341 c 0
+ 420 -341 359 -278 359 -248 c 2
+ 359 -244 l 1
+ 329 -258 294 -268 256 -268 c 0
+ 152 -268 50 -170 50 -83 c 0
+ 50 -51 69 -35 87 -26 c 1
+ 66 4 47 45 47 86 c 0
+ 47 111 55 133 69 146 c 1
+ 32 188 7 235 -2 288 c 0
+ -3 294 -3 295 -3 297 c 0
+ -3 306 2 309 9 309 c 0
+ 39 309 97 251 102 219 c 0
+ 105 199 115 169 125 159 c 0
+ 140 144 183 134 211 134 c 0
+ 257 134 377 145 398 223 c 1
+ 364 223 322 218 286 218 c 0
+ 236 218 208 228 178 249 c 0
+ 142 275 97 322 97 382 c 0
+ 97 465 171 476 253 476 c 0
+ 286 476 320 474 352 474 c 1
+ 352 517 l 1
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 633 622 l 2
+ 665 622 726 559 726 529 c 0
+359 -77 m 1
+ 359 34 l 1
+ 337 31 315 29 292 29 c 0
+ 250 29 213 41 184 55 c 1
+ 164 51 152 30 152 5 c 0
+ 152 0 152 -6 153 -11 c 1
+ 164 -10 175 -9 186 -9 c 0
+ 217 -9 279 -72 279 -102 c 0
+ 279 -112 273 -114 267 -114 c 0
+ 231 -114 158 -119 155 -162 c 1
+ 161 -163 168 -163 174 -163 c 0
+ 246 -163 315 -120 359 -77 c 1
+EndSplineSet
+Validated: 3073
+Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" ddadeva virama ghadeva
+EndChar
+
 StartChar: dev_dda__dda.akhn
-Encoding: 61742 -1 4462
+Encoding: 61743 -1 4470
 Width: 673
 Flags: MW
 LayerCount: 2
@@ -113703,7 +113783,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ddadeva virama ddadeva
 EndChar
 
 StartChar: dev_dda__ma.akhn
-Encoding: 61743 -1 4463
+Encoding: 61744 -1 4471
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -113763,7 +113843,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" ddadeva virama ma
 EndChar
 
 StartChar: dev_dda__ya.akhn
-Encoding: 61744 -1 4464
+Encoding: 61745 -1 4472
 Width: 973
 Flags: MW
 LayerCount: 2
@@ -113814,7 +113894,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ddadeva virama yadeva
 EndChar
 
 StartChar: dev_ddha__ya.akhn
-Encoding: 61745 -1 4465
+Encoding: 61746 -1 4473
 Width: 953
 Flags: MW
 LayerCount: 2
@@ -113864,7 +113944,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" ddhadeva virama yadeva
 EndChar
 
 StartChar: dev_nna__nna.akhn
-Encoding: 61746 -1 4466
+Encoding: 61747 -1 4474
 Width: 1132
 Flags: MW
 LayerCount: 2
@@ -113912,8 +113992,45 @@ Validated: 3073
 Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" nnadeva virama nnadeva
 EndChar
 
+StartChar: dev_ta__ta.akhn
+Encoding: 61748 -1 4475
+Width: 773
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+826 529 m 0
+ 826 519 821 517 814 517 c 2
+ 570 517 l 1
+ 570 -41 l 2
+ 570 -50 565 -52 558 -52 c 0
+ 527 -52 465 10 465 41 c 2
+ 465 327 l 1
+ 299 327 l 2
+ 237 327 206 270 206 213 c 0
+ 206 94 316 50 330 40 c 0
+ 348 27 391 -14 391 -41 c 0
+ 391 -50 386 -52 379 -52 c 0
+ 373 -52 365 -50 358 -46 c 0
+ 234 18 101 153 101 295 c 0
+ 101 306 102 317 104 327 c 1
+ 90 327 l 2
+ 58 327 -3 390 -3 420 c 0
+ -3 429 2 432 9 432 c 2
+ 465 432 l 1
+ 465 517 l 1
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 733 622 l 2
+ 765 622 826 559 826 529 c 0
+EndSplineSet
+Validated: 3073
+Ligature2: "'akhn' Akhand in Devanagari general-subtable" tadeva virama tadeva
+EndChar
+
 StartChar: dev_ta__na.akhn
-Encoding: 61747 -1 4467
+Encoding: 61749 -1 4476
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -113955,7 +114072,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" tadeva virama nad
 EndChar
 
 StartChar: dev_da__ga.akhn
-Encoding: 61748 -1 4468
+Encoding: 61750 -1 4477
 Width: 634
 Flags: MW
 LayerCount: 2
@@ -114004,7 +114121,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" dadeva virama gad
 EndChar
 
 StartChar: dev_da__gha.akhn
-Encoding: 61749 -1 4469
+Encoding: 61751 -1 4478
 Width: 654
 Flags: MW
 LayerCount: 2
@@ -114056,7 +114173,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" dadeva virama gha
 EndChar
 
 StartChar: dev_da__da.akhn
-Encoding: 61750 -1 4470
+Encoding: 61752 -1 4479
 Width: 588
 Flags: MW
 LayerCount: 2
@@ -114107,7 +114224,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" dadeva virama dadeva
 EndChar
 
 StartChar: dev_da__dha.akhn
-Encoding: 61751 -1 4471
+Encoding: 61753 -1 4480
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -114163,7 +114280,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" dadeva virama dhadeva
 EndChar
 
 StartChar: dev_da__na.akhn
-Encoding: 61752 -1 4472
+Encoding: 61754 -1 4481
 Width: 588
 Flags: MW
 LayerCount: 2
@@ -114207,7 +114324,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" dadeva virama nad
 EndChar
 
 StartChar: dev_da__ba.akhn
-Encoding: 61753 -1 4473
+Encoding: 61755 -1 4482
 Width: 588
 Flags: MW
 LayerCount: 2
@@ -114261,7 +114378,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" dadeva virama badeva
 EndChar
 
 StartChar: dev_da__bha.akhn
-Encoding: 61754 -1 4474
+Encoding: 61756 -1 4483
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -114312,7 +114429,7 @@ Ligature2: "'akhn' Akhand in Devanagari-old" dadeva virama bhadeva
 EndChar
 
 StartChar: dev_da__ma.akhn
-Encoding: 61755 -1 4475
+Encoding: 61757 -1 4484
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -114354,7 +114471,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" dadeva virama mad
 EndChar
 
 StartChar: dev_da__ya.akhn
-Encoding: 61756 -1 4476
+Encoding: 61758 -1 4485
 Width: 813
 Flags: MW
 LayerCount: 2
@@ -114401,7 +114518,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" dadeva virama yadeva
 EndChar
 
 StartChar: dev_da__va.akhn
-Encoding: 61757 -1 4477
+Encoding: 61759 -1 4486
 Width: 588
 Flags: MW
 LayerCount: 2
@@ -114451,7 +114568,7 @@ Ligature2: "Pre-Substitutions in Devanagari-subtable" dadeva virama vadeva
 EndChar
 
 StartChar: dev_dha__na.akhn
-Encoding: 61758 -1 4478
+Encoding: 61760 -1 4487
 Width: 694
 Flags: MW
 LayerCount: 2
@@ -114499,7 +114616,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" dhadeva virama na
 EndChar
 
 StartChar: dev_na__na.akhn
-Encoding: 61759 -1 4479
+Encoding: 61761 -1 4488
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -114536,69 +114653,8 @@ Validated: 3073
 Ligature2: "'akhn' Akhand in Devanagari-old" nadeva virama nadeva
 EndChar
 
-StartChar: dev_pa__gha.akhn
-Encoding: 61760 -1 4480
-Width: 673
-Flags: MW
-LayerCount: 2
-Fore
-SplineSet
-726 529 m 0
- 726 519 721 517 714 517 c 2
- 457 517 l 1
- 457 381 l 2
- 457 371 451 369 445 369 c 0
- 408 369 369 371 334 371 c 0
- 285 371 219 368 205 323 c 1
- 240 323 281 328 317 328 c 0
- 353 328 377 323 401 311 c 0
- 448 287 506 232 506 164 c 0
- 506 124 487 96 464 77 c 1
- 464 -329 l 2
- 464 -339 458 -341 452 -341 c 0
- 420 -341 359 -278 359 -248 c 2
- 359 -244 l 1
- 329 -258 294 -268 256 -268 c 0
- 152 -268 50 -170 50 -83 c 0
- 50 -51 69 -35 87 -26 c 1
- 66 4 47 45 47 86 c 0
- 47 111 55 133 69 146 c 1
- 32 188 7 235 -2 288 c 0
- -3 294 -3 295 -3 297 c 0
- -3 306 2 309 9 309 c 0
- 39 309 97 251 102 219 c 0
- 105 199 115 169 125 159 c 0
- 140 144 183 134 211 134 c 0
- 257 134 377 145 398 223 c 1
- 364 223 322 218 286 218 c 0
- 236 218 208 228 178 249 c 0
- 142 275 97 322 97 382 c 0
- 97 465 171 476 253 476 c 0
- 286 476 320 474 352 474 c 1
- 352 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 633 622 l 2
- 665 622 726 559 726 529 c 0
-359 -77 m 1
- 359 34 l 1
- 337 31 315 29 292 29 c 0
- 250 29 213 41 184 55 c 1
- 164 51 152 30 152 5 c 0
- 152 0 152 -6 153 -11 c 1
- 164 -10 175 -9 186 -9 c 0
- 217 -9 279 -72 279 -102 c 0
- 279 -112 273 -114 267 -114 c 0
- 231 -114 158 -119 155 -162 c 1
- 161 -163 168 -163 174 -163 c 0
- 246 -163 315 -120 359 -77 c 1
-EndSplineSet
-Validated: 3073
-EndChar
-
 StartChar: dev_pa__ta.akhn
-Encoding: 61761 -1 4481
+Encoding: 61762 -1 4489
 Width: 654
 Flags: MW
 LayerCount: 2
@@ -114636,7 +114692,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" padeva virama tad
 EndChar
 
 StartChar: dev_pa__na.akhn
-Encoding: 61762 -1 4482
+Encoding: 61763 -1 4490
 Width: 654
 Flags: MW
 LayerCount: 2
@@ -114675,7 +114731,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" padeva virama nad
 EndChar
 
 StartChar: dev_pa__la.akhn
-Encoding: 61763 -1 4483
+Encoding: 61764 -1 4491
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -114723,7 +114779,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" padeva virama lad
 EndChar
 
 StartChar: dev_ba__na.akhn
-Encoding: 61764 -1 4484
+Encoding: 61765 -1 4492
 Width: 621
 Flags: MW
 LayerCount: 2
@@ -114772,7 +114828,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" badeva virama nad
 EndChar
 
 StartChar: dev_ba__ba.akhn
-Encoding: 61765 -1 4485
+Encoding: 61766 -1 4493
 Width: 621
 Flags: MW
 LayerCount: 2
@@ -114831,7 +114887,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" badeva virama bad
 EndChar
 
 StartChar: dev_ba__va.akhn
-Encoding: 61766 -1 4486
+Encoding: 61767 -1 4494
 Width: 621
 Flags: MW
 LayerCount: 2
@@ -114885,7 +114941,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" badeva virama vad
 EndChar
 
 StartChar: dev_bha__na.akhn
-Encoding: 61767 -1 4487
+Encoding: 61768 -1 4495
 Width: 853
 Flags: MW
 LayerCount: 2
@@ -114933,7 +114989,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" bhadeva virama na
 EndChar
 
 StartChar: dev_ma__na.akhn
-Encoding: 61768 -1 4488
+Encoding: 61769 -1 4496
 Width: 853
 Flags: MW
 LayerCount: 2
@@ -114976,7 +115032,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" madeva virama nad
 EndChar
 
 StartChar: dev_ma__la.akhn
-Encoding: 61769 -1 4489
+Encoding: 61770 -1 4497
 Width: 893
 Flags: MW
 LayerCount: 2
@@ -115029,7 +115085,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" madeva virama lad
 EndChar
 
 StartChar: dev_la__la.akhn
-Encoding: 61770 -1 4490
+Encoding: 61771 -1 4498
 Width: 787
 Flags: MW
 LayerCount: 2
@@ -115082,7 +115138,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" ladeva virama lad
 EndChar
 
 StartChar: dev_va__na.akhn
-Encoding: 61771 -1 4491
+Encoding: 61772 -1 4499
 Width: 621
 Flags: MW
 LayerCount: 2
@@ -115126,7 +115182,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" vadeva virama nad
 EndChar
 
 StartChar: dev_va__va.akhn
-Encoding: 61772 -1 4492
+Encoding: 61773 -1 4500
 Width: 621
 Flags: MW
 LayerCount: 2
@@ -115175,7 +115231,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" vadeva virama vad
 EndChar
 
 StartChar: dev_sha__ca.akhn
-Encoding: 61773 -1 4493
+Encoding: 61774 -1 4501
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -115233,44 +115289,8 @@ Validated: 3073
 Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" shadeva virama cadeva
 EndChar
 
-StartChar: dev_sha__ta.akhn
-Encoding: 61774 -1 4494
-Width: 773
-Flags: MW
-LayerCount: 2
-Fore
-SplineSet
-826 529 m 0
- 826 519 821 517 814 517 c 2
- 570 517 l 1
- 570 -41 l 2
- 570 -50 565 -52 558 -52 c 0
- 527 -52 465 10 465 41 c 2
- 465 327 l 1
- 299 327 l 2
- 237 327 206 270 206 213 c 0
- 206 94 316 50 330 40 c 0
- 348 27 391 -14 391 -41 c 0
- 391 -50 386 -52 379 -52 c 0
- 373 -52 365 -50 358 -46 c 0
- 234 18 101 153 101 295 c 0
- 101 306 102 317 104 327 c 1
- 90 327 l 2
- 58 327 -3 390 -3 420 c 0
- -3 429 2 432 9 432 c 2
- 465 432 l 1
- 465 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 733 622 l 2
- 765 622 826 559 826 529 c 0
-EndSplineSet
-Validated: 3073
-EndChar
-
 StartChar: dev_sha__na.akhn
-Encoding: 61775 -1 4495
+Encoding: 61775 -1 4502
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -115320,7 +115340,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" shadeva virama na
 EndChar
 
 StartChar: dev_sha__la.akhn
-Encoding: 61776 -1 4496
+Encoding: 61776 -1 4503
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -115379,7 +115399,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" shadeva virama la
 EndChar
 
 StartChar: dev_sha__va.akhn
-Encoding: 61777 -1 4497
+Encoding: 61777 -1 4504
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -115432,7 +115452,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" shadeva virama va
 EndChar
 
 StartChar: dev_ssa__tta.akhn
-Encoding: 61778 -1 4498
+Encoding: 61778 -1 4505
 Width: 628
 Flags: MW
 LayerCount: 2
@@ -115474,7 +115494,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" ssadeva virama tt
 EndChar
 
 StartChar: dev_ssa__ttha.akhn
-Encoding: 61779 -1 4499
+Encoding: 61779 -1 4506
 Width: 628
 Flags: MW
 LayerCount: 2
@@ -115520,7 +115540,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" ssadeva virama tt
 EndChar
 
 StartChar: dev_sa__na.akhn
-Encoding: 61780 -1 4500
+Encoding: 61780 -1 4507
 Width: 853
 Flags: MW
 LayerCount: 2
@@ -115568,7 +115588,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit subtable" sadeva virama nad
 EndChar
 
 StartChar: dev_ha__nna.akhn
-Encoding: 61781 -1 4501
+Encoding: 61781 -1 4508
 Width: 728
 Flags: MW
 LayerCount: 2
@@ -115623,8 +115643,63 @@ Validated: 3105
 Ligature2: "'akhn' Akhand in Devanagari general-subtable" hadeva virama nnadeva
 EndChar
 
+StartChar: dev_ha__na.akhn
+Encoding: 61782 -1 4509
+Width: 808
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+861 529 m 0
+ 861 519 855 517 849 517 c 2
+ 403 517 l 1
+ 403 386 l 2
+ 403 377 398 374 391 374 c 0
+ 356 374 102 379 102 329 c 0
+ 102 312 105 297 110 287 c 1
+ 115 285 122 282 130 281 c 1
+ 193 305 280 326 370 326 c 0
+ 513 326 603 268 656 189 c 0
+ 676 159 690 126 690 85 c 2
+ 690 -154 l 2
+ 690 -164 685 -166 678 -166 c 0
+ 646 -166 585 -104 585 -73 c 2
+ 585 44 l 1
+ 476 44 l 1
+ 486 27 495 6 495 -18 c 0
+ 495 -66 458 -104 409 -104 c 0
+ 340 -104 242 -15 242 63 c 0
+ 242 109 276 149 328 149 c 2
+ 585 149 l 1
+ 585 166 l 2
+ 585 179 583 191 580 198 c 1
+ 547 214 498 221 451 221 c 0
+ 367 221 282 202 218 176 c 0
+ 177 160 102 130 102 73 c 0
+ 102 37 120 12 138 -6 c 0
+ 227 -96 410 -164 445 -181 c 0
+ 470 -194 518 -239 518 -268 c 0
+ 518 -278 512 -280 506 -280 c 0
+ 501 -280 497 -279 492 -277 c 0
+ 349 -219 160 -123 58 9 c 0
+ 31 43 -3 97 -3 154 c 0
+ -3 205 33 234 70 254 c 1
+ 46 279 -3 337 -3 410 c 0
+ -3 433 13 446 32 454 c 0
+ 87 479 208 479 298 479 c 1
+ 298 517 l 1
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 768 622 l 2
+ 799 622 861 559 861 529 c 0
+EndSplineSet
+Validated: 3105
+Ligature2: "'akhn' Akhand in Devanagari general-subtable" hadeva virama nadeva
+EndChar
+
 StartChar: dev_ha__ma.akhn
-Encoding: 61782 -1 4502
+Encoding: 61783 -1 4510
 Width: 893
 Flags: MW
 LayerCount: 2
@@ -115681,7 +115756,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" hadeva virama madeva
 EndChar
 
 StartChar: dev_ha__ya.akhn
-Encoding: 61783 -1 4503
+Encoding: 61784 -1 4511
 Width: 893
 Flags: MW
 LayerCount: 2
@@ -115736,7 +115811,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" hadeva virama yadeva
 EndChar
 
 StartChar: dev_ha__la.akhn
-Encoding: 61784 -1 4504
+Encoding: 61785 -1 4512
 Width: 1047
 Flags: MW
 LayerCount: 2
@@ -115798,7 +115873,7 @@ Ligature2: "'akhn' Akhand in Devanagari general-subtable" hadeva virama ladeva
 EndChar
 
 StartChar: dev_ha__va.akhn
-Encoding: 61785 -1 4505
+Encoding: 61786 -1 4513
 Width: 827
 Flags: MW
 LayerCount: 2
@@ -115856,59 +115931,8 @@ Validated: 3105
 Ligature2: "'akhn' Akhand in Devanagari general-subtable" hadeva virama vadeva
 EndChar
 
-StartChar: dev_ra.rphf
-Encoding: 61786 -1 4506
-Width: 0
-Flags: HMW
-AnchorPoint: "dev-above" -254 613 mark 0
-LayerCount: 2
-Fore
-SplineSet
--144 801 m 0
- -144 790 -151 786 -159 786 c 0
- -181 786 -203 814 -273 814 c 0
- -295 814 -309 792 -309 769 c 0
- -309 720 -264 712 -245 702 c 0
- -226 693 -200 666 -200 644 c 0
- -200 632 -207 628 -216 628 c 0
- -220 628 -229 631 -229 631 c 1
- -283 649 -327 684 -357 727 c 0
- -375 753 -388 784 -388 816 c 0
- -388 859 -363 893 -321 893 c 0
- -256 893 -158 864 -145 809 c 0
- -144 805 -144 803 -144 801 c 0
-EndSplineSet
-Validated: 3073
-Ligature2: "'rphf' Reph Form in Devanagari subtable" radeva virama
-LCarets2: 1 0 
-EndChar
-
-StartChar: dev_rakaar.blwf
-Encoding: 61787 -1 4507
-Width: 0
-Flags: HMW
-LayerCount: 2
-Fore
-SplineSet
-167 -52 m 0
- 167 -64 160 -68 151 -68 c 0
- 140 -68 128 -61 121 -56 c 2
- 25 14 l 1
- -103 -176 l 2
- -105 -179 -108 -182 -116 -182 c 0
- -142 -182 -179 -144 -179 -119 c 0
- -179 -115 -178 -112 -176 -109 c 2
- -37 98 l 2
- -35 101 -31 104 -24 104 c 0
- -12 104 0 97 6 92 c 2
- 134 -1 l 2
- 146 -10 167 -33 167 -52 c 0
-EndSplineSet
-Validated: 3073
-EndChar
-
 StartChar: dev_ra_usign.blws
-Encoding: 61788 -1 4508
+Encoding: 61787 -1 4514
 Width: 654
 Flags: MW
 LayerCount: 2
@@ -115949,7 +115973,7 @@ Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva usign
 EndChar
 
 StartChar: dev_ra_uusign.blws
-Encoding: 61789 -1 4509
+Encoding: 61788 -1 4515
 Width: 754
 Flags: MW
 LayerCount: 2
@@ -115993,7 +116017,7 @@ Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva uusig
 EndChar
 
 StartChar: dev_ha_rvocalicsign.blws
-Encoding: 61790 -1 4510
+Encoding: 61789 -1 4516
 Width: 694
 Flags: MW
 LayerCount: 2
@@ -116044,7 +116068,7 @@ Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" hadeva rvoca
 EndChar
 
 StartChar: dev_ka.half
-Encoding: 61791 -1 4511
+Encoding: 61790 -1 4517
 Width: 537
 Flags: MW
 LayerCount: 2
@@ -116088,7 +116112,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" kadeva virama zerojoin
 EndChar
 
 StartChar: dev_kha.half
-Encoding: 61792 -1 4512
+Encoding: 61791 -1 4518
 Width: 541
 Flags: MW
 LayerCount: 2
@@ -116133,7 +116157,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" khadeva virama zerojoi
 EndChar
 
 StartChar: dev_ga.half
-Encoding: 61793 -1 4513
+Encoding: 61792 -1 4519
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116162,7 +116186,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" gadeva virama zerojoin
 EndChar
 
 StartChar: dev_gha.half
-Encoding: 61794 -1 4514
+Encoding: 61793 -1 4520
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116199,7 +116223,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" ghadeva virama zerojoi
 EndChar
 
 StartChar: dev_ca.half
-Encoding: 61795 -1 4515
+Encoding: 61794 -1 4521
 Width: 478
 Flags: MW
 LayerCount: 2
@@ -116235,7 +116259,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" cadeva virama zerojoin
 EndChar
 
 StartChar: dev_ja.half
-Encoding: 61796 -1 4516
+Encoding: 61795 -1 4522
 Width: 557
 Flags: MW
 LayerCount: 2
@@ -116272,7 +116296,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" jadeva virama zerojoin
 EndChar
 
 StartChar: dev_jha.half
-Encoding: 61797 -1 4517
+Encoding: 61796 -1 4523
 Width: 577
 Flags: MW
 LayerCount: 2
@@ -116322,7 +116346,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" jhadeva virama zerojoi
 EndChar
 
 StartChar: dev_nya.half
-Encoding: 61798 -1 4518
+Encoding: 61797 -1 4524
 Width: 478
 Flags: MW
 LayerCount: 2
@@ -116363,7 +116387,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" nyadeva virama zerojoi
 EndChar
 
 StartChar: dev_nna.half
-Encoding: 61799 -1 4519
+Encoding: 61798 -1 4525
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116395,7 +116419,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" nnadeva virama zerojoi
 EndChar
 
 StartChar: dev_ta.half
-Encoding: 61800 -1 4520
+Encoding: 61799 -1 4526
 Width: 398
 Flags: MW
 LayerCount: 2
@@ -116428,7 +116452,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" tadeva virama zerojoin
 EndChar
 
 StartChar: dev_tha.half
-Encoding: 61801 -1 4521
+Encoding: 61800 -1 4527
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116472,7 +116496,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" thadeva virama zerojoi
 EndChar
 
 StartChar: dev_dha.half
-Encoding: 61802 -1 4522
+Encoding: 61801 -1 4528
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116513,7 +116537,7 @@ Ligature2: "Pre-Substitutions in Devanagari-1" dhadeva virama
 EndChar
 
 StartChar: dev_na.half
-Encoding: 61803 -1 4523
+Encoding: 61802 -1 4529
 Width: 398
 Flags: MW
 LayerCount: 2
@@ -116542,7 +116566,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" nadeva virama zerojoin
 EndChar
 
 StartChar: dev_pa.half
-Encoding: 61804 -1 4524
+Encoding: 61803 -1 4530
 Width: 358
 Flags: MW
 LayerCount: 2
@@ -116572,7 +116596,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" padeva virama zerojoin
 EndChar
 
 StartChar: dev_pha.half
-Encoding: 61805 -1 4525
+Encoding: 61804 -1 4531
 Width: 597
 Flags: MW
 LayerCount: 2
@@ -116613,7 +116637,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" phadeva virama zerojoi
 EndChar
 
 StartChar: dev_ba.half
-Encoding: 61806 -1 4526
+Encoding: 61805 -1 4532
 Width: 365
 Flags: MW
 LayerCount: 2
@@ -116654,7 +116678,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" badeva virama zerojoin
 EndChar
 
 StartChar: dev_bha.half
-Encoding: 61807 -1 4527
+Encoding: 61806 -1 4533
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116694,7 +116718,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" bhadeva virama zerojoi
 EndChar
 
 StartChar: dev_ma.half
-Encoding: 61808 -1 4528
+Encoding: 61807 -1 4534
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116728,7 +116752,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" madeva virama zerojoin
 EndChar
 
 StartChar: dev_ya.half
-Encoding: 61809 -1 4529
+Encoding: 61808 -1 4535
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -116763,7 +116787,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" yadeva virama zerojoin
 EndChar
 
 StartChar: dev_la.half
-Encoding: 61810 -1 4530
+Encoding: 61809 -1 4536
 Width: 531
 Flags: MW
 LayerCount: 2
@@ -116801,7 +116825,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" ladeva virama zerojoin
 EndChar
 
 StartChar: dev_lla.half
-Encoding: 61811 -1 4531
+Encoding: 61810 -1 4537
 Width: 677
 Flags: MW
 LayerCount: 2
@@ -116843,7 +116867,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" lladeva virama zerojoi
 EndChar
 
 StartChar: dev_va.half
-Encoding: 61812 -1 4532
+Encoding: 61811 -1 4538
 Width: 365
 Flags: MW
 LayerCount: 2
@@ -116880,7 +116904,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" vadeva virama zerojoin
 EndChar
 
 StartChar: dev_sha.half
-Encoding: 61813 -1 4533
+Encoding: 61812 -1 4539
 Width: 531
 Flags: MW
 LayerCount: 2
@@ -116922,7 +116946,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" shadeva virama zerojoi
 EndChar
 
 StartChar: dev_ssa.half
-Encoding: 61814 -1 4534
+Encoding: 61813 -1 4540
 Width: 358
 Flags: MW
 LayerCount: 2
@@ -116954,7 +116978,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" ssadeva virama zerojoi
 EndChar
 
 StartChar: dev_sa.half
-Encoding: 61815 -1 4535
+Encoding: 61814 -1 4541
 Width: 478
 Flags: MW
 LayerCount: 2
@@ -116991,7 +117015,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable-zwj" sadeva virama zerojoin
 EndChar
 
 StartChar: dev_qa.half
-Encoding: 61816 -1 4536
+Encoding: 61815 -1 4542
 Width: 537
 Flags: MW
 LayerCount: 2
@@ -117039,7 +117063,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable" qadeva virama
 EndChar
 
 StartChar: dev_khha.half
-Encoding: 61817 -1 4537
+Encoding: 61816 -1 4543
 Width: 541
 Flags: MW
 LayerCount: 2
@@ -117088,7 +117112,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable" khhadeva virama
 EndChar
 
 StartChar: dev_ghha.half
-Encoding: 61818 -1 4538
+Encoding: 61817 -1 4544
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -117121,7 +117145,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable" ghhadeva virama
 EndChar
 
 StartChar: dev_za.half
-Encoding: 61819 -1 4539
+Encoding: 61818 -1 4545
 Width: 557
 Flags: MW
 LayerCount: 2
@@ -117162,7 +117186,7 @@ Ligature2: "'half' Half Forms in Devanagari subtable" zadeva virama
 EndChar
 
 StartChar: dev_fa.half
-Encoding: 61820 -1 4540
+Encoding: 61819 -1 4546
 Width: 597
 Flags: MW
 LayerCount: 2
@@ -117206,8 +117230,37 @@ Validated: 3073
 Ligature2: "'half' Half Forms in Devanagari subtable" fadeva virama
 EndChar
 
+StartChar: dev_eyelash_ra.half
+Encoding: 61820 -1 4547
+Width: 398
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+451 272 m 0
+ 451 266 448 263 446 262 c 0
+ 390 230 328 214 264 214 c 0
+ 180 214 44 252 3 334 c 0
+ 0 340 -3 347 -3 354 c 0
+ -3 363 2 365 9 365 c 0
+ 34 365 74 319 183 319 c 0
+ 290 319 344 365 358 365 c 0
+ 389 365 451 303 451 272 c 0
+451 529 m 0
+ 451 519 446 517 439 517 c 2
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 358 622 l 2
+ 389 622 451 559 451 529 c 0
+EndSplineSet
+Validated: 3073
+Ligature2: "'half' Half Forms in Devanagari subtable" rradeva virama
+Ligature2: "'half' Half Forms in Devanagari subtable-zwj" radeva virama zerojoin
+EndChar
+
 StartChar: dev_ka__ssa.pres
-Encoding: 61821 -1 4541
+Encoding: 61821 -1 4548
 Width: 517
 Flags: MW
 LayerCount: 2
@@ -117258,7 +117311,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_ga__ra.pres
-Encoding: 61822 -1 4542
+Encoding: 61822 -1 4549
 Width: 478
 Flags: MW
 LayerCount: 2
@@ -117295,7 +117348,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_gha__na.pres
-Encoding: 61823 -1 4543
+Encoding: 61823 -1 4550
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -117339,7 +117392,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_ja__nya.pres
-Encoding: 61824 -1 4544
+Encoding: 61824 -1 4551
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -117382,7 +117435,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_nya__ca.pres
-Encoding: 61825 -1 4545
+Encoding: 61825 -1 4552
 Width: 478
 Flags: MW
 LayerCount: 2
@@ -117436,8 +117489,41 @@ EndSplineSet
 Validated: 3073
 EndChar
 
+StartChar: dev_ta__ta.pres
+Encoding: 61826 -1 4553
+Width: 517
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+570 529 m 0
+ 570 519 565 517 558 517 c 2
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 477 622 l 2
+ 509 622 570 559 570 529 c 0
+570 339 m 0
+ 570 329 565 327 558 327 c 2
+ 299 327 l 2
+ 237 327 206 270 206 213 c 0
+ 206 94 315 51 330 40 c 0
+ 348 27 391 -14 391 -41 c 0
+ 391 -50 386 -52 379 -52 c 0
+ 373 -52 365 -50 358 -46 c 0
+ 234 18 101 153 101 295 c 0
+ 101 306 102 317 104 327 c 1
+ 90 327 l 2
+ 58 327 -3 390 -3 420 c 0
+ -3 429 2 432 9 432 c 2
+ 477 432 l 2
+ 509 432 570 369 570 339 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
 StartChar: dev_ta__ra.pres
-Encoding: 61826 -1 4546
+Encoding: 61827 -1 4554
 Width: 398
 Flags: MW
 LayerCount: 2
@@ -117469,7 +117555,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_dha__na.pres
-Encoding: 61827 -1 4547
+Encoding: 61828 -1 4555
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -117510,7 +117596,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_dha__ra.pres
-Encoding: 61828 -1 4548
+Encoding: 61829 -1 4556
 Width: 438
 Flags: MW
 LayerCount: 2
@@ -117548,7 +117634,7 @@ Validated: 3105
 EndChar
 
 StartChar: dev_pa__ta.pres
-Encoding: 61829 -1 4549
+Encoding: 61830 -1 4557
 Width: 398
 Flags: MW
 LayerCount: 2
@@ -117581,7 +117667,7 @@ Validated: 3105
 EndChar
 
 StartChar: dev_sha__ca.pres
-Encoding: 61830 -1 4550
+Encoding: 61831 -1 4558
 Width: 517
 Flags: MW
 LayerCount: 2
@@ -117632,41 +117718,8 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_sha__ta.pres
-Encoding: 61831 -1 4551
-Width: 517
-Flags: MW
-LayerCount: 2
-Fore
-SplineSet
-570 529 m 0
- 570 519 565 517 558 517 c 2
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 477 622 l 2
- 509 622 570 559 570 529 c 0
-570 339 m 0
- 570 329 565 327 558 327 c 2
- 299 327 l 2
- 237 327 206 270 206 213 c 0
- 206 94 315 51 330 40 c 0
- 348 27 391 -14 391 -41 c 0
- 391 -50 386 -52 379 -52 c 0
- 373 -52 365 -50 358 -46 c 0
- 234 18 101 153 101 295 c 0
- 101 306 102 317 104 327 c 1
- 90 327 l 2
- 58 327 -3 390 -3 420 c 0
- -3 429 2 432 9 432 c 2
- 477 432 l 2
- 509 432 570 369 570 339 c 0
-EndSplineSet
-Validated: 3073
-EndChar
-
 StartChar: dev_sha__ra.pres
-Encoding: 61832 -1 4552
+Encoding: 61832 -1 4559
 Width: 517
 Flags: MW
 LayerCount: 2
@@ -117708,7 +117761,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_sha__va.pres
-Encoding: 61833 -1 4553
+Encoding: 61833 -1 4560
 Width: 517
 Flags: MW
 LayerCount: 2
@@ -117752,7 +117805,7 @@ Validated: 3073
 EndChar
 
 StartChar: dev_ka__ta__ya.pres
-Encoding: 61834 -1 4554
+Encoding: 61834 -1 4561
 Width: 1052
 Flags: MW
 LayerCount: 2
@@ -117811,7 +117864,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_ka__ta.akhn
 EndChar
 
 StartChar: dev_ka__ta__va.pres
-Encoding: 61835 -1 4555
+Encoding: 61835 -1 4562
 Width: 1027
 Flags: MW
 LayerCount: 2
@@ -117871,7 +117924,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_ka__ta.akhn
 EndChar
 
 StartChar: dev_ka__na__ya.pres
-Encoding: 61836 -1 4556
+Encoding: 61836 -1 4563
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -117933,7 +117986,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_ka__na.akhn
 EndChar
 
 StartChar: dev_ka__ra__ya.pres
-Encoding: 61837 -1 4557
+Encoding: 61837 -1 4564
 Width: 1092
 Flags: MW
 LayerCount: 2
@@ -117985,7 +118038,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_ka.half dev
 EndChar
 
 StartChar: dev_ka__va__ya.pres
-Encoding: 61838 -1 4558
+Encoding: 61838 -1 4565
 Width: 1092
 Flags: MW
 LayerCount: 2
@@ -118051,7 +118104,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_ka__va.akhn
 EndChar
 
 StartChar: dev_nga__ka__ta.pres
-Encoding: 61839 -1 4559
+Encoding: 61839 -1 4566
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -118119,7 +118172,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari for Sanskrit-5" dev_nga_
 EndChar
 
 StartChar: dev_nga__ka__ya.pres
-Encoding: 61840 -1 4560
+Encoding: 61840 -1 4567
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -118203,7 +118256,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_nga__ka.akh
 EndChar
 
 StartChar: dev_nga__ka__ssa.pres
-Encoding: 61841 -1 4561
+Encoding: 61841 -1 4568
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -118284,7 +118337,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari for Sanskrit-5" dev_nga_
 EndChar
 
 StartChar: dev_nga__kha__ya.pres
-Encoding: 61842 -1 4562
+Encoding: 61842 -1 4569
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -118365,7 +118418,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_nga__kha.ak
 EndChar
 
 StartChar: dev_nga__ga__ya.pres
-Encoding: 61843 -1 4563
+Encoding: 61843 -1 4570
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -118437,7 +118490,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_nga__ga.akh
 EndChar
 
 StartChar: dev_nga__gha__ya.pres
-Encoding: 61844 -1 4564
+Encoding: 61844 -1 4571
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -118516,7 +118569,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_nga__gha.ak
 EndChar
 
 StartChar: dev_nga__gha__ra.pres
-Encoding: 61845 -1 4565
+Encoding: 61845 -1 4572
 Width: 772
 Flags: MW
 LayerCount: 2
@@ -118589,7 +118642,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_nga__gha.ak
 EndChar
 
 StartChar: dev_dda__ga__ya.pres
-Encoding: 61846 -1 4566
+Encoding: 61846 -1 4573
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -118655,8 +118708,8 @@ Validated: 3073
 Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_dda__ga.akhn virama yadeva
 EndChar
 
-StartChar: dev_dda__gha.akhn
-Encoding: 61847 -1 4567
+StartChar: dev_dda__gha__ra.pres
+Encoding: 61847 -1 4574
 Width: 673
 Flags: MW
 LayerCount: 2
@@ -118724,7 +118777,7 @@ Ligature2: "'pres' Pre Base Substitutions-rakaar-5" dev_dda__gha.akhn virama rad
 EndChar
 
 StartChar: dev_dda__ra__ya.pres
-Encoding: 61848 -1 4568
+Encoding: 61848 -1 4575
 Width: 973
 Flags: MW
 LayerCount: 2
@@ -118785,7 +118838,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ra" ddadeva dev_rakaar
 EndChar
 
 StartChar: dev_da__ga__ra.pres
-Encoding: 61849 -1 4569
+Encoding: 61849 -1 4576
 Width: 654
 Flags: MW
 LayerCount: 2
@@ -118842,7 +118895,7 @@ Ligature2: "'pres' Pre Base Substitutions-rakaar-5" dev_da__ga.akhn virama radev
 EndChar
 
 StartChar: dev_da__gha__ra.pres
-Encoding: 61850 -1 4570
+Encoding: 61850 -1 4577
 Width: 654
 Flags: MW
 LayerCount: 2
@@ -118897,7 +118950,7 @@ Ligature2: "'pres' Pre Base Substitutions-rakaar-5" dev_da__gha.akhn virama rade
 EndChar
 
 StartChar: dev_da__da__ya.pres
-Encoding: 61851 -1 4571
+Encoding: 61851 -1 4578
 Width: 833
 Flags: MW
 LayerCount: 2
@@ -118955,7 +119008,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_da__da.akhn
 EndChar
 
 StartChar: dev_da__da__va.pres
-Encoding: 61852 -1 4572
+Encoding: 61852 -1 4579
 Width: 588
 Flags: MW
 LayerCount: 2
@@ -119016,7 +119069,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_da__da.akhn
 EndChar
 
 StartChar: dev_da__dha__ya.pres
-Encoding: 61853 -1 4573
+Encoding: 61853 -1 4580
 Width: 973
 Flags: MW
 LayerCount: 2
@@ -119079,7 +119132,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_da__dha.akh
 EndChar
 
 StartChar: dev_da__dha__va.pres
-Encoding: 61854 -1 4574
+Encoding: 61854 -1 4581
 Width: 734
 Flags: MW
 LayerCount: 2
@@ -119145,7 +119198,7 @@ Ligature2: "'akhn' Akhand in Devanagari for Sanskrit-da-dha-va" dadeva virama dh
 EndChar
 
 StartChar: dev_da__bha__ya.pres
-Encoding: 61855 -1 4575
+Encoding: 61855 -1 4582
 Width: 953
 Flags: MW
 LayerCount: 2
@@ -119201,7 +119254,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_da__bha.akh
 EndChar
 
 StartChar: dev_da__ra__ya.pres
-Encoding: 61856 -1 4576
+Encoding: 61856 -1 4583
 Width: 813
 Flags: MW
 LayerCount: 2
@@ -119251,8 +119304,8 @@ Validated: 3073
 Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ra" dadeva dev_rakaar openya
 EndChar
 
-StartChar: dev_da__va__da.pres
-Encoding: 61857 -1 4577
+StartChar: dev_da__va__ya.pres
+Encoding: 61857 -1 4584
 Width: 833
 Flags: MW
 LayerCount: 2
@@ -119301,10 +119354,11 @@ SplineSet
  437 52 496 113 525 159 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_da__va.akhn virama yadeva
 EndChar
 
 StartChar: dev_ssa__tta__ya.pres
-Encoding: 61858 -1 4578
+Encoding: 61858 -1 4585
 Width: 973
 Flags: MW
 LayerCount: 2
@@ -119366,7 +119420,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_ssa__tta.ak
 EndChar
 
 StartChar: dev_ssa__tta__va.pres
-Encoding: 61859 -1 4579
+Encoding: 61859 -1 4586
 Width: 628
 Flags: MW
 LayerCount: 2
@@ -119420,7 +119474,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari 5 ya va" dev_ssa__tta.ak
 EndChar
 
 StartChar: dev_ka__ta__ra__ya.pres
-Encoding: 61860 -1 4580
+Encoding: 61860 -1 4587
 Width: 1052
 Flags: MW
 LayerCount: 2
@@ -119488,7 +119542,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-7" dev_ka__ta.akhn v
 EndChar
 
 StartChar: dev_nga__ka__ta__ya.pres
-Encoding: 61861 -1 4581
+Encoding: 61861 -1 4588
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -119564,7 +119618,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari for Sanskrit-7" dev_nga_
 EndChar
 
 StartChar: dev_nga__ka__ssa__va.pres
-Encoding: 61862 -1 4582
+Encoding: 61862 -1 4589
 Width: 971
 Flags: MW
 LayerCount: 2
@@ -119654,7 +119708,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari for Sanskrit-7" dev_nga_
 EndChar
 
 StartChar: dev_ssa__tta__ra__ya.pres
-Encoding: 61863 -1 4583
+Encoding: 61863 -1 4590
 Width: 1012
 Flags: MW
 LayerCount: 2
@@ -119711,7 +119765,7 @@ Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-7" dev_ssa__tta.akhn
 EndChar
 
 StartChar: dev_ka__ra.rkrf
-Encoding: 61864 -1 4584
+Encoding: 61864 -1 4591
 Width: 827
 Flags: MW
 LayerCount: 2
@@ -119757,7 +119811,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" kadeva dev_rakaar
 EndChar
 
 StartChar: dev_ja__ra.rkrf
-Encoding: 61865 -1 4585
+Encoding: 61865 -1 4592
 Width: 973
 Flags: MW
 LayerCount: 2
@@ -119804,7 +119858,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" jadeva dev_rakaar
 EndChar
 
 StartChar: dev_ta__ra.rkrf
-Encoding: 61866 -1 4586
+Encoding: 61866 -1 4593
 Width: 654
 Flags: MW
 LayerCount: 2
@@ -119839,7 +119893,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" tadeva dev_rakaar
 EndChar
 
 StartChar: dev_pa__ra.rkrf
-Encoding: 61867 -1 4587
+Encoding: 61867 -1 4594
 Width: 614
 Flags: MW
 LayerCount: 2
@@ -119875,7 +119929,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" padeva dev_rakaar
 EndChar
 
 StartChar: dev_pha__ra.rkrf
-Encoding: 61868 -1 4588
+Encoding: 61868 -1 4595
 Width: 788
 Flags: MW
 LayerCount: 2
@@ -119922,7 +119976,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" phadeva dev_rakaar
 EndChar
 
 StartChar: dev_sha__ra.rkrf
-Encoding: 61869 -1 4589
+Encoding: 61869 -1 4596
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -119968,8 +120022,54 @@ Validated: 3073
 Ligature2: "'vatu' Vatu Variants in Devanagari subtable" shadeva dev_rakaar
 EndChar
 
+StartChar: dev_sha__ra.rkrf
+Encoding: 61870 -1 4597
+Width: 773
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+826 529 m 0
+ 826 519 821 517 814 517 c 2
+ 570 517 l 1
+ 570 -41 l 2
+ 570 -50 565 -52 558 -52 c 0
+ 527 -52 465 10 465 41 c 2
+ 465 162 l 1
+ 325 102 232 61 227 61 c 0
+ 195 61 134 124 134 154 c 0
+ 134 160 135 163 142 166 c 2
+ 333 248 l 1
+ 229 269 l 1
+ 149 230 97 204 90 204 c 0
+ 58 204 -3 266 -3 297 c 0
+ -3 303 -2 305 4 308 c 2
+ 67 339 l 1
+ 31 374 -9 427 -9 493 c 0
+ -9 565 37 622 109 622 c 0
+ 203 622 275 558 313 499 c 0
+ 330 472 345 437 345 398 c 0
+ 345 375 340 354 332 338 c 1
+ 465 311 l 1
+ 465 517 l 1
+ 388 517 l 2
+ 356 517 295 579 295 610 c 0
+ 295 619 300 622 307 622 c 2
+ 733 622 l 2
+ 765 622 826 559 826 529 c 0
+240 479 m 0
+ 240 491 238 502 235 510 c 1
+ 225 514 209 517 190 517 c 0
+ 134 517 96 469 96 412 c 0
+ 96 401 98 389 100 381 c 1
+ 111 378 127 375 146 375 c 0
+ 201 375 240 422 240 479 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
 StartChar: dev_sa__ra.rkrf
-Encoding: 61870 -1 4590
+Encoding: 61871 -1 4598
 Width: 773
 Flags: MW
 LayerCount: 2
@@ -120015,7 +120115,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" sadeva dev_rakaar
 EndChar
 
 StartChar: dev_ha__ra.rkrf
-Encoding: 61871 -1 4591
+Encoding: 61872 -1 4599
 Width: 768
 Flags: MW
 LayerCount: 2
@@ -120067,7 +120167,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" hadeva dev_rakaar
 EndChar
 
 StartChar: dev_za__ra.rkrf
-Encoding: 61872 -1 4592
+Encoding: 61873 -1 4600
 Width: 973
 Flags: MW
 LayerCount: 2
@@ -120119,7 +120219,7 @@ Ligature2: "'vatu' Vatu Variants in Devanagari subtable" zadeva dev_rakaar
 EndChar
 
 StartChar: dev_fa__ra.rkrf
-Encoding: 61873 -1 4593
+Encoding: 61874 -1 4601
 Width: 788
 Flags: MW
 LayerCount: 2
@@ -120171,147 +120271,261 @@ Validated: 3073
 Ligature2: "'vatu' Vatu Variants in Devanagari subtable" fadeva dev_rakaar
 EndChar
 
-StartChar: dev_ra__anusvara.rphf
-Encoding: 61874 -1 4594
+StartChar: anudattadeva
+Encoding: 2386 2386 4602
+Width: 0
+Flags: HW
+AnchorPoint: "dev-below" -200 -6 mark 0
+LayerCount: 2
+Fore
+SplineSet
+0 -130 m 1
+ -400 -130 l 1
+ -400 -70 l 1
+ 0 -70 l 1
+ 0 -130 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: gravedeva
+Encoding: 2387 2387 4603
+Width: 0
+Flags: HW
+AnchorPoint: "dev-above" -190 610 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-134 655 m 1
+ -190 655 l 1
+ -332 743 l 2
+ -361 761 -372 775 -372 795 c 0
+ -372 820 -351 840 -325 840 c 0
+ -306 840 -287 830 -271 812 c 2
+ -134 655 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: acutedeva
+Encoding: 2388 2388 4604
+Width: 0
+Flags: HW
+AnchorPoint: "dev-above" -190 610 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-238 655 m 1
+ -101 812 l 2
+ -84 831 -67 840 -48 840 c 0
+ -19 840 0 822 0 796 c 0
+ 0 773 -8 763 -40 743 c 2
+ -182 655 l 1
+ -238 655 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: longecandradeva
+Encoding: 2389 2389 4605
+Width: 0
+Flags: HW
+AnchorPoint: "dev-above" -190 580 mark 0
+LayerCount: 2
+Fore
+Refer: 4602 2386 S 1 0 0 1 0 735 2
+Refer: 4342 2373 N 1 0 0 1 0 7 2
+Validated: 32769
+EndChar
+
+StartChar: udattadeva
+Encoding: 2385 2385 4606
+Width: 0
+Flags: HW
+AnchorPoint: "dev-above" -199 610 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-221 613 m 1
+ -232 658 -265 792 -265 829 c 0
+ -265 872 -239 900 -201 900 c 0
+ -164 900 -136 871 -136 833 c 0
+ -136 811 -147 757 -180 613 c 1
+ -221 613 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: eprishthamatra
+Encoding: 2382 2382 4607
+Width: 441
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+494 529 m 0
+ 494 519 489 517 482 517 c 2
+ 238 517 l 1
+ 238 -41 l 2
+ 238 -50 233 -52 226 -52 c 0
+ 194 -52 133 10 133 41 c 2
+ 133 622 l 1
+ 401 622 l 2
+ 432 622 494 559 494 529 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: yyadeva
+Encoding: 2399 2399 4608
+Width: 694
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4399 2364 S 1 0 0 1 370 -30 2
+Refer: 4352 2351 N 1 0 0 1 0 0 2
+Validated: 32769
+Ligature2: "'nukt' Nukta Forms in Devanagari subtable" yadeva nuktadeva
+EndChar
+
+StartChar: dev_ematra_anusvara.abvs
+Encoding: 61699 -1 4609
 Width: 0
 Flags: HMW
-AnchorPoint: "dev-above" -224 613 mark 0
+AnchorPoint: "dev-above" -120 610 mark 0
 LayerCount: 2
 Fore
-SplineSet
--82 820 m 0
- -82 808 -89 804 -98 804 c 0
- -110 804 -156 821 -212 821 c 0
- -246 821 -263 788 -263 757 c 0
- -263 701 -219 672 -164 656 c 0
- -141 649 -110 618 -110 594 c 0
- -110 582 -117 578 -126 578 c 0
- -142 578 -247 611 -306 698 c 0
- -327 729 -342 766 -342 804 c 0
- -342 857 -312 900 -259 900 c 0
- -217 900 -176 891 -137 882 c 0
- -115 876 -82 845 -82 820 c 0
--54 718 m 1
- -125 647 l 1
- -196 718 l 1
- -125 789 l 1
- -54 718 l 1
-EndSplineSet
-Validated: 3073
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" dev_ra.rphf anusvaradeva
-EndChar
-
-StartChar: openya
-Encoding: 61711 -1 4595
-Width: 694
-Flags: W
-HStem: -52 21<463 482> 81 104<226 256.5 189.5 305.5> 517 105<25 41 41 386 491 654 654 669.5 -41 735 491 491>
-VStem: 386 105<41 105 105 105 355 517>
-LayerCount: 2
-Fore
-SplineSet
-747 529 m 0
- 747 519 741 517 735 517 c 2
- 491 517 l 1
- 491 -41 l 2
- 491 -50 485 -52 479 -52 c 0
- 447 -52 386 10 386 41 c 2
- 386 105 l 1
- 357 89 323 81 288 81 c 0
- 164 81 53 194 16 296 c 0
- 14 301 13 305 13 308 c 0
- 13 317 18 320 25 320 c 0
- 81 320 122 343 149 371 c 1
- -9 374 l 2
- -38 375 -102 435 -102 467 c 0
- -102 477 -97 479 -90 479 c 2
- 205 474 l 2
- 236 473 298 411 298 381 c 0
- 298 380 298 380 293 355 c 0
- 287 318 239 225 126 216 c 1
- 128 213 129 211 132 207 c 1
- 144 198 172 185 207 185 c 0
- 306 185 376 262 386 355 c 1
- 386 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 654 622 l 2
- 685 622 747 559 747 529 c 0
-EndSplineSet
-Validated: 3073
-Ligature2: "Substitute openya for virama-ya in Devanagari-subtable" virama yadeva
-EndChar
-
-StartChar: dev_reph_ematra.abvs
-Encoding: 61697 -1 4596
-Width: 1000
-Flags: HW
-AnchorPoint: "dev-above" -160 613 mark 0
-LayerCount: 2
-Fore
-SplineSet
--34 799 m 0
- -34 797 -35 796 -37 796 c 0
- -46 796 -81 824 -151 824 c 0
- -185 824 -205 805 -205 770 c 0
- -205 700 -173.25 692.5 -155 670 c 0
- -147.311 660.52 -126 635 -126 621 c 0
- -126 619 -127 618 -129 618 c 0
- -144 618 -176 656 -218 707 c 0
- -234 726 -263 765 -263 811 c 0
- -263 851 -241 883 -203 883 c 0
- -147 883 -63 860 -36 807 c 1
- -36 807 -34 803 -34 799 c 0
--190 610 m 0
- -190 608 -191 607 -192 607 c 0
- -205 607 -245 646 -260 667 c 0
- -320 750 -426 814 -551 814 c 0
- -566 814 -628 875 -628 891 c 0
- -628 893 -626 893 -625 893 c 0
- -437 893 -283 743 -199 627 c 0
- -197 624 -190 615 -190 610 c 0
-EndSplineSet
-Validated: 3073
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" ematradeva dev_ra.rphf
-EndChar
-
-StartChar: dev_reph_aimatra.abvs
-Encoding: 61698 -1 4597
-Width: 0
-Flags: HW
-AnchorPoint: "dev-above" -160 588 mark 0
-LayerCount: 2
-Fore
-Refer: 4506 -1 N 1 0 0 1 150 -30 2
-Refer: 4326 2376 N 1 0 0 1 -70 -22 2
+Refer: 4325 2375 N 1 0 0 1 0 0 2
+Refer: 4380 2306 S 1 0 0 1 90 4 2
 Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva dev_ra.rphf
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" ematradeva anusvaradeva
+LCarets2: 1 0 
+Ligature2: "FreeSerif-'abvs' Above Base Substitutions in Devanagari subtable" ematradeva anusvaradeva
+EndChar
+
+StartChar: dev_aimatra_anusvara.abvs
+Encoding: 61700 -1 4610
+Width: 0
+Flags: HMW
+AnchorPoint: "dev-above" -120 588 mark 0
+LayerCount: 2
+Fore
+Refer: 4380 2306 S 1 0 0 1 110 4 2
+Refer: 4326 2376 N 1 0 0 1 0 0 2
+Validated: 32769
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva anusvaradeva
+LCarets2: 1 0 
+Ligature2: "FreeSerif-'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva anusvaradeva
+EndChar
+
+StartChar: dev_aimatra_reph_anusvara.abvs
+Encoding: 61701 -1 4611
+Width: 0
+Flags: HMW
+AnchorPoint: "dev-above" -160 573 mark 0
+LayerCount: 2
+Fore
+Refer: 4438 -1 S 1 0 0 1 -30 -50 2
+Refer: 4325 2375 N 1 0 0 1 -40 -20 2
+Validated: 32769
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva dev_ra.rphf anusvaradeva
+LCarets2: 2 0 0 
+Ligature2: "FreeSerif-'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva dev_ra.rphf anusvaradeva
+EndChar
+
+StartChar: dev_usign_anudatta.blwf
+Encoding: 61704 -1 4612
+Width: 0
+Flags: HMW
+AnchorPoint: "dev-below" -210 44 mark 0
+LayerCount: 2
+Fore
+Refer: 4602 2386 N 1 0 0 1 -10 -170 2
+Refer: 4322 2369 N 1 0 0 1 0 80 2
+Validated: 32769
+Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" usigndeva anudattadeva
+Ligature2: "FreeSerif-'blws' Below Base Substitutions in Devanagari-anudatta" usigndeva anudattadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_rakaar
-Encoding: 61707 -1 4598
+StartChar: dev_uusign_anudatta.blwf
+Encoding: 61705 -1 4613
+Width: 0
+Flags: HMW
+AnchorPoint: "dev-below" -230 64 mark 0
+LayerCount: 2
+Fore
+Refer: 4323 2370 N 1 0 0 1 0 70 2
+Refer: 4602 2386 N 1 0 0 1 -10 -170 2
+Validated: 32769
+Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" uusigndeva anudattadeva
+Ligature2: "FreeSerif-'blws' Below Base Substitutions in Devanagari-anudatta" uusigndeva anudattadeva
+LCarets2: 1 0 
+EndChar
+
+StartChar: dev_rakaar_anudatta.blwf
+Encoding: 61706 -1 4614
+Width: 0
+Flags: HMW
+AnchorPoint: "dev-below" -230 54 mark 0
+LayerCount: 2
+Fore
+Refer: 4602 2386 N 1 0 0 1 -20 -170 2
+Refer: 4437 -1 N 1 0 0 1 0 70 2
+Validated: 32769
+Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" dev_rakaar.blwf anudattadeva
+Ligature2: "FreeSerif-'blws' Below Base Substitutions in Devanagari-anudatta" dev_rakaar.blwf anudattadeva
+LCarets2: 1 0 
+EndChar
+
+StartChar: dev_kash_au_mark
+Encoding: 61696 -1 4615
 Width: 0
 Flags: HW
-AnchorPoint: "dev-rakaar" -150 207 mark 0
+AnchorPoint: "dev-above" -90 610 mark 0
 LayerCount: 2
 Fore
 SplineSet
-40 41 m 0
- 40 36 39 34 37 31 c 2
- -103 -176 l 2
- -105 -179 -108 -182 -116 -182 c 0
- -142 -182 -179 -144 -179 -119 c 0
- -179 -114 -178 -111 -175 -107 c 2
- -37 98 l 2
- -35 101 -31 104 -24 104 c 0
- 2 104 40 67 40 41 c 0
+-25 623 m 5
+ -57 623 l 5
+ -79 665 -152.696 718.693 -167 744 c 0
+ -180 767 -193 793 -209 870 c 1
+ -177 870 l 1
+ -150 836 -99 795 -86 782 c 0
+ -64.8105 760.811 -41 701 -25 623 c 5
+-115 623 m 5
+ -147 623 l 5
+ -209 675 -261 684 -287 684 c 0
+ -324 684 -326 674 -367 674 c 0
+ -405 674 -493 719 -539 840 c 1
+ -507 840 l 1
+ -467 779 -409 753 -376 753 c 0
+ -338 753 -336 762 -296 762 c 0
+ -261 762 -189 725 -115 623 c 5
 EndSplineSet
-Validated: 3585
-Ligature2: "'blwf' Below Base Forms in Devanagari subtable" radeva virama
-Ligature2: "Substitute rakaar for virama-ra in Devanagari-subtable" virama radeva
-Substitution2: "Sutstitute rakaar blwf in Devanagari-subtable" dev_rakaar.blwf
+Validated: 3073
+EndChar
+
+StartChar: uni094f
+Encoding: 2383 2383 4616
+Width: 341
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4615 -1 S 1 0 0 1 170 0 2
+Refer: 4371 2366 N 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: uni0975
+Encoding: 2421 2421 4617
+Width: 1091
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4615 -1 S 1 0 0 1 920 0 2
+Refer: 4408 2310 N 1 0 0 1 0 0 2
+Validated: 32769
 EndChar
 EndChars
 EndSplineFont
