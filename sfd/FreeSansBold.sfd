@@ -20,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1326400513
+ModificationTime: 1328003123
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -91,6 +91,9 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning 
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 3"  {"'mark' Mark Positioning in Latin 3 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'cyrl' <'dflt' > 'geor' <'dflt' > 'grek' <'dflt' > 'gur2' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
+Lookup: 260 1 0 "'mark' Mark Positioning in Yiddish"  {"'mark' Mark Positioning in Yiddish"  } ['mark' ('hebr' <'JII ' > ) ]
+Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew 2"  {"'mark' Mark Positioning in Hebrew 2 subtable"  } ['mark' ('hebr' <'IWR ' 'dflt' > ) ]
+Lookup: 260 257 0 "'mark' Mark Positioning in Hebrew"  {"'mark' Mark Positioning in Hebrew subtable"  } ['mark' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 6 6 "'kern' Horizontal Kerning in Cyrillic-capital" 
@@ -239,7 +242,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 9616 16 12
+WinInfo: 1440 16 12
 BeginPrivate: 10
 UniqueID 7 5020904
 BlueValues 23 [-24 0 540 550 730 744]
@@ -260,7 +263,7 @@ Grid
 -1000 390 m 4
  2000 390 l 4
 EndSplineSet
-AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "abovegrk"  "'mark' Mark Positioning in Greek 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "belowgrk"  "'mark' Mark Positioning in Greek 0 subtable" 
+AnchorClass2: "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "above_mid_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_heb"  "'mark' Mark Positioning in Hebrew 2 subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Yiddish" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "abovegrk"  "'mark' Mark Positioning in Greek 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "belowgrk"  "'mark' Mark Positioning in Greek 0 subtable" 
 BeginChars: 65600 2653
 
 StartChar: space
@@ -12090,17 +12093,21 @@ StartChar: afii57799
 Encoding: 1456 1456 593
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 Refer: 597 1460 S 1 0 0 1 0 0 2
 Refer: 597 1460 S 1 0 0 1 0 -125 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: afii57801
 Encoding: 1457 1457 594
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 Refer: 597 1460 N 1 0 0 1 122 0 2
@@ -12108,36 +12115,42 @@ Refer: 597 1460 N 1 0 0 1 122 -125 2
 Refer: 597 1460 N 1 0 0 1 -22 0 2
 Refer: 597 1460 S 1 0 0 1 -89 -125 2
 Refer: 597 1460 N 1 0 0 1 -163 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: afii57800
 Encoding: 1458 1458 595
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 Refer: 600 1463 N 1 0 0 1 -97 0 2
 Refer: 593 1456 S 1 0 0 1 87 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: afii57802
 Encoding: 1459 1459 596
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 Refer: 597 1460 S 1 0 0 1 119 0 2
 Refer: 597 1460 S 1 0 0 1 119 -118 2
 Refer: 601 1464 N 1 0 0 1 -82 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hiriqhebrew
 Encoding: 1460 1460 597
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12154,29 +12167,35 @@ StartChar: afii57794
 Encoding: 1461 1461 598
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 Refer: 597 1460 N 1 0 0 1 -65 0 2
 Refer: 597 1460 N 1 0 0 1 65 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: afii57795
 Encoding: 1462 1462 599
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 285 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 285 0 mark 0
 LayerCount: 2
 Fore
 Refer: 597 1460 S 1 0 0 1 47 0 2
 Refer: 597 1460 S 1 0 0 1 -81 0 2
 Refer: 597 1460 S 1 0 0 1 -17 -125 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: patahhebrew
 Encoding: 1463 1463 600
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 -0.166667 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 -0.333333 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12193,6 +12212,8 @@ StartChar: qamatshebrew
 Encoding: 1464 1464 601
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12213,6 +12234,7 @@ StartChar: holamhebrew
 Encoding: 1465 1465 602
 Width: 0
 Flags: MW
+AnchorPoint: "vowel_above_heb" 300 600 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12229,18 +12251,21 @@ StartChar: afii57796
 Encoding: 1467 1467 603
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_below_heb" 300 0 mark 0
+AnchorPoint: "vowel_below_yiddish" 301 0 mark 0
 LayerCount: 2
 Fore
 Refer: 597 1460 N 1 0 0 1 117 -124 2
 Refer: 597 1460 N 1 0 0 1 -13 -59 2
 Refer: 597 1460 N 1 0 0 1 -142 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dageshhebrew
 Encoding: 1468 1468 604
 Width: 0
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 260 300 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12289,10 +12314,11 @@ StartChar: rafehebrew
 Encoding: 1471 1471 607
 Width: 0
 Flags: HMW
+AnchorPoint: "above_mid_heb" 218 600 mark 0
 LayerCount: 2
 Fore
 Refer: 600 1463 S 1 0 0 1 -5 802 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: afii57842
@@ -12361,6 +12387,10 @@ StartChar: alefhebrew
 Encoding: 1488 1488 613
 Width: 714
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 320 138 basechar 0
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 370 600 basechar 0
+AnchorPoint: "vowel_below_heb" 350 2 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12389,6 +12419,10 @@ StartChar: bethebrew
 Encoding: 1489 1489 614
 Width: 651
 Flags: MW
+AnchorPoint: "vowel_left_heb" 222 306 basechar 0
+AnchorPoint: "vowel_above_heb" 90 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12413,6 +12447,10 @@ StartChar: gimelhebrew
 Encoding: 1490 1490 615
 Width: 557
 Flags: MW
+AnchorPoint: "vowel_left_heb" 104 306 basechar 0
+AnchorPoint: "vowel_above_heb" 105 600 basechar 0
+AnchorPoint: "above_mid_heb" 240 600 basechar 0
+AnchorPoint: "vowel_below_heb" 246 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12438,6 +12476,10 @@ StartChar: dalethebrew
 Encoding: 1491 1491 616
 Width: 638
 Flags: MW
+AnchorPoint: "vowel_left_heb" 222 306 basechar 0
+AnchorPoint: "vowel_above_heb" 78 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 414 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12457,7 +12499,11 @@ EndChar
 StartChar: hehebrew
 Encoding: 1492 1492 617
 Width: 682
-Flags: MW
+Flags: HMW
+AnchorPoint: "vowel_left_heb" 341 306 basechar 0
+AnchorPoint: "vowel_above_heb" 110 600 basechar 0
+AnchorPoint: "above_mid_heb" 310 600 basechar 0
+AnchorPoint: "vowel_below_heb" 345 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12476,13 +12522,17 @@ SplineSet
  218 0 l 1
  79 0 l 1
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: vavhebrew
 Encoding: 1493 1493 618
 Width: 297
 Flags: MW
+AnchorPoint: "vowel_left_heb" 0 306 basechar 0
+AnchorPoint: "vowel_above_heb" 44 600 basechar 0
+AnchorPoint: "above_mid_heb" 107 600 basechar 0
+AnchorPoint: "vowel_below_heb" 102 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12499,6 +12549,10 @@ StartChar: zayinhebrew
 Encoding: 1494 1494 619
 Width: 443
 Flags: MW
+AnchorPoint: "vowel_left_heb" 41 306 basechar 0
+AnchorPoint: "vowel_above_heb" 59 600 basechar 0
+AnchorPoint: "above_mid_heb" 170 600 basechar 0
+AnchorPoint: "vowel_below_heb" 170 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12519,6 +12573,10 @@ StartChar: hethebrew
 Encoding: 1495 1495 620
 Width: 682
 Flags: MW
+AnchorPoint: "vowel_left_heb" 343 306 basechar 0
+AnchorPoint: "vowel_above_heb" 112 600 basechar 0
+AnchorPoint: "above_mid_heb" 310 600 basechar 0
+AnchorPoint: "vowel_below_heb" 345 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12534,13 +12592,17 @@ SplineSet
  473 0 l 1
  473 365 l 2
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: tethebrew
 Encoding: 1496 1496 621
 Width: 670
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 319 306 basechar 0
+AnchorPoint: "vowel_above_heb" 103 600 basechar 0
+AnchorPoint: "above_mid_heb" 320 600 basechar 0
+AnchorPoint: "vowel_below_heb" 316 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12567,6 +12629,10 @@ StartChar: yodhebrew
 Encoding: 1497 1497 622
 Width: 284
 Flags: MW
+AnchorPoint: "vowel_above_heb" 46 600 basechar 0
+AnchorPoint: "above_mid_heb" 105 600 basechar 0
+AnchorPoint: "vowel_below_heb" 106 0 basechar 0
+AnchorPoint: "vowel_below_yiddish" 101 221 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12583,6 +12649,10 @@ StartChar: finalkafhebrew
 Encoding: 1498 1498 623
 Width: 590
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 196 306 basechar 0
+AnchorPoint: "vowel_above_heb" 71 600 basechar 0
+AnchorPoint: "above_mid_heb" 250 600 basechar 0
+AnchorPoint: "vowel_below_heb" 200 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12603,6 +12673,10 @@ StartChar: kafhebrew
 Encoding: 1499 1499 624
 Width: 595
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 222 306 basechar 0
+AnchorPoint: "vowel_above_heb" 93 600 basechar 0
+AnchorPoint: "above_mid_heb" 280 600 basechar 0
+AnchorPoint: "vowel_below_heb" 246 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12627,6 +12701,10 @@ StartChar: lamedhebrew
 Encoding: 1500 1500 625
 Width: 667
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 200 306 basechar 0
+AnchorPoint: "vowel_above_heb" 225 600 basechar 0
+AnchorPoint: "above_mid_heb" 310 600 basechar 0
+AnchorPoint: "vowel_below_heb" 334 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12651,6 +12729,10 @@ StartChar: finalmemhebrew
 Encoding: 1501 1501 626
 Width: 683
 Flags: MW
+AnchorPoint: "vowel_left_heb" 309 306 basechar 0
+AnchorPoint: "vowel_above_heb" 113 600 basechar 0
+AnchorPoint: "above_mid_heb" 310 600 basechar 0
+AnchorPoint: "vowel_below_heb" 315 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12674,6 +12756,10 @@ StartChar: memhebrew
 Encoding: 1502 1502 627
 Width: 704
 Flags: MW
+AnchorPoint: "vowel_left_heb" 327 306 basechar 0
+AnchorPoint: "vowel_above_heb" 92 600 basechar 0
+AnchorPoint: "above_mid_heb" 310 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12700,6 +12786,7 @@ StartChar: finalnunhebrew
 Encoding: 1503 1503 628
 Width: 297
 Flags: MW
+AnchorPoint: "above_mid_heb" 108 600 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12716,6 +12803,10 @@ StartChar: nunhebrew
 Encoding: 1504 1504 629
 Width: 429
 Flags: MW
+AnchorPoint: "vowel_left_heb" 121 306 basechar 0
+AnchorPoint: "vowel_above_heb" 87 600 basechar 0
+AnchorPoint: "above_mid_heb" 200 600 basechar 0
+AnchorPoint: "vowel_below_heb" 191 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12736,6 +12827,10 @@ StartChar: samekhhebrew
 Encoding: 1505 1505 630
 Width: 670
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 314 306 basechar 0
+AnchorPoint: "vowel_above_heb" 104 600 basechar 0
+AnchorPoint: "above_mid_heb" 320 600 basechar 0
+AnchorPoint: "vowel_below_heb" 315 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12761,6 +12856,10 @@ StartChar: ayinhebrew
 Encoding: 1506 1506 631
 Width: 653
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 338 306 basechar 0
+AnchorPoint: "vowel_above_heb" 130 600 basechar 0
+AnchorPoint: "above_mid_heb" 315 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12784,6 +12883,10 @@ StartChar: finalpehebrew
 Encoding: 1507 1507 632
 Width: 661
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 273 427 basechar 0
+AnchorPoint: "vowel_above_heb" 103 600 basechar 0
+AnchorPoint: "above_mid_heb" 270 600 basechar 0
+AnchorPoint: "vowel_below_heb" 268 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12809,6 +12912,10 @@ StartChar: pehebrew
 Encoding: 1508 1508 633
 Width: 660
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 266 423 basechar 0
+AnchorPoint: "vowel_above_heb" 104 600 basechar 0
+AnchorPoint: "above_mid_heb" 280 600 basechar 0
+AnchorPoint: "vowel_below_heb" 278 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12838,6 +12945,8 @@ StartChar: finaltsadihebrew
 Encoding: 1509 1509 634
 Width: 616
 Flags: MW
+AnchorPoint: "vowel_above_heb" 70 600 basechar 0
+AnchorPoint: "above_mid_heb" 277 600 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12861,6 +12970,10 @@ StartChar: tsadihebrew
 Encoding: 1510 1510 635
 Width: 671
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 97 306 basechar 0
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 310 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12885,6 +12998,10 @@ StartChar: qofhebrew
 Encoding: 1511 1511 636
 Width: 672
 Flags: MW
+AnchorPoint: "vowel_left_heb" 312 306 basechar 0
+AnchorPoint: "vowel_above_heb" 111 600 basechar 0
+AnchorPoint: "above_mid_heb" 310 600 basechar 0
+AnchorPoint: "vowel_below_heb" 336 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12912,6 +13029,10 @@ StartChar: reshhebrew
 Encoding: 1512 1512 637
 Width: 600
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 222 306 basechar 0
+AnchorPoint: "vowel_above_heb" 78 600 basechar 0
+AnchorPoint: "above_mid_heb" 260 600 basechar 0
+AnchorPoint: "vowel_below_heb" 450 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12932,6 +13053,10 @@ StartChar: shinhebrew
 Encoding: 1513 1513 638
 Width: 840
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 531 306 basechar 0
+AnchorPoint: "vowel_above_heb" 99 600 basechar 0
+AnchorPoint: "above_mid_heb" 390 600 basechar 0
+AnchorPoint: "vowel_below_heb" 389 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12963,6 +13088,10 @@ StartChar: tavhebrew
 Encoding: 1514 1514 639
 Width: 756
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 413 306 basechar 0
+AnchorPoint: "vowel_above_heb" 160 600 basechar 0
+AnchorPoint: "above_mid_heb" 380 600 basechar 0
+AnchorPoint: "vowel_below_heb" 369 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12991,6 +13120,9 @@ StartChar: vavvavhebrew
 Encoding: 1520 1520 640
 Width: 554
 Flags: MW
+AnchorPoint: "vowel_above_heb" 110 600 basechar 0
+AnchorPoint: "above_mid_heb" 218 600 basechar 0
+AnchorPoint: "vowel_below_heb" 214 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13012,6 +13144,9 @@ StartChar: vavyodhebrew
 Encoding: 1521 1521 641
 Width: 550
 Flags: MW
+AnchorPoint: "vowel_above_heb" 101 600 basechar 0
+AnchorPoint: "above_mid_heb" 210 600 basechar 0
+AnchorPoint: "vowel_below_heb" 213 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13033,6 +13168,10 @@ StartChar: yodyodhebrew
 Encoding: 1522 1522 642
 Width: 542
 Flags: MW
+AnchorPoint: "vowel_above_heb" 96 600 basechar 0
+AnchorPoint: "above_mid_heb" 203 600 basechar 0
+AnchorPoint: "vowel_below_heb" 199 0 basechar 0
+AnchorPoint: "vowel_below_yiddish" 196 221 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13047,7 +13186,7 @@ SplineSet
  470 600 l 1
  470 333 l 1
 EndSplineSet
-Validated: 1
+Validated: 1051649
 EndChar
 
 StartChar: gereshhebrew
@@ -17846,7 +17985,7 @@ LayerCount: 2
 Fore
 Refer: 597 1460 N 1 0 0 1 -203 278 2
 Refer: 622 1497 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFB1E
@@ -17876,7 +18015,7 @@ LayerCount: 2
 Fore
 Refer: 642 1522 N 1 0 0 1 0 0 2
 Refer: 600 1463 S 1 0 0 1 -37 280 2
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Hebrew subtable" yodyodhebrew patahhebrew
 EndChar
@@ -17885,6 +18024,10 @@ StartChar: ayinaltonehebrew
 Encoding: 64288 64288 1008
 Width: 653
 Flags: MW
+AnchorPoint: "vowel_left_heb" 333 306 basechar 0
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18129,6 +18272,10 @@ StartChar: shinshindothebrew
 Encoding: 64298 64298 1018
 Width: 840
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 488 220 basechar 0
+AnchorPoint: "vowel_above_heb" 677 600 basechar 0
+AnchorPoint: "above_mid_heb" 390 600 basechar 0
+AnchorPoint: "vowel_below_heb" 390 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 638 1513 N 1 0 0 1 0 0 2
@@ -18141,6 +18288,10 @@ StartChar: shinsindothebrew
 Encoding: 64299 64299 1019
 Width: 840
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 488 220 basechar 0
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 390 600 basechar 0
+AnchorPoint: "vowel_below_heb" 390 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 638 1513 N 1 0 0 1 0 0 2
@@ -18153,6 +18304,9 @@ StartChar: shindageshshindothebrew
 Encoding: 64300 64300 1020
 Width: 840
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 675 600 basechar 0
+AnchorPoint: "above_mid_heb" 390 600 basechar 0
+AnchorPoint: "vowel_below_heb" 390 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 638 1513 N 1 0 0 1 0 0 2
@@ -18166,6 +18320,9 @@ StartChar: shindageshsindothebrew
 Encoding: 64301 64301 1021
 Width: 840
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 105 600 basechar 0
+AnchorPoint: "above_mid_heb" 390 600 basechar 0
+AnchorPoint: "vowel_below_heb" 390 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 212 -99 2
@@ -18179,33 +18336,40 @@ StartChar: alefpatahhebrew
 Encoding: 64302 64302 1022
 Width: 714
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
 LayerCount: 2
 Fore
 Refer: 613 1488 N 1 0 0 1 0 0 2
 Refer: 600 1463 S 1 0 0 1 59 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: alefqamatshebrew
 Encoding: 64303 64303 1023
 Width: 714
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
 LayerCount: 2
 Fore
 Refer: 613 1488 N 1 0 0 1 0 0 2
 Refer: 601 1464 S 1 0 0 1 44 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: alefdageshhebrew
 Encoding: 64304 64304 1024
 Width: 714
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 613 1488 N 1 0 0 1 0 0 2
 Refer: 604 1468 S 1 0 0 1 38 -367 2
-Validated: 32769
+Validated: 1146881
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" alefhebrew dageshhebrew
 EndChar
 
@@ -18213,6 +18377,9 @@ StartChar: betdageshhebrew
 Encoding: 64305 64305 1025
 Width: 651
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 97 600 basechar 0
+AnchorPoint: "above_mid_heb" 270 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 -11 0 2
@@ -18225,6 +18392,9 @@ StartChar: gimeldageshhebrew
 Encoding: 64306 64306 1026
 Width: 557
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 260 600 basechar 0
+AnchorPoint: "vowel_below_heb" 260 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 -75 0 2
@@ -18237,6 +18407,9 @@ StartChar: daletdageshhebrew
 Encoding: 64307 64307 1027
 Width: 638
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 77 600 basechar 0
+AnchorPoint: "above_mid_heb" 280 600 basechar 0
+AnchorPoint: "vowel_below_heb" 418 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 S 1 0 0 1 -93 0 2
@@ -18249,11 +18422,14 @@ StartChar: hedageshhebrew
 Encoding: 64308 64308 1028
 Width: 682
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 310 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 49 0 2
 Refer: 617 1492 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" hehebrew dageshhebrew
 EndChar
 
@@ -18261,6 +18437,9 @@ StartChar: vavdageshhebrew
 Encoding: 64309 64309 1029
 Width: 348
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 97 600 basechar 0
+AnchorPoint: "above_mid_heb" 190 600 basechar 0
+AnchorPoint: "vowel_below_heb" 190 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 S 1 0 0 1 -250 0 2
@@ -18273,6 +18452,9 @@ StartChar: zayindageshhebrew
 Encoding: 64310 64310 1030
 Width: 443
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 87 600 basechar 0
+AnchorPoint: "above_mid_heb" 270 600 basechar 0
+AnchorPoint: "vowel_below_heb" 190 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 -227 0 2
@@ -18285,6 +18467,9 @@ StartChar: tetdageshhebrew
 Encoding: 64312 64312 1031
 Width: 670
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 330 600 basechar 0
+AnchorPoint: "vowel_below_heb" 320 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 53 0 2
@@ -18297,6 +18482,9 @@ StartChar: yoddageshhebrew
 Encoding: 64313 64313 1032
 Width: 354
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 77 600 basechar 0
+AnchorPoint: "above_mid_heb" 171 600 basechar 0
+AnchorPoint: "vowel_below_heb" 171 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 -217 64 2
@@ -18309,6 +18497,9 @@ StartChar: finalkafdageshhebrew
 Encoding: 64314 64314 1033
 Width: 590
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 77 600 basechar 0
+AnchorPoint: "above_mid_heb" 260 600 basechar 0
+AnchorPoint: "vowel_below_heb" 200 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 -85 0 2
@@ -18321,6 +18512,9 @@ StartChar: kafdageshhebrew
 Encoding: 64315 64315 1034
 Width: 595
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 97 600 basechar 0
+AnchorPoint: "above_mid_heb" 280 600 basechar 0
+AnchorPoint: "vowel_below_heb" 240 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 -7 0 2
@@ -18333,6 +18527,9 @@ StartChar: lameddageshhebrew
 Encoding: 64316 64316 1035
 Width: 667
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 237 600 basechar 0
+AnchorPoint: "above_mid_heb" 390 600 basechar 0
+AnchorPoint: "vowel_below_heb" 330 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 S 1 0 0 1 -51 72 2
@@ -18345,6 +18542,9 @@ StartChar: memdageshhebrew
 Encoding: 64318 64318 1036
 Width: 704
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 87 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 67 0 2
@@ -18357,6 +18557,9 @@ StartChar: nundageshhebrew
 Encoding: 64320 64320 1037
 Width: 429
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 97 600 basechar 0
+AnchorPoint: "above_mid_heb" 280 600 basechar 0
+AnchorPoint: "vowel_below_heb" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 S 1 0 0 1 -184 0 2
@@ -18369,6 +18572,9 @@ StartChar: samekhdageshhebrew
 Encoding: 64321 64321 1038
 Width: 670
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 117 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 300 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 47 0 2
@@ -18381,6 +18587,9 @@ StartChar: pefinaldageshhebrew
 Encoding: 64323 64323 1039
 Width: 661
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 250 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 77 69 2
@@ -18392,6 +18601,9 @@ StartChar: pedageshhebrew
 Encoding: 64324 64324 1040
 Width: 660
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 290 600 basechar 0
+AnchorPoint: "vowel_below_heb" 290 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 90 70 2
@@ -18404,6 +18616,9 @@ StartChar: tsadidageshhebrew
 Encoding: 64326 64326 1041
 Width: 671
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 290 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 -140 -64 2
@@ -18416,6 +18631,9 @@ StartChar: qofdageshhebrew
 Encoding: 64327 64327 1042
 Width: 672
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 300 600 basechar 0
+AnchorPoint: "vowel_below_heb" 320 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 41 0 2
@@ -18428,6 +18646,9 @@ StartChar: reshdageshhebrew
 Encoding: 64328 64328 1043
 Width: 600
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 77 600 basechar 0
+AnchorPoint: "above_mid_heb" 260 600 basechar 0
+AnchorPoint: "vowel_below_heb" 450 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 637 1512 N 1 0 0 1 0 0 2
@@ -18440,6 +18661,9 @@ StartChar: shindageshhebrew
 Encoding: 64329 64329 1044
 Width: 840
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 682 600 basechar 0
+AnchorPoint: "vowel_below_heb" 396 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 638 1513 N 1 0 0 1 0 0 2
@@ -18452,6 +18676,9 @@ StartChar: tavdageshhebrew
 Encoding: 64330 64330 1045
 Width: 756
 Flags: HMW
+AnchorPoint: "vowel_above_heb" 157 600 basechar 0
+AnchorPoint: "above_mid_heb" 400 600 basechar 0
+AnchorPoint: "vowel_below_heb" 370 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 604 1468 N 1 0 0 1 145 0 2
@@ -18464,6 +18691,10 @@ StartChar: vavholamhebrew
 Encoding: 64331 64331 1046
 Width: 212
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 3 306 basechar 0
+AnchorPoint: "vowel_above_heb" -1 600 basechar 0
+AnchorPoint: "above_mid_heb" 150 600 basechar 0
+AnchorPoint: "vowel_below_heb" 102 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 618 1493 N 1 0 0 1 0 0 2
@@ -18476,11 +18707,14 @@ StartChar: betrafehebrew
 Encoding: 64332 64332 1047
 Width: 591
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 263 306 basechar 0
+AnchorPoint: "above_mid_heb" 470 600 basechar 0
+AnchorPoint: "vowel_below_heb" 310 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 614 1489 N 1 0 0 1 0 0 2
 Refer: 607 1471 S 1 0 0 1 48 0 2
-Validated: 32769
+Validated: 1146881
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" bethebrew rafehebrew
 EndChar
 
@@ -18488,11 +18722,14 @@ StartChar: kafrafehebrew
 Encoding: 64333 64333 1048
 Width: 550
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 253 306 basechar 0
+AnchorPoint: "above_mid_heb" 430 600 basechar 0
+AnchorPoint: "vowel_below_heb" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 607 1471 S 1 0 0 1 23 0 2
 Refer: 624 1499 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" kafhebrew rafehebrew
 EndChar
 
@@ -18500,11 +18737,15 @@ StartChar: perafehebrew
 Encoding: 64334 64334 1049
 Width: 568
 Flags: HMW
+AnchorPoint: "vowel_left_heb" 273 426 basechar 0
+AnchorPoint: "vowel_above_heb" 107 600 basechar 0
+AnchorPoint: "above_mid_heb" 480 600 basechar 0
+AnchorPoint: "vowel_below_heb" 280 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 607 1471 N 1 0 0 1 56 0 2
 Refer: 633 1508 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" pehebrew rafehebrew
 EndChar
 
@@ -18512,6 +18753,10 @@ StartChar: aleflamedhebrew
 Encoding: 64335 64335 1050
 Width: 714
 Flags: MW
+AnchorPoint: "vowel_left_heb" 133 306 basechar 0
+AnchorPoint: "vowel_above_heb" 247 600 basechar 0
+AnchorPoint: "above_mid_heb" 350 600 basechar 0
+AnchorPoint: "vowel_below_heb" 530 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36871,7 +37116,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 613 1488 N 1 0 0 1 -30 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2136
