@@ -107,15 +107,15 @@ ulUnicodeRange = [
 	interval(0x0400, 0x04FF),	# Cyrillic
 	interval(0x0500, 0x0527),	# Cyrillic Supplement
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
-	interval(0xA640, 0xA65F),	# Cyrillic Extended-B
-	interval(0xA662, 0xA673),
+	interval(0xA640, 0xA673),	# Cyrillic Extended-B
 	interval(0xA67C, 0xA697)
 	]
 	],
 [10,	'Armenian',     [interval(0x0531, 0x0556),
 			interval(0x0559, 0x055F),
 			interval(0x0561, 0x0587),
-			interval(0x0589, 0x058A)
+			interval(0x0589, 0x058A),
+			interval(0x058F, 0x058F)
 			]
 	],
 [11,	'Hebrew',    [
@@ -133,11 +133,9 @@ ulUnicodeRange = [
 	]
 	],
 [14,	"N'Ko", [interval(0x07C0, 0x07FF)]],
-[15,	'Devanagari',     [interval(0x0900, 0x0939),
-			interval(0x093C, 0x094E),
-			interval(0x0950, 0x0955),
-			interval(0x0958, 0x0972),
-			interval(0x0979, 0x097F)
+[15,	'Devanagari',     [ interval(0x0900, 0x0977),
+			interval(0x0979, 0x097F),
+			interval(0xA8E0, 0xA8FB)	# Extended
 			]],
 [16,	'Bengali',     [interval(0x0981, 0x0983),
 		interval(0x0985, 0x098C),
@@ -252,11 +250,10 @@ ulUnicodeRange = [
 [23,	'Malayalam',     [interval(0x0D02, 0x0D03),
 		interval(0x0D05, 0x0D0C),
 		interval(0x0D0E, 0x0D10),
-		interval(0x0D12, 0x0D28),
-		interval(0x0D2A, 0x0D39),
+		interval(0x0D12, 0x0D3A),
 		interval(0x0D3D, 0x0D44),
 		interval(0x0D46, 0x0D48),
-		interval(0x0D4A, 0x0D4D),
+		interval(0x0D4A, 0x0D4E),
 		interval(0x0D57, 0x0D57),
 		interval(0x0D60, 0x0D63),
 		interval(0x0D66, 0x0D75),
@@ -278,9 +275,9 @@ ulUnicodeRange = [
 		interval(0x1E00, 0x1EFF),	# Additional
 		interval(0x2C60, 0x2C7F),	# C
 		interval(0xA720, 0xA78E),	# D
-		interval(0xA790, 0xA791),	# D
-		interval(0xA7A0, 0xA7A9),	# D
-		interval(0xA7FA, 0xA7FF)	# D
+		interval(0xA790, 0xA793),	# D
+		interval(0xA7A0, 0xA7AA),	# D
+		interval(0xA7F8, 0xA7FF)	# D
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
 		interval(0x1F18, 0x1F1D),
@@ -502,7 +499,7 @@ ulUnicodeRange = [
 		interval(0x1A1E, 0x1A1F)]],
 [97, 	'Glagolitic', [ interval(0x2C00, 0x2C2E),
 		interval(0x2C30, 0x2C5E) ]],
-[98, 	'Tifinagh', [interval(0x2D30, 0x2D65),
+[98, 	'Tifinagh', [interval(0x2D30, 0x2D67),
 		interval(0x2D6F, 0x2D6F)
 	]],
 [99, 	'Yijing Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
