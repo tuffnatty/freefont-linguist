@@ -182,7 +182,7 @@ ulUnicodeRange = [
 		interval(0x0AD0, 0x0AD0),
 		interval(0x0AE0, 0x0AE3),
 		interval(0x0AE6, 0x0AEF),
-		interval(0x0AF1, 0x0AF1)
+		interval(0x0AF0, 0x0AF1)
 		]],
 [19,	'Oriya',     [interval(0x0B01, 0x0B03),
 		interval(0x0B05, 0x0B0C),
@@ -197,7 +197,7 @@ ulUnicodeRange = [
 		interval(0x0B56, 0x0B57),
 		interval(0x0B5C, 0x0B5D),
 		interval(0x0B5F, 0x0B63),
-		interval(0x0B66, 0x0B71),
+		interval(0x0B66, 0x0B77),
 	]],
 [20,	'Tamil',     [interval(0x0B82, 0x0B83),
 		interval(0x0B85, 0x0B8A),
@@ -350,7 +350,7 @@ ulUnicodeRange = [
 [58,	'Phoenician', [interval(0x10900, 0x1091B), 
 		interval(0x1091F, 0x1091F)], True],
 [59,	'CJK Unified Ideographs', [interval(0x4E00, 0x9FFF)]], #FIXME complex
-[60,	'Private Use Area', [interval(0xE800, 0xF8FF)]],
+[60,	'Private Use Area', [interval(0xE000, 0xF8FF)]],
 [61,	'CJK Compatibility Ideographs', [interval(0xF900, 0xFAFF)]],
 [62,	'Alphabetic Presentation Forms', [
 			interval(0xFB00, 0xFB06),
