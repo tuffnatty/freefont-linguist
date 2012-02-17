@@ -13,7 +13,6 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 UniqueID: 5020904
 UseUniqueID: 1
 FSType: 0
@@ -21,7 +20,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1328916120
+ModificationTime: 1329010506
 PfmFamily: 33
 TTFWeight: 700
 TTFWidth: 5
@@ -94,6 +93,8 @@ Lookup: 260 1 0 "'mark' Mark Positioning in Yiddish"  {"'mark' Mark Positioning 
 Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew 2"  {"'mark' Mark Positioning in Hebrew 2 subtable"  } ['mark' ('hebr' <'IWR ' 'dflt' > ) ]
 Lookup: 260 257 0 "'mark' Mark Positioning in Hebrew"  {"'mark' Mark Positioning in Hebrew subtable"  } ['mark' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Gurmukhi"  {"'abvm' Above Base Mark in Gurmukhi subtable"  } ['abvm' ('guru' <'dflt' > ) ]
+Lookup: 260 0 0 "'blwm' Below Base Mark in Gurmukhi mid"  {"'blwm' Below Base Mark in Gurmukhi mid"  } ['blwm' ('guru' <'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' Mark to Mark in Gurmukhi"  {"'mkmk' Mark to Mark in Gurmukhi"  } ['mkmk' ('guru' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Gurmukhi"  {"'blwm' Below Base Mark in Gurmukhi subtable"  } ['blwm' ('guru' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
@@ -243,7 +244,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 2544 16 12
+WinInfo: 2592 16 12
 BeginPrivate: 10
 UniqueID 7 5020904
 BlueValues 23 [-24 0 540 550 730 744]
@@ -266,7 +267,7 @@ Grid
 -1000 390 m 4
  2000 390 l 4
 EndSplineSet
-AnchorClass2: "guru_below"  "'blwm' Below Base Mark in Gurmukhi subtable" "guru_above"  "'abvm' Above Base Mark in Gurmukhi subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "above_mid_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_heb"  "'mark' Mark Positioning in Hebrew 2 subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Yiddish" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "abovegrk"  "'mark' Mark Positioning in Greek 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "belowgrk"  "'mark' Mark Positioning in Greek 0 subtable" 
+AnchorClass2: "gur-top-mkmk"  "'mkmk' Mark to Mark in Gurmukhi" "gur-below-mid"  "'blwm' Below Base Mark in Gurmukhi mid" "guru_below"  "'blwm' Below Base Mark in Gurmukhi subtable" "guru_above"  "'abvm' Above Base Mark in Gurmukhi subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "above_mid_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_heb"  "'mark' Mark Positioning in Hebrew 2 subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Yiddish" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "abovegrk"  "'mark' Mark Positioning in Greek 2 subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "belowgrk"  "'mark' Mark Positioning in Greek 0 subtable" 
 BeginChars: 65600 2655
 
 StartChar: space
@@ -28732,6 +28733,7 @@ Encoding: 2561 2561 1607
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "gur-top-mkmk" -225 640 mark 0
 AnchorPoint: "guru_above" -164 640 mark 0
 LayerCount: 2
 Fore
@@ -28757,6 +28759,7 @@ Encoding: 2562 2562 1608
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "gur-top-mkmk" -35 640 mark 0
 AnchorPoint: "guru_above" 0 640 mark 0
 LayerCount: 2
 Fore
@@ -28805,6 +28808,7 @@ StartChar: a_gur
 Encoding: 2565 2565 1610
 Width: 897
 Flags: MW
+AnchorPoint: "gur-below-mid" 396 -20 basechar 0
 AnchorPoint: "guru_below" 730 -10 basechar 0
 AnchorPoint: "guru_above" 730 640 basechar 0
 LayerCount: 2
@@ -28845,6 +28849,7 @@ StartChar: aa_gur
 Encoding: 2566 2566 1611
 Width: 1157
 Flags: HMW
+AnchorPoint: "gur-below-mid" 396 -20 basechar 0
 AnchorPoint: "guru_below" 970 -10 basechar 0
 AnchorPoint: "guru_above" 976 640 basechar 0
 LayerCount: 2
@@ -28882,13 +28887,14 @@ SplineSet
  503 104 486 58 418 58 c 0
  361 58 332 79 332 122 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: i_gur
 Encoding: 2567 2567 1612
 Width: 930
 Flags: HMW
+AnchorPoint: "gur-below-mid" 576 -20 basechar 0
 AnchorPoint: "guru_below" 760 -10 basechar 0
 AnchorPoint: "guru_above" 762 640 basechar 0
 LayerCount: 2
@@ -28932,7 +28938,9 @@ EndChar
 StartChar: ii_gur
 Encoding: 2568 2568 1613
 Width: 966
-Flags: MW
+Flags: HMW
+AnchorPoint: "guru_above" 950 640 basechar 0
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 790 -10 basechar 0
 LayerCount: 2
 Fore
@@ -28978,28 +28986,32 @@ StartChar: u_gur
 Encoding: 2569 2569 1614
 Width: 762
 Flags: HMW
+AnchorPoint: "guru_above" 780 640 basechar 0
 LayerCount: 2
 Fore
 Refer: 1682 2675 N 1 0 0 1 0 0 0
 Refer: 1657 2625 N 1 0 0 1 771 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uu_gur
 Encoding: 2570 2570 1615
 Width: 762
 Flags: HMW
+AnchorPoint: "guru_above" 780 640 basechar 0
 LayerCount: 2
 Fore
 Refer: 1682 2675 N 1 0 0 1 0 0 0
 Refer: 1658 2626 N 1 0 0 1 757 4 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ee_gur
 Encoding: 2575 2575 1616
 Width: 729
 Flags: HMW
+AnchorPoint: "guru_above" 660 640 basechar 0
+AnchorPoint: "gur-below-mid" 366 -20 basechar 0
 AnchorPoint: "guru_below" 550 -10 basechar 0
 LayerCount: 2
 Fore
@@ -29012,6 +29024,8 @@ StartChar: ai_gur
 Encoding: 2576 2576 1617
 Width: 904
 Flags: HMW
+AnchorPoint: "guru_above" 880 640 basechar 0
+AnchorPoint: "gur-below-mid" 406 -20 basechar 0
 AnchorPoint: "guru_below" 730 -10 basechar 0
 LayerCount: 2
 Fore
@@ -29023,8 +29037,9 @@ EndChar
 StartChar: oo_gur
 Encoding: 2579 2579 1618
 Width: 773
-Flags: MW
-AnchorPoint: "guru_below" 430 -10 basechar 0
+Flags: HMW
+AnchorPoint: "gur-below-mid" 436 -20 basechar 0
+AnchorPoint: "guru_below" 610 -10 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -29065,6 +29080,8 @@ StartChar: au_gur
 Encoding: 2580 2580 1619
 Width: 903
 Flags: HMW
+AnchorPoint: "guru_above" 900 640 basechar 0
+AnchorPoint: "gur-below-mid" 406 -20 basechar 0
 AnchorPoint: "guru_below" 730 -10 basechar 0
 LayerCount: 2
 Fore
@@ -29077,6 +29094,7 @@ StartChar: ka_gur
 Encoding: 2581 2581 1620
 Width: 726
 Flags: MW
+AnchorPoint: "gur-below-mid" 236 -20 basechar 0
 AnchorPoint: "guru_below" 590 -10 basechar 0
 AnchorPoint: "guru_above" 580 640 basechar 0
 LayerCount: 2
@@ -29111,7 +29129,8 @@ EndChar
 StartChar: kha_gur
 Encoding: 2582 2582 1621
 Width: 672
-Flags: MW
+Flags: HMW
+AnchorPoint: "gur-below-mid" 316 -20 basechar 0
 AnchorPoint: "guru_below" 510 -10 basechar 0
 AnchorPoint: "guru_above" 510 640 basechar 0
 LayerCount: 2
@@ -29123,23 +29142,23 @@ SplineSet
  368 208 410 226 453 261 c 1
  453 357 l 1
  209 357 l 1
-110 467 m 0
- 110 520 109 529 91 529 c 2
- -9 529 l 1
- -9 641 l 1
- 102 641 l 2
- 177 641 217 584 220 470 c 1
- 453 470 l 1
- 453 641 l 1
- 690 641 l 1
- 690 529 l 1
- 565 529 l 1
- 565 0 l 1
- 453 0 l 1
- 453 139 l 1
- 399 111 349 97 303 97 c 0
- 196 97 108 141 39 230 c 1
- 99 372 110 411 110 467 c 0
+110 467 m 4
+ 110 520 109 529 91 529 c 6
+ -9 529 l 5
+ -9 641 l 5
+ 102 641 l 6
+ 177 641 217 584 220 470 c 5
+ 453 470 l 5
+ 453 641 l 5
+ 690 641 l 5
+ 690 529 l 5
+ 565 529 l 5
+ 565 0 l 5
+ 453 0 l 5
+ 453 139 l 5
+ 399 111 349 97 303 97 c 4
+ 196 97 108 141 39 230 c 5
+ 99 372 110 411 110 467 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -29148,6 +29167,7 @@ StartChar: ga_gur
 Encoding: 2583 2583 1622
 Width: 741
 Flags: MW
+AnchorPoint: "gur-below-mid" 426 -20 basechar 0
 AnchorPoint: "guru_below" 570 -10 basechar 0
 AnchorPoint: "guru_above" 580 640 basechar 0
 LayerCount: 2
@@ -29183,6 +29203,7 @@ StartChar: gha_gur
 Encoding: 2584 2584 1623
 Width: 790
 Flags: MW
+AnchorPoint: "gur-below-mid" 346 -20 basechar 0
 AnchorPoint: "guru_below" 622 -10 basechar 0
 AnchorPoint: "guru_above" 620 640 basechar 0
 LayerCount: 2
@@ -29224,6 +29245,7 @@ StartChar: nga_gur
 Encoding: 2585 2585 1624
 Width: 702
 Flags: MW
+AnchorPoint: "gur-below-mid" 256 -20 basechar 0
 AnchorPoint: "guru_below" 540 -10 basechar 0
 AnchorPoint: "guru_above" 540 640 basechar 0
 LayerCount: 2
@@ -29263,6 +29285,7 @@ StartChar: ca_gur
 Encoding: 2586 2586 1625
 Width: 723
 Flags: MW
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 550 -10 basechar 0
 AnchorPoint: "guru_above" 560 640 basechar 0
 LayerCount: 2
@@ -29297,7 +29320,8 @@ StartChar: cha_gur
 Encoding: 2587 2587 1626
 Width: 693
 Flags: MW
-AnchorPoint: "guru_below" 530 -10 basechar 0
+AnchorPoint: "gur-below-mid" 326 -20 basechar 0
+AnchorPoint: "guru_below" 540 -10 basechar 0
 AnchorPoint: "guru_above" 540 640 basechar 0
 LayerCount: 2
 Fore
@@ -29330,13 +29354,14 @@ SplineSet
  142 109 215 104 270 102 c 1
  270 168 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: ja_gur
 Encoding: 2588 2588 1627
 Width: 688
 Flags: MW
+AnchorPoint: "gur-below-mid" 326 -20 basechar 0
 AnchorPoint: "guru_below" 520 -10 basechar 0
 AnchorPoint: "guru_above" 530 640 basechar 0
 LayerCount: 2
@@ -29370,6 +29395,7 @@ StartChar: jha_gur
 Encoding: 2589 2589 1628
 Width: 673
 Flags: MW
+AnchorPoint: "gur-below-mid" 326 -20 basechar 0
 AnchorPoint: "guru_below" 490 -10 basechar 0
 AnchorPoint: "guru_above" 520 640 basechar 0
 LayerCount: 2
@@ -29408,7 +29434,8 @@ StartChar: nya_gur
 Encoding: 2590 2590 1629
 Width: 683
 Flags: MW
-AnchorPoint: "guru_below" 500 -10 basechar 0
+AnchorPoint: "gur-below-mid" 386 -20 basechar 0
+AnchorPoint: "guru_below" 540 -10 basechar 0
 AnchorPoint: "guru_above" 520 640 basechar 0
 LayerCount: 2
 Fore
@@ -29447,6 +29474,7 @@ StartChar: tta_gur
 Encoding: 2591 2591 1630
 Width: 686
 Flags: MW
+AnchorPoint: "gur-below-mid" 366 -20 basechar 0
 AnchorPoint: "guru_below" 510 -10 basechar 0
 AnchorPoint: "guru_above" 520 640 basechar 0
 LayerCount: 2
@@ -29477,9 +29505,10 @@ EndChar
 StartChar: ttha_gur
 Encoding: 2592 2592 1631
 Width: 711
-Flags: MW
-AnchorPoint: "guru_below" 340 -10 basechar 0
-AnchorPoint: "guru_above" 350 640 basechar 0
+Flags: HMW
+AnchorPoint: "gur-below-mid" 356 -20 basechar 0
+AnchorPoint: "guru_below" 560 -10 basechar 0
+AnchorPoint: "guru_above" 570 640 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -29489,18 +29518,18 @@ SplineSet
  256 106 297 98 348 98 c 0
  502 98 540 164 540 216 c 0
  540 293 456 353 348 353 c 0
-49 219 m 0
- 49 273 69 417 292 460 c 1
- 292 529 l 1
- -14 529 l 1
- -14 641 l 1
- 730 641 l 1
- 730 529 l 1
- 403 529 l 1
- 403 460 l 1
- 629 417 650 272 650 219 c 0
- 650 78 518 -13 349 -13 c 0
- 183 -13 49 75 49 219 c 0
+49 219 m 4
+ 49 273 69 417 292 460 c 5
+ 292 529 l 5
+ -14 529 l 5
+ -14 641 l 5
+ 730 641 l 5
+ 730 529 l 5
+ 403 529 l 5
+ 403 460 l 5
+ 629 417 650 272 650 219 c 4
+ 650 78 518 -13 349 -13 c 4
+ 183 -13 49 75 49 219 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -29509,6 +29538,7 @@ StartChar: dda_gur
 Encoding: 2593 2593 1632
 Width: 680
 Flags: MW
+AnchorPoint: "gur-below-mid" 266 -20 basechar 0
 AnchorPoint: "guru_below" 530 -10 basechar 0
 AnchorPoint: "guru_above" 540 640 basechar 0
 LayerCount: 2
@@ -29546,6 +29576,7 @@ StartChar: ddha_gur
 Encoding: 2594 2594 1633
 Width: 693
 Flags: MW
+AnchorPoint: "gur-below-mid" 396 -20 basechar 0
 AnchorPoint: "guru_below" 530 -10 basechar 0
 AnchorPoint: "guru_above" 530 640 basechar 0
 LayerCount: 2
@@ -29585,6 +29616,7 @@ StartChar: nna_gur
 Encoding: 2595 2595 1634
 Width: 729
 Flags: MW
+AnchorPoint: "gur-below-mid" 356 -20 basechar 0
 AnchorPoint: "guru_below" 450 -10 basechar 0
 AnchorPoint: "guru_above" 460 640 basechar 0
 LayerCount: 2
@@ -29620,6 +29652,7 @@ StartChar: ta_gur
 Encoding: 2596 2596 1635
 Width: 691
 Flags: MW
+AnchorPoint: "gur-below-mid" 356 -20 basechar 0
 AnchorPoint: "guru_below" 530 -10 basechar 0
 AnchorPoint: "guru_above" 550 640 basechar 0
 LayerCount: 2
@@ -29652,6 +29685,7 @@ StartChar: tha_gur
 Encoding: 2597 2597 1636
 Width: 694
 Flags: MW
+AnchorPoint: "gur-below-mid" 286 -20 basechar 0
 AnchorPoint: "guru_below" 530 -10 basechar 0
 AnchorPoint: "guru_above" 530 640 basechar 0
 LayerCount: 2
@@ -29690,6 +29724,7 @@ StartChar: da_gur
 Encoding: 2598 2598 1637
 Width: 699
 Flags: MW
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 530 -10 basechar 0
 AnchorPoint: "guru_above" 530 640 basechar 0
 LayerCount: 2
@@ -29723,6 +29758,7 @@ StartChar: dha_gur
 Encoding: 2599 2599 1638
 Width: 666
 Flags: MW
+AnchorPoint: "gur-below-mid" 266 -20 basechar 0
 AnchorPoint: "guru_below" 500 -10 basechar 0
 AnchorPoint: "guru_above" 500 640 basechar 0
 LayerCount: 2
@@ -29755,30 +29791,31 @@ EndChar
 StartChar: na_gur
 Encoding: 2600 2600 1639
 Width: 669
-Flags: MW
-AnchorPoint: "guru_below" 320 -10 basechar 0
-AnchorPoint: "guru_above" 310 640 basechar 0
+Flags: HMW
+AnchorPoint: "gur-below-mid" 306 -20 basechar 0
+AnchorPoint: "guru_below" 520 -10 basechar 0
+AnchorPoint: "guru_above" 520 640 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-33 203 m 0
- 33 300 113 406 258 437 c 1
- 258 529 l 1
- -10 529 l 1
- -10 641 l 1
- 687 641 l 1
- 687 529 l 1
- 369 529 l 1
- 369 437 l 1
- 519 407 599 301 599 203 c 0
- 599 62 501 22 400 -20 c 1
- 400 86 l 1
- 454 112 488 130 488 203 c 0
- 488 309 356 336 315 336 c 0
- 210 336 143 262 143 203 c 0
- 143 130 178 112 231 86 c 1
- 231 -20 l 1
- 123 25 33 61 33 203 c 0
+33 203 m 4
+ 33 300 113 406 258 437 c 5
+ 258 529 l 5
+ -10 529 l 5
+ -10 641 l 5
+ 687 641 l 5
+ 687 529 l 5
+ 369 529 l 5
+ 369 437 l 5
+ 519 407 599 301 599 203 c 4
+ 599 62 501 22 400 -20 c 5
+ 400 86 l 5
+ 454 112 488 130 488 203 c 4
+ 488 309 356 336 315 336 c 4
+ 210 336 143 262 143 203 c 4
+ 143 130 178 112 231 86 c 5
+ 231 -20 l 5
+ 123 25 33 61 33 203 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -29787,6 +29824,7 @@ StartChar: pa_gur
 Encoding: 2602 2602 1640
 Width: 683
 Flags: MW
+AnchorPoint: "gur-below-mid" 296 -20 basechar 0
 AnchorPoint: "guru_below" 520 -10 basechar 0
 AnchorPoint: "guru_above" 520 640 basechar 0
 LayerCount: 2
@@ -29819,6 +29857,7 @@ StartChar: pha_gur
 Encoding: 2603 2603 1641
 Width: 690
 Flags: MW
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 520 -10 basechar 0
 AnchorPoint: "guru_above" 530 640 basechar 0
 LayerCount: 2
@@ -29854,6 +29893,7 @@ StartChar: ba_gur
 Encoding: 2604 2604 1642
 Width: 660
 Flags: MW
+AnchorPoint: "gur-below-mid" 276 -20 basechar 0
 AnchorPoint: "guru_below" 490 -10 basechar 0
 AnchorPoint: "guru_above" 490 640 basechar 0
 LayerCount: 2
@@ -29891,6 +29931,7 @@ StartChar: bha_gur
 Encoding: 2605 2605 1643
 Width: 659
 Flags: MW
+AnchorPoint: "gur-below-mid" 316 -20 basechar 0
 AnchorPoint: "guru_below" 500 -10 basechar 0
 AnchorPoint: "guru_above" 510 640 basechar 0
 LayerCount: 2
@@ -29928,6 +29969,7 @@ StartChar: ma_gur
 Encoding: 2606 2606 1644
 Width: 692
 Flags: MW
+AnchorPoint: "gur-below-mid" 346 -20 basechar 0
 AnchorPoint: "guru_below" 530 -10 basechar 0
 AnchorPoint: "guru_above" 530 640 basechar 0
 LayerCount: 2
@@ -29960,6 +30002,7 @@ StartChar: ya_gur
 Encoding: 2607 2607 1645
 Width: 772
 Flags: MW
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 610 -10 basechar 0
 AnchorPoint: "guru_above" 610 640 basechar 0
 LayerCount: 2
@@ -29997,6 +30040,7 @@ StartChar: ra_gur
 Encoding: 2608 2608 1646
 Width: 673
 Flags: MW
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 500 -10 basechar 0
 AnchorPoint: "guru_above" 510 640 basechar 0
 LayerCount: 2
@@ -30028,33 +30072,34 @@ EndChar
 StartChar: la_gur
 Encoding: 2610 2610 1647
 Width: 731
-Flags: MW
-AnchorPoint: "guru_below" 360 -10 basechar 0
-AnchorPoint: "guru_above" 370 640 basechar 0
+Flags: HMW
+AnchorPoint: "gur-below-mid" 346 -20 basechar 0
+AnchorPoint: "guru_below" 620 -10 basechar 0
+AnchorPoint: "guru_above" 550 640 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-22 222 m 0
- 22 312 75 409 195 439 c 1
- 136 529 l 1
- -7 529 l 1
- -7 641 l 1
- 747 641 l 1
- 747 529 l 1
- 585 529 l 1
- 527 439 l 1
- 653 408 699 306 699 222 c 0
- 699 88 597 -7 427 -16 c 1
- 427 96 l 1
- 561 104 588 172 588 222 c 0
- 588 323 500 346 474 349 c 1
- 382 199 l 1
- 338 199 l 1
- 248 349 l 1
- 222 346 134 324 134 222 c 0
- 134 143 188 101 295 96 c 1
- 295 -16 l 1
- 124 -7 22 90 22 222 c 0
+22 222 m 4
+ 22 312 75 409 195 439 c 5
+ 136 529 l 5
+ -7 529 l 5
+ -7 641 l 5
+ 747 641 l 5
+ 747 529 l 5
+ 585 529 l 5
+ 527 439 l 5
+ 653 408 699 306 699 222 c 4
+ 699 88 597 -7 427 -16 c 5
+ 427 96 l 5
+ 561 104 588 172 588 222 c 4
+ 588 323 500 346 474 349 c 5
+ 382 199 l 5
+ 338 199 l 5
+ 248 349 l 5
+ 222 346 134 324 134 222 c 4
+ 134 143 188 101 295 96 c 5
+ 295 -16 l 5
+ 124 -7 22 90 22 222 c 4
 360 366 m 1
  462 529 l 1
  260 529 l 1
@@ -30066,33 +30111,34 @@ EndChar
 StartChar: lla_gur
 Encoding: 2611 2611 1648
 Width: 814
-Flags: MW
-AnchorPoint: "guru_below" 440 -10 basechar 0
-AnchorPoint: "guru_above" 450 640 basechar 0
+Flags: HMW
+AnchorPoint: "gur-below-mid" 436 -20 basechar 0
+AnchorPoint: "guru_below" 700 -10 basechar 0
+AnchorPoint: "guru_above" 650 640 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-103 222 m 0
- 103 313 155 409 275 439 c 1
- 216 529 l 1
- -7 529 l 1
- -7 641 l 1
- 827 641 l 1
- 827 529 l 1
- 666 529 l 1
- 606 439 l 1
- 730 409 779 310 779 222 c 0
- 779 88 677 -7 507 -16 c 1
- 507 96 l 1
- 642 104 669 171 669 222 c 0
- 669 324 580 346 554 349 c 1
- 463 199 l 1
- 419 199 l 1
- 329 349 l 1
- 228 338 214 249 214 222 c 0
- 214 143 268 101 375 96 c 1
- 375 -16 l 1
- 205 -7 103 89 103 222 c 0
+103 222 m 4
+ 103 313 155 409 275 439 c 5
+ 216 529 l 5
+ -7 529 l 5
+ -7 641 l 5
+ 827 641 l 5
+ 827 529 l 5
+ 666 529 l 5
+ 606 439 l 5
+ 730 409 779 310 779 222 c 4
+ 779 88 677 -7 507 -16 c 5
+ 507 96 l 5
+ 642 104 669 171 669 222 c 4
+ 669 324 580 346 554 349 c 5
+ 463 199 l 5
+ 419 199 l 5
+ 329 349 l 5
+ 228 338 214 249 214 222 c 4
+ 214 143 268 101 375 96 c 5
+ 375 -16 l 5
+ 205 -7 103 89 103 222 c 4
 440 366 m 1
  542 529 l 1
  340 529 l 1
@@ -30112,6 +30158,7 @@ StartChar: va_gur
 Encoding: 2613 2613 1649
 Width: 663
 Flags: MW
+AnchorPoint: "gur-below-mid" 366 -20 basechar 0
 AnchorPoint: "guru_below" 500 -10 basechar 0
 AnchorPoint: "guru_above" 500 640 basechar 0
 LayerCount: 2
@@ -30147,6 +30194,7 @@ StartChar: sha_gur
 Encoding: 2614 2614 1650
 Width: 704
 Flags: MW
+AnchorPoint: "gur-below-mid" 326 -20 basechar 0
 AnchorPoint: "guru_below" 540 -10 basechar 0
 AnchorPoint: "guru_above" 540 640 basechar 0
 LayerCount: 2
@@ -30188,6 +30236,7 @@ StartChar: sa_gur
 Encoding: 2616 2616 1651
 Width: 702
 Flags: MW
+AnchorPoint: "gur-below-mid" 336 -20 basechar 0
 AnchorPoint: "guru_below" 540 -10 basechar 0
 AnchorPoint: "guru_above" 540 640 basechar 0
 LayerCount: 2
@@ -30222,6 +30271,7 @@ StartChar: ha_gur
 Encoding: 2617 2617 1652
 Width: 650
 Flags: MW
+AnchorPoint: "gur-below-mid" 346 -20 basechar 0
 AnchorPoint: "guru_below" 470 -10 basechar 0
 AnchorPoint: "guru_above" 490 640 basechar 0
 LayerCount: 2
@@ -30268,7 +30318,8 @@ EndChar
 StartChar: aamatra_gur
 Encoding: 2622 2622 1654
 Width: 307
-Flags: MW
+Flags: HMW
+AnchorPoint: "guru_above" 150 640 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -30282,7 +30333,7 @@ SplineSet
  200 529 l 1
  200 250 l 1
 EndSplineSet
-Validated: 1
+Validated: 3073
 EndChar
 
 StartChar: imatra_gur
@@ -30316,6 +30367,7 @@ StartChar: iimatra_gur
 Encoding: 2624 2624 1656
 Width: 306
 Flags: MW
+AnchorPoint: "gur-top-mkmk" 284 642 basemark 0
 AnchorPoint: "guru_below" 140 -10 basechar 0
 LayerCount: 2
 Fore
@@ -30344,7 +30396,7 @@ Encoding: 2625 2625 1657
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "guru_below" -350 -10 mark 0
+AnchorPoint: "gur-below-mid" -352 -20 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -30363,8 +30415,8 @@ StartChar: uumatra_gur
 Encoding: 2626 2626 1658
 Width: 0
 GlyphClass: 4
-Flags: MW
-AnchorPoint: "guru_below" -353 -10 mark 0
+Flags: HMW
+AnchorPoint: "gur-below-mid" -352 -20 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -30391,6 +30443,7 @@ Encoding: 2631 2631 1659
 Width: 0
 GlyphClass: 4
 Flags: MW
+AnchorPoint: "gur-top-mkmk" -76 642 basemark 0
 AnchorPoint: "guru_above" -191 640 mark 0
 LayerCount: 2
 Fore
@@ -30413,6 +30466,7 @@ Encoding: 2632 2632 1660
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "gur-top-mkmk" -76 642 basemark 0
 AnchorPoint: "guru_above" -191 640 mark 0
 LayerCount: 2
 Fore
@@ -30443,6 +30497,7 @@ Encoding: 2635 2635 1661
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "gur-top-mkmk" -66 642 basemark 0
 AnchorPoint: "guru_above" -191 640 mark 0
 LayerCount: 2
 Fore
@@ -30468,6 +30523,7 @@ Encoding: 2636 2636 1662
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "gur-top-mkmk" -26 642 basemark 0
 AnchorPoint: "guru_above" -261 640 mark 0
 LayerCount: 2
 Fore
@@ -30515,6 +30571,7 @@ StartChar: khha_gur
 Encoding: 2649 2649 1664
 Width: 684
 Flags: MW
+AnchorPoint: "gur-below-mid" 296 -20 basechar 0
 AnchorPoint: "guru_below" 510 -10 basechar 0
 AnchorPoint: "guru_above" 510 640 basechar 0
 LayerCount: 2
@@ -30558,6 +30615,7 @@ StartChar: ghha_gur
 Encoding: 2650 2650 1665
 Width: 813
 Flags: MW
+AnchorPoint: "gur-below-mid" 316 -20 basechar 0
 AnchorPoint: "guru_below" 650 -10 basechar 0
 AnchorPoint: "guru_above" 650 640 basechar 0
 LayerCount: 2
@@ -30600,6 +30658,7 @@ StartChar: za_gur
 Encoding: 2651 2651 1666
 Width: 715
 Flags: MW
+AnchorPoint: "gur-below-mid" 356 -20 basechar 0
 AnchorPoint: "guru_below" 550 -10 basechar 0
 AnchorPoint: "guru_above" 550 640 basechar 0
 LayerCount: 2
@@ -30640,6 +30699,7 @@ StartChar: rra_gur
 Encoding: 2652 2652 1667
 Width: 695
 Flags: MW
+AnchorPoint: "gur-below-mid" 316 -20 basechar 0
 AnchorPoint: "guru_below" 520 -10 basechar 0
 AnchorPoint: "guru_above" 550 640 basechar 0
 LayerCount: 2
@@ -30682,6 +30742,7 @@ StartChar: fa_gur
 Encoding: 2654 2654 1668
 Width: 709
 Flags: MW
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 540 -10 basechar 0
 AnchorPoint: "guru_above" 540 640 basechar 0
 LayerCount: 2
@@ -31071,6 +31132,7 @@ StartChar: iri_gur
 Encoding: 2674 2674 1681
 Width: 722
 Flags: MW
+AnchorPoint: "gur-below-mid" 376 -20 basechar 0
 AnchorPoint: "guru_below" 560 -10 basechar 0
 AnchorPoint: "guru_above" 560 640 basechar 0
 LayerCount: 2
@@ -31105,6 +31167,7 @@ StartChar: ura_gur
 Encoding: 2675 2675 1682
 Width: 760
 Flags: MW
+AnchorPoint: "gur-below-mid" 406 -20 basechar 0
 AnchorPoint: "guru_below" 430 -10 basechar 0
 LayerCount: 2
 Fore
@@ -38024,7 +38087,7 @@ StartChar: gur_ra_umatra.blws
 Encoding: 60624 -1 1969
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 45 mark 0
+AnchorPoint: "guru_below" -160 -15 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38054,7 +38117,7 @@ StartChar: gur_ha_umatra.blws
 Encoding: 60625 -1 1970
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 75 mark 0
+AnchorPoint: "guru_below" -160 -15 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38084,7 +38147,7 @@ StartChar: nounicode_3_1_3
 Encoding: 60626 -1 1971
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -230 85 mark 0
+AnchorPoint: "guru_below" -230 -5 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38103,14 +38166,14 @@ SplineSet
  -63 -424 l 1
  -425 -424 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: glyph161
 Encoding: 60627 -1 1972
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 55 mark 0
+AnchorPoint: "guru_below" -160 -15 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38134,7 +38197,7 @@ StartChar: gur_ra_uumatra.blws
 Encoding: 60628 -1 1973
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 135 mark 0
+AnchorPoint: "guru_below" -160 -5 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38163,6 +38226,7 @@ SplineSet
  -384 -459 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Gurmukhi subtable" gur_ra.blwf uumatra_gur
 EndChar
 
@@ -38170,7 +38234,7 @@ StartChar: gur_ha_uumatra.blws
 Encoding: 60629 -1 1974
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 145 mark 0
+AnchorPoint: "guru_below" -160 -5 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38197,6 +38261,7 @@ SplineSet
  -449 -460 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Gurmukhi subtable" gur_ha.blwf uumatra_gur
 EndChar
 
@@ -38269,6 +38334,7 @@ SplineSet
  250 713 189 761 189 828 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 2 0 0 
 Ligature2: "'abvs' Above Base Substitutions in Gurmukhi subtable" na_gur uumatra_gur tippi_gur
 EndChar
 
@@ -38295,6 +38361,7 @@ SplineSet
  219 743 186 706 137 706 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Gurmukhi subtable" aamatra_gur bindi_gur
 EndChar
 
@@ -38354,6 +38421,7 @@ SplineSet
  706 529 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'psts' Post Base Substitutions in Gurmukhi subtable" u_gur addak_gur
 EndChar
 
@@ -38420,6 +38488,7 @@ SplineSet
  689 529 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'psts' Post Base Substitutions in Gurmukhi subtable" uu_gur addak_gur
 EndChar
 
@@ -38427,6 +38496,7 @@ StartChar: gur_oo_addak.psts
 Encoding: 60636 -1 1980
 Width: 1060
 Flags: HMW
+AnchorPoint: "gur-below-mid" 386 -20 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38470,6 +38540,7 @@ SplineSet
  704 529 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'psts' Post Base Substitutions in Gurmukhi subtable" oo_gur addak_gur
 EndChar
 
@@ -38477,6 +38548,7 @@ StartChar: gur_ka.nukt
 Encoding: 60637 -1 1981
 Width: 729
 Flags: MW
+AnchorPoint: "gur-below-mid" 236 -40 basechar 0
 AnchorPoint: "guru_below" 560 -10 basechar 0
 AnchorPoint: "guru_above" 550 640 basechar 0
 LayerCount: 2
@@ -38484,6 +38556,7 @@ Fore
 Refer: 1653 2620 N 1 0 0 1 195 104 2
 Refer: 1620 2581 N 1 0 0 1 0 0 2
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" ka_gur nukta_gur
 EndChar
 
@@ -38496,6 +38569,7 @@ Fore
 Refer: 1623 2584 N 1 0 0 1 0 0 2
 Refer: 1653 2620 N 1 0 0 1 497 112 2
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" gha_gur nukta_gur
 EndChar
 
@@ -38507,7 +38581,8 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 204 95 2
 Refer: 1624 2585 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
+LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" nga_gur nukta_gur
 EndChar
 
@@ -38519,7 +38594,7 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 199 135 2
 Refer: 1625 2586 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" ca_gur nukta_gur
 EndChar
@@ -38532,7 +38607,8 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 195 73 2
 Refer: 1626 2587 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
+LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" cha_gur nukta_gur
 EndChar
 
@@ -38545,6 +38621,7 @@ Fore
 Refer: 1653 2620 N 1 0 0 1 210 105 2
 Refer: 1628 2589 N 1 0 0 1 0 0 2
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" jha_gur nukta_gur
 EndChar
 
@@ -38556,7 +38633,8 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 212 167 2
 Refer: 1629 2590 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
+LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" nya_gur nukta_gur
 EndChar
 
@@ -38568,7 +38646,7 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 203 111 2
 Refer: 1630 2591 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" tta_gur nukta_gur
 EndChar
 
@@ -38580,7 +38658,7 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 196 104 2
 Refer: 1631 2592 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" ttha_gur nukta_gur
 EndChar
 
@@ -38665,7 +38743,7 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 200 93 2
 Refer: 1639 2600 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" na_gur nukta_gur
 EndChar
 
@@ -38725,7 +38803,7 @@ LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 210 119 2
 Refer: 1645 2607 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" ya_gur nukta_gur
 EndChar
 
@@ -38767,6 +38845,7 @@ StartChar: gur_ha.nukt
 Encoding: 60661 -1 2005
 Width: 652
 Flags: HMW
+AnchorPoint: "gur-below-mid" 346 -40 basechar 0
 AnchorPoint: "guru_below" 460 -10 basechar 0
 AnchorPoint: "guru_above" 460 640 basechar 0
 LayerCount: 2
@@ -38781,13 +38860,15 @@ StartChar: gur_a.nukt
 Encoding: 60662 -1 2006
 Width: 900
 Flags: HMW
+AnchorPoint: "gur-below-mid" 396 -20 basechar 0
 AnchorPoint: "guru_below" 710 -10 basechar 0
 AnchorPoint: "guru_above" 710 640 basechar 0
 LayerCount: 2
 Fore
 Refer: 1653 2620 N 1 0 0 1 342 160 2
 Refer: 1610 2565 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" a_gur nukta_gur
 EndChar
 
@@ -38795,6 +38876,7 @@ StartChar: gur_aa.nukt
 Encoding: 60663 -1 2007
 Width: 1160
 Flags: HMW
+AnchorPoint: "gur-below-mid" 406 -20 basechar 0
 AnchorPoint: "guru_below" 880 -10 basechar 0
 AnchorPoint: "guru_above" 870 640 basechar 0
 LayerCount: 2
@@ -38849,6 +38931,7 @@ StartChar: gur_i.nukt
 Encoding: 60664 -1 2008
 Width: 929
 Flags: HMW
+AnchorPoint: "gur-below-mid" 596 -70 basechar 0
 AnchorPoint: "guru_below" 720 -10 basechar 0
 AnchorPoint: "guru_above" 720 640 basechar 0
 LayerCount: 2
@@ -38903,6 +38986,7 @@ StartChar: gur_ii.nukt
 Encoding: 60665 -1 2009
 Width: 983
 Flags: HMW
+AnchorPoint: "gur-below-mid" 366 -50 basechar 0
 AnchorPoint: "guru_below" 730 -10 basechar 0
 LayerCount: 2
 Fore
@@ -38961,7 +39045,7 @@ Fore
 Refer: 1657 2625 N 1 0 0 1 764 3 2
 Refer: 1682 2675 N 1 0 0 1 0 0 2
 Refer: 1653 2620 N 1 0 0 1 205 126 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" u_gur nukta_gur
 EndChar
 
@@ -38974,7 +39058,7 @@ Fore
 Refer: 1658 2626 N 1 0 0 1 753 4 2
 Refer: 1682 2675 N 1 0 0 1 0 0 2
 Refer: 1653 2620 N 1 0 0 1 206 126 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" uu_gur nukta_gur
 EndChar
 
@@ -38982,6 +39066,7 @@ StartChar: gur_ee.nukt
 Encoding: 60668 -1 2012
 Width: 721
 Flags: HMW
+AnchorPoint: "gur-below-mid" 366 -40 basechar 0
 AnchorPoint: "guru_below" 500 -10 basechar 0
 LayerCount: 2
 Fore
@@ -38996,13 +39081,14 @@ StartChar: gur_ai.nukt
 Encoding: 60669 -1 2013
 Width: 903
 Flags: HMW
+AnchorPoint: "gur-below-mid" 406 -40 basechar 0
 AnchorPoint: "guru_below" 710 -10 basechar 0
 LayerCount: 2
 Fore
 Refer: 1660 2632 N 1 0 0 1 896 0 2
 Refer: 1610 2565 N 1 0 0 1 0 0 2
 Refer: 1653 2620 N 1 0 0 1 348 162 2
-Validated: 98305
+Validated: 32769
 Ligature2: "'nukt' Nukta Forms in Gurmukhi subtable" ai_gur nukta_gur
 EndChar
 
@@ -39010,6 +39096,7 @@ StartChar: gur_oo.nukt
 Encoding: 60670 -1 2014
 Width: 780
 Flags: HMW
+AnchorPoint: "gur-below-mid" 386 -20 basechar 0
 AnchorPoint: "guru_below" 390 -10 basechar 0
 LayerCount: 2
 Fore
@@ -39023,6 +39110,7 @@ StartChar: gur_au.nukt
 Encoding: 60671 -1 2015
 Width: 903
 Flags: HMW
+AnchorPoint: "gur-below-mid" 406 -20 basechar 0
 AnchorPoint: "guru_below" 700 -10 basechar 0
 LayerCount: 2
 Fore
@@ -39037,6 +39125,7 @@ StartChar: gur_aa_bindi.abvs
 Encoding: 60672 -1 2016
 Width: 1145
 Flags: HMW
+AnchorPoint: "gur-below-mid" 396 -20 basechar 0
 AnchorPoint: "guru_below" 920 -10 basechar 0
 LayerCount: 2
 Fore
@@ -39086,6 +39175,7 @@ SplineSet
  1055 743 1022 706 973 706 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Gurmukhi subtable" aa_gur bindi_gur
 EndChar
 
@@ -39093,7 +39183,7 @@ StartChar: gur_va_umatra.blws
 Encoding: 60673 -1 2017
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 119 mark 0
+AnchorPoint: "guru_below" -160 -1 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -39121,6 +39211,7 @@ SplineSet
  -435 -436 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Gurmukhi subtable" gur_va.blwf umatra_gur
 EndChar
 
@@ -39128,7 +39219,7 @@ StartChar: gur_va_uumatra.blws
 Encoding: 60674 -1 2018
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 159 mark 0
+AnchorPoint: "guru_below" -160 -1 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -39161,6 +39252,7 @@ SplineSet
  -352 -87 -365 -94 -365 -107 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Gurmukhi subtable" gur_va.blwf uumatra_gur
 EndChar
 
@@ -39168,6 +39260,7 @@ StartChar: gur_ra_virama.blws
 Encoding: 60675 -1 2019
 Width: 0
 Flags: HMW
+AnchorPoint: "guru_below" -160 -1 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -39189,6 +39282,7 @@ SplineSet
  -132 -91 -134 -76 -152 -109 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Gurmukhi subtable" gur_ra.blwf virama_gur
 EndChar
 
@@ -39196,7 +39290,7 @@ StartChar: gur_ha.blws
 Encoding: 60676 -1 2020
 Width: 0
 Flags: HMW
-AnchorPoint: "guru_below" -160 129 mark 0
+AnchorPoint: "guru_below" -160 -1 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -39218,6 +39312,7 @@ SplineSet
  -115 -134 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Gurmukhi subtable" gur_ha.blwf virama_gur
 EndChar
 

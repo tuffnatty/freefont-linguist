@@ -12,7 +12,7 @@ FFPY=fontforge -lang=py -script
 
 ffversion=`fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'`
 
-TESTFF=if test -z ${ffversion}; then echo Fontforge program is required to build FreeFont; exit 1; fi; if test `fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'` -lt 20080429 ; then echo FontForge version too old; exit 1; fi
+TESTFF=if test -z ${ffversion}; then echo FontForge program is required to build FreeFont; exit 1; fi; if test `fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'` -lt 20080429 ; then echo FontForge version too old; exit 1; fi
 
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf .woff
