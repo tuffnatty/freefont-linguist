@@ -1,0 +1,79 @@
+	Usage of GNU FreeFont
+
+Language-specific features
+==========================
+
+Some OpenType font features are activated only when the text is specified to
+be of a certain language.  This is done in HTML by enclosing the text with a
+tag whose 'lang' attribute is set to the appropriate ISO 632.2 language code.
+
+Latin
+-----
+Dutch	ligatures for ij, IJ
+Sami	letter Eng
+Turkish	overrides ligatures fi ffi of Latin
+
+Cyrillic
+--------
+Ukrainian	ligature for double i-diaresis
+Serbian/Macedonian	localized letters be, and more in italic
+Bulgarian	style set for modern glyphs
+
+Hebrew
+------
+Yiddish	raised vowels under yo
+
+Indic languages
+---------------
+The 'danda' character is encoded in Unicode only in the Devanagari range.
+When writing in scripts of other Indic languages, this same character is
+to be used.  But the shapes and line thicknesses of glyphs vary slightly
+from one script to another, so the same glyph for 'danda' may not fit all
+scripts.
+
+By specifying the language of the text, an appropriate glyph for 'danda'
+will be obtained.
+
+Discretionary features
+======================
+These features are accessible only from typesetting software.
+Typically the user must specifically request them.
+
+Unless otherwise noted, these are available only in FreeSerif.
+
+Ligatures and substitutions
+---------------------------
+Arabic, Armenian, Hebrew, German,
+
+Small captials
+--------------
+
+A limited set of specially drawn small capital letters in Latin.
+
+Superscript and subscript
+-------------------------
+
+Transform a limited set of characters--mostly Latin letters and numerals--
+to versions well-sized and positioned as superscript or subscript.
+
+Numeral styles
+--------------
+
+The default numerals of FreeSerif are mono-spaced and of even height.
+It also features proportionally-spaced numerals, and "old-style" numerals--
+those which vary in height and sometimes go beneath the baseline.
+These can be had at discretion.
+
+Diagonal fractions
+------------------
+
+A limited set of diagonal fraction substitutions are available at discretion.
+The set is more than what is encoded in Unicode.
+They work with the ASCII slash or the mathematical slash U+2215.
+The transform a sequence "number-slash-number" to a diagonal form.
+
+Zero
+----
+
+A slashed form of the numeral zero is available at discretion.
+Available in all faces.
