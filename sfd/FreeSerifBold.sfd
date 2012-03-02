@@ -13,6 +13,7 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 UniqueID: 5020933
 UseUniqueID: 1
 FSType: 0
@@ -20,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1330534819
+ModificationTime: 1330651909
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -122,7 +123,7 @@ Lookup: 4 0 0 "'pres' Pre Base Substitutions in Devanagari old"  {"'pres' Pre Ba
 Lookup: 4 0 0 "'pres' Pre-Base Substitutions in Devanagari old 2"  {"'pres' Pre Base Substitutions in Devanagari old 2 rakaar-5"  "'pres' Pre-Base Substitutions in Devanagari old 2-3"  } ['pres' ('dev2' <'SAN ' > 'deva' <'SAN ' > ) ]
 Lookup: 6 0 0 "'pres' Pre Base Subst Chain in Devanagari vert-avoid"  {"'pres' Pre Base Subst Chain in Devanagari vert-avoid"  } ['pres' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pres' Pre-Base Substitutions in Devanagari general"  {"'pres' Pre-Base Substitutions in Devanagari general-subtable"  } ['pres' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
-Lookup: 6 0 0 "'pres' Pre Base Subst Chain in Devanagari non-half rak"  {"'pres' Pre Base Subst Chain in Devanagari-non-half rak"  } ['pres' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
+Lookup: 6 0 0 "'pres' Pre Base Subst Chain in Devanagari non-half rak"  {"'pres' Pre Base Subst Chain in Devanagari caron-rak"  "'pres' Pre Base Subst Chain in Devanagari-non-half rak"  } ['pres' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'pres' Pre Base Subst Chain in Devanagari ya"  {"'pres' Pre Base Subst Chain in Devanagari lig+-ya"  "'pres' Pre Base Chain in Devanagari-openya"  "'pres' Pre Base Chain in Devanagari-non-openya"  } ['pres' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pres' Pre Base Substitutions in Devanagari half"  {"'pres' Pre Base Substitutions in Devanagari-half-ra"  "'pres' Pre Base Substitutions in Devanagari half-cjcts"  } ['pres' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'abvs' Above Base Substitutions in Devanagari"  {"'abvs' Above Base Substitutions in Devanagari subtable"  } ['abvs' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
@@ -331,6 +332,27 @@ KernClass2: 12 13 "'kern' Horizontal Kerning in Cyrillic-small"
  33 acyrillic uni04D1 uni04D3 uni04D5
  10 becyrillic
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -15 {} -15 {} -20 {} -30 {} -15 {} -15 {} -40 {} -20 {} -20 {} 0 {} -30 {} -30 {} -40 {} -30 {} -30 {} -40 {} -20 {} -10 {} -20 {} -20 {} -40 {} -30 {} 0 {} -15 {} -25 {} -10 {} -20 {} -25 {} -5 {} -20 {} -10 {} -10 {} -30 {} -30 {} -10 {} 0 {} -40 {} -20 {} -30 {} 0 {} -30 {} -30 {} 0 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -30 {} -20 {} 0 {} 0 {} -10 {} -40 {} -30 {} -40 {} 0 {} -45 {} -20 {} -10 {} -20 {} -30 {} -20 {} -20 {} 0 {} 0 {} -30 {} -30 {} 0 {} 0 {} 0 {} -20 {} 0 {} -10 {} -20 {} -10 {} -10 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -10 {} 0 {} 0 {} -30 {} -15 {} -30 {} -40 {} -30 {} -40 {} -40 {} -20 {} -20 {} -40 {} -40 {} -30 {} 0 {} -40 {} -10 {} -30 {} -20 {} -50 {} -50 {} -20 {} -20 {} -10 {} -40 {} -30 {} -30 {} 0 {} -10 {} -45 {} -30 {} -30 {} -30 {} -30 {} -30 {} -20 {} -40 {} -40 {} -30 {} 0 {}
+ChainSub2: class "'pres' Pre Base Subst Chain in Devanagari-non-half rak"  3 2 1 1
+  Class: 6 virama
+  Class: 10 dev_rakaar
+  BClass: 56 ngadeva chadeva ttadeva tthadeva ddadeva ddhadeva dadeva
+ 2 1 0
+  ClsList: 1 2
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "Substitute rakaar.blwf for virama-rakaar in Devanagari" 
+EndFPST
+ChainSub2: class "'pres' Pre Base Subst Chain in Devanagari caron-rak"  2 2 1 1
+  Class: 10 dev_rakaar
+  BClass: 56 ngadeva chadeva ttadeva tthadeva ddadeva ddhadeva dadeva
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "Substitute rakaar.blf for rakaar in Devanagari" 
+EndFPST
 ChainSub2: class "'pres' Pre Base Chain in Devanagari-non-openya"  3 3 1 1
   Class: 6 virama
   Class: 6 yadeva
@@ -342,9 +364,6 @@ ChainSub2: class "'pres' Pre Base Chain in Devanagari-non-openya"  3 3 1 1
   FClsList:
  1
   SeqLookup: 0 "Substitute ya for virama-ya in Devanagari" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' Pre Base Chain in Devanagari-openya"  3 6 1 5
   Class: 6 virama
@@ -384,9 +403,6 @@ ChainSub2: class "'pres' Pre Base Chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "Substitute openya for virama-ya in Devanagari" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' Pre Base Subst Chain in Devanagari lig+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -399,20 +415,6 @@ ChainSub2: glyph "'pres' Pre Base Subst Chain in Devanagari lig+-ya"  0 0 0 2
  FString: 6 yadeva
  1
   SeqLookup: 0 "Substitute ligature for da+-half in Devanagari" 
-EndFPST
-ChainSub2: class "'pres' Pre Base Subst Chain in Devanagari-non-half rak"  3 2 1 1
-  Class: 6 virama
-  Class: 10 dev_rakaar
-  BClass: 56 ngadeva chadeva ttadeva tthadeva ddadeva ddhadeva dadeva
- 2 1 0
-  ClsList: 1 2
-  BClsList: 1
-  FClsList:
- 1
-  SeqLookup: 0 "Substitute rakaar.blwf for virama-rakaar in Devanagari" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' Pre Base Subst Chain in Devanagari vert-avoid"  0 0 0 1
  String: 20 dadeva virama vadeva
@@ -529,9 +531,6 @@ ChainSub2: class "'ccmp' Contextual Chained Decomposition in Sinhala-2"  13 13 1
   FClsList:
  1
   SeqLookup: 0 "'ccmp' Glyph Decomposition in Sinhala-13" 
-  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  "12"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  "12"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-2"  5 5 1 1
   Class: 7 al_sinh
@@ -548,9 +547,6 @@ ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-2"  5 5 1 1
   FClsList:
  1
   SeqLookup: 0 "'ccmp' Glyph Composition in Sinhala" 
-  ClassNames: "0"  "1"  "2"  "3"  "4"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-1"  6 2 1 3
   Class: 7 al_sinh
@@ -577,9 +573,6 @@ ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-1"  6 2 1 3
   FClsList:
  1
   SeqLookup: 0 "'ccmp' Glyph Composition in Sinhala" 
-  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'ccmp' Contextual Chaining in Latin - iogonek-subtable"  0 0 0 1
  String: 7 iogonek
@@ -633,7 +626,7 @@ LangName: 1029 "" "" "tu+AQ0A-n+AOkA" "" "Free Serif tu+AQ0A-n+AOkA"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "Free Serif +BD8EPgQ7BEMERwQ1BEAENQQ9" 
 LangName: 1069 "" "" "Lodia" "" "Free Serif Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3 0
+GaspTable: 3 9 2 21 1 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
