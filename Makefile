@@ -74,10 +74,10 @@ wofftar: woff
 	tar czvf $(WOFFTARFILE) $(RELEASE)/
 
 srctar:
-	rm -rf $(TMPDIR) $(SRCTARFILE)
+	make clean
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) sfd/*.sfd $(TMPDIR)
-	cp -ra $(ADMIN) notes $(TMPDIR)
+	cp -a $(ADMIN) $(TMPDIR)
+	rsync -a --exclude ".svn" sfd tools notes $(TMPDIR)
 	tar czvf $(SRCTARFILE) $(RELEASE)/
 
 tests:
