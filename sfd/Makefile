@@ -19,7 +19,7 @@ TESTFF=if test -z ${ffversion}; then echo FontForge program is required to build
 
 %.otf : %.sfd
 	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/generate/OpenType $< 2>/dev/stdout 1>/dev/stderr | tail -n +4 ) 2>&1 
+	@ ( $(FFPY) ../tools/generate/OpenType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
 
 %.ttf : %.sfd
 	@ $(TESTFF)
