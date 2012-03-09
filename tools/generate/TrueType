@@ -44,6 +44,7 @@ if argc > 1:
 		ttfile = f.fontname + ".ttf"
 		vstr = trim_version_str( f )
 		print "Generating TrueType file ", ttfile, ' ', vstr
+		f.layers['Fore'].is_quadratic = True
 		f.selection.all()
 		f.autoHint()
 		f.autoInstr()
