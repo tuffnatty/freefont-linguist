@@ -270,6 +270,7 @@ ulUnicodeRange = [
 		interval(0x2D00, 0x2D25) # Supplement
 		]],
 [27,	'Balinese', [interval(0x1B00, 0x1B7F)]],
+#	'Batak', [interval(0x1BC0, 0x1BFF)]],
 [28,	'Hangul Jamo',     [interval(0x1100, 0x11FF)]],
 [29,	'Latin Extended (Additional,C,D)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
@@ -342,14 +343,16 @@ ulUnicodeRange = [
 [50,	'Katakana', [interval(0x30A0, 0x30FF)]],
 [51,	'Bopomofo', [interval(0x3100, 0x312F)]],
 [52,	'Hangul Compatibility Jamo', [interval(0x3130, 0x318F)]],
-[53,	'CJK Miscellaneous', [interval(0x3190, 0x319F)]],
+[53,	'Kanbun', [interval(0x3190, 0x319F)]], # was CJK Miscellaneous
 [54,	'Enclosed CJK Letters and Months', [interval(0x3200, 0x32FF)]],
 [55,	'CJK Compatibility', [interval(0x3300, 0x33FF)]],
+# 'Lisu', [interval(0xA4D0, 0xA4FF)]],
 [56,	'Hangul Syallables', [interval(0xAC00, 0xD7A3)]],
 [57,	'Non-Plane 0', [interval(0xD800, 0xDFFF)]],
 [58,	'Phoenician', [interval(0x10900, 0x1091B), 
 		interval(0x1091F, 0x1091F)], True],
 [59,	'CJK Unified Ideographs', [interval(0x4E00, 0x9FFF)]], #FIXME complex
+# Meetai Mayek ABC0 ABFF
 [60,	'Private Use Area', [interval(0xE000, 0xF8FF)]],
 [61,	'CJK Compatibility Ideographs', [interval(0xF900, 0xFAFF)]],
 [62,	'Alphabetic Presentation Forms', [
@@ -453,6 +456,13 @@ ulUnicodeRange = [
 	], True],
 [86, 	'Gothic', [interval(0x10330, 0x1034A)], True],
 [87, 	'Deseret', [interval(0x10400, 0x1044F)], True],
+#'Karoshthi', [interval(0x10A00, 0x10A5F)], True],
+#'Kaithi', [interval(0x11080, 0x110C1)], True],
+#'Sora Sompeng', [interval(0x110D0, 0x110F0)], True],
+#'Chakma', [interval(0x11100, 0x1114F)], True],
+#'Sharada', [interval(0x11180, 0x111DF)], True],
+#'Takri', [interval(0x11680, 0x116CF)], True],
+#'Miao', [interval(0x16F00, 0x16F9F)], True],
 [88, 	'Byzantine &amp; Western Musical Symbols', [interval(0x1D000, 0x1D0F5),
 			interval(0x1D100, 0x1D126),
 			interval(0x1D129, 0x1D1DD)
