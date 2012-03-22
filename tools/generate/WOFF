@@ -155,16 +155,18 @@ if argc > 1:
 		woff_file = f.fontname + ".woff"
 		vstr = trim_version_str( f )
 		print "Generating WOFF file ", woff_file, ' ', vstr
+		# Wanted to set to 'UniocdeBmp' if there were no high unicodes
+		# but all attemtps to determine that from Python failed.
+		f.encoding = 'UnicodeFull'
 		f.selection.all()
 		f.autoHint()
-		f.autoInstr()
 		# Copy copyright info etc from the tt tables into the
 		# WOFF XML section.
 		xml = fontInfo2WOFFxml( f )
 		f.woffMajor = 1
 		f.woffMajor = 0
 		f.woffMetadata = xml
-		f.generate( woff_file, flags=('opentype','old-kern') )
+		f.generate( woff_file, flags=('opentype') )
 		f.close()
 else:
 	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"

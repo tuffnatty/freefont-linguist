@@ -44,9 +44,12 @@ if argc > 1:
 		otfile = f.fontname + ".otf"
 		vstr = trim_version_str( f )
 		print "Generating OpenType file ", otfile, ' ', vstr
+		# Wanted to set to 'UniocdeBmp' if there were no high unicodes
+		# but all attemtps to determine that from Python failed.
+		f.encoding = 'UnicodeFull'
 		f.selection.all()
 		f.autoHint()	# because without gasp table, small sizes ugly
-		f.generate( otfile, flags=('opentype','old-kern') )
+		f.generate( otfile, flags=('opentype') )
 		f.close()
 else:
 	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"

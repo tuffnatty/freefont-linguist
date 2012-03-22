@@ -44,6 +44,10 @@ if argc > 1:
 		ttfile = f.fontname + ".ttf"
 		vstr = trim_version_str( f )
 		print "Generating TrueType file ", ttfile, ' ', vstr
+		# Wanted to set to 'UniocdeBmp' if there were no high unicodes
+		# but all attemtps to determine that from Python failed.
+		f.encoding = 'UnicodeFull'
+
 		f.layers['Fore'].is_quadratic = True
 		f.selection.all()
 		f.autoHint()
