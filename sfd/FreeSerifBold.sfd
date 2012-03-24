@@ -20,7 +20,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1332506928
+ModificationTime: 1332535326
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -147,6 +147,8 @@ Lookup: 260 0 0 "'abvm' Above Base Mark in Devanagari"  {"'abvm' Above Base Mark
 Lookup: 260 0 0 "'blwm' Below Base Mark in Devanagari"  {"'blwm' Below Base Mark in Devanagari-nukta"  "'blwm' Below Base Mark in Devanagari subtable"  "'blwm' Below Base Mark in Devanagari rakaar"  } ['blwm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Devanagari"  {"'mkmk' Mark to Mark in Devanagari"  } ['mkmk' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Devanagari-below"  {"'mkmk' Mark to Mark in Devanagari-below"  } ['mkmk' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
+Lookup: 258 8 0 "'dist' Distance in Devanagari"  {"'dist' Distance in Devanagari" [150,0,6] } ['kern' ('deva' <'dflt' > ) ]
+Lookup: 258 0 0 "'dist' Distance in Devanagari - marks"  {"'dist' Distance in Devanagari - marks left" [150,0,6] "'dist' Distance in Devanagari - marks-right" [150,0,6] } ['kern' ('deva' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek and Coptic"  {"'mark' Mark Positioning in Greek and Coptic subtable"  } ['mark' ('copt' <'dflt' > 'grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -173,6 +175,55 @@ Lookup: 260 0 0 "'blwm' Below Base Mark in Gurmukhi mid"  {"'blwm' Below Base Ma
 Lookup: 260 0 0 "'blwm' Below Base Mark in Gurmukhi-nukta"  {"'blwm' Below Base Mark in Gurmukhi-nukta"  } ['blwm' ('guru' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+KernClass2: 10 2 "'dist' Distance in Devanagari - marks-right" 
+ 28 kadeva phadeva qadeva fadeva
+ 172 khadeva gadeva ghadeva cadeva jadeva jhadeva nyadeva nnadeva tadeva thadeva dhadeva nadeva nnnadeva padeva badeva bhadeva madeva yadeva ladeva vadeva shadeva ssadeva sadeva
+ 7 ngadeva
+ 7 chadeva
+ 40 ttadeva tthadeva ddhadeva dadeva rhadeva
+ 14 radeva rradeva
+ 16 lladeva llladeva
+ 6 hadeva
+ 17 ddadeva dddhadeva
+ 63 aadeva ideva iideva ocandrasigndeva oshortsigndeva odeva audeva
+ 0 {} 0 {} 0 {} -40 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -20 {} 0 {} -40 {} 0 {} -50 {} 0 {} -40 {}
+KernClass2: 2 12 "'dist' Distance in Devanagari - marks left" 
+ 70 aadeva ideva iideva ocandrasigndeva oshortsigndeva odeva audeva awdeva
+ 42 kadeva padeva phadeva badeva qadeva fadeva
+ 48 ttadeva tthadeva ddadeva ddhadeva dadeva rhadeva
+ 14 radeva rradeva
+ 37 cadeva jadeva nyadeva nadeva nnnadeva
+ 23 khadeva sadeva khhadeva
+ 15 ghadeva chadeva
+ 7 jhadeva
+ 7 nnadeva
+ 6 tadeva
+ 6 madeva
+ 6 yadeva
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} -60 {} -100 {} -100 {} -70 {} -60 {} -50 {} 0 {} -40 {} -40 {} -50 {}
+KernClass2: 10 13 "'dist' Distance in Devanagari" 
+ 39 uukaradeva kadeva phadeva qadeva fadeva
+ 329 shortadeva akaradeva aakaradeva ocandradeva oshortdeva okaradeva aukaradeva khadeva gadeva ghadeva cadeva jadeva nyadeva nnadeva tadeva dhadeva nadeva nnnadeva padeva badeva bhadeva madeva yadeva ladeva vadeva shadeva ssadeva sadeva khhadeva ghhadeva zadeva yyadeva acandradva oedeva ooedeva awkaradeva uedeva uuedeva heavyyadeva
+ 48 ttadeva tthadeva ddadeva ddhadeva dadeva rhadeva
+ 14 radeva rradeva
+ 43 ecandradeva eshortdeva ekaradeva aikaradeva
+ 26 rvocalicdeva rrvocalicdeva
+ 26 lvocalicdeva llvocalicdeva
+ 9 ukaradeva
+ 6 hadeva
+ 57 kadeva padeva phadeva badeva vadeva ssadeva qadeva fadeva
+ 44 cadeva jadeva nyadeva nadeva nnnadeva zadeva
+ 40 ttadeva tthadeva ddadeva ddhadeva dadeva
+ 14 radeva rradeva
+ 23 khadeva sadeva khhadeva
+ 7 shadeva
+ 15 ghadeva chadeva
+ 7 jhadeva
+ 23 ladeva lladeva llladeva
+ 6 hadeva
+ 6 madeva
+ 14 yadeva yyadeva
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -50 {} -40 {} -60 {} -30 {} -40 {} -40 {} -30 {} -20 {} 0 {} -30 {} -60 {} 0 {} -40 {} -60 {} -50 {} -90 {} -80 {} -80 {} -80 {} -40 {} -70 {} -40 {} -60 {} -80 {} 0 {} -50 {} -60 {} -40 {} -70 {} -50 {} -40 {} -50 {} -40 {} -50 {} -20 {} -40 {} -60 {} 0 {} -50 {} -70 {} -50 {} -60 {} -40 {} -30 {} -50 {} -20 {} -40 {} -20 {} -50 {} -50 {} 0 {} -70 {} -70 {} 0 {} -40 {} -40 {} -50 {} -40 {} -40 {} -50 {} 0 {} -50 {} -50 {} 0 {} -90 {} -120 {} -80 {} -90 {} -80 {} -90 {} -100 {} -80 {} -70 {} -40 {} -40 {} -80 {} 0 {} -20 {} -30 {} -20 {} -60 {} -30 {} -30 {} -40 {} -20 {} 0 {} 0 {} 0 {} -30 {} 0 {} -30 {} -50 {} -30 {} -50 {} -40 {} -40 {} -40 {} -30 {} -30 {} -20 {} -20 {} -40 {} 0 {} -70 {} -90 {} -60 {} -100 {} -80 {} -70 {} -70 {} -50 {} -60 {} -40 {} -50 {} -60 {}
 KernClass2: 5 10 "'kern' Horizontal Kerning in Latin for IPA-left" 
  6 wsuper
  7 uni1dbf
@@ -665,7 +716,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 2384 16 10
+WinInfo: 2288 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 23 [-14 0 461 473 673 691]
@@ -58769,7 +58820,7 @@ LCarets2: 1 0
 Ligature2: "'liga' Standard Ligatures in Thai subtable" yoyingthai sarauthai
 EndChar
 
-StartChar: thai_yo_uudeva
+StartChar: thai_yo_uukaradeva
 Encoding: 61170 -1 2574
 Width: 814
 VWidth: 930
@@ -58899,7 +58950,7 @@ LCarets2: 1 0
 Ligature2: "'liga' Standard Ligatures in Thai subtable" thothanthai sarauthai
 EndChar
 
-StartChar: thai_tho_uudeva
+StartChar: thai_tho_uukaradeva
 Encoding: 61175 -1 2579
 Width: 484
 VWidth: 930
@@ -108598,7 +108649,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: usigndeva
+StartChar: udeva
 Encoding: 2369 2369 4322
 Width: 0
 Flags: HMW
@@ -108626,7 +108677,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uusigndeva
+StartChar: uudeva
 Encoding: 2370 2370 4323
 Width: 0
 Flags: HMW
@@ -108677,7 +108728,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: ematradeva
+StartChar: edeva
 Encoding: 2375 2375 4325
 Width: 0
 Flags: HMW
@@ -108699,7 +108750,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: aimatradeva
+StartChar: aideva
 Encoding: 2376 2376 4326
 Width: 0
 Flags: HMW
@@ -109100,7 +109151,7 @@ LayerCount: 2
 Fore
 Refer: 4328 2404 N 1 0 0 1 250 0 2
 Refer: 4328 2404 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: omdeva
@@ -109267,7 +109318,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: adeva
+StartChar: akaradeva
 Encoding: 2309 2309 4345
 Width: 862
 Flags: HMW
@@ -109450,7 +109501,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: edeva
+StartChar: ekaradeva
 Encoding: 2319 2319 4349
 Width: 655
 Flags: HMW
@@ -109620,32 +109671,32 @@ EndChar
 
 StartChar: radeva
 Encoding: 2352 2352 4353
-Width: 575
+Width: 495
 Flags: HMW
-AnchorPoint: "dev-below" 240 -36 basechar 0
-AnchorPoint: "dev-nukta" 220 74 basechar 0
-AnchorPoint: "dev-above" 253 610 basechar 0
+AnchorPoint: "dev-below" 200 -36 basechar 0
+AnchorPoint: "dev-nukta" 180 74 basechar 0
+AnchorPoint: "dev-above" 213 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-617 529 m 4
- 617 519 612 517 605 517 c 6
- 314 517 l 1
- 317 494 318 471 318 448 c 0
- 318 365 296 249 212 233 c 1
- 252 155 345 80 405 32 c 0
- 422 19 456 -17 456 -41 c 0
- 456 -50 451 -52 445 -52 c 0
- 430 -52 411 -39 403 -32 c 0
- 308 42 82 225 82 410 c 0
- 82 420 88 422 94 422 c 0
- 120 422 158 384 171 367 c 1
- 199 401 212 460 213 517 c 1
+537 529 m 0
+ 537 519 532 517 525 517 c 2
+ 274 517 l 1
+ 277 494 278 471 278 448 c 0
+ 278 365 256 249 172 233 c 1
+ 212 155 305 80 365 32 c 0
+ 382 19 416 -17 416 -41 c 0
+ 416 -50 411 -52 405 -52 c 0
+ 390 -52 371 -39 363 -32 c 0
+ 268 42 42 225 42 410 c 0
+ 42 420 48 422 54 422 c 0
+ 80 422 118 384 131 367 c 1
+ 159 401 172 460 173 517 c 1
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 534 622 l 2
- 566 622 617 559 617 529 c 4
+ 454 622 l 2
+ 486 622 537 559 537 529 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -110090,7 +110141,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: udeva
+StartChar: ukaradeva
 Encoding: 2313 2313 4364
 Width: 597
 Flags: HMW
@@ -110628,7 +110679,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uudeva
+StartChar: uukaradeva
 Encoding: 2314 2314 4376
 Width: 848
 Flags: HMW
@@ -110676,7 +110727,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: iideva
+StartChar: iikaradeva
 Encoding: 2312 2312 4377
 Width: 575
 Flags: HMW
@@ -110800,7 +110851,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: ausigndeva
+StartChar: audeva
 Encoding: 2380 2380 4381
 Width: 342
 Flags: HMW
@@ -110835,7 +110886,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: iisigndeva
+StartChar: iideva
 Encoding: 2368 2368 4382
 Width: 342
 Flags: HMW
@@ -110865,7 +110916,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: isigndeva
+StartChar: ideva
 Encoding: 2367 2367 4383
 Width: 342
 Flags: HMW
@@ -110946,7 +110997,7 @@ Validated: 3073
 Substitution2: "'ss02' Style Set 2 in Devanagari of Bombay" dev_bby_sha
 EndChar
 
-StartChar: ideva
+StartChar: ikaradeva
 Encoding: 2311 2311 4385
 Width: 575
 Flags: HMW
@@ -111201,7 +111252,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: osigndeva
+StartChar: odeva
 Encoding: 2379 2379 4391
 Width: 342
 Flags: HMW
@@ -111788,7 +111839,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: aadeva
+StartChar: aakaradeva
 Encoding: 2310 2310 4408
 Width: 1092
 Flags: HMW
@@ -111872,7 +111923,7 @@ Refer: 4349 2319 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: aideva
+StartChar: aikaradeva
 Encoding: 2320 2320 4411
 Width: 655
 Flags: HMW
@@ -111943,7 +111994,7 @@ Refer: 4408 2310 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: odeva
+StartChar: okaradeva
 Encoding: 2323 2323 4414
 Width: 1092
 Flags: HMW
@@ -112009,7 +112060,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: audeva
+StartChar: aukaradeva
 Encoding: 2324 2324 4415
 Width: 1092
 Flags: HMW
@@ -112130,13 +112181,13 @@ EndChar
 
 StartChar: rradeva
 Encoding: 2353 2353 4420
-Width: 575
+Width: 495
 Flags: HMW
-AnchorPoint: "dev-below" 360 -30 basechar 0
-AnchorPoint: "dev-above" 253 610 basechar 0
+AnchorPoint: "dev-below" 320 -30 basechar 0
+AnchorPoint: "dev-above" 213 610 basechar 0
 LayerCount: 2
 Fore
-Refer: 4399 2364 S 1 0 0 1 280 0 2
+Refer: 4399 2364 N 1 0 0 1 240 0 2
 Refer: 4353 2352 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
@@ -112344,7 +112395,7 @@ Fore
 Refer: 4325 2375 N 1 0 0 1 -40 -20 2
 Refer: 4436 -1 N 1 0 0 1 100 0 2
 Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" ematradeva dev_ra.rphf
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" edeva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
 
@@ -112359,7 +112410,7 @@ Fore
 Refer: 4436 -1 S 1 0 0 1 100 0 2
 Refer: 4326 2376 S 1 0 0 1 -70 0 2
 Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva dev_ra.rphf
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aideva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
 
@@ -112587,7 +112638,7 @@ Fore
 Refer: 4325 2375 N 1 0 0 1 0 0 2
 Refer: 4380 2306 S 1 0 0 1 90 50 2
 Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" ematradeva anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" edeva anusvaradeva
 LCarets2: 1 0 
 EndChar
 
@@ -112601,7 +112652,7 @@ Fore
 Refer: 4380 2306 S 1 0 0 1 110 50 2
 Refer: 4326 2376 N 1 0 0 1 0 0 2
 Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aideva anusvaradeva
 LCarets2: 1 0 
 EndChar
 
@@ -112615,9 +112666,9 @@ Fore
 Refer: 4438 -1 S 1 0 0 1 100 0 2
 Refer: 4325 2375 N 1 0 0 1 -40 -20 2
 Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" aimatradeva dev_ra.rphf anusvaradeva
-Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" dev_ra.rphf aimatradeva anusvaradeva
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aimatradeva dev_ra.rphf anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" aideva dev_ra.rphf anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" dev_ra.rphf aideva anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aideva dev_ra.rphf anusvaradeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -112632,7 +112683,7 @@ Refer: 4439 2386 S 1 0 0 1 -10 -170 2
 Refer: 4322 2369 S 1 0 0 1 0 80 2
 Validated: 32769
 LCarets2: 1 0 
-Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" usigndeva anudattadeva
+Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" udeva anudattadeva
 EndChar
 
 StartChar: dev_uusign_anudatta.blws
@@ -112646,7 +112697,7 @@ Refer: 4323 2370 N 1 0 0 1 0 70 2
 Refer: 4439 2386 N 1 0 0 1 -10 -170 2
 Validated: 32769
 LCarets2: 1 0 
-Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" uusigndeva anudattadeva
+Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" uudeva anudattadeva
 EndChar
 
 StartChar: dev_rakaar_anudatta.blws
@@ -114216,7 +114267,7 @@ Refer: 4380 2306 S 1 0 0 1 610 -50 2
 Refer: 4377 2312 N 1 0 0 1 0 0 2
 Validated: 32769
 LCarets2: 1 0 
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" iideva anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" iikaradeva anusvaradeva
 EndChar
 
 StartChar: dev_ka__ssa.akhn
@@ -123045,7 +123096,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 LCarets2: 1 0 
-Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva usigndeva
+Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva udeva
 EndChar
 
 StartChar: dev_ra_uumatra.blws
@@ -123093,7 +123144,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 LCarets2: 1 0 
-Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva uusigndeva
+Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva uudeva
 EndChar
 
 StartChar: adak_bindi_gur
@@ -127214,7 +127265,7 @@ Fore
 Refer: 4437 -1 S 1 0 0 1 0 190 2
 Refer: 4322 2369 S 1 0 0 1 -20 0 2
 Validated: 32769
-Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" dev_rakaar.blwf usigndeva
+Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" dev_rakaar.blwf udeva
 LCarets2: 1 0 
 EndChar
 
@@ -127228,7 +127279,7 @@ Fore
 Refer: 4437 -1 N 1 0 0 1 0 210 2
 Refer: 4323 2370 S 1 0 0 1 160 0 2
 Validated: 32769
-Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" dev_rakaar.blwf uusigndeva
+Ligature2: "'blws' Below Base Substitutions in Devanagari-anudatta" dev_rakaar.blwf uudeva
 LCarets2: 1 0 
 EndChar
 
@@ -127245,8 +127296,8 @@ Refer: 4436 -1 N 1 0 0 1 100 0 2
 Refer: 4326 2376 N 1 0 0 1 -70 0 2
 Validated: 32769
 LCarets2: 2 0 0 
-Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" ematradeva dev_ra.rphf anusvaradeva
-Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" dev_ra.rphf ematradeva anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" edeva dev_ra.rphf anusvaradeva
+Ligature2: "'abvs' Above Base Substitutions in Devanagari-longer" dev_ra.rphf edeva anusvaradeva
 EndChar
 
 StartChar: dev_question
