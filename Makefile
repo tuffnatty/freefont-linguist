@@ -36,6 +36,7 @@ ttfzip: ttf
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
+	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
 	zip -r $(TTFZIPFILE) $(RELEASE)/
 
 otfzip: otf
@@ -43,6 +44,7 @@ otfzip: otf
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
+	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
 	zip -r $(OTFZIPFILE) $(RELEASE)/
 
 woffzip: woff
@@ -50,6 +52,7 @@ woffzip: woff
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/*.woff $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
+	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
 	zip -r $(WOFFZIPFILE) $(RELEASE)/
 
 ttftar: ttf
@@ -57,6 +60,7 @@ ttftar: ttf
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
+	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
 	tar czvf $(TTFTARFILE) $(RELEASE)/
 
 otftar: otf
@@ -64,6 +68,7 @@ otftar: otf
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
+	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
 	tar czvf $(OTFTARFILE) $(RELEASE)/
 
 wofftar: woff
@@ -71,6 +76,7 @@ wofftar: woff
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/*.woff $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
+	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
 	tar czvf $(WOFFTARFILE) $(RELEASE)/
 
 srctar:
