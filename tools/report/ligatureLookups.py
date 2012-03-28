@@ -16,14 +16,14 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2009, 2010, Stevan White"
+__copyright__ = "Copyright 2009, 2010, 2012 Stevan White"
 __date__ = "$Date$"
 __version__ = "$Revision$"
 
 __doc__ = """
-ligatureLookups
+ligaturelookups
 
-	fontforge -script ligatureLookups font_file_path...
+	fontforge -script ligature.ookups font_file_path...
 
 Output is HTML showing all the ligature lookups in the font.
 
@@ -42,6 +42,10 @@ steps it may take.
 The resulting string of Unicode characters can then be put into HTML, which
 should be properly rendered by a browser.
 
+"""
+
+__usage = """Usage:
+	fontforge -script ligaturelookups.py font-path-1 font-path-2 ...
 """
 
 import fontforge
@@ -180,7 +184,7 @@ def makeLigatureSubtable( font, subtable_name ):
 			ligature = Ligature( g )
 			for lr in ligs:
 				if len( lr ) < 3 or lr[1] != 'Ligature':
-					print >> stderr, 'non-ligature: ', g.glyphname
+					print >> stderr, font.fullname, '- non-ligature: ', g.glyphname
 					break
 				i = 2
 				while i < len( lr ):
@@ -235,14 +239,14 @@ def nestedEntity( font, subtable, a, subtables ):
 	and so on recursively until only Unicode characters remain.
 	"""
 	s = font.findEncodingSlot( a )
-	if s >= 0xe000 and s <= 0xf8ff:
+	if s >= 0xe000 and s <= 0xf8ff:	# Unicode only
 		lig = findLigatureGlyph( s, subtables )
 		if lig:
 			#print >> stderr, 'Nested glyph found: ' + a
 			for p in lig.parts:
 				return nestedEntity( font, subtable, p, subtables )
 		else:
-			print >> stderr, 'No nested glyph: ', a
+			print >> stderr, font.fullname, '- No nested glyph: ', a
 			return '<span class="nonchar">&nbsp;</span>'
 	else:
 		return entityHTML( font, a )
@@ -250,7 +254,7 @@ def nestedEntity( font, subtable, a, subtables ):
 def entityHTML( font, a ):
 	s = font.findEncodingSlot( a )
 	if s == -1:
-		print >> stderr, 'Missing glyph: ', a
+		print >> stderr, font.fullname, '- Missing glyph: ', a
 		return '<span class="nonchar">&nbsp;</span>'
 	else:
 		return formatted_hex_value( s )
@@ -262,6 +266,7 @@ def formatted_hex_value( n ):
 args = argv[1:]
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
+	print >> stderr, __usage
 	exit( 0 )
 
 print _preamble
