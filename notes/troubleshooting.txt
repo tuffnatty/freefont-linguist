@@ -88,12 +88,12 @@ The most common complaint has to do with "blurry text".  In Windows 7 and
 Vista, this will result if the version with cubic spline outlines is
 installed.  As of the 2012 GNU FreeFont release, the TrueType builds
 have the quadratic splines that work best with Windows' ClearType rendering.
-	TTF (TrueType)  quadratic splines  Linux, Mac
-	OTF (OpenType)  cubic splines      Windows 7, Vista
+	TTF (TrueType)  quadratic splines Windows 7, Vista
+	OTF (OpenType)  cubic splines     Linux, Mac
 
-Note also: FireFox has a setting for turning ClearType on and off:
+Note also: Firefox has a setting for ClearType:
 	gfx.font_rendering.cleartype_params.rendering_mode
-A value of 2 turns ClearType off.
+A value of 2 sets it to old-style GDI rendering, while -1 is the default.
 
 reporting problems
 ==================
