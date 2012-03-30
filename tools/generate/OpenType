@@ -49,7 +49,7 @@ if argc > 1:
 		f.encoding = 'UnicodeFull'
 		f.selection.all()
 		f.autoHint()	# because without gasp table, small sizes ugly
-		f.generate( otfile, flags=('opentype') )
+		f.generate( otfile, flags=('opentype','round') )
 		f.close()
 else:
 	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"
