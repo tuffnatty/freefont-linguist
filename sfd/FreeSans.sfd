@@ -13,7 +13,6 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 UniqueID: 5020902
 UseUniqueID: 1
 FSType: 0
@@ -21,7 +20,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1333992672
+ModificationTime: 1334089872
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -88,6 +87,7 @@ Lookup: 4 0 0 "'pres' Pre Base Substitutions in Devanagari"  {"'pres' Pre Base S
 Lookup: 4 0 0 "'abvs' Above Base Substitutions in Devanagari"  {"'abvs' Above Base Substitutions in Devanagari-3"  "'abvs' Above Base Substitutions in Devanagari subtable"  } ['abvs' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'blws' Below Base Substitutions in Devanagari"  {"'blws' Below Base Substitutions in Devanagari subtable"  } ['blws' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'haln' Halant Forms in Devanagari"  {"'haln' Halant Forms in Devanagari subtable"  } ['haln' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
+Lookup: 1 0 0 "'locl' Localized Forms in Devanagari"  {"'locl' Localized Forms in Devanagari-western-punct"  } ['locl' ('dev2' <'SAN ' 'dflt' > 'deva' <'SAN ' 'dflt' > ) ]
 Lookup: 1 0 0 "'init' Initial Forms in Bengali"  {"'init' Initial Forms in Bengali subtable"  } ['init' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' Akhand in Bengali"  {"'akhn' Akhand in Bengali subtable"  } ['akhn' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Bengali"  {"'rphf' Reph Form in Bengali subtable"  } ['rphf' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
@@ -114,10 +114,9 @@ Lookup: 4 0 0 "'pres' Pre Base Substitutions in Malay+AQEA-lam"  {"'pres' Pre Ba
 Lookup: 4 0 0 "'psts' Post Base Substitutions in Malay+AQEA-lam"  {"'psts' Post Base Substitutions in Malay+AQEA-lam subtable"  } ['psts' ('mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'haln' Halant Forms in Malay+AQEA-lam"  {"'haln' Halant Forms in Malay+AQEA-lam subtable"  } ['haln' ('mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' Post Base Forms in Malay+AQEA-lam"  {"'pstf' Post Base Forms in Malay+AQEA-lam subtable"  } ['pstf' ('mlym' <'dflt' > ) ]
-Lookup: 260 0 0 "'abvm' Above Base Mark in Devanagari"  {"'abvm' Above Base Mark in Devanagari-carabindu"  "'abvm' Above Base Mark in Devanagari-anusvara"  "'abvm' Above Base Mark in Devanagari subtable"  } ['abvm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
+Lookup: 260 0 0 "'abvm' Above Base Mark in Devanagari"  {"'abvm' Above Base Mark in Devanagari-candrabindu"  "'abvm' Above Base Mark in Devanagari-anusvara"  "'abvm' Above Base Mark in Devanagari subtable"  } ['abvm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Devanagari"  {"'blwm' Below Base Mark in Devanagari subtable"  } ['blwm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Devanagari"  {"'mkmk' Mark to Mark in Devanagari-above"  } ['mkmk' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
-Lookup: 258 0 0 "'dist' Distance lookup in Devanagari-western-punct"  {"'dist' Distance lookup in Devanagari-western-punct" [150,0,4] } ['dist' ('dev2' <'dflt' > 'deva' <'dflt' > ) 'kern' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Malayalam"  {"'abvm' Above Base Mark in Malayalam-reph"  } ['abvm' ('mly2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Malay+AQEA-lam"  {"'blwm' Below Base Mark in Malay+AQEA-lam-1"  } ['blwm' ('mly2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Gurmukhi"  {"'abvm' Above Base Mark in Gurmukhi subtable"  "'abvm' Above Base Mark in Gurmukhi-mid"  } ['abvm' ('guru' <'dflt' > ) ]
@@ -144,11 +143,6 @@ MarkAttachClasses: 4
 "Dev_above" 157 invcandrabindudeva candrabindudeva anusvaradeva oesigndeva ecandrasigndeva eshortsigndeva esigndeva aisigndeva udattadeva gravedeva acutedeva longecandradeva
 "Dev_below" 141 nuktadeva usigndeva uusigndeva rvocalicsigndeva rrvocalicsigndeva anudattadeva uesigndeva uuesigndeva lvocalicvowelsigndeva llvocalicsigndeva
 DEI: 91125
-KernClass2: 2 3 "'dist' Distance lookup in Devanagari-western-punct" 
- 1156 shortadeva adeva aadeva ideva iideva udeva uudeva rvocalicdeva lvocalicdeva ecandradeva eshortdeva edeva aideva ocandradeva oshortdeva odeva audeva kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva radeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva oesigndeva ooesigndeva nuktadeva aasigndeva isigndeva iisigndeva usigndeva uusigndeva rvocalicsigndeva rrvocalicsigndeva ecandrasigndeva eshortsigndeva esigndeva aisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva virama epristhamatra awsigndeva omdeva udattadeva anudattadeva gravedeva acutedeva longecandradeva uesigndeva uuesigndeva qadeva khhadeva ghhadeva zadeva dddhadeva rhadeva fadeva yyadeva rrvocalicdeva llvocalicdeva lvocalicvowelsigndeva llvocalicsigndeva zerodeva onedeva twodeva threedeva fourdeva fivedeva sixdeva sevendeva eightdeva ninedeva abbreviationsigndeva ellipsisdotdeva acandradeva oedeva ooedeva awdeva uedeva uuedeva zhadeva heavyyadeva ggadeva jjadeva glottalstopdeva dddadeva bbadeva
- 22 exclam colon semicolon
- 8 question
- 0 {} 0 {} 0 {} 0 {} 220 {} 200 {}
 KernClass2: 15 2 "'kern' Horizontal Kerning in Latin-small" 
  1 a
  5 b o p
@@ -272,14 +266,14 @@ LangName: 1029 "" "" "oby+AQ0A-ejn+AOkA"
 LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA" 
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "" "GNU: FreeSans Medium: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 14 22 13 65535 15
+GaspTable: 3 9 2 22 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60256 16 11
+WinInfo: 2288 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 23 [-24 0 524 540 729 741]
@@ -301,8 +295,8 @@ Grid
 -1001 416 m 0
  1999 416 l 0
 EndSplineSet
-AnchorClass2: "dev-carabindu"  "'abvm' Above Base Mark in Devanagari-carabindu" "dev-anusvara"  "'abvm' Above Base Mark in Devanagari-anusvara" "beng-matra"  "'blwm' Below Base Mark in Bengali-matra" "beng-nukta"  "'blwm' Below Base Mark in Bengali-nukta" "dev-rakaar"  "'blwm' Below Base Mark in Devanagari subtable" "dev-belowmark"  "'mkmk' Mark to Mark in Devanagari-above" "mlm-reph"  "'abvm' Above Base Mark in Malayalam-reph" "mlm-below"  "'blwm' Below Base Mark in Malay+AQEA-lam-1" "guj-nukta"  "'blwm' Below Base Mark in Gujarati-nukta" "gur-top-mid"  "'abvm' Above Base Mark in Gurmukhi-mid" "gur-nukta"  "'blwm' Below Base Mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' Mark to Mark in Gurmukhi" "gur-below-mid"  "'blwm' Below Base Mark in Gurmukhi mid" "guru_above"  "'abvm' Above Base Mark in Gurmukhi subtable" "guru_below"  "'blwm' Below Base Mark in Gurmukhi subtable" "syr_below"  "'mark' Mark Positioning in Syriac subtable" "syr_above"  "'mark' Mark Positioning in Syriac subtable" "above_mid_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Yiddish" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_heb"  "'mark' Mark Positioning in Hebrew 2 subtable" "abovemk_cyr"  "'mkmk' Mark to Mark in Cyrillic subtable" "topright"  "'mark' Mark Positioning in Latin 2 subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin subtable 2" "dev_above"  "'abvm' Above Base Mark in Devanagari subtable" "gujr-0"  "'abvm' Above Base Mark in Gujarati subtable" "dev_below"  "'blwm' Below Base Mark in Devanagari subtable" "gujr-1"  "'blwm' Below Base Mark in Gujarati subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" "below"  "'mark' Mark Positioning in Latin subtable" 
-BeginChars: 69525 6269
+AnchorClass2: "dev-candrabindu"  "'abvm' Above Base Mark in Devanagari-candrabindu" "dev-anusvara"  "'abvm' Above Base Mark in Devanagari-anusvara" "beng-matra"  "'blwm' Below Base Mark in Bengali-matra" "beng-nukta"  "'blwm' Below Base Mark in Bengali-nukta" "dev-rakaar"  "'blwm' Below Base Mark in Devanagari subtable" "dev-belowmark"  "'mkmk' Mark to Mark in Devanagari-above" "mlm-reph"  "'abvm' Above Base Mark in Malayalam-reph" "mlm-below"  "'blwm' Below Base Mark in Malay+AQEA-lam-1" "guj-nukta"  "'blwm' Below Base Mark in Gujarati-nukta" "gur-top-mid"  "'abvm' Above Base Mark in Gurmukhi-mid" "gur-nukta"  "'blwm' Below Base Mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' Mark to Mark in Gurmukhi" "gur-below-mid"  "'blwm' Below Base Mark in Gurmukhi mid" "guru_above"  "'abvm' Above Base Mark in Gurmukhi subtable" "guru_below"  "'blwm' Below Base Mark in Gurmukhi subtable" "syr_below"  "'mark' Mark Positioning in Syriac subtable" "syr_above"  "'mark' Mark Positioning in Syriac subtable" "above_mid_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Yiddish" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_heb"  "'mark' Mark Positioning in Hebrew 2 subtable" "abovemk_cyr"  "'mkmk' Mark to Mark in Cyrillic subtable" "topright"  "'mark' Mark Positioning in Latin 2 subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin subtable 2" "dev_above"  "'abvm' Above Base Mark in Devanagari subtable" "gujr-0"  "'abvm' Above Base Mark in Gujarati subtable" "dev_below"  "'blwm' Below Base Mark in Devanagari subtable" "gujr-1"  "'blwm' Below Base Mark in Gujarati subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" "below"  "'mark' Mark Positioning in Latin subtable" 
+BeginChars: 69525 6271
 
 StartChar: space
 Encoding: 32 32 0
@@ -332,6 +326,7 @@ SplineSet
  208 104 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms in Devanagari-western-punct" indic_exclam
 EndChar
 
 StartChar: quotedbl
@@ -1075,6 +1070,7 @@ SplineSet
  330 104 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' Localized Forms in Devanagari-western-punct" indic_question
 EndChar
 
 StartChar: at
@@ -42521,9 +42517,9 @@ EndChar
 StartChar: candrabindudeva
 Encoding: 2305 2305 2146
 Width: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-carabindu" -285 613 mark 0
+AnchorPoint: "dev-candrabindu" -285 613 mark 0
 AnchorPoint: "dev_above" -91 613 mark 0
 LayerCount: 2
 Fore
@@ -42566,14 +42562,13 @@ EndChar
 StartChar: shortadeva
 Encoding: 2308 2308 2149
 Width: 717
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 AnchorPoint: "dev-anusvara" 620 620 basechar 0
 LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 707 0 2
 Refer: 2150 2309 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: adeva
@@ -42713,7 +42708,7 @@ Encoding: 2312 2312 2153
 Width: 464
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "dev-carabindu" 357 585 basechar 0
+AnchorPoint: "dev-candrabindu" 357 585 basechar 0
 AnchorPoint: "dev-anusvara" 340 570 basechar 0
 LayerCount: 2
 Fore
@@ -42937,12 +42932,12 @@ Encoding: 2318 2318 2159
 Width: 433
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 341 613 basechar 0
 AnchorPoint: "dev-anusvara" 370 620 basechar 0
 LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 470 0 2
 Refer: 2160 2319 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: edeva
@@ -43037,12 +43032,12 @@ Encoding: 2322 2322 2163
 Width: 888
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 791 613 basechar 0
 AnchorPoint: "dev-anusvara" 780 620 basechar 0
 LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 880 0 2
 Refer: 2151 2310 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: odeva
@@ -43050,6 +43045,7 @@ Encoding: 2323 2323 2164
 Width: 888
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 721 613 basechar 0
 AnchorPoint: "dev-anusvara" 740 620 basechar 0
 LayerCount: 2
 Fore
@@ -43094,7 +43090,6 @@ SplineSet
  45 511 l 1
  45 530 143 613 229 613 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: audeva
@@ -43102,6 +43097,7 @@ Encoding: 2324 2324 2165
 Width: 888
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 771 613 basechar 0
 AnchorPoint: "dev-anusvara" 760 620 basechar 0
 LayerCount: 2
 Fore
@@ -43149,7 +43145,6 @@ SplineSet
  45 511 l 1
  45 530 143 613 229 613 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: kadeva
@@ -44485,7 +44480,7 @@ EndChar
 StartChar: nuktadeva
 Encoding: 2364 2364 2203
 Width: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev-belowmark" -110 -140 basemark 0
 LayerCount: 2
@@ -44584,6 +44579,7 @@ Encoding: 2368 2368 2207
 Width: 226
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 141 613 basechar 0
 AnchorPoint: "dev-anusvara" 140 620 basechar 0
 AnchorPoint: "dev_below" 108 1 basechar 0
 LayerCount: 2
@@ -44609,13 +44605,12 @@ SplineSet
  -229 647 -243 683 -243 720 c 0
  -243 778 -176 855 -63 855 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: usigndeva
 Encoding: 2369 2369 2208
 Width: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev-belowmark" -195 -14 mark 0
 AnchorPoint: "dev_below" -184 -24 mark 0
@@ -44640,7 +44635,7 @@ EndChar
 StartChar: uusigndeva
 Encoding: 2370 2370 2209
 Width: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev-belowmark" -160 -13 mark 0
 AnchorPoint: "dev_below" -141 -34 mark 0
@@ -44653,7 +44648,7 @@ EndChar
 StartChar: rvocalicsigndeva
 Encoding: 2371 2371 2210
 Width: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev-belowmark" -165 -13.5 mark 0
 AnchorPoint: "dev_below" -147 -47 mark 0
@@ -44678,7 +44673,7 @@ EndChar
 StartChar: rrvocalicsigndeva
 Encoding: 2372 2372 2211
 Width: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev-belowmark" -125 122.5 mark 0
 AnchorPoint: "dev_below" -125 85 mark 0
@@ -44734,6 +44729,7 @@ Encoding: 2374 2374 2213
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "dev-candrabindu" -80 613 basechar 0
 AnchorPoint: "dev-anusvara" -80 613 basechar 0
 AnchorPoint: "dev_above" -60 613 mark 0
 LayerCount: 2
@@ -44753,14 +44749,14 @@ SplineSet
  -126 789 -81 737 -81 701 c 2
  -81 614 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: esigndeva
 Encoding: 2375 2375 2214
 Width: 0
-GlyphClass: 2
+GlyphClass: 4
 Flags: HMW
+AnchorPoint: "dev-candrabindu" -179 613 basechar 0
 AnchorPoint: "dev-anusvara" -170 620 basechar 0
 AnchorPoint: "dev_above" -75 614 mark 0
 LayerCount: 2
@@ -44772,7 +44768,6 @@ SplineSet
  -327 900 l 1
  -76 613 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: aisigndeva
@@ -44780,6 +44775,7 @@ Encoding: 2376 2376 2215
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "dev-candrabindu" -109 613 basechar 0
 AnchorPoint: "dev-anusvara" -120 620 basechar 0
 AnchorPoint: "dev_above" -71 614 mark 0
 LayerCount: 2
@@ -44794,7 +44790,6 @@ SplineSet
  -211 900 l 1
  -72 613 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ocandrasigndeva
@@ -44816,13 +44811,13 @@ Encoding: 2378 2378 2217
 Width: 226
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 121 613 basechar 0
 AnchorPoint: "dev-anusvara" 130 620 basechar 0
 AnchorPoint: "dev_below" 115 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 228 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: osigndeva
@@ -44830,6 +44825,7 @@ Encoding: 2379 2379 2218
 Width: 226
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 60 613 basechar 0
 AnchorPoint: "dev-anusvara" 60 620 basechar 0
 AnchorPoint: "dev_below" 111 1 basechar 0
 LayerCount: 2
@@ -44849,7 +44845,6 @@ SplineSet
  226 613 l 1
  226 541 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ausigndeva
@@ -44857,6 +44852,7 @@ Encoding: 2380 2380 2219
 Width: 226
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-candrabindu" 111 613 basechar 0
 AnchorPoint: "dev-anusvara" 100 620 basechar 0
 AnchorPoint: "dev_below" 118 1 basechar 0
 LayerCount: 2
@@ -44879,7 +44875,6 @@ SplineSet
  226 613 l 1
  226 541 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: virama
@@ -45040,7 +45035,6 @@ Fore
 Refer: 2203 2364 N 1 0 0 1 497 0 2
 Refer: 2166 2325 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" kadeva nuktadeva
 EndChar
 
@@ -45057,7 +45051,6 @@ Fore
 Refer: 2203 2364 N 1 0 0 1 684 -73 2
 Refer: 2167 2326 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" khadeva nuktadeva
 EndChar
 
@@ -45074,7 +45067,6 @@ Fore
 Refer: 2203 2364 N 1 0 0 1 449 138 2
 Refer: 2168 2327 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" gadeva nuktadeva
 EndChar
 
@@ -45091,7 +45083,6 @@ Fore
 Refer: 2203 2364 N 1 0 0 1 621 6 2
 Refer: 2173 2332 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" jadeva nuktadeva
 EndChar
 
@@ -45107,7 +45098,6 @@ Fore
 Refer: 2203 2364 N 1 0 0 1 621 -73 2
 Refer: 2178 2337 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" ddadeva nuktadeva
 EndChar
 
@@ -45124,7 +45114,6 @@ Fore
 Refer: 2179 2338 N 1 0 0 1 0 0 2
 Refer: 2203 2364 N 1 0 0 1 581 -73 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" ddhadeva nuktadeva
 EndChar
 
@@ -45141,7 +45130,6 @@ Fore
 Refer: 2188 2347 N 1 0 0 1 0 0 2
 Refer: 2203 2364 S 1 0 0 1 511 59 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" phadeva nuktadeva
 EndChar
 
@@ -45158,7 +45146,6 @@ Fore
 Refer: 2203 2364 N 1 0 0 1 581 47 2
 Refer: 2192 2351 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'nukt' Nukta Forms in Devanagari subtable" yadeva nuktadeva
 EndChar
 
@@ -45689,7 +45676,6 @@ SplineSet
  258 717 l 1
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
 EndChar
 
 StartChar: acandradeva
@@ -45702,7 +45688,6 @@ Fore
 Refer: 2212 2373 S 1 0 0 1 704 0 2
 Refer: 2150 2309 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 EndChar
 
 StartChar: uni20B5
@@ -79452,13 +79437,13 @@ EndChar
 StartChar: dev_e_candra.abvs
 Encoding: 60231 -1 3238
 Width: 0
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev_above" -70 613 basechar 0
 LayerCount: 2
 Fore
 Refer: 2214 2375 S 1 0 0 1 0 0 2
 Refer: 6256 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dev_o_candra.abvs
@@ -79469,7 +79454,6 @@ LayerCount: 2
 Fore
 Refer: 6256 -1 N 1 0 0 1 233 0 2
 Refer: 2218 2379 S 1 0 0 1 0 0 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" osigndeva candrabindudeva
 EndChar
@@ -79482,7 +79466,6 @@ LayerCount: 2
 Fore
 Refer: 6256 -1 N 1 0 0 1 263 0 2
 Refer: 2219 2380 S 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" ausigndeva dev_ra.rphf candrabindudeva
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" dev_ra.rphf ausigndeva candrabindudeva
 LCarets2: 2 0 0 
@@ -79491,21 +79474,21 @@ EndChar
 StartChar: dev_ai_ra_candra.abvs
 Encoding: 60234 -1 3241
 Width: 0
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev_above" -63 613 mark 0
 LayerCount: 2
 Fore
 Refer: 3242 -1 N 1 0 0 1 90 0 2
 Refer: 2215 2376 S 1 0 0 1 0 0 2
-Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" aisigndeva dev_ra.rphf candrabindudeva
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" dev_ra.rphf aisigndeva candrabindudeva
-LCarets2: 1 0 
+Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" aisigndeva dev_ra.rphf candrabindudeva
 EndChar
 
 StartChar: dev_ra_candra.abvs
 Encoding: 60235 -1 3242
 Width: 0
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev_above" -55 613 mark 0
 LayerCount: 2
@@ -79513,7 +79496,6 @@ Fore
 Refer: 6256 -1 N 1 0 0 1 47 -49 2
 Refer: 3351 -1 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" dev_ra.rphf candrabindudeva
 EndChar
 
@@ -80000,6 +79982,7 @@ SplineSet
  623 541 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva usigndeva
 EndChar
 
@@ -80044,6 +80027,7 @@ SplineSet
  322 329 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" radeva uusigndeva
 EndChar
 
@@ -80092,6 +80076,7 @@ SplineSet
  111.359 240.016 145.473 189.846 211 188 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Devanagari for Sanskrit-subtable" dev_ka.half nadeva
 EndChar
 
@@ -80144,6 +80129,7 @@ SplineSet
  286 541 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Devanagari subtable" dev_kha.half nadeva
 EndChar
 
@@ -80243,8 +80229,6 @@ StartChar: dev_ka.half
 Encoding: 60258 -1 3260
 Width: 483
 Flags: HMW
-AnchorPoint: "dev_below" 369.141 0 basechar 0
-AnchorPoint: "dev_above" 410.156 612.305 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -80274,7 +80258,6 @@ SplineSet
  138.707 375.642 109.358 326.945 109.358 283.692 c 0
  109.358 231.519 160.681 189.417 211 188 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" kadeva virama
 EndChar
@@ -80486,8 +80469,6 @@ StartChar: dev_jha.half
 Encoding: 60265 -1 3267
 Width: 457
 Flags: HMW
-AnchorPoint: "dev_below" 386.719 -109.375 basechar 0
-AnchorPoint: "dev_above" 361.328 613.281 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -80524,7 +80505,6 @@ SplineSet
  124.602 168.739 153.261 157.979 180 135 c 2
  229 83 l 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" jhadeva virama
 EndChar
@@ -80836,8 +80816,6 @@ StartChar: dev_da_da_half.pres
 Encoding: 60274 -1 3276
 Width: 417
 Flags: HMW
-AnchorPoint: "dev_below" 284.18 41.0156 basechar 0
-AnchorPoint: "dev_above" 345.703 615.234 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -80867,7 +80845,6 @@ SplineSet
  331 56 282 43 235 43 c 0
  110 43 78 127 77 186 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Devanagari subtable" dev_da.half dev_da.half
 EndChar
@@ -80996,8 +80973,6 @@ StartChar: dev_pha.half
 Encoding: 60279 -1 3281
 Width: 466
 Flags: HMW
-AnchorPoint: "dev_below" 354.492 5.85938 basechar 0
-AnchorPoint: "dev_above" 395.508 609.375 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -81026,7 +81001,6 @@ SplineSet
  112 541 l 1
  112 364 l 2
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" phadeva virama
 EndChar
@@ -81202,8 +81176,6 @@ StartChar: UNUSED_dev_ka_na
 Encoding: 60285 -1 3287
 Width: 699
 Flags: HMW
-AnchorPoint: "dev_below" 359.375 5.85938 basechar 0
-AnchorPoint: "dev_above" 396.484 613.281 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -81242,7 +81214,6 @@ SplineSet
  326 211 l 1
  295 188 259 177 218 177 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: dev_la.half
@@ -81280,8 +81251,6 @@ StartChar: dev_lla.half
 Encoding: 60287 -1 3289
 Width: 534
 Flags: HMW
-AnchorPoint: "dev_below" 404.297 46.875 basechar 0
-AnchorPoint: "dev_above" 389.648 609.375 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -81310,7 +81279,6 @@ SplineSet
  115 180 141.498 142 198 142 c 0
  271 142 291 236 294 258 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" lladeva virama
 EndChar
@@ -81319,8 +81287,6 @@ StartChar: dev_llla.half
 Encoding: 60288 -1 3290
 Width: 534
 Flags: HMW
-AnchorPoint: "dev_below" 480.469 38.0859 basechar 0
-AnchorPoint: "dev_above" 407.227 615.234 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -81354,7 +81320,6 @@ SplineSet
  115 182 140.991 142 198 142 c 0
  271 142 291 236 294 258 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" llladeva virama
 EndChar
@@ -81392,8 +81357,6 @@ StartChar: dev_sha.half
 Encoding: 60290 -1 3292
 Width: 413
 Flags: HMW
-AnchorPoint: "dev_below" 335.938 13.6719 basechar 0
-AnchorPoint: "dev_above" 343.75 617.188 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -81420,7 +81383,6 @@ SplineSet
  148 446.984 176 423 218 423 c 0
  250 423 292 457 304 465 c 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" shadeva virama
 EndChar
@@ -83261,6 +83223,7 @@ SplineSet
  -112 797 -135 750 -135 710 c 0
  -135 677 -121 640 -85 613 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: glyph342
@@ -83289,6 +83252,7 @@ SplineSet
  0 613 l 1
  79 613 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: glyph343
@@ -83327,6 +83291,7 @@ SplineSet
  235 839 216 844 211 844 c 0
  131 844 112 767 112 713 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: glyph344
@@ -83362,6 +83327,7 @@ SplineSet
  -403 624 -413 643 -413 683 c 0
  -413 804 -315 835 -246 835 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: glyph345
@@ -83372,6 +83338,7 @@ LayerCount: 2
 Fore
 Refer: 6256 -1 N 1 0 0 1 237 0 2
 Refer: 3331 -1 N 1 0 0 1 0 0 2
+Validated: 32769
 EndChar
 
 StartChar: glyph346
@@ -83382,6 +83349,7 @@ LayerCount: 2
 Fore
 Refer: 6256 -1 N 1 0 0 1 190 0 2
 Refer: 3332 -1 N 1 0 0 1 0 0 2
+Validated: 32769
 EndChar
 
 StartChar: glyph347
@@ -83410,6 +83378,7 @@ SplineSet
  388 862 493 717 576 613 c 1
  499 613 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: glyph348
@@ -83787,7 +83756,6 @@ SplineSet
  -124 109 l 1
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
 Ligature2: "'blwf' Below Base Forms in Devanagari subtable" radeva virama
 EndChar
 
@@ -83802,9 +83770,8 @@ Fore
 Refer: 3351 -1 N 1 0 0 1 0 0 2
 Refer: 2147 2306 S 1 0 0 1 80 -40 2
 Validated: 32769
-Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" anusvaradeva dev_ra.rphf
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" dev_ra.rphf anusvaradeva
-LCarets2: 1 0 
+Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" anusvaradeva dev_ra.rphf
 EndChar
 
 StartChar: dev_ha_ra.blws
@@ -83848,7 +83815,6 @@ SplineSet
  129 192 112 163 112 128 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Devanagari subtable" hadeva dev_rakaar
 EndChar
 
@@ -83857,7 +83823,7 @@ Encoding: 60349 -1 3351
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-carabindu" -53 585 basechar 0
+AnchorPoint: "dev-candrabindu" -53 585 basechar 0
 AnchorPoint: "dev-anusvara" -100 570 basechar 0
 AnchorPoint: "dev_above" -64 613 mark 0
 LayerCount: 2
@@ -83874,7 +83840,6 @@ SplineSet
  -129 614 l 1
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
 Ligature2: "'rphf' Reph Form in Devanagari subtable" radeva virama
 EndChar
 
@@ -83981,7 +83946,6 @@ LayerCount: 2
 Fore
 Refer: 2147 2306 S 1 0 0 1 40 20 2
 Refer: 2214 2375 N 1 0 0 1 0 0 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" esigndeva anusvaradeva
 EndChar
@@ -83991,14 +83955,13 @@ Encoding: 60359 -1 3356
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-carabindu" -23 585 basechar 0
+AnchorPoint: "dev-candrabindu" -23 585 basechar 0
 AnchorPoint: "dev-anusvara" -40 570 basechar 0
 AnchorPoint: "dev_above" -73 613 mark 0
 LayerCount: 2
 Fore
 Refer: 3351 -1 N 1 0 0 1 60 0 2
 Refer: 2214 2375 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" dev_ra.rphf esigndeva
 LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" esigndeva dev_ra.rphf
@@ -84014,7 +83977,6 @@ LayerCount: 2
 Fore
 Refer: 2147 2306 S 1 0 0 1 150 -40 2
 Refer: 3356 -1 S 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" dev_ra.rphf esigndeva anusvaradeva
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" esigndeva dev_ra.rphf anusvaradeva
 LCarets2: 2 0 0 
@@ -84030,7 +83992,6 @@ LayerCount: 2
 Fore
 Refer: 2215 2376 N 1 0 0 1 0 0 2
 Refer: 2147 2306 S 1 0 0 1 70 10 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aisigndeva anusvaradeva
 EndChar
@@ -84040,14 +84001,13 @@ Encoding: 60362 -1 3359
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-carabindu" 17 585 basechar 0
+AnchorPoint: "dev-candrabindu" 17 585 basechar 0
 AnchorPoint: "dev-anusvara" -30 570 basechar 0
 AnchorPoint: "dev_above" -64 613 mark 0
 LayerCount: 2
 Fore
 Refer: 3351 -1 N 1 0 0 1 80 0 2
 Refer: 2215 2376 N 1 0 0 1 -7 0 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" dev_ra.rphf aisigndeva
 Ligature2: "'abvs' Above Base Substitutions in Devanagari subtable" aisigndeva dev_ra.rphf
@@ -84063,7 +84023,6 @@ LayerCount: 2
 Fore
 Refer: 2147 2306 N 1 0 0 1 160 -40 2
 Refer: 3359 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 LCarets2: 2 0 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" aisigndeva dev_ra.rphf anusvaradeva
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" dev_ra.rphf aisigndeva anusvaradeva
@@ -84169,12 +84128,10 @@ StartChar: dev_nga.half
 Encoding: 60371 -1 3363
 Width: 680
 Flags: HMW
-AnchorPoint: "dev_above" 512.695 612.305 basechar 0
 LayerCount: 2
 Fore
 Refer: 2220 2381 N 1 0 0 1 401 6 2
-Refer: 2170 2329 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 2170 2329 N 1 0 0 1 0 0 2
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" ngadeva virama
 EndChar
@@ -84183,12 +84140,10 @@ StartChar: dev_tta.half
 Encoding: 60372 -1 3364
 Width: 568
 Flags: HMW
-AnchorPoint: "dev_above" 442.383 606.445 basechar 0
 LayerCount: 2
 Fore
 Refer: 2176 2335 N 1 0 0 1 0 0 2
-Refer: 2220 2381 S 1 0 0 1 314 6 2
-Validated: 32769
+Refer: 2220 2381 N 1 0 0 1 314 6 2
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" ttadeva virama
 EndChar
@@ -84197,12 +84152,10 @@ StartChar: dev_ttha.half
 Encoding: 60373 -1 3365
 Width: 529
 Flags: HMW
-AnchorPoint: "dev_above" 413.086 606.445 basechar 0
 LayerCount: 2
 Fore
 Refer: 2177 2336 N 1 0 0 1 0 0 2
 Refer: 2220 2381 N 1 0 0 1 275 6 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" tthadeva virama
 EndChar
@@ -84211,12 +84164,10 @@ StartChar: dev_dda.half
 Encoding: 60374 -1 3366
 Width: 611
 Flags: HMW
-AnchorPoint: "dev_above" 515.625 615.234 basechar 0
 LayerCount: 2
 Fore
 Refer: 2178 2337 N 1 0 0 1 0 0 2
 Refer: 2220 2381 N 1 0 0 1 386 6 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" ddadeva virama
 EndChar
@@ -84225,12 +84176,10 @@ StartChar: dev_ddha.half
 Encoding: 60375 -1 3367
 Width: 536
 Flags: HMW
-AnchorPoint: "dev_above" 424.805 612.305 basechar 0
 LayerCount: 2
 Fore
 Refer: 2179 2338 N 1 0 0 1 0 0 2
 Refer: 2220 2381 N 1 0 0 1 355 6 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" ddhadeva virama
 EndChar
@@ -84239,12 +84188,10 @@ StartChar: dev_da.half
 Encoding: 60376 -1 3368
 Width: 500
 Flags: HMW
-AnchorPoint: "dev_above" 427.734 609.375 basechar 0
 LayerCount: 2
 Fore
 Refer: 2183 2342 N 1 0 0 1 0 0 2
 Refer: 2220 2381 N 1 0 0 1 429 6 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" dadeva virama
 EndChar
@@ -84932,7 +84879,6 @@ StartChar: dev_da_half_ma_half.pres
 Encoding: 60411 -1 3385
 Width: 435
 Flags: HMW
-AnchorPoint: "dev_above" 313.477 612.305 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -84963,7 +84909,6 @@ SplineSet
  336 61 l 2
  336 35 334 22 307 22 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Devanagari subtable" dev_da.half dev_ma.half
 EndChar
@@ -85427,13 +85372,11 @@ StartChar: dev_ha.nukt.haln
 Encoding: 60428 -1 3402
 Width: 484
 Flags: HMW
-AnchorPoint: "dev_below" 407.227 612.305 basechar 0
-AnchorPoint: "dev_above" 31799.8 -30400.4 basechar 0
+AnchorPoint: "dev_above" 394.805 615.234 basechar 0
 LayerCount: 2
 Fore
-Refer: 2220 2381 S 1 0 0 1 355 -65 2
+Refer: 2220 2381 N 1 0 0 1 355 -65 2
 Refer: 3395 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'haln' Halant Forms in Devanagari subtable" dev_ha.nukt virama
 EndChar
@@ -90919,6 +90862,7 @@ SplineSet
  175 314 133 262 115 224 c 1
  164 239 219 267 278 309 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10901
@@ -90944,6 +90888,7 @@ SplineSet
  133 373 153 371 177 371 c 0
  234 371 282 377 320 388 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10902
@@ -90963,6 +90908,7 @@ SplineSet
  587 -75 l 1
  558 92 426 376 323 526 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10903
@@ -90986,6 +90932,7 @@ SplineSet
  131 372 154 370 184 370 c 0
  221 370 264 377 312 390 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10904
@@ -91012,6 +90959,7 @@ SplineSet
  240 500 176 430 98 327 c 1
  55 359 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10905
@@ -91037,6 +90985,7 @@ SplineSet
  406 568 l 1
  352 470 333 429 333 338 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10906
@@ -91057,6 +91006,7 @@ SplineSet
  95 448 213 592 272 592 c 0
  339 592 390 395 450 395 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10907
@@ -91087,6 +91037,7 @@ SplineSet
  285 102 300 77 315 56 c 1
  372 71 518 231 575 308 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10908
@@ -91122,6 +91073,7 @@ SplineSet
  268 468 109 190 109 -28 c 0
  109 -98 145 -140 210 -140 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10909
@@ -91152,6 +91104,7 @@ SplineSet
  325 536 l 1
  318 537 311 537 304 537 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1090a
@@ -91176,6 +91129,7 @@ SplineSet
  104 -94 264 308 335 505 c 1
  286 480 231 468 172 468 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1090b
@@ -91200,6 +91154,7 @@ SplineSet
  314 87 312 88 309 88 c 0
  268 88 200 66 159 66 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1090c
@@ -91230,6 +91185,7 @@ SplineSet
  151 355 l 1
  180 425 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1090d
@@ -91254,6 +91210,7 @@ SplineSet
  174 390 177 388 182 388 c 0
  192 388 220 392 230 392 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1090e
@@ -91286,6 +91243,7 @@ SplineSet
  276 489 231 418 222 370 c 1
  296 448 369 532 402 532 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1090f
@@ -91307,6 +91265,7 @@ SplineSet
  264 510 229 537 184 537 c 0
  152 537 109 524 109 471 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10910
@@ -91327,6 +91286,7 @@ SplineSet
  252 617 216 528 209 467 c 1
  155 470 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10911
@@ -91351,6 +91311,7 @@ SplineSet
  114 608 133 559 166 492 c 1
  217 559 262 592 301 592 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10912
@@ -91383,6 +91344,7 @@ SplineSet
  170 446 219 459 281 485 c 1
  247 546 207 605 188 605 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10913
@@ -91406,6 +91368,7 @@ SplineSet
  223 384 261 389 294 398 c 1
  257 486 235 530 230 530 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10914
@@ -91429,6 +91392,7 @@ SplineSet
  309 600 l 1
  302 534 302 474 302 425 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10915
@@ -91453,6 +91417,7 @@ SplineSet
  419 474 436 476 456 476 c 0
  555 476 605 441 605 370 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10916
@@ -91469,6 +91434,7 @@ SplineSet
  190 463 190 241 105 35 c 1
  55 55 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10917
@@ -91491,6 +91457,7 @@ SplineSet
  118 580 149 576 154 576 c 0
  200 576 293 592 339 592 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10918
@@ -91519,6 +91486,7 @@ SplineSet
  273 592 302 576 302 544 c 0
  302 504 225 460 148 409 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni10919
@@ -91541,6 +91509,7 @@ SplineSet
  228 532 148 463 104 369 c 1
  55 391 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1091a
@@ -91562,6 +91531,7 @@ SplineSet
  190 463 190 241 105 35 c 1
  55 55 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1091b
@@ -91588,6 +91558,7 @@ SplineSet
  190 463 190 241 105 35 c 1
  55 55 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni1091f
@@ -91604,6 +91575,7 @@ SplineSet
  88 274 55 308 55 351 c 0
  55 393 86 429 125 429 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni214a
@@ -123678,13 +123650,12 @@ SplineSet
  -229 816 -136 801 -113 801 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
 EndChar
 
 StartChar: epristhamatra
 Encoding: 2382 2382 4842
 Width: 149
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 LayerCount: 2
 Fore
@@ -193895,6 +193866,7 @@ EndChar
 StartChar: uesigndeva
 Encoding: 2390 2390 6235
 Width: 0
+GlyphClass: 4
 Flags: MW
 AnchorPoint: "dev_below" -219 -23 mark 0
 LayerCount: 2
@@ -193914,6 +193886,7 @@ EndChar
 StartChar: uuesigndeva
 Encoding: 2391 2391 6236
 Width: 0
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev_below" -219 -23 mark 0
 LayerCount: 2
@@ -194005,6 +193978,7 @@ EndChar
 StartChar: oesigndeva
 Encoding: 2362 2362 6244
 Width: 0
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev_above" -53 613 mark 0
 LayerCount: 2
@@ -194041,7 +194015,6 @@ LayerCount: 2
 Fore
 Refer: 2147 2306 S 1 0 0 1 336 0 2
 Refer: 2207 2368 N 1 0 0 1 0 0 2
-Validated: 32769
 LCarets2: 1 0 
 EndChar
 
@@ -194356,7 +194329,7 @@ EndChar
 StartChar: dev_tta_nukt.rkrf
 Encoding: 60449 -1 6258
 Width: 568
-Flags: HW
+Flags: W
 AnchorPoint: "dev_below" 324.492 -224.141 basechar 0
 LayerCount: 2
 Fore
@@ -194370,7 +194343,7 @@ EndChar
 StartChar: dev_ttha_nukta.rkrf
 Encoding: 60450 -1 6259
 Width: 529
-Flags: HW
+Flags: W
 AnchorPoint: "dev_below" 284.492 -214.141 basechar 0
 LayerCount: 2
 Fore
@@ -194384,7 +194357,7 @@ EndChar
 StartChar: dev_dda_nukta.rkrf
 Encoding: 60451 -1 6260
 Width: 611
-Flags: HW
+Flags: W
 AnchorPoint: "dev_below" 384.492 -224.141 basechar 0
 LayerCount: 2
 Fore
@@ -194399,7 +194372,7 @@ EndChar
 StartChar: dev_ddha_nukta.rkrf
 Encoding: 60452 -1 6261
 Width: 524
-Flags: HW
+Flags: W
 AnchorPoint: "dev_below" 324.492 -224.141 basechar 0
 LayerCount: 2
 Fore
@@ -194418,7 +194391,7 @@ LayerCount: 2
 Fore
 Refer: 2203 2364 S 1 0 0 1 433 50 2
 Refer: 3260 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" qadeva virama
 EndChar
 
@@ -194431,6 +194404,7 @@ Fore
 Refer: 2203 2364 S 1 0 0 1 433 50 2
 Refer: 3261 -1 N 1 0 0 1 0 0 2
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" khhadeva virama
 EndChar
 
@@ -194443,6 +194417,7 @@ Fore
 Refer: 2203 2364 S 1 0 0 1 453 50 2
 Refer: 3262 -1 N 1 0 0 1 0 0 2
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" ghhadeva virama
 EndChar
 
@@ -194455,6 +194430,7 @@ Fore
 Refer: 2203 2364 S 1 0 0 1 433 50 2
 Refer: 3266 -1 N 1 0 0 1 0 0 2
 Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" zadeva virama
 EndChar
 
@@ -194466,7 +194442,7 @@ LayerCount: 2
 Fore
 Refer: 2203 2364 S 1 0 0 1 423 50 2
 Refer: 3281 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'half' Half Forms in Devanagari subtable" fadeva virama
 EndChar
 
@@ -194550,6 +194526,26 @@ Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" ausigndeva dev_ra.rphf anusvaradeva
 Ligature2: "'abvs' Above Base Substitutions in Devanagari-3" dev_ra.rphf ausigndeva anusvaradeva
+EndChar
+
+StartChar: indic_question
+Encoding: 60462 -1 6269
+Width: 682
+Flags: W
+LayerCount: 2
+Fore
+Refer: 31 63 N 1 0 0 1 173 0 2
+Validated: 32769
+EndChar
+
+StartChar: indic_exclam
+Encoding: 60463 -1 6270
+Width: 357
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1 33 N 1 0 0 1 120 0 2
+Validated: 32769
 EndChar
 EndChars
 EndSplineFont
