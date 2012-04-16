@@ -1,8 +1,30 @@
 	Usage of GNU FreeFont
 
-FreeFont has numerous font "features" that perform alterations to the 
-basic letters of the font, replacing them with other letters, or positioning
-them with respect to other letters.
+Language scripts and faces
+==========================
+
+There are three faces (serif, sans-serif, and monospace), and four styles
+(regular, bold, cursive/italic, and bold cursive/italic) for each face.
+There is one font file per face/style combination: 12 files in total.
+
+The letters for various languages, as well as specialized symbols, exist
+among the various font files, but they are not uniformly populated.
+All the fonts have complete support for Latin, Cyrillic, and Greek, as
+well as most of the extensions for those scripts.
+
+At this time, serif regular has by far the largest number of letters, and
+supports the largest number of writing scripts.  However there are writing
+scripts supported by the sans-serif but not by serif.
+
+For an overview of which scripts and sets of symbols are supported by
+which face, see the FreeFont 'coverage' web page.
+
+Font features
+=============
+
+FreeFont has numerous font "features" that perform alterations to the basic
+letters of the font, replacing them with other letters, or positioning them
+with respect to other letters.
 
 Many features are activated automatically, but in some environments, they
 present some user control.  This documents those features with user control.
@@ -41,11 +63,11 @@ Hindi, Marathi	better spacing of Western punctuation marks
 
 Indic languages
 ---------------
+
 The 'danda' character is encoded in Unicode only in the Devanagari range.
-When writing in scripts of other Indic languages, this same character is
-to be used.  But the shapes and line thicknesses of glyphs vary slightly
-from one script to another, so the same glyph for 'danda' may not fit all
-scripts.
+When writing in scripts of other Indic languages, this same character is to
+be used.  But the shapes and line thicknesses of glyphs vary slightly from
+one script to another, so the same glyph for 'danda' may not fit all scripts.
 
 By specifying the language of the text, an appropriate glyph for 'danda'
 will be obtained.
@@ -69,7 +91,8 @@ Unless otherwise noted, these are available only in FreeSerif.
 
 Ligatures and substitutions
 ---------------------------
-Arabic, Armenian, Hebrew, German,
+
+Arabic, Armenian, Hebrew, German, Dutch
 
 Small captials
 --------------
@@ -112,3 +135,4 @@ Again this is use primarily in specialized typesetting software.
 
 Greek, Latin
 
+$Id: usage.txt,v 1.10 2011-07-16 08:38:06 Stevan_White Exp $
