@@ -1,4 +1,1695 @@
 $Id: ChangeLog,v 1.257 2010-09-19 13:15:07 Stevan_White Exp $
+2012-04-19 21:07 +0000 [r2226]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: re-named
+	  alefmaksurainitialarabic and alefmaksuramedialarabic as
+	  alefmaksurainitialarabic and alefmaksuramedialarabic to avoid a
+	  confusing FontForge warning. This was discussed on the FontForge
+	  list, and a partial remedy was agreed upon.
+
+2012-04-19 21:02 +0000 [r2225]  Stevan_White:
+
+	* Serif: GPOS table: removed the Cyrillic kerns with non-Unicode
+	  "alternative" Cyrillic, because FontForge warns that Windows apps
+	  will have *problems* with mappings that aren't Unicode-Unicode.
+	  Most of the kerns were rather small anyway.
+
+2012-04-19 20:39 +0000 [r2224]  Stevan_White:
+
+	* SerifBoldItalic, SansBoldOblique, MonoBoldOblique: TTF Names: Fixes
+	  bug #36232:
+	  Windows 7 strange bug with installation/font control panel.
+	  Also improved French names. (Thanks to Emmanuel Vallois)
+
+2012-04-18 07:31 +0000 [r2223]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: Regularized overlap of horizontal.
+	  Cleaned up numerous other letters.
+
+2012-04-17 07:37 +0000 [r2222]  Stevan_White:
+
+	* SerifItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  MonoBold, MonoOblique, MonoBoldOblique: Currency Symbols:
+	  Added/corrected/adjusted Indian Rupee.
+
+2012-04-16 22:17 +0000 [r2219]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: resolves bug #36195:
+	Arabic semicolon doesn't match with others
+
+2012-04-15 23:16 +0000 [r2218]  Stevan_White:
+
+	* SerifBold: Arabic: this was meant to be in previous commit.
+
+2012-04-15 18:30 +0000 [r2217]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: Remedies bug #36196:
+	  Arabic ba and teh isolated and final.
+	  Also applied similar alteration to some similar letters.
+	  Bold: there were some missing ligatures of superscript marks.
+
+2012-04-15 17:52 +0000 [r2216]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: Remedies bug #36198:
+	  dots for Arabic letter jeh Also revised placement dots
+	  over some other letters.
+
+
+2012-04-15 13:24 +0000 [r2215]  Stevan_White:
+
+	* Serif: Arabic: remedies bug #36191, Arabic character DAD final form
+
+2012-04-15 12:23 +0000 [r2214]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: toward bug #36189:
+	  discrepancy in different forms of ک and گ
+
+2012-04-15 12:02 +0000 [r2213]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: remedies bug #36190,
+	  Arabic question mark too small
+
+2012-04-15 11:16 +0000 [r2212]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: anchors for recently added letters.
+	  Thanks, Zdenek.
+
+2012-04-15 10:44 +0000 [r2211]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: adjusted height of dots on a few glyphs
+
+2012-04-15 10:31 +0000 [r2210]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: remedies bug #36181:
+	  initial and final form of heh (U+0647)
+	  https://savannah.gnu.org/bugs/?36181
+
+2012-04-13 09:56 +0000 [r2208]  Stevan_White:
+
+	* Sans, SansBold, Serif: Devanagari:
+	  serif: corrected OpenType glyph type of ru, ruu ligatures to be
+	  base ligatures, not marks.
+	  sans, sans bold: added ka-ra "vatu" ligature at Zdenek's suggestion.
+	  sans: removed empty lookup.
+
+2012-04-10 20:33 +0000 [r2207]  Stevan_White:
+
+	* Sans, SansBold, Serif, SerifBold: Devanagari:
+	  several mark placement issues, pointed out by Zdenek.
+
+2012-04-09 21:58 +0000 [r2206]  Stevan_White:
+
+	* Makefile, Serif, SerifBold: Arabic:
+	  made Arabic and Persion digits 500EM wide.
+
+2012-04-09 18:35 +0000 [r2205]  Stevan_White:
+
+	* Sans, Serif, MonoOblique, SerifBold:
+	  Arabic: messed with digits.
+	  Overall, had been building with GIT version of FontForge. found
+	  that older distro version 22-Feb-2011-ML shows warning dialogs
+	  Internal Error: EITOfNextMajor failed! on Clockwise Test
+	  (cleverly omitting the crucial info). Turns out, just rounding to
+	  int on certain characters fixes it.
+
+2012-04-09 11:34 +0000 [r2204]  Stevan_White:
+
+	* Serif, SerifBold: Arabic:
+	  More kerning: tried to synch up normal and bold.
+	  Altered letters especially for Seraiki.
+	  Lots of fiddling with heh and heh-doachashmee. Seems the
+	  letter transforms very differently for different languages. This
+	  is not there yet.
+
+2012-04-08 12:53 +0000 [r2203]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: made 'ccmp' table and
+	  some combining marks to handle cases of letters that don't
+	  have positional forms in Unicode. Only did a few -- more are
+	  needed. Lots of kerning. Fiddled with shapes of several letters.
+
+2012-04-07 19:21 +0000 [r2202]  Stevan_White:
+
+	* Serif: Arabic: more alterations toward bug #36115:
+	  Various little problems with Arabic/Persian glyphs.
+	  More kerning. Some forms from Pashto are missing.
+
+2012-04-06 17:45 +0000 [r2201]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: made medial form of
+	  loop-letters more distinctive from initial forms. (toward bug #36115:
+	  Various little problems with Arabic/Persian glyphs)
+
+2012-04-05 16:43 +0000 [r2200]  Stevan_White:
+
+	* Serif, SerifBold: Arabic: improvements to
+	  digits (Persian primarily) based on patch from Masoud Pourmoosa.
+
+2012-04-04 17:10 +0000 [r2199]  Stevan_White:
+
+	* Mono, Serif, SerifBold: Arabic; (for Farsi)
+	  toward bug 34700: made farsi yeh final more like the Unicode samples.
+	  https://savannah.gnu.org/bugs/?34700
+	  Arabic/Persian in FreeSerif: ending "Yeh" is annoying
+
+2012-04-04 14:34 +0000 [r2198]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBoldItalic, SerifBold,
+	  Sans, SansBold, SansOblique, SansBoldOblique:
+	  Various attempts to make web fonts work/look better.
+	  Sans Devanagari: made relation between overhang and horizontal more
+	  consistent for half-forms.
+	  Corrected metrics in SansOblique.
+	  Some kerning overall, after looking again at sample pages
+
+2012-04-02 13:30 +0000 [r2197]  Stevan_White:
+
+	* SansBold: Devanagari: toward more consistent spacing, especially of
+	  half-forms
+
+2012-04-02 12:57 +0000 [r2196]  Stevan_White:
+
+	* Sans: Devanagri: better connection of horizontals,
+	  especially half forms.
+
+2012-04-01 13:45 +0000 [r2195]  Stevan_White:
+
+	* Serif: Combining Diacritical Marks Supplement: made glyphs for
+	  large part of range.
+	  Latin Extended-D: made Latin con and US glyphs.
+
+2012-03-30 13:33 +0000 [r2193]  Stevan_White:
+
+	* SerifItalic, Sans, SansOblique, SansBoldOblique,
+	  MonoBold, MonoBoldOblique: Pointwise cleanup
+	  toward validation with PS rounding turned on for OpenType.
+
+2012-03-30 11:16 +0000 [r2192]  Stevan_White:
+
+	* SerifItalic, Serif, SerifBold: Devanagari: bold, italic,
+	  re-considered vowel naming to avoid FF warnings.
+	  Latin: a bit of kerning
+
+2012-03-28 19:28 +0000 [r2185]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: simplified dist lookup criteria
+
+2012-03-28 19:20 +0000 [r2183]  Stevan_White:
+
+	* SerifBold: Devanagari: cleaned up a bunch of excess GPOS anchors;
+	  tidied lookups.
+
+2012-03-26 10:43 +0000 [r2179]  Stevan_White:
+
+	* Serif: Devanagari: much experimenting with lookups to center
+	  western punctuation between words (resulted in several bug reports
+	  on firefox and xetex). 
+	  Currently, uses GSUB 'locl'. GPOS are too problematic in apps to use.
+
+2012-03-25 09:49 +0000 [r2178]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: added positioning for western punctuation
+
+2012-03-25 09:40 +0000 [r2177]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari, Bengali: small tweeks to dots
+
+2012-03-24 21:34 +0000 [r2176]  Stevan_White:
+
+	* SerifBoldItalic, SansBoldOblique, MonoBoldOblique: TTF Names:
+	  Hindi hyphenated term
+
+2012-03-24 10:20 +0000 [r2175]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari: regarding horizontal spacing, on
+	  advice of Zdenek. o, au -- stems were too close.
+	  danda, dbldanda: much too near preceding word. Made so that
+	  danda-space would space the mark evenly between the words.
+	  Made lookups for similarly-spaced question and exclamation marks.
+	  Kerning (or dist?): Experiments -- problems include: Firefox
+	  doesn't seem to support "dist". Xetex doesn't turn kerning on by
+	  default. Fontforge complains Windows doesn't like to kern
+	  auxiliaries with Unicode ranges. Nonetheless, it does pack words
+	  rather tighter.
+	  My own advice: made ra glyph more narrow. It was the worst, spacing
+	  wise, on the un-kerned page.
+	  Oriya: made similar spacing for its danda.
+
+2012-03-23 12:56 +0000 [r2174]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari: efforts to improve horizontal spacing,
+	  that Zdenek complains about.
+	  1) medium: o, au vowels: stems too close
+	  2) danda, dbldanda, should be widely separated from words, centred
+	  between them.
+	  3) bold: on horizontal, bevels extend rather more than they
+	  should (reduced in Unicode and through first set of half marks in the
+	  auxiliaries... willl complete later.)
+	  4) made special localized forms of question, exclamation mark.
+
+2012-03-22 23:23 +0000 [r2172]  Stevan_White:
+
+	* Serif, SerifBoldItalic, Sans, SansBold, SansOblique, SansBoldOblique:
+	  More re-thinking of OS/2 weights.
+	  In sans, again adjusted OS/2 Windows metrics to stop clipping. (I'm
+	  just sure this will mess up line spacing in
+	  OpenOffice, but didn't have time to check. Something has a bug.)
+
+2012-03-22 19:17 +0000 [r2171]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  SansBold, SansOblique, SansBoldOblique,
+	  MonoBold, MonoOblique, MonoBoldOblique: Font Info: filled out
+	  TTF Names Fullname for Hindi
+
+2012-03-22 19:00 +0000 [r2170]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: Added Hindi term for
+	  Font Style in TTF Names (courtesy of Monika Shah)
+
+2012-03-22 18:49 +0000 [r2169]  Stevan_White:
+
+	* Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: FontInfo:
+	  re-considered OS/2 and Panose weight descriptions
+
+2012-03-22 15:02 +0000 [r2168]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari: Replaced a 'pres' table that got
+	  zeroed by a crash. More adjustments to mark placement.
+
+2012-03-22 12:51 +0000 [r2167]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari: Replaced lost 'pres' lookup tables.
+
+2012-03-22 10:35 +0000 [r2166]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: Overall: Several
+	  measures toward reducing warnings from Font Validator.
+	  In "roman" faces, change TTF Name: SubFamily to "Regular". (FontForge
+	  binds this to PSNames:Weight --? so changed that.)
+	  Experimenting with General:Name For Humans (Fiddled with Family Name
+	  too...but changed it back.) Changes to OS/2:Sub/Super Subscript
+	  Offset -- made positive.
+	  Some fiddling with Panose info.
+	  Also: previously OS/2 Charsets missed 708, Arabic ASMO 708. (Bug in
+	  FontForge-patch reported.)
+	  In sans and mono oblique, bold, and boldoblique, added some math
+	  operators to fill an Apple codepage.
+	  Sinhala: FreeSerifBold -- implemented same change moving 'ccmp'
+	  to 'akhn' as in roman face. Has to do with bug in OpenOffice/ICU.
+
+2012-03-20 08:25 +0000 [r2165]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: OS/2 small tweeks:
+	  set "weight, width, slope only"
+
+2012-03-19 18:34 +0000 [r2164]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique: OS/2 Charsets:
+	  made serif, serifbold, mono to support ASMO 708 MS Codepage for
+	  Arabic (small bug in FontForge)
+	  OS/2 Version: changed from Automatic to 3 for all, only to satisfy
+	  old MS Font Validator, which chokes on higher versions.
+
+2012-03-19 09:45 +0000 [r2163]  Stevan_White:
+
+	* Mono: correction-something went wrong with the encoding two commits
+	  ago. (I switched encoding from custom to BMP and back again.) This
+	  should encorporate the recent changes and fix the problem.
+
+2012-03-19 08:41 +0000 [r2161]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: OS/2 version: set to
+	  3 (was "Automatic") mostly for MS Font Validator.
+	  Arabic Presentation Forms B: (regular) made lam-alif ligatures,
+	  completing range.
+
+2012-03-18 15:57 +0000 [r2160]  Stevan_White:
+
+	* Sans, Serif: Devanagari: more toward positioning of marks.
+
+2012-03-18 15:09 +0000 [r2159]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: resolved some dfficult cases reported
+	  by Zdenek. (esp. that esign and reph could come in either order.)
+
+2012-03-18 06:37 +0000 [r2158]  Stevan_White:
+
+	* Sans, SansBold, Serif: Devanagari: More toward proper mark placement.
+
+2012-03-16 17:39 +0000 [r2157]  Stevan_White:
+
+	* Sans, SansBold, Serif, SerifBold: Devanagari: more issues
+	  regarding mark placement.
+
+2012-03-15 23:39 +0000 [r2156]  Stevan_White:
+
+	* Sans, Serif, SerifBold: Devanagari: toward fixing mark positioning
+	  problems Zdenek pointed out.
+
+2012-03-15 10:28 +0000 [r2155]  Stevan_White:
+
+	* Serif: Latin: got i-ogonek-acute to remove dot over i again (for
+	  Navaho). Problem was evidently a DFLT{dflt} entry in lookup
+	  language tags.
+
+2012-03-15 10:03 +0000 [r2153-2154]  Stevan_White:
+
+	* Sans: Devanagari: fixes for some mark issues pointed out by Zdenek.
+
+	* SerifItalic, SerifBoldItalic, Serif, SerifBold: Latin: corrected
+	  longstanding problem that made stacked Vietnamese accents fail.
+	  Had to do with long list of languages filter of default ligature
+	  lookup, excluding Turkish, and rendering logic I don't understand.
+	  Devanagari: toward correcting marks stacked below rakaar.
+
+2012-03-13 16:29 +0000 [r2152]  Stevan_White:
+
+	* Serif: Mathematical Alphanumeric Symbols (especially)
+	  named some characters
+
+2012-03-13 10:46 +0000 [r2151]  Stevan_White:
+
+	* SerifBold: Devanagari: ha-rrvocalic and improved ha-rakaar,
+	  as in medium
+
+2012-03-12 21:59 +0000 [r2150]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBoldItalic, SerifBold:
+	  Mathematical Operators:
+	  reduced horizontal spacing of complement operator
+
+2012-03-12 21:28 +0000 [r2149]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic, Serif, SerifBold: Mathematical
+	  Operators: re-thought dimensions of "complement" symbol (after
+	  seeing it in Dieudonné's analysis book)
+
+2012-03-12 18:49 +0000 [r2148]  Stevan_White:
+
+	* Sans, Serif: Devanagari: various adjustments to marks.
+	  serif: added ha-llvocalic, replaced ha_ra conjunct,
+	  positioned virama separately from vowels.
+
+2012-03-11 22:39 +0000 [r2147]  Stevan_White:
+
+	* Sans, Serif: Bengali: adjustments to marks;
+	  GPOS tables to position them.
+
+2012-03-11 16:37 +0000 [r2146]  Stevan_White:
+
+	* SansOblique: Bengali: fixed some horizontal spacing issues
+
+2012-03-11 00:56 +0000 [r2145]  Stevan_White:
+
+	* SansBold, Serif: Made to pass tests--mostly little pointwise tweeks.
+	  One range of auxiliaries had wandered out of the Private Use area.
+
+2012-03-10 23:55 +0000 [r2144]  Stevan_White:
+
+	* MonoOblique: Armenian: corrected width of one glyph
+
+2012-03-10 18:53 +0000 [r2143]  Stevan_White:
+
+	* Sans: Bengali: completed pointwise clean-up of auxiliaries.
+	  Found a couple more with quite wrong rignt bounds.
+
+2012-03-10 13:15 +0000 [r2142]  Stevan_White:
+
+	* Serif, SerifBold, SerifItalic, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique: OS/2 vertical metrics:
+	  another change of heart: made vertical metrics like other fonts I
+	  looked at, and tightened line spacing.
+	  Bengali: (sans) point-wise clean-up down to bn_l_dd_ra (before I
+	  pooped out) Fixed right bound of several auxiliaries, such as
+	  bn_p_ma, bn_m_p_la
+
+2012-03-09 19:04 +0000 [r2141]  Stevan_White:
+
+	* SerifItalic: Removed some unintended empty contours. Pointwise
+	  clean-up of points too close (but gave up on Bengali range.)
+
+2012-03-09 18:42 +0000 [r2139]  Stevan_White:
+
+	* MonoOblique: Pointwise cleanup of "points too close" problems.
+
+2012-03-09 18:35 +0000 [r2138]  Stevan_White:
+
+	* SerifBold: Removed an unintended empty contour
+
+2012-03-09 16:49 +0000 [r2136]  Stevan_White:
+
+	* Makefile: Made to properly report progress for OpenType target
+
+2012-03-09 16:08 +0000 [r2135]  Stevan_White:
+
+	* Serif: Mahjong Tiles: The previous commit didn't quite do it.
+	  Sometimes, but starting the generate process from scratch, it still
+	  crashed. But this "circle" glyph was excessively elaborate anyway.
+	  Made it simpler, cleaned it up, and now the crash isn't happening.
+
+2012-03-09 13:12 +0000 [r2134]  Stevan_White:
+
+	* Serif: Mahjong Tiles: work-around for FontForge crash, by use of
+	  references.
+	  Crash: Select All, AutoHint. Generate Fonts, OpenType Options,
+	  check Postscript Hints. Generate. segfault.
+
+2012-03-09 12:04 +0000 [r2133]  Stevan_White:
+
+	* Serif: Mahjong Tiles: named the glyphs
+
+2012-03-09 01:17 +0000 [r2132]  Stevan_White:
+
+	* Sans: Corrected mixed reference and contour.
+	  Overall point-wise cleanup "points too close"
+
+2012-03-07 23:27 +0000 [r2131]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: Font Info General:
+	  changed copyright 2011 to 2012 since no public release was made
+	  last year.
+
+2012-03-07 14:50 +0000 [r2129]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: .notdef: made clearer
+	  that something is missing...
+
+2012-03-06 19:07 +0000 [r2128]  Stevan_White:
+
+	* Sans, SansBold, Serif, SerifBold: Devanagari: mostly adjustments to
+	  mark placement.
+
+2012-03-06 11:22 +0000 [r2127]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: various alterations toward ligatures as
+	  in Velthuis manual, and for legibility.
+
+2012-03-05 21:18 +0000 [r2126]  Stevan_White:
+
+	* SansBold: Devanagari: made half-na a bit wider on Monika Shah's
+	  recommendation. Tweeked several other auxiliaries for legibility.
+
+2012-03-05 20:25 +0000 [r2125]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: Several issues reported by Monika Shah,
+	  including rakaar being placed improperly, and some Sanskrit ligatures
+	  leaking into Hindi.
+
+2012-03-05 16:41 +0000 [r2124]  Stevan_White:
+
+	* Sans, SansBold: Devanagari: combined half-form issues,
+	  reported by Zdenek Wagner.
+
+2012-03-05 15:07 +0000 [r2123]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari: Several alterations based on a report
+	  by Zdenek Wagner. Anusvara in conjunction with other above marks,
+	  u and uumatra in conjunction with ha and nuktas.
+
+2012-03-05 01:22 +0000 [r2122]  Stevan_White:
+
+	* Sans, SansOblique: Bengali: Several ligatures with ba had lost the
+	  holes in their ba. (bn_k_ba, etc); also bn_asamib_r_ukaar.
+	  Copied holes from similar glyphs. A similar thing may have happend
+	  to a couple of other ligs (bn_ss_tta1, bn_ss_tt_ra1). I don't know
+	  how these should look, but they seem to be unused anyway.
+
+2012-03-04 18:24 +0000 [r2121]  Stevan_White:
+
+	* SerifItalic: general clean-up of points too close.
+	  Bogged down on Bengali.
+
+2012-03-04 18:01 +0000 [r2120]  Stevan_White:
+
+	* SerifBoldItalic, SerifBold: Currency Symbols: added Rupee to italic.
+	  general clean-up of points too close.
+
+2012-03-04 13:18 +0000 [r2119]  Stevan_White:
+
+	* Serif, SerifBold: Gurmukhi: adjusted placement of dots.
+	  re-named tables and rounded to int in bold.
+
+2012-03-04 12:25 +0000 [r2118]  Stevan_White:
+
+	* Serif: Devanagari Extended: completed range
+
+2012-03-04 11:25 +0000 [r2117]  Stevan_White:
+
+	* Mono, MonoOblique: Armenian: added dhahma (and ran clear hints)
+
+2012-03-04 11:21 +0000 [r2116]  Stevan_White:
+
+	* Serif, SerifBold, SerifItalic, SerifBoldItalic, Sans, Mono: Armenian:
+	  added drahma
+
+2012-03-04 10:45 +0000 [r2115]  Stevan_White:
+
+	* SerifBold: Devanagari: completed main Unicode range.
+
+2012-03-04 10:17 +0000 [r2114]  Stevan_White:
+
+	* Serif, SerifBold: Gurmukhi: Added range in bold.
+	  Serif: Many point-wise cleanups, in Gurmukhi and other ranges.
+
+2012-03-02 22:19 +0000 [r2113]  Stevan_White:
+
+	* Sans, SansBold,
+	  Serif, SerifBold: Devanagari: starting to converge.
+	  In serif, added ra-u and ra-uu and tables, raised anusvara.
+	  Various small alterations to sans letters.
+
+2012-03-02 15:18 +0000 [r2112]  Stevan_White:
+
+	* SansBold, Serif, SerifBold: Devanagari: corrected rakaar on letter da
+
+2012-03-02 14:56 +0000 [r2111]  Stevan_White:
+
+	* SansBold: Devanagari: glyph clean-up pass through auxiliaries.
+
+2012-03-02 12:22 +0000 [r2110]  Stevan_White:
+
+	* SansBold: Devanagari: clean-up pass through Unicode range.
+	  Added a few ligatures.
+
+2012-03-02 03:35 +0000 [r2107-2109]  Stevan_White:
+
+	* SansBold: Devanagari: implemented by increasing weight of letters
+	  from Sans. Subset of auxiliaries in Sans: plan is to do more with
+	  tables.
+
+	* Sans: Devanagari: re-instated dev_ha_rvocalic.blws
+
+	* Serif, SerifBold: Devanagari: corrected table having to do with
+	  rakaar on round consonants
+
+2012-03-01 19:50 +0000 [r2106]  Stevan_White:
+
+	* Sans: Devanagari: Regularized horizontal bar height and width, as
+	  well as size and shape of dot marks (made all diamonds).
+	  More use of references. (With GPOS tables, most of the nuktas and
+	  halents would go away.)
+	  Latin: made comma a bit less spindly, and likewise with derived marks.
+
+2012-02-29 22:29 +0000 [r2105]  Stevan_White:
+
+	* Serif: Bengali: some insignificant clean-up.
+	  what to do about these glyphs?
+
+2012-02-29 19:12 +0000 [r2104]  Stevan_White:
+
+	* SansBold, SansBoldOblique, Serif, SerifBold, MonoBold, MonoOblique:
+	  Various small corrections to get test suite to run
+
+2012-02-29 17:02 +0000 [r2103]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari: corrected table tag for style sets.
+	  Made substitutions for Marathi more like those for Hindi than 
+	  Sanskrit.
+
+2012-02-29 11:21 +0000 [r2102]  Stevan_White:
+
+	* SerifBold: Devanagari: should now have same coverage as regular face.
+
+2012-02-29 07:10 +0000 [r2101]  Stevan_White:
+
+	* Serif: Devanagari: replaced auxiliaries; added positioning anchors.
+
+2012-02-24 15:58 +0000 [r2097]  Stevan_White:
+
+	* Serif: Oriya: Special form for ukar under some consonants, ligatures
+	  for several consonants with aakar, with lookups.
+
+2012-02-24 12:21 +0000 [r2096]  Stevan_White:
+
+	* Serif: Oriya: found auxiliaries that had excaped clean-up.
+
+2012-02-24 11:47 +0000 [r2095]  Stevan_White:
+
+	* Serif: Oriya: Switched yophola and yyophola for about the 3rd time.
+	  This time, following doc for ortex. Clean-up of "points too close".
+
+2012-02-23 23:37 +0000 [r2094]  Stevan_White:
+
+	* Serif: Oriya: removed overlap of components, validated.
+
+2012-02-23 23:25 +0000 [r2093]  Stevan_White:
+
+	* Serif: Oriya: glyph cleanup of auxiliaries complete.
+
+2012-02-23 19:55 +0000 [r2092]  Stevan_White:
+
+	* Serif: Oriya: one removed glyph had stowed away in a chaining
+	  lookup list
+
+2012-02-23 18:09 +0000 [r2091]  Stevan_White:
+
+	* Serif: Oriya: Corrected lookup tag for 'haln' form for 'no'.
+	  More glyph cleanup in auxiliaries.
+
+2012-02-23 16:19 +0000 [r2090]  daniel_j <daniel_j@localhost>:
+
+	* SansBold, SansBoldOblique: Set correct codepoint and Unicode name
+	  for uniA7AA (hooked H) in sans bold and bold-oblique
+
+2012-02-23 14:52 +0000 [r2089]  Stevan_White:
+
+	* Serif: Oriya: corrected blown-out letter in main range, renamed
+	  an auxiliary.
+
+2012-02-23 14:11 +0000 [r2088]  Stevan_White:
+
+	* Serif: Oriya: worked on vowels.  adjusted ii and ai_length to
+	  improve connections. Made table for i sign beneath tho, dho.
+
+2012-02-23 13:35 +0000 [r2087]  Stevan_White:
+
+	* Serif: Oriya: in auxiliary glyphs, a bit more clean-up,
+	  regularizing stem widths. Moved previous
+	  'half' to 'haln', as 'half' isn't recognized by Pango.
+
+2012-02-23 12:46 +0000 [r2086]  Stevan_White:
+
+	* Serif: Oriya: Re-shaped a few letters with over-thick round parts.
+	  Made vowels a bit closer to base letter.
+
+2012-02-23 11:53 +0000 [r2085]  Stevan_White:
+
+	* Serif: Oriya: made verticals in main range of more consistent width.
+
+2012-02-22 22:32 +0000 [r2084]  Stevan_White:
+
+	* Serif: Oriya: more lookups seem to be working, but there is a big
+	  question about why the halent switches position. Is this the
+	  shaping engine, or something I've done with the tables?
+
+2012-02-22 19:44 +0000 [r2083]  Stevan_White:
+
+	* Serif: Oriya: regularized glyph bearings
+
+2012-02-22 19:18 +0000 [r2082]  Stevan_White:
+
+	* Serif: Oriya: enabled lookups for lots more ligatures. Still
+	  concerned that akhans aren't activating. 
+	  Some adjustment of stem widths, etc.
+
+2012-02-22 09:38 +0000 [r2081]  Stevan_White:
+
+	* Serif: Oriya: made anusvara a spacing mark, made tables and spacing
+	  versions of below base marks to avoid collisions with subscripted
+	  consonants, adjusted vowel e to be less angular and a bit lighter.
+
+2012-02-22 00:44 +0000 [r2080]  Stevan_White:
+
+	* Serif: Oriya: a lot of work with tables getting examples on
+	  MS Typography pages on Oriya to work.
+	  Glyph clean-up, mark adjustments.
+
+2012-02-21 10:39 +0000 [r2079]  Stevan_White:
+
+	* Serif: Oriya: completed Unicode range;
+	  more glyph clean-up. yophola and zophola were exchanged -- fixed.
+	  made look-up for reph+canrabindu.
+
+2012-02-20 22:39 +0000 [r2078]  Stevan_White:
+
+	* Sans: Devanagari: better use of references in auxiliary range
+
+2012-02-20 08:41 +0000 [r2077]  Stevan_White:
+
+	* Serif: Oriya: more glyph clean-up
+
+2012-02-19 20:52 +0000 [r2076]  Stevan_White:
+
+	* Mono, SerifBold: Currency Symbols: New Indian Rupee.
+
+2012-02-19 20:27 +0000 [r2075]  Stevan_White:
+
+	* Sans, Serif: Currency Symbols: Rupee ought to be shaped as a
+	  Devanagari ra with two horizontals, as pointed
+	  out by Santhosh Thottingal.
+
+2012-02-19 20:05 +0000 [r2074]  Stevan_White:
+
+	* Sans: Malayalam: corrected l_voc_mal and ll_voc_mal, which were
+	  completely wrong, as pointed out by Santhosh Thottingal.
+
+2012-02-19 19:37 +0000 [r2073]  Stevan_White:
+
+	* Serif: Oriya: Made vowels combine more correctly.
+	  More glyph clean-up.
+
+2012-02-19 11:03 +0000 [r2072]  Stevan_White:
+
+	* Serif: Oriya: more glyph clean-up
+
+2012-02-19 00:51 +0000 [r2071]  Stevan_White:
+
+	* Serif: Oriya: clean-up, glyph validation of main Unicode range.
+
+2012-02-18 21:50 +0000 [r2070]  Stevan_White:
+
+	* Serif: Gujarati: Removed overlaps, cleaned up resulting issues.
+
+2012-02-18 19:34 +0000 [r2069]  Stevan_White:
+
+	* Serif: Gujarati: main glyph clean-up done. some mods to glyph shapes.
+	  added a few i-widening table entries.
+
+2012-02-18 18:16 +0000 [r2068]  Stevan_White:
+
+	* Sans: Malayalam: positioning tables for below marks l_voc_mal and
+	  ll_voc_mal, as well as for reph.  (consult latest development version
+	  of Meera). Currency: made indian Rupee sign a bit wider
+
+2012-02-18 00:02 +0000 [r2067]  Stevan_White:
+
+	* Serif: Gujarati: further glyph clean-up (almost there!). Adjusted
+	  marks. Made new lookups to pick letter i based on width of the
+	  letter it goes over.
+
+2012-02-17 14:42 +0000 [r2066]  Stevan_White:
+
+	* Serif: Gujarati: mostly messing with mark positioning: got rid of
+	  carat-reph forms.
+
+2012-02-17 11:28 +0000 [r2065]  Stevan_White:
+
+	* Serif: Gujarati: further glyph clean-up, adjustments to mark
+	  placement.
+
+2012-02-17 01:44 +0000 [r2064]  Stevan_White:
+
+	* Serif: Gujarati: replaced ha_half, added some lookups for above marks.
+
+2012-02-17 00:14 +0000 [r2062-2063]  Stevan_White:
+
+	* Serif: Correction: kerning tables were blown out in commit 2056.
+	  There were several bad crashes about that time. The effect seems to
+	  be: all kern table entries are set to 0.
+
+	* Makefile, SansBold, Serif, SerifBold: kerning tables restored.
+	  Problem happened in commit 2096
+
+2012-02-16 23:41 +0000 [r2061]  Stevan_White:
+
+	* Serif: Gujarati: more glyph clean-up, mostly in auxiliaries.
+	  Just noticed all kern tables have been zeroed again (thank you,
+	  FontForge).
+
+2012-02-16 21:11 +0000 [r2060]  Stevan_White:
+
+	* Serif: Gujarati: glyph clean-up of Unicode range, some of auxiliary
+	  glyphs.
+
+2012-02-15 20:16 +0000 [r2059]  Stevan_White:
+
+	* Serif: Gujarati: more glyph clean-up, re-naming. much more to do.
+
+2012-02-15 17:12 +0000 [r2058]  Stevan_White:
+
+	* Serif: Gujurati: removed anusvara and nukta lookups in preference of
+	  positioning. general glyph clean-up. deleted a bunch of unused
+	  characters.
+	  Oriya: general glyph clean-up.
+
+2012-02-14 23:59 +0000 [r2057]  Stevan_White:
+
+	* Serif: Gujarati: Again, from Samak Gujarati font (full GPL 3.0 with
+	  font exception) Scaled slightly to fit bounds, moved some letters,
+	  renamed a few. Lots more to do.
+
+2012-02-14 22:35 +0000 [r2056]  Stevan_White:
+
+	* Serif: reverting previous commit.  lookup tables somehow got damaged
+
+2012-02-14 20:40 +0000 [r2055]  Stevan_White:
+
+	* Serif: Gujarati: From Samak Gujarati font (full GPL 3.0 with font
+	  exception) Scaled slightly to fit bounds, moved some letters,
+	  renamed a few. Lots more to do.
+
+2012-02-14 19:37 +0000 [r2054]  Stevan_White:
+
+	* Sans: Gujarati: Deleted range, over questions of its provenance.
+	  Tut mir leid.
+
+2012-02-13 23:16 +0000 [r2052-2053]  Stevan_White:
+
+	* Serif: Tamil: cleaned up 'virama' glyph.
+
+	* Serif: Gurmukhi: cleaned up 'aa' glyph.
+
+2012-02-13 23:11 +0000 [r2051]  Stevan_White:
+
+	* Serif: Gurmukhi: cleaned up 'a' glyph.
+
+2012-02-13 23:06 +0000 [r2049-2050]  Stevan_White:
+
+	* Serif: Oriya: compacted auxiliary glyphs a bit.
+
+	* Serif: Oriya: removed most holonto and nukta forms in preference for
+	  positioning lookups
+
+2012-02-13 21:08 +0000 [r2048]  Stevan_White:
+
+	* Sans: Gujarati: made to validate
+
+2012-02-13 20:55 +0000 [r2047]  Stevan_White:
+
+	* Sans: Gujarati: regularized horizontal placement and spacing, mostly
+	  increasing spacing a bit.
+	  Got rid of nukta substitution table in favor of positioning lookup;
+	  likewise with all anusvara lookups.
+	  The glyphs of this range are still very erratic, and the weight is
+	  substantially greater than that of the rest of the face.
+
+2012-02-13 13:56 +0000 [r2046]  Stevan_White:
+
+	* Sans: Gujarati: shifted entire range up by 44EM, so it didn't dangle
+	  so. Fiddled with mark placement.
+
+2012-02-13 00:01 +0000 [r2045]  Stevan_White:
+
+	* Serif: Gurmukhi: improved vowel a.
+
+2012-02-12 23:29 +0000 [r2044]  Stevan_White:
+
+	* Serif: Gurmukhi: replaced range with glyphs from
+	  'singh' metafont by Amarjit Singh
+	  http://www.tex.ac.uk/tex-archive/language/gurmukhi/
+	  The 'singh' font is properly GPL.
+	  And the overall look is much more like serif than what had been
+	  there.
+	  Status: added a few letters and tables. Two marks were unrepresented
+	  in 'singh', and are leftovers. I made a ya_halant and a ra
+	  below-form. Also made substitution and positioning tables.
+	  Worst: the vowel 'a' is very messed up -- much too heavy; hand-drawn.
+	  Will have to replace it.  Also need to review the missing marks.
+	  Pity there's no bold...
+
+2012-02-10 23:22 +0000 [r2042]  Stevan_White:
+
+	* SansBold: Gurmukhi: more of same.
+
+2012-02-10 23:18 +0000 [r2041]  Stevan_White:
+
+	* SansBold: Gurmukhi: adjusted GPOS entries
+
+2012-02-10 22:58 +0000 [r2040]  Stevan_White:
+
+	* Sans, SansBold: Gurmukhi: various tweeks to ligatures.
+	  Gujarati: various tweeks to ligatures.
+
+2012-02-10 19:01 +0000 [r2039]  Stevan_White:
+
+	* SansBold: Gurmukhi: toward version in medium.
+	  Geometric Shapes: made dotted circle.
+
+2012-02-10 17:57 +0000 [r2038]  Stevan_White:
+
+	* Serif: Oriya: added letters to complete range.
+	  re-named letters for consistency with other indic languages.
+	  fixed a broken table.
+
+2012-02-10 16:46 +0000 [r2037]  daniel_j <daniel_j@localhost>:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic: Unicode 6.1 addition
+	  in FreeSerif: H-hook (U+A7AA) for Chadian languages
+
+2012-02-10 15:46 +0000 [r2036]  Stevan_White:
+
+	* Serif: Oriya: Re-introduced, using Samak Oriya,
+	  a GPL v.3 + font exception.
+	  http://sarovar.org/projects/samyak/
+	  Already the original is altered in several ways.
+	  The glyphs need a lot of work.
+
+2012-02-09 18:50 +0000 [r2034]  Stevan_White:
+
+	* Sans: Gujarati: added abbreviation character
+
+2012-02-09 18:29 +0000 [r2033]  Stevan_White:
+
+	* Sans: Gurmukhi: named glyphs better.
+	  Malayalam: corrected problems caused by recent inconsistent naming.
+
+2012-02-09 16:36 +0000 [r2032]  Stevan_White:
+
+	* Sans: Gujurati: named characters better -- makes it easier to see
+	  table problems. Found one error in tables, fixed. There are others.
+
+2012-02-08 19:55 +0000 [r2031]  Stevan_White:
+
+	* Serif: Tamil: several new tables in effort to resolve spacing bug.
+
+2012-02-08 15:37 +0000 [r2030]  Stevan_White:
+
+	* Serif: Tamil: fixed shrii ligature
+
+2012-02-08 15:15 +0000 [r2029]  Stevan_White:
+
+	* Serif: Tamil: Toward resolution of bug #35479:
+	  Tamil in FreeSerif: some ligatures wrong
+	  https://savannah.gnu.org/bugs/index.php?35479
+	  Removed GSUB tables about positioning the virama; implemented this
+	  with a GPOS table and anchor points.
+	  Corrected tables for sshri, kss ligatures.
+	  Toward resolution of bug #35480:
+	  Tamil in FreeSerif: placement of vowel marks poor
+	  https://savannah.gnu.org/bugs/index.php?35480
+	  Made a vertical ii sign, made a contextual chain that replaces
+	  the normal ii with this one for certain letters.
+
+2012-02-08 01:41 +0000 [r2028]  Stevan_White:
+
+	* Serif: Malayalam: Added subtable for nta (mal_n1rh),
+	  Separated 'psts' subtable into u and uu ones, and everything else,
+	  hoping somehow to deal with the orthographic reform.
+
+2012-02-07 23:52 +0000 [r2027]  Stevan_White:
+
+	* Sans, Serif: Malayalam: some additions from
+	  recent Unicode (historical letters) Rearranged akhan lookups.
+
+2012-02-06 19:24 +0000 [r2025]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic: Latin: Fixed broken kerning.
+	  Problem was: there was an entry for 'f' as the first letter in two
+	  subtables of the same lookup. The second subtable was ignored, even
+	  though there was no match for the second letter in the first lookup.
+	  That is, within a kern lookup, the first letters of the pairs should
+	  be unique.
+
+2012-02-06 14:41 +0000 [r2023-2024]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic, SerifBold: Latin: put dflt back in
+	  Standard Ligature language list
+
+	* Serif: Devanagari: added glyphs for Bombay, Calcutta, Nepali styles
+	  from velthuis. made Style Set lookups for them.
+	  Latin: put dflt back in the Standard Ligatures language list
+
+2012-02-05 23:59 +0000 [r2022]  Stevan_White:
+
+	* SerifBold: Devanagari: named more Unicode glyphs, tried to make
+	  tables more like latest Serif. Know of one inconsistency remaining.
+
+2012-02-05 12:18 +0000 [r2021]  Stevan_White:
+
+	* Serif: Devanagari: re-worked overlarge reph-anudatta.
+	  Regularized table naming.
+
+2012-02-04 21:50 +0000 [r2019-2020]  Stevan_White:
+
+	* Serif: Devanagari: lookup tables -- for the first time, test matches
+	  big table of ligatures in velthuis (wrt Sanskrit and Hindi).
+
+	* Sans: Devanagari: named a bunch of Unicode glyphs
+
+2012-02-03 15:09 +0000 [r2018]  Stevan_White:
+
+	* Serif: Devanagari: another re-arrangement of tables for velthuis
+	  compliance. problems persist.
+
+2012-02-01 20:59 +0000 [r2017]  Stevan_White:
+
+	* Serif: Devanagari: complete re-structuring of tables in attempt to
+	  resemble better the specs about Indic tables, and produce ligatures
+	  of the velthuis font.
+	  Hebrew: Support raising of Yiddish vowel marks.
+
+2012-02-01 19:29 +0000 [r2016]  daniel_j:
+
+	* Sans, SansBold, SansOblique, SansBoldOblique: Unicode 6.1 additions
+	  in FreeSans: - Tifinagh Ye, Yo - Armenian dram - African H with hook
+
+2012-01-31 12:02 +0000 [r2015]  Stevan_White:
+
+	* SansBoldOblique: Hebrew: last commit accidentlly widened right
+	  side of many letters
+
+2012-01-31 11:51 +0000 [r2014]  Stevan_White:
+
+	* SansOblique, SansBoldOblique: Hebrew: more adjustment of points:
+	  bold--shifted letters to right
+
+2012-01-31 11:08 +0000 [r2013]  Stevan_White:
+
+	* SansOblique: Hebrew: some adjustment of mark positioning
+
+2012-01-31 10:58 +0000 [r2012]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic, SerifBold: Hebrew: adjustments to
+	  positioning marks; italic moved letter yod
+
+2012-01-31 10:33 +0000 [r2011]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic, SerifBold: Hebrew: deleted incorrect
+	  ligature lookup
+
+2012-01-31 10:24 +0000 [r2010]  Stevan_White:
+
+	* Sans, SansOblique, SansBoldOblique: Hebrew: deleted incorrect
+	  ligature lookup
+
+2012-01-31 10:13 +0000 [r2009]  Stevan_White:
+
+	* SansBold: Hebrew: adjustments to mark positioning, a bit of tidying
+	  of letters.
+	  Latin: deleted a mistakenly copied table.
+
+2012-01-31 09:47 +0000 [r2008]  Stevan_White:
+
+	* SansBold: Hebrew: added mark positioning
+
+2012-01-31 00:15 +0000 [r2007]  Stevan_White:
+
+	* Sans: Hebrew: should rememdy bug #35409:
+	  Incorrect placement of khirik-yud for Yiddish in FreeSans
+	  (At least for FreeSans medium)
+
+2012-01-28 14:26 +0000 [r2006]  Stevan_White:
+
+	* Serif, SerifBold: Devanagari: roman--adjusted auxiliary glyph names
+	  to better fit bold
+	  bold: several corrections
+
+2012-01-28 12:37 +0000 [r2005]  Stevan_White:
+
+	* SerifBold: Devanagari: various repairs to glyphs and tables
+
+2012-01-28 01:36 +0000 [r2004]  Stevan_White:
+
+	* SerifBold: Devanagari: added glyphs from velthuis font's dvngb10.pfb,
+	  added subtables from FreeSerif.  Still plenty missing.
+
+2012-01-27 22:13 +0000 [r2003]  Stevan_White:
+
+	* Serif: Devanagari: a couple more tables to handle velthuis corner
+	  cases.
+
+2012-01-26 22:52 +0000 [r2002]  Stevan_White:
+
+	* Serif: Devanagari: fixed a few lookup problems. several more remain.
+
+2012-01-25 14:24 +0000 [r2000-2001]  Stevan_White:
+
+	* Serif: Devanagari: adjustments to mark positioning
+
+	* Sans: Latin: adjustments to accents
+	  Devanagari: re-working tables for better support of Hindi vs Sanskrit
+
+2012-01-25 12:09 +0000 [r1999]  Stevan_White:
+
+	* Serif: Devanagari: Named some letters;
+	  some table clean-up.
+	  Devanagari Extended: Added combining cantillation marks.
+
+2012-01-24 15:02 +0000 [r1998]  Stevan_White:
+
+	* Serif: Devanagari: Most of the previous commits about Hindi were in
+	  error: two columns of the velthuis manual for Modern Hindi and Old
+	  Hindi were swapped. This now implements Modern Hindi, except for
+	  one conjunct. Old Hindi conjuncts are moved to separate tables,
+	  but Old Hindi is not specifically supported.
+
+2012-01-23 18:48 +0000 [r1997]  Stevan_White:
+
+	* Serif: Devanagari: several table corrections, based on new tests.
+
+2012-01-23 10:18 +0000 [r1996]  Stevan_White:
+
+	* Serif: Devanagari: table for consonants that don't take half-form,
+	  other conjunct table tweeks.
+
+2012-01-21 23:20 +0000 [r1995]  Stevan_White:
+
+	* Serif: Devanagari: many small corrections to GSUB.
+
+2012-01-20 13:44 +0000 [r1994]  Stevan_White:
+
+	* Serif: Devanagari: Sanskrit/Hindi distinction now seems to be
+	  working. (Was order of two 'akhn' tables, one specialized for
+	  Sanskrit. Don't understand--thought always all matching tables were
+	  executed.)
+
+2012-01-20 01:41 +0000 [r1993]  Stevan_White:
+
+	* Serif: Devanagari: some clean-up, split the akhn table into general
+	  (modern Hindi) and Sanskrit.  But not the Sanskrit doesn't activate
+	  in any environment, with lang='sa'. However, seems to work for Hindi.
+
+2012-01-19 16:00 +0000 [r1992]  Stevan_White:
+
+	* Serif: Devanagari: more tweeks to rakaar slash
+
+2012-01-19 15:30 +0000 [r1991]  Stevan_White:
+
+	* Serif: Devanagari: corrected simple Rakaar forms again
+
+2012-01-19 13:52 +0000 [r1990]  Stevan_White:
+
+	* Serif: Devanagari: corrected spacing problem with combining
+	  rakaar slash.
+
+2012-01-19 00:52 +0000 [r1989]  Stevan_White:
+
+	* Serif: Devanagari: fixed last consonant-virama-ra conjuncts
+
+2012-01-19 00:32 +0000 [r1988]  Stevan_White:
+
+	* Serif: Devanagari: fixed consonant-virama-consonant-virama conjuncts
+
+2012-01-19 00:04 +0000 [r1987]  Stevan_White:
+
+	* Serif: Devanagari: much done on tables
+	  for compound letters. a couple of compounds were corrected.
+
+2012-01-18 14:40 +0000 [r1986]  Stevan_White:
+
+	* Serif: Devanagari: Much messing with combined forms for vowels+rakh,
+	  finally got features going for distinction of Rakaar slash vs
+	  Rakaar below mark.
+
+2012-01-16 00:36 +0000 [r1985]  Stevan_White:
+
+	* Serif: Devanagari: more lookups working.
+	  Still a couple of letters wrong.
+
+2012-01-14 22:43 +0000 [r1984]  Stevan_White:
+
+	* Serif: Devanagari: with help of Z.  Wagner, and a TeX cmap file
+	  making the connection betwen conjuncts in the Velthuis font and
+	  Unicode, inserted the Velthuis auxiliary glyphs and made lookup
+	  tables. 
+	  Mostly working.
+
+2012-01-13 12:08 +0000 [r1983]  Stevan_White:
+
+	* Sans, Serif: Devanagari: (sans) better names for a couple of
+	  characters, (serif) made names more like sans,
+	  added Kashmiri letters to complete Unicode 6.0 range
+
+2012-01-13 00:25 +0000 [r1982]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: PS: Added UniqueId TT
+	  Names: Added UniqueID
+	  Devanagari: (serif) added ABVM, BLWM tables and anchors
+	  Devanagari: (sans) small tweaks mostly regarding mark placement
+
+2012-01-10 17:17 +0000 [r1981]  Stevan_White:
+
+	* Sans: Devanagari: a couple of touch-ups: corrected 'abvs' entry for
+	  ausign-anusvera.
+
+2012-01-10 16:12 +0000 [r1980]  Stevan_White:
+
+	* Sans: Devanagari: re-named most auxiliary glyphs to make tables
+	  more sensible.
+
+2012-01-10 12:56 +0000 [r1979]  Stevan_White:
+
+	* Sans: Devanagari: simplified and regularized some glyph names
+
+2012-01-10 02:07 +0000 [r1978]  Stevan_White:
+
+	* Sans: Gurmukhi: tried to get marks under control.
+	  Added GPOS tables, anchors.
+
+2012-01-10 00:48 +0000 [r1977]  Stevan_White:
+
+	* Sans: Devanagari: copied a few ligatures that were in gargi but
+	  not in FreeSans. There are still a few more, but I'm not clear
+	  about them. Tables: moved auxiliary letters for Indic around a bit.
+
+2012-01-09 20:56 +0000 [r1976]  Stevan_White:
+
+	* Sans: Indic tables: rearranged
+	  Devanagari: re-named the GPOS anchors
+	  Lagin: iogonek lookup had gotten somehow fouled up
+
+2012-01-08 01:32 +0000 [r1975]  Stevan_White:
+
+	* Serif: Devanagari: copied in rest of Unicode chars from velthuis
+	  font dvng10.pfb with advice from Zdeněk Wagner. Next plan: copy in
+	  ligatures from same file and use a cmap file provided by Zdeněk to
+	  construct a basic GSUB table.
+
+2012-01-08 00:25 +0000 [r1974]  Stevan_White:
+
+	* Serif: Latin, Cyrillic: tweeks to accent marks.
+	  Devanagari: beginning to replace range with Velthuis font.
+
+2012-01-07 19:42 +0000 [r1973]  Stevan_White:
+
+	* Sans: Devanagari: widened space between verticals in U+0906 by
+	  request. Made a lot of references in range.
+	  Added Kashmiri letters from latest Unicode version.
+
+2012-01-03 20:17 +0000 [r1972]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: Combining Diacritics:
+	  forgot to add Cyrillic mark for previous commit
+
+2012-01-03 20:08 +0000 [r1971]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: Cyrillic: Added mark
+	  for diacriticals on capital letters. toward bug #35225: Combining
+	  Diacritical Marks improperly positioned for Cyrillic capital letters
+	  https://savannah.gnu.org/bugs/?35225
+	  Latin: re-thought spacing in bold, bold oblique, and re-positioned
+	  many accents for legibility
+
+2011-12-31 20:09 +0000 [r1970]  Stevan_White:
+
+	* Sans: Miscellaneous Symbols: hammer and sickle, smileface,
+	frown face, courtesy Sander van Geloven
+
+2011-12-28 14:05 +0000 [r1969]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic, SerifBold: Mathematical Operators:
+	  revision of v. and h. placement and spacing. Reduced height of
+	  partialdiff in some faces.
+
+2011-12-28 13:40 +0000 [r1968]  Stevan_White:
+
+	* Serif: Mathematical Operators: lowered nabla, made partialdiff of
+	  normal height
+
+2011-12-25 13:54 +0000 [r1967]  Stevan_White:
+
+	* Sans: Miscellaneous Symbols: uni2639 -- a (first) contribution by
+	  Sander van Geloven
+
+2011-12-25 13:37 +0000 [r1966]  Stevan_White:
+
+	* Serif: Mathematical Operators: improved symbols having vertical lines
+
+2011-12-19 13:55 +0000 [r1965]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique: General Punctuation:
+	  regularize width of bullet chars. 
+	  Geometrical Shapes: made new and regularized width of bullet chars. 
+	  Mathematical Operators: messed with bullet-lige operators
+
+2011-12-18 17:35 +0000 [r1964]  Stevan_White:
+
+	* Serif: Mathematical Operators: fixed some spacing issues.
+
+2011-12-18 13:52 +0000 [r1963]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic: Latin, Punctuation:
+	  slash and some vertical lines were wrongly spaced.
+
+2011-12-17 01:39 +0000 [r1962]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique: Mathematical Operators:
+	  in sans, added some angle glyphs by request.
+	  General vertical metrics: fixed some mistakes, re-thought overall.
+
+2011-12-16 12:17 +0000 [r1961]  Stevan_White:
+
+	* Sans, Serif: Technical Symbols: made extensible mathematical symbol
+	  pieces for sans, adjusted horizontal bracket in serif.
+
+2011-12-16 00:10 +0000 [r1960]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique:
+	  Sans: glyphwise same vertical adjustments as with Serif, same caveats.
+	  All faces: re-thought metrics. Hope they make better sense now.
+
+2011-12-15 18:02 +0000 [r1959]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBoldItalic, SerifBold: General alterations
+	  to make fit in vertical bounds (-300,900). Problems remain in Sinhala
+	  and Malayalam. Esp. note two Bengali "vocalic" glyphs, used only for
+	  transcription of Sanskrit, were altered and moved.
+
+2011-12-14 22:31 +0000 [r1958]  Stevan_White:
+
+	* Serif: Malayalam: some glyph clean-up
+
+2011-12-14 21:49 +0000 [r1957]  Stevan_White:
+
+	* Serif: Changed ascent and descent of a number of letters out of
+	  bounds (several in Arabic, also Devnagari). The worst are in
+	  Malayalam though, and they remain.
+
+2011-12-14 15:59 +0000 [r1956]  Stevan_White:
+
+	* Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique:
+	  Supplementary Punctuation: made a few new ones
+
+2011-12-12 20:52 +0000 [r1955]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic: Latin Extended-B:
+	  Same with tz ligature as in roman
+
+2011-12-12 18:42 +0000 [r1954]  Stevan_White:
+
+	* Serif, SerifBold: Latin Extended-B:
+	  re-thought replacement for tz ligature in German. Note: the
+	  Unicode tz character is used in Mayanist texts.
+
+2011-12-11 23:25 +0000 [r1953]  Stevan_White:
+
+	* Serif, SerifBold: Complete set of lowercse latin super/subscripts
+	  for normal and bold, with 'subs' and 'sups' lookups.
+
+2011-12-11 20:59 +0000 [r1952]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic, Serif, SerifBold:
+	  Latin: (roman) re-thought tz ligature
+	  Number Forms: adjusted vulgar fractions table,
+	  to make all work in xelatex
+
+2011-12-09 11:22 +0000 [r1951]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBoldItalic, SerifBold: Latin: avoid fi, fl
+	  etc ligatures in Turkish. Re-thought TZ, tz ligatures.
+
+2011-12-09 00:08 +0000 [r1950]  Stevan_White:
+
+	* Sans, SansBold, SansOblique, SansBoldOblique: Proportional Numbers,
+	  Slashed Zero
+
+2011-12-08 23:57 +0000 [r1948-1949]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: Greek: added digamma
+
+	* SerifItalic, SerifBoldItalic, Serif, SerifBold:
+	  Serif faces: lots of work on numeric substitutions
+	  'onum' Oldstyle Figures
+	  'pnum' Proportional Numbers
+	  'tnum' Tabular Numbers
+	  'lnum' Lining Figures
+	  'zero' Slashed Zero
+	  Cyrillic for Bulgarian: activated new-style forms with
+	  'ss01' Style Set 1
+	  Cyrillic regular: Bit of kerning.  (FontForge still complains about
+	  non-Unicode glyphs)
+
+2011-12-06 22:40 +0000 [r1947]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold: More additions to 'sups' table in
+	  roman, bold.
+	  Added a few Phonetic Extensions to italic...
+	  but this should wait for a set of small caps.
+
+2011-12-06 21:47 +0000 [r1945-1946]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBoldItalic, SerifBold: Changed Bulgarian
+	  lookup tag from cv00 to ss01 bold.
+	  adjusted some superscript letter spacings,
+	  minute, prime spacing
+	  normal: added proportional numerals, tables tnum, lnum, pnum
+	  adjusted widths of some superscript letters, tweeked some others
+	  added tables sups, subs
+
+	* Sans: Latin: some kerning
+
+2011-12-05 18:50 +0000 [r1944]  Stevan_White:
+
+	* SansBold: Latin etc: re-spaced, re-kerned letter a
+
+2011-12-05 13:19 +0000 [r1943]  Stevan_White:
+
+	* SerifBoldItalic, SerifBold: Cyrillic: tweeks to glyphs,
+	  spacing for alternate Bulgarian letters.
+
+2011-12-05 12:47 +0000 [r1942]  Stevan_White:
+
+	* SerifItalic, Serif: Cyrillic: kerning and spacing.
+
+2011-12-05 10:27 +0000 [r1941]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic, Serif, SerifBold: Cyrillic: more work
+	  on alternative letters for Bulgarian, Serbian
+
+2011-12-04 23:46 +0000 [r1939-1940]  Stevan_White:
+
+	* Serif: Cyrillic: adjust spacing of some Bulgarin letters
+
+	* SerifBold: Latin: bit o kerning
+
+2011-12-04 14:00 +0000 [r1938]  Stevan_White:
+
+	* Serif: Cyrillic: expanded/corrected letters for Bulgarian
+	  alternate forms.
+
+2011-12-03 22:45 +0000 [r1937]  Stevan_White:
+
+	* Serif: Cyrillic: alternative small letters for Bulgarian, with
+	  lookup table.
+
+2011-12-03 18:04 +0000 [r1936]  Stevan_White:
+
+	* Sans, SansBold, SansBoldOblique, MonoBoldOblique: glyph clean-ups
+	  related to recent commits, toward validation
+
+2011-12-03 17:29 +0000 [r1935]  Stevan_White:
+
+	* SansBoldOblique: Mathematical Operators: two were out of place
+
+2011-12-03 17:25 +0000 [r1934]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: Arrows: made new
+	  ones, corrected others
+
+2011-12-03 15:48 +0000 [r1933]  Stevan_White:
+
+	* Serif: Currency Symbols: added spesmilo
+
+2011-12-03 15:04 +0000 [r1932]  Stevan_White:
+
+	* SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansOblique: Arrows: lots of additions, corrections
+
+2011-12-03 13:32 +0000 [r1931]  Stevan_White:
+
+	* SansOblique: Arrows: made glyphs so range is similar to rest of Sans.
+
+2011-12-03 12:59 +0000 [r1930]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: Geometric Shapes:
+	  made minimal set.
+	  Mathematical Operators: made a few more glyphs, corrected a couple.
+	  Number Forms: deleted range in bold faces -- can't properly
+	  represent all.
+
+2011-12-03 01:02 +0000 [r1929]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  MonoOblique: Miscellaneous Technical Symbols: made a few
+	  important ones.
+
+2011-12-03 00:33 +0000 [r1928]  Stevan_White:
+
+	* SerifItalic,
+	  SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: Mathematical Operators:
+	  made a few more glyphs. some clean-up.
+
+2011-12-02 19:12 +0000 [r1927]  Stevan_White:
+
+	* Mono, MonoBold, MonoOblique, MonoBoldOblique: Mathematical Operators:
+	  revised a few glyphs in medium, got a sort of minimal
+	  set into other styles
+
+2011-12-02 15:03 +0000 [r1926]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique: Mathematical Operators:
+	  made yet more.
+
+2011-12-02 13:57 +0000 [r1925]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBoldItalic, SerifBold:
+	  Mathematical Operators: revised a few in medium (weight and spacing),
+	  made a lot of new characters for other styles.
+
+2011-12-02 10:53 +0000 [r1924]  Stevan_White:
+
+	* Sans, SansBold: Mathematical Operators (etc): more operators (bold),
+	  revisions (medium)
+
+2011-12-02 02:32 +0000 [r1923]  Stevan_White:
+
+	* Sans, SansBold: Mathematical Operators:
+	  tried to make of more uniform weight (medium) made several new (bold)
+
+2011-12-01 20:22 +0000 [r1921-1922]  Stevan_White:
+
+	* Serif: Combining Half Marks: adjusted mark anchors
+
+	* Mono: Cyrillic: fix to old letter
+	  Arabic: hah_final made all contours- no refs
+
+2011-12-01 18:37 +0000 [r1918]  Stevan_White:
+
+	* Sans, SansBold, SansOblique, SansBoldOblique,
+	  MonoBoldOblique: Misc. Math. Symbols: made reverse logical
+	  not (req. for some MS codepages)
+	  Math. Operators: made a few while I was around
+
+2011-11-30 20:50 +0000 [r1917]  Stevan_White:
+
+	* Mono, MonoOblique: Cyrillic: made uk letters digraph,
+	  due to complaint by user
+
+2011-11-30 13:15 +0000 [r1915]  Stevan_White:
+
+	* Serif: Combining Half Marks: made letters, filled range,
+	  added mark anchors
+
+2011-11-28 11:41 +0000 [r1911]  Stevan_White:
+
+	* Serif: Latin: some light kerning
+
+2011-11-28 00:17 +0000 [r1910]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: Grid Fitting: made
+	  uniformly Version 1 ("Optimized for Cleartype" won't stay on in
+	  FontForge ?)
+
+2011-11-27 20:52 +0000 [r1909]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold,
+	  Sans: general glyph alterations toward validation.
+	  some of these are due to some bug in FontForge algorithms
+	  -- nothing was apparently wrong with the glyphs.
+
+2011-11-27 00:34 +0000 [r1907-1908]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold: Latin: some kerning
+
+	* Makefile, checkGlyphNumbers.py: Made to function
+	  either from directory or from Makefile.
+
+2011-11-25 11:38 +0000 [r1906]  Stevan_White:
+
+	* SerifBold: correction to 'ccmp' table for Vietnamese 2
+
+2011-11-25 11:29 +0000 [r1905]  Stevan_White:
+
+	* Serif: Added some fractions to the 'frac' lookup
+
+2011-11-25 11:17 +0000 [r1904]  Stevan_White:
+
+	* Serif: corrected some entries in 'frac' lookup
+
+2011-11-25 11:08 +0000 [r1903]  Stevan_White:
+
+	* Serif: Number Forms: adjusted diagonal fractions
+	  Cyrillic: clean-up of Ksi contour
+
+2011-11-25 10:35 +0000 [r1901]  Stevan_White:
+
+	* SerifBoldItalic: Latin: named 2 glyphs referred to in kern tables
+
+2011-11-24 18:35 +0000 [r1899]  Stevan_White:
+
+	* Sans: Cyrillic: made Ksi, ksi
+
+2011-11-24 17:58 +0000 [r1898]  Stevan_White:
+
+	* SerifItalic, SerifBoldItalic: Latin: for f and
+	  other hooked letters: special punctuation lookup
+
+2011-11-24 17:39 +0000 [r1896-1897]  Stevan_White:
+
+	* Serif: General Punctuation: adjusted, regularized spacing of primes
+
+	* SerifItalic, SerifBoldItalic: Latin: f and other
+	  hooked letters: put more of hook into kerning
+
+2011-11-24 16:51 +0000 [r1895]  Stevan_White:
+
+	* Serif: Cyrillic: improve spacing of Ksi
+
+2011-11-24 15:05 +0000 [r1894]  Stevan_White:
+
+	* Sans: Cyrillic: Made some Old Church Slavonic letters, by request.
+
+2011-11-23 15:12 +0000 [r1893]  Stevan_White:
+
+	* Sans: Malayalam: glyph clean-up toward validation
+
+2011-11-23 01:19 +0000 [r1892]  Stevan_White:
+
+	* Sans: Malayalam conjuncts: numerous contour improvements toward
+	  validation
+
+2011-11-21 19:01 +0000 [r1889]  Stevan_White:
+
+	* Serif, SerifItalic, SansOblique, SerifBold: More individual glyph
+	  tweeks toward validation. (Discovered trigger to one FontForge bug:
+	  contour 1st node at sharp point.)
+
+2011-11-21 11:15 +0000 [r1888]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansOblique,
+	  Mono, MonoBold, MonoOblique, MonoBoldOblique: Overall glyph tweeks
+	  to improve FontForge validation. Note some of these can be called
+	  messy node problems, others are due to some malfunction of FontForge.
+
+2011-11-18 09:55 +0000 [r1886]  Stevan_White:
+
+	* Serif, SerifItalic, SerifBold, SerifBoldItalic,
+	  Sans, SansBold, SansOblique, SansBoldOblique: Unfortunately several
+	  unrelated changes got balled up in this commit. Generally, slight
+	  re-wording of license (program ->font)
+	  Serif, Sans: Latin, Greek, Cyrillic and phonetic: substantial
+	  changes to glyph bearings,
+	  attempt to normalize; re-did kerning angled slightly
+	  hungarianumlaut and double-grave accents toward one another.
+	  lcaron, dcaron, tcaron: prefer an acute accent to apostrophe.
+	  Note this messes up some letters d, l, t with acute, for languages
+	  using IPA.
+	  Serif: Cyrillic Ouk: fixed bug #34687:
+	  Bad shape of Cyrillic U+0478 & u+0479
+	  Cyrillic Extended-A: increased hight of combining marks
+	  slightly (regular face only)
+	  Italic Cyrillic: re-did Serbian sha and te with longer line.
+	  Bengali, Tamil, Thai, Ethiopic, Georgian, Cyrillic Extended-B, Latin
+	  Extended-D, Arabic Presentation forms, Letterlike and
+	  Miscellaneous Math Symbols: glyph clean-ups
+	  longs: fixed bug #34841: U+017F
+	  LONG S upright a bit wrong
+	  Sans: acute, grave, hungarianumlaut and double-grave accents on
+	  capitals somewhat shorter to better fit in the line,
+
+2011-11-18 09:46 +0000 [r1885]  Stevan_White:
+
+	* Mono: Arabic: positional substitutions; added a couple of characters
+
+2011-11-12 14:48 +0000 [r1884]  Stevan_White:
+
+	* Makefile: target for making WOFF files
+
 2011-11-05 16:43 [r1880]  Stevan_White
 	* sfd/FreeMono.sfd: Arabic: addded three letters
 
