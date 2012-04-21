@@ -1,4 +1,3 @@
-##!/usr/bin/env ../utility/fontforge-interp.sh
 # vim: set filetype=python : 
 __license__ = """
 This file is part of Gnu FreeFont.
@@ -52,7 +51,7 @@ if argc > 1:
 		f.selection.all()
 		f.autoHint()
 		f.autoInstr()
-		f.generate( ttfile, flags=('opentype','old-kern') )
+		f.generate( ttfile, flags=('opentype','old-kern','no-hints') )
 		f.close()
 else:
 	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"
