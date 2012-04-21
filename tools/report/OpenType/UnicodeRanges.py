@@ -93,7 +93,7 @@ ulUnicodeRange = [
 	]],
 [6,	'Combining Diacritical Marks',     [interval(0x0300, 0x036F),
 			interval(0x1DC0, 0x1DE6),	# Supplement
-			interval(0x1DFE, 0x1DFF)	# Supplement
+			interval(0x1DFC, 0x1DFF)	# Supplement
 			] ],
 [7,	'Greek and Coptic',     [interval(0x0370, 0x0377),
 			interval(0x037A, 0x037E),
