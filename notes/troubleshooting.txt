@@ -1,14 +1,14 @@
 	Troubleshooting GNU FreeFont
 
-So your text looks lousy, although you installed FreeFont and you 
-seem to be using it.  What do you do?
+So your text looks lousy, although you installed FreeFont and you seem to be
+using it.  What do you do?
 
-Before you blame the problem on FreeFont, take the time to double-check
-that the text you are looking at is really rendered with FreeFont.
+Before you blame the problem on FreeFont, take the time to double-check that
+the text you are looking at is really rendered with FreeFont.
 
-Be aware that not all Unicode characters are supported by FreeFont,
-and even characters supported by one face, such as Serif, might not
-be supported by other faces such as Sans.
+Be aware that not all Unicode characters are supported by FreeFont, and
+even characters supported by one face, such as Serif, might not be
+supported by other faces such as Sans.
 
 Also, some systems have settings that strongly affect the rendering
 of fonts.  It may be worth tweaking these.
@@ -84,11 +84,19 @@ you may want to install the TrueType versions of the fonts.
 Windows
 =======
 
-The most common complaint has to do with "blurry text".  In Windows 7 and
-Vista, this will result if the version with cubic spline outlines is
-installed.  As of the 2012 GNU FreeFont release, the TrueType builds
-have the quadratic splines that work best with Windows' ClearType rendering.
-	TTF (TrueType)  quadratic splines Windows 7, Vista
+The most common complaint has to do with "blurry text".  There are two
+causes.
+
+The first is that ClearType smoothing is turned off.  The best way to check
+is to use the native Windows Web browser. Do a search for "ClearType Tuner".
+The Microsoft pages install a tuner for ClearType. A security block notice
+will appear at the top of the window--you have to allow the installation.
+Then check the box "Turn on ClearType".  The change happens immediately.
+
+The secont cause is that the FreeFont version with cubic spline outlines is
+installed.  As of the 2012 GNU FreeFont release, the TrueType builds have
+quadratic splines, which work best with Windows' rendering software.
+	TTF (TrueType)  quadratic splines Windows 7, Vista, Windows XP.
 	OTF (OpenType)  cubic splines     Linux, Mac
 
 Note also: Firefox has a setting for ClearType:
