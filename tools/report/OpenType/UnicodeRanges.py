@@ -91,7 +91,7 @@ ulUnicodeRange = [
 [5,	'Spacing Modifier Letters',     [interval(0x02B0, 0x02FF),
 			interval(0xA700, 0xA71F)	# Modifier Tone Letters
 	]],
-[6,	'Combining Diacritical Marks',     [interval(0x0300, 0x036F),
+[6,	'Combining Diacritical Marks (+suppl.)',     [interval(0x0300, 0x036F),
 			interval(0x1DC0, 0x1DE6),	# Supplement
 			interval(0x1DFC, 0x1DFF)	# Supplement
 			] ],
@@ -103,7 +103,7 @@ ulUnicodeRange = [
 			interval(0x03A3, 0x03FF)
 			] ],
 [8,	'Coptic',     [interval(0x2C80, 0x2CFF)]],
-[9,	'Cyrillic',     [
+[9,	'Cyrillic (+suppl., +ext.-A, -B)',     [
 	interval(0x0400, 0x04FF),	# Cyrillic
 	interval(0x0500, 0x0527),	# Cyrillic Supplement
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
@@ -126,14 +126,14 @@ ulUnicodeRange = [
 		]],
 [12,	'Vai',    [interval(0xA500, 0xA62B),
 		]],
-[13,	'Arabic (+supplement)',     [interval(0x0600, 0x0603),
+[13,	'Arabic (+suppl.)',     [interval(0x0600, 0x0603),
 			interval(0x0606, 0x061B),
 			interval(0x061E, 0x06FF),
 			interval(0x0750, 0x077F)	# Supplement
 	]
 	],
 [14,	"N'Ko", [interval(0x07C0, 0x07FF)]],
-[15,	'Devanagari',     [ interval(0x0900, 0x0977),
+[15,	'Devanagari (+ext.)',     [ interval(0x0900, 0x0977),
 			interval(0x0979, 0x097F),
 			interval(0xA8E0, 0xA8FB)	# Extended
 			]],
@@ -264,7 +264,7 @@ ulUnicodeRange = [
 			]
 		],
 [25,	'Lao',     [interval(0x0E80, 0x0EFF)]],
-[26,	'Georgian (+supplement)',    [
+[26,	'Georgian (+suppl.)',    [
 		interval(0x10A0, 0x10C5),
 		interval(0x10D0, 0x10FC),
 		interval(0x2D00, 0x2D25) # Supplement
@@ -297,7 +297,7 @@ ulUnicodeRange = [
 		interval(0x1FF2, 0x1FF4),
 		interval(0x1FF6, 0x1FFE)
 	]],
-[31,	'General Punctuation (+suppl)',     [interval(0x2000, 0x2064),
+[31,	'General Punctuation (+suppl.)',     [interval(0x2000, 0x2064),
 		# interval(0x206A, 0x206F),	# deprecated
 		interval(0x2E00, 0x2E31),	# Supplemental
 	]],
@@ -310,7 +310,7 @@ ulUnicodeRange = [
 [34,	'Combining Diacritical Marks for Symbols',     [interval(0x20D0, 0x20F0)]],
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
 [36,	'Number Forms',     [interval(0x2150, 0x2189)]],
-[37,	'Arrows (+suppl)',     [interval(0x2190, 0x21FF),
+[37,	'Arrows (+suppl.)',     [interval(0x2190, 0x21FF),
 	interval(0x27F0, 0x27FF),	# Supplemental Arrows-A
 	interval(0x2900, 0x297F),	# Supplemental Arrows-B
 	interval(0x2B00, 0x2B4C),	# Miscellaneous Symbols and Arrows
@@ -406,7 +406,7 @@ ulUnicodeRange = [
 		interval(0x0DD8, 0x0DDF),
 		interval(0x0DF2, 0x0DF4)]],
 [74, 	'Myanmar', [interval(0x1000, 0x109F)]],
-[75, 	'Ethiopic (+supplement, extended)', [
+[75, 	'Ethiopic (+suppl., +ext.)', [
 		interval(0x1200, 0x1248),
 		interval(0x124A, 0x124D),
 		interval(0x1250, 0x1256),
@@ -496,7 +496,7 @@ ulUnicodeRange = [
 		interval(0xFF000, 0xFFFFD),	# plane 15
 		interval(0x100000, 0x10FFFD)	# plane 16
 	], True],
-[91, 	'Variation Selectors (+suppl)', [interval(0xFE00, 0xFE0F),
+[91, 	'Variation Selectors (+suppl.)', [interval(0xFE00, 0xFE0F),
 		interval(0xE0100, 0xE01EF)	# supplement
 		], True],
 [92, 	'Tags', [interval(0xE0000, 0xE01EF)], True],
