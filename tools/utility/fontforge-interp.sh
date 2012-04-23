@@ -6,4 +6,4 @@
 #   but custom-installed fontforge should be in a non-distro location.
 # * Linux /usr/bin/env won't allow arguments such as -script.
 
-fontforge -script $@
+/usr/bin/fontforge -script $@
