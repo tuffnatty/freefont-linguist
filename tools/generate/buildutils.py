@@ -24,7 +24,7 @@ Common tools used by the generate scripts.
 
 import re
 
-_re_vstr = re.compile( 'Version \$Revision: (\d*) \$' )
+_re_vstr = re.compile( '\$Revision: (\d*)\s*\$(.*)' )
 
 def trim_version_str( font ):
 	""" SVN automatically puts a revision number between dollar signs
@@ -33,14 +33,14 @@ def trim_version_str( font ):
 		Version n.m
 	Where n and m are decimal numbers.
 	"""
-	for n in font.sfnt_names:
-		if n[1] == 'Version':
-			vstr_match = _re_vstr.match( n[2] )
-			if vstr_match:
-				trimmed = vstr_match.group( 1 )
-				otstdized = 'Version ' + trimmed + '.0'
-				font.appendSFNTName( n[0], n[1], otstdized )
-				return trimmed
-			return n[2]
-	return ''
+	vstr_match = _re_vstr.match( font.version )
+	ot_stdized = ''
+	if vstr_match:
+		trimmed = vstr_match.group( 1 )
+		rest = vstr_match.group( 2 )
+		otstdized = '0412.' + trimmed + rest
+		font.version = otstdized
+		#font.appendSFNTName( n[0], n[1], otstdized )
+		return trimmed
+	return otstdized
 
