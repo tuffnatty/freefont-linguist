@@ -14,13 +14,12 @@ LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
 UniqueID: 5020904
-UseUniqueID: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1335252974
+ModificationTime: 1335550073
 PfmFamily: 33
 TTFWeight: 600
 TTFWidth: 5
@@ -59,6 +58,7 @@ Lookup: 1 0 0 "'c2sc' Capitals to Small Capitals in Latin for Turkish"  {"'c2sc'
 Lookup: 1 0 0 "'c2sc' Capitals to Small Capitals in Latin"  {"'c2sc' Capitals to Small Capitals in Latin subtable"  } ['c2sc' ('latn' <'dflt' > ) ]
 Lookup: 2 0 0 "Glyph Decomposition of iogonek"  {"Glyph Decomposition of iogonek-subtable"  } []
 Lookup: 4 0 0 "'ccmp' Glyph Composition/Decomposition in Latin - i"  {"'ccmp' Glyph Composition/Decomposition in Latin - i-subtable"  } ['ccmp' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Catalan"  {"'liga' Standard Ligatures in Latin for Catalan-subtable"  } ['liga' ('latn' <'CAT ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin"  {"'liga' Standard Ligatures in Latin-commaright"  "'liga' Standard Ligatures in Latin subtable"  } ['liga' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures in Latin subtable"  } ['hlig' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
@@ -372,7 +372,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 32 16 12
+WinInfo: 160 16 12
 BeginPrivate: 10
 UniqueID 7 5020904
 BlueValues 31 [-24 0 540 550 710 724 729 744]
@@ -807,6 +807,7 @@ SplineSet
  169 140 208 97 273 97 c 0
  336 97 377 138.3 377 349 c 0
 EndSplineSet
+Validated: 3073
 Substitution2: "'zero' Slashed Zero subtable" zeroslashed
 Substitution2: "'pnum' Proportional Numbers subtable" fit.0
 EndChar
@@ -973,6 +974,7 @@ SplineSet
  340 97 386 152 386 228 c 0
  386 306 344 357 279 357 c 0
 EndSplineSet
+Validated: 3073
 Substitution2: "'pnum' Proportional Numbers subtable" fit.6
 EndChar
 
@@ -993,6 +995,7 @@ SplineSet
  29 709 l 1
  528 709 l 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'pnum' Proportional Numbers subtable" fit.7
 EndChar
 
@@ -3473,7 +3476,7 @@ EndSplineSet
 Validated: 1
 EndChar
 
-StartChar: periodcentered
+StartChar: middot
 Encoding: 183 183 116
 Width: 278
 Flags: MW
@@ -5806,20 +5809,24 @@ Width: 619
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 116 183 N 1 0 0 1 272 150 0
+Refer: 116 183 S 1 0 0 1 382 150 0
 Refer: 44 76 N 1 0 0 1 0 0 0
 Validated: 32769
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin for Catalan-subtable" L middot
 EndChar
 
 StartChar: ldot
 Encoding: 320 320 253
-Width: 526
+Width: 440
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 116 183 S 1 0 0 1 236 136 0
+Refer: 116 183 S 1 0 0 1 227 136 0
 Refer: 76 108 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin for Catalan-subtable" l middot
 EndChar
 
 StartChar: Lslash
@@ -52057,6 +52064,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 16 48 N 1 0 0 1 11 0 2
+Validated: 32769
 EndChar
 
 StartChar: fit.1
@@ -52116,6 +52124,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 22 54 N 1 0 0 1 8 0 2
+Validated: 32769
 EndChar
 
 StartChar: fit.7
@@ -52125,6 +52134,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 23 55 N 1 0 0 1 1 0 2
+Validated: 32769
 EndChar
 
 StartChar: fit.8
@@ -52155,6 +52165,7 @@ LayerCount: 2
 Fore
 Refer: 16 48 N 1 0 0 1 0 0 2
 Refer: 116 183 S 1 0 0 1 146 121.7 2
+Validated: 32769
 EndChar
 
 StartChar: uni2e16

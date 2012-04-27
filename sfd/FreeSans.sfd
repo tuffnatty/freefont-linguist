@@ -14,13 +14,12 @@ LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
 UniqueID: 5020902
-UseUniqueID: 1
 FSType: 256
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1335253993
+ModificationTime: 1335549199
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -55,6 +54,7 @@ OS2Vendor: 'GNU '
 Lookup: 6 0 0 "'ccmp' Contextual Chaining in Latin - iogonek-accented"  {"'ccmp' Contextual Chaining in Latin - iogonek-subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 2 0 0 "Glyph Decomposition of iogonek"  {"Glyph Decomposition of iogonek-remove-dot"  } []
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin - i-accent"  {"'ccmp' Glyph Composition in Latin - i-accent"  } ['ccmp' ('latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Catalan"  {"'liga' Standard Ligatures in Latin for Catalan-subtable"  } ['liga' ('latn' <'CAT ' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch subtable"  } ['liga' ('latn' <'NLD ' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' Glyph Composition in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'dflt' > ) ]
@@ -264,7 +264,7 @@ LangName: 1030 "" "" "normal"
 LangName: 1029 "" "" "oby+AQ0A-ejn+AOkA" 
 LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA" 
 LangName: 1069 "" "" "Arrunta" 
-LangName: 1033 "" "" "Regular" "GNU: FreeSans Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
+LangName: 1033 "" "" "Regular" "GNU: FreeSans Normal: 2012" "" "Version: 2244" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 22 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
@@ -272,7 +272,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 32 16 11
+WinInfo: 304 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -3350,8 +3350,8 @@ Width: 250
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 475 729 N 1 0 0 1 -28 -385 0
-Validated: 32769
+Refer: 475 729 S 1 0 0 1 -28 -385 0
+Validated: 98305
 EndChar
 
 StartChar: cedilla
@@ -5684,20 +5684,24 @@ Width: 563
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 118 183 N 1 0 0 1 256 0 0
+Refer: 118 183 S 1 0 0 1 336 0 0
 Refer: 44 76 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin for Catalan-subtable" L middot
 EndChar
 
 StartChar: ldot
 Encoding: 320 320 255
-Width: 409
+Width: 360
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 118 183 S 1 0 0 1 142 0 0
+Refer: 118 183 N 1 0 0 1 144 0 0
 Refer: 76 108 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
+LCarets2: 1 0 
+Ligature2: "'liga' Standard Ligatures in Latin for Catalan-subtable" l middot
 EndChar
 
 StartChar: Lslash
@@ -35161,7 +35165,7 @@ Fore
 Refer: 118 183 S 1 0 0 1 465 -215 2
 Refer: 118 183 S 1 0 0 1 57 -215 2
 Refer: 118 183 S 1 0 0 1 261 133 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: similar
@@ -37450,7 +37454,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 N 1 0 0 1 153 308 2
 Refer: 11 43 N 1 0 0 1 0 11 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni04C5
@@ -53944,7 +53948,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: twodotenleader
@@ -54778,7 +54782,7 @@ Fore
 Refer: 1669 8260 N 1 0 0 1 238 21 2
 Refer: 118 183 N 1 0 0 1 -27 400 2
 Refer: 118 183 N 1 0 0 1 383 -226 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2053
@@ -54814,7 +54818,7 @@ Fore
 Refer: 118 183 N 1 0 0 1 264 -225 2
 Refer: 118 183 N 1 0 0 1 264 249 2
 Refer: 118 183 N 1 0 0 1 -27 9 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2057
@@ -54840,7 +54844,7 @@ Refer: 118 183 N 1 0 0 1 -27 79 2
 Refer: 118 183 N 1 0 0 1 471 79 2
 Refer: 118 183 N 1 0 0 1 221 -227 2
 Refer: 118 183 N 1 0 0 1 221 359 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2059
@@ -54854,7 +54858,7 @@ Refer: 118 183 N 1 0 0 1 474 -225 2
 Refer: 118 183 N 1 0 0 1 -27 375 2
 Refer: 118 183 N 1 0 0 1 474 378 2
 Refer: 118 183 N 1 0 0 1 223 84 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni205A
@@ -54865,7 +54869,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 N 1 0 0 1 -27 -224 2
 Refer: 118 183 N 1 0 0 1 -27 455 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni205B
@@ -54878,7 +54882,7 @@ Refer: 118 183 N 1 0 0 1 221 -426 2
 Refer: 118 183 N 1 0 0 1 221 469 2
 Refer: 118 183 N 1 0 0 1 -27 24 2
 Refer: 118 183 N 1 0 0 1 471 24 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni205C
@@ -54892,7 +54896,7 @@ Refer: 11 43 N 1 0 0 1 10 51 2
 Refer: 118 183 N 1 0 0 1 -27 -184 2
 Refer: 118 183 N 1 0 0 1 353 -184 2
 Refer: 118 183 N 1 0 0 1 353 194 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni205D
@@ -54904,7 +54908,7 @@ Fore
 Refer: 118 183 N 1 0 0 1 -27 136 2
 Refer: 118 183 N 1 0 0 1 -27 469 2
 Refer: 118 183 N 1 0 0 1 -27 -228 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni205E
@@ -54917,7 +54921,7 @@ Refer: 118 183 N 1 0 0 1 -27 5 2
 Refer: 118 183 N 1 0 0 1 -27 466 2
 Refer: 118 183 N 1 0 0 1 -27 -225 2
 Refer: 118 183 N 1 0 0 1 -27 253 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dblverticalbar
@@ -56117,7 +56121,7 @@ Fore
 Refer: 118 183 N 1 0 0 1 -558 313 2
 Refer: 118 183 N 1 0 0 1 -375 313 2
 Refer: 118 183 N 1 0 0 1 -190 313 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni20E9
@@ -56151,7 +56155,7 @@ Fore
 Refer: 118 183 N 1 0 0 1 -558 -388 2
 Refer: 118 183 N 1 0 0 1 -375 -388 2
 Refer: 118 183 N 1 0 0 1 -190 -388 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni20E7
@@ -92904,7 +92908,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2657 8278 S -1 0 0 -1 515 582 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni10f9
@@ -189965,7 +189969,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 136 60 2
 Refer: 16 48 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: unifffc
@@ -190353,7 +190357,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1799 8756 N -1 0 0 -1 800 476 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ratio
@@ -190364,7 +190368,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 N 1 0 0 1 -14 -227 2
 Refer: 118 183 S 1 0 0 1 -14 193 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: proportion
@@ -190375,7 +190379,7 @@ LayerCount: 2
 Fore
 Refer: 6018 8758 N 1 0 0 1 370 0 2
 Refer: 6018 8758 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2238
@@ -190386,7 +190390,7 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 0 2
 Refer: 118 183 S 1 0 0 1 157 163 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2239
@@ -190398,7 +190402,7 @@ Fore
 Refer: 1784 8722 N 1 0 0 1 0 0 2
 Refer: 118 183 N 1 0 0 1 547 163 2
 Refer: 118 183 N 1 0 0 1 546 -227 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni223a
@@ -190412,7 +190416,7 @@ Refer: 118 183 N 1 0 0 1 353 163 2
 Refer: 118 183 S 1 0 0 1 352 -249 2
 Refer: 118 183 S 1 0 0 1 -40 -249 2
 Refer: 118 183 N 1 0 0 1 -40 163 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni223b
@@ -190424,7 +190428,7 @@ Fore
 Refer: 1800 8764 S 1 0 0 1 0 0 2
 Refer: 118 183 S 1 0 0 1 124 194 2
 Refer: 118 183 S 1 0 0 1 123 -187 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: strictequivalence
@@ -190557,7 +190561,7 @@ Fore
 Refer: 29 61 N 1 0 0 1 0 3 2
 Refer: 118 183 N 1 0 0 1 157 194 2
 Refer: 118 183 N 1 0 0 1 157 -296 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2252
@@ -190569,7 +190573,7 @@ Fore
 Refer: 29 61 N 1 0 0 1 0 3 2
 Refer: 118 183 N 1 0 0 1 -37 195 2
 Refer: 118 183 S 1 0 0 1 343 -299 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2253
@@ -190581,7 +190585,7 @@ Fore
 Refer: 29 61 N 1 0 0 1 0 3 2
 Refer: 118 183 N 1 0 0 1 343 193 2
 Refer: 118 183 S 1 0 0 1 -37 -293 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2254
@@ -190593,7 +190597,7 @@ Fore
 Refer: 29 61 S 1 0 0 1 151 3 2
 Refer: 118 183 N 1 0 0 1 -40 193 2
 Refer: 118 183 N 1 0 0 1 -40 -287 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2255
@@ -190605,7 +190609,7 @@ Fore
 Refer: 29 61 N 1 0 0 1 0 0 2
 Refer: 118 183 S 1 0 0 1 514 193 2
 Refer: 118 183 S 1 0 0 1 512 -289 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ringequal
@@ -190926,7 +190930,7 @@ Fore
 Refer: 118 183 S 1 0 0 1 -5 151 2
 Refer: 118 183 N 1 0 0 1 -5 -183 2
 Refer: 118 183 N 1 0 0 1 -5 484 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni22ef
@@ -190938,7 +190942,7 @@ Fore
 Refer: 118 183 N 1 0 0 1 42 28 2
 Refer: 118 183 N 1 0 0 1 708 28 2
 Refer: 118 183 N 1 0 0 1 373 28 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni22f0
@@ -190950,7 +190954,7 @@ Fore
 Refer: 118 183 N 1 0 0 1 42 -182 2
 Refer: 118 183 N 1 0 0 1 374 151 2
 Refer: 118 183 N 1 0 0 1 707 484 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni22f1
@@ -190962,7 +190966,7 @@ Fore
 Refer: 118 183 N 1 0 0 1 374 151 2
 Refer: 118 183 N 1 0 0 1 707 -183 2
 Refer: 118 183 N 1 0 0 1 41 484 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: satisfy
@@ -191148,7 +191152,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 260 80 2
 Refer: 6079 1017 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni03ff
@@ -191159,7 +191163,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 100 80 2
 Refer: 6080 1021 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni037d
@@ -191170,7 +191174,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 10 -10 2
 Refer: 6076 891 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni037c
@@ -191181,7 +191185,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 160 -10 2
 Refer: 6075 1010 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni104a8
@@ -193355,7 +193359,7 @@ Fore
 Refer: 30 62 N 1 0 0 1 0 74 2
 Refer: 118 183 N 1 0 0 1 185 -242 2
 Refer: 118 183 S 1 0 0 1 185 293 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2e18
@@ -193398,7 +193402,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 132 209 2
 Refer: 94 126 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2e1f
@@ -193409,7 +193413,7 @@ LayerCount: 2
 Fore
 Refer: 118 183 S 1 0 0 1 122 -81 2
 Refer: 94 126 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2e28
@@ -193444,7 +193448,7 @@ Refer: 118 183 S 1 0 0 1 -65 -212 2
 Refer: 118 183 S 1 0 0 1 436 -212 2
 Refer: 118 183 S 1 0 0 1 -65 259 2
 Refer: 118 183 S 1 0 0 1 436 262 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2e2b
@@ -193454,7 +193458,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2657 8278 S 0 1 -1 0 602.5 22.5 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2e2c
@@ -193464,7 +193468,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2657 8278 S 0 -1 1 0 20.5 493.6 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2e2d
@@ -193478,7 +193482,7 @@ Refer: 118 183 N 1 0 0 1 435 108 2
 Refer: 118 183 S 1 0 0 1 185 -132 2
 Refer: 118 183 N 1 0 0 1 185 343 2
 Refer: 118 183 N 1 0 0 1 185 108 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni2e30
