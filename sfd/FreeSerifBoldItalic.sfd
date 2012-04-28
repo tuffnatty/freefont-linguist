@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1335548178
+ModificationTime: 1335649592
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -92,6 +92,7 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning 
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 3"  {"'mark' Mark Positioning in Latin 3 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Cyrillic"  {"'kern' Horizontal Kerning in Cyrillic-capital" [150,0,0] "'kern' Horizontal Kerning in Cyrillic-small" [150,0,0] } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Thai"  {"'kern' Horizontal Kerning in Thai subtable"  } ['kern' ('thai' <'dflt' > ) ]
+Lookup: 258 8 0 "'kern' Horizontal Kerning in Latin for IPA"  {"'kern' Horizontal Kerning in Latin for IPA-right" [150,0,2] "'kern' Horizontal Kerning in Latin for IPA-left" [150,0,2] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-big" [150,0,2] "'kern' Horizontal Kerning in Latin-small" [150,0,2] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin-punctuation"  {"'kern' Horizontal Kerning in Latin-punct" [150,0,2] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew for Yiddish"  {"'mark' Mark Positioning in Hebrew for Yiddish subtable"  } ['mark' ('hebr' <'JII ' > ) ]
@@ -100,6 +101,33 @@ Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew"  {"'mark' Mark Positioning i
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Hebrew"  {"'mkmk' Mark to Mark in Hebrew subtable"  } ['mkmk' ('hebr' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+KernClass2: 5 10 "'kern' Horizontal Kerning in Latin for IPA-left" 
+ 9 wsuperior
+ 7 uni1dbf
+ 52 dtail nhookretroflex rhookturned eshshortrev uni02AF
+ 34 dhook ghook qhook esh eshcurl tesh
+ 46 a c d e o q s ascript cturn schwa epsilonlatin
+ 15 m n r u v w x z
+ 5 theta
+ 1 g
+ 3 p y
+ 5 h k l
+ 1 t
+ 21 f ssharp longs florin
+ 1 i
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -20 {} -20 {} -60 {} -20 {} 0 {} -20 {} -20 {} 0 {} 0 {} -60 {} -10 {} -20 {} -50 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -50 {} -30 {} 0 {} 0 {} -50 {} -60 {} 0 {} -60 {} 0 {} -90 {} -60 {} -10 {} -80 {} -80 {} 0 {} -50 {} -50 {} 0 {}
+KernClass2: 7 5 "'kern' Horizontal Kerning in Latin for IPA-right" 
+ 54 a b c e o p s cturn schwa epsilonlatin epsilonlatinrev
+ 1 f
+ 24 k u v w x y z gammalatin
+ 3 g q
+ 5 n m r
+ 3 chi
+ 6 wsuper
+ 7 uni1dbf
+ 25 nhookleft esh jhookdblbar
+ 5 cturn
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} -40 {} -100 {} -10 {} 0 {} 0 {} 0 {} -130 {} -40 {} 0 {} -70 {} -10 {} -100 {} -40 {} 0 {} -80 {} -40 {} 0 {} -40 {} 0 {} -80 {} -50 {} -100 {} -10 {} 0 {} -60 {} -30 {} 0 {} 0 {}
 KernClass2: 2 4 "'kern' Horizontal Kerning in Latin-punct" 
  22 f ff dhook ghook yhook
  12 comma period
@@ -304,6 +332,7 @@ LangName: 1035 "" "" "Lihavoitu Kursivoi" "" "FreeSerif Lihavoitu Kursivoi"
 LangName: 1043 "" "" "Vet Cursief" "" "FreeSerif Vet Cursief" 
 LangName: 1030 "" "" "fed kursiv" "" "FreeSerif fed kursiv" 
 LangName: 1029 "" "" "tu+AQ0A-n+AOkA kurz+AO0A-va" "" "FreeSerif tu+AQ0A-n+AOkA kurz+AO0A-va" 
+LangName: 1027 "" "" "negreta cursiva" "" "FreeSerif negreta cursiva" 
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" 
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSerif Lodi etzana" 
 LangName: 1033 "" "" "Bold Italic" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
@@ -314,7 +343,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 304 16 10
+WinInfo: 240 16 10
 BeginPrivate: 8
 UniqueID 7 5020939
 BlueValues 33 [-205 -200 -18 0 449 462 669 685]
@@ -334,7 +363,7 @@ Grid
  2000 390 l 4
 EndSplineSet
 AnchorClass2: "top_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "low_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "point_right_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_low_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_low_heb"  "'mark' Mark Positioning in Hebrew for Ivrit subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Hebrew for Yiddish subtable" "topright"  "'mark' Mark Positioning subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 0 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 1 subtable" "thai_below"  "'mark' Mark Positioning in Thai 0 subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" 
-BeginChars: 66560 2709
+BeginChars: 66560 2710
 
 StartChar: space
 Encoding: 32 32 0
@@ -5599,7 +5628,7 @@ Width: 609
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1629 700 S 1 0 0 1 415 60 2
+Refer: 2709 -1 N 1 0 0 1 432 0 2
 Refer: 68 100 N 1 0 0 1 0 0 2
 Validated: 32769
 LCarets2: 1 0 
@@ -6446,7 +6475,7 @@ Width: 638
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1629 700 S 1 0 0 1 355 60 2
+Refer: 2709 -1 S 1 0 0 1 352 0 2
 Refer: 44 76 N 1 0 0 1 0 0 0
 Validated: 32769
 EndChar
@@ -6457,7 +6486,7 @@ Width: 382
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1629 700 S 1 0 0 1 195 60 2
+Refer: 2709 -1 S 1 0 0 1 212 0 2
 Refer: 76 108 N 1 0 0 1 0 0 0
 Validated: 32769
 LCarets2: 1 0 
@@ -6471,7 +6500,7 @@ LayerCount: 2
 Fore
 Refer: 44 76 N 1 0 0 1 0 0 0
 Refer: 116 183 S 1 0 0 1 278 38 0
-Validated: 98305
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin for Catalan-subtable" L middot
 EndChar
@@ -6484,7 +6513,7 @@ LayerCount: 2
 Fore
 Refer: 76 108 N 1 0 0 1 0 0 0
 Refer: 116 183 N 1 0 0 1 183 0 0
-Validated: 98305
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'liga' Standard Ligatures in Latin for Catalan-subtable" l middot
 EndChar
@@ -7196,9 +7225,8 @@ Width: 426
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1629 700 N 1 0 0 1 155 60 2
+Refer: 2709 -1 S 1 0 0 1 203 0 2
 Refer: 84 116 N 1 0 0 1 0 0 2
-Validated: 32769
 LCarets2: 1 0 
 EndChar
 
@@ -56207,7 +56235,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dotlessjstrokehook
+StartChar: jhookdblbar
 Encoding: 644 644 2404
 Width: 505
 Flags: HMW
@@ -62476,6 +62504,26 @@ SplineSet
  687 675 l 2
  717 675 761 620 761 588 c 0
  761 575 755 570 746 570 c 2
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: caron_side
+Encoding: 59587 -1 2709
+Width: 180
+Flags: HW
+HStem: 471 204
+VStem: 10 167
+LayerCount: 2
+Fore
+SplineSet
+110 481 m 5
+ 211 655 l 6
+ 223 676 243 685 262 685 c 4
+ 288 685 303 668 303 645 c 4
+ 303 622 294 608 272 586 c 6
+ 166 481 l 5
+ 110 481 l 5
 EndSplineSet
 Validated: 3073
 EndChar
