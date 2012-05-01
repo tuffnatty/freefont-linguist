@@ -11,10 +11,10 @@ WOFFZIPFILE=freefont-woff-$(DATE).zip
 OTFTARFILE=freefont-otf-$(DATE).tar.gz
 TTFTARFILE=freefont-ttf-$(DATE).tar.gz
 WOFFTARFILE=freefont-woff-$(DATE).tar.gz
-SRCTARFILE=freefont-sfd-$(DATE).tar.gz
+SRCTARFILE=freefont-src-$(DATE).tar.gz
 ZIPSIG=freefont-ttf-$(DATE).zip.sig
 TARSIG=freefont-ttf-$(DATE).tar.gz.sig
-SRCTARSIG=freefont-sfd-$(DATE).tar.gz.sig
+SRCTARSIG=freefont-src-$(DATE).tar.gz.sig
 SIGS=$(ZIPSIG) $(TARSIG) $(SRCTARSIG)
 
 all: ttf otf woff
@@ -84,6 +84,7 @@ srctar:
 	mkdir $(TMPDIR)
 	cp -a $(ADMIN) $(TMPDIR)
 	rsync -a --exclude ".svn" sfd tools notes $(TMPDIR)
+	cp -a notes/building.txt $(TMPDIR)/BUILDING
 	tar czvf $(SRCTARFILE) $(RELEASE)/
 
 tests:

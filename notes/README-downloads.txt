@@ -11,8 +11,8 @@ The "ttf" files are TrueType, (strongly) preferred for Windows.
 
 The "woff" files are Web Open Font Format files, for use as Web fonts.
 
-The "sfd" files are FontForge "Spline Font Database" files, for use by
-font developers.
+The "src" and "sfd" files hold FontForge "Spline Font Database" files,
+for use by font developers.
 
 The ".sig" files are an accountability requirement of GNU upload policies. 
 You probably don't need that.
