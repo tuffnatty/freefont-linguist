@@ -7,14 +7,14 @@
     will build the TrueType font files in the sfd directory.
     The command
         make package
-    creates four archive files: one tarball of sources (SFD files), a
-    tarball of TrueType fonts, and a tarball and a zip file of OpenType
-    fonts. The naming convention is:
+    creates four archive files: one tarball of sources (SFD files), a zip
+    of TrueType fonts, a tarball of OpenType fonts, and a zip of WOFF 
+    format fonts. The naming convention is:
 
-        freefont-sfd-yyyymmdd.tar.gz
-        freefont-ttf-yyyymmdd.tar.gz
+        freefont-src-yyyymmdd.tar.gz
+        freefont-ttf-yyyymmdd.zip
         freefont-otf-yyyymmdd.tar.gz
-        freefont-otf-yyyymmdd.zip
+        freefont-woff-yyyymmdd.zip
 
     where yyyymmdd is the year, month and date of release.
 
@@ -55,18 +55,24 @@
 
     http://www.gnu.org/prep/maintain/maintain.html#Automated-Upload-Registration
 
-    gpg -b freefont-ttf-20060126.tar.gz
+    gpg -b freefont-ttf-20060126.zip
 
     This creates a "detached GPD binary signature" file freefont-ttf.tar.gz.sig
 
-5)  Commiting a CVS file
+5)  Commiting a SVN file
 
     svn co svn+ssh://user_name@svn.savannah.gnu.org/freefont/trunk/freefont
 
     cd freefont/sfd
     svn commit FreeSans.sfd
 
-6)  Tagging a release in CVS
+6)  a) Tagging a release in SVN
+
+    svn copy svn://svn.savannah.gnu.org/freefont/trunk \
+               svn://svn.savannah.gnu.org/freefont/tags/RELEASE_20120503 \
+	             -m "Tagging the 03.05.2012 release."
+
+    b) Tagging a release in CVS
 
     cvs rtag RELEASE_TAG_NAME freefont
 
