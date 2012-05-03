@@ -9,7 +9,7 @@ OTFS=$(SFDS:.sfd=.otf)
 WOFFS=$(SFDS:.sfd=.woff)
 FF=fontforge -lang=ff -script 
 FFPY=fontforge -lang=py -script 
-FFPY=/usr/bin/fontforge -lang=py -script 
+FFPY=fontforge -lang=py -script 
 
 ffversion=`fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'`
 
