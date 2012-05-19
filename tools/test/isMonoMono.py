@@ -68,15 +68,15 @@ def ismonomono( fontfilename ):
 
 	Othewise complain that FontForge may not treat it right.
 	"""
-	if not font[0x0000] \
+	if not 0x0000 in font \
 		or font[0x0000].glyphname != '.notdef' \
 		or font[0x0000].width != nonzero:
 		print 'Should be full-width ".notdef" glyph at 0x0000.'
-	if not font[0x0001] \
+	if not 0x0001 in font \
 		or font[0x0001].glyphname != '.null' \
 		or font[0x0001].width != 0:
 		print 'Should be zero-width ".null" glyph at 0x0001.'
-	if not font[0x000D] \
+	if not 0x000D in font \
 		or font[0x000D].glyphname != 'nonmarkingreturn' \
 		or font[0x000D].width != nonzero:
 		print 'Should be full-width "nonmarkingreturn" glyph at 0x000D.'
