@@ -107,8 +107,8 @@ ulUnicodeRange = [
 	interval(0x0400, 0x04FF),	# Cyrillic
 	interval(0x0500, 0x0527),	# Cyrillic Supplement
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
-	interval(0xA640, 0xA673),	# Cyrillic Extended-B
-	interval(0xA67C, 0xA697)
+	interval(0xA640, 0xA697),	# Cyrillic Extended-B
+	interval(0xA69F, 0xA69F)
 	]
 	],
 [10,	'Armenian',     [interval(0x0531, 0x0556),
