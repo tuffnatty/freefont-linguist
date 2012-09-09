@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1347223807
+ModificationTime: 1347229290
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -453,11 +452,14 @@ ChainSub2: class "'pres' Pre Base Subst Chain in Devanagari-non-half rak"  3 2 1
   FClsList:
  1
   SeqLookup: 0 "Substitute rakaar.blwf for virama-rakaar in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' Pre Base Subst Chain in Devanagari caron-rak"  2 3 1 2
   Class: 10 dev_rakaar
   BClass: 41 ngadeva ttadeva tthadeva ddadeva ddhadeva
-  BClass: 109 dev_nga__nga.pres dev_tta__tta.pres dev_tta__ttha.pres dev_dda__dda.pres dev_ssa__tta.pres dev_ssa__ttha.pres
+  BClass: 127 dev_nga__nga.pres dev_tta__tta.pres dev_tta__ttha.pres dev_dda__dda.pres dev_ssa__tta.pres dev_ssa__ttha.pres dev_dda_ddha.pres
  1 1 0
   ClsList: 1
   BClsList: 1
@@ -470,6 +472,9 @@ ChainSub2: class "'pres' Pre Base Subst Chain in Devanagari caron-rak"  2 3 1 2
   FClsList:
  1
   SeqLookup: 0 "Substitute rakaar.blf for rakaar in Devanagari" 
+  ClassNames: "All_Others"  "1"  
+  BClassNames: "All_Others"  "1"  "2"  
+  FClassNames: "All_Others"  
 EndFPST
 ChainSub2: class "'pres' Pre Base Chain in Devanagari-non-openya"  3 3 1 1
   Class: 6 virama
@@ -482,6 +487,9 @@ ChainSub2: class "'pres' Pre Base Chain in Devanagari-non-openya"  3 3 1 1
   FClsList:
  1
   SeqLookup: 0 "Substitute ya for virama-ya in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' Pre Base Chain in Devanagari-openya"  3 6 1 5
   Class: 6 virama
@@ -521,6 +529,9 @@ ChainSub2: class "'pres' Pre Base Chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "Substitute openya for virama-ya in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' Pre Base Subst Chain in Devanagari lig+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -649,6 +660,9 @@ ChainSub2: class "'ccmp' Contextual Chained Decomposition in Sinhala-2"  13 13 1
   FClsList:
  1
   SeqLookup: 0 "Glyph Decomposition in Sinhala-13" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  "12"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  "12"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-2"  5 5 1 1
   Class: 7 al_sinh
@@ -665,6 +679,9 @@ ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-2"  5 5 1 1
   FClsList:
  1
   SeqLookup: 0 "Glyph Composition in Sinhala" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-1"  6 2 1 3
   Class: 7 al_sinh
@@ -691,6 +708,9 @@ ChainSub2: class "'ccmp' Contextual Chained Composition in Sinhala-1"  6 2 1 3
   FClsList:
  1
   SeqLookup: 0 "Glyph Composition in Sinhala" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'ccmp' Contextual Chaining in Latin - iogonek-subtable"  0 0 0 1
  String: 7 iogonek
@@ -747,14 +767,14 @@ LangName: 1027 "" "" "negreta" "" "FreeSerif negreta"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeSerif +BD8EPgQ7BEMERwQ1BEAENQQ9" 
 LangName: 1069 "" "" "Lodia" "" "FreeSerif Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3
+GaspTable: 3 9 2 21 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 61712 16 10
+WinInfo: 61744 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 23 [-14 0 461 473 673 691]
@@ -782,7 +802,7 @@ Grid
  1333.2 259.974 l 0
 EndSplineSet
 AnchorClass2: "thaana-below"  "'blwm' Below Base Mark in Thaana-subtable" "thaana-above"  "'mark' Mark Positioning in Thaana-above" "arab-ring"  "'mark' Mark Positioning in Arabic-ring" "dev-belowmark"  "'mkmk' Mark to Mark in Devanagari-below" "gur-nukta"  "'blwm' Below Base Mark in Gurmukhi-nukta" "gur-below-mid"  "'blwm' Below Base Mark in Gurmukhi mid" "gur-below"  "'blwm' Below Base Mark in Gurmukhi" "gur-top-mkmk"  "'mkmk' Mark to Mark in Gurmukhi" "gur-top-mid"  "'abvm' Above Base Mark in Gurmukhi-mid" "guru_above"  "'abvm' Above Base Mark in Gurmukhi subtable" "dev-rakaar"  "'blwm' Below Base Mark in Devanagari rakaar" "dev-below"  "'blwm' Below Base Mark in Devanagari subtable" "dev-nukta"  "'blwm' Below Base Mark in Devanagari-nukta" "dev-above"  "'abvm' Above Base Mark in Devanagari subtable" "low_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "top_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "point_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_low_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_right_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_low_heb"  "'mark' Mark Positioning in Hebrew for Ivrit subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Hebrew for Yiddish subtable" "dev-abovemark"  "'mkmk' Mark to Mark in Devanagari" "topright"  "'mark' Mark Positioning subtable" "arab_diacritic"  "'mkmk' Mark to Mark in Arabic subtable" "above_arabic"  "'mark' Mark Positioning in Arabic subtable" "below_arabic"  "'mark' Mark Positioning in Arabic subtable" "abovegk"  "'mark' Mark Positioning in Greek and Coptic subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "ogonek"  "'mark' Mark Positioning in Latin 1 subtable" "middle"  "'mark' Mark Positioning subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 2 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 2 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 2 subtable" "thai_below"  "'mark' Mark Positioning in Thai 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" "below"  "'mark' Mark Positioning in Latin" 
-BeginChars: 66560 4780
+BeginChars: 66560 4781
 
 StartChar: space
 Encoding: 32 32 0
@@ -116321,7 +116341,7 @@ SplineSet
  732 622 l 2
  764 622 825 559 825 529 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama ngadeva
 EndChar
@@ -117245,51 +117265,51 @@ AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-289 21 m 2
- 302 21 l 1
- 302 31 l 1
- 291 30 279 29 268 29 c 0
- 138 29 -3 172 -3 297 c 0
- -3 306 2 309 9 309 c 0
- 40 309 101 247 102 216 c 0
- 102 191 109 165 119 151 c 1
- 134 141 161 134 187 134 c 0
- 246 134 328 157 348 220 c 1
- 269 224 214 213 147 280 c 0
- 123 304 97 339 97 382 c 0
- 97 474 209 474 294 474 c 2
- 302 474 l 1
- 302 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 633 622 l 2
- 665 622 726 559 726 529 c 0
- 726 519 721 517 714 517 c 2
- 407 517 l 1
- 407 381 l 2
- 407 371 402 369 395 369 c 2
- 375 369 l 2
- 310 369 229 368 207 326 c 1
- 296 322 342 330 406 266 c 0
- 430 243 457 208 457 164 c 0
- 457 118 432 88 407 69 c 1
- 407 -72 l 2
- 407 -81 402 -84 395 -84 c 2
- 375 -84 l 2
- 310 -84 229 -84 207 -126 c 1
- 296 -130 342 -122 406 -186 c 0
- 430 -210 457 -245 457 -288 c 0
- 457 -383 354 -424 268 -424 c 0
- 138 -424 -3 -280 -3 -156 c 0
- -3 -146 2 -144 9 -144 c 0
- 40 -144 101 -206 102 -236 c 0
- 102 -261 109 -287 119 -301 c 1
- 134 -312 161 -319 187 -319 c 0
- 246 -319 328 -295 348 -233 c 1
- 269 -229 214 -239 147 -172 c 0
- 123 -149 97 -114 97 -70 c 0
- 97 20 205 21 289 21 c 2
+289 21 m 6
+ 302 21 l 5
+ 302 31 l 5
+ 291 30 279 29 268 29 c 4
+ 138 29 -3 172 -3 297 c 4
+ -3 306 2 309 9 309 c 4
+ 40 309 101 247 102 216 c 4
+ 102 191 109 165 119 151 c 5
+ 134 141 161 134 187 134 c 4
+ 246 134 328 157 348 220 c 5
+ 269 224 214 213 147 280 c 4
+ 123 304 97 339 97 382 c 4
+ 97 474 209 474 294 474 c 6
+ 302 474 l 5
+ 302 517 l 5
+ 41 517 l 6
+ 9 517 -52 579 -52 610 c 4
+ -52 619 -47 622 -41 622 c 6
+ 633 622 l 6
+ 665 622 726 559 726 529 c 4
+ 726 519 721 517 714 517 c 6
+ 407 517 l 5
+ 407 381 l 6
+ 407 371 402 369 395 369 c 6
+ 375 369 l 6
+ 310 369 229 368 207 326 c 5
+ 296 322 342 330 406 266 c 4
+ 430 243 457 208 457 164 c 4
+ 457 118 432 88 407 69 c 5
+ 407 -72 l 6
+ 407 -81 402 -84 395 -84 c 6
+ 375 -84 l 6
+ 310 -84 229 -84 207 -126 c 5
+ 296 -130 342 -122 406 -186 c 4
+ 430 -210 457 -245 457 -288 c 4
+ 457 -383 354 -424 268 -424 c 4
+ 138 -424 -3 -280 -3 -156 c 4
+ -3 -146 2 -144 9 -144 c 4
+ 40 -144 101 -206 102 -236 c 4
+ 102 -261 109 -287 119 -301 c 5
+ 134 -312 161 -319 187 -319 c 4
+ 246 -319 328 -295 348 -233 c 5
+ 269 -229 214 -239 147 -172 c 4
+ 123 -149 97 -114 97 -70 c 4
+ 97 20 205 21 289 21 c 6
 EndSplineSet
 Validated: 3073
 LCarets2: 2 0 0 
@@ -127505,6 +127525,73 @@ SplineSet
  527 344.6 506.333 325 484 325 c 0
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: dev_dda_ddha.pres
+Encoding: 61890 -1 4780
+Width: 673
+Flags: HW
+AnchorPoint: "dev-above" 363 610 basechar 0
+AnchorPoint: "dev-nukta" 30 -360 basechar 0
+AnchorPoint: "dev-below" 270 -416 basechar 0
+AnchorPoint: "dev-rakaar" 270 -370 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+379 -272 m 0
+ 379 -261 378 -251 376 -242 c 1
+ 325 -242 247 -295 247 -355 c 2
+ 247 -360 l 1
+ 251 -362 l 1
+ 308 -361 379 -334 379 -272 c 0
+302 9 m 1
+ 302 31 l 1
+ 291 30 279 29 268 29 c 0
+ 138 29 -3 172 -3 297 c 0
+ -3 306 2 309 9 309 c 0
+ 40 309 101 247 102 216 c 0
+ 102 191 109 165 119 151 c 1
+ 134 141 161 134 187 134 c 0
+ 246 134 328 157 348 220 c 1
+ 269 224 214 213 147 280 c 0
+ 123 304 97 339 97 382 c 0
+ 97 474 209 474 294 474 c 2
+ 302 474 l 1
+ 302 517 l 1
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 633 622 l 2
+ 665 622 726 559 726 529 c 0
+ 726 519 721 517 714 517 c 2
+ 407 517 l 1
+ 407 381 l 2
+ 407 371 402 369 395 369 c 2
+ 375 369 l 2
+ 310 369 229 368 207 326 c 1
+ 296 322 342 330 406 266 c 0
+ 430 243 457 208 457 164 c 0
+ 457 121 435 92 412 73 c 1
+ 412 -57 l 2
+ 412 -59 411 -70 409 -70 c 2
+ 363 -70 l 2
+ 219 -70 88 -72 88 -210 c 0
+ 88 -254 100 -295 117 -321 c 1
+ 147 -341 161 -355 208 -360 c 1
+ 193 -342 168 -315 168 -281 c 0
+ 168 -221 244 -163 303 -163 c 0
+ 332 -163 353 -176 372 -191 c 0
+ 381 -198 427 -238 445 -277 c 0
+ 454 -297 458 -318 458 -346 c 0
+ 458 -412 383 -441 324 -441 c 0
+ 192 -441 132 -377 70 -301 c 0
+ 37 -260 9 -201.3 9 -136 c 0
+ 9 7 146 9 289 9 c 2
+ 302 9 l 1
+EndSplineSet
+Validated: 527361
+LCarets2: 2 0 0 
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ddadeva virama ddhadeva
 EndChar
 EndChars
 EndSplineFont
