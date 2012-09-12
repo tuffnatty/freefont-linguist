@@ -68,9 +68,10 @@
 
 6)  a) Tagging a release in SVN
 
-    svn copy svn://svn.savannah.gnu.org/freefont/trunk \
-               svn://svn.savannah.gnu.org/freefont/tags/RELEASE_20120503 \
+    svn copy svn+ssh://UNAME@svn.savannah.gnu.org/freefont/trunk \
+        svn+ssh://UNAME@svn.savannah.gnu.org/freefont/tags/RELEASE_20120503 \
 	             -m "Tagging the 03.05.2012 release."
+    where UNAME is a Savannah admin user name.
 
     b) Tagging a release in CVS
 
@@ -96,9 +97,16 @@
 	Tag new releases with tag named RELEASE_date, where date is the date.
 	Add release date field value to bug report field "Release".
 	Upload the archive files to Savannah.
+	Update project web pages.
+	Make news item.
+	Update FSF entry at http://directory.fsf.org/wiki/Freefont
 
 	Write to freefont-announce@gnu.org
-	Write to info-gnu@gnu.org
+	Write to info-gnu@gnu.org 
+		Subject: GNU FreeFont <verson-no> released
+		Contents: 1 line blurb of what FreeFont is;
+			can also be downloaded from any GNU mirror.  List at
+			   http://www.gnu.org/order/ftp.html.
 	Write to pkg-fonts-devel@lists.alioth.debian.org, 
 		and Debian freefont-ttf packager
 
