@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1349269186
+ModificationTime: 1352026979
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -336,14 +336,14 @@ LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" "" "F
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSerif Lodi etzana" 
 LangName: 1033 "" "" "Bold Italic" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 14 21 13 65535 15 1
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 640 16 10
+WinInfo: 8176 16 10
 BeginPrivate: 8
 UniqueID 7 5020939
 BlueValues 33 [-205 -200 -18 0 449 462 669 685]
@@ -6363,7 +6363,7 @@ LayerCount: 2
 Fore
 Refer: 404 710 S 1 0 0 1 52 -4 0
 Refer: 1626 567 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition/Decomposition in Latin - i-subtable" j circumflexcomb
 EndChar
@@ -7735,7 +7735,7 @@ LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 554 0 0
 Refer: 44 76 N 1 0 0 1 0 0 0
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni01C9
@@ -7746,7 +7746,7 @@ LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 223 0 0
 Refer: 76 108 N 1 0 0 1 0 0 0
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni01CA
@@ -7768,7 +7768,7 @@ LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 612 0 0
 Refer: 46 78 N 1 0 0 1 0 0 0
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni01CC
@@ -7779,7 +7779,7 @@ LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 456 0 0
 Refer: 78 110 N 1 0 0 1 0 0 0
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni01D6
@@ -8304,7 +8304,7 @@ LayerCount: 2
 Fore
 Refer: 1626 567 N 1 0 0 1 0 0 2
 Refer: 405 711 S 1 0 0 1 37 -14 0
-Validated: 98305
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'ccmp' Glyph Composition/Decomposition in Latin - i-subtable" j caroncomb
 EndChar
@@ -14258,7 +14258,7 @@ AnchorPoint: "abovecyr" 214 695 basechar 0
 LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 0 0 3
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: ljecyrillic
@@ -35125,23 +35125,51 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: zeronojoin
+StartChar: ZWNJ
 Encoding: 8204 8204 1675
 Width: 0
-VWidth: 1200
-Flags: MW
+Flags: HMW
 LayerCount: 2
+Fore
+SplineSet
+28 -140 m 1
+ -28 -140 l 1
+ -28 664 l 2
+ -28 738 -51 766.5 -136 781 c 1
+ -136 800 l 1
+ 136 800 l 1
+ 136 781 l 1
+ 51 767 28 737 28 664 c 2
+ 28 -140 l 1
+EndSplineSet
 EndChar
 
-StartChar: zerojoin
+StartChar: ZWJ
 Encoding: 8205 8205 1676
 Width: 0
-VWidth: 1200
-Flags: MW
+Flags: HMW
 LayerCount: 2
+Fore
+SplineSet
+124 -146 m 5
+ 85 -158 43 -165 1 -165 c 4
+ -43 -165 -85 -159 -124 -149 c 5
+ -112 -109 l 5
+ -85 -116 -57 -121 -28 -123 c 5
+ -28 758 l 5
+ -57 756 -85 752 -112 745 c 5
+ -124 785 l 5
+ -85 795 -43 800 0 800 c 4
+ 41 800 83 794 122 782 c 5
+ 111 743 l 5
+ 85 751 56 756 28 758 c 5
+ 28 -123 l 5
+ 56 -121 86 -116 113 -108 c 5
+ 124 -146 l 5
+EndSplineSet
 EndChar
 
-StartChar: uni200e
+StartChar: LRM
 Encoding: 8206 8206 1677
 Width: 0
 VWidth: 1200
@@ -35149,7 +35177,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni200f
+StartChar: RLM
 Encoding: 8207 8207 1678
 Width: 0
 VWidth: 1200
@@ -35199,15 +35227,16 @@ Refer: 14 46 S 1 0 0 1 329 0 0
 Validated: 32769
 EndChar
 
-StartChar: uni2027
+StartChar: hyphendot
 Encoding: 8231 8231 1683
-Width: 0
-VWidth: 0
-Flags: MW
+Width: 250
+Flags: HMW
 LayerCount: 2
+Fore
+Refer: 116 183 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: uni2028
+StartChar: lineseparator
 Encoding: 8232 8232 1684
 Width: 0
 VWidth: 0
@@ -35215,7 +35244,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni2029
+StartChar: paragraphseparator
 Encoding: 8233 8233 1685
 Width: 0
 VWidth: 0
@@ -35223,7 +35252,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni202a
+StartChar: lre
 Encoding: 8234 8234 1686
 Width: 0
 VWidth: 0
@@ -35231,7 +35260,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni202b
+StartChar: rle
 Encoding: 8235 8235 1687
 Width: 0
 VWidth: 0
@@ -35239,7 +35268,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni202c
+StartChar: pdf
 Encoding: 8236 8236 1688
 Width: 0
 VWidth: 0
@@ -35247,7 +35276,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni202d
+StartChar: lro
 Encoding: 8237 8237 1689
 Width: 0
 VWidth: 0
@@ -35255,7 +35284,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni202e
+StartChar: rlo
 Encoding: 8238 8238 1690
 Width: 250
 VWidth: 0
@@ -35263,7 +35292,7 @@ Flags: MW
 LayerCount: 2
 EndChar
 
-StartChar: uni202f
+StartChar: nbspnarrow
 Encoding: 8239 8239 1691
 Width: 166
 VWidth: 0
@@ -35410,7 +35439,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni205f
+StartChar: spacemediummath
 Encoding: 8287 8287 1703
 Width: 111
 VWidth: 0
@@ -37676,7 +37705,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 0 0 3
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni03f4
@@ -56027,7 +56056,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 74 106 N 0.68 0 0 0.68 133 390 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: rsuper
@@ -56629,7 +56658,7 @@ SplineSet
  310.575 299 l 1
  388 299 l 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: zretroflexhook
