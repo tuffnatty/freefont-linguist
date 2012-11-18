@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+BaseVert: 2 'hang' 'romn'
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1353113596
+ModificationTime: 1353235903
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -171,7 +172,7 @@ Lookup: 4 0 0 "'psts' Post Base Substitutions in Gurmukhi"  {"'psts' Post Base S
 Lookup: 4 0 0 "'blws' Below Base Substitutions in Gurmukhi"  {"'blws' Below Base Substitutions in Gurmukhi subtable"  } ['blws' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' Below Base Forms in Gurmukhi"  {"'blwf' Below Base Forms in Gurmukhi subtable"  } ['blwf' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Sinhala-above"  {"'abvm' Above Base Mark in Sinhala-above-1"  } ['abvm' ('sinh' <'dflt' > ) ]
-Lookup: 260 8 0 "'abvm' Above Base Mark in Sinhala-repaya"  {"'abvm' Above Base Mark in Sinhala-repaya-1"  } ['abvm' ('sinh' <'dflt' > ) ]
+Lookup: 260 0 0 "'abvm' Above Base Mark in Sinhala-repaya"  {"'abvm' Above Base Mark in Sinhala-repaya-1"  } ['abvm' ('sinh' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Sinhala-below"  {"'blwm' Below Base Mark in Sinhala-below-1"  } ['blwm' ('sinh' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' Above Base Mark in Devanagari"  {"'abvm' Above Base Mark in Devanagari subtable"  } ['abvm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' Below Base Mark in Devanagari"  {"'blwm' Below Base Mark in Devanagari-nukta"  "'blwm' Below Base Mark in Devanagari subtable"  "'blwm' Below Base Mark in Devanagari rakaar"  } ['blwm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
@@ -1212,17 +1213,17 @@ LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeSerif +BD8EPgQ7BEMERwQ1
 LangName: 1069 "" "" "Lodia" "" "FreeSerif Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 21 1 65535 3 0
-OtfFeatName: 'ss04' 2145 "+CSgJRwkqCT4JMgAA" 1033 "Nepali" 
-OtfFeatName: 'ss03' 1081 "+CRUJSwkyCRUJPgkk" 1033 "Calcutta" 
-OtfFeatName: 'ss02' 1081 "+CS4JQQkuCU0JLAkI" 1033 "Bombay" 
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
+OtfFeatName: 'ss02' 1033 "Bombay" 1081 "+CS4JQQkuCU0JLAkI" 
+OtfFeatName: 'ss03' 1033 "Calcutta" 1081 "+CRUJSwkyCRUJPgkk" 
+OtfFeatName: 'ss04' 1033 "Nepali" 2145 "+CSgJRwkqCT4JMgAA" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 61280 16 10
+WinInfo: 61200 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 23 [-14 0 461 473 673 691]
@@ -72432,6 +72433,7 @@ Encoding: 3482 3482 3027
 Width: 812
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 330 500 basechar 0
 AnchorPoint: "sin-repaya" 499.5 547 basechar 0
 AnchorPoint: "sin-al" 546 494 basechar 0
 AnchorPoint: "sin-below" 787 239 basechar 0
@@ -72451,12 +72453,12 @@ SplineSet
 133 550 m 0
  191 550 225 502 252 449 c 1
  311 499.5 387 550 490 550 c 0
- 654 550 787 401 787 239 c 4
- 787 131 773 -15 650 -15 c 4
- 617 -15 573 12 556 29 c 5
- 590 68 l 5
- 608.5 54 636.5 37 652 37 c 4
- 700 37 725 109 725 179 c 4
+ 654 550 787 401 787 239 c 0
+ 787 131 773 -15 650 -15 c 0
+ 617 -15 573 12 556 29 c 1
+ 590 68 l 1
+ 608.5 54 636.5 37 652 37 c 0
+ 700 37 725 109 725 179 c 0
  725 328 582 446 444 446 c 0
  376 446 343 426 290 397 c 1
  302 398 332 400 341 400 c 0
@@ -72475,7 +72477,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ ka_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" ka_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" ka_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -72532,6 +72534,7 @@ Encoding: 3484 3484 3029
 Width: 715
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 460 549 basechar 0
 AnchorPoint: "sin-below" 690 261 basechar 0
 AnchorPoint: "sin-al" 604 468 basechar 0
 AnchorPoint: "sin-repaya" 482.5 548 basechar 0
@@ -72559,9 +72562,8 @@ SplineSet
  638 358 550 429 449 429 c 0
  388 429 345 380 318 317 c 1
 EndSplineSet
-Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ ga_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" ga_sinh sin-repaya_low
+MultipleSubs2: "Append repaya in Sinhala-1" ga_sinh sinh_repaya_low
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -72570,6 +72572,7 @@ Encoding: 3485 3485 3030
 Width: 719
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 169 560 basechar 0
 AnchorPoint: "sin-below" 694 204 basechar 0
 AnchorPoint: "sin-al" 532 494 basechar 0
 AnchorPoint: "sin-repaya" 461.5 582 basechar 0
@@ -72586,8 +72589,8 @@ SplineSet
  25 384 41 391 51 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 184 460 176 418 129 418 c 4
- 93 418 77 431 77 460 c 0
+ 184 460 176 418 129 418 c 0
+ 102 418 77 431 77 460 c 0
  77 515 116 560 168 560 c 0
  262 560 320 463 328 377 c 1
  328 339 l 1
@@ -72682,6 +72685,7 @@ Encoding: 3487 3487 3032
 Width: 841
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 630 550 basechar 0
 AnchorPoint: "sin-below" 816 261 basechar 0
 AnchorPoint: "sin-al" 731 494 basechar 0
 AnchorPoint: "sin-repaya" 635.5 549 basechar 0
@@ -72720,7 +72724,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ nga_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" nga_sinh sin-repaya_low
+MultipleSubs2: "Append repaya in Sinhala-1" nga_sinh sinh_repaya_low
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -72749,10 +72753,10 @@ SplineSet
  25 384 41 391 51 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 185 460 176 423 129 423 c 4
+ 185 460 176 423 129 423 c 0
  95 423 77 435 77 460 c 0
- 77 515 116 560 168 560 c 0
- 261 560 320 464 328 377 c 1
+ 77 515 116 550 168 550 c 4
+ 261 550 320 464 328 377 c 1
  328 339 l 1
  211 339 l 2
  141.345 339 78 287.496 78 214 c 0
@@ -72772,6 +72776,7 @@ Encoding: 3489 3489 3034
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 398 485 basechar 0
 AnchorPoint: "sin-below" 653 204 basechar 0
 AnchorPoint: "sin-al" 368 494 basechar 0
 AnchorPoint: "sin-repaya" 488.5 642 basechar 0
@@ -72785,7 +72790,7 @@ SplineSet
  26 309 105 391 212 391 c 2
  273 391 l 1
  263 436 241 460 211 460 c 0
- 187 460 178 413 130 413 c 4
+ 187 460 178 413 130 413 c 0
  90 413 78 429 78 455 c 0
  78 510 117 550 169 550 c 0
  262 550 321 464 329 377 c 1
@@ -72818,7 +72823,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ cha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" cha_sinh sin-repaya_high
+MultipleSubs2: "Append repaya in Sinhala-1" cha_sinh sinh_repaya_high
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -72827,6 +72832,7 @@ Encoding: 3490 3490 3035
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 398 485 basechar 0
 AnchorPoint: "sin-below" 648 204 basechar 0
 AnchorPoint: "sin-al" 364 494 basechar 0
 AnchorPoint: "sin-repaya" 502.5 643 basechar 0
@@ -72851,9 +72857,9 @@ SplineSet
  21 309.351 100.56 391 207 391 c 2
  268 391 l 1
  258 436 236 460 206 460 c 0
- 182 460 172 413 125 413 c 4
- 90 413 73 424 73 450 c 0
- 73 505 112 550 164 550 c 0
+ 182 460 172 413 125 413 c 0
+ 90 413 73 434 73 460 c 0
+ 73 515 112 550 164 550 c 0
  257 550 316 464 324 377 c 1
  324 339 l 1
  207 339 l 2
@@ -72873,47 +72879,47 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ ja_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" ja_sinh sin-repaya_high
+MultipleSubs2: "Append repaya in Sinhala-1" ja_sinh sinh_repaya_high
 LCarets2: 3 0 0 0 
 EndChar
 
 StartChar: jha_sinh
 Encoding: 3491 3491 3036
-Width: 1208
+Width: 1232
 VWidth: 0
 Flags: HMW
-AnchorPoint: "sin-below" 1183 363 basechar 0
-AnchorPoint: "sin-repaya" 923.5 650 basechar 0
+AnchorPoint: "sin-below" 1207 363 basechar 0
+AnchorPoint: "sin-repaya" 947.5 650 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 137 550 m 0
  185.5 550 224 505 252 449 c 1
- 313.389 505 394 550 496 550 c 0
- 583 550 665 526 735 481 c 1
- 739 477 747 469 747 459 c 0
- 747 440 731 433 721 433 c 0
- 621 433 545 346 545 244 c 0
- 545 167 600 106 666 106 c 0
- 741 106 801 155 801 217 c 0
- 801 239 821 243 827 243 c 0
- 843 243 853 229 853 217 c 0
- 853 152 916 106 988 106 c 0
- 1090 106 1131 231 1131 363 c 0
- 1131 544 988 689 814 689 c 0
- 714 689 627 642 571 572 c 1
- 571 572 564 562 550 562 c 0
- 532 562 524 577 524 588 c 0
- 524 596 527 601 529 603 c 0
- 596 688 701 741 814 741 c 0
- 1022 741 1183 568 1183 363 c 0
- 1183 187 1139 -15 972 -15 c 0
- 901 -15 853 32 827 90 c 1
- 798 28 749 -15 682 -15 c 0
- 611 -15 560 29 530 85 c 1
- 511 29 477 -15 419 -15 c 0
- 357 -15 333 15 307 58 c 1
- 266.667 -1.33333 223 -15 195 -15 c 0
+ 313.389 505 418 550 520 550 c 4
+ 607 550 689 526 759 481 c 5
+ 763 477 771 469 771 459 c 4
+ 771 440 755 433 745 433 c 4
+ 645 433 569 346 569 244 c 4
+ 569 167 624 106 690 106 c 4
+ 765 106 825 155 825 217 c 4
+ 825 239 845 243 851 243 c 4
+ 867 243 877 229 877 217 c 4
+ 877 152 940 106 1012 106 c 4
+ 1114 106 1155 231 1155 363 c 4
+ 1155 544 1012 689 838 689 c 4
+ 738 689 651 642 595 572 c 5
+ 595 572 588 562 574 562 c 4
+ 556 562 548 577 548 588 c 4
+ 548 596 551 601 553 603 c 4
+ 620 688 725 741 838 741 c 4
+ 1046 741 1207 568 1207 363 c 4
+ 1207 187 1163 -15 996 -15 c 4
+ 925 -15 877 32 851 90 c 5
+ 822 28 773 -15 706 -15 c 4
+ 635 -15 584 29 554 85 c 5
+ 535 29 501 -15 443 -15 c 4
+ 381 -15 343 15 317 58 c 1
+ 276.667 -1.33301 223 -15 195 -15 c 0
  113.333 -15 91.6667 38 82 66 c 1
  77 56 59 31 43 31 c 0
  28 31 20 44 20 55 c 0
@@ -72925,22 +72931,22 @@ SplineSet
 173 273 m 1
  145 232 124 189 105 144 c 1
  138 118 160.333 106 194 106 c 0
- 259.667 106 284 165.333 284 217 c 0
- 284 236 301 243 311 243 c 0
- 330 243 336 227 336 217 c 0
- 336 200 334 182 333 168 c 1
- 357 129 378 106 417 106 c 0
- 450 106 494 134.667 494 193 c 0
- 494 258 439 348 337 348 c 0
- 257 348 221 319 173 273 c 1
-642 470 m 1
- 593 489 545 492 496 492 c 0
- 385 492 327.389 435 279 390 c 1
- 307 397 311 400 337 400 c 0
- 398.5 400 456 374 503 317 c 1
- 523 395 574 443 642 470 c 1
+ 259.667 106 294 165.333 294 217 c 0
+ 294 236 311 243 321 243 c 0
+ 340 243 346 227 346 217 c 0
+ 346 200 344 182 343 168 c 1
+ 367 129 402 106 441 106 c 4
+ 474 106 518 134.667 518 193 c 4
+ 518 258 449 348 347 348 c 0
+ 267 348 221 319 173 273 c 1
+666 470 m 5
+ 617 489 569 492 520 492 c 4
+ 409 492 337.389 435 289 390 c 1
+ 317 397 321 400 347 400 c 0
+ 408.5 400 480 374 527 317 c 5
+ 547 395 598 443 666 470 c 5
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Substitution2: "Substitute lopped forms in Sinhala-kha-ish" sinh_jha_lopped
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ jha_sinh
 MultipleSubs2: "Append repaya in Sinhala-1" jha_sinh sinh_repaya
@@ -72952,197 +72958,200 @@ Encoding: 3492 3492 3037
 Width: 1002
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 820 550 basechar 0
 AnchorPoint: "sin-al" 890 494 basechar 0
 AnchorPoint: "sin-repaya" 812.5 550 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-401 243 m 4
- 420 243 426 227 426 217 c 4
- 426 198 425 181 424 168 c 5
- 449 128 467 106 510 106 c 4
- 563 106 584 163 584 193 c 4
- 584 268 530 348 422 348 c 4
- 376 348 322 333 269 281 c 5
- 232 224 222 211 195 143 c 5
- 228 118 247 106 284 106 c 4
- 340 106 375 158 375 217 c 4
- 375 236 391 243 401 243 c 4
-615 283 m 5
- 656 358 732 404 823 404 c 4
- 858 404 892 397 921 386 c 5
- 911 434 886 460 854 460 c 4
- 827 460 807 422 756 422 c 4
- 721 422 703 438 703 465 c 4
- 703 477 706 487 708 492 c 5
- 591 481 489 468.62 383 398 c 5
- 394.632 399.066 405.747 399.588 416.379 399.588 c 4
- 515.432 399.588 572.556 354.342 615 283 c 5
-861 335 m 4
- 776 335 705 276 705 207 c 4
- 705 125 753 60 818 60 c 4
- 882 60 938 87 983 119 c 5
- 999 70 l 5
- 963 28 903 -36 903 -138 c 4
- 903 -168 916 -193 936 -202 c 4
- 953 -210 997 -216 997 -254 c 4
- 997 -287 987 -289 974 -289 c 4
- 904 -289 823 -233 823 -167 c 4
- 823 -107 842 -52 868 -6 c 5
- 842 -13 820 -15 797 -15 c 4
- 721 -15 656 24 619 78 c 5
- 600 24 562 -15 506 -15 c 4
- 444 -15 433 14 398 58 c 5
- 377 14 339 -15 290 -15 c 4
- 205 -15 186 26.6667 172 67 c 5
- 165 53 147 31 134 31 c 4
- 117 31 110 47 110 55 c 4
- 110 57.8076 110.282 60.9385 110.813 64.3457 c 5
- 63.3652 93.1094 25 163.631 25 287 c 4
- 25 418 73.8808 550 218 550 c 4
- 269 550 313 516 341 449 c 5
- 486 540 634 550 812 550 c 4
- 916 550 976 447 976 345 c 5
- 961 306 l 5
- 931 322 895 335 861 335 c 4
-122.307 119.007 m 5
- 163 249 213 321 305 407 c 5
- 291 440 284 465 266 465 c 4
- 220 465 227 398 145 398 c 4
- 130.271 398 114.875 405.707 104.496 417.016 c 5
- 86.8808 381.505 77 336.597 77 287 c 4
- 77 198.845 95.751 144.718 122.307 119.007 c 5
+401 243 m 0
+ 420 243 426 227 426 217 c 0
+ 426 198 425 181 424 168 c 1
+ 449 128 467 106 510 106 c 0
+ 563 106 584 163 584 193 c 0
+ 584 268 530 348 422 348 c 0
+ 376 348 322 333 269 281 c 1
+ 232 224 222 211 195 143 c 1
+ 228 118 247 106 284 106 c 0
+ 340 106 375 158 375 217 c 0
+ 375 236 391 243 401 243 c 0
+615 283 m 1
+ 656 358 732 404 823 404 c 0
+ 858 404 892 397 921 386 c 1
+ 911 434 886 460 854 460 c 0
+ 827 460 807 422 756 422 c 0
+ 721 422 703 438 703 465 c 0
+ 703 477 706 487 708 492 c 1
+ 591 481 489 468.62 383 398 c 1
+ 394.632 399.066 405.747 399.588 416.379 399.588 c 0
+ 515.432 399.588 572.556 354.342 615 283 c 1
+861 335 m 0
+ 776 335 705 276 705 207 c 0
+ 705 125 753 60 818 60 c 0
+ 882 60 938 87 983 119 c 1
+ 999 70 l 1
+ 963 28 903 -36 903 -138 c 0
+ 903 -168 916 -193 936 -202 c 0
+ 953 -210 997 -216 997 -254 c 0
+ 997 -287 987 -289 974 -289 c 0
+ 904 -289 823 -233 823 -167 c 0
+ 823 -107 842 -52 868 -6 c 1
+ 842 -13 820 -15 797 -15 c 0
+ 721 -15 656 24 619 78 c 1
+ 600 24 562 -15 506 -15 c 0
+ 444 -15 433 14 398 58 c 1
+ 377 14 339 -15 290 -15 c 0
+ 205 -15 186 26.6667 172 67 c 1
+ 165 53 147 31 134 31 c 0
+ 117 31 110 47 110 55 c 0
+ 110 57.8076 110.282 60.9385 110.813 64.3457 c 1
+ 63.3652 93.1094 25 163.631 25 287 c 0
+ 25 418 73.8808 550 218 550 c 0
+ 269 550 313 516 341 449 c 1
+ 486 540 634 550 812 550 c 0
+ 916 550 976 447 976 345 c 1
+ 961 306 l 1
+ 931 322 895 335 861 335 c 0
+122.307 119.007 m 1
+ 163 249 213 321 305 407 c 1
+ 291 440 284 465 266 465 c 0
+ 220 465 227 398 145 398 c 0
+ 130.271 398 114.875 405.707 104.496 417.016 c 1
+ 86.8808 381.505 77 336.597 77 287 c 0
+ 77 198.845 95.751 144.718 122.307 119.007 c 1
 EndSplineSet
 Validated: 3073
 Substitution2: "Substitute lopped forms in Sinhala-dha-ish" sinh_nya_naked
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ nya_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" nya_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" nya_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
 StartChar: jnya_sinh
 Encoding: 3493 3493 3038
-Width: 1002
+Width: 970
 VWidth: 0
 Flags: HMW
-AnchorPoint: "sin-al" 887 494 basechar 0
-AnchorPoint: "sin-repaya" 811.5 551 basechar 0
+AnchorPoint: "sin-vowel" 788 550 basechar 0
+AnchorPoint: "sin-al" 855 494 basechar 0
+AnchorPoint: "sin-repaya" 779.5 551 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-594 257 m 1
- 628 351 725 404 822 404 c 0
- 857 404 891 397 920 386 c 1
- 910 433 885 460 852 460 c 0
- 826 460 806 422 755 422 c 0
- 720 422 702 438 702 465 c 0
- 702 472 703 478 703 480 c 1
- 621 451 557 393 521 317 c 1
- 554 305 578 283 594 257 c 1
-980 118 m 1
- 999 70 l 1
- 958 34 902 -38 902 -138 c 0
- 902 -168 915 -193 935 -202 c 0
- 952 -210 996 -216 996 -254 c 0
- 996 -287 959 -289 947 -289 c 0
- 876 -289 822 -233 822 -167 c 0
- 822 -108 840 -52 867 -6 c 1
- 841 -13 819 -15 796 -15 c 0
- 705 -15 628 40 597 113 c 1
- 554.199 25.4082 443.037 -14.6279 337.474 -14.9971 c 0
- 337.317 -14.9971 337.159 -15 337 -15 c 2
- 336.434 -15 l 1
- 336 -15 l 2
- 335.348 -15 334.697 -14.9941 334.046 -14.9941 c 0
- 86.2031 -13.9414 25 119.663 25 287 c 0
- 25 418 112 550 259 550 c 0
- 347 550 391 460 397 377 c 1
- 397 339 l 1
- 271 339 159 291 159 188 c 0
- 160 122 253 106 352 106 c 0
- 488 106 561 128 561 187 c 0
- 561 225 531 248 500 248 c 0
- 474 248 452 229 434 218 c 1
- 492 472 668 550 811 550 c 0
- 917 550 975 446 975 345 c 1
- 960 306 l 1
- 930 322 894 335 859 335 c 0
- 775 335 704 276 704 207 c 0
- 704 125 752 60 817 60 c 0
- 881 60 935 87 980 118 c 1
-129.34 94.2295 m 1
- 115.027 120.834 107 151.664 107 186 c 0
- 107 318.474 238.795 376.803 344 389 c 1
- 339 439 326 461 302 461 c 0
- 266 461 281 408 207 408 c 0
- 175.986 408 163 432.269 163 459 c 0
- 163 468.094 163.258 474.669 165.583 482.648 c 1
- 101 431.1 77 355.1 77 287 c 0
- 77 212.591 83.9999 141.1 129.34 94.2295 c 1
+562 257 m 1
+ 596 351 693 404 790 404 c 0
+ 825 404 859 397 888 386 c 1
+ 878 433 853 460 820 460 c 0
+ 794 460 774 422 723 422 c 0
+ 688 422 670 438 670 465 c 0
+ 670 472 671 478 671 480 c 1
+ 589 451 525 393 489 317 c 1
+ 522 305 546 283 562 257 c 1
+948 118 m 1
+ 967 70 l 1
+ 926 34 870 -38 870 -138 c 0
+ 870 -168 883 -193 903 -202 c 0
+ 920 -210 964 -216 964 -254 c 0
+ 964 -287 927 -289 915 -289 c 0
+ 844 -289 790 -233 790 -167 c 0
+ 790 -108 808 -52 835 -6 c 1
+ 809 -13 787 -15 764 -15 c 0
+ 673 -15 596 40 565 113 c 1
+ 522.199 25.4082 411.037 -14.6279 305.474 -14.9971 c 0
+ 305.317 -14.9971 305.159 -15 305 -15 c 2
+ 304.434 -15 l 1
+ 304 -15 l 2
+ 303.348 -15 302.697 -14.9941 302.046 -14.9941 c 0
+ 54.2031 -13.9414 15 119.663 15 287 c 0
+ 15 418 93.9999 550 227 550 c 0
+ 315 550 359 460 365 377 c 1
+ 365 339 l 1
+ 239 339 127 291 127 188 c 0
+ 128 122 221 106 320 106 c 0
+ 456 106 529 128 529 187 c 0
+ 529 225 499 248 468 248 c 0
+ 442 248 420 229 402 218 c 1
+ 460 472 636 550 779 550 c 0
+ 885 550 943 446 943 345 c 1
+ 928 306 l 1
+ 898 322 862 335 827 335 c 0
+ 743 335 672 276 672 207 c 0
+ 672 125 720 60 785 60 c 0
+ 849 60 903 87 948 118 c 1
+77.3398 164.229 m 1
+ 75.5 172.5 75 181 75 186 c 0
+ 75 318.474 206.795 376.803 312 389 c 1
+ 307 439 294 461 270 461 c 0
+ 234 461 249 408 175 408 c 0
+ 143.986 408 131 432.269 131 459 c 0
+ 131 463.25 131.625 467.875 132.583 472.648 c 1
+ 91.9999 431.1 62 355.1 62 287 c 0
+ 62 216 69 183 77.3398 164.229 c 1
 EndSplineSet
 Validated: 3073
 Substitution2: "Substitute lopped forms in Sinhala-dha-ish" sinh_jnya_naked
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ jnya_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" jnya_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" jnya_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
 StartChar: nja_sinh
 Encoding: 3494 3494 3039
-Width: 807
+Width: 738
 VWidth: 0
 Flags: HMW
-AnchorPoint: "sin-below" 778 204 basechar 0
-AnchorPoint: "sin-al" 490 494 basechar 0
-AnchorPoint: "sin-repaya" 616.5 653 basechar 0
+AnchorPoint: "sin-vowel" 459 485 basechar 0
+AnchorPoint: "sin-below" 709 204 basechar 0
+AnchorPoint: "sin-al" 431 494 basechar 0
+AnchorPoint: "sin-repaya" 547.5 653 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-579 482 m 1
- 576 468 576 457 576 445 c 0
- 576 413 601 391 626 391 c 0
- 665 391 680 419 680 445 c 0
- 680 473 662 498 626 498 c 0
- 607 498 591 491 579 482 c 1
-529 391 m 1
- 538 391 l 1
- 535 397 533 402 531 405 c 1
- 530 400 529 393 529 391 c 1
-726 217 m 0
- 726 294 659 339 592 339 c 2
- 475 339 l 1
- 475 377 l 1
- 478 431 500 478 530 509 c 1
- 556 633 642 708 752 745 c 1
- 807 650 l 1
- 711 650 645 618 604 548 c 1
- 615 550 620 550 626 550 c 0
- 697 550 732 495 732 445 c 0
- 732 411 717 380 693 361 c 1
- 741 330 778 274 778 204 c 0
- 778 55 615 -15 465 -15 c 0
- 167 -15 25 119 25 287 c 0
- 25 418 99 550 294 550 c 0
- 387 550 446 464 454 377 c 1
- 454 339 l 1
- 337 339 l 2
- 260 339 203 283 203 216 c 0
- 203 131 333 106 465 106 c 0
- 602 106 726 124 726 217 c 0
-174.982 113.796 m 1
- 159.695 139.897 151 169.965 151 204 c 0
- 151 322.798 239.006 391 337 391 c 2
- 398 391 l 1
- 388 436 366 460 336 460 c 0
- 312 460 315 413 255 413 c 4
- 222.877 413 209.661 434.677 209.661 460.999 c 0
- 209.661 470.337 211.137 479.525 213.887 488.246 c 1
- 116.133 461.598 77 383.104 77 287 c 0
- 77 222.256 110.237 159.992 174.982 113.796 c 1
+516 482 m 1
+ 513 468 513 457 513 445 c 0
+ 513 413 538 391 563 391 c 0
+ 602 391 611 419 611 445 c 0
+ 611 473 599 498 563 498 c 0
+ 544 498 528 491 516 482 c 1
+470 391 m 1
+ 479 391 l 1
+ 476 397 474 402 472 405 c 1
+ 471 400 470 393 470 391 c 1
+657 217 m 0
+ 657 294 590 339 523 339 c 2
+ 416 339 l 1
+ 416 377 l 1
+ 419 431 441 478 471 509 c 1
+ 497 633 573 708 683 745 c 1
+ 738 650 l 1
+ 642 650 576 618 535 548 c 1
+ 546 550 551 550 557 550 c 0
+ 628 550 663 495 663 445 c 0
+ 663 411 648 380 624 361 c 1
+ 672 330 709 274 709 204 c 0
+ 709 55 546 -15 396 -15 c 0
+ 98 -15 25 119 25 287 c 0
+ 25 418 74.5 550 225 550 c 0
+ 318 550 367 464 375 377 c 1
+ 375 339 l 1
+ 268 339 l 2
+ 191 339 134 283 134 216 c 0
+ 134 131 264 106 396 106 c 0
+ 533 106 657 124 657 217 c 0
+83 194 m 1
+ 82.0625 198.312 82 201.304 82 204 c 0
+ 82 322.798 170.006 391 268 391 c 2
+ 319 391 l 1
+ 309 436 297 460 267 460 c 0
+ 243 460 246 413 186 413 c 0
+ 153.877 413 140.661 434.677 140.661 460.999 c 0
+ 140.661 467.333 141.137 471.525 143.887 480.246 c 1
+ 98 443 73 363 73 287 c 0
+ 73 246.5 74.6667 221.333 83 194 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ nja_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" nja_sinh sin-repaya_high
+MultipleSubs2: "Append repaya in Sinhala-1" nja_sinh sinh_repaya_high
 Ligature2: "'akhn' conjunct consonants in Sinhala-level-2" nya_sinh al_sinh ZWJ ja_sinh
 LCarets2: 3 0 0 0 
 EndChar
@@ -73189,6 +73198,7 @@ Encoding: 3496 3496 3041
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 335 590 basechar 0
 AnchorPoint: "sin-below" 652 278 basechar 0
 AnchorPoint: "sin-al" 539 500 basechar 0
 AnchorPoint: "sin-repaya" 360 772 basechar 0
@@ -73223,7 +73233,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ ttha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" ttha_sinh sin-repaya_flag
+MultipleSubs2: "Append repaya in Sinhala-1" ttha_sinh sinh_repaya_flag
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73281,6 +73291,7 @@ Encoding: 3498 3498 3043
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 350 590 basechar 0
 AnchorPoint: "sin-below" 652 278 basechar 0
 AnchorPoint: "sin-al" 548 494 basechar 0
 AnchorPoint: "sin-repaya" 360 770 basechar 0
@@ -73324,7 +73335,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ ddha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" ddha_sinh sin-repaya_flag
+MultipleSubs2: "Append repaya in Sinhala-1" ddha_sinh sinh_repaya_flag
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73333,6 +73344,7 @@ Encoding: 3499 3499 3044
 Width: 1123
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 510 543 basechar 0
 AnchorPoint: "sin-below" 1098 170 basechar 0
 AnchorPoint: "sin-al" 990 494 basechar 0
 AnchorPoint: "sin-repaya" 945.5 381 basechar 0
@@ -73385,11 +73397,9 @@ SplineSet
  183 345 182 357 182 367 c 0
  182 467 255 570 408 570 c 0
  462 570 512 554 552 530 c 1
- 696 596 839 651 987 696 c 1
- 1000 701 l 1
+ 701.385 598.468 833 649 1000 701 c 1
  1037 598 l 1
- 1020 594 l 1
- 880 566 743 527 615 478 c 1
+ 884 568 749.37 529.438 615 478 c 1
 685 218 m 0
  685 153 716 110 753 110 c 0
  792 110 820 151 820 197 c 0
@@ -73403,7 +73413,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ nna_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" nna_sinh sin-repaya_nna
+MultipleSubs2: "Append repaya in Sinhala-1" nna_sinh sinh_repaya_nna
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73466,6 +73476,7 @@ Encoding: 3501 3501 3046
 Width: 812
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 330 500 basechar 0
 AnchorPoint: "sin-below" 787 239 basechar 0
 AnchorPoint: "sin-al" 546 494 basechar 0
 AnchorPoint: "sin-repaya" 499.5 547 basechar 0
@@ -73486,12 +73497,12 @@ SplineSet
  25 491 68 550 130 550 c 0
  195 550 227 498 252 449 c 1
  320 513 401 550 496 550 c 0
- 654 550 787 397 787 239 c 4
- 787 133 768 -15 653 -15 c 4
- 614 -15 579 10 555 29 c 5
- 590 69 l 5
- 605 57 634 37 650 37 c 4
- 702 37 725 107 725 178 c 4
+ 654 550 787 397 787 239 c 0
+ 787 133 768 -15 653 -15 c 0
+ 614 -15 579 10 555 29 c 1
+ 590 69 l 1
+ 605 57 634 37 650 37 c 0
+ 702 37 725 107 725 178 c 0
  725 326 580 446 441 446 c 0
  382 446 332 426 291 396 c 1
  307 399 321 400 334 400 c 0
@@ -73506,7 +73517,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ tha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" tha_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" tha_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73515,6 +73526,7 @@ Encoding: 3502 3502 3047
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 335 590 basechar 0
 AnchorPoint: "sin-below" 652 278 basechar 0
 AnchorPoint: "sin-al" 547 496 basechar 0
 AnchorPoint: "sin-repaya" 359 772 basechar 0
@@ -73543,7 +73555,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ thha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" thha_sinh sin-repaya_flag
+MultipleSubs2: "Append repaya in Sinhala-1" thha_sinh sinh_repaya_flag
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73552,6 +73564,7 @@ Encoding: 3503 3503 3048
 Width: 444
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 260 550 basechar 0
 AnchorPoint: "sin-al" 325 494 basechar 0
 AnchorPoint: "sin-repaya" 253.5 549 basechar 0
 LayerCount: 2
@@ -73574,7 +73587,7 @@ SplineSet
  25 313 139 404 265 404 c 0
  300 404 333 397 362 386 c 1
  352 434 328 460 295 460 c 0
- 269 460 249 422 197 422 c 4
+ 269 460 249 422 197 422 c 0
  162 422 145 439 145 465 c 0
  145 524 205 550 253 550 c 0
  357 550 417 449 417 346 c 1
@@ -73584,7 +73597,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "Substitute lopped forms in Sinhala-dha-ish" sinh_dha_naked
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ dha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" dha_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" dha_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73633,6 +73646,7 @@ Encoding: 3505 3505 3050
 Width: 812
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 360 500 basechar 0
 AnchorPoint: "sin-repaya" 532.5 547 basechar 0
 AnchorPoint: "sin-al" 579 494 basechar 0
 AnchorPoint: "sin-below" 787 239 basechar 0
@@ -73670,7 +73684,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ na_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" na_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" na_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73679,6 +73693,7 @@ Encoding: 3507 3507 3051
 Width: 510
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 330 550 basechar 0
 AnchorPoint: "sin-al" 391 494 basechar 0
 AnchorPoint: "sin-repaya" 319.5 549 basechar 0
 LayerCount: 2
@@ -73715,7 +73730,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "Substitute lopped forms in Sinhala-dha-ish" sinh_ndha_naked
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ ndha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" ndha_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" ndha_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73724,6 +73739,7 @@ Encoding: 3508 3508 3052
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 167 550 basechar 0
 AnchorPoint: "sin-below" 652 204 basechar 0
 AnchorPoint: "sin-al" 488 494 basechar 0
 AnchorPoint: "sin-repaya" 440.5 572 basechar 0
@@ -73738,7 +73754,7 @@ SplineSet
  171 388 191 391 211 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 186 460 189 408 129 408 c 4
+ 186 460 189 408 129 408 c 0
  89 408 77 434 77 460 c 0
  77 512 116 550 168 550 c 0
  250 550 328 476 328 354 c 2
@@ -73770,6 +73786,7 @@ Encoding: 3509 3509 3053
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 335 590 basechar 0
 AnchorPoint: "sin-below" 652 278 basechar 0
 AnchorPoint: "sin-al" 545 494 basechar 0
 AnchorPoint: "sin-repaya" 359 772 basechar 0
@@ -73778,12 +73795,12 @@ Fore
 SplineSet
 78 214 m 0
  78 128 207 106 339 106 c 0
- 477 106 600 170 600 278 c 4
- 600 344.333 578.577 402.729 549 454 c 5
+ 477 106 600 170 600 278 c 0
+ 600 344.333 578.577 402.729 549 454 c 1
  523 428 489 419 463 419 c 0
  391 419 324 475 324 557 c 0
  324 635 339 704 359 772 c 1
- 421 702 652 526 652 278 c 4
+ 421 702 652 526 652 278 c 0
  652 110 505 -15 339 -15 c 0
  185 -15 25 58 25 204 c 0
  25 319.462 108.646 391 211 391 c 2
@@ -73804,7 +73821,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ pha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" pha_sinh sin-repaya_flag
+MultipleSubs2: "Append repaya in Sinhala-1" pha_sinh sinh_repaya_flag
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -73861,6 +73878,7 @@ Encoding: 3511 3511 3055
 Width: 787
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 536 550 basechar 0
 AnchorPoint: "sin-below" 762 261 basechar 0
 AnchorPoint: "sin-al" 675 494 basechar 0
 AnchorPoint: "sin-repaya" 541.5 548 basechar 0
@@ -73899,7 +73917,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ bha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" bha_sinh sin-repaya_low
+MultipleSubs2: "Append repaya in Sinhala-1" bha_sinh sinh_repaya_low
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -74012,6 +74030,7 @@ Encoding: 3514 3514 3058
 Width: 719
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 500 545 basechar 0
 AnchorPoint: "sin-below" 694 204 basechar 0
 AnchorPoint: "sin-al" 531 494 basechar 0
 AnchorPoint: "sin-repaya" 464.5 574 basechar 0
@@ -74025,7 +74044,7 @@ SplineSet
  392 468 454 550 543 550 c 0
  616 550 641 467 641 404 c 0
  641 381 629 365 616 357 c 1
- 659.315 323.998 694 271.632 694 204 c 4
+ 659.315 323.998 694 271.632 694 204 c 0
  694 89 616 -15 505 -15 c 0
  434 -15 386 32 360 90 c 1
  331 28 282 -15 215 -15 c 0
@@ -74055,6 +74074,8 @@ Encoding: 3515 3515 3059
 Width: 604
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 250 563 basechar 0
+AnchorPoint: "sin-repaya" 306 592 basechar 0
 AnchorPoint: "sin-al" 96 494 basechar 0
 LayerCount: 2
 Fore
@@ -74069,7 +74090,7 @@ SplineSet
  571 119 435 -15 271 -15 c 0
  103 -15 7 120 7 251 c 0
  7 327 39 400 102 450 c 1
- 230.219 578.219 425.086 632.185 545 763 c 1
+ 230.219 578.219 425.086 632.185 545 763 c 5
  604 699 l 1
  522.387 608.319 408.879 566.29 306 518 c 1
 EndSplineSet
@@ -74084,6 +74105,7 @@ Encoding: 3517 3517 3060
 Width: 763
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 305 469 basechar 0
 AnchorPoint: "sin-below" 758 17 basechar 0
 AnchorPoint: "sin-al" 584 494 basechar 0
 AnchorPoint: "sin-repaya" 419.5 480 basechar 0
@@ -74115,7 +74137,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ la_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" la_sinh sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" la_sinh sinh_repaya_top
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -74164,6 +74186,7 @@ Encoding: 3521 3521 3062
 Width: 715
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 463 550 basechar 0
 AnchorPoint: "sin-below" 690 261 basechar 0
 AnchorPoint: "sin-al" 603 494 basechar 0
 AnchorPoint: "sin-repaya" 489.5 548 basechar 0
@@ -74199,7 +74222,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" sha_sinh sin-repaya_low
+MultipleSubs2: "Append repaya in Sinhala-1" sha_sinh sinh_repaya_low
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -74208,6 +74231,7 @@ Encoding: 3522 3522 3063
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 169 550 basechar 0
 AnchorPoint: "sin-below" 652 204 basechar 0
 AnchorPoint: "sin-al" 489 494 basechar 0
 AnchorPoint: "sin-repaya" 440.5 572 basechar 0
@@ -74243,11 +74267,11 @@ SplineSet
  77 122 206 106 339 106 c 0
  476 106 600 124 600 217 c 0
  600 283 551 322 501 335 c 1
-413 391 m 5
+413 391 m 1
  469 391 l 2
  523 391 547 398 547 404 c 0
  547 427 521 443 487 443 c 0
- 444 443 421 419 413 391 c 5
+ 444 443 421 419 413 391 c 1
 339 262 m 0
  238 262 224 241 224 223 c 0
  224 202 243 183 339 183 c 0
@@ -74265,6 +74289,7 @@ Encoding: 3523 3523 3064
 Width: 719
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 169 560 basechar 0
 AnchorPoint: "sin-below" 694 204 basechar 0
 AnchorPoint: "sin-al" 532 494 basechar 0
 AnchorPoint: "sin-repaya" 461.5 572 basechar 0
@@ -74276,7 +74301,7 @@ SplineSet
  25 384 41 391 51 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 184 460 178 418 129 418 c 4
+ 184 460 178 418 129 418 c 0
  93 418 77 431 77 460 c 0
  77 515 116 560 168 560 c 0
  262 560 320 463 328 377 c 1
@@ -74319,6 +74344,7 @@ Encoding: 3524 3524 3065
 Width: 787
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 536 550 basechar 0
 AnchorPoint: "sin-below" 762 261 basechar 0
 AnchorPoint: "sin-al" 677 494 basechar 0
 AnchorPoint: "sin-repaya" 544.5 548 basechar 0
@@ -74345,7 +74371,7 @@ SplineSet
  42 304 113 365 215 387 c 1
  210 437 198 461 173 461 c 0
  137 461 152 388 78 388 c 0
- 39 388 25 414 25 441 c 4
+ 39 388 25 414 25 441 c 0
  25 506 68 550 130 550 c 0
  218 550 262 460 268 377 c 1
  268 339 l 1
@@ -74353,7 +74379,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ ha_sinh
-MultipleSubs2: "Append repaya in Sinhala-1" ha_sinh sin-repaya_low
+MultipleSubs2: "Append repaya in Sinhala-1" ha_sinh sinh_repaya_low
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -74362,6 +74388,7 @@ Encoding: 3525 3525 3066
 Width: 763
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 265 475 basechar 0
 AnchorPoint: "sin-below" 758 17 basechar 0
 AnchorPoint: "sin-al" 599 494 basechar 0
 AnchorPoint: "sin-repaya" 528.5 545 basechar 0
@@ -74412,6 +74439,7 @@ Encoding: 3526 3526 3067
 Width: 677
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 135 529 basechar 0
 AnchorPoint: "sin-below" 652 278 basechar 0
 AnchorPoint: "sin-al" 541 494 basechar 0
 AnchorPoint: "sin-repaya" 438.5 602 basechar 0
@@ -74646,22 +74674,22 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
--25 -274 m 2
- -25 -294 -42 -300 -51 -300 c 2
- -583 -300 l 2
- -659 -300 -696 -241 -696 -187 c 0
- -696 -129 -655 -74 -583 -74 c 0
- -528 -74 -493 -107 -479 -144 c 0
- -477 -148 -476 -151 -476 -155 c 0
- -476 -171 -490 -181 -502 -181 c 0
- -517 -181 -525 -169 -527 -162 c 0
- -539 -132 -565 -126 -583 -126 c 0
- -627 -126 -644 -158 -644 -187 c 0
- -644 -219 -624 -248 -583 -248 c 2
- -77 -248 l 1
- -77 0 l 1
- -25 0 l 1
- -25 -274 l 2
+-25 -274 m 6
+ -25 -294 -42 -300 -51 -300 c 6
+ -583 -300 l 6
+ -659 -300 -696 -241 -696 -187 c 4
+ -696 -129 -655 -74 -583 -74 c 4
+ -528 -74 -493 -107 -479 -144 c 4
+ -477 -148 -476 -151 -476 -155 c 4
+ -476 -171 -490 -181 -502 -181 c 4
+ -517 -181 -525 -169 -527 -162 c 4
+ -539 -132 -565 -126 -583 -126 c 4
+ -627 -126 -644 -158 -644 -187 c 4
+ -644 -219 -624 -248 -583 -248 c 6
+ -77 -248 l 5
+ -77 0 l 5
+ -25 0 l 5
+ -25 -274 l 6
 EndSplineSet
 Validated: 3073
 MultipleSubs2: "Substitute below form 8 in Sinhala-1" sinh_u8
@@ -74742,9 +74770,9 @@ SplineSet
  180 81 199 85.4 219 91 c 1
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
 Ligature2: "'blws'  ru ruu replace rakar+-vowel in Sinhala-1" sinh_rakar u_mk_sinh
 MultipleSubs2: "Substitute below form 9 in Sinhala-1" sinh_ru.pstf
+LCarets2: 1 0 
 EndChar
 
 StartChar: e_mk_sinh
@@ -75267,6 +75295,7 @@ StartChar: sinh_jha_lopped
 Encoding: 61315 -1 3093
 Width: 1208
 Flags: HMW
+AnchorPoint: "sin-vowel" 1131 363 basechar 0
 AnchorPoint: "sin-below" 1183 363 basechar 0
 LayerCount: 2
 Fore
@@ -75319,13 +75348,14 @@ SplineSet
  398.5 400 456 374 503 317 c 1
  523 395 574 443 642 470 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1575937
 EndChar
 
 StartChar: sinh_ca_lopped
 Encoding: 61316 -1 3094
 Width: 719
 Flags: HMW
+AnchorPoint: "sin-vowel" 642 363 basechar 0
 AnchorPoint: "sin-below" 694 363 basechar 0
 LayerCount: 2
 Fore
@@ -75339,7 +75369,7 @@ SplineSet
  25 384 41 391 51 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 184 460 187 413 129 413 c 4
+ 184 460 187 413 129 413 c 0
  93 413 72 431 72 460 c 0
  72 517 119 550 168 550 c 0
  261 550 320 464 328 377 c 1
@@ -75358,6 +75388,7 @@ StartChar: sinh_ng2_lopped
 Encoding: 61317 -1 3095
 Width: 741
 Flags: HMW
+AnchorPoint: "sin-vowel" 664 363 basechar 0
 AnchorPoint: "sin-below" 716 363 basechar 0
 LayerCount: 2
 Fore
@@ -75399,6 +75430,7 @@ StartChar: sinh_dhha_lopped
 Encoding: 61318 -1 3096
 Width: 741
 Flags: HMW
+AnchorPoint: "sin-vowel" 664 363 basechar 0
 AnchorPoint: "sin-below" 716 363 basechar 0
 LayerCount: 2
 Fore
@@ -75428,6 +75460,7 @@ StartChar: sinh_dda_lopped
 Encoding: 61319 -1 3097
 Width: 741
 Flags: HMW
+AnchorPoint: "sin-vowel" 664 363 basechar 0
 AnchorPoint: "sin-below" 716 363 basechar 0
 LayerCount: 2
 Fore
@@ -75466,6 +75499,7 @@ StartChar: sinh_kha_lopped
 Encoding: 61320 -1 3098
 Width: 715
 Flags: HMW
+AnchorPoint: "sin-vowel" 638 363 basechar 0
 AnchorPoint: "sin-below" 690 363 basechar 0
 LayerCount: 2
 Fore
@@ -75506,6 +75540,7 @@ StartChar: sinh_tta_lopped
 Encoding: 61321 -1 3099
 Width: 719
 Flags: HMW
+AnchorPoint: "sin-vowel" 642 363 basechar 0
 AnchorPoint: "sin-below" 694 363 basechar 0
 LayerCount: 2
 Fore
@@ -75781,6 +75816,7 @@ Encoding: 61360 -1 3109
 Width: 1141
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 630 550 basechar 0
 AnchorPoint: "sin-below" 1117 204 basechar 0
 AnchorPoint: "sin-al" 932 494 basechar 0
 AnchorPoint: "sin-repaya" 952 572 basechar 0
@@ -75803,7 +75839,7 @@ SplineSet
  46 378 24 399 24 426 c 0
  24 498 72 550 136 550 c 0
  188 550 220 505.5 251 449 c 1
- 317 504 411 550 513 550 c 6
+ 317 504 411 550 513 550 c 2
  633 550 l 2
  726 550 782 453 782 376 c 2
  782 339 l 1
@@ -75830,7 +75866,7 @@ SplineSet
  650 460 654 398 594 398 c 0
  555 398 541 424 541 450 c 0
  541 469 546 486 552 498 c 1
- 513 498 l 6
+ 513 498 l 2
  413 498 320 444 263 390 c 1
  288 398 302 400 328 400 c 0
  423 400 473 357 518 289 c 1
@@ -75869,6 +75905,7 @@ Encoding: 61426 -1 3110
 Width: 1156
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 835 590 basechar 0
 AnchorPoint: "sin-below" 1125 278 basechar 0
 AnchorPoint: "sin-repaya" 862 772 basechar 0
 AnchorPoint: "sin-al" 1037 494 basechar 0
@@ -75887,7 +75924,7 @@ SplineSet
  965 488 986 501 998 524 c 1
 293 427 m 1
  281 451 257 470 231 470 c 0
- 185 470 186 360 105 360 c 4
+ 185 470 186 360 105 360 c 0
  66 360 52 399 52 426 c 0
  52 498 111 550 178 550 c 0
  251 550 301 510 335 459 c 1
@@ -75918,7 +75955,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_na_thha.akhn
-MultipleSubs2: "Append repaya in Sinhala-1" sinh_na_thha.akhn sin-repaya_flag
+MultipleSubs2: "Append repaya in Sinhala-1" sinh_na_thha.akhn sinh_repaya_flag
 Ligature2: "'akhn' conjunct consonants in Sinhala-level-2" na_sinh al_sinh ZWJ thha_sinh
 LCarets2: 3 0 0 0 
 EndChar
@@ -111961,6 +111998,7 @@ Encoding: 61425 -1 4513
 Width: 783
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 471 590 basechar 0
 AnchorPoint: "sin-below" 758 278 basechar 0
 AnchorPoint: "sin-repaya" 495 772 basechar 0
 AnchorPoint: "sin-al" 673 494 basechar 0
@@ -112000,7 +112038,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_tta_ttha.akhn
-MultipleSubs2: "Append repaya in Sinhala-1" sinh_tta_ttha.akhn sin-repaya_flag
+MultipleSubs2: "Append repaya in Sinhala-1" sinh_tta_ttha.akhn sinh_repaya_flag
 Ligature2: "'akhn' conjunct consonants in Sinhala-level-2" tta_sinh al_sinh ZWJ ttha_sinh
 LCarets2: 3 0 0 0 
 EndChar
@@ -112010,6 +112048,9 @@ Encoding: 61376 -1 4514
 Width: 444
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-repaya" 240.5 550 basechar 0
+AnchorPoint: "sin-al" 319 494 basechar 0
+AnchorPoint: "sin-vowel" 246 550 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -112023,7 +112064,7 @@ SplineSet
  15 313 129 404 255 404 c 0
  290 404 323 397 352 386 c 1
  342 434 318 460 285 460 c 0
- 259 460 239 422 187 422 c 4
+ 259 460 239 422 187 422 c 0
  152 422 135 439 135 465 c 0
  135 524 195 550 243 550 c 0
  347 550 407 449 407 346 c 1
@@ -112038,6 +112079,9 @@ Encoding: 61377 -1 4515
 Width: 510
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-al" 396 494 basechar 0
+AnchorPoint: "sin-repaya" 317.5 550 basechar 0
+AnchorPoint: "sin-vowel" 330 550 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -112059,7 +112103,7 @@ SplineSet
  91 313 205 404 331 404 c 0
  366 404 399 397 428 386 c 1
  418 434 394 460 361 460 c 0
- 335 460 315 422 263 422 c 4
+ 335 460 315 422 263 422 c 0
  228 422 211 439 211 465 c 0
  211 471.251 211.673 477.131 212.935 482.649 c 1
 EndSplineSet
@@ -112071,6 +112115,7 @@ Encoding: 61378 -1 4516
 Width: 1039
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 845 550 basechar 0
 AnchorPoint: "sin-repaya" 849.5 551 basechar 0
 AnchorPoint: "sin-al" 925 494 basechar 0
 LayerCount: 2
@@ -112080,7 +112125,7 @@ SplineSet
  666 351 763 404 860 404 c 0
  895 404 929 397 958 386 c 1
  948 433 923 460 890 460 c 0
- 864 460 844 422 793 422 c 4
+ 864 460 844 422 793 422 c 0
  758 422 740 438 740 465 c 0
  740 472 741 478 741 480 c 1
  659 451 595 393 559 317 c 1
@@ -112128,7 +112173,8 @@ Encoding: 61379 -1 4517
 Width: 1002
 VWidth: 0
 Flags: HMW
-AnchorPoint: "sin-repaya" 812.5 550 basechar 0
+AnchorPoint: "sin-vowel" 806 550 basechar 0
+AnchorPoint: "sin-repaya" 811.5 550 basechar 0
 AnchorPoint: "sin-al" 890 494 basechar 0
 LayerCount: 2
 Fore
@@ -112159,7 +112205,7 @@ SplineSet
  705 125 753 60 818 60 c 0
  882 60 938 87 983 119 c 1
  999 70 l 1
- 934.278 7.03365 883.523 -15 797 -15 c 4
+ 934.278 7.03365 883.523 -15 797 -15 c 0
  721 -15 656 24 619 78 c 1
  600 24 562 -15 506 -15 c 0
  444 -15 433 14 398 58 c 1
@@ -112191,6 +112237,7 @@ Encoding: 61382 -1 4518
 Width: 1047
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 840 550 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -112234,7 +112281,7 @@ SplineSet
  732 384 789 404 848 404 c 0
  883 404 916 397 945 386 c 1
  935 434 911 460 878 460 c 0
- 852 460 832 422 780 422 c 4
+ 852 460 832 422 780 422 c 0
  745 422 728 439 728 465 c 0
  728 524 788 550 836 550 c 0
  940 550 1000 449 1000 346 c 1
@@ -112249,6 +112296,7 @@ Encoding: 61383 -1 4519
 Width: 1047
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 843 550 basechar 0
 AnchorPoint: "sin-al" 909 494 basechar 0
 AnchorPoint: "sin-repaya" 838 535 basechar 0
 LayerCount: 2
@@ -112301,7 +112349,7 @@ SplineSet
  732 384 789 404 848 404 c 0
  883 404 916 397 945 386 c 1
  935 434 911 460 878 460 c 0
- 852 460 832 422 780 422 c 4
+ 852 460 832 422 780 422 c 0
  745 422 728 439 728 465 c 0
  728 524 788 550 836 550 c 0
  940 550 1000 449 1000 346 c 1
@@ -112311,7 +112359,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "Substitute lopped forms in Sinhala-dha-ish-conj" sinh_ba_dha.akhn_naked
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_ba_dha.akhn
-MultipleSubs2: "Append repaya in Sinhala-1" sinh_ba_dha.akhn sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" sinh_ba_dha.akhn sinh_repaya_top
 Ligature2: "'akhn' conjunct consonants in Sinhala-touching" ba_sinh ZWJ al_sinh dha_sinh
 LCarets2: 3 0 0 0 
 EndChar
@@ -112547,6 +112595,7 @@ StartChar: sinh_mba_lopped
 Encoding: 61312 -1 4527
 Width: 741
 Flags: HMW
+AnchorPoint: "sin-vowel" 664 363 basechar 0
 AnchorPoint: "sin-below" 716 363 basechar 0
 LayerCount: 2
 Fore
@@ -112559,9 +112608,9 @@ SplineSet
  257 185 311 217 360 217 c 0
  414 217 463 179 466 116 c 1
  484 109 503 106 521 106 c 0
- 622 106 664 232 664 363 c 0
- 664 381 678 390 691 390 c 0
- 704 390 716 382 716 363 c 0
+ 622 106 664 232 664 363 c 4
+ 664 381 678 390 691 390 c 4
+ 704 390 716 382 716 363 c 4
  716 186 671 -15 505 -15 c 0
  454 -15 420 10 391 39 c 1
  414 90 l 1
@@ -112595,6 +112644,7 @@ StartChar: sinh_va_lopped
 Encoding: 61313 -1 4528
 Width: 719
 Flags: HMW
+AnchorPoint: "sin-vowel" 642 363 basechar 0
 AnchorPoint: "sin-below" 694 363 basechar 0
 LayerCount: 2
 Fore
@@ -112611,7 +112661,7 @@ SplineSet
  160 386 186 391 211 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 186 460 189 413 129 413 c 4
+ 186 460 189 413 129 413 c 0
  89 413 77 434 77 460 c 0
  77 515 116 550 168 550 c 0
  261 550 328 461 328 376 c 2
@@ -112625,6 +112675,7 @@ StartChar: sinh_ndda_lopped
 Encoding: 61314 -1 4529
 Width: 831
 Flags: HMW
+AnchorPoint: "sin-vowel" 754 363 basechar 0
 AnchorPoint: "sin-below" 806 363 basechar 0
 LayerCount: 2
 Fore
@@ -112635,7 +112686,7 @@ SplineSet
  116.688 388.096 125.062 401 142 401 c 2
  372 401 l 1
  362 442 341 460 310 460 c 0
- 283 460 287 429 229 429 c 4
+ 283 460 287 429 229 429 c 0
  205.399 429 186.186 445.738 186.186 468.311 c 0
  186.186 471.688 186.368 475.23 186.766 478.869 c 1
  121.236 445.926 77 373.615 77 287 c 0
@@ -112668,6 +112719,7 @@ StartChar: sinh_ma_lopped
 Encoding: 61322 -1 4530
 Width: 719
 Flags: HMW
+AnchorPoint: "sin-vowel" 642 363 basechar 0
 AnchorPoint: "sin-below" 694 363 basechar 0
 LayerCount: 2
 Fore
@@ -112703,6 +112755,7 @@ StartChar: sinh_ba_lopped
 Encoding: 61323 -1 4531
 Width: 715
 Flags: HMW
+AnchorPoint: "sin-vowel" 638 363 basechar 0
 AnchorPoint: "sin-below" 690 363 basechar 0
 LayerCount: 2
 Fore
@@ -112888,30 +112941,27 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
--639 567 m 4
- -639 565 -638 564 -635 564 c 4
- -631 564 -618 585 -610 601 c 5
- -624 591 -630 584 -637 574 c 4
- -638 573 -639 569 -639 567 c 4
--411 741 m 5
- -189 741 -25 572 -25 363 c 4
- -25 345 -38 336 -51 336 c 4
- -64 336 -77 345 -77 363 c 4
- -77 546 -221 689 -394 689 c 4
- -432 689 -467 682 -497 671 c 5
- -532 627 -561 576 -596 531 c 4
- -606 518 -623 512 -636 512 c 4
- -668 512 -691 538 -691 567 c 4
- -691 639 -574 697 -528 716 c 5
- -488 764 -419 800 -352 800 c 4
- -208 800 -110 765 -40 664 c 5
- -39 662 -38 656 -38 652 c 4
- -38 642 -47 626 -63 626 c 4
- -76 626 -83 633 -85 637 c 4
- -141 719 -242 748 -352 748 c 4
- -368 748 -401 744 -411 741 c 5
+-629 587 m 0
+ -629 585 -628 584 -625 584 c 0
+ -617 584 -598 615 -590 631 c 1
+ -603.129 621.622 -629 601.142 -629 587 c 0
+-411 741 m 1
+ -189 741 -25 572 -25 363 c 0
+ -25 345 -38 336 -51 336 c 0
+ -64 336 -77 345 -77 363 c 0
+ -77 546 -221 689 -394 689 c 0
+ -432 689 -467 682 -497 671 c 1
+ -523.667 622.828 -570.667 532 -626 532 c 0
+ -658 532 -681 558 -681 587 c 4
+ -681 659 -574 697 -528 716 c 1
+ -488 764 -419 800 -352 800 c 0
+ -208 800 -110 765 -40 664 c 1
+ -39 662 -38 656 -38 652 c 0
+ -38 642 -47 626 -63 626 c 0
+ -76 626 -83 633 -85 637 c 0
+ -141 719 -242 748 -352 748 c 0
+ -368 748 -401 744 -411 741 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: sinh_ka_va.akhn
@@ -112991,6 +113041,7 @@ Encoding: 61393 -1 4539
 Width: 1185
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 1108 363 basechar 0
 AnchorPoint: "sin-below" 1160 363 basechar 0
 LayerCount: 2
 Fore
@@ -113005,9 +113056,9 @@ SplineSet
  545.992 227.081 546.734 217.891 546.734 208.424 c 0
  546.734 203.378 546.523 198.253 546.091 193.053 c 1
  566.434 119.229 684.063 106 805 106 c 0
- 969 106 1108 216 1108 363 c 0
- 1108 381.959 1118.6 389.507 1130.22 389.507 c 0
- 1144.35 389.507 1160 378.36 1160 363 c 0
+ 969 106 1108 216 1108 363 c 4
+ 1108 381.959 1118.6 389.507 1130.22 389.507 c 4
+ 1144.35 389.507 1160 378.36 1160 363 c 4
  1160 158 1004 -15 805 -15 c 0
  698.995 -15 589.064 20.333 531.604 90.0273 c 1
  513.729 31.6982 478.143 -15 419 -15 c 0
@@ -113114,6 +113165,7 @@ Encoding: 61430 -1 4541
 Width: 1339
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 787 560 basechar 0
 AnchorPoint: "sin-below" 1314 204 basechar 0
 AnchorPoint: "sin-repaya" 1082 572 basechar 0
 AnchorPoint: "sin-al" 1152 494 basechar 0
@@ -113130,8 +113182,8 @@ SplineSet
  25 384 41 391 51 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 184 460 174 418 129 418 c 4
- 93 418 77 431 77 460 c 0
+ 184 460 174 418 129 418 c 0
+ 98 418 77 431 77 460 c 0
  77 515 116 560 168 560 c 0
  262 560 320 463 328 377 c 1
  328 339 l 1
@@ -113156,8 +113208,8 @@ SplineSet
  645 384 661 391 671 391 c 2
  892 391 l 1
  882 436 860 460 830 460 c 0
- 804 460 790 418 749 418 c 4
- 713 418 697 431 697 460 c 0
+ 804 460 790 418 749 418 c 0
+ 720 418 697 431 697 460 c 0
  697 515 736 560 788 560 c 0
  882 560 940 463 948 377 c 1
  948 339 l 1
@@ -113193,10 +113245,10 @@ SplineSet
  487 443 454 419 446 391 c 1
 EndSplineSet
 Validated: 3073
-LCarets2: 3 0 0 0 
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_sa_sa.akhn
 MultipleSubs2: "Append repaya in Sinhala-1" sinh_sa_sa.akhn sinh_repaya
 Ligature2: "'akhn' conjunct consonants in Sinhala-touching" sa_sinh ZWJ al_sinh sa_sinh
+LCarets2: 3 0 0 0 
 EndChar
 
 StartChar: sinh_ru.pstf
@@ -113246,6 +113298,7 @@ Encoding: 61431 -1 4544
 Width: 1409
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 960 500 basechar 0
 AnchorPoint: "sin-below" 1384 239 basechar 0
 AnchorPoint: "sin-al" 1176 494 basechar 0
 AnchorPoint: "sin-repaya" 1130 545 basechar 0
@@ -113313,10 +113366,10 @@ SplineSet
  283 348 237 330 201 300 c 1
 EndSplineSet
 Validated: 3073
-LCarets2: 3 0 0 0 
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_tha_tha.akhn
-MultipleSubs2: "Append repaya in Sinhala-1" sinh_tha_tha.akhn sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" sinh_tha_tha.akhn sinh_repaya_top
 Ligature2: "'akhn' conjunct consonants in Sinhala-touching" tha_sinh ZWJ al_sinh tha_sinh
+LCarets2: 3 0 0 0 
 EndChar
 
 StartChar: sinh_na_na.akhn
@@ -113324,71 +113377,72 @@ Encoding: 61432 -1 4545
 Width: 1524
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 1070 500 basechar 0
 AnchorPoint: "sin-al" 1286 494 basechar 0
 AnchorPoint: "sin-repaya" 1239.5 547 basechar 0
 AnchorPoint: "sin-below" 1499 239 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-961 409 m 5
- 949 433 938.5 466 922 466 c 4
- 886.5 466 901 378 820 378 c 4
- 786.5 378 770 399 770 426 c 4
- 770 498 818.5 550 878 550 c 4
- 938.5 550 971 500 997 449 c 5
- 1059 509.5 1147.5 550 1234 550 c 4
- 1432 550 1499 354 1499 239 c 4
- 1499 137.5 1483 -15 1362 -15 c 4
- 1331 -15 1293 8 1267 29 c 5
- 1302 69 l 5
- 1326.33 51 1344 37 1363 37 c 4
- 1414 37 1437 109 1437 179 c 4
- 1437 323.5 1329 446 1181 446 c 4
- 1122.5 446 1080.5 426 1037 397 c 5
+961 409 m 1
+ 949 433 938.5 466 922 466 c 0
+ 886.5 466 901 378 820 378 c 0
+ 786.5 378 770 399 770 426 c 0
+ 770 498 818.5 550 878 550 c 0
+ 938.5 550 971 500 997 449 c 1
+ 1059 509.5 1147.5 550 1234 550 c 0
+ 1432 550 1499 354 1499 239 c 0
+ 1499 137.5 1483 -15 1362 -15 c 0
+ 1331 -15 1293 8 1267 29 c 1
+ 1302 69 l 1
+ 1326.33 51 1344 37 1363 37 c 0
+ 1414 37 1437 109 1437 179 c 0
+ 1437 323.5 1329 446 1181 446 c 0
+ 1122.5 446 1080.5 426 1037 397 c 1
  1050.82 399.227 1064.07 400.281 1076.73 400.281 c 0
- 1203.4 400.281 1272 294.909 1272 204 c 4
- 1272 62 1124 -15 982 -15 c 4
- 896.818 -15 819.723 18.5926 760.528 73.0209 c 5
- 741.337 22.6672 707.136 -15 647 -15 c 5
- 616 -15 578 8 552 29 c 5
- 587 69 l 5
- 611.333 51 629 37 648 37 c 4
- 699 37 722 109 722 179 c 4
- 722 323.5 614 446 466 446 c 4
- 407.5 446 365.5 426 322 397 c 5
+ 1203.4 400.281 1272 294.909 1272 204 c 0
+ 1272 62 1124 -15 982 -15 c 0
+ 896.818 -15 819.723 18.5926 760.528 73.0209 c 1
+ 741.337 22.6672 707.136 -15 647 -15 c 1
+ 616 -15 578 8 552 29 c 1
+ 587 69 l 1
+ 611.333 51 629 37 648 37 c 0
+ 699 37 722 109 722 179 c 0
+ 722 323.5 614 446 466 446 c 0
+ 407.5 446 365.5 426 322 397 c 1
  335.818 399.227 349.066 400.281 361.733 400.281 c 0
- 488.405 400.281 557 294.909 557 204 c 4
- 557 62 409 -15 267 -15 c 4
- 159 -15 64 39 2 121 c 5
- 24 159 l 5
- 48 153 73 150 100 150 c 5
- 145 261 170 323.5 246 409 c 5
- 234 433 223.5 466 207 466 c 4
- 171.5 466 186 378 105 378 c 4
- 71.5 378 55 399 55 426 c 4
- 55 498 103.5 550 163 550 c 4
- 223.5 550 256 500 282 449 c 5
- 344 509.5 432.5 550 519 550 c 4
- 717 550 784 354 784 239 c 4
- 784 212.262 782.89 181.986 779.042 151.89 c 5
- 790.672 150.63 802.626 150 815 150 c 5
- 860 261 885 323.5 961 409 c 5
-947 300 m 5
- 911 247.5 895 210 870 146 c 5
- 918 111 974 95 1029 95 c 4
- 1132 95 1220 133 1220 204 c 4
- 1220 285 1157 348 1080 348 c 4
- 1038 348 980 331.5 947 300 c 5
-232 300 m 5
- 196 247.5 180 210 155 146 c 5
- 203 111 259 95 314 95 c 4
- 417 95 505 133 505 204 c 4
- 505 285 442 348 365 348 c 4
- 323 348 265 331.5 232 300 c 5
+ 488.405 400.281 557 294.909 557 204 c 0
+ 557 62 409 -15 267 -15 c 0
+ 159 -15 64 39 2 121 c 1
+ 24 159 l 1
+ 48 153 73 150 100 150 c 1
+ 145 261 170 323.5 246 409 c 1
+ 234 433 223.5 466 207 466 c 0
+ 171.5 466 186 378 105 378 c 0
+ 71.5 378 55 399 55 426 c 0
+ 55 498 103.5 550 163 550 c 0
+ 223.5 550 256 500 282 449 c 1
+ 344 509.5 432.5 550 519 550 c 0
+ 717 550 784 354 784 239 c 0
+ 784 212.262 782.89 181.986 779.042 151.89 c 1
+ 790.672 150.63 802.626 150 815 150 c 1
+ 860 261 885 323.5 961 409 c 1
+947 300 m 1
+ 911 247.5 895 210 870 146 c 1
+ 918 111 974 95 1029 95 c 0
+ 1132 95 1220 133 1220 204 c 0
+ 1220 285 1157 348 1080 348 c 0
+ 1038 348 980 331.5 947 300 c 1
+232 300 m 1
+ 196 247.5 180 210 155 146 c 1
+ 203 111 259 95 314 95 c 0
+ 417 95 505 133 505 204 c 0
+ 505 285 442 348 365 348 c 0
+ 323 348 265 331.5 232 300 c 1
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_na_na.akhn
-MultipleSubs2: "Append repaya in Sinhala-1" sinh_na_na.akhn sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" sinh_na_na.akhn sinh_repaya_top
 Ligature2: "'akhn' conjunct consonants in Sinhala-touching" na_sinh ZWJ al_sinh na_sinh
 LCarets2: 3 0 0 0 
 EndChar
@@ -113424,11 +113478,10 @@ SplineSet
  -308 672 -325 695 -358 695 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
 Ligature2: "'rphf' repaya in Sinhala-1" ra_sinh al_sinh ZWJ
 EndChar
 
-StartChar: sin-repaya_top
+StartChar: sinh_repaya_top
 Encoding: 61242 -1 4547
 Width: 0
 Flags: HMW
@@ -113461,11 +113514,11 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: sin-repaya_low
+StartChar: sinh_repaya_low
 Encoding: 61243 -1 4548
 Width: 0
 Flags: HMW
-AnchorPoint: "sin-repaya" -254 551 mark 0
+AnchorPoint: "sin-repaya" -208 551 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -113473,13 +113526,13 @@ SplineSet
  -482 501 -552 550 -552 629 c 0
  -552 707 -478 786 -349 786 c 0
  -243 786 -151 724 -151 629 c 0
- -151 601 -162 549 -220 512 c 0
- -224 509 -228 509 -233 509 c 0
- -249 509 -260 521 -260 534 c 0
- -260 548 -251 554 -248 556 c 1
- -205 583 -203 613 -203 629 c 0
- -203 691 -268 734 -349 734 c 0
- -448 734 -500 679 -500 629 c 0
+ -151 601 -155.024 553.904 -163 522 c 0
+ -166.333 508.667 -180 504 -185 504 c 0
+ -201 504 -212 510 -212 523 c 0
+ -212 530 -209.294 539.13 -208 551 c 0
+ -205.875 570.5 -203 603 -203 629 c 0
+ -203 691 -268 735 -349 735 c 0
+ -448 735 -500 679 -500 629 c 0
  -500 592 -472 565 -433 556 c 1
  -448 576 -453 598 -453 618 c 0
  -453 671 -415 720 -351 720 c 0
@@ -113491,10 +113544,9 @@ SplineSet
  -318 568 -301 592 -301 618 c 0
  -301 645 -318 668 -351 668 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
-StartChar: sin-repaya_high
+StartChar: sinh_repaya_high
 Encoding: 61244 -1 4549
 Width: 0
 Flags: HMW
@@ -113728,7 +113780,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: sin-repaya_right
+StartChar: sinh_repaya_right
 Encoding: 61245 -1 4558
 Width: 0
 Flags: HMW
@@ -113758,7 +113810,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: sin-repaya_flag
+StartChar: sinh_repaya_flag
 Encoding: 61246 -1 4559
 Width: 0
 Flags: HMW
@@ -113789,7 +113841,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: sin-repaya_nna
+StartChar: sinh_repaya_nna
 Encoding: 61247 -1 4560
 Width: 0
 Flags: HMW
@@ -114616,6 +114668,7 @@ Encoding: 61424 -1 4586
 Width: 1136
 VWidth: 0
 Flags: HMW
+AnchorPoint: "sin-vowel" 820 590 basechar 0
 AnchorPoint: "sin-below" 1111 278 basechar 0
 AnchorPoint: "sin-repaya" 848 772 basechar 0
 AnchorPoint: "sin-al" 1023 494 basechar 0
@@ -114670,7 +114723,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_tha_thha.akhn
-MultipleSubs2: "Append repaya in Sinhala-1" sinh_tha_thha.akhn sin-repaya_flag
+MultipleSubs2: "Append repaya in Sinhala-1" sinh_tha_thha.akhn sinh_repaya_flag
 Ligature2: "'akhn' conjunct consonants in Sinhala-level-2" tha_sinh al_sinh ZWJ thha_sinh
 LCarets2: 3 0 0 0 
 EndChar
@@ -114820,6 +114873,7 @@ Encoding: 61409 -1 4591
 Width: 1073
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 997 363 basechar 0
 AnchorPoint: "sin-below" 1048 363 basechar 0
 LayerCount: 2
 Fore
@@ -114940,6 +114994,7 @@ Encoding: 61413 -1 4593
 Width: 1333
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 1256 363 basechar 0
 AnchorPoint: "sin-below" 1308 363 basechar 0
 LayerCount: 2
 Fore
@@ -115079,6 +115134,7 @@ Encoding: 61399 -1 4595
 Width: 1186
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 1109 363 basechar 0
 AnchorPoint: "sin-below" 1161 363 basechar 0
 LayerCount: 2
 Fore
@@ -115113,9 +115169,9 @@ SplineSet
  678 339 l 2
  600 339 544 283 544 217 c 0
  544 119 676 106 806 106 c 0
- 970 106 1109 216 1109 363 c 4
+ 970 106 1109 216 1109 363 c 0
  1109 381.473 1122.69 391.52 1136.02 391.52 c 0
- 1148.67 391.52 1161 382.475 1161 363 c 4
+ 1148.67 391.52 1161 382.475 1161 363 c 0
  1161 158 1005 -15 806 -15 c 0
  693 -15 585 22 531 101 c 1
  507.5 29.5 457 -15 372 -15 c 0
@@ -115196,6 +115252,7 @@ Encoding: 61401 -1 4597
 Width: 1199
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 1122 363 basechar 0
 AnchorPoint: "sin-below" 1174 363 basechar 0
 LayerCount: 2
 Fore
@@ -115227,9 +115284,9 @@ SplineSet
  691 339 l 2
  613.293 339 557 282.847 557 217 c 0
  557 122 686 106 819 106 c 0
- 983 106 1122 216 1122 363 c 0
- 1122 379.25 1135 387.375 1148 387.375 c 0
- 1161 387.375 1174 379.25 1174 363 c 0
+ 983 106 1122 216 1122 363 c 4
+ 1122 379.25 1135 387.375 1148 387.375 c 4
+ 1161 387.375 1174 379.25 1174 363 c 4
  1174 158 1018 -15 819 -15 c 0
  703 -15 584 27 532 110 c 1
  484 29 373 -15 267 -15 c 0
@@ -115291,6 +115348,7 @@ Encoding: 61403 -1 4599
 Width: 789
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 712 363 basechar 0
 AnchorPoint: "sin-below" 764 363 basechar 0
 LayerCount: 2
 Fore
@@ -115300,7 +115358,7 @@ SplineSet
  95 303.415 173.109 391 281 391 c 2
  342 391 l 1
  332 436 310 460 280 460 c 0
- 256 460 259 408 199 408 c 4
+ 256 460 259 408 199 408 c 0
  154.238 408 147.001 445.633 147 460 c 1
  103.5 413.4 77 373.5 77 242 c 0
  77 198.677 87.6345 161.994 109.622 132.168 c 1
@@ -115312,9 +115370,9 @@ SplineSet
  281 339 l 2
  203.293 339 147 282.847 147 217 c 0
  147 122 276 106 409 106 c 0
- 573 106 712 216 712 363 c 0
- 712 378.751 726.196 387.91 739.753 387.91 c 0
- 752.143 387.91 764 380.26 764 363 c 0
+ 573 106 712 216 712 363 c 4
+ 712 378.751 726.196 387.91 739.753 387.91 c 4
+ 752.143 387.91 764 380.26 764 363 c 4
  764 158 608 -15 409 -15 c 0
 EndSplineSet
 Validated: 3073
@@ -115549,49 +115607,50 @@ Encoding: 61395 -1 4604
 Width: 1220
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 1143 363 basechar 0
 AnchorPoint: "sin-below" 1195 363 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-615 451 m 5
- 602 456 574 459 555 459 c 4
- 487 459 389.5 447 321 397 c 5
+615 451 m 1
+ 602 456 574 459 555 459 c 0
+ 487 459 389.5 447 321 397 c 1
  335.81 398.811 349.532 399.651 362.27 399.651 c 0
- 448.012 399.651 489.139 361.568 517 325 c 5
- 535 377 570 422 615 451 c 5
-232 299 m 5
- 198 251 181 214 155 146 c 5
- 203 111 260 95 315 95 c 4
- 419.562 95 505 133.03 505 206 c 4
- 505 277.333 448.888 348 366 348 c 4
- 332 348 270 336 232 299 c 5
-246 410 m 5
- 234 434 224 466 206 466 c 4
- 171 466 187 378 106 378 c 4
- 71.5 378 55 399 55 426 c 4
- 55 498 101 550 168 550 c 4
- 224 550 253 506 282 450 c 5
- 357 500 455 529 558 529 c 4
- 659 529 758 493 758 459 c 4
- 758 440 742 433 732 433 c 4
- 633 433 556 346 556 244 c 4
- 556 167 612 106 678 106 c 4
- 753 106 813 155 813 217 c 4
- 813 238 832 243 839 243 c 4
- 854 243 865 230 865 217 c 4
- 865 152 928 106 1000 106 c 4
- 1101 106 1143 232 1143 363 c 4
- 1143 384.25 1156 394.875 1169 394.875 c 4
- 1182 394.875 1195 384.25 1195 363 c 4
- 1195 186 1150 -15 984 -15 c 4
- 913 -15 865 32 839 90 c 5
- 810 28 761 -15 694 -15 c 4
- 615 -15 561 37 531 107 c 5
- 482 27 373 -15 268 -15 c 4
- 160 -15 65 39 3 121 c 5
- 25 159 l 5
- 49 153 73 150 100 150 c 5
- 145 261 164 314.5 246 410 c 5
+ 448.012 399.651 489.139 361.568 517 325 c 1
+ 535 377 570 422 615 451 c 1
+232 299 m 1
+ 198 251 181 214 155 146 c 1
+ 203 111 260 95 315 95 c 0
+ 419.562 95 505 133.03 505 206 c 0
+ 505 277.333 448.888 348 366 348 c 0
+ 332 348 270 336 232 299 c 1
+246 410 m 1
+ 234 434 224 466 206 466 c 0
+ 171 466 187 378 106 378 c 0
+ 71.5 378 55 399 55 426 c 0
+ 55 498 101 550 168 550 c 0
+ 224 550 253 506 282 450 c 1
+ 357 500 455 529 558 529 c 0
+ 659 529 758 493 758 459 c 0
+ 758 440 742 433 732 433 c 0
+ 633 433 556 346 556 244 c 0
+ 556 167 612 106 678 106 c 0
+ 753 106 813 155 813 217 c 0
+ 813 238 832 243 839 243 c 0
+ 854 243 865 230 865 217 c 0
+ 865 152 928 106 1000 106 c 0
+ 1101 106 1143 232 1143 363 c 0
+ 1143 384.25 1156 394.875 1169 394.875 c 0
+ 1182 394.875 1195 384.25 1195 363 c 0
+ 1195 186 1150 -15 984 -15 c 0
+ 913 -15 865 32 839 90 c 1
+ 810 28 761 -15 694 -15 c 0
+ 615 -15 561 37 531 107 c 1
+ 482 27 373 -15 268 -15 c 0
+ 160 -15 65 39 3 121 c 1
+ 25 159 l 1
+ 49 153 73 150 100 150 c 1
+ 145 261 164 314.5 246 410 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -115601,6 +115660,7 @@ Encoding: 61397 -1 4605
 Width: 1119
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 1042 363 basechar 0
 AnchorPoint: "sin-below" 1094 363 basechar 0
 LayerCount: 2
 Fore
@@ -115610,12 +115670,12 @@ SplineSet
  91 313 205 404 331 404 c 0
  366 404 399 397 428 386 c 1
  418 434 394 460 361 460 c 0
- 335 460 315 422 263 422 c 4
+ 335 460 315 422 263 422 c 0
  228 422 211 439 211 465 c 0
  211 471.251 211.673 477.131 212.935 482.649 c 1
  119.418 451.716 77 377.096 77 287 c 0
  77 250.323 81.2188 214.441 91.2059 181.826 c 1
-1094 363 m 0
+1094 363 m 4
  1094 158 938 -15 739 -15 c 0
  649.23 -15 557.422 9.8051 496.455 59.4153 c 1
  482.399 46.2913 463.31 29.7137 443 -7 c 0
@@ -115632,7 +115692,7 @@ SplineSet
  512 370 558.514 391 611 391 c 2
  672 391 l 1
  662 436 640 460 610 460 c 0
- 586 460 589 408 529 408 c 4
+ 586 460 589 408 529 408 c 0
  489 408 477 434 477 460 c 0
  477 502 516 550 568 550 c 0
  661 550 720 464 728 377 c 1
@@ -115640,9 +115700,9 @@ SplineSet
  611 339 l 2
  533.293 339 477 282.847 477 217 c 0
  477 122 606 106 739 106 c 0
- 903 106 1042 216 1042 363 c 0
- 1042 381.325 1056.86 388.77 1068.65 388.77 c 0
- 1082.67 388.77 1094 380 1094 363 c 0
+ 903 106 1042 216 1042 363 c 4
+ 1042 381.325 1056.86 388.77 1068.65 388.77 c 4
+ 1082.67 388.77 1094 380 1094 363 c 4
 368 335 m 0
  284 335 212 276 212 207 c 0
  212 127 261 60 326 60 c 0
@@ -115698,7 +115758,7 @@ SplineSet
  762 115 662 -15 522 -15 c 0
  513 -15 500 -38 500 -74 c 0
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 Ligature2: "'blws' kha-ish+-u-uu in Sinhala-1" bha_sinh u_mk_sinh
 LCarets2: 1 0 
 EndChar
@@ -115802,7 +115862,7 @@ SplineSet
  103.286 332.31 195.18 379.342 289 389 c 1
  284 439 271 461 247 461 c 0
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 Ligature2: "'blws' kha-ish+-u-uu in Sinhala-1" nga_sinh u_mk_sinh
 LCarets2: 1 0 
 EndChar
@@ -115858,7 +115918,7 @@ SplineSet
  103.286 332.31 195.18 379.342 289 389 c 1
  284 439 271 461 247 461 c 0
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 Ligature2: "'blws' kha-ish+-u-uu in Sinhala-1" nga_sinh uu_mk_sinh
 LCarets2: 1 0 
 EndChar
@@ -116067,7 +116127,9 @@ EndChar
 StartChar: sinh_ii_8
 Encoding: 61343 -1 4614
 Width: 0
-Flags: HW
+Flags: W
+HStem: 569 52<-515.236 -234.407> 770 130<-483.571 -255.668>
+VStem: -627 72<652.944 796.659> -266 50<662.33 761.551> -89 71<649.306 732.26>
 AnchorPoint: "sin-vowel" -346 622 mark 0
 LayerCount: 2
 Fore
@@ -116129,48 +116191,51 @@ StartChar: sinh_na_dha.akhn_naked
 Encoding: 61384 -1 4616
 Width: 943
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: -15 110<208.347 394.818> -15 75<681.157 827.232> 335 69<698.047 840.79> 348 51.958<322.745 438.176> 466 84<137.5 224.16 571.731 805.803>
+VStem: 505 121<150.281 268.883>
+AnchorPoint: "sin-vowel" 700 550 basechar 0
 AnchorPoint: "sin-repaya" 734 535 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-171 550 m 4
- 217 550 257 503 282 448 c 5
- 378 519 535 553 675 553 c 4
- 770 553 897 534 897 346 c 5
- 884 306 l 5
- 853 321 817 335 782 335 c 4
- 698 335 626 276 626 207 c 4
- 626 127 675 60 739 60 c 4
- 827 60 865 95 904 117 c 5
- 920 69 l 5
- 858.249 14.659 800.97 -15 718 -15 c 4
- 632 -15 560 34 526 101 c 5
- 474 24 370 -15 267 -15 c 4
- 152 -15 59 45 2 121 c 5
- 24 159 l 5
- 50 152 73 150 100 150 c 5
- 141 250 167 322.5 246 408 c 5
- 237.384 429.539 220.06 466 207 466 c 4
- 171 466 184 378 108 378 c 4
- 69 378 55 399 55 426 c 4
- 55 498 104 550 171 550 c 4
-233 300 m 5
- 196.5 252 178.5 205 155 146 c 5
- 203 112 259 95 314 95 c 4
- 417 95 505 133 505 204 c 4
- 505 282 445.5 348 363 348 c 4
- 317 348 262 328.5 233 300 c 5
-842 386 m 5
- 832 434 808 460 775 460 c 4
- 748 460 729 422 677 422 c 4
- 642 422 624 438 624 465 c 4
- 624 480 628 491 632 499 c 5
- 526 481 402 454 322 397 c 5
- 336.095 399.014 349.398 399.958 361.952 399.958 c 0
- 455.387 399.958 507.297 347.619 535 294 c 5
- 574 356 650 404 744 404 c 4
- 779 404 813 397 842 386 c 5
+171 550 m 0x8c
+ 217 550 257 503 282 448 c 1
+ 378 519 535 553 675 553 c 0
+ 770 553 897 534 897 346 c 1
+ 884 306 l 1
+ 853 321 817 335 782 335 c 0
+ 698 335 626 276 626 207 c 0
+ 626 127 675 60 739 60 c 0
+ 827 60 865 95 904 117 c 1
+ 920 69 l 1
+ 858.249 14.659 800.97 -15 718 -15 c 0x6c
+ 632 -15 560 34 526 101 c 1
+ 474 24 370 -15 267 -15 c 0
+ 152 -15 59 45 2 121 c 1
+ 24 159 l 1
+ 50 152 73 150 100 150 c 1
+ 141 250 167 322.5 246 408 c 1
+ 237.384 429.539 220.06 466 207 466 c 0
+ 171 466 184 378 108 378 c 0
+ 69 378 55 399 55 426 c 0
+ 55 498 104 550 171 550 c 0x8c
+233 300 m 1
+ 196.5 252 178.5 205 155 146 c 1
+ 203 112 259 95 314 95 c 0
+ 417 95 505 133 505 204 c 0
+ 505 282 445.5 348 363 348 c 0x9c
+ 317 348 262 328.5 233 300 c 1
+842 386 m 1
+ 832 434 808 460 775 460 c 0
+ 748 460 729 422 677 422 c 0
+ 642 422 624 438 624 465 c 0
+ 624 480 628 491 632 499 c 1
+ 526 481 402 454 322 397 c 1
+ 336.095 399.014 349.398 399.958 361.952 399.958 c 0x1c
+ 455.387 399.958 507.297 347.619 535 294 c 1
+ 574 356 650 404 744 404 c 0x2c
+ 779 404 813 397 842 386 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -116179,60 +116244,63 @@ StartChar: sinh_na_dha.akhn
 Encoding: 61385 -1 4617
 Width: 943
 VWidth: 0
-Flags: HW
+Flags: W
+HStem: -289 87<837.105 903.838> -15 110<208.347 394.818> -15 75<681.157 787.324> 335 69<698.047 840.79> 348 51.958<322.745 438.176> 466 84<137.5 224.16 571.731 805.803>
+VStem: 505 121<150.281 268.883> 744 80<-194.375 -54.2411>
+AnchorPoint: "sin-vowel" 710 550 basechar 0
 AnchorPoint: "sin-al" 815 494 basechar 0
 AnchorPoint: "sin-repaya" 734 535 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-171 550 m 4
- 217 550 257 503 282 448 c 5
- 378 519 535 553 675 553 c 4
- 770 553 897 534 897 346 c 5
- 884 306 l 5
- 853 321 817 335 782 335 c 4
- 698 335 626 276 626 207 c 4
- 626 127 675 60 739 60 c 4
- 827 60 865 95 904 117 c 5
- 920 69 l 5
- 877 31 824 -40 824 -138 c 4
- 824 -168 837 -193 857 -202 c 4
- 874 -210 918 -216 918 -254 c 4
- 918 -287 881 -289 869 -289 c 4
- 798 -289 744 -233 744 -167 c 4
- 744 -108 762 -52 789 -6 c 5
- 763 -13 741 -15 718 -15 c 4
- 632 -15 560 34 526 101 c 5
- 474 24 370 -15 267 -15 c 4
- 152 -15 59 45 2 121 c 5
- 24 159 l 5
- 50 152 73 150 100 150 c 5
- 141 250 167 322.5 246 408 c 5
- 237.384 429.539 220.06 466 207 466 c 4
- 171 466 184 378 108 378 c 4
- 69 378 55 399 55 426 c 4
- 55 498 104 550 171 550 c 4
-233 300 m 5
- 196.5 252 178.5 205 155 146 c 5
- 203 112 259 95 314 95 c 4
- 417 95 505 133 505 204 c 4
- 505 282 445.5 348 363 348 c 4
- 317 348 262 328.5 233 300 c 5
-842 386 m 5
- 832 434 808 460 775 460 c 4
- 748 460 729 422 677 422 c 4
- 642 422 624 438 624 465 c 4
- 624 480 628 491 632 499 c 5
- 526 481 402 454 322 397 c 5
- 336.095 399.014 349.398 399.958 361.952 399.958 c 0
- 455.387 399.958 507.297 347.619 535 294 c 5
- 574 356 650 404 744 404 c 4
- 779 404 813 397 842 386 c 5
+171 550 m 0xc7
+ 217 550 257 503 282 448 c 1
+ 378 519 535 553 675 553 c 0
+ 770 553 897 534 897 346 c 1
+ 884 306 l 1
+ 853 321 817 335 782 335 c 0
+ 698 335 626 276 626 207 c 0
+ 626 127 675 60 739 60 c 0
+ 827 60 865 95 904 117 c 1
+ 920 69 l 1
+ 877 31 824 -40 824 -138 c 0
+ 824 -168 837 -193 857 -202 c 0
+ 874 -210 918 -216 918 -254 c 0
+ 918 -287 881 -289 869 -289 c 0
+ 798 -289 744 -233 744 -167 c 0
+ 744 -108 762 -52 789 -6 c 1
+ 763 -13 741 -15 718 -15 c 0xb7
+ 632 -15 560 34 526 101 c 1
+ 474 24 370 -15 267 -15 c 0
+ 152 -15 59 45 2 121 c 1
+ 24 159 l 1
+ 50 152 73 150 100 150 c 1
+ 141 250 167 322.5 246 408 c 1
+ 237.384 429.539 220.06 466 207 466 c 0
+ 171 466 184 378 108 378 c 0
+ 69 378 55 399 55 426 c 0
+ 55 498 104 550 171 550 c 0xc7
+233 300 m 1
+ 196.5 252 178.5 205 155 146 c 1
+ 203 112 259 95 314 95 c 0
+ 417 95 505 133 505 204 c 0
+ 505 282 445.5 348 363 348 c 0xcf
+ 317 348 262 328.5 233 300 c 1
+842 386 m 1
+ 832 434 808 460 775 460 c 0
+ 748 460 729 422 677 422 c 0
+ 642 422 624 438 624 465 c 0
+ 624 480 628 491 632 499 c 1
+ 526 481 402 454 322 397 c 1
+ 336.095 399.014 349.398 399.958 361.952 399.958 c 0x8f
+ 455.387 399.958 507.297 347.619 535 294 c 1
+ 574 356 650 404 744 404 c 0x97
+ 779 404 813 397 842 386 c 1
 EndSplineSet
 Validated: 3073
 Substitution2: "Substitute lopped forms in Sinhala-dha-ish-conj" sinh_na_dha.akhn_naked
 Ligature2: "'abvs' delete excess repaya in Sinhala-1" ra_sinh al_sinh ZWJ sinh_na_dha.akhn
-MultipleSubs2: "Append repaya in Sinhala-1" sinh_na_dha.akhn sin-repaya_top
+MultipleSubs2: "Append repaya in Sinhala-1" sinh_na_dha.akhn sinh_repaya_top
 Ligature2: "'akhn' conjunct consonants in Sinhala-level-2" na_sinh al_sinh ZWJ dha_sinh
 LCarets2: 3 0 0 0 
 EndChar
@@ -116247,7 +116315,6 @@ LayerCount: 2
 Fore
 Refer: 4503 -1 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 2 0 0 
 MultipleSubs2: "Substitute below form 8 in Sinhala-1" sinh_rak8
 MultipleSubs2: "Substitute below form 7 in Sinhala-1" sinh_rak7
 MultipleSubs2: "Substitute below form 6 in Sinhala-1" sinh_rak6
@@ -116258,6 +116325,7 @@ MultipleSubs2: "Substitute below form 2 in Sinhala-1" sinh_rak2
 MultipleSubs2: "Substitute below form 9 in Sinhala-1" sinh_rak9
 Ligature2: "'vatu' rakar-workaround in Sinhala" al_sinh ZWJ ra_sinh
 Ligature2: "'rkrf' rakar in Sinhala-1" al_sinh ZWJ ra_sinh
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: sinh_nya_ca.akhn_lopped
@@ -116265,6 +116333,7 @@ Encoding: 61405 -1 4619
 Width: 852
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 775 363 basechar 0
 AnchorPoint: "sin-below" 827 363 basechar 0
 LayerCount: 2
 Fore
@@ -116280,7 +116349,7 @@ SplineSet
  25 322 96.5 391 184 391 c 2
  405 391 l 1
  395 436 373 460 343 460 c 0
- 318 460 306 418 262 418 c 4
+ 318 460 306 418 262 418 c 0
  226 418 210 432 210 460 c 0
  210 515 249 560 301 560 c 0
  394 560 453 464 461 377 c 1
@@ -116289,8 +116358,8 @@ SplineSet
  274.345 339 211 287.496 211 214 c 0
  211 123 340 106 472 106 c 0
  636 106 775 216 775 363 c 0
- 775 376.314 788.483 383.367 801.718 383.367 c 0
- 814.474 383.367 827 376.814 827 363 c 0
+ 775 376.314 788.483 386.367 801.718 386.367 c 4
+ 814.474 386.367 827 376.814 827 363 c 0
  827 158 671 -15 472 -15 c 0
 EndSplineSet
 Validated: 3073
@@ -116301,6 +116370,7 @@ Encoding: 61407 -1 4620
 Width: 871
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 794 363 basechar 0
 AnchorPoint: "sin-below" 846 363 basechar 0
 LayerCount: 2
 Fore
@@ -116337,6 +116407,7 @@ Encoding: 61415 -1 4621
 Width: 1337
 VWidth: 0
 Flags: HW
+AnchorPoint: "sin-vowel" 1260 363 basechar 0
 AnchorPoint: "sin-below" 1312 363 basechar 0
 LayerCount: 2
 Fore
@@ -116359,8 +116430,8 @@ SplineSet
  25 384 41 391 51 391 c 2
  272 391 l 1
  262 436 240 460 210 460 c 0
- 184 460 178 418 129 418 c 4
- 93 418 77 431 77 460 c 0
+ 184 460 178 418 129 418 c 0
+ 99 418 77 431 77 460 c 0
  77 515 116 560 168 560 c 0
  262 560 320 463 328 377 c 1
  328 339 l 1
@@ -116382,7 +116453,7 @@ SplineSet
  699 352 758 391 829 391 c 2
  890 391 l 1
  880 436 858 460 828 460 c 0
- 804 460 798 408 747 408 c 4
+ 804 460 798 408 747 408 c 0
  707 408 695 434 695 460 c 0
  695 502 734 550 786 550 c 0
  879 550 938 464 946 377 c 1
