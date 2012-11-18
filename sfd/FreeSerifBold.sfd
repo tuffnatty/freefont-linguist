@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1353253551
+ModificationTime: 1353266256
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -196,8 +196,7 @@ Lookup: 258 0 0 "'kern' Horizontal Kerning in Thai"  {"'kern' Horizontal Kerning
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Arabic"  {"'kern' Horizontal Kerning in Arabic subtable" [150,0,2] } ['kern' ('arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Arabic"  {"'mark' Mark Positioning in Arabic-ring"  "'mark' Mark Positioning in Arabic subtable"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic"  {"'mkmk' Mark to Mark in Arabic subtable"  } ['mkmk' ('arab' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-big" [150,0,2] "'kern' Horizontal Kerning in Latin-small" [150,0,2] } ['kern' ('latn' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin for French"  {"'kern' Horizontal Kerning in Latin for French-1" [150,0,4] } ['kern' ('latn' <'FRA ' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-big" [150,0,2] "'kern' Horizontal Kerning in Latin-small" [150,0,2] "'kern' Horizontal Kerning in Latin punctuation" [150,0,4] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 258 8 0 "'kern' Horizontal Kerning in Latin for IPA"  {"'kern' Horizontal Kerning in Latin for IPA-right" [150,0,2] "'kern' Horizontal Kerning in Latin for IPA-left" [150,0,2] } ['kern' ('grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew for Yiddish"  {"'mark' Mark Positioning in Hebrew for Yiddish subtable"  } ['mark' ('hebr' <'JII ' > ) ]
 Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew for Ivrit"  {"'mark' Mark Positioning in Hebrew for Ivrit subtable"  } ['mark' ('hebr' <'IWR ' 'dflt' > ) ]
@@ -212,12 +211,22 @@ Lookup: 260 0 0 "'mark' Mark Positioning in Thaana-below"  {"'blwm' Below Base M
 Lookup: 258 9 0 "'kern' Horizontal Kerning in Thaana"  {"'kern' Horizontal Kerning in Thaana-subtable" [150,0,4] } ['kern' ('thaa' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-KernClass2: 3 3 "'kern' Horizontal Kerning in Latin for French-1" 
- 1 L
- 10 quoteright
- 10 quoteright
+KernClass2: 8 8 "'kern' Horizontal Kerning in Latin punctuation" 
+ 3 A L
+ 5 V W Y
+ 4 f ff
+ 5 v w y
+ 73 quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
+ 27 quotesinglbase quotedblbase
+ 5 F P T
+ 73 quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
+ 27 quotesinglbase quotedblbase
+ 12 comma period
  38 a e o aacute eacute oacute ocircumflex
- 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} -60 {}
+ 5 V W Y
+ 1 j
+ 1 T
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} -40 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 6 9 "'kern' Horizontal Kerning in Thaana-subtable" 
  148 haa_tana shaviyani_tana noonu_tana raa_tana alifu_tana meemu_tana thaa_tana gaafu_tana yaa_tana hhaa_tana khaa_tana ainu_tana ghainu_tana qaafu_tana
  146 lhaviyani_tana vaavu_tana faafu_tana dhaalu_tana laamu_tana paviyani_tana chaviyani_tana ttaa_tana thaalu_tana zaa_tana to_tana zo_tana waavu_tana

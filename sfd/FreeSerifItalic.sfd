@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1353253347
+ModificationTime: 1353266554
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -92,10 +93,8 @@ Lookup: 4 0 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary
 Lookup: 4 0 0 "'dlig' Discretionary Ligatures in Armenian"  {"'dlig' Discretionary Ligatures in Armenian subtable"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Armenian"  {"'hlig' Historic Ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' Standard Ligatures in Latin for Catalan"  {"'liga' Standard Ligatures in Latin for Catalan-subtable"  } ['liga' ('latn' <'CAT ' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-big" [150,0,2] "'kern' Horizontal Kerning in Latin-small" [150,0,6] } ['kern' ('latn' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin for French"  {"'kern' Horizontal Kerning in Latin for French-1" [150,0,4] } ['kern' ('latn' <'FRA ' > ) ]
+Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin"  {"'kern' Horizontal Kerning in Latin-big" [150,0,2] "'kern' Horizontal Kerning in Latin-small" [150,0,6] "'kern' Horizontal Kerning in Latin-punct2" [150,0,2] "'kern' Horizontal Kerning in Latin-punct" [150,0,4] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 258 8 0 "'kern' Horizontal Kerning in Latin for IPA"  {"'kern' Horizontal Kerning in Latin for IPA-right" [150,0,2] "'kern' Horizontal Kerning in Latin for IPA-left" [150,0,2] } ['kern' ('latn' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' Horizontal Kerning in Latin-punctuation"  {"'kern' Horizontal Kerning in Latin-punct" [150,0,2] } ['kern' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable middle"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  "'mark' Mark Positioning in Latin subtable 2"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -112,13 +111,23 @@ Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew"  {"'mark' Mark Positioning i
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Hebrew"  {"'mkmk' Mark to Mark in Hebrew subtable"  } ['mkmk' ('hebr' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
-KernClass2: 3 3 "'kern' Horizontal Kerning in Latin for French-1" 
- 1 L
- 10 quoteright
- 10 quoteright
+KernClass2: 8 8 "'kern' Horizontal Kerning in Latin-punct" 
+ 3 A L
+ 5 V W Y
+ 4 f ff
+ 5 v w y
+ 73 quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
+ 27 quotesinglbase quotedblbase
+ 5 F P T
+ 73 quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
+ 27 quotesinglbase quotedblbase
+ 12 comma period
  38 a e o aacute eacute oacute ocircumflex
- 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} -60 {}
-KernClass2: 2 4 "'kern' Horizontal Kerning in Latin-punct" 
+ 5 V W Y
+ 1 j
+ 1 T
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} -40 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {}
+KernClass2: 2 4 "'kern' Horizontal Kerning in Latin-punct2" 
  28 f ff dhook ghook yhook qhook
  12 comma period
  6 hyphen
@@ -354,7 +363,7 @@ LangName: 1027 "" "" "cursiva" "" "FreeSerif cursiva"
 LangName: 1026 "" "" "+BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BDoEQwRABEEEOAQyBDUEPQAA" 
 LangName: 1069 "" "" "Etzana" "" "FreeSerif Etzana" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Italic: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 14 21 13 65535 15 1
+GaspTable: 3 9 2 21 1 65535 3
 OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
 Encoding: Custom
 UnicodeInterp: none
@@ -26379,13 +26388,13 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-216 560 m 0
- 216 531 261 523 261 483 c 0
- 261 456 239 436 210 436 c 0
- 177 436 152 467 152 507 c 0
- 152 563 198 619 282 666 c 1
- 291 649 l 1
- 239 614 216 587 216 560 c 0
+196 560 m 4
+ 196 531 241 523 241 483 c 4
+ 241 456 219 436 190 436 c 4
+ 157 436 132 467 132 507 c 4
+ 132 563 178 619 262 666 c 5
+ 271 649 l 5
+ 219 614 196 587 196 560 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -26397,13 +26406,13 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-216 541 m 0
- 216 570 171 579 171 619 c 0
- 171 646 193 666 222 666 c 0
- 255 666 280 635 280 595 c 0
- 280 539 234 482 150 436 c 1
- 141 453 l 1
- 193 488 216 515 216 541 c 0
+196 541 m 4
+ 196 570 151 579 151 619 c 4
+ 151 646 173 666 202 666 c 4
+ 235 666 260 635 260 595 c 4
+ 260 539 214 482 130 436 c 5
+ 121 453 l 5
+ 173 488 196 515 196 541 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -26433,14 +26442,14 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-241 666 m 0
- 275 666 295 635 295 614 c 0
- 295 561 216 570 202 551 c 0
- 195 542 192 529 192 515 c 0
- 192 485 205 451 210 436 c 1
- 192 428 l 1
- 175 462 161 510 161 554 c 0
- 161 648 224 666 241 666 c 0
+221 666 m 4
+ 255 666 275 635 275 614 c 4
+ 275 561 196 570 182 551 c 4
+ 175 542 172 529 172 515 c 4
+ 172 485 185 451 190 436 c 5
+ 172 428 l 5
+ 155 462 141 510 141 554 c 4
+ 141 648 204 666 221 666 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -26451,8 +26460,8 @@ Width: 333
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1275 8216 S 1 0 0 1 149 0 2
-Refer: 1275 8216 N 1 0 0 1 -31 0 2
+Refer: 1275 8216 S 1 0 0 1 139 0 2
+Refer: 1275 8216 S 1 0 0 1 -31 0 2
 Validated: 32769
 EndChar
 
@@ -26462,8 +26471,8 @@ Width: 333
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1276 8217 S 1 0 0 1 144 0 2
-Refer: 1276 8217 S 1 0 0 1 -40 0 2
+Refer: 1276 8217 S 1 0 0 1 151 0 2
+Refer: 1276 8217 S 1 0 0 1 -20 0 2
 Validated: 32769
 EndChar
 
@@ -26473,8 +26482,8 @@ Width: 333
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1277 8218 S 1 0 0 1 189 0 2
-Refer: 1277 8218 S 1 0 0 1 -5 0 2
+Refer: 1277 8218 S 1 0 0 1 179 0 2
+Refer: 1277 8218 S 1 0 0 1 5 0 2
 Validated: 32769
 EndChar
 
@@ -40463,6 +40472,7 @@ SplineSet
  51 767 28 737 28 664 c 2
  28 -140 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: ZWJ
@@ -40488,6 +40498,7 @@ SplineSet
  56 -121 86 -116 113 -108 c 5
  124 -146 l 5
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: dotlessj
