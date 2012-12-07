@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1352028339
+ModificationTime: 1354887388
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -65,6 +65,7 @@ Lookup: 4 0 0 "'rlig' Required Ligatures in Arabic"  {"'rlig' Required Ligatures
 Lookup: 2 1 0 "'ccmp' Glyph Decomposition in Hebrew"  {"'ccmp' Glyph Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
+Lookup: 4 0 0 "FreeSerif-'frac' diagonal fractions"  {"FreeSerif-'frac' diagonal fractions w/slash-1"  "FreeSerif-'frac' diagonal fractions w/fraction"  } ['frac' ('DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek"  {"'mark' Mark Positioning in Greek subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -131,7 +132,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8176 16 11
+WinInfo: 9712 16 11
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 39 [-20 0 417 437 480 490 563 583 640 650]
@@ -145,7 +146,7 @@ ForceBold 5 false
 EndPrivate
 TeXData: 1 0 0 629146 314573 209715 437256 1048576 209715 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "above_arabic"  "'mark' Mark Positioning in Arabic subtable" "below_arabic"  "'mark' Mark Positioning in Arabic subtable" "arab_diacritic"  "'mkmk' Mark to Mark in Arabic subtable" "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 67329 4384
+BeginChars: 67329 4389
 
 StartChar: space
 Encoding: 32 32 0
@@ -36691,19 +36692,19 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-400 696 m 1
- 304 390 l 1
- 301 379 294 374 286 374 c 0
- 277 374 268 381 268 392 c 0
- 268 394 268 396 269 398 c 2
- 363 698 l 1
- 220 698 l 1
- 220 678 l 2
- 220 666 210 661 203 661 c 0
- 194 661 183 666 183 678 c 2
- 183 734 l 1
- 400 734 l 1
- 400 696 l 1
+400 696 m 5
+ 304 390 l 5
+ 301 379 294 374 286 374 c 4
+ 277 374 268 381 268 392 c 4
+ 268 394 268 396 269 398 c 6
+ 363 698 l 5
+ 220 698 l 5
+ 220 678 l 6
+ 220 666 210 661 203 661 c 4
+ 194 661 183 666 183 678 c 6
+ 183 734 l 5
+ 400 734 l 5
+ 400 696 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -36772,23 +36773,21 @@ LayerCount: 2
 Fore
 SplineSet
 317 556 m 1
- 317 460 l 0
- 317.064 459.301 317.095 458.607 317.095 457.919 c 0
- 317.095 447.77 310.301 439 300 439 c 2
- 298 439 l 2
- 288 439 282 449 282 460 c 0
+ 317 460 l 2
+ 317 447.75 310.829 439 300 439 c 0
+ 288.378 439 282 447.619 282 460 c 2
  282 556 l 1
- 199 556 l 0
+ 199 556 l 2
  188 556 178 563 178 574 c 0
- 178 585 188 591 199 591 c 0
+ 178 585 188 591 199 591 c 2
  282 591 l 1
- 282 677 l 0
+ 282 677 l 2
  282 688 289 698 300 698 c 0
- 311 698 317 688 317 677 c 0
+ 311 698 317 688 317 677 c 2
  317 591 l 1
  402 591 l 2
  413 591 422 584 422 574 c 0
- 422 563 412 556 400 556 c 0
+ 422 563 414 556 402 556 c 2
  317 556 l 1
 EndSplineSet
 Validated: 3073
@@ -36859,36 +36858,34 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-344 398 m 2
- 344 401 l 2
- 344 416 359 417 375 417 c 2
+344 399 m 0
+ 344 410 354 417 362 417 c 2
  380 417 l 1
  380 560 l 0
  380 594 351 615 313 616 c 0
  270 616 252 594 227 562 c 1
  227 417 l 1
- 249 417 l 0
- 260 417 270 411 270 400 c 2
- 270 398 l 2
- 270 387 260 382 249 382 c 2
+ 249 417 l 2
+ 262 417 270 410 270 399 c 0
+ 270 386 261 382 249 382 c 2
  168 382 l 2
  158 382 149 389 149 399 c 0
- 149 416.008 164.633 417 182 417 c 2
+ 149 416 155 417 172 417 c 2
  192 417 l 1
  192 608 l 1
- 165.919 608 155.931 609.163 155.931 626.497 c 0
- 155.931 636.543 165.556 642 177 642 c 2
+ 175 608 l 2
+ 163.5 608 156 615.167 156 625 c 0
+ 156 635 164 642 175 642 c 2
  227 642 l 1
  227 609 l 1
- 239 610 247 651 316 651 c 0
+ 234.75 620.25 257.25 651 316 651 c 0
  367 651 415 618 415 564 c 0
  415 417 l 1
- 430 417 l 0
- 442 417 451 411 451 400 c 2
- 451 398 l 2
- 451 387 441 382 430 382 c 2
+ 430 417 l 2
+ 442 417 451 411 451 400 c 0
+ 451 387 442 382 430 382 c 2
  363 382 l 2
- 352 382 344 388 344 398 c 2
+ 352 382 344 389 344 399 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -38489,7 +38486,7 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1813 8725 N 1 0 0 1 0 0 0
+Refer: 1813 8725 S 1 0 0 1 0 0 0
 Refer: 120 185 N 1 0 0 1 -168 -120 0
 Validated: 32769
 EndChar
@@ -64799,6 +64796,7 @@ SplineSet
  187 766 178 759 159 759 c 2
  20 759 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: ZWJ
@@ -64826,6 +64824,7 @@ SplineSet
  187 766 178 759 159 759 c 6
  20 759 l 5
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: RLM
@@ -102205,6 +102204,118 @@ SplineSet
  242 398 l 1
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: oneseventh
+Encoding: 8528 8528 4384
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1708 8543 N 1 0 0 1 -13 0 0
+Refer: 1638 8311 N 1.01003 0 0 1 186 -390 0
+Validated: 32769
+LCarets2: 2 0 0 
+Ligature2: "FreeSerif-'frac' diagonal fractions w/fraction" one fraction seven
+Ligature2: "FreeSerif-'frac' diagonal fractions w/slash-1" one slash seven
+EndChar
+
+StartChar: oneninth
+Encoding: 8529 8529 4385
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1708 8543 N 1 0 0 1 -13 0 0
+Refer: 1640 8313 S 1 0 0 1 152 -388 2
+Validated: 32769
+LCarets2: 2 0 0 
+Ligature2: "FreeSerif-'frac' diagonal fractions w/slash-1" one slash nine
+Ligature2: "FreeSerif-'frac' diagonal fractions w/fraction" one fraction nine
+EndChar
+
+StartChar: onetenth
+Encoding: 8530 8530 4386
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1813 8725 N 1 0 0 1 -85 60 0
+Refer: 120 185 S 1 0 0 1 -181 20 0
+Refer: 120 185 N 1 0 0 1 10 -394 2
+Refer: 1633 8304 N 1 0 0 1 192 -398 2
+Validated: 32769
+LCarets2: 3 0 0 0 
+Ligature2: "FreeSerif-'frac' diagonal fractions w/slash-1" one slash one zero
+Ligature2: "FreeSerif-'frac' diagonal fractions w/fraction" one fraction one zero
+EndChar
+
+StartChar: zerothirds
+Encoding: 8585 8585 4387
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1813 8725 S 1 0 0 1 -20 0 0
+Refer: 114 179 N 1 0 0 1 174 -395 0
+Refer: 1633 8304 N 1 0 0 1 -182 -120 2
+Validated: 32769
+EndChar
+
+StartChar: hammerandsickle
+Encoding: 9773 9773 4388
+Width: 600
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+579 21 m 0
+ 579 11 571 4 563 4 c 0
+ 555 4 547.214 7.19238 540 15 c 2
+ 455 107 l 1
+ 423 84 382 72 337 72 c 0
+ 267 72 216 102 170 145 c 1
+ 136 109 l 1
+ 162.031 84.2002 l 2
+ 170.348 76.2773 173 65.7959 173 61 c 0
+ 173 50 165 40 154 40 c 0
+ 147.795 40 138.349 42.4219 132 48.6143 c 2
+ 104 73 l 1
+ 50 14 l 2
+ 40.4531 3.56934 33.333 0 26 0 c 0
+ 14 0 5 8 5 20 c 0
+ 5 27 7.36523 32.6641 17 43 c 2
+ 72 102 l 1
+ 41.7422 131.2 l 2
+ 35.1875 139.038 32 144.5 32 150 c 0
+ 32 159 45 173 53 173 c 0
+ 59.5 173 69.1914 173.83 77 166.017 c 2
+ 104 139 l 1
+ 154 191 l 1
+ 187 191 l 1
+ 238 140 275 111 338 111 c 0
+ 365 111 405 121 427 136 c 1
+ 170 402 l 1
+ 99 333 l 1
+ 71 361 l 1
+ 220 510 l 2
+ 223.037 512.733 228.675 514.906 232.415 514.906 c 0
+ 243.473 514.906 253.429 506.653 253.429 496.164 c 0
+ 253.429 492.68 252.078 485.199 249 482 c 2
+ 198 429 l 1
+ 462 159 l 1
+ 499 190.5 544 258 544 324 c 0
+ 544 441.2 453.5 509.9 343 552 c 0
+ 335.266 554.947 331 562 331 568 c 0
+ 331 577 336 588 346 588 c 0
+ 351 588 355.037 587.106 358 586 c 0
+ 481.5 539.9 580 460.2 580 324 c 0
+ 580 235 535 171.5 488 131 c 1
+ 570 43 l 2
+ 575.324 37.2861 579 31 579 21 c 0
+EndSplineSet
+Validated: 527361
 EndChar
 EndChars
 EndSplineFont
