@@ -15,7 +15,7 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2009, 2010, 2011, Stevan White"
+__copyright__ = "Copyright 2009, 2010, 2011, 2012, Stevan White"
 __date__ = "$Date$"
 __version__ = "$Revision$"
 
@@ -102,7 +102,9 @@ ulUnicodeRange = [
 			interval(0x038E, 0x03A1),
 			interval(0x03A3, 0x03FF)
 			] ],
-[8,	'Coptic',     [interval(0x2C80, 0x2CFF)]],
+[8,	'Coptic',     [interval(0x2C80, 0x2CF3),
+			interval(0x2CF9, 0x2CFF)
+		] ],
 [9,	'Cyrillic (+suppl., +ext.-A, -B)',     [
 	interval(0x0400, 0x04FF),	# Cyrillic
 	interval(0x0500, 0x0527),	# Cyrillic Supplement
@@ -135,7 +137,8 @@ ulUnicodeRange = [
 [14,	"N'Ko", [interval(0x07C0, 0x07FF)]],
 [15,	'Devanagari (+ext.)',     [ interval(0x0900, 0x0977),
 			interval(0x0979, 0x097F),
-			interval(0xA8E0, 0xA8FB)	# Extended
+			interval(0xA8E0, 0xA8FB),	# Extended
+			interval(0x1CD0, 0x1CF6)	# Vedic Extensions
 			]],
 [16,	'Bengali',     [interval(0x0981, 0x0983),
 		interval(0x0985, 0x098C),
@@ -266,7 +269,9 @@ ulUnicodeRange = [
 [25,	'Lao',     [interval(0x0E80, 0x0EFF)]],
 [26,	'Georgian (+suppl.)',    [
 		interval(0x10A0, 0x10C5),
-		interval(0x10D0, 0x10FC),
+		interval(0x10C7, 0x10C7),
+		interval(0x10CD, 0x10CD),
+		interval(0x10D0, 0x10FF),
 		interval(0x2D00, 0x2D25) # Supplement
 		]],
 [27,	'Balinese', [interval(0x1B00, 0x1B7F)]],
@@ -306,7 +311,7 @@ ulUnicodeRange = [
 		interval(0x2090, 0x2094)
 	]
 	],
-[33,	'Currency Symbols',     [interval(0x20A0, 0x20B9)]],
+[33,	'Currency Symbols',     [interval(0x20A0, 0x20BA)]],
 [34,	'Combining Diacritical Marks for Symbols',     [interval(0x20D0, 0x20F0)]],
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
 [36,	'Number Forms',     [interval(0x2150, 0x2189)]],
@@ -319,13 +324,11 @@ ulUnicodeRange = [
 [38,	'Mathematical Operators',     [ 
 	interval(0x2200, 0x22FF),
 	interval(0x2A00, 0x2AFF),	# Supplemental Mathematical Operators
-	interval(0x27C0, 0x27CA),	# Miscellaneous Mathematical Symbols-A
-	interval(0x27CC, 0x27CC),
-	interval(0x27CE, 0x27EF),
+	interval(0x27C0, 0x27EF),	# Miscellaneous Mathematical Symbols-A
 	interval(0x2980, 0x29FF)	# Miscellaneous Mathematical Symbols-B
 	]
 		],
-[39,	'Miscellaneous Technical',     [interval(0x2300, 0x23E7)]],
+[39,	'Miscellaneous Technical',     [interval(0x2300, 0x23F3)]],
 [40,	'Control Pictures',     [interval(0x2400, 0x2426)]],
 [41,	'Optical Character Recognition',     [interval(0x2440, 0x244A)]],
 [42,	'Enclosed Alphanumerics',     [interval(0x2460, 0x24FF)]],
@@ -423,7 +426,7 @@ ulUnicodeRange = [
 		interval(0x12D8, 0x1310),
 		interval(0x1312, 0x1315),
 		interval(0x1318, 0x135A),
-		interval(0x135F, 0x137C),
+		interval(0x135D, 0x137C),
 		interval(0x1380, 0x139F),	# supplement
 		interval(0x2D80, 0x2DDF)	# extended
 		]
@@ -510,7 +513,8 @@ ulUnicodeRange = [
 [97, 	'Glagolitic', [ interval(0x2C00, 0x2C2E),
 		interval(0x2C30, 0x2C5E) ]],
 [98, 	'Tifinagh', [interval(0x2D30, 0x2D67),
-		interval(0x2D6F, 0x2D6F)
+		interval(0x2D6F, 0x2D70),
+		interval(0x2D7F, 0x2D7F)
 	]],
 [99, 	'Yijing Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
 [100, 	'Syloti Nagri', [interval(0xA800, 0xA82F)]],
