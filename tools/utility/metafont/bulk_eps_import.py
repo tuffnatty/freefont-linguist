@@ -49,8 +49,8 @@ def import_glyph( font, name, chrnum ):
 scriptname = sys.argv[0];
 argc = len( sys.argv )
 
-file_pat = r'([A-Za-z0-9]*)-(\d{3,4}).eps'
-file_pat = sys.argv[2] + r'-(\d{3,4}).eps'
+file_pat = r'^([A-Za-z0-9]*)-(\d{3,4}).eps$'
+file_pat = sys.argv[2] + r'-(\d{3,4}).eps$'
 re_file_pat = re.compile( file_pat )
 
 if argc > 2:
@@ -61,11 +61,13 @@ if argc > 2:
 	directories = os.listdir('.')
 	directories.sort()
 
-	for file in directories:
-		matches = re_file_pat.match( file )
+	for glyphfile in directories:
+		matches = re_file_pat.match( glyphfile )
 		if matches:
+			print "doing glyph " + glyphfile
 			chrnum = int( matches.group(1) )
-			import_glyph( font, file, chrnum )
+			import_glyph( font, glyphfile, chrnum )
+	print "saving font in " + fontfilename 
 	font.save()
 	font.close()
 
