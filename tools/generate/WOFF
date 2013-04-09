@@ -17,7 +17,7 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2011, 2012, Stevan White"
-__date__ = "$Date: 2011-11-03 01:50:14 +0100 (Thu, 03 Nov 2011) $"
+__date__ = "$Date:: 2013-04-09 12:44:41 +0200#$"
 __version__ = "$Revision: 1863 $"
 __doc__ = """
 Convert fonts from FontForge's native SFD format to Web Open Font Format (WOFF)
@@ -152,8 +152,7 @@ if argc > 1:
 	for i in range( 1, argc ):
 		f = fontforge.open( sys.argv[i] )
 		woff_file = f.fontname + ".woff"
-		vstr = trim_version_str( f )
-		print "Generating WOFF file ", woff_file, ' ', vstr
+		print "Generating WOFF file ", woff_file
 		# Wanted to set to 'UniocdeBmp' if there were no high unicodes
 		# but all attemtps to determine that from Python failed.
 		f.encoding = 'UnicodeFull'

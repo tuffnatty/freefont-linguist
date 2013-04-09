@@ -16,7 +16,7 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, Stevan White"
-__date__ = "$Date: 2010-09-14 13:02:02 $"
+__date__ = "$Date:: 2013-04-09 12:44:41 +0200#$"
 __version__ = "$Revision: 1.3 $"
 
 __doc__ = """
@@ -26,7 +26,7 @@ Add it to the Scripts Menu using the Preferences dialog.
 Sets the name and unicode values of the selected range of slots to the
 encoding, that is
 	Name:	uniXXXX
-	Unocode:	u+XXXX
+	Unicode:	u+XXXX
 where XXXX is the n-digit hex value for the slot encoding.
 
 Careful! it changes the value whether it was previously set or not.
@@ -45,15 +45,15 @@ try:
 	glyphs = fontforge.activeFont().selection.byGlyphs
 	for g in glyphs:
 		if g.encoding <= 0xFFFF:
-			newname = 'uni%0.4x' %( g.encoding )
+			newname = 'uni%0.4X' %( g.encoding )
 		elif g.encoding <= 0xFFFFF:
-			newname = 'uni%0.5x' %( g.encoding )
+			newname = 'uni%0.5X' %( g.encoding )
 		elif g.encoding <= 0xFFFFFF:
-			newname = 'uni%0.6x' %( g.encoding )
+			newname = 'uni%0.6X' %( g.encoding )
 		elif g.encoding <= 0xFFFFFFF:
-			newname = 'uni%0.7x' %( g.encoding )
+			newname = 'uni%0.7X' %( g.encoding )
 		elif g.encoding <= 0xFFFFFFFF:
-			newname = 'uni%0.8x' %( g.encoding )
+			newname = 'uni%0.8X' %( g.encoding )
 		print "naming " + str( g.glyphname ) + ' as ' + newname
 		g.glyphname =  newname
 		g.unicode = g.encoding
