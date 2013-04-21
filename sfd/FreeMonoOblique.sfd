@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1362238529
+ModificationTime: 1366581380
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -57,7 +57,8 @@ Lookup: 4 1 0 "'liga' Standard Ligatures in Hebrew"  {"'liga' Standard Ligatures
 Lookup: 4 8 0 "'dlig' Discretionary Ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' Glyph Composition/Decomposition in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms in Cyrillic for Serbian"  {"'locl' Localized Forms in Cyrillic for Serbian-subtable"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
-Lookup: 4 0 0 "FreeMono-FreeSerif-'frac' diagonal fractions"  {"FreeMono-FreeSerif-'frac' diagonal fractions w/slash-1"  "FreeMono-FreeSerif-'frac' diagonal fractions w/fraction"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'frac' diagonal fractions"  {"'frac' diagonal fractions w/slash-1"  "'frac' diagonal fractions w/fraction"  } ['frac' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "'zero' Slashed Zero"  {"'zero' Slashed Zero subtable"  } ['zero' ('DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -121,7 +122,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8176 16 11
+WinInfo: 59440 16 11
 BeginPrivate: 8
 UniqueID 7 5020947
 BlueValues 23 [-20 0 417 437 563 583]
@@ -133,7 +134,7 @@ StemSnapH 4 [41]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" 
-BeginChars: 65536 2265
+BeginChars: 65536 2266
 
 StartChar: space
 Encoding: 32 32 0
@@ -585,6 +586,7 @@ SplineSet
  527 526 492 577 422 577 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'zero' Slashed Zero subtable" zeroslashed
 EndChar
 
 StartChar: one
@@ -4048,6 +4050,8 @@ SplineSet
  537 129 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction four
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash four
 EndChar
 
 StartChar: onehalf
@@ -4098,6 +4102,8 @@ SplineSet
  417 249 410 255 410 262 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction two
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash two
 EndChar
 
 StartChar: threequarters
@@ -4158,6 +4164,8 @@ SplineSet
  537 129 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'frac' diagonal fractions w/fraction" three fraction four
+Ligature2: "'frac' diagonal fractions w/slash-1" three slash four
 EndChar
 
 StartChar: questiondown
@@ -29470,6 +29478,8 @@ Refer: 114 179 N 1 0 0 1 99 -398 0
 Refer: 1657 8725 S 1 0 0 1 67 -10 0
 Refer: 120 185 N 1 0 0 1 -216 -140 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction three
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash three
 EndChar
 
 StartChar: twothirds
@@ -29482,6 +29492,8 @@ Refer: 1657 8725 S 1 0 0 1 67 -30 0
 Refer: 114 179 N 1 0 0 1 95 -411 0
 Refer: 113 178 N 1 0 0 1 -205 -148 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" two fraction three
+Ligature2: "'frac' diagonal fractions w/slash-1" two slash three
 EndChar
 
 StartChar: uni2155
@@ -29493,6 +29505,8 @@ Fore
 Refer: 1064 8543 N 1 0 0 1 -10 -40 0
 Refer: 1013 8309 S 1 0 0 1 137 -402 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash five
 EndChar
 
 StartChar: oneeighth
@@ -29505,6 +29519,8 @@ Refer: 120 185 N 1 0 0 1 -216 -140 0
 Refer: 1657 8725 S 1 0 0 1 53 -30 0
 Refer: 1016 8312 N 1 0 0 1 128 -433 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash eight
 EndChar
 
 StartChar: threeeighths
@@ -29517,6 +29533,8 @@ Refer: 114 179 N 1 0 0 1 -221 -160 0
 Refer: 1657 8725 S 1 0 0 1 54 -20 0
 Refer: 1016 8312 N 1 0 0 1 132 -433 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" three fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" three slash eight
 EndChar
 
 StartChar: fiveeighths
@@ -29529,6 +29547,8 @@ Refer: 1013 8309 N 1 0 0 1 -173 -158 0
 Refer: 1657 8725 S 1 0 0 1 62 -10 0
 Refer: 1016 8312 N 1 0 0 1 129 -433 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" five fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" five slash eight
 EndChar
 
 StartChar: seveneighths
@@ -29541,6 +29561,8 @@ Refer: 1015 8311 N 1 0 0 1 -199 -190 0
 Refer: 1657 8725 S 1 0 0 1 67 20 0
 Refer: 1016 8312 N 1 0 0 1 124 -433 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" seven fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" seven slash eight
 EndChar
 
 StartChar: uni215F
@@ -38883,6 +38905,8 @@ Refer: 113 178 S 1 0 0 1 -200 -138 0
 Refer: 1657 8725 N 1 0 0 1 86 0 0
 Refer: 1013 8309 N 1 0 0 1 152 -392 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" two fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" two slash five
 LCarets2: 2 0 0 
 EndChar
 
@@ -38897,6 +38921,8 @@ Refer: 1657 8725 S 1 0 0 1 60 0 0
 Refer: 1013 8309 N 1 0 0 1 142 -398 0
 Refer: 114 179 N 1 0 0 1 -213 -161 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" three fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" three slash five
 LCarets2: 2 0 0 
 EndChar
 
@@ -38911,6 +38937,8 @@ Refer: 1013 8309 N 1 0 0 1 142 -393 0
 Refer: 1657 8725 S 1 0 0 1 80 0 0
 Refer: 1012 8308 N 1 0 0 1 -157 -150 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" four fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" four slash five
 LCarets2: 2 0 0 
 EndChar
 
@@ -38947,6 +38975,8 @@ Refer: 1657 8725 S 1 0 0 1 80 -10 0
 Refer: 120 185 N 1 0 0 1 -218 -150 0
 Refer: 1014 8310 N 1 0 0 1 120 -394 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction six
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash six
 LCarets2: 2 0 0 
 EndChar
 
@@ -38961,6 +38991,8 @@ Refer: 1657 8725 S 1 0 0 1 54 -20 0
 Refer: 1013 8309 N 1 0 0 1 -180 -159 0
 Refer: 1014 8310 N 1 0 0 1 115 -394 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" five fraction six
+Ligature2: "'frac' diagonal fractions w/slash-1" five slash six
 LCarets2: 2 0 0 
 EndChar
 
@@ -47857,7 +47889,7 @@ SplineSet
  151.502 247 l 6
  136.055 247 128.332 252.155 128.332 262.465 c 4
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: spacemediummath
@@ -47900,7 +47932,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 980 8211 S 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: caretinsert
@@ -53587,9 +53619,9 @@ Fore
 Refer: 1015 8311 S 1.01003 0 0 1 115 -390 0
 Refer: 1064 8543 N 1 0 0 1 -13 0 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction seven
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash seven
 LCarets2: 2 0 0 
-Ligature2: "FreeMono-FreeSerif-'frac' diagonal fractions w/fraction" one fraction seven
-Ligature2: "FreeMono-FreeSerif-'frac' diagonal fractions w/slash-1" one slash seven
 EndChar
 
 StartChar: oneninth
@@ -53601,9 +53633,9 @@ Fore
 Refer: 1017 8313 S 1 0 0 1 76 -388 2
 Refer: 1064 8543 N 1 0 0 1 -13 0 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction nine
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash nine
 LCarets2: 2 0 0 
-Ligature2: "FreeMono-FreeSerif-'frac' diagonal fractions w/slash-1" one slash nine
-Ligature2: "FreeMono-FreeSerif-'frac' diagonal fractions w/fraction" one fraction nine
 EndChar
 
 StartChar: onetenth
@@ -53617,9 +53649,9 @@ Refer: 120 185 S 1 0 0 1 -80 -394 2
 Refer: 120 185 N 1 0 0 1 -201 20 0
 Refer: 1657 8725 N 1 0 0 1 -15 60 0
 Validated: 32769
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction one zero
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash one zero
 LCarets2: 3 0 0 0 
-Ligature2: "FreeMono-FreeSerif-'frac' diagonal fractions w/slash-1" one slash one zero
-Ligature2: "FreeMono-FreeSerif-'frac' diagonal fractions w/fraction" one fraction one zero
 EndChar
 
 StartChar: zerothirds
@@ -54136,6 +54168,16 @@ SplineSet
  412.715 41 l 1
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: zeroslashed
+Encoding: 59498 -1 2265
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 16 48 N 1 0 0 1 -20 0 2
+Refer: 586 823 S 1 0 0 1 673 0 2
 EndChar
 EndChars
 EndSplineFont
