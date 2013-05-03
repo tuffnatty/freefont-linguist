@@ -18,7 +18,7 @@ Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2012 Stevan White"
+__copyright__ = "Copyright 2013 Stevan White"
 __date__ = "$Date:: 2013-04-09 12:58:21 +0200#$"
 __version__ = "$Revision: 2527 $"
 
@@ -58,27 +58,16 @@ def explain_error_and_quit( e='' ):
 	print >> stderr, "       checkTableLangs sfd-file-path"
 	exit( 1 )
 
-filename = argv[1] if len( argv ) > 1 else ''
-if not filename:
-	explain_error_and_quit()
-
-try:
-	of = open( filename, 'r' )
-except Exception as e:
-	explain_error_and_quit( e )
-
-f = open( filename )
-
 """
 Typical line:
 Lookup: 6 0 0 "'ccmp' iogonek glyph decompos. in Latin"  {"'ccmp' iogonek glyph decomp in Latin-1"  } ['ccmp' ('latn' <'dflt' > ) ]
 """
 	
-lookup_re = re.compile( "^Lookup: (\d) (\d) (\d) (.*)$" )
-data_re = re.compile( '''^"(.+)"\s+{(.+)}\s+\[(.+)\]''' )
-dquot_names_re = re.compile( '"([^"]+)"' )
-squot_names_re = re.compile( "'([^']+)'" )
-type_scriptlangs_re = re.compile( "'([^']{4})'\s+<([^<]*)>" )
+_lookup_re = re.compile( "^Lookup: (\d) (\d) (\d) (.*)$" )
+_data_re = re.compile( '''^"(.+)"\s+{(.+)}\s+\[(.+)\]''' )
+_dquot_names_re = re.compile( '"([^"]+)"' )
+_squot_names_re = re.compile( "'([^']+)'" )
+_type_scriptlangs_re = re.compile( "'([^']{4})'\s+<([^<]*)>" )
 
 def collect_lookups_from_sfd( f ):
 	lookups = {}
@@ -90,10 +79,10 @@ def collect_lookups_from_sfd( f ):
 				"doesn't look like FontForge SFD file." )
 			firstline = False
 
-		m = lookup_re.match( line )
+		m = _lookup_re.match( line )
 		if m:
 			data = m.group( 4 )
-			dm = data_re.match( data )
+			dm = _data_re.match( data )
 			if dm:
 				parse_lookup( dm, lookups )
 	return lookups
@@ -104,24 +93,22 @@ def parse_lookup( dm, lookups ):
 	scriptNames = dm.group( 3 )
 	lookups[tableName] = {}
 	#if subtableNames:
-	#	names = dquot_names_re.findall( subtableNames )
+	#	names = _dquot_names_re.findall( subtableNames )
 	if scriptNames:
-		scn = type_scriptlangs_re.findall( scriptNames )
+		scn = _type_scriptlangs_re.findall( scriptNames )
 		for s in scn:
 			script = s[0]
 			langs = s[1]
-			lngs = set( squot_names_re.findall( langs ) )
+			lngs = set( _squot_names_re.findall( langs ) )
 			if not script in lookups[tableName]:
 				lookups[tableName][script] = set()
 			lookups[tableName][script] |= lngs
 
-def printall():
+def printall( lookups ):
 	for tn in lookups:
 		print tn
 		for script in lookups[tn]:
 			print '\t', script, ', '.join( lookups[tn][script] )
-
-#printall()
 
 def reverse_script_table( lookups ):
 	""" just reverse the table-script relationship """
@@ -163,11 +150,28 @@ def disabled_tables( lookups ):
 				disabled[name].append( ( other, conflict ) )
 	return disabled
 
+# =======================================================================
+filename = argv[1] if len( argv ) > 1 else ''
+if not filename:
+	explain_error_and_quit()
+
+f = None
+try:
+	f = open( filename, 'r' )
+except Exception as e:
+	explain_error_and_quit( e )
+
 lookups = collect_lookups_from_sfd( f )
+#printall( lookups )
 disabled = disabled_tables( lookups )
 
 for feat in disabled:
-	print "feature", '"' + feat + '"', "shadowed"
+	print "feature", '"' + feat + '"', "disabled for languages"
+	allothers = []
+	alllangs = set()
 	for ( other, langs ) in disabled[feat]:
-		print "\t", list( langs ), 'by "' + other + '"'
+		alllangs |= langs
+		allothers.append( other )
+	print "\t", list( alllangs )
+	print '\tby "' + allothers[0] + '" &cet'
 
