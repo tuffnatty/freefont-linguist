@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1367604241
+ModificationTime: 1367625749
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -50,6 +50,11 @@ OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2FamilyClass: 261
 OS2Vendor: 'GNU '
+Lookup: 1 0 0 "'onum' oldstyle figures"  {"'onum' oldstyle figures-subtable" ("oldstyle" ) "'onum' oldstyle figures-1" ("oldstyle" ) } ['onum' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'pnum' proportional-width numbers"  {"'pnum' proportional-width numbers-2"  "'pnum' proportional-width numbers-1"  } ['pnum' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'tnum' tabular numbers"  {"'tnum' tabular numbers-1"  } ['tnum' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'frac' diagonal fractions"  {"'frac' diagonal fractions w/slash-1"  "'frac' diagonal fractions w/fraction"  } ['frac' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'zero' slashed zero"  {"'zero' slashed zero-1"  } ['zero' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 2 0 0 "glyph decompos. of iogonek"  {"Glyph Decomposition of iogonek-subtable"  } []
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin - i"  {"'ccmp' glyph compos. in Latin - i-subtable"  } ['ccmp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Latin"  {"'liga' Standard Ligatures in Latin subtable"  "'liga' Standard Ligatures in Latin-commaright"  } ['liga' ('latn' <'dflt' > 'latn' <'CAT ' 'ESP ' 'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'VIT ' > ) ]
@@ -58,10 +63,6 @@ Lookup: 4 0 0 "'ccmp' glyph compos. in Latin for Viet 1"  {"'ccmp' Glyph Composi
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'VIT ' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin"  {"'hlig' Historic Ligatures in Latin subtable"  } ['hlig' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 1 0 0 "'hist' Historical Forms in Latin"  {"'hist' Historical Forms in Latin subtable"  } ['hist' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
-Lookup: 1 0 0 "'onum' oldstyle figures"  {"'onum' Oldstyle Figures subtable" ("oldstyle" ) } ['onum' ('DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "'pnum' proportional-width numbers"  {"'pnum' proportional-width numbers-2"  "'pnum' proportional-width numbers-1"  } ['pnum' ('DFLT' <'dflt' > ) ]
-Lookup: 4 8 0 "'frac' diagonal fractions"  {"'frac' Diagonal Fractions slash subtable"  "'frac' Diagonal Fractions fraction subtable"  } ['frac' ('DFLT' <'dflt' > ) ]
-Lookup: 1 0 0 "'zero' slashed zero"  {"'zero' Slashed Zero subtable"  } ['zero' ('DFLT' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' Historic Ligatures in Latin for German"  {"'hlig' Historic Ligatures in Latin for German subtable"  } ['hlig' ('latn' <'DEU ' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Latin for Dutch"  {"'liga' Standard Ligatures in Latin for Dutch"  } ['liga' ('latn' <'NLD ' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
@@ -814,9 +815,9 @@ SplineSet
  374 627 356 654 325 654 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "'zero' slashed zero-1" zeroslashed
 Substitution2: "'pnum' proportional-width numbers-2" fit.zero
-Substitution2: "'zero' Slashed Zero subtable" zeroslashed
-Substitution2: "'onum' Oldstyle Figures subtable" old.zero
+Substitution2: "'onum' oldstyle figures-subtable" old.zero
 EndChar
 
 StartChar: one
@@ -843,7 +844,7 @@ SplineSet
 EndSplineSet
 Validated: 1
 Substitution2: "'pnum' proportional-width numbers-2" fit.one
-Substitution2: "'onum' Oldstyle Figures subtable" old.one
+Substitution2: "'onum' oldstyle figures-subtable" old.one
 EndChar
 
 StartChar: two
@@ -872,7 +873,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.two
-Substitution2: "'onum' Oldstyle Figures subtable" old.two
+Substitution2: "'onum' oldstyle figures-subtable" old.two
 EndChar
 
 StartChar: three
@@ -902,7 +903,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.three
-Substitution2: "'onum' Oldstyle Figures subtable" old.three
+Substitution2: "'onum' oldstyle figures-subtable" old.three
 EndChar
 
 StartChar: four
@@ -931,7 +932,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.four
-Substitution2: "'onum' Oldstyle Figures subtable" old.four
+Substitution2: "'onum' oldstyle figures-subtable" old.four
 EndChar
 
 StartChar: five
@@ -958,7 +959,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.five
-Substitution2: "'onum' Oldstyle Figures subtable" old.five
+Substitution2: "'onum' oldstyle figures-subtable" old.five
 EndChar
 
 StartChar: six
@@ -987,7 +988,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.six
-Substitution2: "'onum' Oldstyle Figures subtable" old.six
+Substitution2: "'onum' oldstyle figures-subtable" old.six
 EndChar
 
 StartChar: seven
@@ -1009,7 +1010,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.seven
-Substitution2: "'onum' Oldstyle Figures subtable" old.seven
+Substitution2: "'onum' oldstyle figures-subtable" old.seven
 EndChar
 
 StartChar: eight
@@ -1043,7 +1044,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.eight
-Substitution2: "'onum' Oldstyle Figures subtable" old.eight
+Substitution2: "'onum' oldstyle figures-subtable" old.eight
 EndChar
 
 StartChar: nine
@@ -1071,7 +1072,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.nine
-Substitution2: "'onum' Oldstyle Figures subtable" old.nine
+Substitution2: "'onum' oldstyle figures-subtable" old.nine
 EndChar
 
 StartChar: colon
@@ -4126,8 +4127,8 @@ SplineSet
  37 274 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction four
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash four
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction four
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash four
 EndChar
 
 StartChar: onehalf
@@ -4173,8 +4174,8 @@ SplineSet
  41 274 l 1
 EndSplineSet
 Validated: 1
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction two
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash two
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction two
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash two
 EndChar
 
 StartChar: threequarters
@@ -4223,8 +4224,8 @@ SplineSet
  48 339 64 356 85 356 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'frac' Diagonal Fractions fraction subtable" three fraction four
-Ligature2: "'frac' Diagonal Fractions slash subtable" three slash four
+Ligature2: "'frac' diagonal fractions w/fraction" three fraction four
+Ligature2: "'frac' diagonal fractions w/slash-1" three slash four
 EndChar
 
 StartChar: questiondown
@@ -25749,8 +25750,8 @@ Fore
 Refer: 112 179 N 1 0 0 1 365 -394 0
 Refer: 1306 8543 N 1 0 0 1 0 0 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction three
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash three
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction three
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash three
 LCarets2: 2 0 0 
 EndChar
 
@@ -25795,8 +25796,8 @@ Refer: 112 179 N 1 0 0 1 390 -400 0
 Refer: 111 178 N 1 0 0 1 -56 -119 0
 Refer: 1307 8725 N 1 0 0 1 132 0 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" two fraction three
-Ligature2: "'frac' Diagonal Fractions slash subtable" two slash three
+Ligature2: "'frac' diagonal fractions w/fraction" two fraction three
+Ligature2: "'frac' diagonal fractions w/slash-1" two slash three
 LCarets2: 2 0 0 
 EndChar
 
@@ -26317,8 +26318,8 @@ Refer: 1329 8310 S 1 0 0 1 361 -394 0
 Refer: 1307 8725 N 1 0 0 1 94 0 0
 Refer: 118 185 N 1 0 0 1 -38 -110 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction six
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash six
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction six
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash six
 LCarets2: 2 0 0 
 EndChar
 
@@ -26333,8 +26334,8 @@ Refer: 1328 8309 S 1 0 0 1 376 -404 0
 Refer: 1307 8725 N 1 0 0 1 81 0 0
 Refer: 118 185 N 1 0 0 1 -44 -117 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction five
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash five
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash five
 LCarets2: 2 0 0 
 EndChar
 
@@ -26349,8 +26350,8 @@ Refer: 1330 8312 S 1 0 0 1 359 -399 0
 Refer: 1307 8725 N 1 0 0 1 95 0 0
 Refer: 118 185 N 1 0 0 1 -45 -115 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction eight
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash eight
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash eight
 LCarets2: 2 0 0 
 EndChar
 
@@ -26365,8 +26366,8 @@ Refer: 111 178 N 1 0 0 1 -51 -116 0
 Refer: 1307 8725 N 1 0 0 1 135 0.100006 0
 Refer: 1328 8309 S 1 0 0 1 406 -403.9 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" two fraction five
-Ligature2: "'frac' Diagonal Fractions slash subtable" two slash five
+Ligature2: "'frac' diagonal fractions w/fraction" two fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" two slash five
 LCarets2: 2 0 0 
 EndChar
 
@@ -26381,8 +26382,8 @@ Refer: 112 179 N 1 0 0 1 -41 -120 0
 Refer: 1307 8725 N 1 0 0 1 114 0 0
 Refer: 1328 8309 S 1 0 0 1 375 -408 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" three fraction five
-Ligature2: "'frac' Diagonal Fractions slash subtable" three slash five
+Ligature2: "'frac' diagonal fractions w/fraction" three fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" three slash five
 LCarets2: 2 0 0 
 EndChar
 
@@ -26397,8 +26398,8 @@ Refer: 1309 8308 N 1 0 0 1 -37 -120 0
 Refer: 1307 8725 N 1 0 0 1 132 0 0
 Refer: 1328 8309 S 1 0 0 1 376 -404 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" four fraction five
-Ligature2: "'frac' Diagonal Fractions slash subtable" four slash five
+Ligature2: "'frac' diagonal fractions w/fraction" four fraction five
+Ligature2: "'frac' diagonal fractions w/slash-1" four slash five
 LCarets2: 2 0 0 
 EndChar
 
@@ -26413,8 +26414,8 @@ Refer: 1328 8309 S 1 0 0 1 -44 -128 0
 Refer: 1307 8725 N 1 0 0 1 129 0 0
 Refer: 1329 8310 N 1 0 0 1 359 -400 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" five fraction six
-Ligature2: "'frac' Diagonal Fractions slash subtable" five slash six
+Ligature2: "'frac' diagonal fractions w/fraction" five fraction six
+Ligature2: "'frac' diagonal fractions w/slash-1" five slash six
 LCarets2: 2 0 0 
 EndChar
 
@@ -26429,8 +26430,8 @@ Refer: 112 179 N 1 0 0 1 -47 -116 0
 Refer: 1307 8725 N 1 0 0 1 106 0 0
 Refer: 1330 8312 S 1 0 0 1 358 -404 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" three fraction eight
-Ligature2: "'frac' Diagonal Fractions slash subtable" three slash eight
+Ligature2: "'frac' diagonal fractions w/fraction" three fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" three slash eight
 LCarets2: 2 0 0 
 EndChar
 
@@ -26445,8 +26446,8 @@ Refer: 1328 8309 N 1 0 0 1 -43 -128 0
 Refer: 1307 8725 N 1 0 0 1 120 0 0
 Refer: 1330 8312 S 1 0 0 1 359 -401 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" five fraction eight
-Ligature2: "'frac' Diagonal Fractions slash subtable" five slash eight
+Ligature2: "'frac' diagonal fractions w/fraction" five fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" five slash eight
 LCarets2: 2 0 0 
 EndChar
 
@@ -26461,8 +26462,8 @@ Refer: 1327 8311 N 1 0 0 1 -61 -120 0
 Refer: 1307 8725 N 1 0 0 1 57 0 0
 Refer: 1330 8312 S 1 0 0 1 359 -401 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" seven fraction eight
-Ligature2: "'frac' Diagonal Fractions slash subtable" seven slash eight
+Ligature2: "'frac' diagonal fractions w/fraction" seven fraction eight
+Ligature2: "'frac' diagonal fractions w/slash-1" seven slash eight
 LCarets2: 2 0 0 
 EndChar
 
@@ -61777,7 +61778,8 @@ SplineSet
  328 407 316 434 285 434 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.0
+Substitution2: "'tnum' tabular numbers-1" zero
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.zero
 EndChar
 
 StartChar: old.one
@@ -61803,7 +61805,8 @@ SplineSet
  5 0 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.1
+Substitution2: "'tnum' tabular numbers-1" one
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.one
 EndChar
 
 StartChar: old.two
@@ -61829,7 +61832,8 @@ SplineSet
  44 299 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.2
+Substitution2: "'tnum' tabular numbers-1" two
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.two
 EndChar
 
 StartChar: old.three
@@ -61858,7 +61862,8 @@ SplineSet
  217 -180 305 -121 305 -32 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.3
+Substitution2: "'tnum' tabular numbers-1" three
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.three
 EndChar
 
 StartChar: old.four
@@ -61886,7 +61891,8 @@ SplineSet
  82 98 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.4
+Substitution2: "'tnum' tabular numbers-1" four
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.four
 EndChar
 
 StartChar: old.five
@@ -61912,7 +61918,8 @@ SplineSet
  220 -178 287 -108.4 287 -31 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.5
+Substitution2: "'tnum' tabular numbers-1" five
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.five
 EndChar
 
 StartChar: old.six
@@ -61923,7 +61930,8 @@ LayerCount: 2
 Fore
 Refer: 22 54 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.6
+Substitution2: "'tnum' tabular numbers-1" six
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.six
 EndChar
 
 StartChar: old.seven
@@ -61944,7 +61952,8 @@ SplineSet
  130 336 103 324 66 259 c 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.7
+Substitution2: "'tnum' tabular numbers-1" seven
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.seven
 EndChar
 
 StartChar: old.eight
@@ -61955,7 +61964,8 @@ LayerCount: 2
 Fore
 Refer: 24 56 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.8
+Substitution2: "'tnum' tabular numbers-1" eight
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.eight
 EndChar
 
 StartChar: old.nine
@@ -61966,7 +61976,8 @@ LayerCount: 2
 Fore
 Refer: 25 57 S 1 0 0 1 -40 -216 2
 Validated: 32769
-Substitution2: "'pnum' proportional-width numbers-1" oldprop.9
+Substitution2: "'tnum' tabular numbers-1" nine
+Substitution2: "'pnum' proportional-width numbers-1" oldprop.nine
 EndChar
 
 StartChar: fit.zero
@@ -61977,7 +61988,9 @@ LayerCount: 2
 Fore
 Refer: 16 48 S 1 0 0 1 15 0 2
 Validated: 32769
-Substitution2: "'zero' Slashed Zero subtable" zeroslashed
+Substitution2: "'zero' slashed zero-1" zeroslashed
+Substitution2: "'tnum' tabular numbers-1" zero
+Substitution2: "'onum' oldstyle figures-1" oldprop.zero
 EndChar
 
 StartChar: fit.one
@@ -61988,6 +62001,8 @@ LayerCount: 2
 Fore
 Refer: 17 49 N 1 0 0 1 -2 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" one
+Substitution2: "'onum' oldstyle figures-1" oldprop.one
 EndChar
 
 StartChar: fit.two
@@ -61998,6 +62013,8 @@ LayerCount: 2
 Fore
 Refer: 18 50 N 1 0 0 1 13 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" two
+Substitution2: "'onum' oldstyle figures-1" oldprop.two
 EndChar
 
 StartChar: fit.three
@@ -62008,6 +62025,8 @@ LayerCount: 2
 Fore
 Refer: 19 51 N 1 0 0 1 7 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" three
+Substitution2: "'onum' oldstyle figures-1" oldprop.three
 EndChar
 
 StartChar: fit.four
@@ -62018,6 +62037,8 @@ LayerCount: 2
 Fore
 Refer: 20 52 N 1 0 0 1 18 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" four
+Substitution2: "'onum' oldstyle figures-1" oldprop.four
 EndChar
 
 StartChar: fit.five
@@ -62028,6 +62049,8 @@ LayerCount: 2
 Fore
 Refer: 21 53 N 1 0 0 1 -2 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" five
+Substitution2: "'onum' oldstyle figures-1" oldprop.five
 EndChar
 
 StartChar: fit.six
@@ -62038,6 +62061,8 @@ LayerCount: 2
 Fore
 Refer: 22 54 N 1 0 0 1 1 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" six
+Substitution2: "'onum' oldstyle figures-1" oldprop.six
 EndChar
 
 StartChar: fit.seven
@@ -62048,6 +62073,8 @@ LayerCount: 2
 Fore
 Refer: 23 55 N 1 0 0 1 20 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" seven
+Substitution2: "'onum' oldstyle figures-1" oldprop.seven
 EndChar
 
 StartChar: fit.eight
@@ -62058,6 +62085,8 @@ LayerCount: 2
 Fore
 Refer: 24 56 N 1 0 0 1 5 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" eight
+Substitution2: "'onum' oldstyle figures-1" oldprop.eight
 EndChar
 
 StartChar: fit.nine
@@ -62068,6 +62097,8 @@ LayerCount: 2
 Fore
 Refer: 25 57 N 1 0 0 1 15 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" nine
+Substitution2: "'onum' oldstyle figures-1" oldprop.nine
 EndChar
 
 StartChar: oldprop.zero
@@ -62078,6 +62109,7 @@ LayerCount: 2
 Fore
 Refer: 2671 -1 N 1 0 0 1 9 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" zero
 EndChar
 
 StartChar: oldprop.one
@@ -62088,6 +62120,7 @@ LayerCount: 2
 Fore
 Refer: 2672 -1 N 1 0 0 1 -2 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" one
 EndChar
 
 StartChar: oldprop.two
@@ -62098,6 +62131,7 @@ LayerCount: 2
 Fore
 Refer: 2673 -1 N 1 0 0 1 3 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" two
 EndChar
 
 StartChar: oldprop.three
@@ -62108,6 +62142,7 @@ LayerCount: 2
 Fore
 Refer: 2674 -1 N 1 0 0 1 -45 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" three
 EndChar
 
 StartChar: oldprop.four
@@ -62118,6 +62153,7 @@ LayerCount: 2
 Fore
 Refer: 2675 -1 N 1 0 0 1 2 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" four
 EndChar
 
 StartChar: oldprop.five
@@ -62128,6 +62164,7 @@ LayerCount: 2
 Fore
 Refer: 2676 -1 N 1 0 0 1 -5 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" five
 EndChar
 
 StartChar: oldprop.six
@@ -62138,6 +62175,7 @@ LayerCount: 2
 Fore
 Refer: 2677 -1 N 1 0 0 1 1 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" six
 EndChar
 
 StartChar: oldprop.seven
@@ -62148,6 +62186,7 @@ LayerCount: 2
 Fore
 Refer: 23 55 S 1 0 0 1 -20 -212 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" seven
 EndChar
 
 StartChar: oldprop.eight
@@ -62158,6 +62197,7 @@ LayerCount: 2
 Fore
 Refer: 2679 -1 N 1 0 0 1 4 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" eight
 EndChar
 
 StartChar: oldprop.nine
@@ -62168,6 +62208,7 @@ LayerCount: 2
 Fore
 Refer: 2680 -1 N 1 0 0 1 5 0 2
 Validated: 32769
+Substitution2: "'tnum' tabular numbers-1" nine
 EndChar
 
 StartChar: zeroslashed
@@ -62550,8 +62591,8 @@ Refer: 1307 8725 N 1 0 0 1 98 0 0
 Refer: 1332 8304 N 1 0 0 1 -40 -120 2
 Refer: 112 179 S 1 0 0 1 341 -395 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" zero fraction three
-Ligature2: "'frac' Diagonal Fractions slash subtable" zero slash three
+Ligature2: "'frac' diagonal fractions w/fraction" zero fraction three
+Ligature2: "'frac' diagonal fractions w/slash-1" zero slash three
 EndChar
 
 StartChar: oneseventh
@@ -62563,8 +62604,8 @@ Fore
 Refer: 1327 8311 S 1.01003 0 0 1 341.9 -390 0
 Refer: 1306 8543 N 1 0 0 1 0 0 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction seven
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash seven
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction seven
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash seven
 LCarets2: 2 0 0 
 EndChar
 
@@ -62577,8 +62618,8 @@ Fore
 Refer: 1331 8313 S 1 0 0 1 363 -388 2
 Refer: 1306 8543 N 1 0 0 1 0 0 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction nine
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash nine
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction nine
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash nine
 LCarets2: 2 0 0 
 EndChar
 
@@ -62592,8 +62633,8 @@ Refer: 1332 8304 N 1 0 0 1 562 -388 2
 Refer: 118 185 N 1 0 0 1 330 -390 2
 Refer: 1306 8543 N 1 0 0 1 0 0 0
 Validated: 32769
-Ligature2: "'frac' Diagonal Fractions fraction subtable" one fraction one zero
-Ligature2: "'frac' Diagonal Fractions slash subtable" one slash one zero
+Ligature2: "'frac' diagonal fractions w/fraction" one fraction one zero
+Ligature2: "'frac' diagonal fractions w/slash-1" one slash one zero
 LCarets2: 3 0 0 0 
 EndChar
 
