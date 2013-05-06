@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1367662780
+ModificationTime: 1367866602
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -55,6 +55,8 @@ Lookup: 1 0 0 "'pnum' proportional-width numbers"  {"'pnum' proportional-width n
 Lookup: 1 0 0 "'tnum' tabular numbers"  {"'tnum' tabular numbers-1"  } ['tnum' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 4 0 0 "'frac' diagonal fractions"  {"'frac' diagonal fractions w/slash-1"  "'frac' diagonal fractions w/fraction"  } ['frac' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'zero' slashed zero"  {"'zero' slashed zero-1"  } ['zero' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'sups' superscript"  {"'sups' superscript-numeric" ("superior" ) "'sups' superscript-1" ("superior" ) "'sups' superscript-Latin-D" ("superior" ) } ['sups' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'subs' subscript"  {"'subs' subscript-numeric" ("inferior" ) "'subs' subscript-1" ("inferior" ) } ['subs' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 1 0 0 "'ss01' style set 1 in Cyrillic for Bulgarian"  {"'ss01' Style Set 1 in Cyrillic for Bulgarian-subtable"  } ['ss01' ('cyrl' <'BGR ' > ) ]
 Lookup: 1 0 0 "'locl' local. forms in Cyrillic for Serbian-Macedonian"  {"'locl' Localized Forms for Serbian-Macedonian-1"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
 Lookup: 3 0 0 "'salt' stylistic alternatives in Cyrillic for Serbian"  {"'salt' Stylistic Alternatives in Cyrillic for Serbian-subtable"  } ['salt' ('cyrl' <'MKD ' 'SRB ' > ) ]
@@ -654,6 +656,9 @@ SplineSet
  141 -181 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" parenleftinferior
+Substitution2: "'subs' subscript-numeric" parenleftinferior
+Substitution2: "'sups' superscript-numeric" parenleftsuperior
 EndChar
 
 StartChar: parenright
@@ -673,6 +678,9 @@ SplineSet
  190 669 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" parenrightinferior
+Substitution2: "'subs' subscript-numeric" parenrightinferior
+Substitution2: "'sups' superscript-numeric" parenrightsuperior
 EndChar
 
 StartChar: asterisk
@@ -734,6 +742,9 @@ SplineSet
  305 286 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" plusinferior
+Substitution2: "'subs' subscript-numeric" plusinferior
+Substitution2: "'sups' superscript-numeric" plussuperior
 EndChar
 
 StartChar: comma
@@ -822,9 +833,11 @@ SplineSet
  111 71 143 21 197 21 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'zero' slashed zero-1" zeroslashed
 Substitution2: "'pnum' proportional-width numbers-2" fit.zero
 Substitution2: "'onum' oldstyle figures-subtable" old.zero
+Substitution2: "'subs' subscript-numeric" zeroinferior
+Substitution2: "'sups' superscript-numeric" zerosuperior
+Substitution2: "'zero' slashed zero-1" zeroslashed
 EndChar
 
 StartChar: one
@@ -858,6 +871,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.one
 Substitution2: "'onum' oldstyle figures-subtable" old.one
+Substitution2: "'subs' subscript-numeric" oneinferior
+Substitution2: "'sups' superscript-numeric" onesuperior
 EndChar
 
 StartChar: two
@@ -889,6 +904,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.two
 Substitution2: "'onum' oldstyle figures-subtable" old.two
+Substitution2: "'subs' subscript-numeric" twoinferior
+Substitution2: "'sups' superscript-numeric" twosuperior
 EndChar
 
 StartChar: three
@@ -920,6 +937,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.three
 Substitution2: "'onum' oldstyle figures-subtable" old.three
+Substitution2: "'subs' subscript-numeric" threeinferior
+Substitution2: "'sups' superscript-numeric" threesuperior
 EndChar
 
 StartChar: four
@@ -952,6 +971,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.four
 Substitution2: "'onum' oldstyle figures-subtable" old.four
+Substitution2: "'subs' subscript-numeric" fourinferior
+Substitution2: "'sups' superscript-numeric" foursuperior
 EndChar
 
 StartChar: five
@@ -981,6 +1002,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.five
 Substitution2: "'onum' oldstyle figures-subtable" old.five
+Substitution2: "'subs' subscript-numeric" fiveinferior
+Substitution2: "'sups' superscript-numeric" fivesuperior
 EndChar
 
 StartChar: six
@@ -1011,6 +1034,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.six
 Substitution2: "'onum' oldstyle figures-subtable" old.six
+Substitution2: "'subs' subscript-numeric" sixinferior
+Substitution2: "'sups' superscript-numeric" sixsuperior
 EndChar
 
 StartChar: seven
@@ -1036,6 +1061,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.seven
 Substitution2: "'onum' oldstyle figures-subtable" old.seven
+Substitution2: "'subs' subscript-numeric" seveninferior
+Substitution2: "'sups' superscript-numeric" sevensuperior
 EndChar
 
 StartChar: eight
@@ -1070,6 +1097,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.eight
 Substitution2: "'onum' oldstyle figures-subtable" old.eight
+Substitution2: "'subs' subscript-numeric" eightinferior
+Substitution2: "'sups' superscript-numeric" eightsuperior
 EndChar
 
 StartChar: nine
@@ -1100,6 +1129,8 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'pnum' proportional-width numbers-2" fit.nine
 Substitution2: "'onum' oldstyle figures-subtable" old.nine
+Substitution2: "'subs' subscript-numeric" nineinferior
+Substitution2: "'sups' superscript-numeric" ninesuperior
 EndChar
 
 StartChar: colon
@@ -1184,6 +1215,9 @@ SplineSet
  590 186 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" equalinferior
+Substitution2: "'subs' subscript-numeric" equalinferior
+Substitution2: "'sups' superscript-numeric" equalsuperior
 EndChar
 
 StartChar: greater
@@ -1308,6 +1342,7 @@ SplineSet
  226 262 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Asup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.a
 EndChar
 
@@ -1348,6 +1383,7 @@ SplineSet
  339 623 327 617 321 595 c 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Bsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.b
 EndChar
 
@@ -1378,6 +1414,7 @@ SplineSet
  43 465 236 666 449 666 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" C.sup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.c
 EndChar
 
@@ -1411,6 +1448,7 @@ SplineSet
  455 30 597 181 597 408 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Dsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.d
 EndChar
 
@@ -1456,6 +1494,7 @@ SplineSet
  177 43 201 33 257 33 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Esup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.e
 EndChar
 
@@ -1497,6 +1536,7 @@ SplineSet
  402 251 404 263 404 279 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" F.sup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.f
 EndChar
 
@@ -1533,6 +1573,7 @@ SplineSet
  44 466 236 666 447 666 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Gsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.g
 EndChar
 
@@ -1581,6 +1622,7 @@ SplineSet
  775 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Hsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.h
 EndChar
 
@@ -1612,6 +1654,7 @@ SplineSet
  0 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Isup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.i
 EndChar
 
@@ -1643,6 +1686,7 @@ SplineSet
  497 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Jsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.j
 EndChar
 
@@ -1692,6 +1736,7 @@ SplineSet
  715 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Ksup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.k
 EndChar
 
@@ -1724,6 +1769,7 @@ SplineSet
  177 44 202 36 278 36 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Lsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.l
 EndChar
 
@@ -1768,6 +1814,7 @@ SplineSet
  891 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Msup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.m
 EndChar
 
@@ -1806,6 +1853,7 @@ SplineSet
  607 534 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Nsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.n
 EndChar
 
@@ -1833,6 +1881,7 @@ SplineSet
  142 76 188 15 272 15 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Osup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.o
 EndChar
 
@@ -1870,6 +1919,7 @@ SplineSet
  417 342 502 372 502 504 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Psup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.p
 EndChar
 
@@ -1908,6 +1958,7 @@ SplineSet
  142 78 189 17 270 17 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Q.sup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.q
 EndChar
 
@@ -1950,6 +2001,7 @@ SplineSet
  340 623 327 616 321 595 c 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Rsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.r
 EndChar
 
@@ -1986,6 +2038,7 @@ SplineSet
  114 597 188 666 292 666 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" S.sup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.s
 EndChar
 
@@ -2021,6 +2074,7 @@ SplineSet
  668 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Tsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.t
 EndChar
 
@@ -2058,6 +2112,7 @@ SplineSet
  622 473 648 575 648 591 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Usup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.u
 EndChar
 
@@ -2091,6 +2146,7 @@ SplineSet
  738 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Vsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.v
 EndChar
 
@@ -2136,6 +2192,7 @@ SplineSet
  963 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Wsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.w
 EndChar
 
@@ -2183,6 +2240,7 @@ SplineSet
  684 653 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" X.sup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.x
 EndChar
 
@@ -2223,6 +2281,7 @@ SplineSet
  343 175 313 91 313 56 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Y.sup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.y
 EndChar
 
@@ -2253,6 +2312,7 @@ SplineSet
  308 617 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Z.sup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.z
 EndChar
 
@@ -2407,6 +2467,8 @@ SplineSet
  257 38 365 235 365 358 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" ainferior
+Substitution2: "'sups' superscript-1" asup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.a
 EndChar
 
@@ -2440,6 +2502,8 @@ SplineSet
  111 23 126 12 157 12 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.b
+Substitution2: "'sups' superscript-1" bsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.b
 EndChar
 
@@ -2469,6 +2533,8 @@ SplineSet
  347 412 332 420 309 420 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.c
+Substitution2: "'sups' superscript-1" csup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.c
 EndChar
 
@@ -2509,6 +2575,8 @@ SplineSet
  255 37 359 209 359 361 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.d
+Substitution2: "'sups' superscript-1" dsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.d
 EndChar
 
@@ -2542,6 +2610,8 @@ SplineSet
  128 208 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" einferior
+Substitution2: "'sups' superscript-1" esup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.e
 EndChar
 
@@ -2581,6 +2651,8 @@ SplineSet
  -19 -105 -1 -122 -1 -143 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.f
+Substitution2: "'sups' superscript-1" fsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.f
 EndChar
 
@@ -2624,6 +2696,8 @@ SplineSet
  142 200 164 172 202 172 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.g
+Substitution2: "'sups' superscript-1" gsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.g
 EndChar
 
@@ -2664,6 +2738,8 @@ SplineSet
  421 441 448 414 448 374 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.h
+Substitution2: "'sups' superscript-1" hsuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.h
 EndChar
 
@@ -2701,6 +2777,8 @@ SplineSet
  157 631 177 654 204 654 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" isub
+Substitution2: "'sups' superscript-1" isuperior
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.i
 Substitution2: "'smcp' lowercase to small caps in Latin for Turkish-1" sc.i_dot
 EndChar
@@ -2739,6 +2817,8 @@ SplineSet
  229 632 249 654 276 654 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.j
+Substitution2: "'sups' superscript-1" jsuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.j
 EndChar
 
@@ -2778,6 +2858,8 @@ SplineSet
  418 409 387 389 240 258 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.k
+Substitution2: "'sups' superscript-1" ksup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.k
 EndChar
 
@@ -2809,6 +2891,8 @@ SplineSet
  109 39 114 32 124 32 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.l
+Substitution2: "'sups' superscript-1" lsuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.l
 EndChar
 
@@ -2859,6 +2943,8 @@ SplineSet
  591 44 596 38 604 38 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.m
+Substitution2: "'sups' superscript-1" msup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.m
 EndChar
 
@@ -2900,6 +2986,8 @@ SplineSet
  393.597 38 434.413 87.7969 458 117 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.n
+Substitution2: "'sups' superscript-1" nsuperior
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.n
 EndChar
 
@@ -2927,6 +3015,8 @@ SplineSet
  109 46 140 10 187 10 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" oinferior
+Substitution2: "'sups' superscript-1" osup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.o
 EndChar
 
@@ -2967,6 +3057,8 @@ SplineSet
  292 8 377 203 377 312 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.p
+Substitution2: "'sups' superscript-1" psup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.p
 EndChar
 
@@ -3004,6 +3096,8 @@ SplineSet
  105 72 127 42 161 42 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.q
+Substitution2: "'sups' superscript-1" sup.q
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.q
 EndChar
 
@@ -3036,6 +3130,8 @@ SplineSet
  386 358 369 340 340 340 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" rsub
+Substitution2: "'sups' superscript-1" rsuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.r
 EndChar
 
@@ -3071,6 +3167,8 @@ SplineSet
  288 43 228 -11 144 -11 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.s
+Substitution2: "'sups' superscript-1" ssuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.s
 Substitution2: "'hist' Historical Forms in Latin subtable" longs
 EndChar
@@ -3108,6 +3206,8 @@ SplineSet
  285 428 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.t
+Substitution2: "'sups' superscript-1" tsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.t
 EndChar
 
@@ -3149,6 +3249,8 @@ SplineSet
  102 343 107 368 107 376 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" usub
+Substitution2: "'sups' superscript-1" usup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.u
 EndChar
 
@@ -3180,6 +3282,8 @@ SplineSet
  339 176 405 287 405 333 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" vsub
+Substitution2: "'sups' superscript-1" vsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.v
 EndChar
 
@@ -3220,6 +3324,8 @@ SplineSet
  119 394 110 405 86 405 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.w
+Substitution2: "'sups' superscript-1" wsuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.w
 EndChar
 
@@ -3263,6 +3369,8 @@ SplineSet
  307 57 316 44 331 44 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" xinferior
+Substitution2: "'sups' superscript-1" xsuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.x
 EndChar
 
@@ -3297,6 +3405,8 @@ SplineSet
  51 417 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.y
+Substitution2: "'sups' superscript-1" ysuper
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.y
 EndChar
 
@@ -3331,6 +3441,8 @@ SplineSet
  363 -45 319 -81 269 -81 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" sub.z
+Substitution2: "'sups' superscript-1" zsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.z
 EndChar
 
@@ -4084,7 +4196,7 @@ Fore
 Refer: 1300 8260 S 1 0 0 1 239 0 0
 Refer: 1378 8308 N 1 0 0 1 284 -460 0
 Refer: 118 185 N 1 0 0 1 -50 0 2
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction four
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash four
 LCarets2: 2 0 0 
@@ -4098,7 +4210,7 @@ LayerCount: 2
 Fore
 Refer: 1320 8543 N 1 0 0 1 -10 0 2
 Refer: 111 178 N 1 0 0 1 270 -460 2
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction two
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash two
 LCarets2: 2 0 0 
@@ -4113,7 +4225,7 @@ Fore
 Refer: 1300 8260 S 1 0 0 1 239 0 0
 Refer: 1378 8308 N 1 0 0 1 244 -460 0
 Refer: 112 179 N 1 0 0 1 -50 0 2
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" three fraction four
 Ligature2: "'frac' diagonal fractions w/slash-1" three slash four
 LCarets2: 2 0 0 
@@ -4259,6 +4371,7 @@ SplineSet
  278 271 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" AEsup
 Substitution2: "'c2sc' caps to small caps in Latin-1" sc.ae
 EndChar
 
@@ -5032,6 +5145,7 @@ SplineSet
  109 47 140 10 187 10 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" ethsup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" sc.eth
 EndChar
 
@@ -5951,6 +6065,7 @@ SplineSet
  202 526 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-Latin-D" Hbarsup
 EndChar
 
 StartChar: hbar
@@ -6664,6 +6779,7 @@ SplineSet
  442 366 438.824 344.049 433 323 c 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" engsup
 EndChar
 
 StartChar: Omacron
@@ -6828,6 +6944,7 @@ SplineSet
  528 416 453 397 397 215 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-Latin-D" oesup
 Substitution2: "'smcp' lowercase to small capitals in Latin-1" OEsmallcap
 EndChar
 
@@ -8830,6 +8947,7 @@ SplineSet
  380 417 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" ezhsup
 EndChar
 
 StartChar: circumflex
@@ -10811,6 +10929,8 @@ SplineSet
  211 406 232 416 247 416 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" betasub
+Substitution2: "'sups' superscript-1" betasup
 EndChar
 
 StartChar: delta
@@ -10842,6 +10962,7 @@ SplineSet
  369 245.6 366.192 296.822 362 308 c 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" deltasup
 EndChar
 
 StartChar: epsilon
@@ -10876,6 +10997,7 @@ SplineSet
  401 334 385 321 368 321 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" epsilonsup
 EndChar
 
 StartChar: zeta
@@ -10970,6 +11092,7 @@ SplineSet
  304 12 362 236 386 334 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" thetasup
 EndChar
 
 StartChar: iota
@@ -10992,6 +11115,7 @@ SplineSet
  251 130 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" iotasup
 EndChar
 
 StartChar: kappa
@@ -11251,6 +11375,7 @@ SplineSet
  317 12 379 196 379 291 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" rhosub
 EndChar
 
 StartChar: sigma1
@@ -11391,6 +11516,8 @@ SplineSet
  429 12 562 152 562 319 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" phisub
+Substitution2: "'sups' superscript-1" phisup
 EndChar
 
 StartChar: chi
@@ -11423,6 +11550,8 @@ SplineSet
  265 -28 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" chisub
+Substitution2: "'sups' superscript-1" chisup
 EndChar
 
 StartChar: psi
@@ -27248,7 +27377,7 @@ LayerCount: 2
 Fore
 Refer: 1300 8260 N 1 0 0 1 209 0 0
 Refer: 118 185 N 1 0 0 1 -52 0 0
-Validated: 98305
+Validated: 32769
 LCarets2: 1 0 
 EndChar
 
@@ -27311,6 +27440,9 @@ SplineSet
  590 220 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" minusinferior
+Substitution2: "'subs' subscript-numeric" minusinferior
+Substitution2: "'sups' superscript-numeric" minussuperior
 EndChar
 
 StartChar: uni2215
@@ -27517,6 +27649,8 @@ SplineSet
  190.562 -8.88011 221 -212 118 -212 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'subs' subscript-1" gammasub
+Substitution2: "'sups' superscript-1" gammasup
 EndChar
 
 StartChar: Iecyrillic_grave
@@ -29394,6 +29528,7 @@ LayerCount: 2
 Fore
 Refer: 67 99 S -1 0 0 -1 419 430 2
 Validated: 32769
+Substitution2: "'sups' superscript-1" oopensup
 EndChar
 
 StartChar: uni0186
@@ -29693,6 +29828,7 @@ LayerCount: 2
 Fore
 Refer: 65 97 N -1 0 0 -1 533 430 0
 Validated: 32769
+Substitution2: "'sups' superscript-1" aturnsup
 EndChar
 
 StartChar: ascriptturn
@@ -29747,6 +29883,8 @@ LayerCount: 2
 Fore
 Refer: 69 101 S -1 0 0 -1 429 430 0
 Validated: 32769
+Substitution2: "'subs' subscript-1" schwainferior
+Substitution2: "'sups' superscript-1" schwasup
 EndChar
 
 StartChar: gscript
@@ -29818,6 +29956,7 @@ SplineSet
  167 631 187 654 214 654 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" ibarsup
 EndChar
 
 StartChar: ubar
@@ -29867,6 +30006,7 @@ SplineSet
  292.196 205.768 301.082 220.159 308.941 234 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" ubarsup
 EndChar
 
 StartChar: uni0275
@@ -29894,6 +30034,7 @@ SplineSet
  279 10 337 130 361 200 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" obarsup
 EndChar
 
 StartChar: Ismallcap
@@ -29905,6 +30046,7 @@ LayerCount: 2
 Fore
 Refer: 41 73 S 0.66 0 0 0.66 7 0 2
 Validated: 32769
+Substitution2: "'sups' superscript-1" Ismalcapsup
 EndChar
 
 StartChar: nonbreakingspace
@@ -30010,7 +30152,7 @@ LayerCount: 2
 Fore
 Refer: 112 179 N 1 0 0 1 309 -460 0
 Refer: 1320 8543 N 1 0 0 1 11 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction three
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash three
 LCarets2: 2 0 0 
@@ -30025,7 +30167,7 @@ LayerCount: 2
 Fore
 Refer: 1307 8309 N 1 0 0 1 268 -460 0
 Refer: 1320 8543 N 1 0 0 1 0 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction five
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash five
 LCarets2: 2 0 0 
@@ -30040,7 +30182,7 @@ LayerCount: 2
 Fore
 Refer: 1308 8310 N 1 0 0 1 288 -460 0
 Refer: 1320 8543 S 1 0 0 1 -3 2 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction six
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash six
 LCarets2: 2 0 0 
@@ -30070,7 +30212,7 @@ Fore
 Refer: 1300 8260 N 1 0 0 1 239 0 0
 Refer: 112 179 N 1 0 0 1 306 -460 0
 Refer: 111 178 N 1 0 0 1 -44 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" two fraction three
 Ligature2: "'frac' diagonal fractions w/slash-1" two slash three
 LCarets2: 2 0 0 
@@ -30086,7 +30228,7 @@ Fore
 Refer: 1300 8260 S 1 0 0 1 239 0 0
 Refer: 1307 8309 N 1 0 0 1 302 -460 0
 Refer: 111 178 N 1 0 0 1 -49 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" two fraction five
 Ligature2: "'frac' diagonal fractions w/slash-1" two slash five
 LCarets2: 2 0 0 
@@ -30102,7 +30244,7 @@ Fore
 Refer: 1300 8260 S 1 0 0 1 239 0 0
 Refer: 112 179 N 1 0 0 1 -15 0 0
 Refer: 1307 8309 N 1 0 0 1 300 -460 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" three fraction five
 Ligature2: "'frac' diagonal fractions w/slash-1" three slash five
 LCarets2: 2 0 0 
@@ -30118,7 +30260,7 @@ Fore
 Refer: 1300 8260 S 1 0 0 1 239 0 0
 Refer: 1378 8308 N 1 0 0 1 -26 0 0
 Refer: 1307 8309 N 1 0 0 1 303 -460 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" four fraction five
 Ligature2: "'frac' diagonal fractions w/slash-1" four slash five
 LCarets2: 2 0 0 
@@ -32354,6 +32496,7 @@ SplineSet
  331 428 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" tpalatalhooksup
 EndChar
 
 StartChar: Thook
@@ -33001,6 +33144,7 @@ SplineSet
  691 637 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Eturnedsup
 EndChar
 
 StartChar: Btopbar
@@ -33281,6 +33425,7 @@ SplineSet
  448 678 497 659 497 613 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" eshsup
 EndChar
 
 StartChar: bhook
@@ -33426,6 +33571,7 @@ SplineSet
  533 429 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" upsilonlatinsup
 EndChar
 
 StartChar: vscript
@@ -33453,6 +33599,7 @@ SplineSet
  476 211 320 -20 140 -20 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" vhooksup
 EndChar
 
 StartChar: trthook
@@ -33535,6 +33682,7 @@ LayerCount: 2
 Fore
 Refer: 72 104 S -1 0 0 -1 537 432 0
 Validated: 32769
+Substitution2: "'sups' superscript-1" hturnedsup
 EndChar
 
 StartChar: uni026F
@@ -33579,6 +33727,7 @@ LayerCount: 2
 Fore
 Refer: 86 118 N -1 0 0 -1 447 423 0
 Validated: 32769
+Substitution2: "'sups' superscript-1" vturnsup
 EndChar
 
 StartChar: wturn
@@ -33645,6 +33794,7 @@ SplineSet
  318.595 223.753 371.255 196.029 371.255 141.618 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" eopenturnedsup
 EndChar
 
 StartChar: uniFFFD
@@ -41948,6 +42098,7 @@ SplineSet
  220.911 266 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Bbarsup
 EndChar
 
 StartChar: uni0244
@@ -45095,6 +45246,7 @@ SplineSet
  266.802 32 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" jdotlessbarsup
 EndChar
 
 StartChar: Gsmallcap
@@ -45206,6 +45358,7 @@ SplineSet
  304 390 236 328 184 249 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" hhooksuper
 EndChar
 
 StartChar: henghook
@@ -45355,6 +45508,7 @@ SplineSet
  90.4346 -45 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" lretroflexhooksup
 EndChar
 
 StartChar: uni026E
@@ -45439,6 +45593,7 @@ SplineSet
  181 388 176 394 168 394 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" mturneddescendsup
 EndChar
 
 StartChar: uni0271
@@ -45483,6 +45638,7 @@ SplineSet
  642 0 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" mhooksup
 EndChar
 
 StartChar: nhookleft
@@ -45526,6 +45682,7 @@ SplineSet
  36 -183 60.7471 -119.728 98 1 c 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" nhookleftsup
 EndChar
 
 StartChar: nhookretroflex
@@ -45596,6 +45753,7 @@ SplineSet
  575.037 433 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" Nsmallcapsup
 EndChar
 
 StartChar: OEsmallcap
@@ -45713,6 +45871,7 @@ SplineSet
  316 412 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" philatinsup
 EndChar
 
 StartChar: uni027A
@@ -45751,6 +45910,7 @@ SplineSet
  252 0 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" rturnrthooksuper
 EndChar
 
 StartChar: uni027C
@@ -45914,6 +46074,7 @@ LayerCount: 2
 Fore
 Refer: 595 1071 S -0.66 0 0 -0.66 480.58 430.98 2
 Validated: 32769
+Substitution2: "'sups' superscript-1" Rturnsuper
 EndChar
 
 StartChar: uni0282
@@ -45949,6 +46110,7 @@ SplineSet
  47.5908 -1.74316 21.9092 -91.8984 21.9092 -141.988 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" shooksup
 EndChar
 
 StartChar: jhookdblbar
@@ -46111,6 +46273,7 @@ SplineSet
  298.667 -56 283 -62 269 -62 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" zretroflexhooksup
 EndChar
 
 StartChar: zcurl
@@ -46145,6 +46308,7 @@ SplineSet
  417.489 65.6715 360.145 -48 180 -48 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" zcurlsup
 EndChar
 
 StartChar: uni0293
@@ -46235,6 +46399,7 @@ SplineSet
  87 526 217 666 365 666 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" glottalrevsuper
 EndChar
 
 StartChar: glottalstopinv
@@ -46386,6 +46551,7 @@ SplineSet
  123.198 -32 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-1" jcrosstailsup
 EndChar
 
 StartChar: uni029F
@@ -46396,6 +46562,7 @@ LayerCount: 2
 Fore
 Refer: 44 76 N 0.66 0 0 0.66 0 0 2
 Validated: 32769
+Substitution2: "'sups' superscript-1" Lsmallcapsup
 EndChar
 
 StartChar: qhook
@@ -93428,6 +93595,7 @@ LayerCount: 2
 Fore
 Refer: 3320 -1 N 1 0 0 1 -7 0 2
 Validated: 32769
+Substitution2: "'sups' superscript-1" Usmallcapsup
 EndChar
 
 StartChar: Vsmallcap
@@ -95896,9 +96064,9 @@ LayerCount: 2
 Fore
 Refer: 16 48 S 1 0 0 1 3 0 2
 Validated: 32769
-Substitution2: "'zero' slashed zero-1" zeroslashed
 Substitution2: "'tnum' tabular numbers-1" zero
 Substitution2: "'onum' oldstyle figures-1" oldprop.zero
+Substitution2: "'zero' slashed zero-1" zeroslashed
 EndChar
 
 StartChar: fit.one
@@ -96481,7 +96649,7 @@ LayerCount: 2
 Fore
 Refer: 1320 8543 N 1 0 0 1 0 0 0
 Refer: 1309 8311 N 1.01003 0 0 1 317.9 -460 0
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction seven
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash seven
 LCarets2: 2 0 0 
@@ -96495,7 +96663,7 @@ LayerCount: 2
 Fore
 Refer: 1320 8543 N 1 0 0 1 0 0 0
 Refer: 1311 8313 S 1 0 0 1 308 -460 2
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction nine
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash nine
 LCarets2: 2 0 0 
@@ -96510,7 +96678,7 @@ Fore
 Refer: 1320 8543 N 1 0 0 1 0 0 0
 Refer: 118 185 N 1 0 0 1 240 -460 2
 Refer: 1306 8304 S 1 0 0 1 483 -458 2
-Validated: 98305
+Validated: 32769
 Ligature2: "'frac' diagonal fractions w/fraction" one fraction one zero
 Ligature2: "'frac' diagonal fractions w/slash-1" one slash one zero
 LCarets2: 3 0 0 0 
