@@ -28,14 +28,24 @@ script-language that was listed in another table.
 
 For example
 -----------
-table A specified to activate when
-	latn{'dflt'}
-table B specified to activate when
-	latn{'dflt', 'ESP '}
-Then table A will *not* be activated for Spanish text.
+	table A to activate on: latn{'dflt'}
+	table B to activate on: latn{'dflt', 'ESP '}
+Then table A will *not* be activated for Spanish text, although it would
+have been without the presence of the specification for B.
 
-The deal is, "dflt" languages which haven't been listed *anywhere* among *any*
-of the tables of the current font.  (For better or worse that's how it is."
+Likewise
+-------
+	table A to activate on: DFLT{'dflt'}
+	table B to activate on: grek{'dflt'}
+Then table A will *not* be activated for Greek text, although it would
+have been without the presence of the specification for B.
+
+The deal is, "dflt" behaves as a wildcard for languages, but only for those
+which aren't listed *anywhere* among *any* of the tables of the current font. 
+Likewise, "DFLT{dflt}" behaves as a wildcard for script-language, but only for
+those which aren't listed *anywhere* among *any* of the tables of the current
+font. 
+(For better or worse that's how it is.)
 
 This fact may be used to disable an otherwise general table for a specific
 language, by simply creating another table that specifies the language, and
@@ -59,8 +69,12 @@ def explain_error_and_quit( e='' ):
 	exit( 1 )
 
 """
-Typical line:
+Typical line, with "scrp<dflt>"
 Lookup: 6 0 0 "'ccmp' iogonek glyph decompos. in Latin"  {"'ccmp' iogonek glyph decomp in Latin-1"  } ['ccmp' ('latn' <'dflt' > ) ]
+
+More complex: with "DFLT<dflt>"
+Lookup: 1 0 0 "'onum' oldstyle figures"  {"'onum' oldstyle figures-subtable" ("oldstyle" ) "'onum' oldstyle figures-1" ("oldstyle" ) } ['onum' ('DFLT' <'dflt' > 'arab' <'dflt' > 'grek' <'dflt' > 'latn' <'dflt' > ) 'onum' ('latn' <'CAT ' 'DEU ' 'ESP ' 'ISM ' 'TRK ' 'VIT ' 'dflt' > ) 'onum' ('cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > ) ]
+
 """
 	
 _lookup_re = re.compile( "^Lookup: (\d) (\d) (\d) (.*)$" )
@@ -110,8 +124,8 @@ def printall( lookups ):
 		for script in lookups[tn]:
 			print '\t', script, ', '.join( lookups[tn][script] )
 
-def reverse_script_table( lookups ):
-	""" just reverse the table-script relationship """
+def reverse_table_script( lookups ):
+	""" reverse the table-script relationship """
 	scriptTable = {}
 	for (name, script_data) in lookups.items():
 		for script in script_data:
@@ -120,10 +134,22 @@ def reverse_script_table( lookups ):
 			scriptTable[script].add( name )
 	return scriptTable
 
+def reverse_table_script_lang( lookups ):
+	""" reverse the table-script relationship """
+	scriptLangTable = []
+	for (name, script_data) in lookups.items():
+		for script in script_data:
+			for lang in script_data[script]:
+				sl = ( script, lang )
+				if sl not in scriptLangTable:
+					scriptLangTable[sl] = set()
+				scriptLangTable[sl].add( sl )
+	return scriptLangTable
+
 def tables_with_dflt_entry( lookups ):
 	""" tables with a 'dflt' entry, associated script of the entry """
 	tablesWdflt = {}
-	scriptTable = reverse_script_table( lookups )
+	scriptTable = reverse_table_script( lookups )
 	for (script,names) in scriptTable.items():
 		for name in names:
 			allLangs = []
@@ -132,18 +158,64 @@ def tables_with_dflt_entry( lookups ):
 				tablesWdflt[name] = script
 	return tablesWdflt
 
-def disabled_tables( lookups ):
+def tables_with_DFLT_dflt_entry( lookups ):
+	""" tables with a 'dflt' entry, associated script of the entry """
+	tablesWdflt = {}
+	scriptTable = reverse_table_script( lookups )
+	dfltLngs = set(['dflt'])
+	for (script,names) in scriptTable.items():
+		if script == 'DFLT':
+			for name in names:
+				allLangs = []
+				lngs = lookups[name][script]
+				if lngs == dfltLngs:
+					tablesWdflt[name] = script
+	return tablesWdflt
+
+def tables_disbled_for_script( lookups ):
+	""" For each table with a 'dflt' language for a given script,
+	note the explicit languages listed for the script, and search all
+	other tables for languages in that script *not* explicitly listed
+	in the current table.
+	"""
 	disabled = {}
-	scriptTable = reverse_script_table( lookups )
+	scriptTable = reverse_table_script( lookups )
 	tablesWdflt = tables_with_dflt_entry( lookups )
 	dfltLang = set( ['dflt'] )
 	for name in tablesWdflt:
 		script = tablesWdflt[name]
 		explicit = lookups[name][script] - dfltLang
-		tablesBesidesThisOne = scriptTable[script] - set( [name] )
-		for other in tablesBesidesThisOne:
+		tablesBesidesThis = scriptTable[script] - set( [name] )
+		for other in tablesBesidesThis:
 			otherExplicit = lookups[other][script] - dfltLang
 			conflict = otherExplicit - explicit
+			if conflict:
+				if not name in disabled:
+					disabled[name] = []
+				disabled[name].append( ( other, conflict ) )
+	return disabled
+
+def tables_disbled_for_script_lang( lookups ):
+	""" For each table with a 'DFLT{dflt}' script-language, note the
+	explicit script-languages in the table, and search all other tables
+	for script-languages *not* explicitly listed in the current table.
+	"""
+	disabled = {}
+	scriptTable = reverse_table_script( lookups )
+	tablesWdflt = tables_with_DFLT_dflt_entry( lookups )
+	dfltScrptLang = { 'DFLT':['dflt'] }
+
+	for name in tablesWdflt:
+		explicit = dict( lookups[name] )
+		del explicit['DFLT']
+		tablesBesidesThis = dict( lookups )
+		if 'DFLT' in tablesBesidesThis:
+			del tablesBesidesThis['DFLT']
+		for other in tablesBesidesThis:
+			otherExplicit = dict( lookups[other] )
+			if 'DFLT' in otherExplicit:
+				del otherExplicit['DFLT']
+			conflict = set( otherExplicit ) - set( explicit )
 			if conflict:
 				if not name in disabled:
 					disabled[name] = []
@@ -163,15 +235,26 @@ except Exception as e:
 
 lookups = collect_lookups_from_sfd( f )
 #printall( lookups )
-disabled = disabled_tables( lookups )
+disabled4Script = tables_disbled_for_script( lookups )
+disabled4ScriptLang = tables_disbled_for_script_lang( lookups )
 
-for feat in disabled:
+for feat in sorted( disabled4Script ):
 	print "feature", '"' + feat + '"', "disabled for languages"
 	allothers = []
 	alllangs = set()
-	for ( other, langs ) in disabled[feat]:
+	for ( other, langs ) in disabled4Script[feat]:
 		alllangs |= langs
 		allothers.append( other )
 	print "\t", list( alllangs )
-	print '\tby "' + allothers[0] + '" &cet'
+	print '\tby "' + allothers[0] + ('" &cet' if len( allothers ) else '' )
+
+for feat in sorted( disabled4ScriptLang ):
+	print "feature", '"' + feat + '"', "disabled for script/language"
+	allothers = []
+	alllangs = set()
+	for ( other, langs ) in disabled4ScriptLang[feat]:
+		alllangs |= langs
+		allothers.append( other )
+	print "\t", list( alllangs )
+	print '\tby "' + allothers[0] + ('" &cet' if len( allothers ) else '' )
 
