@@ -23,8 +23,8 @@ __date__ = "$Date:: 2013-04-09 12:58:21 +0200#$"
 __version__ = "$Revision: 2527 $"
 
 __doc__ = """
-Check for font feature tables which won't be activated because they lack a
-script-language that was listed in another table.
+Check FontForge SFD files for font feature tables which won't be activated
+because they lack a script-language that was listed in another table.
 
 For example
 -----------
@@ -49,7 +49,9 @@ font.
 
 This fact may be used to disable an otherwise general table for a specific
 language, by simply creating another table that specifies the language, and
-not listing the language explicitly in the first table.
+not listing the language explicitly in the first table.  So discretion must
+be used in judging the output of this program--it may be that the font
+designer *intends* to disable a feature for a specific script.
 
 Unfortunately, in fonts that deal with multiple features with multiple
 languages, this can get very tricky, and often results in features being
