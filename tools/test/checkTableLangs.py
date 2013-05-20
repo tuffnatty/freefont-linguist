@@ -2,19 +2,19 @@
 # coding: utf-8
 
 __license__ = """
-This file is part of Gnu FreeFont.
+This file is part of GNU FreeFont.
 
-Gnu FreeFont is free software: you can redistribute it and/or modify it under
+GNU FreeFont is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation, either version 3 of the License, or (at your option) any later
 version.
 
-Gnu FreeFont is distributed in the hope that it will be useful, but WITHOUT
+GNU FreeFont is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-Gnu FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
+GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
@@ -59,6 +59,10 @@ languages, this can get very tricky, and often results in features being
 
 This script looks for tables which are specified for language 'dflt', then
 checks if the inclusion of a language in some other table disables any of them.
+
+QUESTION: do the languages and scripts of the GPOS table conflict with
+those of the GSUB table in this way?  This script checks them as though
+they were all the same thing.
 """
 from sys import argv, exit, stderr, stdout
 import re
