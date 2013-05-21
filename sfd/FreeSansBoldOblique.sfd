@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1368727973
+ModificationTime: 1369169428
 PfmFamily: 33
 TTFWeight: 600
 TTFWidth: 5
@@ -75,6 +75,7 @@ Lookup: 4 8 0 "'dlig' disc. ligatures in Hebrew"  {"'dlig' Discretionary Ligatur
 Lookup: 2 1 0 "'ccmp' glyph decomp. in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' disc. ligatures in Armenian"  {"'dlig' Discretionary Ligatures in Armenian subtable"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' Historic Ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
+Lookup: 1 0 0 "FreeSans-FreeSerif-'sups' superscript"  {"FreeSans-FreeSerif-'sups' superscript-phonetic"  } ['sups' ('DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin"  {"'mark' Mark Positioning in Latin subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'geor' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -107,7 +108,7 @@ KernClass2: 3 2 "'kern' Horizontal Kerning in Cyrillic-small"
 KernClass2: 15 19 "'kern' Horizontal Kerning in Latin-capital" 
  73 A Aacute Agrave Acircumflex Adieresis Abreve Atilde Aring Amacron Aogonek
  12 B Bdotaccent
- 134 C D G Thorn Eth Yogh Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Dcaron Dcroat Ddotaccent Gcircumflex Gbreve Gdotaccent Gcommaaccent
+ 133 C D G Thorn Eth Ezh Ccedilla Cacute Ccircumflex Cdotaccent Ccaron Dcaron Dcroat Ddotaccent Gcircumflex Gbreve Gdotaccent Gcommaaccent
  73 E AE OE Eacute Egrave Ecircumflex Edieresis Etilde Ecaron Emacron Eogonek
  12 F Fdotaccent
  1 J
@@ -157,7 +158,7 @@ KernClass2: 14 13 "'kern' Horizontal Kerning in Latin-small"
  41 v w y yacute ygrave ycircumflex ydieresis
  1 j
  1 x
- 69 m n z ntilde ncommaaccent nacute ncaron zcaron zacute zdotaccent yogh
+ 68 m n z ntilde ncommaaccent nacute ncaron zcaron zacute zdotaccent ezh
  45 s scaron scedilla sacute sdotbelow sdotaccent
  50 t f ff fl fi ffl ffi tcedilla tdotaccent tdotbelow
  8 r rcaron
@@ -226,7 +227,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 7440 16 12
+WinInfo: 7520 16 12
 BeginPrivate: 9
 UniqueID 7 5020910
 BlueValues 31 [-24 0 540 550 710 724 728 742]
@@ -249,7 +250,7 @@ Grid
  871 182.91 l 0
 EndSplineSet
 AnchorClass2: "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "above_mid_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_below_heb"  "'mark' Mark Positioning in Hebrew 2 subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Yiddish" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "middle"  "'mark' Mark Positioning subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin subtable" 
-BeginChars: 65536 2656
+BeginChars: 65536 2662
 
 StartChar: space
 Encoding: 32 32 0
@@ -21307,7 +21308,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: Yogh
+StartChar: Ezh
 Encoding: 439 439 1131
 Width: 556
 Flags: HMW
@@ -21336,6 +21337,7 @@ SplineSet
  172 125 200 97 257 97 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'c2sc' caps to small caps in Latin subtable" sc.ezh
 EndChar
 
 StartChar: uni01B8
@@ -23278,7 +23280,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: yogh
+StartChar: ezh
 Encoding: 658 658 1255
 Width: 556
 Flags: HMW
@@ -23307,6 +23309,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'sups' superscript-phonetic" ezhsup
+Substitution2: "'smcp' small to small caps in Latin subtable" sc.ezh
 EndChar
 
 StartChar: uni0294
@@ -49596,7 +49599,7 @@ VWidth: 1064
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1255 658 S 0.67 0 0 0.67 0 275 2
+Refer: 1255 658 N 0.67 0 0 0.67 0 275 2
 Validated: 32769
 EndChar
 
@@ -50205,6 +50208,102 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'c2sc' caps to small caps in Latin subtable" sc.bstroke
+EndChar
+
+StartChar: Eturnedsmallcap
+Encoding: 11387 11387 2656
+Width: 488
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2430 -1 S -1 0 0 -1 592 526 3
+Validated: 32769
+Substitution2: "FreeSans-FreeSerif-'sups' superscript-phonetic" Erevsup
+EndChar
+
+StartChar: jsubscript
+Encoding: 11388 11388 2657
+Width: 184
+VWidth: 649
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2553 -1 S 1 0 0 1 -30 -150 3
+Validated: 32769
+EndChar
+
+StartChar: msmallcapturned
+Encoding: 43002 43002 2658
+Width: 889
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 77 109 S -1 0 0 -1 988 540 3
+Validated: 32769
+EndChar
+
+StartChar: sc.ezh
+Encoding: 59461 -1 2659
+Width: 473
+Flags: W
+HStem: -23 113<174.645 296.487> 448 93<159.993 341.226>
+VStem: 42.6797 125.037<98.367 156> 329.156 126.376<120.68 219.69>
+LayerCount: 2
+Fore
+SplineSet
+353.806 319 m 5
+ 423.028 300.723 455.532 249.317 455.532 190.012 c 4
+ 455.532 59.2939 349.173 -23 208.111 -23 c 4
+ 99.6318 -23 42.6797 31.1104 42.6797 113.805 c 4
+ 42.6797 127.16 44.165 141.261 47.1592 156 c 5
+ 169.159 156 l 5
+ 168.184 149.828 167.717 144.21 167.717 139.1 c 4
+ 167.717 98.6699 196.955 90 235.13 90 c 4
+ 286.23 90 329.156 124.376 329.156 175.801 c 4
+ 329.156 225.516 284.121 238 215.589 238 c 5
+ 234.719 328 l 5
+ 341.226 448 l 5
+ 140.226 448 l 5
+ 159.993 541 l 5
+ 490.993 541 l 5
+ 471.226 448 l 5
+ 353.806 319 l 5
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: Ismallcapstroke
+Encoding: 7547 7547 2660
+Width: 327
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+385 339 m 1
+ 365 246 l 1
+ 286 246 l 1
+ 234 0 l 1
+ 93 0 l 1
+ 145 246 l 1
+ 66 246 l 1
+ 86 339 l 1
+ 165 339 l 1
+ 208 540 l 1
+ 349 540 l 1
+ 306 339 l 1
+ 385 339 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: ismallcapstrokesup
+Encoding: 7591 7591 2661
+Width: 219
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2660 7547 N 0.67 0 0 0.67 0 275 2
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont
