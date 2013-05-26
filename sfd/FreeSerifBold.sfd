@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1369384429
+ModificationTime: 1369603751
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -140,7 +140,6 @@ Lookup: 4 0 0 "'blwf' below-base forms in Gurmukhi"  {"'blwf' below-base forms i
 Lookup: 4 0 0 "'blwf' below-base forms in Gurmukhi2"  {"'blwf' below-base forms in Gurmukhi2-1"  } ['blwf' ('gur2' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' post-base substs in Gurmukhi"  {"'psts' post-base substs in Gurmukhi-1"  } ['psts' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base substs in Gurmukhi"  {"'blws' below-base substs in Gurmukhi-1"  } ['blws' ('gur2' <'dflt' > 'guru' <'dflt' > ) ]
-Lookup: 4 0 0 "'hlig' hist ligatures in Devanagari"  {"'hlig' Historic Ligatures in Devanagari-four"  "'hlig' Historic Ligatures in Devanagari-trio"  "'hlig' Historic Ligatures in Devanagari-pair"  } ['hlig' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'nukt' nukta forms in Devanagari"  {"'nukt' Nukta Forms in Devanagari subtable"  } ['nukt' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'akhn' akhand in Devanagari2"  {"'akhn' Akhand in Devanagari2-1"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'akhn' akhand in Devanagari"  {"'akhn' Akhand in Devanagari-subtable"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
@@ -177,6 +176,7 @@ Lookup: 1 0 0 "subst. rakaar.blf for rakaar in Devanagari"  {"Substitute rakaar.
 Lookup: 4 0 0 "subst. ligature for da+-half in Devanagari"  {"Substitute ligature for da-va.half in Devanagari"  "Substitute ligature for da-gha.half in Devanagari"  "Substitute ligature for da+-va in Devanagari"  } []
 Lookup: 4 0 0 "subst. rakaar.blwf for virama-ra in Devanagari"  {"Substitute rakaar.blwf for virama-ra in Devanagari-subtable"  } []
 Lookup: 4 0 0 "subst. rakaar for virama-ra in Devanagari"  {"Substitute rakaar for virama-ra-virama in Devanagari"  "Substitute rakaar for virama-ra in Devanagari-simple"  } []
+Lookup: 4 0 0 "'hlig' hist ligatures in Devanagari"  {"'hlig' Historic Ligatures in Devanagari-four"  "'hlig' Historic Ligatures in Devanagari-trio"  "'hlig' Historic Ligatures in Devanagari-pair"  } ['hlig' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 260 24 0 "'abvm' al,i,ii in Sinhala"  {"'abvm' al,i,ii in Sinhala-1"  } ['abvm' ('sinh' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' repaya in Sinhala"  {"'abvm' repaya in Sinhala-1"  } ['abvm' ('sinh' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' rakar,u,uu in Sinhala"  {"'blwm' rakar,u,uu in Sinhala-1"  } ['blwm' ('sinh' <'dflt' > ) ]
@@ -78507,7 +78507,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1364 616 S 0.67 0 0 0.67 2 351 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: iotalatinsup
@@ -78540,7 +78540,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4699 7547 S 0.67 0 0 0.67 0 350 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: jcrosstailsup
@@ -98851,8 +98851,9 @@ SplineSet
  819 622 880 559 880 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" dev_ka.half kadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" kadeva virama kadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dev_ka.half kadeva
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" dev_ka.half kadeva
 LCarets2: 1 0 
 EndChar
 
@@ -98908,9 +98909,10 @@ SplineSet
  779 622 841 559 841 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" kadeva virama tadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dev_ka.half tadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" dev_ka.half tadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" dev_ka.half dev_ta.half
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" kadeva virama tadeva
 LCarets2: 1 0 
 EndChar
 
@@ -99339,9 +99341,9 @@ SplineSet
  218 -133 255 -120 273 -97 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama kadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama kadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ngadeva virama kadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama kadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -99418,8 +99420,8 @@ SplineSet
  322 -146 346 -136 359 -121 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama khadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama khadeva
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama khadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -99484,9 +99486,9 @@ SplineSet
  764 622 825 559 825 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama gadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama gadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ngadeva virama gadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama gadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -99558,8 +99560,8 @@ SplineSet
  246 -163 315 -120 359 -77 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama ghadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama ghadeva
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama ghadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -99701,9 +99703,9 @@ SplineSet
  764 622 825 559 825 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama nadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama nadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ngadeva virama nadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama nadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -99772,9 +99774,9 @@ SplineSet
  704 -31 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama madeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ngadeva virama madeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ngadeva virama madeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ngadeva virama madeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100025,10 +100027,11 @@ SplineSet
  567 201 600 258 600 321 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" chadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" chadeva openya
 Substitution2: "'ss03' Style Set 3 in Devanagari of Calcutta" dev_clt_cha__ya.pres
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" chadeva virama yadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" chadeva virama yadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" chadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100210,8 +100213,8 @@ SplineSet
  620 622 681 559 681 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ttadeva virama kadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ttadeva virama kadeva
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ttadeva virama kadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100262,9 +100265,9 @@ SplineSet
  620 622 681 559 681 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ttadeva virama ttadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ttadeva virama ttadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ttadeva virama ttadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ttadeva virama ttadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100319,9 +100322,9 @@ SplineSet
  620 622 681 559 681 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ttadeva virama tthadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ttadeva virama tthadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ttadeva virama tthadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ttadeva virama tthadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100378,8 +100381,9 @@ SplineSet
  964 622 1026 559 1026 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ttadeva virama yadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ttadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ttadeva openya
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ttadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100432,8 +100436,9 @@ SplineSet
  825 622 886 559 886 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" tthadeva virama yadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" tthadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" tthadeva openya
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" tthadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100622,9 +100627,9 @@ SplineSet
  97 20 205 21 289 21 c 2
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ddadeva virama ddadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ddadeva virama ddadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ddadeva virama ddadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ddadeva virama ddadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100746,9 +100751,10 @@ SplineSet
  964 622 1026 559 1026 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ddadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ddadeva openya
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ddadeva virama yadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ddadeva virama yadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ddadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -100803,9 +100809,9 @@ SplineSet
  337 110 386 128 386 171 c 2
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ddhadeva virama yadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" ddhadeva virama yadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" ddhadeva virama yadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" ddhadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -101060,9 +101066,9 @@ SplineSet
  222 -48 297 -1 346 46 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama ghadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari old 2-3" dadeva virama ghadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" dadeva virama ghadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama ghadeva
 EndChar
 
 StartChar: dev_da__da.pres
@@ -101229,9 +101235,9 @@ SplineSet
  578 622 640 560 640 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama nadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari old 2-3" dadeva virama nadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" dadeva virama nadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama nadeva
 EndChar
 
 StartChar: dev_da__ba.pres
@@ -101345,9 +101351,9 @@ SplineSet
  725 622 787 559 787 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama bhadeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" dadeva virama bhadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" dadeva virama bhadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama bhadeva
 EndChar
 
 StartChar: dev_da__ma.pres
@@ -101394,9 +101400,9 @@ SplineSet
  426 223 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama madeva
 Ligature2: "'pres' Pre-Base Substitutions in Devanagari old 2-3" dadeva virama madeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-no-half" dadeva virama madeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dadeva virama madeva
 EndChar
 
 StartChar: dev_da__ya.pres
@@ -101600,8 +101606,9 @@ SplineSet
  725 622 787 559 787 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" dev_na.half nadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" nadeva virama nadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-pair" dev_na.half nadeva
+Ligature2: "'pres' Pre-Base Substitutions in Devanagari-old-3" dev_na.half nadeva
 LCarets2: 1 0 
 EndChar
 
@@ -103722,8 +103729,8 @@ SplineSet
  1018 622 1080 559 1080 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dev_ka.half dev_ta.half vadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" kadeva virama tadeva virama vadeva
+Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dev_ka.half dev_ta.half vadeva
 EndChar
 
 StartChar: dev_ka__na__ya.pres
@@ -103789,8 +103796,9 @@ SplineSet
  206 258 252 283 262 327 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dev_ka.half dev_na.half yadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" kadeva virama nadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dev_ka.half dev_na.half yadeva
+Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dev_ka.half dev_na.half yadeva
 EndChar
 
 StartChar: dev_ka__ra__ya.pres
@@ -104700,9 +104708,10 @@ SplineSet
  964 622 1026 559 1026 529 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" ddadeva virama radeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" ddadeva virama radeva yadeva
 Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ra" ddadeva virama dev_rakaar yadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-5" ddadeva virama radeva virama yadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" ddadeva virama radeva virama yadeva
 LCarets2: 3 0 0 0 
 EndChar
 
@@ -104887,9 +104896,10 @@ SplineSet
  423 -118 489 -60 525 -12 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama dadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dev_da__da.pres openya
 Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dadeva virama dadeva virama yadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-5" dadeva virama dadeva virama yadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama dadeva virama yadeva
 EndChar
 
 StartChar: dev_da__da__va.pres
@@ -105022,6 +105032,7 @@ SplineSet
  284 52 342 84 384 116 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dev_da__dha.pres openya
 Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dadeva virama dev_dha.half yadeva
 EndChar
 
@@ -105091,9 +105102,10 @@ SplineSet
  373 -37 434 -1 471 43 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama dhadeva virama vadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama dev_dha.half vadeva
 Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dadeva virama dev_dha.half vadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-5" dadeva virama dev_dha.half vadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama dhadeva virama vadeva
 EndChar
 
 StartChar: dev_da__bha__ya.pres
@@ -105153,9 +105165,10 @@ SplineSet
  486 154 560 139 645 138 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama bhadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama dev_bha.half yadeva
 Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dadeva virama dev_bha.half yadeva
 Ligature2: "'cjct' Conjunct Forms in Devanagari2 for Sanskrit-5" dadeva virama dev_bha.half yadeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama bhadeva virama yadeva
 EndChar
 
 StartChar: dev_da__ra__ya.pres
@@ -105209,8 +105222,9 @@ SplineSet
  424 43 473 81 505 130 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ra" dadeva dev_rakaar yadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama radeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama radeva yadeva
+Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ra" dadeva dev_rakaar yadeva
 EndChar
 
 StartChar: dev_da__va__ya.pres
@@ -105267,8 +105281,9 @@ SplineSet
  437 52 496 113 525 159 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dadeva virama dev_va.half yadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dadeva virama vadeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dev_da__va.pres openya
+Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ya and va" dadeva virama dev_va.half yadeva
 EndChar
 
 StartChar: dev_ssa__tta__ya.pres
@@ -105465,8 +105480,11 @@ SplineSet
  669 201 721 250 744 300 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-7" dev_ka.half dev_ta.half dev_rakaar yadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-four" kadeva virama tadeva virama radeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-four" dev_ka.half dev_ta__ra.rkrf openya
+Ligature2: "'hlig' Historic Ligatures in Devanagari-four" dev_ka.half tadeva virama radeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-four" dev_ka.half dev_ta__ra.rkrf yadeva
+Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-7" dev_ka.half dev_ta.half dev_rakaar yadeva
 EndChar
 
 StartChar: dev_nga__ka__ta__ya.pres
@@ -105704,8 +105722,9 @@ SplineSet
  172 318 212 331 250 342 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-7" dev_ssa.half ttadeva virama dev_rakaar yadeva
 Ligature2: "'hlig' Historic Ligatures in Devanagari-four" ssadeva virama ttadeva virama radeva virama yadeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-four" dev_ssa.half ttadeva virama radeva yadeva
+Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-7" dev_ssa.half ttadeva virama dev_rakaar yadeva
 EndChar
 
 StartChar: dev_ka__ra.rkrf
@@ -111184,10 +111203,11 @@ SplineSet
  516 -80 537 -103 537 -122 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" kadeva virama tadeva virama radeva
+Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" dev_ka.half dev_ta__ra.rkrf
 Ligature2: "'pres' Pre Base Substitutions in Devanagari old 2 rakaar-5" dev_ka.half tadeva dev_rakaar
 Ligature2: "'pres' Pre Base Substitutions in Devanagari-old-5 ra" dev_ka.half dev_ta__ra.rkrf
 Ligature2: "'rkrf' Rakar Forms in Devanagari2 for Sanskrit-compound" kadeva virama tadeva virama radeva
-Ligature2: "'hlig' Historic Ligatures in Devanagari-trio" kadeva virama tadeva virama radeva
 LCarets2: 4 0 0 0 0 
 EndChar
 
@@ -118107,7 +118127,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 2961 -1 S 1 0 0 1 0 0 3
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: Ssmallcap
@@ -118117,7 +118137,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 2974 -1 S 1 0 0 1 8 0 3
-Validated: 98305
+Validated: 32769
 EndChar
 EndChars
 EndSplineFont
