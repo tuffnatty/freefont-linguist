@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1369259698
+ModificationTime: 1369605908
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -59,7 +59,7 @@ Lookup: 4 0 0 "'ccmp' glyph compos. in Latin for Viet 1"  {"'ccmp' Glyph Composi
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'VIT ' > ) ]
 Lookup: 1 0 0 "'locl' local. forms for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' 'LSM ' 'NSM ' 'SKS ' > ) ]
 Lookup: 1 0 0 "'locl' local. forms in Cyrillic for Serbian"  {"'locl' Localized Forms in Cyrillic for Serbian-subtable"  } ['locl' ('cyrl' <'MKD ' 'SRB ' > ) ]
-Lookup: 1 9 0 "'init' Initial Forms in Arabic"  {"'init' Initial Forms in Arabic subtable"  } ['init' ('arab' <'dflt' > ) ]
+Lookup: 1 9 0 "'init' initial forms in Arabic"  {"'init' initial forms in Arabic subtable"  } ['init' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'medi' medial forms in Arabic"  {"'medi' Medial Forms in Arabic subtable"  } ['medi' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'fina' terminal forms in Arabic"  {"'fina' Terminal Forms in Arabic subtable"  } ['fina' ('arab' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' glyph decomp. in Arabic"  {"'ccmp' Glyph Decomposition in Arabic"  } ['ccmp' ('arab' <'dflt' > ) ]
@@ -68,7 +68,7 @@ Lookup: 4 0 0 "'liga' std. ligatures in Arabic"  {"'liga' shadda ligatures in Ar
 Lookup: 2 1 0 "'ccmp' glyph decomp. in Hebrew"  {"'ccmp' Glyph Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'liga' std. ligatures in Hebrew"  {"'liga' Standard Ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
 Lookup: 4 8 0 "'dlig' discr. ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
-Lookup: 1 0 0 "FreeSerif-'sups' superscript"  {"FreeSerif-'sups' superscript-phonetic"  } ['sups' ('DFLT' <'dflt' > ) ]
+Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' hist. ligatures in Armenian-1"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Greek"  {"'mark' Mark Positioning in Greek subtable"  } ['mark' ('grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -135,7 +135,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 7440 16 11
+WinInfo: 80 16 11
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 39 [-20 0 417 437 480 490 563 583 640 650]
@@ -155,7 +155,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 0 629146 314573 209715 437256 1048576 209715 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "above_arabic"  "'mark' Mark Positioning in Arabic subtable" "below_arabic"  "'mark' Mark Positioning in Arabic subtable" "arab_diacritic"  "'mkmk' Mark to Mark in Arabic subtable" "abovegk"  "'mark' Mark Positioning in Greek subtable" "below"  "'mark' Mark Positioning in Latin 1 subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 67329 4563
+BeginChars: 67329 4587
 
 StartChar: space
 Encoding: 32 32 0
@@ -1127,6 +1127,7 @@ SplineSet
  413 229 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Asup
 EndChar
 
 StartChar: B
@@ -1165,6 +1166,7 @@ SplineSet
  444 41 500 91 500 153 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Bsup
 EndChar
 
 StartChar: C
@@ -1197,6 +1199,7 @@ SplineSet
  63 325 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" sup.C
 EndChar
 
 StartChar: D
@@ -1229,6 +1232,7 @@ SplineSet
  479 318 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Dsup
 EndChar
 
 StartChar: E
@@ -1272,6 +1276,7 @@ SplineSet
  165 272 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Esup
 EndChar
 
 StartChar: F
@@ -1313,6 +1318,7 @@ SplineSet
  165 272 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" sup.F
 EndChar
 
 StartChar: G
@@ -1351,6 +1357,7 @@ SplineSet
  476 494 404 535 315 535 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Gsup
 EndChar
 
 StartChar: H
@@ -1400,6 +1407,7 @@ SplineSet
  437 272 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Hsup
 EndChar
 
 StartChar: I
@@ -1429,6 +1437,7 @@ SplineSet
  320 522 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Isup
 EndChar
 
 StartChar: J
@@ -1459,6 +1468,7 @@ SplineSet
  460 522 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Jsup
 EndChar
 
 StartChar: K
@@ -1505,6 +1515,7 @@ SplineSet
  165 221 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Ksup
 EndChar
 
 StartChar: L
@@ -1536,6 +1547,7 @@ SplineSet
  227 522 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Lsup
 EndChar
 
 StartChar: M
@@ -1582,6 +1594,7 @@ SplineSet
  326 169 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Msup
 EndChar
 
 StartChar: N
@@ -1620,6 +1633,7 @@ SplineSet
  501 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Nsup
 EndChar
 
 StartChar: O
@@ -1642,6 +1656,7 @@ SplineSet
  508 421 416 535 300 535 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Osup
 EndChar
 
 StartChar: P
@@ -1677,6 +1692,7 @@ SplineSet
  165 272 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Psup
 EndChar
 
 StartChar: Q
@@ -1710,6 +1726,7 @@ SplineSet
  508 421 416 535 300 535 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" sup.Q
 EndChar
 
 StartChar: R
@@ -1751,6 +1768,7 @@ SplineSet
  165 292 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Rsup
 EndChar
 
 StartChar: S
@@ -1786,6 +1804,7 @@ SplineSet
  394 25 464 79 464 153 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" sup.S
 EndChar
 
 StartChar: T
@@ -1819,6 +1838,7 @@ SplineSet
  321 41 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Tsup
 EndChar
 
 StartChar: U
@@ -1854,6 +1874,7 @@ SplineSet
  499 522 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Usup
 EndChar
 
 StartChar: V
@@ -1887,6 +1908,7 @@ SplineSet
  267 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Vsup
 EndChar
 
 StartChar: W
@@ -1925,6 +1947,7 @@ SplineSet
  122 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Wsup
 EndChar
 
 StartChar: X
@@ -1974,6 +1997,7 @@ SplineSet
  325 288 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" sup.X
 EndChar
 
 StartChar: Y
@@ -2014,6 +2038,7 @@ SplineSet
  322 254 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" sup.Y
 EndChar
 
 StartChar: Z
@@ -2045,6 +2070,7 @@ SplineSet
  497 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" sup.Z
 EndChar
 
 StartChar: bracketleft
@@ -4199,6 +4225,7 @@ SplineSet
  297 230 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" AEsup
 EndChar
 
 StartChar: Ccedilla
@@ -7854,6 +7881,7 @@ SplineSet
  398 272 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Erevsup
 Substitution2: "'sups' superscript-phonetic" Erevsup
 EndChar
 
@@ -11786,6 +11814,7 @@ LayerCount: 2
 Fore
 Refer: 496 593 N -1 0 0 -1 614 417 0
 Validated: 32769
+Substitution2: "'sups' superscript-phonetic" ascriptturnsup
 EndChar
 
 StartChar: bhook
@@ -12024,7 +12053,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: epsilonlatin
+StartChar: eopen
 Encoding: 603 603 506
 Width: 600
 Flags: MW
@@ -12065,9 +12094,10 @@ SplineSet
  171 206 148 135 148 117 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" eopensup
 EndChar
 
-StartChar: epsilonlatinrev
+StartChar: eopenreversed
 Encoding: 604 604 507
 Width: 600
 Flags: MW
@@ -12108,6 +12138,7 @@ SplineSet
  386 25 452 64 452 117 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" eopenrevsup
 EndChar
 
 StartChar: jdotlessbar
@@ -12142,6 +12173,7 @@ SplineSet
  417 41 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" jdotlessbarsup
 EndChar
 
 StartChar: ghook
@@ -12466,6 +12498,7 @@ SplineSet
  279 200 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" ibarsup
 EndChar
 
 StartChar: iotalatin
@@ -12489,6 +12522,7 @@ SplineSet
  487 88 502 84 502 68 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" iotasup
 EndChar
 
 StartChar: Ismallcap
@@ -12517,6 +12551,7 @@ SplineSet
  321 376 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" Ismalcapsup
 EndChar
 
 StartChar: lmidtilde
@@ -12620,6 +12655,7 @@ SplineSet
  505 -145 513 -154 513 -165 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" lretroflexhooksup
 EndChar
 
 StartChar: mturn
@@ -12630,6 +12666,7 @@ LayerCount: 2
 Fore
 Refer: 77 109 N -1 0 0 -1 604 417 0
 Validated: 32769
+Substitution2: "'sups' superscript-phonetic" mturnedsup
 EndChar
 
 StartChar: mturndescend
@@ -12676,6 +12713,7 @@ SplineSet
  492 -186 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" mturneddescendsup
 EndChar
 
 StartChar: mhook
@@ -12723,6 +12761,7 @@ SplineSet
  299 -154 307 -145 317 -145 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" mhooksup
 EndChar
 
 StartChar: nhookleft
@@ -12760,6 +12799,7 @@ SplineSet
  439 344 394 390 319 390 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" nhookleftsup
 EndChar
 
 StartChar: nhookretroflex
@@ -12797,6 +12837,7 @@ SplineSet
  439 344 394 390 319 390 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" nhookretroflexsup
 EndChar
 
 StartChar: Nsmallcap
@@ -12946,6 +12987,7 @@ SplineSet
  500 284 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" philatinsup
 EndChar
 
 StartChar: rturn
@@ -12999,6 +13041,7 @@ SplineSet
  52 64 61 73 73 73 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" rrthookturnsup
 EndChar
 
 StartChar: rdescend
@@ -13233,6 +13276,7 @@ SplineSet
  386 25 452 64 452 117 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" shooksup
 EndChar
 
 StartChar: esh
@@ -13257,6 +13301,7 @@ SplineSet
  518 575 509 566 499 566 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" eshsup
 EndChar
 
 StartChar: jhookdblbar
@@ -13434,6 +13479,7 @@ SplineSet
  439 258 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" ubarsup
 EndChar
 
 StartChar: vturn
@@ -13509,35 +13555,35 @@ EndChar
 StartChar: zretroflexhook
 Encoding: 656 656 553
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-682 -165 m 0
- 682 -192 615 -199 595 -199 c 0
- 513 -199 448 -132 448 -48 c 2
- 448 0 l 1
- 115 0 l 1
- 115 36 l 1
- 416 376 l 1
- 165 376 l 1
- 165 321 l 2
- 165 303 158 294 145 294 c 0
- 131 294 124 303 124 321 c 2
- 124 417 l 1
- 474 417 l 1
- 474 381 l 1
- 171 41 l 1
- 448 41 l 1
- 448 97 l 1
- 448 115 455 124 469 124 c 0
- 482 124 489 115 489 97 c 0
- 489 -42 l 1
- 489 -110 533 -158 594 -158 c 0
- 631 -158 651 -145 664 -145 c 0
- 674 -145 682 -154 682 -165 c 0
+592 -165 m 4
+ 592 -192 525 -199 505 -199 c 4
+ 423 -199 358 -132 358 -48 c 6
+ 358 0 l 5
+ 25 0 l 5
+ 25 36 l 5
+ 326 376 l 5
+ 75 376 l 5
+ 75 321 l 6
+ 75 303 68 294 55 294 c 4
+ 41 294 34 303 34 321 c 6
+ 34 417 l 5
+ 384 417 l 5
+ 384 381 l 5
+ 81 41 l 5
+ 358 41 l 5
+ 358 97 l 5
+ 358 115 365 124 379 124 c 4
+ 392 124 399 115 399 97 c 4
+ 399 -42 l 5
+ 399 -110 443 -158 504 -158 c 4
+ 541 -158 561 -145 574 -145 c 4
+ 584 -145 592 -154 592 -165 c 4
 EndSplineSet
-Validated: 3073
+Substitution2: "'sups' superscript-phonetic" zretroflexhooksup
 EndChar
 
 StartChar: zcurl
@@ -13547,38 +13593,39 @@ Flags: MW
 LayerCount: 2
 Fore
 SplineSet
-374 41 m 1
- 404 41 l 2
- 460 41 471 54 474 91 c 0
- 472 122 458 139 424 141 c 0
- 400 140 374 123 374 91 c 2
- 374 41 l 1
-514 95 m 2
- 514 86 l 2
- 514 30 466 1 404 1 c 2
- 374 1 l 1
- 374 -79 l 2
- 374 -90 365 -99 354 -99 c 0
- 343 -99 334 -90 334 -79 c 2
- 334 0 l 1
- 115 0 l 1
- 115 36 l 1
- 416 376 l 1
- 165 376 l 1
- 165 321 l 2
- 165 303 158 294 145 294 c 0
- 131 294 124 303 124 321 c 2
- 124 417 l 1
- 474 417 l 1
- 474 381 l 1
- 171 41 l 1
- 334 41 l 1
- 334 91 l 2
- 334 146 379 181 422 181 c 2
- 428 181 l 2
- 478 181 514 141 514 95 c 2
+374 41 m 5
+ 404 41 l 6
+ 460 41 471 54 474 91 c 4
+ 472 122 458 139 424 141 c 4
+ 400 140 374 123 374 91 c 6
+ 374 41 l 5
+514 95 m 6
+ 514 86 l 6
+ 514 30 466 1 404 1 c 6
+ 374 1 l 5
+ 374 -79 l 6
+ 374 -90 365 -99 354 -99 c 4
+ 343 -99 334 -90 334 -79 c 6
+ 334 0 l 5
+ 115 0 l 5
+ 115 36 l 5
+ 416 376 l 5
+ 165 376 l 5
+ 165 321 l 6
+ 165 303 158 294 145 294 c 4
+ 131 294 124 303 124 321 c 6
+ 124 417 l 5
+ 474 417 l 5
+ 474 381 l 5
+ 171 41 l 5
+ 334 41 l 5
+ 334 91 l 6
+ 334 146 379 181 422 181 c 6
+ 428 181 l 6
+ 478 181 514 141 514 95 c 6
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" zcurlsup
 EndChar
 
 StartChar: ezh
@@ -13612,6 +13659,7 @@ SplineSet
  193 210 208 169 168 169 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" ezhsup
 EndChar
 
 StartChar: glottalstop
@@ -13903,6 +13951,7 @@ SplineSet
  417 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" jcrosstailsup
 EndChar
 
 StartChar: kturn
@@ -62653,7 +62702,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: epsilonlatinrevhook
+StartChar: eopenreversedhook
 Encoding: 605 605 2698
 Width: 600
 Flags: MW
@@ -62736,6 +62785,7 @@ SplineSet
  336 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" vhooksup
 EndChar
 
 StartChar: palochka
@@ -62798,6 +62848,7 @@ SplineSet
  514 425 506 414 489 414 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" upsilonlatinsup
 EndChar
 
 StartChar: epsilonclosed
@@ -63275,7 +63326,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: rturnrthooksuper
+StartChar: rrthookturnsup
 Encoding: 693 693 2721
 Width: 600
 VWidth: 688
@@ -66521,6 +66572,7 @@ SplineSet
  438 275 444 284 459 284 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'hlig' hist. ligatures in Armenian-1" echarmenian yiwnarmenian
 EndChar
 
 StartChar: Jupiter
@@ -86218,7 +86270,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" aleffinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" aleffinaarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" alefisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" alefisolarabic
 EndChar
 
 StartChar: beharabic
@@ -86234,7 +86286,7 @@ Refer: 3661 64435 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" behfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" behmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" behinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" behinitarabic
 EndChar
 
 StartChar: dotabovearabic
@@ -86383,7 +86435,7 @@ Refer: 3662 64436 N 1 0 0 1 0 -75 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" tehmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" tehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" tehinitarabic
 EndChar
 
 StartChar: theharabic
@@ -86399,7 +86451,7 @@ Refer: 3664 64438 N 1 0 0 1 0 -86 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" thehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" thehmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" thehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" thehinitarabic
 EndChar
 
 StartChar: haharabic
@@ -86433,7 +86485,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" hahfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" hahmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" hahinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" hahinitarabic
 EndChar
 
 StartChar: jeemarabic
@@ -86450,7 +86502,7 @@ Refer: 3674 1581 S 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" jeemfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" jeemmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" jeeminitarabic
+Substitution2: "'init' initial forms in Arabic subtable" jeeminitarabic
 EndChar
 
 StartChar: khaharabic
@@ -86467,7 +86519,7 @@ Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" khahfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" khahmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" khahinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" khahinitarabic
 EndChar
 
 StartChar: questionarabic
@@ -86528,7 +86580,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" dalfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" dalisolarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" dalisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" dalisolarabic
 EndChar
 
 StartChar: thalarabic
@@ -86544,7 +86596,7 @@ Refer: 3678 1583 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" thalfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" thalisolarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" thalisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" thalisolarabic
 EndChar
 
 StartChar: reharabic
@@ -86570,7 +86622,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" rehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" rehfinaarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" rehisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" rehisolarabic
 EndChar
 
 StartChar: zainarabic
@@ -86586,7 +86638,7 @@ Refer: 3680 1585 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" zainfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" zainfinaarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" zainisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" zainisolarabic
 EndChar
 
 StartChar: semicolonarabic
@@ -86648,7 +86700,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tahfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" tahmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" tahinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" tahinitarabic
 EndChar
 
 StartChar: zaharabic
@@ -86664,7 +86716,7 @@ Refer: 3683 1591 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" zahfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" zahmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" zahinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" zahinitarabic
 EndChar
 
 StartChar: behdotlessarabic
@@ -86724,7 +86776,7 @@ SplineSet
  311 379 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'init' Initial Forms in Arabic subtable" kehehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" kehehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" kehehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" kehehfinaarabic
 EndChar
@@ -86794,7 +86846,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" sadfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" sadmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" sadinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" sadinitarabic
 EndChar
 
 StartChar: sheenarabic
@@ -86810,7 +86862,7 @@ Refer: 3694 1587 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" sheenfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" sheenmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" sheeninitarabic
+Substitution2: "'init' initial forms in Arabic subtable" sheeninitarabic
 EndChar
 
 StartChar: dadarabic
@@ -86826,7 +86878,7 @@ Refer: 3689 1589 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" dadfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" dadmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" dadinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" dadinitarabic
 EndChar
 
 StartChar: lamarabic
@@ -86860,7 +86912,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" lamfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" lammediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" laminitarabic
+Substitution2: "'init' initial forms in Arabic subtable" laminitarabic
 EndChar
 
 StartChar: noonarabic
@@ -86876,7 +86928,7 @@ Refer: 3695 1722 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" noonfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" noonmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" nooninitarabic
+Substitution2: "'init' initial forms in Arabic subtable" nooninitarabic
 EndChar
 
 StartChar: seenarabic
@@ -86919,7 +86971,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" seenfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" seenmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" seeninitarabic
+Substitution2: "'init' initial forms in Arabic subtable" seeninitarabic
 EndChar
 
 StartChar: noonghunnaarabic
@@ -87035,7 +87087,7 @@ Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" fehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" fehmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" fehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" fehinitarabic
 EndChar
 
 StartChar: qafarabic
@@ -87051,7 +87103,7 @@ Refer: 3696 1647 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" qaffinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" qafmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" qafinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" qafinitarabic
 EndChar
 
 StartChar: wawarabic
@@ -87084,7 +87136,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" wawfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" wawfinaarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" wawisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" wawisolarabic
 EndChar
 
 StartChar: heharabic
@@ -87115,7 +87167,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" hehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" hehmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" hehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" hehinitarabic
 EndChar
 
 StartChar: tehmarbutaarabic
@@ -87131,7 +87183,7 @@ Refer: 3701 1607 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tehmarbutafinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" tehmarbutaisolarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" tehmarbutaisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" tehmarbutaisolarabic
 EndChar
 
 StartChar: yehfarsiarabic
@@ -87169,7 +87221,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" yehfarsifinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" yehfarsimediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" yehfarsiinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" yehfarsiinitarabic
 EndChar
 
 StartChar: alefmaksuraarabic
@@ -87184,7 +87236,7 @@ Refer: 3703 1740 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefmaksurafinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" alefmaksuramediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" alefmaksurainitarabic
+Substitution2: "'init' initial forms in Arabic subtable" alefmaksurainitarabic
 EndChar
 
 StartChar: yeharabic
@@ -87200,7 +87252,7 @@ Refer: 3703 1740 N 1 0 0 1 -50 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" yehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" yehmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" yehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" yehinitarabic
 EndChar
 
 StartChar: yehfarsivinvarabic
@@ -87297,7 +87349,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" meemfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" meemmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" meeminitarabic
+Substitution2: "'init' initial forms in Arabic subtable" meeminitarabic
 EndChar
 
 StartChar: ainarabic
@@ -87335,7 +87387,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ainfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ainmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" aininitarabic
+Substitution2: "'init' initial forms in Arabic subtable" aininitarabic
 EndChar
 
 StartChar: ghainarabic
@@ -87351,7 +87403,7 @@ Refer: 3712 1593 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ghainfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ghainmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" ghaininitarabic
+Substitution2: "'init' initial forms in Arabic subtable" ghaininitarabic
 EndChar
 
 StartChar: hamzaarabic
@@ -87531,7 +87583,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "'fina' Terminal Forms in Arabic subtable" kaffinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" kafmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" kafinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" kafinitarabic
 EndChar
 
 StartChar: alefhamzaabovearabic
@@ -87547,7 +87599,7 @@ Refer: 3658 1575 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefhamzaabovefinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" alefhamzaabovefinaarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" alefhamzaaboveisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" alefhamzaaboveisolarabic
 EndChar
 
 StartChar: alefhamzabelowarabic
@@ -87563,7 +87615,7 @@ Refer: 3658 1575 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefhamzabelowfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" alefhamzabelowfinaarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" alefhamzabelowisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" alefhamzabelowisolarabic
 EndChar
 
 StartChar: yehhamzaabovearabic
@@ -87579,7 +87631,7 @@ Refer: 3704 1609 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" yehhamzaabovefinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" yehhamzaabovemediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" yehhamzaaboveinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" yehhamzaaboveinitarabic
 EndChar
 
 StartChar: wawhamzaabovearabic
@@ -87629,7 +87681,7 @@ Refer: 3658 1575 S 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" alefmaddaabovefinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" alefmaddaabovefinaarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" alefmaddaaboveisolarabic
+Substitution2: "'init' initial forms in Arabic subtable" alefmaddaaboveisolarabic
 EndChar
 
 StartChar: commaarabic
@@ -87653,7 +87705,7 @@ Fore
 Refer: 3814 -1 S 1 0 0 1 35 0 2
 Refer: 3686 1705 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" gafinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" gafinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" gafmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" gaffinaarabic
 EndChar
@@ -87669,7 +87721,7 @@ Fore
 Refer: 3668 64442 S 1 0 0 1 0 -99 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" tehehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" tehehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" tehehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tehehfinaarabic
 EndChar
@@ -87685,7 +87737,7 @@ Fore
 Refer: 3667 64441 N 1 0 0 1 0 0 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" pehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" pehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" pehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" pehfinaarabic
 EndChar
@@ -87714,7 +87766,7 @@ Fore
 Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" beehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" beehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" beehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" beehfinaarabic
 EndChar
@@ -87730,7 +87782,7 @@ Fore
 Refer: 3670 64445 S 1 0 0 1 0 -96 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" ttehehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" ttehehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ttehehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ttehehfinaarabic
 EndChar
@@ -87746,7 +87798,7 @@ Fore
 Refer: 3669 64443 N 1 0 0 1 0 0 2
 Refer: 3685 1646 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" behehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" behehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" behehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" behehfinaarabic
 EndChar
@@ -87792,7 +87844,7 @@ Fore
 Refer: 3663 64437 N 1 0 0 1 30 154 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" nyehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" nyehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" nyehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" nyehfinaarabic
 EndChar
@@ -87809,7 +87861,7 @@ Fore
 Refer: 3671 64446 N 1 0 0 1 0 180 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" dyehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" dyehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" dyehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" dyehfinaarabic
 EndChar
@@ -87840,7 +87892,7 @@ Fore
 Refer: 3667 64441 N 1 0 0 1 30 150 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" tchehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" tchehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" tchehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tchehfinaarabic
 EndChar
@@ -87857,7 +87909,7 @@ Fore
 Refer: 3669 64443 N 1 0 0 1 30 160 2
 Refer: 3674 1581 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" tchehehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" tchehehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" tchehehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" tchehehfinaarabic
 EndChar
@@ -88155,7 +88207,7 @@ Fore
 Refer: 3664 64438 N 1 0 0 1 147 -50 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" vehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" vehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" vehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" vehfinaarabic
 EndChar
@@ -88184,7 +88236,7 @@ Fore
 Refer: 3668 64442 N 1 0 0 1 145 -60 2
 Refer: 3697 1697 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" pehehfinaarabic
+Substitution2: "'init' initial forms in Arabic subtable" pehehfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" pehehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" pehehinitarabic
 EndChar
@@ -88284,7 +88336,7 @@ Refer: 3721 1603 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ngfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ngmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" nginitarabic
+Substitution2: "'init' initial forms in Arabic subtable" nginitarabic
 EndChar
 
 StartChar: wawtwodotsabovearabic
@@ -88600,7 +88652,7 @@ Fore
 Refer: 3685 1646 N 1 0 0 1 0 0 2
 Refer: 3783 64448 S 1 0 0 1 0 -264 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" ttehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" ttehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ttehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ttehfinaarabic
 EndChar
@@ -88720,7 +88772,7 @@ Fore
 Refer: 3662 64436 S 1 0 0 1 -85 190 2
 Refer: 3729 1711 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" ngoehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" ngoehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" ngoehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" ngoehfinaarabic
 EndChar
@@ -88749,7 +88801,7 @@ Fore
 Refer: 3671 64446 N 1 0 0 1 0 0 2
 Refer: 3729 1711 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" guehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" guehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" guehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" guehfinaarabic
 EndChar
@@ -88852,7 +88904,7 @@ Refer: 3695 1722 N 1 0 0 1 0 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" rnoonfinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" rnoonmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" rnooninitarabic
+Substitution2: "'init' initial forms in Arabic subtable" rnooninitarabic
 EndChar
 
 StartChar: noonringarabic
@@ -89212,7 +89264,7 @@ Refer: 3703 1740 S 1 0 0 1 -50 0 2
 Validated: 32769
 Substitution2: "'fina' Terminal Forms in Arabic subtable" efinaarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" emediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" einitarabic
+Substitution2: "'init' initial forms in Arabic subtable" einitarabic
 EndChar
 
 StartChar: kafthreedotsbelowarabic
@@ -89322,7 +89374,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'medi' Medial Forms in Arabic subtable" hehgoalmediarabic
-Substitution2: "'init' Initial Forms in Arabic subtable" hehgoalinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" hehgoalinitarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" hehgoalfinaarabic
 EndChar
 
@@ -93358,7 +93410,7 @@ LayerCount: 2
 Fore
 Refer: 3705 1610 S 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' Initial Forms in Arabic subtable" yehinitarabic
+Substitution2: "'init' initial forms in Arabic subtable" yehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" yehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" yehfinaarabic
 EndChar
@@ -102780,6 +102832,7 @@ SplineSet
  165 313 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-latin" Bbarsup
 EndChar
 
 StartChar: hturnedsup
@@ -103060,6 +103113,7 @@ LayerCount: 2
 Fore
 Refer: 165 230 S -1 0 0 -1 591 418 3
 Validated: 32769
+Substitution2: "'sups' superscript-phonetic" aeturnsup
 EndChar
 
 StartChar: Csmallcap
@@ -103100,6 +103154,7 @@ LayerCount: 2
 Fore
 Refer: 507 604 S 1 0 0 1 0 0 3
 Validated: 32769
+Substitution2: "'sups' superscript-phonetic" eopenturnedsup
 EndChar
 
 StartChar: iturned
@@ -103600,6 +103655,7 @@ LayerCount: 2
 Fore
 Refer: 85 117 S 0 1 -1 0 501 -61 2
 Validated: 32769
+Substitution2: "'sups' superscript-phonetic" usidewayssup
 EndChar
 
 StartChar: uumlautsideways
@@ -103732,7 +103788,7 @@ Refer: 4515 -1 S 1 0 0 1 0 370 3
 Validated: 32769
 EndChar
 
-StartChar: epsilonlatinsup
+StartChar: eopensup
 Encoding: 7499 7499 4517
 Width: 600
 VWidth: 890
@@ -103919,7 +103975,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 229 294 S 0.75 0 0 0.75 60 377 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: ethsup
@@ -103929,7 +103985,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 175 240 S 0.75 0 0 0.75 60 335 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: aturnsup
@@ -103940,7 +103996,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 4239 -1 S -1 0 0 -1 601 643 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: Ismallcapstroke
@@ -103979,6 +104035,7 @@ SplineSet
  200 188 l 2
 EndSplineSet
 Validated: 3073
+Substitution2: "'sups' superscript-phonetic" ismallcapstrokesup
 EndChar
 
 StartChar: ismallcapstrokesup
@@ -103989,7 +104046,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 4530 7547 S 0.75 0 0 0.75 85 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: eopenrevsup
@@ -104000,7 +104057,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 507 604 S 0.75 0 0 0.75 75 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: Nsmallcapsup
@@ -104011,7 +104068,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 528 628 S 0.75 0 0 0.75 68 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: obarsup
@@ -104022,7 +104079,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 529 629 S 0.75 0 0 0.75 80 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: philatinsup
@@ -104033,18 +104090,18 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 531 632 S 0.75 0 0 0.75 50 339 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: thetasup
 Encoding: 7615 7615 4536
 Width: 600
 VWidth: 1119
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 679 952 S 0.75 0 0 0.75 75 336 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: Lsmallcapsup
@@ -104055,7 +104112,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 4330 -1 S 0.75 0 0 0.75 68 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: iturnsup
@@ -104066,7 +104123,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 4247 -1 S -1 0 0 -1 580 652 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: nhookleftsup
@@ -104077,7 +104134,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 526 626 S 0.75 0 0 0.75 110 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: nhookretroflexsup
@@ -104088,7 +104145,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 527 627 S 0.75 0 0 0.75 31 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: ezhsup
@@ -104108,7 +104165,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 4482 7452 S 0.75 0 0 0.75 73 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: eshsup
@@ -104119,7 +104176,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 542 643 S 0.75 0 0 0.75 90 336 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: betasup
@@ -104130,7 +104187,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 673 946 S 0.75 0 0 0.75 70 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: gammasup
@@ -104141,7 +104198,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 674 947 S 0.75 0 0 0.75 60 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: deltasup
@@ -104152,7 +104209,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 675 948 S 0.75 0 0 0.75 70 311 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: phisup
@@ -104163,7 +104220,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 693 966 S 0.75 0 0 0.75 60 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: chisup
@@ -104174,7 +104231,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 694 967 S 0.75 0 0 0.75 80 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: betasub
@@ -104185,7 +104242,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 673 946 S 0.75 0 0 0.75 70 -60 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: gammasub
@@ -104196,7 +104253,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 674 947 S 0.75 0 0 0.75 70 -60 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: rhosub
@@ -104207,7 +104264,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 688 961 S 0.75 0 0 0.75 80 -50 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: phisub
@@ -104218,7 +104275,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 693 966 S 0.75 0 0 0.75 80 -48 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: chisub
@@ -104229,7 +104286,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 694 967 S 0.75 0 0 0.75 80 -60 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: ascriptsup
@@ -104240,7 +104297,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 496 593 S 0.75 0 0 0.75 90 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: aeturnsup
@@ -104251,7 +104308,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 4463 7426 N 0.75 0 0 0.75 80 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: encyrsup
@@ -104262,13 +104319,15 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 769 1085 S 0.75 0 0 0.75 70 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: Ainlatin
 Encoding: 7461 7461 4557
 Width: 681
-Flags: HW
+Flags: W
+HStem: 0 41<36.0715 146.31 537.947 647.944>
+VStem: 151 380<329.579 502.091>
 LayerCount: 2
 Fore
 SplineSet
@@ -104276,13 +104335,13 @@ SplineSet
  469 587 531 514 531 414 c 0
  531 322 465 250 383 189 c 1
  432 140 543 49 572 41 c 1
- 586 41 623 41 623 41 c 2
+ 623 41 l 2
  641.75 41 648 32 648 22 c 0
  648 9 639.5 1.26763e-06 625 0 c 2
  625 0 589 0 571 0 c 1
  516 16 441 63 345 170 c 1
  254 67 153 6 111 0 c 1
- 101 0 59 0 59 0 c 2
+ 59 0 l 2
  47 0 36 7 36 22 c 0
  36 37 50 41 59 41 c 2
  59 41 96 41 112 41 c 1
@@ -104290,20 +104349,21 @@ SplineSet
  232 242 151 322 151 406 c 0
  151 518 211 587 341 587 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 Substitution2: "'sups' superscript-phonetic" Ainsup
-Substitution2: "FreeSerif-'sups' superscript-phonetic" Ainsup
 EndChar
 
 StartChar: Ainsup
 Encoding: 7516 7516 4558
 Width: 599
 VWidth: 649
-Flags: HW
+Flags: W
+HStem: 340 30.75<70.0536 152.732 446.46 528.958>
+VStem: 156.25 285<587.185 716.569>
 LayerCount: 2
 Fore
 Refer: 4557 7461 S 0.75 0 0 0.75 43 340 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: ss.ezh
@@ -104387,6 +104447,229 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 4560 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: sup.C
+Encoding: 59472 -1 4563
+Width: 600
+VWidth: 1376
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4321 -1 S 1 0 0 1 0 370 3
+EndChar
+
+StartChar: sup.F
+Encoding: 59473 -1 4564
+Width: 600
+VWidth: 1390
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4324 -1 S 1 0 0 1 0 370 3
+EndChar
+
+StartChar: sup.Q
+Encoding: 59474 -1 4565
+Width: 600
+VWidth: 1376
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4335 -1 S 1 0 0 1 0 370 3
+EndChar
+
+StartChar: sup.S
+Encoding: 59475 -1 4566
+Width: 600
+VWidth: 1390
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4337 -1 S 1 0 0 1 0 370 3
+EndChar
+
+StartChar: sup.X
+Encoding: 59476 -1 4567
+Width: 600
+VWidth: 1390
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4342 -1 S 1 0 0 1 0 370 3
+EndChar
+
+StartChar: sup.Y
+Encoding: 59477 -1 4568
+Width: 600
+VWidth: 1390
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4343 -1 S 1 0 0 1 0 370 3
+EndChar
+
+StartChar: sup.Z
+Encoding: 59478 -1 4569
+Width: 600
+VWidth: 1390
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4344 -1 S 1 0 0 1 0 370 3
+EndChar
+
+StartChar: ibarsup
+Encoding: 7588 7588 4570
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 517 616 S 0.75 0 0 0.75 60 332 2
+EndChar
+
+StartChar: Ismalcapsup
+Encoding: 7590 7590 4571
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 519 618 S 0.75 0 0 0.75 60 340 2
+EndChar
+
+StartChar: iotasup
+Encoding: 7589 7589 4572
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 518 617 S 0.75 0 0 0.75 60 340 2
+EndChar
+
+StartChar: jdotlessbarsup
+Encoding: 7585 7585 4573
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 508 607 S 0.75 0 0 0.75 50 340 2
+EndChar
+
+StartChar: lretroflexhooksup
+Encoding: 7593 7593 4574
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 522 621 S 0.75 0 0 0.75 70 340 2
+EndChar
+
+StartChar: mhooksup
+Encoding: 7596 7596 4575
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 525 625 S 0.75 0 0 0.75 80 340 2
+EndChar
+
+StartChar: mturneddescendsup
+Encoding: 7597 7597 4576
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 524 624 S 0.75 0 0 0.75 80 340 2
+EndChar
+
+StartChar: vhooksup
+Encoding: 7609 7609 4577
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2699 651 S 0.75 0 0 0.75 90 340 2
+EndChar
+
+StartChar: upsilonlatinsup
+Encoding: 7607 7607 4578
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2701 650 S 0.75 0 0 0.75 70 340 2
+EndChar
+
+StartChar: ubarsup
+Encoding: 7606 7606 4579
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 548 649 S 0.75 0 0 0.75 90 340 2
+EndChar
+
+StartChar: zretroflexhooksup
+Encoding: 7612 7612 4580
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 553 656 S 0.75 0 0 0.75 120 340 2
+EndChar
+
+StartChar: zcurlsup
+Encoding: 7613 7613 4581
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 554 657 S 0.75 0 0 0.75 80 340 2
+EndChar
+
+StartChar: ascriptturnsup
+Encoding: 7579 7579 4582
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 497 594 S 0.75 0 0 0.75 80 340 2
+EndChar
+
+StartChar: NameMe.7581
+Encoding: 7581 -1 4583
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 500 597 S 0.75 0 0 0.75 70 340 2
+EndChar
+
+StartChar: shooksup
+Encoding: 7603 7603 4584
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 541 642 S 0.75 0 0 0.75 75 340 2
+EndChar
+
+StartChar: jcrosstailsup
+Encoding: 7592 7592 4585
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 563 669 S 0.75 0 0 0.75 0 332 2
+EndChar
+
+StartChar: mturned
+Encoding: 43002 43002 4586
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 77 109 S -1 0 0 -1 604 417 2
 EndChar
 EndChars
 EndSplineFont
