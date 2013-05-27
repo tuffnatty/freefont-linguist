@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1369609930
+ModificationTime: 1369656476
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -61,6 +61,7 @@ Lookup: 4 0 0 "'frac' diagonal fractions"  {"'frac' diagonal fractions w/slash-1
 Lookup: 1 0 0 "'zero' slashed zero"  {"'zero' slashed zero-1"  } ['zero' ('DFLT' <'dflt' > ) 'zero' ('latn' <'ISM ' 'LSM ' 'NSM ' 'SKS ' 'VIT ' 'dflt' > ) 'zero' ('cyrl' <'MKD ' 'SRB ' 'dflt' > ) 'zero' ('armn' <'dflt' > 'geor' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' hist. ligatures in Armenian-1"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "FreeMono-'dlig' discretionary ligatures in Armenian"  {"FreeMono-'dlig' discretionary ligatures in Armenian-1"  } ['dlig' ('armn' <'dflt' > ) ]
+Lookup: 1 0 0 "FreeMono-'sups' superscript"  {"FreeMono-'sups' superscript-phonetic"  } ['sups' ('DFLT' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -124,7 +125,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64240 16 11
+WinInfo: 896 16 11
 BeginPrivate: 8
 UniqueID 7 5020947
 BlueValues 23 [-20 0 417 437 563 583]
@@ -15994,33 +15995,29 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-379 581 m 0
- 269 581 199 455 199 398 c 0
- 199 360 236 357 288 357 c 2
- 366 357 l 2
- 381 357 383 356 383 338 c 0
- 381 326 374 317 355 317 c 2
- 317 315 l 1
- 292 315 l 2
- 180 315 155 336 152 386 c 0
- 174 542 294 626 392 626 c 0
- 444 626 523 592 523 474 c 0
- 523 457 522 440 522 426 c 0
- 522 250 393 -20 231 -20 c 0
- 144 -20 89 41 89 125 c 0
- 89 137 92 152 97 174 c 1
- 78 177 65 173 65 197 c 1
- 70 209 l 1
- 75 213 79 215 80 215 c 0
- 83 216 87 217 93 217 c 2
- 118 217 l 2
- 134 217 139 209 139 192 c 0
- 137 173 132 153 132 125 c 1
- 145 94 146 22 239 22 c 0
- 280 22 364 73 423 195 c 0
- 449 251 474 340 478 413 c 0
- 478 503 472 514 434 563 c 0
- 424 575 406 581 379 581 c 0
+542 351 m 6
+ 520 251 l 6
+ 486 93 388 -15 277 -15 c 4
+ 188 -15 136 54 136 162 c 4
+ 136 189 139 219 146 251 c 6
+ 168 351 l 6
+ 202 510 300 618 411 618 c 4
+ 500 618 552 549 552 440 c 4
+ 552 413 549 383 542 351 c 6
+286 26 m 4
+ 382 26 456 141 481 257 c 6
+ 485 276 l 5
+ 193 276 l 5
+ 189 257 l 6
+ 183 229 180 201 180 176 c 4
+ 180 88 217 26 286 26 c 4
+403 577 m 4
+ 307 577 233 462 208 346 c 6
+ 202 320 l 5
+ 494 320 l 5
+ 500 346 l 6
+ 506 374 509 402 509 427 c 4
+ 509 515 472 577 403 577 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -56157,8 +56154,9 @@ Width: 600
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 497 604 S 1 0 0 1 0 0 3
+Refer: 496 603 S -1 0 0 -1 600 415 2
 Validated: 32769
+Substitution2: "FreeMono-'sups' superscript-phonetic" eopenturnedsup
 EndChar
 
 StartChar: iturned
@@ -57241,7 +57239,7 @@ SplineSet
  577.298 41 585.021 35.7534 585.021 25.9092 c 0
  585.021 8.30204 571.836 0 553 0 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "FreeMono-'dlig' discretionary ligatures in Armenian-1" menarmenian nowarmenian
 EndChar
@@ -57279,7 +57277,7 @@ SplineSet
  369.595 -16 344.925 6.92724 344.925 59.9937 c 0
  344.925 76.1384 347.208 95.0728 351.869 117 c 2
  439.867 531 l 1
- 410.867 531 352.867 531 352.867 531 c 2
+ 352.867 531 l 2
  330.462 531 319.335 521.479 319.335 498.47 c 0
  319.335 492.144 320.499 486.429 322.239 481 c 2
  347.235 403 l 2
@@ -57308,7 +57306,7 @@ SplineSet
  279.64 465.214 276.154 480.428 276.154 495.262 c 0
  276.154 543.643 314.658 573 341.795 573 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "FreeMono-'dlig' discretionary ligatures in Armenian-1" menarmenian echarmenian
 EndChar
@@ -57377,7 +57375,7 @@ SplineSet
  268.68 464.779 265.815 478.264 265.815 493.263 c 0
  265.815 542.278 303.643 573 331.795 573 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "FreeMono-'dlig' discretionary ligatures in Armenian-1" menarmenian iniarmenian
 EndChar
@@ -57447,7 +57445,7 @@ SplineSet
  191.802 472.206 205.53 467 232.264 467 c 2
  319.264 467 l 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "FreeMono-'dlig' discretionary ligatures in Armenian-1" vewarmenian nowarmenian
 EndChar
@@ -57522,7 +57520,7 @@ SplineSet
  238.335 464.549 235.505 476.395 235.505 491.508 c 0
  235.505 541.038 272.771 573 301.795 573 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "FreeMono-'dlig' discretionary ligatures in Armenian-1" menarmenian xeharmenian
 EndChar
