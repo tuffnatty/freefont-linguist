@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1370113676
+ModificationTime: 1370445670
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -498,12 +498,12 @@ KernClass2: 12 13 "'kern' kern small letters in Cyrillic"
  10 becyrillic
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -15 {} -15 {} -20 {} -30 {} -15 {} -15 {} -40 {} -20 {} -20 {} 0 {} -30 {} -30 {} -40 {} -30 {} -30 {} -40 {} -20 {} -10 {} -20 {} -20 {} -40 {} -30 {} 0 {} -15 {} -25 {} -10 {} -20 {} -25 {} -5 {} -20 {} -10 {} -10 {} -30 {} -30 {} -10 {} 0 {} -40 {} -20 {} -30 {} 0 {} -30 {} -30 {} 0 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -30 {} -20 {} 0 {} 0 {} -10 {} -40 {} -30 {} -40 {} 0 {} -45 {} -20 {} -10 {} -20 {} -30 {} -20 {} -20 {} 0 {} 0 {} -30 {} -30 {} 0 {} 0 {} 0 {} -20 {} 0 {} -10 {} -20 {} -10 {} -10 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -10 {} 0 {} 0 {} -30 {} -15 {} -30 {} -40 {} -30 {} -40 {} -40 {} -20 {} -20 {} -40 {} -40 {} -30 {} 0 {} -40 {} -10 {} -30 {} -20 {} -50 {} -50 {} -20 {} -20 {} -10 {} -40 {} -30 {} -30 {} 0 {} -10 {} -45 {} -30 {} -30 {} -30 {} -30 {} -30 {} -20 {} -40 {} -40 {} -30 {} 0 {}
 ChainSub2: glyph "'hlig' hist. chain in Devanagari for OldHindi-1"  0 0 0 4
- String: 16 dev_ka__ssa.akhn
+ String: 15 dev_ka_ssa.akhn
  BString: 14 virama ngadeva
  FString: 0 
  1
   SeqLookup: 0 "unbuild ligature in Devanagari of Old Hindi" 
- String: 16 dev_ka__ssa.half
+ String: 15 dev_ka_ssa.half
  BString: 14 virama ngadeva
  FString: 6 vadeva
  1
@@ -524,8 +524,8 @@ ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   Class: 6 yadeva
   BClass: 56 ngadeva chadeva ttadeva tthadeva ddadeva ddhadeva dadeva
   BClass: 10 dev_rakaar
-  BClass: 32 dev_da__va.pres dev_da__dha.pres
-  BClass: 125 dev_nga__nga.pres dev_tta__tta.pres dev_tta__ttha.pres dev_dda__dda.pres dev_da__da.pres dev_ssa__tta.pres dev_ssa__ttha.pres
+  BClass: 30 dev_da_va.pres dev_da_dha.pres
+  BClass: 118 dev_nga_nga.pres dev_tta_tta.pres dev_tta_ttha.pres dev_dda_dda.pres dev_da_da.pres dev_ssa_tta.pres dev_ssa_ttha.pres
   BClass: 15 dev_rakaar.blwf
  2 1 0
   ClsList: 1 2
@@ -592,7 +592,7 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 3 1 3
   Class: 6 virama
   Class: 6 radeva
   BClass: 56 ngadeva chadeva ttadeva tthadeva ddadeva ddhadeva dadeva
-  BClass: 127 dev_nga__nga.pres dev_tta__tta.pres dev_tta__ttha.pres dev_dda__dda.pres dev_ssa__tta.pres dev_ssa__ttha.pres dev_dda_ddha.pres
+  BClass: 121 dev_nga_nga.pres dev_tta_tta.pres dev_tta_ttha.pres dev_dda_dda.pres dev_ssa_tta.pres dev_ssa_ttha.pres dev_dda_ddha.pres
  1 1 0
   ClsList: 1
   BClsList: 1
@@ -1269,7 +1269,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 61712 16 10
+WinInfo: 61776 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 31 [-14 0 307 315 461 473 673 691]
@@ -92495,7 +92495,6 @@ Width: 622
 Flags: HMW
 AnchorPoint: "dev-rakaar" 295 167 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 74 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -92541,7 +92540,6 @@ Width: 735
 Flags: HMW
 AnchorPoint: "dev-rakaar" 400 170 basechar 0
 AnchorPoint: "dev-below" 470 -36 basechar 0
-AnchorPoint: "dev-nukta" 210 74 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -92573,7 +92571,7 @@ SplineSet
  221 232 221 230 222 223 c 1
  293 223 363 241 426 276 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: dadeva
@@ -92582,7 +92580,6 @@ Width: 589
 Flags: HMW
 AnchorPoint: "dev-rakaar" 230 160 basechar 0
 AnchorPoint: "dev-below" 360 -6 basechar 0
-AnchorPoint: "dev-nukta" 80 54 basechar 0
 AnchorPoint: "dev-above" 323 610 basechar 0
 LayerCount: 2
 Fore
@@ -92698,7 +92695,6 @@ Width: 609
 Flags: HMW
 AnchorPoint: "dev-rakaar" 380 150 basechar 0
 AnchorPoint: "dev-below" 313 -194 basechar 0
-AnchorPoint: "dev-nukta" 110 -106 basechar 0
 AnchorPoint: "dev-above" 343 610 basechar 0
 LayerCount: 2
 Fore
@@ -92748,7 +92744,6 @@ Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 360 170 basechar 0
 AnchorPoint: "dev-below" 430 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 74 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
@@ -92790,7 +92785,6 @@ Encoding: 2352 2352 4051
 Width: 495
 Flags: HMW
 AnchorPoint: "dev-below" 200 -36 basechar 0
-AnchorPoint: "dev-nukta" 180 74 basechar 0
 AnchorPoint: "dev-above" 213 610 basechar 0
 LayerCount: 2
 Fore
@@ -92823,7 +92817,6 @@ Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 390 180 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 74 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
@@ -92868,7 +92861,6 @@ Width: 888
 Flags: HMW
 AnchorPoint: "dev-rakaar" 350 -10 basechar 0
 AnchorPoint: "dev-below" 520 -116 basechar 0
-AnchorPoint: "dev-nukta" 310 -66 basechar 0
 AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
 Fore
@@ -92931,7 +92923,6 @@ Width: 629
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 40 basechar 0
 AnchorPoint: "dev-below" 310 -6 basechar 0
-AnchorPoint: "dev-nukta" 80 34 basechar 0
 AnchorPoint: "dev-above" 323 610 basechar 0
 LayerCount: 2
 Fore
@@ -92967,7 +92958,6 @@ Width: 629
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 40 basechar 0
 AnchorPoint: "dev-below" 280 -6 basechar 0
-AnchorPoint: "dev-nukta" 80 34 basechar 0
 AnchorPoint: "dev-above" 343 610 basechar 0
 LayerCount: 2
 Fore
@@ -93008,7 +92998,6 @@ Width: 674
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 60 basechar 0
 AnchorPoint: "dev-below" 300 14 basechar 0
-AnchorPoint: "dev-nukta" 110 34 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -93052,7 +93041,6 @@ Width: 609
 Flags: HMW
 AnchorPoint: "dev-rakaar" 330 40 basechar 0
 AnchorPoint: "dev-below" 320 -16 basechar 0
-AnchorPoint: "dev-nukta" 80 34 basechar 0
 AnchorPoint: "dev-above" 373 610 basechar 0
 LayerCount: 2
 Fore
@@ -93085,7 +93073,7 @@ SplineSet
  339.5 165 308.5 145.5 290 104 c 1
  347 106.5 386 127.967 386 174 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: nnadeva
@@ -93094,7 +93082,6 @@ Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 402 140 basechar 0
 AnchorPoint: "dev-below" 443 -36 basechar 0
-AnchorPoint: "dev-nukta" 193 54 basechar 0
 AnchorPoint: "dev-above" 436 610 basechar 0
 LayerCount: 2
 Fore
@@ -93181,7 +93168,6 @@ Width: 735
 Flags: HMW
 AnchorPoint: "dev-rakaar" 450 240 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
-AnchorPoint: "dev-nukta" 330 144 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -93225,7 +93211,6 @@ Width: 655
 Flags: HMW
 AnchorPoint: "dev-rakaar" 380 280 basechar 0
 AnchorPoint: "dev-below" 390 -36 basechar 0
-AnchorPoint: "dev-nukta" 90 -6 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
@@ -93303,7 +93288,6 @@ Width: 622
 Flags: HMW
 AnchorPoint: "dev-rakaar" 310 150 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
-AnchorPoint: "dev-nukta" 120 74 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -93344,7 +93328,6 @@ Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 360 167 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 54 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
@@ -93392,7 +93375,6 @@ Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 80 basechar 0
 AnchorPoint: "dev-below" 300 14 basechar 0
-AnchorPoint: "dev-nukta" 110 64 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -93491,7 +93473,6 @@ Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 350 190 basechar 0
 AnchorPoint: "dev-below" 430 -36 basechar 0
-AnchorPoint: "dev-nukta" 190 74 basechar 0
 AnchorPoint: "dev-above" 443 610 basechar 0
 LayerCount: 2
 Fore
@@ -93534,7 +93515,6 @@ Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 320 190 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
-AnchorPoint: "dev-nukta" 170 74 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
@@ -93602,7 +93582,6 @@ Width: 735
 Flags: HMW
 AnchorPoint: "dev-rakaar" 420 114 basechar 0
 AnchorPoint: "dev-below" 470 -36 basechar 0
-AnchorPoint: "dev-nukta" 170 34 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -93756,7 +93735,6 @@ Width: 848
 Flags: HMW
 AnchorPoint: "dev-rakaar" 519 40 basechar 0
 AnchorPoint: "dev-below" 520 -26 basechar 0
-AnchorPoint: "dev-nukta" 360 34 basechar 0
 AnchorPoint: "dev-above" 503 610 basechar 0
 LayerCount: 2
 Fore
@@ -94070,7 +94048,6 @@ Width: 788
 Flags: HMW
 AnchorPoint: "dev-rakaar" 560 220 basechar 0
 AnchorPoint: "dev-below" 530 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 74 basechar 0
 AnchorPoint: "dev-above" 533 610 basechar 0
 LayerCount: 2
 Fore
@@ -94257,7 +94234,6 @@ Width: 788
 Flags: HMW
 AnchorPoint: "dev-rakaar" 513 56 basechar 0
 AnchorPoint: "dev-below" 530 -36 basechar 0
-AnchorPoint: "dev-nukta" 350 114 basechar 0
 AnchorPoint: "dev-above" 533 610 basechar 0
 LayerCount: 2
 Fore
@@ -94301,7 +94277,6 @@ Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 390 190 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
-AnchorPoint: "dev-nukta" 110 74 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
@@ -94342,7 +94317,6 @@ Width: 655
 Flags: HMW
 AnchorPoint: "dev-rakaar" 359 140 basechar 0
 AnchorPoint: "dev-below" 400 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 74 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -94404,7 +94378,6 @@ Width: 615
 Flags: HMW
 AnchorPoint: "dev-rakaar" 319 200 basechar 0
 AnchorPoint: "dev-below" 350 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 104 basechar 0
 AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
@@ -94440,7 +94413,6 @@ Width: 615
 Flags: HMW
 AnchorPoint: "dev-rakaar" 319 200 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 124 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -94483,7 +94455,7 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 425 -130 2
 Refer: 4056 2337 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' nukta forms in Devanagari-1" ddadeva nuktadeva
 LCarets2: 1 0 
 EndChar
@@ -94499,7 +94471,7 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 425 -174 2
 Refer: 4057 2338 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' nukta forms in Devanagari-1" ddhadeva nuktadeva
 LCarets2: 1 0 
 EndChar
@@ -94510,7 +94482,6 @@ Width: 834
 Flags: HMW
 AnchorPoint: "dev-rakaar" 600 150 basechar 0
 AnchorPoint: "dev-below" 590 -60 basechar 0
-AnchorPoint: "dev-nukta" 190 4 basechar 0
 AnchorPoint: "dev-above" 573 610 basechar 0
 LayerCount: 2
 Fore
@@ -94557,7 +94528,7 @@ SplineSet
  793 622 l 2
  825 622 876 559 876 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Substitution2: "'ss04' style set 4 in Devanagari of Nepali" dev_npl_jha
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_jha
 EndChar
@@ -95299,7 +95270,7 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 300 0 2
 Refer: 4088 2344 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: rradeva
@@ -95312,7 +95283,7 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 240 0 2
 Refer: 4051 2352 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: llladeva
@@ -95326,7 +95297,7 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 470 -110 2
 Refer: 4073 2355 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: shortadeva
@@ -95518,8 +95489,8 @@ Fore
 Refer: 4023 2375 N 1 0 0 1 -40 -20 2
 Refer: 4134 -1 N 1 0 0 1 100 0 2
 Validated: 32769
-Ligature2: "'abvs' above-base substs in Devanagari-reph" dev_ra.rphf esigndeva
 Ligature2: "'abvs' above-base substs in Devanagari-reph" esigndeva dev_ra.rphf
+Ligature2: "'abvs' above-base substs in Devanagari-reph" dev_ra.rphf esigndeva
 LCarets2: 1 0 
 EndChar
 
@@ -95534,8 +95505,8 @@ Fore
 Refer: 4134 -1 N 1 0 0 1 100 0 2
 Refer: 4024 2376 N 1 0 0 1 -70 0 2
 Validated: 32769
-Ligature2: "'abvs' above-base substs in Devanagari-reph" aisigndeva dev_ra.rphf
 Ligature2: "'abvs' above-base substs in Devanagari-reph" dev_ra.rphf aisigndeva
+Ligature2: "'abvs' above-base substs in Devanagari-reph" aisigndeva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
 
@@ -95620,7 +95591,7 @@ Ligature2: "subst rakaar.blwf for virama-rakaar in Devanagari" virama dev_rakaar
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ra__anusvara.rphf
+StartChar: dev_ra_anusvara.rphf
 Encoding: 61702 -1 4136
 Width: 0
 Flags: HMW
@@ -95630,7 +95601,6 @@ Fore
 Refer: 4078 2306 N 1 0 0 1 124 -48 2
 Refer: 4134 -1 N 1 0 0 1 0 0 2
 Validated: 32769
-LCarets2: 1 0 
 EndChar
 
 StartChar: anudattadeva
@@ -95750,7 +95720,7 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 S 1 0 0 1 370 -50 2
 Refer: 4050 2351 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'nukt' nukta forms in Devanagari-1" yadeva nuktadeva
 LCarets2: 1 0 
 EndChar
@@ -95793,8 +95763,8 @@ Fore
 Refer: 4136 -1 N 1 0 0 1 100 0 2
 Refer: 4023 2375 N 1 0 0 1 -40 -20 2
 Validated: 32769
-Ligature2: "'abvs' above-base substs in Devanagari-anusvara+-2" aisigndeva dev_ra.rphf anusvaradeva
 Ligature2: "'abvs' above-base substs in Devanagari-anusvara+-2" dev_ra.rphf aisigndeva anusvaradeva
+Ligature2: "'abvs' above-base substs in Devanagari-anusvara+-2" aisigndeva dev_ra.rphf anusvaradeva
 LCarets2: 2 0 0 
 EndChar
 
@@ -95997,7 +95967,6 @@ StartChar: dev_bby_la
 Encoding: 61664 -1 4156
 Width: 854
 Flags: HMW
-AnchorPoint: "dev-nukta" 60 28.4 basechar 0
 AnchorPoint: "dev-below" 537 -59 basechar 0
 AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
@@ -96043,7 +96012,6 @@ StartChar: dev_bby_sha
 Encoding: 61665 -1 4157
 Width: 788
 Flags: HMW
-AnchorPoint: "dev-nukta" 140 8.4 basechar 0
 AnchorPoint: "dev-below" 540 -36 basechar 0
 AnchorPoint: "dev-above" 533 610 basechar 0
 LayerCount: 2
@@ -96145,7 +96113,6 @@ StartChar: dev_bby_ja_nya.akhn
 Encoding: 61668 -1 4160
 Width: 695
 Flags: HMW
-AnchorPoint: "dev-nukta" 90 -1.6 basechar 0
 AnchorPoint: "dev-above" 443 610 basechar 0
 AnchorPoint: "dev-below" 450 -36 basechar 0
 LayerCount: 2
@@ -96225,7 +96192,6 @@ StartChar: dev_bby_la_la.pres
 Encoding: 61670 -1 4162
 Width: 854
 Flags: HMW
-AnchorPoint: "dev-nukta" 50 -131.6 basechar 0
 AnchorPoint: "dev-above" 533 610 basechar 0
 AnchorPoint: "dev-below" 612 -108 basechar 0
 LayerCount: 2
@@ -96283,7 +96249,7 @@ SplineSet
  514 235 535 228 551 220 c 1
  560 231 589 305 589 325 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: dev_bby_sha.half
@@ -96744,7 +96710,6 @@ StartChar: dev_clt_cha
 Encoding: 61684 -1 4173
 Width: 888
 Flags: HMW
-AnchorPoint: "dev-nukta" 60 -1.6 basechar 0
 AnchorPoint: "dev-above" 533 610 basechar 0
 AnchorPoint: "dev-below" 540 -36 basechar 0
 LayerCount: 2
@@ -96799,7 +96764,6 @@ StartChar: dev_clt_jha
 Encoding: 61685 -1 4174
 Width: 894
 Flags: HMW
-AnchorPoint: "dev-nukta" 150 48.4 basechar 0
 AnchorPoint: "dev-above" 443 610 basechar 0
 AnchorPoint: "dev-below" 450 -36 basechar 0
 LayerCount: 2
@@ -96851,7 +96815,6 @@ StartChar: dev_clt_nna
 Encoding: 61686 -1 4175
 Width: 854
 Flags: HMW
-AnchorPoint: "dev-nukta" 120 48.4 basechar 0
 AnchorPoint: "dev-above" 603 610 basechar 0
 AnchorPoint: "dev-below" 610 -36 basechar 0
 LayerCount: 2
@@ -96890,11 +96853,10 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_clt_ka__ssa.akhn
+StartChar: dev_clt_ka_ssa.akhn
 Encoding: 61687 -1 4176
 Width: 774
 Flags: HMW
-AnchorPoint: "dev-nukta" 100 48.4 basechar 0
 AnchorPoint: "dev-above" 533 610 basechar 0
 AnchorPoint: "dev-below" 540 -36 basechar 0
 LayerCount: 2
@@ -96937,7 +96899,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_clt_ka__ssa.half
+StartChar: dev_clt_ka_ssa.half
 Encoding: 61688 -1 4177
 Width: 518
 Flags: HMW
@@ -96978,7 +96940,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_clt_nga__ka__ssa.pres
+StartChar: dev_clt_nga_ka_ssa.pres
 Encoding: 61689 -1 4178
 Width: 773
 Flags: HMW
@@ -97051,7 +97013,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_clt_nga__ka__ssa__va.pres
+StartChar: dev_clt_nga_ka_ssa_va.pres
 Encoding: 61690 -1 4179
 Width: 972
 Flags: HMW
@@ -97135,11 +97097,10 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_clt_cha__ya.pres
+StartChar: dev_clt_cha_ya.pres
 Encoding: 61691 -1 4180
 Width: 1207
 Flags: HMW
-AnchorPoint: "dev-nukta" 60 -1.6 basechar 0
 AnchorPoint: "dev-above" 953 610 basechar 0
 AnchorPoint: "dev-below" 960 -40 basechar 0
 LayerCount: 2
@@ -97273,11 +97234,10 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_clt_nna__nna.pres
+StartChar: dev_clt_nna_nna.pres
 Encoding: 61694 -1 4183
 Width: 854
 Flags: HMW
-AnchorPoint: "dev-nukta" 100 28.4 basechar 0
 AnchorPoint: "dev-above" 603 610 basechar 0
 AnchorPoint: "dev-below" 610 -36 basechar 0
 LayerCount: 2
@@ -97325,7 +97285,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_clt_ha__nna.pres
+StartChar: dev_clt_ha_nna.pres
 Encoding: 61695 -1 4184
 Width: 729
 Flags: HMW
@@ -97388,23 +97348,21 @@ Encoding: 61728 -1 4185
 Width: 575
 Flags: HMW
 AnchorPoint: "dev-below" 320 -36 basechar 0
-AnchorPoint: "dev-nukta" 50 74 basechar 0
 LayerCount: 2
 Fore
 Refer: 4078 2306 N 1 0 0 1 610 -50 2
 Refer: 4075 2312 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'abvs' above-base substs in Devanagari-anusvara" iikaradeva anusvaradeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__ssa.akhn
+StartChar: dev_ka_ssa.akhn
 Encoding: 61729 -1 4186
 Width: 774
 Flags: HMW
 AnchorPoint: "dev-rakaar" 260 60 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 130 -61.6 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -97454,19 +97412,18 @@ SplineSet
 EndSplineSet
 Validated: 3073
 MultipleSubs2: "subst. ka-ssa for ligature in Devanagari-1" kadeva virama ssadeva
-Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_ka__ssa.akhn
+Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_ka_ssa.akhn
 Ligature2: "'akhn' akhand in Devanagari-1" kadeva ssadeva virama
 Ligature2: "'akhn' akhand in Devanagari2-1" kadeva virama ssadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ja__nya.akhn
+StartChar: dev_ja_nya.akhn
 Encoding: 61730 -1 4187
 Width: 695
 Flags: HMW
 AnchorPoint: "dev-rakaar" 453 133 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
-AnchorPoint: "dev-nukta" 50 -61.6 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
@@ -97519,7 +97476,6 @@ Encoding: 61731 -1 4188
 Width: 695
 Flags: HMW
 AnchorPoint: "dev-below" 380 -206 basechar 0
-AnchorPoint: "dev-nukta" 130 -111.4 basechar 0
 AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
@@ -97566,7 +97522,6 @@ SplineSet
  685 622 737 559 737 529 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
 EndChar
 
 StartChar: dev_ka.half
@@ -97699,6 +97654,7 @@ StartChar: dev_gha.half
 Encoding: 61735 -1 4192
 Width: 439
 Flags: HMW
+AnchorPoint: "dev-nukta" 110 78.4 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -97812,6 +97768,7 @@ StartChar: dev_jha.half
 Encoding: 61738 -1 4195
 Width: 578
 Flags: HMW
+AnchorPoint: "dev-nukta" 120 -11.6 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -98123,6 +98080,7 @@ StartChar: dev_pha.half
 Encoding: 61746 -1 4203
 Width: 598
 Flags: HMW
+AnchorPoint: "dev-nukta" 90 118.4 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -98801,7 +98759,7 @@ Ligature2: "'half' half forms in Devanagari-zwj" radeva virama ZWJ
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ka__ka.pres
+StartChar: dev_ka_ka.pres
 Encoding: 61763 -1 4220
 Width: 827
 Flags: HMW
@@ -98870,13 +98828,12 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" dev_ka.half kadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__ta.pres
+StartChar: dev_ka_ta.pres
 Encoding: 61764 -1 4221
 Width: 788
 Flags: HMW
 AnchorPoint: "dev-rakaar" 380 220 basechar 0
 AnchorPoint: "dev-below" 370 -36 basechar 0
-AnchorPoint: "dev-nukta" 290 -1.1 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -98928,13 +98885,12 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" dev_ka.half dev_ta.
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__na.pres
+StartChar: dev_ka_na.pres
 Encoding: 61765 -1 4222
 Width: 743
 Flags: HMW
 AnchorPoint: "dev-rakaar" 340 -30 basechar 0
 AnchorPoint: "dev-below" 320 -36 basechar 0
-AnchorPoint: "dev-nukta" 253 -61 basechar 0
 AnchorPoint: "dev-above" 313 610 basechar 0
 LayerCount: 2
 Fore
@@ -98983,15 +98939,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ka.half nadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__ma.pres
+StartChar: dev_ka_ma.pres
 Encoding: 61766 -1 4223
 Width: 1052
 Flags: HMW
 AnchorPoint: "dev-rakaar" 760 80 basechar 0
 AnchorPoint: "dev-below" 800 -36 basechar 0
-AnchorPoint: "dev-nukta" 660 4 basechar 0
 AnchorPoint: "dev-above" 793 610 basechar 0
 LayerCount: 2
 Fore
@@ -99043,15 +98999,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ka.half madeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__ya.pres
+StartChar: dev_ka_ya.pres
 Encoding: 61767 -1 4224
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 80 basechar 0
 AnchorPoint: "dev-below" 760 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 68.9 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -99104,15 +99060,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" dev_ka.half yadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" dev_ka.half yadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__la.pres
+StartChar: dev_ka_la.pres
 Encoding: 61768 -1 4225
 Width: 887
 Flags: HMW
 AnchorPoint: "dev-rakaar" 450 80 basechar 0
 AnchorPoint: "dev-below" 460 -36 basechar 0
-AnchorPoint: "dev-nukta" 320 4 basechar 0
 AnchorPoint: "dev-above" 453 610 basechar 0
 LayerCount: 2
 Fore
@@ -99167,15 +99123,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ka.half ladeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__va.pres
+StartChar: dev_ka_va.pres
 Encoding: 61769 -1 4226
 Width: 827
 Flags: HMW
 AnchorPoint: "dev-rakaar" 370 64.9 basechar 0
 AnchorPoint: "dev-below" 400 -50 basechar 0
-AnchorPoint: "dev-nukta" 60 -11.1 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
@@ -99225,18 +99181,17 @@ SplineSet
  787 622 l 2
  819 622 880 559 880 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ka.half vadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_gha__na.pres
+StartChar: dev_gha_na.pres
 Encoding: 61770 -1 4227
 Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 460 20 basechar 0
 AnchorPoint: "dev-below" 450 -36 basechar 0
-AnchorPoint: "dev-nukta" 310 -41.1 basechar 0
 AnchorPoint: "dev-above" 443 610 basechar 0
 LayerCount: 2
 Fore
@@ -99279,9 +99234,10 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_gha.half nadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_nga__ka.pres
+StartChar: dev_nga_ka.pres
 Encoding: 61771 -1 4228
 Width: 772
 Flags: HMW
@@ -99361,7 +99317,7 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ngadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__kha.pres
+StartChar: dev_nga_kha.pres
 Encoding: 61772 -1 4229
 Width: 772
 Flags: HMW
@@ -99439,7 +99395,7 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ngadeva virama khad
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__ga.pres
+StartChar: dev_nga_ga.pres
 Encoding: 61773 -1 4230
 Width: 772
 Flags: HMW
@@ -99506,13 +99462,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ngadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__gha.pres
+StartChar: dev_nga_gha.pres
 Encoding: 61774 -1 4231
 Width: 772
 Flags: HMW
 AnchorPoint: "dev-rakaar" 370 -210 basechar 0
 AnchorPoint: "dev-below" 410 -326 basechar 0
-AnchorPoint: "dev-nukta" 80 -220.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -99573,19 +99528,18 @@ SplineSet
  161 -163 168 -163 174 -163 c 0
  246 -163 315 -120 359 -77 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ngadeva virama ghadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ngadeva virama ghadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__nga.pres
+StartChar: dev_nga_nga.pres
 Encoding: 61775 -1 4232
 Width: 772
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 -360 basechar 0
 AnchorPoint: "dev-below" 410 -396 basechar 0
-AnchorPoint: "dev-nukta" 50 -350.1 basechar 0
 AnchorPoint: "dev-above" 413 610 basechar 0
 LayerCount: 2
 Fore
@@ -99652,20 +99606,19 @@ SplineSet
  732 622 l 2
  764 622 825 559 825 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ngadeva virama ngadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ngadeva virama ngadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ngadeva virama ngadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__na.pres
+StartChar: dev_nga_na.pres
 Encoding: 61776 -1 4233
 Width: 772
 Flags: HMW
 AnchorPoint: "dev-rakaar" 440 -200 basechar 0
 AnchorPoint: "dev-below" 410 -326 basechar 0
-AnchorPoint: "dev-nukta" 290 -260.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -99717,20 +99670,19 @@ SplineSet
  732 622 l 2
  764 622 825 559 825 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ngadeva virama nadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ngadeva virama nadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ngadeva virama nadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__ma.pres
+StartChar: dev_nga_ma.pres
 Encoding: 61777 -1 4234
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 -110 basechar 0
 AnchorPoint: "dev-below" 760 -286 basechar 0
-AnchorPoint: "dev-nukta" 130 -170.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -99788,20 +99740,19 @@ SplineSet
  464 -31 l 1
  704 -31 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ngadeva virama madeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ngadeva virama madeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ngadeva virama madeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__ya.pres
+StartChar: dev_nga_ya.pres
 Encoding: 61778 -1 4235
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 -90 basechar 0
 AnchorPoint: "dev-below" 760 -286 basechar 0
-AnchorPoint: "dev-nukta" 120 -150.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -99858,20 +99809,19 @@ SplineSet
  972 622 l 2
  1004 622 1065 559 1065 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ngadeva openya
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ngadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ngadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ca__ca.pres
+StartChar: dev_ca_ca.pres
 Encoding: 61779 -1 4236
 Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 340 30 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
-AnchorPoint: "dev-nukta" 90 18.9 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -99922,13 +99872,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ca.half cadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ca__nya.pres
+StartChar: dev_ca_nya.pres
 Encoding: 61780 -1 4237
 Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 440 60 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
-AnchorPoint: "dev-nukta" 50 -31.1 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -99981,13 +99930,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ca.half nyadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_cha__ya.pres
+StartChar: dev_cha_ya.pres
 Encoding: 61781 -1 4238
 Width: 1206
 Flags: HMW
 AnchorPoint: "dev-rakaar" 920 40 basechar 0
 AnchorPoint: "dev-below" 960 -36 basechar 0
-AnchorPoint: "dev-nukta" 570 -20.5 basechar 0
 AnchorPoint: "dev-above" 953 610 basechar 0
 LayerCount: 2
 Fore
@@ -100044,19 +99992,18 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" chadeva openya
-Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_cha__ya.pres
+Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_cha_ya.pres
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" chadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" chadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nya__ca.pres
+StartChar: dev_nya_ca.pres
 Encoding: 61782 -1 4239
 Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 350 10 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
-AnchorPoint: "dev-nukta" 40 -1.8 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -100105,18 +100052,18 @@ SplineSet
  245 399 269 397 294 397 c 0
  338 397 383 404 426 419 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_nya.half cadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_nya__ja.pres
+StartChar: dev_nya_ja.pres
 Encoding: 61783 -1 4240
 Width: 813
 Flags: HMW
 AnchorPoint: "dev-rakaar" 520 80 basechar 0
 AnchorPoint: "dev-below" 560 -36 basechar 0
-AnchorPoint: "dev-nukta" 460 -21.8 basechar 0
+AnchorPoint: "dev-nukta" 200 -51.8 basechar 0
 AnchorPoint: "dev-above" 553 610 basechar 0
 LayerCount: 2
 Fore
@@ -100166,12 +100113,12 @@ SplineSet
  258 394 296 390 334 390 c 0
  391 390 449 400 505 419 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_nya.half jadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_tta__ka.pres
+StartChar: dev_tta_ka.pres
 Encoding: 61784 -1 4241
 Width: 628
 Flags: HMW
@@ -100233,13 +100180,12 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ttadeva virama kade
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_tta__tta.pres
+StartChar: dev_tta_tta.pres
 Encoding: 61785 -1 4242
 Width: 628
 Flags: HMW
 AnchorPoint: "dev-rakaar" 300 -200 basechar 0
 AnchorPoint: "dev-below" 310 -266 basechar 0
-AnchorPoint: "dev-nukta" 30 -230.1 basechar 0
 AnchorPoint: "dev-above" 323 610 basechar 0
 LayerCount: 2
 Fore
@@ -100286,13 +100232,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ttadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_tta__ttha.pres
+StartChar: dev_tta_ttha.pres
 Encoding: 61786 -1 4243
 Width: 628
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 -240 basechar 0
 AnchorPoint: "dev-below" 320 -295 basechar 0
-AnchorPoint: "dev-nukta" 10 -229.1 basechar 0
 AnchorPoint: "dev-above" 323 610 basechar 0
 LayerCount: 2
 Fore
@@ -100343,13 +100288,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ttadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_tta__ya.pres
+StartChar: dev_tta_ya.pres
 Encoding: 61787 -1 4244
 Width: 973
 Flags: HMW
 AnchorPoint: "dev-rakaar" 680 80 basechar 0
 AnchorPoint: "dev-below" 720 -36 basechar 0
-AnchorPoint: "dev-nukta" 580 4 basechar 0
 AnchorPoint: "dev-above" 713 610 basechar 0
 LayerCount: 2
 Fore
@@ -100401,13 +100345,12 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ttadeva virama yade
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ttha__ya.pres
+StartChar: dev_ttha_ya.pres
 Encoding: 61788 -1 4245
 Width: 833
 Flags: HMW
 AnchorPoint: "dev-rakaar" 540 60 basechar 0
 AnchorPoint: "dev-below" 590 -36 basechar 0
-AnchorPoint: "dev-nukta" 80 -0.500031 basechar 0
 AnchorPoint: "dev-above" 583 610 basechar 0
 LayerCount: 2
 Fore
@@ -100455,7 +100398,7 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" tthadeva virama yad
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_dda__ga.pres
+StartChar: dev_dda_ga.pres
 Encoding: 61789 -1 4246
 Width: 673
 Flags: HMW
@@ -100515,13 +100458,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" ddadeva virama gade
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_dda__gha.pres
+StartChar: dev_dda_gha.pres
 Encoding: 61790 -1 4247
 Width: 673
 Flags: HMW
 AnchorPoint: "dev-rakaar" 366 -170 basechar 0
 AnchorPoint: "dev-below" 410 -326 basechar 0
-AnchorPoint: "dev-nukta" 60 -260.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -100582,13 +100524,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" ddadeva virama ghad
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_dda__dda.pres
+StartChar: dev_dda_dda.pres
 Encoding: 61791 -1 4248
 Width: 673
 Flags: HMW
 AnchorPoint: "dev-rakaar" 270 -340 basechar 0
 AnchorPoint: "dev-below" 270 -406 basechar 0
-AnchorPoint: "dev-nukta" 20 -359.8 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -100646,13 +100587,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ddadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_dda__ma.pres
+StartChar: dev_dda_ma.pres
 Encoding: 61792 -1 4249
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 -120 basechar 0
 AnchorPoint: "dev-below" 760 -286 basechar 0
-AnchorPoint: "dev-nukta" 180 -190.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -100712,13 +100652,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ddadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_dda__ya.pres
+StartChar: dev_dda_ya.pres
 Encoding: 61793 -1 4250
 Width: 973
 Flags: HMW
 AnchorPoint: "dev-rakaar" 680 80 basechar 0
 AnchorPoint: "dev-below" 720 -36 basechar 0
-AnchorPoint: "dev-nukta" 110 27.5 basechar 0
 AnchorPoint: "dev-above" 713 610 basechar 0
 LayerCount: 2
 Fore
@@ -100770,13 +100709,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ddadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ddha__ya.pres
+StartChar: dev_ddha_ya.pres
 Encoding: 61794 -1 4251
 Width: 953
 Flags: HMW
 AnchorPoint: "dev-rakaar" 660 80 basechar 0
 AnchorPoint: "dev-below" 700 -36 basechar 0
-AnchorPoint: "dev-nukta" 560 4 basechar 0
 AnchorPoint: "dev-above" 693 610 basechar 0
 LayerCount: 2
 Fore
@@ -100827,13 +100765,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ddhadeva 
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nna__nna.pres
+StartChar: dev_nna_nna.pres
 Encoding: 61795 -1 4252
 Width: 1132
 Flags: HMW
 AnchorPoint: "dev-rakaar" 840 80 basechar 0
 AnchorPoint: "dev-below" 880 -36 basechar 0
-AnchorPoint: "dev-nukta" 460 4 basechar 0
 AnchorPoint: "dev-above" 873 610 basechar 0
 LayerCount: 2
 Fore
@@ -100877,18 +100814,17 @@ SplineSet
  177 223 206 298 206 354 c 2
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_nna__nna.pres
+Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_nna_nna.pres
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_nna.half nnadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ta__ta.pres
+StartChar: dev_ta_ta.pres
 Encoding: 61796 -1 4253
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 480 210 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 170 34 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -100922,16 +100858,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari general-ta-ta" dev_ta.half tadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2-simple" tadeva virama tadeva
-LCarets2: 1 0 
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ta__na.pres
+StartChar: dev_ta_na.pres
 Encoding: 61797 -1 4254
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 480 80 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 380 4 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -100969,9 +100904,10 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ta.half nadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_da__ga.pres
+StartChar: dev_da_ga.pres
 Encoding: 61798 -1 4255
 Width: 634
 Flags: HMW
@@ -101025,13 +100961,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" dadeva vi
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__gha.pres
+StartChar: dev_da_gha.pres
 Encoding: 61799 -1 4256
 Width: 654
 Flags: HMW
 AnchorPoint: "dev-rakaar" 360 -40 basechar 0
 AnchorPoint: "dev-below" 400 -216 basechar 0
-AnchorPoint: "dev-nukta" 80 -126 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
@@ -101080,15 +101015,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dadeva virama ghadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" dadeva virama ghadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__da.pres
+StartChar: dev_da_da.pres
 Encoding: 61800 -1 4257
 Width: 588
 Flags: HMW
 AnchorPoint: "dev-rakaar" 320 -10 basechar 0
 AnchorPoint: "dev-below" 460 -156 basechar 0
-AnchorPoint: "dev-nukta" 50 -6 basechar 0
 AnchorPoint: "dev-above" 333 610 basechar 0
 LayerCount: 2
 Fore
@@ -101136,15 +101071,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari general-da-ha" dadeva virama dadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2-simple" dadeva virama dadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__dha.pres
+StartChar: dev_da_dha.pres
 Encoding: 61801 -1 4258
 Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 490 -25 basechar 0
 AnchorPoint: "dev-below" 660 -166 basechar 0
-AnchorPoint: "dev-nukta" 80 4 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -101199,15 +101134,15 @@ Ligature2: "subst ligature for da-gha.half in Devanagari" dadeva virama dev_dha.
 Ligature2: "'pres' pre-base substs in Devanagari general-da-ha" dadeva virama dhadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2-simple" dadeva virama dhadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" dadeva virama dhadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__na.pres
+StartChar: dev_da_na.pres
 Encoding: 61802 -1 4259
 Width: 588
 Flags: HMW
 AnchorPoint: "dev-rakaar" 300 -40 basechar 0
 AnchorPoint: "dev-below" 340 -36 basechar 0
-AnchorPoint: "dev-nukta" 220 -110.1 basechar 0
 AnchorPoint: "dev-above" 333 610 basechar 0
 LayerCount: 2
 Fore
@@ -101248,15 +101183,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dadeva virama nadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" dadeva virama nadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__ba.pres
+StartChar: dev_da_ba.pres
 Encoding: 61803 -1 4260
 Width: 588
 Flags: HMW
 AnchorPoint: "dev-rakaar" 350 -10 basechar 0
 AnchorPoint: "dev-below" 490 -126 basechar 0
-AnchorPoint: "dev-nukta" 50 -59 basechar 0
 AnchorPoint: "dev-above" 333 610 basechar 0
 LayerCount: 2
 Fore
@@ -101307,15 +101242,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari general-da-ha" dadeva virama badeva
 Ligature2: "'cjct' conjunct forms in Devanagari2-simple" dadeva virama badeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__bha.pres
+StartChar: dev_da_bha.pres
 Encoding: 61804 -1 4261
 Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 440 50 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
-AnchorPoint: "dev-nukta" 40 4 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -101364,15 +101299,15 @@ Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-pair" dadeva virama bhadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" dadeva virama bhadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" dadeva virama bhadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__ma.pres
+StartChar: dev_da_ma.pres
 Encoding: 61805 -1 4262
 Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 440 80 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
-AnchorPoint: "dev-nukta" 350 14 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -101412,15 +101347,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dadeva virama madeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" dadeva virama madeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__ya.pres
+StartChar: dev_da_ya.pres
 Encoding: 61806 -1 4263
 Width: 813
 Flags: HMW
 AnchorPoint: "dev-rakaar" 520 50 basechar 0
 AnchorPoint: "dev-below" 550 -36 basechar 0
-AnchorPoint: "dev-nukta" 60 4 basechar 0
 AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
 Fore
@@ -101464,15 +101399,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari general-da-ha" dadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2-simple" dadeva virama yadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_da__va.pres
+StartChar: dev_da_va.pres
 Encoding: 61807 -1 4264
 Width: 588
 Flags: HMW
 AnchorPoint: "dev-rakaar" 300 -30 basechar 0
 AnchorPoint: "dev-below" 480 -146 basechar 0
-AnchorPoint: "dev-nukta" 60 -36 basechar 0
 AnchorPoint: "dev-above" 333 610 basechar 0
 LayerCount: 2
 Fore
@@ -101520,15 +101455,15 @@ Ligature2: "subst ligature for da+-va in Devanagari" dadeva virama vadeva
 Ligature2: "subst ligature for da-va.half in Devanagari" dadeva virama dev_va.half
 Ligature2: "'pres' pre-base substs in Devanagari general-da-ha" dadeva virama vadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2-simple" dadeva virama vadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_dha__na.pres
+StartChar: dev_dha_na.pres
 Encoding: 61808 -1 4265
 Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 400 30 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
-AnchorPoint: "dev-nukta" 320 -41.6 basechar 0
 AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
@@ -101576,13 +101511,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_dha.half nadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_na__na.pres
+StartChar: dev_na_na.pres
 Encoding: 61809 -1 4266
 Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 440 80 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
-AnchorPoint: "dev-nukta" 340 4 basechar 0
 AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
@@ -101620,13 +101554,12 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" dev_na.half nadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_pa__ta.pres
+StartChar: dev_pa_ta.pres
 Encoding: 61810 -1 4267
 Width: 654
 Flags: HMW
 AnchorPoint: "dev-rakaar" 360 40 basechar 0
 AnchorPoint: "dev-below" 400 -36 basechar 0
-AnchorPoint: "dev-nukta" 260 4 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
@@ -101663,13 +101596,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_pa.half tadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_pa__na.pres
+StartChar: dev_pa_na.pres
 Encoding: 61811 -1 4268
 Width: 654
 Flags: HMW
 AnchorPoint: "dev-rakaar" 360 80 basechar 0
 AnchorPoint: "dev-below" 400 -36 basechar 0
-AnchorPoint: "dev-nukta" 260 4 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
@@ -101707,13 +101639,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_pa.half nadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_pa__la.pres
+StartChar: dev_pa_la.pres
 Encoding: 61812 -1 4269
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 480 80 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 380 4 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -101760,13 +101691,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_pa.half ladeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ba__na.pres
+StartChar: dev_ba_na.pres
 Encoding: 61813 -1 4270
 Width: 621
 Flags: HMW
 AnchorPoint: "dev-rakaar" 330 -30 basechar 0
 AnchorPoint: "dev-below" 370 -146 basechar 0
-AnchorPoint: "dev-nukta" 250 -110.1 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -101814,13 +101744,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ba.half nadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ba__ba.pres
+StartChar: dev_ba_ba.pres
 Encoding: 61814 -1 4271
 Width: 621
 Flags: HMW
 AnchorPoint: "dev-rakaar" 330 -50 basechar 0
 AnchorPoint: "dev-below" 370 -206 basechar 0
-AnchorPoint: "dev-nukta" 50 -90.1 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -101878,13 +101807,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ba.half badeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ba__va.pres
+StartChar: dev_ba_va.pres
 Encoding: 61815 -1 4272
 Width: 621
 Flags: HMW
 AnchorPoint: "dev-rakaar" 330 -50 basechar 0
 AnchorPoint: "dev-below" 370 -206 basechar 0
-AnchorPoint: "dev-nukta" 50 -90.1 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -101937,13 +101865,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ba.half vadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_bha__na.pres
+StartChar: dev_bha_na.pres
 Encoding: 61816 -1 4273
 Width: 853
 Flags: HMW
 AnchorPoint: "dev-rakaar" 560 80 basechar 0
 AnchorPoint: "dev-below" 600 -36 basechar 0
-AnchorPoint: "dev-nukta" 490 4 basechar 0
 AnchorPoint: "dev-above" 593 610 basechar 0
 LayerCount: 2
 Fore
@@ -101990,13 +101917,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_bha.half nadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ma__na.pres
+StartChar: dev_ma_na.pres
 Encoding: 61817 -1 4274
 Width: 853
 Flags: HMW
 AnchorPoint: "dev-rakaar" 560 80 basechar 0
 AnchorPoint: "dev-below" 600 -36 basechar 0
-AnchorPoint: "dev-nukta" 490 4 basechar 0
 AnchorPoint: "dev-above" 593 610 basechar 0
 LayerCount: 2
 Fore
@@ -102038,13 +101964,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ma.half nadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ma__la.pres
+StartChar: dev_ma_la.pres
 Encoding: 61818 -1 4275
 Width: 893
 Flags: HMW
 AnchorPoint: "dev-rakaar" 600 80 basechar 0
 AnchorPoint: "dev-below" 640 -36 basechar 0
-AnchorPoint: "dev-nukta" 90 4 basechar 0
 AnchorPoint: "dev-above" 633 610 basechar 0
 LayerCount: 2
 Fore
@@ -102096,13 +102021,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ma.half ladeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_la__la.pres
+StartChar: dev_la_la.pres
 Encoding: 61819 -1 4276
 Width: 787
 Flags: HMW
 AnchorPoint: "dev-rakaar" 520 50 basechar 0
 AnchorPoint: "dev-below" 530 -36 basechar 0
-AnchorPoint: "dev-nukta" 390 4 basechar 0
 AnchorPoint: "dev-above" 523 610 basechar 0
 LayerCount: 2
 Fore
@@ -102155,13 +102079,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_la.half ladeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_va__na.pres
+StartChar: dev_va_na.pres
 Encoding: 61820 -1 4277
 Width: 621
 Flags: HMW
 AnchorPoint: "dev-rakaar" 380 -30 basechar 0
 AnchorPoint: "dev-below" 370 -146 basechar 0
-AnchorPoint: "dev-nukta" 250 -110.1 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -102204,13 +102127,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_va.half nadeva
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_va__va.pres
+StartChar: dev_va_va.pres
 Encoding: 61821 -1 4278
 Width: 621
 Flags: HMW
 AnchorPoint: "dev-rakaar" 330 -60 basechar 0
 AnchorPoint: "dev-below" 370 -206 basechar 0
-AnchorPoint: "dev-nukta" 40 -100.1 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -102255,15 +102177,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_va.half vadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_sha__ca.pres
+StartChar: dev_sha_ca.pres
 Encoding: 61822 -1 4279
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 490 70 basechar 0
 AnchorPoint: "dev-below" 530 -36 basechar 0
-AnchorPoint: "dev-nukta" 150 4 basechar 0
 AnchorPoint: "dev-above" 523 610 basechar 0
 LayerCount: 2
 Fore
@@ -102318,15 +102240,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_sha.half cadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_sha__na.pres
+StartChar: dev_sha_na.pres
 Encoding: 61823 -1 4280
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 480 80 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 380 4 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -102372,15 +102294,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_sha.half nadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_sha__la.pres
+StartChar: dev_sha_la.pres
 Encoding: 61824 -1 4281
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 480 80 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 350 4 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -102435,15 +102357,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_sha.half ladeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_sha__va.pres
+StartChar: dev_sha_va.pres
 Encoding: 61825 -1 4282
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 490 80 basechar 0
 AnchorPoint: "dev-below" 530 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 24 basechar 0
 AnchorPoint: "dev-above" 523 610 basechar 0
 LayerCount: 2
 Fore
@@ -102492,15 +102414,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_sha.half vadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ssa__tta.pres
+StartChar: dev_ssa_tta.pres
 Encoding: 61826 -1 4283
 Width: 628
 Flags: HMW
 AnchorPoint: "dev-rakaar" 300 0 basechar 0
 AnchorPoint: "dev-below" 350 -36 basechar 0
-AnchorPoint: "dev-nukta" 40 -1.1 basechar 0
 AnchorPoint: "dev-above" 343 610 basechar 0
 LayerCount: 2
 Fore
@@ -102541,13 +102463,12 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" dev_ssa.half ttadev
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ssa__ttha.pres
+StartChar: dev_ssa_ttha.pres
 Encoding: 61827 -1 4284
 Width: 628
 Flags: HMW
 AnchorPoint: "dev-rakaar" 300 0 basechar 0
 AnchorPoint: "dev-below" 350 -36 basechar 0
-AnchorPoint: "dev-nukta" 30 4 basechar 0
 AnchorPoint: "dev-above" 343 610 basechar 0
 LayerCount: 2
 Fore
@@ -102592,13 +102513,12 @@ Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_ssa.half tthade
 LCarets2: 1 0 
 EndChar
 
-StartChar: dev_sa__na.pres
+StartChar: dev_sa_na.pres
 Encoding: 61828 -1 4285
 Width: 853
 Flags: HMW
 AnchorPoint: "dev-rakaar" 620 40 basechar 0
 AnchorPoint: "dev-below" 600 -36 basechar 0
-AnchorPoint: "dev-nukta" 500 4 basechar 0
 AnchorPoint: "dev-above" 593 610 basechar 0
 LayerCount: 2
 Fore
@@ -102642,15 +102562,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3-pair" dev_sa.half nadeva
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ha__nna.pres
+StartChar: dev_ha_nna.pres
 Encoding: 61829 -1 4286
 Width: 728
 Flags: HMW
 AnchorPoint: "dev-rakaar" 170 -60 basechar 0
 AnchorPoint: "dev-below" 570 -96 basechar 0
-AnchorPoint: "dev-nukta" 40 -21.4 basechar 0
 AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
@@ -102702,18 +102622,18 @@ SplineSet
  334 69 340 112 340 165 c 2
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_ha__nna.pres
+Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_ha_nna.pres
 Ligature2: "'pres' pre-base substs in Devanagari general-da-ha" hadeva virama nnadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2-simple" hadeva virama nnadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ha__na.pres
+StartChar: dev_ha_na.pres
 Encoding: 61830 -1 4287
 Width: 808
 Flags: HMW
 AnchorPoint: "dev-rakaar" 160 -70 basechar 0
 AnchorPoint: "dev-below" 412 -218 basechar 0
-AnchorPoint: "dev-nukta" 50 -61.4 basechar 0
 AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
@@ -102769,13 +102689,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2-simple" hadeva virama nadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ha__ma.pres
+StartChar: dev_ha_ma.pres
 Encoding: 61831 -1 4288
 Width: 893
 Flags: HMW
 AnchorPoint: "dev-rakaar" 660 -20 basechar 0
 AnchorPoint: "dev-below" 630 -146 basechar 0
-AnchorPoint: "dev-nukta" 50 -58.5 basechar 0
 AnchorPoint: "dev-above" 633 610 basechar 0
 LayerCount: 2
 Fore
@@ -102833,13 +102752,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2-simple" hadeva virama madeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ha__ya.pres
+StartChar: dev_ha_ya.pres
 Encoding: 61832 -1 4289
 Width: 893
 Flags: HMW
 AnchorPoint: "dev-rakaar" 660 -30 basechar 0
 AnchorPoint: "dev-below" 640 -146 basechar 0
-AnchorPoint: "dev-nukta" 40 -48.5 basechar 0
 AnchorPoint: "dev-above" 633 610 basechar 0
 LayerCount: 2
 Fore
@@ -102895,13 +102813,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2-simple" hadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ha__la.pres
+StartChar: dev_ha_la.pres
 Encoding: 61833 -1 4290
 Width: 1047
 Flags: HMW
 AnchorPoint: "dev-rakaar" 839 -70 basechar 0
 AnchorPoint: "dev-below" 870 -206 basechar 0
-AnchorPoint: "dev-nukta" 50 -80.5 basechar 0
 AnchorPoint: "dev-above" 483 610 basechar 0
 LayerCount: 2
 Fore
@@ -102964,13 +102881,12 @@ Ligature2: "'cjct' conjunct forms in Devanagari2-simple" hadeva virama ladeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ha__va.pres
+StartChar: dev_ha_va.pres
 Encoding: 61834 -1 4291
 Width: 827
 Flags: HMW
 AnchorPoint: "dev-rakaar" 260 -130 basechar 0
 AnchorPoint: "dev-below" 402 -197 basechar 0
-AnchorPoint: "dev-nukta" 40 -92.5 basechar 0
 AnchorPoint: "dev-above" 653 610 basechar 0
 LayerCount: 2
 Fore
@@ -103030,7 +102946,7 @@ Ligature2: "'cjct' conjunct forms in Devanagari2-simple" hadeva virama vadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ka__ssa.half
+StartChar: dev_ka_ssa.half
 Encoding: 61835 -1 4292
 Width: 517
 Flags: HMW
@@ -103080,8 +102996,9 @@ SplineSet
 EndSplineSet
 Validated: 3073
 MultipleSubs2: "subst. ka-ssa for ligature in Devanagari-1" kadeva virama dev_ssa.half
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ka__ssa.akhn virama
-Ligature2: "'half' half forms in Devanagari-1" dev_ka__ssa.akhn virama
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ka_ssa.akhn virama
+Ligature2: "'half' half forms in Devanagari-1" dev_ka_ssa.akhn virama
+LCarets2: 1 0 
 EndChar
 
 StartChar: dev_ga.rkrf.half
@@ -103091,15 +103008,15 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-578 244 m 0
- 578 238 576 236 575 235 c 2
- 407 92 l 2
- 406 91 404 90 399 90 c 0
- 367 90 306 152 306 183 c 0
- 306 187 307 190 311 193 c 2
- 477 334 l 2
- 479 336 481 337 485 337 c 0
- 517 337 578 274 578 244 c 0
+543 232 m 0
+ 543 227 541.969 222.271 539 220 c 2
+ 373 93 l 2
+ 369.381 90.2314 367 90 364 90 c 0
+ 338 90 300 128 300 154 c 0
+ 300 160 302 163 307 167 c 2
+ 523 333 l 2
+ 526.966 336.048 530 337 535 337 c 0
+ 542.833 337 543 258 543 232 c 0
 530 529 m 0
  530 519 525 517 519 517 c 2
  167 517 l 1
@@ -103118,11 +103035,13 @@ SplineSet
  437 622 l 2
  469 622 530 559 530 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
+Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_ga.half radeva virama
 Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_ga.half dev_rakaar
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_gha__na.half
+StartChar: dev_gha_na.half
 Encoding: 61837 -1 4294
 Width: 438
 Flags: HMW
@@ -103164,11 +103083,12 @@ SplineSet
  428 166 491 105 491 73 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_gha__na.pres virama
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_gha.half dev_na.half
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_gha_na.pres virama
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ja__nya.half
+StartChar: dev_ja_nya.half
 Encoding: 61838 -1 4295
 Width: 438
 Flags: HMW
@@ -103209,11 +103129,12 @@ SplineSet
  453 276 491 241 491 216 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ja__nya.akhn virama
-Ligature2: "'half' half forms in Devanagari-1" dev_ja__nya.akhn virama
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ja_nya.akhn virama
+Ligature2: "'half' half forms in Devanagari-1" dev_ja_nya.akhn virama
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_nya__ca.half
+StartChar: dev_nya_ca.half
 Encoding: 61839 -1 4296
 Width: 478
 Flags: HMW
@@ -103265,11 +103186,12 @@ SplineSet
  469 280 530 217 530 187 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_nya__ca.pres virama
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_nya.half dev_ca.half
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_nya_ca.pres virama
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ta__ta.half
+StartChar: dev_ta_ta.half
 Encoding: 61840 -1 4297
 Width: 517
 Flags: HMW
@@ -103300,8 +103222,9 @@ SplineSet
  509 432 570 369 570 339 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ta__ta.pres virama
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ta.half dev_ta.half
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ta_ta.pres virama
+LCarets2: 1 0 
 EndChar
 
 StartChar: dev_ta.rkrf.half
@@ -103319,13 +103242,13 @@ SplineSet
  358 622 l 2
  389 622 451 559 451 529 c 0
 451 244 m 0
- 451 237 449 235 445 233 c 2
- 167 91 l 2
- 165 90 163 90 160 90 c 0
- 128 90 67 152 67 183 c 0
- 67 190 70 192 72 193 c 2
- 332 326 l 1
- 307 343 268 356 223 356 c 0
+ 451 238.167 448.554 235.718 445 233 c 2
+ 207 51 l 2
+ 205 50 203 50 200 50 c 0
+ 168 50 136 83 136 114 c 0
+ 136 121 139 123 141 124 c 2
+ 362 296 l 1
+ 337 313 268 356 223 356 c 0
  140 356 105 317 90 317 c 0
  58 317 -3 380 -3 410 c 0
  -3 417 -1 419 2 421 c 0
@@ -103333,95 +103256,114 @@ SplineSet
  277 461 389 361 442 269 c 0
  447 261 451 252 451 244 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
+Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_ta.half radeva virama
 Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_ta.half dev_rakaar
 Ligature2: "'half' half forms in Devanagari-1" dev_ta.rkrf virama
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_dha__na.half
+StartChar: dev_dha_na.half
 Encoding: 61842 -1 4299
 Width: 438
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-491 73 m 0
- 491 64 485 61 479 61 c 2
- 231 61 l 1
- 237 49 243 33 243 14 c 0
- 243 -22 216 -57 172 -57 c 0
- 108 -57 20 31 20 95 c 0
- 20 131 47 166 91 166 c 2
- 398 166 l 2
- 429 166 491 104 491 73 c 0
-491 272 m 0
- 491 266 489 265 486 263 c 0
- 446 234 358 184 253 184 c 0
- 191 184 148 203 113 229 c 0
- 74 259 26 312 26 371 c 0
- 26 400 39 420 56 434 c 1
- 29 460 -3 502 -3 545 c 0
- -3 591 33 622 73 622 c 0
- 105 622 166 559 166 529 c 0
- 166 519 161 517 154 517 c 0
- 128 517 105 495 102 470 c 1
- 111 467 121 464 132 461 c 1
- 144 463 156 464 169 464 c 0
- 213 464 229 457 259 427 c 0
- 271 415 293 388 293 369 c 0
- 293 360 288 357 282 357 c 0
- 278 357 268 359 250 359 c 0
- 200 359 135 344 131 293 c 1
- 143 291 157 289 172 289 c 0
- 301 289 383 365 398 365 c 0
- 429 365 491 303 491 272 c 0
-EndSplineSet
-Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_dha__na.pres virama
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_dha.half dev_na.half
-EndChar
-
-StartChar: dev_dha.rkrf.half
-Encoding: 61843 -1 4300
-Width: 438
-Flags: HMW
-LayerCount: 2
-Fore
-SplineSet
-491 187 m 0
- 491 182 490 179 484 176 c 2
- 47 -51 l 2
- 45 -52 44 -52 41 -52 c 0
- 9 -52 -52 10 -52 41 c 0
- -52 46 -51 49 -47 51 c 2
- 147 152 l 1
- 98 180 26 246 26 325 c 0
+491 244 m 0
+ 491 240 490 237 488 235 c 0
+ 432 180 344 125 250 125 c 0
+ 129 125 26 237 26 325 c 0
  26 364 46 386 73 400 c 1
  37 433 -3 482 -3 537 c 0
  -3 585 29 622 73 622 c 0
  105 622 166 559 166 529 c 0
  166 519 161 517 154 517 c 0
  125 517 102 487 102 457 c 0
- 102 453 102 450 103 443 c 1
+ 102 451 102 447 103 443 c 1
  119 434 141 426 160 420 c 1
  188 422 217 422 244 422 c 0
  276 422 337 360 337 329 c 0
  337 320 332 317 325 317 c 2
  308 317 l 2
  235 317 131 314 131 244 c 0
- 131 242 131 239 132 234 c 1
+ 131 241 131 239 132 234 c 1
  142 232 155 230 169 230 c 0
  253 230 335 280 389 334 c 0
  391 336 393 337 398 337 c 0
  429 337 491 274 491 244 c 0
- 491 235 485 233 475 223 c 1
- 481 214 491 199 491 187 c 0
+481 529 m 0
+ 481 519 475 517 469 517 c 2
+ 359 517 l 2
+ 328 517 276 579 276 610 c 0
+ 276 619 281 622 288 622 c 2
+ 398 622 l 2
+ 429 622 481 559 481 529 c 0
+491 3 m 0
+ 491 -6 485 -9 479 -9 c 2
+ 231 -9 l 1
+ 237 -21 243 -37 243 -56 c 0
+ 243 -92 216 -127 172 -127 c 0
+ 108 -127 20 -39 20 25 c 0
+ 20 61 47 96 91 96 c 2
+ 398 96 l 2
+ 429 96 491 34 491 3 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_dha.half dev_rakaar
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_dha.half dev_na.half
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_dha_na.pres virama
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_pa__ta.half
+StartChar: dev_dha.rkrf.half
+Encoding: 61843 -1 4300
+Width: 439
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+481 529 m 0
+ 481 519 475 517 469 517 c 2
+ 359 517 l 2
+ 328 517 276 579 276 610 c 0
+ 276 619 281 622 288 622 c 2
+ 398 622 l 2
+ 429 622 481 559 481 529 c 0
+491 244 m 0
+ 491 240 490 237 488 235 c 0
+ 450 197 397 160 337 140 c 1
+ 73 -30 l 2
+ 69 -32 67 -33 64 -33 c 0
+ 38 -33 0 5 0 31 c 0
+ 0 37 2 40 7 44 c 2
+ 159 146 l 1
+ 82 183 26 260 26 325 c 0
+ 26 364 46 386 73 400 c 1
+ 37 433 -3 482 -3 537 c 0
+ -3 585 29 622 73 622 c 0
+ 105 622 166 559 166 529 c 0
+ 166 519 161 517 154 517 c 0
+ 125 517 102 487 102 457 c 0
+ 102 451 102 447 103 443 c 1
+ 119 434 141 426 160 420 c 1
+ 188 422 217 422 244 422 c 0
+ 276 422 337 360 337 329 c 0
+ 337 320 332 317 325 317 c 2
+ 308 317 l 2
+ 235 317 131 314 131 244 c 0
+ 131 241 131 239 132 234 c 1
+ 142 232 155 230 169 230 c 0
+ 253 230 335 280 389 334 c 0
+ 391 336 393 337 398 337 c 0
+ 429 337 491 274 491 244 c 0
+EndSplineSet
+Validated: 3073
+Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_dha.half radeva virama
+Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_dha.half dev_rakaar
+LCarets2: 1 0 
+EndChar
+
+StartChar: dev_pa_ta.half
 Encoding: 61844 -1 4301
 Width: 398
 Flags: HMW
@@ -103454,11 +103396,12 @@ SplineSet
  389 337 451 274 451 244 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_pa__ta.pres virama
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_pa_ta.pres virama
 Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-half" dev_pa.half dev_ta.half
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_sha__ca.half
+StartChar: dev_sha_ca.half
 Encoding: 61845 -1 4302
 Width: 517
 Flags: HMW
@@ -103508,8 +103451,9 @@ SplineSet
  585 210 592 170 592 135 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_sha__ca.pres virama
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_sha.half dev_ca.half
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_sha_ca.pres virama
+LCarets2: 1 0 
 EndChar
 
 StartChar: dev_sha.rkrf.half
@@ -103520,12 +103464,12 @@ LayerCount: 2
 Fore
 SplineSet
 570 244 m 0
- 570 238 569 236 564 233 c 2
- 281 63 l 2
- 279 62 277 61 274 61 c 0
- 242 61 181 124 181 154 c 0
- 181 161 183 163 186 165 c 2
- 390 287 l 1
+ 570 238 568.92 236.129 564 233 c 2
+ 281 53 l 2
+ 279 52 277 51 274 51 c 0
+ 242 51 208 85 208 115 c 0
+ 208 122 210 124 213 126 c 2
+ 426 267 l 1
  273 327 l 1
  152 274 99 249 90 249 c 0
  58 249 -3 312 -3 342 c 0
@@ -103551,10 +103495,13 @@ SplineSet
  177 434 182 434 192 434 c 0
  229 434 253 468 253 506 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
+Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_sha.half radeva virama
+Ligature2: "'pres' pre-base substs in Devanagari-half-ra" dev_sha.half dev_rakaar
+Ligature2: "'half' half forms in Devanagari-1" dev_sha.rkrf virama
 EndChar
 
-StartChar: dev_sha__va.half
+StartChar: dev_sha_va.half
 Encoding: 61847 -1 4304
 Width: 517
 Flags: HMW
@@ -103596,17 +103543,17 @@ SplineSet
  229 434 253 468 253 506 c 2
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_sha__va.pres virama
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_sha.half dev_va.half
+Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_sha_va.pres virama
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ka__ta__ya.pres
+StartChar: dev_ka_ta_ya.pres
 Encoding: 61848 -1 4305
 Width: 1052
 Flags: HMW
 AnchorPoint: "dev-rakaar" 760 80 basechar 0
 AnchorPoint: "dev-below" 800 -36 basechar 0
-AnchorPoint: "dev-nukta" 660 4 basechar 0
 AnchorPoint: "dev-above" 793 610 basechar 0
 LayerCount: 2
 Fore
@@ -103662,15 +103609,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_ka.half dev_ta.half yadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dev_ka.half dev_ta.half yadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ka__ta__va.pres
+StartChar: dev_ka_ta_va.pres
 Encoding: 61849 -1 4306
 Width: 1027
 Flags: HMW
 AnchorPoint: "dev-rakaar" 560 80 basechar 0
 AnchorPoint: "dev-below" 600 -36 basechar 0
-AnchorPoint: "dev-nukta" 460 4 basechar 0
 AnchorPoint: "dev-above" 593 610 basechar 0
 LayerCount: 2
 Fore
@@ -103727,15 +103674,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_ka.half dev_ta.half vadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dev_ka.half dev_ta.half vadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ka__na__ya.pres
+StartChar: dev_ka_na_ya.pres
 Encoding: 61850 -1 4307
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 80 basechar 0
 AnchorPoint: "dev-below" 760 -36 basechar 0
-AnchorPoint: "dev-nukta" 620 4 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -103793,15 +103740,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dev_ka.half dev_na.half yadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ka__ra__ya.pres
+StartChar: dev_ka_ra_ya.pres
 Encoding: 61851 -1 4308
 Width: 1092
 Flags: HMW
 AnchorPoint: "dev-rakaar" 800 80 basechar 0
 AnchorPoint: "dev-below" 840 -36 basechar 0
-AnchorPoint: "dev-nukta" 700 4 basechar 0
 AnchorPoint: "dev-above" 833 610 basechar 0
 LayerCount: 2
 Fore
@@ -103822,11 +103769,11 @@ SplineSet
  451 -41 l 2
  451 -50 446 -52 439 -52 c 0
  407 -52 346 10 346 41 c 2
- 346 183 l 1
- 228 123 169 90 160 90 c 0
- 128 90 67 152 67 183 c 0
- 67 190 70 192 72 193 c 2
- 346 333 l 1
+ 346 196 l 1
+ 241 131 169 80 160 80 c 0
+ 128 80 93 113 93 144 c 0
+ 93 149.75 95.2969 152.169 98 154 c 2
+ 346 322 l 1
  346 376 l 1
  191 361 102 317 90 317 c 0
  58 317 -3 380 -3 410 c 0
@@ -103847,17 +103794,17 @@ SplineSet
  680 279 654 237 636 215 c 1
  672 219 738 238 784 301 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' general pre-base substs in Devanagari-ka-ra-ya" dev_ka.rkrf virama yadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ka__va__ya.pres
+StartChar: dev_ka_va_ya.pres
 Encoding: 61852 -1 4309
 Width: 1092
 Flags: HMW
 AnchorPoint: "dev-rakaar" 800 80 basechar 0
 AnchorPoint: "dev-below" 840 -36 basechar 0
-AnchorPoint: "dev-nukta" 580 0.900002 basechar 0
 AnchorPoint: "dev-above" 833 610 basechar 0
 LayerCount: 2
 Fore
@@ -103919,15 +103866,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dev_ka.half dev_va.half yadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__ka__ta.pres
+StartChar: dev_nga_ka_ta.pres
 Encoding: 61853 -1 4310
 Width: 772
 Flags: HMW
 AnchorPoint: "dev-rakaar" 110 -160 basechar 0
 AnchorPoint: "dev-below" 460 -276 basechar 0
-AnchorPoint: "dev-nukta" 50 -200.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -103988,18 +103935,17 @@ SplineSet
  473 -284 436 -247 436 -221 c 0
  436 -212 465 -136 465 -62 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-trio" ngadeva virama dev_ka.half tadeva
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_nga__ka__ya.pres
+StartChar: dev_nga_ka_ya.pres
 Encoding: 61854 -1 4311
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 -150 basechar 0
 AnchorPoint: "dev-below" 760 -316 basechar 0
-AnchorPoint: "dev-nukta" 40 -170.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -104077,19 +104023,18 @@ SplineSet
  125 -121 150 -124 164 -124 c 0
  214 -124 252 -103 273 -77 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" ngadeva virama dev_ka.half yadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" ngadeva virama dev_ka.half yadeva
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_nga__ka__ssa.pres
+StartChar: dev_nga_ka_ssa.pres
 Encoding: 61855 -1 4312
 Width: 772
 Flags: HMW
 AnchorPoint: "dev-rakaar" 207 -250 basechar 0
 AnchorPoint: "dev-below" 410 -326 basechar 0
-AnchorPoint: "dev-nukta" 20 -290.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -104163,20 +104108,19 @@ SplineSet
  732 622 l 2
  764 622 825 559 825 529 c 0
 EndSplineSet
-Validated: 3073
-Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_nga__ka__ssa.pres
-Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-trio" ngadeva virama dev_ka__ssa.half
-Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-trio" ngadeva virama dev_ka__ssa.akhn
+Validated: 527361
+Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_nga_ka_ssa.pres
+Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-trio" ngadeva virama dev_ka_ssa.akhn
+Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-trio" ngadeva virama dev_ka_ssa.half
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ngadeva virama dev_ka.half ssadeva
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_nga__kha__ya.pres
+StartChar: dev_nga_kha_ya.pres
 Encoding: 61856 -1 4313
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-below" 760 -286 basechar 0
-AnchorPoint: "dev-nukta" 60 -210.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -104251,19 +104195,18 @@ SplineSet
  512 -90 519 -91 526 -91 c 0
  600 -91 668 -44 704 3 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" ngadeva virama dev_kha.half yadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" ngadeva virama dev_kha.half yadeva
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_nga__ga__ya.pres
+StartChar: dev_nga_ga_ya.pres
 Encoding: 61857 -1 4314
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 -130 basechar 0
 AnchorPoint: "dev-below" 760 -266 basechar 0
-AnchorPoint: "dev-nukta" 340 -160.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -104329,20 +104272,19 @@ SplineSet
  972 622 l 2
  1004 622 1065 559 1065 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" ngadeva virama dev_ga.half yadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" ngadeva virama dev_ga.half yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ngadeva virama dev_ga.half yadeva
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_nga__gha__ya.pres
+StartChar: dev_nga_gha_ya.pres
 Encoding: 61858 -1 4315
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 -130 basechar 0
 AnchorPoint: "dev-below" 760 -286 basechar 0
-AnchorPoint: "dev-nukta" 50 -180.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -104415,28 +104357,35 @@ SplineSet
  166 -137 179 -138 194 -138 c 0
  272 -138 351 -96 409 -40 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" ngadeva virama dev_gha.half yadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" ngadeva virama dev_gha.half yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ngadeva virama dev_gha.half yadeva
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_nga__gha.rkrf
+StartChar: dev_nga_gha.rkrf
 Encoding: 61859 -1 4316
 Width: 772
 Flags: HMW
 AnchorPoint: "dev-below" 410 -326 basechar 0
-AnchorPoint: "dev-nukta" 290 -310.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-670 334 m 1
- 649.791 306.812 628.5 285.5 601 265 c 1
- 571.5 286 551.667 307.666 532 334 c 1
- 550.56 359.877 573.131 383.454 601 404 c 1
- 628.228 383.873 650.979 360.758 670 334 c 1
+359 -37 m 1
+ 359 34 l 1
+ 337 31 315 29 292 29 c 0
+ 250 29 213 41 184 55 c 1
+ 164 51 152 30 152 5 c 0
+ 152 0 152 -6 153 -11 c 1
+ 164 -10 175 -9 186 -9 c 0
+ 217 -9 279 -72 279 -102 c 0
+ 279 -112 273 -114 267 -114 c 0
+ 229 -114 163 -119 156 -158 c 1
+ 166 -158 l 2
+ 201 -158 235 -145 259 -132 c 1
+ 310 -93 326 -85 359 -37 c 1
 825 529 m 0
  825 519 820 517 813 517 c 2
  457 517 l 1
@@ -104451,12 +104400,13 @@ SplineSet
  464 -329 l 2
  464 -339 458 -341 452 -341 c 0
  420 -341 359 -278 359 -248 c 2
- 359 -231 l 1
- 288.467 -282.134 220.548 -335.881 151 -388 c 0
- 148 -390 146 -390 143 -390 c 0
- 112 -390 50 -328 50 -297 c 0
- 50 -295 50 -291 54 -288 c 2
- 137 -224 l 1
+ 359 -212 l 1
+ 123 -364 l 2
+ 119 -366 117 -367 114 -367 c 0
+ 88 -367 50 -329 50 -303 c 0
+ 50 -297 52 -294 57 -290 c 2
+ 146 -230 l 1
+ 143 -228 140 -226 137 -224 c 0
  105 -200 50 -148 50 -83 c 0
  50 -51 69 -35 87 -26 c 1
  66 4 47 45 47 86 c 0
@@ -104479,33 +104429,25 @@ SplineSet
  -52 619 -47 622 -41 622 c 2
  732 622 l 2
  764 622 825 559 825 529 c 0
-359 -37 m 1
- 359 34 l 1
- 337 31 315 29 292 29 c 0
- 250 29 213 41 184 55 c 1
- 164 51 152 30 152 5 c 0
- 152 0 152 -6 153 -11 c 1
- 164 -10 175 -9 186 -9 c 0
- 217 -9 279 -72 279 -102 c 0
- 279 -112 273 -114 267 -114 c 0
- 229 -114 163 -119 156 -158 c 1
- 166 -158 l 2
- 201 -158 235 -145 259 -132 c 1
- 310 -93 326 -85 359 -37 c 1
+670 334 m 1
+ 650 307 629 285 601 265 c 1
+ 571 286 552 308 532 334 c 1
+ 551 360 573 383 601 404 c 1
+ 628 384 651 361 670 334 c 1
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" ngadeva virama dev_gha.half radeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ngadeva virama dev_gha.half radeva
 Ligature2: "'rkrf' rakar forms in Devanagari2 for Sanskrit-compound" ngadeva virama ghadeva virama radeva
+LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_dda__ga__ya.pres
+StartChar: dev_dda_ga_ya.pres
 Encoding: 61860 -1 4317
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 720 -90 basechar 0
 AnchorPoint: "dev-below" 760 -266 basechar 0
-AnchorPoint: "dev-nukta" 70 -160.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -104572,16 +104514,28 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ddadeva virama 
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_dda__gha.rkrf
+StartChar: dev_dda_gha.rkrf
 Encoding: 61861 -1 4318
 Width: 673
 Flags: HMW
 AnchorPoint: "dev-below" 410 -326 basechar 0
-AnchorPoint: "dev-nukta" 310 -290.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
+359 -37 m 1
+ 359 34 l 1
+ 337 31 315 29 292 29 c 0
+ 250 29 213 41 184 55 c 1
+ 164 51 152 30 152 5 c 0
+ 152 0 152 -6 153 -11 c 1
+ 164 -10 175 -9 186 -9 c 0
+ 217 -9 279 -72 279 -102 c 0
+ 279 -112 273 -114 267 -114 c 0
+ 229 -114 163 -119 156 -158 c 1
+ 166 -158 l 2
+ 201 -158 235 -145 259 -132 c 1
+ 310 -93 326 -85 359 -37 c 1
 726 529 m 0
  726 519 721 517 714 517 c 2
  457 517 l 1
@@ -104596,12 +104550,13 @@ SplineSet
  464 -329 l 2
  464 -339 458 -341 452 -341 c 0
  420 -341 359 -278 359 -248 c 2
- 359 -231 l 1
- 288.467 -282.134 220.548 -335.881 151 -388 c 0
- 148 -390 147 -390 143 -390 c 0
- 112 -390 50 -328 50 -297 c 0
- 50 -295 50 -291 54 -288 c 2
- 137 -224 l 1
+ 359 -212 l 1
+ 123 -364 l 2
+ 119 -366 117 -367 114 -367 c 0
+ 88 -367 50 -329 50 -303 c 0
+ 50 -297 52 -294 57 -290 c 2
+ 145 -231 l 1
+ 142 -229 140 -226 137 -224 c 0
  105 -200 50 -148 50 -83 c 0
  50 -51 69 -35 87 -26 c 1
  66 4 47 45 47 86 c 0
@@ -104624,31 +104579,18 @@ SplineSet
  -52 619 -47 622 -41 622 c 2
  633 622 l 2
  665 622 726 559 726 529 c 0
-359 -37 m 1
- 359 34 l 1
- 337 31 315 29 292 29 c 0
- 250 29 213 41 184 55 c 1
- 164 51 152 30 152 5 c 0
- 152 0 152 -6 153 -11 c 1
- 164 -10 175 -9 186 -9 c 0
- 217 -9 279 -72 279 -102 c 0
- 279 -112 273 -114 267 -114 c 0
- 229 -114 163 -119 156 -158 c 1
- 166 -158 l 2
- 201 -158 235 -145 259 -132 c 1
- 310 -93 326 -85 359 -37 c 1
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3 rakaar-trio" ddadeva virama ghadeva dev_rakaar
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ddadeva virama dev_gha.half radeva
+LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_dda__ra__ya.pres
+StartChar: dev_dda_ra_ya.pres
 Encoding: 61862 -1 4319
 Width: 973
 Flags: HMW
 AnchorPoint: "dev-below" 720 -36 basechar 0
-AnchorPoint: "dev-nukta" 580 4 basechar 0
 AnchorPoint: "dev-above" 713 610 basechar 0
 LayerCount: 2
 Fore
@@ -104707,21 +104649,20 @@ Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" ddadeva dev_rakaar.blwf openya
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ra" ddadeva virama dev_rakaar yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ddadeva virama radeva virama yadeva
-LCarets2: 3 0 0 0 
+LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_da__ga.rkrf
+StartChar: dev_da_ga.rkrf
 Encoding: 61863 -1 4320
 Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 370 -287 basechar 0
-AnchorPoint: "dev-nukta" 290 -251.1 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 -3 325 m 0
- -3 456.501 140.484 463 271 463 c 0
+ -3 457 140 463 271 463 c 0
  296 463 321 462 346 462 c 1
  346 517 l 1
  41 517 l 2
@@ -104746,12 +104687,12 @@ SplineSet
  421 -288 l 2
  421 -297 416 -300 409 -300 c 0
  378 -300 316 -237 316 -207 c 2
- 316 -178 l 1
- 278.684 -215.673 247.241 -245.664 192 -296 c 1
- 190 -298 188 -300 183 -300 c 0
- 151 -300 95 -251 95 -221 c 0
- 95 -215 97 -213 98 -212 c 2
- 316 5 l 1
+ 316 -182 l 1
+ 173 -291 l 2
+ 169 -294 167 -294 164 -294 c 0
+ 138 -294 100 -256 100 -230 c 0
+ 100 -224 102 -221 107 -217 c 2
+ 316 -56 l 1
  316 72 l 1
  261 73 209 89 169 109 c 1
  171 72 175 27 175 -17 c 0
@@ -104768,49 +104709,18 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3 rakaar-trio" dadeva virama gadeva dev_rakaar
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" dadeva virama dev_ga.half radeva
+LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_da__gha.rkrf
+StartChar: dev_da_gha.rkrf
 Encoding: 61864 -1 4321
 Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 410 -216 basechar 0
-AnchorPoint: "dev-nukta" 333 -220 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-707 529 m 0
- 707 519 702 517 695 517 c 2
- 451 517 l 1
- 451 381 l 2
- 451 371 446 369 439 369 c 0
- 411 369 375 370 337 370 c 0
- 271 370 144 366 140 309 c 1
- 179 290 232 279 278 279 c 0
- 331 279 347 291 358 291 c 0
- 389 291 451 229 451 198 c 2
- 451 -211 l 2
- 451 -221 446 -223 439 -223 c 0
- 406 -223 350 -162.1 350 -136 c 1
- 189 -295 l 2
- 187 -297 185 -299 180 -299 c 0
- 148 -299 87 -246 87 -216 c 0
- 87 -210 89 -208 90 -207 c 2
- 156 -142 l 1
- 98 -121 7 -45 7 41 c 0
- 7 80 32 103 57 116 c 1
- 28 149 -3 196 -3 246 c 0
- -3 289 20 322 51 335 c 1
- 40 355 35 372 35 388 c 0
- 35 469 163 475 256 475 c 0
- 289 475 321 474 346 474 c 1
- 346 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 614 622 l 2
- 645 622 707 559 707 529 c 0
 346 46 m 1
  346 174 l 1
  276 177 204 199 150 234 c 1
@@ -104823,20 +104733,52 @@ SplineSet
  112 -46 l 1
  121 -47 131 -48 142 -48 c 0
  222 -48 297 -1 346 46 c 1
+707 529 m 0
+ 707 519 702 517 695 517 c 2
+ 451 517 l 1
+ 451 381 l 2
+ 451 371 446 369 439 369 c 0
+ 411 369 375 370 337 370 c 0
+ 271 370 144 366 140 309 c 1
+ 179 290 232 279 278 279 c 0
+ 331 279 347 291 358 291 c 0
+ 389 291 451 229 451 198 c 2
+ 451 -211 l 2
+ 451 -221 446 -223 439 -223 c 0
+ 406 -223 350 -162 350 -136 c 2
+ 350 -112 l 1
+ 83 -284 l 2
+ 79 -286 77 -287 74 -287 c 0
+ 48 -287 10 -249 10 -223 c 0
+ 10 -217 12 -214 17 -210 c 2
+ 133 -132 l 1
+ 77 -102 7 -34 7 41 c 0
+ 7 80 32 103 57 116 c 1
+ 28 149 -3 196 -3 246 c 0
+ -3 289 20 322 51 335 c 1
+ 40 355 35 372 35 388 c 0
+ 35 469 163 475 256 475 c 0
+ 289 475 321 474 346 474 c 1
+ 346 517 l 1
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 614 622 l 2
+ 645 622 707 559 707 529 c 0
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari old 3 rakaar-trio" dadeva virama ghadeva dev_rakaar
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" dadeva virama dev_gha.half radeva
 Ligature2: "'rkrf' rakar forms in Devanagari2 for Sanskrit-compound" dadeva virama ghadeva virama radeva
+LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_da__da__ya.pres
+StartChar: dev_da_da_ya.pres
 Encoding: 61865 -1 4322
 Width: 833
 Flags: HMW
 AnchorPoint: "dev-rakaar" 540 -100 basechar 0
 AnchorPoint: "dev-below" 590 -200 basechar 0
-AnchorPoint: "dev-nukta" 50 -2.10001 basechar 0
 AnchorPoint: "dev-above" 573 610 basechar 0
 LayerCount: 2
 Fore
@@ -104889,18 +104831,18 @@ SplineSet
  423 -118 489 -60 525 -12 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da__da.pres openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_da.pres openya
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" dadeva virama dadeva virama yadeva
+LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_da__da__va.pres
+StartChar: dev_da_da_va.pres
 Encoding: 61866 -1 4323
 Width: 588
 Flags: HMW
 AnchorPoint: "dev-rakaar" 96 -160 basechar 0
 AnchorPoint: "dev-below" 470 -216 basechar 0
-AnchorPoint: "dev-nukta" 20 -230.1 basechar 0
 AnchorPoint: "dev-above" 323 610 basechar 0
 LayerCount: 2
 Fore
@@ -104956,18 +104898,18 @@ SplineSet
  579 622 640 559 640 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dadeva virama dev_da__va.pres
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dadeva virama dev_da_va.pres
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dadeva virama vadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" dadeva virama dadeva virama vadeva
+LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_da__dha__ya.pres
+StartChar: dev_da_dha_ya.pres
 Encoding: 61867 -1 4324
 Width: 973
 Flags: HMW
 AnchorPoint: "dev-rakaar" 680 80 basechar 0
 AnchorPoint: "dev-below" 720 -36 basechar 0
-AnchorPoint: "dev-nukta" 90 4 basechar 0
 AnchorPoint: "dev-above" 713 610 basechar 0
 LayerCount: 2
 Fore
@@ -105025,15 +104967,15 @@ SplineSet
  284 52 342 84 384 116 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da__dha.pres openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_dha.pres openya
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dev_dha.half yadeva
+LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_da__dha__va.pres
+StartChar: dev_da_dha_va.pres
 Encoding: 61868 -1 4325
 Width: 734
 Flags: HMW
-AnchorPoint: "dev-rakaar" 70 -180 basechar 0
 AnchorPoint: "dev-below" 660 -206 basechar 0
 AnchorPoint: "dev-nukta" 490 -140.1 basechar 0
 AnchorPoint: "dev-above" 483 610 basechar 0
@@ -105098,15 +105040,15 @@ Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dadeva virama dev_dha.half vadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dev_dha.half vadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" dadeva virama dev_dha.half vadeva
+LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_da__bha__ya.pres
+StartChar: dev_da_bha_ya.pres
 Encoding: 61869 -1 4326
 Width: 953
 Flags: HMW
 AnchorPoint: "dev-rakaar" 660 80 basechar 0
 AnchorPoint: "dev-below" 700 -36 basechar 0
-AnchorPoint: "dev-nukta" 70 4 basechar 0
 AnchorPoint: "dev-above" 693 610 basechar 0
 LayerCount: 2
 Fore
@@ -105160,40 +105102,18 @@ Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dadeva virama dev_bha.half yadeva
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dev_bha.half yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" dadeva virama dev_bha.half yadeva
+LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_da__ra__ya.pres
+StartChar: dev_da_ra_ya.pres
 Encoding: 61870 -1 4327
 Width: 813
 Flags: HMW
 AnchorPoint: "dev-below" 560 -36 basechar 0
-AnchorPoint: "dev-nukta" 380 -49.2 basechar 0
 AnchorPoint: "dev-above" 553 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-866 529 m 0
- 866 519 861 517 854 517 c 2
- 610 517 l 1
- 610 -41 l 2
- 610 -50 605 -52 598 -52 c 0
- 582 -52 560 -36 550 -27 c 1
- 523 -48 488 -62 448 -62 c 0
- 403 -62 362 -46 310 -4 c 1
- 161 -163 l 2
- 159 -165 157 -166 152 -166 c 0
- 120 -166 59 -104 59 -73 c 0
- 59 -68 61 -66 62 -65 c 2
- 202 85 l 1
- 108 115 -3 219 -3 342 c 0
- -3 451 88 463 197 463 c 0
- 224 463 251 462 279 462 c 1
- 279 517 l 1
- 41 517 l 2
- 9 517 -52 579 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 773 622 l 2
- 805 622 866 559 866 529 c 0
 505 130 m 1
  505 517 l 1
  384 517 l 1
@@ -105211,20 +105131,44 @@ SplineSet
  324 68 327 57 329 49 c 1
  340 45 353 43 367 43 c 0
  424 43 473 81 505 130 c 1
+866 529 m 0
+ 866 519 861 517 854 517 c 2
+ 610 517 l 1
+ 610 -41 l 2
+ 610 -50 605 -52 598 -52 c 0
+ 582 -52 560 -36 550 -27 c 1
+ 523 -48 488 -62 448 -62 c 0
+ 403 -62 362 -46 310 -4 c 0
+ 309 -4 309 -3 308 -2 c 2
+ 144 -128 l 2
+ 140 -131 138 -131 135 -131 c 0
+ 109 -131 71 -93 71 -67 c 0
+ 71 -61 73 -58 78 -54 c 2
+ 246 75 l 1
+ 231 77 213 81 202 85 c 0
+ 108 115 -3 219 -3 342 c 0
+ -3 451 88 463 197 463 c 0
+ 224 463 251 462 279 462 c 1
+ 279 517 l 1
+ 41 517 l 2
+ 9 517 -52 579 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 773 622 l 2
+ 805 622 866 559 866 529 c 0
 EndSplineSet
 Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dadeva dev_rakaar.blwf openya
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ra" dadeva dev_rakaar virama yadeva
 Ligature2: "'rkrf' rakar forms in Devanagari2 for Sanskrit-compound" dadeva virama radeva virama yadeva
+LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_da__va__ya.pres
+StartChar: dev_da_va_ya.pres
 Encoding: 61871 -1 4328
 Width: 833
 Flags: HMW
 AnchorPoint: "dev-rakaar" 580 20 basechar 0
 AnchorPoint: "dev-below" 580 -36 basechar 0
-AnchorPoint: "dev-nukta" 340 -46 basechar 0
 AnchorPoint: "dev-above" 573 610 basechar 0
 LayerCount: 2
 Fore
@@ -105272,17 +105216,17 @@ SplineSet
  437 52 496 113 525 159 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da__va.pres openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_va.pres openya
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dev_va.half yadeva
+LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_ssa__tta__ya.pres
+StartChar: dev_ssa_tta_ya.pres
 Encoding: 61872 -1 4329
 Width: 973
 Flags: HMW
 AnchorPoint: "dev-rakaar" 680 80 basechar 0
 AnchorPoint: "dev-below" 720 -36 basechar 0
-AnchorPoint: "dev-nukta" 580 4 basechar 0
 AnchorPoint: "dev-above" 713 610 basechar 0
 LayerCount: 2
 Fore
@@ -105340,15 +105284,15 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dev_ssa.half ttadeva virama yadeva
+LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_ssa__tta__va.pres
+StartChar: dev_ssa_tta_va.pres
 Encoding: 61873 -1 4330
 Width: 628
 Flags: HMW
 AnchorPoint: "dev-rakaar" 300 -130 basechar 0
 AnchorPoint: "dev-below" 340 -316 basechar 0
-AnchorPoint: "dev-nukta" 20 -170.1 basechar 0
 AnchorPoint: "dev-above" 333 610 basechar 0
 LayerCount: 2
 Fore
@@ -105401,13 +105345,12 @@ Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dev_ssa.h
 LCarets2: 3 0 0 0 
 EndChar
 
-StartChar: dev_ka__ta__ra__ya.pres
+StartChar: dev_ka_ta_ra_ya.pres
 Encoding: 61874 -1 4331
 Width: 1052
 Flags: HMW
 AnchorPoint: "dev-rakaar" 760 80 basechar 0
 AnchorPoint: "dev-below" 800 -36 basechar 0
-AnchorPoint: "dev-nukta" 660 4 basechar 0
 AnchorPoint: "dev-above" 793 610 basechar 0
 LayerCount: 2
 Fore
@@ -105471,16 +105414,16 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-four" dev_ka.half dev_ta.rkrf.half yadeva
-Ligature2: "'pres' pre-base substs in Devanagari-old-2-four" dev_ka__ta__ra.pres virama yadeva
+Ligature2: "'pres' pre-base substs in Devanagari-old-2-four" dev_ka_ta_ra.pres virama yadeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_nga__ka__ta__ya.pres
+StartChar: dev_nga_ka_ta_ya.pres
 Encoding: 61875 -1 4332
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-rakaar" 130 -220 basechar 0
 AnchorPoint: "dev-below" 760 -316 basechar 0
-AnchorPoint: "dev-nukta" 50 -240.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
@@ -105550,19 +105493,18 @@ SplineSet
  585 -129 567 -158 544 -174 c 1
  608 -174 668 -137 704 -97 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-four" ngadeva virama dev_ka.half dev_ta.half yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-7" ngadeva virama dev_ka.half dev_ta.half yadeva
 LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_nga__ka__ssa__va.pres
+StartChar: dev_nga_ka_ssa_va.pres
 Encoding: 61876 -1 4333
 Width: 971
 Flags: HMW
 AnchorPoint: "dev-rakaar" 90 -260 basechar 0
 AnchorPoint: "dev-below" 610 -326 basechar 0
-AnchorPoint: "dev-nukta" 10 -280.1 basechar 0
 AnchorPoint: "dev-above" 603 610 basechar 0
 LayerCount: 2
 Fore
@@ -105645,23 +105587,54 @@ SplineSet
  98 -42 99 -48 101 -54 c 1
  139 -39 183 -21 183 25 c 0
 EndSplineSet
-Validated: 3073
-Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_nga__ka__ssa__va.pres
-Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-four" ngadeva virama dev_ka__ssa.half vadeva
+Validated: 527361
+Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_nga_ka_ssa_va.pres
+Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-four" ngadeva virama dev_ka_ssa.half vadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-7" ngadeva virama dev_ka.half dev_ssa.half vadeva
 LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_ssa__tta__ra__ya.pres
+StartChar: dev_ssa_tta_ra_ya.pres
 Encoding: 61877 -1 4334
 Width: 1012
 Flags: HMW
 AnchorPoint: "dev-below" 760 -206 basechar 0
-AnchorPoint: "dev-nukta" 560 -100.1 basechar 0
 AnchorPoint: "dev-above" 753 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
+250 342 m 1
+ 118 461 l 1
+ 107 431 102 400 102 369 c 0
+ 102 329 114 316 135 301 c 1
+ 172 318 212 331 250 342 c 1
+291 395 m 1
+ 291 517 l 1
+ 157 517 l 1
+ 291 395 l 1
+1065 529 m 0
+ 1065 519 1060 517 1053 517 c 2
+ 809 517 l 1
+ 809 -211 l 2
+ 809 -221 804 -223 797 -223 c 0
+ 766 -223 704 -160 704 -130 c 2
+ 704 -107 l 1
+ 687 -112 670 -114 652 -114 c 0
+ 589 -114 534 -86 489 -45 c 1
+ 198 -232 l 2
+ 194 -234 192 -235 189 -235 c 0
+ 163 -235 125 -197 125 -171 c 0
+ 125 -165 127 -162 132 -158 c 2
+ 289 -52 l 1
+ 208 -52 147 -39 96 -4 c 0
+ 58 22 -3 79 -3 147 c 0
+ -3 209 47 250 87 275 c 1
+ 47 314 -3 377 -3 450 c 0
+ -3 478 1 505 8 530 c 1
+ -12 544 -52 583 -52 610 c 0
+ -52 619 -47 622 -41 622 c 2
+ 972 622 l 2
+ 1004 622 1065 559 1065 529 c 0
 704 46 m 1
  704 517 l 1
  396 517 l 1
@@ -105674,52 +105647,19 @@ SplineSet
  512 11 514 6 515 2 c 1
  530 -5 551 -9 571 -9 c 0
  629 -9 676 19 704 46 c 1
-1065 529 m 0
- 1065 519 1060 517 1053 517 c 2
- 809 517 l 1
- 809 -211 l 2
- 809 -221 804 -223 797 -223 c 0
- 766 -223 704 -160 704 -130 c 2
- 704 -107 l 1
- 687 -112 670 -114 652 -114 c 0
- 584 -114 525 -81 478 -34 c 1
- 303 -275 l 2
- 301 -278 299 -280 292 -280 c 0
- 261 -280 199 -217 199 -187 c 0
- 199 -183 200 -182 202 -179 c 2
- 294 -52 l 1
- 292 -52 l 2
- 210 -52 148 -39 96 -4 c 0
- 58 22 -3 79 -3 147 c 0
- -3 209 47 250 87 275 c 1
- 47 314 -3 377 -3 450 c 0
- -3 478 1 505 8 530 c 1
- -12 544 -52 583 -52 610 c 0
- -52 619 -47 622 -41 622 c 2
- 972 622 l 2
- 1004 622 1065 559 1065 529 c 0
-291 395 m 1
- 291 517 l 1
- 157 517 l 1
- 291 395 l 1
-250 342 m 1
- 118 461 l 1
- 107 431 102 400 102 369 c 0
- 102 329 114 316 135 301 c 1
- 172 318 212 331 250 342 c 1
 EndSplineSet
 Validated: 3073
 Ligature2: "'hlig' hist. ligatures in Devanagari-four" dev_ssa.half ttadeva dev_rakaar.blwf openya
-Ligature2: "'pres' pre-base substs in Devanagari-old-2-four" dev_ssa__tta.pres dev_rakaar yadeva
+Ligature2: "'pres' pre-base substs in Devanagari-old-2-four" dev_ssa_tta.pres dev_rakaar yadeva
 Ligature2: "'rkrf' rakar forms in Devanagari2 for Sanskrit-compound" ssadeva virama ttadeva virama radeva virama yadeva
+LCarets2: 6 0 0 0 0 0 0 
 EndChar
 
 StartChar: dev_ka.rkrf
 Encoding: 61878 -1 4335
 Width: 827
 Flags: HMW
-AnchorPoint: "dev-below" 400 -40.9 basechar 0
-AnchorPoint: "dev-nukta" 110 68.4 basechar 0
+AnchorPoint: "dev-below" 400 -41 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
@@ -105741,12 +105681,13 @@ SplineSet
  451 -41 l 2
  451 -50 446 -52 439 -52 c 0
  407 -52 346 10 346 41 c 2
- 346 183 l 1
- 228 123 169 90 160 90 c 0
- 128 90 67 152 67 183 c 0
- 67 190 70 192 72 193 c 2
- 332 326 l 1
- 307 343 268 356 223 356 c 0
+ 346 201 l 1
+ 161 83 l 2
+ 159 82 157 81 154 81 c 0
+ 122 81 88 115 88 145 c 0
+ 88 152 90 154 93 156 c 2
+ 341 316 l 1
+ 330 344 265 356 223 356 c 0
  140 356 105 317 90 317 c 0
  58 317 -3 380 -3 410 c 0
  -3 417 -1 419 2 421 c 0
@@ -105762,6 +105703,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'vatu' vatu variants in Devanagari subtable" kadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" kadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_ja.rkrf
@@ -105769,7 +105711,6 @@ Encoding: 61879 -1 4336
 Width: 973
 Flags: HMW
 AnchorPoint: "dev-below" 730 -46 basechar 0
-AnchorPoint: "dev-nukta" 90 38.6 basechar 0
 AnchorPoint: "dev-above" 713 610 basechar 0
 LayerCount: 2
 Fore
@@ -105813,6 +105754,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'vatu' vatu variants in Devanagari subtable" jadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" jadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_ta.rkrf
@@ -105820,7 +105762,6 @@ Encoding: 61880 -1 4337
 Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 400 -36 basechar 0
-AnchorPoint: "dev-nukta" 130 74 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
@@ -105831,12 +105772,13 @@ SplineSet
  451 -41 l 2
  451 -50 446 -52 439 -52 c 0
  407 -52 346 10 346 41 c 2
- 346 183 l 1
- 228 123 169 90 160 90 c 0
- 128 90 67 152 67 183 c 0
- 67 190 70 192 72 193 c 2
- 332 326 l 1
- 307 343 268 356 223 356 c 0
+ 346 201 l 1
+ 161 83 l 2
+ 159 82 157 81 154 81 c 0
+ 122 81 88 115 88 145 c 0
+ 88 152 90 154 93 156 c 2
+ 340 315 l 1
+ 325.763 343.475 268.418 356 223 356 c 0
  140 356 105 317 90 317 c 0
  58 317 -3 380 -3 410 c 0
  -3 417 -1 419 2 421 c 0
@@ -105849,9 +105791,10 @@ SplineSet
  614 622 l 2
  645 622 707 559 707 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'vatu' vatu variants in Devanagari subtable" tadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" tadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_pa.rkrf
@@ -105859,7 +105802,6 @@ Encoding: 61881 -1 4338
 Width: 614
 Flags: HMW
 AnchorPoint: "dev-below" 360 -36 basechar 0
-AnchorPoint: "dev-nukta" 220 4 basechar 0
 AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
@@ -105892,6 +105834,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'vatu' vatu variants in Devanagari subtable" padeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" padeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_pha.rkrf
@@ -105899,7 +105842,6 @@ Encoding: 61882 -1 4339
 Width: 788
 Flags: HMW
 AnchorPoint: "dev-below" 380 -46 basechar 0
-AnchorPoint: "dev-nukta" 0 268.6 basechar 0
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
@@ -105943,6 +105885,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'vatu' vatu variants in Devanagari subtable" phadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" phadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_sha.rkrf
@@ -105950,7 +105893,6 @@ Encoding: 61883 -1 4340
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 90 74 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -105961,13 +105903,13 @@ SplineSet
  570 -41 l 2
  570 -50 565 -52 558 -52 c 0
  527 -52 465 10 465 41 c 2
- 465 162 l 1
- 325 102 232 61 227 61 c 0
- 195 61 134 124 134 154 c 0
- 134 160 135 163 142 166 c 2
- 333 248 l 1
- 229 269 l 1
- 149 230 97 204 90 204 c 0
+ 465 127 l 1
+ 331 42 276 6 271 6 c 0
+ 239 6 205 41 205 71 c 0
+ 205 77 206.177 78.4082 213 83 c 2
+ 423 222 l 1
+ 269 282 l 1
+ 179 244.5 97 204 90 204 c 0
  58 204 -3 266 -3 297 c 0
  -3 303 -2 305 4 308 c 2
  67 339 l 1
@@ -105976,7 +105918,7 @@ SplineSet
  203 622 275 558 313 499 c 0
  330 472 345 437 345 398 c 0
  345 375 340 354 332 338 c 1
- 465 311 l 1
+ 465 300 l 1
  465 517 l 1
  388 517 l 2
  356 517 295 579 295 610 c 0
@@ -105991,9 +105933,10 @@ SplineSet
  111 378 127 375 146 375 c 0
  201 375 240 422 240 479 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'vatu' vatu variants in Devanagari subtable" shadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" shadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_sa.rkrf
@@ -106001,31 +105944,23 @@ Encoding: 61884 -1 4341
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 380 4 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-465 388 m 1
- 465 517 l 1
- 223 517 l 1
- 226 496 227 475 227 455 c 0
- 227 418 223 382 214 350 c 1
- 238 345 263 342 289 342 c 0
- 348 342 410 357 465 388 c 1
 826 529 m 0
  826 519 821 517 814 517 c 2
  570 517 l 1
  570 -41 l 2
  570 -50 565 -52 558 -52 c 0
  527 -52 465 10 465 41 c 2
- 465 110 l 1
- 332 6 l 1
- 332 6 330 4 325 4 c 0
- 294 4 232 67 232 97 c 0
- 232 100 232 104 236 107 c 2
- 405 239 l 1
- 393 238 381 237 370 237 c 0
+ 465 125.337 l 1
+ 343 32 l 2
+ 339.381 29.2314 337 29 334 29 c 0
+ 308 29 270 67 270 93 c 0
+ 270 99 271.929 102.088 277 106 c 2
+ 465 251 l 1
+ 442.86 245.465 402.097 237 370 237 c 0
  299 237 237 256 184 282 c 1
  169 261 148 245 119 240 c 1
  170 95 291 2 291 -41 c 0
@@ -106040,10 +105975,18 @@ SplineSet
  -52 619 -47 622 -41 622 c 2
  733 622 l 2
  765 622 826 559 826 529 c 0
+465 388 m 1
+ 465 517 l 1
+ 223 517 l 1
+ 226 496 227 475 227 455 c 0
+ 227 418 223 382 214 350 c 1
+ 238 345 263 342 289 342 c 0
+ 348 342 410 357 465 388 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'vatu' vatu variants in Devanagari subtable" sadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" sadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_ha.rkrf
@@ -106051,7 +105994,6 @@ Encoding: 61885 -1 4342
 Width: 808
 Flags: HMW
 AnchorPoint: "dev-below" 432 -216 basechar 0
-AnchorPoint: "dev-nukta" 110 -111.4 basechar 0
 AnchorPoint: "dev-above" 503 610 basechar 0
 LayerCount: 2
 Fore
@@ -106071,14 +106013,12 @@ SplineSet
  690 -154 l 2
  690 -164 685 -166 678 -166 c 0
  646 -166 585 -104 585 -73 c 2
- 585 22.9502 l 1
- 401 -127 l 2
- 397 -130 395 -130 392 -130 c 0
- 366 -130 328 -92 328 -66 c 0
- 328 -60 330 -57 335 -53 c 2
- 585 151.71 l 1
- 585 166 l 2
- 585 179 583 191 580 198 c 1
+ 585 70.3548 l 1
+ 415 -64 l 2
+ 411.381 -66.7686 409 -67 406 -67 c 0
+ 380 -67 342 -29 342 -3 c 0
+ 342 3 344.033 5.95801 349 10 c 0
+ 580 198 l 1
  547 214 498 221 451 221 c 0
  367 221 282 202 218 176 c 0
  177 160 102 130 102 73 c 0
@@ -106100,9 +106040,10 @@ SplineSet
  768 622 l 2
  799 622 861 559 861 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'vatu' vatu variants in Devanagari subtable" hadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" hadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_za.rkrf
@@ -106110,28 +106051,27 @@ Encoding: 61886 -1 4343
 Width: 973
 Flags: HMW
 AnchorPoint: "dev-below" 730 -46 basechar 0
-AnchorPoint: "dev-nukta" 90 38.6 basechar 0
 AnchorPoint: "dev-above" 713 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-550 228 m 1
- 529.791 200.812 508.5 179.5 481 159 c 1
- 451.5 180 431.667 201.666 412 228 c 1
- 430.56 253.877 453.131 277.454 481 298 c 1
- 508.228 277.873 530.979 254.758 550 228 c 1
+570 228 m 1
+ 549.791 200.812 528.5 179.5 501 159 c 1
+ 471.5 180 451.667 201.666 432 228 c 1
+ 450.56 253.877 473.131 277.454 501 298 c 1
+ 528.229 277.873 550.979 254.758 570 228 c 1
 1026 529 m 0
  1026 519 1020 517 1014 517 c 2
  769 517 l 1
  769 -41 l 2
  769 -50 764 -52 758 -52 c 0
  726 -52 665 10 665 41 c 2
- 665 120 l 1
+ 665 100 l 1
  473 -36 l 1
  473 -36 468 -40 462 -40 c 0
  436 -40 399 -2 399 24 c 0
- 399 30 400 33 404 36 c 2
- 665 249 l 1
+ 399 30 399.98 33.0273 404 36 c 2
+ 665 229 l 1
  665 323 l 1
  347 323 l 1
  376 289 422 222 422 150 c 0
@@ -106156,9 +106096,10 @@ SplineSet
  933 622 l 2
  964 622 1026 559 1026 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'vatu' vatu variants in Devanagari subtable" zadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" zadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_fa.rkrf
@@ -106212,17 +106153,17 @@ SplineSet
  176 280 183 280 191 280 c 0
  242 280 292 308 306 345 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'vatu' vatu variants in Devanagari subtable" fadeva dev_rakaar
 Ligature2: "'rkrf' rakar forms in Devanagari2-simple" fadeva virama radeva
+LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_sha__ra.salt
+StartChar: dev_sha_ra.salt
 Encoding: 61888 -1 4345
 Width: 773
 Flags: HMW
 AnchorPoint: "dev-below" 520 -36 basechar 0
-AnchorPoint: "dev-nukta" 140 4 basechar 0
 AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
@@ -106234,10 +106175,10 @@ SplineSet
  570 -50 565 -52 558 -52 c 0
  527 -52 465 10 465 41 c 2
  465 174 l 1
- 354 107 283 61 274 61 c 0
- 242 61 181 124 181 154 c 0
- 181 160 182 163 185 165 c 2
- 390 287 l 1
+ 368.5 100.5 293 38 284 38 c 0
+ 252 38 219 76 219 106 c 0
+ 219 112 220 115 223 117 c 2
+ 418 262 l 1
  273 327 l 1
  152 274 99 249 90 249 c 0
  58 249 -3 312 -3 342 c 0
@@ -106263,7 +106204,7 @@ SplineSet
  178 434 183 434 192 434 c 0
  229 434 253 468 253 506 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: dev_ra_umatra.blws
@@ -106271,7 +106212,6 @@ Encoding: 61710 -1 4346
 Width: 655
 Flags: HMW
 AnchorPoint: "dev-below" 350 -30.9 basechar 0
-AnchorPoint: "dev-nukta" 190 78.4 basechar 0
 AnchorPoint: "dev-above" 263 610 basechar 0
 LayerCount: 2
 Fore
@@ -106316,7 +106256,6 @@ Encoding: 61709 -1 4347
 Width: 754
 Flags: HMW
 AnchorPoint: "dev-below" 320 -36 basechar 0
-AnchorPoint: "dev-nukta" 190 28.4 basechar 0
 AnchorPoint: "dev-above" 263 610 basechar 0
 LayerCount: 2
 Fore
@@ -110245,7 +110184,6 @@ Encoding: 61712 -1 4457
 Width: 609
 Flags: HMW
 AnchorPoint: "dev-above" 343 610 basechar 0
-AnchorPoint: "dev-nukta" 110 -106 basechar 0
 AnchorPoint: "dev-below" 313 -194 basechar 0
 AnchorPoint: "dev-rakaar" 165 -100 basechar 0
 LayerCount: 2
@@ -110300,8 +110238,7 @@ SplineSet
  568 622 l 2
  600 622 651 559 651 529 c 0
 EndSplineSet
-Validated: 3073
-LCarets2: 1 0 
+Validated: 527361
 EndChar
 
 StartChar: dev_Velthuis_ha_rak.UNUSED
@@ -110335,13 +110272,13 @@ SplineSet
  558 -137 606 -182 606 -211 c 0
  606 -221 601 -223 594 -223 c 0
  589 -223 585 -222 580 -220 c 0
- 476 -178 374 -124 293 -57 c 1
- 99 -220 l 2
- 95 -223 94 -223 90 -223 c 0
- 58 -223 -3 -160 -3 -130 c 0
- -3 -125 -2 -123 3 -119 c 2
- 197 44 l 1
- 178 72 156 112 156 154 c 0
+ 459.741 -171.434 342.046 -113.985 255.14 -26.423 c 1
+ 91 -152 l 2
+ 87.3809 -154.769 85 -155 82 -155 c 0
+ 56 -155 18 -117 18 -91 c 0
+ 18 -85 20 -82 25 -78 c 2
+ 192.524 50.7457 l 1
+ 174.711 78.2337 156 115.266 156 154 c 0
  156 203 188 235 228 256 c 1
  192 293 156 347 156 410 c 0
  156 433 172 446 191 454 c 0
@@ -110353,7 +110290,7 @@ SplineSet
  728 622 l 2
  759 622 811 559 811 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: dev_dddha.rkrf
@@ -110411,7 +110348,8 @@ SplineSet
  456 -30 477 -53 477 -72 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+Ligature2: "'vatu' vatu variants in Devanagari subtable" dddhadeva dev_rakaar
+Ligature2: "'rkrf' rakar forms in Devanagari2-simple" dddhadeva virama radeva
 EndChar
 
 StartChar: dev_rha.rkrf
@@ -110467,13 +110405,14 @@ SplineSet
  347 106.5 386 127.967 386 174 c 1
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+Ligature2: "'vatu' vatu variants in Devanagari subtable" rhadeva dev_rakaar
+Ligature2: "'rkrf' rakar forms in Devanagari2-simple" rhadeva virama radeva
 EndChar
 
 StartChar: dev_rakaar_u.blws
 Encoding: 61716 -1 4461
 Width: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dev-rakaar" -242 160 mark 0
 LayerCount: 2
 Fore
@@ -110487,7 +110426,7 @@ EndChar
 StartChar: dev_rakaar_uu.blws
 Encoding: 61717 -1 4462
 Width: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dev-rakaar" -242 180 mark 0
 LayerCount: 2
 Fore
@@ -110501,7 +110440,7 @@ EndChar
 StartChar: dev_ematra_reph_anusvara.abvs
 Encoding: 61718 -1 4463
 Width: 0
-Flags: W
+Flags: MW
 AnchorPoint: "dev-above" -160 588 mark 0
 AnchorPoint: "dev-abovemark" -60 600 basemark 0
 LayerCount: 2
@@ -110510,15 +110449,15 @@ Refer: 4078 2306 N 1 0 0 1 234 -48 2
 Refer: 4134 -1 N 1 0 0 1 100 0 2
 Refer: 4024 2376 N 1 0 0 1 -70 0 2
 Validated: 32769
-Ligature2: "'abvs' above-base substs in Devanagari-anusvara+-2" esigndeva dev_ra.rphf anusvaradeva
 Ligature2: "'abvs' above-base substs in Devanagari-anusvara+-2" dev_ra.rphf esigndeva anusvaradeva
+Ligature2: "'abvs' above-base substs in Devanagari-anusvara+-2" esigndeva dev_ra.rphf anusvaradeva
 LCarets2: 2 0 0 
 EndChar
 
 StartChar: indic_question
 Encoding: 61726 -1 4464
 Width: 638
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 31 63 N 1 0 0 1 193 0 2
@@ -110528,7 +110467,7 @@ EndChar
 StartChar: indic_exclam
 Encoding: 61727 -1 4465
 Width: 420
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 1 33 N 1 0 0 1 169 0 2
@@ -110873,13 +110812,12 @@ EndChar
 StartChar: dev_khaling_a_virama.blws
 Encoding: 61889 -1 4476
 Width: 862
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4043 2309 N 1 0 0 1 0 0 2
 Refer: 4077 2381 N 1 0 0 1 860 0 2
 Validated: 32769
-LCarets2: 1 0 
 EndChar
 
 StartChar: thaana_dot
@@ -110929,26 +110867,23 @@ EndChar
 StartChar: dev_dda_ddha.pres
 Encoding: 61890 -1 4479
 Width: 673
-Flags: W
-HStem: -401 79<251.854 334.022> -202 79<310.133 363.849> -70 79<167.447 268> 29 105<181.812 267.57> 220 106<207.396 346.659> 289 20G<5.5 24.5> 369 105<229.122 302> 517 105<-2.48828 302 407 676.488>
-VStem: -3 105<210.926 259.049> 9 79<-197.396 -52.6499> 168 79<-297.2 -259.824> 302 105<474 517> 379 79<-339 -221.703>
+Flags: MW
 AnchorPoint: "dev-above" 363 610 basechar 0
-AnchorPoint: "dev-nukta" 30 -320 basechar 0
 AnchorPoint: "dev-below" 270 -376 basechar 0
 AnchorPoint: "dev-rakaar" 270 -330 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-379 -232 m 0xf328
+379 -232 m 0
  379 -221 378 -211 376 -202 c 1
  325 -202 247 -255 247 -315 c 2
  247 -320 l 1
  251 -322 l 1
- 308 -321 379 -294 379 -232 c 0xf328
+ 308 -321 379 -294 379 -232 c 0
 268 9 m 1
  268 29 l 1
- 150.31 29 -3 164.151 -3 297 c 0xfba0
- -3 306 2 309 9 309 c 0xf760
+ 150.31 29 -3 164.151 -3 297 c 0
+ -3 306 2 309 9 309 c 0
  40 309 101 247 102 216 c 0
  102 191 109 165 119 151 c 1
  134 141 161 134 187 134 c 0
@@ -110965,7 +110900,7 @@ SplineSet
  665 622 726 559 726 529 c 0
  726 519 721 517 714 517 c 2
  407 517 l 1
- 407 381 l 2xfbb0
+ 407 381 l 2
  407 371 402 369 395 369 c 2
  375 369 l 2
  310 369 229 368 207 326 c 1
@@ -110985,37 +110920,34 @@ SplineSet
  454 -257 458 -278 458 -306 c 0
  458 -372 383 -401 324 -401 c 0
  192 -401 132 -337 70 -261 c 0
- 37 -220 9 -163.3 9 -106 c 0xfb68
+ 37 -220 9 -163.3 9 -106 c 0
  9 0.700195 139 9 268 9 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ddadeva virama ddhadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ddadeva virama ddhadeva
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_tta__ka__ssa.pres
+StartChar: dev_tta_ka_ssa.pres
 Encoding: 61891 -1 4480
 Width: 628
-Flags: W
-HStem: -319 79<118.922 205.122> -188 79<223.278 297.296> 42 79<104 194.748> 119 104<145.851 326.442> 517 105<-2.48828 268 373 631.488>
-VStem: -3 105<245.951 287.286> 23 79<-224.386 -129> 32 79<-53.8307 19.205> 196 79<-45 40.8392> 268 105<462 517> 381 105<-220.609 -132 -36.259 130>
+Flags: MW
 AnchorPoint: "dev-rakaar" 260 -280 basechar 0
 AnchorPoint: "dev-below" 420 -366 basechar 0
-AnchorPoint: "dev-nukta" 40 -320 basechar 0
 AnchorPoint: "dev-above" 333 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-196 25 m 0xe9a0
+196 25 m 0
  196 38 195 42 181 42 c 0
  142 42 111 5 111 -35 c 0
  111 -42 112 -48 114 -54 c 1
- 152 -39 196 -21 196 25 c 0xe9a0
+ 152 -39 196 -21 196 25 c 0
 681 529 m 0
  681 519 676 517 669 517 c 2
  373 517 l 1
- 373 369 l 2xdc60
+ 373 369 l 2
  373 360 368 357 361 357 c 2
  349 357 l 2
  254 357 103 327 102 236 c 1
@@ -111041,11 +110973,11 @@ SplineSet
  299 -378 272 -347 264 -328 c 2
  255 -304 l 1
  237 -313 219 -319 196 -319 c 0
- 113 -319 23 -239 23 -147 c 0xdaa0
+ 113 -319 23 -239 23 -147 c 0
  23 -111 40 -91 62 -77 c 1
  45 -51 32 -20 32 13 c 0
  32 73 75 121 133 121 c 0
- 202 121 275 50 275 -23 c 0xe9a0
+ 202 121 275 50 275 -23 c 0
  275 -67 249 -95 223 -109 c 1
  283 -109 352 -59 381 -8 c 1
  381 129 381 89 381 130 c 1
@@ -111053,7 +110985,7 @@ SplineSet
  204 119 146 133 96 166 c 0
  58 192 -3 249 -3 316 c 0
  -3 430 161 462 268 462 c 1
- 268 517 l 1xdc60
+ 268 517 l 1
  41 517 l 2
  9 517 -52 579 -52 610 c 0
  -52 619 -47 622 -41 622 c 2
@@ -111061,24 +110993,21 @@ SplineSet
  620 622 681 559 681 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-trio" ttadeva virama dev_ka__ssa.akhn
+Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-trio" ttadeva virama dev_ka_ssa.akhn
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_tta__sha.pres
+StartChar: dev_tta_sha.pres
 Encoding: 61892 -1 4481
 Width: 628
-Flags: W
-HStem: -279 126<49.0513 120.294> 36 67<173.766 235.676> 119 104<145.851 326.359> 517 105<-2.48828 268 373 631.488>
-VStem: -3 105<245.951 287.286> 64 78<-75.2188 2.55794> 241 78<-89.0017 12.9441> 268 105<462 517> 378 105<-265.506 130>
+Flags: MW
 AnchorPoint: "dev-rakaar" 210 -260 basechar 0
 AnchorPoint: "dev-below" 410 -376 basechar 0
-AnchorPoint: "dev-nukta" 80 -320 basechar 0
 AnchorPoint: "dev-above" 333 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-681 529 m 0xf980
+681 529 m 0
  681 519 676 517 669 517 c 2
  373 517 l 1
  373 369 l 2
@@ -111103,15 +111032,15 @@ SplineSet
  9 517 -52 579 -52 610 c 0
  -52 619 -47 622 -41 622 c 2
  588 622 l 2
- 620 622 681 559 681 529 c 0xf980
-241 -17 m 0xf680
+ 620 622 681 559 681 529 c 0
+241 -17 m 0
  241 4 238 22 233 35 c 1
  229 36 224 36 219 36 c 0
  166 36 142 -27 142 -73 c 2
  142 -80 l 1
  164 -88 192 -91 218 -91 c 2
  226 -91 l 1
- 237 -67 241 -41 241 -17 c 0xf680
+ 237 -67 241 -41 241 -17 c 0
 204 103 m 0
  222 103 259 63 283 36 c 1
  301 10 319 -26 319 -77 c 0
@@ -111134,12 +111063,11 @@ Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ttadeva v
 LCarets2: 2 0 0 
 EndChar
 
-StartChar: dev_ka__ta__ra.pres
+StartChar: dev_ka_ta_ra.pres
 Encoding: 61893 -1 4482
 Width: 788
-Flags: HW
+Flags: HMW
 AnchorPoint: "dev-above" 363 610 basechar 0
-AnchorPoint: "dev-nukta" 50 -61.6 basechar 0
 AnchorPoint: "dev-below" 370 -256 basechar 0
 LayerCount: 2
 Fore
@@ -111193,15 +111121,15 @@ SplineSet
  504 -71 l 2
  516 -80 537 -103 537 -122 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'rkrf' rakar forms in Devanagari2 for Sanskrit-compound" kadeva virama tadeva virama radeva
 LCarets2: 4 0 0 0 0 
 EndChar
 
-StartChar: dev_ta__na.half
+StartChar: dev_ta_na.half
 Encoding: 61894 -1 4483
 Width: 514
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -111237,12 +111165,13 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_ta.half dev_na.half
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_nya__ja.half
+StartChar: dev_nya_ja.half
 Encoding: 61895 -1 4484
 Width: 464
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -111293,12 +111222,13 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_nya.half dev_ja.half
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_sa__na.half
+StartChar: dev_sa_na.half
 Encoding: 61896 -1 4485
 Width: 543
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -111338,14 +111268,14 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'pres' pre-base substs in Devanagari half-cjcts" dev_sa.half dev_na.half
+LCarets2: 1 0 
 EndChar
 
-StartChar: dev_ta__ta.rkrf
+StartChar: dev_ta_ta.rkrf
 Encoding: 61897 -1 4486
 Width: 773
-Flags: HW
+Flags: HMW
 AnchorPoint: "dev-above" 513 610 basechar 0
-AnchorPoint: "dev-nukta" 180 4 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
 LayerCount: 2
 Fore
@@ -111382,7 +111312,7 @@ SplineSet
  733 622 l 2
  765 622 826 559 826 529 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'pres' pre-base substs in Devanagari general-ta-ta-ra" dev_ta.half dev_ta.rkrf
 LCarets2: 1 0 
 EndChar
