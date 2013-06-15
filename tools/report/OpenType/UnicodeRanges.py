@@ -308,7 +308,7 @@ ulUnicodeRange = [
 	]],
 [32,	'Superscripts and Subscripts',     [interval(0x2070, 0x2071),
 		interval(0x2074, 0x208E),
-		interval(0x2090, 0x2094)
+		interval(0x2090, 0x209C)
 	]
 	],
 [33,	'Currency Symbols',     [interval(0x20A0, 0x20BA)]],
