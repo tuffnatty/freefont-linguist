@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1371288221
+ModificationTime: 1371818965
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -180,12 +180,12 @@ Lookup: 4 0 0 "'blws' below-base substs in Gurmukhi"  {"'blws' below-base substs
 Lookup: 260 24 0 "'abvm' al,i,ii in Sinhala"  {"'abvm' al,i,ii in Sinhala-1"  } ['abvm' ('sinh' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' repaya in Sinhala"  {"'abvm' repaya in Sinhala-1"  } ['abvm' ('sinh' <'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' rakar,u,uu in Sinhala"  {"'blwm' rakar,u,uu in Sinhala-1"  } ['blwm' ('sinh' <'dflt' > ) ]
-Lookup: 260 0 0 "'abvm' above-base marks in Devanagari"  {"'abvm' above-base marks in Devanagari-1"  } ['abvm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
-Lookup: 260 0 0 "'blwm' below-base marks in Devanagari"  {"'blwm' nukta in Devanagari"  "'blwm' below-base mark in Devanagari"  "'blwm' rakaar in Devanagari"  } ['blwm' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' mark-to-mark in Devanagari"  {"'mkmk' mark-to-mark in Devanagari-1"  } ['mkmk' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
-Lookup: 262 0 0 "'mkmk' mark-to-mark below in Devanagari"  {"'mkmk' mark-to-mark below in Devanagari-1"  } ['mkmk' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
-Lookup: 258 8 0 "'dist' distance in Devanagari"  {"'dist' distance in Devanagari-1" [150,0,6] "'dist' distance western punct in Devanagari" [150,0,4] } ['dist' ('dev2' <'dflt' > 'deva' <'dflt' > ) 'kern' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
-Lookup: 258 0 0 "'dist' distance marks in Devanagari"  {"'dist' distance marks left in Devanagari" [150,0,6] "'dist' distance marks right in Devanagari" [150,0,6] } ['dist' ('dev2' <'dflt' > 'deva' <'dflt' > ) 'kern' ('dev2' <'dflt' > 'deva' <'dflt' > ) ]
+Lookup: 258 0 0 "'dist' distance in Devanagari"  {"'dist' distance in Devanagari" [150,0,0] "'dist' distance western punct in Devanagari" [150,0,4] } ['dist' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
+Lookup: 258 8 0 "'dist' distance marks in Devanagari"  {"'dist' distance marks left in Devanagari" [150,0,6] "'dist' distance marks right in Devanagari" [150,0,6] } ['dist' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
+Lookup: 260 0 0 "'abvm' above-base marks in Devanagari"  {"'abvm' above-base marks in Devanagari-1"  } ['abvm' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
+Lookup: 260 0 0 "'blwm' below-base marks in Devanagari"  {"'blwm' nukta in Devanagari"  "'blwm' below-base mark in Devanagari"  "'blwm' rakaar in Devanagari"  } ['blwm' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' mark-to-mark in Devanagari"  {"'mkmk' mark-to-mark in Devanagari-1"  } ['mkmk' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' mark-to-mark below in Devanagari"  {"'mkmk' mark-to-mark below in Devanagari-1"  } ['mkmk' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' mark above in Greek and Coptic"  {"'mark' mark above in Greek and Coptic-1"  } ['mark' ('copt' <'dflt' > 'grek' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' ogonek in Latin"  {"'mark' ogonek in Latin"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' generic mark below"  {"'mark' generic mark below"  } ['mark' ('DFLT' <'dflt' > 'latn' <'dflt' > ) ]
@@ -218,6 +218,60 @@ MarkAttachClasses: 1
 MarkAttachSets: 1
 "sinh_below" 215 sinh_rak2 sinh_rak3 sinh_rak4 sinh_rak5 sinh_rak6 sinh_rak7 sinh_rak8 sinh_rak9 sinh_u2 sinh_u3 sinh_u4 sinh_u5 sinh_u6 sinh_u7 sinh_u8 sinh_u9 sinh_uu2 sinh_uu3 sinh_uu4 sinh_uu5 sinh_uu6 sinh_uu7 sinh_uu8 sinh_uu9
 DEI: 91125
+KernClass2: 10 2 "'dist' distance marks right in Devanagari" 
+ 28 kadeva phadeva qadeva fadeva
+ 172 khadeva gadeva ghadeva cadeva jadeva jhadeva nyadeva nnadeva tadeva thadeva dhadeva nadeva nnnadeva padeva badeva bhadeva madeva yadeva ladeva vadeva shadeva ssadeva sadeva
+ 7 ngadeva
+ 7 chadeva
+ 40 ttadeva tthadeva ddhadeva dadeva rhadeva
+ 14 radeva rradeva
+ 16 lladeva llladeva
+ 6 hadeva
+ 17 ddadeva dddhadeva
+ 83 aasigndeva isigndeva iisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva
+ 0 {} 0 {} 0 {} -33 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} -16 {} 0 {} -16 {} 0 {} -33 {} 0 {} -41 {} 0 {} -33 {}
+KernClass2: 2 12 "'dist' distance marks left in Devanagari" 
+ 94 aasigndeva isigndeva iisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva awsigndeva
+ 42 kadeva padeva phadeva badeva qadeva fadeva
+ 48 ttadeva tthadeva ddadeva ddhadeva dadeva rhadeva
+ 14 radeva rradeva
+ 37 cadeva jadeva nyadeva nadeva nnnadeva
+ 23 khadeva sadeva khhadeva
+ 15 ghadeva chadeva
+ 7 jhadeva
+ 7 nnadeva
+ 6 tadeva
+ 6 madeva
+ 6 yadeva
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -57 {} -49 {} -82 {} -82 {} -57 {} -49 {} -41 {} 0 {} -33 {} -33 {} -41 {}
+KernClass2: 2 3 "'dist' distance western punct in Devanagari" 
+ 1226 invcandrabindudeva candrabindudeva anusvaradeva visarga shortadeva akaradeva aakaradeva ikaradeva iikaradeva ukaradeva uukaradeva rvocalicdeva lvocalicdeva ecandradeva eshortdeva ekaradeva aikaradeva ocandradeva oshortdeva okaradeva aukaradeva kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva radeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva oesigndeva ooesigndeva aasigndeva isigndeva iisigndeva usigndeva uusigndeva rvocalicsigndeva rrvocalicsigndeva ecandrasigndeva eshortsigndeva esigndeva aisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva virama eprishthamatra awsigndeva omdeva udattadeva anudattadeva gravedeva acutedeva longecandradeva uesigndeva uuesigndeva qadeva khhadeva ghhadeva zadeva dddhadeva rhadeva fadeva yyadeva rrvocalicdeva llvocalicdeva lvocalicsigndeva llvocalicsigndeva zerodeva onedeva twodeva threedeva fourdeva fivedeva sixdeva sevendeva eightdeva ninedeva abbreviationsigndeva acandradeva oedeva ooedeva awkaradeva uedeva uuedeva zhadeva heavyyadeva ggadeva jjadeva glottalstopdeva dddadeva bbadeva
+ 22 exclam colon semicolon
+ 8 question
+ 0 {} 0 {} 0 {} 0 {} 180 {} 164 {}
+KernClass2: 10 13 "'dist' distance in Devanagari" 
+ 39 uukaradeva kadeva phadeva qadeva fadeva
+ 330 shortadeva akaradeva aakaradeva ocandradeva oshortdeva okaradeva aukaradeva khadeva gadeva ghadeva cadeva jadeva nyadeva nnadeva tadeva dhadeva nadeva nnnadeva padeva badeva bhadeva madeva yadeva ladeva vadeva shadeva ssadeva sadeva khhadeva ghhadeva zadeva yyadeva acandradeva oedeva ooedeva awkaradeva uedeva uuedeva heavyyadeva
+ 48 ttadeva tthadeva ddadeva ddhadeva dadeva rhadeva
+ 14 radeva rradeva
+ 43 ecandradeva eshortdeva ekaradeva aikaradeva
+ 26 rvocalicdeva rrvocalicdeva
+ 26 lvocalicdeva llvocalicdeva
+ 9 ukaradeva
+ 6 hadeva
+ 57 kadeva padeva phadeva badeva vadeva ssadeva qadeva fadeva
+ 44 cadeva jadeva nyadeva nadeva nnnadeva zadeva
+ 40 ttadeva tthadeva ddadeva ddhadeva dadeva
+ 14 radeva rradeva
+ 23 khadeva sadeva khhadeva
+ 7 shadeva
+ 15 ghadeva chadeva
+ 7 jhadeva
+ 23 ladeva lladeva llladeva
+ 6 hadeva
+ 6 madeva
+ 14 yadeva yyadeva
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -33 {} -41 {} -33 {} -49 {} -25 {} -33 {} -33 {} -25 {} -16 {} 0 {} -25 {} -49 {} 0 {} -33 {} -49 {} -41 {} -74 {} -66 {} -66 {} -66 {} -33 {} -57 {} -33 {} -49 {} -66 {} 0 {} -41 {} -49 {} -33 {} -57 {} -41 {} -33 {} -41 {} -33 {} -41 {} -16 {} -33 {} -49 {} 0 {} -41 {} -57 {} -41 {} -49 {} -33 {} -25 {} -41 {} -16 {} -33 {} -16 {} -41 {} -41 {} 0 {} -57 {} -57 {} 0 {} -33 {} -33 {} -41 {} -33 {} -33 {} -41 {} 0 {} -41 {} -41 {} 0 {} -74 {} -98 {} -66 {} -74 {} -66 {} -74 {} -82 {} -66 {} -57 {} -33 {} -33 {} -66 {} 0 {} -16 {} -25 {} -16 {} -49 {} -25 {} -25 {} -33 {} -16 {} 0 {} 0 {} 0 {} -25 {} 0 {} -25 {} -41 {} -25 {} -41 {} -33 {} -33 {} -33 {} -25 {} -25 {} -16 {} -16 {} -33 {} 0 {} -57 {} -74 {} -49 {} -82 {} -66 {} -57 {} -57 {} -41 {} -49 {} -33 {} -41 {} -49 {}
 KernClass2: 6 9 "'kern' kerning in Thaana-1" 
  148 haa_tana shaviyani_tana noonu_tana raa_tana alifu_tana meemu_tana thaa_tana gaafu_tana yaa_tana hhaa_tana khaa_tana ainu_tana ghainu_tana qaafu_tana
  146 lhaviyani_tana vaavu_tana faafu_tana dhaalu_tana laamu_tana paviyani_tana chaviyani_tana ttaa_tana thaalu_tana zaa_tana to_tana zo_tana waavu_tana
@@ -355,60 +409,6 @@ KernClass2: 8 15 "'kern' kerning in Arabic-1"
  154 yehhamzaabovearabic alefmaksuraarabic yeharabic yehfarsiarabic yehtailarabic yehvarabic yehthreedotsarabic uniFBFC yehhamzaaboveisolarabic uniFEEF uniFEF1
  75 yehbarreearabic yehbareehamzaarabic yehbarreeisoarabic yehbarreehamzaarabic
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -150 {} -70 {} -20 {} -120 {} -40 {} -80 {} -70 {} -70 {} -30 {} -120 {} -80 {} 0 {} -50 {} -60 {} 0 {} 0 {} 0 {} 0 {} -40 {} -10 {} -40 {} -20 {} 0 {} 0 {} 0 {} -50 {} -40 {} 0 {} -100 {} 0 {} -70 {} -40 {} -20 {} -60 {} -30 {} -90 {} -60 {} -60 {} -40 {} -40 {} -90 {} 0 {} -40 {} -60 {} 0 {} -50 {} -20 {} 0 {} -20 {} -20 {} -20 {} -40 {} 0 {} 0 {} -20 {} -30 {} -50 {} 0 {} -100 {} 0 {} 0 {} -10 {} -20 {} -40 {} -30 {} -60 {} -20 {} 0 {} -30 {} 0 {} -90 {} -40 {} -20 {} -140 {} 0 {} 0 {} -20 {} 0 {} -50 {} 0 {} 0 {} -60 {} 0 {} 0 {} -20 {} -50 {} -50 {} -20 {} -100 {} 0 {} -20 {} 0 {} 0 {} -40 {} 0 {} 0 {} -40 {} -20 {} 0 {} 0 {} -50 {} -90 {} 0 {} -70 {}
-KernClass2: 2 3 "'dist' distance western punct in Devanagari" 
- 1264 invcandrabindudeva candrabindudeva anusvaradeva visargadeva shortadeva akaradeva aakaradeva ikaradeva iikaradeva ukaradeva uukaradeva rvocalicdeva lvocalicdeva ecandradeva eshortdeva ekaradeva aikaradeva ocandradeva oshortdeva okaradeva aukaradeva kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva radeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva oesigndeva ooesigndeva nuktadeva avagrahadeva aasigndeva isigndeva iisigndeva usigndeva uusigndeva rvocalicsigndeva rrvocalicsigndeva ecandrasigndeva eshortsigndeva esigndeva aisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva virama eprishthamatra awsigndeva omdeva udattadeva anudattadeva gravedeva acutedeva longecandradeva uesigndeva uuesigndeva qadeva khhadeva ghhadeva zadeva dddhadeva rhadeva fadeva yyadeva rrvocalicdeva llvocalicdeva lvocalicsigndeva llvocalicsigndeva zerodeva onedeva twodeva threedeva fourdeva fivedeva sixdeva sevendeva eightdeva ninedeva abbreviationsigndeva ellipsisdotdeva acandradeva oedeva ooedeva awdeva uedeva uuedeva zhadeva yevyyadeva ggadeva jjadeva glottalstopdeva dddadeva bbadeva
- 22 exclam colon semicolon
- 8 question
- 0 {} 0 {} 0 {} 0 {} 220 {} 200 {}
-KernClass2: 10 2 "'dist' distance marks right in Devanagari" 
- 28 kadeva phadeva qadeva fadeva
- 172 khadeva gadeva ghadeva cadeva jadeva jhadeva nyadeva nnadeva tadeva thadeva dhadeva nadeva nnnadeva padeva badeva bhadeva madeva yadeva ladeva vadeva shadeva ssadeva sadeva
- 7 ngadeva
- 7 chadeva
- 40 ttadeva tthadeva ddhadeva dadeva rhadeva
- 14 radeva rradeva
- 16 lladeva llladeva
- 6 hadeva
- 17 ddadeva dddhadeva
- 94 aasigndeva isigndeva iisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva awsigndeva
- 0 {} 0 {} 0 {} -40 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -20 {} 0 {} -40 {} 0 {} -40 {} 0 {} -40 {}
-KernClass2: 2 12 "'dist' distance marks left in Devanagari" 
- 90 aasigndeva isigndeva iisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva awdeva
- 42 kadeva padeva phadeva badeva qadeva fadeva
- 48 ttadeva tthadeva ddadeva ddhadeva dadeva rhadeva
- 14 radeva rradeva
- 37 cadeva jadeva nyadeva nadeva nnnadeva
- 23 khadeva sadeva khhadeva
- 15 ghadeva chadeva
- 7 jhadeva
- 7 nnadeva
- 6 tadeva
- 6 madeva
- 6 yadeva
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} -60 {} -100 {} -100 {} -70 {} -60 {} -50 {} 0 {} -40 {} -40 {} -50 {}
-KernClass2: 10 13 "'dist' distance in Devanagari-1" 
- 39 uukaradeva kadeva phadeva qadeva fadeva
- 314 shortadeva akaradeva aakaradeva ocandradeva oshortdeva okaradeva aukaradeva khadeva gadeva ghadeva cadeva jadeva nyadeva nnadeva tadeva dhadeva nadeva nnnadeva padeva badeva bhadeva madeva yadeva ladeva vadeva shadeva ssadeva sadeva khhadeva ghhadeva zadeva yyadeva acandradeva oedeva ooedeva awdeva uedeva uuedeva
- 48 ttadeva tthadeva ddadeva ddhadeva dadeva rhadeva
- 14 radeva rradeva
- 43 ecandradeva eshortdeva ekaradeva aikaradeva
- 26 rvocalicdeva rrvocalicdeva
- 26 lvocalicdeva llvocalicdeva
- 9 ukaradeva
- 6 hadeva
- 57 kadeva padeva phadeva badeva vadeva ssadeva qadeva fadeva
- 44 cadeva jadeva nyadeva nadeva nnnadeva zadeva
- 40 ttadeva tthadeva ddadeva ddhadeva dadeva
- 14 radeva rradeva
- 23 khadeva sadeva khhadeva
- 7 shadeva
- 15 ghadeva chadeva
- 7 jhadeva
- 23 ladeva lladeva llladeva
- 6 hadeva
- 6 madeva
- 14 yadeva yyadeva
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -50 {} -40 {} -60 {} -30 {} -40 {} -40 {} -30 {} -20 {} 0 {} -30 {} -60 {} 0 {} -40 {} -60 {} -50 {} -90 {} -80 {} -80 {} -80 {} -40 {} -70 {} -40 {} -60 {} -80 {} 0 {} -50 {} -60 {} -40 {} -70 {} -50 {} -40 {} -50 {} -40 {} -50 {} -20 {} -40 {} -60 {} 0 {} -50 {} -70 {} -50 {} -60 {} -40 {} -30 {} -50 {} -20 {} -40 {} -20 {} -50 {} -50 {} 0 {} -70 {} -70 {} 0 {} -40 {} -40 {} -50 {} -40 {} -40 {} -50 {} 0 {} -50 {} -50 {} 0 {} -90 {} -120 {} -80 {} -90 {} -80 {} -90 {} -100 {} -80 {} -70 {} -40 {} -40 {} -80 {} 0 {} -20 {} -30 {} -20 {} -60 {} -30 {} -30 {} -40 {} -20 {} 0 {} 0 {} 0 {} -30 {} 0 {} -30 {} -50 {} -30 {} -50 {} -40 {} -40 {} -40 {} -30 {} -30 {} -20 {} -20 {} -40 {} 0 {} -70 {} -90 {} -60 {} -100 {} -80 {} -70 {} -70 {} -50 {} -60 {} -40 {} -50 {} -60 {}
 KernClass2: 5 10 "'kern' kern left in Latin for IPA" 
  6 wsuper
  8 thetasup
@@ -1259,17 +1259,17 @@ LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeSerif +BD8EPgQ7BEMERwQ1
 LangName: 1069 "" "" "Lodia" "" "FreeSerif Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 21 1 65535 3 0
-OtfFeatName: 'ss04' 2145 "+CSgJRwkqCT4JMgAA" 1033 "Nepali" 
-OtfFeatName: 'ss03' 1081 "+CRUJSwkyCRUJPgkk" 1033 "Calcutta" 
-OtfFeatName: 'ss02' 1081 "+CS4JQQkuCU0JLAkI" 1033 "Bombay" 
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
+OtfFeatName: 'ss02' 1033 "Bombay" 1081 "+CS4JQQkuCU0JLAkI" 
+OtfFeatName: 'ss03' 1033 "Calcutta" 1081 "+CRUJSwkyCRUJPgkk" 
+OtfFeatName: 'ss04' 1033 "Nepali" 2145 "+CSgJRwkqCT4JMgAA" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 4256 16 10
+WinInfo: 2320 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 31 [-14 0 307 315 461 473 673 691]
@@ -46230,7 +46230,7 @@ SplineSet
  228 650 183 631 183 591 c 2
  183 152 l 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10A9
@@ -46408,7 +46408,7 @@ SplineSet
  624 697 776 640 776 507 c 2
  776 205 l 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10AE
@@ -46512,7 +46512,7 @@ SplineSet
  52 -2 35 115 35 229 c 0
  35 454 113 490 353 571 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10B1
@@ -46585,7 +46585,7 @@ SplineSet
  287 531 294 517 329 516 c 0
  359 516 370 537 370 564 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10B3
@@ -47071,7 +47071,7 @@ SplineSet
  559 67 l 1
  589 28 l 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10C0
@@ -47113,7 +47113,7 @@ SplineSet
  342 505 360 521 360 545 c 0
  360 572 342 577 274 577 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10C1
@@ -47330,7 +47330,7 @@ SplineSet
  169 419 171 456 284 505 c 1
  268 467 264 452 262 438 c 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10D1
@@ -66264,7 +66264,7 @@ SplineSet
  128.75 276.5 147.75 258.5 193.5 258.5 c 0
  255.126 258.5 258.75 284.15 258.75 301.25 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10fa
@@ -91937,20 +91937,19 @@ EndChar
 
 StartChar: danda
 Encoding: 2404 2404 4026
-Width: 475
+Width: 450
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-405 -41 m 2
- 405 -50 400 -52 393 -52 c 0
- 361 -52 300 10 300 41 c 2
- 300 610 l 2
- 300 619 305 622 312 622 c 0
- 343 622 405 559 405 529 c 2
- 405 -41 l 2
+385 -41 m 2
+ 385 -50 380 -52 373 -52 c 0
+ 341 -52 280 10 280 41 c 2
+ 280 610 l 2
+ 280 619 285 622 292 622 c 0
+ 323 622 385 559 385 529 c 2
+ 385 -41 l 2
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: zerodeva
@@ -92282,13 +92281,12 @@ EndChar
 
 StartChar: dbldanda
 Encoding: 2405 2405 4037
-Width: 730
+Width: 644
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 4026 2404 N 1 0 0 1 250 0 2
-Refer: 4026 2404 N 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 4026 2404 N 1 0 0 1 194 0 2
+Refer: 4026 2404 N 1 0 0 1 -16 0 2
 EndChar
 
 StartChar: omdeva
@@ -92434,38 +92432,37 @@ EndChar
 
 StartChar: abbreviationsigndeva
 Encoding: 2416 2416 4042
-Width: 625
+Width: 455
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-466 382 m 0
- 466 310 410 252 337 252 c 0
- 251 252 160 337 160 430 c 0
- 160 502 216 559 289 559 c 0
- 375 559 466 474 466 382 c 0
-387 430 m 0
- 387 443 383 461 376 469 c 1
- 369 475 352 480 337 480 c 0
- 286 480 239 436 239 382 c 0
- 239 369 243 351 250 343 c 0
- 257 336 274 332 289 332 c 0
- 343 332 387 378 387 430 c 0
+346 382 m 0
+ 346 310 290 252 217 252 c 0
+ 131 252 40 337 40 430 c 0
+ 40 502 96 559 169 559 c 0
+ 255 559 346 474 346 382 c 0
+267 430 m 0
+ 267 443 263 461 256 469 c 1
+ 249 475 232 480 217 480 c 0
+ 166 480 119 436 119 382 c 0
+ 119 369 123 351 130 343 c 0
+ 137 336 154 332 169 332 c 0
+ 223 332 267 378 267 430 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: akaradeva
 Encoding: 2309 2309 4043
-Width: 862
+Width: 861
 Flags: HMW
 AnchorPoint: "dev-below" 620 -36 basechar 0
 AnchorPoint: "dev-above" 603 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-904 529 m 0
- 904 519 899 517 892 517 c 2
+903 529 m 4
+ 903 519 898 517 891 517 c 6
  658 517 l 1
  658 -41 l 2
  658 -50 653 -52 646 -52 c 0
@@ -92503,16 +92500,15 @@ SplineSet
  475 517 l 2
  444 517 392 579 392 610 c 0
  392 619 398 622 404 622 c 2
- 821 622 l 2
- 853 622 904 559 904 529 c 0
+ 820 622 l 6
+ 852 622 903 559 903 529 c 4
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_a
 EndChar
 
 StartChar: badeva
 Encoding: 2348 2348 4044
-Width: 622
+Width: 621
 Flags: HMW
 AnchorPoint: "dev-rakaar" 295 167 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
@@ -92526,8 +92522,8 @@ SplineSet
  102 237 103 231 104 226 c 1
  123 218 148 214 171 214 c 0
  188 214 206 216 223 221 c 1
-664 529 m 0
- 664 519 658 517 652 517 c 2
+663 529 m 0
+ 663 519 657 517 651 517 c 2
  418 517 l 1
  418 -41 l 2
  418 -50 412 -52 406 -52 c 0
@@ -92542,8 +92538,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 581 622 l 2
- 612 622 664 559 664 529 c 0
+ 580 622 l 2
+ 611 622 663 559 663 529 c 0
 313 314 m 1
  313 336 l 1
  313 336 312 342 311 345 c 1
@@ -92552,12 +92548,11 @@ SplineSet
  273 245 l 1
  294 260 310 283 313 314 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: cadeva
 Encoding: 2330 2330 4045
-Width: 735
+Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 400 170 basechar 0
 AnchorPoint: "dev-below" 470 -36 basechar 0
@@ -92565,8 +92560,8 @@ AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-777 529 m 0
- 777 519 771 517 765 517 c 2
+776 529 m 4
+ 776 519 770 517 764 517 c 6
  530 517 l 1
  530 -41 l 2
  530 -50 525 -52 519 -52 c 0
@@ -92583,8 +92578,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 694 622 l 2
- 725 622 777 559 777 529 c 0
+ 693 622 l 6
+ 724 622 776 559 776 529 c 4
 426 276 m 1
  426 317 l 1
  369.667 317 313.333 317 257 317 c 1
@@ -92592,21 +92587,20 @@ SplineSet
  221 232 221 230 222 223 c 1
  293 223 363 241 426 276 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: dadeva
 Encoding: 2342 2342 4046
-Width: 589
+Width: 588
 Flags: HMW
 AnchorPoint: "dev-rakaar" 230 160 basechar 0
-AnchorPoint: "dev-below" 360 -6 basechar 0
+AnchorPoint: "dev-below" 360 1 basechar 0
 AnchorPoint: "dev-above" 323 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-631 529 m 0
- 631 519 626 517 620 517 c 2
+630 529 m 0
+ 630 519 625 517 619 517 c 2
  384 517 l 1
  384 369 l 2
  384 360 379 357 372 357 c 0
@@ -92629,23 +92623,22 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 547 622 l 2
- 579 622 631 559 631 529 c 0
+ 546 622 l 2
+ 578 622 630 559 630 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ekaradeva
 Encoding: 2319 2319 4047
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 440 -296 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-697 529 m 0
- 697 519 692 517 685 517 c 2
+696 529 m 0
+ 696 519 691 517 684 517 c 2
  451 517 l 1
  451 233 l 2
  451 172 403 126 344 126 c 0
@@ -92655,7 +92648,7 @@ SplineSet
  346 517 l 1
  151 517 l 1
  151 152 l 1
- 470 -91 l 1
+ 470 -91 l 2
  502 -117 548 -166 548 -216 c 0
  548 -258 517 -294 473 -294 c 0
  411 -294 361 -223 361 -198 c 0
@@ -92668,15 +92661,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 614 622 l 2
- 645 622 697 559 697 529 c 0
+ 613 622 l 2
+ 644 622 696 559 696 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: gadeva
 Encoding: 2327 2327 4048
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 400 190 basechar 0
 AnchorPoint: "dev-below" 430 -36 basechar 0
@@ -92685,8 +92677,8 @@ AnchorPoint: "dev-above" 435 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 0
+ 736 519 730 517 724 517 c 2
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -92704,15 +92696,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 2
+ 684 622 736 559 736 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: hadeva
 Encoding: 2361 2361 4049
-Width: 609
+Width: 608
 Flags: HMW
 AnchorPoint: "dev-rakaar" 380 150 basechar 0
 AnchorPoint: "dev-below" 313 -194 basechar 0
@@ -92720,8 +92711,8 @@ AnchorPoint: "dev-above" 343 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-651 529 m 0
- 651 519 646 517 639 517 c 2
+650 529 m 0
+ 650 519 645 517 638 517 c 2
  403 517 l 1
  403 386 l 2
  403 377 398 374 391 374 c 0
@@ -92753,15 +92744,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 568 622 l 2
- 600 622 651 559 651 529 c 0
+ 567 622 l 2
+ 599 622 650 559 650 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: yadeva
 Encoding: 2351 2351 4050
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 360 170 basechar 0
 AnchorPoint: "dev-below" 430 -36 basechar 0
@@ -92769,8 +92759,8 @@ AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 4
+ 736 519 730 517 724 517 c 6
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -92785,8 +92775,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 6
+ 684 622 736 559 736 529 c 4
 386 357 m 1
  386 517 l 1
  213 517 l 1
@@ -92796,22 +92786,21 @@ SplineSet
  159 227 180 222 203 222 c 0
  293 222 358 283 386 357 c 1
 EndSplineSet
-Validated: 3073
 Substitution2: "subst openya for ya in Devanagari-1" openya
 LCarets2: 1 0 
 EndChar
 
 StartChar: radeva
 Encoding: 2352 2352 4051
-Width: 495
+Width: 494
 Flags: HMW
 AnchorPoint: "dev-below" 200 -36 basechar 0
 AnchorPoint: "dev-above" 213 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-537 529 m 0
- 537 519 532 517 525 517 c 2
+536 529 m 4
+ 536 519 531 517 524 517 c 6
  274 517 l 1
  277 494 278 471 278 448 c 0
  278 365 256 249 172 233 c 1
@@ -92826,15 +92815,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 454 622 l 2
- 486 622 537 559 537 529 c 0
+ 453 622 l 6
+ 485 622 536 559 536 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: bhadeva
 Encoding: 2349 2349 4052
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 390 180 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
@@ -92842,8 +92830,8 @@ AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 0
+ 736 519 730 517 724 517 c 2
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -92870,15 +92858,14 @@ SplineSet
  359 517 l 2
  328 517 276 579 276 610 c 0
  276 619 281 622 288 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 2
+ 684 622 736 559 736 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: chadeva
 Encoding: 2331 2331 4053
-Width: 888
+Width: 887
 Flags: HMW
 AnchorPoint: "dev-rakaar" 350 -10 basechar 0
 AnchorPoint: "dev-below" 520 -116 basechar 0
@@ -92886,8 +92873,8 @@ AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-930 529 m 0
- 930 519 925 517 918 517 c 2
+929 529 m 0
+ 929 519 924 517 917 517 c 2
  590 517 l 1
  590 432 l 1
  636 402 704 336 704 239 c 0
@@ -92924,8 +92911,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 847 622 l 2
- 879 622 930 559 930 529 c 0
+ 846 622 l 2
+ 878 622 929 559 929 529 c 0
 600 321 m 0
  600 334 598 346 595 356 c 1
  590 357 585 357 578 357 c 0
@@ -92934,13 +92921,12 @@ SplineSet
  507 231 524 228 566 208 c 1
  586 241 600 281 600 321 c 0
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_cha
 EndChar
 
 StartChar: ttadeva
 Encoding: 2335 2335 4054
-Width: 629
+Width: 628
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 40 basechar 0
 AnchorPoint: "dev-below" 310 -6 basechar 0
@@ -92948,8 +92934,8 @@ AnchorPoint: "dev-above" 323 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-671 529 m 0
- 671 519 666 517 659 517 c 2
+670 529 m 4
+ 670 519 665 517 658 517 c 6
  373 517 l 1
  373 335 l 2
  373 326 368 323 362 323 c 0
@@ -92967,15 +92953,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 588 622 l 2
- 620 622 671 559 671 529 c 0
+ 587 622 l 6
+ 619 622 670 559 670 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: tthadeva
 Encoding: 2336 2336 4055
-Width: 629
+Width: 628
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 40 basechar 0
 AnchorPoint: "dev-below" 280 -6 basechar 0
@@ -92992,8 +92977,8 @@ SplineSet
  102 157 104 145 109 134 c 1
  133 119 174 109 211 109 c 0
  298 109 406 156 406 251 c 0
-671 529 m 0
- 671 519 666 517 659 517 c 2
+670 529 m 0
+ 670 519 665 517 658 517 c 2
  396 517 l 1
  396 335 l 2
  396 332 395 329 394 328 c 1
@@ -93007,15 +92992,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 588 622 l 2
- 620 622 671 559 671 529 c 0
+ 587 622 l 2
+ 619 622 670 559 670 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ddadeva
 Encoding: 2337 2337 4056
-Width: 674
+Width: 652
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 60 basechar 0
 AnchorPoint: "dev-below" 300 14 basechar 0
@@ -93023,8 +93007,8 @@ AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-716 529 m 0
- 716 519 711 517 704 517 c 2
+697 529 m 4
+ 697 519 692 517 685 517 c 6
  457 517 l 1
  457 381 l 2
  457 371 451 369 445 369 c 0
@@ -93050,15 +93034,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 633 622 l 2
- 665 622 716 559 716 529 c 0
+ 614 622 l 6
+ 646 622 697 559 697 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ddhadeva
 Encoding: 2338 2338 4057
-Width: 609
+Width: 608
 Flags: HMW
 AnchorPoint: "dev-rakaar" 330 40 basechar 0
 AnchorPoint: "dev-below" 320 -16 basechar 0
@@ -93066,8 +93049,8 @@ AnchorPoint: "dev-above" 373 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-651 529 m 0
- 651 519 646 517 639 517 c 2
+650 529 m 4
+ 650 519 645 517 638 517 c 6
  425 517 l 1
  425 369 l 2
  425 360 420 357 413 357 c 2
@@ -93088,18 +93071,17 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 568 622 l 2
- 600 622 651 559 651 529 c 0
+ 567 622 l 6
+ 599 622 650 559 650 529 c 4
 386 174 m 1
  339.5 165 308.5 145.5 290 104 c 1
  347 106.5 386 127.967 386 174 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: nnadeva
 Encoding: 2339 2339 4058
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 402 140 basechar 0
 AnchorPoint: "dev-below" 443 -36 basechar 0
@@ -93107,8 +93089,8 @@ AnchorPoint: "dev-above" 436 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 4
+ 736 519 730 517 724 517 c 6
  494 517 l 1
  494 -41 l 2
  494 -50 488 -52 482 -52 c 0
@@ -93122,8 +93104,8 @@ SplineSet
  0 536 l 1
  -16 549 -42 586 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 6
+ 684 622 736 559 736 529 c 4
 209 354 m 2
  209 517 l 1
  105 517 l 1
@@ -93132,13 +93114,12 @@ SplineSet
  117 223 l 2
  180 223 209 298 209 354 c 2
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_nna
 EndChar
 
 StartChar: phadeva
 Encoding: 2347 2347 4059
-Width: 789
+Width: 788
 Flags: HMW
 AnchorPoint: "dev-rakaar" 319 220 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
@@ -93147,8 +93128,8 @@ AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-831 529 m 0
- 831 519 825 517 819 517 c 2
+830 529 m 4
+ 830 519 824 517 818 517 c 6
  411 517 l 1
  411 442 l 1
  425 446 440 448 454 448 c 0
@@ -93170,8 +93151,8 @@ SplineSet
  71 304 33 408 32 518 c 1
  2 527 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 748 622 l 2
- 779 622 831 559 831 529 c 0
+ 747 622 l 6
+ 778 622 830 559 830 529 c 4
 306 345 m 1
  306 517 l 1
  148 517 l 1
@@ -93180,12 +93161,11 @@ SplineSet
  176 280 183 280 191 280 c 0
  242 280 292 308 306 345 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: sadeva
 Encoding: 2360 2360 4060
-Width: 735
+Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 450 240 basechar 0
 AnchorPoint: "dev-below" 480 -36 basechar 0
@@ -93193,8 +93173,8 @@ AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-777 529 m 0
- 777 519 771 517 765 517 c 2
+776 529 m 0
+ 776 519 770 517 764 517 c 2
  530 517 l 1
  530 -41 l 2
  530 -50 525 -52 519 -52 c 0
@@ -93213,8 +93193,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 694 622 l 2
- 725 622 777 559 777 529 c 0
+ 693 622 l 2
+ 724 622 776 559 776 529 c 0
 426 388 m 1
  426 517 l 1
  223 517 l 1
@@ -93223,12 +93203,11 @@ SplineSet
  232 349 250 348 269 348 c 0
  322 348 376 361 426 388 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: tadeva
 Encoding: 2340 2340 4061
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-rakaar" 380 280 basechar 0
 AnchorPoint: "dev-below" 390 -36 basechar 0
@@ -93236,8 +93215,8 @@ AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-697 529 m 0
- 697 519 692 517 685 517 c 2
+696 529 m 4
+ 696 519 691 517 684 517 c 6
  451 517 l 1
  451 -41 l 2
  451 -50 446 -52 439 -52 c 0
@@ -93257,10 +93236,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 614 622 l 2
- 645 622 697 559 697 529 c 0
+ 613 622 l 6
+ 644 622 696 559 696 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ukaradeva
@@ -93305,7 +93283,7 @@ EndChar
 
 StartChar: vadeva
 Encoding: 2357 2357 4063
-Width: 622
+Width: 621
 Flags: HMW
 AnchorPoint: "dev-rakaar" 310 150 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
@@ -93313,8 +93291,8 @@ AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-664 529 m 0
- 664 519 658 517 652 517 c 2
+663 529 m 4
+ 663 519 657 517 651 517 c 6
  418 517 l 1
  418 -41 l 2
  418 -50 412 -52 406 -52 c 0
@@ -93329,8 +93307,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 581 622 l 2
- 612 622 664 559 664 529 c 0
+ 580 622 l 6
+ 611 622 663 559 663 529 c 4
 313 314 m 1
  313 336 l 1
  313 336 312 342 311 345 c 1
@@ -93340,12 +93318,11 @@ SplineSet
  123 218 148 214 171 214 c 0
  240 214 307 248 313 314 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: thadeva
 Encoding: 2341 2341 4064
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 360 167 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
@@ -93361,8 +93338,8 @@ SplineSet
  98 445 100 445 102 445 c 0
  116 445 132 448 151 453 c 1
  155 467 158 481 158 494 c 0
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 4
+ 736 519 730 517 724 517 c 6
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -93384,15 +93361,14 @@ SplineSet
  359 517 l 2
  328 517 276 579 276 610 c 0
  276 619 281 622 288 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 6
+ 684 622 736 559 736 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ngadeva
 Encoding: 2329 2329 4065
-Width: 773
+Width: 730
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 80 basechar 0
 AnchorPoint: "dev-below" 300 14 basechar 0
@@ -93400,8 +93376,8 @@ AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-815 529 m 0
- 815 519 810 517 803 517 c 2
+775 529 m 0
+ 775 519 770 517 763 517 c 2
  457 517 l 1
  457 381 l 2
  457 371 451 369 445 369 c 0
@@ -93427,20 +93403,19 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 732 622 l 2
- 764 622 815 559 815 529 c 0
+ 692 622 l 2
+ 724 622 775 559 775 529 c 0
 673 334 m 1
  601 263 l 1
  530 334 l 1
  601 406 l 1
  673 334 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: khadeva
 Encoding: 2326 2326 4066
-Width: 798
+Width: 797
 Flags: HMW
 AnchorPoint: "dev-rakaar" 520 225 basechar 0
 AnchorPoint: "dev-below" 540 -36 basechar 0
@@ -93449,8 +93424,8 @@ AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-840 529 m 0
- 840 519 835 517 828 517 c 2
+839 529 m 4
+ 839 519 834 517 827 517 c 6
  594 517 l 1
  594 -41 l 2
  594 -50 589 -52 582 -52 c 0
@@ -93475,8 +93450,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 757 622 l 2
- 789 622 840 559 840 529 c 0
+ 756 622 l 6
+ 788 622 839 559 839 529 c 4
 489 299 m 1
  489 337 l 1
  481 338 471 339 460 339 c 0
@@ -93485,12 +93460,11 @@ SplineSet
  343 233 361 230 379 230 c 0
  432 230 479 255 489 299 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ghadeva
 Encoding: 2328 2328 4067
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 350 190 basechar 0
 AnchorPoint: "dev-below" 430 -36 basechar 0
@@ -93498,8 +93472,8 @@ AnchorPoint: "dev-above" 443 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 4
+ 736 519 730 517 724 517 c 6
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -93511,8 +93485,8 @@ SplineSet
  42 429 -3 478 -3 538 c 1
  -19 551 -42 586 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 6
+ 684 622 736 559 736 529 c 4
 386 331 m 1
  386 517 l 1
  154 517 l 2
@@ -93527,12 +93501,11 @@ SplineSet
  142 232 155 230 169 230 c 0
  254 230 334 280 386 331 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: dhadeva
 Encoding: 2343 2343 4068
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 320 190 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
@@ -93540,8 +93513,8 @@ AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 4
+ 736 519 730 517 724 517 c 6
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -93568,22 +93541,21 @@ SplineSet
  359 517 l 2
  328 517 276 579 276 610 c 0
  276 619 281 622 288 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 6
+ 684 622 736 559 736 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: aasigndeva
 Encoding: 2366 2366 4069
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 83 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-384 529 m 0
- 384 519 379 517 372 517 c 2
+383 529 m 4
+ 383 519 378 517 371 517 c 6
  138 517 l 1
  138 -41 l 2
  138 -50 133 -52 126 -52 c 0
@@ -93591,15 +93563,14 @@ SplineSet
  33 518 l 1
  7 524 -42 576 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 301 622 l 2
- 332 622 384 559 384 529 c 0
+ 300 622 l 6
+ 331 622 383 559 383 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: nyadeva
 Encoding: 2334 2334 4070
-Width: 735
+Width: 734
 Flags: HMW
 AnchorPoint: "dev-rakaar" 420 114 basechar 0
 AnchorPoint: "dev-below" 470 -36 basechar 0
@@ -93607,8 +93578,8 @@ AnchorPoint: "dev-above" 473 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-777 529 m 0
- 777 519 771 517 765 517 c 2
+776 529 m 4
+ 776 519 770 517 764 517 c 6
  530 517 l 1
  530 -41 l 2
  530 -50 525 -52 519 -52 c 0
@@ -93636,23 +93607,22 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 694 622 l 2
- 725 622 777 559 777 529 c 0
+ 693 622 l 6
+ 724 622 776 559 776 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: rvocalicdeva
 Encoding: 2315 2315 4071
-Width: 968
+Width: 967
 Flags: HMW
 AnchorPoint: "dev-below" 410 -36 basechar 0
 AnchorPoint: "dev-above" 393 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1010 529 m 0
- 1010 519 1005 517 998 517 c 2
+1009 529 m 0
+ 1009 519 1004 517 997 517 c 2
  451 517 l 1
  451 356 l 1
  594 386 l 1
@@ -93693,10 +93663,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 927 622 l 2
- 958 622 1010 559 1010 529 c 0
+ 926 622 l 2
+ 957 622 1009 559 1009 529 c 0
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_r_vocalic
 EndChar
 
@@ -93752,7 +93721,7 @@ EndChar
 
 StartChar: lladeva
 Encoding: 2355 2355 4073
-Width: 848
+Width: 847
 Flags: HMW
 AnchorPoint: "dev-rakaar" 519 40 basechar 0
 AnchorPoint: "dev-below" 520 -26 basechar 0
@@ -93772,8 +93741,8 @@ SplineSet
  457 306 404 186 376 130 c 1
  398 114 430 102 467 102 c 0
  548 102 625 162 625 244 c 0
-890 529 m 0
- 890 519 885 517 878 517 c 2
+889 529 m 0
+ 889 519 884 517 877 517 c 2
  560 517 l 1
  560 390 l 1
  629 359 730 268 730 163 c 0
@@ -93789,10 +93758,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 807 622 l 2
- 839 622 890 559 890 529 c 0
+ 806 622 l 2
+ 838 622 889 559 889 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: uukaradeva
@@ -93845,14 +93813,14 @@ EndChar
 
 StartChar: iikaradeva
 Encoding: 2312 2312 4075
-Width: 575
+Width: 553
 Flags: HMW
 AnchorPoint: "dev-below" 380 -136 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-617 529 m 0
- 617 519 611 517 605 517 c 2
+595 529 m 4
+ 595 519 589 517 583 517 c 6
  357 517 l 1
  357 381 l 2
  357 371 352 369 345 369 c 0
@@ -93890,22 +93858,21 @@ SplineSet
  390 804 344 816 288 816 c 0
  267 816 247 798 247 767 c 0
  247 703.93 284 674 328.444 622 c 1
- 534 622 l 2
- 565 622 617 559 617 529 c 0
+ 512 622 l 6
+ 543 622 595 559 595 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: avagrahadeva
 Encoding: 2365 2365 4076
-Width: 570
+Width: 569
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-612 529 m 0
- 612 519 606 517 600 517 c 0
- 557 517 518 519 469 519 c 0
+611 529 m 4
+ 611 519 605 517 599 517 c 4
+ 556 517 518 519 469 519 c 0
  332 519 226 500 226 420 c 0
  226 404 230 388 234 383 c 0
  270 347 412 291 468 173 c 0
@@ -93923,10 +93890,9 @@ SplineSet
  336 256 194 312 138 430 c 0
  132 443 121 468 121 501 c 0
  121 599 230 624 388 624 c 0
- 438 624 488 622 529 622 c 0
- 568 622 612 550 612 529 c 0
+ 438 624 487 622 528 622 c 4
+ 567 622 611 550 611 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: virama
@@ -93969,14 +93935,14 @@ EndChar
 
 StartChar: ausigndeva
 Encoding: 2380 2380 4079
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 203 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-384 529 m 0
- 384 519 379 517 372 517 c 2
+383 529 m 4
+ 383 519 378 517 371 517 c 6
  138 517 l 1
  138 -41 l 2
  138 -50 133 -52 126 -52 c 0
@@ -93996,22 +93962,21 @@ SplineSet
  -162 796 -224 858 -224 889 c 0
  -224 898 -218 900 -212 900 c 0
  -50.7641 900 82.2548 747.992 132.347 622 c 1
- 301 622 l 2
- 332 622 384 559 384 529 c 0
+ 300 622 l 6
+ 331 622 383 559 383 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: iisigndeva
 Encoding: 2368 2368 4080
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 160 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-384 529 m 0
- 384 519 379 517 372 517 c 2
+383 529 m 0
+ 383 519 378 517 371 517 c 2
  138 517 l 1
  138 -41 l 2
  138 -50 133 -52 126 -52 c 0
@@ -94026,15 +93991,14 @@ SplineSet
  -346 659 -407 722 -407 752 c 0
  -407 784 -352 888 -218 888 c 0
  -52.8226 888 53.6357 734.816 104 622 c 1
- 301 622 l 2
- 332 622 384 559 384 529 c 0
+ 300 622 l 2
+ 331 622 383 559 383 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: isigndeva
 Encoding: 2367 2367 4081
-Width: 342
+Width: 341
 Flags: HMW
 LayerCount: 2
 Fore
@@ -94044,9 +94008,9 @@ SplineSet
  508 716 386 795 249 795 c 0
  202 795 138 773 138 722 c 2
  138 622 l 1
- 301 622 l 2
- 332 622 384 559 384 529 c 0
- 384 519 379 517 372 517 c 2
+ 300 622 l 6
+ 331 622 383 559 383 529 c 4
+ 383 519 378 517 371 517 c 6
  138 517 l 1
  138 -41 l 2
  138 -50 133 -52 126 -52 c 0
@@ -94060,12 +94024,11 @@ SplineSet
  277 900 381 858 473 815 c 0
  499 803 548 757 548 728 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: shadeva
 Encoding: 2358 2358 4082
-Width: 788
+Width: 787
 Flags: HMW
 AnchorPoint: "dev-rakaar" 560 220 basechar 0
 AnchorPoint: "dev-below" 530 -36 basechar 0
@@ -94073,8 +94036,8 @@ AnchorPoint: "dev-above" 533 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-830 529 m 0
- 830 519 824 517 818 517 c 2
+829 529 m 0
+ 829 519 823 517 817 517 c 2
  584 517 l 1
  584 -41 l 2
  584 -50 578 -52 572 -52 c 0
@@ -94097,8 +94060,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 747 622 l 2
- 778 622 830 559 830 529 c 0
+ 746 622 l 2
+ 777 622 829 559 829 529 c 0
 310 445 m 0
  310 474 305 498 298 515 c 1
  293 516 287 517 280 517 c 0
@@ -94108,21 +94071,20 @@ SplineSet
  289 345 l 1
  304 378 310 413 310 445 c 0
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss02' style set 2 in Devanagari of Bombay" dev_bby_sha
 EndChar
 
 StartChar: ikaradeva
 Encoding: 2311 2311 4083
-Width: 575
+Width: 552
 Flags: HMW
 AnchorPoint: "dev-below" 380 -136 basechar 0
 AnchorPoint: "dev-above" 313 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-607 529 m 0
- 607 519 601 517 595 517 c 2
+594 529 m 4
+ 594 519 588 517 582 517 c 6
  357 517 l 1
  357 381 l 2
  357 371 352 369 345 369 c 0
@@ -94151,15 +94113,14 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 524 622 l 2
- 555 622 607 559 607 529 c 0
+ 511 622 l 6
+ 542 622 594 559 594 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: jadeva
 Encoding: 2332 2332 4084
-Width: 814
+Width: 813
 Flags: HMW
 AnchorPoint: "dev-rakaar" 500 70 basechar 0
 AnchorPoint: "dev-below" 550 -36 basechar 0
@@ -94196,12 +94157,11 @@ SplineSet
  773 622 l 2
  805 622 856 559 856 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: kadeva
 Encoding: 2325 2325 4085
-Width: 744
+Width: 743
 Flags: HMW
 AnchorPoint: "dev-rakaar" 260 190 basechar 0
 AnchorPoint: "dev-below" 330 -36 basechar 0
@@ -94210,8 +94170,8 @@ AnchorPoint: "dev-above" 313 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-786 529 m 0
- 786 519 781 517 774 517 c 2
+785 529 m 0
+ 785 519 780 517 773 517 c 2
  367 517 l 1
  367 415 l 1
  381 419 394 420 408 420 c 0
@@ -94236,8 +94196,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 703 622 l 2
- 734 622 786 559 786 529 c 0
+ 702 622 l 2
+ 733 622 785 559 785 529 c 0
 262 300 m 1
  262 337 l 1
  255 337 l 2
@@ -94246,12 +94206,11 @@ SplineSet
  112 221 124 219 136 219 c 0
  196 219 255 249 262 300 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ladeva
 Encoding: 2354 2354 4086
-Width: 788
+Width: 787
 Flags: HMW
 AnchorPoint: "dev-rakaar" 513 56 basechar 0
 AnchorPoint: "dev-below" 530 -36 basechar 0
@@ -94259,8 +94218,8 @@ AnchorPoint: "dev-above" 533 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-830 529 m 0
- 830 519 824 517 818 517 c 2
+829 529 m 4
+ 829 519 823 517 817 517 c 6
  584 517 l 1
  584 -41 l 2
  584 -50 578 -52 572 -52 c 0
@@ -94285,16 +94244,15 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 747 622 l 2
- 778 622 830 559 830 529 c 0
+ 746 622 l 6
+ 777 622 829 559 829 529 c 4
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss02' style set 2 in Devanagari of Bombay" dev_bby_la
 EndChar
 
 StartChar: madeva
 Encoding: 2350 2350 4087
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 390 190 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
@@ -94302,8 +94260,8 @@ AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 0
+ 736 519 730 517 724 517 c 2
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -94311,30 +94269,27 @@ SplineSet
  386 245 l 1
  201 245 l 1
  201 159 l 2
- 201 154 199 151 196 148 c 0
- 183 136 163 126 139 126 c 0
+ 201 137.877 160.925 126 139 126 c 0
  71 126 -24 218 -24 289 c 0
- -24 310 -16 330 -1 346 c 0
- 2 349 4 350 9 350 c 2
+ -24 305.227 -14.0808 350 9 350 c 2
  96 350 l 1
  96 517 l 1
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 2
+ 684 622 736 559 736 529 c 0
 386 350 m 1
  386 517 l 1
  201 517 l 1
  201 350 l 1
  386 350 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: nadeva
 Encoding: 2344 2344 4088
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-rakaar" 359 140 basechar 0
 AnchorPoint: "dev-below" 400 -36 basechar 0
@@ -94342,8 +94297,8 @@ AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-697 529 m 0
- 697 519 692 517 685 517 c 2
+696 529 m 0
+ 696 519 691 517 684 517 c 2
  451 517 l 1
  451 -41 l 2
  451 -50 446 -52 439 -52 c 0
@@ -94359,22 +94314,21 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 614 622 l 2
- 645 622 697 559 697 529 c 0
+ 613 622 l 2
+ 644 622 696 559 696 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: osigndeva
 Encoding: 2379 2379 4089
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 150 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-384 529 m 0
- 384 519 379 517 372 517 c 2
+383 529 m 4
+ 383 519 378 517 371 517 c 6
  138 517 l 1
  138 -41 l 2
  138 -50 133 -52 126 -52 c 0
@@ -94387,15 +94341,14 @@ SplineSet
  -264 795 -323 858 -326 888 c 1
  -326 898 -320 900 -314 900 c 0
  -122 900 29 746 98 622 c 1
- 301 622 l 2
- 332 622 384 559 384 529 c 0
+ 300 622 l 6
+ 331 622 383 559 383 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: padeva
 Encoding: 2346 2346 4090
-Width: 615
+Width: 614
 Flags: HMW
 AnchorPoint: "dev-rakaar" 319 200 basechar 0
 AnchorPoint: "dev-below" 350 -36 basechar 0
@@ -94403,8 +94356,8 @@ AnchorPoint: "dev-above" 353 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-657 529 m 0
- 657 519 652 517 645 517 c 2
+656 529 m 0
+ 656 519 651 517 644 517 c 2
  411 517 l 1
  411 -41 l 2
  411 -50 406 -52 399 -52 c 0
@@ -94415,8 +94368,8 @@ SplineSet
  71 304 33 408 32 518 c 1
  2 527 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 574 622 l 2
- 606 622 657 559 657 529 c 0
+ 573 622 l 2
+ 605 622 656 559 656 529 c 0
 306 345 m 1
  306 517 l 1
  148 517 l 1
@@ -94425,12 +94378,11 @@ SplineSet
  176 280 183 280 191 280 c 0
  242 280 292 308 306 345 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ssadeva
 Encoding: 2359 2359 4091
-Width: 615
+Width: 614
 Flags: HMW
 AnchorPoint: "dev-rakaar" 319 200 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
@@ -94443,8 +94395,8 @@ SplineSet
  139 388 148 328 169 282 c 1
  176 280 183 280 191 280 c 0
  218 280 243 288 263 299 c 1
-657 529 m 0
- 657 519 652 517 645 517 c 2
+656 529 m 4
+ 656 519 651 517 644 517 c 6
  411 517 l 1
  411 -41 l 2
  411 -50 406 -52 399 -52 c 0
@@ -94455,19 +94407,18 @@ SplineSet
  71 304 33 408 32 518 c 1
  2 527 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 574 622 l 2
- 606 622 657 559 657 529 c 0
+ 573 622 l 6
+ 605 622 656 559 656 529 c 4
 306 357 m 1
  306 517 l 1
  151 517 l 1
  306 357 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: dddhadeva
 Encoding: 2396 2396 4092
-Width: 674
+Width: 652
 Flags: HMW
 AnchorPoint: "dev-rakaar" 290 90 basechar 0
 AnchorPoint: "dev-below" 297 -171 basechar 0
@@ -94476,14 +94427,13 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 425 -130 2
 Refer: 4056 2337 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'nukt' nukta forms in Devanagari-1" ddadeva nuktadeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: rhadeva
 Encoding: 2397 2397 4093
-Width: 609
+Width: 608
 Flags: HMW
 AnchorPoint: "dev-rakaar" 280 60 basechar 0
 AnchorPoint: "dev-below" 307 -211 basechar 0
@@ -94492,14 +94442,13 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 425 -174 2
 Refer: 4057 2338 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'nukt' nukta forms in Devanagari-1" ddhadeva nuktadeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: jhadeva
 Encoding: 2333 2333 4094
-Width: 834
+Width: 833
 Flags: HMW
 AnchorPoint: "dev-rakaar" 600 150 basechar 0
 AnchorPoint: "dev-below" 590 -60 basechar 0
@@ -94517,8 +94466,8 @@ SplineSet
  143 326 186 332 224 332 c 0
  260 332 286 326 311 311 c 1
  384 313 456 327 525 353 c 1
-876 529 m 0
- 876 519 871 517 864 517 c 2
+875 529 m 4
+ 875 519 870 517 863 517 c 6
  630 517 l 1
  630 -41 l 2
  630 -50 625 -52 618 -52 c 0
@@ -94546,24 +94495,23 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 793 622 l 2
- 825 622 876 559 876 529 c 0
+ 792 622 l 6
+ 824 622 875 559 875 529 c 4
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss04' style set 4 in Devanagari of Nepali" dev_npl_jha
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_jha
 EndChar
 
 StartChar: rrvocalicdeva
 Encoding: 2400 2400 4095
-Width: 968
+Width: 967
 Flags: HMW
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1010 529 m 0
- 1010 519 1005 517 998 517 c 2
+1009 529 m 0
+ 1009 519 1004 517 997 517 c 2
  451 517 l 1
  451 356 l 1
  594 386 l 1
@@ -94612,10 +94560,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 927 622 l 2
- 958 622 1010 559 1010 529 c 0
+ 926 622 l 2
+ 957 622 1009 559 1009 529 c 0
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_rr_vocalic
 EndChar
 
@@ -94723,14 +94670,14 @@ EndChar
 
 StartChar: llvocalicdeva
 Encoding: 2401 2401 4099
-Width: 828
+Width: 827
 Flags: HMW
 AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-870 529 m 0
- 870 519 865 517 859 517 c 2
+869 529 m 4
+ 869 519 864 517 858 517 c 6
  584 517 l 1
  584 401 l 1
  641 361 710 284 710 187 c 0
@@ -94774,16 +94721,15 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 787 622 l 2
- 819 622 870 559 870 529 c 0
+ 786 622 l 6
+ 818 622 869 559 869 529 c 4
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_ll_vocalic
 EndChar
 
 StartChar: qadeva
 Encoding: 2392 2392 4100
-Width: 744
+Width: 743
 Flags: HMW
 AnchorPoint: "dev-rakaar" 170 175 basechar 0
 AnchorPoint: "dev-below" 320 -36 basechar 0
@@ -94792,14 +94738,13 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 265 -50 2
 Refer: 4085 2325 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'nukt' nukta forms in Devanagari-1" kadeva nuktadeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: khhadeva
 Encoding: 2393 2393 4101
-Width: 798
+Width: 797
 Flags: HMW
 AnchorPoint: "dev-rakaar" 460 200 basechar 0
 AnchorPoint: "dev-below" 540 -36 basechar 0
@@ -94819,8 +94764,8 @@ SplineSet
  329 238 l 1
  343 233 361 230 379 230 c 0
  432 230 479 255 489 299 c 1
-840 529 m 0
- 840 519 835 517 828 517 c 2
+839 529 m 4
+ 839 519 834 517 827 517 c 6
  594 517 l 1
  594 -41 l 2
  594 -50 589 -52 582 -52 c 0
@@ -94845,17 +94790,16 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 757 622 l 2
- 789 622 840 559 840 529 c 0
+ 756 622 l 6
+ 788 622 839 559 839 529 c 4
 EndSplineSet
-Validated: 3073
 Ligature2: "'nukt' nukta forms in Devanagari-1" khadeva nuktadeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: ghhadeva
 Encoding: 2394 2394 4102
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 470 300 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
@@ -94864,14 +94808,13 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 S 1 0 0 1 385 -40 2
 Refer: 4048 2327 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'nukt' nukta forms in Devanagari-1" gadeva nuktadeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: zadeva
 Encoding: 2395 2395 4103
-Width: 864
+Width: 861
 Flags: HMW
 AnchorPoint: "dev-rakaar" 630 310 basechar 0
 AnchorPoint: "dev-below" 560 -36 basechar 0
@@ -94884,8 +94827,8 @@ SplineSet
  434.5 -39 414.667 -17.334 395 9 c 1
  413.56 34.877 436.131 58.4541 464 79 c 1
  491.228 58.873 513.979 35.7578 533 9 c 1
-906 529 m 0
- 906 519 901 517 894 517 c 2
+905 529 m 0
+ 905 519 900 517 893 517 c 2
  660 517 l 1
  660 -41 l 2
  660 -50 655 -52 648 -52 c 0
@@ -94909,17 +94852,16 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 823 622 l 2
- 855 622 906 559 906 529 c 0
+ 822 622 l 2
+ 854 622 905 559 905 529 c 0
 EndSplineSet
-Validated: 3073
 Ligature2: "'nukt' nukta forms in Devanagari-1" jadeva nuktadeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: fadeva
 Encoding: 2398 2398 4104
-Width: 789
+Width: 788
 Flags: HMW
 AnchorPoint: "dev-rakaar" 220 230 basechar 0
 AnchorPoint: "dev-below" 360 -36 basechar 0
@@ -94928,7 +94870,6 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 S 1 0 0 1 303 -31 2
 Refer: 4059 2347 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'nukt' nukta forms in Devanagari-1" phadeva nuktadeva
 LCarets2: 1 0 
 EndChar
@@ -95015,19 +94956,18 @@ EndChar
 
 StartChar: ecandradeva
 Encoding: 2317 2317 4107
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 440 -296 basechar 0
 LayerCount: 2
 Fore
 Refer: 4040 2373 N 1 0 0 1 530 0 2
 Refer: 4047 2319 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: eshortdeva
 Encoding: 2318 2318 4108
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 440 -296 basechar 0
 AnchorPoint: "dev-above" 503 610 basechar 0
@@ -95035,20 +94975,19 @@ LayerCount: 2
 Fore
 Refer: 4105 2374 N 1 0 0 1 540 0 2
 Refer: 4047 2319 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: aikaradeva
 Encoding: 2320 2320 4109
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 440 -296 basechar 0
 AnchorPoint: "dev-above" 500 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-697 529 m 0
- 697 519 692 517 685 517 c 2
+696 529 m 0
+ 696 519 691 517 684 517 c 2
  451 517 l 1
  451 233 l 2
  451 172 403 126 344 126 c 0
@@ -95079,10 +95018,9 @@ SplineSet
  -42 898 -37 900 -31 900 c 0
  142 900 294 788 396 669 c 0
  406 658 420 638 421 622 c 1
- 614 622 l 2
- 645 622 697 559 697 529 c 0
+ 613 622 l 2
+ 644 622 696 559 696 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ocandradeva
@@ -95111,15 +95049,15 @@ EndChar
 
 StartChar: okaradeva
 Encoding: 2323 2323 4112
-Width: 1092
+Width: 1070
 Flags: HMW
 AnchorPoint: "dev-below" 850 -36 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1134 529 m 0
- 1134 519 1129 517 1122 517 c 2
- 1122 517 969 517 888 517 c 1
+1113 529 m 0
+ 1113 519 1108 517 1101 517 c 2
+ 1101 517 969 517 888 517 c 1
  888 -41 l 2
  888 -50 883 -52 876 -52 c 0
  844 -52 783 10 783 41 c 2
@@ -95169,23 +95107,22 @@ SplineSet
  398 898 403 900 409 900 c 0
  582 900 734 788 836 669 c 0
  846 658 860 638 861 622 c 1
- 1051 622 l 2
- 1082 622 1134 559 1134 529 c 0
+ 1030 622 l 2
+ 1061 622 1113 559 1113 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: aukaradeva
 Encoding: 2324 2324 4113
-Width: 1092
+Width: 1070
 Flags: HMW
 AnchorPoint: "dev-below" 850 -36 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1134 529 m 0
- 1134 519 1129 517 1122 517 c 2
- 1122 517 969 517 888 517 c 1
+1112 529 m 0
+ 1112 519 1107 517 1100 517 c 2
+ 1100 517 969 517 888 517 c 1
  888 -41 l 2
  888 -50 883 -52 876 -52 c 0
  844 -52 783 10 783 41 c 2
@@ -95239,51 +95176,47 @@ SplineSet
  578 796 516 858 516 889 c 0
  516 898 522 900 528 900 c 0
  689.236 900 822.255 747.992 872.347 622 c 1
- 1051 622 l 2
- 1082 622 1134 559 1134 529 c 0
+ 1029 622 l 2
+ 1060 622 1112 559 1112 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: acandradeva
 Encoding: 2418 2418 4114
-Width: 862
+Width: 861
 Flags: HMW
 AnchorPoint: "dev-below" 600 -36 basechar 0
 LayerCount: 2
 Fore
 Refer: 4040 2373 N 1 0 0 1 740 0 2
 Refer: 4043 2309 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ocandrasigndeva
 Encoding: 2377 2377 4115
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 303 610 basechar 0
 LayerCount: 2
 Fore
 Refer: 4040 2373 N 1 0 0 1 230 0 2
 Refer: 4069 2366 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: oshortsigndeva
 Encoding: 2378 2378 4116
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 233 610 basechar 0
 LayerCount: 2
 Fore
 Refer: 4105 2374 N 1 0 0 1 230 0 2
 Refer: 4069 2366 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: nnnadeva
 Encoding: 2345 2345 4117
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-below" 400 -36 basechar 0
 AnchorPoint: "dev-above" 403 610 basechar 0
@@ -95291,12 +95224,11 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 300 0 2
 Refer: 4088 2344 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: rradeva
 Encoding: 2353 2353 4118
-Width: 495
+Width: 494
 Flags: HMW
 AnchorPoint: "dev-below" 320 -30 basechar 0
 AnchorPoint: "dev-above" 213 610 basechar 0
@@ -95304,12 +95236,11 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 240 0 2
 Refer: 4051 2352 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: llladeva
 Encoding: 2356 2356 4119
-Width: 848
+Width: 847
 Flags: HMW
 AnchorPoint: "dev-rakaar" 249 60 basechar 0
 AnchorPoint: "dev-below" 510 -106 basechar 0
@@ -95318,12 +95249,11 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 N 1 0 0 1 470 -110 2
 Refer: 4073 2355 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: shortadeva
 Encoding: 2308 2308 4120
-Width: 862
+Width: 861
 Flags: HMW
 AnchorPoint: "dev-below" 620 -36 basechar 0
 AnchorPoint: "dev-above" 663 610 basechar 0
@@ -95331,7 +95261,6 @@ LayerCount: 2
 Fore
 Refer: 4105 2374 N 1 0 0 1 760 0 2
 Refer: 4043 2309 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: invcandrabindudeva
@@ -95398,19 +95327,18 @@ EndChar
 
 StartChar: ooesigndeva
 Encoding: 2363 2363 4125
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 203 610 basechar 0
 LayerCount: 2
 Fore
 Refer: 4124 2362 N 1 0 0 1 0 0 2
 Refer: 4069 2366 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: oedeva
 Encoding: 2419 2419 4126
-Width: 862
+Width: 861
 Flags: HMW
 AnchorPoint: "dev-below" 600 -36 basechar 0
 AnchorPoint: "dev-above" 783 610 basechar 0
@@ -95418,7 +95346,6 @@ LayerCount: 2
 Fore
 Refer: 4124 2362 N 1 0 0 1 510 0 2
 Refer: 4043 2309 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ooedeva
@@ -95436,37 +95363,35 @@ EndChar
 
 StartChar: uedeva
 Encoding: 2422 2422 4128
-Width: 862
+Width: 861
 Flags: HMW
 AnchorPoint: "dev-above" 603 610 basechar 0
 LayerCount: 2
 Fore
 Refer: 4122 2390 N 1 0 0 1 610 0 2
 Refer: 4043 2309 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uuedeva
 Encoding: 2423 2423 4129
-Width: 862
+Width: 861
 Flags: HMW
 AnchorPoint: "dev-above" 613 610 basechar 0
 LayerCount: 2
 Fore
 Refer: 4123 2391 N 1 0 0 1 610 0 2
 Refer: 4043 2309 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: openya
 Encoding: 61711 -1 4130
-Width: 695
+Width: 694
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 0
+ 736 519 730 517 724 517 c 2
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -95477,12 +95402,12 @@ SplineSet
  14 301 13 305 13 308 c 0
  13 317 18 320 25 320 c 0
  81 320 122 343 149 371 c 1
- -9 374 l 2
- -38 375 -92 435 -92 467 c 0
- -92 477 -87 479 -80 479 c 2
+ -9 371 l 2
+ -38 372 -92 430 -92 462 c 0
+ -92 472 -87 474 -80 474 c 2
  205 474 l 2
- 236.012 473.456 298 411 298 381 c 0
- 298 380 298 380 293 355 c 0
+ 236.017 474 298 411 298 381 c 4
+ 298 380 298 380 293 355 c 4
  287 318 239 225 126 216 c 1
  128 213 129 211 132 207 c 1
  144 198 172 185 207 185 c 0
@@ -95491,10 +95416,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 2
+ 684 622 736 559 736 529 c 0
 EndSplineSet
-Validated: 3073
 Ligature2: "subst openya for virama-ya in Devanagari-1" virama yadeva
 LCarets2: 1 0 
 EndChar
@@ -95711,28 +95635,27 @@ EndChar
 
 StartChar: eprishthamatra
 Encoding: 2382 2382 4142
-Width: 442
+Width: 420
 Flags: HMW
-AnchorPoint: "dev-above" 190 610 basechar 0
+AnchorPoint: "dev-above" 180 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-484 529 m 0
- 484 519 479 517 472 517 c 2
- 238 517 l 1
- 238 -41 l 2
- 238 -50 233 -52 226 -52 c 0
- 194 -52 133 10 133 41 c 2
- 133 622 l 1
- 401 622 l 2
- 432 622 484 559 484 529 c 0
+462 529 m 4
+ 462 519 457 517 450 517 c 6
+ 228 517 l 1
+ 228 -41 l 2
+ 228 -50 223 -52 216 -52 c 0
+ 184 -52 123 10 123 41 c 2
+ 123 622 l 1
+ 379 622 l 6
+ 410 622 462 559 462 529 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: yyadeva
 Encoding: 2399 2399 4143
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 240 170 basechar 0
 AnchorPoint: "dev-below" 437 -51 basechar 0
@@ -95741,7 +95664,6 @@ LayerCount: 2
 Fore
 Refer: 4097 2364 S 1 0 0 1 370 -50 2
 Refer: 4050 2351 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'nukt' nukta forms in Devanagari-1" yadeva nuktadeva
 LCarets2: 1 0 
 EndChar
@@ -95861,14 +95783,13 @@ EndChar
 
 StartChar: awsigndeva
 Encoding: 2383 2383 4151
-Width: 342
+Width: 341
 Flags: HMW
 AnchorPoint: "dev-above" 223 610 basechar 0
 LayerCount: 2
 Fore
 Refer: 4150 -1 N 1 0 0 1 170 0 2
 Refer: 4069 2366 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: awdeva
@@ -95886,7 +95807,7 @@ EndChar
 
 StartChar: zhadeva
 Encoding: 2425 2425 4153
-Width: 814
+Width: 813
 Flags: HMW
 AnchorPoint: "dev-above" 543 610 basechar 0
 LayerCount: 2
@@ -95895,7 +95816,6 @@ Refer: 4084 2332 N 1 0 0 1 0 0 2
 Refer: 4097 2364 N 1 0 0 1 313 -60 2
 Refer: 4097 2364 N 1 0 0 1 428 -165 2
 Refer: 4097 2364 N 1 0 0 1 547 -69 2
-Validated: 32769
 EndChar
 
 StartChar: uniA7AA
@@ -97366,21 +97286,20 @@ EndChar
 
 StartChar: dev_ii_anusvara.abvs
 Encoding: 61728 -1 4185
-Width: 575
+Width: 553
 Flags: HMW
 AnchorPoint: "dev-below" 320 -36 basechar 0
 LayerCount: 2
 Fore
 Refer: 4078 2306 N 1 0 0 1 610 -50 2
 Refer: 4075 2312 N 1 0 0 1 0 0 2
-Validated: 32769
 Ligature2: "'abvs' above-base substs in Devanagari-anusvara" iikaradeva anusvaradeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: dev_ka_ssa.akhn
 Encoding: 61729 -1 4186
-Width: 774
+Width: 773
 Flags: HMW
 AnchorPoint: "dev-rakaar" 260 60 basechar 0
 AnchorPoint: "dev-below" 520 -36 basechar 0
@@ -97388,8 +97307,8 @@ AnchorPoint: "dev-above" 513 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-816 529 m 0
- 816 519 811 517 804 517 c 2
+815 529 m 0
+ 815 519 810 517 803 517 c 2
  570 517 l 1
  570 -41 l 2
  570 -50 565 -52 558 -52 c 0
@@ -97421,8 +97340,8 @@ SplineSet
  439 517 l 2
  407 517 356 579 356 610 c 0
  356 619 361 622 368 622 c 2
- 733 622 l 2
- 765 622 816 559 816 529 c 0
+ 732 622 l 2
+ 764 622 815 559 815 529 c 0
 236 494 m 0
  236 502 235 509 234 516 c 1
  227 517 225 517 222 517 c 0
@@ -97431,7 +97350,6 @@ SplineSet
  134 377 140 374 147 371 c 1
  180 390 236 425 236 494 c 0
 EndSplineSet
-Validated: 3073
 MultipleSubs2: "subst. ka-ssa for ligature in Devanagari-1" kadeva virama ssadeva
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_ka_ssa.akhn
 Ligature2: "'akhn' akhand in Devanagari-1" kadeva ssadeva virama
@@ -97441,7 +97359,7 @@ EndChar
 
 StartChar: dev_ja_nya.akhn
 Encoding: 61730 -1 4187
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-rakaar" 453 133 basechar 0
 AnchorPoint: "dev-below" 440 -36 basechar 0
@@ -97449,8 +97367,8 @@ AnchorPoint: "dev-above" 433 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 0
+ 736 519 730 517 724 517 c 2
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -97482,10 +97400,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 2
+ 684 622 736 559 736 529 c 0
 EndSplineSet
-Validated: 3073
 Substitution2: "'ss02' style set 2 in Devanagari of Bombay" dev_bby_ja_nya.akhn
 Ligature2: "'akhn' akhand in Devanagari-1" jadeva nyadeva virama
 Ligature2: "'akhn' akhand in Devanagari2-1" jadeva virama nyadeva
@@ -97547,15 +97464,15 @@ EndChar
 
 StartChar: dev_ka.half
 Encoding: 61732 -1 4189
-Width: 538
+Width: 537
 Flags: HMW
 AnchorPoint: "dev-nukta" 100 88.4 basechar 0
 AnchorPoint: "dev-above" 313 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-580 529 m 0
- 580 519 575 517 568 517 c 2
+579 529 m 4
+ 579 519 574 517 567 517 c 6
  367 517 l 1
  367 391 l 1
  380 394 393 396 406 396 c 0
@@ -97576,8 +97493,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 497 622 l 2
- 529 622 580 559 580 529 c 0
+ 496 622 l 6
+ 528 622 579 559 579 529 c 4
 262 300 m 1
  262 337 l 1
  255 337 l 2
@@ -97586,7 +97503,6 @@ SplineSet
  112 221 124 219 136 219 c 0
  196 219 255 249 262 300 c 1
 EndSplineSet
-Validated: 3073
 MultipleSubs2: "subst. ka-ssa for ligature in Devanagari-1" kadeva virama
 Ligature2: "'half' half forms in Devanagari-1" kadeva virama
 Ligature2: "'half' half forms in Devanagari-zwj" kadeva virama ZWJ
@@ -97595,15 +97511,15 @@ EndChar
 
 StartChar: dev_kha.half
 Encoding: 61733 -1 4190
-Width: 542
+Width: 541
 Flags: HMW
 AnchorPoint: "dev-nukta" 80 88.4 basechar 0
 AnchorPoint: "dev-above" 163 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-584 529 m 0
- 584 519 579 517 572 517 c 2
+583 529 m 4
+ 583 519 578 517 571 517 c 6
  224 517 l 1
  228 491 230 465 230 440 c 0
  230 369 212 249 126 233 c 1
@@ -97618,8 +97534,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 501 622 l 2
- 533 622 584 559 584 529 c 0
+ 500 622 l 6
+ 532 622 583 559 583 529 c 4
 594 244 m 0
  594 161 521 121 450 121 c 0
  386 121 332 151 288 195 c 0
@@ -97635,7 +97551,6 @@ SplineSet
  340 228 354 226 368 226 c 0
  429 226 489 260 489 325 c 0
 EndSplineSet
-Validated: 3073
 Ligature2: "'half' half forms in Devanagari-1" khadeva virama
 Ligature2: "'half' half forms in Devanagari-zwj" khadeva virama ZWJ
 LCarets2: 2 0 0 
@@ -97643,13 +97558,13 @@ EndChar
 
 StartChar: dev_ga.half
 Encoding: 61734 -1 4191
-Width: 439
+Width: 438
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-481 529 m 0
- 481 519 475 517 469 517 c 2
+480 529 m 0
+ 480 519 474 517 468 517 c 2
  167 517 l 1
  193 433 206 348 206 263 c 0
  206 247 207 231 207 214 c 0
@@ -97662,10 +97577,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 398 622 l 2
- 429 622 481 559 481 529 c 0
+ 397 622 l 2
+ 428 622 480 559 480 529 c 0
 EndSplineSet
-Validated: 3073
 Ligature2: "'half' half forms in Devanagari-1" gadeva virama
 Ligature2: "'half' half forms in Devanagari-zwj" gadeva virama ZWJ
 LCarets2: 2 0 0 
@@ -97673,7 +97587,7 @@ EndChar
 
 StartChar: dev_gha.half
 Encoding: 61735 -1 4192
-Width: 439
+Width: 438
 Flags: HMW
 AnchorPoint: "dev-nukta" 110 78.4 basechar 0
 LayerCount: 2
@@ -97687,9 +97601,9 @@ SplineSet
  42 429 -3 478 -3 538 c 1
  -19 551 -42 586 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 398 622 l 2
- 429 622 481 559 481 529 c 0
- 481 519 475 517 469 517 c 2
+ 397 622 l 2
+ 428 622 480 559 480 529 c 0
+ 480 519 474 517 468 517 c 2
  154 517 l 2
  125 517 102 487 102 457 c 0
  102 451 102 447 103 443 c 1
@@ -97705,7 +97619,6 @@ SplineSet
  391 336 393 337 398 337 c 0
  429 337 491 274 491 244 c 0
 EndSplineSet
-Validated: 3073
 Ligature2: "'half' half forms in Devanagari-1" ghadeva virama
 Ligature2: "'half' half forms in Devanagari-zwj" ghadeva virama ZWJ
 LCarets2: 2 0 0 
@@ -106230,15 +106143,15 @@ EndChar
 
 StartChar: dev_ra_umatra.blws
 Encoding: 61710 -1 4346
-Width: 655
+Width: 574
 Flags: HMW
 AnchorPoint: "dev-below" 350 -30.9 basechar 0
 AnchorPoint: "dev-above" 263 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-697 529 m 0
- 697 519 692 517 685 517 c 2
+616 529 m 4
+ 616 519 611 517 604 517 c 6
  309 517 l 1
  313 491 315 466 315 440 c 2
  315 423 l 1
@@ -106264,25 +106177,24 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 614 622 l 2
- 645 622 697 559 697 529 c 0
+ 533 622 l 6
+ 564 622 616 559 616 529 c 4
 EndSplineSet
-Validated: 3073
 Ligature2: "'blws' below-base substs in Devanagari-consonants" radeva usigndeva
 LCarets2: 1 0 
 EndChar
 
 StartChar: dev_ra_uumatra.blws
 Encoding: 61709 -1 4347
-Width: 754
+Width: 714
 Flags: HMW
 AnchorPoint: "dev-below" 320 -36 basechar 0
 AnchorPoint: "dev-above" 263 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-796 529 m 0
- 796 519 791 517 785 517 c 2
+756 529 m 4
+ 756 519 751 517 745 517 c 6
  314 517 l 1
  317 494 318 471 318 448 c 0
  318 427 317 406 314 386 c 1
@@ -106311,10 +106223,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 713 622 l 2
- 745 622 796 559 796 529 c 0
+ 673 622 l 6
+ 705 622 756 559 756 529 c 4
 EndSplineSet
-Validated: 3073
 Ligature2: "'blws' below-base substs in Devanagari-consonants" radeva uusigndeva
 LCarets2: 1 0 
 EndChar
@@ -109851,7 +109762,7 @@ EndChar
 
 StartChar: yevyyadeva
 Encoding: 2426 2426 4446
-Width: 695
+Width: 694
 Flags: HMW
 AnchorPoint: "dev-above" 433 610 basechar 0
 AnchorPoint: "dev-nukta" 140 74 basechar 0
@@ -109860,8 +109771,8 @@ AnchorPoint: "dev-rakaar" 360 170 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-737 529 m 0
- 737 519 731 517 725 517 c 2
+736 529 m 0
+ 736 519 730 517 724 517 c 2
  491 517 l 1
  491 -41 l 2
  491 -50 485 -52 479 -52 c 0
@@ -109876,8 +109787,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 654 622 l 2
- 685 622 737 559 737 529 c 0
+ 653 622 l 2
+ 684 622 736 559 736 529 c 0
 231.404 341.296 m 1
  208.185 296.493 162.863 266.492 110 261 c 1
  124.025 234.703 162.078 222 203 222 c 0
@@ -109891,24 +109802,23 @@ SplineSet
  302 460 349 441 386 415 c 1
  386 517 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ggadeva
 Encoding: 2427 2427 4447
-Width: 655
+Width: 654
 Flags: HMW
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-697 529 m 0
- 697 519 692 517 685 517 c 2
+696 529 m 0
+ 696 519 691 517 684 517 c 2
  451 517 l 1
  451 -7.88258e-15 l 1
- 614 0 l 2
- 645 0 697 -63 697 -93 c 0
- 697 -103 692 -105 685 -105 c 2
+ 613 0 l 2
+ 644 0 696 -63 696 -93 c 0
+ 696 -103 691 -105 684 -105 c 2
  41 -105 l 2
  9 -105 -42 -43 -42 -12 c 0
  -42 -3 -37 0 -31 0 c 2
@@ -109925,27 +109835,26 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 614 622 l 2
- 645 622 697 559 697 529 c 0
+ 613 622 l 2
+ 644 622 696 559 696 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: jjadeva
 Encoding: 2428 2428 4448
-Width: 814
+Width: 813
 Flags: HMW
 AnchorPoint: "dev-above" 553 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-856 529 m 0
- 856 519 851 517 844 517 c 2
+855 529 m 0
+ 855 519 850 517 843 517 c 2
  610 517 l 1
  610 -7.88258e-15 l 1
- 773 0 l 2
- 804 0 856 -63 856 -93 c 0
- 856 -103 851 -105 844 -105 c 2
+ 772 0 l 2
+ 803 0 855 -63 855 -93 c 0
+ 855 -103 850 -105 843 -105 c 2
  41 -105 l 2
  9 -105 -42 -43 -42 -12 c 0
  -42 -3 -37 0 -31 0 c 2
@@ -109970,22 +109879,21 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 773 622 l 2
- 805 622 856 559 856 529 c 0
+ 772 622 l 2
+ 804 622 855 559 855 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: dddadeva
 Encoding: 2430 2430 4449
-Width: 674
+Width: 650
 Flags: HMW
 AnchorPoint: "dev-above" 403 610 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-716 529 m 0
- 716 519 711 517 704 517 c 2
+692 529 m 4
+ 692 519 687 517 680 517 c 6
  457 517 l 1
  457 381 l 2
  457 371 451 369 445 369 c 0
@@ -110011,22 +109919,21 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 633 622 l 2
- 665 622 716 559 716 529 c 0
-716 -93 m 0
- 716 -103 711 -105 704 -105 c 2
+ 609 622 l 6
+ 641 622 692 559 692 529 c 4
+692 -93 m 4
+ 692 -103 687 -105 680 -105 c 6
  41 -105 l 2
  9 -105 -42 -43 -42 -12 c 0
  -42 -3 -37 0 -31 0 c 2
- 633 0 l 2
- 664 0 716 -63 716 -93 c 0
+ 609 0 l 6
+ 640 0 692 -63 692 -93 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: bbadeva
 Encoding: 2431 2431 4450
-Width: 622
+Width: 623
 Flags: HMW
 AnchorPoint: "dev-above" 363 610 basechar 0
 LayerCount: 2
@@ -110039,13 +109946,13 @@ SplineSet
  235 355 217 353 200 349 c 1
  273 245 l 1
  294 260 310 283 313 314 c 1
-664 529 m 0
- 664 519 658 517 652 517 c 2
+663 529 m 0
+ 663 519 657 517 651 517 c 2
  418 517 l 1
  418 -7.88258e-15 l 1
- 581 0 l 2
- 612 0 664 -63 664 -93 c 0
- 664 -103 659 -105 652 -105 c 2
+ 580 0 l 2
+ 611 0 663 -63 663 -93 c 0
+ 663 -103 658 -105 651 -105 c 2
  41 -105 l 2
  9 -105 -42 -43 -42 -12 c 0
  -42 -3 -37 0 -31 0 c 2
@@ -110061,8 +109968,8 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 581 622 l 2
- 612 622 664 559 664 529 c 0
+ 580 622 l 2
+ 611 622 663 559 663 529 c 0
 223 221 m 1
  149 326 l 1
  123 309 102 282 102 244 c 0
@@ -110070,33 +109977,31 @@ SplineSet
  123 218 148 214 171 214 c 0
  188 214 206 216 223 221 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: glottalstopdeva
 Encoding: 2429 2429 4451
-Width: 628
+Width: 569
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-148 1 m 1
- 148 291 l 2
- 148 300 153 303 159 303 c 0
- 251 307 419 336 419 458 c 0
- 419 472 417 484 413 493 c 1
- 388 508 347 517 310 517 c 0
- 213 517 119 460 103 460 c 0
- 72 460 10 522 10 553 c 0
- 10 559 12 562 17 564 c 0
- 79 590 151 622 229 622 c 0
- 324 622 398 579 450 527 c 0
- 483 494 524 441 524 377 c 0
- 524 244 368 205 253 199 c 1
- 253 1 l 1
- 205.5 1 195.5 1 148 1 c 1
+138 1 m 5
+ 138 291 l 6
+ 138 300 143 303 149 303 c 4
+ 241 307 409 336 409 458 c 4
+ 409 472 407 484 403 493 c 5
+ 378 508 337 517 300 517 c 4
+ 203 517 109 460 93 460 c 4
+ 62 460 0 522 0 553 c 4
+ 0 559 2 562 7 564 c 4
+ 69 590 141 622 219 622 c 4
+ 314 622 388 579 440 527 c 4
+ 473 494 514 441 514 377 c 4
+ 514 244 358 205 243 199 c 5
+ 243 1 l 5
+ 195.5 1 185.5 1 138 1 c 5
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: dramarmenian
@@ -110264,13 +110169,13 @@ EndChar
 
 StartChar: dev_Velthuis_ha_rak.UNUSED
 Encoding: 61713 -1 4458
-Width: 769
+Width: 768
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-811 529 m 0
- 811 519 805 517 799 517 c 2
+810 529 m 0
+ 810 519 804 517 798 517 c 2
  562 517 l 1
  562 386 l 2
  562 377 557 374 550 374 c 2
@@ -110308,10 +110213,9 @@ SplineSet
  41 517 l 2
  9 517 -42 579 -42 610 c 0
  -42 619 -37 622 -31 622 c 2
- 728 622 l 2
- 759 622 811 559 811 529 c 0
+ 727 622 l 2
+ 758 622 810 559 810 529 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: dev_dddha.rkrf
@@ -110477,22 +110381,20 @@ EndChar
 
 StartChar: indic_question
 Encoding: 61726 -1 4464
-Width: 638
-Flags: MW
+Width: 596
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 31 63 N 1 0 0 1 193 0 2
-Validated: 32769
+Refer: 31 63 S 1 0 0 1 151 0 2
 EndChar
 
 StartChar: indic_exclam
 Encoding: 61727 -1 4465
-Width: 420
-Flags: MW
+Width: 357
+Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1 33 N 1 0 0 1 169 0 2
-Validated: 32769
+Refer: 1 33 N 1 0 0 1 106 0 2
 EndChar
 
 StartChar: arab_pe_qaf_medi
@@ -110832,13 +110734,12 @@ EndChar
 
 StartChar: dev_khaling_a_virama.blws
 Encoding: 61889 -1 4476
-Width: 862
+Width: 861
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4043 2309 N 1 0 0 1 0 0 2
 Refer: 4077 2381 N 1 0 0 1 860 0 2
-Validated: 32769
 EndChar
 
 StartChar: thaana_dot
@@ -118622,7 +118523,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 2188 4338 N -1 0 0 -1 595 405 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni10FF
@@ -118645,7 +118546,7 @@ SplineSet
  172 89 216 56 266 56 c 0
  317 56 362 93 362 113 c 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10FD
@@ -118673,7 +118574,7 @@ SplineSet
  328 591 294 636 258 636 c 4
  200 636 164 597 164 556 c 4
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni10C7
