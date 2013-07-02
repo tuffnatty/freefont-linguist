@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1371936196
+ModificationTime: 1372763339
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -195,8 +195,8 @@ Lookup: 260 0 0 "'mark' mark below in Thai"  {"'mark' mark below in Thai-1"  } [
 Lookup: 262 0 0 "'mkmk' marks above other mark in Thai"  {"'mkmk' tone-right in Thai"  } ['mkmk' ('thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks above in Thai"  {"'mark' marks above in Thai-1"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' mark-to-mark in Thai"  {"'mkmk' mark-to-mark in Thai-1"  } ['mkmk' ('thai' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' marks in Cyrillic"  {"'mark' marks in Cyrillic-1"  } ['mark' ('cyrl' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kern big letters in Cyrillic"  "'kern' kern small letters in Cyrillic"  } ['kern' ('cyrl' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' marks in Cyrillic"  {"'mark' marks in Cyrillic-1"  } ['mark' ('cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kern big letters in Cyrillic"  "'kern' kern small letters in Cyrillic"  } ['kern' ('cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 258 9 0 "'kern' kerning in Arabic"  {"'kern' kerning in Arabic-1" [150,0,2] } ['kern' ('arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks in Arabic"  {"'mark' ring mark in Arabic"  "'mark' marks in Arabic-1"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 262 1 0 "'mkmk' mark-to-mark in Arabic"  {"'mkmk' mark-to-mark in Arabic-1"  } ['mkmk' ('arab' <'dflt' > ) ]
@@ -1258,17 +1258,17 @@ LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeSerif +BD8EPgQ7BEMERwQ1
 LangName: 1069 "" "" "Lodia" "" "FreeSerif Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 21 1 65535 3 0
-OtfFeatName: 'ss04' 2145 "+CSgJRwkqCT4JMgAA" 1033 "Nepali" 
-OtfFeatName: 'ss03' 1081 "+CRUJSwkyCRUJPgkk" 1033 "Calcutta" 
-OtfFeatName: 'ss02' 1081 "+CS4JQQkuCU0JLAkI" 1033 "Bombay" 
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
+OtfFeatName: 'ss02' 1033 "Bombay" 1081 "+CS4JQQkuCU0JLAkI" 
+OtfFeatName: 'ss03' 1033 "Calcutta" 1081 "+CRUJSwkyCRUJPgkk" 
+OtfFeatName: 'ss04' 1033 "Nepali" 2145 "+CSgJRwkqCT4JMgAA" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 640 16 10
+WinInfo: 59632 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 31 [-14 0 307 315 461 473 673 691]
@@ -14098,7 +14098,7 @@ SplineSet
  360 387 341 442 283 442 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'locl' local. forms in Cyrillic for Serbian-Macedonian-1" serb.be
+Substitution2: "'locl' local. forms in Cyrillic for Serbian-Macedonian-1" cyrillic_serb_be
 EndChar
 
 StartChar: vecyrillic
@@ -14134,7 +14134,7 @@ SplineSet
  219 429 218 408 218 362 c 2
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_ve
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_ve
 EndChar
 
 StartChar: gecyrillic
@@ -14162,7 +14162,7 @@ SplineSet
  218 81 l 2
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_ge
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_ge
 EndChar
 
 StartChar: decyrillic
@@ -14205,7 +14205,7 @@ SplineSet
  216 306.331 209 157 162 69 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic.alt_de
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_alt_de
 EndChar
 
 StartChar: iecyrillic
@@ -14276,7 +14276,7 @@ SplineSet
  333 377 l 2
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_zhe
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_zhe
 EndChar
 
 StartChar: zecyrillic
@@ -14361,7 +14361,7 @@ Fore
 Refer: 2360 -1 N 1 0 0 1 -129 -207 2
 Refer: 611 1080 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_ii_short
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_ii_short
 EndChar
 
 StartChar: kacyrillic
@@ -14441,7 +14441,7 @@ SplineSet
  237 166.006 231 72 185 26 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_el
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_el
 EndChar
 
 StartChar: emcyrillic
@@ -14723,7 +14723,7 @@ SplineSet
  214 93 l 2
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_tse
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_tse
 EndChar
 
 StartChar: checyrillic
@@ -14806,7 +14806,7 @@ SplineSet
  214 93 l 2
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_sha
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_sha
 EndChar
 
 StartChar: shchacyrillic
@@ -14854,7 +14854,7 @@ SplineSet
  26 0 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" bulg.alt_shcha
+Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-1" cyrillic_bulg_alt_shcha
 EndChar
 
 StartChar: hardsigncyrillic
@@ -67930,7 +67930,7 @@ LCarets2: 1 0
 Ligature2: "'hlig' hist. ligatures in Latin-1" longs t
 EndChar
 
-StartChar: ukrain.yi_yi_lig
+StartChar: cyrillic_ukrain_yi_yi_lig
 Encoding: 59653 -1 2880
 Width: 559
 Flags: HMW
@@ -90273,7 +90273,7 @@ Refer: 616 1085 N 0.67 0 0 0.67 0 350 2
 Validated: 32769
 EndChar
 
-StartChar: serb.be
+StartChar: cyrillic_serb_be
 Encoding: 59654 -1 3944
 Width: 571
 Flags: HMW
@@ -90704,7 +90704,7 @@ Refer: 116 183 N 1 0 0 1 213 -166 2
 Validated: 32769
 EndChar
 
-StartChar: bulg.alt_ve
+StartChar: cyrillic_bulg_alt_ve
 Encoding: 59655 -1 3964
 Width: 558
 Flags: HMW
@@ -90737,7 +90737,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: cyrillic.alt_de
+StartChar: cyrillic_alt_de
 Encoding: 59656 -1 3965
 Width: 545
 Flags: HMW
@@ -90771,7 +90771,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: bulg.alt_ge
+StartChar: cyrillic_bulg_alt_ge
 Encoding: 59657 -1 3966
 Width: 406
 Flags: HMW
@@ -90801,7 +90801,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: bulg.alt_zhe
+StartChar: cyrillic_bulg_alt_zhe
 Encoding: 59658 -1 3967
 Width: 805
 Flags: HMW
@@ -90857,7 +90857,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: bulg.alt_el
+StartChar: cyrillic_bulg_alt_el
 Encoding: 59659 -1 3968
 Width: 474
 VWidth: 684
@@ -90888,7 +90888,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: bulg.alt_ii_short
+StartChar: cyrillic_bulg_alt_ii_short
 Encoding: 59660 -1 3969
 Width: 564
 Flags: HMW
@@ -90899,7 +90899,7 @@ Refer: 85 117 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: bulg.alt_shcha
+StartChar: cyrillic_bulg_alt_shcha
 Encoding: 59661 -1 3970
 Width: 832
 Flags: HMW
@@ -90975,7 +90975,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: bulg.alt_tse
+StartChar: cyrillic_bulg_alt_tse
 Encoding: 59663 -1 3972
 Width: 564
 Flags: HMW
@@ -92807,7 +92807,7 @@ SplineSet
  293 222 358 283 386 357 c 1
 EndSplineSet
 Validated: 3073
-Substitution2: "subst openya for ya in Devanagari-1" openya
+Substitution2: "subst openya for ya in Devanagari-1" dev_ya_open
 LCarets2: 1 0 
 EndChar
 
@@ -95466,7 +95466,7 @@ Refer: 4043 2309 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: openya
+StartChar: dev_ya_open
 Encoding: 61711 -1 4130
 Width: 694
 Flags: HMW
@@ -95504,7 +95504,6 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "subst openya for virama-ya in Devanagari-1" virama yadeva
-LCarets2: 1 0 
 EndChar
 
 StartChar: dev_esign_reph.abvs
@@ -99833,7 +99832,7 @@ SplineSet
  1004 622 1065 559 1065 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ngadeva openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ngadeva dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ngadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ngadeva virama yadeva
 LCarets2: 2 0 0 
@@ -100014,7 +100013,7 @@ SplineSet
  567 201 600 258 600 321 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-pair" chadeva openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-pair" chadeva dev_ya_open
 Substitution2: "'ss03' style set 3 in Devanagari of Calcutta" dev_clt_cha_ya.pres
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" chadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" chadeva virama yadeva
@@ -100363,7 +100362,7 @@ SplineSet
  964 622 1026 559 1026 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ttadeva openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ttadeva dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ttadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
@@ -100416,7 +100415,7 @@ SplineSet
  825 622 886 559 886 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-pair" tthadeva openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-pair" tthadeva dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" tthadeva virama yadeva
 LCarets2: 2 0 0 
 EndChar
@@ -100726,7 +100725,7 @@ SplineSet
  964 622 1026 559 1026 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ddadeva openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ddadeva dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ddadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ddadeva virama yadeva
 LCarets2: 2 0 0 
@@ -100782,7 +100781,7 @@ SplineSet
  337 110 386 128 386 171 c 2
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ddhadeva openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-pair" ddhadeva dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-pair" ddhadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-no-half" ddhadeva virama yadeva
 LCarets2: 2 0 0 
@@ -104670,7 +104669,7 @@ SplineSet
  964 622 1026 559 1026 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" ddadeva dev_rakaar.blwf openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" ddadeva dev_rakaar.blwf dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ra" ddadeva virama dev_rakaar yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" ddadeva virama radeva virama yadeva
 LCarets2: 4 0 0 0 0 
@@ -104855,7 +104854,7 @@ SplineSet
  423 -118 489 -60 525 -12 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_da.pres openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_da.pres dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dadeva virama yadeva
 Ligature2: "'cjct' conjunct forms in Devanagari2 for Sanskrit-5" dadeva virama dadeva virama yadeva
 LCarets2: 4 0 0 0 0 
@@ -104991,7 +104990,7 @@ SplineSet
  284 52 342 84 384 116 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_dha.pres openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_dha.pres dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dev_dha.half yadeva
 LCarets2: 3 0 0 0 
 EndChar
@@ -105181,7 +105180,7 @@ SplineSet
  805 622 866 559 866 529 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dadeva dev_rakaar.blwf openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dadeva dev_rakaar.blwf dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ra" dadeva dev_rakaar virama yadeva
 Ligature2: "'rkrf' rakar forms in Devanagari2 for Sanskrit-compound" dadeva virama radeva virama yadeva
 LCarets2: 4 0 0 0 0 
@@ -105240,7 +105239,7 @@ SplineSet
  437 52 496 113 525 159 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_va.pres openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-trio" dev_da_va.pres dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-trio ya and va" dadeva virama dev_va.half yadeva
 LCarets2: 3 0 0 0 
 EndChar
@@ -105673,7 +105672,7 @@ SplineSet
  629 -9 676 19 704 46 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'hlig' hist. ligatures in Devanagari-four" dev_ssa.half ttadeva dev_rakaar.blwf openya
+Ligature2: "'hlig' hist. ligatures in Devanagari-four" dev_ssa.half ttadeva dev_rakaar.blwf dev_ya_open
 Ligature2: "'pres' pre-base substs in Devanagari-old-2-four" dev_ssa_tta.pres dev_rakaar yadeva
 Ligature2: "'rkrf' rakar forms in Devanagari2 for Sanskrit-compound" ssadeva virama ttadeva virama radeva virama yadeva
 LCarets2: 6 0 0 0 0 0 0 
@@ -117314,7 +117313,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: bulg.alt_sha
+StartChar: cyrillic_bulg_alt_sha
 Encoding: 59662 -1 4656
 Width: 832
 Flags: HW
