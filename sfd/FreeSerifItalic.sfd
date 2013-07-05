@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1373042304
+ModificationTime: 1373068581
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -367,7 +367,7 @@ LangName: 1026 "" "" "+BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BDoEQwRABEEEOAQy
 LangName: 1069 "" "" "Etzana" "" "FreeSerif Etzana" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Italic: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 21 1 65535 3 0
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
@@ -398,7 +398,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 216497 262144 131072 87381 448791 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "low_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "top_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "point_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_low_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_right_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_low_heb"  "'mark' Mark Positioning in Hebrew for Ivrit subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Hebrew for Yiddish subtable" "topright"  "'mark' Mark Positioning subtable middle" "ogonek"  "'mark' Mark Positioning in Latin subtable 2" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable middle" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 65980 3521
+BeginChars: 65980 3523
 
 StartChar: space
 Encoding: 32 32 0
@@ -6156,8 +6156,8 @@ AnchorPoint: "ogonek" 102 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 238 305 N 1 0 0 1 0 0 0
-Refer: 108 175 S 1 0 0 1 -27 0 0
-Validated: 32769
+Refer: 108 175 S 1 0 0 1 -42 0 0
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'ccmp' glyph compos. in Latin - i-subtable" i macroncomb
 EndChar
@@ -13132,7 +13132,7 @@ SplineSet
  88 41 105 25 136 25 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "'locl' Localized Forms for Serbian-Macedonian-1" imacron
+Substitution2: "'locl' Localized Forms for Serbian-Macedonian-1" cyrillic_serb_ge
 EndChar
 
 StartChar: decyrillic
@@ -13456,7 +13456,7 @@ LayerCount: 2
 Fore
 Refer: 78 110 N 1 0 0 1 0 0 3
 Validated: 32769
-Substitution2: "'locl' Localized Forms for Serbian-Macedonian-1" uni04E3
+Substitution2: "'locl' Localized Forms for Serbian-Macedonian-1" cyrillic_serb_pe
 EndChar
 
 StartChar: ercyrillic
@@ -92515,15 +92515,20 @@ Validated: 32769
 Ligature2: "'liga' Standard Ligatures in Cyrillic subtable" yicyrillic yicyrillic
 EndChar
 
-StartChar: cyrillic_serb_alt_te
+StartChar: cyrillic_horiz
 Encoding: 59653 -1 3067
 Width: 734
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 3520 -1 S 1 0 0 1 130 671 2
-Refer: 620 1096 N 1 0 0 1 0 0 2
-Validated: 98305
+SplineSet
+540 -140 m 5
+ 40 -140 l 5
+ 51 -89 l 5
+ 551 -89 l 5
+ 540 -140 l 5
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: nonmarkingreturn
@@ -93501,26 +93506,26 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: cyrillic_serb_alt_sha
+StartChar: cyrillic_serb_alt_te
 Encoding: 59655 -1 3130
 Width: 734
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 3520 -1 S 1 0 0 1 -20 0 2
+Refer: 3067 -1 S 1 0 0 1 140 672 2
 Refer: 620 1096 N 1 0 0 1 0 0 2
 Validated: 98305
 EndChar
 
-StartChar: cyrillic_macedon_gje
+StartChar: cyrillic_serb_alt_sha
 Encoding: 59656 -1 3131
-Width: 278
+Width: 734
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 113 180 N 1 0 0 1 20 136 2
-Refer: 232 299 N 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3067 -1 S 1 0 0 1 0 0 2
+Refer: 620 1096 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: dapostrophe
@@ -95444,7 +95449,7 @@ EndChar
 StartChar: cyrillic_alt_de
 Encoding: 59657 -1 3243
 Width: 483
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -95470,7 +95475,7 @@ SplineSet
  152 -184 238.126 -138.11 279 -3 c 0
  294.521 48.3543 325.582 150.979 325.582 150.979 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: cyrillic_bulg_alt_ve
@@ -95504,13 +95509,13 @@ SplineSet
  358 400 415 461 415 538 c 0
  415 587 397 651 333 651 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: cyrillic_bulg_alt_zhe
 Encoding: 59659 -1 3245
 Width: 914
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -95556,7 +95561,7 @@ SplineSet
  417 206 l 1
  341.609 206 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: aeturned
@@ -100700,7 +100705,7 @@ SplineSet
  539 102 l 2
  544.609 68.3476 554 37 580 37 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: Eturnedsmallcap
@@ -100944,20 +100949,35 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: cyrillic_horiz
+StartChar: cyrillic_serb_ge
 Encoding: 59661 -1 3520
-Width: 734
+Width: 278
 Flags: HW
 LayerCount: 2
 Fore
-SplineSet
-560 -140 m 5
- 60 -140 l 5
- 71 -90 l 5
- 571 -90 l 5
- 560 -140 l 5
-EndSplineSet
-Validated: 3073
+Refer: 232 299 S 1 0 0 1 0 0 2
+Validated: 98305
+EndChar
+
+StartChar: cyrillic_serb_pe
+Encoding: 59662 -1 3521
+Width: 484
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 296 363 N 1 0 0 1 0 0 2
+Validated: 98305
+EndChar
+
+StartChar: cyrillic_macedon_gje
+Encoding: 59663 -1 3522
+Width: 278
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 113 180 S 1 0 0 1 30 136 2
+Refer: 232 299 N 1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont
