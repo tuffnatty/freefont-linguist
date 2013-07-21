@@ -167,7 +167,9 @@ if argc > 1:
 		f.woffMajor = 0
 		f.woffMetadata = xml
 		#f.generate( woff_file, flags=('opentype','round') )
-		f.generate( woff_file, flags=('opentype','no-hints') )
+		f.generate( woff_file,
+			flags=('opentype','no-hints',
+			'old-kern','dummy-dsig','round') )
 		f.close()
 else:
 	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"

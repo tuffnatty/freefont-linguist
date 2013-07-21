@@ -51,7 +51,10 @@ if argc > 1:
 		f.selection.all()
 		f.autoHint()
 		f.autoInstr()
-		f.generate( ttfile, flags=('opentype','no-hints') )
+		#f.generate( ttfile, flags=('opentype','no-hints') )
+		f.generate( ttfile,
+			flags=('opentype','no-hints',
+			'old-kern','dummy-dsig','round') )
 		f.close()
 else:
 	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"
