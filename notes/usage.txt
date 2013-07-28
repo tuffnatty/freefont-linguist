@@ -50,7 +50,8 @@ Cyrillic
 --------
 Ukrainian	ligature for double i-diaresis
 Serbian/Macedonian	localized letters be, and more in italic
-Bulgarian	style set for modern glyphs
+	[the 'sha' with line below is available as a special style ]
+Bulgarian	style set for modern alternative glyphs
 
 Hebrew
 ------
@@ -61,6 +62,7 @@ Devanagari
 Sanskrit	much larger set of ligatures
 
 Hindi, Marathi	better spacing of Western punctuation marks
+	[historic ligatures: for ligatures common in Old Hindi]
 
 Indic languages
 ---------------
@@ -134,7 +136,9 @@ Alternative characters
 FreeSerif has some listings of alternatives for specific characters.
 Again these are used primarily by specialized typesetting software.
 
-Greek, Latin
+	Greek, Latin
+
+It also has also a listing of ornamental bullets and stars.
 
 Use in LaTeX
 ============
@@ -145,12 +149,24 @@ it is particularly easy to use Unicode text, and to enable font features.
 Recent versions of these systems use the 'fontspec' package to choose fonts
 and features.
 
-A very simple document might contain the lines
+LuaTeX note: for lualatex to search the local font directory ~/.fonts/f,
+the OSFONTDIR variable may be set, either in the luatex config files
+or as an environment variable, e.g.
+	export OSFONTDIR=/home/swhite/.fonts/f//
+
+A LaTeX (.tex) document in these implementations might contain the lines:
 ---------------------------------------------------------------------------
 \documentclass{ltxdockit}
 \usepackage{fontspec}
-\usepackage{xunicode}
 \setmainfont[]{FreeSerif}
+
+\newfontfamily{\altbg}[Script=Cyrillic,Language=Bulgarian,
+Variant={1}]{FreeSerif}
+\newfontfamily{\altsb}[Script=Cyrillic,Language=Serbian,
+ItalicFeatures={Script=Cyrillic, Language=Serbian, Style=Alternate},
+BoldItalicFeatures={Script=Cyrillic, Language=Serbian, Style=Alternate} ]
+{FreeSerif}
+
 \begin{document}
 {\fontspec[Script=Default,Fractions={On}]{FreeSerif}
 1/7 3/10 7/10}
@@ -166,8 +182,17 @@ abcdefghijklmnopqrstuvwxyz+−(0123456789)}
 \textsc{Small Caps} }
 
 { Bсички хора се раждат свободни и равни по достойнство и права.
-\fontspec[Script=Cyrillic,Language=Bulgarian,Variant={1}]{FreeSerif} \selectfont
+
+\altbg
 Bсички хора се раждат свободни и равни по достойнство и права.  }
+
+\altsb{
+Oнa су oбдaрeнa рaзумoм и свeшћу и трeбajeдни прeмa другимa дa пoступajу у духу брaтствa. 
+
+\textit{
+Oнa су oбдaрeнa рaзумoм и свeшћу и трeбajeдни прeмa другимa дa пoступajу у духу брaтствa. 
+}
+}
 
 \end{document}
 ---------------------------------------------------------------------------
@@ -178,6 +203,7 @@ Fractions: On
 VerticalPosition: Superior Inferior
 Ligatures: Common Historical
 Letters: UppercaseSmallCaps
+Style: Alternate Historic
 Variant: 1 (etc. -- must be in {}, picks style set.)
 ---------------------------------------------------------------------------
 Some character ranges do not have 'italic' or 'oblique' versions.
