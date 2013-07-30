@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1375109955
+ModificationTime: 1375192910
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -50,6 +50,8 @@ OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2FamilyClass: 261
 OS2Vendor: 'GNU '
+Lookup: 1 0 0 "'cv00' char. variant in Greek-lunate sigma"  {"'cv00' char. variant in Greek lunate sigma-1"  } ['cv00' ('grek' <'ELL ' 'dflt' > ) ]
+Lookup: 1 0 0 "'cv01' char. variant in Greek-kappa"  {"'cv01' char. variant in Greek-kappa-1"  } ['cv01' ('grek' <'ELL ' 'dflt' > ) ]
 Lookup: 1 0 0 "do_nothing"  {} []
 Lookup: 1 0 0 "medial forms in Greek"  {"medial forms in Greek-1"  } []
 Lookup: 6 0 0 "'calt' context. altern. in Greek"  {"'calt' context. altern. in Greek-1"  } ['calt' ('grek' <'ELL ' 'dflt' > ) ]
@@ -92,6 +94,7 @@ Lookup: 4 0 0 "'liga' std. ligatures in Cyrillic"  {"'liga' std. ligatures in Cy
 Lookup: 4 0 0 "'liga' std. ligatures in Latin for Catalan"  {"'liga' std. ligatures in Latin for Catalan-1"  } ['liga' ('latn' <'CAT ' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'geor' <'dflt' > 'grek' <'dflt' > 'hebr' <'dflt' > 'latn' <'dflt' > 'thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
+Lookup: 258 0 0 "'kern' kerning in Greek"  {"'kern' kerning in Greek-cap" [150,0,6] "'kern' kerning in Greek-small" [150,0,6] } ['kern' ('grek' <'ELL ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kerns in Cyrillic-big" [150,0,4] "'kern' kerns in Cyrillic-small" [150,0,0] "'kern' kerns alt+-big in Cyrillic" [150,0,0] "'kern' kerns small+-alt in Cyrillic" [150,0,0] "'kern' kerns alt+-small in Cyrillic" [150,0,0] } ['kern' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'mark' Mark Positioning in Thai 0 subtable"  } ['mark' ('thai' <'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' Mark to Mark in Thai 0"  {"'mkmk' Mark to Mark in Thai 0 subtable"  } ['mkmk' ('thai' <'dflt' > ) ]
@@ -109,6 +112,23 @@ Lookup: 260 1 0 "'mark' Mark Positioning in Hebrew"  {"'mark' Mark Positioning i
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Hebrew"  {"'mkmk' Mark to Mark in Hebrew subtable"  } ['mkmk' ('hebr' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+KernClass2: 5 4 "'kern' kerning in Greek-small" 
+ 31 alphatonos iotatonos alpha iota
+ 16 gamma sigmafinal
+ 6 lambda
+ 95 delta omicron rho sigma phi psi omega omicrontonos omegatonos betasymbol phisymbol qoppaarchgrk
+ 83 etatonos upsilondieresistonos gamma eta nu upsilon psi upsilondieresis upsilontonos
+ 104 alphatonos alpha delta omicron sigmafinal sigma phi omega omicrontonos omegatonos phisymbol qoppaarchgrk
+ 6 lambda
+ 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -10 {} 0 {} 0 {} 0 {} -40 {} 0 {} -60 {} -20 {} -10 {} 0 {} -30 {} 0 {} -40 {}
+KernClass2: 5 3 "'kern' kerning in Greek-cap" 
+ 23 Alphatonos Alpha Lambda
+ 9 Gamma Tau
+ 36 Upsilontonos Upsilon Upsilondieresis
+ 9 Kappa Chi
+ 95 alphatonos alpha delta omicron sigma phi omega omicrontonos omegatonos qoppaarchgrk sigmalunate
+ 79 etatonos upsilondieresistonos gamma eta nu upsilon upsilondieresis upsilontonos
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -20 {} 0 {} -30 {} -30 {} 0 {} -30 {} -40 {}
 KernClass2: 6 17 "'kern' kerns alt+-small in Cyrillic" 
  44 cyr_serb_be cyr_bulg_alt_ve cyr_bulg_alt_lje
  10 cyr_alt_de
@@ -495,7 +515,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 896 16 9
+WinInfo: 1168 16 9
 BeginPrivate: 8
 UniqueID 7 5020939
 BlueValues 33 [-205 -200 -18 0 449 462 669 685]
@@ -11013,6 +11033,7 @@ SplineSet
  749 669 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'cv00' char. variant in Greek lunate sigma-1" Sigmalunate
 Substitution2: "'aalt' access-all-alternates in Greek-1" Sigmalunate Sigmalunaterev
 EndChar
 
@@ -11597,6 +11618,7 @@ SplineSet
  197 230 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'cv01' char. variant in Greek-kappa-1" kappasymbol
 Substitution2: "'aalt' access-all-alternates in Greek-1" kappasymbol
 EndChar
 
@@ -11858,6 +11880,7 @@ SplineSet
  349 420 320.916 433 290 433 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'cv00' char. variant in Greek lunate sigma-1" sigmalunate
 EndChar
 
 StartChar: sigma
@@ -11888,6 +11911,7 @@ SplineSet
  405 398 472 341 472 263 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'cv00' char. variant in Greek lunate sigma-1" sigmalunate
 Substitution2: "'aalt' access-all-alternates in Greek-1" sigmafinal sigmalunate
 EndChar
 
@@ -13251,44 +13275,8 @@ Flags: HMW
 AnchorPoint: "abovecyr" 592 695 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-804 607 m 0
- 804 635 784 636 731 644 c 1
- 731 669 l 1
- 1029 669 l 1
- 1029 644 l 1
- 978 638 962 625 947 572 c 2
- 833 152 l 2
- 820 103 815 80 815 65 c 0
- 815 37 830 28 887 25 c 1
- 887 0 l 1
- 591 0 l 1
- 591 25 l 1
- 640 31 657 45 671 97 c 2
- 794 546 l 2
- 799 564 804 595 804 607 c 0
-140 644 m 1
- 140 669 l 1
- 438 669 l 1
- 438 644 l 1
- 387 638 372 625 356 572 c 2
- 301 373 l 1
- 471.336 371.729 593 356 593 218 c 0
- 593 74 444 0 275 0 c 2
- 0 0 l 1
- 0 25 l 1
- 49 31 66 45 80 97 c 2
- 203 546 l 2
- 208 564 213 595 213 607 c 0
- 213 635 193 636 140 644 c 1
-222 78 m 2
- 221 74 218 63 218 59 c 0
- 218 43 233 35 260 35 c 0
- 367 35 430 152 430 259 c 0
- 430 329 376 338 293 338 c 1
- 222 78 l 2
-EndSplineSet
-Validated: 3073
+Refer: 501 921 N 1 0 0 1 591 0 2
+Refer: 597 1068 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: Softsigncyr
@@ -13518,29 +13506,28 @@ EndChar
 
 StartChar: gecyr
 Encoding: 1075 1075 604
-Width: 374
-Flags: MW
-AnchorPoint: "abovecyr" 253 481 basechar 0
+Width: 377
+Flags: HMW
+AnchorPoint: "abovecyr" 258 481 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-171 40 m 0
- 214 40 255 52 293 110 c 1
- 310 98 l 1
- 269 29 225 -13 116 -13 c 0
- 32 -13 0 39 0 78 c 0
- 0 144 58 188 128 240 c 0
- 187 284 244 316 244 366 c 0
- 244 398 225 408 193 408 c 0
- 150 408 115 392 71 338 c 1
- 54 350 l 1
- 125 452 188 462 251 462 c 0
- 332 462 366 413 366 374 c 0
- 366 308 324 268 236 205 c 0
- 181 166 122 134 122 84 c 0
- 122 52 139 40 171 40 c 0
+176 40 m 0
+ 219 40 260 52 298 110 c 1
+ 315 98 l 1
+ 274 29 230 -13 121 -13 c 0
+ 37 -13 5 39 5 78 c 0
+ 5 144 63 188 133 240 c 0
+ 192 284 249 316 249 366 c 0
+ 249 398 230 408 198 408 c 0
+ 155 408 120 392 76 338 c 1
+ 59 350 l 1
+ 130 452 193 462 256 462 c 0
+ 337 462 371 413 371 374 c 0
+ 371 308 329 268 241 205 c 0
+ 186 166 127 134 127 84 c 0
+ 127 52 144 40 176 40 c 0
 EndSplineSet
-Validated: 3073
 Substitution2: "'locl' local. forms in Cyrillic for Serbian-1" cyr_serb_ge
 EndChar
 
@@ -13987,13 +13974,12 @@ EndChar
 
 StartChar: khacyr
 Encoding: 1093 1093 622
-Width: 476
+Width: 506
 Flags: HMW
 AnchorPoint: "abovecyr" 278 481 basechar 0
 LayerCount: 2
 Fore
-Refer: 88 120 N 1 0 0 1 0 0 3
-Validated: 32769
+Refer: 88 120 N 1 0 0 1 30 0 2
 EndChar
 
 StartChar: tsecyr
@@ -14253,12 +14239,11 @@ SplineSet
  642 61 665 82 691 121 c 2
  705 141 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: softsigncyr
 Encoding: 1100 1100 629
-Width: 506
+Width: 476
 Flags: HMW
 AnchorPoint: "abovecyr" 343 481 basechar 0
 LayerCount: 2
@@ -14282,7 +14267,6 @@ SplineSet
  91 -13 62 58 62 111 c 0
  62 145 74 180 80 204 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: ecyr
@@ -14461,13 +14445,12 @@ EndChar
 
 StartChar: gjecyr
 Encoding: 1107 1107 636
-Width: 374
+Width: 377
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 604 1075 N 1 0 0 1 0 0 3
-Refer: 113 180 N 1 0 0 1 32 0 2
-Validated: 32769
+Refer: 113 180 S 1 0 0 1 42 0 2
 Substitution2: "'locl' local. forms in Cyrillic for Serbian-1" cyr_macedon_gje
 EndChar
 
@@ -16355,7 +16338,6 @@ LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 365 197 0
 Refer: 596 1067 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: yerudiaeresiscyr
@@ -16366,7 +16348,6 @@ LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 203 -23 0
 Refer: 628 1099 N 1 0 0 1 0 0 0
-Validated: 32769
 EndChar
 
 StartChar: alefhebrew
@@ -27182,56 +27163,54 @@ EndChar
 
 StartChar: rhosymbol
 Encoding: 1009 1009 1383
-Width: 519
+Width: 526
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-46 148 m 1
- 39 144 30 64 30 40 c 0
- 30 -188 309 -6 309 -182 c 0
- 309 -201 306 -221 302 -240 c 1
- 273 -240 l 1
- 273 -238 l 2
- 273 -193 137 -202 109 -199 c 0
- 14 -189 -9 -114 -9 -30 c 0
- -9 167 89 474 329 474 c 0
- 437 474 511 410 511 299 c 0
- 511 137 372 -13 208 -13 c 0
- 117 -13 46 54 46 146 c 0
- 46 147 46 147 46 148 c 1
-368 377 m 0
- 368 408 361 446 322 446 c 0
- 228 446 170 160 170 84 c 0
- 170 54 177 16 215 16 c 0
- 310 16 368 301 368 377 c 0
+55 148 m 1
+ 48 144 39 64 39 40 c 0
+ 39 -188 318 -6 318 -182 c 0
+ 318 -201 315 -221 311 -240 c 1
+ 282 -240 l 1
+ 282 -238 l 2
+ 282 -193 146 -202 118 -199 c 0
+ 23 -189 0 -114 0 -30 c 0
+ 0 167 98 474 338 474 c 0
+ 446 474 520 410 520 299 c 0
+ 520 137 381 -13 217 -13 c 0
+ 126 -13 55 54 55 146 c 0
+ 55 147 55 147 55 148 c 1
+377 377 m 0
+ 377 408 370 446 331 446 c 0
+ 237 446 179 160 179 84 c 0
+ 179 54 186 16 224 16 c 0
+ 319 16 377 301 377 377 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: sigmalunate
 Encoding: 1010 1010 1384
 Width: 477
-Flags: MW
+Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-453 407 m 1
- 422 382 l 1
- 401 424 344 446 299 446 c 0
- 226 446 202 353 188 297 c 0
- 171 230 141 148 141 77 c 0
- 141 43 153 16 192 16 c 0
- 244 16 310 43 347 80 c 1
- 366 55 l 1
- 316 13 251 -13 185 -13 c 0
- 76 -13 -1 52 -1 164 c 0
- -1 326 143 474 306 474 c 0
- 361 474 421 455 453 407 c 1
+483 407 m 5
+ 452 382 l 5
+ 431 424 374 446 329 446 c 4
+ 256 446 232 353 218 297 c 4
+ 201 230 171 148 171 77 c 4
+ 171 43 183 16 222 16 c 4
+ 274 16 340 43 377 80 c 5
+ 396 55 l 5
+ 346 13 281 -13 215 -13 c 4
+ 106 -13 29 52 29 164 c 4
+ 29 326 173 474 336 474 c 4
+ 391 474 451 455 483 407 c 5
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: Stigma
@@ -27278,28 +27257,27 @@ TeX: 117 0
 LayerCount: 2
 Fore
 SplineSet
-60 179 m 0
- 60 115.333 124.667 115 170.5 115 c 0
- 204.5 115 245 119 279 119 c 0
- 361 119 405 64 405 0 c 0
- 405 -110 325 -187 187 -187 c 0
- 135 -187 82.6318 -162 82.6318 -121 c 0
- 82.6318 -92 103 -79 125 -79 c 0
- 157 -79 175.1 -103.462 194 -120 c 0
- 218 -141 239.576 -146 258 -146 c 0
- 308 -146 356 -102 356 -53 c 0
- 356 0 308.5 0 265 0 c 0
- 219 0 188.5 -4 141.5 -4 c 0
- 74 -4 10 40 10 127 c 0
- 10 308 135 458 305.5 458 c 0
- 365 458 384 452 473 452 c 0
- 487.5 452 515 458 524 486 c 1
- 551 486 l 1
- 545 417 508 341 394 341 c 0
- 359 341 303 344 267 344 c 0
- 182 344 60 332 60 179 c 0
+70 179 m 4
+ 70 115.333 134.667 115 180.5 115 c 4
+ 214.5 115 255 119 289 119 c 4
+ 371 119 415 64 415 0 c 4
+ 415 -110 335 -187 197 -187 c 4
+ 145 -187 92.6318 -162 92.6318 -121 c 4
+ 92.6318 -92 113 -79 135 -79 c 4
+ 167 -79 185.1 -103.462 204 -120 c 4
+ 228 -141 249.576 -146 268 -146 c 4
+ 318 -146 366 -102 366 -53 c 4
+ 366 0 318.5 0 275 0 c 4
+ 229 0 198.5 -4 151.5 -4 c 4
+ 84 -4 20 40 20 127 c 4
+ 20 308 145 458 315.5 458 c 4
+ 375 458 394 452 483 452 c 4
+ 497.5 452 525 458 534 486 c 5
+ 561 486 l 5
+ 555 417 518 341 404 341 c 4
+ 369 341 313 344 277 344 c 4
+ 192 344 70 332 70 179 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: Digamma
@@ -38189,31 +38167,30 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-48 132 m 1
- 45 132 l 1
- 37 110 32 97 32 74 c 0
- 32 26 46 -12 63 -39 c 0
- 70 -50 77 -59 84 -69 c 1
- 186 -41 l 1
- 186 -90 l 1
- 110 -111 l 1
- 116 -123 119 -138 119 -150 c 0
- 119 -186 96 -212 65 -212 c 0
- 32 -212 1 -195 -10 -143 c 1
- -107 -170 l 1
- -107 -121 l 1
- -14 -96 l 1
- -14 264 135 462 318 462 c 0
- 424 462 496 400 496 292 c 0
- 496 134 360 -13 200 -13 c 0
- 150 -13 48 14 48 132 c 1
-376 338 m 0
- 376 398 352 433 314 433 c 0
- 206 433 147 232 147 108 c 0
- 147 39 180 17 209 17 c 0
- 319 17 376 238 376 338 c 0
+58 132 m 5
+ 55 132 l 5
+ 47 110 42 97 42 74 c 4
+ 42 26 56 -12 73 -39 c 4
+ 80 -50 87 -59 94 -69 c 5
+ 196 -41 l 5
+ 196 -90 l 5
+ 120 -111 l 5
+ 126 -123 129 -138 129 -150 c 4
+ 129 -186 106 -212 75 -212 c 4
+ 42 -212 11 -195 0 -143 c 5
+ -97 -170 l 5
+ -97 -121 l 5
+ -4 -96 l 5
+ -4 264 145 462 328 462 c 4
+ 434 462 506 400 506 292 c 4
+ 506 134 370 -13 210 -13 c 4
+ 160 -13 58 14 58 132 c 5
+386 338 m 4
+ 386 398 362 433 324 433 c 4
+ 216 433 157 232 157 108 c 4
+ 157 39 190 17 219 17 c 4
+ 329 17 386 238 386 338 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: Sigmalunaterev
@@ -38313,47 +38290,46 @@ Encoding: 1120 1120 1805
 Width: 948
 VWidth: 1500
 Flags: HMW
-AnchorPoint: "abovecyr" 563 695 basechar 0
+AnchorPoint: "abovecyr" 572 695 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-375 160 m 2
- 389 211 l 2
- 394.609 231.836 398 256 398 268 c 0
- 398 296 371 302 325 304 c 1
- 325 329 l 1
- 623 329 l 1
- 623 304 l 1
- 572 298 556.03 284.279 541 232 c 2
- 518 152 l 2
- 514.198 132.99 511.668 113.805 511.668 96.08 c 0
- 511.668 51.4064 527.737 16 580 16 c 0
- 751 16 824 280 824 472 c 0
- 824 587 785 651 723 651 c 0
- 696 651 672 638 672 616 c 0
- 672 601 678 592 685 583 c 0
- 695.861 569.035 707.891 547 707.891 526 c 0
- 707.891 496 687 473 653 473 c 0
- 616 473 580.219 501 580.219 556 c 0
- 580.219 642 670 685 735 685 c 0
- 843 685 968 627 968 438 c 0
- 968 225 797 -18 575 -18 c 0
- 475 -18 437 54.3333 437 116 c 1
- 432 117 l 1
- 406 56 326 -18 240 -18 c 0
- 113 -18 18 72 18 234 c 0
- 18 459 191 685 388 685 c 0
- 469 685 515 624 515 554 c 0
- 515 494 475 473 444 473 c 0
- 403 473 378 497 378 531 c 0
- 378 565 394 581 399 590 c 0
- 402.84 596.911 415 610 415 622 c 0
- 415 634 410 651 382 651 c 0
- 216 651 162 383 162 206 c 0
- 162 86 192 16 241 16 c 0
- 316 16 357.376 86.3018 375 160 c 2
+384 160 m 6
+ 398 211 l 6
+ 403.609 231.836 407 256 407 268 c 4
+ 407 296 380 302 334 304 c 5
+ 334 329 l 5
+ 632 329 l 5
+ 632 304 l 5
+ 581 298 565.03 284.279 550 232 c 6
+ 527 152 l 6
+ 523.198 132.99 520.668 113.805 520.668 96.0801 c 4
+ 520.668 51.4062 536.737 16 589 16 c 4
+ 760 16 833 280 833 472 c 4
+ 833 587 794 651 732 651 c 4
+ 705 651 681 638 681 616 c 4
+ 681 601 687 592 694 583 c 4
+ 704.861 569.035 716.891 547 716.891 526 c 4
+ 716.891 496 696 473 662 473 c 4
+ 625 473 589.219 501 589.219 556 c 4
+ 589.219 642 679 685 744 685 c 4
+ 852 685 977 627 977 438 c 4
+ 977 225 806 -18 584 -18 c 4
+ 484 -18 446 54.333 446 116 c 5
+ 441 117 l 5
+ 415 56 335 -18 249 -18 c 4
+ 122 -18 27 72 27 234 c 4
+ 27 459 200 685 397 685 c 4
+ 478 685 524 624 524 554 c 4
+ 524 494 484 473 453 473 c 4
+ 412 473 387 497 387 531 c 4
+ 387 565 403 581 408 590 c 4
+ 411.84 596.911 424 610 424 622 c 4
+ 424 634 419 651 391 651 c 4
+ 225 651 171 383 171 206 c 4
+ 171 86 201 16 250 16 c 4
+ 325 16 366.376 86.3018 384 160 c 6
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: omegacyr
@@ -39497,8 +39473,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1805 1120 N 1 0 0 1 0 0 2
-Refer: 2061 -1 N 1 0 0 1 4 49 2
-Validated: 32769
+Refer: 2061 -1 S 1 0 0 1 14 49 2
 EndChar
 
 StartChar: otcyr
@@ -62812,33 +62787,30 @@ EndChar
 StartChar: uni037B
 Encoding: 891 891 2719
 Width: 485
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1384 1010 N -1 0 0 -1 473 451 2
-Validated: 32769
 EndChar
 
 StartChar: uni037C
 Encoding: 892 892 2720
 Width: 485
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 116 183 N 1 0 0 1 180 0 2
 Refer: 1384 1010 N 1 0 0 1 30 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni037D
 Encoding: 893 893 2721
 Width: 485
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 116 183 N 1 0 0 1 -30 0 2
 Refer: 2719 891 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: numeralsigngreek
