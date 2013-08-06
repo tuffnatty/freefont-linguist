@@ -45,12 +45,17 @@ Catalan	ligature improving l·l
 Dutch	ligatures for ij, IJ
 Sami	localized form for letter Eng
 Turkish	overrides ligatures fi ffi of Latin
+Vietnamese	fine positioning stacked accents.  See also below.
+
+Greek
+-----
+Greek	curly forms of beta and theta in italic text
 
 Cyrillic
 --------
 Ukrainian	ligature for double i-diaresis
-Serbian/Macedonian	localized letters be, and more in italic
-	[the 'sha' with line below is available as a special style ]
+Serbian/Macedonian	localized form of 'be', and others in italic
+	[the 'sha' with line below is available as a character variant ]
 Bulgarian	style set for modern alternative glyphs
 
 Hebrew
@@ -78,12 +83,23 @@ may be obtained.
 Style sets
 ==========
 
-These replacements are activated by specifying a "Style Set".
-These features are accessible only from typesetting software.
+These replacements are meant to indicate variant typgraphic style, and
+are activated by enabling a "Style Set" in the document.
 
 Cyrillic	Bulgarian modern (ss01)
 
 Devanagari	Bombay (ss02), Calcutta (ss03), Nepali (ss04)
+
+Greek		Curly non-inital beta, and initial theta (ss05)
+		(In italic faces for Greek text, these are the default.)
+
+Character variants
+==================
+These are uaually a replacement for a single letter with another.
+
+Greek: lunate sigma (cv00), script kappa (cv01)
+
+Cyrillic: in italic faces, Serbian/Macedonian underscored 'sha' (cv00)
 
 Discretionary features
 ======================
@@ -96,6 +112,21 @@ Ligatures and substitutions
 ---------------------------
 
 Arabic, Armenian, Hebrew, German, Dutch
+
+
+Stacked accents
+---------------
+
+In the Latin ranges, there are a number of characters with one accent
+upon another.  These cause typographical difficulties.
+
+Especially in the Vietnamese range, for some purposes it is best for
+these accents to stand high above the letter, but for others, it is
+best for the accents to remain within the line bounds.
+By default, the accents stand high, exceeding vertical line bounds,
+although this may cause clipping and refresh issues in some applications. 
+A second set of glyphs, with "flattened" accents that keep inside the
+vertical line bounds, may be had by enabling the 'flac' feature.
 
 Small captials
 --------------
@@ -138,7 +169,40 @@ Again these are used primarily by specialized typesetting software.
 
 	Greek, Latin
 
-It also has also a listing of ornamental bullets and stars.
+This face also has also a listing of ornamental versions of punctuation 
+marks such as bullets and stars (ornm).
+
+Use in HTML with CSS
+====================
+Some web browsers have lately become very typography-savvy, having long
+outstripped word processors in this regard.
+
+In basic HTML, it is most important to properly specify the langugage of
+each text element, using HTML 'lang' attributes.  Many typographic
+features of the font will be activated only for certain languages.
+
+If the whole document is in English, for example, the attribute 
+	lang="en-US"
+in the <html> element will suffice.  Any sub-element can be given a 
+separate language when needed.
+
+With CSS, the "font-family" property can be specified as one of
+	'freeserif', 'freesans' or 'freemono',
+and several other properties influencing typographic presentation can
+also be set: "font-weight", "font-style", etc.
+In CSS 3, a special property 'font-feature-settings' that gives explicit
+control of OpenType font features was introduced.  Several browsers
+now have experimental implementations of this feature.  For example,
+Mozilla Firefox has "-moz-font-feature-settings".  The value of the
+Firefox property is a comma delimited string, of 4-character feature
+tags and their value, such as
+	"dlig,cc00=1,liga=0"
+(where 0 indicates "disable"; 1 indicates "enable").
+
+These explicit features are specific to particular fonts.  So this 
+technology is meant to work with "web fonts", a means of delivering
+a font with your web page.  See the document "webfont_guidelines.txt"
+for more information about this.
 
 Use in LaTeX
 ============

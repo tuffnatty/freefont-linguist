@@ -22,6 +22,11 @@ The feature lookup tables used in FreeFont include:
 
 Substitution (GSUB)
 ============
+Some features are usually enabled, and not intended for user interaction.
+Others are usually disabled, and only turned on by some direction in the
+document.  A few provide an "alternatives list", to allow picking of 
+glyph alternates for a certain character from a list--just how this is
+done depends on the application.
 
 rlig	required ligature
 liga	standard ligature
@@ -34,9 +39,12 @@ locl	localized form
 smcp	lowercase to small capitals
 c2sc	captials to small capitals
 
-frac	diagonal fractions
+frac	diagonal fractions (up to 9 decimals with slash / or fraction u+2044)
+afrc	stacked fractions (with slash /)
 zero	slashed zero
 onum	oldstyle figures
+tnum	tablular figures
+pnum	proportional-width figures
 
 ccmp	glyph decomposition (multiple replacement)
 	contextual chained substitution
@@ -78,13 +86,44 @@ dist	distance (similar to kern)
 abvm	above mark
 blwm	below mark
 
-Use and Policies
-================
+Use of features
+===============
+
+Just how a feature is to be enabled varies greatly from one application
+to another, as does the set of features that is supported.  Recently there
+is a lot of interest in typographic features, and things are changing fast.
+
+Many older programs have very poor support for OpenType features.
+
+Word processors have surprisingly poor support.
+For some time, there has been a manual switch for kerning, and a few
+other features might work, but most are non-functional.
+
+The basic font support in modern operating systems is not bad.
+The effect is, often a text editor makes better use of font features
+than a word processor does.
+
+Most "page layout" desktop publishing programs have fair support for
+many OpenType features.  There are tables available on the Web 
+
+Modern LaTeX typesetting programs, such as XeTeX and LuaTeX, have very
+good support via packages such as 'fontspec'.
+
+Web browsers are experimenting with the CSS 2 'font-feature-settings'
+property.  At this time, each browser does it a little differently,
+but the intent is to soon have unified support for enabling font 
+features within a web page.  Mozilla Firefox is particularly strong here.
+Note that it is necessary to correctly indicate the language of each text
+element of HTML, using 'lang' attributes, in order for features to be
+properly activated.
+
+Policies
+========
 
 kerning
 -------
 
-Kerning is viewed as a delicate adjustment of horizontal positioning of
+Kerning consists of a delicate adjustment of horizontal positioning of
 letters based on the relative shapes of adjacent letters.
 
 The first goal of kerning is to enhance the appearance of coherence in
@@ -93,14 +132,14 @@ The second is to make the spacing appear somehow "smooth".
 
 A few pairs of letters are strongly kerned, for example 'AV'.  With very few
 exceptions, one letter should not visually intrude on the horizontal space of
-another.  (Exceptions might include the hooks on f and y.) 
+another.  (Exceptions might include the hooks on 'f' and 'j'.) 
 For instance, in serifed fonts, the serifs of most letters should have a
 visible space between them, and should not visually intrude on one another
 horizontally.
 
 For most others, the policy is "err on the conservative side".
 A common mistake is to try to minimize the area between the letters
--- this has a poor effect on the appearance of the text.
+-- with poor effect on text appearance.
 
 After kerning, bulk text should be carefully inspected both in print and on
 the screen in different resolutions, that the letters appear evenly-spaced,
@@ -109,8 +148,8 @@ and never crash into one another.
 mark positioning
 ----------------
 It is conceptually more direct, and in principle easier, to position marks
-relative to letters using the various mark positioning lookups.
-Unfortunately, the implementation of these features has been rather spotty.
+relative to letters using the various mark positioning lookups, rather 
+than to provide separate glyphs for each combination.
 
 Especially in cases where multiple marks appear on the same base, it can
 get just too messy to be practical.  Unfortunately, often pre-composed
