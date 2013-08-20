@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1376422648
+ModificationTime: 1377005114
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -36,7 +36,7 @@ OS2WinDescent: 0
 OS2WinDOffset: 1
 HheadAscent: 0
 HheadAOffset: 1
-HheadDescent: 100
+HheadDescent: 0
 HheadDOffset: 1
 OS2SubXSize: 650
 OS2SubYSize: 600
@@ -89,19 +89,19 @@ Lookup: 1 0 0 "'smcp' lowercase to small caps in Latin for Turkish"  {"'smcp' lo
 Lookup: 1 0 0 "'smcp' lowercase to small caps in Latin"  {"'smcp' lowercase to small capitals in Latin-1"  } ['smcp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 1 0 0 "'c2sc' caps to small caps in Latin"  {"'c2sc' caps to small caps in Latin-1"  } ['c2sc' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 1 0 0 "'locl' local. forms in Latin for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
+Lookup: 1 0 0 "'locl' local. punct in Bengali"  {"'locl' local. punct in Bengali-1"  } ['locl' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 1 0 0 "'init' Initial Forms in Bengali"  {"'init' Initial Forms in Bengali subtable"  } ['init' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' Akhand in Bengali"  {"'akhn' Akhand in Bengali subtable"  } ['akhn' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Bengali"  {"'rphf' Reph Form in Bengali subtable"  } ['rphf' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' Below Base Forms in Bengali"  {"'blwf' Below Base Forms in Bengali subtable"  } ['blwf' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'half' Half Forms in Bengali"  {"'half' Half Forms in Bengali subtable"  } ['half' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
-Lookup: 4 0 0 "'frac' Diagonal Fractions in Bengali"  {"'frac' Diagonal Fractions in Bengali subtable"  } ['frac' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' Post Base Forms in Bengali"  {"'pstf' Post Base Forms in Bengali subtable"  } ['pstf' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'vatu' Vattu Variants in Bengali"  {"'vatu' Vattu Variants in Bengali subtable"  } ['vatu' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'pres' pre-base subs in Bengali"  {"'pres' Pre Base Substitutions in Bengali subtable"  } ['pres' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base subs in Bengali"  {"'blws' Below Base Substitutions in Bengali subtable"  } ['blws' ('beng' <'dflt' > ) ]
-Lookup: 4 0 0 "'psts' post-base subs in Bengali"  {"'psts' Post Base Substitutions in Bengali subtable"  } ['psts' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'haln' Halant Forms in Bengali"  {"'haln' Halant Forms in Bengali subtable"  } ['haln' ('beng' <'dflt' > ) ]
-Lookup: 1 0 0 "'aalt' Access All Alternates in Indic"  {"'aalt' Access All Alternates in Indic subtable"  } ['aalt' ('beng' <'dflt' > 'bng2' <'dflt' > 'dev2' <'dflt' > 'deva' <'dflt' > ) ]
+Lookup: 4 0 0 "'frac' diagonal fractions in Bengali"  {"'frac' Diagonal Fractions in Bengali subtable"  } ['frac' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
+Lookup: 4 0 0 "'dlig' discr. ligatures in Bengali"  {"'dlig' discr. ligatures in Bengali-1"  } ['dlig' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' std. ligatures in Thai"  {"'liga' std. ligatures in Thai 0"  } ['liga' ('thai' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' glyph decomp. in Hebrew"  {"'ccmp' glyph decomp. in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' discr. ligatures in Hebrew"  {"'dlig' discr. ligatures in Hebrew 0"  } ['dlig' ('hebr' <'dflt' > ) ]
@@ -725,7 +725,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11728 16 9
+WinInfo: 896 16 9
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -749,7 +749,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 216497 262144 131072 87381 448791 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "low_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "top_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "point_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_low_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_right_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_low_heb"  "'mark' Mark Positioning in Hebrew for Ivrit subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Hebrew for Yiddish subtable" "topright"  "'mark' Mark Positioning subtable middle" "ogonek"  "'mark' Mark Positioning in Latin subtable 2" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable middle" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai subtable 1" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai subtable" "thai_vowel"  "'mark' Mark Positioning in Thai subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai subtable" "thai_below"  "'blwm' Below Base Mark in Thai subtable" "below"  "'mark' Mark Positioning in Latin subtable" "above"  "'mark' Mark Positioning in Latin 2 subtable" 
-BeginChars: 65980 3582
+BeginChars: 65980 3586
 
 StartChar: space
 Encoding: 32 32 0
@@ -777,6 +777,7 @@ SplineSet
  39 70 64 95 91 95 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' local. punct in Bengali-1" indic_exclam
 EndChar
 
 StartChar: quotedbl
@@ -1552,6 +1553,7 @@ SplineSet
  150 416 174 441 205 441 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' local. punct in Bengali-1" indic_semicolon
 EndChar
 
 StartChar: less
@@ -1642,6 +1644,7 @@ SplineSet
  132 69 155 93 184 93 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' local. punct in Bengali-1" indic_question
 EndChar
 
 StartChar: at
@@ -10630,13 +10633,13 @@ EndChar
 
 StartChar: Upsilontonos
 Encoding: 910 910 486
-Width: 837
+Width: 784
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 508 933 N 1 0 0 1 219 0 0
+Refer: 508 933 N 1 0 0 1 191 0 0
 Refer: 1330 900 N 1 0 0 1 71 -42 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: Omegatonos
@@ -11012,32 +11015,12 @@ EndChar
 
 StartChar: Upsilon
 Encoding: 933 933 508
-Width: 634
+Width: 593
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-679 553 m 0
- 638.667 553 675.133 602 607 602 c 0
- 483 602 409 372 389 299 c 0
- 373 239 329 121 329 56 c 0
- 329 19 370 19 397 16 c 1
- 397 0 l 1
- 153 0 l 1
- 153 16 l 1
- 208 26 219 34 234 90 c 2
- 289 291 l 2
- 304 347 315 405 315 463 c 0
- 315 519 287 602 220 602 c 0
- 139 602 154 553 105 553 c 0
- 94.4473 553 87.0791 558.274 87.0791 566.626 c 0
- 87.0791 582.266 126.262 672 205 672 c 0
- 331 672 368 526 369 425 c 1
- 423 518 503 672 628 672 c 0
- 670 672 699 635 699 595 c 0
- 699 564 689 553 679 553 c 0
-EndSplineSet
-Validated: 3073
+Refer: 57 89 S 1 0 0 1 0 0 2
+Validated: 1
 Substitution2: "'aalt' access-all-alternates in Greek-1" Upsilonhook
 EndChar
 
@@ -11183,13 +11166,13 @@ EndChar
 
 StartChar: Upsilondieresis
 Encoding: 939 939 514
-Width: 696
+Width: 593
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 508 933 N 1 0 0 1 0 0 2
 Refer: 102 168 N 1 0 0 1 174 217 2
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: alphatonos
@@ -12135,34 +12118,32 @@ EndChar
 
 StartChar: Upsilonhook
 Encoding: 978 978 550
-Width: 630
+Width: 634
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-607 488 m 0
- 585 488 571 508 571 529 c 0
- 571 570 625 590 625 609 c 0
- 625 628 605 631 590 631 c 0
- 486 631 406 374 386 299 c 0
- 370 239 326 120 326 56 c 0
- 326 19 367 19 394 16 c 1
- 394 0 l 1
- 150 0 l 1
- 150 16 l 1
- 206 26 215 34 231 90 c 0
- 262 198 304 351 304 462 c 0
- 304 480 303 498 299 515 c 0
- 285 572 236 604 185 625 c 0
- 162 634 138 639 116 649 c 1
- 115 649 111 651 111 653 c 0
- 111 670 174 670 186 670 c 0
- 309 670 390 586 398 465 c 1
- 440 557 510 672 625 672 c 0
- 667 672 696 635 696 595 c 0
- 696 550 655 488 607 488 c 0
+679 553 m 4
+ 638.667 553 675.133 602 607 602 c 4
+ 483 602 409 372 389 299 c 4
+ 373 239 329 121 329 56 c 4
+ 329 19 370 19 397 16 c 5
+ 397 0 l 5
+ 153 0 l 5
+ 153 16 l 5
+ 208 26 219 34 234 90 c 6
+ 289 291 l 6
+ 304 347 315 405 315 463 c 4
+ 315 519 287 602 220 602 c 4
+ 139 602 154 553 105 553 c 4
+ 94.4473 553 87.0791 558.274 87.0791 566.626 c 4
+ 87.0791 582.266 126.262 672 205 672 c 4
+ 331 672 368 526 369 425 c 5
+ 423 518 503 672 628 672 c 4
+ 670 672 699 635 699 595 c 4
+ 699 564 689 553 679 553 c 4
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: Upsilonhooktonos
@@ -12173,7 +12154,7 @@ LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 180 0 0
 Refer: 1330 900 N 1 0 0 1 38 -41 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: Upsilonhookdiaeresis
@@ -12183,8 +12164,8 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 57 0 0
-Refer: 102 168 N 1 0 0 1 205 224 0
-Validated: 32769
+Refer: 102 168 S 1 0 0 1 235 224 0
+Validated: 1
 EndChar
 
 StartChar: phisymbol
@@ -25435,7 +25416,7 @@ LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 196 0 0
 Refer: 1272 8190 N 1 0 0 1 -25 7 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: Upsilonaspergrave
@@ -25446,7 +25427,7 @@ LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 302 0 0
 Refer: 1244 8157 N 1 0 0 1 -31 6 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: Upsilonasperacute
@@ -25457,7 +25438,7 @@ LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 330 0 0
 Refer: 1245 8158 N 1 0 0 1 -42 7 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: Upsilonaspertilde
@@ -25468,7 +25449,7 @@ LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 203 0 0
 Refer: 1246 8159 N 1 0 0 1 -43 -1 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: uni1F60
@@ -26600,24 +26581,24 @@ EndChar
 
 StartChar: uni1FE8
 Encoding: 8168 8168 1254
-Width: 634
+Width: 593
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 508 933 N 1 0 0 1 0 0 0
 Refer: 403 728 N 1 0 0 1 185 182 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: uni1FE9
 Encoding: 8169 8169 1255
-Width: 634
+Width: 593
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 508 933 N 1 0 0 1 0 0 0
 Refer: 108 175 N 1 0 0 1 185 216 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: uni1FEA
@@ -26628,7 +26609,7 @@ LayerCount: 2
 Fore
 Refer: 508 933 N 1 0 0 1 189 0 0
 Refer: 1261 8175 N 1 0 0 1 -23 1 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: uni1FEB
@@ -26639,7 +26620,7 @@ LayerCount: 2
 Fore
 Refer: 508 933 N 1 0 0 1 185 0 0
 Refer: 1374 8189 N 1 0 0 1 -145 -17 0
-Validated: 32769
+Validated: 1
 EndChar
 
 StartChar: Rho_dasia
@@ -34253,7 +34234,7 @@ SplineSet
  104 16 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'aalt' Access All Alternates in Indic subtable" danda
+Substitution2: "'locl' local. punct in Bengali-1" bn_fullstop
 EndChar
 
 StartChar: doubledanda
@@ -34277,10 +34258,9 @@ SplineSet
  104 16 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "'aalt' Access All Alternates in Indic subtable" doubledanda
 EndChar
 
-StartChar: bn_candrabindu
+StartChar: candrabindu_bng
 Encoding: 2433 2433 1593
 Width: 0
 Flags: HMW
@@ -36404,7 +36384,6 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' Initial Forms in Bengali subtable" bn_initekaar
-Substitution2: "'aalt' Access All Alternates in Indic subtable" bn_initekaar
 EndChar
 
 StartChar: bn_aikaar
@@ -36445,7 +36424,6 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' Initial Forms in Bengali subtable" bn_initaikaar
-Substitution2: "'aalt' Access All Alternates in Indic subtable" bn_initaikaar
 EndChar
 
 StartChar: bn_okaar
@@ -36553,18 +36531,13 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-100 558 m 1
- 154 558 l 1
- 140 508 l 1
- 86 508 l 1
- 100 558 l 1
 -134 -33 m 1
  -56 -33 l 1
  63 -162 l 1
  12 -162 l 1
  -134 -33 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_aumark
@@ -56822,6 +56795,7 @@ SplineSet
  154 247 131 270.2 131 327 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'akhn' Akhand in Bengali subtable" bn_ja bn_hasanta bn_nya
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ja bn_nya
 EndChar
@@ -75109,7 +75083,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 LCarets2: 2 0 0 
-Ligature2: "'psts' Post Base Substitutions in Bengali subtable" bn_da ZWJ bn_yaphala
+Ligature2: "'dlig' discr. ligatures in Bengali-1" bn_da bn_yaphala
 EndChar
 
 StartChar: bn_n_ya
@@ -75177,7 +75151,7 @@ SplineSet
  98 309 83 341 83 362 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' Post Base Substitutions in Bengali subtable" bn_na ZWJ bn_yaphala
+Ligature2: "'dlig' discr. ligatures in Bengali-1" bn_na bn_yaphala
 EndChar
 
 StartChar: bn_sh_ya
@@ -75264,7 +75238,7 @@ SplineSet
  266 464 308 439 308 402 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' Post Base Substitutions in Bengali subtable" bn_sha ZWJ bn_yaphala
+Ligature2: "'dlig' discr. ligatures in Bengali-1" bn_sha bn_yaphala
 EndChar
 
 StartChar: bn_ss_ya
@@ -75351,7 +75325,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 LCarets2: 2 0 0 
-Ligature2: "'psts' Post Base Substitutions in Bengali subtable" bn_ssa ZWJ bn_yaphala
+Ligature2: "'dlig' discr. ligatures in Bengali-1" bn_ssa bn_yaphala
 EndChar
 
 StartChar: bn_s_ya
@@ -75426,7 +75400,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 LCarets2: 2 0 0 
-Ligature2: "'psts' Post Base Substitutions in Bengali subtable" bn_sa ZWJ bn_yaphala
+Ligature2: "'dlig' discr. ligatures in Bengali-1" bn_sa bn_yaphala
 EndChar
 
 StartChar: bn_h_ya
@@ -75481,7 +75455,7 @@ SplineSet
  601 320 l 2
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' Post Base Substitutions in Bengali subtable" bn_ha ZWJ bn_yaphala
+Ligature2: "'dlig' discr. ligatures in Bengali-1" bn_ha bn_yaphala
 EndChar
 
 StartChar: bn_k_hasanta
@@ -101924,7 +101898,7 @@ AnchorPoint: "abovecyr" -150 450 mark 0
 LayerCount: 2
 Fore
 Refer: 597 1073 N 0.521542 0 0 0.455307 -256 487 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: vede_comb
@@ -101936,7 +101910,7 @@ AnchorPoint: "abovecyr" -136 450 mark 0
 LayerCount: 2
 Fore
 Refer: 598 1074 N 0.5 0 0 0.47 -228 481 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: glagol_comb
@@ -101948,7 +101922,7 @@ AnchorPoint: "abovecyr" -133 450 mark 0
 LayerCount: 2
 Fore
 Refer: 599 1075 S 0.51 0 0 0.47 -201 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: dobro_comb
@@ -101960,7 +101934,7 @@ AnchorPoint: "abovecyr" -108 450 mark 0
 LayerCount: 2
 Fore
 Refer: 600 1076 S 0.41 0 0 0.3675 -204 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: zhivete_comb
@@ -101972,7 +101946,7 @@ AnchorPoint: "abovecyr" -119 450 mark 0
 LayerCount: 2
 Fore
 Refer: 602 1078 N 0.45 0 0 0.48 -300 478 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: zemlja_comb
@@ -101984,7 +101958,7 @@ AnchorPoint: "abovecyr" -97 450 mark 0
 LayerCount: 2
 Fore
 Refer: 603 1079 N 0.45 0 0 0.4525 -175 486 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: kako_comb
@@ -101996,7 +101970,7 @@ AnchorPoint: "abovecyr" -140 450 mark 0
 LayerCount: 2
 Fore
 Refer: 606 1082 N 0.47 0 0 0.47 -241 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: ljudi_comb
@@ -102008,7 +101982,7 @@ AnchorPoint: "abovecyr" -135 450 mark 0
 LayerCount: 2
 Fore
 Refer: 607 1083 N 0.475 0 0 0.4675 -239 481 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: myslete_comb
@@ -102020,7 +101994,7 @@ AnchorPoint: "abovecyr" -167 450 mark 0
 LayerCount: 2
 Fore
 Refer: 608 1084 N 0.51 0 0 0.4725 -320 481 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: nash_comb
@@ -102032,7 +102006,7 @@ AnchorPoint: "abovecyr" -140 450 mark 0
 LayerCount: 2
 Fore
 Refer: 609 1085 N 0.46 0 0 0.47 -237 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: on_comb
@@ -102044,7 +102018,7 @@ AnchorPoint: "abovecyr" -137 450 mark 0
 LayerCount: 2
 Fore
 Refer: 610 1086 N 0.455 0 0 0.45 -216 484 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: pokoj_comb
@@ -102056,7 +102030,7 @@ AnchorPoint: "abovecyr" -150 450 mark 0
 LayerCount: 2
 Fore
 Refer: 611 1087 N 0.44 0 0 0.47 -233 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: rtsy_comb
@@ -102068,7 +102042,7 @@ AnchorPoint: "abovecyr" -144 450 mark 0
 LayerCount: 2
 Fore
 Refer: 612 1088 N 0.439604 0 0 0.4512 -218 578 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: slovo_comb
@@ -102080,7 +102054,7 @@ AnchorPoint: "abovecyr" -126 450 mark 0
 LayerCount: 2
 Fore
 Refer: 613 1089 N 0.46 0 0 0.45 -202 484 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: tverdo_comb
@@ -102092,7 +102066,7 @@ AnchorPoint: "abovecyr" -62 450 mark 0
 LayerCount: 2
 Fore
 Refer: 614 1090 N 0.48 0 0 0.47 -203 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: kher_comb
@@ -102104,7 +102078,7 @@ AnchorPoint: "abovecyr" -140 450 mark 0
 LayerCount: 2
 Fore
 Refer: 617 1093 N 0.47 0 0 0.47 -226 481 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: tsy_comb
@@ -102116,7 +102090,7 @@ AnchorPoint: "abovecyr" -132 450 mark 0
 LayerCount: 2
 Fore
 Refer: 618 1094 N 0.432081 0 0 0.468937 -232 530 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: cherv_comb
@@ -102128,7 +102102,7 @@ AnchorPoint: "abovecyr" -139 450 mark 0
 LayerCount: 2
 Fore
 Refer: 619 1095 N 0.49 0 0 0.47 -252 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: sha_comb
@@ -102140,7 +102114,7 @@ AnchorPoint: "abovecyr" -191 450 mark 0
 LayerCount: 2
 Fore
 Refer: 620 1096 N 0.46 0 0 0.47 -345 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: shta_comb
@@ -102152,7 +102126,7 @@ AnchorPoint: "abovecyr" -189 450 mark 0
 LayerCount: 2
 Fore
 Refer: 621 1097 N 0.44 0 0 0.47 -333 521 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: fita_comb
@@ -102164,7 +102138,7 @@ AnchorPoint: "abovecyr" -125 450 mark 0
 LayerCount: 2
 Fore
 Refer: 2154 1139 N 0.45 0 0 0.45 -213 484 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: az_comb
@@ -102176,7 +102150,7 @@ AnchorPoint: "abovecyr" -130 450 mark 0
 LayerCount: 2
 Fore
 Refer: 596 1072 N 0.4875 0 0 0.4475 -218 485 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: est_comb
@@ -102188,7 +102162,7 @@ AnchorPoint: "abovecyr" -123 450 mark 0
 LayerCount: 2
 Fore
 Refer: 601 1077 N 0.4675 0 0 0.45 -202 485 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: yat_comb
@@ -102200,7 +102174,7 @@ AnchorPoint: "abovecyr" -120 450 mark 0
 LayerCount: 2
 Fore
 Refer: 1777 1123 N 0.54 0 0 0.48 -264 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: yus_comb
@@ -102212,7 +102186,7 @@ AnchorPoint: "abovecyr" -168 450 mark 0
 LayerCount: 2
 Fore
 Refer: 626 1102 N 0.48 0 0 0.48 -319 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: yus_malyj_comb
@@ -102224,7 +102198,7 @@ AnchorPoint: "abovecyr" -167 450 mark 0
 LayerCount: 2
 Fore
 Refer: 2142 1127 N 0.48 0 0 0.47 -309 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: yus_bolshoj_comb
@@ -102236,7 +102210,7 @@ AnchorPoint: "abovecyr" -159 450 mark 0
 LayerCount: 2
 Fore
 Refer: 2146 1131 N 0.49 0 0 0.47 -321 480 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: jyus_bolshoj_comb
@@ -102248,7 +102222,54 @@ AnchorPoint: "abovecyr" -228 450 mark 0
 LayerCount: 2
 Fore
 Refer: 2148 1133 N 0.459912 0 0 0.4747 -421 479 2
-Validated: 1048577
+Validated: 1
+EndChar
+
+StartChar: indic_semicolon
+Encoding: 61725 -1 3582
+Width: 370
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 27 59 N 1 0 0 1 120 0 2
+Validated: 1
+EndChar
+
+StartChar: indic_question
+Encoding: 61726 -1 3583
+Width: 596
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 31 63 N 1 0 0 1 182 0 2
+Validated: 1
+EndChar
+
+StartChar: indic_exclam
+Encoding: 61727 -1 3584
+Width: 357
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1 33 N 1 0 0 1 120 0 2
+Validated: 1
+EndChar
+
+StartChar: bn_fullstop
+Encoding: 61055 -1 3585
+Width: 350
+VWidth: 1030
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+375 588 m 5
+ 239 -50 l 5
+ 201 4 l 5
+ 336 641 l 5
+ 375 588 l 5
+EndSplineSet
+Validated: 1
 EndChar
 EndChars
 EndSplineFont
