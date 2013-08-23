@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1377211314
+ModificationTime: 1377254978
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -52,6 +52,7 @@ OS2FamilyClass: 261
 OS2Vendor: 'GNU '
 Lookup: 1 0 0 "do_nothing"  {} []
 Lookup: 1 0 0 "positional forms in Greek"  {"positional forms in Greek-1"  } []
+Lookup: 2 0 0 "'locl' local. forms in Greek Extended"  {"'locl' local. forms in Greek Extended-iota below-1"  "'locl' local. forms in Greek Extended-Upsilon"  } ['locl' ('grek' <'ELL ' > ) ]
 Lookup: 1 0 0 "'locl' local. forms in Greek"  {"'locl' local. forms in Greek-1"  } ['locl' ('grek' <'ELL ' > ) ]
 Lookup: 1 0 0 "'cv01' char. var. in Greek-kappa"  {"'cv01' char. var. in Greek-kappa-1"  } ['cv01' ('grek' <'ELL ' 'dflt' > ) ]
 Lookup: 6 0 0 "'cv02' char. var. in Greek-beta curly non-init"  {"'cv02' char. var. in Greek-beta curly non-init-1"  } ['cv02' ('grek' <'ELL ' 'dflt' > ) ]
@@ -104,6 +105,7 @@ Lookup: 258 0 0 "'kern' kerning slash fractions"  {"'kern' kerning slash fractio
 Lookup: 260 0 0 "'mark' Mark Positioning"  {"'mark' Mark Positioning subtable"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'cher' <'dflt' > 'cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'dflt' > 'hebr' <'IWR ' 'JII ' 'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'thai' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' mark-to-mark in Cyrillic"  {"'mkmk' mark-to-mark in Cyrillic-1"  } ['mkmk' ('cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' mark above in Greek"  {"'mark' mark above in Greek-1"  } ['mark' ('grek' <'ELL ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Greek"  {"'kern' kerning in Greek-cap" [150,0,6] "'kern' kerning in Greek-small" [150,0,6] "'kern' kerning in Greek-aspiratives" [150,0,4] } ['kern' ('grek' <'ELL ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kerns in Cyrillic-big" [150,0,4] "'kern' kerns in Cyrillic-small" [150,0,0] "'kern' kerns alt+-big in Cyrillic" [150,0,0] "'kern' kerns small+-alt in Cyrillic" [150,0,0] "'kern' kerns alt+-small in Cyrillic" [150,0,0] } ['kern' ('cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Thai 0"  {"'mark' Mark Positioning in Thai 0 subtable"  } ['mark' ('thai' <'dflt' > ) ]
@@ -153,14 +155,16 @@ KernClass2: 5 4 "'kern' kerning in Greek-small"
  104 alphatonos alpha delta omicron sigmafinal sigma phi omega omicrontonos omegatonos phisymbol qoppaarchgrk
  6 lambda
  0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -20 {} 0 {} 0 {} 0 {} -40 {} 0 {} -60 {} -20 {} -10 {} 0 {} -30 {} 0 {} -40 {}
-KernClass2: 5 3 "'kern' kerning in Greek-cap" 
+KernClass2: 6 4 "'kern' kerning in Greek-cap" 
  23 Alphatonos Alpha Lambda
  9 Gamma Tau
  36 Upsilontonos Upsilon Upsilondieresis
  9 Kappa Chi
+ 49 Upsilonhook Upsilonhooktonos Upsilonhookdiaeresis
  95 alphatonos alpha delta omicron sigma phi omega omicrontonos omegatonos qoppaarchgrk sigmalunate
  79 etatonos upsilondieresistonos gamma eta nu upsilon upsilondieresis upsilontonos
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -20 {} 0 {} -30 {} -30 {} 0 {} -30 {} -40 {}
+ 18 Alpha Delta Lambda
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -20 {} -60 {} 0 {} -30 {} -30 {} -80 {} 0 {} -30 {} -40 {} 0 {} 0 {} -60 {} -40 {} -80 {}
 KernClass2: 6 17 "'kern' kerns alt+-small in Cyrillic" 
  44 cyr_serb_be cyr_bulg_alt_ve cyr_bulg_alt_lje
  10 cyr_alt_de
@@ -435,7 +439,7 @@ ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   Class: 4 beta
   Class: 5 theta
   BClass: 878 Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos iotadieresistonos Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega Iotadieresis Upsilondieresis alphatonos epsilontonos etatonos iotatonos upsilondieresistonos alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigmafinal sigma tau upsilon phi chi psi omega iotadieresis upsilondieresis omicrontonos upsilontonos omegatonos Upsilonhook Upsilonhooktonos Upsilonhookdiaeresis phisymbol pisymbol kaisymbol Qoppaarchgrk qoppaarchgrk Stigma stigma Digamma digamma Koppa koppa Sampi sampi kappasymbol rhosymbol sigmalunate yotgrk Thetasymbol epsilonlunate epsilonlunaterev Shoarchgrk shoarchgrk Sigmalunate Sanarchgrk sanarchgrk rhostroke Sigmalunaterev Sigmadottedlunate Sigmarevdottedlunate
-  BClass: 2570 uni1F00 uni1F01 uni1F02 uni1F03 uni1F04 uni1F05 uni1F06 uni1F07 Alphapsili Alphadasia Alphapsilivaria Alphadasiavaria Alphapsilioxia Alphadasiaoxia Alphapsiliperispomeni Alphadasiaperispomeni uni1F10 uni1F11 uni1F12 uni1F13 uni1F14 uni1F15 Epsilonpsili Epsilondasia Epsilonpsilivaria Epsilondasiavaria Epsilonpsilioxia Epsilondasiaoxia uni1F20 uni1F21 uni1F22 uni1F23 uni1F24 uni1F25 uni1F26 uni1F27 Etapsili Etadasia Etapsilivaria Etadasiavaria Etapsilioxia Etadasiaoxia Etapsiliperispomeni Etadasiaperispomeni uni1F30 uni1F31 uni1F32 uni1F33 uni1F34 uni1F35 uni1F36 uni1F37 Iotapsili Iotadasia Iotapsilivaria Iotadasiavaria Iotapsilioxia Iotadasiaoxia Iotapsiliperispomeni Iotadasiaperispomeni omicronlenis uni1F41 uni1F42 uni1F43 uni1F44 uni1F45 Omicronpsili Omicrondasia Omicronpsilivaria Omicrondasiavaria Omicronpsilioxia Omicrondasiaoxia uni1F50 uni1F51 uni1F52 uni1F53 uni1F54 uni1F55 uni1F56 uni1F57 Upsilondasia Upsilondasiavaria Upsilondasiaoxia Upsilondasiaperispomeni uni1F60 uni1F61 uni1F62 uni1F63 uni1F64 uni1F65 uni1F66 uni1F67 Omegapsili Omegadasia Omegapsilivaria Omegadasiavaria Omegapsilioxia Omegadasiaoxia Omegapsiliperispomeni Omegadasiaperispomeni uni1F70 uni1F71 uni1F72 uni1F73 uni1F74 uni1F75 uni1F76 uni1F77 uni1F78 uni1F79 uni1F7A uni1F7B uni1F7C uni1F7D uni1F80 uni1F81 uni1F82 uni1F83 uni1F84 uni1F85 uni1F86 uni1F87 Alphapsiliiota Alphadasiaiota Alphapsilivariaiota Alphadasiavariaiota Alphapsilioxiaiota Alphadasiaoxiaiota Alphapsiliperispomeniiota Alphadasiaperispomeniiota uni1F90 uni1F91 uni1F92 uni1F93 uni1F94 uni1F95 uni1F96 uni1F97 Etapsiliiota Etadasiaiota Etapsilivariaiota Etadasiavariaiota Etapsilioxiaiota Etadasiaoxiaiota Etapsiliperispomeniiota Etadasiaperispomeniiota uni1FA0 uni1FA1 uni1FA2 uni1FA3 uni1FA4 uni1FA5 uni1FA6 uni1FA7 Omegapsiliiota Omegadasiaiota Omegapsilivariaiota Omegadasiavariaiota Omegapsilioxiaiota Omegadasiaoxiaiota Omegapsiliperispomeniiota Omegadasiaperispomeniiota uni1FB0 uni1FB1 uni1FB2 uni1FB3 uni1FB4 uni1FB6 uni1FB7 uni1FB8 uni1FB9 uni1FBA uni1FBB Alphaiota lenis prosgegrammeni psili perispomeni dialytikaperispomeni uni1FC2 uni1FC3 uni1FC4 uni1FC6 uni1FC7 uni1FC8 uni1FC9 uni1FCA uni1FCB Etaiota psilivaria psilioxia psiliperispomeni iotabreve uni1FD1 uni1FD2 uni1FD3 uni1FD6 uni1FD7 uni1FD8 uni1FD9 uni1FDA uni1FDB dasiavaria dasiaoxia dasiaperispomeni uni1FE0 uni1FE1 uni1FE2 uni1FE3 uni1FE4 uni1FE5 uni1FE6 uni1FE7 uni1FE8 uni1FE9 uni1FEA uni1FEB Rho_dasia dialytikavaria dialytikaoxia varia uni1FF2 uni1FF3 uni1FF4 uni1FF6 uni1FF7 uni1FF8 uni1FF9 uni1FFA uni1FFB Omegaiota oxia dasia
+  BClass: 2590 uni1F00 uni1F01 uni1F02 uni1F03 uni1F04 uni1F05 uni1F06 uni1F07 Alphapsili Alphadasia Alphapsilivaria Alphadasiavaria Alphapsilioxia Alphadasiaoxia Alphapsiliperispomeni Alphadasiaperispomeni uni1F10 uni1F11 uni1F12 uni1F13 uni1F14 uni1F15 Epsilonpsili Epsilondasia Epsilonpsilivaria Epsilondasiavaria Epsilonpsilioxia Epsilondasiaoxia uni1F20 uni1F21 uni1F22 uni1F23 uni1F24 uni1F25 uni1F26 uni1F27 Etapsili Etadasia Etapsilivaria Etadasiavaria Etapsilioxia Etadasiaoxia Etapsiliperispomeni Etadasiaperispomeni uni1F30 uni1F31 uni1F32 uni1F33 uni1F34 uni1F35 uni1F36 uni1F37 Iotapsili Iotadasia Iotapsilivaria Iotadasiavaria Iotapsilioxia Iotadasiaoxia Iotapsiliperispomeni Iotadasiaperispomeni omicronlenis uni1F41 uni1F42 uni1F43 uni1F44 uni1F45 Omicronpsili Omicrondasia Omicronpsilivaria Omicrondasiavaria Omicronpsilioxia Omicrondasiaoxia uni1F50 uni1F51 uni1F52 uni1F53 uni1F54 uni1F55 uni1F56 uni1F57 Upsilondasia Upsilondasiavaria Upsilondasiaoxia Upsilondasiaperispomeni uni1F60 uni1F61 uni1F62 uni1F63 uni1F64 uni1F65 uni1F66 uni1F67 Omegapsili Omegadasia Omegapsilivaria Omegadasiavaria Omegapsilioxia Omegadasiaoxia Omegapsiliperispomeni Omegadasiaperispomeni uni1F70 uni1F71 uni1F72 uni1F73 uni1F74 uni1F75 uni1F76 uni1F77 uni1F78 uni1F79 uni1F7A uni1F7B uni1F7C uni1F7D uni1F80 uni1F81 uni1F82 uni1F83 uni1F84 uni1F85 uni1F86 uni1F87 Alphapsiliiota Alphadasiaiota Alphapsilivariaiota Alphadasiavariaiota Alphapsilioxiaiota Alphadasiaoxiaiota Alphapsiliperispomeniiota Alphadasiaperispomeniiota uni1F90 uni1F91 uni1F92 uni1F93 uni1F94 uni1F95 uni1F96 uni1F97 Etapsiliiota Etadasiaiota Etapsilivariaiota Etadasiavariaiota Etapsilioxiaiota Etadasiaoxiaiota Etapsiliperispomeniiota Etadasiaperispomeniiota uni1FA0 uni1FA1 uni1FA2 uni1FA3 uni1FA4 uni1FA5 uni1FA6 uni1FA7 Omegapsiliiota Omegadasiaiota Omegapsilivariaiota Omegadasiavariaiota Omegapsilioxiaiota Omegadasiaoxiaiota Omegapsiliperispomeniiota Omegadasiaperispomeniiota uni1FB0 uni1FB1 uni1FB2 uni1FB3 uni1FB4 uni1FB6 uni1FB7 uni1FB8 uni1FB9 uni1FBA uni1FBB Alphaiota lenis prosgegrammeni psili perispomeni dialytikaperispomeni uni1FC2 uni1FC3 uni1FC4 uni1FC6 uni1FC7 uni1FC8 uni1FC9 uni1FCA uni1FCB Etaiota psilivaria psilioxia psiliperispomeni iotabreve uni1FD1 uni1FD2 uni1FD3 uni1FD6 uni1FD7 uni1FD8 uni1FD9 uni1FDA uni1FDB dasiavaria dasiaoxia dasiaperispomeni uni1FE0 uni1FE1 uni1FE2 uni1FE3 uni1FE4 uni1FE5 uni1FE6 uni1FE7 Upsilonbreve Upsilonmacron Upsilonvaria Upsilonoxia Rho_dasia dialytikavaria dialytikaoxia varia uni1FF2 uni1FF3 uni1FF4 uni1FF6 uni1FF7 uni1FF8 uni1FF9 uni1FFA uni1FFB Omegaiota oxia dasia
   BClass: 22 betasymbol thetasymbol
   FClass: 901 Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos iotadieresistonos Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega Iotadieresis Upsilondieresis alphatonos epsilontonos etatonos iotatonos upsilondieresistonos alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigmafinal sigma tau upsilon phi chi psi omega iotadieresis upsilondieresis omicrontonos upsilontonos omegatonos betasymbol thetasymbol Upsilonhook Upsilonhooktonos Upsilonhookdiaeresis phisymbol pisymbol kaisymbol Qoppaarchgrk qoppaarchgrk Stigma stigma Digamma digamma Koppa koppa Sampi sampi kappasymbol rhosymbol sigmalunate yotgrk Thetasymbol epsilonlunate epsilonlunaterev Shoarchgrk shoarchgrk Sigmalunate Sanarchgrk sanarchgrk rhostroke Sigmalunaterev Sigmadottedlunate Sigmarevdottedlunate
   FClass: 974 uni1F00 uni1F01 uni1F02 uni1F03 uni1F04 uni1F05 uni1F06 uni1F07 uni1F10 uni1F11 uni1F12 uni1F13 uni1F14 uni1F15 uni1F20 uni1F21 uni1F22 uni1F23 uni1F24 uni1F25 uni1F26 uni1F27 uni1F30 uni1F31 uni1F32 uni1F33 uni1F34 uni1F35 uni1F36 uni1F37 omicronlenis uni1F41 uni1F42 uni1F43 uni1F44 uni1F45 uni1F50 uni1F51 uni1F52 uni1F53 uni1F54 uni1F55 uni1F56 uni1F57 uni1F60 uni1F61 uni1F62 uni1F63 uni1F64 uni1F65 uni1F66 uni1F67 uni1F70 uni1F71 uni1F72 uni1F73 uni1F74 uni1F75 uni1F76 uni1F77 uni1F78 uni1F79 uni1F7A uni1F7B uni1F7C uni1F7D uni1F80 uni1F81 uni1F82 uni1F83 uni1F84 uni1F85 uni1F86 uni1F87 uni1F90 uni1F91 uni1F92 uni1F93 uni1F94 uni1F95 uni1F96 uni1F97 uni1FA0 uni1FA1 uni1FA2 uni1FA3 uni1FA4 uni1FA5 uni1FA6 uni1FA7 uni1FB0 uni1FB1 uni1FB2 uni1FB3 uni1FB4 uni1FB6 uni1FB7 uni1FC2 uni1FC3 uni1FC4 uni1FC6 uni1FC7 iotabreve uni1FD1 uni1FD2 uni1FD3 uni1FD6 uni1FD7 uni1FE0 uni1FE1 uni1FE2 uni1FE3 uni1FE4 uni1FE5 uni1FE6 uni1FE7 uni1FF2 uni1FF3 uni1FF4 uni1FF6 uni1FF7
@@ -476,7 +480,7 @@ EndFPST
 ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   Class: 4 beta
   BClass: 878 Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos iotadieresistonos Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega Iotadieresis Upsilondieresis alphatonos epsilontonos etatonos iotatonos upsilondieresistonos alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigmafinal sigma tau upsilon phi chi psi omega iotadieresis upsilondieresis omicrontonos upsilontonos omegatonos Upsilonhook Upsilonhooktonos Upsilonhookdiaeresis phisymbol pisymbol kaisymbol Qoppaarchgrk qoppaarchgrk Stigma stigma Digamma digamma Koppa koppa Sampi sampi kappasymbol rhosymbol sigmalunate yotgrk Thetasymbol epsilonlunate epsilonlunaterev Shoarchgrk shoarchgrk Sigmalunate Sanarchgrk sanarchgrk rhostroke Sigmalunaterev Sigmadottedlunate Sigmarevdottedlunate
-  BClass: 2570 uni1F00 uni1F01 uni1F02 uni1F03 uni1F04 uni1F05 uni1F06 uni1F07 Alphapsili Alphadasia Alphapsilivaria Alphadasiavaria Alphapsilioxia Alphadasiaoxia Alphapsiliperispomeni Alphadasiaperispomeni uni1F10 uni1F11 uni1F12 uni1F13 uni1F14 uni1F15 Epsilonpsili Epsilondasia Epsilonpsilivaria Epsilondasiavaria Epsilonpsilioxia Epsilondasiaoxia uni1F20 uni1F21 uni1F22 uni1F23 uni1F24 uni1F25 uni1F26 uni1F27 Etapsili Etadasia Etapsilivaria Etadasiavaria Etapsilioxia Etadasiaoxia Etapsiliperispomeni Etadasiaperispomeni uni1F30 uni1F31 uni1F32 uni1F33 uni1F34 uni1F35 uni1F36 uni1F37 Iotapsili Iotadasia Iotapsilivaria Iotadasiavaria Iotapsilioxia Iotadasiaoxia Iotapsiliperispomeni Iotadasiaperispomeni omicronlenis uni1F41 uni1F42 uni1F43 uni1F44 uni1F45 Omicronpsili Omicrondasia Omicronpsilivaria Omicrondasiavaria Omicronpsilioxia Omicrondasiaoxia uni1F50 uni1F51 uni1F52 uni1F53 uni1F54 uni1F55 uni1F56 uni1F57 Upsilondasia Upsilondasiavaria Upsilondasiaoxia Upsilondasiaperispomeni uni1F60 uni1F61 uni1F62 uni1F63 uni1F64 uni1F65 uni1F66 uni1F67 Omegapsili Omegadasia Omegapsilivaria Omegadasiavaria Omegapsilioxia Omegadasiaoxia Omegapsiliperispomeni Omegadasiaperispomeni uni1F70 uni1F71 uni1F72 uni1F73 uni1F74 uni1F75 uni1F76 uni1F77 uni1F78 uni1F79 uni1F7A uni1F7B uni1F7C uni1F7D uni1F80 uni1F81 uni1F82 uni1F83 uni1F84 uni1F85 uni1F86 uni1F87 Alphapsiliiota Alphadasiaiota Alphapsilivariaiota Alphadasiavariaiota Alphapsilioxiaiota Alphadasiaoxiaiota Alphapsiliperispomeniiota Alphadasiaperispomeniiota uni1F90 uni1F91 uni1F92 uni1F93 uni1F94 uni1F95 uni1F96 uni1F97 Etapsiliiota Etadasiaiota Etapsilivariaiota Etadasiavariaiota Etapsilioxiaiota Etadasiaoxiaiota Etapsiliperispomeniiota Etadasiaperispomeniiota uni1FA0 uni1FA1 uni1FA2 uni1FA3 uni1FA4 uni1FA5 uni1FA6 uni1FA7 Omegapsiliiota Omegadasiaiota Omegapsilivariaiota Omegadasiavariaiota Omegapsilioxiaiota Omegadasiaoxiaiota Omegapsiliperispomeniiota Omegadasiaperispomeniiota uni1FB0 uni1FB1 uni1FB2 uni1FB3 uni1FB4 uni1FB6 uni1FB7 uni1FB8 uni1FB9 uni1FBA uni1FBB Alphaiota lenis prosgegrammeni psili perispomeni dialytikaperispomeni uni1FC2 uni1FC3 uni1FC4 uni1FC6 uni1FC7 uni1FC8 uni1FC9 uni1FCA uni1FCB Etaiota psilivaria psilioxia psiliperispomeni iotabreve uni1FD1 uni1FD2 uni1FD3 uni1FD6 uni1FD7 uni1FD8 uni1FD9 uni1FDA uni1FDB dasiavaria dasiaoxia dasiaperispomeni uni1FE0 uni1FE1 uni1FE2 uni1FE3 uni1FE4 uni1FE5 uni1FE6 uni1FE7 uni1FE8 uni1FE9 uni1FEA uni1FEB Rho_dasia dialytikavaria dialytikaoxia varia uni1FF2 uni1FF3 uni1FF4 uni1FF6 uni1FF7 uni1FF8 uni1FF9 uni1FFA uni1FFB Omegaiota oxia dasia
+  BClass: 2590 uni1F00 uni1F01 uni1F02 uni1F03 uni1F04 uni1F05 uni1F06 uni1F07 Alphapsili Alphadasia Alphapsilivaria Alphadasiavaria Alphapsilioxia Alphadasiaoxia Alphapsiliperispomeni Alphadasiaperispomeni uni1F10 uni1F11 uni1F12 uni1F13 uni1F14 uni1F15 Epsilonpsili Epsilondasia Epsilonpsilivaria Epsilondasiavaria Epsilonpsilioxia Epsilondasiaoxia uni1F20 uni1F21 uni1F22 uni1F23 uni1F24 uni1F25 uni1F26 uni1F27 Etapsili Etadasia Etapsilivaria Etadasiavaria Etapsilioxia Etadasiaoxia Etapsiliperispomeni Etadasiaperispomeni uni1F30 uni1F31 uni1F32 uni1F33 uni1F34 uni1F35 uni1F36 uni1F37 Iotapsili Iotadasia Iotapsilivaria Iotadasiavaria Iotapsilioxia Iotadasiaoxia Iotapsiliperispomeni Iotadasiaperispomeni omicronlenis uni1F41 uni1F42 uni1F43 uni1F44 uni1F45 Omicronpsili Omicrondasia Omicronpsilivaria Omicrondasiavaria Omicronpsilioxia Omicrondasiaoxia uni1F50 uni1F51 uni1F52 uni1F53 uni1F54 uni1F55 uni1F56 uni1F57 Upsilondasia Upsilondasiavaria Upsilondasiaoxia Upsilondasiaperispomeni uni1F60 uni1F61 uni1F62 uni1F63 uni1F64 uni1F65 uni1F66 uni1F67 Omegapsili Omegadasia Omegapsilivaria Omegadasiavaria Omegapsilioxia Omegadasiaoxia Omegapsiliperispomeni Omegadasiaperispomeni uni1F70 uni1F71 uni1F72 uni1F73 uni1F74 uni1F75 uni1F76 uni1F77 uni1F78 uni1F79 uni1F7A uni1F7B uni1F7C uni1F7D uni1F80 uni1F81 uni1F82 uni1F83 uni1F84 uni1F85 uni1F86 uni1F87 Alphapsiliiota Alphadasiaiota Alphapsilivariaiota Alphadasiavariaiota Alphapsilioxiaiota Alphadasiaoxiaiota Alphapsiliperispomeniiota Alphadasiaperispomeniiota uni1F90 uni1F91 uni1F92 uni1F93 uni1F94 uni1F95 uni1F96 uni1F97 Etapsiliiota Etadasiaiota Etapsilivariaiota Etadasiavariaiota Etapsilioxiaiota Etadasiaoxiaiota Etapsiliperispomeniiota Etadasiaperispomeniiota uni1FA0 uni1FA1 uni1FA2 uni1FA3 uni1FA4 uni1FA5 uni1FA6 uni1FA7 Omegapsiliiota Omegadasiaiota Omegapsilivariaiota Omegadasiavariaiota Omegapsilioxiaiota Omegadasiaoxiaiota Omegapsiliperispomeniiota Omegadasiaperispomeniiota uni1FB0 uni1FB1 uni1FB2 uni1FB3 uni1FB4 uni1FB6 uni1FB7 uni1FB8 uni1FB9 uni1FBA uni1FBB Alphaiota lenis prosgegrammeni psili perispomeni dialytikaperispomeni uni1FC2 uni1FC3 uni1FC4 uni1FC6 uni1FC7 uni1FC8 uni1FC9 uni1FCA uni1FCB Etaiota psilivaria psilioxia psiliperispomeni iotabreve uni1FD1 uni1FD2 uni1FD3 uni1FD6 uni1FD7 uni1FD8 uni1FD9 uni1FDA uni1FDB dasiavaria dasiaoxia dasiaperispomeni uni1FE0 uni1FE1 uni1FE2 uni1FE3 uni1FE4 uni1FE5 uni1FE6 uni1FE7 Upsilonbreve Upsilonmacron Upsilonvaria Upsilonoxia Rho_dasia dialytikavaria dialytikaoxia varia uni1FF2 uni1FF3 uni1FF4 uni1FF6 uni1FF7 uni1FF8 uni1FF9 uni1FFA uni1FFB Omegaiota oxia dasia
   BClass: 22 betasymbol thetasymbol
   FClass: 901 Alphatonos Epsilontonos Etatonos Iotatonos Omicrontonos Upsilontonos Omegatonos iotadieresistonos Alpha Beta Gamma Delta Epsilon Zeta Eta Theta Iota Kappa Lambda Mu Nu Xi Omicron Pi Rho Sigma Tau Upsilon Phi Chi Psi Omega Iotadieresis Upsilondieresis alphatonos epsilontonos etatonos iotatonos upsilondieresistonos alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigmafinal sigma tau upsilon phi chi psi omega iotadieresis upsilondieresis omicrontonos upsilontonos omegatonos betasymbol thetasymbol Upsilonhook Upsilonhooktonos Upsilonhookdiaeresis phisymbol pisymbol kaisymbol Qoppaarchgrk qoppaarchgrk Stigma stigma Digamma digamma Koppa koppa Sampi sampi kappasymbol rhosymbol sigmalunate yotgrk Thetasymbol epsilonlunate epsilonlunaterev Shoarchgrk shoarchgrk Sigmalunate Sanarchgrk sanarchgrk rhostroke Sigmalunaterev Sigmadottedlunate Sigmarevdottedlunate
   FClass: 974 uni1F00 uni1F01 uni1F02 uni1F03 uni1F04 uni1F05 uni1F06 uni1F07 uni1F10 uni1F11 uni1F12 uni1F13 uni1F14 uni1F15 uni1F20 uni1F21 uni1F22 uni1F23 uni1F24 uni1F25 uni1F26 uni1F27 uni1F30 uni1F31 uni1F32 uni1F33 uni1F34 uni1F35 uni1F36 uni1F37 omicronlenis uni1F41 uni1F42 uni1F43 uni1F44 uni1F45 uni1F50 uni1F51 uni1F52 uni1F53 uni1F54 uni1F55 uni1F56 uni1F57 uni1F60 uni1F61 uni1F62 uni1F63 uni1F64 uni1F65 uni1F66 uni1F67 uni1F70 uni1F71 uni1F72 uni1F73 uni1F74 uni1F75 uni1F76 uni1F77 uni1F78 uni1F79 uni1F7A uni1F7B uni1F7C uni1F7D uni1F80 uni1F81 uni1F82 uni1F83 uni1F84 uni1F85 uni1F86 uni1F87 uni1F90 uni1F91 uni1F92 uni1F93 uni1F94 uni1F95 uni1F96 uni1F97 uni1FA0 uni1FA1 uni1FA2 uni1FA3 uni1FA4 uni1FA5 uni1FA6 uni1FA7 uni1FB0 uni1FB1 uni1FB2 uni1FB3 uni1FB4 uni1FB6 uni1FB7 uni1FC2 uni1FC3 uni1FC4 uni1FC6 uni1FC7 iotabreve uni1FD1 uni1FD2 uni1FD3 uni1FD6 uni1FD7 uni1FE0 uni1FE1 uni1FE2 uni1FE3 uni1FE4 uni1FE5 uni1FE6 uni1FE7 uni1FF2 uni1FF3 uni1FF4 uni1FF6 uni1FF7
@@ -740,14 +744,14 @@ LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" "" "F
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSerif Lodi etzana" 
 LangName: 1033 "" "" "Bold Italic" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 21 1 65535 3 0
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 7952 16 10
+WinInfo: 752 16 10
 BeginPrivate: 8
 UniqueID 7 5020939
 BlueValues 33 [-205 -200 -18 0 449 462 669 685]
@@ -766,7 +770,7 @@ Grid
 -448.9 175.071 m 4
  897.8 175.071 l 4
 EndSplineSet
-AnchorClass2: "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "top_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "low_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "point_right_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_low_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_low_heb"  "'mark' Mark Positioning in Hebrew for Ivrit subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Hebrew for Yiddish subtable" "topright"  "'mark' Mark Positioning subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 0 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 1 subtable" "thai_below"  "'mark' Mark Positioning in Thai 0 subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" 
+AnchorClass2: "above_gk"  "'mark' mark above in Greek-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "top_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "low_mkmk_heb"  "'mkmk' Mark to Mark in Hebrew subtable" "point_right_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_low_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_left_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "point_above_heb"  "'mark' Mark Positioning in Hebrew subtable" "vowel_low_heb"  "'mark' Mark Positioning in Hebrew for Ivrit subtable" "vowel_below_yiddish"  "'mark' Mark Positioning in Hebrew for Yiddish subtable" "topright"  "'mark' Mark Positioning subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' Mark Positioning subtable" "ogonek"  "'mark' Mark Positioning in Latin 3 subtable" "thai_vowel_tone_right"  "'mkmk' Mark to Mark in Thai 0 subtable" "thai_vowel_tone"  "'mkmk' Mark to Mark in Thai 1 subtable" "thai_tone"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel_centered"  "'mark' Mark Positioning in Thai 1 subtable" "thai_vowel"  "'mark' Mark Positioning in Thai 1 subtable" "thai_below"  "'mark' Mark Positioning in Thai 0 subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" 
 BeginChars: 66560 3005
 
 StartChar: space
@@ -9830,12 +9834,13 @@ StartChar: macroncomb
 Encoding: 772 772 418
 Width: 0
 Flags: HMW
+AnchorPoint: "above_gk" -145 464 mark 0
 AnchorPoint: "abovecyr" -150 460 mark 0
 AnchorPoint: "above" -150 449 mark 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 -353 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: overlinecmb
@@ -9859,12 +9864,13 @@ StartChar: brevecomb
 Encoding: 774 774 420
 Width: 0
 Flags: HMW
+AnchorPoint: "above_gk" -20 464 mark 0
 AnchorPoint: "above" -30 449 mark 0
 AnchorPoint: "abovecyr" -25 460 mark 0
 LayerCount: 2
 Fore
 Refer: 408 728 N 1 0 0 1 -222 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dotaccentcmb
@@ -9883,12 +9889,13 @@ StartChar: diaeresiscomb
 Encoding: 776 776 422
 Width: 0
 Flags: HMW
+AnchorPoint: "above_gk" -108 460 mark 0
 AnchorPoint: "above" -110 449 mark 0
 AnchorPoint: "abovecyr" -124 460 mark 0
 LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 -333 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: hookabovecomb
@@ -10863,7 +10870,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 76 0 0
 Refer: 1249 900 N 1 0 0 1 8 -42 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: anoteleia
@@ -10912,7 +10919,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 240 0 0
 Refer: 1249 900 N 1 0 0 1 -4 -41 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Omicrontonos
@@ -10934,7 +10941,8 @@ LayerCount: 2
 Fore
 Refer: 512 933 N 1 0 0 1 202 0 0
 Refer: 1249 900 N 1 0 0 1 -5 -39 0
-Validated: 32769
+Validated: 98305
+Substitution2: "'locl' local. forms in Greek-1" Upsilonhooktonos
 EndChar
 
 StartChar: Omegatonos
@@ -10956,23 +10964,25 @@ LayerCount: 2
 Fore
 Refer: 483 901 N 1 0 0 1 -145 6 0
 Refer: 532 953 N 1 0 0 1 0 0 1
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alpha
 Encoding: 913 913 493
 Width: 696
 Flags: HMW
+AnchorPoint: "above_gk" 464 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Beta
 Encoding: 914 914 494
 Width: 640
 Flags: HMW
+AnchorPoint: "above_gk" 424 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 34 66 N 1 0 0 1 0 0 2
@@ -10983,6 +10993,7 @@ StartChar: Gamma
 Encoding: 915 915 495
 Width: 576
 Flags: HMW
+AnchorPoint: "above_gk" 404 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11011,6 +11022,7 @@ StartChar: Delta
 Encoding: 916 916 496
 Width: 751
 Flags: HMW
+AnchorPoint: "above_gk" 454 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11031,6 +11043,7 @@ StartChar: Epsilon
 Encoding: 917 917 497
 Width: 630
 Flags: HMW
+AnchorPoint: "above_gk" 424 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 2
@@ -11041,6 +11054,7 @@ StartChar: Zeta
 Encoding: 918 918 498
 Width: 562
 Flags: HMW
+AnchorPoint: "above_gk" 364 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 58 90 N 1 0 0 1 0 0 2
@@ -11051,6 +11065,7 @@ StartChar: Eta
 Encoding: 919 919 499
 Width: 753
 Flags: HMW
+AnchorPoint: "above_gk" 474 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 40 72 N 1 0 0 1 0 0 2
@@ -11061,6 +11076,7 @@ StartChar: Theta
 Encoding: 920 920 500
 Width: 675
 Flags: HMW
+AnchorPoint: "above_gk" 447 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11098,26 +11114,29 @@ StartChar: Iota
 Encoding: 921 921 501
 Width: 389
 Flags: HMW
+AnchorPoint: "above_gk" 304 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Kappa
 Encoding: 922 922 502
 Width: 663
 Flags: HMW
+AnchorPoint: "above_gk" 444 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 43 75 N 1 0 0 1 1 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Lambda
 Encoding: 923 923 503
 Width: 696
 Flags: HMW
+AnchorPoint: "above_gk" 466 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11147,6 +11166,7 @@ StartChar: Mu
 Encoding: 924 924 504
 Width: 889
 Flags: HMW
+AnchorPoint: "above_gk" 514 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 45 77 N 1 0 0 1 0 0 2
@@ -11157,6 +11177,7 @@ StartChar: Nu
 Encoding: 925 925 505
 Width: 705
 Flags: HMW
+AnchorPoint: "above_gk" 444 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 46 78 N 1 0 0 1 0 0 2
@@ -11167,6 +11188,7 @@ StartChar: Xi
 Encoding: 926 926 506
 Width: 629
 Flags: HMW
+AnchorPoint: "above_gk" 424 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11213,6 +11235,7 @@ StartChar: Omicron
 Encoding: 927 927 507
 Width: 675
 Flags: HMW
+AnchorPoint: "above_gk" 450 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 -1 0 2
@@ -11223,6 +11246,7 @@ StartChar: Pi
 Encoding: 928 928 508
 Width: 753
 Flags: HMW
+AnchorPoint: "above_gk" 474 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11258,6 +11282,7 @@ StartChar: Rho
 Encoding: 929 929 509
 Width: 600
 Flags: HMW
+AnchorPoint: "above_gk" 404 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 48 80 N 1 0 0 1 0 0 2
@@ -11268,6 +11293,7 @@ StartChar: Sigma
 Encoding: 931 931 510
 Width: 701
 Flags: HMW
+AnchorPoint: "above_gk" 444 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11299,6 +11325,7 @@ StartChar: Tau
 Encoding: 932 932 511
 Width: 621
 Flags: HMW
+AnchorPoint: "above_gk" 424 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 52 84 N 1 0 0 1 10 0 2
@@ -11309,10 +11336,12 @@ StartChar: Upsilon
 Encoding: 933 933 512
 Width: 639
 Flags: HMW
+AnchorPoint: "above_gk" 444 670 basechar 0
 LayerCount: 2
 Fore
-Refer: 57 89 S 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 57 89 N 1 0 0 1 0 0 2
+Validated: 98305
+Substitution2: "'locl' local. forms in Greek-1" Upsilonhook
 Substitution2: "'aalt' access-all-alternates in Greek-1" Upsilonhook
 EndChar
 
@@ -11320,6 +11349,7 @@ StartChar: Phi
 Encoding: 934 934 513
 Width: 799
 Flags: HMW
+AnchorPoint: "above_gk" 504 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11357,16 +11387,18 @@ StartChar: Chi
 Encoding: 935 935 514
 Width: 699
 Flags: HMW
+AnchorPoint: "above_gk" 434 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 56 88 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Psi
 Encoding: 936 936 515
 Width: 919
 Flags: HMW
+AnchorPoint: "above_gk" 554 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11406,13 +11438,14 @@ SplineSet
  688 644 l 1
  629.5 638 616 612 602 559 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: Omega
 Encoding: 937 937 516
 Width: 750
 Flags: HMW
+AnchorPoint: "above_gk" 514 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11448,22 +11481,25 @@ StartChar: Iotadieresis
 Encoding: 938 938 517
 Width: 374
 Flags: HMW
+AnchorPoint: "above_gk" 314 790 basechar 0
 LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 0 0 0
-Refer: 102 168 N 1 0 0 1 87 202 0
-Validated: 32769
+Refer: 102 168 S 1 0 0 1 87 202 0
+Validated: 98305
 EndChar
 
 StartChar: Upsilondieresis
 Encoding: 939 939 518
 Width: 639
 Flags: HMW
+AnchorPoint: "above_gk" 471 780 basechar 0
 LayerCount: 2
 Fore
 Refer: 512 933 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 249 196 0
-Validated: 32769
+Validated: 98305
+Substitution2: "'locl' local. forms in Greek-1" Upsilonhookdiaeresis
 EndChar
 
 StartChar: alphatonos
@@ -11507,7 +11543,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1249 900 N 1 0 0 1 43 -14 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: upsilondieresistonos
@@ -11526,6 +11562,7 @@ Encoding: 945 945 524
 Width: 570
 VWidth: 975
 Flags: HMW
+AnchorPoint: "above_gk" 303 460 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11665,6 +11702,7 @@ Encoding: 949 949 528
 Width: 439
 VWidth: 975
 Flags: HMW
+AnchorPoint: "above_gk" 273 460 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11734,6 +11772,7 @@ Encoding: 951 951 530
 Width: 548
 VWidth: 975
 Flags: HMW
+AnchorPoint: "above_gk" 379 460 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -11803,6 +11842,7 @@ Encoding: 953 953 532
 Width: 312
 VWidth: 975
 Flags: HMW
+AnchorPoint: "above_gk" 199 460 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12006,6 +12046,7 @@ Encoding: 959 959 538
 Width: 512
 VWidth: 975
 Flags: HMW
+AnchorPoint: "above_gk" 319 460 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12020,7 +12061,7 @@ SplineSet
  146 39 179 17 208 17 c 0
  317.711 17 375 238 375 338 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: pi
@@ -12190,6 +12231,7 @@ Encoding: 965 965 544
 Width: 536
 VWidth: 975
 Flags: HMW
+AnchorPoint: "above_gk" 354 460 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12320,6 +12362,7 @@ StartChar: omega
 Encoding: 969 969 548
 Width: 687
 Flags: HMW
+AnchorPoint: "above_gk" 398 460 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12358,7 +12401,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 -4 -23 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: upsilondieresis
@@ -12380,7 +12423,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1249 900 N 1 0 0 1 140 -15 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: upsilontonos
@@ -12478,6 +12521,7 @@ StartChar: Upsilonhook
 Encoding: 978 978 556
 Width: 722
 Flags: HMW
+AnchorPoint: "above_gk" 434 670 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -12504,7 +12548,7 @@ SplineSet
  76.7305 598.207 169.033 676 217 676 c 0
  359 676 388 526 395 425 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: Upsilonhooktonos
@@ -12515,7 +12559,7 @@ LayerCount: 2
 Fore
 Refer: 1249 900 N 1 0 0 1 -26 -40 2
 Refer: 556 978 N 1 0 0 1 209 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Upsilonhookdiaeresis
@@ -12526,7 +12570,7 @@ LayerCount: 2
 Fore
 Refer: 556 978 N 1 0 0 1 0 0 0
 Refer: 102 168 N 1 0 0 1 246 196 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: phisymbol
@@ -13276,7 +13320,7 @@ AnchorPoint: "abovecyr" 513 695 basechar 0
 LayerCount: 2
 Fore
 Refer: 513 934 N 1 0 0 1 0 0 3
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Khacyr
@@ -13522,7 +13566,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 591 0 2
 Refer: 597 1068 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Softsigncyr
@@ -16587,7 +16631,7 @@ LayerCount: 2
 Fore
 Refer: 102 168 N 1 0 0 1 365 197 0
 Refer: 596 1067 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yerudiaeresiscyr
@@ -21121,7 +21165,7 @@ LayerCount: 2
 Fore
 Refer: 1120 8125 S 1 0 0 1 -52 0 2
 Refer: 493 913 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphadasia
@@ -21132,7 +21176,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 0 0 0
 Refer: 1177 8190 S 1 0 0 1 -9 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphapsilivaria
@@ -21143,7 +21187,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 134 0 0
 Refer: 1134 8141 S 1 0 0 1 -27 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphadasiavaria
@@ -21154,7 +21198,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 145 0 0
 Refer: 1147 8157 S 1 0 0 1 -4 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphapsilioxia
@@ -21165,7 +21209,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 115 0 0
 Refer: 1135 8142 S 1 0 0 1 13 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphadasiaoxia
@@ -21176,7 +21220,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 116 0 0
 Refer: 1148 8158 S 1 0 0 1 7 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphapsiliperispomeni
@@ -21187,7 +21231,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 59 0 0
 Refer: 1136 8143 S 1 0 0 1 -35 -0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphadasiaperispomeni
@@ -21198,7 +21242,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 50 0 0
 Refer: 1149 8159 S 1 0 0 1 -29 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F10
@@ -21429,7 +21473,7 @@ LayerCount: 2
 Fore
 Refer: 1120 8125 S 1 0 0 1 -32 0 2
 Refer: 499 919 N 1 0 0 1 178 0 0
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: Etadasia
@@ -21517,7 +21561,7 @@ LayerCount: 2
 Fore
 Refer: 1120 8125 N 1 0 0 1 -32 -3 2
 Refer: 532 953 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F31
@@ -21528,7 +21572,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1177 8190 S 1 0 0 1 -4 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F32
@@ -21539,7 +21583,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1134 8141 S 1 0 0 1 -110 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F33
@@ -21550,7 +21594,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1147 8157 S 1 0 0 1 -101 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F34
@@ -21561,7 +21605,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1135 8142 S 1 0 0 1 -19 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F35
@@ -21572,7 +21616,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1148 8158 S 1 0 0 1 -30 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F36
@@ -21583,7 +21627,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1136 8143 S 1 0 0 1 -63 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F37
@@ -21594,7 +21638,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1149 8159 S 1 0 0 1 -62 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotapsili
@@ -21605,7 +21649,7 @@ LayerCount: 2
 Fore
 Refer: 1120 8125 S 1 0 0 1 -80 0 2
 Refer: 501 921 N 1 0 0 1 154 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotadasia
@@ -21616,7 +21660,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 201 0 0
 Refer: 1177 8190 S 1 0 0 1 -17 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotapsilivaria
@@ -21627,7 +21671,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 307 0 0
 Refer: 1134 8141 S 1 0 0 1 -37 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotadasiavaria
@@ -21638,7 +21682,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 323 0 0
 Refer: 1147 8157 S 1 0 0 1 -14 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotapsilioxia
@@ -21649,7 +21693,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 343 0 0
 Refer: 1135 8142 S 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotadasiaoxia
@@ -21660,7 +21704,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 344 0 0
 Refer: 1148 8158 S 1 0 0 1 4 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotapsiliperispomeni
@@ -21671,7 +21715,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 272 0 0
 Refer: 1136 8143 S 1 0 0 1 -26 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Iotadasiaperispomeni
@@ -21682,7 +21726,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 264 0 0
 Refer: 1149 8159 S 1 0 0 1 -31 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: omicronlenis
@@ -21693,7 +21737,7 @@ LayerCount: 2
 Fore
 Refer: 1120 8125 N 1 0 0 1 74 -10 2
 Refer: 538 959 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F41
@@ -21704,7 +21748,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1177 8190 S 1 0 0 1 83 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F42
@@ -21715,7 +21759,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1134 8141 S 1 0 0 1 6 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F43
@@ -21726,7 +21770,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1147 8157 S 1 0 0 1 4 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F44
@@ -21737,7 +21781,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1135 8142 S 1 0 0 1 53 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F45
@@ -21748,7 +21792,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1148 8158 S 1 0 0 1 47 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Omicronpsili
@@ -21907,46 +21951,50 @@ EndChar
 
 StartChar: Upsilondasia
 Encoding: 8025 8025 1050
-Width: 949
+Width: 869
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 556 978 N 1 0 0 1 237 0 0
-Refer: 1177 8190 S 1 0 0 1 5 0 0
-Validated: 32769
+Refer: 512 933 N 1 0 0 1 230 0 0
+Refer: 1177 8190 N 1 0 0 1 5 0 0
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" dasia Upsilonhook
 EndChar
 
 StartChar: Upsilondasiavaria
 Encoding: 8027 8027 1051
-Width: 1075
+Width: 949
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 556 978 N 1 0 0 1 363 0 0
-Refer: 1147 8157 S 1 0 0 1 -20 0 0
-Validated: 32769
+Refer: 512 933 N 1 0 0 1 310 0 0
+Refer: 1147 8157 N 1 0 0 1 -20 0 0
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" dasiavaria Upsilonhook
 EndChar
 
 StartChar: Upsilondasiaoxia
 Encoding: 8029 8029 1052
-Width: 1088
+Width: 989
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 556 978 N 1 0 0 1 376 0 0
-Refer: 1148 8158 S 1 0 0 1 5 0 0
-Validated: 32769
+Refer: 512 933 N 1 0 0 1 350 0 0
+Refer: 1148 8158 N 1 0 0 1 5 0 0
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" dasiaoxia Upsilonhook
 EndChar
 
 StartChar: Upsilondasiaperispomeni
 Encoding: 8031 8031 1053
-Width: 1017
+Width: 919
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 556 978 N 1 0 0 1 305 0 0
-Refer: 1149 8159 S 1 0 0 1 -23 0 0
-Validated: 32769
+Refer: 512 933 N 1 0 0 1 280 0 0
+Refer: 1149 8159 N 1 0 0 1 -23 0 0
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" dasiaperispomeni Upsilonhook
 EndChar
 
 StartChar: uni1F60
@@ -22199,7 +22247,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1165 8175 S 1 0 0 1 -48 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F77
@@ -22210,7 +22258,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1176 8189 S 1 0 0 1 49 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F78
@@ -22221,7 +22269,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1165 8175 S 1 0 0 1 71 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F79
@@ -22232,7 +22280,7 @@ LayerCount: 2
 Fore
 Refer: 538 959 N 1 0 0 1 0 0 0
 Refer: 1176 8189 S 1 0 0 1 167 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1F7A
@@ -22375,7 +22423,8 @@ LayerCount: 2
 Fore
 Refer: 978 7944 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 667 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psili Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psili Alphaiotabelow
 EndChar
 
@@ -22387,7 +22436,8 @@ LayerCount: 2
 Fore
 Refer: 979 7945 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 672 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasia Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasia Alphaiotabelow
 EndChar
 
@@ -22399,7 +22449,8 @@ LayerCount: 2
 Fore
 Refer: 980 7946 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 806 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psilivaria Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psilivaria Alphaiotabelow
 EndChar
 
@@ -22411,7 +22462,8 @@ LayerCount: 2
 Fore
 Refer: 981 7947 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 816 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiavaria Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiavaria Alphaiotabelow
 EndChar
 
@@ -22423,7 +22475,8 @@ LayerCount: 2
 Fore
 Refer: 982 7948 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 782 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psilioxia Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psilioxia Alphaiotabelow
 EndChar
 
@@ -22435,7 +22488,8 @@ LayerCount: 2
 Fore
 Refer: 983 7949 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 780 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiaoxia Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiaoxia Alphaiotabelow
 EndChar
 
@@ -22447,7 +22501,8 @@ LayerCount: 2
 Fore
 Refer: 984 7950 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 722 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psiliperispomeni Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psiliperispomeni Alphaiotabelow
 EndChar
 
@@ -22459,7 +22514,8 @@ LayerCount: 2
 Fore
 Refer: 985 7951 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 718 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiaperispomeni Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiaperispomeni Alphaiotabelow
 EndChar
 
@@ -22471,7 +22527,8 @@ LayerCount: 2
 Fore
 Refer: 1006 7976 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 867 1 0
-Validated: 98305
+Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psili Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psili Etaiotabelow
 EndChar
 
@@ -22484,6 +22541,7 @@ Fore
 Refer: 1007 7977 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 891 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasia Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasia Etaiotabelow
 EndChar
 
@@ -22496,6 +22554,7 @@ Fore
 Refer: 1008 7978 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1013 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psilivaria Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psilivaria Etaiotabelow
 EndChar
 
@@ -22508,6 +22567,7 @@ Fore
 Refer: 1009 7979 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1024 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiavaria Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiavaria Etaiotabelow
 EndChar
 
@@ -22520,6 +22580,7 @@ Fore
 Refer: 1010 7980 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1031 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psilioxia Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psilioxia Etaiotabelow
 EndChar
 
@@ -22532,6 +22593,7 @@ Fore
 Refer: 1011 7981 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1036 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiaoxia Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiaoxia Etaiotabelow
 EndChar
 
@@ -22544,6 +22606,7 @@ Fore
 Refer: 1012 7982 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 949 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psiliperispomeni Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psiliperispomeni Etaiotabelow
 EndChar
 
@@ -22556,6 +22619,7 @@ Fore
 Refer: 1013 7983 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 954 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiaperispomeni Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiaperispomeni Etaiotabelow
 EndChar
 
@@ -22568,6 +22632,7 @@ Fore
 Refer: 1062 8040 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 855 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psili Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psili Omegaiotabelow
 EndChar
 
@@ -22580,6 +22645,7 @@ Fore
 Refer: 1063 8041 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 891 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasia Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasia Omegaiotabelow
 EndChar
 
@@ -22592,6 +22658,7 @@ Fore
 Refer: 1064 8042 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1059 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psilivaria Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psilivaria Omegaiotabelow
 EndChar
 
@@ -22604,6 +22671,7 @@ Fore
 Refer: 1065 8043 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1072 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiavaria Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiavaria Omegaiotabelow
 EndChar
 
@@ -22616,6 +22684,7 @@ Fore
 Refer: 1066 8044 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1024 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psilioxia Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psilioxia Omegaiotabelow
 EndChar
 
@@ -22628,6 +22697,7 @@ Fore
 Refer: 1067 8045 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 1019 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiaoxia Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiaoxia Omegaiotabelow
 EndChar
 
@@ -22640,6 +22710,7 @@ Fore
 Refer: 1068 8046 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 972 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" psiliperispomeni Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" psiliperispomeni Omegaiotabelow
 EndChar
 
@@ -22652,6 +22723,7 @@ Fore
 Refer: 1069 8047 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 960 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" dasiaperispomeni Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" dasiaperispomeni Omegaiotabelow
 EndChar
 
@@ -22663,7 +22735,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 0 0 0
 Refer: 108 175 N 1 0 0 1 261 175 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FBA
@@ -22674,7 +22746,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 0 0 0
 Refer: 1165 8175 S 1 0 0 1 18 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FBB
@@ -22685,7 +22757,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 0 0 0
 Refer: 1176 8189 S 1 0 0 1 -13 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: Alphaiota
@@ -22696,7 +22768,8 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 660 1 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" Alphaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" Alphaiotabelow
 EndChar
 
@@ -22859,6 +22932,7 @@ Fore
 Refer: 499 919 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 684 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" Etaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" Etaiotabelow
 EndChar
 
@@ -22903,7 +22977,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 408 728 S 1 0 0 1 20 -14 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FD1
@@ -22914,7 +22988,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 108 175 S 1 0 0 1 33 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FD2
@@ -22925,7 +22999,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1163 8173 N 1 0 0 1 -144 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FD3
@@ -22936,7 +23010,7 @@ LayerCount: 2
 Fore
 Refer: 1164 8174 N 1 0 0 1 -118 5 2
 Refer: 532 953 N 1 0 0 1 0 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FD6
@@ -22947,7 +23021,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1122 8128 S 1 0 0 1 -93 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FD7
@@ -22958,7 +23032,7 @@ LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 0 0 0
 Refer: 1123 8129 N 1 0 0 1 -111 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FD8
@@ -22969,7 +23043,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 0 0 0
 Refer: 408 728 N 1 0 0 1 104 193 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FD9
@@ -22980,7 +23054,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 0 0 0
 Refer: 108 175 S 1 0 0 1 86 177 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FDA
@@ -22991,7 +23065,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 130 0 0
 Refer: 1165 8175 S 1 0 0 1 -37 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1FDB
@@ -23002,7 +23076,7 @@ LayerCount: 2
 Fore
 Refer: 501 921 N 1 0 0 1 163 0 0
 Refer: 1176 8189 S 1 0 0 1 -33 0 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dasiavaria
@@ -23126,7 +23200,7 @@ Refer: 1123 8129 N 1 0 0 1 40 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni1FE8
+StartChar: Upsilonbreve
 Encoding: 8168 8168 1158
 Width: 639
 Flags: HMW
@@ -23134,10 +23208,11 @@ LayerCount: 2
 Fore
 Refer: 512 933 N 1 0 0 1 0 0 0
 Refer: 408 728 N 1 0 0 1 273 193 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" Upsilonhook brevecomb
 EndChar
 
-StartChar: uni1FE9
+StartChar: Upsilonmacron
 Encoding: 8169 8169 1159
 Width: 639
 Flags: HMW
@@ -23145,10 +23220,11 @@ LayerCount: 2
 Fore
 Refer: 512 933 N 1 0 0 1 0 0 0
 Refer: 108 175 N 1 0 0 1 244 174 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" Upsilonhook macroncomb
 EndChar
 
-StartChar: uni1FEA
+StartChar: Upsilonvaria
 Encoding: 8170 8170 1160
 Width: 875
 Flags: HMW
@@ -23156,10 +23232,11 @@ LayerCount: 2
 Fore
 Refer: 512 933 N 1 0 0 1 165 0 0
 Refer: 1165 8175 N 1 0 0 1 -14 0 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" varia Upsilonhook
 EndChar
 
-StartChar: uni1FEB
+StartChar: Upsilonoxia
 Encoding: 8171 8171 1161
 Width: 890
 Flags: HMW
@@ -23167,7 +23244,8 @@ LayerCount: 2
 Fore
 Refer: 512 933 N 1 0 0 1 180 0 0
 Refer: 1176 8189 S 1 0 0 1 -28 0 0
-Validated: 32769
+Validated: 98305
+MultipleSubs2: "'locl' local. forms in Greek Extended-Upsilon" oxia Upsilonhook
 EndChar
 
 StartChar: Rho_dasia
@@ -23363,6 +23441,7 @@ Fore
 Refer: 516 937 N 1 0 0 1 0 0 0
 Refer: 1281 8126 N 1 0 0 1 707 1 0
 Validated: 32769
+MultipleSubs2: "'locl' local. forms in Greek Extended-iota below-1" Omegaiotabelow
 MultipleSubs2: "'locl' local. forms in Greek-iota below-1" Omegaiotabelow
 EndChar
 
@@ -25565,7 +25644,7 @@ LayerCount: 2
 Fore
 Refer: 493 913 N 1 0 0 1 0 0 0
 Refer: 408 728 N 1 0 0 1 264 193 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: prosgegrammeni
@@ -31057,7 +31136,7 @@ TeX: 117 0
 LayerCount: 2
 Fore
 Refer: 532 953 N -1 0 0 -1 328 459 0
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFFFD
@@ -31273,7 +31352,7 @@ TeX: 117 0
 LayerCount: 2
 Fore
 Refer: 532 953 N 1 0 0 1 -3 0 0
-Validated: 32769
+Validated: 98305
 Substitution2: "'sups' superscript-phonetic" iotalatinsup
 EndChar
 
@@ -35350,6 +35429,7 @@ StartChar: uni0342
 Encoding: 834 834 1647
 Width: 0
 Flags: HMW
+AnchorPoint: "above_gk" -88 460 mark 0
 AnchorPoint: "above" -150 449 mark 0
 LayerCount: 2
 Fore
@@ -35361,6 +35441,7 @@ StartChar: uni0343
 Encoding: 835 835 1648
 Width: 0
 Flags: HMW
+AnchorPoint: "above_gk" 0 460 mark 0
 AnchorPoint: "above" -80 449 mark 0
 LayerCount: 2
 Fore
@@ -35372,11 +35453,12 @@ StartChar: uni0344
 Encoding: 836 836 1649
 Width: 0
 Flags: HMW
+AnchorPoint: "above_gk" -50 460 mark 0
 AnchorPoint: "above" -50 449 mark 0
 LayerCount: 2
 Fore
 Refer: 483 901 N 1 0 0 1 -360 22 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni0345
@@ -60033,7 +60115,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 1541 617 N 0.67 0 0 0.67 111 350 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: jcrosstailsup
@@ -64082,7 +64164,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 503 923 N 0.67 0 0 0.67 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1D28
@@ -64115,7 +64197,7 @@ Flags: MW
 LayerCount: 2
 Fore
 Refer: 515 936 N 0.67 0 0 0.67 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni1D2B
@@ -68280,7 +68362,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 S 1 0 0 1 210 0 2
 Refer: 493 913 N 1 0 0 1 10 0 1
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "FreeSerifItalic-'ss06' style set in Greek - iota adscript-1" Alpha iota
 EndChar
 
@@ -68328,7 +68410,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 S 1 0 0 1 20 0 2
 Refer: 501 921 N 1 0 0 1 0 0 3
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "FreeSerifItalic-'ss06' style set in Greek - iota adscript-1" Iota iota
 EndChar
 
