@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1378420567
+ModificationTime: 1378512750
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -52,7 +52,7 @@ OS2FamilyClass: 261
 OS2Vendor: 'GNU '
 Lookup: 1 0 0 "positional forms in Greek"  {"positional forms in Greek-1"  } []
 Lookup: 1 0 0 "do_nothing"  {} []
-Lookup: 1 0 0 "'locl' local forms in Greek-diacritic equivalents"  {"'locl' local forms in Greek-diacritic equivalents-1"  "'RQD ' required in Greek diacritic equivalents-1"  } ['locl' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
+Lookup: 1 0 0 "'locl' local forms in Greek-diacritic equivalents"  {"'locl' local forms in Greek-diacritic equivalents-1"  "'locl' local forms in Greek-anoteleia"  } ['locl' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 2 0 0 "'ccmp' glyph decomp. in Greek-caps w/iota"  {"'ccmp' glyph decomp. in Greek-caps w/iota"  } ['ccmp' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 2 0 0 "'locl' local. forms in Greek Extended"  {"'locl' local. forms in Greek Extended-Upsilon"  } ['locl' ('grek' <'ELL ' 'PGR ' > ) ]
 Lookup: 2 0 0 "'smcp' small caps in Greek-pre-decompose"  {"'smcp' small caps in Greek-pre-decompose-1"  "'smcp' small caps in Greek-pre-decompose-extended"  } ['smcp' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
@@ -814,7 +814,7 @@ LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" "" "F
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSerif Lodi etzana" 
 LangName: 1033 "" "" "Bold Italic" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 21 1 65535 3 0
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
@@ -4628,6 +4628,7 @@ SplineSet
  68 378 100 410 143 410 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' local forms in Greek-anoteleia" anoteleia
 EndChar
 
 StartChar: cedilla
@@ -10084,7 +10085,6 @@ LayerCount: 2
 Fore
 Refer: 64 96 N 1 0 0 1 -336 0 2
 Validated: 32769
-Substitution2: "'RQD ' required in Greek diacritic equivalents-1" gk_oxia.cmb
 Substitution2: "'locl' local forms in Greek-diacritic equivalents-1" gk_oxia.cmb
 EndChar
 
@@ -10101,7 +10101,6 @@ LayerCount: 2
 Fore
 Refer: 113 180 N 1 0 0 1 -333 0 2
 Validated: 32769
-Substitution2: "'RQD ' required in Greek diacritic equivalents-1" gk_varia.cmb
 Substitution2: "'locl' local forms in Greek-diacritic equivalents-1" gk_varia.cmb
 EndChar
 
@@ -10356,7 +10355,6 @@ LayerCount: 2
 Fore
 Refer: 1629 700 N 1 0 0 1 -250 60 2
 Validated: 32769
-Substitution2: "'RQD ' required in Greek diacritic equivalents-1" gk_psili.cmb
 Substitution2: "'locl' local forms in Greek-diacritic equivalents-1" gk_psili.cmb
 EndChar
 
@@ -10369,7 +10367,6 @@ LayerCount: 2
 Fore
 Refer: 1183 8219 N 0.8 0 0 0.8 -158 196 2
 Validated: 32769
-Substitution2: "'RQD ' required in Greek diacritic equivalents-1" gk_dasia.cmb
 Substitution2: "'locl' local forms in Greek-diacritic equivalents-1" gk_dasia.cmb
 EndChar
 
@@ -11192,11 +11189,11 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-179.84 258 m 0
- 135.383 258 104.548 289.914 104.548 331.884 c 0
- 104.548 386.778 157.486 444 219.375 444 c 0
- 263.832 444 294.666 412.086 294.666 370.116 c 0
- 294.666 315.222 241.728 258 179.84 258 c 0
+251 351 m 4
+ 251 300 209 258 158 258 c 4
+ 107 258 65 300 65 351 c 4
+ 65 402 107 444 158 444 c 4
+ 209 444 251 402 251 351 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -12776,6 +12773,7 @@ SplineSet
  614 474 694 428 694 317 c 0
  694 182 591 -13 438 -13 c 0
 EndSplineSet
+Validated: 527361
 Substitution2: "'smcp' lowercase to small caps in Greek-1" sc.omega
 EndChar
 
@@ -12837,6 +12835,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1249 900 N 1 0 0 1 249 -13 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-1" omega gk_tonos.cmb
 EndChar
 
@@ -22878,6 +22877,7 @@ LayerCount: 2
 Fore
 Refer: 1120 8125 N 1 0 0 1 171 -8 2
 Refer: 548 969 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psili.cmb
 EndChar
 
@@ -22889,6 +22889,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1177 8190 S 1 0 0 1 167 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasia.cmb
 EndChar
 
@@ -22900,6 +22901,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1134 8141 S 1 0 0 1 104 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilivaria.cmb
 EndChar
 
@@ -22911,6 +22913,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1147 8157 S 1 0 0 1 119 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiavaria.cmb
 EndChar
 
@@ -22922,6 +22925,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1135 8142 S 1 0 0 1 167 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilioxia.cmb
 EndChar
 
@@ -22933,6 +22937,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1148 8158 S 1 0 0 1 170 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaoxia.cmb
 EndChar
 
@@ -22944,6 +22949,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1136 8143 S 1 0 0 1 118 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psiliperispomeni.cmb
 EndChar
 
@@ -22955,6 +22961,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1149 8159 S 1 0 0 1 118 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaperispomeni.cmb
 EndChar
 
@@ -23214,6 +23221,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1165 8175 S 1 0 0 1 149 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_varia.cmb
 EndChar
 
@@ -23225,6 +23233,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1176 8189 S 1 0 0 1 235 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_oxia.cmb
 EndChar
 
@@ -24259,6 +24268,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1082 8060 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_varia.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -24270,6 +24280,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 548 969 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega ypogegrammeni_gk.cmb
 EndChar
 
@@ -24281,6 +24292,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 553 974 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_oxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -24292,6 +24304,7 @@ LayerCount: 2
 Fore
 Refer: 548 969 N 1 0 0 1 0 0 0
 Refer: 1122 8128 S 1 0 0 1 87 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega perispomeni_gk.cmb
 EndChar
 
@@ -24303,6 +24316,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1169 8182 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega perispomeni_gk.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26431,6 +26445,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1054 8032 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psili.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26442,6 +26457,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1055 8033 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasia.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26453,6 +26469,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1056 8034 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilivaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26464,6 +26481,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1057 8035 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiavaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26475,6 +26493,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1058 8036 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilioxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26486,6 +26505,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1059 8037 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaoxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26497,6 +26517,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1060 8038 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_psiliperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
@@ -26508,6 +26529,7 @@ LayerCount: 2
 Fore
 Refer: 481 890 N 1 0 0 1 197 0 2
 Refer: 1061 8039 N 1 0 0 1 0 0 0
+Validated: 98305
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
