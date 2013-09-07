@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1378512879
+ModificationTime: 1378552356
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -50,7 +50,7 @@ OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2FamilyClass: 261
 OS2Vendor: 'GNU '
-Lookup: 1 0 0 "'locl' local forms in Greek-diacritic equivalents"  {"'locl' local forms in Greek-diacritic equivalents-1"  "'locl' local forms in Greek-anoteleia"  } ['locl' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
+Lookup: 1 0 0 "'locl' local forms in Greek-diacritic equivalents"  {"'locl' local forms in Greek-diacritic equivalents-1"  "'locl' local forms in Greek-punctuation"  } ['locl' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 2 0 0 "'ccmp' glyph decomp. in Greek-caps w/iota"  {"'ccmp' glyph decomp. in Greek-caps w/iota"  } ['ccmp' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 2 0 0 "'smcp' small caps in Greek-pre-decompose"  {"'smcp' small caps in Greek-pre-decompose-1"  "'smcp' small caps in Greek-pre-decompose-extended"  } ['smcp' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' lowercase to small caps in Greek"  {"'smcp' lowercase to small caps in Greek-1"  } ['smcp' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
@@ -823,7 +823,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 896 16 12
+WinInfo: 816 16 12
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -1646,6 +1646,7 @@ SplineSet
  150 416 174 441 205 441 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'locl' local forms in Greek-punctuation" questiongreek
 Substitution2: "'locl' local. punct in Bengali-1" indic_semicolon
 EndChar
 
@@ -4566,7 +4567,7 @@ SplineSet
  96 353 118 375 146 375 c 4
 EndSplineSet
 Validated: 1
-Substitution2: "'locl' local forms in Greek-anoteleia" anoteleia
+Substitution2: "'locl' local forms in Greek-punctuation" anoteleia
 EndChar
 
 StartChar: cedilla
@@ -10899,6 +10900,7 @@ SplineSet
  96 444 122 470 155 470 c 4
  188 470 214 444 214 411 c 4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: Epsilontonos
@@ -12584,6 +12586,7 @@ SplineSet
  667 672 696 635 696 595 c 0
  696 550 655 488 607 488 c 0
 EndSplineSet
+Validated: 524289
 Substitution2: "'c2sc' caps to small caps in Greek-1" sc.gk_upsilon
 EndChar
 
@@ -12595,6 +12598,7 @@ LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 180 0 0
 Refer: 1330 900 N 1 0 0 1 38 -41 0
+Validated: 1
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-caps" Upsilonhook gk_tonos.cmb
 EndChar
 
@@ -12606,6 +12610,7 @@ LayerCount: 2
 Fore
 Refer: 550 978 N 1 0 0 1 57 0 0
 Refer: 102 168 S 1 0 0 1 235 224 0
+Validated: 1
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-caps" Upsilonhook dieresis.cmb
 EndChar
 
@@ -42249,20 +42254,8 @@ AnchorPoint: "above_gk" 0 460 mark 0
 AnchorPoint: "above" -9 444 mark 0
 LayerCount: 2
 Fore
-SplineSet
-5 507 m 0
- -17 507 -40 510 -60 520 c 1
- -45 544 l 1
- -29 536 -10 536 8 536 c 0
- 49 536 88 575 88 615 c 0
- 88 634 76 642 58 642 c 0
- 45 642 33 637 20 637 c 0
- 1 637 -18 643 -18 665 c 0
- -18 700 14 722 47 722 c 0
- 97 722 137 699 137 645 c 0
- 137 576 76 507 5 507 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1370 8127 N 1 0 0 1 -200 0 2
+Validated: 1
 EndChar
 
 StartChar: uni20B1
@@ -105294,6 +105287,7 @@ SplineSet
  494 653 l 1
  716 653 l 1
 EndSplineSet
+Validated: 524289
 EndChar
 EndChars
 EndSplineFont
