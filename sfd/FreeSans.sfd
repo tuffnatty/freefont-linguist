@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1378449516
+ModificationTime: 1378831437
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -857,7 +857,7 @@ NameList: Adobe Glyph List
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 816 16 9
+WinInfo: 2288 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -878,7 +878,7 @@ Grid
   Named: "Georgian" 
 EndSplineSet
 AnchorClass2: "below_gk"  "'mark' mark below in Greek and Coptic-1" "above_gk"  "'mark' mark above in Greek-1" "bng-phala"  "'mkmk' mark-to-mark in Bengali-1" "bng-round"  "'blwm' below-base round in Bengali" "bng-stem"  "'blwm' below-base stemmed in Bengali" "bng-rofola"  "'blwm' below-base rofola in Bengali" "stacked"  "'mkmk' mark-to-mark in Latin-1" "viet_tilde"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_hook"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_grave"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_acute"  "'mkmk' mark-to-mark in Latin for Viet-1" "taml_above"  "'abvm' Above Base Mark in Tamil-1" "dev-candrabindu"  "'abvm' Above Base Mark in Devanagari-candrabindu" "dev-anusvara"  "'abvm' Above Base Mark in Devanagari-anusvara" "bng-vowel"  "'blwm' below-base vowel in Bengali" "bng-nukta"  "'blwm' below-base nukta in Bengali" "dev-rakaar"  "'blwm' Below Base Mark in Devanagari subtable" "dev-belowmark"  "'mkmk' Mark to Mark in Devanagari-above" "mlm-reph"  "'abvm' Above Base Mark in Malayalam-reph" "mlm-below"  "'blwm' Below Base Mark in Malay+AQEA-lam-1" "guj-nukta"  "'blwm' Below Base Mark in Gujarati-nukta" "gur-top-mid"  "'abvm' Above Base Mark in Gurmukhi-mid" "gur-nukta"  "'blwm' Below Base Mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' Mark to Mark in Gurmukhi" "gur-below-mid"  "'blwm' Below Base Mark in Gurmukhi mid" "guru_above"  "'abvm' Above Base Mark in Gurmukhi subtable" "guru_below"  "'blwm' Below Base Mark in Gurmukhi subtable" "syr_below"  "'mark' marks in Syriac 0" "syr_above"  "'mark' marks in Syriac 0" "above_mid_heb"  "'mark' marks in Hebrew 0" "vowel_below_yiddish"  "'mark' marks in Yiddish below" "vowel_above_heb"  "'mark' marks in Hebrew 0" "vowel_left_heb"  "'mark' marks in Hebrew 0" "vowel_below_heb"  "'mark' marks in Hebrew 2 subtable" "abovemk_cyr"  "'mkmk' mark-to-mark in Cyrillic 0" "topright"  "'mark' marks in Latin topright" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' marks middle" "ogonek"  "'mark' marks in Latin ogonek" "dev_above"  "'abvm' Above Base Mark in Devanagari subtable" "gujr-0"  "'abvm' Above Base Mark in Gujarati subtable" "dev_below"  "'blwm' Below Base Mark in Devanagari subtable" "gujr-1"  "'blwm' Below Base Mark in Gujarati subtable" "above"  "'mark' marks in Latin above" "below"  "'mark' marks in Latin below" 
-BeginChars: 69525 6110
+BeginChars: 69525 6120
 
 StartChar: space
 Encoding: 32 32 0
@@ -3944,7 +3944,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 -208 2
 Refer: 11 43 N 1 0 0 1 0 149 2
-Validated: 32769
 EndChar
 
 StartChar: twosuperior
@@ -36652,7 +36651,6 @@ SplineSet
  50 267 l 1
  534 267 l 1
 EndSplineSet
-Validated: 3073
 Substitution2: "'dnom' denominators-1" minusinferior
 Substitution2: "'numr' numerators-1" minussuperior
 Substitution2: "'subs' subscript-numeric" minusinferior
@@ -36666,7 +36664,6 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 112 177 N -1 0 0 -1 584 612 0
-Validated: 32769
 EndChar
 
 StartChar: asteriskmath
@@ -36955,14 +36952,27 @@ Refer: 118 183 N 1 0 0 1 211 8 2
 Validated: 32769
 EndChar
 
-StartChar: similar
+StartChar: sim
 Encoding: 8764 8764 1800
-Width: 500
+Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 94 126 N 1 0 0 1 0 -62 2
-Validated: 32769
+SplineSet
+179 309 m 4
+ 136 309 105 258 103 231 c 5
+ 50 231 l 5
+ 55 325 116 376 181 376 c 4
+ 199 376 218 370 235 360 c 6
+ 352 291 l 6
+ 372 279 388 274 402 274 c 4
+ 445.144 274 481 302.924 481 349 c 5
+ 534 349 l 5
+ 534 245.1 464 206 401 206 c 4
+ 376 206 346 216 320 232 c 6
+ 222 295 l 6
+ 212 301 189 309 179 309 c 4
+EndSplineSet
 EndChar
 
 StartChar: lazysinv
@@ -36995,104 +37005,53 @@ EndChar
 
 StartChar: notsimilar
 Encoding: 8769 8769 1802
-Width: 533
+Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-144 90 m 1
- 223 230 l 1
- 199 245 l 2
- 189 251 166 259 156 259 c 0
- 113 259 105 208 103 181 c 1
- 50 181 l 1
- 55 275 93 326 158 326 c 0
- 176 326 195 320 212 310 c 2
- 254 285 l 1
- 313 390 l 1
- 378 390 l 1
- 304 256 l 1
- 329 241 l 2
- 349 229 365 224 379 224 c 0
- 417 224 430 254 430 299 c 1
- 483 299 l 1
- 483 225 450 156 378 156 c 0
- 353 156 323 166 297 182 c 2
- 272 198 l 1
- 212 90 l 1
- 144 90 l 1
+174 130 m 5
+ 343 430 l 5
+ 408 430 l 5
+ 242 130 l 5
+ 174 130 l 5
 EndSplineSet
-Validated: 3073
+Refer: 1800 8764 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: uni2242
+StartChar: eqsim
 Encoding: 8770 8770 1803
 Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1804 8771 N -1 0 0 -1 586 481 0
-Validated: 32769
+Refer: 1804 8771 S -1 0 0 -1 584 481 0
 EndChar
 
-StartChar: asymptequal
+StartChar: simeq
 Encoding: 8771 8771 1804
 Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 -88 2
-Refer: 1800 8764 N 1 0 0 1 40 69 2
-Validated: 32769
+Refer: 1800 8764 S 1 0 0 1 0 69 2
 EndChar
 
 StartChar: uni2249
 Encoding: 8777 8777 1805
-Width: 500
+Width: 586
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-148 44 m 1
- 79 44 l 1
- 170.779 207.237 l 1
- 160.229 211.411 147.698 215 141 215 c 0
- 98 215 90 164 88 137 c 1
- 35 137 l 1
- 40 231 78 282 143 282 c 0
- 161 282 180 276 197 266 c 2
- 202.12 262.981 l 1
- 255.429 357.796 l 1
- 182 405 l 2
- 172 411 149 419 139 419 c 0
- 96 419 88 368 86 341 c 1
- 33 341 l 1
- 38 435 76 486 141 486 c 0
- 159 486 178 480 195 470 c 2
- 287.758 415.297 l 1
- 350 526 l 1
- 414 526 l 1
- 338.098 388.464 l 1
- 346.807 385.414 354.666 384 362 384 c 0
- 398 384 413 405 413 454 c 2
- 413 459 l 1
- 466 459 l 1
- 466 443 l 2
- 466 366 425 316 361 316 c 0
- 343.799 316 324.23 320.734 305.227 328.899 c 1
- 252.463 233.291 l 1
- 314 197 l 2
- 334.09 185.152 350 180 364 180 c 0
- 400 180 415 201 415 250 c 2
- 415 255 l 1
- 468 255 l 1
- 468 239 l 2
- 468 162 427 112 363 112 c 0
- 338 112 308 122 282 138 c 2
- 221.381 176.969 l 1
- 148 44 l 1
+206 51 m 5
+ 137 51 l 5
+ 394 541 l 5
+ 458 541 l 5
+ 206 51 l 5
 EndSplineSet
-Validated: 3073
+Refer: 1913 8776 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: notequal
@@ -37135,7 +37094,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 -208 2
 Refer: 28 60 N 1 0 0 1 5 165 2
-Validated: 32769
 EndChar
 
 StartChar: greaterequal
@@ -37146,7 +37104,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 7 -208 2
 Refer: 30 62 N 1 0 0 1 0 165 2
-Validated: 32769
 EndChar
 
 StartChar: circleplus
@@ -37168,7 +37125,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 93 100 2
 Refer: 5082 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: circlemultiply
@@ -39354,16 +39310,15 @@ Validated: 32769
 Substitution2: "'sups' superscript-phonetic" philatinsup
 EndChar
 
-StartChar: approxequal
+StartChar: approx
 Encoding: 8776 8776 1913
-Width: 500
+Width: 586
 Flags: HMW
 TeX: 97 0
 LayerCount: 2
 Fore
-Refer: 1800 8764 N 1 0 0 1 0 -94 2
-Refer: 1800 8764 N 1 0 0 1 -2 110 2
-Validated: 32769
+Refer: 1800 8764 N 1 0 0 1 2 -94 2
+Refer: 1800 8764 N 1 0 0 1 0 110 2
 EndChar
 
 StartChar: uni220A
@@ -39448,28 +39403,26 @@ Refer: 1914 8714 N -1 0 0 -1 585 468 0
 Validated: 32769
 EndChar
 
-StartChar: uni2272
+StartChar: lesssim
 Encoding: 8818 8818 1919
 Width: 584
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 1800 8764 N 1 0 0 1 30 -250 2
-Refer: 28 60 N 1 0 0 1 5 165 2
-Validated: 32769
+Refer: 1800 8764 S 1 0 0 1 0 -250 2
+Refer: 28 60 S 1 0 0 1 5 165 2
 EndChar
 
-StartChar: uni2273
+StartChar: gtrsim
 Encoding: 8819 8819 1920
 Width: 584
 Flags: HMW
 TeX: 117 0
 LayerCount: 2
 Fore
-Refer: 30 62 N 1 0 0 1 0 165 2
-Refer: 1800 8764 N 1 0 0 1 30 -250 2
-Validated: 32769
+Refer: 30 62 S 1 0 0 1 0 165 2
+Refer: 1800 8764 S 1 0 0 1 0 -250 2
 EndChar
 
 StartChar: Ihookabove
@@ -44340,7 +44293,7 @@ Refer: 2147 2306 N 1 0 0 1 257 -319 2
 Validated: 32769
 EndChar
 
-StartChar: shortadeva
+StartChar: ashortdeva
 Encoding: 2308 2308 2149
 Width: 717
 GlyphClass: 2
@@ -50026,7 +49979,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 -14 -219 2
 Refer: 1915 8834 N 1 0 0 1 0 98 2
-Validated: 32769
 EndChar
 
 StartChar: reflexsuperset
@@ -50037,10 +49989,9 @@ LayerCount: 2
 Fore
 Refer: 1916 8835 N 1 0 0 1 0 95 2
 Refer: 1784 8722 N 1 0 0 1 0 -218 2
-Validated: 32769
 EndChar
 
-StartChar: equivalence
+StartChar: equiv
 Encoding: 8801 8801 2334
 Width: 584
 Flags: HMW
@@ -50049,7 +50000,6 @@ Fore
 Refer: 1784 8722 N 1 0 0 1 0 -108 2
 Refer: 1784 8722 N 1 0 0 1 0 37 2
 Refer: 1784 8722 N 1 0 0 1 0 182 2
-Validated: 32769
 EndChar
 
 StartChar: pisymbol
@@ -50263,8 +50213,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 29 61 N 1 0 0 1 0 -75 2
-Refer: 1800 8764 N 1 0 0 1 40 160 2
-Validated: 32769
+Refer: 1800 8764 S 1 0 0 1 0 164 2
 EndChar
 
 StartChar: alephmath
@@ -51720,7 +51669,7 @@ Refer: 2434 8994 N -1 0 0 -1 659 484 2
 Validated: 32769
 EndChar
 
-StartChar: notidentical
+StartChar: nequiv
 Encoding: 8802 8802 2436
 Width: 584
 Flags: MW
@@ -51788,28 +51737,25 @@ EndChar
 
 StartChar: reversedtilde
 Encoding: 8765 8765 2439
-Width: 500
+Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-141 273 m 0
- 151 273 174 281 184 287 c 2
- 282 350 l 2
- 308 366 338 376 363 376 c 0
- 427 376 468 326 468 249 c 2
- 468 233 l 1
- 415 233 l 1
- 415 238 l 2
- 415 287 400 308 364 308 c 0
- 350 308 334 303 314 291 c 2
- 197 222 l 2
- 180 212 161 206 143 206 c 0
- 78 206 40 257 35 351 c 1
- 88 351 l 1
- 90 324 98 273 141 273 c 0
+179 273 m 4
+ 189 273 212 281 222 287 c 6
+ 320 350 l 6
+ 346 366 376 376 401 376 c 4
+ 464 376 534 336.9 534 233 c 5
+ 481 233 l 5
+ 481 279.076 445.144 308 402 308 c 4
+ 388 308 372 303 352 291 c 6
+ 235 222 l 6
+ 218 212 199 206 181 206 c 4
+ 116 206 55 257 50 351 c 5
+ 103 351 l 5
+ 105 324 136 273 179 273 c 4
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: wreathproduct
@@ -51819,10 +51765,9 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1800 8764 N 0 1 -1 0 413 -42 2
-Validated: 32769
 EndChar
 
-StartChar: notasymptequal
+StartChar: nsimeq
 Encoding: 8772 8772 2441
 Width: 584
 Flags: MW
@@ -51865,96 +51810,27 @@ EndChar
 StartChar: approxnotequal
 Encoding: 8774 8774 2442
 Width: 584
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-219 -19 m 1
- 150 -19 l 1
- 182.746 36 l 1
- 50 36 l 1
- 50 106 l 1
- 224.422 106 l 1
- 285.15 208 l 1
- 50 208 l 1
- 50 278 l 1
- 326.827 278 l 1
- 356 327 l 1
- 423 327 l 1
- 394.11 278 l 1
- 534 278 l 1
- 534 208 l 1
- 352.838 208 l 1
- 292.699 106 l 1
- 534 106 l 1
- 534 36 l 1
- 251.428 36 l 1
- 219 -19 l 1
-181 469 m 0
- 138 469 130 418 128 391 c 1
- 75 391 l 1
- 80 485 118 536 183 536 c 0
- 201 536 220 530 237 520 c 2
- 354 451 l 2
- 374.09 439.152 390 434 404 434 c 0
- 440 434 455 455 455 504 c 2
- 455 509 l 1
- 508 509 l 1
- 508 493 l 2
- 508 416 467 366 403 366 c 0
- 378 366 348 376 322 392 c 2
- 224 455 l 2
- 214 461 191 469 181 469 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1800 8764 N 1 0 0 1 0 165 2
+Refer: 6115 -1 N 1 0 0 1 -10 147 2
 EndChar
 
 StartChar: notapproxequal
 Encoding: 8775 8775 2443
 Width: 584
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-166 4 m 1
- 97 4 l 1
- 113.415 36 l 1
- 50 36 l 1
- 50 106 l 1
- 149.322 106 l 1
- 201.644 208 l 1
- 50 208 l 1
- 50 278 l 1
- 237.552 278 l 1
- 302.47 404.555 l 1
- 224 455 l 2
- 214 461 191 469 181 469 c 0
- 138 469 130 418 128 391 c 1
- 75 391 l 1
- 80 485 118 536 183 536 c 0
- 201 536 220 530 237 520 c 2
- 332.729 463.544 l 1
- 374 544 l 1
- 438 544 l 1
- 384.173 437.137 l 1
- 391.283 435.002 397.827 434 404 434 c 0
- 440 434 455 455 455 504 c 2
- 455 509 l 1
- 508 509 l 1
- 508 493 l 2
- 508 416 467 366 403 366 c 0
- 387.698 366 370.524 369.746 353.54 376.321 c 1
- 304.015 278 l 1
- 534 278 l 1
- 534 208 l 1
- 268.756 208 l 1
- 217.378 106 l 1
- 534 106 l 1
- 534 36 l 1
- 182.119 36 l 1
- 166 4 l 1
+156 -19 m 5
+ 87 -19 l 5
+ 374 541 l 5
+ 438 541 l 5
+ 156 -19 l 5
 EndSplineSet
-Validated: 3073
+Refer: 2343 8773 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: notsubseteql
@@ -52311,7 +52187,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 25 -164 2
 Refer: 2450 8882 N 1 0 0 1 0 146 2
-Validated: 32769
 EndChar
 
 StartChar: triangrightequal
@@ -52322,7 +52197,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 22 -160 2
 Refer: 2451 8883 N 1 0 0 1 0 151 2
-Validated: 32769
 EndChar
 
 StartChar: circle
@@ -52436,7 +52310,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 26 -195 2
 Refer: 2463 8847 N 1 0 0 1 14 142 2
-Validated: 32769
 EndChar
 
 StartChar: supersetsqequal
@@ -52447,7 +52320,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 26 -197 2
 Refer: 2464 8848 N 1 0 0 1 -14 161 2
-Validated: 32769
 EndChar
 
 StartChar: notsubsetsqequal
@@ -52988,7 +52860,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 -198 2
 Refer: 2487 8826 N 1 0 0 1 4 129 2
-Validated: 32769
 EndChar
 
 StartChar: followsequal
@@ -52999,7 +52870,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 -198 2
 Refer: 2488 8827 N 1 0 0 1 7 130 2
-Validated: 32769
 EndChar
 
 StartChar: notprecedes
@@ -130826,7 +130696,6 @@ SplineSet
  133 213 186 160 250 160 c 0
  320 160 366 208 366 277 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: cuberoot
@@ -130996,7 +130865,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 0 2
 Refer: 118 183 N 1 0 0 1 157 38 2
-Validated: 32769
 EndChar
 
 StartChar: uni2239
@@ -131008,7 +130876,6 @@ Fore
 Refer: 1784 8722 N 1 0 0 1 0 0 2
 Refer: 118 183 N 1 0 0 1 547 38 2
 Refer: 118 183 N 1 0 0 1 546 -352 2
-Validated: 32769
 EndChar
 
 StartChar: uni223A
@@ -131022,7 +130889,6 @@ Refer: 118 183 N 1 0 0 1 353 38 2
 Refer: 118 183 N 1 0 0 1 352 -374 2
 Refer: 118 183 N 1 0 0 1 -40 -374 2
 Refer: 118 183 N 1 0 0 1 -40 38 2
-Validated: 32769
 EndChar
 
 StartChar: uni223B
@@ -131034,7 +130900,6 @@ Fore
 Refer: 1800 8764 N 1 0 0 1 0 0 2
 Refer: 118 183 N 1 0 0 1 124 69 2
 Refer: 118 183 N 1 0 0 1 123 -312 2
-Validated: 32769
 EndChar
 
 StartChar: strictequivalence
@@ -131047,7 +130912,6 @@ Refer: 1784 8722 N 1 0 0 1 10 257 2
 Refer: 1784 8722 N 1 0 0 1 10 87 2
 Refer: 1784 8722 N 1 0 0 1 10 -83 2
 Refer: 1784 8722 N 1 0 0 1 10 -253 2
-Validated: 32769
 EndChar
 
 StartChar: circlering
@@ -131058,7 +130922,6 @@ LayerCount: 2
 Fore
 Refer: 5063 8728 N 0.9 0 0 0.9 160 76 2
 Refer: 5082 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: circleasterisk
@@ -131158,7 +131021,7 @@ Refer: 2592 726 N 1 0 0 1 226 71 2
 Validated: 32769
 EndChar
 
-StartChar: uni2251
+StartChar: dotsequal
 Encoding: 8785 8785 5085
 Width: 584
 Flags: HMW
@@ -131170,7 +131033,7 @@ Refer: 118 183 N 1 0 0 1 157 -421 2
 Validated: 32769
 EndChar
 
-StartChar: uni2252
+StartChar: fallingdotseq
 Encoding: 8786 8786 5086
 Width: 584
 Flags: HMW
@@ -131182,7 +131045,7 @@ Refer: 118 183 N 1 0 0 1 343 -424 2
 Validated: 32769
 EndChar
 
-StartChar: uni2253
+StartChar: risingdotseq
 Encoding: 8787 8787 5087
 Width: 584
 Flags: HMW
@@ -131194,7 +131057,7 @@ Refer: 118 183 N 1 0 0 1 -37 -418 2
 Validated: 32769
 EndChar
 
-StartChar: uni2254
+StartChar: colonequals
 Encoding: 8788 8788 5088
 Width: 735
 Flags: HMW
@@ -131206,7 +131069,7 @@ Refer: 118 183 N 1 0 0 1 -40 -412 2
 Validated: 32769
 EndChar
 
-StartChar: uni2255
+StartChar: equalscolon
 Encoding: 8789 8789 5089
 Width: 755
 Flags: HMW
@@ -131218,18 +131081,18 @@ Refer: 118 183 N 1 0 0 1 512 -414 2
 Validated: 32769
 EndChar
 
-StartChar: ringequal
+StartChar: circeq
 Encoding: 8791 8791 5090
 Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 29 61 N 1 0 0 1 0 3 2
-Refer: 476 730 N 1 0 0 1 125 -101 2
+Refer: 29 61 S 1 0 0 1 0 3 2
+Refer: 476 730 S 1 0 0 1 125 -101 2
 Validated: 32769
 EndChar
 
-StartChar: uni2258
+StartChar: arceq
 Encoding: 8792 8792 5091
 Width: 584
 Flags: HMW
@@ -131240,7 +131103,7 @@ Refer: 2434 8994 N 0.88015 0 0 1 2 293 2
 Validated: 32769
 EndChar
 
-StartChar: uni2259
+StartChar: estimates
 Encoding: 8793 8793 5092
 Width: 584
 Flags: HMW
@@ -131251,7 +131114,7 @@ Refer: 1791 8743 N 0.5 0 0 0.5 155 453 2
 Validated: 32769
 EndChar
 
-StartChar: uni225A
+StartChar: veeeq
 Encoding: 8794 8794 5093
 Width: 584
 Flags: HMW
@@ -131262,7 +131125,7 @@ Refer: 1792 8744 N 0.5 0 0 0.5 139 455 2
 Validated: 32769
 EndChar
 
-StartChar: uni225B
+StartChar: stareq
 Encoding: 8795 8795 5094
 Width: 584
 Flags: HMW
@@ -131284,7 +131147,7 @@ Refer: 29 61 N 1 0 0 1 0 3 2
 Validated: 32769
 EndChar
 
-StartChar: uni225F
+StartChar: questionequal
 Encoding: 8799 8799 5096
 Width: 584
 Flags: HMW
@@ -131295,7 +131158,7 @@ Refer: 31 63 N 0.48 0 0 0.48 161 391 2
 Validated: 32769
 EndChar
 
-StartChar: uni225D
+StartChar: eqdef
 Encoding: 8797 8797 5097
 Width: 584
 Flags: HMW
@@ -131308,7 +131171,7 @@ Refer: 70 102 N 0.4 0 0 0.4 431 447 2
 Validated: 32769
 EndChar
 
-StartChar: uni225E
+StartChar: measeq
 Encoding: 8798 8798 5098
 Width: 584
 Flags: HMW
@@ -131325,7 +131188,7 @@ Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 28 60 N 1 0 0 1 5 190 2
+Refer: 28 60 S 1 0 0 1 5 190 2
 Refer: 29 61 N 1 0 0 1 8 -233 2
 Validated: 32769
 EndChar
@@ -131337,7 +131200,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 29 61 N 1 0 0 1 0 -235 2
-Refer: 30 62 N 1 0 0 1 0 197 2
+Refer: 30 62 S 1 0 0 1 0 197 2
 Validated: 32769
 EndChar
 
@@ -131369,9 +131232,8 @@ Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 2487 8826 N 1 0 0 1 0 81 2
-Refer: 1800 8764 N 1 0 0 1 15 -281 2
-Validated: 32769
+Refer: 2487 8826 S 1 0 0 1 0 101 2
+Refer: 1800 8764 N 1 0 0 1 -5 -281 2
 EndChar
 
 StartChar: uni227F
@@ -131380,32 +131242,29 @@ Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 2488 8827 N 1 0 0 1 0 76 2
-Refer: 1800 8764 N 1 0 0 1 56 -281 2
-Validated: 32769
+Refer: 2488 8827 S 1 0 0 1 0 96 2
+Refer: 1800 8764 N 1 0 0 1 0 -281 2
 EndChar
 
 StartChar: uni224A
 Encoding: 8778 8778 5105
-Width: 584
+Width: 586
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1913 8776 N 1 0 0 1 50 83 2
+Refer: 1913 8776 N 1 0 0 1 0 63 2
 Refer: 1784 8722 N 1 0 0 1 0 -197 2
-Validated: 32769
 EndChar
 
 StartChar: uni224B
 Encoding: 8779 8779 5106
-Width: 500
+Width: 584
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1800 8764 N 1 0 0 1 0 17 2
 Refer: 1800 8764 N 1 0 0 1 0 -154 2
 Refer: 1800 8764 N 1 0 0 1 0 185 2
-Validated: 32769
 EndChar
 
 StartChar: uni224C
@@ -131415,8 +131274,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 29 61 N 1 0 0 1 0 -63 2
-Refer: 2439 8765 N 1 0 0 1 40 162 2
-Validated: 32769
+Refer: 2439 8765 S 1 0 0 1 0 162 2
 EndChar
 
 StartChar: revasymptequal
@@ -131427,7 +131285,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 0 -41 2
 Refer: 2439 8765 N 1 0 0 1 48 99 2
-Validated: 32769
 EndChar
 
 StartChar: xor
@@ -131438,7 +131295,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 4 -152 2
 Refer: 1792 8744 N 1 0 0 1 -10 159 2
-Validated: 32769
 EndChar
 
 StartChar: nand
@@ -131449,7 +131305,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 11 329 2
 Refer: 1791 8743 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: nor
@@ -131460,7 +131315,6 @@ LayerCount: 2
 Fore
 Refer: 1784 8722 N 1 0 0 1 4 345 2
 Refer: 1792 8744 N 1 0 0 1 -12 0 2
-Validated: 32769
 EndChar
 
 StartChar: curlyor
@@ -131491,7 +131345,6 @@ LayerCount: 2
 Fore
 Refer: 1802 8769 N 1 0 0 1 20 -280 2
 Refer: 28 60 N 1 0 0 1 5 122 2
-Validated: 32769
 EndChar
 
 StartChar: uni22E7
@@ -131502,7 +131355,6 @@ LayerCount: 2
 Fore
 Refer: 30 62 N 1 0 0 1 0 83 2
 Refer: 1802 8769 N 1 0 0 1 10 -280 2
-Validated: 32769
 EndChar
 
 StartChar: uni22E8
@@ -131513,7 +131365,6 @@ LayerCount: 2
 Fore
 Refer: 1802 8769 N 1 0 0 1 0 -280 2
 Refer: 2487 8826 N 1 0 0 1 0 80 2
-Validated: 32769
 EndChar
 
 StartChar: uni22E9
@@ -131524,7 +131375,6 @@ LayerCount: 2
 Fore
 Refer: 1802 8769 N 1 0 0 1 0 -280 2
 Refer: 2488 8827 N 1 0 0 1 0 76 2
-Validated: 32769
 EndChar
 
 StartChar: uni22EE
@@ -159742,6 +159592,181 @@ SplineSet
  341 6 304 -23 248 -23 c 0
  195 -23 159 13 159 63 c 0
 EndSplineSet
+EndChar
+
+StartChar: eqcirc
+Encoding: 8790 8790 6110
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+534 184 m 1
+ 534 114 l 1
+ 50 114 l 1
+ 50 184 l 1
+ 199.432 184 l 1
+ 190.889 199.099 186 216.49 186 235 c 0
+ 186 253.224 191.083 270.706 199.94 286 c 1
+ 50 286 l 1
+ 50 356 l 1
+ 534 356 l 1
+ 534 286 l 1
+ 384.601 286 l 1
+ 393.146 270.68 398 252.96 398 234 c 0
+ 398 215.802 393.275 198.785 384.998 184 c 1
+ 534 184 l 1
+292 278 m 0
+ 268 278 248 258 248 235 c 0
+ 248 211 268 191 292 191 c 0
+ 316 191 336 211 336 234 c 0
+ 336 259 317 278 292 278 c 0
+EndSplineSet
+EndChar
+
+StartChar: Bumpedeq
+Encoding: 8782 8782 6111
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 6112 -1 N -1 0 0 -1 584 464 2
+Refer: 6112 -1 S 1 0 0 1 0 0 2
+EndChar
+
+StartChar: math_bumpline
+Encoding: 63594 -1 6112
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+534 353 m 5
+ 534 283 l 5
+ 335 283 l 5
+ 335 353 l 6
+ 334 377 316 397 293 397 c 4
+ 269 397 250 377 249 353 c 6
+ 249 283 l 5
+ 50 283 l 5
+ 50 353 l 5
+ 188 353 l 5
+ 189 411 235 459 293 459 c 4
+ 349 459 396 411 397 353 c 5
+ 534 353 l 5
+EndSplineSet
+EndChar
+
+StartChar: bumpedeq
+Encoding: 8783 8783 6113
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1784 8722 S 1 0 0 1 0 -88 2
+Refer: 6112 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: lneqq
+Encoding: 8808 8808 6114
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 28 60 N 1 0 0 1 5 190 2
+Refer: 6115 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: math_notequalsquashed
+Encoding: 63589 -1 6115
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+367 184 m 5
+ 442 184 l 5
+ 255 -180 l 5
+ 180 -180 l 5
+ 367 184 l 5
+EndSplineSet
+Refer: 29 61 S 1 0 0 1 8 -233 2
+EndChar
+
+StartChar: gneqq
+Encoding: 8809 8809 6116
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 30 62 S 1 0 0 1 0 197 2
+Refer: 6115 -1 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: between
+Encoding: 8812 8812 6117
+Width: 409
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+173 -212 m 5
+ 118 -212 l 5
+ 138 -180 156 -147 172 -112 c 5
+ 110 3 73 138 73 259 c 4
+ 73 379 110 514 172 629 c 5
+ 156 664 138 697 118 729 c 5
+ 173 729 l 5
+ 184 715 194 699 204 684 c 5
+ 214 699 225 715 236 729 c 5
+ 291 729 l 5
+ 271 697 253 664 237 629 c 5
+ 299 514 336 379 336 258 c 4
+ 336 138 299 3 237 -112 c 5
+ 253 -147 271 -180 291 -212 c 5
+ 236 -212 l 5
+ 225 -198 215 -182 205 -167 c 5
+ 195 -182 184 -198 173 -212 c 5
+205 -30 m 5
+ 238 64 255 163 255 258 c 4
+ 255 354 237 453 204 547 c 5
+ 171 453 154 354 154 259 c 4
+ 154 163 172 64 205 -30 c 5
+EndSplineSet
+EndChar
+
+StartChar: nlesssim
+Encoding: 8820 8820 6118
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+408 669 m 5
+ 470 669 l 5
+ 198 -60 l 5
+ 136 -60 l 5
+ 408 669 l 5
+EndSplineSet
+Refer: 1800 8764 N 1 0 0 1 0 -250 2
+Refer: 28 60 N 1 0 0 1 5 165 2
+EndChar
+
+StartChar: ngtrsim
+Encoding: 8821 8821 6119
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+418 669 m 5
+ 480 669 l 5
+ 208 -60 l 5
+ 146 -60 l 5
+ 418 669 l 5
+EndSplineSet
+Refer: 30 62 N 1 0 0 1 0 165 2
+Refer: 1800 8764 N 1 0 0 1 0 -250 2
 EndChar
 EndChars
 EndSplineFont
