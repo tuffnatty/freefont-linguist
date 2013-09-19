@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1378552356
+ModificationTime: 1379629470
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -149,6 +149,7 @@ Lookup: 260 1 0 "'mark' marks in Hebrew for Yiddish"  {"'mark' marks in Hebrew f
 Lookup: 260 1 0 "'mark' marks in Hebrew for Ivrit"  {"'mark' marks in Hebrew for Ivrit-1"  } ['mark' ('hebr' <'IWR ' 'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks in Hebrew"  {"'mark' marks in Hebrew-1"  } ['mark' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
 Lookup: 262 1 0 "'mkmk' mark-to-mark in Hebrew"  {"'mkmk' mark-to-mark in Hebrew-1"  } ['mkmk' ('hebr' <'dflt' > ) ]
+Lookup: 260 0 0 "'blwm' below marks in Bengali"  {"'blwm' vowel in Bengali"  "'blwm' nukta in Bengali"  } ['blwm' ('beng' <'dflt' > 'bng2' <'dflt' > ) 'mark' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 KernClass2: 5 5 "'kern' kerning in Latin for Catalan-1" 
@@ -823,7 +824,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 816 16 12
+WinInfo: 2416 16 12
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -841,7 +842,7 @@ systemdict /internaldict known
 ForceBold 5 false
 EndPrivate
 TeXData: 1 0 216497 262144 131072 87381 448791 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "below_gk"  "'mark' mark below in Greek-1" "above_gk"  "'mark' mark above in Greek-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "low_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "top_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "point_above_heb"  "'mark' marks in Hebrew-1" "vowel_above_heb"  "'mark' marks in Hebrew-1" "vowel_left_heb"  "'mark' marks in Hebrew-1" "point_low_heb"  "'mark' marks in Hebrew-1" "point_left_heb"  "'mark' marks in Hebrew-1" "point_right_heb"  "'mark' marks in Hebrew-1" "vowel_low_heb"  "'mark' marks in Hebrew for Ivrit-1" "vowel_below_yiddish"  "'mark' marks in Hebrew for Yiddish-1" "topright"  "'mark' marks generic - middle" "ogonek"  "'mark' marks in Latin - ogonek" "abovecyr"  "'mark' marks in Cyrillic-1" "middle"  "'mark' marks generic - middle" "thai_vowel_tone_right"  "'mkmk' mark-to-mark in Thai right-1" "thai_tone"  "'mark' marks in Thai - tones" "thai_vowel_centered"  "'mark' marks in Thai - vowels" "thai_vowel"  "'mark' marks in Thai - vowels" "thai_vowel_tone"  "'mkmk' mark-to-mark in Thai-1" "thai_below"  "'mark' marks in Thai below" "below"  "'mark' marks in Latin-1" "above"  "'mark' marks in Latin above" 
+AnchorClass2: "beng-nukta"  "'blwm' nukta in Bengali" "beng-vowel"  "'blwm' vowel in Bengali" "below_gk"  "'mark' mark below in Greek-1" "above_gk"  "'mark' mark above in Greek-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "low_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "top_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "point_above_heb"  "'mark' marks in Hebrew-1" "vowel_above_heb"  "'mark' marks in Hebrew-1" "vowel_left_heb"  "'mark' marks in Hebrew-1" "point_low_heb"  "'mark' marks in Hebrew-1" "point_left_heb"  "'mark' marks in Hebrew-1" "point_right_heb"  "'mark' marks in Hebrew-1" "vowel_low_heb"  "'mark' marks in Hebrew for Ivrit-1" "vowel_below_yiddish"  "'mark' marks in Hebrew for Yiddish-1" "topright"  "'mark' marks generic - middle" "ogonek"  "'mark' marks in Latin - ogonek" "abovecyr"  "'mark' marks in Cyrillic-1" "middle"  "'mark' marks generic - middle" "thai_vowel_tone_right"  "'mkmk' mark-to-mark in Thai right-1" "thai_tone"  "'mark' marks in Thai - tones" "thai_vowel_centered"  "'mark' marks in Thai - vowels" "thai_vowel"  "'mark' marks in Thai - vowels" "thai_vowel_tone"  "'mkmk' mark-to-mark in Thai-1" "thai_below"  "'mark' marks in Thai below" "below"  "'mark' marks in Latin-1" "above"  "'mark' marks in Latin above" 
 BeginChars: 65980 3642
 
 StartChar: space
@@ -12586,7 +12587,7 @@ SplineSet
  667 672 696 635 696 595 c 0
  696 550 655 488 607 488 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 Substitution2: "'c2sc' caps to small caps in Greek-1" sc.gk_upsilon
 EndChar
 
@@ -20580,6 +20581,7 @@ StartChar: maihanakatthai
 Encoding: 3633 3633 806
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone_right" 154 675 basemark 0
 AnchorPoint: "thai_vowel_centered" 12 429 mark 0
@@ -20594,6 +20596,7 @@ StartChar: saraaathai
 Encoding: 3634 3634 807
 Width: 366
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -20617,6 +20620,7 @@ StartChar: saraamthai
 Encoding: 3635 3635 808
 Width: 366
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -20629,6 +20633,7 @@ StartChar: saraithai
 Encoding: 3636 3636 809
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone_right" 12 660 basemark 0
 AnchorPoint: "thai_vowel_tone" 8 666 basemark 0
@@ -20657,6 +20662,7 @@ StartChar: saraiithai
 Encoding: 3637 3637 810
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone_right" 24 690 basemark 0
 AnchorPoint: "thai_vowel_tone" 18 690 basemark 0
@@ -20688,6 +20694,7 @@ StartChar: sarauethai
 Encoding: 3638 3638 811
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone_right" 57 693 basemark 0
 AnchorPoint: "thai_vowel_tone" 47 690 basemark 0 {} {150-150 -1}
@@ -20724,6 +20731,7 @@ StartChar: saraueethai
 Encoding: 3639 3639 812
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone_right" 18 693 basemark 0
 AnchorPoint: "thai_vowel_tone" 18 690 basemark 0 {} {150-150 1}
@@ -20759,6 +20767,7 @@ StartChar: sarauthai
 Encoding: 3640 3640 813
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_below" -180 -28 mark 0
 LayerCount: 2
@@ -20786,6 +20795,7 @@ StartChar: sarauuthai
 Encoding: 3641 3641 814
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_below" -173 -28 mark 0 {} {150-150 1}
 LayerCount: 2
@@ -20822,6 +20832,7 @@ StartChar: phinthuthai
 Encoding: 3642 3642 815
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_below" -183 -40 mark 0
 LayerCount: 2
@@ -21109,6 +21120,7 @@ StartChar: maitaikhuthai
 Encoding: 3655 3655 824
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_tone" 12 420 mark 0
 LayerCount: 2
@@ -21146,6 +21158,7 @@ StartChar: maiekthai
 Encoding: 3656 3656 825
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_tone" -15 625 mark 0
 AnchorPoint: "thai_vowel_tone" -13 636 mark 0
@@ -21166,6 +21179,7 @@ StartChar: maithothai
 Encoding: 3657 3657 826
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone_right" 144 630 mark 0
 AnchorPoint: "thai_tone" 132 623 mark 0
@@ -21196,6 +21210,7 @@ StartChar: maitrithai
 Encoding: 3658 3658 827
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone_right" 165 618 mark 0 {} {150-150 4}
 AnchorPoint: "thai_tone" 150 616 mark 0
@@ -21236,6 +21251,7 @@ StartChar: maichattawathai
 Encoding: 3659 3659 828
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_tone" -8 617 mark 0
 AnchorPoint: "thai_vowel_tone" -13 636 mark 0
@@ -21263,6 +21279,7 @@ StartChar: thanthakhatthai
 Encoding: 3660 3660 829
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_tone" -41 655 mark 0
 AnchorPoint: "thai_vowel_tone" -11 659 mark 0
@@ -21292,6 +21309,7 @@ StartChar: nikhahitthai
 Encoding: 3661 3661 830
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_vowel_tone" 38.5 716.5 basemark 0
 AnchorPoint: "thai_vowel_tone_right" 120.779 718 basemark 0
@@ -21317,6 +21335,7 @@ StartChar: yamakkanthai
 Encoding: 3662 3662 831
 Width: 0
 VWidth: 930
+GlyphClass: 4
 Flags: HMW
 AnchorPoint: "thai_tone" -55 531 mark 0 {} {150-150 6}
 AnchorPoint: "thai_vowel_tone" -53 543 mark 0
@@ -35379,32 +35398,34 @@ EndChar
 StartChar: candrabindu_bng
 Encoding: 2433 2433 1593
 Width: 0
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
--60 750 m 2
- -86 656 -168 638 -188 638 c 0
- -247 638 -289 713 -289 785 c 0
- -289 785 -289 786 -289 787 c 1
- -277 788 l 2
- -239 788 -282 738 -213 701 c 0
- -203 696 -191 694 -178 693 c 0
- -134 700 -120 702 -70 778 c 1
- -61 778 -60 774 -57 769 c 1
- -60 750 l 2
--122 778 m 0
- -122 760 -143 730 -170 730 c 0
- -186 730 -194 743 -194 755 c 0
- -194 772 -173 800 -147 800 c 0
- -126 800 -122 787 -122 778 c 0
+0 750 m 6
+ -26 656 -108 638 -128 638 c 4
+ -187 638 -229 713 -229 785 c 4
+ -229 785 -229 786 -229 787 c 5
+ -217 788 l 6
+ -179 788 -222 738 -153 701 c 4
+ -143 696 -131 694 -118 693 c 4
+ -74 700 -60 702 -10 778 c 5
+ -1 778 0 774 3 769 c 5
+ 0 750 l 6
+-62 778 m 4
+ -62 760 -83 730 -110 730 c 4
+ -126 730 -134 743 -134 755 c 4
+ -134 772 -113 800 -87 800 c 4
+ -66 800 -62 787 -62 778 c 4
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_anusvara
 Encoding: 2434 2434 1594
 Width: 300
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -35436,6 +35457,7 @@ EndChar
 StartChar: bn_visarga
 Encoding: 2435 2435 1595
 Width: 312
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -35470,6 +35492,7 @@ StartChar: bn_a
 Encoding: 2437 2437 1596
 Width: 594
 Flags: HMW
+AnchorPoint: "beng-nukta" 268 138 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35508,6 +35531,7 @@ StartChar: bn_aa
 Encoding: 2438 2438 1597
 Width: 776
 Flags: HMW
+AnchorPoint: "beng-nukta" 268 138 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35559,6 +35583,7 @@ StartChar: bn_i
 Encoding: 2439 2439 1598
 Width: 469
 Flags: HMW
+AnchorPoint: "beng-nukta" 178 108 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35611,6 +35636,7 @@ StartChar: bn_ii
 Encoding: 2440 2440 1599
 Width: 513
 Flags: HMW
+AnchorPoint: "beng-nukta" 157 138 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35668,6 +35694,7 @@ StartChar: bn_u
 Encoding: 2441 2441 1600
 Width: 535
 Flags: HMW
+AnchorPoint: "beng-nukta" 298 58 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35719,6 +35746,7 @@ StartChar: bn_uu
 Encoding: 2442 2442 1601
 Width: 561
 Flags: HMW
+AnchorPoint: "beng-nukta" 328 58 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35778,6 +35806,7 @@ StartChar: bn_ri
 Encoding: 2443 2443 1602
 Width: 604
 Flags: HMW
+AnchorPoint: "beng-nukta" 178 208 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35824,6 +35853,7 @@ StartChar: bn_li
 Encoding: 2444 2444 1603
 Width: 481
 Flags: HMW
+AnchorPoint: "beng-nukta" 238 38 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35856,6 +35886,7 @@ StartChar: bn_e
 Encoding: 2447 2447 1604
 Width: 580
 Flags: HMW
+AnchorPoint: "beng-nukta" 248 98 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35894,6 +35925,7 @@ StartChar: bn_ai
 Encoding: 2448 2448 1605
 Width: 604
 Flags: HMW
+AnchorPoint: "beng-nukta" 238 88 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35939,6 +35971,7 @@ StartChar: bn_o
 Encoding: 2451 2451 1606
 Width: 540
 Flags: HMW
+AnchorPoint: "beng-nukta" 348 58 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35974,6 +36007,7 @@ StartChar: bn_au
 Encoding: 2452 2452 1607
 Width: 620
 Flags: HMW
+AnchorPoint: "beng-nukta" 368 68 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36020,6 +36054,8 @@ StartChar: bn_ka
 Encoding: 2453 2453 1608
 Width: 570
 Flags: HMW
+AnchorPoint: "beng-nukta" 118 168 basechar 0
+AnchorPoint: "beng-vowel" 276 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36049,13 +36085,15 @@ SplineSet
  375 280 435 292 452 292 c 0
  461 292 484 289 491 267 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_kha
 Encoding: 2454 2454 1609
 Width: 485
 Flags: HMW
+AnchorPoint: "beng-nukta" 178 158 basechar 0
+AnchorPoint: "beng-vowel" 331 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36088,13 +36126,15 @@ SplineSet
  311 525 l 2
  343 492 350 459 350 434 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ga
 Encoding: 2455 2455 1610
 Width: 484
 Flags: HMW
+AnchorPoint: "beng-nukta" 88 138 basechar 0
+AnchorPoint: "beng-vowel" 331 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36129,13 +36169,15 @@ SplineSet
  456 653 l 1
  478 624 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_gha
 Encoding: 2456 2456 1611
 Width: 471
 Flags: HMW
+AnchorPoint: "beng-nukta" 158 138 basechar 0
+AnchorPoint: "beng-vowel" 317 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36167,13 +36209,15 @@ SplineSet
  184 363 170 360 156 360 c 0
  105 360 79 399 79 435 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_nga
 Encoding: 2457 2457 1612
 Width: 457
 Flags: HMW
+AnchorPoint: "beng-nukta" 228 18 basechar 0
+AnchorPoint: "beng-vowel" 341 25 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36208,13 +36252,15 @@ SplineSet
  70 390 69 366 69 342 c 0
  69 214 111 96 238 96 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ca
 Encoding: 2458 2458 1613
 Width: 408
 Flags: HMW
+AnchorPoint: "beng-nukta" 88 38 basechar 0
+AnchorPoint: "beng-vowel" 251 57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36239,13 +36285,15 @@ SplineSet
  175 502 175 496 175 491 c 0
  175 373 365 408 365 318 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_cha
 Encoding: 2459 2459 1614
 Width: 452
 Flags: HMW
+AnchorPoint: "beng-nukta" 168 58 basechar 0
+AnchorPoint: "beng-vowel" 401 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36285,13 +36333,15 @@ SplineSet
  342 441 l 2
  415 438 432 380 432 334 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_ja
 Encoding: 2460 2460 1615
 Width: 591
 Flags: HMW
+AnchorPoint: "beng-nukta" 188 78 basechar 0
+AnchorPoint: "beng-vowel" 432 47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36337,13 +36387,15 @@ SplineSet
  257 253 246 252 239 252 c 0
  179 252 149 302 149 350 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_jha
 Encoding: 2461 2461 1616
 Width: 551
 Flags: HMW
+AnchorPoint: "beng-nukta" 118 168 basechar 0
+AnchorPoint: "beng-vowel" 421 117 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36380,13 +36432,15 @@ SplineSet
  527 651 l 1
  545 631 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_nya
 Encoding: 2462 2462 1617
 Width: 771
 Flags: HMW
+AnchorPoint: "beng-nukta" 168 88 basechar 0
+AnchorPoint: "beng-vowel" 637 51 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36433,13 +36487,15 @@ SplineSet
  785 365 759 319 717 291 c 1
  721 277 729 251 729 221 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_tta
 Encoding: 2463 2463 1618
 Width: 414
 Flags: HMW
+AnchorPoint: "beng-nukta" 68 78 basechar 0
+AnchorPoint: "beng-vowel" 241 117 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36480,13 +36536,15 @@ SplineSet
  32 751 58 785 87 790 c 1
  84 779 84 779 84 772 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ttha
 Encoding: 2464 2464 1619
 Width: 404
 Flags: HMW
+AnchorPoint: "beng-nukta" 118 38 basechar 0
+AnchorPoint: "beng-vowel" 251 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36522,13 +36580,15 @@ SplineSet
  261 508 l 1
  295 464 306 407 306 355 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_dda
 Encoding: 2465 2465 1620
 Width: 522
 Flags: HMW
+AnchorPoint: "beng-nukta" 228 58 basechar 0
+AnchorPoint: "beng-vowel" 381 97 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36554,13 +36614,15 @@ SplineSet
  100 430 97 395 97 361 c 0
  97 253 129 151 239 148 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ddha
 Encoding: 2466 2466 1621
 Width: 415
 Flags: HMW
+AnchorPoint: "beng-nukta" 98 68 basechar 0
+AnchorPoint: "beng-vowel" 251 107 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36582,13 +36644,15 @@ SplineSet
  215 375 249 412 303 412 c 0
  349 412 360 370 360 336 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_nna
 Encoding: 2467 2467 1622
 Width: 450
 Flags: HMW
+AnchorPoint: "beng-nukta" 78 138 basechar 0
+AnchorPoint: "beng-vowel" 283 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36619,13 +36683,15 @@ SplineSet
  237 304 205 249 126 249 c 0
  55 249 37 314 37 356 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ta
 Encoding: 2468 2468 1623
 Width: 551
 Flags: HMW
+AnchorPoint: "beng-nukta" 268 58 basechar 0
+AnchorPoint: "beng-vowel" 421 97 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36649,13 +36715,15 @@ SplineSet
  41 508 l 1
  55 558 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_tha
 Encoding: 2469 2469 1624
 Width: 477
 Flags: HMW
+AnchorPoint: "beng-nukta" 128 138 basechar 0
+AnchorPoint: "beng-vowel" 321 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36686,13 +36754,15 @@ SplineSet
  252 558 l 2
  296 558 342 520 342 460 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_da
 Encoding: 2470 2470 1625
 Width: 478
 Flags: HMW
+AnchorPoint: "beng-nukta" 78 138 basechar 0
+AnchorPoint: "beng-vowel" 301 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36715,13 +36785,15 @@ SplineSet
  215 370 293 423 376 447 c 1
  445 382 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_dha
 Encoding: 2471 2471 1626
 Width: 449
 Flags: HMW
+AnchorPoint: "beng-nukta" 138 138 basechar 0
+AnchorPoint: "beng-vowel" 301 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36749,13 +36821,15 @@ SplineSet
  272 495 246 485 214 485 c 0
  203 485 195 493 190 497 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_na
 Encoding: 2472 2472 1627
 Width: 448
 Flags: HMW
+AnchorPoint: "beng-nukta" 68 138 basechar 0
+AnchorPoint: "beng-vowel" 316 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36777,13 +36851,15 @@ SplineSet
  190 233 151 194 91 194 c 0
  61 194 26 207 26 253 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_pa
 Encoding: 2474 2474 1628
 Width: 535
 Flags: HMW
+AnchorPoint: "beng-nukta" 98 138 basechar 0
+AnchorPoint: "beng-vowel" 391 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36818,13 +36894,15 @@ SplineSet
  507 624 l 1
  514 617 522 618 524 608 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_pha
 Encoding: 2475 2475 1629
 Width: 611
 Flags: HMW
+AnchorPoint: "beng-nukta" 128 138 basechar 0
+AnchorPoint: "beng-vowel" 491 67 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36859,13 +36937,15 @@ SplineSet
  590 278 539 220 475 220 c 0
  447 220 431 235 431 261 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ba
 Encoding: 2476 2476 1630
 Width: 443
 Flags: HMW
+AnchorPoint: "beng-nukta" 118 138 basechar 0
+AnchorPoint: "beng-vowel" 291 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36886,13 +36966,15 @@ SplineSet
  271 85 233 219 74 230 c 1
  35 321 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_bha
 Encoding: 2477 2477 1631
 Width: 534
 Flags: HMW
+AnchorPoint: "beng-nukta" 248 68 basechar 0
+AnchorPoint: "beng-vowel" 411 107 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36918,13 +37000,15 @@ SplineSet
  38 508 l 1
  52 558 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ma
 Encoding: 2478 2478 1632
 Width: 492
 Flags: HMW
+AnchorPoint: "beng-nukta" 128 128 basechar 0
+AnchorPoint: "beng-vowel" 341 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36954,13 +37038,15 @@ SplineSet
  203 168 165 150 134 150 c 0
  85 150 71 177 71 206 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ya
 Encoding: 2479 2479 1633
 Width: 474
 Flags: HMW
+AnchorPoint: "beng-nukta" 148 148 basechar 0
+AnchorPoint: "beng-vowel" 321 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36987,13 +37073,14 @@ SplineSet
  66 291 l 1
  126 344 196 383 252 421 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ra
 Encoding: 2480 2480 1634
 Width: 442
 Flags: HMW
+AnchorPoint: "beng-vowel" 291 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37020,13 +37107,15 @@ SplineSet
  272 74 225 232 76 235 c 1
  35 324 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_la
 Encoding: 2482 2482 1635
 Width: 542
 Flags: HMW
+AnchorPoint: "beng-nukta" 118 138 basechar 0
+AnchorPoint: "beng-vowel" 381 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37059,13 +37148,15 @@ SplineSet
  157 180 l 2
  94 180 51 217 51 279 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_sha
 Encoding: 2486 2486 1636
 Width: 507
 Flags: HMW
+AnchorPoint: "beng-nukta" 68 138 basechar 0
+AnchorPoint: "beng-vowel" 361 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37104,13 +37195,15 @@ SplineSet
  510 621 l 2
  512 617 515 608 515 598 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ssa
 Encoding: 2487 2487 1637
 Width: 467
 Flags: HMW
+AnchorPoint: "beng-nukta" 148 158 basechar 0
+AnchorPoint: "beng-vowel" 321 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37147,13 +37240,15 @@ SplineSet
  240 434 226 441 183 441 c 0
  170 441 158 441 145 442 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_sa
 Encoding: 2488 2488 1638
 Width: 523
 Flags: HMW
+AnchorPoint: "beng-nukta" 88 138 basechar 0
+AnchorPoint: "beng-vowel" 361 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37191,13 +37286,15 @@ SplineSet
  124 253 134 257 145 266 c 2
  234 353 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ha
 Encoding: 2489 2489 1639
 Width: 419
 Flags: HMW
+AnchorPoint: "beng-nukta" 98 88 basechar 0
+AnchorPoint: "beng-vowel" 391 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37226,13 +37323,15 @@ SplineSet
  291 449 330 491 384 421 c 0
  404 394 409 369 409 350 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_nukta
 Encoding: 2492 2492 1640
 Width: 0
+GlyphClass: 4
 Flags: HMW
+AnchorPoint: "beng-nukta" -257 -3 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37282,6 +37381,7 @@ EndChar
 StartChar: bn_aakaar
 Encoding: 2494 2494 1642
 Width: 202
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37310,6 +37410,7 @@ EndChar
 StartChar: bn_ikaar
 Encoding: 2495 2495 1643
 Width: 189
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37341,6 +37442,7 @@ EndChar
 StartChar: bn_iikaar
 Encoding: 2496 2496 1644
 Width: 202
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37377,7 +37479,9 @@ EndChar
 StartChar: bn_ukaar
 Encoding: 2497 2497 1645
 Width: 0
+GlyphClass: 4
 Flags: HMW
+AnchorPoint: "beng-vowel" -109 127 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37407,7 +37511,9 @@ EndChar
 StartChar: bn_uukaar
 Encoding: 2498 2498 1646
 Width: 0
+GlyphClass: 4
 Flags: HMW
+AnchorPoint: "beng-vowel" -103 104 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37434,7 +37540,9 @@ EndChar
 StartChar: bn_rikaar
 Encoding: 2499 2499 1647
 Width: 0
+GlyphClass: 4
 Flags: HMW
+AnchorPoint: "beng-vowel" -228 112 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37454,7 +37562,9 @@ EndChar
 StartChar: bn_rrikaar
 Encoding: 2500 2500 1648
 Width: 0
+GlyphClass: 4
 Flags: HMW
+AnchorPoint: "beng-vowel" -29 157 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37479,6 +37589,7 @@ EndChar
 StartChar: bn_ekaar
 Encoding: 2503 2503 1649
 Width: 294
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37505,6 +37616,7 @@ EndChar
 StartChar: bn_aikaar
 Encoding: 2504 2504 1650
 Width: 289
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37545,104 +37657,31 @@ EndChar
 StartChar: bn_okaar
 Encoding: 2507 2507 1651
 Width: 774
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-694 414 m 2
- 697 424 698 434 698 442 c 0
- 698 494 649 508 630 508 c 2
- 562 508 l 1
- 576 558 l 1
- 626 561 l 2
- 664.417 561 719 552.566 719 436 c 1
- 725.333 488 729.768 539.07 757 648 c 1
- 773 632 l 1
- 771 619 770 608 770 598 c 0
- 770 582 773 569 782 558 c 1
- 867 558 l 1
- 853 508 l 1
- 768 508 l 1
- 623 -17 l 1
- 589 35 l 1
- 694 414 l 2
-16 168 m 0
- 16 312 86 408 197 508 c 1
- 41 508 l 1
- 55 558 l 1
- 381 558 l 1
- 368 509 l 1
- 135 465 56 228 56 151 c 0
- 56 94 85 57 137 55 c 1
- 130 64 122 73 122 95 c 0
- 122 136 162 159 194 163 c 0
- 218 161 241 140 241 109 c 0
- 241 58 174 16 131 16 c 0
- 55 16 16 77 16 168 c 0
-EndSplineSet
-Validated: 3073
+Refer: 1642 2494 N 1 0 0 1 590 0 2
+Refer: 1649 2503 N 1 0 0 1 -10 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_aukaar
 Encoding: 2508 2508 1652
 Width: 825
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-718 414 m 2
- 721 424 722 434 722 442 c 0
- 722 494 672 508 654 508 c 2
- 586 508 l 1
- 600 558 l 1
- 630.08 559.805 656.53 562 657 562 c 2
- 664 562 l 2
- 732 562 743 475 743 437 c 1
- 751.698 500.062 758.368 557.472 781 648 c 1
- 797 632 l 1
- 795 620 793 609 793 600 c 0
- 793 583 797 569 806 558 c 1
- 891 558 l 1
- 877 508 l 1
- 792 508 l 1
- 647 -17 l 1
- 613 35 l 1
- 718 414 l 2
-87 761 m 1
- 81 758 67 749 67 728 c 0
- 67 704 95 696 135 696 c 0
- 245 696 301 682 301 621 c 0
- 301 608 299 594 294 577 c 2
- 289 558 l 1
- 372 558 l 1
- 358 508 l 1
- 356 510 350 511 343 511 c 0
- 300 505 176 468 119 401 c 0
- 53 322 9 205 9 147 c 0
- 9 98 32 66 86 59 c 1
- 79 67 76 76 76 87 c 0
- 76 116 105 160 147 160 c 0
- 194 160 204 128 204 106 c 0
- 204 55 134 12 82 12 c 0
- -6 12 -26 92 -26 163 c 0
- -26 301 49 414 157 508 c 1
- 20 508 l 1
- 34 558 l 1
- 225 558 l 1
- 232 561 246 569 246 590 c 0
- 246 622 198 622 167 628 c 2
- 105 639 l 1
- 64 661 l 2
- 49 673 39 691 39 712 c 0
- 39 740 54 759 74 778 c 1
- 87 761 l 1
-EndSplineSet
-Validated: 3073
+Refer: 1642 2494 N 1 0 0 1 610 0 2
+Refer: 1650 2504 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_hasanta
 Encoding: 2509 2509 1653
 Width: 0
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37659,6 +37698,7 @@ EndChar
 StartChar: bn_aumark
 Encoding: 2519 2519 1654
 Width: 219
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37692,6 +37732,7 @@ StartChar: bn_rra
 Encoding: 2524 2524 1655
 Width: 523
 Flags: HMW
+AnchorPoint: "beng-vowel" 451 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37731,6 +37772,7 @@ StartChar: bn_rha
 Encoding: 2525 2525 1656
 Width: 420
 Flags: HMW
+AnchorPoint: "beng-vowel" 331 17 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37765,6 +37807,7 @@ StartChar: bn_yya
 Encoding: 2527 2527 1657
 Width: 469
 Flags: HMW
+AnchorPoint: "beng-vowel" 381 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37919,6 +37962,7 @@ EndChar
 StartChar: bn_likaar
 Encoding: 2530 2530 1660
 Width: 0
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -37951,6 +37995,7 @@ EndChar
 StartChar: bn_llikaar
 Encoding: 2531 2531 1661
 Width: 0
+GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
@@ -51967,17 +52012,17 @@ EndChar
 StartChar: bn_reph
 Encoding: 60611 -1 2188
 Width: 0
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
--292 599 m 1
- 57 812 l 1
- 99 806 l 1
- -172 599 l 1
- -292 599 l 1
+-232 599 m 5
+ 117 812 l 5
+ 159 806 l 5
+ -112 599 l 5
+ -232 599 l 5
 EndSplineSet
-Validated: 3073
+Validated: 1
 LCarets2: 1 0 
 Ligature2: "'rphf' Reph Form in Bengali subtable" bn_asamira bn_hasanta
 Ligature2: "'rphf' Reph Form in Bengali subtable" bn_ra bn_hasanta
@@ -55408,6 +55453,7 @@ StartChar: bn_k_ta1
 Encoding: 60689 -1 2266
 Width: 501
 Flags: HMW
+AnchorPoint: "beng-vowel" 421 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55454,6 +55500,7 @@ StartChar: bn_k_t_ba
 Encoding: 60690 -1 2267
 Width: 750
 Flags: HMW
+AnchorPoint: "beng-vowel" 631 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55514,6 +55561,7 @@ StartChar: bn_k_t_ba1
 Encoding: 60691 -1 2268
 Width: 498
 Flags: HMW
+AnchorPoint: "beng-vowel" 351 -153 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56043,6 +56091,7 @@ StartChar: bn_k_ss_ma
 Encoding: 60700 -1 2277
 Width: 757
 Flags: MW
+AnchorPoint: "beng-vowel" 681 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56115,6 +56164,7 @@ StartChar: bn_k_sa
 Encoding: 60701 -1 2278
 Width: 626
 Flags: MW
+AnchorPoint: "beng-vowel" 531 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56403,6 +56453,7 @@ StartChar: bn_g_na
 Encoding: 60706 -1 2283
 Width: 484
 Flags: MW
+AnchorPoint: "beng-vowel" 391 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56456,6 +56507,7 @@ StartChar: bn_g_ma
 Encoding: 60707 -1 2284
 Width: 631
 Flags: MW
+AnchorPoint: "beng-vowel" 551 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56511,6 +56563,7 @@ StartChar: bn_g_la
 Encoding: 60708 -1 2285
 Width: 484
 Flags: HMW
+AnchorPoint: "beng-vowel" 391 7 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57323,6 +57376,7 @@ StartChar: bn_ng_ma1
 Encoding: 60719 -1 2296
 Width: 555
 Flags: HMW
+AnchorPoint: "beng-vowel" 481 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57795,6 +57849,7 @@ StartChar: bn_j_j_ba
 Encoding: 60727 -1 2304
 Width: 775
 Flags: HMW
+AnchorPoint: "beng-vowel" 681 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57862,6 +57917,7 @@ StartChar: bn_j_jha
 Encoding: 60728 -1 2305
 Width: 599
 Flags: MW
+AnchorPoint: "beng-vowel" 481 -103 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -58093,6 +58149,7 @@ StartChar: bn_ny_cha
 Encoding: 60731 -1 2308
 Width: 545
 Flags: MW
+AnchorPoint: "beng-vowel" 491 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59534,6 +59591,7 @@ StartChar: bn_nn_ma
 Encoding: 60749 -1 2326
 Width: 581
 Flags: MW
+AnchorPoint: "beng-vowel" 501 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59800,6 +59858,7 @@ StartChar: bn_t_na
 Encoding: 60753 -1 2330
 Width: 551
 Flags: MW
+AnchorPoint: "beng-vowel" 421 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59877,6 +59936,7 @@ StartChar: bn_t_ma
 Encoding: 60754 -1 2331
 Width: 673
 Flags: MW
+AnchorPoint: "beng-vowel" 591 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59960,6 +60020,7 @@ StartChar: bn_t_ma1
 Encoding: 60755 -1 2332
 Width: 634
 Flags: MW
+AnchorPoint: "beng-vowel" 551 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60005,6 +60066,7 @@ StartChar: bn_t_la
 Encoding: 60756 -1 2333
 Width: 551
 Flags: HMW
+AnchorPoint: "beng-vowel" 441 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60841,6 +60903,7 @@ StartChar: bn_d_ma
 Encoding: 60768 -1 2345
 Width: 600
 Flags: MW
+AnchorPoint: "beng-vowel" 521 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60903,6 +60966,7 @@ StartChar: bn_dh_na
 Encoding: 60769 -1 2346
 Width: 449
 Flags: MW
+AnchorPoint: "beng-vowel" 361 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60964,6 +61028,7 @@ StartChar: bn_dh_ma
 Encoding: 60770 -1 2347
 Width: 585
 Flags: MW
+AnchorPoint: "beng-vowel" 511 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61921,6 +61986,7 @@ StartChar: bn_n_dh_ba
 Encoding: 60786 -1 2363
 Width: 549
 Flags: HMW
+AnchorPoint: "beng-vowel" 321 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61970,6 +62036,7 @@ StartChar: bn_n_dh_ra
 Encoding: 60787 -1 2364
 Width: 590
 Flags: HMW
+AnchorPoint: "beng-vowel" 361 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62027,6 +62094,7 @@ StartChar: bn_n_na
 Encoding: 60788 -1 2365
 Width: 448
 Flags: HMW
+AnchorPoint: "beng-vowel" 371 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62067,6 +62135,7 @@ StartChar: bn_n_ma
 Encoding: 60789 -1 2366
 Width: 588
 Flags: MW
+AnchorPoint: "beng-vowel" 511 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62515,6 +62584,7 @@ StartChar: bn_p_ma
 Encoding: 60795 -1 2372
 Width: 684
 Flags: MW
+AnchorPoint: "beng-vowel" 601 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62592,6 +62662,7 @@ StartChar: bn_p_la
 Encoding: 60796 -1 2373
 Width: 535
 Flags: MW
+AnchorPoint: "beng-vowel" 451 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65606,6 +65677,7 @@ StartChar: bn_l_ma
 Encoding: 60838 -1 2415
 Width: 679
 Flags: HMW
+AnchorPoint: "beng-vowel" 601 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67037,6 +67109,7 @@ StartChar: bn_ss_ma
 Encoding: 60856 -1 2433
 Width: 525
 Flags: MW
+AnchorPoint: "beng-vowel" 431 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67314,6 +67387,7 @@ StartChar: bn_s_kha
 Encoding: 60859 -1 2436
 Width: 640
 Flags: MW
+AnchorPoint: "beng-vowel" 551 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -70176,6 +70250,7 @@ StartChar: bn_p_ba
 Encoding: 60896 -1 2473
 Width: 535
 Flags: MW
+AnchorPoint: "beng-vowel" 451 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -76316,6 +76391,7 @@ StartChar: bn_n_ya
 Encoding: 60969 -1 2546
 Width: 599
 Flags: MW
+AnchorPoint: "beng-vowel" 491 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -76471,6 +76547,7 @@ StartChar: bn_ss_ya
 Encoding: 60971 -1 2548
 Width: 546
 Flags: MW
+AnchorPoint: "beng-vowel" 441 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -76558,6 +76635,7 @@ StartChar: bn_s_ya
 Encoding: 60972 -1 2549
 Width: 687
 Flags: MW
+AnchorPoint: "beng-vowel" 581 77 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -80615,6 +80693,7 @@ StartChar: bn_above_na.001
 Encoding: 61052 -1 2629
 Width: 450
 Flags: MW
+AnchorPoint: "beng-vowel" 551 7 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -105287,7 +105366,7 @@ SplineSet
  494 653 l 1
  716 653 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 EndChars
 EndSplineFont
