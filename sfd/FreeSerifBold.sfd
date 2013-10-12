@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1381578462
+ModificationTime: 1381582534
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -132608,7 +132608,9 @@ EndChar
 StartChar: candrakala
 Encoding: 3405 3405 5105
 Width: 0
-Flags: HW
+Flags: W
+HStem: 440 76<19.6985 127.776>
+VStem: -90 95<530.915 621.324> 147 62<535.638 622>
 LayerCount: 2
 Fore
 SplineSet
@@ -137624,7 +137626,9 @@ EndChar
 StartChar: mal_kra
 Encoding: 59893 -1 5216
 Width: 962
-Flags: HW
+Flags: W
+HStem: -188 80<369.436 722.247> -8 69<338.111 419.693 521.887 626.129> 212 55<333.425 432 487 666 762 843.687> 385 75<522.728 625.815>
+VStem: 74 64<78.8181 307.915> 223 94<82.9243 195.602> 432 55<100.665 212 267 344.314> 666 96<108.994 212 267 338.666> 871 91<16.5048 186.522>
 AnchorPoint: "mlm-vowel-below" 812 -122 basechar 0
 LayerCount: 2
 Fore
@@ -137822,12 +137826,14 @@ EndChar
 StartChar: mal_chhra
 Encoding: 59897 -1 5220
 Width: 1186
-Flags: HW
+Flags: W
+HStem: -218 82<442.85 837.915> -10 86<864.527 937.619> 0 58<268 442.439 542 672> 224 86<378.834 461.856> 367 85<766.728 900.93>
+VStem: 74 64<88.5901 296.199> 300 64<104.799 209.138> 478 98<96.7548 209.071> 628 64<104.667 282.753> 784 61<93.1848 233.634> 964 95<105.244 287.813> 1113 73<55.9632 229.634>
 AnchorPoint: "mlm-vowel-below" 1022 -122 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-839 452 m 0
+839 452 m 0xbff0
  922 452 982 414 1017 343 c 1
  1121 339 1186 242 1186 106 c 0
  1186 -26 1086 -218 663 -218 c 0
@@ -137839,7 +137845,7 @@ SplineSet
  890 -136 1113 -41 1113 146 c 0
  1113 170 1108 266 1047 289 c 1
  1055 264 1059 240 1059 213 c 0
- 1059 100 1004 -10 912 -10 c 0
+ 1059 100 1004 -10 912 -10 c 0xdff0
  810 -10 784 98 784 151 c 0
  784 241 839 306 917 333 c 1
  892 356 866 367 837 367 c 0
@@ -137860,7 +137866,7 @@ SplineSet
  576 126 563 89 542 58 c 1
  672 58 l 1
  643 109 628 163 628 223 c 0
- 628 336 712 452 839 452 c 0
+ 628 336 712 452 839 452 c 0xbff0
 845 177 m 0
  845 125 860 76 901 76 c 0
  935 76 964 120 964 198 c 0
@@ -146073,7 +146079,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'psts' undo simple uu in Malayalam-1" candrakala ka_mal uu_mal
 Ligature2: "'psts' u,uu blwf in Malay+AQEA-lam" mal_ka.blwf uu_mal
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_ka.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_ka.blwf mal_ra.pstf
 Substitution2: "subst. smaller blwf in Malay+AQEA-lam-1" mal_kuu_narrow.blwf
 LCarets2: 2 0 0 
 EndChar
@@ -148191,7 +148197,7 @@ SplineSet
  -214 112 -194 101 -142 101 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_tta.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_tta.blwf mal_ra.pstf
 Ligature2: "'blws' ra in Malay+AQEA-lam" candrakala mal_ttra
 LCarets2: 2 0 0 
 EndChar
@@ -148331,7 +148337,7 @@ SplineSet
  -90 239 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_sa.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_sa.blwf mal_ra.pstf
 Ligature2: "'blws' ra in Malay+AQEA-lam" candrakala mal_sra
 LCarets2: 2 0 0 
 EndChar
@@ -148376,7 +148382,7 @@ SplineSet
  -296 133 -315 95 -315 50 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_ta.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_ta.blwf mal_ra.pstf
 Ligature2: "'blws' ra in Malay+AQEA-lam" candrakala mal_tra
 LCarets2: 2 0 0 
 EndChar
@@ -148417,7 +148423,7 @@ SplineSet
  -450 -27 -468 3 -468 45 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_pa.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_pa.blwf mal_ra.pstf
 Ligature2: "'blws' ra in Malay+AQEA-lam" candrakala mal_pra
 LCarets2: 2 0 0 
 EndChar
@@ -148426,13 +148432,15 @@ StartChar: mal_chhra.blwf
 Encoding: 60147 -1 5413
 Width: 0
 VWidth: 1245
-Flags: HW
+Flags: W
+HStem: -143 44<-404.683 -162.569> -21 47<-173.778 -122.228> -15 31<-487 -389.076 -340 -269> 109 45<-432.156 -378.226> 193 45<-229.122 -132.628>
+VStem: -592 34<31.048 167.348> -469 33<43.4237 103.844> -375 52<22.5986 107.436> -293 34<29.3292 153.747> -209 31<30.5886 117.293> -113 50<30.5995 137.506> -37 42<6.61324 130.033>
 AnchorPoint: "mlm-vowel-blw-small" -107 -81 basemark 0
 AnchorPoint: "mal-below" 0 245 mark 0
 LayerCount: 2
 Fore
 SplineSet
--269 16 m 1
+-269 16 m 1xbff0
  -286 44 -293 75 -293 110 c 0
  -293 172 -251 238 -181 238 c 0
  -136 238 -104 217 -85 177 c 1
@@ -148446,7 +148454,7 @@ SplineSet
  -154 -99 -37 -29 -37 79 c 0
  -37 107 -48 126 -69 138 c 1
  -65 126 -63 114 -63 101 c 0
- -63 59 -82 -21 -141 -21 c 0
+ -63 59 -82 -21 -141 -21 c 0xdff0
  -186 -21 -209 24 -209 70 c 0
  -209 136 -163 163 -132 171 c 1
  -146 191 -171 193 -181 193 c 0
@@ -148465,7 +148473,7 @@ SplineSet
  -469 109 -455 154 -400 154 c 0
  -352 154 -323 118 -323 74 c 0
  -323 54 -329 33 -340 16 c 1
- -269 16 l 1
+ -269 16 l 1xbff0
 -178 82 m 0
  -178 41 -167 26 -147 26 c 0
  -120 26 -113 72 -113 94 c 0
@@ -148473,7 +148481,7 @@ SplineSet
  -144 141 -178 112 -178 82 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_chha.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_chha.blwf mal_ra.pstf
 Ligature2: "'blws' ra in Malay+AQEA-lam" candrakala mal_chhra
 LCarets2: 2 0 0 
 EndChar
@@ -148523,7 +148531,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 LCarets2: 2 0 0 
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_sha.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_sha.blwf mal_ra.pstf
 Ligature2: "'blws' ra in Malay+AQEA-lam" candrakala mal_shra
 EndChar
 
@@ -148531,7 +148539,9 @@ StartChar: mal_kra.blwf
 Encoding: 60149 -1 5415
 Width: 0
 VWidth: 1245
-Flags: HW
+Flags: W
+HStem: -196 52<-383.049 -147.87> -78 45<-399.903 -339.086 -284.261 -204.212> 68 35<-399.522 -335 -300 -186 -125 -72.0036> 180 50<-285.496 -204.201>
+VStem: -565 41<-24.0652 154.115> -468 60<-27.0767 61.0825> -335 34<-11.2281 68 103 158.643> -186 61<-13.9519 68 103 161.636> -55 60<-63.928 57.1258>
 AnchorPoint: "mlm-vowel-blw-small" -107 -131 basemark 0
 AnchorPoint: "mal-below" 0 245 mark 0
 LayerCount: 2
@@ -148574,7 +148584,7 @@ SplineSet
  -350 68 l 2
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_ka.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_ka.blwf mal_ra.pstf
 Ligature2: "'blws' ra in Malay+AQEA-lam" candrakala mal_kra
 LCarets2: 2 0 0 
 EndChar
@@ -148617,7 +148627,7 @@ SplineSet
  -558 -47 -611 3 -611 74 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_rrarra.blwf candrakala ra_mal
+Ligature2: "'psts' ra-tail in Malay+AQEA-lam-below" mal_rrarra.blwf mal_ra.pstf
 LCarets2: 2 0 0 
 EndChar
 
