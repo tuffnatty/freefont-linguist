@@ -49,7 +49,7 @@ Vietnamese	fine positioning stacked accents.  See also below.
 
 Greek
 -----
-Greek	script kappa and hooked Upsilon throughout;
+Greek	script kappa in serif and hooked Upsilon throughout;
 	script forms of theta and rho in italic.
 	ancient Greek caps iota in ypogegrammeni form.
 	(see also character variants.)
@@ -68,9 +68,13 @@ Yiddish	raised vowels under yo
 Devanagari
 ----------
 Sanskrit	much larger set of ligatures
+Hindi	 [optional historic ligatures: for ligatures of Old Hindi]
 
-Hindi, Marathi	better spacing of Western punctuation marks
-	[historic ligatures: for ligatures common in Old Hindi]
+Malayalam
+---------
+Both the classical and reformed scripts are supported.  The default 
+is the classical script.  The reformed script is enabled by setting the
+OpenType language tag 'MLR '.
 
 Indic languages
 ---------------
@@ -91,9 +95,13 @@ Style sets
 These replacements are meant to indicate variant typgraphic style, and
 are activated by enabling a "Style Set" in the document.
 
+Greek Extended	Adscript iota on capitals (ss06)
+
 Cyrillic	Bulgarian modern (ss01)
 
 Devanagari	Bombay (ss02), Calcutta (ss03), Nepali (ss04)
+
+Tamil	Reformed orthography (ss07)
 
 Character variants
 ==================
@@ -109,6 +117,8 @@ Greek: (Some of these are done already by the default 'locl' feature,
 	small cap ypogrammeni iota (cv07)
 
 Cyrillic: in italic faces, Serbian/Macedonian underscored 'sha' (cv01)
+
+Tamil: form of 'ra' invariant with vowel marks (cv01).
 
 Discretionary features
 ======================
@@ -129,9 +139,10 @@ Stacked accents
 In the Latin ranges, there are a number of characters with one accent
 upon another.  These cause typographical difficulties.
 
-Especially in the Vietnamese range, for some purposes it is best for
-these accents to stand high above the letter, but for others, it is
-best for the accents to remain within the line bounds.
+Especially in the Vietnamese range, for some purposes it is best for these
+accents to stand high above the letter, but for others, it is best that 
+they remain within the line bounds.
+
 By default, the accents stand high, exceeding vertical line bounds,
 although this may cause clipping and refresh issues in some applications. 
 A second set of glyphs, with "flattened" accents that keep inside the
@@ -284,6 +295,33 @@ Some character ranges do not have 'italic' or 'oblique' versions.
 To produce slated text in such ranges, 'fontspec' has features FakeSlant
 and AutoFakeSlant.
 ---------------------------------------------------------------------------
+
+Use with unicode-math TeX package
+=================================
+
+FreeSerif and FreeSans have some support for the TeX package unicode-math
+package (or any other software that uses the OpenType MATH tables).
+By this means, math formulas may be displayed using the fonts.
+
+FreeSerif further includes the Unicode Mathematical Alphanumeric Symbols
+range in its Roman face, so that it is possible to typeset a whole math
+document using only FreeSerif-normal.
+
+In XeTeX and LuaTeX, the primary commands are
+	\usepackage{fontspec}
+	\usepackage{unicode-math}
+
+XeTeX is aware of the locations of system fonts:
+	\setmainfont[]{FreeSerif}
+	\setmathfont[]{FreeSerif}
+In LuaTeX, the paths must be explicitly stated, for example:
+	\setmainfont[Path=FONT-DIR-FULL-PATH] {FreeSerif}
+
+It is possible to either use FreeSerif italic for the main math symbols font
+	\setmathfont[Path=FONT-DIR-FULL-PATH, range=\mathit] {FreeSerifItalic}
+or else to use the built-in math alphanumeric symbols ranges
+	\setmathfont[Path=FONT-DIR-FULL-PATH, range=\mathit] {FreeSerif}
+Other ranges are listed in the unicode-math.
 
 
 $Id: usage.txt,v 1.10 2011-07-16 08:38:06 Stevan_White Exp $
