@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1377770459
+ModificationTime: 1384525047
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -66,6 +66,9 @@ Lookup: 1 0 0 "'zero' slashed zero"  {"'zero' slashed zero-1"  } ['zero' ('DFLT'
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' hist. ligatures in Armenian-1"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' discr. ligatures in Armenian"  {"'dlig' discr. ligatures in Armenian-1"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 1 0 0 "'sups' superscript"  {"'sups' superscript-phonetic"  } ['sups' ('DFLT' <'dflt' > ) 'sups' ('armn' <'dflt' > 'cyrl' <'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'ELL ' > 'hebr' <'dflt' > 'latn' <'ISM ' 'LSM ' 'NSM ' 'SKS ' 'VIT ' 'dflt' > ) ]
+Lookup: 1 0 0 "FreeMono-'smcp' small caps in Latin"  {"FreeMono-'smcp' lowercase to small caps in Latin-1"  } ['smcp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
+Lookup: 1 0 0 "FreeMono-'sups' superscript"  {"FreeMono-'sups' superscript-phonetic"  "FreeMono-'sups' superscript-latin"  } ['sups' ('DFLT' <'dflt' > ) ]
+Lookup: 1 0 0 "FreeMono-'c2sc' caps to small caps in Latin"  {"FreeMono-'c2sc' caps to small caps in Latin-1"  } ['c2sc' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 1"  {"'mark' Mark Positioning in Latin 1 subtable"  } ['mark' ('latn' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' Mark Positioning in Latin 2"  {"'mark' Mark Positioning in Latin 2 subtable"  } ['mark' ('latn' <'dflt' > ) ]
@@ -325,7 +328,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 880 16 11
+WinInfo: 528 16 11
 BeginPrivate: 8
 UniqueID 7 5020947
 BlueValues 23 [-20 0 417 437 563 583]
@@ -337,7 +340,7 @@ StemSnapH 4 [41]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "below"  "'mark' Mark Positioning in Latin 2 subtable" "above"  "'mark' Mark Positioning in Latin 1 subtable" 
-BeginChars: 65536 2476
+BeginChars: 65536 2482
 
 StartChar: space
 Encoding: 32 32 0
@@ -12344,7 +12347,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni0259
+StartChar: schwa
 Encoding: 601 601 495
 Width: 600
 Flags: HMW
@@ -14910,6 +14913,7 @@ LayerCount: 2
 Fore
 Refer: 1676 900 S 1 0 0 1 -196 0 0
 Refer: 620 937 S 1 0 0 1 59 0 1
+Validated: 32769
 EndChar
 
 StartChar: iotadieresistonos
@@ -58442,6 +58446,181 @@ LayerCount: 2
 Fore
 Refer: 35 67 S 1 0 0 1 0 0 2
 Validated: 32769
+EndChar
+
+StartChar: Glottalstoplatin
+Encoding: 577 577 2476
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 542 660 N 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: glottalstoplatin
+Encoding: 578 578 2477
+Width: 600
+Flags: HW
+AnchorPoint: "above" 398 437 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+235 383 m 1
+ 268 408 313 437 402 437 c 0
+ 489.367 437 531.568 389.717 531.568 323.016 c 0
+ 531.568 221.859 469.916 174.701 349 127 c 1
+ 331 41 l 1
+ 376 41 l 2
+ 392 41 400 36 400 26 c 0
+ 400 8 386 0 367 0 c 2
+ 236 0 l 2
+ 221 0 213 5 213 15 c 0
+ 213 32 226 41 245 41 c 2
+ 290 41 l 1
+ 314 154 l 1
+ 419.276 196.11 489.309 225.742 489.309 313.216 c 0
+ 489.309 364.01 457.138 396 388 396 c 0
+ 343 396 307 380 271 356 c 1
+ 262 315 l 2
+ 258 297 249 288 236 288 c 0
+ 225 288 220 294 220 305 c 0
+ 220 308 220 311 221 315 c 2
+ 235 383 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: Bstroke
+Encoding: 579 579 2478
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+100 142 m 6
+ 85 142 77 147 77 157 c 4
+ 77 174 90 183 109 183 c 6
+ 163 183 l 5
+ 235 522 l 5
+ 181 522 l 6
+ 166 522 158 527 158 537 c 4
+ 158 554 171 563 190 563 c 6
+ 448 563 l 6
+ 534 563 591 514 591 446 c 4
+ 591 374 549 333 477 298 c 5
+ 543 273 577 234 577 182 c 4
+ 577 78 472 0 376 0 c 6
+ 70 0 l 6
+ 55 0 47 5 47 15 c 4
+ 47 32 60 41 79 41 c 6
+ 133 41 l 5
+ 154 142 l 5
+ 100 142 l 6
+535 174 m 4
+ 535 220 502 272 372 272 c 6
+ 223 272 l 5
+ 204 183 l 5
+ 348 183 l 6
+ 364 183 372 178 372 168 c 4
+ 372 150 359 142 339 142 c 6
+ 195 142 l 5
+ 174 41 l 5
+ 382 41 l 6
+ 457 41 535 97 535 174 c 4
+232 313 m 5
+ 379 313 l 6
+ 467 313 549 360 549 437 c 4
+ 549 486 505 522 440 522 c 6
+ 276 522 l 5
+ 232 313 l 5
+EndSplineSet
+Validated: 3073
+Substitution2: "FreeMono-'c2sc' caps to small caps in Latin-1" sc.bstroke
+Substitution2: "FreeMono-'sups' superscript-latin" Bbarsup
+EndChar
+
+StartChar: OUlat
+Encoding: 546 546 2479
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+362 293 m 0
+ 274 293 165 229 165 134 c 0
+ 165 72 216 26 306 26 c 0
+ 415 26 502 91 502 182 c 0
+ 502 247 437 293 362 293 c 0
+449 313 m 1
+ 509 294 544 244 544 189 c 0
+ 544 71 422 -15 297 -15 c 0
+ 190 -15 124 47 124 128 c 0
+ 124 219 197 287 284 313 c 1
+ 232 336 205 365 205 415 c 0
+ 205 482 259.166 541.823 289 570 c 0
+ 298 578.5 309 584 316 584 c 0
+ 322.5 584 328 580 328 570 c 0
+ 328 563.917 322 555 318 550 c 0
+ 292 522 248 479 248 432 c 0
+ 248 375 303 333 371 333 c 0
+ 443 333 543 387 543 460 c 0
+ 543 483 532.083 507.489 526.5 520.25 c 0
+ 524.75 524.25 524 529.838 524 533 c 0
+ 524 542.75 536 552 547 552 c 0
+ 554 552 563 548 569 532 c 0
+ 573 522 585 492 585 466 c 0
+ 585 396 524 340 449 313 c 1
+EndSplineSet
+Validated: 3585
+Substitution2: "FreeMono-'c2sc' caps to small caps in Latin-1" sc.oulat
+Substitution2: "FreeMono-'sups' superscript-phonetic" OUsup
+EndChar
+
+StartChar: oulat
+Encoding: 547 547 2480
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+441.53 313 m 5
+ 496.354 285.582 524.773 244.358 524.773 193.343 c 4
+ 524.773 74.061 404.411 -15 296.812 -15 c 4
+ 206.354 -15 143.503 45.9313 143.503 126.475 c 4
+ 143.503 218.611 203.932 275.876 291.53 313 c 5
+ 240.362 342.545 215.79 376.804 215.79 421.859 c 4
+ 215.79 480.698 262.577 545.446 288.532 569.697 c 4
+ 299.5 581 309.191 583.097 316.3 583.097 c 4
+ 322.5 583.097 328.467 579.25 328.467 569.697 c 4
+ 328.467 563.873 322.473 554.473 317.992 549.7 c 4
+ 292.006 522.016 257.467 475.844 257.467 428.812 c 4
+ 257.467 373.712 303.534 333 370.781 333 c 4
+ 449.285 333 533.596 390.261 533.596 471.204 c 4
+ 533.596 491.179 532.008 508.67 530.03 515.7 c 4
+ 528.75 520.25 524.418 530 524.418 534.474 c 4
+ 524.418 544.75 536.315 551.505 546.89 551.505 c 4
+ 554.229 551.505 561.25 547.75 568.577 531.7 c 4
+ 572.249 523.658 575.785 501.957 575.785 480.304 c 4
+ 575.785 397.675 524.837 351.13 441.53 313 c 5
+362.279 293 m 4
+ 275.419 293 185.36 227.1 185.36 134.484 c 4
+ 185.36 72.344 234.338 26 305.526 26 c 4
+ 390.945 26 482.992 94.3666 482.992 187.434 c 4
+ 482.992 249.312 434.944 293 362.279 293 c 4
+EndSplineSet
+Validated: 3585
+Substitution2: "FreeMono-'smcp' lowercase to small caps in Latin-1" sc.oulat
+EndChar
+
+StartChar: Vturn
+Encoding: 580 581 2481
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 54 86 S -1 0 0 -1 600 563 2
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont
