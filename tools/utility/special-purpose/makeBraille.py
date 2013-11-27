@@ -39,14 +39,30 @@ by the bit patterns of the octal digits of the offset from the range start.
 
 The remaining three sets of 64 patterns repeat the first set, with 
 the bottom two dots being the bit pattern for the numbers 1 to 4 in binary.
+
+There are standards for the *punching* of patterns, e.g.
+	National Library of Congress
+	National Library Service for the Blind and Physically Handicapped
+	Specification #800, 2008
+	Braille Books and Pamphlets
+	http://www.loc.gov/nls/specs/800_march5_2008.pdf
+Among other things, it specifies:
+	base dot diameter 0.057
+	distance center-to-center in a cell 0.092
+	distance center-to-center in adjacent cells 0.254
+which ratios with a fixed width of 600EM should result in
+	center-to-center in cell = 160EM
+	center-to-center adjacent = 440EM
+	diameter = 99EM
+
 """
 
-font = fontforge.open( '../../sfd/FreeMono.sfd' )
+font = fontforge.open( '../../../sfd/FreeMono.sfd' )
 
 glyphOff = 'braille_off'
 glyphOn = 'braille_on'
-colwidth = 220
-rowheight = -220
+colwidth = 160
+rowheight = -160
 glyphwidth = 600
 
 def drawdot( g, col, row, on ):
