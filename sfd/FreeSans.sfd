@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1396219517
+ModificationTime: 1396504906
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -105,7 +105,7 @@ Lookup: 4 0 0 "'pres' pre-base substs. in Bengali for Sanskrit"  {"'pres' pre-ba
 Lookup: 6 0 0 "'blws' below-base chain in Benglai-cons"  {"'blws' below-base chain. in Benglai-phala"  } ['blws' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base substs. in Bengali"  {"'blws' below-base substs. in Bengali-vowel"  "'blws' below-base substs. in Bengali-cons"  } ['blws' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base chain in Benglai-rofola"  {"'blws' below-base substs. in Benglai-rofola-1"  } ['blws' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
-Lookup: 6 0 0 "'psts' post base chain in Bengali-vowels"  {"'psts' post base substs. in Bengali-u-uu-1"  "'psts' post-base substs. in Bengali-ikaar-1"  "'psts' post base substs. in Bengali-iikar"  } ['psts' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
+Lookup: 6 0 0 "'psts' post base chain in Bengali-vowels"  {"'psts' post base substs. in Bengali-u-uu"  "'psts' post-base substs. in Bengali-ikaar"  "'psts' post base substs. in Bengali-iikaar"  } ['psts' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' discr. ligatures in Bengali"  {"'dlig' discr. ligatures in Bengali-1"  } ['dlig' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 2 0 0 "unpack nukta forms in Bengali"  {"unpack nukta forms in Bengali-2"  "unpack nukta forms in Bengali-1"  } []
 Lookup: 4 0 0 "subst. half forms in Bengali"  {"'half' half forms in Bengali subtable"  } []
@@ -553,7 +553,7 @@ ChainSub2: class "'blws' below-base chain. in Benglai-phala"  5 5 5 3
   BClassNames: "All_Others"  "half"  "halfstem"  "phala"  "stemhalf"  
   FClassNames: "All_Others"  "half"  "halfstem"  "phala"  "stemhalf"  
 EndFPST
-ChainSub2: class "'psts' post base substs. in Bengali-iikar"  4 4 4 2
+ChainSub2: class "'psts' post base substs. in Bengali-iikaar"  4 4 4 2
   Class: 16 ttha_bng tta_bng
   Class: 117 bn_k_tta bn_nn_tta bn_nn_ttha bn_n_tta bn_n_ttha bn_pa_tta bn_ph_tta bn_l_tta bn_ss_tta bn_ss_ttha bn_s_tta bn_s_tta1
   Class: 10 iikaar_bng
@@ -671,7 +671,7 @@ ChainSub2: class "'blws' below-base substs. in Benglai-rofola-1"  12 12 12 9
   BClassNames: "All_Others"  "1"  "round"  "pointed"  "rofola"  "narrow"  "narrow2"  "phala"  "wide"  "pointed2"  "wide2"  "right"  
   FClassNames: "All_Others"  "1"  "round"  "pointed"  "rofola"  "narrow"  "narrow2"  "phala"  "wide"  "pointed2"  "wide2"  "right"  
 EndFPST
-ChainSub2: class "'psts' post-base substs. in Bengali-ikaar-1"  4 4 4 2
+ChainSub2: class "'psts' post-base substs. in Bengali-ikaar"  4 4 4 2
   Class: 9 ikaar_bng
   Class: 7 tta_bng
   Class: 9 bn_ss_tta
@@ -697,67 +697,52 @@ ChainSub2: class "'psts' post-base substs. in Bengali-ikaar-1"  4 4 4 2
   BClassNames: "All_Others"  "1"  "2"  "3"  
   FClassNames: "All_Others"  "1"  "2"  "3"  
 EndFPST
-ChainSub2: class "'psts' post base substs. in Bengali-u-uu-1"  8 8 8 6
+ChainSub2: class "'psts' post base substs. in Bengali-u-uu"  7 7 7 4
   Class: 20 ukaar_bng uukaar_bng
-  Class: 310 bn_rofola.blwf bn_la.blwf bn_nna.blwf bn_ta.blwf bn_tha.blwf bn_ka.blwf bn_dha.blwf bn_na.blwf bn_ba.blwf bn_bha.blwf bn_baphala bn_rofola_short bn_rofola_narrow bn_rofola_nostem bn_rofola_bracing bn_rofola_nostem_d bn_rofola_alt_ka bn_t_rofola.blwf bn_bh_rofola.blwf bn_sk_ba_work_around.blwf bn_ba_asami.blwf
-  Class: 62 bn_t_rofola bn_bh_rofola bn_d_bh_rofola bn_m_bh_rofola bn_s_la
-  Class: 6 ra_bng
-  Class: 167 kha_bng ga_bng gha_bng ja_bng jha_bng nna_bng tha_bng da_bng dha_bng na_bng pa_bng ba_bng ma_bng ya_bng la_bng sha_bng ssa_bng sa_bng yya_bng ra_asami_bng ba_asami_bng
-  Class: 67 bn_kha.phala bn_ma.phala bn_ma.phala1 bn_tha.phala bn_ma.stem.phala
-  Class: 641 bn_k_ss_ma bn_k_ma bn_k_sa bn_g_ga bn_g_da bn_ng_kha bn_ng_gha bn_ng_ma bn_j_ja bn_j_jha bn_dd_ga bn_nn_nna bn_t_tha bn_d_ga bn_d_gha bn_d_da bn_d_ma bn_n_t_rofola bn_n_da bn_n_na bn_n_sa bn_p_sa bn_b_da bn_b_dha bn_b_ba bn_b_ba.altern bn_m_tha bn_m_da bn_m_pa bn_m_ma bn_m_sa bn_l_ga bn_l_da bn_l_pa bn_l_la bn_sh_ta bn_ss_pa bn_ss_ma bn_s_kha bn_s_pa bn_s_ma bn_h_la bn_rr_ga bn_dh_ba bn_h_ba bn_sk_ba_work_around bn_sk_b_ja_work_around.cjct bn_sk_b_da_work_around.cjct bn_sk_b_dha_work_around.cjct bn_sk_b_ba_work_around.cjct bn_sk_b_ba_alt_work_arnd.cjct bn_b_asami_ja.cjct bn_b_asami_da.cjct bn_b_asami_dha.cjct bn_b_asami_ba_asami.cjct
+  Class: 19 ra_bng ra_asami_bng
+  Class: 29 bn_d_bh_rofola bn_m_bh_rofola
+  Class: 82 bn_rofola.blwf bn_rofola_short bn_rofola_narrow bn_rofola_nostem bn_rofola_bracing
+  Class: 81 kha_bng ga_bng gha_bng ja_bng tha_bng da_bng dha_bng pa_bng ma_bng sha_bng sa_bng
+  Class: 313 bn_ma.phala bn_ma.phala1 bn_ma.stem.phala bn_k_ss_ma bn_k_ma bn_k_sa bn_g_da bn_ng_kha bn_ng_gha bn_ng_ma bn_j_ja bn_t_tha bn_d_da bn_d_ma bn_n_t_rofola bn_n_da bn_n_sa bn_p_pa bn_p_sa bn_b_ja bn_b_da bn_m_da bn_m_pa bn_m_sa bn_l_da bn_l_pa bn_ss_pa bn_ss_ma bn_s_t_rofola bn_s_pa bn_s_ma bn_t_rofola bn_bh_rofola
   BClass: 20 ukaar_bng uukaar_bng
-  BClass: 310 bn_rofola.blwf bn_la.blwf bn_nna.blwf bn_ta.blwf bn_tha.blwf bn_ka.blwf bn_dha.blwf bn_na.blwf bn_ba.blwf bn_bha.blwf bn_baphala bn_rofola_short bn_rofola_narrow bn_rofola_nostem bn_rofola_bracing bn_rofola_nostem_d bn_rofola_alt_ka bn_t_rofola.blwf bn_bh_rofola.blwf bn_sk_ba_work_around.blwf bn_ba_asami.blwf
-  BClass: 62 bn_t_rofola bn_bh_rofola bn_d_bh_rofola bn_m_bh_rofola bn_s_la
-  BClass: 6 ra_bng
-  BClass: 167 kha_bng ga_bng gha_bng ja_bng jha_bng nna_bng tha_bng da_bng dha_bng na_bng pa_bng ba_bng ma_bng ya_bng la_bng sha_bng ssa_bng sa_bng yya_bng ra_asami_bng ba_asami_bng
-  BClass: 67 bn_kha.phala bn_ma.phala bn_ma.phala1 bn_tha.phala bn_ma.stem.phala
-  BClass: 641 bn_k_ss_ma bn_k_ma bn_k_sa bn_g_ga bn_g_da bn_ng_kha bn_ng_gha bn_ng_ma bn_j_ja bn_j_jha bn_dd_ga bn_nn_nna bn_t_tha bn_d_ga bn_d_gha bn_d_da bn_d_ma bn_n_t_rofola bn_n_da bn_n_na bn_n_sa bn_p_sa bn_b_da bn_b_dha bn_b_ba bn_b_ba.altern bn_m_tha bn_m_da bn_m_pa bn_m_ma bn_m_sa bn_l_ga bn_l_da bn_l_pa bn_l_la bn_sh_ta bn_ss_pa bn_ss_ma bn_s_kha bn_s_pa bn_s_ma bn_h_la bn_rr_ga bn_dh_ba bn_h_ba bn_sk_ba_work_around bn_sk_b_ja_work_around.cjct bn_sk_b_da_work_around.cjct bn_sk_b_dha_work_around.cjct bn_sk_b_ba_work_around.cjct bn_sk_b_ba_alt_work_arnd.cjct bn_b_asami_ja.cjct bn_b_asami_da.cjct bn_b_asami_dha.cjct bn_b_asami_ba_asami.cjct
+  BClass: 19 ra_bng ra_asami_bng
+  BClass: 29 bn_d_bh_rofola bn_m_bh_rofola
+  BClass: 82 bn_rofola.blwf bn_rofola_short bn_rofola_narrow bn_rofola_nostem bn_rofola_bracing
+  BClass: 81 kha_bng ga_bng gha_bng ja_bng tha_bng da_bng dha_bng pa_bng ma_bng sha_bng sa_bng
+  BClass: 313 bn_ma.phala bn_ma.phala1 bn_ma.stem.phala bn_k_ss_ma bn_k_ma bn_k_sa bn_g_da bn_ng_kha bn_ng_gha bn_ng_ma bn_j_ja bn_t_tha bn_d_da bn_d_ma bn_n_t_rofola bn_n_da bn_n_sa bn_p_pa bn_p_sa bn_b_ja bn_b_da bn_m_da bn_m_pa bn_m_sa bn_l_da bn_l_pa bn_ss_pa bn_ss_ma bn_s_t_rofola bn_s_pa bn_s_ma bn_t_rofola bn_bh_rofola
   FClass: 20 ukaar_bng uukaar_bng
-  FClass: 310 bn_rofola.blwf bn_la.blwf bn_nna.blwf bn_ta.blwf bn_tha.blwf bn_ka.blwf bn_dha.blwf bn_na.blwf bn_ba.blwf bn_bha.blwf bn_baphala bn_rofola_short bn_rofola_narrow bn_rofola_nostem bn_rofola_bracing bn_rofola_nostem_d bn_rofola_alt_ka bn_t_rofola.blwf bn_bh_rofola.blwf bn_sk_ba_work_around.blwf bn_ba_asami.blwf
-  FClass: 62 bn_t_rofola bn_bh_rofola bn_d_bh_rofola bn_m_bh_rofola bn_s_la
-  FClass: 6 ra_bng
-  FClass: 167 kha_bng ga_bng gha_bng ja_bng jha_bng nna_bng tha_bng da_bng dha_bng na_bng pa_bng ba_bng ma_bng ya_bng la_bng sha_bng ssa_bng sa_bng yya_bng ra_asami_bng ba_asami_bng
-  FClass: 67 bn_kha.phala bn_ma.phala bn_ma.phala1 bn_tha.phala bn_ma.stem.phala
-  FClass: 641 bn_k_ss_ma bn_k_ma bn_k_sa bn_g_ga bn_g_da bn_ng_kha bn_ng_gha bn_ng_ma bn_j_ja bn_j_jha bn_dd_ga bn_nn_nna bn_t_tha bn_d_ga bn_d_gha bn_d_da bn_d_ma bn_n_t_rofola bn_n_da bn_n_na bn_n_sa bn_p_sa bn_b_da bn_b_dha bn_b_ba bn_b_ba.altern bn_m_tha bn_m_da bn_m_pa bn_m_ma bn_m_sa bn_l_ga bn_l_da bn_l_pa bn_l_la bn_sh_ta bn_ss_pa bn_ss_ma bn_s_kha bn_s_pa bn_s_ma bn_h_la bn_rr_ga bn_dh_ba bn_h_ba bn_sk_ba_work_around bn_sk_b_ja_work_around.cjct bn_sk_b_da_work_around.cjct bn_sk_b_dha_work_around.cjct bn_sk_b_ba_work_around.cjct bn_sk_b_ba_alt_work_arnd.cjct bn_b_asami_ja.cjct bn_b_asami_da.cjct bn_b_asami_dha.cjct bn_b_asami_ba_asami.cjct
+  FClass: 19 ra_bng ra_asami_bng
+  FClass: 29 bn_d_bh_rofola bn_m_bh_rofola
+  FClass: 82 bn_rofola.blwf bn_rofola_short bn_rofola_narrow bn_rofola_nostem bn_rofola_bracing
+  FClass: 81 kha_bng ga_bng gha_bng ja_bng tha_bng da_bng dha_bng pa_bng ma_bng sha_bng sa_bng
+  FClass: 313 bn_ma.phala bn_ma.phala1 bn_ma.stem.phala bn_k_ss_ma bn_k_ma bn_k_sa bn_g_da bn_ng_kha bn_ng_gha bn_ng_ma bn_j_ja bn_t_tha bn_d_da bn_d_ma bn_n_t_rofola bn_n_da bn_n_sa bn_p_pa bn_p_sa bn_b_ja bn_b_da bn_m_da bn_m_pa bn_m_sa bn_l_da bn_l_pa bn_ss_pa bn_ss_ma bn_s_t_rofola bn_s_pa bn_s_ma bn_t_rofola bn_bh_rofola
+ 1 1 0
+  ClsList: 1
+  BClsList: 2
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. post base vowels in Bengali" 
  1 1 0
   ClsList: 1
   BClsList: 3
   FClsList:
  1
   SeqLookup: 0 "subst. post base vowels in Bengali" 
- 1 1 0
+ 1 2 0
   ClsList: 1
-  BClsList: 4
+  BClsList: 4 5
   FClsList:
  1
   SeqLookup: 0 "subst. post base vowels in Bengali" 
  1 2 0
   ClsList: 1
-  BClsList: 2 5
+  BClsList: 4 6
   FClsList:
  1
   SeqLookup: 0 "subst. post base vowels in Bengali" 
- 1 2 0
-  ClsList: 1
-  BClsList: 2 6
-  FClsList:
- 1
-  SeqLookup: 0 "subst. post base vowels in Bengali" 
- 1 1 0
-  ClsList: 1
-  BClsList: 7
-  FClsList:
- 1
-  SeqLookup: 0 "subst. post base vowels in Bengali" 
- 1 2 0
-  ClsList: 1
-  BClsList: 2 7
-  FClsList:
- 1
-  SeqLookup: 0 "subst. post base vowels in Bengali" 
-  ClassNames: "All_Others"  "u_uu"  "blwfs"  "combo"  "sngl"  "stemmed"  "stemphala"  "stemmed2"  
-  BClassNames: "All_Others"  "u_uu"  "blwfs"  "combo"  "sngl"  "stemmed"  "stemphala"  "stemmed2"  
-  FClassNames: "All_Others"  "u_uu"  "blwfs"  "combo"  "sngl"  "stemmed"  "stemphala"  "stemmed2"  
+  ClassNames: "All_Others"  "u-uu"  "ra"  "combo"  "rofola"  "stemmed"  "stemmed2"  
+  BClassNames: "All_Others"  "u-uu"  "ra"  "combo"  "rofola"  "stemmed"  "stemmed2"  
+  FClassNames: "All_Others"  "u-uu"  "ra"  "combo"  "rofola"  "stemmed"  "stemmed2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -1170,10 +1155,10 @@ MATH:MinConnectorOverlap: 20
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
-DisplaySize: -36
+DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 59760 16 10
+WinInfo: 60000 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -58471,8 +58456,8 @@ SplineSet
  -288 -16 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'blwf' below-base forms in Bengali-1" ba_bng hasanta_bng
 LCarets2: 1 0 
-Ligature2: "'blwf' below-base forms in Bengali2-1" hasanta_bng ba_asami_bng
 Ligature2: "'blwf' below-base forms in Bengali2-1" hasanta_bng ba_bng
 EndChar
 
@@ -58648,11 +58633,9 @@ SplineSet
  239 206 l 1
  211 270 143 315 73 325 c 1
  62 354 l 1
- 116 412 l 1
- 112 411 109 411 103 411 c 0
- 73 411 26 437 26 477 c 0
+ 115 409.002 l 1
+ 70.3333 409.002 26 435.459 26 477 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" gha_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" gha_bng
@@ -58672,7 +58655,7 @@ SplineSet
  311 450 343 465 343 485 c 0
  343 501 333 507 306 507 c 0
  273 507 250 498 229 475 c 1
- 256 452 277 450 289 450 c 0
+ 250 461 277 450 289 450 c 0
 189.105 507.16 m 1
  205.72 532.309 257.598 558 304 558 c 0
  363 558 397 547 397 485 c 0
@@ -58686,7 +58669,7 @@ SplineSet
  106 112 7 330 7 457 c 1
  58 467 l 1
  58 355 147 163 262 163 c 0
- 319 163 347 187 347 236 c 0
+ 313.5 163 347 193.5 347 236 c 0
  347 265 338 289 320 307 c 1
  298 274 268 246 229 246 c 0
  172 246 135 288 135 346 c 0
@@ -58695,7 +58678,6 @@ SplineSet
  129 559 l 1
  155.233 536.189 173.661 520.207 189.105 507.16 c 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" nga_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" nga_bng
@@ -58725,11 +58707,10 @@ SplineSet
  294 507 l 1
  104 507 l 1
  104 478 l 1
- 144 428 179.651 419.617 210 416.141 c 0
- 272.729 408.957 284 379.456 284 355 c 0
+ 134.5 438.1 179.651 425.617 210 422.141 c 0
+ 272.729 414.957 284 379.456 284 355 c 0
  284 285 172 162 99 162 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" ca_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" ca_bng
@@ -58800,7 +58781,7 @@ SplineSet
  415 383 l 1
  379 383 259 391 211 480 c 1
  173 437 160 424 160 386 c 0
- 160 365 172 355 196 355 c 0
+ 160 365 176.5 355 196 355 c 0
  213 355 239 365 276 386 c 1
  333 361 337 294 337 268 c 0
  337 204 287 151 208 151 c 0
@@ -58808,11 +58789,10 @@ SplineSet
  57 482 l 1
  62 309 118 202 210 202 c 0
  270 202 286 249 286 279 c 0
- 286 291 281 326 267 337 c 1
+ 286 291 281 319 267 330 c 1
  236 307 207 304 193 304 c 0
  157 304 108 323 108 400 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" ja_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" ja_bng
@@ -59087,8 +59067,8 @@ SplineSet
 150 571 m 0
  226 571 272 492 286 463 c 1
  286 382 l 1
- 278 423 186 520 155 520 c 0
- 116 520 63 500 63 421 c 0
+ 278 423 207.5 520 155 520 c 0
+ 116 520 63 494.5 63 421 c 0
  63 370 85 344 130 344 c 2
  140 345 l 1
  157 298 l 1
@@ -59096,7 +59076,6 @@ SplineSet
  94 293 12 319 12 420 c 0
  12 450 36 571 150 571 c 0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" nna_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" nna_bng
@@ -59223,8 +59202,8 @@ LayerCount: 2
 Fore
 SplineSet
 117 512 m 0
- 99 512 96 491 96 486 c 0
- 96 473 105 468 148 457 c 1
+ 99 512 96 497 96 492 c 0
+ 96 479 105 468 148 457 c 1
  234 505 l 1
  234 558 l 1
  343 558 l 1
@@ -59246,7 +59225,6 @@ SplineSet
  170 338 190 326 234 286 c 1
  234 449 l 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" dha_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" dha_bng
@@ -59303,8 +59281,8 @@ SplineSet
  447 558 l 1
  447 507 l 1
  390 507 l 1
- 390 243 l 5
- 340 243 l 5
+ 390 243 l 1
+ 340 243 l 1
  340 401 l 1
  333 411 320 426 302 445 c 1
  145 302 l 1
@@ -59315,12 +59293,10 @@ SplineSet
  25 462 l 1
 89 479 m 1
  168 479 181 416 183 399 c 1
- 226 437 l 2
- 240 450 255 464 271 477 c 1
+ 212.781 425.318 239.614 451.499 271 477 c 5
  234 508 204 524 181 524 c 0
  138 524 108 509 89 479 c 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" pa_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" pa_bng
@@ -59532,7 +59508,7 @@ Fore
 SplineSet
 10 558 m 2
  61 558 105 532 148 469 c 1
- 167 518 188 542 211 542 c 0
+ 167 518 188 542 211 542 c 4
  233 542 269 522 299 467 c 1
  299 558 l 1
  416 558 l 1
@@ -59576,13 +59552,13 @@ Fore
 SplineSet
 100 398 m 0
  100 375 118 341 150 341 c 0
- 163 341 189.333 346.333 217 362 c 1
+ 168.5 341 193.5 345 217 362 c 1
  119 451 l 1
  112 441 100 421 100 398 c 0
 241 384 m 1
  254 400 262 417 262 437 c 0
- 262 450 256 490 214 493 c 0
- 200 493 173 484 146 473 c 1
+ 262 450 256.107 493 214 493 c 0
+ 195 493 166 487 146 473 c 1
  241 384 l 1
 49 396 m 0
  49 463 82 494 101 507 c 1
@@ -59595,7 +59571,6 @@ SplineSet
  313 353 229.333 290 151 290 c 0
  114 290 49 311 49 396 c 0
 EndSplineSet
-Validated: 3073
 Ligature2: "'half' half forms in Bengali-1" ssa_bng hasanta_bng
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali subtable" ssa_bng
@@ -70594,14 +70569,11 @@ SplineSet
 -271 -182 m 1
  -269 -200 -257 -266 -200 -266 c 0
  -188 -266 -167 -262 -148 -256 c 1
- -150 -266 l 2
- -156 -285 -171 -300 -201 -300 c 0
+ -153.135 -281.674 -165.949 -300 -201 -300 c 0
  -298 -300 -302 -221 -322 -189 c 0
- -330 -177 -350 -171 -362 -164 c 2
- -378 -157 l 2
- -403.076 -143.997 -415.214 -120.213 -415.214 -95.5586 c 0
- -415.214 -67.124 -399.066 -37.5332 -368 -22 c 0
- -359 -17 -348 -15 -337 -15 c 2
+ -330 -177 -350 -171 -362 -164 c 0
+ -393.251 -150.328 -415.214 -129.586 -415.214 -95.5586 c 0
+ -415.214 -60.0662 -385.593 -15 -337 -15 c 2
  -181 -15 l 1
  -181 37 l 1
  -137 37 l 1
@@ -70613,7 +70585,6 @@ SplineSet
  -144 -182 l 1
  -271 -182 l 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'blwf' Below Base Forms in Gurmukhi subtable" va_gur virama_gur
 EndChar
@@ -70700,14 +70671,12 @@ SplineSet
  -132 -190 l 2
  -132 -250 -178 -300 -251 -300 c 0
 -354 -130 m 1
- -353 -140 -350 -151 -347 -164 c 2
- -335 -206 l 2
+ -351.565 -154.354 -345.294 -184.727 -335 -206 c 0
  -320 -237 -310 -254 -252 -254 c 0
  -205 -254 -181 -230 -181 -182 c 2
  -181 -130 l 1
  -354 -130 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: gur_glyph153
@@ -70730,10 +70699,9 @@ SplineSet
  -177 -57 -220 -65 -279 -80 c 0
  -322 -91 -363 -124 -403 -181 c 1
  -353 -226 -282 -263 -249 -263 c 0
- -181 -263 -163 -215 -143 -208 c 1
+ -181 -263 -158.333 -208 -143 -208 c 4
  -138 -208 -136 -211 -136 -217 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: gur_glyph154
@@ -71112,23 +71080,18 @@ SplineSet
 44 737 m 0
  44 792 96 806 112 806 c 0
  128 806 181 795 181 737 c 0
- 181 720 167 669 112 669 c 0
+ 181 720 167 669 112 669 c 4
  56 669 44 722 44 737 c 0
 151 200 m 1
  87 200 l 1
  87 526 l 1
- 83 526 l 1
  -13 526 l 1
  -13 591 l 1
- 83 591 l 1
- 220 591 l 1
  309 591 l 1
  309 526 l 1
- 220 526 l 1
  151 526 l 1
  151 200 l 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'abvs' Above Base Substitutions in Gurmukhi subtable" aamatra_gur bindi_gur
 EndChar
@@ -72074,15 +72037,11 @@ SplineSet
 -271 -16 m 1
  -266 -72 -243 -103 -201 -103 c 0
  -189 -103 -165 -100 -148 -94 c 1
- -149 -97 -149 -100 -150 -103 c 2
- -155 -115 l 2
- -166 -128 -182 -134 -201 -134 c 0
+ -156.867 -120.602 -169.656 -134 -201 -134 c 0
  -307 -134 -305 -47 -322 -22 c 0
- -331 -10 -356 -2 -362 0 c 2
- -378 7 l 2
- -404.257 19.9199 -414.707 40.8311 -414.707 61.9863 c 0
- -414.707 91.5879 -394.245 121.669 -368 131 c 0
- -359 135 -348 137 -337 137 c 2
+ -331 -10 -356.075 -2.21357 -362 0 c 0
+ -392.333 11.3333 -414.707 32.1535 -414.707 61.9863 c 0
+ -414.707 102.762 -381.916 137 -337 137 c 2
  -181 137 l 1
  -181 166 l 1
  -137 166 l 1
@@ -72094,7 +72053,6 @@ SplineSet
  -144 -16 l 1
  -271 -16 l 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Gurmukhi subtable" gur_va.blwf uumatra_gur
 EndChar
@@ -115577,14 +115535,13 @@ SplineSet
  381 -132 l 1
  342 -141 312 -146 290 -146 c 0
  151 -146 82 -66 82 93 c 0
- 82 158 90 244 108 351 c 0
- 123 439 137 506 151 550 c 1
+ 82 199.141 123.254 462.797 151 550 c 5
  222 550 l 1
  178 370 157 221 157 106 c 0
  157 -17 202 -77 291 -77 c 0
  321 -77 354 -68 391 -50 c 1
 EndSplineSet
-Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pref' pre-base ra in Malay+AQEA-lam2" candrakala ra_mal
 Ligature2: "'pstf' post-base forms in Malayalam2" candrakala ra_mal
 Ligature2: "'pstf' ra in Malay+AQEA-lam-1" ra_mal candrakala
@@ -115620,6 +115577,7 @@ SplineSet
  94 -164 122 -182 175 -182 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pstf' post-base forms in Malayalam2" candrakala ya_mal
 Ligature2: "subst. post-base candra-x in Malay+AQEA-lam-1" candrakala ya_mal
 Ligature2: "subst. post-base candra-x in Malay+AQEA-lam-1" ya_mal candrakala
@@ -155957,7 +155915,6 @@ SplineSet
 EndSplineSet
 Validated: 3073
 LCarets2: 1 0 
-Ligature2: "'blwf' below-base forms in Bengali-1" ba_bng hasanta_bng
 EndChar
 
 StartChar: bn_k_ss_ma
@@ -157588,49 +157545,50 @@ EndChar
 
 StartChar: bn_sh_ukaar
 Encoding: 60021 -1 6015
-Width: 524
-Flags: MW
+Width: 463
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-216 416 m 1
- 206 392 175 367 150 367 c 0
- 133 367 114 380 106 386 c 1
- 116 435 l 1
- 127 423 135 417 142 417 c 0
- 160 417 174 443 174 457 c 0
- 174 509.751 135.381 528 66 528 c 1
- 66 572 l 1
- 75.2549 573.851 89.6943 574 99 574 c 0
- 158 574 190 549 213 509 c 1
- 223 535 251 569 279 569 c 0
- 298 569 322 544 352 504 c 1
- 355.108 528.865 378.201 564.403 389 586 c 1
- 447 547 499 440 499 399 c 0
- 499 340 487 300 463 280 c 1
- 473 264 478 247 478 228 c 0
- 478 171 424 97 344 97 c 0
- 190.5 97 51 256 0 499 c 1
- 50 503 l 1
- 73.2559 363.466 182.07 147 340 147 c 0
- 372 147 430 181 430 224 c 0
- 430 233 428 242 423 250 c 1
- 415 246 400 243 382 243 c 0
- 359 243 344 246 337 251 c 1
- 340 266 346 286 355 313 c 1
- 361 310 372 305 384 305 c 0
- 411 305 448 325 448 399 c 0
- 448 432 432 461 399 486 c 1
- 365 406 l 1
- 352 432 326 493 279 516 c 1
- 264 501 256 483 256 462 c 0
- 256 435 266 422 285 422 c 0
- 298 423 296 431 302 444 c 1
- 322 401 l 1
- 309 383 295 369 272 369 c 0
- 249 369 225 392 216 416 c 1
+-228 843 m 25,0,0
+0 507 m 1,0,0
+ -5 507 -10 507 -10 507 c 1,11,-1
+ -10 558 l 1,12,13
+ 0 558 l 2,14,15
+ 59 558 124 549 147 509 c 1,16,17
+ 157 535 185 557 213 557 c 0,18,19
+ 232 557 270 539 291 482 c 5,20,21
+ 302.667 506.667 312 532 323 554 c 1,22,23
+ 381 515 433 388.5 433 329 c 0,24,25
+ 433 297.5 423 273 399 253 c 1,26,27
+ 409 237 412 211 412 192 c 0,28,29
+ 412 135 358 47 278 47 c 0,30,31
+ 148 47 94 157 34 319 c 1,32,-1
+ 84 323 l 1,33,34
+ 130 207 173.5 97 274 97 c 0,35,36
+ 328 97 364 145 364 188 c 0,37,38
+ 364 197 362 217 357 225 c 1,39,40
+ 349 221 334 218 316 218 c 0,41,42
+ 293 218 278 221 271 226 c 1,43,44
+ 274 241 280 250 289 277 c 1,45,46
+ 295 274 306 269 318 269 c 0,47,48
+ 345 269 382 284 382 329 c 0,49,50
+ 382 362 364 420.5 338 457 c 1,51,-1
+ 299 374 l 1,52,53
+ 286 400 254.5 480.5 213 504 c 1,54,55
+ 198 489 190 471 190 450 c 0,56,57
+ 190 423 200 410 213 410 c 0,58,59
+ 218.667 410 230 419 236 432 c 1,60,-1
+ 256 379 l 1,61,62
+ 243 361 229 357 206 357 c 0,63,64
+ 183 357 159 392 150 416 c 1,0,1
+ 140 392 109 357 84 357 c 0,2,3
+ 67 357 48 370 40 376 c 1,4,-1
+ 50 425 l 1,5,6
+ 61 413 69 407 76 407 c 0,7,8
+ 94 407 108 443 108 457 c 0,9,10
+ 108 505 55 507 0 507 c 1,0,0
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'blws' below-base substs. in Bengali-vowel" sha_bng ukaar_bng
 EndChar
@@ -162229,6 +162187,7 @@ SplineSet
  -288 -16 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'blwf' below-base forms in Bengali-1" ba_asami_bng hasanta_bng
 Ligature2: "'blwf' below-base forms in Bengali2-1" hasanta_bng ba_asami_bng
 Substitution2: "'cjct' work-around in Bengali for Sanskrit-1" bn_sk_ba_work_around.blwf
 EndChar
@@ -162862,8 +162821,8 @@ Fore
 SplineSet
 348 411 m 0
  348 445 337 477 313 507 c 1
- 132 507 l 1
- 149.285 488.212 151.744 473.236 154.499 458.2 c 0
+ 135 507 l 1
+ 146.75 491.25 151.744 473.236 154.499 458.2 c 0
  156.704 446.167 159.097 434.095 169.429 420 c 0
  190.352 391.454 263.598 345 290 345 c 0
  329 345 348 367 348 411 c 0
@@ -162885,7 +162844,6 @@ SplineSet
  40 395 76 417 110 422 c 1
  110 458.265 85.0669 497.023 78 507 c 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" ma_bng hasanta_bng
 Ligature2: "'half' half forms in Bengali subtable" ma_bng
