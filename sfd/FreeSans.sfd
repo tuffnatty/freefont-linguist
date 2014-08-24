@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1408646093
+ModificationTime: 1408867462
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -51,8 +51,8 @@ OS2StrikeYPos: 258
 OS2FamilyClass: 2053
 OS2Vendor: 'GNU '
 Lookup: 4 0 0 "subst. placeholder for vocalic-reph in Devanagari for Sanskrit"  {"subst. placeholder for vocalic-reph in Devanagari for Sanskrit"  } []
-Lookup: 4 0 0 "subst. vocalic-sign for vocalic in Devanagair for Sanskrit"  {"subst vocalic-sign for vocalic in Devanagari for Sanskrit"  } []
 Lookup: 1 0 0 "do_nothing"  {} []
+Lookup: 4 0 0 "subst. vocalic-sign for vocalic in Devanagair for Sanskrit"  {"subst vocalic-sign for vocalic in Devanagari for Sanskrit"  } []
 Lookup: 4 0 0 "subst. below-base forms in Malay+AQEA-lam"  {"subst. below-base u,uu in Malay+AQEA-lam-1"  "subst. below-base candra-x in Malay+AQEA-lam-1"  "subst. below-base x-candra in Malay+AQEA-lam-1"  } []
 Lookup: 1 0 0 "subst. candrakala by spacing glyph in Malay+AQEA-lam"  {"subst. candrakala by spacing glyph Malay+AQEA-lam-1"  } []
 Lookup: 4 0 0 "subst. below-base cons in Malay+AQEA-lam"  {"subst. below-base combo cons in Malay+AQEA-lam"  "subst. below-base simple cons in Malay+AQEA-lam"  } []
@@ -159,7 +159,7 @@ Lookup: 4 265 0 "'ccmp' glyph decomp. in Yiddish"  {"'ccmp' glyph decomp. in Yid
 Lookup: 4 9 0 "'dlig' discr. ligatures in Hebrew"  {"'dlig' discr. ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' discr. ligatures in Armenian"  {"'dlig' discr. ligatures in Armenian subtable"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' hist. ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
-Lookup: 6 0 0 "'locl' local forms in Devanagari for Sanskrit-vocalic"  {"'locl' locl forms in Devanagari for Sanskrit-vocalic"  } ['locl' ('dev2' <'SAN ' > 'deva' <'SAN ' > ) ]
+Lookup: 6 0 0 "'locl' local forms in Devanagari for Sanskrit-vocalic"  {"'locl' local forms in Devanagari for Sanskrit-vocalic"  } ['locl' ('dev2' <'SAN ' > 'deva' <'SAN ' > ) ]
 Lookup: 4 0 0 "'nukt' nukta forms in Devanagari"  {"'nukt' Nukta Forms in Devanagari subtable"  } ['nukt' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'akhn' akhand in Devanagari2"  {"'akhn' akhand in Devanagari2-1"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'akhn' akhand in Devanagari"  {"'akhn' akhand in Devanagari-1"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
@@ -369,49 +369,33 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -20 {} 0 {} -10 {}
-ChainSub2: class "'locl' locl forms in Devanagari for Sanskrit-vocalic"  6 6 6 4
-  Class: 276 kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva
-  Class: 53 rvocalicdeva lvocalicdeva rrvocalicdeva llvocalicdeva
+ChainSub2: class "'locl' local forms in Devanagari for Sanskrit-vocalic"  5 2 1 3
   Class: 6 virama
-  Class: 6 radeva
+  Class: 53 rvocalicdeva lvocalicdeva rrvocalicdeva llvocalicdeva
   Class: 69 rvocalicsigndeva rrvocalicsigndeva lvocalicsigndeva llvocalicsigndeva
-  BClass: 276 kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva
-  BClass: 53 rvocalicdeva lvocalicdeva rrvocalicdeva llvocalicdeva
+  Class: 6 radeva
   BClass: 6 virama
-  BClass: 6 radeva
-  BClass: 69 rvocalicsigndeva rrvocalicsigndeva lvocalicsigndeva llvocalicsigndeva
-  FClass: 276 kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva
-  FClass: 53 rvocalicdeva lvocalicdeva rrvocalicdeva llvocalicdeva
-  FClass: 6 virama
-  FClass: 6 radeva
-  FClass: 69 rvocalicsigndeva rrvocalicsigndeva lvocalicsigndeva llvocalicsigndeva
- 2 1 0
-  ClsList: 3 2
-  BClsList: 1
-  FClsList:
- 1
-  SeqLookup: 0 "do_nothing" 
  2 0 0
-  ClsList: 3 2
+  ClsList: 1 2
   BClsList:
   FClsList:
  1
   SeqLookup: 0 "subst. vocalic-sign for vocalic in Devanagair for Sanskrit" 
  2 1 0
-  ClsList: 4 5
-  BClsList: 3
+  ClsList: 4 3
+  BClsList: 1
   FClsList:
  1
   SeqLookup: 0 "do_nothing" 
  2 0 0
-  ClsList: 4 5
+  ClsList: 4 3
   BClsList:
   FClsList:
  1
   SeqLookup: 0 "subst. placeholder for vocalic-reph in Devanagari for Sanskrit" 
-  ClassNames: "All_Others"  "cons"  "voc"  "virama"  "ra"  "sign"  
-  BClassNames: "All_Others"  "cons"  "voc"  "virama"  "ra"  "sign"  
-  FClassNames: "All_Others"  "cons"  "voc"  "virama"  "ra"  "sign"  
+  ClassNames: "0"  "virama"  "voc"  "vocsign"  "ra"  
+  BClassNames: "0"  "virama"  
+  FClassNames: "All_Others"  
 EndFPST
 ChainSub2: class "'cjct' unpack nukta forms in Bengali-1"  3 3 3 1
   Class: 23 rra_bng rha_bng yya_bng
@@ -47075,7 +47059,6 @@ SplineSet
  -232 -179 -185 -201 -137 -201 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" virama rvocalicdeva
 EndChar
 
 StartChar: rrvocalicsigndeva
@@ -47110,7 +47093,6 @@ SplineSet
  -255 -88 -302 -62 -304 3 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" virama rrvocalicdeva
 EndChar
 
 StartChar: ecandrasigndeva
@@ -47730,7 +47712,6 @@ SplineSet
  -327.5 42 -348 21.7 -348 -16 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" virama lvocalicdeva
 EndChar
 
 StartChar: llvocalicsigndeva
@@ -47773,7 +47754,6 @@ SplineSet
  -327.5 185 -347 164.7 -347 127 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" virama llvocalicdeva
 EndChar
 
 StartChar: danda
@@ -169549,8 +169529,9 @@ Fore
 Refer: 2210 2371 S 1 0 0 1 400 0 2
 Refer: 2193 2352 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" rvocalicdeva dev_ra.rphf
 Ligature2: "subst. placeholder for vocalic-reph in Devanagari for Sanskrit" radeva rvocalicsigndeva
+Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" radeva virama rvocalicdeva
+MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" rvocalicdeva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
 
@@ -169563,8 +169544,9 @@ Fore
 Refer: 2211 2372 S 1 0 0 1 289 0 2
 Refer: 2193 2352 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" rrvocalicdeva dev_ra.rphf
 Ligature2: "subst. placeholder for vocalic-reph in Devanagari for Sanskrit" radeva rrvocalicsigndeva
+Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" radeva virama rrvocalicdeva
+MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" rrvocalicdeva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
 
@@ -169577,8 +169559,9 @@ Fore
 Refer: 2237 2403 S 1 0 0 1 810 0 2
 Refer: 2193 2352 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" llvocalicdeva dev_ra.rphf
 Ligature2: "subst. placeholder for vocalic-reph in Devanagari for Sanskrit" radeva llvocalicsigndeva
+Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" radeva virama llvocalicdeva
+MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" llvocalicdeva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
 
@@ -169591,8 +169574,9 @@ Fore
 Refer: 2236 2402 S 1 0 0 1 810 0 2
 Refer: 2193 2352 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" lvocalicdeva dev_ra.rphf
 Ligature2: "subst. placeholder for vocalic-reph in Devanagari for Sanskrit" radeva lvocalicsigndeva
+Ligature2: "subst vocalic-sign for vocalic in Devanagari for Sanskrit" radeva virama lvocalicdeva
+MultipleSubs2: "'blwf' below-base forms in Devanagari for Sanskrit-decomp-vocalic-reph-1" lvocalicdeva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
 
