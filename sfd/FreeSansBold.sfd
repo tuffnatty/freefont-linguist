@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1408867748
+ModificationTime: 1409395567
 PfmFamily: 33
 TTFWeight: 600
 TTFWidth: 5
@@ -71,8 +71,8 @@ Lookup: 1 0 0 "subst. rakaar.blwf for rakaar in Devanagari"  {"subst rakaar.blf 
 Lookup: 4 0 0 "subst. ligature for da+-half in Devanagari"  {"subst ligature for da-va.half in Devanagari"  "subst ligature for da-gha.half in Devanagari"  "subst ligature for da+-va in Devanagari"  } []
 Lookup: 6 0 0 "'locl' local forms in Devanagari for Sanskrit-vocalic"  {"'locl' local forms in Devanagari for Sanskrit-vocalic"  } ['locl' ('dev2' <'SAN ' > 'deva' <'SAN ' > ) ]
 Lookup: 4 0 0 "'nukt' nukta forms in Devanagari"  {"'nukt' Nukta Forms in Devanagari subtable"  } ['nukt' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
-Lookup: 4 0 0 "'akhn' akhand in Devanagari2"  {"'akhn' akhand in Devanagari2-1"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
-Lookup: 4 0 0 "'akhn' akhand in Devanagari"  {"'akhn' akhand in Devanagari-1"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
+Lookup: 4 0 0 "'akhn' akhand in Devanagari2"  {"'akhn' akhand in Devanagari2-1"  "'akhn' akhand in Devanagari2-eyelash-ra"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
+Lookup: 4 0 0 "'akhn' akhand in Devanagari"  {"'akhn' akhand in Devanagari-1"  "'akhn' akhand in Devanagari-eyelash-ra"  } ['akhn' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'rkrf' rakar forms in Devanagari2"  {"'rkrf' Rakar Forms in Devanagari2-simple"  } ['rkrf' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Devanagari"  {"'rphf' Reph Form in Devanagari subtable"  } ['rphf' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > 'deva' <'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' > ) ]
 Lookup: 4 0 0 "'blwf' below base forms in Davanagari2"  {"'blwf' below base forms in Davanagari2-1"  } ['blwf' ('dev2' <'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' > ) ]
@@ -57915,7 +57915,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: dev_rra_ra.half
+StartChar: dev_eyelash_ra.half
 Encoding: 60285 -1 2783
 Width: 275
 Flags: HMW
@@ -57936,9 +57936,9 @@ SplineSet
  285 522 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'akhn' akhand in Devanagari-eyelash-ra" radeva ZWJ virama
+Ligature2: "'akhn' akhand in Devanagari2-eyelash-ra" radeva virama ZWJ
 Ligature2: "'half' Half Forms in Devanagari-simple" rradeva virama
-Ligature2: "'half' Half Forms in Devanagari-simple" radeva virama ZWJ
-LCarets2: 2 0 0 
 EndChar
 
 StartChar: dev_ka_ssa.akhn.half
@@ -66930,6 +66930,7 @@ SplineSet
  159 47 143 56 125 56 c 0
  99 55 82 40 82 4 c 0
 EndSplineSet
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'pres' pre-base substs in Devanagari for Sanskrit-pair" dev_ka.half ladeva
 EndChar
