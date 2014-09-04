@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1409776871
+ModificationTime: 1409849115
 PfmFamily: 33
 TTFWeight: 600
 TTFWidth: 5
@@ -304,13 +304,13 @@ KernClass2: 17 14 "'kern' kerns in Latin-small"
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  4 4 4 2
   Class: 182 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts dev_osign_reph.psts dev_ausign_reph.psts
   Class: 15 candrabindudeva
-  Class: 57 iideva ecandradeva ooesigndeva acandradeva oedeva ooedeva
+  Class: 96 iideva ecandradeva ocandradeva oesigndeva ooesigndeva ocandrasigndeva acandradeva oedeva ooedeva
   BClass: 182 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts dev_osign_reph.psts dev_ausign_reph.psts
   BClass: 15 candrabindudeva
-  BClass: 57 iideva ecandradeva ooesigndeva acandradeva oedeva ooedeva
+  BClass: 96 iideva ecandradeva ocandradeva oesigndeva ooesigndeva ocandrasigndeva acandradeva oedeva ooedeva
   FClass: 182 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts dev_osign_reph.psts dev_ausign_reph.psts
   FClass: 15 candrabindudeva
-  FClass: 57 iideva ecandradeva ooesigndeva acandradeva oedeva ooedeva
+  FClass: 96 iideva ecandradeva ocandradeva oesigndeva ooesigndeva ocandrasigndeva acandradeva oedeva ooedeva
  1 1 0
   ClsList: 2
   BClsList: 1
@@ -53385,7 +53385,7 @@ SplineSet
  307 95 354 127 355 169 c 0
  355 198.333 341 202 332 202 c 0
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 EndChar
 
 StartChar: udeva
@@ -53692,7 +53692,8 @@ StartChar: ocandradeva
 Encoding: 2321 2321 2634
 Width: 928
 Flags: HMW
-AnchorPoint: "dev-above" 697 764 basechar 0
+AnchorPoint: "dev-above" 687 722 basechar 0
+AnchorPoint: "dev-candrabindu" 555 780 basechar 0
 AnchorPoint: "dev-below" 794 1 basechar 0
 LayerCount: 2
 Fore
@@ -53712,7 +53713,7 @@ LayerCount: 2
 Fore
 Refer: 2622 2310 N 1 0 0 1 0 0 2
 Refer: 2631 2374 N 1 0 0 1 880 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: odeva
@@ -53726,7 +53727,7 @@ LayerCount: 2
 Fore
 Refer: 2622 2310 N 1 0 0 1 0 0 2
 Refer: 2632 2375 N 1 0 0 1 890 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: audeva
@@ -53740,7 +53741,7 @@ LayerCount: 2
 Fore
 Refer: 2622 2310 N 1 0 0 1 0 0 2
 Refer: 2633 2376 N 1 0 0 1 880 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: ecandradeva
@@ -53754,7 +53755,7 @@ LayerCount: 2
 Fore
 Refer: 2629 2319 N 1 0 0 1 0 0 2
 Refer: 2630 2373 N 1 0 0 1 342 4 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: eshortdeva
@@ -53768,7 +53769,7 @@ LayerCount: 2
 Fore
 Refer: 2629 2319 N 1 0 0 1 0 0 2
 Refer: 2631 2374 N 1 0 0 1 470 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: anusvaradeva
@@ -55113,7 +55114,7 @@ LayerCount: 2
 Fore
 Refer: 2629 2319 N 1 0 0 1 0 0 2
 Refer: 2632 2375 N 1 0 0 1 470 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: ngadeva
@@ -55201,6 +55202,9 @@ Encoding: 2362 2362 2684
 Width: 0
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "dev-mark-above" -130 756 basemark 0
+AnchorPoint: "dev-candrabindu-abv" -220 774 basemark 0
+AnchorPoint: "vedic-above" 19 800 basemark 0
 AnchorPoint: "dev-above" -53 613 mark 0
 LayerCount: 2
 Fore
@@ -55211,7 +55215,7 @@ SplineSet
  -131 810 l 1
  -43 810 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: ooesigndeva
@@ -56374,13 +56378,14 @@ StartChar: acandradeva
 Encoding: 2418 2418 2734
 Width: 737
 Flags: HMW
+AnchorPoint: "dev-above" 597 722 basechar 0
+AnchorPoint: "dev-candrabindu" 465 780 basechar 0
 AnchorPoint: "dev-below" 594 1 basechar 0
-AnchorPoint: "dev-above" 597 824 basechar 0
 LayerCount: 2
 Fore
 Refer: 2621 2309 N 1 0 0 1 0 0 2
 Refer: 2630 2373 N 1 0 0 1 704 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -56423,7 +56428,7 @@ LayerCount: 2
 Fore
 Refer: 2622 2310 N 1 0 0 1 0 0 2
 Refer: 2793 -1 N 1 0 0 1 0 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uedeva
@@ -58268,7 +58273,7 @@ SplineSet
  -131 624 l 1
  -197 705 -228 743 -228 790 c 0
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'rphf' Reph Form in Devanagari subtable" radeva virama
 EndChar
@@ -58359,7 +58364,7 @@ SplineSet
  -103 729 -79 680 -27 624 c 1
  -27 624 -95 624 -129 624 c 1
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-3" esigndeva dev_ra.rphf
 EndChar
@@ -58391,7 +58396,7 @@ SplineSet
  -168 900 l 1
  -145.751 853.764 l 1
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-3" aisigndeva dev_ra.rphf
 EndChar
@@ -59945,7 +59950,7 @@ SplineSet
  -108 825 l 1
  -108 805 -88 759 -29 759 c 0
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 EndChar
 
 StartChar: dev_eshortsign_reph.abvs
@@ -59977,7 +59982,7 @@ SplineSet
  -23 634 l 1x3c
 EndSplineSet
 Refer: 2791 -1 N 1 0 0 1 53 0 2
-Validated: 1674245
+Validated: 35845
 Ligature2: "'abvs' above-base substs in Devanagari-3" eshortsigndeva dev_ra.rphf
 LCarets2: 1 0 
 EndChar
@@ -91788,7 +91793,7 @@ LayerCount: 2
 Fore
 Refer: 2791 -1 N 1 0 0 1 220 0 2
 Refer: 2687 2366 N 1 0 0 1 0 0 2
-Validated: 1146885
+Validated: 32773
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" aasigndeva dev_ra.rphf
 EndChar
@@ -91806,7 +91811,7 @@ LayerCount: 2
 Fore
 Refer: 2794 -1 N 1 0 0 1 220 0 2
 Refer: 2687 2366 N 1 0 0 1 0 0 2
-Validated: 1146885
+Validated: 32773
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" osigndeva dev_ra.rphf
 EndChar
@@ -91824,7 +91829,7 @@ LayerCount: 2
 Fore
 Refer: 2687 2366 N 1 0 0 1 0 0 2
 Refer: 2795 -1 N 1 0 0 1 210 0 2
-Validated: 1146881
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" ausigndeva dev_ra.rphf
 EndChar
@@ -91844,7 +91849,7 @@ LayerCount: 2
 Fore
 Refer: 2687 2366 N 1 0 0 1 0 0 2
 Refer: 2829 -1 N 1 0 0 1 180 0 2
-Validated: 1146885
+Validated: 32773
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" oshortsigndeva dev_ra.rphf
 EndChar
@@ -91853,7 +91858,7 @@ StartChar: dev_ooesign_reph.abvs
 Encoding: 60372 -1 3722
 Width: 226
 GlyphClass: 4
-Flags: W
+Flags: HW
 AnchorPoint: "vedic-above" 249 640 basemark 0
 AnchorPoint: "dev-candrabindu-abv" 200 654 basemark 0
 AnchorPoint: "dev-mark-above" 230 626 basemark 0
@@ -91892,7 +91897,7 @@ SplineSet
  102 706 85 743 85 790 c 0
 EndSplineSet
 Refer: 2689 2368 N 1 0 0 1 0 0 2
-Validated: 1674277
+Validated: 35877
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" iisigndeva dev_ra.rphf
 EndChar
