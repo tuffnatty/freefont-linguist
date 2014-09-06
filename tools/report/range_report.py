@@ -1,5 +1,4 @@
-#!/usr/bin/env ../utility/fontforge-interp.sh
-
+#!/usr/bin/python
 __license__ = """
 This file is part of GNU FreeFont.
 

@@ -96,7 +96,7 @@ ulUnicodeRange = [
 			interval(0x1DFC, 0x1DFF)	# Supplement
 			] ],
 [7,	'Greek and Coptic',     [interval(0x0370, 0x0377),
-			interval(0x037A, 0x037E),
+			interval(0x037A, 0x037F),
 			interval(0x0384, 0x038A),
 			interval(0x038C, 0x038C),
 			interval(0x038E, 0x03A1),
@@ -107,9 +107,9 @@ ulUnicodeRange = [
 		] ],
 [9,	'Cyrillic (+suppl., +ext.-A, -B)',     [
 	interval(0x0400, 0x04FF),	# Cyrillic
-	interval(0x0500, 0x0527),	# Cyrillic Supplement
+	interval(0x0500, 0x052F),	# Cyrillic Supplement
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
-	interval(0xA640, 0xA697),	# Cyrillic Extended-B
+	interval(0xA640, 0xA69D),	# Cyrillic Extended-B
 	interval(0xA69F, 0xA69F)
 	]
 	],
@@ -117,7 +117,7 @@ ulUnicodeRange = [
 			interval(0x0559, 0x055F),
 			interval(0x0561, 0x0587),
 			interval(0x0589, 0x058A),
-			interval(0x058F, 0x058F)
+			interval(0x058D, 0x058F)
 			]
 	],
 [11,	'Hebrew',    [
@@ -128,19 +128,18 @@ ulUnicodeRange = [
 		]],
 [12,	'Vai',    [interval(0xA500, 0xA62B),
 		]],
-[13,	'Arabic (+suppl.)',     [interval(0x0600, 0x0603),
-			interval(0x0606, 0x061B),
+[13,	'Arabic (+suppl.)',     [interval(0x0600, 0x061C),
 			interval(0x061E, 0x06FF),
 			interval(0x0750, 0x077F)	# Supplement
 	]
 	],
 [14,	"N'Ko", [interval(0x07C0, 0x07FF)]],
-[15,	'Devanagari (+ext.)',     [ interval(0x0900, 0x0977),
-			interval(0x0979, 0x097F),
+[15,	'Devanagari (+ext.)',     [ interval(0x0900, 0x097F),
 			interval(0xA8E0, 0xA8FB),	# Extended
-			interval(0x1CD0, 0x1CF6)	# Vedic Extensions
+			interval(0x1CD0, 0x1CF6),	# Vedic Extensions
+			interval(0x1CF8, 0x1CF9)
 			]],
-[16,	'Bengali',     [interval(0x0981, 0x0983),
+[16,	'Bengali',     [interval(0x0980, 0x0983),
 		interval(0x0985, 0x098C),
 		interval(0x098F, 0x0990),
 		interval(0x0993, 0x09A8),
@@ -235,7 +234,7 @@ ulUnicodeRange = [
 		interval(0x0C78, 0x0C7f),
 			]
 			],
-[22,	'Kannada',     [interval(0x0C82, 0x0C83),
+[22,	'Kannada',     [interval(0x0C81, 0x0C83),
 		interval(0x0C85, 0x0C8C),		
 		interval(0x0C8E, 0x0C90),		
 		interval(0x0C92, 0x0CA8),		
@@ -250,7 +249,7 @@ ulUnicodeRange = [
 		interval(0x0CE6, 0x0CEF),		
 		interval(0x0CF1, 0x0CF2),		
 	]],
-[23,	'Malayalam',     [interval(0x0D02, 0x0D03),
+[23,	'Malayalam',     [interval(0x0D01, 0x0D03),
 		interval(0x0D05, 0x0D0C),
 		interval(0x0D0E, 0x0D10),
 		interval(0x0D12, 0x0D3A),
@@ -281,9 +280,9 @@ ulUnicodeRange = [
 		interval(0x1E00, 0x1EFF),	# Additional
 		interval(0x2C60, 0x2C7F),	# C
 		interval(0xA720, 0xA78E),	# D
-		interval(0xA790, 0xA793),	# D
-		interval(0xA7A0, 0xA7AA),	# D
-		interval(0xA7F8, 0xA7FF)	# D
+		interval(0xA790, 0xA7AD),	# D
+		interval(0xA7B0, 0xA7B1),	# D
+		interval(0xA7F7, 0xA7FF)	# D
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
 		interval(0x1F18, 0x1F1D),
@@ -304,22 +303,25 @@ ulUnicodeRange = [
 	]],
 [31,	'General Punctuation (+suppl.)',     [interval(0x2000, 0x2064),
 		# interval(0x206A, 0x206F),	# deprecated
-		interval(0x2E00, 0x2E31),	# Supplemental
+		interval(0x2E00, 0x2E42),	# Supplemental
 	]],
 [32,	'Superscripts and Subscripts',     [interval(0x2070, 0x2071),
 		interval(0x2074, 0x208E),
 		interval(0x2090, 0x209C)
 	]
 	],
-[33,	'Currency Symbols',     [interval(0x20A0, 0x20BA)]],
+[33,	'Currency Symbols',     [interval(0x20A0, 0x20BD)]],
 [34,	'Combining Diacritical Marks for Symbols',     [interval(0x20D0, 0x20F0)]],
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
 [36,	'Number Forms',     [interval(0x2150, 0x2189)]],
 [37,	'Arrows (+suppl.)',     [interval(0x2190, 0x21FF),
 	interval(0x27F0, 0x27FF),	# Supplemental Arrows-A
 	interval(0x2900, 0x297F),	# Supplemental Arrows-B
-	interval(0x2B00, 0x2B4C),	# Miscellaneous Symbols and Arrows
-	interval(0x2B40, 0x2BF9)	# "
+	interval(0x2B00, 0x2B73),	# Miscellaneous Symbols and Arrows
+	interval(0x2B76, 0x2B95),	# "
+	interval(0x2B98, 0x2BB9),	# "
+	interval(0x2BBD, 0x2BC8),	# "
+	interval(0x2BCA, 0x2BD1)	# "
 	]],
 [38,	'Mathematical Operators',     [ 
 	interval(0x2200, 0x22FF),
@@ -328,10 +330,17 @@ ulUnicodeRange = [
 	interval(0x2980, 0x29FF)	# Miscellaneous Mathematical Symbols-B
 	]
 		],
-[39,	'Miscellaneous Technical',     [interval(0x2300, 0x23F3)]],
+[39,	'Miscellaneous Technical',     [interval(0x2300, 0x23FA)]],
 [40,	'Control Pictures',     [interval(0x2400, 0x2426)]],
 [41,	'Optical Character Recognition',     [interval(0x2440, 0x244A)]],
-[42,	'Enclosed Alphanumerics',     [interval(0x2460, 0x24FF)]],
+[42,	'Enclosed Alphanumerics',     [
+	interval(0x2460, 0x24FF),
+	interval(0x1F100, 0x1F10C),	# Supplement
+	interval(0x1F110, 0x1F12E),	# Supplement
+	interval(0x1F130, 0x1F16B),	# Supplement
+	interval(0x1F170, 0x1F19A),	# Supplement
+	interval(0x1F1E6, 0x1F1FF)	# Supplement
+	]],
 [43,	'Box Drawing',     [interval(0x2500, 0x257F)]],
 [44,	'Block Elements',     [interval(0x2580, 0x259F)]],
 [45,	'Geometric Shapes',     [interval(0x25A0, 0x25FF)]],
@@ -339,7 +348,7 @@ ulUnicodeRange = [
 			interval(0x2600, 0x26FF),
 			]
 			],
-[47,	'Dingbats',     [interval(0x2701, 0x27BF),
+[47,	'Dingbats',     [interval(0x2700, 0x27BF),
 	]],
 [48,	'CJK Symbols and Punctuation', [interval(0x3000, 0x303F)]],
 [49,	'Hiragana', [interval(0x3040, 0x309F)]],
@@ -375,7 +384,7 @@ ulUnicodeRange = [
 				interval(0xFDF0, 0xFDFD)
 				]
 		],
-[64,	'Combining Half Marks', [interval(0xFE20, 0xFE26)]],
+[64,	'Combining Half Marks', [interval(0xFE20, 0xFE2D)]],
 [65,	'CJK Compatibility Forms', [interval(0xFE10, 0xFE1F),	# Vertical forms
 		interval(0xFE30, 0xFE4F)	# Compatability forms
 	]],
@@ -407,6 +416,7 @@ ulUnicodeRange = [
 		interval(0x0DCF, 0x0DD4),
 		interval(0x0DD6, 0x0DD6),
 		interval(0x0DD8, 0x0DDF),
+		interval(0x0DE6, 0x0DEF),
 		interval(0x0DF2, 0x0DF4)]],
 [74, 	'Myanmar', [interval(0x1000, 0x109F)]],
 [75, 	'Ethiopic (+suppl., +ext.)', [
@@ -438,7 +448,7 @@ ulUnicodeRange = [
 		]
 		],
 [78, 	'Ogham', [interval(0x1680, 0x169F)]],
-[79, 	'Runic', [interval(0x16A0, 0x16F0)]],
+[79, 	'Runic', [interval(0x16A0, 0x16F8)]],
 [80, 	'Khmer (+symbols)', [interval(0x1780, 0x17FF),
 		interval(0x19E0, 0x19FF)	# symbols
 	]],
@@ -519,7 +529,7 @@ ulUnicodeRange = [
 [99, 	'Yijing Hexagram Symbols', [interval(0x4DC0, 0x4DFF)]],
 [100, 	'Syloti Nagri', [interval(0xA800, 0xA82F)]],
 [101, 	'Linear B Syllabary etc', [interval(0x10000, 0x1013F)], True],
-[102, 	'Ancient Greek Numbers', [interval(0x10140, 0x1018F)], True],
+[102, 	'Ancient Greek Numbers', [interval(0x10140, 0x1018C)], True],
 [103, 	'Ugaritic', [interval(0x10380, 0x1039D),
 		interval(0x1039F, 0x1039F)
 	], True],
@@ -531,7 +541,10 @@ ulUnicodeRange = [
 [107, 	'Cypriot Syllabary', [interval(0x10800, 0x1083F)], True],
 [108, 	'Kharoshthi', [interval(0x10A00, 0x10A5F)], True],
 [109, 	'Tai Xuan Jing Symbols', [interval(0x1D300, 0x1D35F)], True],
-[110, 	'Cuneiform (+numbers)', [interval(0x12000, 0x1247F)], True],
+[110, 	'Cuneiform (+numbers)', [interval(0x12000, 0x12398),
+		interval(0x12400, 0x1246E),
+		interval(0x12470, 0x12474)
+		], True],
 [111, 	'Counting Rod Numerals', [interval(0x1D360, 0x1D37F)], True],
 [112, 	'Sundanese', [interval(0x1B80, 0x1BAA),
 		interval(0x1BAE, 0x1BB9)
