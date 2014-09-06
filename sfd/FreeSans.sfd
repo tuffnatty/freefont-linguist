@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1409937556
+ModificationTime: 1410039498
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -50,6 +50,8 @@ OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2FamilyClass: 2053
 OS2Vendor: 'GNU '
+Lookup: 1 0 0 "subst. anusvara for candrabindu in Devanagari"  {"subst. anusvara for candrabindu in Devanagari-1"  } []
+Lookup: 1 0 0 "subst. alt. candra in Devanagari"  {"subst. alt. candra in Devanagari-1"  } []
 Lookup: 1 0 0 "do_nothing"  {} []
 Lookup: 4 0 0 "subst. below-base forms in Malay+AQEA-lam"  {"subst. below-base u,uu in Malay+AQEA-lam-1"  "subst. below-base candra-x in Malay+AQEA-lam-1"  "subst. below-base x-candra in Malay+AQEA-lam-1"  } []
 Lookup: 1 0 0 "subst. candrakala by spacing glyph in Malay+AQEA-lam"  {"subst. candrakala by spacing glyph Malay+AQEA-lam-1"  } []
@@ -198,7 +200,6 @@ Lookup: 4 0 0 "'akhn' akhand in Tamil"  {"'akhn' akhand in Tamil-1"  } ['akhn' (
 Lookup: 4 0 0 "'akhn' akhand in Tamil2"  {"'akhn' akhand in Tamil2-1"  } ['akhn' ('taml' <'dflt' > 'tml2' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' post-base subst. in Tamil"  {"'psts' Post Base Substitutions in Tamil-srii"  "'psts' Post Base Substitutions in Tamil-1"  } ['psts' ('taml' <'dflt' > 'tml2' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' tone ligatures for IPA"  {"'liga' tone ligatures for IPA-1"  } ['liga' ('DFLT' <'dflt' > 'armn' <'dflt' > 'beng' <'dflt' > 'cans' <'dflt' > 'cher' <'dflt' > 'cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'dflt' > 'guru' <'dflt' > 'hebr' <'IWR ' 'JII ' 'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > 'osma' <'dflt' > 'phnx' <'dflt' > 'syrc' <'dflt' > 'tfng' <'dflt' > 'ugar' <'dflt' > 'xpeo' <'dflt' > ) ]
-Lookup: 1 0 0 "subst. alt. candra in Devanagari"  {"subst. alt. candra in Devanagari-1"  } []
 Lookup: 4 0 0 "subst. placeholder for vocalic-reph in Devanagari for Sanskrit"  {"subst. placeholder for vocalic-reph in Devanagari for Sanskrit"  } []
 Lookup: 4 0 0 "subst. vocalic-sign for vocalic in Devanagair for Sanskrit"  {"subst vocalic-sign for vocalic in Devanagari for Sanskrit"  } []
 Lookup: 260 0 0 "'mark' marks"  {"'mark' marks middle"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'beng' <'dflt' > 'cans' <'dflt' > 'cher' <'dflt' > 'cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'dflt' > 'guru' <'dflt' > 'hebr' <'IWR ' 'JII ' 'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > 'osma' <'dflt' > 'phnx' <'dflt' > 'syrc' <'dflt' > 'tfng' <'dflt' > 'ugar' <'dflt' > 'xpeo' <'dflt' > ) ]
@@ -370,31 +371,43 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -20 {} 0 {} -10 {}
-ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  4 4 4 2
-  Class: 182 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts dev_osign_reph.psts dev_ausign_reph.psts
+ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
+  Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.psts dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
   Class: 15 candrabindudeva
-  Class: 80 iideva ecandradeva ocandradeva oesigndeva ooesigndeva acandradeva oedeva ooedeva
-  BClass: 182 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts dev_osign_reph.psts dev_ausign_reph.psts
+  Class: 266 ashortdeva iideva ecandradeva eshortdeva aideva ocandradeva oshortdeva odeva audeva oesigndeva ooesigndeva iisigndeva ecandrasigndeva eshortsigndeva esigndeva aisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva awsigndeva acandradeva oedeva ooedeva awdeva
+  Class: 9 isigndeva
+  Class: 413 kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva radeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva qadeva khhadeva ghhadeva zadeva dddhadeva rhadeva fadeva yyadeva dda_marwari zhadeva heavyyadeva ggadeva jjadeva dddadeva bbadeva
+  BClass: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.psts dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
   BClass: 15 candrabindudeva
-  BClass: 80 iideva ecandradeva ocandradeva oesigndeva ooesigndeva acandradeva oedeva ooedeva
-  FClass: 182 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts dev_osign_reph.psts dev_ausign_reph.psts
+  BClass: 266 ashortdeva iideva ecandradeva eshortdeva aideva ocandradeva oshortdeva odeva audeva oesigndeva ooesigndeva iisigndeva ecandrasigndeva eshortsigndeva esigndeva aisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva awsigndeva acandradeva oedeva ooedeva awdeva
+  BClass: 9 isigndeva
+  BClass: 413 kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva radeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva qadeva khhadeva ghhadeva zadeva dddhadeva rhadeva fadeva yyadeva dda_marwari zhadeva heavyyadeva ggadeva jjadeva dddadeva bbadeva
+  FClass: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.psts dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
   FClass: 15 candrabindudeva
-  FClass: 80 iideva ecandradeva ocandradeva oesigndeva ooesigndeva acandradeva oedeva ooedeva
+  FClass: 266 ashortdeva iideva ecandradeva eshortdeva aideva ocandradeva oshortdeva odeva audeva oesigndeva ooesigndeva iisigndeva ecandrasigndeva eshortsigndeva esigndeva aisigndeva ocandrasigndeva oshortsigndeva osigndeva ausigndeva awsigndeva acandradeva oedeva ooedeva awdeva
+  FClass: 9 isigndeva
+  FClass: 413 kadeva khadeva gadeva ghadeva ngadeva cadeva chadeva jadeva jhadeva nyadeva ttadeva tthadeva ddadeva ddhadeva nnadeva tadeva thadeva dadeva dhadeva nadeva nnnadeva padeva phadeva badeva bhadeva madeva yadeva radeva rradeva ladeva lladeva llladeva vadeva shadeva ssadeva sadeva hadeva qadeva khhadeva ghhadeva zadeva dddhadeva rhadeva fadeva yyadeva dda_marwari zhadeva heavyyadeva ggadeva jjadeva dddadeva bbadeva
  1 1 0
   ClsList: 2
   BClsList: 1
   FClsList:
  1
   SeqLookup: 0 "subst. alt. candra in Devanagari" 
+ 1 2 0
+  ClsList: 2
+  BClsList: 5 4
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
  1 1 0
   ClsList: 2
   BClsList: 3
   FClsList:
  1
-  SeqLookup: 0 "subst. alt. candra in Devanagari" 
-  ClassNames: "All_Others"  "hook"  "candra"  "iikara"  
-  BClassNames: "All_Others"  "hook"  "candra"  "iikara"  
-  FClassNames: "All_Others"  "hook"  "candra"  "iikara"  
+  SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
+  ClassNames: "All_Others"  "reph"  "candra"  "high"  "isign"  "cons"  
+  BClassNames: "All_Others"  "reph"  "candra"  "high"  "isign"  "cons"  
+  FClassNames: "All_Others"  "reph"  "candra"  "high"  "isign"  "cons"  
 EndFPST
 ChainSub2: class "'locl' local forms in Devanagari for Sanskrit-vocalic"  5 2 1 3
   Class: 6 virama
@@ -1219,7 +1232,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 2400 16 9
+WinInfo: 8336 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -1240,7 +1253,7 @@ Grid
   Named: "Georgian" 
 EndSplineSet
 AnchorClass2: "bng-stem-abv"  "'abvm' above-base mark in Bengali-1" "mlm-vowel-below"  "'blwm' vowel below in Malay+AQEA-lam-1" "dev-candrabindu-abv"  "'mkmk' mark-to-mark in Devanagari-above" "vedic-below"  "'mkmk' mark-to-mark in Devanagari Vedic" "vedic-above"  "'mkmk' mark-to-mark in Devanagari Vedic" "dev-mark-above"  "'mkmk' mark-to-mark in Devanagari-above" "below_gk"  "'mark' mark below in Greek and Coptic-1" "above_gk"  "'mark' mark above in Greek-1" "bng-phala"  "'mkmk' mark-to-mark in Bengali-1" "bng-round"  "'blwm' below-base round in Bengali" "bng-stem"  "'blwm' below-base stemmed in Bengali" "bng-rofola"  "'blwm' below-base rofola in Bengali" "stacked"  "'mkmk' mark-to-mark in Latin-1" "viet_tilde"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_hook"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_grave"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_acute"  "'mkmk' mark-to-mark in Latin for Viet-1" "taml_above"  "'abvm' above-base mark in Tamil-1" "dev-candrabindu"  "'abvm' above-base mark in Devanagari-candrabindu" "dev-anusvara"  "'abvm' above-base mark in Devanagari-anusvara" "bng-vowel"  "'blwm' below-base vowel in Bengali" "bng-nukta"  "'blwm' below-base nukta in Bengali" "dev-rakaar"  "'blwm' below-base mark in Devanagari-1" "dev-belowmark"  "'mkmk' mark-to-mark in Devanagari-above" "mlm-reph"  "'abvm' above reph in Malayalam-1" "mal-below"  "'blwm' marks below in Malay+AQEA-lam-1" "guj-nukta"  "'blwm' below-base mark in Gujarati-nukta" "gur-top-mid"  "'abvm' above-base mark in Gurmukhi-mid" "gur-nukta"  "'blwm' below-base mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' mark-to-mark in Gurmukhi" "gur-below-mid"  "'blwm' below-base mark in Gurmukhi mid" "guru_above"  "'abvm' above-base mark in Gurmukhi-general" "guru_below"  "'blwm' below-base mark in Gurmukhi-general" "syr_below"  "'mark' marks in Syriac 0" "syr_above"  "'mark' marks in Syriac 0" "above_mid_heb"  "'mark' marks in Hebrew 0" "vowel_below_yiddish"  "'mark' marks in Yiddish below" "vowel_above_heb"  "'mark' marks in Hebrew 0" "vowel_left_heb"  "'mark' marks in Hebrew 0" "vowel_below_heb"  "'mark' marks in Hebrew 2 subtable" "abovemk_cyr"  "'mkmk' mark-to-mark in Cyrillic 0" "topright"  "'mark' marks in Latin topright" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' marks middle" "ogonek"  "'mark' marks in Latin ogonek" "dev-above"  "'abvm' above-base mark in Devanagari-1" "gujr-0"  "'abvm' above-base mark in Gujarati-1" "dev-below"  "'blwm' below-base mark in Devanagari-1" "gujr-1"  "'blwm' below-base mark in Gujarati-1" "above"  "'mark' marks in Latin above" "below"  "'mark' marks in Latin below" 
-BeginChars: 131072 6593
+BeginChars: 131072 6595
 
 StartChar: space
 Encoding: 32 32 0
@@ -44905,7 +44918,8 @@ LayerCount: 2
 Fore
 Refer: 2147 2306 N 1 0 0 1 -3 56 2
 Refer: 2212 2373 N 1 0 0 1 3 0 2
-Validated: 32769
+Validated: 98305
+Substitution2: "subst. anusvara for candrabindu in Devanagari-1" anusvaradeva
 Substitution2: "subst. alt. candra in Devanagari-1" dev_candra_alt.psts
 EndChar
 
@@ -44957,7 +44971,7 @@ LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 707 0 2
 Refer: 2150 2309 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: adeva
@@ -45315,15 +45329,14 @@ Encoding: 2317 2317 2158
 Width: 433
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "dev-candrabindu" 55 760 basechar 0
-AnchorPoint: "dev-above" 217 804 basechar 0
+AnchorPoint: "dev-above" 217 801 basechar 0
 AnchorPoint: "dev-below" 328 -129 basechar 0
-AnchorPoint: "dev-anusvara" 110 660 basechar 0
+AnchorPoint: "dev-anusvara" 400 612 basechar 0
 LayerCount: 2
 Fore
 Refer: 2212 2373 N 1 0 0 1 322 4 2
 Refer: 2160 2319 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: eshortdeva
@@ -45331,15 +45344,14 @@ Encoding: 2318 2318 2159
 Width: 433
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "dev-above" 467 624 basechar 0
+AnchorPoint: "dev-above" 467 613 basechar 0
 AnchorPoint: "dev-below" 328 -129 basechar 0
-AnchorPoint: "dev-candrabindu" 411 613 basechar 0
-AnchorPoint: "dev-anusvara" 430 620 basechar 0
+AnchorPoint: "dev-anusvara" 410 612 basechar 0
 LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 470 0 2
 Refer: 2160 2319 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: edeva
@@ -45425,15 +45437,14 @@ Encoding: 2321 2321 2162
 Width: 914
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "dev-candrabindu" 519 760 basechar 0
 AnchorPoint: "dev-above" 677 814 basechar 0
 AnchorPoint: "dev-below" 804 1 basechar 0
-AnchorPoint: "dev-anusvara" 580 650 basechar 0
+AnchorPoint: "dev-anusvara" 850 611 basechar 0
 LayerCount: 2
 Fore
 Refer: 2212 2373 N 1 0 0 1 776 -8 2
 Refer: 2151 2310 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: oshortdeva
@@ -45449,7 +45460,7 @@ LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 880 0 2
 Refer: 2151 2310 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: odeva
@@ -45514,8 +45525,7 @@ GlyphClass: 2
 Flags: HMW
 AnchorPoint: "dev-above" 887 694 basechar 0
 AnchorPoint: "dev-below" 804 1 basechar 0
-AnchorPoint: "dev-candrabindu" 797 613 basechar 0
-AnchorPoint: "dev-anusvara" 786 620 basechar 0
+AnchorPoint: "dev-anusvara" 786 613 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -45562,7 +45572,7 @@ SplineSet
  71 511 l 1
  71 530 169 613 255 613 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: kadeva
@@ -46941,7 +46951,7 @@ StartChar: aasigndeva
 Encoding: 2366 2366 2205
 Width: 226
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" -60 654 basemark 0
+AnchorPoint: "dev-candrabindu-abv" -20 654 basemark 0
 AnchorPoint: "vedic-above" 89 640 basemark 0
 AnchorPoint: "dev-mark-above" 80 640 basemark 0
 AnchorPoint: "dev-below" 110 1 basechar 0
@@ -46958,7 +46968,7 @@ SplineSet
  236 613 l 1
  236 540 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: isigndeva
@@ -46966,7 +46976,6 @@ Encoding: 2367 2367 2206
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-anusvara" 570 620 basechar 0
 AnchorPoint: "dev-below" 108 1 basechar 0
 LayerCount: 2
 Fore
@@ -46989,7 +46998,7 @@ SplineSet
  58 796 140 869 253 869 c 0
  411 869 551 733 648 613 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: iisigndeva
@@ -46997,7 +47006,6 @@ Encoding: 2368 2368 2207
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" 150 654 basemark 0
 AnchorPoint: "vedic-above" 129 670 basemark 0
 AnchorPoint: "dev-mark-above" 180 700 basemark 0
 AnchorPoint: "dev-below" 108 1 basechar 0
@@ -47024,7 +47032,7 @@ SplineSet
  -229 647 -243 683 -243 720 c 0
  -243 778 -176 855 -63 855 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: usigndeva
@@ -47132,10 +47140,8 @@ Encoding: 2373 2373 2212
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" -291 652 mark 0
 AnchorPoint: "vedic-above" -211 760 basemark 0
-AnchorPoint: "dev-mark-above" -170 770 basemark 0
-AnchorPoint: "dev-anusvara" -190 653 basechar 0
+AnchorPoint: "dev-mark-above" 80 700 basemark 0
 AnchorPoint: "dev-above" -114 615 mark 0
 LayerCount: 2
 Fore
@@ -47148,7 +47154,7 @@ SplineSet
  -229 827 l 1
  -229 743 -136 728 -113 728 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: eshortsigndeva
@@ -47156,12 +47162,9 @@ Encoding: 2374 2374 2213
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" -80 654 basemark 0
 AnchorPoint: "vedic-above" -61 640 basemark 0
-AnchorPoint: "dev-mark-above" -70 700 basemark 0
-AnchorPoint: "dev-candrabindu" -80 613 basechar 0
-AnchorPoint: "dev-anusvara" -80 613 basechar 0
-AnchorPoint: "dev-above" -60 613 mark 0
+AnchorPoint: "dev-mark-above" -90 700 basemark 0
+AnchorPoint: "dev-above" -80 614 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -47179,7 +47182,7 @@ SplineSet
  -126 789 -81 737 -81 701 c 2
  -81 614 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: esigndeva
@@ -47187,11 +47190,8 @@ Encoding: 2375 2375 2214
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" -140 654 basemark 0
+AnchorPoint: "dev-mark-above" -151 700 basemark 0
 AnchorPoint: "vedic-above" -91 640 basemark 0
-AnchorPoint: "dev-mark-above" -150 656 basemark 0
-AnchorPoint: "dev-candrabindu" -179 613 basechar 0
-AnchorPoint: "dev-anusvara" -170 620 basechar 0
 AnchorPoint: "dev-above" -75 614 mark 0
 LayerCount: 2
 Fore
@@ -47202,7 +47202,7 @@ SplineSet
  -327 900 l 1
  -76 613 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: aisigndeva
@@ -47210,11 +47210,8 @@ Encoding: 2376 2376 2215
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" -110 654 basemark 0
+AnchorPoint: "dev-mark-above" -121 700 basemark 0
 AnchorPoint: "vedic-above" -91 640 basemark 0
-AnchorPoint: "dev-mark-above" -120 656 basemark 0
-AnchorPoint: "dev-candrabindu" -109 613 basechar 0
-AnchorPoint: "dev-anusvara" -120 620 basechar 0
 AnchorPoint: "dev-above" -71 614 mark 0
 LayerCount: 2
 Fore
@@ -47228,7 +47225,7 @@ SplineSet
  -211 900 l 1
  -72 613 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: ocandrasigndeva
@@ -47238,13 +47235,12 @@ GlyphClass: 4
 Flags: HMW
 AnchorPoint: "vedic-above" 299 640 basemark 0
 AnchorPoint: "dev-mark-above" 70 750 basemark 0
-AnchorPoint: "dev-anusvara" 30 660 basechar 0
 AnchorPoint: "dev-below" 114 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 2212 2373 N 1 0 0 1 227 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: oshortsigndeva
@@ -47252,17 +47248,14 @@ Encoding: 2378 2378 2217
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-mark-above" 190 640 basemark 0
-AnchorPoint: "dev-candrabindu-abv" 150 654 basemark 0
+AnchorPoint: "dev-mark-above" 159 700 basemark 0
 AnchorPoint: "vedic-above" 199 640 basemark 0
-AnchorPoint: "dev-candrabindu" 121 613 basechar 0
-AnchorPoint: "dev-anusvara" 130 620 basechar 0
 AnchorPoint: "dev-below" 115 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 2213 2374 N 1 0 0 1 228 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: osigndeva
@@ -47270,11 +47263,8 @@ Encoding: 2379 2379 2218
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" 80 654 basemark 0
+AnchorPoint: "dev-mark-above" 79 700 basemark 0
 AnchorPoint: "vedic-above" 149 640 basemark 0
-AnchorPoint: "dev-mark-above" 120 640 basemark 0
-AnchorPoint: "dev-candrabindu" 60 613 basechar 0
-AnchorPoint: "dev-anusvara" 60 620 basechar 0
 AnchorPoint: "dev-below" 111 1 basechar 0
 LayerCount: 2
 Fore
@@ -47293,7 +47283,7 @@ SplineSet
  236 613 l 1
  236 540 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: ausigndeva
@@ -47301,11 +47291,8 @@ Encoding: 2380 2380 2219
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" 120 654 basemark 0
+AnchorPoint: "dev-mark-above" 99 700 basemark 0
 AnchorPoint: "vedic-above" 189 640 basemark 0
-AnchorPoint: "dev-mark-above" 140 640 basemark 0
-AnchorPoint: "dev-candrabindu" 111 613 basechar 0
-AnchorPoint: "dev-anusvara" 100 620 basechar 0
 AnchorPoint: "dev-below" 118 1 basechar 0
 LayerCount: 2
 Fore
@@ -47327,7 +47314,7 @@ SplineSet
  236 613 l 1
  236 540 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1575937
 EndChar
 
 StartChar: virama
@@ -48151,14 +48138,13 @@ Encoding: 2418 2418 2252
 Width: 717
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "dev-anusvara" 490 660 basechar 0
+AnchorPoint: "dev-anusvara" 790 610 basechar 0
 AnchorPoint: "dev-above" 597 804 basechar 0
-AnchorPoint: "dev-candrabindu" 449 760 basechar 0
 LayerCount: 2
 Fore
 Refer: 2212 2373 N 1 0 0 1 704 0 2
 Refer: 2150 2309 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: cedi
@@ -69039,7 +69025,6 @@ StartChar: dev_ii_wide_UNUSED
 Encoding: 60330 -1 2976
 Width: 226
 Flags: HMW
-AnchorPoint: "dev-anusvara" 80 620 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69147,7 +69132,6 @@ StartChar: dev_i_narrow_UNUSED
 Encoding: 60335 -1 2979
 Width: 226
 Flags: HMW
-AnchorPoint: "dev-anusvara" 510 620 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69669,7 +69653,7 @@ LayerCount: 2
 Fore
 Refer: 2990 -1 N 1 0 0 1 60 0 2
 Refer: 2214 2375 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" esigndeva dev_ra.rphf
 EndChar
@@ -69687,7 +69671,7 @@ Fore
 Refer: 2990 -1 N 1 0 0 1 297 0 2
 Refer: 5279 2362 N 1 0 0 1 113 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" ooesigndeva dev_ra.rphf
 EndChar
@@ -69705,7 +69689,7 @@ LayerCount: 2
 Fore
 Refer: 2993 -1 N 1 0 0 1 200 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32773
+Validated: 1146885
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-3" osigndeva dev_ra.rphf
 Ligature2: "'abvs' above-base substs in Devanagari-3" dev_ra.rphf osigndeva
@@ -69717,7 +69701,6 @@ Encoding: 60367 -1 2996
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-anusvara" 840 620 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -108423,7 +108406,7 @@ AnchorPoint: "dev-above" -117 619 mark 0
 LayerCount: 2
 Fore
 Refer: 2146 2305 N -1 0 0 -1 -226 1556 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: longecandradeva
@@ -108457,9 +108440,8 @@ Encoding: 2382 2382 4445
 Width: 149
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" -120 654 basemark 0
+AnchorPoint: "dev-mark-above" -21 700 basemark 0
 AnchorPoint: "vedic-above" 189 640 basemark 0
-AnchorPoint: "dev-mark-above" 0 640 basemark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -108471,7 +108453,7 @@ SplineSet
  159 613 l 1
  159 540 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: zhadeva
@@ -108791,11 +108773,11 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-32 647 m 1
- 32 729 l 1
- 484 729 l 1
- 484 647 l 1
- 32 647 l 1
+32 647 m 5
+ 32 729 l 5
+ 484 729 l 5
+ 484 647 l 5
+ 32 647 l 5
 32 565 m 1
  484 565 l 1
  484 483 l 1
@@ -135600,14 +135582,13 @@ Encoding: 2419 2419 5272
 Width: 717
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "dev-anusvara" 530 730 basechar 0
-AnchorPoint: "dev-candrabindu" 451 713 basechar 0
+AnchorPoint: "dev-anusvara" 660 611 basechar 0
 AnchorPoint: "dev-above" 723 614 basechar 0
 LayerCount: 2
 Fore
 Refer: 5279 2362 N 1 0 0 1 680 0 2
 Refer: 2150 2309 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ooedeva
@@ -135615,14 +135596,13 @@ Encoding: 2420 2420 5273
 Width: 914
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "dev-anusvara" 740 740 basechar 0
-AnchorPoint: "dev-candrabindu" 661 713 basechar 0
+AnchorPoint: "dev-anusvara" 860 611 basechar 0
 AnchorPoint: "dev-above" 913 614 basechar 0
 LayerCount: 2
 Fore
 Refer: 5279 2362 N 1 0 0 1 890 0 2
 Refer: 2151 2310 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: awdeva
@@ -135630,14 +135610,13 @@ Encoding: 2421 2421 5274
 Width: 914
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "dev-anusvara" 880 614 basechar 0
 AnchorPoint: "dev-above" 923 614 basechar 0
-AnchorPoint: "dev-candrabindu" 911 613 basechar 0
-AnchorPoint: "dev-anusvara" 910 620 basechar 0
 LayerCount: 2
 Fore
-Refer: 5822 -1 N 1 0 0 1 30 0 2
+Refer: 5822 -1 N 1 0 0 1 900 0 2
 Refer: 2151 2310 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uedeva
@@ -135671,15 +135650,13 @@ Encoding: 2383 2383 5277
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" 180 654 basemark 0
+AnchorPoint: "dev-mark-above" 199 700 basemark 0
 AnchorPoint: "vedic-above" 219 640 basemark 0
-AnchorPoint: "dev-mark-above" 220 690 basemark 0
-AnchorPoint: "dev-anusvara" 190 620 basechar 0
 LayerCount: 2
 Fore
-Refer: 5822 -1 N 1 0 0 1 -670 0 2
+Refer: 5822 -1 N 1 0 0 1 217 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: ooesigndeva
@@ -135687,14 +135664,13 @@ Encoding: 2363 2363 5278
 Width: 226
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "dev-candrabindu-abv" -35 764 basemark 0
-AnchorPoint: "dev-mark-above" 40 790 basemark 0
+AnchorPoint: "dev-mark-above" 179 700 basemark 0
 AnchorPoint: "dev-below" 111 1 basechar 0
 LayerCount: 2
 Fore
 Refer: 5279 2362 N 1 0 0 1 200 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: oesigndeva
@@ -135703,9 +135679,8 @@ Width: 0
 GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev-above" -84 615 mark 0
-AnchorPoint: "dev-mark-above" -171 788 basemark 0
-AnchorPoint: "dev-candrabindu-abv" -205 754 basemark 0
-AnchorPoint: "dev-mark-above" -122 639.6 mark 0
+AnchorPoint: "dev-mark-above" -11 700 basemark 0
+AnchorPoint: "dev-mark-above" -122 614.6 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -135715,7 +135690,7 @@ SplineSet
  -121 800 l 1
  -53 800 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: uni2D66
@@ -135919,7 +135894,7 @@ GlyphClass: 4
 Flags: HMW
 AnchorPoint: "dev-above" -31 663 mark 0
 AnchorPoint: "dev-candrabindu" -175 663 mark 0
-AnchorPoint: "dev-candrabindu-abv" -171 702 mark 0
+AnchorPoint: "dev-candrabindu-abv" -171 692 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -136500,7 +136475,7 @@ LayerCount: 2
 Fore
 Refer: 2990 -1 N 1 0 0 1 220 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-1" aasigndeva dev_ra.rphf
 EndChar
@@ -136518,7 +136493,7 @@ LayerCount: 2
 Fore
 Refer: 6589 -1 N 1 0 0 1 190 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32773
+Validated: 1146885
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-3" ausigndeva dev_ra.rphf
 Ligature2: "'abvs' above-base substs in Devanagari-3" dev_ra.rphf ausigndeva
@@ -150190,35 +150165,35 @@ EndChar
 
 StartChar: dev_kash_ausign
 Encoding: 60236 -1 5822
-Width: 888
+Width: 0
 GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-746 614 m 1
- 683 614 l 1
- 683 655 656 679 623 679 c 0
- 597 679 523 661 472 661 c 0
- 429 661 376 724 376 783 c 2
- 376 830 l 1
- 442 830 l 1
- 442 807 l 2
- 442 754 461 723 491 723 c 0
- 538 723 574 739 624 739 c 0
- 701 739 746 687 746 651 c 2
- 746 614 l 1
-849 614 m 1
- 786 614 l 1
- 786 696 l 2
- 786 739 757 751 735 751 c 0
- 701 751 659 789 659 833 c 2
- 659 860 l 1
- 725 860 l 1
- 725 847 l 2
- 725 823 750 809 777 809 c 0
- 822 809 849 766 849 721 c 2
- 849 614 l 1
+-164 614 m 1
+ -227 614 l 1
+ -227 655 -254 679 -287 679 c 0
+ -313 679 -387 661 -438 661 c 0
+ -481 661 -534 724 -534 783 c 2
+ -534 830 l 1
+ -468 830 l 1
+ -468 807 l 2
+ -468 754 -449 723 -419 723 c 0
+ -372 723 -336 739 -286 739 c 0
+ -209 739 -164 687 -164 651 c 2
+ -164 614 l 1
+-61 614 m 1
+ -124 614 l 1
+ -124 696 l 2
+ -124 739 -153 751 -175 751 c 0
+ -209 751 -251 789 -251 833 c 2
+ -251 860 l 1
+ -185 860 l 1
+ -185 847 l 2
+ -185 823 -160 809 -133 809 c 0
+ -88 809 -61 766 -61 721 c 2
+ -61 614 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -152101,7 +152076,6 @@ StartChar: dev_i_wide_UNUSED
 Encoding: 60352 -1 5854
 Width: 226
 Flags: HMW
-AnchorPoint: "dev-anusvara" 620 620 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -152348,7 +152322,7 @@ LayerCount: 2
 Fore
 Refer: 2147 2306 N 1 0 0 1 793 0 2
 Refer: 5854 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dev_ya_open
@@ -160499,67 +160473,67 @@ EndChar
 StartChar: spacing_candrabindudeva
 Encoding: 43250 43250 6119
 Width: 374
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 2146 2305 N 1 0 0 1 297 -214 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: candrabindu_virama
 Encoding: 43251 43251 6120
 Width: 374
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 6119 43250 N 1 0 0 1 0 0 2
 Refer: 2220 2381 S 1 0 0 1 256 403 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: candrabindo_twodeva
 Encoding: 43252 43252 6121
 Width: 374
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 6119 43250 N 1 0 0 1 0 -290 2
 Refer: 6119 43250 N 1 0 0 1 0 0 2
 Refer: 2220 2381 N 1 0 0 1 262 146 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: candrabinduthreedeva
 Encoding: 43253 43253 6122
 Width: 374
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 6119 43250 N 1 0 0 1 0 0 2
 Refer: 2242 2408 N 0.75 0 0 0.75 -47 -78 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: candrabinduavagrahadeva
 Encoding: 43254 43254 6123
 Width: 374
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 6119 43250 N 1 0 0 1 0 0 2
 Refer: 2243 2409 N 0.75 0 0 0.75 -30 -70 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniA8F7
 Encoding: 43255 43255 6124
 Width: 374
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 6119 43250 N 1 0 0 1 0 0 2
 Refer: 2204 2365 S 0.75 0 0 0.75 1 -80 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: caretdeva
@@ -160638,45 +160612,45 @@ EndChar
 StartChar: ardhavisarga_ved
 Encoding: 7410 7410 6131
 Width: 375
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 2212 2373 S 1 0 0 1 301 -290 2
 Refer: 2212 2373 S -1 0 0 -1 74 955 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: ardhavisargarot_ved
 Encoding: 7411 7411 6132
 Width: 437
-Flags: W
+Flags: HW
 LayerCount: 2
 Fore
 Refer: 6131 7410 N 0 1 -1 0 552 83 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: candraabv_ved
 Encoding: 7412 7412 6133
 Width: 0
-Flags: W
+Flags: HW
 AnchorPoint: "vedic-above" -301 652 mark 0
 AnchorPoint: "dev-above" -310 610 mark 0
 LayerCount: 2
 Fore
 Refer: 2212 2373 N 1 0 0 1 -60 -10 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: candra_low_ved
 Encoding: 7384 7384 6134
 Width: 0
-Flags: W
+Flags: HW
 AnchorPoint: "dev-below" -149.75 -2 mark 0
 LayerCount: 2
 Fore
 Refer: 2212 2373 N 1 0 0 1 -40 -890 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: prenkha_ved
@@ -169705,7 +169679,7 @@ LayerCount: 2
 Fore
 Refer: 6590 -1 N 1 0 0 1 160 0 2
 Refer: 2205 2366 N 1 0 0 1 0 0 2
-Validated: 32773
+Validated: 1146885
 LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-3" oshortsigndeva dev_ra.rphf
 Ligature2: "'abvs' above-base substs in Devanagari-3" dev_ra.rphf oshortsigndeva
@@ -169799,7 +169773,8 @@ LayerCount: 2
 Fore
 Refer: 2990 -1 N 1 0 0 1 17 0 2
 Refer: 5279 2362 N 1 0 0 1 -167 0 2
-Validated: 32769
+Validated: 1146881
+LCarets2: 1 0 
 Ligature2: "'abvs' above-base substs in Devanagari-3" oesigndeva dev_ra.rphf
 EndChar
 
@@ -169833,7 +169808,42 @@ SplineSet
  366 363 352 335 331 315 c 1
  367 286 393 241 393 182 c 0
 EndSplineSet
-Validated: 1575937
+Validated: 3073
+EndChar
+
+StartChar: candrabindu_mal
+Encoding: 3329 3329 6593
+Width: 0
+VWidth: 1454
+GlyphClass: 4
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 5284 3406 S 0.75 0 0 0.75 -369 293.5 2
+Refer: 4709 3405 N 1 0 0 1 -330 40 2
+Validated: 98305
+EndChar
+
+StartChar: Ruble
+Encoding: 8381 8381 6594
+Width: 676
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+32 139 m 1
+ 32 221 l 1
+ 424 221 l 1
+ 424 139 l 1
+ 32 139 l 1
+32 309 m 1
+ 32 391 l 1
+ 174 391 l 1
+ 174 309 l 1
+ 32 309 l 1
+EndSplineSet
+Refer: 599 1056 N 1 0 0 1 30 0 2
+Validated: 101381
 EndChar
 EndChars
 EndSplineFont
