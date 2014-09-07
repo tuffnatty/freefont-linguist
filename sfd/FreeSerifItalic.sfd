@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1407383221
+ModificationTime: 1410105590
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -884,7 +884,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11776 16 12
+WinInfo: 1056 16 12
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -903,7 +903,7 @@ ForceBold 5 false
 EndPrivate
 TeXData: 1 0 216497 262144 131072 87381 448791 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "beng-nukta"  "'blwm' nukta in Bengali" "beng-vowel"  "'blwm' vowel in Bengali" "below_gk"  "'mark' mark below in Greek-1" "above_gk"  "'mark' mark above in Greek-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "low_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "top_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "point_above_heb"  "'mark' marks in Hebrew-1" "vowel_above_heb"  "'mark' marks in Hebrew-1" "vowel_left_heb"  "'mark' marks in Hebrew-1" "point_low_heb"  "'mark' marks in Hebrew-1" "point_left_heb"  "'mark' marks in Hebrew-1" "point_right_heb"  "'mark' marks in Hebrew-1" "vowel_low_heb"  "'mark' marks in Hebrew for Ivrit-1" "vowel_below_yiddish"  "'mark' marks in Hebrew for Yiddish-1" "topright"  "'mark' marks generic - middle" "ogonek"  "'mark' marks in Latin - ogonek" "abovecyr"  "'mark' marks in Cyrillic-1" "middle"  "'mark' marks generic - middle" "thai_vowel_tone_right"  "'mkmk' mark-to-mark in Thai right-1" "thai_tone"  "'mark' marks in Thai - tones" "thai_vowel_centered"  "'mark' marks in Thai - vowels" "thai_vowel"  "'mark' marks in Thai - vowels" "thai_vowel_tone"  "'mkmk' mark-to-mark in Thai-1" "thai_below"  "'mark' marks in Thai below" "below"  "'mark' marks in Latin-1" "above"  "'mark' marks in Latin above" 
-BeginChars: 65980 3677
+BeginChars: 65980 3681
 
 StartChar: space
 Encoding: 32 32 0
@@ -14071,13 +14071,12 @@ Fore
 SplineSet
 194 666 m 1
  229 683 l 1
- 304 664 467 598 467 359 c 0
+ 304 664 467 598 467 359 c 4
  467 161 331 -11 174 -11 c 0
  83 -11 27 43 27 129 c 0
  27 280 173 441 310 441 c 0
- 348 441 377 424 394 392 c 1
- 396 393 l 1
- 376 568 286 636 194 666 c 1
+ 348 441 379 423 396 391 c 1
+ 376 566 286 636 194 666 c 1
 313 420 m 0
  270 420 228 390 189 334 c 0
  141 263 111 175 111 101 c 0
@@ -14086,7 +14085,7 @@ SplineSet
  351 152 384 253 384 326 c 0
  384 383 356 420 313 420 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.cyr_de
 Substitution2: "'locl' local. forms for Serbian/Macedonian-1" cyr_alt_de
 Substitution2: "'ss01' style set 1 in Cyrillic for Bulgarian-subtable" cyr_alt_de
@@ -102916,13 +102915,13 @@ EndChar
 StartChar: dobro_comb
 Encoding: 11747 11747 3544
 Width: 0
-Flags: W
+Flags: HW
 AnchorPoint: "arching_cyr" -92 730 basemark 0
 AnchorPoint: "abovecyr" -108 450 mark 0
 LayerCount: 2
 Fore
 Refer: 600 1076 S 0.41 0 0 0.3675 -204 480 2
-Validated: 1
+Validated: 1048577
 EndChar
 
 StartChar: zhivete_comb
@@ -106069,6 +106068,54 @@ LayerCount: 2
 Fore
 Refer: 116 183 S 1 0 0 1 102 -258 2
 Refer: 94 126 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: LRI
+Encoding: 8294 8294 3677
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 44 76 S 0.33 0 0 0.33 59 278 2
+Refer: 50 82 S 0.33 0 0 0.33 247 278 2
+Refer: 41 73 S 0.33 0 0 0.33 450 278 2
+Validated: 1
+EndChar
+
+StartChar: RLI
+Encoding: 8295 8295 3678
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 44 76 S 0.33 0 0 0.33 264 278 2
+Refer: 50 82 S 0.33 0 0 0.33 59 278 2
+Refer: 41 73 S 0.33 0 0 0.33 452 278 2
+Validated: 1
+EndChar
+
+StartChar: FSI
+Encoding: 8296 8296 3679
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 41 73 S 0.33 0 0 0.33 408 278 2
+Refer: 38 70 S 0.33 0 0 0.33 84 278 2
+Refer: 51 83 S 0.33 0 0 0.33 264 278 2
+Validated: 1
+EndChar
+
+StartChar: PDI
+Encoding: 8297 8297 3680
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 41 73 S 0.33 0 0 0.33 453 278 2
+Refer: 48 80 S 0.33 0 0 0.33 58 278 2
+Refer: 36 68 S 0.33 0 0 0.33 232 278 2
 Validated: 1
 EndChar
 EndChars
