@@ -47,7 +47,7 @@ those which aren't listed *anywhere* among *any* of the tables of the current
 font. 
 (For better or worse that's how it is.)
 
-This fact may be used to disable an otherwise general table for a specific
+This effect may be used to disable an otherwise general table for a specific
 language, by simply creating another table that specifies the language, and
 not listing the language explicitly in the first table.  So discretion must
 be used in judging the output of this program--it may be that the font
@@ -60,9 +60,14 @@ languages, this can get very tricky, and often results in features being
 This script looks for tables which are specified for language 'dflt', then
 checks if the inclusion of a language in some other table disables any of them.
 
-QUESTION: do the languages and scripts of the GPOS table conflict with
-those of the GSUB table in this way?  This script checks them as though
-they were all the same thing.
+AFTER EXPERIMENTATION: it appears that the GPOS lookups are affected by
+the script/languages of the GSUB lookups, but *not vice-versa*.  That is,
+specifying a language tag for a given script in a GPOS table does not
+disable a GSUB lookup for the same script that doesn't specify that language. 
+However, specifying a language tag in a GSUB table disables a GPOS lookup
+for the same script that doesn't specify the language tag.
+
+FIXME: this program makes no distinction between GPOS and GSUB.
 """
 from sys import argv, exit, stderr, stdout
 import re

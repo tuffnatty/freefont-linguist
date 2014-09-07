@@ -38,7 +38,7 @@ problem = False
 def inPrivateUseRange( glyph ):
 	e = glyph.encoding
 
-	return ( ( e >= 0xE800 and e <= 0xF8FF )
+	return ( ( e >= 0xE000 and e <= 0xF8FF )
 	    or ( e >= 0xFF000 and e <= 0xFFFFD )
 	    or ( e >= 0x100000 and e <= 0x10FFFD ) )
 
