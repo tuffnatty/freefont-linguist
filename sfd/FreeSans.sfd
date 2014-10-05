@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1412440999
+ModificationTime: 1412541891
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -50,6 +50,7 @@ OS2StrikeYSize: 49
 OS2StrikeYPos: 258
 OS2FamilyClass: 2053
 OS2Vendor: 'GNU '
+Lookup: 1 0 0 "subst. smaller blwf in Malayalam"  {"subst. smaller u,uu in Malay+AQEA-lam-1"  } []
 Lookup: 1 0 0 "subst. anusvara for candrabindu in Devanagari"  {"subst. anusvara for candrabindu in Devanagari-1"  } []
 Lookup: 1 0 0 "subst. alt. candra in Devanagari"  {"subst. alt. candra in Devanagari-1"  } []
 Lookup: 1 0 0 "do_nothing"  {} []
@@ -69,6 +70,7 @@ Lookup: 4 0 0 "'pstf' post-base forms in Malayalam2"  {"'pstf' post-base forms i
 Lookup: 6 0 0 "'pstf' va,ya in Malay+AQEA-lam"  {"'pstf' va,ya in Malay+AQEA-lam-1"  } ['pstf' ('mlym' <'MLR ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' ra in Malay+AQEA-lam"  {"'pstf' ra in Malay+AQEA-lam-1"  } ['pstf' ('mlm2' <'MLR ' 'dflt' > 'mlym' <'MLR ' 'dflt' > ) ]
 Lookup: 4 0 0 "'blws' simple below-base in Malay+AQEA-lam"  {"'blws' la-voc in Malay+AQEA-lam"  "'blws' ra in Malay+AQEA-lam"  "'blws' rr-voc in Malay+AQEA-lam"  "'blws' r_voc in Malay+AQEA-lam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 0 0 "'blws' below-base smaller chain in Malayalam"  {"'blws' below-base smaller chain in Malayalam-1"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 2 0 0 "'psts' un-pack n-chilu-rra Malayalam"  {"'psts' un-pack n-chilu-rra Malayalam-1"  } ['psts' ('mlm2' <'MLR ' 'dflt' > 'mlym' <'MLR ' 'dflt' > ) ]
 Lookup: 4 0 0 "'psts' ra-tail in Malay+AQEA-lam"  {"'psts' ra-tail in Malay+AQEA-lam-below"  "'psts' ra-tail in Malay+AQEA-lam-simple"  "'psts' ra-tail in Malay+AQEA-lam-complex"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' ligatures in Malay+AQEA-lam"  {"'psts' r-voc ligatures in Malay+AQEA-lam"  "'psts' u,uu in Malay+AQEA-lam"  "'psts' u,uu blwf in Malay+AQEA-lam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -372,6 +374,19 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -20 {} 0 {} -10 {}
+ChainSub2: class "'blws' below-base smaller chain in Malayalam-1"  2 2 1 1
+  Class: 892 mal_ka.blwf mal_ku.blwf mal_kuu.blwf mal_kri.blwf mal_kha.blwf mal_ga.blwf mal_gu.blwf mal_guu.blwf mal_gri.blwf mal_cha.blwf mal_chha.blwf mal_chhu.blwf mal_chhuu.blwf mal_chhri.blwf mal_ja.blwf mal_ju.blwf mal_juu.blwf mal_jri.blwf mal_sha.blwf mal_shu.blwf mal_shuu.blwf mal_shri.blwf mal_rrarra.blwf mal_ddha.blwf mal_nna.blwf mal_nnu.blwf mal_nnuu.blwf mal_ta.blwf mal_tu.blwf mal_tuu.blwf mal_tri.blwf mal_da.blwf mal_dri.blwf mal_dha.blwf mal_dhri.blwf mal_na.blwf mal_nu.blwf mal_nuu.blwf mal_pa.blwf mal_pri.blwf mal_pha.blwf mal_ba.blwf mal_ma.blwf mal_mri.blwf mal_sa.blwf mal_sri.blwf mal_tta.blwf mal_ttha.blwf mal_rra.blwf mal_va.blwf mal_sra.blwf mal_tra.blwf mal_pra.blwf mal_chhra.blwf mal_shra.blwf mal_kra.blwf mal_rrarrra.blwf mal_trr_voc.blwf mal_dhrr_voc.blwf mal_kka.blwf mal_kku.blwf mal_kkuu.blwf mal_kkri.blwf mal_tata.blwf mal_tatu.blwf mal_tatuu.blwf mal_tatr.blwf
+  BClass: 22 ma_mal rra_mal zha_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. smaller blwf in Malayalam" 
+  ClassNames: "0"  "blwf"  
+  BClassNames: "0"  "narrowcons"  
+  FClassNames: "0"  
+EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
   Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.abvs dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
   Class: 15 candrabindudeva
@@ -1235,7 +1250,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11360 16 9
+WinInfo: 61072 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -1256,7 +1271,7 @@ Grid
   Named: "Georgian" 
 EndSplineSet
 AnchorClass2: "bng-stem-abv"  "'abvm' above-base mark in Bengali-1" "mlm-vowel-below"  "'blwm' vowel below in Malay+AQEA-lam-1" "dev-candrabindu-abv"  "'mkmk' mark-to-mark in Devanagari-above" "vedic-below"  "'mkmk' mark-to-mark in Devanagari Vedic" "vedic-above"  "'mkmk' mark-to-mark in Devanagari Vedic" "dev-mark-above"  "'mkmk' mark-to-mark in Devanagari-above" "below_gk"  "'mark' mark below in Greek and Coptic-1" "above_gk"  "'mark' mark above in Greek-1" "bng-phala"  "'mkmk' mark-to-mark in Bengali-1" "bng-round"  "'blwm' below-base round in Bengali" "bng-stem"  "'blwm' below-base stemmed in Bengali" "bng-rofola"  "'blwm' below-base rofola in Bengali" "stacked"  "'mkmk' mark-to-mark in Latin-1" "viet_tilde"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_hook"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_grave"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_acute"  "'mkmk' mark-to-mark in Latin for Viet-1" "taml_above"  "'abvm' above-base mark in Tamil-1" "dev-candrabindu"  "'abvm' above-base mark in Devanagari-candrabindu" "dev-anusvara"  "'abvm' above-base mark in Devanagari-anusvara" "bng-vowel"  "'blwm' below-base vowel in Bengali" "bng-nukta"  "'blwm' below-base nukta in Bengali" "dev-rakaar"  "'blwm' below-base mark in Devanagari-1" "dev-belowmark"  "'mkmk' mark-to-mark in Devanagari-above" "mlm-reph"  "'abvm' above reph in Malayalam-1" "mal-below"  "'blwm' marks below in Malay+AQEA-lam-1" "guj-nukta"  "'blwm' below-base mark in Gujarati-nukta" "gur-top-mid"  "'abvm' above-base mark in Gurmukhi-mid" "gur-nukta"  "'blwm' below-base mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' mark-to-mark in Gurmukhi" "gur-below-mid"  "'blwm' below-base mark in Gurmukhi mid" "guru_above"  "'abvm' above-base mark in Gurmukhi-general" "guru_below"  "'blwm' below-base mark in Gurmukhi-general" "syr_below"  "'mark' marks in Syriac 0" "syr_above"  "'mark' marks in Syriac 0" "above_mid_heb"  "'mark' marks in Hebrew 0" "vowel_below_yiddish"  "'mark' marks in Yiddish below" "vowel_above_heb"  "'mark' marks in Hebrew 0" "vowel_left_heb"  "'mark' marks in Hebrew 0" "vowel_below_heb"  "'mark' marks in Hebrew 2 subtable" "abovemk_cyr"  "'mkmk' mark-to-mark in Cyrillic 0" "topright"  "'mark' marks in Latin topright" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' marks middle" "ogonek"  "'mark' marks in Latin ogonek" "dev-above"  "'abvm' above-base mark in Devanagari-1" "gujr-0"  "'abvm' above-base mark in Gujarati-1" "dev-below"  "'blwm' below-base mark in Devanagari-1" "gujr-1"  "'blwm' below-base mark in Gujarati-1" "above"  "'mark' marks in Latin above" "below"  "'mark' marks in Latin below" 
-BeginChars: 131072 6616
+BeginChars: 131072 6617
 
 StartChar: space
 Encoding: 32 32 0
@@ -33874,7 +33889,7 @@ Validated: 32769
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" iota macron.cmb
 EndChar
 
-StartChar: uni1FD2
+StartChar: iota_dialytikavaria
 Encoding: 8146 8146 1601
 Width: 284
 Flags: HMW
@@ -33886,7 +33901,7 @@ Validated: 32769
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" iota gk_dialytikavaria.cmb
 EndChar
 
-StartChar: uni1FD3
+StartChar: iota_dialytikaoxia
 Encoding: 8147 8147 1602
 Width: 284
 Flags: HMW
@@ -34027,7 +34042,7 @@ Validated: 32769
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" upsilon macron.cmb
 EndChar
 
-StartChar: uni1FE2
+StartChar: upsilon_dialytikavaria
 Encoding: 8162 8162 1614
 Width: 558
 Flags: HMW
@@ -34039,7 +34054,7 @@ Validated: 32769
 MultipleSubs2: "'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dialytikavaria.cmb
 EndChar
 
-StartChar: uni1FE3
+StartChar: upsilon_dialytikaoxia
 Encoding: 8163 8163 1615
 Width: 558
 Flags: HMW
@@ -114635,6 +114650,7 @@ SplineSet
  273 -236 304 -207 304 -151 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_u_small.blwf
 EndChar
 
 StartChar: uu_mal
@@ -114668,6 +114684,7 @@ SplineSet
  271 -236 305 -196 305 -143 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_uu_small.blwf
 EndChar
 
 StartChar: r_voc_mal
@@ -115582,6 +115599,7 @@ SplineSet
  -259 -190 -215 -234 -163 -234 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_u_small.blwf
 Ligature2: "subst. below-base u,uu in Malay+AQEA-lam-1" u_mal
 MultipleSubs2: "'psts' undo vowels blwf in Malayalam-1" u_mal
 EndChar
@@ -115615,6 +115633,7 @@ SplineSet
  -294 -181 -241 -234 -180 -234 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_uu_small.blwf
 Ligature2: "subst. below-base u,uu in Malay+AQEA-lam-1" uu_mal
 MultipleSubs2: "'psts' undo vowels blwf in Malayalam-1" uu_mal
 EndChar
@@ -149578,9 +149597,9 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-10 172 m 5
- 10 254 l 5
- 107 254 l 5
+10 172 m 1
+ 10 254 l 1
+ 107 254 l 1
  107 729 l 1
  403 729 l 2
  576 729 619 618 619 544 c 0
@@ -149588,8 +149607,8 @@ SplineSet
  611 349 651 296 651 208 c 0
  651 83 565 0 436 0 c 2
  107 0 l 1
- 107 172 l 5
- 10 172 l 5
+ 107 172 l 1
+ 10 172 l 1
 427 82 m 2
  532 82 558 156 558 207 c 0
  558 281 513 333 427 333 c 2
@@ -169815,7 +169834,7 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-11 433 m 4
+11 433 m 0
  11 471 28 524 106 525 c 2
  438 525 l 1
  438 455 l 1
@@ -169829,7 +169848,7 @@ SplineSet
  117 392 119 392 133 393 c 1
  133 326 l 1
  119 323 111 323 99 323 c 0
- 31 323 11 370 11 433 c 4
+ 31 323 11 370 11 433 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -169893,8 +169912,8 @@ Fore
 SplineSet
 299 111 m 1
  299 173 l 1
- 446.235 172.914 l 5
- 447.397 180.909 448 189.273 448 198 c 6
+ 446.235 172.914 l 1
+ 447.397 180.909 448 189.273 448 198 c 2
  448 212 l 1
  299 212 l 1
  299 282 l 1
@@ -170110,6 +170129,7 @@ SplineSet
  476 59 547 119 547 217 c 2
  547 442 l 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'c2sc' caps to small caps in Latin-invariant" ubar
 EndChar
 
@@ -170139,7 +170159,53 @@ SplineSet
  937 653 895 618 873 532 c 2
  737 0 l 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'c2sc' caps to small caps in Latin-invariant" whook
+EndChar
+
+StartChar: mal_kra.blwf
+Encoding: 61095 -1 6616
+Width: 0
+VWidth: 1789
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+-461 18 m 0
+ -435 18 -418 50 -418 67 c 2
+ -421 130 l 1
+ -439 130 l 2
+ -485 130 -508 113 -508 78 c 0
+ -508 38 -493 18 -461 18 c 0
+-219 130 m 1
+ -355 130 l 1
+ -355 55.7588 -334.676 16 -287 16 c 0
+ -240.233 16 -219 55.498 -219 130 c 1
+-289 274 m 0
+ -331.718 274 -355 236.009 -355 192 c 1
+ -219 192 l 1
+ -219 237.811 -244.574 274 -289 274 c 0
+-283 335 m 0
+ -202.297 335 -152 272.335 -152 192 c 1
+ -125 192 l 2
+ -57 192 0 151 0 81 c 0
+ 0 -52 -112 -161 -342 -161 c 0
+ -547 -161 -662 -116 -662 132 c 0
+ -662 213 -619 284 -573 335 c 1
+ -536 298 l 1
+ -573 257 -611 201 -611 134 c 0
+ -611 -55 -539.075 -114 -337 -114 c 0
+ -149 -114 -62 -31 -62 79 c 0
+ -62 113 -86 130 -132 130 c 2
+ -152 130 l 1
+ -152 17.2656 -193.353 -41 -286 -41 c 0
+ -329 -41 -375 -19 -385 15 c 1
+ -392 -15 -428 -41 -465 -41 c 0
+ -532 -41 -571 9 -571 78 c 0
+ -571 147 -516 192 -448 192 c 2
+ -421 192 l 1
+ -421 275.533 -367.856 335 -283 335 c 0
+EndSplineSet
 EndChar
 EndChars
 EndSplineFont
