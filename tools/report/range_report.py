@@ -184,10 +184,13 @@ def print_font_range_table( fontSupportList ):
 		intervals = r[2]
 
 		rowclass = ' class="low"'
-		if len( ulUnicodeRange[idx] ) > 3 and ulUnicodeRange[ idx ][3]:
-			rowclass = ' class="high"'
-		if idx == 60 or idx == 90:
-			rowclass = ' class="private"'
+		if idx > 122:
+				rowclass = ' class="other"'
+		else:
+			if len( ulUnicodeRange[idx] ) > 3 and ulUnicodeRange[ idx ][3]:
+				rowclass = ' class="high"'
+			if idx == 60 or idx == 90:
+				rowclass = ' class="private"'
 			
 		print '<tr%s><td>%s</td>' % ( rowclass, range_name )
 		print '<td class="num">%i</td>' % (
@@ -275,6 +278,7 @@ GNU FreeFont character range support
 <style type="text/css">
 	tr.high { color: #555 }
 	tr.private { background-color: silver; }
+	tr.other { background-color: #CCF; }
 	td.num { text-align: right }
 	td { padding-right: 0.25ex }
 	th { padding: 0.25ex }

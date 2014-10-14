@@ -302,6 +302,7 @@ ulUnicodeRange = [
 		interval(0x1FF6, 0x1FFE)
 	]],
 [31,	'General Punctuation (+suppl.)',     [interval(0x2000, 0x2064),
+		interval(0x2066, 0x2069),
 		# interval(0x206A, 0x206F),	# deprecated
 		interval(0x2E00, 0x2E42),	# Supplemental
 	]],
@@ -571,6 +572,10 @@ ulUnicodeRange = [
 		interval(0x1F030, 0x1F093)	# Domino
 	], True],
 #[123-127, 	'Reserved for process-internal usage', []]
+[123, 	'Unicode with no OS/2 range', [
+					# really this is a complicated range
+		interval(0x1F300, 0x1F5FF),	# Miscellaneous Symbols and Pictographs
+	], True],
 ]
 
 
