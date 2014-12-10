@@ -73,6 +73,15 @@ blws	below base substitutions
 psts	post base substitutions
 haln	halant forms
 
+Style Sets
+==========
+ss01	Bulgarian Cyrillic Alternate
+ss02	Devanagari Bombay
+ss03	Devanagari Calcutta
+ss04	Devanagari Nepali
+ss06	Greek iota adscript on capitals
+ss07	Tamil Reformed
+
 Positioning (GPOS)
 ===========
 
@@ -109,13 +118,14 @@ many OpenType features.  There are tables available on the Web
 Modern LaTeX typesetting programs, such as XeTeX and LuaTeX, have very
 good support via packages such as 'fontspec'.
 
-Web browsers are experimenting with the CSS 2 'font-feature-settings'
+Web browsers are experimenting with the CSS 3 'font-feature-settings'
 property.  At this time, each browser does it a little differently,
 but the intent is to soon have unified support for enabling font 
 features within a web page.  Mozilla Firefox is particularly strong here.
 Note that it is necessary to correctly indicate the language of each text
 element of HTML, using 'lang' attributes, in order for features to be
 properly activated.
+See https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
 
 Policies
 ========

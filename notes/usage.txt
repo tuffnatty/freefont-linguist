@@ -68,7 +68,12 @@ Yiddish	raised vowels under yo
 Devanagari
 ----------
 Sanskrit	much larger set of ligatures
-Hindi	 [optional historic ligatures: for ligatures of Old Hindi]
+Nepali, Kokani
+Marathi
+Santali
+Gujarati
+
+'hist' feature	 [optional historic ligatures: for ligatures of Old Hindi]
 
 Malayalam
 ---------
@@ -213,11 +218,8 @@ also be set: "font-weight", "font-style", etc.
 In CSS 3, a special property 'font-feature-settings' that gives explicit
 control of OpenType font features was introduced.  Several browsers
 now have experimental implementations of this feature.  For example,
-Mozilla Firefox has "-moz-font-feature-settings".  The value of the
-Firefox property is a comma delimited string, of 4-character feature
-tags and their value, such as
-	"dlig,cc00=1,liga=0"
-(where 0 indicates "disable"; 1 indicates "enable").
+Mozilla Firefox has "font-feature-settings"; see
+	https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
 
 These explicit features are specific to particular fonts.  So this 
 technology is meant to work with "web fonts", a means of delivering
