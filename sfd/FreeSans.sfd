@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1429480367
+ModificationTime: 1429651130
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -1230,10 +1230,10 @@ MATH:StretchStackTopShiftUp: 0
 MATH:StretchStackBottomShiftDown: 0 
 MATH:StretchStackGapAboveMin: 0 
 MATH:StretchStackGapBelowMin: 0 
-MATH:FractionNumeratorShiftUp: 0 
-MATH:FractionNumeratorDisplayStyleShiftUp: 0 
-MATH:FractionDenominatorShiftDown: 0 
-MATH:FractionDenominatorDisplayStyleShiftDown: 0 
+MATH:FractionNumeratorShiftUp: 10 
+MATH:FractionNumeratorDisplayStyleShiftUp: 40 
+MATH:FractionDenominatorShiftDown: 10 
+MATH:FractionDenominatorDisplayStyleShiftDown: 40 
 MATH:FractionNumeratorGapMin: 50 
 MATH:FractionNumeratorDisplayStyleGapMin: 150 
 MATH:FractionRuleThickness: 50 
@@ -1248,7 +1248,7 @@ MATH:UnderbarVerticalGap: 80
 MATH:UnderbarRuleThickness: 60 
 MATH:UnderbarExtraDescender: 60 
 MATH:RadicalVerticalGap: 100 
-MATH:RadicalDisplayStyleVerticalGap: 0 
+MATH:RadicalDisplayStyleVerticalGap: 80 
 MATH:RadicalRuleThickness: 60 
 MATH:RadicalExtraAscender: 60 
 MATH:RadicalKernBeforeDegree: 200 
@@ -1261,7 +1261,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 2384 16 11
+WinInfo: 63632 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -1682,7 +1682,6 @@ Encoding: 47 47 15
 Width: 278
 Flags: HMW
 GlyphVariantsVertical: slash math_slash.big math_slash.bigger
-GlyphCompositionVertical: 2  math_slashbot.big%0,0,0,749 math_slashext.big%0,0,0,749
 LayerCount: 2
 Fore
 SplineSet
@@ -2946,7 +2945,6 @@ Encoding: 92 92 60
 Width: 278
 Flags: HMW
 GlyphVariantsVertical: backslash math_backslash.big math_backslash.bigger
-GlyphCompositionVertical: 2  math_backslashbot.big%0,0,0,819 math_backslashtop.big%0,0,0,819
 LayerCount: 2
 Fore
 SplineSet
@@ -37295,7 +37293,6 @@ Width: 771
 VWidth: 2048
 Flags: HMW
 GlyphVariantsVertical: summation math_summation.big
-GlyphCompositionVertical: 2  sumbot(⎳)%0,0,0,930 sumtop(⎲)%0,0,0,930
 LayerCount: 2
 Fore
 SplineSet
@@ -47913,7 +47910,7 @@ LayerCount: 2
 Fore
 Refer: 2238 2404 S 1 0 0 1 107 14 2
 Refer: 2238 2404 S 1 0 0 1 -106 14 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'locl' local. punct in Bengali-1" bn_dbldanda
 EndChar
 
@@ -161544,48 +161541,46 @@ EndChar
 
 StartChar: math_summation.big
 Encoding: 63653 -1 6177
-Width: 851
+Width: 1000
 VWidth: 2048
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
 49 900 m 1
- 759 900 l 1
- 759 804 l 1
+ 948 900 l 5
+ 948 804 l 5
  197 804 l 1
  616 312 l 1
  192 -205 l 1
- 771 -205 l 1
- 771 -300 l 1
+ 960 -205 l 5
+ 960 -300 l 5
  40 -300 l 1
  40 -226 l 1
  479 312 l 1
  49 812 l 1
  49 900 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: math_product.big
 Encoding: 63654 -1 6178
-Width: 970
+Width: 1000
 VWidth: 2048
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
 79 900 m 1
- 891 900 l 1
- 891 -300 l 1
- 773 -300 l 1
- 773 799 l 1
+ 921 900 l 1
+ 921 -300 l 1
+ 803 -300 l 1
+ 803 799 l 1
  197 799 l 1
  197 -300 l 1
  79 -300 l 1
  79 900 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: anglebrackleft
@@ -161593,7 +161588,6 @@ Encoding: 10216 10216 6179
 Width: 329
 Flags: MW
 GlyphVariantsVertical: anglebrackleft math_anglebrackleft.big math_anglebrackleft.bigger
-GlyphCompositionVertical: 2  math_anglebrackleftbot%0,0,5,1205 math_anglebracklefttop%0,5,0,1205
 LayerCount: 2
 Fore
 SplineSet
@@ -161613,7 +161607,6 @@ Encoding: 10217 10217 6180
 Width: 329
 Flags: MW
 GlyphVariantsVertical: anglebrackright math_anglebrackright.big math_anglebrackright.bigger
-GlyphCompositionVertical: 2  math_anglebrackrightbot%0,0,5,1205 math_anglebrackrighttop%0,5,0,1205
 LayerCount: 2
 Fore
 Refer: 6179 10216 S -1 0 0 -1 329 511 2
