@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -38,29 +39,30 @@ postfix = ''
 prefix = '&#x'
 postfix = ';'
 
-def explain_error_and_quit( e ):
+def explain_error_and_quit( e=None ):
 	if e:
-		print 'Error: ', e
-	print "Usage:"
-	print "       hex_range num1 [num2]"
-	exit( 1 )
+		print( 'Error:', e )
+	print( "Usage:" )
+	print( "       hex_range num1 [num2]" )
+	sys.exit( 1 )
 
 def print_formatted_hex_value( n ):
-	print '%s%0.4x%s' %( prefix, n, postfix )
+	hexstr = '{0}{1:04x}{2}'.format( prefix, n, postfix )
+	print( hexstr )
 
 if len( sys.argv ) == 3:
 	try:
 		a = int( sys.argv[1], 0 )
 		b = int( sys.argv[2], 0 )
-		for i in xrange( a, b + 1 ):
+		for i in range( a, b + 1 ):
 			print_formatted_hex_value( i )
-	except ValueError, e:
+	except ValueError as e:
 		explain_error_and_quit( e )
 elif len( sys.argv ) == 2:
 	try:
 		a = int( sys.argv[1], 0 )
 		print_formatted_hex_value( a )
-	except ValueError, e:
+	except ValueError as e:
 		explain_error_and_quit( e )
 else:
 		explain_error_and_quit()

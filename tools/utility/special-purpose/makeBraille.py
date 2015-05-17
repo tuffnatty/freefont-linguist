@@ -76,12 +76,12 @@ def createAndName( font, off ):
 	return font.createChar( 0x2800 + off, 'braille%0.2X' % off )
 
 def drawtopsix( g, off ):
-	print 'created', 'braille%0.2X' % off
+	print( 'created', 'braille%0.2X' % off )
 	g.clear()
 	g.right_side_bearing = glyphwidth
 	for col in range ( 0, 2 ):
 		for row in range ( 0, 3 ):
-			print 'shift', ( 3 * col + row )
+			print( 'shift', ( 3 * col + row ) )
 			state = ( 1 << ( 3 * col + row ) ) & off
 			drawdot( g, col, row, state )
 
