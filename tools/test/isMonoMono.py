@@ -1,3 +1,4 @@
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -34,7 +35,7 @@ import sys
 problem = False
 
 def ismonomono( fontfilename ):
-	print "Checking character bounding boxes: " + fontfilename
+	print( "Checking character bounding boxes:", fontfilename )
 	font = fontforge.open( fontfilename )
 
 	g = font.selection.all()
@@ -48,16 +49,15 @@ def ismonomono( fontfilename ):
 				nonzero = e.width
 		else:
 			if e.width > 0 and e.width != nonzero:
-				print '  ' + e.glyphname \
-					+ '(' + str( e.encoding ) \
-					+ ') width is ' + str( e.width ) \
-					+ ' not ' + str( nonzero )
+				print( ' ', e.glyphname, '(', e.encoding, ')',
+					'width is', e.width, 'not', nonzero
+				)
 				problem = True
 
 		( xmin, ymin, xmax, ymax ) = e.boundingBox()
 		if ymin < -200 or ymax > 800:
-			print '  ' + e.glyphname + ' goes between heights ' \
-				+ str( ymin )  + ' and ' + str( ymax )
+			print( ' ', e.glyphname, 'goes between heights',
+				ymin, 'and', ymax )
 	""" 
 	For FontForge handling of TrueType/OpenType magic characters:
 	1) check that 0x0000 0x0001, 0x000D exist and have names
@@ -68,17 +68,17 @@ def ismonomono( fontfilename ):
 	Othewise complain that FontForge may not treat it right.
 	"""
 	if not 0x0000 in font \
-		or font[0x0000].glyphname != '.notdef' \
-		or font[0x0000].width != nonzero:
-		print 'Should be full-width ".notdef" glyph at 0x0000.'
+	or font[0x0000].glyphname != '.notdef' \
+	or font[0x0000].width != nonzero:
+		print( 'Should be full-width ".notdef" glyph at 0x0000.' )
 	if not 0x0001 in font \
-		or font[0x0001].glyphname != '.null' \
-		or font[0x0001].width != 0:
-		print 'Should be zero-width ".null" glyph at 0x0001.'
+	or font[0x0001].glyphname != '.null' \
+	or font[0x0001].width != 0:
+		print( 'Should be zero-width ".null" glyph at 0x0001.' )
 	if not 0x000D in font \
-		or font[0x000D].glyphname != 'nonmarkingreturn' \
-		or font[0x000D].width != nonzero:
-		print 'Should be full-width "nonmarkingreturn" glyph at 0x000D.'
+	or font[0x000D].glyphname != 'nonmarkingreturn' \
+	or font[0x000D].width != nonzero:
+		print( 'Should be full-width "nonmarkingreturn" glyph at 0x000D.' )
 
 scriptname = sys.argv[0];
 argc = len( sys.argv )

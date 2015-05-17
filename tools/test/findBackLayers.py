@@ -1,4 +1,5 @@
 #!/usr/bin/env ../utility/fontforge-interp.sh
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -32,7 +33,7 @@ from sys import exit
 problem = False
 
 def checkBackLayers( fontPath ):
-	print "Checking " + fontPath
+	print( "Checking", fontPath )
 	font = fontforge.open( fontPath )
 
 	g = font.selection.all()
@@ -42,20 +43,20 @@ def checkBackLayers( fontPath ):
 
 	for e in g:
 		if e.layer_cnt != 2:
-			print e
+			print( e )
 
-checkBackLayers( '../sfd/FreeSerif.sfd' )
-checkBackLayers( '../sfd/FreeSerifItalic.sfd' )
-checkBackLayers( '../sfd/FreeSerifBold.sfd' )
-checkBackLayers( '../sfd/FreeSerifBoldItalic.sfd' )
-checkBackLayers( '../sfd/FreeSans.sfd' )
-checkBackLayers( '../sfd/FreeSansOblique.sfd' )
-checkBackLayers( '../sfd/FreeSansBold.sfd' )
-checkBackLayers( '../sfd/FreeSansBoldOblique.sfd' )
-checkBackLayers( '../sfd/FreeMono.sfd' )
-checkBackLayers( '../sfd/FreeMonoOblique.sfd' )
-checkBackLayers( '../sfd/FreeMonoBold.sfd' )
-checkBackLayers( '../sfd/FreeMonoBoldOblique.sfd' )
+checkBackLayers( '../../sfd/FreeSerif.sfd' )
+checkBackLayers( '../../sfd/FreeSerifItalic.sfd' )
+checkBackLayers( '../../sfd/FreeSerifBold.sfd' )
+checkBackLayers( '../../sfd/FreeSerifBoldItalic.sfd' )
+checkBackLayers( '../../sfd/FreeSans.sfd' )
+checkBackLayers( '../../sfd/FreeSansOblique.sfd' )
+checkBackLayers( '../../sfd/FreeSansBold.sfd' )
+checkBackLayers( '../../sfd/FreeSansBoldOblique.sfd' )
+checkBackLayers( '../../sfd/FreeMono.sfd' )
+checkBackLayers( '../../sfd/FreeMonoOblique.sfd' )
+checkBackLayers( '../../sfd/FreeMonoBold.sfd' )
+checkBackLayers( '../../sfd/FreeMonoBoldOblique.sfd' )
 
 if problem:
 	exit( 0 )

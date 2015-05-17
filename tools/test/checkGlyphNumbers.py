@@ -1,4 +1,5 @@
 #!/usr/bin/env ../utility/fontforge-interp.sh
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -53,12 +54,12 @@ def isSpecialTrueType( glyph ):
 from os import path
 def checkGlyphNumbers( fontDir, fontFile ):
 	if isinstance( fontFile, ( list, tuple ) ):
-		print "In directory " + fontDir
+		print( "In directory " + fontDir )
 		for fontName in fontFile:
 			checkGlyphNumbers( fontDir, fontName )
 		return
 
-	print "Checking slot numbers in " + fontFile
+	print( "Checking slot numbers in " + fontFile )
 	font = fontforge.open( path.join( fontDir, fontFile ) )
 
 	g = font.selection.all()
@@ -71,13 +72,13 @@ def checkGlyphNumbers( fontDir, fontFile ):
 			pass
 		elif inPrivateUseRange( glyph ):
 			if glyph.unicode != -1:
-				print "Glyph at slot " + str( glyph.encoding ) \
-					+ " is Private Use but has Unicode"
+				print( "Glyph at slot " + str( glyph.encoding )
+					+ " is Private Use but has Unicode" )
 				problem = True
 		else:
 			if glyph.encoding != glyph.unicode:
-				print "Glyph at slot " + str( glyph.encoding ) \
-					+ " has wrong Unicode"
+				print( "Glyph at slot " + str( glyph.encoding )
+					+ " has wrong Unicode" )
 				problem = True
 
 # --------------------------------------------------------------------------

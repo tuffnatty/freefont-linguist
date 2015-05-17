@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+from __future__ import print_function
 
 __license__ = """
 This file is part of GNU FreeFont.
@@ -74,9 +75,9 @@ import re
 
 def explain_error_and_quit( e='' ):
 	if e:
-		print >> stderr, 'Error: ', e
-	print >> stderr, "Usage:"
-	print >> stderr, "       checkTableLangs sfd-file-path"
+		stderrr.write( 'Error: ' + str( e ) + '\n' )
+	stderr.write( 'Usage: \n' )
+	stderr.write( '       checkTableLangs sfd-file-path\n' )
 	exit( 1 )
 
 """
@@ -88,14 +89,14 @@ Lookup: 1 0 0 "'onum' oldstyle figures"  {"'onum' oldstyle figures-subtable" ("o
 
 """
 	
-_lookup_re = re.compile( "^Lookup: (\d) (\d) (\d) (.*)$" )
+_lookup_re = re.compile( "^Lookup: (\d+) (\d+) (\d+) (.*)$" )
 _data_re = re.compile( '''^"(.+)"\s+{(.+)}\s+\[(.+)\]''' )
 _dquot_names_re = re.compile( '"([^"]+)"' )
 _squot_names_re = re.compile( "'([^']+)'" )
 _type_scriptlangs_re = re.compile( "'([^']{4})'\s+<([^<]*)>" )
 
 def collect_lookups_from_sfd( f ):
-	lookups = {}
+	lookups = { 'GSUB':{}, 'GPOS':{} }
 	firstline = True
 	for line in f:
 		if firstline:
@@ -109,7 +110,11 @@ def collect_lookups_from_sfd( f ):
 			data = m.group( 4 )
 			dm = _data_re.match( data )
 			if dm:
-				parse_lookup( dm, lookups )
+				tabletype = int( m.group( 1 ) )
+				if tabletype < 256:
+					parse_lookup( dm, lookups['GSUB'] )
+				else:
+					parse_lookup( dm, lookups['GPOS'] )
 	return lookups
 
 def parse_lookup( dm, lookups ):
@@ -130,10 +135,13 @@ def parse_lookup( dm, lookups ):
 			lookups[tableName][script] |= lngs
 
 def printall( lookups ):
-	for tn in lookups:
-		print tn
-		for script in lookups[tn]:
-			print '\t', script, ', '.join( lookups[tn][script] )
+	for t in lookups:
+		print( "========== " + t + " ===============================" )
+		for tn in lookups[t]:
+			print( tn )
+			for script in lookups[t][tn]:
+				print( '\t' + script,
+					', '.join( lookups[t][tn][script] ) )
 
 def reverse_table_script( lookups ):
 	""" reverse the table-script relationship """
@@ -183,22 +191,25 @@ def tables_with_DFLT_dflt_entry( lookups ):
 					tablesWdflt[name] = script
 	return tablesWdflt
 
-def tables_disbled_for_script( lookups ):
+def tables_disbled_for_script( lookups, other_lookups=None ):
 	""" For each table with a 'dflt' language for a given script,
 	note the explicit languages listed for the script, and search all
 	other tables for languages in that script *not* explicitly listed
 	in the current table.
 	"""
 	disabled = {}
-	scriptTable = reverse_table_script( lookups )
+	allLookups = dict( lookups )
+	if other_lookups:
+		allLookups.update( other_lookups )
+	scriptTable = reverse_table_script( allLookups )
 	tablesWdflt = tables_with_dflt_entry( lookups )
 	dfltLang = set( ['dflt'] )
 	for name in tablesWdflt:
 		script = tablesWdflt[name]
-		explicit = lookups[name][script] - dfltLang
+		explicit = allLookups[name][script] - dfltLang
 		tablesBesidesThis = scriptTable[script] - set( [name] )
 		for other in tablesBesidesThis:
-			otherExplicit = lookups[other][script] - dfltLang
+			otherExplicit = allLookups[other][script] - dfltLang
 			conflict = otherExplicit - explicit
 			if conflict:
 				if not name in disabled:
@@ -206,24 +217,27 @@ def tables_disbled_for_script( lookups ):
 				disabled[name].append( ( other, conflict ) )
 	return disabled
 
-def tables_disbled_for_script_lang( lookups ):
+def tables_disbled_for_script_lang( lookups, other_lookups=None ):
 	""" For each table with a 'DFLT{dflt}' script-language, note the
 	explicit script-languages in the table, and search all other tables
 	for script-languages *not* explicitly listed in the current table.
 	"""
 	disabled = {}
-	scriptTable = reverse_table_script( lookups )
+	allLookups = dict( lookups )
+	if other_lookups:
+		allLookups.update( other_lookups )
+	scriptTable = reverse_table_script( allLookups )
 	tablesWdflt = tables_with_DFLT_dflt_entry( lookups )
 	dfltScrptLang = { 'DFLT':['dflt'] }
 
 	for name in tablesWdflt:
-		explicit = dict( lookups[name] )
+		explicit = dict( allLookups[name] )
 		del explicit['DFLT']
-		tablesBesidesThis = dict( lookups )
+		tablesBesidesThis = dict( allLookups )
 		if 'DFLT' in tablesBesidesThis:
 			del tablesBesidesThis['DFLT']
 		for other in tablesBesidesThis:
-			otherExplicit = dict( lookups[other] )
+			otherExplicit = dict( allLookups[other] )
 			if 'DFLT' in otherExplicit:
 				del otherExplicit['DFLT']
 			conflict = set( otherExplicit ) - set( explicit )
@@ -245,27 +259,29 @@ except Exception as e:
 	explain_error_and_quit( e )
 
 lookups = collect_lookups_from_sfd( f )
-#printall( lookups )
-disabled4Script = tables_disbled_for_script( lookups )
-disabled4ScriptLang = tables_disbled_for_script_lang( lookups )
+# printall( lookups )
+disabled4Script = tables_disbled_for_script( lookups['GSUB'] )
+disabled4Script.update( tables_disbled_for_script( lookups['GPOS'], lookups['GSUB'] ) )
+disabled4ScriptLang = tables_disbled_for_script_lang( lookups['GSUB'] )
+disabled4ScriptLang.update( tables_disbled_for_script_lang( lookups['GPOS'], lookups['GSUB'] ) )
 
 for feat in sorted( disabled4Script ):
-	print "feature", '"' + feat + '"', "disabled for languages"
+	print( 'feature "' + feat + '" disabled for languages' )
 	allothers = []
 	alllangs = set()
 	for ( other, langs ) in disabled4Script[feat]:
 		alllangs |= langs
 		allothers.append( other )
-	print "\t", list( alllangs )
-	print '\tby "' + allothers[0] + ('" &cet' if len( allothers ) else '' )
+	print( "\t", list( alllangs ) )
+	print( '\tby "', allothers[0], ('" &cet' if len( allothers ) else '' ) )
 
 for feat in sorted( disabled4ScriptLang ):
-	print "feature", '"' + feat + '"', "disabled for script/language"
+	print( 'feature "' + feat + '" disabled for script/language' )
 	allothers = []
 	alllangs = set()
 	for ( other, langs ) in disabled4ScriptLang[feat]:
 		alllangs |= langs
 		allothers.append( other )
-	print "\t", list( alllangs )
-	print '\tby "' + allothers[0] + ('" &cet' if len( allothers ) else '' )
+	print( "\t", list( alllangs ) )
+	print( '\tby "', allothers[0], ('" &cet' if len( allothers ) else '' ) )
 
