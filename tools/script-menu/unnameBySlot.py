@@ -1,3 +1,4 @@
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -39,14 +40,14 @@ import fontforge
 
 def explain_error_and_quit( e ):
 	if e:
-		print 'Error: ', e
+		print( 'Error:', e )
 	exit( 1 )
 
 try:
 	glyphs = fontforge.activeFont().selection.byGlyphs
 	for g in glyphs:
 		newname = 'NameMe.%s' %( str( g.encoding ) )
-		print "naming " + str( g.glyphname ) + ' as ' + newname
+		print( "naming", g.glyphname, 'as', newname )
 		g.glyphname =  newname
 		g.unicode = -1
 except ValueError, e:

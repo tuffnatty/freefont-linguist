@@ -1,3 +1,4 @@
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -38,7 +39,7 @@ import fontforge
 
 def explain_error_and_quit( e ):
 	if e:
-		print 'Error: ', e
+		print( 'Error:', e )
 	exit( 1 )
 
 try:
@@ -54,7 +55,7 @@ try:
 			newname = 'uni%0.7X' %( g.encoding )
 		elif g.encoding <= 0xFFFFFFFF:
 			newname = 'uni%0.8X' %( g.encoding )
-		print "naming " + str( g.glyphname ) + ' as ' + newname
+		print( "naming", g.glyphname, 'as', newname )
 		g.glyphname = newname
 		g.unicode = g.encoding
 except ValueError, e:
