@@ -1,4 +1,5 @@
 #!/usr/bin/env ../utility/fontforge-interp.sh
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -60,10 +61,10 @@ def get_ligature_lookups( font ):
 				for st in sts:
 					tables.append( st )
 		return tables
-	except EnvironmentError, ( e ):
-		print >> stderr, 'EnvironmentError ' + str( e )
-	except TypeError, ( t ):
-		print >> stderr, 'TypeError ' + str( t )
+	except EnvironmentError as e:
+		print( 'EnvironmentError', e, file=stderr )
+	except TypeError as t:
+		print( 'TypeError', t, file=stderr )
 	return None
 
 _preamble= """<?xml version="1.0" encoding="utf-8"?>
@@ -105,8 +106,8 @@ def print_ligatures( fontPath ):
 	if font.weight == 'Bold':
 		weight = "font-weight: bold; "
 
-	print _style_div_html % ( font.familyname, style, weight )
-	print _lig_header_html % ( font.fontname )
+	print( _style_div_html % ( font.familyname, style, weight ) )
+	print( _lig_header_html % ( font.fontname ) )
 
 	subtable_names = get_ligature_lookups( font )
 	for subtable_name in subtable_names:
@@ -115,7 +116,7 @@ def print_ligatures( fontPath ):
 		out = htmlListOfLigSubtable( font, subtable, subtables )
 		stdout.writelines( out )
 		stdout.flush()
-	print '</div>'
+	print( '</div>' )
 
 class Ligature:
 	def __init__( self, glyph ):
@@ -184,7 +185,8 @@ def makeLigatureSubtable( font, subtable_name ):
 			ligature = Ligature( g )
 			for lr in ligs:
 				if len( lr ) < 3 or lr[1] != 'Ligature':
-					print >> stderr, font.fullname, '- non-ligature: ', g.glyphname
+					print( font.fullname, '- non-ligature:',
+						g.glyphname, file=stderr )
 					break
 				i = 2
 				while i < len( lr ):
@@ -242,11 +244,12 @@ def nestedEntity( font, subtable, a, subtables ):
 	if s >= 0xe000 and s <= 0xf8ff:	# Unicode only
 		lig = findLigatureGlyph( s, subtables )
 		if lig:
-			#print >> stderr, 'Nested glyph found: ' + a
+			#print( 'Nested glyph found:', a, file=stderr )
 			for p in lig.parts:
 				return nestedEntity( font, subtable, p, subtables )
 		else:
-			print >> stderr, font.fullname, '- No nested glyph: ', a
+			print( font.fullname, '- No nested glyph:', a,
+						file=stderr )
 			return '<span class="nonchar">&nbsp;</span>'
 	else:
 		return entityHTML( font, a )
@@ -254,7 +257,7 @@ def nestedEntity( font, subtable, a, subtables ):
 def entityHTML( font, a ):
 	s = font.findEncodingSlot( a )
 	if s == -1:
-		print >> stderr, font.fullname, '- Missing glyph: ', a
+		print( font.fullname, '- Missing glyph:', a, file=stderr )
 		return '<span class="nonchar">&nbsp;</span>'
 	else:
 		return formatted_hex_value( s )
@@ -266,11 +269,11 @@ def formatted_hex_value( n ):
 args = argv[1:]
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
-	print >> stderr, __usage
+	print( __usage, file=stderr )
 	exit( 0 )
 
-print _preamble
+print( _preamble )
 for font_name in args:
 	print_ligatures( font_name )
-print _postamble
+print( _postamble )
 

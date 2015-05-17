@@ -93,7 +93,8 @@ ulUnicodeRange = [
 	]],
 [6,	'Combining Diacritical Marks (+suppl.)',     [interval(0x0300, 0x036F),
 			interval(0x1DC0, 0x1DF5),	# Supplement
-			interval(0x1DFC, 0x1DFF)	# Supplement
+			interval(0x1DFC, 0x1DFF),	# Supplement
+			interval(0x1AB0, 0x1ABE)	# Extended
 			] ],
 [7,	'Greek and Coptic',     [interval(0x0370, 0x0377),
 			interval(0x037A, 0x037F),
@@ -108,6 +109,7 @@ ulUnicodeRange = [
 [9,	'Cyrillic (+suppl., +ext.-A, -B)',     [
 	interval(0x0400, 0x04FF),	# Cyrillic
 	interval(0x0500, 0x052F),	# Cyrillic Supplement
+	interval(0x1C80, 0x1C88),	# Unicode 8 proposal for Slavonic
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
 	interval(0xA640, 0xA69D),	# Cyrillic Extended-B
 	interval(0xA69F, 0xA69F)
@@ -234,7 +236,9 @@ ulUnicodeRange = [
 		interval(0x0C78, 0x0C7f),
 			]
 			],
-[22,	'Kannada',     [interval(0x0C81, 0x0C83),
+[22,	'Kannada',	[
+		interval(0x0C80, 0x0C80), # Proposed for Unicode 8?
+		interval(0x0C81, 0x0C83),
 		interval(0x0C85, 0x0C8C),		
 		interval(0x0C8E, 0x0C90),		
 		interval(0x0C92, 0x0CA8),		
@@ -280,8 +284,7 @@ ulUnicodeRange = [
 		interval(0x1E00, 0x1EFF),	# Additional
 		interval(0x2C60, 0x2C7F),	# C
 		interval(0xA720, 0xA78E),	# D
-		interval(0xA790, 0xA7AD),	# D
-		interval(0xA7B0, 0xA7B1),	# D
+		interval(0xA790, 0xA7B1),	# D
 		interval(0xA7F7, 0xA7FF)	# D
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
@@ -347,6 +350,7 @@ ulUnicodeRange = [
 [45,	'Geometric Shapes',     [interval(0x25A0, 0x25FF)]],
 [46,	'Miscellaneous Symbols',     [
 			interval(0x2600, 0x26FF),
+			interval(0x1F300, 0x1F5FF),	# Miscellaneous Symbols and Pictographs
 			]
 			],
 [47,	'Dingbats',     [interval(0x2700, 0x27BF),
@@ -442,7 +446,11 @@ ulUnicodeRange = [
 		interval(0x2D80, 0x2DDF)	# extended
 		]
 		],
-[76,	'Cherokee', [interval(0x13A0, 0x13F4)]],
+[76,	'Cherokee', [interval(0x13A0, 0x13F4),
+		interval(0x13F5, 0x13F5),	# Unicode 8 proposed
+		interval(0x13F8, 0x13FD),	# Unicode 8 proposed
+		interval(0xAB70, 0xABBF)	# Unicode 8 proposed
+]],
 [77, 	'Unified Canadian Aboriginal Syllabics',
 		[interval(0x1400, 0x167F),
 		interval(0x18B0, 0x18F5)	# UCAS Extended
@@ -573,8 +581,7 @@ ulUnicodeRange = [
 	], True],
 #[123-127, 	'Reserved for process-internal usage', []]
 [123, 	'Unicode with no OS/2 range', [
-					# really this is a complicated range
-		interval(0x1F300, 0x1F5FF),	# Miscellaneous Symbols and Pictographs
+			# unclear what to put here
 	], True],
 ]
 

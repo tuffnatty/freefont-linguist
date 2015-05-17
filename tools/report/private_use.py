@@ -1,4 +1,5 @@
 #!/usr/bin/env ../utility/fontforge-interp.sh
+from __future__ import print_function
 
 __doc__ = """
 private_use.py
@@ -14,7 +15,7 @@ __date__ = "Dec 2009"
 __version__ = "$Revision: 1.2 $"
 
 import fontforge
-import sys
+from sys import argv, exit, stdout, stderr
 
 
 preamble = """<?xml version="1.0" encoding="utf-8"?>
@@ -48,45 +49,49 @@ postamble="""
 def print_private( fontPath ):
 	font = fontforge.open( fontPath )
 
-	print  '<div style="font-family: \'' + font.familyname + '\'; ' \
-			 '\">'
-	print  '<h2>Private Use Area in  ' + font.fontname + '</h2>'
+	print( '<div style="font-family: \'%s\'; ">' % ( font.familyname ) ) 
+	print( '<h2>Private Use Area in  ' + font.fontname + '</h2>' )
 
 	font.selection.select(("ranges",None),0xe000,0xf8ff)
-	print  '<table>'
+	print( '<table>' )
 	for g in font.selection.byGlyphs:
-		print  '<tr><td>'
-		print '%s%0.4x%s' %( "0x", g.encoding, "" )
-		print  '</td><td>'
-		print  '' + g.glyphname
-		print  '</td><td>'
+		print( '<tr><td>' )
+		print( '%s%0.4x%s' %( "0x", g.encoding, "" ) )
+		print( '</td><td>' )
+		print( '' + g.glyphname )
+		print( '</td><td>' )
 		if g.getPosSub( '*' ):
-			print "is ligature"
+			print( "is ligature" )
 		if g.references:
-			print "has references"
-		print  '</td><td>'
-		print  '</td></tr>'
+			print( "has references" )
+		print( '</td><td>' )
+		print( '</td></tr>' )
 		
-	print  '</table>'
-	print  '</div>'
-	sys.stdout.flush()
+	print( '</table>' )
+	print( '</div>' )
+	stdout.flush()
 
 def printentity( font, s ):
 	if s == -1:
-		print >> sys.stderr, 'Missing glyph: ' + a
-		sys.stdout.write( '<span class="nonchar">&nbsp;</span>' )
+		print( 'Missing glyph:', a )
+		stdout.write( '<span class="nonchar">&nbsp;</span>' )
 	else:
-		sys.stdout.write( formatted_hex_value( s ) )
+		stdout.write( formatted_hex_value( s ) )
 
 def formatted_hex_value( n ):
 	return '%s%0.4x%s' %( "&#x", n, ";" )
 
-args = sys.argv[1:]
+args = argv[1:]
+
+__usage = """Usage
+	private_use.py font_file_name
+"""
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
-	sys.exit( 0 )
+	print( __usage, file=stderr )
+	exit( 1 )
 
-print makePreamble()
+print( makePreamble() )
 for font_name in args:
 	print_private( font_name )
-print postamble
+print( postamble )
