@@ -1,4 +1,5 @@
 # vim: set filetype=python : 
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
@@ -151,8 +152,8 @@ def fontInfo2WOFFxml( font ):
 if argc > 1:
 	for i in range( 1, argc ):
 		f = fontforge.open( sys.argv[i] )
-		woff_file = f.fontname + ".woff"
-		print "Generating WOFF file ", woff_file
+		woff_file = f.fontname + '.woff'
+		print( 'Generating WOFF file', woff_file )
 		# Wanted to set to 'UniocdeBmp' if there were no high unicodes
 		# but all attemtps to determine that from Python failed.
 		f.encoding = 'UnicodeFull'
@@ -172,4 +173,4 @@ if argc > 1:
 			'old-kern','dummy-dsig','round') )
 		f.close()
 else:
-	print "Usage: " + scriptname + " font.sfd [font.sfd ...]"
+	print( 'Usage:', scriptname, 'font.sfd [font.sfd ...]' )
