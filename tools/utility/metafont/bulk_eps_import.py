@@ -1,4 +1,5 @@
 #!/usr/bin/fontforge -script
+from __future__ import print_function
 """
 For use on Metafont fonts.
 To import glyphs each in individual .eps files into an empty font file.
@@ -35,11 +36,11 @@ import fnmatch, re
 problem = False
 
 def import_glyph( font, name, chrnum ):
-	print "importing file: " + name + " to slot " + str( chrnum )
+	print( "importing file:", name, "to slot", chrnum )
 
 	g = font.createChar( chrnum )
 
-	print "importing outlines " + name 
+	print( "importing outlines", name )
 	g.importOutlines( name )
 	# The glyphs produced by MetaPost usually have a grid, whose
 	# right side seems to correspond to the proper right side bearing
@@ -56,7 +57,7 @@ re_file_pat = re.compile( file_pat )
 if argc > 2:
 	fontfilename = sys.argv[1]
 	font = fontforge.open( fontfilename )
-	print "bulk importing to font file: " + fontfilename
+	print( "bulk importing to font file:", fontfilename )
 	chrnum = 0
 	directories = os.listdir('.')
 	directories.sort()
@@ -64,10 +65,10 @@ if argc > 2:
 	for glyphfile in directories:
 		matches = re_file_pat.match( glyphfile )
 		if matches:
-			print "doing glyph " + glyphfile
+			print( "doing glyph", glyphfile )
 			chrnum = int( matches.group(1) )
 			import_glyph( font, glyphfile, chrnum )
-	print "saving font in " + fontfilename 
+	print( "saving font in", fontfilename )
 	font.save()
 	font.close()
 
