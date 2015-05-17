@@ -1,3 +1,4 @@
+from __future__ import print_function
 __license__ = """
 This file is part of GNU FreeFont.
 
