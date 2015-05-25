@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1432394059
+ModificationTime: 1432558722
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -284,7 +284,7 @@ Lookup: 257 0 0 "don't move"  {"don't move-1"  } []
 Lookup: 257 0 0 "positioning for space in Sinhala"  {"positioning for space in Sinhala-2"  "positioning for space in Sinhala-1"  } []
 Lookup: 264 0 0 "'dist' wide space in Sinhala"  {"'dist' wide space in Sinhala-1"  } ['dist' ('sinh' <'dflt' > ) 'kern' ('sinh' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning slash fractions"  {"'kern' kerning slash fractions-1" [150,0,6] } ['kern' ('DFLT' <'dflt' > 'arab' <'dflt' > 'armn' <'dflt' > 'cher' <'dflt' > 'copt' <'dflt' > 'cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'MAR ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'MAR ' 'SAN ' 'SAT ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'dflt' > 'gur2' <'dflt' > 'guru' <'dflt' > 'hebr' <'IWR ' 'JII ' 'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'sinh' <'dflt' > 'thaa' <'dflt' > 'thai' <'dflt' > ) ]
-Lookup: 258 0 0 "'kern' kerning in Latin"  {"'kern' kern big letters in Latin" [150,0,2] "'kern' kern small letters in Latin" [150,0,2] "'kern' kern punctuation in Latin" [150,0,4] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
+Lookup: 258 0 0 "'kern' kerning in Latin"  {"'kern' kern big letters in Latin" [150,0,2] "'kern' kern small letters in Latin" [150,0,2] "'kern' kern punctuation-left in Latin" [150,0,4] "'kern' kern punctuation-right in Latin" [150,0,4] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 258 8 0 "'kern' kerning in Latin for IPA"  {"'kern' kern right in Latin for IPA" [150,0,2] "'kern' kern left in Latin for IPA" [150,0,2] } ['kern' ('grek' <'dflt' > 'latn' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin for Catalan"  {"'kern' kerning in Latin for Catalan-1" [150,0,6] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Greek"  {"'kern' kerning in Greek-1" [150,0,6] "'kern' kerning in Greek-aspiratives" [150,0,4] } ['kern' ('grek' <'ELL ' 'PGR ' 'dflt' > ) ]
@@ -348,6 +348,16 @@ MarkAttachClasses: 1
 MarkAttachSets: 1
 "sinh_below" 215 sinh_rak2 sinh_rak3 sinh_rak4 sinh_rak5 sinh_rak6 sinh_rak7 sinh_rak8 sinh_rak9 sinh_u2 sinh_u3 sinh_u4 sinh_u5 sinh_u6 sinh_u7 sinh_u8 sinh_u9 sinh_uu2 sinh_uu3 sinh_uu4 sinh_uu5 sinh_uu6 sinh_uu7 sinh_uu8 sinh_uu9
 DEI: 91125
+KernClass2: 6 4 "'kern' kern punctuation-right in Latin" 
+ 3 A L
+ 5 V W Y
+ 4 f ff
+ 5 v w y
+ 5 F P T
+ 73 quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
+ 27 quotesinglbase quotedblbase
+ 12 comma period
+ 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} -100 {} -80 {} 0 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} -60 {}
 KernClass2: 2 2 "'kern' kern cap+-aux in Cyrillic-1" 
  59 Vecyr Zecyr Ocyr Ercyr Efcyr Softsigncyr Ereversedcyr IUcyr
  11 cyr_serb_be
@@ -544,22 +554,14 @@ KernClass2: 6 9 "'kern' kerning in Thaana-1"
  14 chaviyani_tana
  41 alifu_tana yaa_tana ainu_tana ghainu_tana
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} -40 {} -40 {} -40 {} 0 {} -80 {} 0 {} 0 {} -80 {} -20 {} -60 {} -60 {} -80 {} 0 {} -80 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -30 {} -20 {} -40 {} -20 {} -20 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {}
-KernClass2: 8 8 "'kern' kern punctuation in Latin" 
- 3 A L
- 5 V W Y
- 4 f ff
- 5 v w y
+KernClass2: 3 5 "'kern' kern punctuation-left in Latin" 
  73 quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
  27 quotesinglbase quotedblbase
- 5 F P T
- 73 quoteleft quoteright quotereversed quotedblleft quotedblright quotedblrev
- 27 quotesinglbase quotedblbase
- 12 comma period
  38 a e o aacute eacute oacute ocircumflex
  5 V W Y
  1 j
  1 T
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} -40 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {}
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} -40 {} 0 {} 0 {} 0 {} -90 {} 0 {} -40 {}
 KernClass2: 21 17 "'kern' kern small letters in Latin" 
  106 a agrave aacute acircumflex atilde adieresis aring amacron abreve aogonek adblgrave ainvertedbreve uni0227
  183 b o p ssharp eth ograve oacute ocircumflex otilde odieresis oslash thorn omacron obreve ohungarumlaut ocaron eturned oogonek oogonekmacron oslashacute odblgrave oinvertedbreve uni022F
