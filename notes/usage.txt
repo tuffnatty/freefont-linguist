@@ -100,13 +100,16 @@ Style sets
 These replacements are meant to indicate variant typgraphic style, and
 are activated by enabling a "Style Set" in the document.
 
-Greek Extended	Adscript iota on capitals (ss06)
+Greek Extended  Adscript iota on capitals (ss06)
 
-Cyrillic	Bulgarian modern (ss01)
+Cyrillic        Bulgarian modern (ss01)
 
-Devanagari	Bombay (ss02), Calcutta (ss03), Nepali (ss04)
+Devanagari      Bombay (ss02), Calcutta (ss03), Nepali (ss04)
 
-Tamil	Reformed orthography (ss07)
+Tamil           Reformed orthography (ss07)
+
+Math            Calligraphic Latin letters (ss10 and bold ss11)
+
 
 Character variants
 ==================
@@ -156,35 +159,53 @@ vertical line bounds, may be had by enabling the 'flac' feature.
 Small captials
 --------------
 
-A limited set of specially drawn small capital letters in Latin.
+A limited set of specially drawn small capital letters in Latin, Greek and
+Cyrillic,  enabled by the font feature settings 'smcp' and 'c2sc' or by CSS
+	font-variant-caps: small-caps;
+	font-variant-caps: all-small-caps;
 
 Superscript and subscript
 -------------------------
 
 Transform a limited set of characters--mostly Latin letters and numerals--
-to versions well-sized and positioned as superscript or subscript.
+to versions well-sized and positioned as superscript or subscript.  Enabled
+by the font feature settings 'subs', 'sups', or by CSS
+	font-variant-position: sub;
+	font-variant-position: sup;
 
 Numeral styles
 --------------
 
 The default numerals of FreeSerif are mono-spaced and of even height.
 It also features proportionally-spaced numerals, and "old-style" numerals--
-those which vary in height and sometimes go beneath the baseline.
-These can be had at discretion.
+those which vary in height and sometimes go beneath the baseline.  Controlled
+by font feature settings 'pnum', 'onum', 'tnum', 'lnum', or by CSS property
+	font-variant-numeric
+with values
+	oldstyle-nums, proportional-nums, tabular-nums, lining-nums.
 
-Diagonal fractions
+Fraction styles
 ------------------
 
 A limited set of diagonal fraction substitutions are available at discretion.
 The set is more than what is encoded in Unicode.
-They work with the ASCII slash or the mathematical slash U+2215.
-The transform a sequence "number-slash-number" to a diagonal form.
+They work with the ASCII slash or the mathematical slash U+2215
+to transform a sequence "number-slash-number" to a diagonal form.
+
+These are enabled wih the font feature setting of 'frac'
+or CSS
+	font-variant-numeric: diagonal-fractions;
+
+More general stacked fractions are available with the font feature setting 
+'afrc' or with CSS
+	font-variant-numeric: stacked-fractions;
 
 Zero
 ----
 
 A slashed form of the numeral zero is available at discretion.
-Available in all faces.
+Available in all faces with font feature setting 'zero' or with CSS
+	font-variant-numeric: slashed-zero;
 
 Alternative characters
 ======================
@@ -292,9 +313,25 @@ Letters: UppercaseSmallCaps
 Style: Alternate Historic
 Variant: 1 (etc. -- must be in {}, picks style set.)
 ---------------------------------------------------------------------------
+LaTeX package 'unicode-math' provides very good access to math characters and
+features in FreeSerif and FreeSans.
+
+\usepackage{unicode-math}
+\setmathfont[Extension = .otf]{FreeSerif}
+\setmainfont[Extension = .otf]{FreeSerif}
+% The further commands enable the math font selection commands
+\setmathfont[Extension = .otf,bold-style=TeX]{FreeSerif}
+\setmathfont[Extension = .otf,range=\mathbfup/{greek,Greek,Numerals}]{FreeSerif}
+\setmathfont[Extension = .otf,range={\mathscr,\mathbfscr,\mathfrak,\mathbb,\mathbffrak}]{FreeSerif}
+% Finally, calligraphic letters are accessed by Style Selector:
+\newfontfamily\texmathcal[Extension = .otf,Script=Latin,Variant={10}]{FreeSerif}
+\renewcommand{\mathcal}[1]{\mbox{\texmathcal\selectfont #1}}
+\newfontfamily\texmathbfcal[Extension = .otf,Script=Latin,Variant={11}]{FreeSerif}
+\renewcommand{\mathbfcal}[1]{\mbox{\texmathbfcal\selectfont #1}}
+---------------------------------------------------------------------------
 Some character ranges do not have 'italic' or 'oblique' versions.
 
-To produce slated text in such ranges, 'fontspec' has features FakeSlant
+To produce slanted text in such ranges, 'fontspec' has features FakeSlant
 and AutoFakeSlant.
 ---------------------------------------------------------------------------
 
@@ -324,6 +361,23 @@ It is possible to either use FreeSerif italic for the main math symbols font
 or else to use the built-in math alphanumeric symbols ranges
 	\setmathfont[Path=FONT-DIR-FULL-PATH, range=\mathit] {FreeSerif}
 Other ranges are listed in the unicode-math.
+
+Use with MATHML
+===============
+
+FreeSerif and FreeSans function, with some limitations, with MATHML.
+
+In Mozilla Firefox, it suffices to specify in CSS style:
+	body, math { font-family: freeserif }
+However, any missing symbols will be taken from the Firefox 'about:config'
+list 'font.mathfont-family'.
+
+Limitations include: 
+1) vertical extension of symbols such as the integral
+and brackets begins when font height is reached---whereas in many math
+fonts, very high precomposed symbols are used.
+2) The height of summation, slashes, other variable sized symbols is 
+limited to font height.
 
 
 $Id: usage.txt,v 1.10 2011-07-16 08:38:06 Stevan_White Exp $
