@@ -15,20 +15,26 @@ ffversion=`fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fon
 
 TESTFF=if test -z ${ffversion}; then echo FontForge program is required to build FreeFont; exit 1; fi; if test `fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'` -lt 20080429 ; then echo FontForge version too old; exit 1; fi
 
+GENTT=../tools/generate/TrueType
+GENOT=../tools/generate/OpenType
+GENWO=../tools/generate/WOFF
+IFP=../tools/generate/tweeks/set_isFixedPitch.py
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf .woff
 
 %.otf : %.sfd
 	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/generate/OpenType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	@ ( $(FFPY) ${GENOT} $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	@ ( $(IFP) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
 
 %.ttf : %.sfd
 	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/generate/TrueType $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	@ ( $(FFPY) $(GENTT) $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	@ ( $(IFP) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
 
 %.woff : %.sfd
 	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/generate/WOFF $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	@ ( $(FFPY) $(GENWO) $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
 
 all: ttf otf woff
 
