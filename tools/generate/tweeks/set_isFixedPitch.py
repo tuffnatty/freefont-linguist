@@ -24,7 +24,7 @@ __version__ = "$Revision: 1.9 $"
 __doc__ = """Sets the OpenType 'post' table flag 'isFixedPitch' to True.
 	A cludge to work around some misunderstandings in FontForge.
 """
-from sys import argv, stdout
+from sys import argv, stdout, stderr
 from OpenType.fontdirectory import getDirectoryEntriesByTag
 from OpenType.requiredtables import postTable
 
@@ -64,7 +64,7 @@ try:
 	outfile.write( str( buf ) )
 	outfile.flush()
 except Exception as e:
-	print( "set_isfixedpitch, file ", filePath, file=stdout )
-	print( e, file=stdout )
-	return 1
-return 0
+	print( "set_isfixedpitch, file ", filePath, file=stderr )
+	print( e, file=stderr )
+	exit( 1 )
+exit( 0 )
