@@ -7,13 +7,19 @@ MSFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd
 TTFS=$(SFDS:.sfd=.ttf)
 OTFS=$(SFDS:.sfd=.otf)
 WOFFS=$(SFDS:.sfd=.woff)
-FF=fontforge -lang=ff -script 
-FFPY=fontforge -lang=py -script 
-FFPY=fontforge -lang=py -script 
+FF=/usr/local/bin/fontforge 
+FFFF=$(FF) -lang=ff -script 
+FFPY=$(FF) -lang=py -script 
 
 ffversion=`fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'`
 
-TESTFF=if test -z ${ffversion}; then echo FontForge program is required to build FreeFont; exit 1; fi; if test `fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'` -lt 20080429 ; then echo FontForge version too old; exit 1; fi
+TESTFFEXIST=if test -z ${ffversion}; then echo FontForge program is required to build FreeFont; exit 1; fi
+
+TESTFFOLD=if test ${ffversion} -lt 20080429 ; then echo FontForge version too old; exit 1; fi
+
+TESTFF2012=if test ${ffversion} -eq 20120731 ; then echo FontForge version 20120731 screws up right-to-left kerning tables.  \\nPlease use a different version when building FreeFont.; exit 1; fi
+
+TESTFF=${TESTFFEXIST}; ${TESTFFOLD}; ${TESTFF2012}
 
 GENTT=../tools/generate/TrueType
 GENOT=../tools/generate/OpenType
