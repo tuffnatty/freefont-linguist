@@ -11,7 +11,7 @@ FF=/usr/local/bin/fontforge
 FFFF=$(FF) -lang=ff -script 
 FFPY=$(FF) -lang=py -script 
 
-ffversion=`fontforge --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'`
+ffversion=`${FF} --version 2> /dev/null | grep '^fontforge' | sed -e 's/^fontforge //'`
 
 TESTFFEXIST=if test -z ${ffversion}; then echo FontForge program is required to build FreeFont; exit 1; fi
 
