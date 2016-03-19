@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1452806849
+ModificationTime: 1458389393
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -544,7 +544,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 864 16 12
+WinInfo: 65168 16 12
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 39 [-20 0 417 437 480 490 563 583 640 650]
@@ -88049,7 +88049,7 @@ Fore
 Refer: 3664 64442 N 1 0 0 1 145 -60 2
 Refer: 3693 1697 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' initial forms in Arabic subtable" pehehfinaarabic
+Substitution2: "'init' initial forms in Arabic subtable" pehehinitarabic
 Substitution2: "'medi' Medial Forms in Arabic subtable" pehehmediarabic
 Substitution2: "'fina' Terminal Forms in Arabic subtable" pehehinitarabic
 EndChar
@@ -90455,9 +90455,19 @@ AnchorPoint: "above_arabic" 300 420 basechar 0
 AnchorPoint: "below_arabic" 300 -20 basechar 0
 LayerCount: 2
 Fore
-Refer: 4452 -1 N 1 0 0 1 0 0 2
-Refer: 3674 1583 N 1 0 0 1 -20 0 2
-Validated: 32769
+SplineSet
+481 40 m 1
+ 600 40 l 1
+ 600 0 l 1
+ 0 0 l 1
+ 0 40 l 1
+ 398 40 l 1
+ 345 60 277 192 277 273 c 1
+ 277 286 286 300 300 300 c 0
+ 314 300 324 286 324 273 c 1
+ 324 190 383 68 481 40 c 1
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: thalfinaarabic
@@ -93059,7 +93069,7 @@ Refer: 3954 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: pehehfinaarabic
+StartChar: pehehinitarabic
 Encoding: 64368 64368 4051
 Width: 600
 Flags: HMW
@@ -93072,7 +93082,7 @@ Refer: 3953 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: pehehinitarabic
+StartChar: pehehfinaarabic
 Encoding: 64367 64367 4052
 Width: 600
 Flags: HMW
@@ -95074,16 +95084,16 @@ StartChar: lamalefisolarabic
 Encoding: 65275 65275 4165
 Width: 600
 Flags: HMW
+AnchorPoint: "above_arabic" 160 563 basechar 0
 AnchorPoint: "below_arabic" 340 -20 basechar 0
-AnchorPoint: "above_arabic" 470 580 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-198 564 m 2
- 216 564 225 557 225 544 c 0
- 225 530 216 523 198 523 c 2
- 150 523 l 1
- 154 384 239.111 283.751 331.222 223.062 c 1
+198 534 m 2
+ 216 534 225 527 225 514 c 0
+ 225 500 216 493 198 493 c 2
+ 155 493 l 1
+ 155 365 243 291 331.222 223.062 c 1
  398.231 272.582 460 330.635 460 374.532 c 2
  460 563 l 2
  460 574 466 583 480 583 c 0
@@ -95094,15 +95104,15 @@ SplineSet
  467.088 34.4287 432 0 347 0 c 0
  302 0 239.5 0 165 0 c 1
  165 84.1746 231.311 147.858 299.273 199.362 c 1
- 210.819 261.452 110 358.554 110 564 c 1
- 198 564 l 2
+ 221 261 110 328.554 110 534 c 1
+ 198 534 l 2
 332.101 176.806 m 1
  280.904 139.075 209 79.7109 209 44 c 1
  267 44 308 44 340 44 c 0
  378.033 44 426.834 50.5225 426.834 81.1631 c 0
  426.834 109.116 376.491 146.173 332.101 176.806 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1575937
 LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" laminitarabic aleffinaarabic
 EndChar
@@ -95111,20 +95121,20 @@ StartChar: lamaleffinaarabic
 Encoding: 65276 65276 4166
 Width: 600
 Flags: HMW
-AnchorPoint: "above_arabic" 390 580 basechar 0
+AnchorPoint: "above_arabic" 160 560 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-284 263 m 0
- 292.411 256.499 297 255 297 244 c 0
+283 268 m 0
+ 291.411 261.499 297 255 297 244 c 0
  297 237 292 232 281 232 c 0
  269 232 268 232 252 242 c 0
- 169 301 110 384 110 564 c 1
- 198 564 l 2
- 216 564 225 557 225 544 c 0
- 225 530 216 523 198 523 c 2
- 150 523 l 1
- 159 377.5 217.5 314.4 284 263 c 0
+ 169 301 110 367 110 534 c 1
+ 198 534 l 2
+ 216 534 225 527 225 514 c 0
+ 225 500 216 493 198 493 c 2
+ 150 493 l 1
+ 159 347.5 216.5 319.4 283 268 c 0
 420 297 m 2
  420 196 444 40 526 40 c 2
  600 40 l 17
@@ -95142,7 +95152,7 @@ SplineSet
  414 581 420 572 420 561 c 2
  420 297 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1575937
 LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" lammediarabic aleffinaarabic
 EndChar
@@ -95156,7 +95166,7 @@ LayerCount: 2
 Fore
 Refer: 4165 65275 N 1 0 0 1 0 0 2
 Refer: 3722 1619 N 1 0 0 1 -119 -12 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: lamalefmaddaabovefinaarabic
@@ -95168,7 +95178,8 @@ LayerCount: 2
 Fore
 Refer: 4166 65276 N 1 0 0 1 0 0 2
 Refer: 3722 1619 N 1 0 0 1 -119 -12 2
-Validated: 32769
+Validated: 1146881
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" laminitarabic alefmaddaabovefinaarabic
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" lammediarabic alefmaddaabovefinaarabic
 EndChar
@@ -95182,7 +95193,8 @@ LayerCount: 2
 Fore
 Refer: 4165 65275 N 1 0 0 1 0 0 2
 Refer: 3711 1620 N 1 0 0 1 -117 0 2
-Validated: 32769
+Validated: 1146881
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" laminitarabic alefhamzaabovefinaarabic
 EndChar
 
@@ -95195,7 +95207,8 @@ LayerCount: 2
 Fore
 Refer: 4166 65276 N 1 0 0 1 0 0 2
 Refer: 3711 1620 N 1 0 0 1 -107 0 2
-Validated: 32769
+Validated: 1146881
+LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" lammediarabic alefhamzaabovefinaarabic
 EndChar
 
@@ -95203,12 +95216,12 @@ StartChar: lamalefhamzabelowisolarabic
 Encoding: 65273 65273 4171
 Width: 600
 Flags: HMW
-AnchorPoint: "above_arabic" 470 580 basechar 0
+AnchorPoint: "above_arabic" 150 560 basechar 0
 LayerCount: 2
 Fore
 Refer: 4165 65275 N 1 0 0 1 0 0 2
 Refer: 3712 1621 N 1 0 0 1 -100 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" laminitarabic alefhamzabelowfinaarabic
 EndChar
@@ -95217,12 +95230,12 @@ StartChar: lamalefhamzabelowfinaarabic
 Encoding: 65274 65274 4172
 Width: 600
 Flags: HMW
-AnchorPoint: "above_arabic" 400 580 basechar 0
+AnchorPoint: "above_arabic" 160 560 basechar 0
 LayerCount: 2
 Fore
 Refer: 4166 65276 N 1 0 0 1 0 0 2
 Refer: 3712 1621 N 1 0 0 1 -100 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 Ligature2: "'rlig' Required Ligatures in Arabic subtable" lammediarabic alefhamzabelowfinaarabic
 EndChar

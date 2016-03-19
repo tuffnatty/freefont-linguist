@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1457997886
+ModificationTime: 1458386720
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -173,6 +173,7 @@ Lookup: 2 0 0 "'ss06' style set in Greek - iota adscript"  {"'ss06' style set in
 Lookup: 1 0 0 "'aalt' access-all-altern. in Greek"  {"'aalt' access-all-alternates in Greek-1"  } ['aalt' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' glyph decompos. in Arabic"  {"'ccmp' glyph decomp. in Arabic 1"  } ['ccmp' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'fina' terminal forms in Arabic"  {"'fina' terminal forms in Arabic 1"  } ['fina' ('arab' <'dflt' > ) ]
+Lookup: 1 8 0 "'isol' isolated forms in Arabic"  {"'isol' isolated forms in Arabic-1"  } ['isol' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'medi' medial forms in Arabic"  {"'medi' medial forms in Arabic 1"  } ['medi' ('arab' <'dflt' > ) ]
 Lookup: 1 9 0 "'init' initial forms in Arabic"  {"'init' initial forms in Arabic 1"  } ['init' ('arab' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Arabic"  {"'liga' std. ligatures in Arabic-ring-Pashto"  "'liga' std. ligatures in Arabic-finals"  "'liga' shadda ligatures in Arabic"  "'liga' word ligatures in Arabic"  } ['liga' ('arab' <'dflt' > ) ]
@@ -287,8 +288,8 @@ Lookup: 258 8 0 "'kern' kerning in Latin for IPA"  {"'kern' kern right in Latin 
 Lookup: 258 0 0 "'kern' kerning in Latin for Catalan"  {"'kern' kerning in Latin for Catalan-1" [150,0,6] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Greek"  {"'kern' kerning in Greek-1" [150,0,6] "'kern' kerning in Greek-aspiratives" [150,0,4] } ['kern' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kern big letters in Cyrillic" [150,0,0] "'kern' kern small letters in Cyrillic" [150,0,4] "'kern' kern small+-aux letters in Cyrillic" [150,0,4] "'kern' kern aux+-capitals in Cyrillic" [150,0,4] "'kern' kern aux+-small letters in Cyrillic" [150,0,4] "'kern' kern cap+-aux in Cyrillic-1" [150,0,0] } ['kern' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
+Lookup: 258 9 0 "'kern' kern in Arabic"  {"'kern' kern in Arabic-1" [150,0,4] } ['kern' ('arab' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Armenian"  {"'kern' kerning in Armenian-1" [150,0,4] } ['kern' ('armn' <'dflt' > ) ]
-Lookup: 258 8 0 "'kern' kern in Arabic"  {"'kern' kern in Arabic-1" [150,0,4] } ['kern' ('arab' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Thai"  {"'kern' kerning in Thai-1"  } ['kern' ('thai' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Malayalam"  {"'kern' kerning in Malayalam-2" [150,0,6] "'kern' kerning in Malayalam-1" [150,15,2] } ['kern' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 258 9 0 "'kern' kerning in Thaana"  {"'kern' kerning in Thaana-1" [150,0,4] } ['kern' ('thaa' <'dflt' > ) ]
@@ -350,26 +351,40 @@ MarkAttachClasses: 1
 MarkAttachSets: 1
 "sinh_below" 215 sinh_rak2 sinh_rak3 sinh_rak4 sinh_rak5 sinh_rak6 sinh_rak7 sinh_rak8 sinh_rak9 sinh_u2 sinh_u3 sinh_u4 sinh_u5 sinh_u6 sinh_u7 sinh_u8 sinh_u9 sinh_uu2 sinh_uu3 sinh_uu4 sinh_uu5 sinh_uu6 sinh_uu7 sinh_uu8 sinh_uu9
 DEI: 91125
-KernClass2: 9 10 "'kern' kern in Arabic-1" 
+KernClass2: 12 22 "'kern' kern in Arabic-1" 
+ 141 alefmaddaabovearabic alefhamzaabovearabic alefarabic alefwaslaarabic alefwavyhamzaabovearabic alefhamzahigharabic aleftwofarsi alefthreefarsi
+ 224 alefwaslaisolarabic alefwaslafinalarabic alefmaddaaboveisolarabic alefmaddaabovefinalarabic alefhamzaaboveisolarabic alefhamzaabovefinalarabic alefhamzabelowisolarabic alefhamzabelowfinalarabic alefisolarabic aleffinalarabic
  184 reharabic zainarabic rreharabic rehvarabic rehringarabic rehdotbelowarabic rehvbelowarabic rehtwodotsarabic jeharabic rehfourdots rehvinvarabic uni075B rehtwodotsaraabic rehhamsaraabic
- 231 yehhamzarehfinalarabic yehhamzazainfinalarabic behrehfinalarabic behzainfinalarabic tehrehfinalarabic tehzainfinalarabic thehrehfinalarabic thehzainfinalarabic noonrehfinalarabic noonzainfinalarabic yehrehfinalarab yehzainfinalarab
- 59 rehisolarabic rehfinalarabic zainisolarabic zainfinalarabic
- 159 alefmaddaabovearabic alefhamzaabovearabic alefarabic alefmaddaaboveisolarabic alefhamzaaboveisolarabic alefhamzaabovefinalarabic alefisolarabic aleffinalarabic
- 419 wawhamzaabovearabic wawarabic wawhamzahigharabic uhamzaarabic wawringarabic oekirghizarabic oearabic uarabic yuarabic yukirghizarabic wawtwodotsabovearabic vearabic wawdotabovearabic uisolarabic ufinaarabic oeisolarabic oefinaarabic yuisolarabic yufinaarabic uhamzaisolarabic veisolarabic vefinaarabic kirghizyuisolarabic kirghizyufinaarabic wawhamzaaboveisolarabic wawhamzaabovefinalarabic wawisolarabic wawfinalarabic
- 58 heharabic aearabic hehhamzafinaarabic tehmarbutaisolarabic
+ 349 jehisolarabic jehfinaarabic rrehisolarabic rrehfinaarabic yehhamzarehfinalarabic yehhamzazainfinalarabic behrehfinalarabic behzainfinalarabic tehrehfinalarabic tehzainfinalarabic thehrehfinalarabic thehzainfinalarabic noonrehfinalarabic noonzainfinalarabic yehrehfinalarab yehzainfinalarab rehisolarabic rehfinalarabic zainisolarabic zainfinalarabic
+ 231 wawhamzaabovearabic wawarabic wawhamzahigharabic uhamzaarabic wawringarabic oekirghizarabic oearabic uarabic yuarabic yukirghizarabic wawtwodotsabovearabic vearabic wawdotabovearabic wawhamzaaboveisolarabic wawhamzaabovefinalarabic
+ 227 uisolarabic ufinaarabic oeisolarabic oefinaarabic yuisolarabic yufinaarabic uhamzaisolarabic veisolarabic vefinaarabic oekirghizisolarabic oekirghizfinaarabic kirghizyuisolarabic kirghizyufinaarabic wawisolarabic wawfinalarabic
+ 37 heharabic aearabic hehhamzafinaarabic
+ 75 tehmarbutaisolarabic tehmarbutafinalarabic hehisolatedarabic hehfinalarabic
  203 lamalefmaddaaboveisolarabic lamalefmaddaabovefinaarabic lamalefhamzaaboveisolarabic lamalefhamzaabovefinaarabic lamalefhamzabelowisolarabic lamalefhamzabelowfinaarabic lamalefisolarabic lamaleffinaarabic
- 335 dalarabic ddalarabic dalringarabic daldotbelowarabic daldotbelowtaharabic dahalarabic ddahalarabic dularabic dalthreedotsaboverevarabic uni0759 uni075A ddahalisolarabic ddahalfinaarabic dahalisolarabic dahalfinaarabic dulisolarabic dulfinaarabic ddalisolarabic ddalfinaarabic dalisolarabic dalfinalarabic thalisolarabic thalfinalarabic
- 226 alefmaddaabovearabic alefhamzaabovearabic alefarabic alefwaslaarabic alefwavyhamzaabovearabic alefhamzahigharabic aleftwofarsi alefthreefarsi alefwaslaisolarabic alefmaddaaboveisolarabic alefhamzaaboveisolarabic alefisolarabic
- 147 fehdotlessarabic fehdotbelowarabic veharabic peheharabic fehisolarabic fehinitialarabic qafisolarabic qafinitialarabic pehisolarabic pehinitarabic
-
- 194 wawhamzaabovearabic wawarabic wawhamzahigharabic uhamzaarabic wawringarabic oekirghizarabic oearabic uarabic yuarabic yukirghizarabic wawtwodotsabovearabic vearabic uni0778 uni0779 wawisolarabic
- 140 tehmarbutaarabic heharabic aearabic hehhamzaisolarabic hehgoalisoarabic hehdoachaschmeearabic hehdoachaschmeefinaarabic tehmarbutaisolarabic
- 34 meeminitialarabic hehinitialarabic
- 107 sadarabic dadarabic sadthreedotsabovearabic sadfinalarabic sadinitialarabic dadfinalarabic dadinitialarabic
- 35 aininitialarabic ghaininitialarabic
+ 151 dalarabic ddalarabic dalringarabic daldotbelowarabic daldotbelowtaharabic dahalarabic ddahalarabic dularabic dalthreedotsaboverevarabic uni0759 uni075A
+ 183 ddahalisolarabic ddahalfinaarabic dahalisolarabic dahalfinaarabic dulisolarabic dulfinaarabic ddalisolarabic ddalfinaarabic dalisolarabic dalfinalarabic thalisolarabic thalfinalarabic
+ 141 alefmaddaabovearabic alefhamzaabovearabic alefarabic alefwaslaarabic alefwavyhamzaabovearabic alefhamzahigharabic aleftwofarsi alefthreefarsi
+ 109 alefwaslaisolarabic alefmaddaaboveisolarabic alefhamzaaboveisolarabic alefhamzabelowisolarabic alefisolarabic
+ 161 fehdotlessarabic fehdotmovedbelowarabic fehdotbelowarabic veharabic fehthreedotsbelow peheharabic uni0760 uni0761 fehinitialarabic qafisolarabic qafinitialarabic
+ 73 vehisolarabic vehinitarabic pehehisolarabic pehehinitarabic fehisolarabic
+ 180 wawhamzaabovearabic wawarabic wawhamzahigharabic uhamzaarabic wawringarabic oekirghizarabic oearabic uarabic yuarabic yukirghizarabic wawtwodotsabovearabic vearabic uni0778 uni0779
+ 261 uisolarabic ufinaarabic oeisolarabic oefinaarabic yuisolarabic yufinaarabic uhamzaisolarabic veisolarabic vefinaarabic oekirghizisolarabic oekirghizfinaarabic kirghizyuisolarabic kirghizyufinaarabic wawhamzaaboveisolarabic wawhamzaabovefinalarabic wawisolarabic
+ 35 heharabic aearabic tehmarbutaarabic
+ 139 hehhamzaisolarabic hehgoalisoarabic hehdoachaschmeearabic hehdoachaschmeeinitarabic tehmarbutaisolarabic hehisolatedarabic hehinitialarabic
+ 43 sadarabic dadarabic sadthreedotsabovearabic
+ 107 sadisolarabic sadfinalarabic sadinitialarabic sadmedialarabic dadisolarabic dadfinalarabic dadinitialarabic
  185 yehhamzaabovearabic alefmaksuraarabic yeharabic yehfarsiarabic yehtailarabic yehvarabic yehthreedotsarabic yehfarsiisolarabic yehhamzaaboveisolarabic alefmaksuraisolarabic yehisolarabic
  75 yehbarreearabic yehbareehamzaarabic yehbarreeisoarabic yehbarreehamzaarabic
- 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -120 {} -60 {} -20 {} -60 {} -60 {} -40 {} -80 {} -20 {} 0 {} 0 {} -120 {} -60 {} -20 {} -60 {} -60 {} -40 {} -80 {} -20 {} 0 {} 0 {} -120 {} -60 {} -20 {} -60 {} -60 {} -40 {} -80 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} 0 {} -40 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} -20 {} 0 {} -40 {} 0 {} -60 {} 0 {} 0 {} -20 {} 0 {} 0 {} -60 {} -40 {} -80 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} -40 {} -40 {} 0 {} -60 {} 0 {} -80 {}
+ 35 aininitialarabic ghaininitialarabic
+ 164 dalarabic thalarabic ddalarabic dalringarabic daldotbelowarabic daldotbelowtaharabic dahalarabic ddahalarabic dularabic dalthreedotsaboverevarabic dalfourdotsarabic
+ 152 ddahalisolarabic ddahalfinaarabic dahalisolarabic dahalfinaarabic dulisolarabic dulfinaarabic ddalisolarabic ddalfinaarabic dalisolarabic thalisolarabic
+ 32 meemisolarabic meeminitialarabic
+ 199 beharabic teharabic theharabic behdotlessarabic tteharabic tteheharabic beeharabic tehringarabic tehthreedotsrevarabic peharabic teheharabic uni0750 uni0751 uni0752 uni0753 uni0754 uni0755 reh_v_arab
+ 424 beehisolarabic beehfinaarabic beehinitarabic pehisolarabic pehfinaarabic pehinitarabic behehisolarabic behehfinaarabic behehinitarabic ttehehisolarabic ttehehfinaarabic ttehehinitarabic tehehisolarabic tehehfinaarabic tehehinitarabic ttehisolarabic ttehfinaarabic ttehinitarabic rnooninitialarabic behisolarabic behinitialarabic tehisolarabic tehinitialarabic thehisolarabic thehinitialarabic nooninitialarabic yehinitarabic
+ 100 seenisolarabic seenfinalarabic seeninitialarabic sheenisolarabic sheenfinalarabic sheeninitialarabic
+ 125 seendotabovebelowarabic seenthreedotsarabic seenthreedotsabovebelowarabic sheendotbelowarabic uni076D uni0770 uni077D uni077E
+ 116 dyehinitarabic nyehinitarabic tchehinitarabic tchehehinitarabic jeeminitialarabic hahinitialarabic khahinitialarabic
+ 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -40 {} -20 {} -20 {} -40 {} -60 {} -40 {} -40 {} -40 {} -100 {} -100 {} 0 {} 0 {} -40 {} -30 {} -30 {} -20 {} -20 {} -40 {} 0 {} 0 {} 0 {} 0 {} -60 {} -20 {} -20 {} -40 {} -60 {} -40 {} -40 {} -40 {} -100 {} -100 {} 0 {} 0 {} -40 {} -30 {} -30 {} -20 {} -20 {} -40 {} 0 {} -120 {} -120 {} -60 {} -60 {} -20 {} -20 {} -80 {} -80 {} -40 {} -40 {} -20 {} 0 {} -100 {} -40 {} -40 {} -80 {} -50 {} -50 {} -30 {} -30 {} -80 {} 0 {} -120 {} -120 {} -60 {} -60 {} -20 {} -20 {} -60 {} -60 {} -40 {} -40 {} -20 {} 0 {} -100 {} -40 {} -40 {} -80 {} -50 {} -50 {} -30 {} -30 {} -80 {} 0 {} -60 {} -60 {} -30 {} -30 {} -30 {} -30 {} -40 {} -40 {} -20 {} -20 {} -20 {} 0 {} -60 {} -20 {} -20 {} -30 {} -40 {} -40 {} -20 {} -20 {} -30 {} 0 {} -60 {} -60 {} -30 {} -30 {} -20 {} -20 {} -40 {} -40 {} -20 {} -20 {} -20 {} 0 {} -60 {} -20 {} -20 {} -30 {} -40 {} -40 {} -20 {} -20 {} -30 {} 0 {} -40 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} 0 {} -60 {} -40 {} -40 {} 0 {} -100 {} -80 {} -20 {} -40 {} -40 {} -40 {} -40 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} -40 {} -40 {} 0 {} 0 {} 0 {} -80 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -40 {} 0 {} 0 {} 0 {} -60 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
 KernClass2: 3 3 "'kern' kerning in Latin-smallcaps" 
  23 sc.w sc.v sc.y sc.yhook
  4 sc.a
@@ -2757,7 +2772,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 7920 16 12
+WinInfo: 65168 16 12
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 31 [-14 0 307 315 461 473 673 691]
@@ -79529,7 +79544,7 @@ EndChar
 
 StartChar: arab_beh_teh_frame
 Encoding: 59686 -1 3287
-Width: 787
+Width: 817
 VWidth: 800
 GlyphClass: 2
 Flags: HMW
@@ -79549,7 +79564,6 @@ SplineSet
  727 173.5 715 228 673 262 c 1
  699 361 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: arab_beh_teh_medi
@@ -79601,7 +79615,7 @@ EndChar
 
 StartChar: arab_peh_qaf_init
 Encoding: 59692 -1 3290
-Width: 348
+Width: 308
 VWidth: 800
 GlyphClass: 2
 Flags: HMW
@@ -79609,7 +79623,7 @@ LayerCount: 2
 Fore
 SplineSet
 308 176 m 2
- 308 147 l 0
+ 308 147 l 2
  308 54 217.5 0 135 0 c 2
  0 0 l 2
  -18.5 0 -25 70.0996 -25 104 c 1
@@ -79619,13 +79633,12 @@ SplineSet
  112 136 67 174 67 232 c 0
  67 290 91 409 181 409 c 0
  279 409 308 327 308 176 c 2
-168 314 m 1
+168 314 m 5
  154 300 134 279 134 253 c 1
  144 241 175 227 196 227 c 0
  218 227 224 235 235 242 c 1
- 228 279 202 314 168 314 c 1
+ 228 279 202 314 168 314 c 5
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: arab_noon_init
@@ -79823,6 +79836,7 @@ Fore
 Refer: 3352 1619 N 1 0 0 1 -12 0 2
 Refer: 3308 1575 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" alefmaddaaboveisolarabic
 Ligature2: "'rlig' req. ligatures in Arabic-1" alefarabic maddahabv.cmb
 Substitution2: "'medi' medial forms in Arabic 1" alefmaddaabovefinalarabic
 Substitution2: "'fina' terminal forms in Arabic 1" alefmaddaabovefinalarabic
@@ -79840,6 +79854,7 @@ Fore
 Refer: 3308 1575 N 1 0 0 1 0 0 0
 Refer: 3385 1652 N 1 0 0 1 -23 43 0
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" alefhamzaaboveisolarabic
 Ligature2: "'rlig' req. ligatures in Arabic-1" alefarabic hamzaabv.cmb
 Substitution2: "'medi' medial forms in Arabic 1" alefhamzaabovefinalarabic
 Substitution2: "'fina' terminal forms in Arabic 1" alefhamzaabovefinalarabic
@@ -79857,6 +79872,7 @@ Fore
 Refer: 3341 1608 N 1 0 0 1 0 0 0
 Refer: 3385 1652 N 1 0 0 1 19 -298 0
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" wawhamzaaboveisolarabic
 Ligature2: "'rlig' req. ligatures in Arabic-1" wawarabic hamzaabv.cmb
 Substitution2: "'fina' terminal forms in Arabic 1" wawhamzaabovefinalarabic
 EndChar
@@ -79873,6 +79889,7 @@ Fore
 Refer: 3308 1575 N 1 0 0 1 0 0 0
 Refer: 3385 1652 N 1 0 0 1 10 -911 0
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" alefhamzabelowisolarabic
 LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" alefarabic hamzablw.cmb
 Substitution2: "'medi' medial forms in Arabic 1" alefhamzabelowfinalarabic
@@ -79891,6 +79908,7 @@ Fore
 Refer: 3473 1740 N 1 0 0 1 0 0 0
 Refer: 3385 1652 N 1 0 0 1 224 -324 0
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" yehhamzaaboveisolarabic
 Substitution2: "'init' initial forms in Arabic 1" yehhamzaaboveinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" yehhamzaabovemedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" yehhamzaabovefinaarabic
@@ -79914,13 +79932,14 @@ SplineSet
  133 389.3 117.5 543.3 108 594 c 9
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" alefisolarabic
 Substitution2: "'medi' medial forms in Arabic 1" aleffinalarabic
 Substitution2: "'fina' terminal forms in Arabic 1" aleffinalarabic
 EndChar
 
 StartChar: beharabic
 Encoding: 1576 1576 3309
-Width: 789
+Width: 824
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-above" 440 351 basechar 0
@@ -79929,7 +79948,7 @@ LayerCount: 2
 Fore
 Refer: 3523 64435 N 1 0 0 1 240 0 2
 Refer: 3379 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" behisolarabic
 Substitution2: "'init' initial forms in Arabic 1" behinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" behmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" behfinalarabic
@@ -79947,13 +79966,14 @@ Fore
 Refer: 3340 1607 N 1 0 0 1 0 0 2
 Refer: 3524 64436 N 1 0 0 1 -28 50 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" tehmarbutaisolarabic
 Substitution2: "'medi' medial forms in Arabic 1" tehmarbutaisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" tehmarbutafinalarabic
 EndChar
 
 StartChar: teharabic
 Encoding: 1578 1578 3311
-Width: 787
+Width: 822
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-ring" 454 -2 basechar 0
@@ -79963,7 +79983,7 @@ LayerCount: 2
 Fore
 Refer: 3287 -1 N 1 0 0 1 0 0 2
 Refer: 3524 64436 N 1 0 0 1 170 -70 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" tehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" tehinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" tehmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" tehfinalarabic
@@ -79971,7 +79991,7 @@ EndChar
 
 StartChar: theharabic
 Encoding: 1579 1579 3312
-Width: 787
+Width: 822
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-above" 425 548 basechar 0
@@ -79980,7 +80000,7 @@ LayerCount: 2
 Fore
 Refer: 3526 64438 N 1 0 0 1 160 -110 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" thehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" thehinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" thehmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" thehfinalarabic
@@ -79998,6 +80018,7 @@ Fore
 Refer: 3523 64435 N 1 0 0 1 241 180 2
 Refer: 3314 1581 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" meemisolarabic
 Substitution2: "'init' initial forms in Arabic 1" jeeminitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" jeemmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" jeemfinalarabic
@@ -80032,6 +80053,7 @@ SplineSet
  93 359 l 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" hahisolarabic
 Substitution2: "'init' initial forms in Arabic 1" hahinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" hahmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" hahfinalarabic
@@ -80059,26 +80081,26 @@ Encoding: 1583 1583 3316
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-ring" 254 -2 basechar 0
-AnchorPoint: "arab-above" 191 470 basechar 0
-AnchorPoint: "arab-below" 187 -117 basechar 0
+AnchorPoint: "arab-ring" 224 -2 basechar 0
+AnchorPoint: "arab-above" 161 470 basechar 0
+AnchorPoint: "arab-below" 157 -117 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-153 105 m 2
- 290 105 l 2
- 323 105 335.461 126.98 335.461 145.144 c 0
- 335.461 184.729 295.2 243.682 215 282 c 1
- 218 399 l 1
- 330 348.1 418 284.1 418 104 c 1
- 418 29.1 354 0 307 0 c 2
- 175 0 l 2
- 96 0 75 49 75 111 c 0
- 75 146 l 1
- 130 149 l 1
- 134 123 145 105 153 105 c 2
+123 105 m 6
+ 260 105 l 6
+ 293 105 305.461 126.98 305.461 145.144 c 4
+ 305.461 184.729 265.2 243.682 185 282 c 5
+ 188 399 l 5
+ 300 348.1 388 284.1 388 104 c 5
+ 388 29.0996 324 0 277 0 c 6
+ 145 0 l 6
+ 66 0 45 49 45 111 c 4
+ 45 146 l 5
+ 100 149 l 5
+ 104 123 115 105 123 105 c 6
 EndSplineSet
-Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" dalisolarabic
 Substitution2: "'medi' medial forms in Arabic 1" dalisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" dalfinalarabic
 EndChar
@@ -80089,12 +80111,12 @@ Width: 397
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 246 -117 basechar 0
-AnchorPoint: "arab-above" 230 691 basechar 0
+AnchorPoint: "arab-above" 200 691 basechar 0
 LayerCount: 2
 Fore
-Refer: 3522 64434 N 1 0 0 1 36 71 2
+Refer: 3522 64434 S 1 0 0 1 6 71 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" thalisolarabic
 Substitution2: "'medi' medial forms in Arabic 1" thalisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" thalfinalarabic
 EndChar
@@ -80122,6 +80144,7 @@ SplineSet
  328 245 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" rehisolarabic
 Substitution2: "'medi' medial forms in Arabic 1" rehfinalarabic
 Substitution2: "'fina' terminal forms in Arabic 1" rehfinalarabic
 EndChar
@@ -80138,6 +80161,7 @@ Fore
 Refer: 3522 64434 N 1 0 0 1 17 -82 2
 Refer: 3318 1585 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" zainisolarabic
 Substitution2: "'medi' medial forms in Arabic 1" zainfinalarabic
 Substitution2: "'fina' terminal forms in Arabic 1" zainfinalarabic
 EndChar
@@ -80180,6 +80204,7 @@ SplineSet
  716 165 l 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" seenisolarabic
 Substitution2: "'init' initial forms in Arabic 1" seeninitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" seenmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" seenfinalarabic
@@ -80197,6 +80222,7 @@ Fore
 Refer: 3526 64438 N 1 0 0 1 410 -170 2
 Refer: 3320 1587 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" sheenisolarabic
 Substitution2: "'init' initial forms in Arabic 1" sheeninitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" sheenmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" sheenfinalarabic
@@ -80236,6 +80262,7 @@ SplineSet
  646 103 654 102 686 102 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" sadisolarabic
 Substitution2: "'init' initial forms in Arabic 1" sadinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" sadmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" sadfinalarabic
@@ -80253,6 +80280,7 @@ Fore
 Refer: 3522 64434 N 1 0 0 1 455 -100 2
 Refer: 3322 1589 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" dadisolarabic
 Substitution2: "'init' initial forms in Arabic 1" dadinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" dadmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" dadfinalarabic
@@ -80288,6 +80316,7 @@ SplineSet
  78 105 42 105 221 105 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" tahisolarabic
 Substitution2: "'init' initial forms in Arabic 1" tahinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" tahmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" tahfinalarabic
@@ -80305,6 +80334,7 @@ Fore
 Refer: 3522 64434 N 1 0 0 1 255 -90 2
 Refer: 3324 1591 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" zahisolarabic
 Substitution2: "'init' initial forms in Arabic 1" zahinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" zahmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" zahfinalarabic
@@ -80339,6 +80369,7 @@ SplineSet
  85 -283 55 -245 55 -133 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" ainisolarabic
 Substitution2: "'init' initial forms in Arabic 1" aininitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" ainmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" ainfinalarabic
@@ -80356,6 +80387,7 @@ Fore
 Refer: 3522 64434 N 1 0 0 1 15 50 2
 Refer: 3326 1593 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" ghainisolarabic
 Substitution2: "'init' initial forms in Arabic 1" ghaininitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" ghainmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" ghainfinalarabic
@@ -80462,6 +80494,7 @@ Fore
 Refer: 3522 64434 N 1 0 0 1 442 40 2
 Refer: 3430 1697 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" fehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" fehinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" fehmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" fehfinalarabic
@@ -80479,6 +80512,7 @@ Fore
 Refer: 3380 1647 N 1 0 0 1 0 0 2
 Refer: 3524 64436 N 1 0 0 1 215 -50 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" qafisolarabic
 Substitution2: "'init' initial forms in Arabic 1" qafinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" qafmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" qaffinalarabic
@@ -80521,6 +80555,7 @@ SplineSet
  205.721 590.865 l 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" kafisolarabic
 Substitution2: "'init' initial forms in Arabic 1" kafinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" kafmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" kaffinalarabic
@@ -80591,6 +80626,7 @@ SplineSet
  291 248 336 246 375 241 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" meemisolarabic
 Substitution2: "'init' initial forms in Arabic 1" meeminitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" meemmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" meemfinalarabic
@@ -80608,6 +80644,7 @@ Fore
 Refer: 3522 64434 N 1 0 0 1 137 -62 2
 Refer: 3455 1722 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" noonisolarabic
 Substitution2: "'init' initial forms in Arabic 1" nooninitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" noonmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" noonfinalarabic
@@ -80638,6 +80675,7 @@ SplineSet
  314.5 100 318 114 318 120 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" hehisolatedarabic
 Substitution2: "'init' initial forms in Arabic 1" hehinitialarabic
 Substitution2: "'medi' medial forms in Arabic 1" hehmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" hehfinalarabic
@@ -80671,6 +80709,7 @@ SplineSet
  167 195 139 140 139 105 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" wawisolarabic
 Substitution2: "'medi' medial forms in Arabic 1" wawfinalarabic
 Substitution2: "'fina' terminal forms in Arabic 1" wawfinalarabic
 EndChar
@@ -80686,6 +80725,7 @@ LayerCount: 2
 Fore
 Refer: 3473 1740 N 1 0 0 1 0 0 0
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" alefmaksuraisolarabic
 Substitution2: "'init' initial forms in Arabic 1" alefmaksurainitial_arabic
 Substitution2: "'medi' medial forms in Arabic 1" alefmaksuramedial_arabic
 Substitution2: "'fina' terminal forms in Arabic 1" alefmaksurafinalarabic
@@ -80703,6 +80743,7 @@ Fore
 Refer: 3525 64437 N 1 0 0 1 120 -73 2
 Refer: 3473 1740 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" yehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" yehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" yehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" yehfinaarabic
@@ -81585,7 +81626,7 @@ EndChar
 
 StartChar: tteharabic
 Encoding: 1657 1657 3390
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 446 -97 basechar 0
@@ -81594,7 +81635,7 @@ LayerCount: 2
 Fore
 Refer: 3278 1557 N 1 0 0 1 280 -289 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" ttehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" ttehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" ttehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" ttehfinaarabic
@@ -81602,7 +81643,7 @@ EndChar
 
 StartChar: tteheharabic
 Encoding: 1658 1658 3391
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 436 -97 basechar 0
@@ -81611,7 +81652,7 @@ LayerCount: 2
 Fore
 Refer: 3533 64445 N 1 0 0 1 250 -110 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" ttehehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" ttehehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" ttehehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" ttehehfinaarabic
@@ -81619,7 +81660,7 @@ EndChar
 
 StartChar: beeharabic
 Encoding: 1659 1659 3392
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 436 -317 basechar 0
@@ -81628,7 +81669,6 @@ LayerCount: 2
 Fore
 Refer: 3534 64446 N 1 0 0 1 240 0 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 Substitution2: "'init' initial forms in Arabic 1" beehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" beehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" beehfinaarabic
@@ -81636,7 +81676,7 @@ EndChar
 
 StartChar: tehringarabic
 Encoding: 1660 1660 3393
-Width: 897
+Width: 927
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 516 -187 basechar 0
@@ -81678,7 +81718,6 @@ SplineSet
  897 0 l 1
  558 0 l 1
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'liga' std. ligatures in Arabic-ring-Pashto" teharabic ringarabic
 MultipleSubs2: "'ccmp' glyph decomp. in Arabic 1" teharabic arab_ring.cmb
@@ -81686,7 +81725,7 @@ EndChar
 
 StartChar: tehthreedotsrevarabic
 Encoding: 1661 1661 3394
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 436 -97 basechar 0
@@ -81695,12 +81734,11 @@ LayerCount: 2
 Fore
 Refer: 3528 64440 N 1 0 0 1 210 -110 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: peharabic
 Encoding: 1662 1662 3395
-Width: 789
+Width: 819
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 446 -267 basechar 0
@@ -81709,7 +81747,7 @@ LayerCount: 2
 Fore
 Refer: 3529 64441 N 1 0 0 1 200 0 2
 Refer: 3379 1646 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" pehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" pehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" pehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" pehfinaarabic
@@ -81717,7 +81755,7 @@ EndChar
 
 StartChar: teheharabic
 Encoding: 1663 1663 3396
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 456 -97 basechar 0
@@ -81726,7 +81764,7 @@ LayerCount: 2
 Fore
 Refer: 3530 64442 N 1 0 0 1 170 130 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" tehehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" tehehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" tehehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" tehehfinaarabic
@@ -81734,7 +81772,7 @@ EndChar
 
 StartChar: beheharabic
 Encoding: 1664 1664 3397
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 456 -300 basechar 0
@@ -81743,7 +81781,7 @@ LayerCount: 2
 Fore
 Refer: 3287 -1 N 1 0 0 1 0 0 2
 Refer: 3530 64442 N 1 0 0 1 160 -519 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" behehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" behehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" behehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" behehfinaarabic
@@ -81778,7 +81816,7 @@ Refer: 3314 1581 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: hahtwodotsvertabovearabic
+StartChar: nyeharabic
 Encoding: 1667 1667 3400
 Width: 635
 VWidth: 800
@@ -81790,12 +81828,13 @@ Fore
 Refer: 3314 1581 N 1 0 0 1 0 0 2
 Refer: 3525 64437 N 1 0 0 1 180 190 2
 Validated: 32769
-Substitution2: "'init' initial forms in Arabic 1" nyehinitarabic
-Substitution2: "'medi' medial forms in Arabic 1" nyehmediarabic
+Substitution2: "'isol' isolated forms in Arabic-1" nyehisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" nyehfinaarabic
+Substitution2: "'medi' medial forms in Arabic 1" nyehmediarabic
+Substitution2: "'init' initial forms in Arabic 1" nyehinitarabic
 EndChar
 
-StartChar: nyeharabic
+StartChar: dyeharabic
 Encoding: 1668 1668 3401
 Width: 635
 VWidth: 800
@@ -81807,9 +81846,10 @@ Fore
 Refer: 3534 64446 N 1 0 0 1 200 170 2
 Refer: 3314 1581 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' initial forms in Arabic 1" dyehinitarabic
-Substitution2: "'medi' medial forms in Arabic 1" dyehmediarabic
+Substitution2: "'isol' isolated forms in Arabic-1" dyehisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" dyehfinaarabic
+Substitution2: "'medi' medial forms in Arabic 1" dyehmediarabic
+Substitution2: "'init' initial forms in Arabic 1" dyehinitarabic
 EndChar
 
 StartChar: hahthreedotsabovearabic
@@ -81839,6 +81879,7 @@ Fore
 Refer: 3529 64441 N 1 0 0 1 190 180 2
 Refer: 3314 1581 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" tchehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" tchehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" tchehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" tchehfinaarabic
@@ -81856,6 +81897,7 @@ Fore
 Refer: 3314 1581 N 1 0 0 1 0 0 2
 Refer: 3530 64442 N 1 0 0 1 130 -325 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" tchehehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" tchehehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" tchehehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" tchehehfinaarabic
@@ -81867,12 +81909,12 @@ Width: 397
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 256 -97 basechar 0
-AnchorPoint: "arab-above" 196 731 basechar 0
+AnchorPoint: "arab-above" 166 731 basechar 0
 LayerCount: 2
 Fore
-Refer: 3278 1557 N 1 0 0 1 68 -160 2
+Refer: 3278 1557 S 1 0 0 1 38 -160 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" ddalisolarabic
 EndChar
 
 StartChar: dalringarabic
@@ -81880,35 +81922,34 @@ Encoding: 1673 1673 3406
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -187 basechar 0
-AnchorPoint: "arab-above" 230 570 basechar 0
+AnchorPoint: "arab-below" 206 -187 basechar 0
+AnchorPoint: "arab-above" 200 570 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-226 -13 m 1
- 217 -23 202 -41 202 -66 c 0
- 202 -90 223 -95 245 -95 c 0
- 274.5 -95 278 -78 278 -68 c 0
- 278 -58 274 -29 226 -13 c 1
-153.204 105 m 2
- 285.149 105 l 2
- 320.063 105 335.373 122.434 335.373 146.728 c 0
- 335.373 189.826 287.188 254.513 214.786 281.744 c 1
- 214.511 399.369 l 1
- 275 375.163 418 324.163 418 102 c 0
- 418 30.1631 352.893 0 307 0 c 2
- 278 0 l 1
- 305.576 -31.3428 316 -40.5 316 -82 c 0
- 316 -112.73 278.347 -139 247 -139 c 0
- 222 -139 162 -139 162 -92 c 0
- 162 -61 184.5 -24 201 0 c 1
- 175 0 l 2
- 96.0039 0 75 48.999 75 111 c 2
- 75 145.802 l 1
- 129.84 149.155 l 1
- 134.314 123.608 144.557 105 153.204 105 c 2
+196 -13 m 5
+ 187 -23 172 -41 172 -66 c 4
+ 172 -90 193 -95 215 -95 c 4
+ 244.5 -95 248 -78 248 -68 c 4
+ 248 -58 244 -29 196 -13 c 5
+123.204 105 m 6
+ 255.149 105 l 6
+ 290.062 105 305.373 122.434 305.373 146.728 c 4
+ 305.373 189.826 257.188 254.513 184.786 281.744 c 5
+ 184.511 399.369 l 5
+ 245 375.163 388 324.163 388 102 c 4
+ 388 30.1631 322.893 0 277 0 c 6
+ 248 0 l 5
+ 275.576 -31.3428 286 -40.5 286 -82 c 4
+ 286 -112.73 248.347 -139 217 -139 c 4
+ 192 -139 132 -139 132 -92 c 4
+ 132 -61 154.5 -24 171 0 c 5
+ 145 0 l 6
+ 66.0039 0 45 48.999 45 111 c 6
+ 45 145.802 l 5
+ 99.8398 149.155 l 5
+ 104.314 123.608 114.557 105 123.204 105 c 6
 EndSplineSet
-Validated: 3073
 LCarets2: 1 0 
 Ligature2: "'liga' std. ligatures in Arabic-ring-Pashto" dalarabic ringarabic
 MultipleSubs2: "'ccmp' glyph decomp. in Arabic 1" dalarabic arab_ring.cmb
@@ -81919,13 +81960,12 @@ Encoding: 1674 1674 3407
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 256 -227 basechar 0
-AnchorPoint: "arab-above" 230 570 basechar 0
+AnchorPoint: "arab-below" 226 -227 basechar 0
+AnchorPoint: "arab-above" 200 570 basechar 0
 LayerCount: 2
 Fore
-Refer: 3523 64435 N 1 0 0 1 60 0 2
+Refer: 3523 64435 S 1 0 0 1 30 0 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: daldotbelowtaharabic
@@ -81933,14 +81973,13 @@ Encoding: 1675 1675 3408
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 256 -227 basechar 0
-AnchorPoint: "arab-above" 180 741 basechar 0
+AnchorPoint: "arab-below" 226 -227 basechar 0
+AnchorPoint: "arab-above" 150 741 basechar 0
 LayerCount: 2
 Fore
-Refer: 3278 1557 N 1 0 0 1 69 -160 2
-Refer: 3523 64435 N 1 0 0 1 58 0 2
+Refer: 3278 1557 S 1 0 0 1 39 -160 2
+Refer: 3523 64435 S 1 0 0 1 28 0 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dahalarabic
@@ -81948,13 +81987,13 @@ Encoding: 1676 1676 3409
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 246 -97 basechar 0
-AnchorPoint: "arab-above" 230 761 basechar 0
+AnchorPoint: "arab-below" 216 -97 basechar 0
+AnchorPoint: "arab-above" 200 761 basechar 0
 LayerCount: 2
 Fore
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Refer: 3524 64436 N 1 0 0 1 -30 90 2
-Validated: 32769
+Refer: 3524 64436 S 1 0 0 1 -60 90 2
+Substitution2: "'isol' isolated forms in Arabic-1" dahalisolarabic
 EndChar
 
 StartChar: ddahalarabic
@@ -81962,13 +82001,13 @@ Encoding: 1677 1677 3410
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -227 basechar 0
-AnchorPoint: "arab-above" 220 570 basechar 0
+AnchorPoint: "arab-below" 206 -227 basechar 0
+AnchorPoint: "arab-above" 190 570 basechar 0
 LayerCount: 2
 Fore
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Refer: 3525 64437 N 1 0 0 1 -14 20 2
-Validated: 32769
+Refer: 3525 64437 S 1 0 0 1 -44 20 2
+Substitution2: "'isol' isolated forms in Arabic-1" ddahalisolarabic
 EndChar
 
 StartChar: dularabic
@@ -81976,13 +82015,13 @@ Encoding: 1678 1678 3411
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 220 751 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 190 751 basechar 0
 LayerCount: 2
 Fore
-Refer: 3526 64438 N 1 0 0 1 -60 40 2
+Refer: 3526 64438 S 1 0 0 1 -90 40 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" dulisolarabic
 EndChar
 
 StartChar: dalthreedotsaboverevarabic
@@ -81990,13 +82029,12 @@ Encoding: 1679 1679 3412
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 210 751 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 180 751 basechar 0
 LayerCount: 2
 Fore
-Refer: 3528 64440 N 1 0 0 1 -10 20 2
+Refer: 3528 64440 S 1 0 0 1 -40 20 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dalfourdotsarabic
@@ -82004,13 +82042,12 @@ Encoding: 1680 1680 3413
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 215 771 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 185 771 basechar 0
 LayerCount: 2
 Fore
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Refer: 3530 64442 N 1 0 0 1 -75 260 2
-Validated: 32769
+Refer: 3530 64442 S 1 0 0 1 -85 260 2
 EndChar
 
 StartChar: rreharabic
@@ -82025,6 +82062,7 @@ Fore
 Refer: 3278 1557 N 1 0 0 1 90 -269 2
 Refer: 3318 1585 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" rrehisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" rrehfinaarabic
 EndChar
 
@@ -82146,6 +82184,7 @@ Fore
 Refer: 3526 64438 N 1 0 0 1 -73 -90 2
 Refer: 3318 1585 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" jehisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" jehfinaarabic
 EndChar
 
@@ -82339,6 +82378,7 @@ Fore
 Refer: 3526 64438 N 1 0 0 1 360 20 2
 Refer: 3430 1697 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" vehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" vehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" vehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" vehfinaarabic
@@ -82370,9 +82410,10 @@ Fore
 Refer: 3430 1697 N 1 0 0 1 0 0 2
 Refer: 3530 64442 N 1 0 0 1 336 248 2
 Validated: 32769
-Substitution2: "'init' initial forms in Arabic 1" pehehfinaarabic
+Substitution2: "'isol' isolated forms in Arabic-1" pehehisolarabic
+Substitution2: "'init' initial forms in Arabic 1" pehehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" pehehmediarabic
-Substitution2: "'fina' terminal forms in Arabic 1" pehehinitarabic
+Substitution2: "'fina' terminal forms in Arabic 1" pehehfinaarabic
 EndChar
 
 StartChar: qafdotabovearabic
@@ -82437,6 +82478,7 @@ SplineSet
  881 701 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" kehehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" kehehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" kehehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" kehehfinaarabic
@@ -82580,6 +82622,7 @@ Fore
 Refer: 3286 -1 N 1 0 0 1 -59 -81 2
 Refer: 3438 1705 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" gafisolarabic
 Substitution2: "'init' initial forms in Arabic 1" gafinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" gafmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" gaffinaarabic
@@ -82612,6 +82655,7 @@ Fore
 Refer: 3524 64436 N 1 0 0 1 190 230 2
 Refer: 3444 1711 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" ngoehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" ngoehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" ngoehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" ngoehfinaarabic
@@ -82643,6 +82687,7 @@ Fore
 Refer: 3534 64446 N 1 0 0 1 260 0 2
 Refer: 3444 1711 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" guehisolarabic
 Substitution2: "'init' initial forms in Arabic 1" guehinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" guehmediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" guehfinaarabic
@@ -82784,6 +82829,7 @@ SplineSet
  130 138 126 120 126 79 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" noonghunnaisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" noonghunnafinaarabic
 EndChar
 
@@ -82923,6 +82969,7 @@ Fore
 Refer: 3482 1749 N 1 0 0 1 0 0 2
 Refer: 3385 1652 N 1 0 0 1 49 -288 0
 Validated: 32769
+Substitution2: "'isol' isolated forms in Arabic-1" hehhamzaisolarabic
 Substitution2: "'fina' terminal forms in Arabic 1" hehhamzafinaarabic
 EndChar
 
@@ -82946,6 +82993,7 @@ SplineSet
  278.517 105.452 324.872 105 379 105 c 1
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" hehgoalisoarabic
 Substitution2: "'init' initial forms in Arabic 1" hehgoalinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" hehgoalmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" hehgoalfinaarabic
@@ -83165,6 +83213,7 @@ SplineSet
  502.205 49.2031 431 54.2041 431 117.479 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" yehfarsiisolarabic
 Substitution2: "'init' initial forms in Arabic 1" yehfarsiinitarabic
 Substitution2: "'medi' medial forms in Arabic 1" yehfarsimediarabic
 Substitution2: "'fina' terminal forms in Arabic 1" yehfarsifinalarabic
@@ -83295,6 +83344,7 @@ SplineSet
  231.546 161.759 292.362 240 354 240 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "'isol' isolated forms in Arabic-1" yehbarreeisoarabic
 Substitution2: "'fina' terminal forms in Arabic 1" yehbarreefinaarabic
 EndChar
 
@@ -83480,7 +83530,6 @@ AnchorPoint: "arab-diacritic" 177 522 mark 0
 LayerCount: 2
 Fore
 Refer: 3801 65275 N 0.5 0 0 0.5 34 552 2
-Validated: 32769
 EndChar
 
 StartChar: uni06DA
@@ -83740,7 +83789,6 @@ LayerCount: 2
 Fore
 Refer: 3903 -1 N -1 0 0 -1 369 619 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: rehvinvarabic
@@ -84201,7 +84249,7 @@ Refer: 3536 64448 N 1 0 0 1 0 -688 2
 Validated: 32769
 EndChar
 
-StartChar: uniFB50
+StartChar: alefwaslaisolarabic
 Encoding: 64336 64336 3538
 Width: 264
 VWidth: 800
@@ -84231,7 +84279,7 @@ EndChar
 
 StartChar: beehisolarabic
 Encoding: 64338 64338 3540
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 406 -317 basechar 0
@@ -84239,12 +84287,11 @@ AnchorPoint: "arab-above" 419 382 basechar 0
 LayerCount: 2
 Fore
 Refer: 3392 1659 N 1 0 0 1 -1 0 2
-Validated: 32769
 EndChar
 
 StartChar: beehfinaarabic
 Encoding: 64339 64339 3541
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-above" 420 382 basechar 0
@@ -84252,7 +84299,6 @@ AnchorPoint: "arab-below" 416 -317 basechar 0
 LayerCount: 2
 Fore
 Refer: 3540 64338 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: beehinitarabic
@@ -84294,7 +84340,6 @@ LayerCount: 2
 Fore
 Refer: 3529 64441 N 1 0 0 1 210 0 2
 Refer: 3287 -1 N 1 0 0 1 1 0 2
-Validated: 32769
 EndChar
 
 StartChar: pehfinaarabic
@@ -84308,7 +84353,6 @@ LayerCount: 2
 Fore
 Refer: 3529 64441 N 1 0 0 1 220 0 2
 Refer: 3287 -1 N 1 0 0 1 1 0 2
-Validated: 32769
 EndChar
 
 StartChar: pehinitarabic
@@ -84341,7 +84385,7 @@ EndChar
 
 StartChar: behehisolarabic
 Encoding: 64346 64346 3548
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-above" 430 382 basechar 0
@@ -84349,12 +84393,11 @@ AnchorPoint: "arab-below" 446 -337 basechar 0
 LayerCount: 2
 Fore
 Refer: 3397 1664 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: behehfinaarabic
 Encoding: 64347 64347 3549
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-above" 430 382 basechar 0
@@ -84362,7 +84405,6 @@ AnchorPoint: "arab-below" 446 -327 basechar 0
 LayerCount: 2
 Fore
 Refer: 3548 64346 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: behehinitarabic
@@ -84395,7 +84437,7 @@ EndChar
 
 StartChar: ttehehisolarabic
 Encoding: 64350 64350 3552
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 436 -97 basechar 0
@@ -84403,12 +84445,11 @@ AnchorPoint: "arab-above" 440 621 basechar 0
 LayerCount: 2
 Fore
 Refer: 3391 1658 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ttehehfinaarabic
 Encoding: 64351 64351 3553
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 436 -97 basechar 0
@@ -84416,7 +84457,6 @@ AnchorPoint: "arab-above" 440 621 basechar 0
 LayerCount: 2
 Fore
 Refer: 3552 64350 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ttehehinitarabic
@@ -84449,7 +84489,7 @@ EndChar
 
 StartChar: tehehisolarabic
 Encoding: 64354 64354 3556
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 456 -97 basechar 0
@@ -84457,12 +84497,11 @@ AnchorPoint: "arab-above" 450 671 basechar 0
 LayerCount: 2
 Fore
 Refer: 3396 1663 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: tehehfinaarabic
 Encoding: 64355 64355 3557
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 456 -97 basechar 0
@@ -84470,21 +84509,19 @@ AnchorPoint: "arab-above" 450 671 basechar 0
 LayerCount: 2
 Fore
 Refer: 3556 64354 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: tehehinitarabic
 Encoding: 64356 64356 3558
-Width: 348
+Width: 328
 VWidth: 800
 Flags: HMW
+AnchorPoint: "arab-above" 156 691 basechar 0
 AnchorPoint: "arab-below" 186 -97 basechar 0
-AnchorPoint: "arab-above" 160 691 basechar 0
 LayerCount: 2
 Fore
+Refer: 3530 64442 N 1 0 0 1 -121 160 2
 Refer: 3289 -1 N 1 0 0 1 0 0 2
-Refer: 3530 64442 N 1 0 0 1 -117 160 2
-Validated: 32769
 EndChar
 
 StartChar: tehehmediarabic
@@ -84503,7 +84540,7 @@ EndChar
 
 StartChar: ttehisolarabic
 Encoding: 64358 64358 3560
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 456 -97 basechar 0
@@ -84511,12 +84548,11 @@ AnchorPoint: "arab-above" 430 641 basechar 0
 LayerCount: 2
 Fore
 Refer: 3390 1657 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ttehfinaarabic
 Encoding: 64359 64359 3561
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 456 -97 basechar 0
@@ -84524,7 +84560,6 @@ AnchorPoint: "arab-above" 430 641 basechar 0
 LayerCount: 2
 Fore
 Refer: 3560 64358 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ttehinitarabic
@@ -84593,7 +84628,6 @@ LayerCount: 2
 Fore
 Refer: 3526 64438 N 1 0 0 1 -112 0 2
 Refer: 3290 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: vehmediarabic
@@ -84624,7 +84658,7 @@ Refer: 3530 64442 N 1 0 0 1 334 266 2
 Validated: 32769
 EndChar
 
-StartChar: pehehinitarabic
+StartChar: pehehfinaarabic
 Encoding: 64367 64367 3569
 Width: 871
 VWidth: 800
@@ -84638,7 +84672,7 @@ Refer: 3530 64442 N 1 0 0 1 405 241 2
 Validated: 32769
 EndChar
 
-StartChar: pehehfinaarabic
+StartChar: pehehinitarabic
 Encoding: 64368 64368 3570
 Width: 360
 VWidth: 800
@@ -84649,7 +84683,6 @@ LayerCount: 2
 Fore
 Refer: 3290 -1 N 1 0 0 1 0 0 2
 Refer: 3530 64442 N 1 0 0 1 -97 281 2
-Validated: 32769
 EndChar
 
 StartChar: pehehmediarabic
@@ -84892,15 +84925,14 @@ EndChar
 
 StartChar: ddahalisolarabic
 Encoding: 64386 64386 3588
-Width: 440
+Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 250 460 basechar 0
-AnchorPoint: "arab-below" 278 -229 basechar 0
+AnchorPoint: "arab-above" 210 460 basechar 0
+AnchorPoint: "arab-below" 238 -229 basechar 0
 LayerCount: 2
 Fore
 Refer: 3410 1677 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ddahalfinaarabic
@@ -84908,12 +84940,11 @@ Encoding: 64387 64387 3589
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 250 460 basechar 0
-AnchorPoint: "arab-below" 278 -229 basechar 0
+AnchorPoint: "arab-above" 200 460 basechar 0
+AnchorPoint: "arab-below" 228 -229 basechar 0
 LayerCount: 2
 Fore
 Refer: 3410 1677 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dahalisolarabic
@@ -84921,13 +84952,12 @@ Encoding: 64388 64388 3590
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-ring" 254 -2 basechar 0
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 210 711 basechar 0
+AnchorPoint: "arab-ring" 224 -2 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 180 711 basechar 0
 LayerCount: 2
 Fore
 Refer: 3409 1676 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dahalfinaarabic
@@ -84935,13 +84965,12 @@ Encoding: 64389 64389 3591
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-ring" 254 -2 basechar 0
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 210 711 basechar 0
+AnchorPoint: "arab-ring" 224 -2 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 180 711 basechar 0
 LayerCount: 2
 Fore
 Refer: 3409 1676 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dulisolarabic
@@ -84949,12 +84978,11 @@ Encoding: 64390 64390 3592
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 216 747 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 186 747 basechar 0
 LayerCount: 2
 Fore
 Refer: 3411 1678 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dulfinaarabic
@@ -84962,12 +84990,11 @@ Encoding: 64391 64391 3593
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 214 747 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 184 747 basechar 0
 LayerCount: 2
 Fore
 Refer: 3411 1678 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ddalisolarabic
@@ -84975,12 +85002,11 @@ Encoding: 64392 64392 3594
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 190 731 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 160 731 basechar 0
 LayerCount: 2
 Fore
 Refer: 3405 1672 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: ddalfinaarabic
@@ -84988,15 +85014,14 @@ Encoding: 64393 64393 3595
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 236 -97 basechar 0
-AnchorPoint: "arab-above" 190 731 basechar 0
+AnchorPoint: "arab-below" 206 -97 basechar 0
+AnchorPoint: "arab-above" 160 731 basechar 0
 LayerCount: 2
 Fore
 Refer: 3405 1672 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
-StartChar: uniFB8A
+StartChar: jehisolarabic
 Encoding: 64394 64394 3596
 Width: 345
 VWidth: 800
@@ -85538,9 +85563,9 @@ LayerCount: 2
 Fore
 Refer: 3785 65259 N 1 0 0 1 0 0 2
 Validated: 32769
-Substitution2: "'init' initial forms in Arabic 1" hehinitialarabic
-Substitution2: "'medi' medial forms in Arabic 1" hehmedialarabic
 Substitution2: "'fina' terminal forms in Arabic 1" hehdoachaschmeemediarabic
+Substitution2: "'medi' medial forms in Arabic 1" hehmedialarabic
+Substitution2: "'init' initial forms in Arabic 1" hehinitialarabic
 EndChar
 
 StartChar: hehdoachaschmeefinaarabic
@@ -86014,7 +86039,7 @@ Refer: 3294 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFBFC
+StartChar: yehfarsiisolarabic
 Encoding: 64508 64508 3659
 Width: 722
 VWidth: 800
@@ -86482,7 +86507,7 @@ EndChar
 
 StartChar: behisolarabic
 Encoding: 65167 65167 3693
-Width: 789
+Width: 819
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 446 -207 basechar 0
@@ -86490,7 +86515,6 @@ AnchorPoint: "arab-above" 420 380 basechar 0
 LayerCount: 2
 Fore
 Refer: 3309 1576 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: behfinalarabic
@@ -86562,9 +86586,9 @@ Refer: 3524 64436 N 1 0 0 1 -13 50 2
 Validated: 32769
 EndChar
 
-StartChar: uniFE95
+StartChar: tehisolarabic
 Encoding: 65173 65173 3699
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-ring" 584 -2 basechar 0
@@ -86573,7 +86597,6 @@ AnchorPoint: "arab-above" 504 550 basechar 0
 LayerCount: 2
 Fore
 Refer: 3311 1578 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: tehfinalarabic
@@ -86601,9 +86624,8 @@ AnchorPoint: "arab-below" 186 -97 basechar 0
 AnchorPoint: "arab-above" 160 620 basechar 0
 LayerCount: 2
 Fore
+Refer: 3524 64436 S 1 0 0 1 -82 -11 2
 Refer: 3289 -1 N 1 0 0 1 0 0 2
-Refer: 3524 64436 N 1 0 0 1 -82 -11 2
-Validated: 32769
 EndChar
 
 StartChar: tehmedialarabic
@@ -86621,9 +86643,9 @@ Refer: 3524 64436 N 1 0 0 1 -87 -11 2
 Validated: 32769
 EndChar
 
-StartChar: uniFE99
+StartChar: thehisolarabic
 Encoding: 65177 65177 3703
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 496 -97 basechar 0
@@ -86631,7 +86653,6 @@ AnchorPoint: "arab-above" 490 670 basechar 0
 LayerCount: 2
 Fore
 Refer: 3312 1579 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: thehfinalarabic
@@ -86650,16 +86671,15 @@ EndChar
 
 StartChar: thehinitialarabic
 Encoding: 65179 65179 3705
-Width: 348
+Width: 328
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 186 -97 basechar 0
 AnchorPoint: "arab-above" 180 692 basechar 0
+AnchorPoint: "arab-below" 186 -97 basechar 0
 LayerCount: 2
 Fore
-Refer: 3526 64438 N 1 0 0 1 -90 -20 2
+Refer: 3526 64438 S 1 0 0 1 -90 -20 2
 Refer: 3289 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: thehmedialarabic
@@ -86676,7 +86696,7 @@ Refer: 3288 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFE9D
+StartChar: jeemisolarabic
 Encoding: 65181 65181 3707
 Width: 635
 VWidth: 800
@@ -86731,7 +86751,7 @@ Refer: 3714 65188 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEA1
+StartChar: hahisolarabic
 Encoding: 65185 65185 3711
 Width: 635
 VWidth: 800
@@ -86830,13 +86850,13 @@ SplineSet
  317 254 251 280 148 280 c 0
  128 280 102 277 62 260 c 1
  46 273 l 1
-375 130 m 1
- 430 112.5 526 105 581 105 c 2
- 602 105 l 1
- 602 43.75 595.75 0 587 0 c 1
- 582 0 l 2
- 460 0 388 46.5 358 96 c 1
- 375 130 l 1
+375 130 m 5
+ 430 112.5 526 105 581 105 c 6
+ 602 105 l 5
+ 602 43.75 595.75 0 587 0 c 5
+ 582 0 l 6
+ 460 0 388 46.5 358 96 c 5
+ 375 130 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -86908,7 +86928,6 @@ AnchorPoint: "arab-below" 236 -97 basechar 0
 LayerCount: 2
 Fore
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: dalfinalarabic
@@ -86916,13 +86935,29 @@ Encoding: 65194 65194 3720
 Width: 397
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-ring" 254 -2 basechar 0
+AnchorPoint: "arab-ring" 234 -2 basechar 0
 AnchorPoint: "arab-above" 220 570 basechar 0
 AnchorPoint: "arab-below" 246 -97 basechar 0
 LayerCount: 2
 Fore
-Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
+SplineSet
+123 105 m 2
+ 207 105 l 2
+ 240 105 242.461 126.5 242.461 135.144 c 1
+ 223 188.1 202 270.1 190 392 c 1
+ 238 419 l 1
+ 279 276.1 344 105 396 105 c 2
+ 417 105 l 1
+ 417 43.75 410.75 0 402 0 c 2
+ 397 0 l 2
+ 320 0 287.889 46.6475 274.5 65.5 c 1
+ 262.5 31.5 223.126 0 207 0 c 2
+ 145 0 l 2
+ 66 0 45 49 45 111 c 2
+ 45 146 l 1
+ 100 149 l 1
+ 104 123 115 105 123 105 c 2
+EndSplineSet
 EndChar
 
 StartChar: thalisolarabic
@@ -86935,7 +86970,6 @@ AnchorPoint: "arab-above" 230 690 basechar 0
 LayerCount: 2
 Fore
 Refer: 3317 1584 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: thalfinalarabic
@@ -86947,11 +86981,11 @@ AnchorPoint: "arab-below" 246 -97 basechar 0
 AnchorPoint: "arab-above" 220 690 basechar 0
 LayerCount: 2
 Fore
-Refer: 3317 1584 N 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 3522 64434 S 1 0 0 1 6 71 2
+Refer: 3720 65194 N 1 0 0 1 0 0 2
 EndChar
 
-StartChar: uniFEAD
+StartChar: rehisolarabic
 Encoding: 65197 65197 3723
 Width: 355
 VWidth: 800
@@ -87131,7 +87165,7 @@ Refer: 3733 65207 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEB9
+StartChar: sadisolarabic
 Encoding: 65209 65209 3735
 Width: 889
 VWidth: 800
@@ -87202,7 +87236,7 @@ Refer: 3737 65211 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEBD
+StartChar: dadisolarabic
 Encoding: 65213 65213 3739
 Width: 889
 VWidth: 800
@@ -87255,7 +87289,7 @@ Refer: 3741 65215 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEC1
+StartChar: tahisolarabic
 Encoding: 65217 65217 3743
 Width: 607
 VWidth: 800
@@ -87328,7 +87362,7 @@ Refer: 3745 65219 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEC5
+StartChar: zahisolarabic
 Encoding: 65221 65221 3747
 Width: 607
 VWidth: 800
@@ -87382,7 +87416,7 @@ Refer: 3749 65223 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEC9
+StartChar: ainisolarabic
 Encoding: 65225 65225 3751
 Width: 575
 VWidth: 800
@@ -87495,7 +87529,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uniFECD
+StartChar: ghainisolarabic
 Encoding: 65229 65229 3755
 Width: 575
 VWidth: 800
@@ -87550,7 +87584,7 @@ Refer: 3754 65228 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFED1
+StartChar: fehisolarabic
 Encoding: 65233 65233 3759
 Width: 788
 VWidth: 800
@@ -87579,7 +87613,7 @@ EndChar
 
 StartChar: fehinitialarabic
 Encoding: 65235 65235 3761
-Width: 350
+Width: 308
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 166 -107 basechar 0
@@ -87588,7 +87622,6 @@ LayerCount: 2
 Fore
 Refer: 3522 64434 N 1 0 0 1 -8 70 2
 Refer: 3290 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: fehmedialarabic
@@ -87605,7 +87638,7 @@ Refer: 4418 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFED5
+StartChar: qafisolarabic
 Encoding: 65237 65237 3763
 Width: 615
 VWidth: 800
@@ -87633,7 +87666,7 @@ EndChar
 
 StartChar: qafinitialarabic
 Encoding: 65239 65239 3765
-Width: 350
+Width: 308
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 176 -97 basechar 0
@@ -87642,7 +87675,6 @@ LayerCount: 2
 Fore
 Refer: 3290 -1 N 1 0 0 1 0 0 2
 Refer: 3524 64436 N 1 0 0 1 -88 49 2
-Validated: 32769
 EndChar
 
 StartChar: qafmedialarabic
@@ -87659,7 +87691,7 @@ Refer: 4418 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFED9
+StartChar: kafisolarabic
 Encoding: 65241 65241 3767
 Width: 446
 VWidth: 800
@@ -87742,7 +87774,7 @@ Refer: 3603 64401 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEDD
+StartChar: lamisoarabic
 Encoding: 65245 65245 3771
 Width: 561
 VWidth: 800
@@ -87842,7 +87874,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uniFEE1
+StartChar: meemisolarabic
 Encoding: 65249 65249 3775
 Width: 469
 VWidth: 800
@@ -87950,7 +87982,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uniFEE5
+StartChar: noonisolarabic
 Encoding: 65253 65253 3779
 Width: 571
 VWidth: 800
@@ -88004,7 +88036,7 @@ Refer: 3292 -1 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uniFEE9
+StartChar: hehisolatedarabic
 Encoding: 65257 65257 3783
 Width: 412
 VWidth: 800
@@ -88097,7 +88129,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uniFEED
+StartChar: wawisolarabic
 Encoding: 65261 65261 3787
 Width: 329
 VWidth: 800
@@ -88142,7 +88174,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uniFEEF
+StartChar: alefmaksuraisolarabic
 Encoding: 65263 65263 3789
 Width: 722
 VWidth: 800
@@ -88184,7 +88216,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uniFEF1
+StartChar: yehisolarabic
 Encoding: 65265 65265 3791
 Width: 722
 VWidth: 800
@@ -88217,13 +88249,12 @@ Encoding: 65267 65267 3793
 Width: 301
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 140 460 basechar 0
 AnchorPoint: "arab-below" 146 -237 basechar 0
+AnchorPoint: "arab-above" 140 460 basechar 0
 LayerCount: 2
 Fore
-Refer: 3525 64437 N 1 0 0 1 -110 0 2
+Refer: 3525 64437 S 1 0 0 1 -110 0 2
 Refer: 3657 64488 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: yehmediarabic
@@ -88251,7 +88282,6 @@ LayerCount: 2
 Fore
 Refer: 3801 65275 N 1 0 0 1 0 0 2
 Refer: 3352 1619 N 1 0 0 1 -12 -52 2
-Validated: 32769
 EndChar
 
 StartChar: lamalefmaddaabovefinaarabic
@@ -88265,9 +88295,9 @@ LayerCount: 2
 Fore
 Refer: 3802 65276 N 1 0 0 1 -39 0 2
 Refer: 3352 1619 N 1 0 0 1 -9 -52 2
-Validated: 32769
-Ligature2: "'rlig' req. ligatures in Arabic-1" lammediarabic alefmaddaabovefinalarabic
+LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" laminitialarabic alefmaddaabovefinalarabic
+Ligature2: "'rlig' req. ligatures in Arabic-1" lammediarabic alefmaddaabovefinalarabic
 EndChar
 
 StartChar: lamalefhamzaaboveisolarabic
@@ -88281,7 +88311,7 @@ LayerCount: 2
 Fore
 Refer: 3801 65275 N 1 0 0 1 0 0 2
 Refer: 3353 1620 N 1 0 0 1 -94 0 2
-Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" laminitialarabic alefhamzaabovefinalarabic
 EndChar
 
@@ -88296,7 +88326,7 @@ LayerCount: 2
 Fore
 Refer: 3802 65276 N 1 0 0 1 -39 0 2
 Refer: 3353 1620 N 1 0 0 1 -59 -10 2
-Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" lammediarabic alefhamzaabovefinalarabic
 EndChar
 
@@ -88305,13 +88335,13 @@ Encoding: 65273 65273 3799
 Width: 476
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 412 694 basechar 0
+AnchorPoint: "arab-above" 52 674 basechar 0
 AnchorPoint: "arab-below" 156 -277 basechar 0
 LayerCount: 2
 Fore
 Refer: 3801 65275 N 1 0 0 1 0 0 2
 Refer: 3354 1621 N 1 0 0 1 0 -10 2
-Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" laminitialarabic alefhamzabelowfinalarabic
 EndChar
 
@@ -88320,13 +88350,13 @@ Encoding: 65274 65274 3800
 Width: 574
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 432 694 basechar 0
+AnchorPoint: "arab-above" 82 674 basechar 0
 AnchorPoint: "arab-below" 137 -277 basechar 0
 LayerCount: 2
 Fore
 Refer: 3802 65276 N 1 0 0 1 -39 0 2
 Refer: 3354 1621 N 1 0 0 1 -9 -10 2
-Validated: 32769
+LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" lammediarabic alefhamzabelowfinalarabic
 EndChar
 
@@ -88335,7 +88365,7 @@ Encoding: 65275 65275 3801
 Width: 476
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 412 694 basechar 0
+AnchorPoint: "arab-above" 72 674 basechar 0
 AnchorPoint: "arab-below" 156 -97 basechar 0
 LayerCount: 2
 Fore
@@ -88364,7 +88394,7 @@ SplineSet
  354 129 348 147 342 160 c 1
  323 137 305 120 288 106 c 1
 EndSplineSet
-Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" laminitialarabic aleffinalarabic
 EndChar
 
@@ -88373,7 +88403,7 @@ Encoding: 65276 65276 3802
 Width: 614
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 462 694 basechar 0
+AnchorPoint: "arab-above" 122 674 basechar 0
 AnchorPoint: "arab-below" 316 -97 basechar 0
 LayerCount: 2
 Fore
@@ -88398,7 +88428,7 @@ SplineSet
  288.476 609.908 316.204 412.669 350 242 c 1
  262 382 195 496 108.471 496 c 1
 EndSplineSet
-Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'rlig' req. ligatures in Arabic-1" lammediarabic aleffinalarabic
 EndChar
 
@@ -88412,7 +88442,7 @@ EndChar
 
 StartChar: uni0750
 Encoding: 1872 1872 3804
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 439 -224 basechar 0
@@ -88423,12 +88453,11 @@ Refer: 3523 64435 N 1 0 0 1 380 0 2
 Refer: 3523 64435 N 1 0 0 1 250 0 2
 Refer: 3523 64435 N 1 0 0 1 120 0 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni0751
 Encoding: 1873 1873 3805
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 469 -244 basechar 0
@@ -88438,24 +88467,22 @@ Fore
 Refer: 3523 64435 N 1 0 0 1 260 0 2
 Refer: 3526 64438 N 1 0 0 1 170 -120 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni0752
 Encoding: 1874 1874 3806
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3527 64439 N 1 0 0 1 170 0 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni0753
 Encoding: 1875 1875 3807
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 LayerCount: 2
@@ -88463,12 +88490,11 @@ Fore
 Refer: 3524 64436 N 1 0 0 1 180 -110 2
 Refer: 3527 64439 N 1 0 0 1 170 0 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni0754
 Encoding: 1876 1876 3808
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 LayerCount: 2
@@ -88476,24 +88502,22 @@ Fore
 Refer: 3522 64434 N 1 0 0 1 260 -90 2
 Refer: 3525 64437 N 1 0 0 1 190 0 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni0755
 Encoding: 1877 1877 3809
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 3287 -1 N 1 0 0 1 0 0 2
 Refer: 406 710 N 0.75 0 0 0.75 327 -590 2
-Validated: 32769
 EndChar
 
 StartChar: uni0756
 Encoding: 1878 1878 3810
-Width: 787
+Width: 817
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-above" 440 495 basechar 0
@@ -88502,7 +88526,6 @@ LayerCount: 2
 Fore
 Refer: 3903 -1 N 1 0 0 1 320 360 2
 Refer: 3287 -1 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni0757
@@ -88540,10 +88563,9 @@ VWidth: 800
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 3278 1557 N 1 0 0 1 68 -170 2
-Refer: 3534 64446 N 1 0 0 1 20 0 2
+Refer: 3278 1557 S 1 0 0 1 38 -170 2
+Refer: 3534 64446 S 1 0 0 1 -10 0 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni075A
@@ -88553,9 +88575,8 @@ VWidth: 800
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 3903 -1 N -1 0 0 -1 369 -101 2
+Refer: 3903 -1 S -1 0 0 -1 339 -101 2
 Refer: 3316 1583 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: uni075B
