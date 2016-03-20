@@ -111,8 +111,7 @@ ulUnicodeRange = [
 	interval(0x0500, 0x052F),	# Cyrillic Supplement
 	interval(0x1C80, 0x1C88),	# Unicode 8 proposal for Slavonic
 	interval(0x2DE0, 0x2DFF),	# Cyrillic Extended-A
-	interval(0xA640, 0xA69D),	# Cyrillic Extended-B
-	interval(0xA69F, 0xA69F)
+	interval(0xA640, 0xA69F)	# Cyrillic Extended-B
 	]
 	],
 [10,	'Armenian',     [interval(0x0531, 0x0556),
@@ -283,8 +282,7 @@ ulUnicodeRange = [
 [29,	'Latin Extended (Additional,C,D)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
 		interval(0x2C60, 0x2C7F),	# C
-		interval(0xA720, 0xA78E),	# D
-		interval(0xA790, 0xA7B1),	# D
+		interval(0xA720, 0xA7B7),	# D
 		interval(0xA7F7, 0xA7FF)	# D
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
@@ -314,7 +312,7 @@ ulUnicodeRange = [
 		interval(0x2090, 0x209C)
 	]
 	],
-[33,	'Currency Symbols',     [interval(0x20A0, 0x20BD)]],
+[33,	'Currency Symbols',     [interval(0x20A0, 0x20BE)]],
 [34,	'Combining Diacritical Marks for Symbols',     [interval(0x20D0, 0x20F0)]],
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
 [36,	'Number Forms',     [interval(0x2150, 0x2189)]],
@@ -389,7 +387,7 @@ ulUnicodeRange = [
 				interval(0xFDF0, 0xFDFD)
 				]
 		],
-[64,	'Combining Half Marks', [interval(0xFE20, 0xFE2D)]],
+[64,	'Combining Half Marks', [interval(0xFE20, 0xFE2F)]],
 [65,	'CJK Compatibility Forms', [interval(0xFE10, 0xFE1F),	# Vertical forms
 		interval(0xFE30, 0xFE4F)	# Compatability forms
 	]],
