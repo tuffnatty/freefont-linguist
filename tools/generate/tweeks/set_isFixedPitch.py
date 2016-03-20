@@ -40,6 +40,9 @@ try:
 	#FIXME this is very clumsy, reading the whole file in and writing it
 	# to set a single bit.  The structure is there to do it better,
 	# I just ran out of time.
+	if not "Mono" in filePath:
+		sys.exit( 1 )
+
 	infile = open( filePath, 'r+b' )
 	buf = bytearray( infile.read() )
 

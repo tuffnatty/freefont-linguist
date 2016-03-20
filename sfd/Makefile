@@ -24,6 +24,7 @@ TESTFF=${TESTFFEXIST}; ${TESTFFOLD}; ${TESTFF2012}
 GENTT=../tools/generate/TrueType
 GENOT=../tools/generate/OpenType
 GENWO=../tools/generate/WOFF
+# FIXME logic of setting FixedPitch is poor.  
 IFP=../tools/generate/tweeks/set_isFixedPitch.py
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf .woff
