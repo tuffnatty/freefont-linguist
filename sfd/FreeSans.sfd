@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1458419319
+ModificationTime: 1465769881
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -211,7 +212,6 @@ Lookup: 4 0 0 "'liga' tone ligatures for IPA"  {"'liga' tone ligatures for IPA-1
 Lookup: 4 0 0 "subst. placeholder for vocalic-reph in Devanagari for Sanskrit"  {"subst. placeholder for vocalic-reph in Devanagari for Sanskrit"  } []
 Lookup: 4 0 0 "subst. vocalic-sign for vocalic in Devanagair for Sanskrit"  {"subst vocalic-sign for vocalic in Devanagari for Sanskrit"  } []
 Lookup: 4 0 0 "'rlig' ligature in Gothic"  {"'rlig' ligature in Gothic-1"  } ['rlig' ('goth' <'dflt' > ) ]
-Lookup: 1 0 0 "FreeSerif-'c2sc' caps to small caps in Latin"  {"FreeSerif-'c2sc' caps to small caps in Latin-invariant"  } ['c2sc' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kerns in Cyrillic-small" [150,0,0] "'kern' kerns in Cyrillic-capital" [150,0,0] } ['kern' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin"  {"'kern' kerns in Latin-capital" [150,0,0] "'kern' kerns in Latin-small" [150,0,0] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin for Catalan"  {"'kern' kerning in Latin for Catalan-1" [150,0,6] } ['kern' ('latn' <'CAT ' > ) ]
@@ -409,9 +409,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "dotted"  
-  BClassNames: "0"  
-  FClassNames: "0"  "diacritic"  "symmark"  
 EndFPST
 ChainSub2: class "'blws' below-base smaller chain in Malayalam-1"  2 2 1 1
   Class: 892 mal_ka.blwf mal_ku.blwf mal_kuu.blwf mal_kri.blwf mal_kha.blwf mal_ga.blwf mal_gu.blwf mal_guu.blwf mal_gri.blwf mal_cha.blwf mal_chha.blwf mal_chhu.blwf mal_chhuu.blwf mal_chhri.blwf mal_ja.blwf mal_ju.blwf mal_juu.blwf mal_jri.blwf mal_sha.blwf mal_shu.blwf mal_shuu.blwf mal_shri.blwf mal_rrarra.blwf mal_ddha.blwf mal_nna.blwf mal_nnu.blwf mal_nnuu.blwf mal_ta.blwf mal_tu.blwf mal_tuu.blwf mal_tri.blwf mal_da.blwf mal_dri.blwf mal_dha.blwf mal_dhri.blwf mal_na.blwf mal_nu.blwf mal_nuu.blwf mal_pa.blwf mal_pri.blwf mal_pha.blwf mal_ba.blwf mal_ma.blwf mal_mri.blwf mal_sa.blwf mal_sri.blwf mal_tta.blwf mal_ttha.blwf mal_rra.blwf mal_va.blwf mal_sra.blwf mal_tra.blwf mal_pra.blwf mal_chhra.blwf mal_shra.blwf mal_kra.blwf mal_rrarrra.blwf mal_trr_voc.blwf mal_dhrr_voc.blwf mal_kka.blwf mal_kku.blwf mal_kkuu.blwf mal_kkri.blwf mal_tata.blwf mal_tatu.blwf mal_tatuu.blwf mal_tatr.blwf
@@ -422,9 +419,6 @@ ChainSub2: class "'blws' below-base smaller chain in Malayalam-1"  2 2 1 1
   FClsList:
  1
   SeqLookup: 0 "subst. smaller blwf in Malayalam" 
-  ClassNames: "0"  "blwf"  
-  BClassNames: "0"  "narrowcons"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
   Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.abvs dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
@@ -460,9 +454,6 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 
   FClsList:
  1
   SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
-  ClassNames: "All_Others"  "reph"  "candra"  "high"  "isign"  "cons"  
-  BClassNames: "All_Others"  "reph"  "candra"  "high"  "isign"  "cons"  
-  FClassNames: "All_Others"  "reph"  "candra"  "high"  "isign"  "cons"  
 EndFPST
 ChainSub2: class "'locl' local forms in Devanagari for Sanskrit-vocalic"  5 2 1 3
   Class: 6 virama
@@ -488,9 +479,6 @@ ChainSub2: class "'locl' local forms in Devanagari for Sanskrit-vocalic"  5 2 1 
   FClsList:
  1
   SeqLookup: 0 "subst. placeholder for vocalic-reph in Devanagari for Sanskrit" 
-  ClassNames: "0"  "virama"  "voc"  "vocsign"  "ra"  
-  BClassNames: "0"  "virama"  
-  FClassNames: "All_Others"  
 EndFPST
 ChainSub2: class "'cjct' unpack nukta forms in Bengali-1"  3 3 3 1
   Class: 23 rra_bng rha_bng yya_bng
@@ -505,9 +493,6 @@ ChainSub2: class "'cjct' unpack nukta forms in Bengali-1"  3 3 3 1
   FClsList: 2
  1
   SeqLookup: 0 "unpack nukta forms in Bengali" 
-  ClassNames: "All_Others"  "1"  "rofola"  
-  BClassNames: "All_Others"  "1"  "rofola"  
-  FClassNames: "All_Others"  "1"  "rofola"  
 EndFPST
 ChainSub2: class "'pres' pre-base chain in Benglai-1"  3 3 3 1
   Class: 266 ka_bng kha_bng ga_bng gha_bng nga_bng ca_bng cha_bng ja_bng jha_bng nya_bng tta_bng ttha_bng dda_bng ddha_bng nna_bng ta_bng tha_bng da_bng dha_bng na_bng pa_bng pha_bng ba_bng bha_bng ma_bng ya_bng ra_bng la_bng sha_bng ssa_bng sa_bng ha_bng rra_bng rha_bng yya_bng
@@ -522,9 +507,6 @@ ChainSub2: class "'pres' pre-base chain in Benglai-1"  3 3 3 1
   FClsList: 2
  1
   SeqLookup: 0 "subst. half forms in Bengali" 
-  ClassNames: "All_Others"  "1"  "blwf"  
-  BClassNames: "All_Others"  "1"  "blwf"  
-  FClassNames: "All_Others"  "1"  "blwf"  
 EndFPST
 ChainSub2: class "'psts' post-base u,uu chain in Malay+AQEA-lam-1"  2 3 1 2
   Class: 12 u_mal uu_mal
@@ -542,9 +524,6 @@ ChainSub2: class "'psts' post-base u,uu chain in Malay+AQEA-lam-1"  2 3 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. below-base forms in Malay+AQEA-lam" 
-  ClassNames: "0"  "vowel"  
-  BClassNames: "0"  "cons"  "cjct"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'psts' chain space candrakala in Malay+AQEA-lam-1"  0 0 0 1
  String: 10 candrakala
@@ -567,9 +546,6 @@ ChainSub2: class "'psts' chain avoid space candrakala in Malay+AQEA-lam"  2 1 3 
   BClsList:
   FClsList: 2
  0
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'psts' re-do stacked cons in Malayalam"  5 4 1 4
   Class: 7 nna_mal
@@ -603,9 +579,6 @@ ChainSub2: class "'psts' re-do stacked cons in Malayalam"  5 4 1 4
   FClsList:
  1
   SeqLookup: 0 "subst. below-base cons in Malay+AQEA-lam" 
-  ClassNames: "0"  "nna"  "pa"  "la"  "candra"  
-  BClassNames: "0"  "nna1"  "pa1"  "la-taker"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pstf' va,ya in Malay+AQEA-lam-1"  3 3 1 2
   Class: 13 va_mal ya_mal
@@ -624,9 +597,6 @@ ChainSub2: class "'pstf' va,ya in Malay+AQEA-lam-1"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. post-base candra-x in Malay+AQEA-lam" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'blwf' below-base la in Malay+AQEA-lam-1"  3 2 0 2
   Class: 10 candrakala
@@ -644,8 +614,6 @@ ChainSub2: class "'blwf' below-base la in Malay+AQEA-lam-1"  3 2 0 2
   FClsList:
  1
   SeqLookup: 0 "subst. below-base forms in Malay+AQEA-lam" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'blws' below-base chain. in Benglai-phala"  5 5 5 3
   Class: 246 bn_ka.half bn_ga.half bn_nga.half bn_ca.half bn_cha.half bn_ja.half bn_nya.half bn_tta.half bn_ttha.half bn_dda.half bn_ddha.half bn_nna.half bn_pha.half bn_bha.half bn_ma.half bn_ssa.half bn_sa.half bn_ha.half bn_rra.half bn_rha.half bn_ca1.half
@@ -678,9 +646,6 @@ ChainSub2: class "'blws' below-base chain. in Benglai-phala"  5 5 5 3
   FClsList:
  1
   SeqLookup: 0 "subst. phala form for stemmed in Bengali" 
-  ClassNames: "All_Others"  "half"  "halfstem"  "phala"  "stemhalf"  
-  BClassNames: "All_Others"  "half"  "halfstem"  "phala"  "stemhalf"  
-  FClassNames: "All_Others"  "half"  "halfstem"  "phala"  "stemhalf"  
 EndFPST
 ChainSub2: class "'psts' post base substs. in Bengali-iikaar"  4 4 4 2
   Class: 16 ttha_bng tta_bng
@@ -704,9 +669,6 @@ ChainSub2: class "'psts' post base substs. in Bengali-iikaar"  4 4 4 2
   FClsList:
  1
   SeqLookup: 0 "subst. post base vowels in Bengali" 
-  ClassNames: "All_Others"  "tall"  "tall2"  "iikaar"  
-  BClassNames: "All_Others"  "tall"  "tall2"  "iikaar"  
-  FClassNames: "All_Others"  "tall"  "tall2"  "iikaar"  
 EndFPST
 ChainSub2: class "'blws' below-base substs. in Benglai-rofola-1"  12 12 12 9
   Class: 104 kha_bng ga_bng gha_bng nna_bng tha_bng na_bng pa_bng pha_bng ma_bng ra_bng la_bng sha_bng ssa_bng sa_bng
@@ -796,9 +758,6 @@ ChainSub2: class "'blws' below-base substs. in Benglai-rofola-1"  12 12 12 9
   FClsList:
  1
   SeqLookup: 0 "subst. rofola short in Bengali" 
-  ClassNames: "All_Others"  "1"  "round"  "pointed"  "rofola"  "narrow"  "narrow2"  "phala"  "wide"  "pointed2"  "wide2"  "right"  
-  BClassNames: "All_Others"  "1"  "round"  "pointed"  "rofola"  "narrow"  "narrow2"  "phala"  "wide"  "pointed2"  "wide2"  "right"  
-  FClassNames: "All_Others"  "1"  "round"  "pointed"  "rofola"  "narrow"  "narrow2"  "phala"  "wide"  "pointed2"  "wide2"  "right"  
 EndFPST
 ChainSub2: class "'psts' post-base substs. in Bengali-ikaar"  4 4 4 2
   Class: 9 ikaar_bng
@@ -822,9 +781,6 @@ ChainSub2: class "'psts' post-base substs. in Bengali-ikaar"  4 4 4 2
   FClsList:
  1
   SeqLookup: 0 "subst. tall cons. post ikaar in Bengali" 
-  ClassNames: "All_Others"  "1"  "2"  "3"  
-  BClassNames: "All_Others"  "1"  "2"  "3"  
-  FClassNames: "All_Others"  "1"  "2"  "3"  
 EndFPST
 ChainSub2: class "'psts' post base substs. in Bengali-u-uu"  7 7 7 4
   Class: 20 ukaar_bng uukaar_bng
@@ -869,9 +825,6 @@ ChainSub2: class "'psts' post base substs. in Bengali-u-uu"  7 7 7 4
   FClsList:
  1
   SeqLookup: 0 "subst. post base vowels in Bengali" 
-  ClassNames: "All_Others"  "u-uu"  "ra"  "combo"  "rofola"  "stemmed"  "stemmed2"  
-  BClassNames: "All_Others"  "u-uu"  "ra"  "combo"  "rofola"  "stemmed"  "stemmed2"  
-  FClassNames: "All_Others"  "u-uu"  "ra"  "combo"  "rofola"  "stemmed"  "stemmed2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -967,9 +920,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 parenleft parenright plus hyphen minus comma period zero one two three four five six seven eight nine
@@ -1052,9 +1002,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1 1
   Class: 6 virama
@@ -1066,9 +1013,6 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-rakaar in Devanagari" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 3 1 3
   Class: 10 dev_rakaar
@@ -1094,9 +1038,6 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 3 1 3
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-ra in Devanagari" 
-  ClassNames: "0"  "1"  "2"  "3"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   Class: 6 virama
@@ -1136,9 +1077,6 @@ ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "subst. openya for virama-ya in Devanagari" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' pre-base chain in Devanagari da+-half+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -1165,9 +1103,6 @@ ChainSub2: class "'cjct' avoid-vert conjunct forms in Devanagari2-1"  4 4 1 1
   FClsList:
  1
   SeqLookup: 0 "subst. ligature for da+-half in Devanagari" 
-  ClassNames: "0"  "1"  "2"  "3"  
-  BClassNames: "0"  "1"  "2"  "3"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'ccmp' decomp. chain in Latin - iogonek-subtable"  0 0 0 1
  String: 7 iogonek
@@ -1225,7 +1160,7 @@ LangName: 1027 "" "" "Normal"
 LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA" 
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "Regular" "GNU: FreeSans Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 22 1 65535 3 0
+GaspTable: 3 9 2 22 1 65535 3
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 900
@@ -1289,7 +1224,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8048 16 11
+WinInfo: 65024 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -1309,7 +1244,7 @@ Grid
 EndSplineSet
 TeXData: 3 0 0 262144 131072 87381 549454 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "goth-below"  "'mark' mark below in Gothic-2" "goth-above"  "'mark' mark above in Gothic-1" "far-right-dot"  "'mark' far right in Latin-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "ogonek"  "'mark' marks in Latin ogonek" "bng-stem-abv"  "'abvm' above-base mark in Bengali-1" "mlm-vowel-below"  "'blwm' vowel below in Malay+AQEA-lam-1" "dev-candrabindu-abv"  "'mkmk' mark-to-mark in Devanagari-above" "vedic-below"  "'mkmk' mark-to-mark in Devanagari Vedic" "vedic-above"  "'mkmk' mark-to-mark in Devanagari Vedic" "dev-mark-above"  "'mkmk' mark-to-mark in Devanagari-above" "below_gk"  "'mark' mark below in Greek and Coptic-1" "above_gk"  "'mark' mark above in Greek-1" "bng-phala"  "'mkmk' mark-to-mark in Bengali-1" "bng-round"  "'blwm' below-base round in Bengali" "bng-stem"  "'blwm' below-base stemmed in Bengali" "bng-rofola"  "'blwm' below-base rofola in Bengali" "abovemk"  "'mkmk' mark-to-mark generic" "viet_tilde"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_hook"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_grave"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_acute"  "'mkmk' mark-to-mark in Latin for Viet-1" "taml_above"  "'abvm' above-base mark in Tamil-1" "dev-candrabindu"  "'abvm' above-base mark in Devanagari-candrabindu" "dev-anusvara"  "'abvm' above-base mark in Devanagari-anusvara" "bng-vowel"  "'blwm' below-base vowel in Bengali" "bng-nukta"  "'blwm' below-base nukta in Bengali" "dev-rakaar"  "'blwm' below-base mark in Devanagari-1" "dev-belowmark"  "'mkmk' mark-to-mark in Devanagari-above" "mlm-reph"  "'abvm' above reph in Malayalam-1" "mal-below"  "'blwm' marks below in Malay+AQEA-lam-1" "gur-top-mid"  "'abvm' above-base mark in Gurmukhi-mid" "gur-nukta"  "'blwm' below-base mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' mark-to-mark in Gurmukhi" "gur-below-mid"  "'blwm' below-base mark in Gurmukhi mid" "guru_above"  "'abvm' above-base mark in Gurmukhi-general" "guru_below"  "'blwm' below-base mark in Gurmukhi-general" "syr_below"  "'mark' marks in Syriac 0" "syr_above"  "'mark' marks in Syriac 0" "above_mid_heb"  "'mark' marks in Hebrew 0" "vowel_below_yiddish"  "'mark' marks in Yiddish below" "vowel_above_heb"  "'mark' marks in Hebrew 0" "vowel_left_heb"  "'mark' marks in Hebrew 0" "vowel_below_heb"  "'mark' marks in Hebrew 2 subtable" "abovemk_cyr"  "'mkmk' mark-to-mark in Cyrillic 0" "topright"  "'mark' marks in Latin topright" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' marks middle" "dev-above"  "'abvm' above-base mark in Devanagari-1" "dev-below"  "'blwm' below-base mark in Devanagari-1" "above"  "'mark' marks generic above" "below"  "'mark' marks generic below" 
-BeginChars: 131072 7233
+BeginChars: 131072 7249
 
 StartChar: space
 Encoding: 32 32 0
@@ -11560,6 +11495,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1634 8185 N 1 0 0 1 22 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-caps" Omicron gk_tonos.cmb
 EndChar
 
@@ -11570,6 +11506,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1623 8171 N 1 0 0 1 55 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-caps" Upsilon gk_tonos.cmb
 Substitution2: "'locl' localized forms in Greek-1" Upsilonhooktonos
 EndChar
@@ -27833,6 +27770,7 @@ LayerCount: 2
 Fore
 Refer: 1639 8190 N 1 0 0 1 -46 1 0
 Refer: 506 913 S 1 0 0 1 0 0 1
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasia.cmb
 EndChar
 
@@ -27845,6 +27783,7 @@ LayerCount: 2
 Fore
 Refer: 1609 8157 N 1 0 0 1 -68 7 0
 Refer: 506 913 N 1 0 0 1 93 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasiavaria.cmb
 EndChar
 
@@ -27857,6 +27796,7 @@ LayerCount: 2
 Fore
 Refer: 1597 8142 N 1 0 0 1 -66 1 0
 Refer: 506 913 N 1 0 0 1 39 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_psilioxia.cmb
 EndChar
 
@@ -27869,6 +27809,7 @@ LayerCount: 2
 Fore
 Refer: 1610 8158 N 1 0 0 1 -81 1 0
 Refer: 506 913 N 1 0 0 1 48 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasiaoxia.cmb
 EndChar
 
@@ -27881,6 +27822,7 @@ LayerCount: 2
 Fore
 Refer: 1598 8143 N 1 0 0 1 -28 -22 0
 Refer: 506 913 N 1 0 0 1 3 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_psiliperispomeni.cmb
 EndChar
 
@@ -27893,6 +27835,7 @@ LayerCount: 2
 Fore
 Refer: 1611 8159 N 1 0 0 1 -40 -21 0
 Refer: 506 913 N 1 0 0 1 -3 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasiaperispomeni.cmb
 EndChar
 
@@ -28036,6 +27979,7 @@ LayerCount: 2
 Fore
 Refer: 1610 8158 S 1 0 0 1 -93 1 0
 Refer: 510 917 N 1 0 0 1 212 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_dasiaoxia.cmb
 EndChar
 
@@ -28144,6 +28088,7 @@ LayerCount: 2
 Fore
 Refer: 1583 8127 N 1 0 0 1 -116 1 0
 Refer: 512 919 N 1 0 0 1 65 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psili.cmb
 EndChar
 
@@ -28156,6 +28101,7 @@ LayerCount: 2
 Fore
 Refer: 1639 8190 N 1 0 0 1 -117 1 0
 Refer: 512 919 N 1 0 0 1 66 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasia.cmb
 EndChar
 
@@ -28168,6 +28114,7 @@ LayerCount: 2
 Fore
 Refer: 1596 8141 N 1 0 0 1 -82 1 0
 Refer: 512 919 N 1 0 0 1 237 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psilivaria.cmb
 EndChar
 
@@ -28180,6 +28127,7 @@ LayerCount: 2
 Fore
 Refer: 1609 8157 N 1 0 0 1 -68 1 0
 Refer: 512 919 N 1 0 0 1 233 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasiavaria.cmb
 EndChar
 
@@ -28192,6 +28140,7 @@ LayerCount: 2
 Fore
 Refer: 1597 8142 N 1 0 0 1 -66 1 0
 Refer: 512 919 N 1 0 0 1 223 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psilioxia.cmb
 EndChar
 
@@ -28204,6 +28153,7 @@ LayerCount: 2
 Fore
 Refer: 1610 8158 N 1 0 0 1 -81 1 0
 Refer: 512 919 N 1 0 0 1 224 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasiaoxia.cmb
 EndChar
 
@@ -28216,6 +28166,7 @@ LayerCount: 2
 Fore
 Refer: 1598 8143 N 1 0 0 1 -13 -22 0
 Refer: 512 919 N 1 0 0 1 166 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psiliperispomeni.cmb
 EndChar
 
@@ -28228,6 +28179,7 @@ LayerCount: 2
 Fore
 Refer: 1611 8159 N 1 0 0 1 -13 -23 0
 Refer: 512 919 N 1 0 0 1 166 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasiaperispomeni.cmb
 EndChar
 
@@ -28335,6 +28287,7 @@ LayerCount: 2
 Fore
 Refer: 1583 8127 S 1 0 0 1 -116 1 0
 Refer: 514 921 N 1 0 0 1 44 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psili.cmb
 EndChar
 
@@ -28346,6 +28299,7 @@ LayerCount: 2
 Fore
 Refer: 1639 8190 S 1 0 0 1 -118 1 0
 Refer: 514 921 N 1 0 0 1 43 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasia.cmb
 EndChar
 
@@ -28357,6 +28311,7 @@ LayerCount: 2
 Fore
 Refer: 1596 8141 N 1 0 0 1 -82 1 0
 Refer: 514 921 N 1 0 0 1 218 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psilivaria.cmb
 EndChar
 
@@ -28368,6 +28323,7 @@ LayerCount: 2
 Fore
 Refer: 1609 8157 N 1 0 0 1 -68 1 0
 Refer: 514 921 N 1 0 0 1 222 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasiavaria.cmb
 EndChar
 
@@ -28379,6 +28335,7 @@ LayerCount: 2
 Fore
 Refer: 1597 8142 N 1 0 0 1 -66 1 0
 Refer: 514 921 N 1 0 0 1 214 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psilioxia.cmb
 EndChar
 
@@ -28390,6 +28347,7 @@ LayerCount: 2
 Fore
 Refer: 1610 8158 S 1 0 0 1 -81 1 0
 Refer: 514 921 N 1 0 0 1 206 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasiaoxia.cmb
 EndChar
 
@@ -28401,6 +28359,7 @@ LayerCount: 2
 Fore
 Refer: 1598 8143 N 1 0 0 1 -13 -20 0
 Refer: 514 921 N 1 0 0 1 148 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psiliperispomeni.cmb
 EndChar
 
@@ -28412,6 +28371,7 @@ LayerCount: 2
 Fore
 Refer: 1611 8159 N 1 0 0 1 -13 -18 0
 Refer: 514 921 N 1 0 0 1 146 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasiaperispomeni.cmb
 EndChar
 
@@ -28495,6 +28455,7 @@ LayerCount: 2
 Fore
 Refer: 1583 8127 N 1 0 0 1 -113 4 0
 Refer: 520 927 N 1 0 0 1 17 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_psili.cmb
 EndChar
 
@@ -28506,6 +28467,7 @@ LayerCount: 2
 Fore
 Refer: 1639 8190 N 1 0 0 1 -118 7 0
 Refer: 520 927 N 1 0 0 1 16 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_dasia.cmb
 EndChar
 
@@ -28517,6 +28479,7 @@ LayerCount: 2
 Fore
 Refer: 1596 8141 N 1 0 0 1 -82 -2 0
 Refer: 520 927 N 1 0 0 1 226 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_psilivaria.cmb
 EndChar
 
@@ -28528,6 +28491,7 @@ LayerCount: 2
 Fore
 Refer: 1609 8157 N 1 0 0 1 -68 -5 0
 Refer: 520 927 N 1 0 0 1 222 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_dasiavaria.cmb
 EndChar
 
@@ -28539,6 +28503,7 @@ LayerCount: 2
 Fore
 Refer: 1597 8142 N 1 0 0 1 -66 -2 0
 Refer: 520 927 N 1 0 0 1 124 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_psilioxia.cmb
 EndChar
 
@@ -28550,6 +28515,7 @@ LayerCount: 2
 Fore
 Refer: 1610 8158 N 1 0 0 1 -81 1 0
 Refer: 520 927 N 1 0 0 1 132 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_dasiaoxia.cmb
 EndChar
 
@@ -28657,6 +28623,7 @@ LayerCount: 2
 Fore
 Refer: 1639 8190 N 1 0 0 1 -118 1 0
 Refer: 525 933 N 1 0 0 1 94 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasia.cmb
 EndChar
 
@@ -28668,6 +28635,7 @@ LayerCount: 2
 Fore
 Refer: 1609 8157 N 1 0 0 1 -68 1 0
 Refer: 525 933 N 1 0 0 1 272 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasiavaria.cmb
 EndChar
 
@@ -28679,6 +28647,7 @@ LayerCount: 2
 Fore
 Refer: 1610 8158 N 1 0 0 1 -81 1 0
 Refer: 525 933 N 1 0 0 1 294 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasiaoxia.cmb
 EndChar
 
@@ -28690,6 +28659,7 @@ LayerCount: 2
 Fore
 Refer: 1611 8159 N 1 0 0 1 -13 -21 0
 Refer: 525 933 N 1 0 0 1 213 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasiaperispomeni.cmb
 EndChar
 
@@ -28798,6 +28768,7 @@ LayerCount: 2
 Fore
 Refer: 1583 8127 N 1 0 0 1 -116 -2 0
 Refer: 529 937 N 1 0 0 1 4 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psili.cmb
 EndChar
 
@@ -28810,6 +28781,7 @@ LayerCount: 2
 Fore
 Refer: 1639 8190 N 1 0 0 1 -118 1 0
 Refer: 529 937 N 1 0 0 1 11 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasia.cmb
 EndChar
 
@@ -28822,6 +28794,7 @@ LayerCount: 2
 Fore
 Refer: 1596 8141 N 1 0 0 1 -82 4 0
 Refer: 529 937 N 1 0 0 1 209 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psilivaria.cmb
 EndChar
 
@@ -28834,6 +28807,7 @@ LayerCount: 2
 Fore
 Refer: 1609 8157 N 1 0 0 1 -68 4 0
 Refer: 529 937 N 1 0 0 1 209 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasiavaria.cmb
 EndChar
 
@@ -28846,6 +28820,7 @@ LayerCount: 2
 Fore
 Refer: 1597 8142 S 1 0 0 1 -66 -2 0
 Refer: 529 937 N 1 0 0 1 122 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psilioxia.cmb
 EndChar
 
@@ -28858,6 +28833,7 @@ LayerCount: 2
 Fore
 Refer: 1610 8158 N 1 0 0 1 -81 -2 0
 Refer: 529 937 N 1 0 0 1 157 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasiaoxia.cmb
 EndChar
 
@@ -28870,6 +28846,7 @@ LayerCount: 2
 Fore
 Refer: 1598 8143 N 1 0 0 1 -13 -22 0
 Refer: 529 937 N 1 0 0 1 132 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psiliperispomeni.cmb
 EndChar
 
@@ -28882,6 +28859,7 @@ LayerCount: 2
 Fore
 Refer: 1611 8159 N 1 0 0 1 -13 -22 0
 Refer: 529 937 N 1 0 0 1 136 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasiaperispomeni.cmb
 EndChar
 
@@ -29169,6 +29147,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 663 0 0
 Refer: 1134 7945 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Alphadasia prosgegrammeni
 EndChar
 
@@ -29180,6 +29159,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 752 0 0
 Refer: 1135 7947 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Alphadasiavaria prosgegrammeni
 EndChar
 
@@ -29191,6 +29171,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 687 0 0
 Refer: 1136 7948 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Alphapsilioxia prosgegrammeni
 EndChar
 
@@ -29202,6 +29183,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 696 0 0
 Refer: 1137 7949 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Alphadasiaoxia prosgegrammeni
 EndChar
 
@@ -29213,6 +29195,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 669 0 0
 Refer: 1138 7950 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Alphapsiliperispomeni prosgegrammeni
 EndChar
 
@@ -29224,6 +29207,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 663 0 0
 Refer: 1139 7951 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Alphadasiaperispomeni prosgegrammeni
 EndChar
 
@@ -29331,6 +29315,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 S 1 0 0 1 794 0 0
 Refer: 1160 7976 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etapsili prosgegrammeni
 EndChar
 
@@ -29342,6 +29327,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 S 1 0 0 1 797 0 0
 Refer: 1161 7977 N 1 0 0 1 -1 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etadasia prosgegrammeni
 EndChar
 
@@ -29353,6 +29339,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 S 1 0 0 1 970 0 0
 Refer: 1162 7978 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etapsilivaria prosgegrammeni
 EndChar
 
@@ -29364,6 +29351,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 S 1 0 0 1 970 0 0
 Refer: 1163 7979 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etadasiavaria prosgegrammeni
 EndChar
 
@@ -29375,6 +29363,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 955 0 0
 Refer: 1164 7980 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etapsilioxia prosgegrammeni
 EndChar
 
@@ -29386,6 +29375,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 958 0 0
 Refer: 1165 7981 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etadasiaoxia prosgegrammeni
 EndChar
 
@@ -29397,6 +29387,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 865 0 0
 Refer: 1166 7982 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etapsiliperispomeni prosgegrammeni
 EndChar
 
@@ -29408,6 +29399,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 868 0 0
 Refer: 1167 7983 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Etadasiaperispomeni prosgegrammeni
 EndChar
 
@@ -29515,6 +29507,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 790 -1 0
 Refer: 1216 8040 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegapsili prosgegrammeni
 EndChar
 
@@ -29526,6 +29519,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 790 -1 0
 Refer: 1217 8041 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegadasia prosgegrammeni
 EndChar
 
@@ -29537,6 +29531,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 986 0 0
 Refer: 1218 8042 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegapsilivaria prosgegrammeni
 EndChar
 
@@ -29548,6 +29543,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 984 -1 0
 Refer: 1219 8043 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegadasiavaria prosgegrammeni
 EndChar
 
@@ -29559,6 +29555,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 901 0 0
 Refer: 1220 8044 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegapsilioxia prosgegrammeni
 EndChar
 
@@ -29570,6 +29567,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 933 1 0
 Refer: 1221 8045 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegadasiaoxia prosgegrammeni
 EndChar
 
@@ -29581,6 +29579,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 918 -1 0
 Refer: 1222 8046 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegapsiliperispomeni prosgegrammeni
 EndChar
 
@@ -29592,6 +29591,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 921 -1 0
 Refer: 1223 8047 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Omegadasiaperispomeni prosgegrammeni
 EndChar
 
@@ -29711,6 +29711,7 @@ LayerCount: 2
 Fore
 Refer: 1627 8175 S 1 0 0 1 -32 1 0
 Refer: 506 913 N 1 0 0 1 0 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_varia.cmb
 EndChar
 
@@ -34272,6 +34273,7 @@ LayerCount: 2
 Fore
 Refer: 1627 8175 N 1 0 0 1 -32 1 0
 Refer: 512 919 N 1 0 0 1 164 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_varia.cmb
 EndChar
 
@@ -34283,6 +34285,7 @@ LayerCount: 2
 Fore
 Refer: 1638 8189 N 1 0 0 1 -82 1 0
 Refer: 512 919 N 1 0 0 1 141 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_oxia.cmb
 EndChar
 
@@ -34612,6 +34615,7 @@ LayerCount: 2
 Fore
 Refer: 1627 8175 N 1 0 0 1 -70 1 0
 Refer: 525 933 N 1 0 0 1 150 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_varia.cmb
 EndChar
 
@@ -34623,6 +34627,7 @@ LayerCount: 2
 Fore
 Refer: 1638 8189 N 1 0 0 1 -77 1 0
 Refer: 525 933 N 1 0 0 1 200 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_oxia.cmb
 EndChar
 
@@ -34634,6 +34639,7 @@ LayerCount: 2
 Fore
 Refer: 1639 8190 N 1 0 0 1 -118 1 0
 Refer: 522 929 N 1 0 0 1 83 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Rho gk_dasia.cmb
 EndChar
 
@@ -34752,6 +34758,7 @@ LayerCount: 2
 Fore
 Refer: 1627 8175 N 1 0 0 1 -32 -2 0
 Refer: 520 927 N 1 0 0 1 125 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_varia.cmb
 EndChar
 
@@ -34763,6 +34770,7 @@ LayerCount: 2
 Fore
 Refer: 1638 8189 N 1 0 0 1 -82 -8 0
 Refer: 520 927 N 1 0 0 1 82 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_oxia.cmb
 EndChar
 
@@ -34774,6 +34782,7 @@ LayerCount: 2
 Fore
 Refer: 1627 8175 N 1 0 0 1 -32 -11 0
 Refer: 529 937 N 1 0 0 1 127 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_varia.cmb
 EndChar
 
@@ -34785,6 +34794,7 @@ LayerCount: 2
 Fore
 Refer: 1638 8189 N 1 0 0 1 -82 -35 0
 Refer: 529 937 N 1 0 0 1 74 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_oxia.cmb
 EndChar
 
@@ -54541,6 +54551,7 @@ LayerCount: 2
 Fore
 Refer: 1596 8141 N 1 0 0 1 -82 0 2
 Refer: 506 913 N 1 0 0 1 89 0 0
+Validated: 32769
 MultipleSubs2: "'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_psilivaria.cmb
 EndChar
 
@@ -54552,6 +54563,7 @@ LayerCount: 2
 Fore
 Refer: 1582 8126 N 1 0 0 1 741 0 0
 Refer: 2503 7946 N 1 0 0 1 0 0 2
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Greek-caps w/iota" Alphapsilivaria prosgegrammeni
 EndChar
 
@@ -182263,10 +182275,9 @@ Width: 918
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 7112 42572 N 1 0 0 1 0 0 2
+Refer: 7112 42572 S 1 0 0 1 0 0 1
 Validated: 32769
 Substitution2: "'c2sc' caps to small caps in Latin-invariant" omegalatin
-Substitution2: "FreeSerif-'c2sc' caps to small caps in Latin-invariant" omegalatin
 EndChar
 
 StartChar: omegalatin
@@ -182275,7 +182286,7 @@ Width: 728
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 7113 42573 N 1 0 0 1 0 0 2
+Refer: 7113 42573 S 1 0 0 1 0 0 1
 Validated: 32769
 EndChar
 
@@ -182359,6 +182370,134 @@ LayerCount: 2
 Fore
 Refer: 42 74 N 1 0 0 1 0 0 1
 Validated: 32769
+EndChar
+
+StartChar: VS1
+Encoding: 65024 65024 7233
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS2
+Encoding: 65025 65025 7234
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS3
+Encoding: 65026 65026 7235
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS4
+Encoding: 65027 65027 7236
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS5
+Encoding: 65028 65028 7237
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS6
+Encoding: 65029 65029 7238
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS7
+Encoding: 65030 65030 7239
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS8
+Encoding: 65031 65031 7240
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS9
+Encoding: 65032 65032 7241
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS10
+Encoding: 65033 65033 7242
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS11
+Encoding: 65034 65034 7243
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS12
+Encoding: 65035 65035 7244
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS13
+Encoding: 65036 65036 7245
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS14
+Encoding: 65037 65037 7246
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS15
+Encoding: 65038 65038 7247
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS16
+Encoding: 65039 65039 7248
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
 EndChar
 EndChars
 EndSplineFont

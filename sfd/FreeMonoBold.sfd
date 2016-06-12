@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1458421883
+ModificationTime: 1465770266
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -96,9 +97,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "dotted"  
-  BClassNames: "0"  
-  FClassNames: "0"  "diacritic"  "symmark"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -194,9 +192,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -292,9 +287,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -347,14 +339,14 @@ LangName: 1027 "" "" "negreta" "" "FreeMono negreta"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeMono +BD8EPgQ7BEMERwQ1BEAENQQ9" 
 LangName: 1069 "" "" "Lodia" "" "FreeMono Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeMono Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 14 21 13 65535 15 1
+GaspTable: 3 9 14 21 13 65535 15
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64992 16 12
+WinInfo: 64976 16 12
 BeginPrivate: 9
 UniqueID 7 5020946
 BlueValues 23 [-16 0 437 451 583 597]
@@ -367,7 +359,7 @@ StemSnapV 5 [100]
 ForceBold 4 true
 EndPrivate
 AnchorClass2: "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "arab-ring"  "'mark' mark positioning in Arabic subtable" "above_arabic"  "'mark' mark positioning in Arabic subtable" "below_arabic"  "'mark' mark positioning in Arabic subtable" "arab_diacritic"  "'mkmk' mark to mark in Arabic subtable" "far-right-dot"  "'mark' marks generic above 1" "abovecyr"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
-BeginChars: 65536 2743
+BeginChars: 65536 2770
 
 StartChar: space
 Encoding: 32 32 0
@@ -46951,7 +46943,7 @@ LayerCount: 2
 Fore
 Refer: 59 91 S 0 -1 1 0 -544 1050 2
 Refer: 59 91 N 0 1 -1 0 -64 -450 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: fitacyr
@@ -57129,6 +57121,279 @@ SplineSet
  356 -143 367 -130 382 -130 c 0
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: Omegalatin
+Encoding: 42934 42934 2743
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2750 42572 N 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: omegalatin
+Encoding: 42935 42935 2744
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2745 42573 N 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: omegha_shirokaja
+Encoding: 42573 42573 2745
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 622 969 N 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: Dzwe
+Encoding: 42626 42626 2746
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 51 83 N 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: jota
+Encoding: 42567 42567 2747
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 606 953 N 1 0 0 1 0 0 2
+Validated: 32769
+EndChar
+
+StartChar: On_odinokij
+Encoding: 42600 42600 2748
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 47 79 N 1 0 0 1 0 0 2
+Refer: 118 183 N 1 0 0 1 0 60 2
+Validated: 32769
+EndChar
+
+StartChar: on_odinokij
+Encoding: 42601 42601 2749
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 79 111 N 1 0 0 1 0 0 2
+Refer: 118 183 N 1 0 0 1 0 -20 2
+Validated: 32769
+EndChar
+
+StartChar: Omegha_shirokaja
+Encoding: 42572 42572 2750
+Width: 600
+Flags: HW
+AnchorPoint: "abovecyr" 305 583 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+179 -40 m 0
+ 88 -40 20 55.5 20 247 c 0
+ 20 366 50 437 85 483 c 1
+ 76 483 l 2
+ 52.5 483 28 509 28 534 c 0
+ 28 560 51.5 583 76 583 c 2
+ 195 583 l 2
+ 217 583 242 563.5 242 534 c 0
+ 242 504 216 483 195 483 c 2
+ 184 483 l 1
+ 139 435 102 360 102 251 c 0
+ 102 94 132 47 177 47 c 0
+ 220 47 257 79 257 127 c 2
+ 257 254 l 2
+ 257 273 270 296 299 296 c 0
+ 328 296 342 275 342 254 c 2
+ 342 127 l 2
+ 342 79.5 378 49 416 49 c 0
+ 462 49 493 99.5791 493 254 c 0
+ 493 354 463 433 415 485 c 1
+ 405 485 l 2
+ 380 485 358 513 358 535 c 0
+ 358 558 380.5 585 405 585 c 2
+ 525 585 l 2
+ 550 585 573 562.5 573 534 c 0
+ 573 512 550 485 525 485 c 2
+ 516 485 l 1
+ 557 439 580 370 580 258 c 0
+ 580 77.5 514 -38 414 -38 c 0
+ 350 -38 311.333 -15.333 298 17 c 1
+ 277 -17 234 -40 179 -40 c 0
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: Hbarsup
+Encoding: 43000 43000 2751
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 229 294 S 0.75 0 0 0.75 60 363 0
+Validated: 32769
+EndChar
+
+StartChar: msmallcapturned
+Encoding: 43002 43002 2752
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 77 109 S -1 0 0 -1 600 437 2
+Validated: 32769
+EndChar
+
+StartChar: uniA7F7
+Encoding: 42999 42999 2753
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 41 73 S 0 1 -1 0 591 -83 2
+Validated: 32769
+EndChar
+
+StartChar: VS1
+Encoding: 65024 65024 2754
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS2
+Encoding: 65025 65025 2755
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS3
+Encoding: 65026 65026 2756
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS4
+Encoding: 65027 65027 2757
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS5
+Encoding: 65028 65028 2758
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS6
+Encoding: 65029 65029 2759
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS7
+Encoding: 65030 65030 2760
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS8
+Encoding: 65031 65031 2761
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS9
+Encoding: 65032 65032 2762
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS10
+Encoding: 65033 65033 2763
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS11
+Encoding: 65034 65034 2764
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS12
+Encoding: 65035 65035 2765
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS13
+Encoding: 65036 65036 2766
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS14
+Encoding: 65037 65037 2767
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS15
+Encoding: 65038 65038 2768
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS16
+Encoding: 65039 65039 2769
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
 EndChar
 EndChars
 EndSplineFont

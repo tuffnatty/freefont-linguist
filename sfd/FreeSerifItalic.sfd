@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1458419527
+ModificationTime: 1465769823
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -101,6 +102,7 @@ Lookup: 2 0 0 "'smcp' small caps in Latin pre-decompose"  {"'smcp' small caps in
 Lookup: 1 0 0 "'smcp' small caps in Latin"  {"'smcp' lowercase to small caps in Latin-1"  } ['smcp' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 2 0 0 "'c2sc' caps to small caps in Latin pre-decompose"  {"'c2sc' caps to small caps in Latin pre-decompose-basic"  "'c2sc' caps to small caps in Latin pre-decompose-A"  "'c2sc' caps to small caps in Latin pre-decompose-B"  "'c2sc' caps to small caps in Latin pre-decompose-B-2"  "'c2sc' caps to small caps in Latin pre-decompose-additional"  "'c2sc' caps to small caps in Latin pre-decompose-additional-2"  "'c2sc' caps to small caps in Latin pre-decompose-viet"  } ['c2sc' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 1 0 0 "'c2sc' caps to small caps in Latin"  {"'c2sc' caps to small caps in Latin-1"  "'c2sc' caps to small caps in Latin-invariant"  } ['c2sc' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
+Lookup: 1 0 0 "'cv00' char. var. 00 in Latin for Cameroon"  {"'cv00' char. var. 00 in Latin for Cameroon-alpha"  } ['cv00' ('DFLT' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Latin"  {"'liga' std. ligatures in Latin 0"  "'liga' std. ligatures in Latin-commaright"  } ['liga' ('latn' <'dflt' > 'latn' <'CAT ' 'ESP ' 'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'VIT ' > ) ]
 Lookup: 4 0 0 "'ccmp' glyph comp. in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'VIT ' > ) ]
 Lookup: 4 0 0 "'ccmp' glyph comp. in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'VIT ' > ) ]
@@ -521,9 +523,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "dotted"  
-  BClassNames: "0"  
-  FClassNames: "0"  "diacritic"  "symmark"  
 EndFPST
 ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   Class: 15 Alpha Eta Omega
@@ -571,9 +570,6 @@ ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   FClsList:
  1
   SeqLookup: 0 "positional forms in Greek" 
-  ClassNames: "All_Others"  "vowel"  "vowelext"  "breathing"  "sc-vowel"  "iota"  
-  BClassNames: "All_Others"  "vowel"  "vowelext"  "breathing"  "sc-vowel"  "iota"  
-  FClassNames: "All_Others"  "vowel"  "vowelext"  "breathing"  "sc-vowel"  "iota"  
 EndFPST
 ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   Class: 4 beta
@@ -613,9 +609,6 @@ ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   FClsList: 2
  1
   SeqLookup: 0 "positional forms in Greek" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   Class: 4 beta
@@ -642,9 +635,6 @@ ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   FClsList:
  1
   SeqLookup: 0 "positional forms in Greek" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  "2"  "3"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -740,9 +730,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 parenleft parenright plus hyphen minus comma period zero one two three four five six seven eight nine
@@ -825,9 +812,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: glyph "'ccmp' contextual chain in Latin - iogonek-subtable"  0 0 0 1
  String: 7 iogonek
@@ -866,9 +850,9 @@ LangName: 1027 "" "" "it+AOAA-lica" "" "FreeSerif it+AOAA-lica"
 LangName: 1026 "" "" "+BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BDoEQwRABEEEOAQyBDUEPQAA" 
 LangName: 1069 "" "" "Etzana" "" "FreeSerif Etzana" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Italic: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3 0
-OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
-OtfFeatName: 'ss08' 1033 "Georgian Mtavruli" 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 
+GaspTable: 3 9 2 21 1 65535 3
+OtfFeatName: 'ss08' 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 1033 "Georgian Mtavruli" 
+OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 1500
@@ -932,7 +916,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 7904 16 11
+WinInfo: 65008 16 11
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -951,7 +935,7 @@ ForceBold 5 false
 EndPrivate
 TeXData: 2 0 216497 262144 131072 87381 471859 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "viet-hook"  "'mkmk' mark-to-mark for Viet" "viet-grave"  "'mkmk' mark-to-mark for Viet" "viet-acute"  "'mkmk' mark-to-mark for Viet" "far-right-dot"  "'mark' far right in Latin-1" "belowmk"  "'mkmk' mark-to-mark generic-below" "abovemk"  "'mkmk' mark-to-mark generic-above" "beng-nukta"  "'blwm' nukta in Bengali" "beng-vowel"  "'blwm' vowel in Bengali" "below_gk"  "'mark' mark below in Greek-1" "above_gk"  "'mark' mark above in Greek-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "low_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "top_mkmk_heb"  "'mkmk' mark-to-mark in Hebrew-1" "point_above_heb"  "'mark' marks in Hebrew-1" "vowel_above_heb"  "'mark' marks in Hebrew-1" "vowel_left_heb"  "'mark' marks in Hebrew-1" "point_low_heb"  "'mark' marks in Hebrew-1" "point_left_heb"  "'mark' marks in Hebrew-1" "point_right_heb"  "'mark' marks in Hebrew-1" "vowel_low_heb"  "'mark' marks in Hebrew for Ivrit-1" "vowel_below_yiddish"  "'mark' marks in Hebrew for Yiddish-1" "topright"  "'mark' marks generic - middle" "ogonek"  "'mark' marks in Latin - ogonek" "abovecyr"  "'mark' marks in Cyrillic-1" "middle"  "'mark' marks generic - middle" "thai_vowel_tone_right"  "'mkmk' mark-to-mark in Thai right-1" "thai_tone"  "'mark' marks in Thai - tones" "thai_vowel_centered"  "'mark' marks in Thai - vowels" "thai_vowel"  "'mark' marks in Thai - vowels" "thai_vowel_tone"  "'mkmk' mark-to-mark in Thai-1" "thai_below"  "'mark' marks in Thai below" "below"  "'mark' marks in Latin-1" "above"  "'mark' marks above" 
-BeginChars: 65980 4302
+BeginChars: 65980 4322
 
 StartChar: space
 Encoding: 32 32 0
@@ -6526,10 +6510,11 @@ AnchorPoint: "above" 403 659 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-257 33 m 0
- 446 33 485 78 553 170 c 1
- 569 162 l 1
- 507 0 l 1
+556 -73 m 1
+ 573 -89 l 1
+ 525 -142 486 -165 445 -165 c 0
+ 410 -165 386 -140 386 -106 c 0
+ 386 -63 416 -30 461 0 c 1
  0 0 l 1
  0 16 l 1
  56 26 65 33 81 90 c 2
@@ -6550,22 +6535,19 @@ SplineSet
  421 222 l 1
  401 227 l 1
  406 249 408 262 408 279 c 0
- 408 312 395 325 331 325 c 2
- 323 325 l 2
- 311 325 280 326 245 328 c 1
- 190 119 177 113 177 67 c 0
+ 408 312 395 327 331 327 c 2
+ 323 327 l 2
+ 311 327 280 327 244 327 c 1
+ 189 118 177 113 177 67 c 0
  177 43 201 33 257 33 c 0
-556 -73 m 1
- 573 -89 l 1
- 525 -142 486 -165 445 -165 c 0
- 410 -165 386 -140 386 -106 c 0
- 386 -63 416 -30 461 0 c 1
+ 446 33 485 78 553 170 c 1
+ 569 162 l 1
  507 0 l 1
  466 -28 447 -53 447 -79 c 0
  447 -97 459 -109 478 -109 c 0
  499 -109 519 -99 556 -73 c 1
 EndSplineSet
-Validated: 5
+Validated: 1
 MultipleSubs2: "'c2sc' caps to small caps in Latin pre-decompose-A" E ogonek.cmb
 EndChar
 
@@ -31887,6 +31869,7 @@ LayerCount: 2
 Fore
 Refer: 519 945 N 1 0 0 1 20 0 0
 Validated: 1
+Substitution2: "'cv00' char. var. 00 in Latin for Cameroon-alpha" alpha_latin
 Substitution2: "'sups' superscript-phonetic" alphalatinsup
 EndChar
 
@@ -117748,6 +117731,225 @@ SplineSet
  -90 -104 -69 -89 -44 -89 c 0
 EndSplineSet
 Validated: 1
+EndChar
+
+StartChar: alpha_latin
+Encoding: 63603 -1 4302
+Width: 563
+Flags: W
+LayerCount: 2
+Fore
+Refer: 519 945 S 1 0 0 1 0 0 1
+Validated: 1
+EndChar
+
+StartChar: Alpha_latin
+Encoding: 63604 -1 4303
+Width: 805
+Flags: HW
+HStem: -18 33<213.563 345.349> -15 108<645.632 693.51> 633 33<377.715 504.907> 633 20G<693.5 807>
+VStem: 38 104<113.286 312.741> 569 56<429.791 556.368> 569 48<126.293 163> 700 107<592.695 653> 740 26<130.947 157>
+LayerCount: 2
+Fore
+SplineSet
+766 157 m 1x5a80
+ 749 92 709 -15 649 -15 c 4x5a80
+ 577 -15 568 86 568 163 c 1
+ 566 163 l 1
+ 505 56 374 -18 253 -18 c 0
+ 114 -18 38 95 38 228 c 0
+ 38 499 290.5 666 423 666 c 0xaa80
+ 565.205 666 625 581.726 625 428 c 1
+ 648 486 687 590 700 653 c 1
+ 807 653 l 1x1d
+ 754 494 660 316 617 227 c 1
+ 617 174 639 93 675 93 c 0
+ 698 93 729 122 740 157 c 1
+ 766 157 l 1x5a80
+569 452 m 0xac
+ 569 574 517 633 451 633 c 0
+ 249 633 142 325 142 181 c 0
+ 142 85 184 15 280 15 c 0
+ 443 15 569 300 569 452 c 0xac
+EndSplineSet
+Validated: 1
+EndChar
+
+StartChar: Alphalatin
+Encoding: 11373 11373 4304
+Width: 666
+Flags: W
+HStem: -15 84<237.381 353.46> 38 20<580.144 598> 630 37<352.641 508.234>
+VStem: 43 114<160.629 367.796>
+AnchorPoint: "above" 442 659 basechar 0
+AnchorPoint: "below" 283 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+428 -18 m 5x70
+ 422 0 l 5
+ 452 93 l 5
+ 426 41 344 -15 266 -15 c 4xb0
+ 142 -15 43 99 43 226 c 4
+ 43 489 244 667 435 667 c 4
+ 488 667 570 654 625 614 c 5
+ 689 666 l 5
+ 704 666 l 5
+ 548 97 l 6
+ 547 92 546 85 546 81 c 4
+ 546 66 556 56 580 56 c 4
+ 583 56 591 57 602 58 c 5
+ 598 38 l 5
+ 541 27 485 10 428 -18 c 5x70
+157 269 m 4
+ 157 172 202 69 311 69 c 4
+ 376 69 453 119 472 185 c 6
+ 556 480 l 6
+ 560 500 562 516 562 532 c 4
+ 562 595 498 630 430 630 c 4
+ 301 630 157 478 157 269 c 4
+EndSplineSet
+Validated: 1
+Substitution2: "'c2sc' caps to small caps in Latin-invariant" alphalatin
+Substitution2: "'cv00' char. var. 00 in Latin for Cameroon-alpha" Alpha_latin
+EndChar
+
+StartChar: Alphalatinturn
+Encoding: 11376 11376 4305
+Width: 680
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4304 11373 S -1 0 0 -1 740 647 2
+Validated: 1
+EndChar
+
+StartChar: VS1
+Encoding: 65024 65024 4306
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS2
+Encoding: 65025 65025 4307
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS3
+Encoding: 65026 65026 4308
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS4
+Encoding: 65027 65027 4309
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS5
+Encoding: 65028 65028 4310
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS6
+Encoding: 65029 65029 4311
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS7
+Encoding: 65030 65030 4312
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS8
+Encoding: 65031 65031 4313
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS9
+Encoding: 65032 65032 4314
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS10
+Encoding: 65033 65033 4315
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS11
+Encoding: 65034 65034 4316
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS12
+Encoding: 65035 65035 4317
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS13
+Encoding: 65036 65036 4318
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS14
+Encoding: 65037 65037 4319
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS15
+Encoding: 65038 65038 4320
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: VS16
+Encoding: 65039 65039 4321
+Width: 0
+VWidth: 2048
+Flags: HW
+LayerCount: 2
 EndChar
 EndChars
 EndSplineFont
