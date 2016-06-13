@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1465769918
+ModificationTime: 1465854085
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -116,6 +115,7 @@ Lookup: 4 1 0 "'liga' std. ligatures in Hebrew"  {"'liga' std. ligatures in Hebr
 Lookup: 4 8 0 "'dlig' discr. ligatures in Hebrew"  {"'dlig' disc. ligatures in Hebrew 1"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' disc. ligatures in Armenian"  {"'dlig' disc. ligatures in Armenian-1"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' hist. ligatures in Armenian-1"  } ['hlig' ('armn' <'dflt' > ) ]
+Lookup: 4 0 0 "'rlig' variants for math"  {"'rlig' variants for math-1"  } ['rlig' ('DFLT' <'dflt' > 'arab' <'dflt' > 'armn' <'dflt' > 'beng' <'dflt' > 'bng2' <'dflt' > 'bugi' <'dflt' > 'cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'KOK ' 'MAR ' 'NEP ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'KOK ' 'MAR ' 'NEP ' 'SAN ' 'SAT ' 'dflt' > 'ethi' <'dflt' > 'geor' <'dflt' > 'gjr2' <'dflt' > 'goth' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'gujr' <'dflt' > 'gur2' <'dflt' > 'guru' <'dflt' > 'hano' <'dflt' > 'hebr' <'IWR ' 'JII ' 'dflt' > 'knd2' <'dflt' > 'knda' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'math' <'dflt' > 'mlm2' <'MLR ' 'dflt' > 'mlym' <'MLR ' 'dflt' > 'musc' <'dflt' > 'ory2' <'dflt' > 'orya' <'dflt' > 'sinh' <'dflt' > 'tale' <'dflt' > 'taml' <'dflt' > 'thaa' <'dflt' > 'thai' <'dflt' > 'tml2' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks generic low"  {"'mark' marks generic low-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'armn' <'dflt' > 'brai' <'dflt' > 'cher' <'dflt' > 'cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hani' <'dflt' > 'hebr' <'dflt' > 'ital' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'runr' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks generic high"  {"'mark' marks generic high-1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'armn' <'dflt' > 'brai' <'dflt' > 'cher' <'dflt' > 'cyrl' <'BGR ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hani' <'dflt' > 'hebr' <'dflt' > 'ital' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'runr' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks in Greek"  {"'mark' marks in Greek subtable"  } ['mark' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
@@ -145,6 +145,9 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
   Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.psts dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
@@ -180,6 +183,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 
   FClsList:
  1
   SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -275,6 +281,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -370,6 +379,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   Class: 6 virama
@@ -409,6 +421,9 @@ ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "subst. openya for virama-ya in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' pre-base chain in Devanagari da+-half+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -434,6 +449,9 @@ ChainSub2: class "'cjct' avoid-vert conjunct forms in Devanagari2-1"  4 4 1 1
   BClsList: 2 1
   FClsList:
  0
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1 1
   Class: 6 virama
@@ -445,6 +463,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-rakaar in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 2 1 2
   Class: 10 dev_rakaar
@@ -463,6 +484,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 2 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-ra in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -515,14 +539,14 @@ LangName: 1027 "" "" "normal"
 LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA" 
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "Regular" "GNU: FreeMono Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 14 21 13 65535 15
+GaspTable: 3 9 2 21 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64976 16 12
+WinInfo: 59920 16 12
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 39 [-20 0 417 437 480 490 563 583 640 650]
@@ -542,7 +566,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 0 629146 314573 209715 437256 1048576 209715 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "ring-arabic"  "'mark' marks in Arabic subtable" "far-right-dot"  "'mark' marks generic high-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "dev-abv-mark"  "'mkmk' mark-to-mark in Devanagari-1" "viet-hook"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-grave"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-acute"  "'mkmk' mark-to-mark in Latin-for Viet" "dev-above"  "'abvm' above-base marks in Devanagari-1" "dev-rakaar"  "'blwm' rakaar in Devanagari" "dev-below"  "'blwm' below-base mark in Devanagari" "dev-nukta"  "'blwm' nukta in Devanagari" "abovecyr"  "'mark' marks in Cyrillic subtable" "above_arabic"  "'mark' marks in Arabic subtable" "below_arabic"  "'mark' marks in Arabic subtable" "arab_diacritic"  "'mkmk' mark-to-mark in Arabic subtable" "abovegk"  "'mark' marks in Greek subtable" "below"  "'mark' marks generic low-1" "above"  "'mark' marks generic high-1" 
-BeginChars: 67329 5636
+BeginChars: 67329 5663
 
 StartChar: space
 Encoding: 32 32 0
@@ -43255,7 +43279,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 29 61 N 1 0 0 1 0 -69 2
-Refer: 1833 8764 N 1 0 0 1 0 163 2
+Refer: 1833 8764 S 1 0 0 1 0 163 2
 Validated: 32769
 EndChar
 
@@ -43433,7 +43457,7 @@ Refer: 13 45 N 1 0 0 1 6 -259 2
 Validated: 32769
 EndChar
 
-StartChar: uni2266
+StartChar: leqq
 Encoding: 8806 8806 1851
 Width: 600
 Flags: HMW
@@ -43444,7 +43468,7 @@ Refer: 29 61 N 1 0 0 1 0 -193 2
 Validated: 32769
 EndChar
 
-StartChar: uni2267
+StartChar: geqq
 Encoding: 8807 8807 1852
 Width: 600
 Flags: HMW
@@ -43756,7 +43780,7 @@ Refer: 1861 8835 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: circleplus
+StartChar: circledplus
 Encoding: 8853 8853 1864
 Width: 600
 Flags: HMW
@@ -43788,7 +43812,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2296
+StartChar: circledminus
 Encoding: 8854 8854 1865
 Width: 600
 Flags: HMW
@@ -43812,7 +43836,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: circlemultiply
+StartChar: circledtimes
 Encoding: 8855 8855 1866
 Width: 600
 Flags: HMW
@@ -43848,7 +43872,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2298
+StartChar: circleddivide
 Encoding: 8856 8856 1867
 Width: 600
 Flags: HMW
@@ -43874,7 +43898,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2299
+StartChar: circleddot
 Encoding: 8857 8857 1868
 Width: 600
 Flags: HMW
@@ -43885,7 +43909,7 @@ Refer: 2139 9675 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: circlering
+StartChar: circledring
 Encoding: 8858 8858 1869
 Width: 600
 Flags: HMW
@@ -43896,7 +43920,7 @@ Refer: 2139 9675 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni229B
+StartChar: circledast
 Encoding: 8859 8859 1870
 Width: 600
 VWidth: 1016
@@ -43943,7 +43967,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni229C
+StartChar: circledequals
 Encoding: 8860 8860 1871
 Width: 600
 VWidth: 1016
@@ -43955,7 +43979,7 @@ Refer: 2139 9675 N 1 0 0 1 0 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni229D
+StartChar: circleddash
 Encoding: 8861 8861 1872
 Width: 600
 VWidth: 1016
@@ -60924,7 +60948,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2268
+StartChar: lneqq
 Encoding: 8808 8808 2633
 Width: 600
 Flags: MW
@@ -60975,7 +60999,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2269
+StartChar: gneqq
 Encoding: 8809 8809 2634
 Width: 600
 Flags: MW
@@ -61723,7 +61747,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni228B
+StartChar: supersetnoteql
 Encoding: 8843 8843 2667
 Width: 600
 Flags: MW
@@ -61805,7 +61829,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni228A
+StartChar: subsetnoteql
 Encoding: 8842 8842 2669
 Width: 600
 Flags: MW
@@ -61848,36 +61872,34 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2293
+StartChar: sqcap
 Encoding: 8851 8851 2670
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
 72 456 m 1
  184 456 416 456 528 456 c 1
- 528 310 528 152 528 6 c 0
+ 528 6 l 6
  528 -12 522 -20 508 -20 c 0
- 494 -20 488 -12 488 6 c 0
- 488 139 488 283 488 416 c 1
+ 494 -20 488 -12 488 6 c 6
+ 488 6 488 283 488 416 c 1
  402 416 198 416 112 416 c 1
- 112 283 112 139 112 6 c 0
+ 112 6 l 6
  112 -12 106 -20 92 -20 c 0
- 78 -20 72 -12 72 6 c 0
- 72 152 72 310 72 456 c 1
+ 78 -20 72 -12 72 6 c 6
+ 72 6 72 310 72 456 c 1
 EndSplineSet
-Validated: 3073
 EndChar
 
-StartChar: uni2294
+StartChar: sqcup
 Encoding: 8852 8852 2671
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 2670 8851 N -1 0 0 -1 600 436 2
-Validated: 32769
 EndChar
 
 StartChar: slurbelow
@@ -75699,7 +75721,7 @@ Refer: 5483 -1 S 1 0 0 1 -10 0 2
 Validated: 32769
 EndChar
 
-StartChar: uni2272
+StartChar: lesssim
 Encoding: 8818 8818 3246
 Width: 600
 Flags: HMW
@@ -75710,7 +75732,7 @@ Refer: 1833 8764 N 1 0 0 1 -1 -232 2
 Validated: 32769
 EndChar
 
-StartChar: uni2273
+StartChar: gtrsim
 Encoding: 8819 8819 3247
 Width: 600
 Flags: HMW
@@ -82426,16 +82448,15 @@ Refer: 3499 8920 N -1 0 0 -1 599 435 2
 Validated: 32769
 EndChar
 
-StartChar: uni22DA
+StartChar: lesseqgtr
 Encoding: 8922 8922 3498
 Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 590 727 N 1 0 0 1 0 -288 2
-Refer: 2838 706 N -1 0 0 -1 598 805 2
-Refer: 2838 706 N 1 0 0 1 -2 -270 2
-Validated: 32769
+Refer: 5158 -1 S 1 0 0 1 0 -160 2
+Refer: 1809 8722 S 1 0 0 1 0 0 2
+Refer: 5157 -1 S 1 0 0 1 0 230 2
 EndChar
 
 StartChar: uni22D8
@@ -82450,16 +82471,15 @@ Refer: 2838 706 N 1 0 0 1 -2 -480 2
 Validated: 32769
 EndChar
 
-StartChar: uni22DB
+StartChar: gtreqless
 Encoding: 8923 8923 3500
 Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 590 727 N 1 0 0 1 0 -288 2
-Refer: 2838 706 N -1 0 0 -1 598 1125 2
-Refer: 2838 706 N 1 0 0 1 -2 -590 2
-Validated: 32769
+Refer: 5158 -1 S 1 0 0 1 0 230 2
+Refer: 1809 8722 N 1 0 0 1 0 0 2
+Refer: 5157 -1 N 1 0 0 1 0 -160 2
 EndChar
 
 StartChar: uni22E6
@@ -116904,10 +116924,12 @@ Refer: 118 183 N 1 0 0 1 -178 -123 2
 Validated: 32769
 EndChar
 
-StartChar: uni2A3C
+StartChar: interiorprod
 Encoding: 10812 10812 5141
 Width: 600
-Flags: HW
+Flags: W
+HStem: 98 41<72.0066 487>
+VStem: 487 41<139 367.993>
 LayerCount: 2
 Fore
 SplineSet
@@ -116924,10 +116946,10 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2A3D
+StartChar: interiorprodright
 Encoding: 10813 10813 5142
 Width: 600
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 107 172 N -1 0 0 -1 600 536 2
@@ -117099,7 +117121,9 @@ EndChar
 StartChar: math_circle_op
 Encoding: 59921 -1 5155
 Width: 600
-Flags: HW
+Flags: W
+HStem: 0 40<207.857 391.728> 490 40<210.235 390.808>
+VStem: 35 40<174.145 355.942> 525 40<173.272 356.313>
 LayerCount: 2
 Fore
 SplineSet
@@ -117142,7 +117166,8 @@ EndChar
 StartChar: math_lesssquashed
 Encoding: 59923 -1 5157
 Width: 600
-Flags: HW
+Flags: W
+HStem: 118 37<486.323 521.977>
 LayerCount: 2
 Fore
 SplineSet
@@ -117164,7 +117189,8 @@ EndChar
 StartChar: math_greatersquashed
 Encoding: 59924 -1 5158
 Width: 600
-Flags: HW
+Flags: W
+HStem: 347 37<78.0233 113.677>
 LayerCount: 2
 Fore
 Refer: 5157 -1 N -1 0 0 -1 600 502 2
@@ -117174,7 +117200,9 @@ EndChar
 StartChar: math_notequalsquashed
 Encoding: 59925 -1 5159
 Width: 600
-Flags: HW
+Flags: W
+HStem: 190 41<72.0066 237 303 527.993> 294 41<72.0066 289 355 527.993>
+VStem: 206 39<106.144 117> 339 40<395 405.765>
 LayerCount: 2
 Fore
 SplineSet
@@ -117336,7 +117364,9 @@ EndChar
 StartChar: math_subsetsmall
 Encoding: 59931 -1 5165
 Width: 600
-Flags: HW
+Flags: W
+HStem: 17 41<186.281 407.993> 285 41<182.677 407.993>
+VStem: 96 45<100.401 245.669>
 LayerCount: 2
 Fore
 SplineSet
@@ -117612,10 +117642,11 @@ Refer: 5158 -1 N 1 0 0 1 0 -80 2
 Validated: 32769
 EndChar
 
-StartChar: uni2A9D
+StartChar: similarorless
 Encoding: 10909 10909 5189
 Width: 600
-Flags: HW
+Flags: W
+HStem: 38 37<488.323 523.977>
 LayerCount: 2
 Fore
 Refer: 5157 -1 N 1 0 0 1 2 -80 2
@@ -117623,10 +117654,11 @@ Refer: 1833 8764 N 1 0 0 1 0 150 2
 Validated: 32769
 EndChar
 
-StartChar: uni2A9E
+StartChar: similarorgreater
 Encoding: 10910 10910 5190
 Width: 600
-Flags: HW
+Flags: W
+HStem: 277 37<80.0233 115.677>
 LayerCount: 2
 Fore
 Refer: 5158 -1 N 1 0 0 1 2 -70 2
@@ -118539,7 +118571,7 @@ Refer: 1840 8776 N 0.66 0 0 0.66 109 -74 2
 Validated: 32769
 EndChar
 
-StartChar: uni2ACB
+StartChar: subsetovernoteq
 Encoding: 10955 10955 5269
 Width: 600
 Flags: HW
@@ -118550,10 +118582,12 @@ Refer: 5165 -1 N 1 0 0 1 48 257 2
 Validated: 32769
 EndChar
 
-StartChar: uni2ACC
+StartChar: supersetovernoteq
 Encoding: 10956 10956 5270
 Width: 600
-Flags: HW
+Flags: W
+HStem: 115.4 27.06<147.524 256.42 299.98 448.476> 184.04 27.06<147.524 290.74 334.3 448.476> 274 41<144.007 369.323> 542 41<144.007 365.719>
+VStem: 235.96 25.74<60.0551 67.22> 323.74 26.4<250.7 257.805> 411 45<354.331 499.599>
 LayerCount: 2
 Fore
 Refer: 5159 -1 N 0.66 0 0 0.66 100 -10 2
@@ -119544,7 +119578,9 @@ EndChar
 StartChar: uni2A5A
 Encoding: 10842 10842 5342
 Width: 600
-Flags: HW
+Flags: W
+HStem: 0 21G<79 86 291 304.5 508 517>
+VStem: 277 41<0.0065918 330>
 LayerCount: 2
 Fore
 SplineSet
@@ -119577,27 +119613,27 @@ Refer: 5342 10842 N -1 0 0 -1 597 428 2
 Validated: 32769
 EndChar
 
-StartChar: uni2AAA
+StartChar: smaller
 Encoding: 10922 10922 5344
 Width: 600
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 5342 10842 N 0 1 -1 0 520 -60 2
 Validated: 32769
 EndChar
 
-StartChar: uni2AAB
+StartChar: bigger
 Encoding: 10923 10923 5345
 Width: 600
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 5344 10922 N -1 0 0 -1 600 474 2
 Validated: 32769
 EndChar
 
-StartChar: uni2AAC
+StartChar: smallerorequal
 Encoding: 10924 10924 5346
 Width: 600
 Flags: HW
@@ -119608,7 +119644,7 @@ Refer: 1809 8722 N 1 0 0 1 0 -220 2
 Validated: 32769
 EndChar
 
-StartChar: uni2AAD
+StartChar: biggerorequal
 Encoding: 10925 10925 5347
 Width: 600
 Flags: HW
@@ -119803,7 +119839,8 @@ EndChar
 StartChar: math_ineq_slantup
 Encoding: 59933 -1 5357
 Width: 600
-Flags: HW
+Flags: W
+HStem: 208 270
 LayerCount: 2
 Fore
 SplineSet
@@ -119823,7 +119860,8 @@ EndChar
 StartChar: math_ineq_slantdn
 Encoding: 59934 -1 5358
 Width: 600
-Flags: HW
+Flags: W
+HStem: 208 270
 LayerCount: 2
 Fore
 SplineSet
@@ -124712,7 +124750,7 @@ StartChar: VS1
 Encoding: 65024 65024 5620
 Width: 0
 VWidth: 2048
-Flags: HW
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -124834,6 +124872,604 @@ Width: 0
 VWidth: 2048
 Flags: HW
 LayerCount: 2
+EndChar
+
+StartChar: math_noteq_vert_squash
+Encoding: 59949 -1 5636
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+320 140 m 2
+ 320 122 313 113 300 113 c 0
+ 286 113 279 122 279 140 c 2
+ 279 190 l 1
+ 99 190 l 2
+ 81 190 72 197 72 211 c 0
+ 72 224 81 231 99 231 c 2
+ 279 231 l 1
+ 279 294 l 1
+ 99 294 l 2
+ 81 294 72 301 72 315 c 0
+ 72 328 81 335 99 335 c 2
+ 279 335 l 1
+ 279 375 l 2
+ 279 393 286 402 300 402 c 0
+ 313 402 320 393 320 375 c 2
+ 320 335 l 1
+ 501 335 l 2
+ 519 335 528 328 528 315 c 0
+ 528 301 519 294 501 294 c 2
+ 320 294 l 1
+ 320 231 l 1
+ 501 231 l 2
+ 519 231 528 224 528 211 c 0
+ 528 197 519 190 501 190 c 2
+ 320 190 l 1
+ 320 140 l 2
+EndSplineSet
+EndChar
+
+StartChar: math_sim_slant_down
+Encoding: 59950 -1 5637
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+100 417 m 4
+ 120 405 154 294 219 294 c 4
+ 250 294 315 307 356 307 c 4
+ 443 307 528 182 528 151 c 4
+ 528 143 517 139 511 139 c 4
+ 508 139 504 140 502 142 c 4
+ 479 162 432 267 357 267 c 4
+ 323 267 262 253 223 253 c 4
+ 146 253 72 362 72 405 c 4
+ 72 415 82 420 90 420 c 4
+ 93 420 97 419 100 417 c 4
+EndSplineSet
+EndChar
+
+StartChar: math_sim_slant_up
+Encoding: 59951 -1 5638
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+500 417 m 4
+ 503 419 507 420 510 420 c 4
+ 518 420 528 415 528 405 c 4
+ 528 362 454 253 377 253 c 4
+ 338 253 277 267 243 267 c 4
+ 168 267 121 162 98 142 c 4
+ 96 140 92 139 89 139 c 4
+ 83 139 72 143 72 151 c 4
+ 72 182 157 307 244 307 c 4
+ 285 307 350 294 381 294 c 4
+ 446 294 480 405 500 417 c 4
+EndSplineSet
+EndChar
+
+StartChar: math_equiv_slant_down
+Encoding: 59966 -1 5639
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+409.962 369.319 m 0
+ 444.79 369.319 492.22 393.834 511.104 393.834 c 0
+ 522.001 393.834 527.953 382.998 527.953 374.746 c 0
+ 527.953 371.637 527.201 368.562 525.633 365.847 c 0
+ 518.559 353.594 453.835 329.791 406.683 329.791 c 0
+ 282.364 329.791 286.854 518.111 188.587 518.111 c 4
+ 155.444 518.111 114.418 491.465 92.1641 491.465 c 0
+ 80.1533 491.465 72.0195 500.396 72.0195 511.098 c 0
+ 72.0195 514.25 72.7695 517.387 74.3672 520.153 c 0
+ 78.8691 527.95 139.829 557.674 189.871 557.674 c 4
+ 314.67 557.674 321.519 369.319 409.962 369.319 c 0
+EndSplineSet
+EndChar
+
+StartChar: math_intersect_serifs
+Encoding: 59936 -1 5640
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+560 41 m 2
+ 578 41 587 34 587 21 c 0
+ 587 7 578 0 560 0 c 2
+ 451 0 l 2
+ 433 0 424 7 424 21 c 0
+ 424 34 433 41 451 41 c 2
+ 487 41 l 1
+ 487 236 l 2
+ 487 350 410 425 301 425 c 0
+ 200 425 112 346 112 236 c 2
+ 112 41 l 1
+ 149 41 l 2
+ 167 41 176 34 176 21 c 0
+ 176 7 167 0 149 0 c 2
+ 40 0 l 2
+ 22 0 13 7 13 21 c 0
+ 13 34 22 41 40 41 c 2
+ 72 41 l 1
+ 72 236 l 2
+ 72 374 167 465 301 465 c 0
+ 437 465 527 375 527 236 c 2
+ 527 41 l 1
+ 560 41 l 2
+EndSplineSet
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" intersection VS1
+EndChar
+
+StartChar: math_union_serifs
+Encoding: 59937 -1 5641
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5640 -1 N -1 0 0 -1 600 446 1
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" union VS1
+EndChar
+
+StartChar: math_sqcap_serifs
+Encoding: 59938 -1 5642
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+72 456 m 1
+ 184 456 416 456 528 456 c 1
+ 528 41 l 1
+ 560 41 l 2
+ 578 41 587 34 587 21 c 0
+ 587 7 578 0 560 0 c 2
+ 451 0 l 2
+ 433 0 424 7 424 21 c 0
+ 424 34 433 41 451 41 c 2
+ 488 41 l 1
+ 488 416 l 1
+ 402 416 198 416 112 416 c 1
+ 112 41 l 1
+ 149 41 l 2
+ 167 41 176 34 176 21 c 0
+ 176 7 167 0 149 0 c 2
+ 40 0 l 2
+ 22 0 13 7 13 21 c 0
+ 13 34 22 41 40 41 c 2
+ 72 41 l 1
+ 72 456 l 1
+EndSplineSet
+Ligature2: "'rlig' variants for math-1" sqcap VS1
+EndChar
+
+StartChar: math_sqcup_serifs
+Encoding: 59939 -1 5643
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5642 -1 N -1 0 0 -1 600 456 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" sqcup VS1
+EndChar
+
+StartChar: math_circledplus_var
+Encoding: 59940 -1 5644
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5155 -1 N 1 0 0 1 0 0 1
+Refer: 11 43 S 0.66 0 0 0.66 100 79 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" circledplus VS1
+EndChar
+
+StartChar: math_circledtimes_var
+Encoding: 59941 -1 5645
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 150 215 S 0.66 0 0 0.66 98 78 2
+Refer: 5155 -1 N 1 0 0 1 0 0 1
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" circledtimes VS1
+EndChar
+
+StartChar: math_circledequals_var
+Encoding: 59942 -1 5646
+Width: 600
+VWidth: 1016
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+304 530 m 0
+ 446 530 565 410 565 265 c 0
+ 565 119 446 0 300 0 c 0
+ 153 0 35 119 35 267 c 0
+ 35 413 155 530 304 530 c 0
+84 329 m 1
+ 516 329 l 1
+ 488 421 402 490 303 490 c 0
+ 199 490 111 422 84 329 c 1
+76 289 m 1
+ 75 282 75 274 75 267 c 0
+ 75 261 75.3333 254.667 76 249 c 1
+ 524 249 l 1
+ 524.667 253.5 525 260 525 265 c 0
+ 525 273 525 281 524 289 c 1
+ 76 289 l 1
+82 209 m 1
+ 107 111 195 40 300 40 c 0
+ 405 40 493 112 518 209 c 1
+ 82 209 l 1
+EndSplineSet
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" circledequals VS1
+EndChar
+
+StartChar: math_intprod_tall
+Encoding: 59943 -1 5647
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5142 10813 S 0 1 -1 0 528 -72 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" interiorprod VS1
+EndChar
+
+StartChar: math_intprodright_tall
+Encoding: 59944 -1 5648
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5141 10812 S 0 -1 1 0 72 528 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" interiorprodright VS1
+EndChar
+
+StartChar: math_le_or_greater
+Encoding: 59945 -1 5649
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 28 60 N 1 0 0 1 3 282 2
+Refer: 5358 -1 N 1 0 0 1 3 -40 2
+Refer: 30 62 N 1 0 0 1 -3 -244 0
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" lesseqgtr VS1
+EndChar
+
+StartChar: math_ge_or_less
+Encoding: 59946 -1 5650
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 30 62 S 1 0 0 1 -3 282 2
+Refer: 5357 -1 S 1 0 0 1 -3 -55 2
+Refer: 28 60 S 1 0 0 1 3 -244 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" gtreqless VS1
+EndChar
+
+StartChar: math_smaller_or_equal_slant
+Encoding: 59947 -1 5651
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5344 10922 S 1 0 0 1 4 130 2
+Refer: 5358 -1 N 1 0 0 1 4 -235 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" smallerorequal VS1
+EndChar
+
+StartChar: math_bigger_or_equal_slant
+Encoding: 59948 -1 5652
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5345 10923 S 1 0 0 1 0 130 2
+Refer: 5357 -1 N 1 0 0 1 -3 -225 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" biggerorequal VS1
+EndChar
+
+StartChar: math_similar_or_less_slant
+Encoding: 59952 -1 5653
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 28 60 S 1 0 0 1 0 -60 0
+Refer: 5638 -1 S 1 0 0 1 0 230 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" similarorless VS1
+EndChar
+
+StartChar: math_similar_or_greater_slant
+Encoding: 59953 -1 5654
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 30 62 S 1 0 0 1 -5 -60 2
+Refer: 5637 -1 S 1 0 0 1 0 230 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" similarorgreater VS1
+EndChar
+
+StartChar: math_less_equiv_slant
+Encoding: 59954 -1 5655
+Width: 600
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 28 60 N 1 0 0 1 0 120 0
+Refer: 5639 -1 N 1 0 0 1 0 -350 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" lesssim VS1
+EndChar
+
+StartChar: math_greater_equiv_slant
+Encoding: 59955 -1 5656
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 30 62 S 1 0 0 1 0 134 2
+Refer: 5638 -1 N 1 0 0 1 0 -160 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" gtrsim VS1
+EndChar
+
+StartChar: math_lneqq_vert
+Encoding: 59956 -1 5657
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 28 60 S 1 0 0 1 6 210 0
+Refer: 5636 -1 S 1 0 0 1 0 -120 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" lneqq VS1
+EndChar
+
+StartChar: math_gneqq_vert
+Encoding: 59957 -1 5658
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+Refer: 5636 -1 N 1 0 0 1 0 -120 2
+Refer: 30 62 N 1 0 0 1 -4 220 2
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" gneqq VS1
+EndChar
+
+StartChar: math_subsetprop_bot
+Encoding: 59958 -1 5659
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+203 113 m 2
+ 103 113 51 191 51 282 c 0
+ 51 373 103 452 203 452 c 2
+ 511 452 l 2
+ 529 452 538 445 538 432 c 0
+ 538 418 529 411 511 411 c 2
+ 203 411 l 2
+ 121 411 91 352 91 284 c 0
+ 91 215 129 154 203 154 c 2
+ 392 154 l 1
+ 465 242 l 2
+ 474 252 477 254 483 254 c 0
+ 494 254 503 245 503 234 c 0
+ 503 230 500 223 495 217 c 2
+ 443 154 l 1
+ 511 154 l 2
+ 529 154 538 147 538 134 c 0
+ 538 120 529 113 511 113 c 2
+ 409 113 l 1
+ 348 40 l 1
+ 504 40 l 2
+ 522 40 531 33 531 20 c 0
+ 531 6 522 -1 504 -1 c 2
+ 314 -1 l 1
+ 234 -97 l 2
+ 226 -107 222 -109 216 -109 c 0
+ 205 -109 196 -100 196 -89 c 0
+ 196 -85 199 -79 205 -72 c 2
+ 264 -1 l 1
+ 102 -1 l 2
+ 84 -1 75 6 75 20 c 0
+ 75 33 84 40 102 40 c 2
+ 298 40 l 1
+ 358 113 l 1
+ 203 113 l 2
+EndSplineSet
+Ligature2: "'rlig' variants for math-1" subsetnoteql VS1
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" uni2288 VS1
+EndChar
+
+StartChar: math_supersetprop_bot
+Encoding: 59959 -1 5660
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+386 452 m 2
+ 486 452 538 374 538 283 c 0
+ 538 192 486 113 386 113 c 2
+ 309 113 l 1
+ 248 40 l 1
+ 483 40 l 2
+ 501 40 510 33 510 20 c 0
+ 510 6 501 -1 483 -1 c 2
+ 214 -1 l 1
+ 134 -97 l 2
+ 126 -107 122 -109 116 -109 c 0
+ 105 -109 96 -100 96 -89 c 0
+ 96 -85 99 -79 105 -72 c 2
+ 164 -1 l 1
+ 81 -1 l 2
+ 63 -1 54 6 54 20 c 0
+ 54 33 63 40 81 40 c 2
+ 198 40 l 1
+ 258 113 l 1
+ 78 113 l 2
+ 60 113 51 120 51 133 c 0
+ 51 147 60 154 78 154 c 2
+ 292 154 l 1
+ 365 242 l 2
+ 374 252 377 254 383 254 c 0
+ 394 254 403 245 403 234 c 0
+ 403 230 400 223 395 217 c 2
+ 343 154 l 1
+ 386 154 l 2
+ 468 154 498 213 498 281 c 0
+ 498 350 460 411 386 411 c 2
+ 78 411 l 2
+ 60 411 51 418 51 431 c 0
+ 51 445 60 452 78 452 c 2
+ 386 452 l 2
+EndSplineSet
+Ligature2: "'rlig' variants for math-1" supersetnoteql VS1
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" uni2289 VS1
+EndChar
+
+StartChar: math_subset_ne_through
+Encoding: 59960 -1 5661
+Width: 600
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+301 334 m 2
+ 201 334 144 402 144 488 c 0
+ 144 574 201 643 301 643 c 2
+ 429 643 l 2
+ 447 643 456 636 456 623 c 0
+ 456 609 447 602 429 602 c 2
+ 301 602 l 2
+ 219 602 189 552 189 490 c 0
+ 189 427 227 375 301 375 c 2
+ 329 375 l 1
+ 355 432 l 2
+ 359 440 366 443 372 443 c 0
+ 383 443 390 435 390 424 c 0
+ 390 420 388 414 385 407 c 2
+ 371 375 l 1
+ 429 375 l 2
+ 447 375 456 368 456 355 c 0
+ 456 341 447 334 429 334 c 2
+ 352 334 l 1
+ 307 234 l 1
+ 459 234 l 2
+ 471 234 476 229 476 220 c 0
+ 476 211 471 206 459 206 c 2
+ 294 206 l 1
+ 264 138 l 1
+ 459 138 l 2
+ 471 138 476 134 476 125 c 0
+ 476 116 471 111 459 111 c 2
+ 251 111 l 1
+ 234 73 l 2
+ 229 61 223 61 217 61 c 0
+ 206 61 200 68 200 79 c 0
+ 200 83 201 90 205 98 c 2
+ 211 111 l 1
+ 165 111 l 2
+ 153 111 148 116 148 125 c 0
+ 148 134 153 138 165 138 c 2
+ 223 138 l 1
+ 254 206 l 1
+ 165 206 l 2
+ 153 206 148 211 148 220 c 0
+ 148 229 153 234 165 234 c 2
+ 266 234 l 1
+ 311 334 l 1
+ 301 334 l 2
+EndSplineSet
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" subsetovernoteq VS1
+EndChar
+
+StartChar: math_superset_ne_through
+Encoding: 59961 -1 5662
+Width: 600
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+299 643 m 2
+ 399 643 456 575 456 489 c 0
+ 456 407 404 340 312 334 c 1
+ 267 234 l 1
+ 456 234 l 2
+ 468 234 473 229 473 220 c 0
+ 473 211 468 206 456 206 c 2
+ 254 206 l 1
+ 224 138 l 1
+ 456 138 l 2
+ 468 138 473 134 473 125 c 0
+ 473 116 468 111 456 111 c 2
+ 211 111 l 1
+ 194 73 l 2
+ 191 65 182 61 176 61 c 0
+ 165 61 160 68 160 79 c 0
+ 160 83 161 90 165 98 c 6
+ 171 111 l 1
+ 162 111 l 2
+ 150 111 145 116 145 125 c 0
+ 145 134 150 138 162 138 c 2
+ 183 138 l 1
+ 214 206 l 1
+ 162 206 l 2
+ 150 206 145 211 145 220 c 0
+ 145 229 150 234 162 234 c 2
+ 226 234 l 1
+ 271 334 l 1
+ 171 334 l 2
+ 153 334 144 341 144 354 c 0
+ 144 368 153 375 171 375 c 2
+ 289 375 l 1
+ 315 432 l 2
+ 319 440 326 443 332 443 c 0
+ 343 443 350 435 350 424 c 0
+ 350 420 348 414 345 407 c 2
+ 332 378 l 1
+ 389 390 411 434 411 487 c 0
+ 411 550 373 602 299 602 c 2
+ 171 602 l 2
+ 153 602 144 609 144 622 c 0
+ 144 636 153 643 171 643 c 2
+ 299 643 l 2
+EndSplineSet
+LCarets2: 1 0 
+Ligature2: "'rlig' variants for math-1" supersetovernoteq VS1
 EndChar
 EndChars
 EndSplineFont
