@@ -19,7 +19,7 @@ TESTFFEXIST=if test -z "$(ffversion)"; then echo FontForge program is required t
 
 TESTFFOLD=if test ${ffversion} -lt 20080429 ; then echo FontForge version too old; exit 0; fi
 
-TESTFF2012=if test "${ffversion}" -eq 20120731 ; then echo FontForge version 20120731 screws up right-to-left kerning tables.  \\nPlease use a different version when building FreeFont.; exit 1; fi
+TESTFF2012=if test "${ffversion}" -ge 20120731 ; then echo FontForge versions since 20120731 screw up right-to-left kerning tables.  \\nPlease use a different version when building FreeFont.; exit 1; fi
 
 TESTFF=${TESTFFEXIST}; ${TESTFFOLD}; ${TESTFF2012}
 
