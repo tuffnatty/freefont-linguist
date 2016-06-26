@@ -8,20 +8,20 @@ TTFS=$(SFDS:.sfd=.ttf)
 OTFS=$(SFDS:.sfd=.otf)
 WOFFS=$(SFDS:.sfd=.woff)
 FFLIBS=/usr/local/lib
-FFBIN=/usr/local/bin/fontforge 
-FF=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN}
+FFBIN=/usr/local/bin/fontforge
+FF=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN} --quiet
 FFFF=$(FF) -lang=ff -script 
 FFPY=$(FF) -lang=py -script 
 
 ffversion=`${FF} --version 2> /dev/null | grep '^libfontforge' | sed -e 's/^libfontforge //'`
 
-TESTFFEXIST=if test -z "$(ffversion)"; then echo FontForge program is required to build FreeFont; exit 1; else echo Using FontForge "${ffversion}"; fi
+TESTFFEXIST=if test -z "$(ffversion)"; then echo FontForge program is required to build FreeFont; exit 1; fi
 
 TESTFFOLD=if test ${ffversion} -lt 20080429 ; then echo FontForge version too old; exit 0; fi
 
 TESTFF2012=if test "${ffversion}" -eq 20120731 ; then echo FontForge version 20120731 screws up right-to-left kerning tables.  \\nPlease use a different version when building FreeFont.; exit 1; fi
 
-TESTFF=echo ffversion: ${ffversion}; ${TESTFFEXIST}; ${TESTFFOLD}; ${TESTFF2012}
+TESTFF=${TESTFFEXIST}; ${TESTFFOLD}; ${TESTFF2012}
 
 GENTT=../tools/generate/TrueType
 GENOT=../tools/generate/OpenType
