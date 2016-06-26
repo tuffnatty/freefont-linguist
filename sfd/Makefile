@@ -7,9 +7,10 @@ MSFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd
 TTFS=$(SFDS:.sfd=.ttf)
 OTFS=$(SFDS:.sfd=.otf)
 WOFFS=$(SFDS:.sfd=.woff)
-FFLIBS=/usr/local/lib
+FFLIBS=/usr/local/lib/
 FFBIN=/usr/local/bin/fontforge
-FF=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN} --quiet
+#FIXME newer versions need flag --quiet for pretty output
+FF=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN}
 FFFF=$(FF) -lang=ff -script 
 FFPY=$(FF) -lang=py -script 
 
