@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1468871826
+ModificationTime: 1468872972
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -356,7 +356,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1600 16 12
+WinInfo: 1680 16 12
 BeginPrivate: 9
 UniqueID 7 5020946
 BlueValues 23 [-16 0 437 451 583 597]
@@ -369,7 +369,7 @@ StemSnapV 5 [100]
 ForceBold 4 true
 EndPrivate
 AnchorClass2: "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "arab-ring"  "'mark' mark positioning in Arabic subtable" "above_arabic"  "'mark' mark positioning in Arabic subtable" "below_arabic"  "'mark' mark positioning in Arabic subtable" "arab_diacritic"  "'mkmk' mark to mark in Arabic subtable" "far-right-dot"  "'mark' marks generic above 1" "abovecyr"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
-BeginChars: 65536 2810
+BeginChars: 65536 2814
 
 StartChar: space
 Encoding: 32 32 0
@@ -50825,6 +50825,9 @@ Fore
 Refer: 2184 64438 N 1 0 0 1 0 -100 2
 Refer: 2293 1722 N 1 0 0 1 0 0 2
 Validated: 32769
+Substitution2: "'fina' terminal forms in Arabic 1" arab_jawinya_fina
+Substitution2: "'medi' medial forms in Arabic 1" arab_jawinya_medi
+Substitution2: "'init' initial forms in Arabic 1" arab_jawinya_init
 EndChar
 
 StartChar: uni06bf
@@ -58496,6 +58499,51 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'liga' word ligatures in Arabic" alefarabic laminitarabic lammediarabic shadda.cmb alefsuperscriptarabic hehgoalfinaarabic
 Ligature2: "'liga' word ligatures in Arabic" alefarabic laminitarabic lammediarabic shadda.cmb alefsuperscriptarabic hehfinaarabic
+EndChar
+
+StartChar: arab_jawinya_isol
+Encoding: 59696 -1 2810
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2366 1725 N 1 0 0 1 0 0 1
+Validated: 98305
+EndChar
+
+StartChar: arab_jawinya_fina
+Encoding: 59697 -1 2811
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2410 64415 N 1 0 0 1 0 0 3
+Refer: 2184 64438 S 1 0 0 1 2 -95 2
+Validated: 98305
+EndChar
+
+StartChar: arab_jawinya_init
+Encoding: 59698 -1 2812
+Width: 600
+VWidth: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2305 -1 S 1 0 0 1 0 0 2
+Refer: 2187 64441 N 1 0 0 1 -18 0 2
+Validated: 98305
+EndChar
+
+StartChar: arab_jawinya_medi
+Encoding: 59699 -1 2813
+Width: 600
+VWidth: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2304 -1 S 1 0 0 1 0 0 2
+Refer: 2187 64441 N 1 0 0 1 -10 0 2
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont
