@@ -46,7 +46,7 @@ There are standards for the *punching* of patterns, e.g.
 	National Library Service for the Blind and Physically Handicapped
 	Specification #800, 2008
 	Braille Books and Pamphlets
-	http://www.loc.gov/nls/specs/800_march5_2008.pdf
+	http://loc.gov/nls/specs/800_march5_2008.pdf
 Among other things, it specifies:
 	base dot diameter 0.057
 	distance center-to-center in a cell 0.092
@@ -62,8 +62,8 @@ font = fontforge.open( '../../../sfd/FreeMono.sfd' )
 
 glyphOff = 'braille_off'
 glyphOn = 'braille_on'
-colwidth = 160
-rowheight = -160
+colwidth = 225
+rowheight = -225
 glyphwidth = 600
 
 def drawdot( g, col, row, on ):
@@ -82,7 +82,7 @@ def drawtopsix( g, off ):
 	g.right_side_bearing = glyphwidth
 	for col in range ( 0, 2 ):
 		for row in range ( 0, 3 ):
-			print( 'shift', ( 3 * col + row ) )
+			#print( 'shift', ( 3 * col + row ) )
 			state = ( 1 << ( 3 * col + row ) ) & off
 			drawdot( g, col, row, state )
 
