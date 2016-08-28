@@ -75,7 +75,8 @@ class interval:
 	def contains( self, val ):
 		return val <= self.end and val >= self.begin
 
-# NOTE the OpenType spec is much more thorough
+# NOTE the OpenType spec is much more thorough.
+# This should be run in somehow directly from there.
 ulUnicodeRange = [
 [0,	'Basic Latin', [interval(0,1),	# Nul character, mapped to notdef
 					# and .nul; required by TrueType
@@ -131,12 +132,14 @@ ulUnicodeRange = [
 		]],
 [13,	'Arabic (+suppl.)',     [interval(0x0600, 0x061C),
 			interval(0x061E, 0x06FF),
-			interval(0x0750, 0x077F)	# Supplement
+			interval(0x0750, 0x077F),	# Supplement
+			interval(0x08A0, 0x08B4),	# Extended-A
+			interval(0x08E3, 0x08FF),	# Extended-A
 	]
 	],
 [14,	"N'Ko", [interval(0x07C0, 0x07FF)]],
 [15,	'Devanagari (+ext.)',     [ interval(0x0900, 0x097F),
-			interval(0xA8E0, 0xA8FB),	# Extended
+			interval(0xA8E0, 0xA8FD),	# Extended
 			interval(0x1CD0, 0x1CF6),	# Vedic Extensions
 			interval(0x1CF8, 0x1CF9)
 			]],
@@ -315,7 +318,7 @@ ulUnicodeRange = [
 [33,	'Currency Symbols',     [interval(0x20A0, 0x20BE)]],
 [34,	'Combining Diacritical Marks for Symbols',     [interval(0x20D0, 0x20F0)]],
 [35,	'Letterlike Symbols',     [interval(0x2100, 0x214F)]],
-[36,	'Number Forms',     [interval(0x2150, 0x2189)]],
+[36,	'Number Forms',     [interval(0x2150, 0x218B)]],
 [37,	'Arrows (+suppl.)',     [interval(0x2190, 0x21FF),
 	interval(0x27F0, 0x27FF),	# Supplemental Arrows-A
 	interval(0x2900, 0x297F),	# Supplemental Arrows-B
@@ -349,9 +352,18 @@ ulUnicodeRange = [
 [46,	'Miscellaneous Symbols',     [
 			interval(0x2600, 0x26FF),
 			interval(0x1F300, 0x1F5FF),	# Miscellaneous Symbols and Pictographs
+			interval(0x1F910, 0x1F91E),	# Supplemental Symbols and Pictographs
+			interval(0x1F920, 0x1F927),
+			interval(0x1F930, 0x1F937),
+			interval(0x1F933, 0x1F93E),
+			interval(0x1F940, 0x1F94B),
+			interval(0x1F950, 0x1F95E),
+			interval(0x1F980, 0x1F991),
+			interval(0x1F9C0, 0x1F9C0),
 			]
 			],
 [47,	'Dingbats',     [interval(0x2700, 0x27BF),
+			interval(0x1F650, 0x1F67F),	# Ornamental Dingbats
 	]],
 [48,	'CJK Symbols and Punctuation', [interval(0x3000, 0x303F)]],
 [49,	'Hiragana', [interval(0x3040, 0x309F)]],
@@ -471,8 +483,7 @@ ulUnicodeRange = [
 		interval(0x1750, 0x1773)
 		]
 		],
-[85, 	'Old Italic', [interval(0x10300, 0x1031E),
-			interval(0x10320, 0x10323)
+[85, 	'Old Italic', [interval(0x10300, 0x10323)
 	], True],
 [86, 	'Gothic', [interval(0x10330, 0x1034A)], True],
 [87, 	'Deseret', [interval(0x10400, 0x1044F)], True],

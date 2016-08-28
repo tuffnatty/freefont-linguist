@@ -233,6 +233,8 @@ table_introduction = """
 For historical reasons, TrueType classifies Unicode ranges according to
 an extension of the old OS/2 character ranges.  This table shows how many
 characters FontForge finds in each of the ranges for each face in the family.
+Notice that many modern Unicode ranges do not correspond to any of the OS/2
+ranges.
 """
 
 table_explanation = """
