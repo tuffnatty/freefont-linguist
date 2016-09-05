@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1473010678
+ModificationTime: 1473094669
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -88,6 +89,7 @@ Lookup: 260 1 0 "'mark' marks below in Arabic"  {"'mark' ring in Arabic"  "'mark
 Lookup: 260 0 0 "'mark' marks middle in Arabic"  {"'mark' marks middle in Arabic-1"  "'mark' slash in Arabic-1"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks above in Arabic"  {"'mark' above in Arabic"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks in Arabic - hamza"  {"'mark' marks in Arabic - hamza-1"  } ['mark' ('arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' marks in Hebrew"  {"'mark' marks in Hebrew-1"  } ['mark' ('hebr' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks in Cyrillic"  {"'mark' marks in Cyrillic 1"  } ['mark' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 264 0 0 "'mkmk' mark-to-mark chain in Arabic"  {"'mkmk' mark-to-mark chain avoid in Arabic"  "'mkmk' mark-to-mark chain in Arabic-1"  } ['mkmk' ('arab' <'dflt' > ) ]
 Lookup: 262 0 0 "mark on ijam Arabic"  {"mark on ijam in Arabic-1"  } []
@@ -147,9 +149,6 @@ ChainSub2: class "'mset' mark stretch in Arabic-1"  2 3 1 8
   FClsList:
  1
   SeqLookup: 0 "stretch 1dig in Arabic" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   Class: 259 tah_high_arabic.cmb uni0617 uni0618 uni0619 fathatan.cmb dammatan.cmb fatha.cmb damma.cmb shadda.cmb sukun.cmb hamzaabv.cmb dammainv.cmb noonghunnamark.cmb zwarakay.cmb vsmallvowelabv.cmb vsmallvowelinvabv.cmb dammarev.cmb fatha2dots.cmb alefsuperscriptarabic
@@ -244,9 +243,6 @@ ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   FClsList:
  1
   SeqLookup: 0 "mark on ijam Arabic" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
-  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   Class: 95 uni061A kasratan.cmb kasra.cmb hamzablw.cmb alefsubscript.cmb dotblwarabic.cmb hamzawavyblw.cmb
@@ -265,9 +261,6 @@ ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "don't move" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   Class: 3 i j
@@ -285,9 +278,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -383,9 +373,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -481,9 +468,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -536,7 +520,7 @@ LangName: 1027 "" "" "negreta" "" "FreeMono negreta"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeMono +BD8EPgQ7BEMERwQ1BEAENQQ9" 
 LangName: 1069 "" "" "Lodia" "" "FreeMono Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeMono Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3 0
+GaspTable: 3 9 2 21 1 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
@@ -555,7 +539,7 @@ StemSnapH 8 [93 100]
 StemSnapV 5 [100]
 ForceBold 4 true
 EndPrivate
-AnchorClass2: "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-above"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks generic above 1" "abovecyr"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
+AnchorClass2: "hebrew-mark-left"  "'mark' marks in Hebrew-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-above"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks generic above 1" "abovecyr"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
 BeginChars: 65536 2935
 
 StartChar: space
@@ -19121,6 +19105,7 @@ StartChar: dageshhebrew
 Encoding: 1468 1468 803
 Width: 0
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 300 240 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19270,6 +19255,7 @@ StartChar: alefhebrew
 Encoding: 1488 1488 812
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 300 -50 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19308,6 +19294,7 @@ StartChar: bethebrew
 Encoding: 1489 1489 813
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19335,6 +19322,7 @@ StartChar: gimelhebrew
 Encoding: 1490 1490 814
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19363,6 +19351,7 @@ StartChar: dalethebrew
 Encoding: 1491 1491 815
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19386,6 +19375,7 @@ StartChar: hehebrew
 Encoding: 1492 1492 816
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 310 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19415,6 +19405,7 @@ StartChar: vavhebrew
 Encoding: 1493 1493 817
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 170 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19435,6 +19426,7 @@ StartChar: zayinhebrew
 Encoding: 1494 1494 818
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 160 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19458,6 +19450,7 @@ StartChar: hethebrew
 Encoding: 1495 1495 819
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19488,6 +19481,7 @@ StartChar: tethebrew
 Encoding: 1496 1496 820
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 370 240 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19521,6 +19515,7 @@ StartChar: yodhebrew
 Encoding: 1497 1497 821
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 170 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19541,6 +19536,7 @@ StartChar: finalkafhebrew
 Encoding: 1498 1498 822
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19563,6 +19559,7 @@ StartChar: kafhebrew
 Encoding: 1499 1499 823
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19589,6 +19586,7 @@ StartChar: lamedhebrew
 Encoding: 1500 1500 824
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19616,6 +19614,7 @@ StartChar: finalmemhebrew
 Encoding: 1501 1501 825
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19645,6 +19644,7 @@ StartChar: memhebrew
 Encoding: 1502 1502 826
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 330 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19679,6 +19679,7 @@ StartChar: finalnunhebrew
 Encoding: 1503 1503 827
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 180 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19699,6 +19700,7 @@ StartChar: nunhebrew
 Encoding: 1504 1504 828
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19723,6 +19725,7 @@ StartChar: samekhhebrew
 Encoding: 1505 1505 829
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19758,6 +19761,7 @@ StartChar: ayinhebrew
 Encoding: 1506 1506 830
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19789,6 +19793,7 @@ StartChar: finalpehebrew
 Encoding: 1507 1507 831
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 340 320 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19821,6 +19826,7 @@ StartChar: pehebrew
 Encoding: 1508 1508 832
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 340 320 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19855,6 +19861,7 @@ StartChar: finaltsadihebrew
 Encoding: 1509 1509 833
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 120 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19887,6 +19894,7 @@ StartChar: tsadihebrew
 Encoding: 1510 1510 834
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 120 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19921,6 +19929,7 @@ StartChar: qofhebrew
 Encoding: 1511 1511 835
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19953,6 +19962,7 @@ StartChar: reshhebrew
 Encoding: 1512 1512 836
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 280 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -19975,6 +19985,7 @@ StartChar: shinhebrew
 Encoding: 1513 1513 837
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 394 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20009,6 +20020,7 @@ StartChar: tavhebrew
 Encoding: 1514 1514 838
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20040,6 +20052,7 @@ StartChar: vavvavhebrew
 Encoding: 1520 1520 839
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 90 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 817 1493 N 1 0 0 1 158 0 2
@@ -20051,6 +20064,7 @@ StartChar: vavyodhebrew
 Encoding: 1521 1521 840
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 100 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 821 1497 N 1 0 0 1 -102 0 2
@@ -20062,6 +20076,7 @@ StartChar: yodyodhebrew
 Encoding: 1522 1522 841
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 90 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 821 1497 N 1 0 0 1 170 0 2
@@ -41466,6 +41481,7 @@ StartChar: uniFB1D
 Encoding: 64285 64285 1837
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 180 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 821 1497 N 1 0 0 1 0 0 2
@@ -41477,6 +41493,7 @@ StartChar: yodyodpatahhebrew
 Encoding: 64287 64287 1838
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 100 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 841 1522 N 1 0 0 1 0 0 2
@@ -41490,6 +41507,7 @@ StartChar: shinshindothebrew
 Encoding: 64298 64298 1839
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 394 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 837 1513 N 1 0 0 1 0 0 2
@@ -41502,6 +41520,7 @@ StartChar: shinsindothebrew
 Encoding: 64299 64299 1840
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 394 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 837 1513 N 1 0 0 1 0 0 2
@@ -41826,6 +41845,7 @@ StartChar: vavholamhebrew
 Encoding: 64331 64331 1867
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 180 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 817 1493 N 1 0 0 1 0 0 2
@@ -41838,6 +41858,7 @@ StartChar: betrafehebrew
 Encoding: 64332 64332 1868
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 806 1471 N 1 0 0 1 -36 0 2
@@ -41850,6 +41871,7 @@ StartChar: kafrafehebrew
 Encoding: 64333 64333 1869
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 280 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 806 1471 N 1 0 0 1 -29 0 2
@@ -41862,6 +41884,7 @@ StartChar: perafehebrew
 Encoding: 64334 64334 1870
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 350 320 basechar 0
 LayerCount: 2
 Fore
 Refer: 806 1471 N 1 0 0 1 0 0 2
@@ -41874,6 +41897,7 @@ StartChar: ayinaltonehebrew
 Encoding: 64288 64288 1871
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -41905,6 +41929,7 @@ StartChar: aleflamedhebrew
 Encoding: 64335 64335 1872
 Width: 600
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 120 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -47307,7 +47332,7 @@ AnchorPoint: "above" -300 437 mark 0
 LayerCount: 2
 Fore
 Refer: 59 91 S 0 -1 1 0 -537 932 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: semicolonarabic

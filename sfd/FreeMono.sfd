@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1473010653
+ModificationTime: 1473063046
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -133,6 +134,7 @@ Lookup: 260 1 0 "'mark' marks below in Arabic"  {"'mark' ring in Arabic"  "'mark
 Lookup: 260 0 0 "'mark' marks middle in Arabic"  {"'mark' marks middle in Arabic-1"  "'mark' slash in Arabic-1"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks above in Arabic"  {"'mark' above in Arabic"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks in Arabic - hamza"  {"'mark' marks in Arabic - hamza-1"  } ['mark' ('arab' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' marks in Hebrew"  {"'mark' marks in Hebrew-1"  } ['mark' ('hebr' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' above-base marks in Devanagari"  {"'abvm' above-base marks in Devanagari-1"  } ['abvm' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' below-base marks in Devanagari"  {"'blwm' nukta in Devanagari"  "'blwm' below-base mark in Devanagari"  "'blwm' rakaar in Devanagari"  } ['blwm' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' mark-to-mark generic"  {"'mkmk' mark-to-mark generic-high"  "'mkmk' mark-to-mark generic-low"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > 'armn' <'dflt' > 'brai' <'dflt' > 'cher' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hani' <'dflt' > 'hebr' <'dflt' > 'ital' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'runr' <'dflt' > ) ]
@@ -195,9 +197,6 @@ ChainSub2: class "'mset' mark stretch in Arabic-1"  2 3 1 8
   FClsList:
  1
   SeqLookup: 0 "stretch 1dig in Arabic" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   Class: 523 tah_high_arabic.cmb uni0617 uni0618 uni0619 fathatan.cmb dammatan.cmb fatha.cmb damma.cmb shadda.cmb sukun.cmb hamzaabv.cmb dammainv.cmb noonghunnamark.cmb zwarakay.cmb vsmallvowelabv.cmb vsmallvowelinvabv.cmb dammarev.cmb fatha2dots.cmb alefsuperscriptarabic uni06D6 uni06D7 uni06D8 uni06D9 uni06DA uni06DB uni06DC uni06DF uni06E0 uni06E1 uni06E2 uni06E7 uni06EB uni06EC uni08E4 uni08E5 uni08E7 uni08E8 uni08EA uni08EB uni08EC uni08F0 uni08F1 uni08F3 uni08F4 uni08F5 uni08F7 uni08F8 uni08FB uni08FC uni08FD uni08FE uni08FF
@@ -292,9 +291,6 @@ ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   FClsList:
  1
   SeqLookup: 0 "mark on ijam Arabic" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
-  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   Class: 95 uni061A kasratan.cmb kasra.cmb hamzablw.cmb alefsubscript.cmb dotblwarabic.cmb hamzawavyblw.cmb
@@ -313,9 +309,6 @@ ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "don't move" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   Class: 3 i j
@@ -333,9 +326,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
   Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.psts dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
@@ -371,9 +361,6 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 
   FClsList:
  1
   SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
-  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -469,9 +456,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -567,9 +551,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   Class: 6 virama
@@ -609,9 +590,6 @@ ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "subst. openya for virama-ya in Devanagari" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' pre-base chain in Devanagari da+-half+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -637,9 +615,6 @@ ChainSub2: class "'cjct' avoid-vert conjunct forms in Devanagari2-1"  4 4 1 1
   BClsList: 2 1
   FClsList:
  0
-  ClassNames: "0"  "1"  "2"  "3"  
-  BClassNames: "0"  "1"  "2"  "3"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1 1
   Class: 6 virama
@@ -651,9 +626,6 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-rakaar in Devanagari" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 2 1 2
   Class: 10 dev_rakaar
@@ -672,9 +644,6 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 2 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-ra in Devanagari" 
-  ClassNames: "0"  "1"  "2"  "3"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -727,14 +696,14 @@ LangName: 1027 "" "" "normal"
 LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA" 
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "Regular" "GNU: FreeMono Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3 0
+GaspTable: 3 9 2 21 1 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8400 16 10
+WinInfo: 64240 16 10
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 39 [-20 0 417 437 480 490 563 583 640 650]
@@ -753,7 +722,7 @@ Grid
  2000 300.5 l 0
 EndSplineSet
 TeXData: 1 0 0 629146 314573 209715 437256 1048576 209715 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-above"  "'mark' above in Arabic" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-ijam-abv"  "'mark' above in Arabic" "far-right-dot"  "'mark' marks generic high-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "dev-abv-mark"  "'mkmk' mark-to-mark in Devanagari-1" "viet-hook"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-grave"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-acute"  "'mkmk' mark-to-mark in Latin-for Viet" "dev-above"  "'abvm' above-base marks in Devanagari-1" "dev-rakaar"  "'blwm' rakaar in Devanagari" "dev-below"  "'blwm' below-base mark in Devanagari" "dev-nukta"  "'blwm' nukta in Devanagari" "abovecyr"  "'mark' marks in Cyrillic subtable" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "abovegk"  "'mark' marks in Greek subtable" "below"  "'mark' marks generic low-1" "above"  "'mark' marks generic high-1" 
+AnchorClass2: "hebrew-mark-left"  "'mark' marks in Hebrew-1" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-above"  "'mark' above in Arabic" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-ijam-abv"  "'mark' above in Arabic" "far-right-dot"  "'mark' marks generic high-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "dev-abv-mark"  "'mkmk' mark-to-mark in Devanagari-1" "viet-hook"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-grave"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-acute"  "'mkmk' mark-to-mark in Latin-for Viet" "dev-above"  "'abvm' above-base marks in Devanagari-1" "dev-rakaar"  "'blwm' rakaar in Devanagari" "dev-below"  "'blwm' below-base mark in Devanagari" "dev-nukta"  "'blwm' nukta in Devanagari" "abovecyr"  "'mark' marks in Cyrillic subtable" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "abovegk"  "'mark' marks in Greek subtable" "below"  "'mark' marks generic low-1" "above"  "'mark' marks generic high-1" 
 BeginChars: 131072 5978
 
 StartChar: space
@@ -27241,6 +27210,7 @@ StartChar: dageshhebrew
 Encoding: 1468 1468 997
 Width: 0
 Flags: MW
+AnchorPoint: "hebrew-mark-left" 300 240 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27390,6 +27360,7 @@ StartChar: alefhebrew
 Encoding: 1488 1488 1006
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 300 -50 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27428,6 +27399,7 @@ StartChar: bethebrew
 Encoding: 1489 1489 1007
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27448,13 +27420,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  283 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: gimelhebrew
 Encoding: 1490 1490 1008
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27478,13 +27451,14 @@ SplineSet
  366 141 307 132 273 112 c 0
  218 81 175 0 154 0 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: dalethebrew
 Encoding: 1491 1491 1009
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27508,6 +27482,7 @@ StartChar: hehebrew
 Encoding: 1492 1492 1010
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 310 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27530,13 +27505,14 @@ SplineSet
  69 439 60 448 60 460 c 0
  60 471 69 480 80 480 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: vavhebrew
 Encoding: 1493 1493 1011
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 170 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27556,7 +27532,8 @@ EndChar
 StartChar: zayinhebrew
 Encoding: 1494 1494 1012
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 160 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27580,6 +27557,7 @@ StartChar: hethebrew
 Encoding: 1495 1495 1013
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27603,13 +27581,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  381 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: tethebrew
 Encoding: 1496 1496 1014
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 370 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27636,13 +27615,14 @@ SplineSet
  535 71 493 0 368 0 c 2
  254 0 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: yodhebrew
 Encoding: 1497 1497 1015
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 170 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27663,6 +27643,7 @@ StartChar: finalkafhebrew
 Encoding: 1498 1498 1016
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27678,13 +27659,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  340 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: kafhebrew
 Encoding: 1499 1499 1017
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27704,13 +27686,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  340 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: lamedhebrew
 Encoding: 1500 1500 1018
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27738,6 +27721,7 @@ StartChar: finalmemhebrew
 Encoding: 1501 1501 1019
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27761,13 +27745,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  381 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: memhebrew
 Encoding: 1502 1502 1020
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 330 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27795,13 +27780,14 @@ SplineSet
  263 480 l 1
  363 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: finalnunhebrew
 Encoding: 1503 1503 1021
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 180 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27822,6 +27808,7 @@ StartChar: nunhebrew
 Encoding: 1504 1504 1022
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27839,13 +27826,14 @@ SplineSet
  215 439 206 448 206 460 c 0
  206 471 215 480 227 480 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: samekhhebrew
 Encoding: 1505 1505 1023
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27876,13 +27864,14 @@ SplineSet
  499 398.441 458.92 439 373 439 c 2
  272 439 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: ayinhebrew
 Encoding: 1506 1506 1024
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27914,6 +27903,7 @@ StartChar: finalpehebrew
 Encoding: 1507 1507 1025
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 340 350 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27940,13 +27930,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  381 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: pehebrew
 Encoding: 1508 1508 1026
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 340 350 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -27977,13 +27968,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  381 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: finaltsadihebrew
 Encoding: 1509 1509 1027
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 120 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28015,7 +28007,8 @@ EndChar
 StartChar: tsadihebrew
 Encoding: 1510 1510 1028
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 120 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28051,6 +28044,7 @@ StartChar: qofholamhebrew
 Encoding: 1511 1511 1029
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28076,13 +28070,14 @@ SplineSet
  122 288 131 297 142 297 c 0
  154 297 163 288 163 277 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: reshhebrew
 Encoding: 1512 1512 1030
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 280 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28098,13 +28093,14 @@ SplineSet
  69 439 60 448 60 460 c 0
  60 471 69 480 80 480 c 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: shinhebrew
 Encoding: 1513 1513 1031
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 410 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28143,6 +28139,7 @@ StartChar: tavhebrew
 Encoding: 1514 1514 1032
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28167,13 +28164,14 @@ SplineSet
  60 471 69 480 80 480 c 2
  381 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: vavvavhebrew
 Encoding: 1520 1520 1033
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 90 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28202,7 +28200,8 @@ EndChar
 StartChar: vavyodhebrew
 Encoding: 1521 1521 1034
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 100 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -28231,7 +28230,8 @@ EndChar
 StartChar: yodyodhebrew
 Encoding: 1522 1522 1035
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 90 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -39354,7 +39354,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: onethird
@@ -57565,17 +57565,18 @@ StartChar: yodhiraqhebrew
 Encoding: 64285 64285 2495
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 180 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 990 1460 N 1 0 0 1 0 216 2
 Refer: 1015 1497 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uniFB1E
 Encoding: 64286 64286 2496
 Width: 600
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -57594,11 +57595,12 @@ StartChar: yodyodpatahhebrew
 Encoding: 64287 64287 2497
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 100 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 993 1463 N 1 0 0 1 18 214 2
 Refer: 1035 1522 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'liga' std. ligatures in Hebrew 1" yodyodhebrew patahhebrew
 EndChar
@@ -57606,7 +57608,8 @@ EndChar
 StartChar: ayinaltonehebrew
 Encoding: 64288 64288 2498
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57669,7 +57672,7 @@ SplineSet
  25 445 l 2
  20 449 20 453.917 20 460 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB22
@@ -57890,11 +57893,12 @@ StartChar: shinshindothebrew
 Encoding: 64298 64298 2508
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 410 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 1002 1473 N 1 0 0 1 0 0 2
 Refer: 1031 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" shinhebrew shindothebrew
 EndChar
 
@@ -57902,11 +57906,12 @@ StartChar: shinsindothebrew
 Encoding: 64299 64299 2509
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 410 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 1003 1474 N 1 0 0 1 0 0 2
 Refer: 1031 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" shinhebrew sindothebrew
 EndChar
 
@@ -57919,7 +57924,7 @@ Fore
 Refer: 1002 1473 N 1 0 0 1 0 0 2
 Refer: 997 1468 N 1 0 0 1 105 0 2
 Refer: 1031 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" shindageshhebrew shindothebrew
 EndChar
 
@@ -57932,7 +57937,7 @@ Fore
 Refer: 1003 1474 N 1 0 0 1 0 0 2
 Refer: 997 1468 N 1 0 0 1 105 0 2
 Refer: 1031 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" shindageshhebrew sindothebrew
 EndChar
 
@@ -57944,7 +57949,7 @@ LayerCount: 2
 Fore
 Refer: 993 1463 N 1 0 0 1 0 0 2
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" alefhebrew patahhebrew
 EndChar
 
@@ -57956,7 +57961,7 @@ LayerCount: 2
 Fore
 Refer: 994 1464 N 1 0 0 1 0 0 2
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" alefhebrew qamatshebrew
 EndChar
 
@@ -57968,7 +57973,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 1 -312 2
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" alefhebrew dageshhebrew
 EndChar
 
@@ -57979,8 +57984,8 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1007 1489 N 1 0 0 1 0 0 2
-Refer: 997 1468 N 1 0 0 1 0 0 2
-Validated: 32769
+Refer: 997 1468 S 1 0 0 1 -50 0 2
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" bethebrew dageshhebrew
 EndChar
 
@@ -57990,9 +57995,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 0 50 2
+Refer: 997 1468 S 1 0 0 1 -30 50 2
 Refer: 1008 1490 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" gimelhebrew dageshhebrew
 EndChar
 
@@ -58002,9 +58007,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 0 0 2
+Refer: 997 1468 S 1 0 0 1 -50 0 2
 Refer: 1009 1491 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" dalethebrew dageshhebrew
 EndChar
 
@@ -58016,7 +58021,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 15 0 2
 Refer: 1010 1492 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" hehebrew dageshhebrew
 EndChar
 
@@ -58026,9 +58031,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 -92 0 2
+Refer: 997 1468 S 1 0 0 1 -102 0 2
 Refer: 1011 1493 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" vavhebrew dageshhebrew
 EndChar
 
@@ -58039,8 +58044,8 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1012 1494 N 1 0 0 1 0 0 2
-Refer: 997 1468 N 1 0 0 1 -94 0 2
-Validated: 32769
+Refer: 997 1468 S 1 0 0 1 -104 0 2
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" zayinhebrew dageshhebrew
 EndChar
 
@@ -58050,9 +58055,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 32 -36 2
+Refer: 997 1468 S 1 0 0 1 32 4 2
 Refer: 1014 1496 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: yoddageshhebrew
@@ -58063,7 +58068,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 -108 86 2
 Refer: 1015 1497 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" yodhebrew dageshhebrew
 EndChar
 
@@ -58075,7 +58080,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 0 0 2
 Refer: 1016 1498 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" finalkafhebrew dageshhebrew
 EndChar
 
@@ -58085,9 +58090,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 0 0 2
+Refer: 997 1468 S 1 0 0 1 -30 0 2
 Refer: 1017 1499 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" kafhebrew dageshhebrew
 EndChar
 
@@ -58097,9 +58102,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 9 48 2
+Refer: 997 1468 S 1 0 0 1 -21 48 2
 Refer: 1018 1500 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" lamedhebrew dageshhebrew
 EndChar
 
@@ -58111,7 +58116,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 22 0 2
 Refer: 1020 1502 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" memhebrew dageshhebrew
 EndChar
 
@@ -58121,9 +58126,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 0 0 2
+Refer: 997 1468 S 1 0 0 1 -40 0 2
 Refer: 1022 1504 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" nunhebrew dageshhebrew
 EndChar
 
@@ -58135,7 +58140,7 @@ LayerCount: 2
 Fore
 Refer: 1023 1505 N 1 0 0 1 0 0 2
 Refer: 997 1468 N 1 0 0 1 18 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" samekhhebrew dageshhebrew
 EndChar
 
@@ -58145,9 +58150,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 102 44 2
+Refer: 997 1468 S 1 0 0 1 52 94 2
 Refer: 1025 1507 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" finalpehebrew dageshhebrew
 EndChar
 
@@ -58157,9 +58162,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 103 52 2
+Refer: 997 1468 S 1 0 0 1 53 92 2
 Refer: 1026 1508 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" pehebrew dageshhebrew
 EndChar
 
@@ -58171,7 +58176,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 -86 -70 2
 Refer: 1028 1510 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: qofdageshhebrew
@@ -58182,7 +58187,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 19 30 2
 Refer: 1029 1511 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" qofholamhebrew dageshhebrew
 EndChar
 
@@ -58194,7 +58199,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 0 0 2
 Refer: 1030 1512 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" reshhebrew dageshhebrew
 EndChar
 
@@ -58206,7 +58211,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 105 0 2
 Refer: 1031 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" shinhebrew dageshhebrew
 EndChar
 
@@ -58216,9 +58221,9 @@ Width: 600
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 997 1468 N 1 0 0 1 44 0 2
+Refer: 997 1468 S 1 0 0 1 64 0 2
 Refer: 1032 1514 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" tavhebrew dageshhebrew
 EndChar
 
@@ -58226,11 +58231,12 @@ StartChar: vavholamhebrew
 Encoding: 64331 64331 2536
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 180 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 995 1465 N 1 0 0 1 0 0 2
 Refer: 1011 1493 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" vavhebrew holamhebrew
 EndChar
 
@@ -58238,11 +58244,12 @@ StartChar: betrafehebrew
 Encoding: 64332 64332 2537
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 250 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 1007 1489 N 1 0 0 1 0 0 2
 Refer: 1000 1471 N 1 0 0 1 -36 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" bethebrew rafehebrew
 EndChar
 
@@ -58250,11 +58257,12 @@ StartChar: kafrafehebrew
 Encoding: 64333 64333 2538
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 280 270 basechar 0
 LayerCount: 2
 Fore
 Refer: 1017 1499 N 1 0 0 1 0 0 2
 Refer: 1000 1471 N 1 0 0 1 -29 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" kafhebrew rafehebrew
 EndChar
 
@@ -58262,18 +58270,20 @@ StartChar: perafehebrew
 Encoding: 64334 64334 2539
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 350 350 basechar 0
 LayerCount: 2
 Fore
 Refer: 1026 1508 N 1 0 0 1 0 0 2
 Refer: 1000 1471 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" pehebrew rafehebrew
 EndChar
 
 StartChar: aleflamedhebrew
 Encoding: 64335 64335 2540
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "hebrew-mark-left" 120 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68116,7 +68126,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1007 1489 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: gimelmath
@@ -68126,7 +68136,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1008 1490 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dalethmath
@@ -68136,7 +68146,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1009 1491 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni213A
@@ -123355,7 +123365,7 @@ AnchorPoint: "above" -300 437 mark 0
 LayerCount: 2
 Fore
 Refer: 59 91 S 0 -1 1 0 -529.5 932.5 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: asteriskabv.cmb
