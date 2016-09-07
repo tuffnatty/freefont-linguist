@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1473094730
+ModificationTime: 1473285851
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -95,6 +94,9 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -190,6 +192,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -285,6 +290,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -337,14 +345,14 @@ LangName: 1027 "" "" "cursiva" "" "FreeMono cursiva"
 LangName: 1026 "" "" "+BD0EMAQ6BDsEPgQ9BDUEPQAA" "" "FreeMono +BD0EMAQ6BDsEPgQ9BDUEPQAA" 
 LangName: 1069 "" "" "Etzana" "" "FreeMono Etzana" 
 LangName: 1033 "" "" "" "GNU: FreeMono Oblique: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3
+GaspTable: 3 9 2 21 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8400 16 11
+WinInfo: 64240 16 11
 BeginPrivate: 8
 UniqueID 7 5020947
 BlueValues 23 [-20 0 417 437 563 583]
@@ -30722,7 +30730,7 @@ StartChar: ayinaltonehebrew
 Encoding: 64288 64288 1098
 Width: 600
 Flags: HMW
-AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
+AnchorPoint: "hebrew-mark-left" 400 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -30732,32 +30740,29 @@ SplineSet
  266 439 l 1
  174 439 l 2
  164 439 157 445 157 455 c 0
- 157 456 158 458 158 460 c 0
- 160 471 171 480 183 480 c 2
+ 157 468.791 169.697 480 183 480 c 2
  310 480 l 1
  289 41 l 1
- 294 41 300 41 305 41 c 0
- 317 41 329 41 340 41 c 0
+ 340 41 l 2
  432 41 464 64 498 169 c 2
  590 439 l 1
  503 439 l 2
  494 439 486 446 486 455 c 0
- 486 457 487 458 487 460 c 0
- 489 471 500 480 512 480 c 2
+ 486 468.825 498.697 480 512 480 c 2
  645 480 l 1
  538 164 l 2
- 521 114 490 0 345 0 c 0
- 342 0 340 0 337 0 c 2
+ 521 114 490 0 345 0 c 2
  80 0 l 2
  70 0 64 7 64 16 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB21
 Encoding: 64289 64289 1099
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 310 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -30769,8 +30774,7 @@ SplineSet
  592 439 l 1
  540 439 l 2
  529 439 523 446 523 455 c 0
- 523 457 523 458 523 459 c 0
- 526 471 537 480 548 480 c 2
+ 523 470.022 536.667 480 548 480 c 6
  642 480 l 1
  606 313 l 1
  588 228 514 186 444 159 c 1
@@ -30790,23 +30794,24 @@ SplineSet
  161 445 l 2
  158 448 157 452 157 455 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB22
 Encoding: 64290 64290 1100
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 320 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 638 464 m 0
  638 453 627 439 613 439 c 2
  524 439 l 1
- 436 20 l 1
+ 436 20 l 2
  433 9 422 0 411 0 c 0
  401 0 395 7 395 16 c 0
- 395 17 395 19 395 20 c 0
+ 395 20 l 2
  483 439 l 1
  174 439 l 1
  164 439 157 445 157 455 c 0
@@ -30821,34 +30826,33 @@ StartChar: uniFB23
 Encoding: 64291 64291 1101
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-99 21 m 0
- 153 277 l 1
+99 21 m 2
+ 153 277 l 2
  156 288 167 297 178 297 c 0
- 188 297 194 290 194 281 c 0
- 194 280 194 278 194 277 c 0
- 140 21 l 1
+ 188 297 195 290 195 284 c 0
+ 195 283 194 277 194 277 c 2
+ 140 21 l 2
  138 10 127 1 115 1 c 0
- 105 1 99 8 99 17 c 0
- 99 19 99 20 99 21 c 0
-484 480 m 0
+ 105 1 98 8 98 14 c 0
+ 98 16 99 21 99 21 c 2
+484 480 m 2
  588 480 614 415 614 368 c 0
- 614 350 610 332 606 313 c 0
- 544 20 l 1
+ 614 350 610 332 606 313 c 2
+ 544 20 l 2
  542 9 531 0 519 0 c 0
  509 0 503 7 503 16 c 0
- 503 18 503 19 503 20 c 0
- 565 313 l 1
+ 503 18 503 20 503 20 c 2
+ 565 313 l 2
  569 333 572 348 572 362 c 0
- 572 379 567 392 555 408 c 0
- 532 436 514 438 466 439 c 2
+ 572 419 525 438 466 439 c 2
  174 439 l 2
  164 439 157 445 157 455 c 0
  157 475 177 480 183 480 c 2
- 475 480 l 2
- 484 480 l 0
+ 484 480 l 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -30860,35 +30864,32 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-443 480 m 0
- 546 480 572 415 572 368 c 0
- 572 350 569 332 565 313 c 0
+443 480 m 2
+ 546 480 571 415 571 368 c 0
+ 571 350 569 332 565 313 c 2
  534 167 l 2
- 503 9 381 0 341 0 c 0
- 332 0 l 0
+ 503 9 381 0 341 0 c 2
  80 0 l 2
  70 0 64 7 64 16 c 0
  64 27 75 41 89 41 c 2
  341 41 l 2
- 434 43 473 74 493 167 c 2
- 524 313 l 1
- 528 332 531 348 531 361 c 0
- 531 378 526 392 514 408 c 0
- 491 436 471 438 425 439 c 2
+ 434 43 477.189 92.5352 493 167 c 2
+ 524 313 l 2
+ 528 332 529 348 529 361 c 0
+ 529 419.218 483.635 437.725 425 439 c 6
  174 439 l 2
  164 439 157 445 157 455 c 0
- 157 456 158 458 158 460 c 0
- 160 471 171 480 183 480 c 2
- 434 480 l 2
- 443 480 l 0
+ 157 468.791 169.697 480 183 480 c 2
+ 443 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB25
 Encoding: 64293 64293 1103
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 350 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -30896,106 +30897,103 @@ SplineSet
  253 0 247 7 247 16 c 0
  247 23 250 30 256 35 c 2
  522 254 l 2
- 547 274 559 284 565 313 c 0
+ 547 274 559 284 565 313 c 2
  592 439 l 1
  153 439 l 1
- 187 597 l 1
+ 187 597 l 2
  189 608 200 617 212 617 c 0
- 222 617 228 610 228 601 c 0
- 228 599 228 598 228 597 c 0
+ 222 617 229 610 229 605 c 4
+ 229 603 228.471 599.203 228 597 c 2
  203 480 l 1
  642 480 l 1
  610 322 614 281 545 225 c 2
  279 6 l 2
  274 2 268 0 263 0 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB26
 Encoding: 64294 64294 1104
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 380 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 365 439 m 1
  239 335 l 2
- 219 317 202 303 196 277 c 0
+ 219 317 202 303 196 277 c 2
  146 41 l 1
  508 41 l 1
- 565 313 l 1
+ 565 313 l 2
  569 333 572 348 572 362 c 0
- 572 379 567 392 555 408 c 0
- 532 436 512 438 466 439 c 2
+ 572 419.492 523.973 437.74 466 439 c 2
  365 439 l 1
 484 480 m 0
  588 480 614 414 614 368 c 0
- 614 350 610 332 606 313 c 0
+ 614 350 610 332 606 313 c 2
  540 0 l 1
  97 0 l 1
- 155 277 l 1
- 165 316 191 343 217 364 c 0
+ 155 277 l 2
+ 163.251 316.407 191 343 217 364 c 2
  307 439 l 1
  174 439 l 2
  164 439 157 445 157 455 c 0
- 157 456 158 458 158 460 c 0
- 160 471 171 480 183 480 c 2
+ 157 468.791 169.697 480 183 480 c 2
  475 480 l 2
  484 480 l 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB27
 Encoding: 64295 64295 1105
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 360 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-484 480 m 0
+484 480 m 2
  588 480 614 415 614 368 c 0
- 614 350 610 332 606 313 c 0
- 544 20 l 1
+ 614 350 610 332 606 313 c 6
+ 544 20 l 2
  542 9 531 0 519 0 c 0
- 509 0 503 7 503 16 c 0
- 503 18 503 19 503 20 c 0
- 565 313 l 1
+ 509 0 502 5.83333 502 12 c 0
+ 502 14 503 19 503 20 c 2
+ 565 313 l 6
  569 333 572 348 572 362 c 0
- 572 379 567 392 555 408 c 0
- 532 436 514 438 466 439 c 2
+ 572 419.474 525.364 437.763 466 439 c 6
  174 439 l 2
  164 439 157 445 157 455 c 0
  157 475 177 480 183 480 c 2
- 475 480 l 2
- 484 480 l 0
+ 484 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB28
 Encoding: 64296 64296 1106
 Width: 600
 Flags: HMW
+AnchorPoint: "hebrew-mark-left" 410 270 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-484 480 m 0
+484 480 m 2
  588 480 614 414 614 369 c 0
- 614 352 610 333 606 313 c 0
- 544 20 l 1
+ 614 352 610 333 606 313 c 2
+ 544 20 l 6
  542 9 531 0 519 0 c 0
- 509 0 503 7 503 16 c 0
- 503 18 503 19 503 20 c 0
- 565 313 l 1
+ 509 0 502 7.25 502 12 c 0
+ 502 14 503 19 503 20 c 6
+ 565 313 l 2
  569 334 572 350 572 362 c 0
- 572 379 567 392 555 408 c 0
- 532 436 513 438 466 439 c 2
+ 572 419.483 524.669 437.752 466 439 c 2
  304 439 l 1
  238 130 l 2
- 214 7 119 0 88 0 c 0
- 85 0 83 0 80 0 c 2
+ 214 7 119 0 88 0 c 2
  44 0 l 2
  35 0 27 7 27 15 c 0
  27 21 32 41 53 41 c 2
@@ -31004,12 +31002,10 @@ SplineSet
  263 439 l 1
  174 439 l 2
  164 439 157 445 157 455 c 0
- 157 456 158 458 158 460 c 0
- 160 471 171 480 183 480 c 0
- 475 480 l 1
- 484 480 l 0
+ 157 468.791 169.697 480 183 480 c 2
+ 484 480 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: uniFB29
