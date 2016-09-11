@@ -29,8 +29,13 @@ If a glyph reference is rotated, and the flag is set for it, these
 applications behave as if the advance width of the containing glyph 
 were negative.
 
-This seems to be endemic on Windows XP -- it seems to be a deep problem,
-likely in Cleartype itself.
+This seems to be endemic on Windows -- it seems to be a deep problem,
+likely in Cleartype itself.  And the behaviour is inconsistent...
+
+Official statement from MS in OpenType spec:
+Note that the behavior of the USE_MY_METRICS operation is undefined for
+rotated composite components.
+
 """
 
 #FIXME Tragically, the FontForge Python function useRefsMetrics always
