@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1473665958
+ModificationTime: 1473790026
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -80,8 +81,6 @@ Lookup: 4 0 0 "'liga' std. ligatures in Arabic"  {"'liga' word ligatures in Arab
 Lookup: 4 0 0 "'dlig' discr. ligatures in Arabic"  {"'dlig' discr. ligatures in Arabic-1"  } ['dlig' ('arab' <'dflt' > ) ]
 Lookup: 4 0 0 "'rlig' req. ligatures in Arabic"  {"'rlig' req. ligatures in Arabic 1"  } ['rlig' ('arab' <'dflt' > ) ]
 Lookup: 6 0 0 "'mset' mark stretch in Arabic"  {"'mset' mark stretch in Arabic-1"  } [' RQD' ('arab' <'dflt' > ) ]
-Lookup: 4 0 0 "FreeSerifBold-FreeSerif-'rlig' req. ligatures in Arabic"  {"FreeSerifBold-FreeSerif-'rlig' req. ligatures in Arabic-1"  } ['rlig' ('arab' <'dflt' > ) ]
-Lookup: 1 0 0 "FreeMono-'sups' superscript"  {"FreeMono-'sups' superscript-phonetic"  } ['sups' ('DFLT' <'dflt' > ) ]
 Lookup: 257 0 0 "don't move"  {"don't move-1"  } []
 Lookup: 260 0 0 "'mark' marks generic low"  {"'mark' marks generic below"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks generic high"  {"'mark' marks generic above 1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
@@ -149,9 +148,6 @@ ChainSub2: class "'mset' mark stretch in Arabic-1"  2 3 1 8
   FClsList:
  1
   SeqLookup: 0 "stretch 1dig in Arabic" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   Class: 259 tah_high_arabic.cmb uni0617 uni0618 uni0619 fathatan.cmb dammatan.cmb fatha.cmb damma.cmb shadda.cmb sukun.cmb hamzaabv.cmb dammainv.cmb noonghunnamark.cmb zwarakay.cmb vsmallvowelabv.cmb vsmallvowelinvabv.cmb dammarev.cmb fatha2dots.cmb alefsuperscriptarabic
@@ -246,9 +242,6 @@ ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   FClsList:
  1
   SeqLookup: 0 "mark on ijam Arabic" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
-  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   Class: 95 uni061A kasratan.cmb kasra.cmb hamzablw.cmb alefsubscript.cmb dotblwarabic.cmb hamzawavyblw.cmb
@@ -267,9 +260,6 @@ ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "don't move" 
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  
-  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   Class: 3 i j
@@ -287,9 +277,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -385,9 +372,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -483,9 +467,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -538,7 +519,7 @@ LangName: 1027 "" "" "negreta" "" "FreeMono negreta"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeMono +BD8EPgQ7BEMERwQ1BEAENQQ9" 
 LangName: 1069 "" "" "Lodia" "" "FreeMono Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeMono Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3 0
+GaspTable: 3 9 2 21 1 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
@@ -61686,7 +61667,7 @@ EndChar
 StartChar: aleffathatanfina
 Encoding: 64828 64828 2933
 Width: 600
-Flags: HW
+Flags: W
 AnchorPoint: "arab-below" 295 -100 basechar 0
 AnchorPoint: "arab-hamza-blw" 295 -65 basechar 0
 AnchorPoint: "arab-above" 460 800 basechar 0
@@ -61696,7 +61677,6 @@ Refer: 2212 1611 S 1 0 0 1 170 0 2
 Refer: 2425 65166 N 1 0 0 1 0 0 1
 Validated: 32769
 LCarets2: 1 0 
-Ligature2: "FreeSerifBold-FreeSerif-'rlig' req. ligatures in Arabic-1" aleffinaarabic maddah.cmb
 EndChar
 
 StartChar: aleffathatanisol
@@ -61728,7 +61708,7 @@ SplineSet
  398.496 658 423 655.232 423 633 c 4
  423 600.952 367.417 550 300 550 c 4
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
