@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1473798592
+ModificationTime: 1473842764
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -109,7 +110,7 @@ Lookup: 1 0 0 "'locl' local. forms in Latin for Sami"  {"'locl' Localized Forms 
 Lookup: 2 0 0 "'ccmp' saraam decomp. for Thai"  {"'ccmp' saraam decomp. for Thai-1"  } ['ccmp' ('thai' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Thai"  {"'liga' std. ligatures in Thai subtable"  } ['liga' ('thai' <'dflt' > ) ]
 Lookup: 4 1 0 "'dlig' discr. ligatures in Hebrew"  {"'dlig' discr. ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
-Lookup: 4 1 0 "'ccmp' glyph decompos. in Hebrew"  {"'ccmp' glyph decompos. in Hebrew 1"  } ['ccmp' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
+Lookup: 4 1 0 "'ccmp' glyph decomp. in Hebrew for Yiddish"  {"'ccmp' glyph decomp. in Hebrew for Yiddish 1"  } ['ccmp' ('hebr' <'JII ' > ) ]
 Lookup: 4 0 0 "'dlig' discr. ligatures in Armenian"  {"'dlig' discr. ligatures in Armenian 1"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' hist. ligatures in Armenian 1"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' std. ligatures in Armenian"  {"'liga' std. ligatures in Armenian 1"  } ['liga' ('armn' <'dflt' > ) ]
@@ -497,9 +498,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   Class: 15 Alpha Eta Omega
@@ -547,9 +545,6 @@ ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   FClsList:
  1
   SeqLookup: 0 "positional forms in Greek" 
-  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
-  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   Class: 4 beta
@@ -587,9 +582,6 @@ ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   BClsList:
   FClsList: 2
  0
-  ClassNames: "0"  "1"  "2"  
-  BClassNames: "0"  "1"  "2"  "3"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   Class: 4 beta
@@ -613,9 +605,6 @@ ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   BClsList: 3
   FClsList:
  0
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  "2"  "3"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -711,9 +700,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 parenleft parenright plus hyphen minus comma period zero one two three four five six seven eight nine
@@ -796,9 +782,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: glyph "'ccmp' glyph compos. in Latin - iogonek-1"  0 0 0 1
  String: 7 iogonek
@@ -836,7 +819,7 @@ LangName: 1027 "" "" "negreta it+AOAA-lica" "" "FreeSerif negreta it+AOAA-lica"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" 
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSerif Lodi etzana" 
 LangName: 1033 "" "" "Bold Italic" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3 0
+GaspTable: 3 9 2 21 1 65535 3
 OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
 OtfFeatName: 'ss08' 1033 "Georgian Mtavruli" 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 
 Encoding: Custom
@@ -17168,7 +17151,7 @@ SplineSet
  69.8867 256.691 204.812 356.316 204.812 367.239 c 0
  204.812 386.873 155.874 419.465 155.874 483.907 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: bethebrew
@@ -17253,7 +17236,7 @@ SplineSet
  385.652 480.01 342.482 454.766 342.482 335.755 c 0
  342.482 286.924 349.42 240.398 349.42 192.715 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: dalethebrew
@@ -17288,7 +17271,7 @@ SplineSet
  201.524 440 l 2
  186.747 440 143.608 455.867 143.608 511.903 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: hehebrew
@@ -17333,7 +17316,7 @@ SplineSet
  204.069 310.495 196.248 306.966 189.666 276 c 0
  183.927 249 185.651 243 176.086 198 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: vavhebrew
@@ -17363,7 +17346,7 @@ SplineSet
  239.803 430.73 201.821 420.418 169.8 446 c 0
  148.656 463.521 143.177 487.11 143.177 507.923 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: zayinhebrew
@@ -17398,7 +17381,7 @@ SplineSet
  316.699 422 308.612 431 284.612 431 c 0
  281.612 431 278.399 430 275.399 430 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: hethebrew
@@ -17439,7 +17422,7 @@ SplineSet
  131.395 350 172.447 402 206.524 440 c 1
  167.337 447.042 149.506 468.162 149.506 504.798 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: tethebrew
@@ -17485,7 +17468,7 @@ SplineSet
  232.887 644 215.51 614 280.259 594 c 0
  328.611 580.521 338.489 548.424 338.489 522.802 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: yodhebrew
@@ -17513,7 +17496,7 @@ SplineSet
  231.099 645 208.021 607 270.834 592 c 0
  320.585 581.771 338.024 541.834 338.024 500.917 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: finalkafhebrew
@@ -17548,7 +17531,7 @@ SplineSet
  201.524 440 l 2
  186.747 440 143.608 455.867 143.608 511.903 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: kafhebrew
@@ -17586,7 +17569,7 @@ SplineSet
  504.461 412.423 424.744 441 311.737 441 c 0
  233.952 441 169.362 445.583 169.362 517.505 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: lamedhebrew
@@ -17627,7 +17610,7 @@ SplineSet
  532.824 272.038 302.453 188.921 302.453 87.8691 c 0
  302.453 78.1318 306.305 69.6211 306.305 58.3408 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: finalmemhebrew
@@ -17671,7 +17654,7 @@ SplineSet
  541.323 405.902 513.461 440 463.524 440 c 2
  247.524 440 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: memhebrew
@@ -17718,7 +17701,7 @@ SplineSet
  117.466 298.585 188.893 329.358 188.893 360.374 c 0
  188.893 379.766 143.279 407.337 143.279 474.494 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: finalnunhebrew
@@ -17784,7 +17767,7 @@ SplineSet
  324.034 447.455 214.153 400.683 199.341 505 c 0
  199.165 507.401 199.084 509.831 199.084 512.276 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: samekhhebrew
@@ -17826,7 +17809,7 @@ SplineSet
  144.005 164.754 152.276 160 168.009 160 c 2
  464.009 160 l 2
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: ayinhebrew
@@ -17875,7 +17858,7 @@ SplineSet
  226.592 74.9893 233.473 90.3848 233.473 125.62 c 0
  233.473 181.605 198.507 212.456 198.507 285.263 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: finalpehebrew
@@ -17921,7 +17904,7 @@ SplineSet
  59.7822 113.902 78.373 119.89 103.971 141 c 1
  92.3184 166.228 88.0928 190.768 88.0928 213.811 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: pehebrew
@@ -17970,7 +17953,7 @@ SplineSet
  119.037 385.971 206.301 441.541 221.075 452 c 1
  198.182 461.328 182.179 480.326 182.179 516.508 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: finaltsadihebrew
@@ -18014,7 +17997,7 @@ SplineSet
  545.312 646 532.51 614 568.983 588 c 0
  584.099 578.586 611.528 558.185 611.528 516.769 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: tsadihebrew
@@ -18069,7 +18052,7 @@ SplineSet
  531.062 212 l 2
  544.994 198.921 552.267 176.868 552.267 151.977 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: qofhebrew
@@ -18112,7 +18095,7 @@ SplineSet
  213.827 375 216.545 371.608 216.545 366.501 c 0
  216.545 344.953 169.236 297.5 157.438 242 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: reshhebrew
@@ -18144,7 +18127,7 @@ SplineSet
  201.524 440 l 2
  187.549 440 143.574 456.784 143.574 512.342 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: shinhebrew
@@ -18205,7 +18188,7 @@ SplineSet
  502 645 485 615 524 588 c 0
  539 579 566 559 566 516 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: tavhebrew
@@ -18248,7 +18231,7 @@ SplineSet
  135.967 160 143.939 166.435 143.939 176.089 c 0
  143.939 189.309 134.72 212.789 134.72 246.843 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni1E00
@@ -34791,7 +34774,7 @@ SplineSet
  239.803 430.73 201.821 420.418 169.8 446 c 0
  148.656 463.521 143.177 487.11 143.177 507.923 c 0
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: vavyodhebrew
@@ -34865,7 +34848,7 @@ SplineSet
  202.099 645 179.021 607 241.833 592 c 0
  291.585 581.771 309.024 541.834 309.024 500.917 c 0
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: gereshhebrew
@@ -46423,7 +46406,7 @@ SplineSet
  171.803 -175 l 2
  178.392 -144 215.493 -120 248.344 -116 c 1
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: uni0593
@@ -46492,7 +46475,7 @@ SplineSet
  297.757 -214.136 300.734 -220.96 300.734 -228.581 c 0
  300.734 -248.579 282.139 -265 263.673 -265 c 0
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: uni0597
@@ -46514,7 +46497,7 @@ SplineSet
  532.021 727.284 491.153 744.37 457.688 676 c 0
  454.2 669 447.35 665 442.35 665 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni0598
@@ -46546,7 +46529,7 @@ SplineSet
  466.35 665 449.263 674 438.239 688 c 2
  377.181 763 l 2
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni0599
@@ -46588,7 +46571,7 @@ SplineSet
  414.438 -137.606 423.816 -134.145 426.73 -133 c 2
  627.097 -56 l 2
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: uni059C
@@ -46607,7 +46590,7 @@ SplineSet
  412.446 665 407.981 669.469 407.981 675.836 c 0
  407.981 730.59 505.862 885 558.112 885 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni059D
@@ -46665,7 +46648,7 @@ SplineSet
  659.789 886 670.587 842.112 670.587 815.834 c 0
  670.587 751.354 603.608 716 568.19 716 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni05A1
@@ -46700,7 +46683,7 @@ SplineSet
  144.465 840.13 144.352 839.084 144.122 838 c 2
  126.48 755 l 1
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni05A2
@@ -46714,7 +46697,7 @@ AnchorPoint: "point_low_heb" 341 -87 mark 0
 LayerCount: 2
 Fore
 Refer: 2026 1425 N -1 0 0 -1 602 -280 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: uni05A3
@@ -46743,7 +46726,7 @@ SplineSet
  48 -172 57 -165 65 -165 c 2
  245 -165 l 1
 EndSplineSet
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: uni05A4
@@ -46772,7 +46755,7 @@ SplineSet
  84 -139 87 -136 94 -133 c 2
  278 -56 l 2
 EndSplineSet
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: uni05A5
@@ -46846,7 +46829,7 @@ SplineSet
  239.682 -105 l 1
  313.701 -199 l 2
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: uni05A8
@@ -46891,7 +46874,7 @@ SplineSet
  123 716 75 730 75 781 c 0
  75 828 120 886 180 886 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni059F
@@ -46944,7 +46927,7 @@ SplineSet
  226 -222 226 -221 226 -220 c 2
  238 -164 l 1
 EndSplineSet
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: uni05AB
@@ -46982,7 +46965,7 @@ AnchorPoint: "point_low_heb" 349 -87 mark 0
 LayerCount: 2
 Fore
 Refer: 2028 1430 N 1 0 0 1 140 0 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: uni05AE
@@ -47017,7 +47000,7 @@ SplineSet
  396.676 665 367.277 695.339 367.277 735.539 c 0
  367.277 791.771 422.476 843 477.186 843 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uni0592
@@ -47111,7 +47094,7 @@ LayerCount: 2
 Fore
 Refer: 2041 1445 N 1 0 0 1 68 0 2
 Refer: 2054 1460 N 1 0 0 1 -95 -36 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: shevahebrew
@@ -47126,7 +47109,7 @@ LayerCount: 2
 Fore
 Refer: 2054 1460 N 1 0 0 1 0 0 2
 Refer: 2054 1460 N 1 0 0 1 -32 -116 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: hatafsegolhebrew
@@ -47144,7 +47127,7 @@ Refer: 2054 1460 N 1 0 0 1 -124 -115 2
 Refer: 2054 1460 N 1 0 0 1 -169 0 2
 Refer: 2054 1460 N 1 0 0 1 -35 0 2
 Refer: 2054 1460 N 1 0 0 1 72 -115 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: tserehebrew
@@ -47267,7 +47250,7 @@ Fore
 Refer: 2055 1465 N 1 0 0 1 90 -802 2
 Refer: 2055 1465 N 1 0 0 1 -15 -745 2
 Refer: 2055 1465 N 1 0 0 1 196 -860 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: siluqhebrew
@@ -47318,7 +47301,7 @@ SplineSet
  133.98 459.597 134.328 462.596 135.052 466 c 2
  158.008 574 l 2
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: rafehebrew
@@ -47449,7 +47432,7 @@ Fore
 Refer: 2063 1463 N 0.9 0 0 1 -88 0 2
 Refer: 2054 1460 N 1 0 0 1 83 0 2
 Refer: 2054 1460 N 1 0 0 1 59 -115 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: hatafqamatshebrew
@@ -47533,7 +47516,8 @@ LayerCount: 2
 Fore
 Refer: 726 1497 N 1 0 0 1 0 0 2
 Refer: 2054 1460 N 1 0 0 1 -128 279 2
-Validated: 1048577
+Validated: 1
+Ligature2: "'ccmp' glyph decomp. in Hebrew for Yiddish 1" yodhebrew hiriqhebrew
 EndChar
 
 StartChar: yodyodpatahhebrew
@@ -47550,7 +47534,8 @@ LayerCount: 2
 Fore
 Refer: 1603 1522 N 1 0 0 1 29 0 2
 Refer: 2063 1463 N 1 0 0 1 31 270 2
-Validated: 1048577
+Validated: 1
+Ligature2: "'ccmp' glyph decomp. in Hebrew for Yiddish 1" yodyodhebrew patahhebrew
 LCarets2: 1 0 
 EndChar
 
@@ -47603,7 +47588,7 @@ SplineSet
  518.252 438.086 429.746 427.978 429.746 515.444 c 0
  429.746 586.769 481.942 644 499.887 644 c 0
 EndSplineSet
-Validated: 524289
+Validated: 1
 EndChar
 
 StartChar: uniFB29
@@ -47642,8 +47627,7 @@ LayerCount: 2
 Fore
 Refer: 742 1513 N 1 0 0 1 0 0 2
 Refer: 2071 1473 N 1 0 0 1 0 0 2
-Validated: 1048577
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" shinhebrew shindothebrew
+Validated: 1
 LCarets2: 1 0 
 EndChar
 
@@ -47664,7 +47648,6 @@ Fore
 Refer: 742 1513 N 1 0 0 1 0 0 2
 Refer: 2072 1474 N 1 0 0 1 14 0 2
 Validated: 1
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" shinhebrew sindothebrew
 LCarets2: 1 0 
 EndChar
 
@@ -47684,8 +47667,7 @@ Fore
 Refer: 2065 1468 N 1 0 0 1 83 0 2
 Refer: 742 1513 N 1 0 0 1 0 0 2
 Refer: 2071 1473 N 1 0 0 1 0 0 2
-Validated: 1048577
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" shindageshhebrew shindothebrew
+Validated: 1
 LCarets2: 1 0 
 EndChar
 
@@ -47705,8 +47687,7 @@ Fore
 Refer: 2065 1468 N 1 0 0 1 79 -15 2
 Refer: 742 1513 N 1 0 0 1 0 0 2
 Refer: 2072 1474 N 1 0 0 1 20 0 2
-Validated: 1048577
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" shindageshhebrew sindothebrew
+Validated: 1
 LCarets2: 1 0 
 EndChar
 
@@ -47725,8 +47706,7 @@ LayerCount: 2
 Fore
 Refer: 717 1488 N 1 0 0 1 0 0 2
 Refer: 2063 1463 N 1 0 0 1 -3 0 2
-Validated: 1048577
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" alefhebrew patahhebrew
+Validated: 1
 LCarets2: 1 0 
 EndChar
 
@@ -47745,8 +47725,7 @@ LayerCount: 2
 Fore
 Refer: 717 1488 N 1 0 0 1 0 0 2
 Refer: 2064 1464 N 1 0 0 1 3 0 2
-Validated: 1048577
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" alefhebrew qamatshebrew
+Validated: 1
 LCarets2: 1 0 
 EndChar
 
@@ -47765,9 +47744,8 @@ LayerCount: 2
 Fore
 Refer: 717 1488 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -111 -385 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" alefhebrew dageshhebrew
 EndChar
 
 StartChar: betdageshhebrew
@@ -47785,9 +47763,8 @@ LayerCount: 2
 Fore
 Refer: 718 1489 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -113 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" bethebrew dageshhebrew
 EndChar
 
 StartChar: gimeldageshhebrew
@@ -47805,9 +47782,8 @@ LayerCount: 2
 Fore
 Refer: 719 1490 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -215 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" gimelhebrew dageshhebrew
 EndChar
 
 StartChar: daletdageshhebrew
@@ -47825,9 +47801,8 @@ LayerCount: 2
 Fore
 Refer: 720 1491 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -83 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" dalethebrew dageshhebrew
 EndChar
 
 StartChar: hedageshhebrew
@@ -47845,9 +47820,8 @@ LayerCount: 2
 Fore
 Refer: 721 1492 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -47 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" hehebrew dageshhebrew
 EndChar
 
 StartChar: vavdageshhebrew
@@ -47865,9 +47839,8 @@ LayerCount: 2
 Fore
 Refer: 722 1493 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -266 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" vavhebrew dageshhebrew
 EndChar
 
 StartChar: zayindageshhebrew
@@ -47885,9 +47858,8 @@ LayerCount: 2
 Fore
 Refer: 723 1494 N 1 0 0 1 40 0 2
 Refer: 2065 1468 N 1 0 0 1 -261 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" zayinhebrew dageshhebrew
 EndChar
 
 StartChar: tetdageshhebrew
@@ -47905,9 +47877,8 @@ LayerCount: 2
 Fore
 Refer: 725 1496 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 80 -24 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" tethebrew dageshhebrew
 EndChar
 
 StartChar: yoddageshhebrew
@@ -47925,9 +47896,8 @@ LayerCount: 2
 Fore
 Refer: 726 1497 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -260 40 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" yodhebrew dageshhebrew
 EndChar
 
 StartChar: finalkafdageshhebrew
@@ -47945,9 +47915,8 @@ LayerCount: 2
 Fore
 Refer: 727 1498 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -87 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" finalkafhebrew dageshhebrew
 EndChar
 
 StartChar: kafdageshhebrew
@@ -47965,9 +47934,8 @@ LayerCount: 2
 Fore
 Refer: 728 1499 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -81 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" kafhebrew dageshhebrew
 EndChar
 
 StartChar: lameddageshhebrew
@@ -47985,9 +47953,8 @@ LayerCount: 2
 Fore
 Refer: 729 1500 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -143 26 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" lamedhebrew dageshhebrew
 EndChar
 
 StartChar: memdageshhebrew
@@ -48005,9 +47972,8 @@ LayerCount: 2
 Fore
 Refer: 731 1502 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 6 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" memhebrew dageshhebrew
 EndChar
 
 StartChar: nundageshhebrew
@@ -48025,9 +47991,8 @@ LayerCount: 2
 Fore
 Refer: 733 1504 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -222 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" nunhebrew dageshhebrew
 EndChar
 
 StartChar: samekhdageshhebrew
@@ -48045,9 +48010,8 @@ LayerCount: 2
 Fore
 Refer: 734 1505 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -46 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" samekhhebrew dageshhebrew
 EndChar
 
 StartChar: pefinaldageshhebrew
@@ -48065,9 +48029,8 @@ LayerCount: 2
 Fore
 Refer: 736 1507 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -14 40 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" finalpehebrew dageshhebrew
 EndChar
 
 StartChar: pedageshhebrew
@@ -48085,9 +48048,8 @@ LayerCount: 2
 Fore
 Refer: 737 1508 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 27 66 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" pehebrew dageshhebrew
 EndChar
 
 StartChar: tsadidageshhebrew
@@ -48105,9 +48067,8 @@ LayerCount: 2
 Fore
 Refer: 2065 1468 N 1 0 0 1 -203 0 2
 Refer: 739 1510 N 1 0 0 1 0 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" tsadihebrew dageshhebrew
 EndChar
 
 StartChar: qofdageshhebrew
@@ -48125,9 +48086,8 @@ LayerCount: 2
 Fore
 Refer: 2065 1468 N 1 0 0 1 0 0 2
 Refer: 740 1511 N 1 0 0 1 0 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" qofhebrew dageshhebrew
 EndChar
 
 StartChar: reshdageshhebrew
@@ -48145,9 +48105,8 @@ LayerCount: 2
 Fore
 Refer: 2065 1468 N 1 0 0 1 -79 0 2
 Refer: 741 1512 N 1 0 0 1 0 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" reshhebrew dageshhebrew
 EndChar
 
 StartChar: shindageshhebrew
@@ -48165,9 +48124,8 @@ LayerCount: 2
 Fore
 Refer: 2065 1468 N 1 0 0 1 53 0 2
 Refer: 742 1513 N 1 0 0 1 -33 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" shinhebrew dageshhebrew
 EndChar
 
 StartChar: tavdageshhebrew
@@ -48185,9 +48143,8 @@ LayerCount: 2
 Fore
 Refer: 2065 1468 N 1 0 0 1 0 0 2
 Refer: 743 1514 N 1 0 0 1 0 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" tavhebrew dageshhebrew
 EndChar
 
 StartChar: vavholamhebrew
@@ -48204,9 +48161,8 @@ LayerCount: 2
 Fore
 Refer: 2055 1465 N 1 0 0 1 0 0 2
 Refer: 722 1493 N 1 0 0 1 0 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" vavhebrew holamhebrew
 EndChar
 
 StartChar: betrafehebrew
@@ -48224,9 +48180,8 @@ LayerCount: 2
 Fore
 Refer: 718 1489 N 1 0 0 1 0 0 2
 Refer: 2069 1471 N 1 0 0 1 81 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" bethebrew rafehebrew
 EndChar
 
 StartChar: kafrafehebrew
@@ -48244,9 +48199,8 @@ LayerCount: 2
 Fore
 Refer: 728 1499 N 1 0 0 1 0 0 2
 Refer: 2069 1471 N 1 0 0 1 100 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" kafhebrew rafehebrew
 EndChar
 
 StartChar: perafehebrew
@@ -48264,9 +48218,8 @@ LayerCount: 2
 Fore
 Refer: 737 1508 N 1 0 0 1 0 0 2
 Refer: 2069 1471 N 1 0 0 1 114 0 2
-Validated: 1048577
+Validated: 1
 LCarets2: 1 0 
-Ligature2: "'ccmp' glyph decompos. in Hebrew 1" pehebrew rafehebrew
 EndChar
 
 StartChar: aleflamedhebrew
@@ -48337,7 +48290,7 @@ SplineSet
  245.293 -145 226.679 -123.867 226.679 -100.297 c 0
  226.679 -73.3398 254.224 -39 291.71 -39 c 0
 EndSplineSet
-Validated: 1572865
+Validated: 1
 EndChar
 
 StartChar: uni05C6

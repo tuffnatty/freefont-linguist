@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1473799623
+ModificationTime: 1473838438
 PfmFamily: 33
 TTFWeight: 600
 TTFWidth: 5
@@ -95,7 +96,6 @@ Lookup: 1 0 0 "'locl' local. forms for South Slavic"  {"'locl' local. forms for 
 Lookup: 4 0 0 "'liga' std. ligatures in Cyrillic"  {"'liga' Standard Ligatures in Cyrillic subtable"  } ['liga' ('cyrl' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' > ) ]
 Lookup: 4 8 0 "'dlig' disc. ligatures in Hebrew"  {"'dlig' Discretionary Ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'JII ' 'dflt' > ) ]
 Lookup: 4 265 0 "'ccmp' glyph decomp. in Yiddish"  {"'ccmp' glyph decomp. in Yiddish"  } ['ccmp' ('hebr' <'JII ' > ) ]
-Lookup: 2 1 0 "'ccmp' glyph decomp. in Hebrew"  {"'ccmp' Glyph Composition/Decomposition in Hebrew subtable"  } ['ccmp' ('hebr' <'JII ' 'dflt' > ) ]
 Lookup: 4 0 0 "'mset' mark position via subst. in Hebrew"  {"'mset' mark position via subst. in Hebrew-1"  } ['mset' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' disc. ligatures in Armenian"  {"'dlig' Discretionary Ligatures in Armenian subtable"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' Historic Ligatures in Armenian subtable"  } ['hlig' ('armn' <'dflt' > ) ]
@@ -248,9 +248,6 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -346,9 +343,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 zero one two three four five six seven eight nine comma period parenleft parenright plus hyphen minus
@@ -431,9 +425,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: glyph "'ccmp' compos chain in Latin - iogonek-1"  0 0 0 1
  String: 7 iogonek
@@ -489,7 +480,7 @@ LangName: 1027 "" "" "negreta cursiva" "" "FreeSans negreta cursiva"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" "" "FreeSans +BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" 
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSans Lodi etzana" 
 LangName: 1033 "" "" "Bold Oblique" "GNU: FreeSans Bold Oblique: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 22 1 65535 3 0
+GaspTable: 3 9 2 22 1 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
@@ -13472,7 +13463,7 @@ SplineSet
  640 485 l 1
  259 485 l 1
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 EndChar
 
 StartChar: rafehebrew
@@ -18517,7 +18508,6 @@ Fore
 Refer: 606 1473 N 1 0 0 1 10 0 2
 Refer: 635 1513 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shinhebrew shindothebrew
 EndChar
 
 StartChar: shinsindothebrew
@@ -18532,7 +18522,6 @@ Fore
 Refer: 607 1474 N 1 0 0 1 0 0 2
 Refer: 635 1513 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shinhebrew sindothebrew
 EndChar
 
 StartChar: shindageshshindothebrew
@@ -18547,7 +18536,6 @@ Refer: 601 1468 N 1 0 0 1 203 -99 2
 Refer: 606 1473 N 1 0 0 1 0 0 2
 Refer: 635 1513 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shindageshhebrew shindothebrew
 EndChar
 
 StartChar: shindageshsindothebrew
@@ -18562,7 +18550,6 @@ Refer: 607 1474 N 1 0 0 1 -10 0 2
 Refer: 635 1513 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 206 -99 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shindageshhebrew sindothebrew
 EndChar
 
 StartChar: alefpatahhebrew
@@ -18603,7 +18590,6 @@ Fore
 Refer: 601 1468 N 1 0 0 1 -20 -367 2
 Refer: 610 1488 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" alefhebrew dageshhebrew
 EndChar
 
 StartChar: betdageshhebrew
@@ -18618,7 +18604,6 @@ Fore
 Refer: 611 1489 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -34 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" bethebrew dageshhebrew
 EndChar
 
 StartChar: gimeldageshhebrew
@@ -18633,7 +18618,6 @@ Fore
 Refer: 612 1490 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -69 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" gimelhebrew dageshhebrew
 EndChar
 
 StartChar: daletdageshhebrew
@@ -18648,7 +18632,6 @@ Fore
 Refer: 613 1491 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -83 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" dalethebrew dageshhebrew
 EndChar
 
 StartChar: hedageshhebrew
@@ -18663,7 +18646,6 @@ Fore
 Refer: 614 1492 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 59 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" hehebrew dageshhebrew
 EndChar
 
 StartChar: vavdageshhebrew
@@ -18680,7 +18662,6 @@ Refer: 601 1468 N 1 0 0 1 -210 0 2
 Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'mset' mark position via subst. in Hebrew-1" vavhebrew dageshhebrew
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" vavhebrew dageshhebrew
 EndChar
 
 StartChar: zayindageshhebrew
@@ -18695,7 +18676,6 @@ Fore
 Refer: 616 1494 N 1 0 0 1 30 0 2
 Refer: 601 1468 N 1 0 0 1 -207 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" zayinhebrew dageshhebrew
 EndChar
 
 StartChar: tetdageshhebrew
@@ -18710,7 +18690,6 @@ Fore
 Refer: 618 1496 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 53 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" tethebrew dageshhebrew
 EndChar
 
 StartChar: yoddageshhebrew
@@ -18727,7 +18706,6 @@ Refer: 601 1468 N 1 0 0 1 -197 64 2
 Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'mset' mark position via subst. in Hebrew-1" yodhebrew dageshhebrew
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" yodhebrew dageshhebrew
 EndChar
 
 StartChar: finalkafdageshhebrew
@@ -18742,7 +18720,6 @@ Fore
 Refer: 620 1498 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -45 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" finalkafhebrew dageshhebrew
 EndChar
 
 StartChar: kafdageshhebrew
@@ -18757,7 +18734,6 @@ Fore
 Refer: 621 1499 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -29 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" kafhebrew dageshhebrew
 EndChar
 
 StartChar: lameddageshhebrew
@@ -18772,7 +18748,6 @@ Fore
 Refer: 622 1500 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -11 72 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" lamedhebrew dageshhebrew
 EndChar
 
 StartChar: memdageshhebrew
@@ -18787,7 +18762,6 @@ Fore
 Refer: 624 1502 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 93 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" memhebrew dageshhebrew
 EndChar
 
 StartChar: nundageshhebrew
@@ -18802,7 +18776,6 @@ Fore
 Refer: 626 1504 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -164 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" nunhebrew dageshhebrew
 EndChar
 
 StartChar: samekhdageshhebrew
@@ -18817,7 +18790,6 @@ Fore
 Refer: 627 1505 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 57 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" samekhhebrew dageshhebrew
 EndChar
 
 StartChar: pefinaldageshhebrew
@@ -18846,7 +18818,6 @@ Fore
 Refer: 630 1508 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 113 70 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" pehebrew dageshhebrew
 EndChar
 
 StartChar: tsadidageshhebrew
@@ -18861,7 +18832,6 @@ Fore
 Refer: 632 1510 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 -110 -64 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" tsadihebrew dageshhebrew
 EndChar
 
 StartChar: qofdageshhebrew
@@ -18876,7 +18846,6 @@ Fore
 Refer: 633 1511 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 51 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" qofhebrew dageshhebrew
 EndChar
 
 StartChar: reshdageshhebrew
@@ -18891,7 +18860,6 @@ Fore
 Refer: 601 1468 N 1 0 0 1 -32 0 2
 Refer: 634 1512 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" reshhebrew dageshhebrew
 EndChar
 
 StartChar: shindageshhebrew
@@ -18906,7 +18874,6 @@ Fore
 Refer: 601 1468 N 1 0 0 1 198 -98 2
 Refer: 635 1513 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" shinhebrew dageshhebrew
 EndChar
 
 StartChar: tavdageshhebrew
@@ -18921,7 +18888,6 @@ Fore
 Refer: 636 1514 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 145 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" tavhebrew dageshhebrew
 EndChar
 
 StartChar: vavholamhebrew
@@ -18937,7 +18903,6 @@ Fore
 Refer: 599 1465 N 1 0 0 1 0 0 2
 Refer: 615 1493 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" vavhebrew holamhebrew
 EndChar
 
 StartChar: betrafehebrew
@@ -18952,7 +18917,6 @@ Fore
 Refer: 604 1471 N 1 0 0 1 -32 0 2
 Refer: 611 1489 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" bethebrew rafehebrew
 EndChar
 
 StartChar: kafrafehebrew
@@ -18967,7 +18931,6 @@ Fore
 Refer: 621 1499 N 1 0 0 1 0 0 2
 Refer: 604 1471 N 1 0 0 1 -47 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" kafhebrew rafehebrew
 EndChar
 
 StartChar: perafehebrew
@@ -18983,7 +18946,6 @@ Fore
 Refer: 630 1508 N 1 0 0 1 0 0 2
 Refer: 604 1471 N 1 0 0 1 11 0 2
 Validated: 32769
-MultipleSubs2: "'ccmp' Glyph Composition/Decomposition in Hebrew subtable" pehebrew rafehebrew
 EndChar
 
 StartChar: aleflamedhebrew
