@@ -13,14 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 BaseVert: 2 'hang' 'romn'
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1473926449
+ModificationTime: 1474116410
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -201,6 +200,7 @@ Lookup: 1 0 0 "'tnum' tabular numbers"  {"'tnum' tabular numbers-1"  } ['tnum' (
 Lookup: 1 0 0 "'lnum' lining figures"  {"'lnum' lining figures-1"  "'lnum' lining figures-2"  } ['lnum' ('DFLT' <'dflt' > 'arab' <'dflt' > 'armn' <'dflt' > 'beng' <'dflt' > 'bng2' <'dflt' > 'bugi' <'dflt' > 'cher' <'dflt' > 'copt' <'COP ' 'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'KOK ' 'MAR ' 'NEP ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'KOK ' 'MAR ' 'NEP ' 'SAN ' 'SAT ' 'dflt' > 'ethi' <'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'gur2' <'dflt' > 'guru' <'dflt' > 'hano' <'dflt' > 'hebr' <'IWR ' 'JII ' 'dflt' > 'knd2' <'dflt' > 'knda' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'mlm2' <'MLR ' 'dflt' > 'mlym' <'MLR ' 'dflt' > 'sinh' <'dflt' > 'tale' <'dflt' > 'taml' <'dflt' > 'thaa' <'dflt' > 'thai' <'dflt' > 'tml2' <'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' discretionary ligatures in Armenian"  {"'dlig' discretionary ligatures in Armenian-1"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian"  {"'hlig' hist. ligatures in Armenian-1"  } ['hlig' ('armn' <'dflt' > ) ]
+Lookup: 2 1 0 "'ccmp' glyph decomp. in Hebrew"  {"'ccmp' glyph decomp. in Hebrew-1"  } ['ccmp' ('hebr' <'IWR ' 'dflt' > ) ]
 Lookup: 4 1 0 "'ccmp' dotted glyph compos. in Hebrew for Yiddish"  {"'ccmp' dotted glyph compos. in Hebrew for Yiddish-1"  } ['ccmp' ('hebr' <'JII ' > ) ]
 Lookup: 4 1 0 "'dlig' discretionary ligatures in Hebrew"  {"'dlig' discretionary ligatures in Hebrew-1"  } ['dlig' ('hebr' <'IWR ' 'JII ' 'dflt' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Thai"  {"'liga' std. ligatures in Thai-1"  } ['liga' ('thai' <'dflt' > ) ]
@@ -855,6 +855,9 @@ ChainSub2: class "'mset' mark stretch in Arabic-1"  2 3 1 8
   FClsList:
  1
   SeqLookup: 0 "stretch 1dig in Arabic" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   Class: 536 uni0610 uni0611 uni0612 uni0613 uni0614 tah_high_arabic.cmb uni0616 uni0617 uni0618 uni0619 fathatan.cmb dammatan.cmb fatha.cmb damma.cmb shadda.cmb sukun.cmb hamzaabv.cmb dammainv.cmb noonghunnamark.cmb zwarakay.cmb vsmallabv.cmb dammarev.cmb fatha2dots.cmb alefsuperscriptarabic uni06D6 uni06D7 uni06D8 uni06D9 uni06DA uni06DC uni06DF uni06E0 uni06E1 uni06E4 uni06E7 uni06EB uni06EC uni08E4 uni08E5 uni08E7 uni08E8 uni08EA uni08EB uni08EC uni08F0 uni08F1 uni08F3 uni08F4 uni08F5 uni08F7 uni08F8 uni08FB uni08FC uni08FD uni08FE uni08FF
@@ -949,6 +952,9 @@ ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   FClsList:
  1
   SeqLookup: 0 "mark on ijam Arabic" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   Class: 95 uni061A kasratan.cmb kasra.cmb hamzablw.cmb alefsubscript.cmb dotblwarabic.cmb hamzawavyblw.cmb
@@ -967,6 +973,9 @@ ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "don't move" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   Class: 3 i j
@@ -984,6 +993,9 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'psts' post-base subst. narrow in Kannada-1"  6 6 6 3
   Class: 10 kan_ra.blw
@@ -1019,6 +1031,9 @@ ChainSub2: class "'psts' post-base subst. narrow in Kannada-1"  6 6 6 3
   FClsList:
  1
   SeqLookup: 0 "subst. narrow rakar in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainPos2: class "'dist' space for subscript by tear in Kannada"  7 7 7 6
   Class: 64 gha_kan cha_kan jha_kan ddha_kan tha_kan dha_kan pha_kan bha_kan
@@ -1075,6 +1090,9 @@ ChainPos2: class "'dist' space for subscript by tear in Kannada"  7 7 7 6
   FClsList:
  1
   SeqLookup: 0 "space for subscript by tear in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
   Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.abvs dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
@@ -1110,6 +1128,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 
   FClsList:
  1
   SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: glyph "'hlig' hist. chain in Devanagari for OldHindi-1"  0 0 0 4
  String: 15 dev_ka_ssa.akhn
@@ -1171,6 +1192,9 @@ ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "subst. openya for virama-ya in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' pre-base chain in Devanagari da+-half+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -1194,6 +1218,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-rakaar in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 3 1 3
   Class: 10 dev_rakaar
@@ -1219,6 +1246,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 3 1 3
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-ra in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' vert-avoid pre-base subst chain in Devanagari"  0 0 0 1
  String: 20 dadeva virama vadeva
@@ -1240,6 +1270,9 @@ ChainSub2: class "'cjct' avoid-vert conjunct forms in Devanagari2-1"  4 4 1 1
   FClsList:
  1
   SeqLookup: 0 "subst. ligature for da+-half in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'psts' chain space candrakala in Malay+AQEA-lam-1"  0 0 0 1
  String: 10 candrakala
@@ -1262,6 +1295,9 @@ ChainSub2: class "'psts' chain avoid space candrakala in Malayalam"  2 1 3 2
   BClsList:
   FClsList: 2
  0
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'psts' u,uu smaller in Malayalam-1"  3 3 3 1
   Class: 363 mal_la.blwf mal_lla.blwf mal_kha.blwf mal_cha.blwf mal_ddha.blwf mal_da.blwf mal_dri.blwf mal_dha.blwf mal_pa.blwf mal_pha.blwf mal_ba.blwf mal_ma.blwf mal_sa.blwf mal_tta.blwf mal_ttra.blwf mal_ttha.blwf mal_va.blwf mal_rra.blwf mal_sra.blwf mal_tra.blwf mal_pra.blwf mal_chhra.blwf mal_shra.blwf mal_kra.blwf mal_rrarrra.blwf mal_kuu_narrow.blwf mal_rrarra.blwf
@@ -1276,6 +1312,9 @@ ChainSub2: class "'psts' u,uu smaller in Malayalam-1"  3 3 3 1
   FClsList:
  1
   SeqLookup: 0 "subst. smaller blwf in Malayalam" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'psts' re-do stacked cons in Malayalam"  5 4 1 4
   Class: 7 nna_mal
@@ -1309,6 +1348,9 @@ ChainSub2: class "'psts' re-do stacked cons in Malayalam"  5 4 1 4
   FClsList:
  1
   SeqLookup: 0 "subst. below cons in Malayalam" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'psts' post-base u,uu chain in Malayalam-1"  2 3 1 2
   Class: 12 u_mal uu_mal
@@ -1326,6 +1368,9 @@ ChainSub2: class "'psts' post-base u,uu chain in Malayalam-1"  2 3 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. below-base forms in Malayalam" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'blws' below-base smaller chain in Malayalam-1"  2 2 1 1
   Class: 892 mal_ka.blwf mal_ku.blwf mal_kuu.blwf mal_kri.blwf mal_kha.blwf mal_ga.blwf mal_gu.blwf mal_guu.blwf mal_gri.blwf mal_cha.blwf mal_chha.blwf mal_chhu.blwf mal_chhuu.blwf mal_chhri.blwf mal_ja.blwf mal_ju.blwf mal_juu.blwf mal_jri.blwf mal_sha.blwf mal_shu.blwf mal_shuu.blwf mal_shri.blwf mal_rrarra.blwf mal_ddha.blwf mal_nna.blwf mal_nnu.blwf mal_nnuu.blwf mal_ta.blwf mal_tu.blwf mal_tuu.blwf mal_tri.blwf mal_da.blwf mal_dri.blwf mal_dha.blwf mal_dhri.blwf mal_na.blwf mal_nu.blwf mal_nuu.blwf mal_pa.blwf mal_pri.blwf mal_pha.blwf mal_ba.blwf mal_ma.blwf mal_mri.blwf mal_sa.blwf mal_sri.blwf mal_tta.blwf mal_ttha.blwf mal_rra.blwf mal_va.blwf mal_sra.blwf mal_tra.blwf mal_pra.blwf mal_chhra.blwf mal_shra.blwf mal_kra.blwf mal_rrarrra.blwf mal_trr_voc.blwf mal_dhrr_voc.blwf mal_kka.blwf mal_kku.blwf mal_kkuu.blwf mal_kkri.blwf mal_tata.blwf mal_tatu.blwf mal_tatuu.blwf mal_tatr.blwf
@@ -1336,6 +1381,9 @@ ChainSub2: class "'blws' below-base smaller chain in Malayalam-1"  2 2 1 1
   FClsList:
  1
   SeqLookup: 0 "subst. smaller blwf in Malayalam" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'blwf' below cons in Malayalam-clscl-pair"  0 0 0 53
  String: 17 candrakala ka_mal
@@ -1678,6 +1726,9 @@ ChainSub2: class "'pstf' va,ya in Malayalam-1"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. post-base candra-x in Malayalam" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'blwf' below-base la in Malayalam-1"  3 2 0 2
   Class: 10 candrakala
@@ -1695,6 +1746,8 @@ ChainSub2: class "'blwf' below-base la in Malayalam-1"  3 2 0 2
   FClsList:
  1
   SeqLookup: 0 "subst. below-base forms in Malayalam" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'psts' u,uu reaching on p,ph,v in Kannada-1"  5 5 5 4
   Class: 21 pa_kan pha_kan va_kan
@@ -1733,6 +1786,9 @@ ChainSub2: class "'psts' u,uu reaching on p,ph,v in Kannada-1"  5 5 5 4
   FClsList:
  1
   SeqLookup: 0 "subst. u,uu reaching in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  
 EndFPST
 ChainSub2: class "'psts' rafar in Kannada-1"  6 6 6 5
   Class: 9 kan_rafar
@@ -1780,6 +1836,9 @@ ChainSub2: class "'psts' rafar in Kannada-1"  6 6 6 5
   FClsList:
  1
   SeqLookup: 0 "subst. rafar by rakar in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'blws' below substs. 2nd level in Kannada-1"  4 4 4 3
   Class: 413 kan_ka.blw kan_kha.blw kan_ga.blw kan_gha.blw kan_jna.blw kan_cha.blw kan_Cha.blw kan_ja.blw kan_jha.blw kan_nya.blw kan_ta.blw kan_Ta.blw kan_da.blw kan_Da.blw kan_Na.blw kan_tha.blw kan_Tha.blw kan_dha.blw kan_Dha.blw kan_na.blw kan_pa.blw kan_pha.blw kan_ba.blw kan_bha.blw kan_ma.blw kan_ya.blw kan_ra.blw kan_rra.blw kan_la.blw kan_La.blw kan_va.blw kan_sha.blw kan_Sha.blw kan_sa.blw kan_ha.blw kan_llla.blw
@@ -1809,6 +1868,9 @@ ChainSub2: class "'blws' below substs. 2nd level in Kannada-1"  4 4 4 3
   FClsList:
  1
   SeqLookup: 0 "subst. vattu forms 2nd in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  "3"  
 EndFPST
 ChainSub2: class "'abvs' ardha before abv marks in Kannada-1"  4 4 4 2
   Class: 274 ka_kan kha_kan ga_kan gha_kan nga_kan ca_kan cha_kan ja_kan jha_kan nya_kan tta_kan ttha_kan dda_kan ddha_kan nna_kan ta_kan tha_kan da_kan dha_kan na_kan pa_kan pha_kan ba_kan bha_kan ma_kan ya_kan ra_kan rra_kan la_kan lla_kan va_kan sha_kan ssa_kan sa_kan ha_kan llla_kan
@@ -1832,6 +1894,9 @@ ChainSub2: class "'abvs' ardha before abv marks in Kannada-1"  4 4 4 2
   FClsList: 3
  1
   SeqLookup: 0 "subst. ardha forms in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  "3"  
 EndFPST
 ChainSub2: class "'abvs' jh,m,y forms before abv marks in Kannada-1"  5 5 5 4
   Class: 7 jha_kan
@@ -1870,6 +1935,9 @@ ChainSub2: class "'abvs' jh,m,y forms before abv marks in Kannada-1"  5 5 5 4
   FClsList: 3
  1
   SeqLookup: 0 "subst. tail jh,m,y in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  
 EndFPST
 ChainSub2: class "'blwf' subscript cons on ra in Kannada-1"  6 2 1 2
   Class: 11 halanta_kan
@@ -1890,6 +1958,9 @@ ChainSub2: class "'blwf' subscript cons on ra in Kannada-1"  6 2 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. vattu via ZWJ in Kannada" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'blwf' subscript cons in Kannada2-1"  6 6 6 4
   Class: 274 ka_kan kha_kan ga_kan gha_kan nga_kan ca_kan cha_kan ja_kan jha_kan nya_kan tta_kan ttha_kan dda_kan ddha_kan nna_kan ta_kan tha_kan da_kan dha_kan na_kan pa_kan pha_kan ba_kan bha_kan ma_kan ya_kan ra_kan rra_kan la_kan lla_kan va_kan sha_kan ssa_kan sa_kan ha_kan llla_kan
@@ -1931,6 +2002,9 @@ ChainSub2: class "'blwf' subscript cons in Kannada2-1"  6 6 6 4
   FClsList:
  1
   SeqLookup: 0 "subst. vattu forms in Kannada2" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: coverage "kn_blwf_lookup_2 subtable"  0 0 0 1
  1 1 0
@@ -2005,6 +2079,9 @@ ContextSub2: class "'psts' rakar shaped in Sinhala-1"  12 1 1 9
   FClsList:
  1
   SeqLookup: 1 "below forms 5 in Sinhala" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  
+  BClassNames: "0"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'blws' u-uu in Sinhala"  2 17 1 14
   Class: 20 u_mk_sinh uu_mk_sinh
@@ -2108,6 +2185,9 @@ ChainSub2: class "'blws' u-uu in Sinhala"  2 17 1 14
   FClsList:
  1
   SeqLookup: 0 "below forms 3 in Sinhala" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  "12"  "13"  "14"  "15"  "16"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'blws' u-uu+-dha-ish in Sinhala"  5 1 1 4
   Class: 31 sinh_na_da.akhn sinh_ba_da.akhn
@@ -2142,6 +2222,9 @@ ChainSub2: class "'blws' u-uu+-dha-ish in Sinhala"  5 1 1 4
  2
   SeqLookup: 0 "lop consonants in Sinhala" 
   SeqLookup: 1 "below forms 9 in Sinhala" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'abvs' al_laguna in Sinhala-1"  2 7 2 10
   Class: 7 al_sinh
@@ -2212,6 +2295,9 @@ ChainSub2: class "'abvs' al_laguna in Sinhala-1"  2 7 2 10
   FClsList:
  1
   SeqLookup: 0 "al_laguna skinny in Sinhala" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'abvs' i ii in Sinhala"  2 14 1 22
   Class: 20 i_mk_sinh ii_mk_sinh
@@ -2360,6 +2446,9 @@ ChainSub2: class "'abvs' i ii in Sinhala"  2 14 1 22
   FClsList:
  1
   SeqLookup: 0 "above forms 12 in Sinhala" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  "12"  "13"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'abvs' dha-ish+-i ii in Sinhala"  5 1 1 4
   Class: 95 nya_sinh jnya_sinh da_sinh nda_sinh sinh_nya_naked sinh_jnya_naked sinh_da_naked sinh_nda_naked
@@ -2394,6 +2483,9 @@ ChainSub2: class "'abvs' dha-ish+-i ii in Sinhala"  5 1 1 4
   FClsList:
  1
   SeqLookup: 1 "above forms 3 in Sinhala" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'abvs' kha-ish+-i ii in Sinhala"  5 1 1 4
   Class: 105 kha_sinh nga_sinh ca_sinh jha_sinh tta_sinh dda_sinh nndda_sinh dha_sinh ba_sinh ma_sinh mba_sinh va_sinh
@@ -2428,6 +2520,9 @@ ChainSub2: class "'abvs' kha-ish+-i ii in Sinhala"  5 1 1 4
  2
   SeqLookup: 0 "lop consonants in Sinhala" 
   SeqLookup: 2 "above forms 13 in Sinhala" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'abvs' repaya-workaround in Sinhala-1"  3 4 1 2
   Class: 358 ka_sinh kha_sinh ga_sinh gha_sinh nga_sinh nnga_sinh ca_sinh cha_sinh ja_sinh jha_sinh nya_sinh jnya_sinh nyja_sinh tta_sinh ttha_sinh dda_sinh ddha_sinh nna_sinh nndda_sinh ta_sinh tha_sinh da_sinh dha_sinh na_sinh nda_sinh pa_sinh pha_sinh ba_sinh bha_sinh ma_sinh mba_sinh ya_sinh ra_sinh la_sinh va_sinh sha_sinh ssa_sinh sa_sinh ha_sinh lla_sinh fa_sinh
@@ -2447,6 +2542,9 @@ ChainSub2: class "'abvs' repaya-workaround in Sinhala-1"  3 4 1 2
   FClsList:
  1
   SeqLookup: 0 "append repaya in Sinhala" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'ccmp' iogonek glyph decomp in Latin-1"  3 0 3 2
   Class: 1 i
@@ -2465,6 +2563,8 @@ ChainSub2: class "'ccmp' iogonek glyph decomp in Latin-1"  3 0 3 2
   FClsList: 2
  1
   SeqLookup: 0 "subst. i-ogonek with dotless-i+-ogonek" 
+  ClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   Class: 4 beta
@@ -2504,6 +2604,9 @@ ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   FClsList: 2
  1
   SeqLookup: 0 "positional forms in Greek" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   Class: 4 beta
@@ -2530,6 +2633,9 @@ ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   FClsList:
  1
   SeqLookup: 0 "positional forms in Greek" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainPos2: class "'dist' wide space in Sinhala-1"  5 5 5 10
   Class: 823 ng_sinh visarga_sinh ayanna_sinh aayanna_sinh aeyanna_sinh aeeyanna_sinh iyanna_sinh iiyanna_sinh uyanna_sinh uuyanna_sinh riyanna_sinh riiyanna_sinh iluyanna_sinh iluuyanna_sinh eyanna_sinh eeyanna_sinh aiyanna_sinh oyanna_sinh ooyanna_sinh auyanna_sinh ka_sinh kha_sinh ga_sinh gha_sinh nga_sinh nnga_sinh ca_sinh cha_sinh ja_sinh jha_sinh nya_sinh jnya_sinh nyja_sinh tta_sinh ttha_sinh dda_sinh ddha_sinh nna_sinh nndda_sinh ta_sinh tha_sinh da_sinh dha_sinh na_sinh nda_sinh pa_sinh pha_sinh ba_sinh bha_sinh ma_sinh mba_sinh ya_sinh ra_sinh la_sinh va_sinh sha_sinh ssa_sinh sa_sinh ha_sinh lla_sinh fa_sinh al_sinh aa_mk_sinh ae_mk_sinh aee_mk_sinh i_mk_sinh ii_mk_sinh u_mk_sinh uu_mk_sinh ru_mk_sinh e_mk_sinh ee_mk_sinh ai_mk_sinh o_mk_sinh oo_mk_sinh au_mk_sinh lu_mk_sinh ruu_mk_sinh llu_mk_sinh kunddaliya_sinh
@@ -2604,6 +2710,9 @@ ChainPos2: class "'dist' wide space in Sinhala-1"  5 5 5 10
   FClsList:
  1
   SeqLookup: 0 "positioning for space in Sinhala" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -2699,6 +2808,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 parenleft parenright plus hyphen minus comma period zero one two three four five six seven eight nine
@@ -2781,6 +2893,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -2836,19 +2951,19 @@ LangName: 1027 "" "" "negreta" "" "FreeSerif negreta"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9" "" "FreeSerif +BD8EPgQ7BEMERwQ1BEAENQQ9" 
 LangName: 1069 "" "" "Lodia" "" "FreeSerif Lodia" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Bold: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3
-OtfFeatName: 'ss08' 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 1033 "Georgian Mtavruli" 
-OtfFeatName: 'ss04' 2145 "+CSgJRwkqCT4JMgAA" 1033 "Nepali" 
-OtfFeatName: 'ss03' 1081 "+CRUJSwkyCRUJPgkk" 1033 "Calcutta" 
-OtfFeatName: 'ss02' 1081 "+CS4JQQkuCU0JLAkI" 1033 "Bombay" 
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+GaspTable: 3 9 2 21 1 65535 3 0
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
+OtfFeatName: 'ss02' 1033 "Bombay" 1081 "+CS4JQQkuCU0JLAkI" 
+OtfFeatName: 'ss03' 1033 "Calcutta" 1081 "+CRUJSwkyCRUJPgkk" 
+OtfFeatName: 'ss04' 1033 "Nepali" 2145 "+CSgJRwkqCT4JMgAA" 
+OtfFeatName: 'ss08' 1033 "Georgian Mtavruli" 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1392 16 10
+WinInfo: 1456 16 10
 BeginPrivate: 10
 UniqueID 7 5020933
 BlueValues 31 [-14 0 307 315 461 473 673 691]
@@ -2879,7 +2994,7 @@ Grid
 -1000 1848.9 m 0
  2000 1848.9 l 0
 EndSplineSet
-AnchorClass2: "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-topright"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic" "arab-ring"  "'mark' ring in Arabic-1" "far-right-dot"  "'mark' far right in Latin-1" "viet-acute"  "'mkmk' mark-to-mark in Latin for Viet" "viet-grave"  "'mkmk' mark-to-mark in Latin for Viet" "viet-hook"  "'mkmk' mark-to-mark in Latin for Viet" "belowmk"  "'mkmk' mark-to-mark generic-below" "mal-below-centr"  "'blwm' below mark centered in Malayalam-1" "kan-blw-vowel"  "'blwm' below vowel in Kannada-1" "kan-level3"  "'blwm' 3rd mark below in Kannada-1" "kan-level2"  "'blwm' 2nd mark below in Kannada-1" "kan-below"  "'blwf' below-base in Kannada-1" "kan-blw-akhn"  "'blwf' below-base in Kannada-1" "kan-abv-vowel-special"  "'abvm' above base vowel special in Kannada-1" "kan-halant"  "'blwf' virama in Kannada" "mlm-vowel-blw-small"  "'mkmk' u,uu on subscript in Malayalam" "mal-below"  "'blwm' below-base mark in Malay+AQEA-lam-1" "mlm-vowel-below"  "'blwm' vowel below in Malay+AQEA-lam-1" "dev-bindu"  "'mark' marks in Devanagari-bindu" "above"  "'mark' generic mark above" "below"  "'mark' generic mark below" "middle"  "'mark' generic marks top-middle" "abovemk"  "'mkmk' mark-to-mark generic-above" "topright"  "'mark' generic marks top-middle" "ogonek"  "'mark' ogonek in Latin" "tam-ii"  "'abvm' ii in Tamil" "tam-i"  "'abvm' ii in Tamil" "tam-above"  "'abvm' above-base mark in Tamil" "grk-below"  "'mark' mark below in Greek-1" "grk-above"  "'mark' mark above in Greek-1" "grk-copt-above"  "'mark' mark above in Greek and Coptic-1" "cyr-above"  "'mark' marks in Cyrillic-1" "cyr-below"  "'mark' marks in Cyrillic-1" "cyr-arching"  "'mkmk' mark-to-mark in Cyrillic-1" "cyr-grave-cmb"  "'mkmk' mark-to-mark in Cyrillic-1" "cyr-acute-cmb"  "'mkmk' mark-to-mark in Cyrillic-1" "sin-below"  "'blwm' rakar,u,uu in Sinhala-1" "sin-vowel"  "'abvm' al,i,ii in Sinhala-1" "sin-al"  "'abvm' al,i,ii in Sinhala-1" "sin-repaya"  "'abvm' repaya in Sinhala-1" "thaana-below"  "'blwm' below in Thaana" "thaana-above"  "'mark' above in Thaana" "gur-nukta"  "'blwm' nukta in Gurmukhi" "gur-below-mid"  "'blwm' below mid in Gurmukhi" "gur-below"  "'blwm' below-base mark in Gurmukhi-1" "gur-top-mkmk"  "'mkmk' mark-to-mark in Gurmukhi" "gur-top-mid"  "'abvm' above-base mid mark in Gurmukhi" "gur-above"  "'abvm' above-base mark in Gurmukhi-1" "dev-above"  "'abvm' above-base marks in Devanagari-1" "dev-below"  "'blwm' below-base mark in Devanagari" "dev-rakaar"  "'blwm' rakaar in Devanagari" "dev-nukta"  "'blwm' nukta in Devanagari" "dev-mark-bindu"  "'mkmk' mark-to-mark in Devanagari-bindu" "dev-abovemark"  "'mkmk' mark-to-mark in Devanagari-1" "dev-belowmark"  "'mkmk' mark-to-mark below in Devanagari-1" "vedic-visarga"  "'mkmk' mark-to-mark in Devanagari Vedic-visarga" "vedic-mark-blw"  "'mkmk' mark-to-mark in Devanagari Vedic" "vedic-mark-seq"  "'mkmk' mark-to-mark in Devanagari Vedic" "heb-low-mkmk"  "'mkmk' mark-to-mark in Hebrew-1" "heb-mkmk-top"  "'mkmk' mark-to-mark in Hebrew-1" "heb-point-abv"  "'mark' marks in Hebrew-1" "heb-vowel-abv"  "'mark' marks in Hebrew-1" "heb-vowel-left"  "'mark' marks in Hebrew-1" "heb-point-low"  "'mark' marks in Hebrew-1" "heb-point-left"  "'mark' marks in Hebrew-1" "heb-point-right"  "'mark' marks in Hebrew-1" "heb-low-vowel"  "'mark' mark below in Hebrew for Ivrit-1" "yid-low-vowel"  "'mark' mark below in Hebrew for Yiddish-1" "arab-above"  "'mark' marks in Arabic-1" "arab-below"  "'mark' marks in Arabic-1" "thai_vowel_tone_right"  "'mkmk' tone-right in Thai" "thai_vowel_tone"  "'mkmk' mark-to-mark in Thai-1" "thai_tone"  "'mark' marks above in Thai-1" "thai_vowel_centered"  "'mark' marks above in Thai-1" "thai_vowel"  "'mark' marks above in Thai-1" "thai_below"  "'mark' mark below in Thai-1" 
+AnchorClass2: "heb-point-low-right"  "'mark' marks in Hebrew-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-topright"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic" "arab-ring"  "'mark' ring in Arabic-1" "far-right-dot"  "'mark' far right in Latin-1" "viet-acute"  "'mkmk' mark-to-mark in Latin for Viet" "viet-grave"  "'mkmk' mark-to-mark in Latin for Viet" "viet-hook"  "'mkmk' mark-to-mark in Latin for Viet" "belowmk"  "'mkmk' mark-to-mark generic-below" "mal-below-centr"  "'blwm' below mark centered in Malayalam-1" "kan-blw-vowel"  "'blwm' below vowel in Kannada-1" "kan-level3"  "'blwm' 3rd mark below in Kannada-1" "kan-level2"  "'blwm' 2nd mark below in Kannada-1" "kan-below"  "'blwf' below-base in Kannada-1" "kan-blw-akhn"  "'blwf' below-base in Kannada-1" "kan-abv-vowel-special"  "'abvm' above base vowel special in Kannada-1" "kan-halant"  "'blwf' virama in Kannada" "mlm-vowel-blw-small"  "'mkmk' u,uu on subscript in Malayalam" "mal-below"  "'blwm' below-base mark in Malay+AQEA-lam-1" "mlm-vowel-below"  "'blwm' vowel below in Malay+AQEA-lam-1" "dev-bindu"  "'mark' marks in Devanagari-bindu" "above"  "'mark' generic mark above" "below"  "'mark' generic mark below" "middle"  "'mark' generic marks top-middle" "abovemk"  "'mkmk' mark-to-mark generic-above" "topright"  "'mark' generic marks top-middle" "ogonek"  "'mark' ogonek in Latin" "tam-ii"  "'abvm' ii in Tamil" "tam-i"  "'abvm' ii in Tamil" "tam-above"  "'abvm' above-base mark in Tamil" "grk-below"  "'mark' mark below in Greek-1" "grk-above"  "'mark' mark above in Greek-1" "grk-copt-above"  "'mark' mark above in Greek and Coptic-1" "cyr-above"  "'mark' marks in Cyrillic-1" "cyr-below"  "'mark' marks in Cyrillic-1" "cyr-arching"  "'mkmk' mark-to-mark in Cyrillic-1" "cyr-grave-cmb"  "'mkmk' mark-to-mark in Cyrillic-1" "cyr-acute-cmb"  "'mkmk' mark-to-mark in Cyrillic-1" "sin-below"  "'blwm' rakar,u,uu in Sinhala-1" "sin-vowel"  "'abvm' al,i,ii in Sinhala-1" "sin-al"  "'abvm' al,i,ii in Sinhala-1" "sin-repaya"  "'abvm' repaya in Sinhala-1" "thaana-below"  "'blwm' below in Thaana" "thaana-above"  "'mark' above in Thaana" "gur-nukta"  "'blwm' nukta in Gurmukhi" "gur-below-mid"  "'blwm' below mid in Gurmukhi" "gur-below"  "'blwm' below-base mark in Gurmukhi-1" "gur-top-mkmk"  "'mkmk' mark-to-mark in Gurmukhi" "gur-top-mid"  "'abvm' above-base mid mark in Gurmukhi" "gur-above"  "'abvm' above-base mark in Gurmukhi-1" "dev-above"  "'abvm' above-base marks in Devanagari-1" "dev-below"  "'blwm' below-base mark in Devanagari" "dev-rakaar"  "'blwm' rakaar in Devanagari" "dev-nukta"  "'blwm' nukta in Devanagari" "dev-mark-bindu"  "'mkmk' mark-to-mark in Devanagari-bindu" "dev-abovemark"  "'mkmk' mark-to-mark in Devanagari-1" "dev-belowmark"  "'mkmk' mark-to-mark below in Devanagari-1" "vedic-visarga"  "'mkmk' mark-to-mark in Devanagari Vedic-visarga" "vedic-mark-blw"  "'mkmk' mark-to-mark in Devanagari Vedic" "vedic-mark-seq"  "'mkmk' mark-to-mark in Devanagari Vedic" "heb-low-mkmk"  "'mkmk' mark-to-mark in Hebrew-1" "heb-mkmk-top"  "'mkmk' mark-to-mark in Hebrew-1" "heb-point-abv"  "'mark' marks in Hebrew-1" "heb-vowel-left"  "'mark' marks in Hebrew-1" "heb-dagesh"  "'mark' marks in Hebrew-1" "heb-point-low"  "'mark' marks in Hebrew-1" "heb-point-left"  "'mark' marks in Hebrew-1" "heb-point-right"  "'mark' marks in Hebrew-1" "heb-vowel-low"  "'mark' mark below in Hebrew for Ivrit-1" "yid-low-vowel"  "'mark' mark below in Hebrew for Yiddish-1" "arab-above"  "'mark' marks in Arabic-1" "arab-below"  "'mark' marks in Arabic-1" "thai_vowel_tone_right"  "'mkmk' tone-right in Thai" "thai_vowel_tone"  "'mkmk' mark-to-mark in Thai-1" "thai_tone"  "'mark' marks above in Thai-1" "thai_vowel_centered"  "'mark' marks above in Thai-1" "thai_vowel"  "'mark' marks above in Thai-1" "thai_below"  "'mark' mark below in Thai-1" 
 BeginChars: 66560 6873
 
 StartChar: space
@@ -20031,13 +20146,14 @@ Encoding: 1488 1488 743
 Width: 593
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-vowel-left" 282 -40 basechar 0
+AnchorPoint: "heb-point-low-right" 480 -87 basechar 0
+AnchorPoint: "heb-dagesh" 282 -40 basechar 0
 AnchorPoint: "heb-point-abv" 270 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 83 563 basechar 0
+AnchorPoint: "heb-vowel-left" 83 563 basechar 0
 AnchorPoint: "heb-point-low" 275 -87 basechar 0
 AnchorPoint: "heb-point-left" 50 563 basechar 0
 AnchorPoint: "heb-point-right" 469 563 basechar 0
-AnchorPoint: "heb-low-vowel" 280 0 basechar 0
+AnchorPoint: "heb-vowel-low" 280 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20085,13 +20201,14 @@ Encoding: 1489 1489 744
 Width: 498
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 420 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 60 563 basechar 0
-AnchorPoint: "heb-vowel-left" 250 280 basechar 0
+AnchorPoint: "heb-vowel-left" 60 563 basechar 0
+AnchorPoint: "heb-dagesh" 250 280 basechar 0
 AnchorPoint: "heb-point-low" 255 -87 basechar 0
 AnchorPoint: "heb-point-left" 38 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 261 0 basechar 0
+AnchorPoint: "heb-vowel-low" 261 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20118,21 +20235,22 @@ SplineSet
  419 402.475 343.8 438.545 231 438.545 c 0
  141 438.545 49 444 49 553 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: gimelhebrew
 Encoding: 1490 1490 745
 Width: 339
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 270 -87 basechar 0
 AnchorPoint: "heb-point-abv" 186 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 115 563 basechar 0
-AnchorPoint: "heb-vowel-left" 128 280 basechar 0
+AnchorPoint: "heb-vowel-left" 115 563 basechar 0
+AnchorPoint: "heb-dagesh" 128 280 basechar 0
 AnchorPoint: "heb-point-low" 135 -87 basechar 0
 AnchorPoint: "heb-point-left" 70 563 basechar 0
 AnchorPoint: "heb-point-right" 200 563 basechar 0
-AnchorPoint: "heb-low-vowel" 145 0 basechar 0
+AnchorPoint: "heb-vowel-low" 145 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20159,7 +20277,7 @@ SplineSet
  275 484 262 452 262 415 c 0
  262 309 317 220 317 119 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: dalethebrew
@@ -20167,13 +20285,14 @@ Encoding: 1491 1491 746
 Width: 523
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 420 -87 basechar 0
 AnchorPoint: "heb-point-abv" 246 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 53 563 basechar 0
-AnchorPoint: "heb-vowel-left" 250 280 basechar 0
+AnchorPoint: "heb-vowel-left" 53 563 basechar 0
+AnchorPoint: "heb-dagesh" 250 280 basechar 0
 AnchorPoint: "heb-point-low" 205 -87 basechar 0
 AnchorPoint: "heb-point-left" 28 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 379 0 basechar 0
+AnchorPoint: "heb-vowel-low" 379 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20193,7 +20312,7 @@ SplineSet
  91 440 32 461 32 540 c 0
  32 566 46 645 68 645 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: hehebrew
@@ -20201,13 +20320,14 @@ Encoding: 1492 1492 747
 Width: 561
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 460 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 58 563 basechar 0
-AnchorPoint: "heb-vowel-left" 280 280 basechar 0
+AnchorPoint: "heb-vowel-left" 58 563 basechar 0
+AnchorPoint: "heb-dagesh" 280 280 basechar 0
 AnchorPoint: "heb-point-low" 205 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 261 0 basechar 0
+AnchorPoint: "heb-vowel-low" 261 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20234,21 +20354,22 @@ SplineSet
  136 308 131 302 131 276 c 0
  131 249 134 243 134 198 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: vavhebrew
 Encoding: 1493 1493 748
 Width: 266
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 210 -87 basechar 0
 AnchorPoint: "heb-point-abv" 126 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 121 563 basechar 0
-AnchorPoint: "heb-vowel-left" 71 280 basechar 0
+AnchorPoint: "heb-vowel-left" 121 563 basechar 0
+AnchorPoint: "heb-dagesh" 71 280 basechar 0
 AnchorPoint: "heb-point-low" 105 -87 basechar 0
 AnchorPoint: "heb-point-left" 40 563 basechar 0
 AnchorPoint: "heb-point-right" 200 563 basechar 0
-AnchorPoint: "heb-low-vowel" 215 0 basechar 0
+AnchorPoint: "heb-vowel-low" 215 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20266,21 +20387,22 @@ SplineSet
  32.913 475.652 31.9981 522.688 31.9981 544.225 c 0
  31.9981 545.204 32 546.13 32 547 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: zayinhebrew
 Encoding: 1494 1494 749
 Width: 291
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 200 -87 basechar 0
 AnchorPoint: "heb-point-abv" 166 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 75 563 basechar 0
-AnchorPoint: "heb-vowel-left" 32 280 basechar 0
+AnchorPoint: "heb-vowel-left" 75 563 basechar 0
+AnchorPoint: "heb-dagesh" 32 280 basechar 0
 AnchorPoint: "heb-point-low" 65 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 200 563 basechar 0
-AnchorPoint: "heb-low-vowel" 146 0 basechar 0
+AnchorPoint: "heb-vowel-low" 146 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20307,13 +20429,14 @@ Encoding: 1495 1495 750
 Width: 559
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 450 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 68 563 basechar 0
-AnchorPoint: "heb-vowel-left" 280 280 basechar 0
+AnchorPoint: "heb-vowel-left" 68 563 basechar 0
+AnchorPoint: "heb-dagesh" 280 280 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 276 0 basechar 0
+AnchorPoint: "heb-vowel-low" 276 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20340,21 +20463,22 @@ SplineSet
  456.982 426.231 458 418 458 418 c 1
  468 351 504 184 504 131 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: tethebrew
 Encoding: 1496 1496 751
 Width: 576
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 510 -87 basechar 0
 AnchorPoint: "heb-point-abv" 266 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 61 563 basechar 0
-AnchorPoint: "heb-vowel-left" 363 280 basechar 0
+AnchorPoint: "heb-vowel-left" 61 563 basechar 0
+AnchorPoint: "heb-dagesh" 363 280 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 489 563 basechar 0
-AnchorPoint: "heb-low-vowel" 286 0 basechar 0
+AnchorPoint: "heb-vowel-low" 286 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20386,21 +20510,22 @@ SplineSet
  498 160 l 2
  523 161 524 191 524 234 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: yodhebrew
 Encoding: 1497 1497 752
 Width: 266
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 190 -87 basechar 0
 AnchorPoint: "heb-point-abv" 170 562 basechar 0
-AnchorPoint: "heb-vowel-abv" 70 562 basechar 0
-AnchorPoint: "heb-vowel-left" 67 280 basechar 0
+AnchorPoint: "heb-vowel-left" 70 562 basechar 0
+AnchorPoint: "heb-dagesh" 67 280 basechar 0
 AnchorPoint: "heb-point-low" 135 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 200 563 basechar 0
-AnchorPoint: "heb-low-vowel" 139 0 basechar 0
+AnchorPoint: "heb-vowel-low" 139 0 basechar 0
 AnchorPoint: "yid-low-vowel" 139 269 basechar 0
 LayerCount: 2
 Fore
@@ -20422,13 +20547,14 @@ Encoding: 1498 1498 753
 Width: 496
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 560 -87 basechar 0
 AnchorPoint: "heb-point-abv" 236 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 59 563 basechar 0
-AnchorPoint: "heb-vowel-left" 220 280 basechar 0
+AnchorPoint: "heb-vowel-left" 59 563 basechar 0
+AnchorPoint: "heb-dagesh" 220 280 basechar 0
 AnchorPoint: "heb-point-low" 145 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 380 563 basechar 0
-AnchorPoint: "heb-low-vowel" 222 170 basechar 0
+AnchorPoint: "heb-vowel-low" 212 200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20448,7 +20574,7 @@ SplineSet
  91 440 32 461 32 540 c 0
  32 566 46 645 68 645 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: kafhebrew
@@ -20456,13 +20582,14 @@ Encoding: 1499 1499 754
 Width: 501
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 450 -87 basechar 0
 AnchorPoint: "heb-point-abv" 246 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 88 563 basechar 0
-AnchorPoint: "heb-vowel-left" 250 280 basechar 0
+AnchorPoint: "heb-vowel-left" 88 563 basechar 0
+AnchorPoint: "heb-dagesh" 250 280 basechar 0
 AnchorPoint: "heb-point-low" 245 -87 basechar 0
 AnchorPoint: "heb-point-left" 60 563 basechar 0
 AnchorPoint: "heb-point-right" 380 563 basechar 0
-AnchorPoint: "heb-low-vowel" 242 0 basechar 0
+AnchorPoint: "heb-vowel-low" 242 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20485,21 +20612,22 @@ SplineSet
  452 399 355 441 218 441 c 0
  129 441 56 447 56 553 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: lamedhebrew
 Encoding: 1500 1500 755
 Width: 510
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 276 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 380 563 basechar 0
-AnchorPoint: "heb-vowel-left" 250 280 basechar 0
+AnchorPoint: "heb-vowel-left" 380 563 basechar 0
+AnchorPoint: "heb-dagesh" 250 280 basechar 0
 AnchorPoint: "heb-point-low" 205 -87 basechar 0
 AnchorPoint: "heb-point-left" 20 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 227 0 basechar 0
+AnchorPoint: "heb-vowel-low" 227 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20531,14 +20659,15 @@ StartChar: finalmemhebrew
 Encoding: 1501 1501 756
 Width: 542
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 470 -87 basechar 0
 AnchorPoint: "heb-point-abv" 286 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 67 563 basechar 0
-AnchorPoint: "heb-vowel-left" 285 280 basechar 0
+AnchorPoint: "heb-vowel-left" 67 563 basechar 0
+AnchorPoint: "heb-dagesh" 285 280 basechar 0
 AnchorPoint: "heb-point-low" 275 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 276 0 basechar 0
+AnchorPoint: "heb-vowel-low" 276 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20571,14 +20700,15 @@ StartChar: memhebrew
 Encoding: 1502 1502 757
 Width: 581
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 490 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 68 563 basechar 0
-AnchorPoint: "heb-vowel-left" 323 280 basechar 0
+AnchorPoint: "heb-vowel-left" 68 563 basechar 0
+AnchorPoint: "heb-dagesh" 323 280 basechar 0
 AnchorPoint: "heb-point-low" 315 -87 basechar 0
 AnchorPoint: "heb-point-left" 32 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 315 0 basechar 0
+AnchorPoint: "heb-vowel-low" 315 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20611,7 +20741,7 @@ SplineSet
  123 208 127 173 127 138 c 0
  127 56 100 1 81 1 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: finalnunhebrew
@@ -20619,8 +20749,9 @@ Encoding: 1503 1503 758
 Width: 273
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-vowel-left" 23 280 basechar 0
-AnchorPoint: "heb-point-low" 265 -87 basechar 0
+AnchorPoint: "heb-point-low-right" 290 -87 basechar 0
+AnchorPoint: "heb-dagesh" 23 280 basechar 0
+AnchorPoint: "heb-point-low" 25 -87 basechar 0
 AnchorPoint: "heb-point-left" 60 563 basechar 0
 AnchorPoint: "heb-point-right" 180 563 basechar 0
 LayerCount: 2
@@ -20641,7 +20772,7 @@ SplineSet
  194 -178 144 -280 115 -280 c 0
  106 -280 99 -272 99 -259 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1575937
 EndChar
 
 StartChar: nunhebrew
@@ -20649,13 +20780,14 @@ Encoding: 1504 1504 759
 Width: 347
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 290 -87 basechar 0
 AnchorPoint: "heb-point-abv" 96 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 221 563 basechar 0
-AnchorPoint: "heb-vowel-left" 117 280 basechar 0
+AnchorPoint: "heb-vowel-left" 221 563 basechar 0
+AnchorPoint: "heb-dagesh" 117 280 basechar 0
 AnchorPoint: "heb-point-low" 145 -87 basechar 0
 AnchorPoint: "heb-point-left" 76 563 basechar 0
 AnchorPoint: "heb-point-right" 220 563 basechar 0
-AnchorPoint: "heb-low-vowel" 166 0 basechar 0
+AnchorPoint: "heb-vowel-low" 166 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20678,21 +20810,22 @@ SplineSet
  295 451.02 270 431.475 270 405 c 0
  270 308 315 292 315 128 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: samekhhebrew
 Encoding: 1505 1505 760
 Width: 512
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 430 -87 basechar 0
 AnchorPoint: "heb-point-abv" 246 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 60 563 basechar 0
-AnchorPoint: "heb-vowel-left" 273 280 basechar 0
+AnchorPoint: "heb-vowel-left" 60 563 basechar 0
+AnchorPoint: "heb-dagesh" 273 280 basechar 0
 AnchorPoint: "heb-point-low" 255 -87 basechar 0
 AnchorPoint: "heb-point-left" 40 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 273 0 basechar 0
+AnchorPoint: "heb-vowel-low" 273 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20725,14 +20858,15 @@ StartChar: ayinhebrew
 Encoding: 1506 1506 761
 Width: 552
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 430 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 81 563 basechar 0
-AnchorPoint: "heb-vowel-left" 282 280 basechar 0
+AnchorPoint: "heb-vowel-left" 81 563 basechar 0
+AnchorPoint: "heb-dagesh" 282 280 basechar 0
 AnchorPoint: "heb-point-low" 300 -140 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 469 563 basechar 0
-AnchorPoint: "heb-low-vowel" 233 0 basechar 0
+AnchorPoint: "heb-vowel-low" 233 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20768,21 +20902,22 @@ SplineSet
  204 70 210 80 210 94 c 0
  210 188 132 209 132 345 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: finalpehebrew
 Encoding: 1507 1507 762
 Width: 493
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 540 -87 basechar 0
 AnchorPoint: "heb-point-abv" 216 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 90 563 basechar 0
-AnchorPoint: "heb-vowel-left" 335 280 basechar 0
+AnchorPoint: "heb-vowel-left" 90 563 basechar 0
+AnchorPoint: "heb-dagesh" 315 80 basechar 0
 AnchorPoint: "heb-point-low" 155 -87 basechar 0
 AnchorPoint: "heb-point-left" 60 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 247 0 basechar 0
+AnchorPoint: "heb-vowel-low" 247 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20814,7 +20949,7 @@ SplineSet
  39 115 52 119 74 141 c 1
  45 184 38 225 38 260 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: pehebrew
@@ -20822,13 +20957,14 @@ Encoding: 1508 1508 763
 Width: 491
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 206 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 97 563 basechar 0
-AnchorPoint: "heb-vowel-left" 356 280 basechar 0
+AnchorPoint: "heb-vowel-left" 97 563 basechar 0
+AnchorPoint: "heb-dagesh" 356 280 basechar 0
 AnchorPoint: "heb-point-low" 215 -87 basechar 0
 AnchorPoint: "heb-point-left" 70 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20862,7 +20998,7 @@ SplineSet
  72 153 81 160 97 160 c 2
  420 160 l 2
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: finaltsadihebrew
@@ -20870,9 +21006,10 @@ Encoding: 1509 1509 764
 Width: 537
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-vowel-left" 33 280 basechar 0
+AnchorPoint: "heb-point-low-right" 420 -87 basechar 0
+AnchorPoint: "heb-dagesh" 33 280 basechar 0
 AnchorPoint: "heb-point-abv" 206 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 65 563 basechar 0
+AnchorPoint: "heb-vowel-left" 65 563 basechar 0
 AnchorPoint: "heb-point-low" 245 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
@@ -20911,21 +21048,22 @@ SplineSet
  408 646 402 614 444 588 c 0
  464 577 504 551 504 494 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: tsadihebrew
 Encoding: 1510 1510 765
 Width: 561
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 70 563 basechar 0
-AnchorPoint: "heb-vowel-left" 140 280 basechar 0
+AnchorPoint: "heb-vowel-left" 70 563 basechar 0
+AnchorPoint: "heb-dagesh" 140 280 basechar 0
 AnchorPoint: "heb-point-low" 225 -87 basechar 0
 AnchorPoint: "heb-point-left" 40 563 basechar 0
 AnchorPoint: "heb-point-right" 420 563 basechar 0
-AnchorPoint: "heb-low-vowel" 259 0 basechar 0
+AnchorPoint: "heb-vowel-low" 259 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20967,7 +21105,7 @@ SplineSet
  486 212 l 2
  509 194 523 159 523 123 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: qofhebrew
@@ -20975,13 +21113,14 @@ Encoding: 1511 1511 766
 Width: 544
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 480 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 75 563 basechar 0
-AnchorPoint: "heb-vowel-left" 300 280 basechar 0
+AnchorPoint: "heb-vowel-left" 75 563 basechar 0
+AnchorPoint: "heb-dagesh" 300 280 basechar 0
 AnchorPoint: "heb-point-low" 310 -87 basechar 0
 AnchorPoint: "heb-point-left" 46 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 315 0 basechar 0
+AnchorPoint: "heb-vowel-low" 315 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -21008,21 +21147,22 @@ SplineSet
  44 284 96 375 130 375 c 0
  135 375 139 370 139 363 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: reshhebrew
 Encoding: 1512 1512 767
 Width: 502
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 236 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 57 563 basechar 0
-AnchorPoint: "heb-vowel-left" 250 280 basechar 0
+AnchorPoint: "heb-vowel-left" 57 563 basechar 0
+AnchorPoint: "heb-dagesh" 250 280 basechar 0
 AnchorPoint: "heb-point-low" 245 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 429 0 basechar 0
+AnchorPoint: "heb-vowel-low" 429 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -21047,13 +21187,14 @@ Encoding: 1513 1513 768
 Width: 716
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 610 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 67 563 basechar 0
-AnchorPoint: "heb-vowel-left" 382 274 basechar 0
+AnchorPoint: "heb-vowel-left" 67 563 basechar 0
+AnchorPoint: "heb-dagesh" 382 274 basechar 0
 AnchorPoint: "heb-point-low" 265 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 267 0 basechar 0
+AnchorPoint: "heb-vowel-low" 267 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -21099,21 +21240,22 @@ SplineSet
  365 645 354 615 399 588 c 0
  419 577 459 552 459 490 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: tavhebrew
 Encoding: 1514 1514 769
 Width: 571
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 500 -87 basechar 0
 AnchorPoint: "heb-point-abv" 306 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 107 563 basechar 0
-AnchorPoint: "heb-vowel-left" 318 280 basechar 0
+AnchorPoint: "heb-vowel-left" 107 563 basechar 0
+AnchorPoint: "heb-dagesh" 318 280 basechar 0
 AnchorPoint: "heb-point-low" 315 -87 basechar 0
 AnchorPoint: "heb-point-left" 83 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 310 0 basechar 0
+AnchorPoint: "heb-vowel-low" 310 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -35974,7 +36116,7 @@ SplineSet
  209 -175 l 2
  209 -144 241 -120 273 -116 c 1
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 EndChar
 
 StartChar: segoltahebrew
@@ -35982,13 +36124,13 @@ Encoding: 1426 1426 1607
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-point-left" 153 570 mark 0
+AnchorPoint: "heb-point-abv" 230 570 mark 0
 LayerCount: 2
 Fore
 Refer: 1645 1465 N 1 0 0 1 111 115 2
 Refer: 1645 1465 N 1 0 0 1 178 0 2
 Refer: 1645 1465 N 1 0 0 1 44 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: shalshelethebrew
@@ -36034,7 +36176,7 @@ SplineSet
  101 665 l 2
  86 665 81 667 71 674 c 2
 EndSplineSet
-Validated: 3073
+Validated: 1051649
 EndChar
 
 StartChar: zaqefqatanhebrew
@@ -36047,7 +36189,7 @@ LayerCount: 2
 Fore
 Refer: 1645 1465 S 1 0 0 1 97 105 2
 Refer: 1645 1465 S 1 0 0 1 97 -10 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: zaqefgadolhebrew
@@ -36061,7 +36203,7 @@ Fore
 Refer: 1645 1465 N 1 0 0 1 219 115 2
 Refer: 1645 1465 N 1 0 0 1 219 0 2
 Refer: 1648 1469 N 1 0 0 1 -11 897 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: tipehahebrew
@@ -36082,7 +36224,7 @@ SplineSet
  345 -215 350 -225 350 -235 c 0
  350 -252 337 -265 320 -265 c 0
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 EndChar
 
 StartChar: reviahebrew
@@ -36148,7 +36290,7 @@ AnchorPoint: "heb-point-left" 130 570 mark 0
 LayerCount: 2
 Fore
 Refer: 1611 1430 N -1 0 0 -1 375 620 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: yetivhebrew
@@ -36156,26 +36298,26 @@ Encoding: 1434 1434 1615
 Width: 0
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 475 -87 mark 0
 AnchorPoint: "heb-low-mkmk" 360 -87 basemark 0
-AnchorPoint: "heb-low-mkmk" 497 -87 mark 0
-AnchorPoint: "heb-point-low" 600 -87 mark 0
+AnchorPoint: "heb-low-mkmk" 603 -87 mark 0
 LayerCount: 2
 Fore
 SplineSet
-569 -56 m 6
- 571 -55 573 -55 575 -55 c 4
- 585 -55 593 -63 593 -72 c 4
- 593 -80 588 -86 582 -89 c 6
- 472 -135 l 5
- 579 -179 l 6
- 589 -183 593 -189 593 -200 c 6
- 593 -225 l 6
- 593 -232 590 -235 585 -235 c 4
- 583 -235 581 -235 579 -234 c 6
- 385 -153 l 6
- 378 -150 375 -147 375 -143 c 4
- 375 -139 378 -136 385 -133 c 6
- 569 -56 l 6
+569 -56 m 2
+ 571 -55 573 -55 575 -55 c 0
+ 585 -55 593 -63 593 -72 c 0
+ 593 -80 588 -86 582 -89 c 2
+ 472 -135 l 1
+ 579 -179 l 2
+ 589 -183 593 -189 593 -200 c 2
+ 593 -225 l 2
+ 593 -232 590 -235 585 -235 c 0
+ 583 -235 581 -235 579 -234 c 2
+ 385 -153 l 2
+ 378 -150 375 -147 375 -143 c 0
+ 375 -139 378 -136 385 -133 c 2
+ 569 -56 l 2
 EndSplineSet
 Validated: 1051649
 EndChar
@@ -36192,7 +36334,7 @@ LayerCount: 2
 Fore
 Refer: 1640 1460 N 1 0 0 1 -95 -36 2
 Refer: 1625 1445 N 1 0 0 1 18 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: gereshaccenthebrew
@@ -36244,12 +36386,12 @@ Encoding: 1439 1439 1620
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-point-abv" 290 570 mark 0
+AnchorPoint: "heb-point-left" 290 570 mark 0
 LayerCount: 2
 Fore
-Refer: 1629 1449 S 1 0 0 1 80 0 2
-Refer: 1621 1440 S 1 0 0 1 -13 0 2
-Validated: 32769
+Refer: 1629 1449 N 1 0 0 1 80 0 2
+Refer: 1621 1440 N 1 0 0 1 -13 0 2
+Validated: 98305
 EndChar
 
 StartChar: telishagedolahebrew
@@ -36257,7 +36399,7 @@ Encoding: 1440 1440 1621
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-point-right" 300 570 mark 0
+AnchorPoint: "heb-point-right" 340 570 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36282,7 +36424,7 @@ SplineSet
  329 872 396 886 414 886 c 0
  485 886 499 819 499 801 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: pazerhebrew
@@ -36290,29 +36432,29 @@ Encoding: 1441 1441 1622
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-point-left" 106 570 mark 0
+AnchorPoint: "heb-point-left" 226 570 mark 0
 LayerCount: 2
 Fore
 SplineSet
-156 755 m 5
- 175 755 l 6
- 211 755 224 770 224 802 c 6
- 224 838 l 6
- 224 846 230 852 239 852 c 6
- 264 852 l 6
- 272 852 279 846 279 838 c 6
- 279 791 l 6
- 279 749 259 730 215 730 c 6
- 156 730 l 5
- 156 682 l 6
- 156 674 150 668 141 668 c 6
- 116 668 l 6
- 108 668 101 674 101 682 c 6
- 101 838 l 6
- 101 846 108 852 116 852 c 6
- 141 852 l 6
- 150 852 156 846 156 838 c 6
- 156 755 l 5
+156 755 m 1
+ 175 755 l 2
+ 211 755 224 770 224 802 c 2
+ 224 838 l 2
+ 224 846 230 852 239 852 c 2
+ 264 852 l 2
+ 272 852 279 846 279 838 c 2
+ 279 791 l 2
+ 279 749 259 730 215 730 c 2
+ 156 730 l 1
+ 156 682 l 2
+ 156 674 150 668 141 668 c 2
+ 116 668 l 2
+ 108 668 101 674 101 682 c 2
+ 101 838 l 2
+ 101 846 108 852 116 852 c 2
+ 141 852 l 2
+ 150 852 156 846 156 838 c 2
+ 156 755 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -36324,7 +36466,7 @@ VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 111 -87 basemark 0
 AnchorPoint: "heb-low-mkmk" 318 -87 mark 0
-AnchorPoint: "heb-point-low" 269 -87 mark 0
+AnchorPoint: "heb-point-low" 229 -87 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36351,7 +36493,7 @@ VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 192 -87 basemark 0
 AnchorPoint: "heb-low-mkmk" 439 -87 mark 0
-AnchorPoint: "heb-point-low" 290 -87 mark 0
+AnchorPoint: "heb-point-low" 310 -87 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36384,7 +36526,7 @@ AnchorPoint: "heb-point-low" 299 -87 mark 0
 LayerCount: 2
 Fore
 Refer: 1617 1436 N -1 0 0 -1 533 620 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: merkhakefulahebrew
@@ -36399,7 +36541,7 @@ LayerCount: 2
 Fore
 Refer: 1625 1445 N 1 0 0 1 -25 0 2
 Refer: 1625 1445 N 1 0 0 1 73 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: dargahebrew
@@ -36433,7 +36575,7 @@ SplineSet
  262 -105 l 1
  356 -199 l 2
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 EndChar
 
 StartChar: qadmahebrew
@@ -36444,8 +36586,8 @@ Flags: HMW
 AnchorPoint: "heb-point-abv" 140 570 mark 0
 LayerCount: 2
 Fore
-Refer: 1611 1430 S -1 0 0 -1 392 620 2
-Validated: 98305
+Refer: 1611 1430 N -1 0 0 -1 392 620 2
+Validated: 32769
 EndChar
 
 StartChar: telishaqetanahebrew
@@ -36492,7 +36634,7 @@ AnchorPoint: "heb-point-low" 301 -87 mark 0
 LayerCount: 2
 Fore
 Refer: 1606 1425 N -1 0 0 -1 602 -280 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: olehebrew
@@ -36515,7 +36657,7 @@ Flags: HMW
 AnchorPoint: "heb-point-abv" 220 530 mark 0
 LayerCount: 2
 Fore
-Refer: 1623 1443 S 1 0 0 1 19 885 2
+Refer: 1623 1443 N 1 0 0 1 19 885 2
 Validated: 98305
 EndChar
 
@@ -36530,7 +36672,7 @@ AnchorPoint: "heb-point-low" 370 -87 mark 0
 LayerCount: 2
 Fore
 Refer: 1611 1430 N 1 0 0 1 140 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: zinorhebrew
@@ -36538,11 +36680,11 @@ Encoding: 1454 1454 1634
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-point-left" 245 570 mark 0
+AnchorPoint: "heb-point-left" 265 570 mark 0
 LayerCount: 2
 Fore
-Refer: 1613 1432 S 1 0 0 1 -98 0 2
-Validated: 32769
+Refer: 1613 1432 N 1 0 0 1 -98 0 2
+Validated: 98305
 EndChar
 
 StartChar: masoracirclehebrew
@@ -36550,7 +36692,7 @@ Encoding: 1455 1455 1635
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-point-abv" 300 570 mark 0
+AnchorPoint: "heb-point-left" 345 570 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36574,13 +36716,13 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 257 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 300 0 mark 0
+AnchorPoint: "heb-vowel-low" 300 0 mark 0
 AnchorPoint: "yid-low-vowel" 300 0 mark 0
 LayerCount: 2
 Fore
 Refer: 1640 1460 N 1 0 0 1 0 -116 2
 Refer: 1640 1460 N 1 0 0 1 0 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: hatafsegolhebrew
@@ -36589,7 +36731,7 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 90 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 280 0 mark 0
+AnchorPoint: "heb-vowel-low" 280 0 mark 0
 AnchorPoint: "yid-low-vowel" 280 0 mark 0
 LayerCount: 2
 Fore
@@ -36598,7 +36740,7 @@ Refer: 1640 1460 N 1 0 0 1 -35 0 2
 Refer: 1640 1460 N 1 0 0 1 -169 0 2
 Refer: 1640 1460 N 1 0 0 1 -101 -115 2
 Refer: 1640 1460 N 1 0 0 1 95 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: hatafpatahhebrew
@@ -36607,14 +36749,14 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 74 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 240 0 mark 0
+AnchorPoint: "heb-vowel-low" 240 0 mark 0
 AnchorPoint: "yid-low-vowel" 240 0 mark 0
 LayerCount: 2
 Fore
 Refer: 1640 1460 N 1 0 0 1 83 -115 2
 Refer: 1640 1460 N 1 0 0 1 83 0 2
 Refer: 1643 1463 N 0.9 0 0 1 -87 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: hatafqamatshebrew
@@ -36622,14 +36764,14 @@ Encoding: 1459 1459 1639
 Width: 0
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 73 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 230 0 mark 0
+AnchorPoint: "heb-vowel-low" 230 0 mark 0
 AnchorPoint: "yid-low-vowel" 230 0 mark 0
 LayerCount: 2
 Fore
 Refer: 1644 1464 N 1 0 0 1 -102 11 2
 Refer: 1640 1460 N 1 0 0 1 59 12 2
 Refer: 1640 1460 N 1 0 0 1 59 -88 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: hiriqhebrew
@@ -36638,7 +36780,7 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 256 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 297 0 mark 0
+AnchorPoint: "heb-vowel-low" 297 0 mark 0
 AnchorPoint: "yid-low-vowel" 300 0 mark 0
 LayerCount: 2
 Fore
@@ -36658,7 +36800,7 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 199 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 295 0 mark 0
+AnchorPoint: "heb-vowel-low" 295 0 mark 0
 AnchorPoint: "yid-low-vowel" 298 0 mark 0
 LayerCount: 2
 Fore
@@ -36673,14 +36815,14 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 168 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 280 0 mark 0
+AnchorPoint: "heb-vowel-low" 280 0 mark 0
 AnchorPoint: "yid-low-vowel" 280 0 mark 0
 LayerCount: 2
 Fore
 Refer: 1640 1460 N 1 0 0 1 -19 -115 2
 Refer: 1640 1460 N 1 0 0 1 -88 0 2
 Refer: 1640 1460 N 1 0 0 1 48 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: patahhebrew
@@ -36689,7 +36831,7 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 178 -84 basemark 0
-AnchorPoint: "heb-low-vowel" 310 0 mark 0
+AnchorPoint: "heb-vowel-low" 310 0 mark 0
 AnchorPoint: "yid-low-vowel" 306 -0.166667 mark 0
 LayerCount: 2
 Fore
@@ -36704,7 +36846,7 @@ SplineSet
  190 -110 183 -103 183 -95 c 2
  183 -70 l 2
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 EndChar
 
 StartChar: qamatshebrew
@@ -36713,7 +36855,7 @@ Width: 0
 VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 172 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 300 0 mark 0
+AnchorPoint: "heb-vowel-low" 300 0 mark 0
 AnchorPoint: "yid-low-vowel" 300 0 mark 0
 LayerCount: 2
 Fore
@@ -36735,7 +36877,7 @@ SplineSet
  352 -110 l 2
  324 -110 314 -120 314 -128 c 0
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 EndChar
 
 StartChar: holamhebrew
@@ -36743,7 +36885,7 @@ Encoding: 1465 1465 1645
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-vowel-abv" 125 563 mark 0
+AnchorPoint: "heb-vowel-left" 125 563 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36763,14 +36905,14 @@ VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 178 -87 basemark 0
 AnchorPoint: "heb-low-mkmk" 436 -87 mark 0
-AnchorPoint: "heb-low-vowel" 340 0 mark 0
+AnchorPoint: "heb-vowel-low" 340 0 mark 0
 AnchorPoint: "yid-low-vowel" 340 0 mark 0
 LayerCount: 2
 Fore
 Refer: 1645 1465 N 1 0 0 1 306 -890 2
 Refer: 1645 1465 N 1 0 0 1 95 -775 2
 Refer: 1645 1465 N 1 0 0 1 200 -832 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: dageshhebrew
@@ -36778,7 +36920,7 @@ Encoding: 1468 1468 1647
 Width: 0
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-vowel-left" 179 300 mark 0
+AnchorPoint: "heb-dagesh" 179 300 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -36798,7 +36940,7 @@ VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 210 -87 basemark 0
 AnchorPoint: "heb-low-mkmk" 302 -87 mark 0
-AnchorPoint: "heb-low-vowel" 257 0 mark 0
+AnchorPoint: "heb-vowel-low" 257 0 mark 0
 AnchorPoint: "yid-low-vowel" 257 0 mark 0
 LayerCount: 2
 Fore
@@ -36813,7 +36955,7 @@ SplineSet
  286 -223 279 -230 270 -230 c 2
  246 -230 l 2
 EndSplineSet
-Validated: 1051649
+Validated: 3073
 EndChar
 
 StartChar: maqafhebrew
@@ -36847,7 +36989,7 @@ AnchorPoint: "heb-point-abv" 190 540 mark 0
 LayerCount: 2
 Fore
 Refer: 1643 1463 N 0.871739 0 0 1 -74 784 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: paseqhebrew
@@ -36946,43 +37088,18 @@ Encoding: 1520 1520 1656
 Width: 532
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 68 563 basechar 0
+AnchorPoint: "heb-vowel-left" 68 563 basechar 0
 AnchorPoint: "heb-point-low" 285 -87 basechar 0
 AnchorPoint: "heb-point-left" 40 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 307 0 basechar 0
+AnchorPoint: "heb-vowel-low" 307 0 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-298 547 m 0
- 298 601 324 644 341 644 c 0
- 361 644 349 614 418 594 c 0
- 456 585 489 555 489 497 c 0
- 489 438.905 452.719 415.277 452.719 393.29 c 0
- 452.719 392.19 452.81 391.095 453 390 c 0
- 460 348 487 166 487 131 c 0
- 487 77 465 -5 432 -5 c 0
- 420 -5 410 6 410 24 c 2
- 410 24 421 332 421 394 c 0
- 421 433 382 418 341 446 c 0
- 298.913 475.652 297.998 522.688 297.998 544.225 c 0
- 298 547 l 0
-32 547 m 0
- 32 601 58 644 75 644 c 0
- 95 644 83 614 152 594 c 0
- 190 585 223 555 223 497 c 0
- 223 438.905 186.719 415.277 186.719 393.29 c 0
- 186.719 392.19 186.81 391.095 187 390 c 0
- 194 348 221 166 221 131 c 0
- 221 77 199 -5 166 -5 c 0
- 154 -5 144 6 144 24 c 2
- 144 24 155 332 155 394 c 0
- 155 433 116 418 75 446 c 0
- 32.913 475.652 31.9981 522.688 31.9981 544.225 c 0
- 31.9981 545.204 32 546.13 32 547 c 0
-EndSplineSet
-Validated: 3073
+Refer: 748 1493 N 1 0 0 1 266 0 2
+Refer: 748 1493 N 1 0 0 1 0 0 2
+Validated: 1146881
 EndChar
 
 StartChar: vavyodhebrew
@@ -36990,38 +37107,18 @@ Encoding: 1521 1521 1657
 Width: 532
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 62 563 basechar 0
+AnchorPoint: "heb-vowel-left" 62 563 basechar 0
 AnchorPoint: "heb-point-low" 255 -87 basechar 0
 AnchorPoint: "heb-point-left" 33 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 307 0 basechar 0
+AnchorPoint: "heb-vowel-low" 307 0 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-235 468 m 0
- 235 368 170 301 157 301 c 0
- 153 301 143 305 143 319 c 0
- 143 344 170 364 170 391 c 0
- 170 462 29 412 29 562 c 0
- 29 627 62 645 70 645 c 0
- 94 645 79 607 145 592 c 0
- 211 579 235 518 235 468 c 0
-298 547 m 0
- 298 601 324 644 341 644 c 0
- 361 644 349 614 418 594 c 0
- 456 585 489 555 489 497 c 0
- 489 438.905 452.719 415.277 452.719 393.29 c 0
- 452.719 392.19 452.81 391.095 453 390 c 0
- 460 348 487 166 487 131 c 0
- 487 77 465 -5 432 -5 c 0
- 420 -5 410 6 410 24 c 2
- 410 24 421 332 421 394 c 0
- 421 433 382 418 341 446 c 0
- 298.913 475.652 297.998 522.688 297.998 544.225 c 0
- 298 547 l 0
-EndSplineSet
-Validated: 3073
+Refer: 748 1493 N 1 0 0 1 266 0 2
+Refer: 752 1497 N 1 0 0 1 0 0 2
+Validated: 1146881
 EndChar
 
 StartChar: yodyodhebrew
@@ -37029,33 +37126,18 @@ Encoding: 1522 1522 1658
 Width: 532
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-point-abv" 256 563 basechar 0
+AnchorPoint: "heb-point-low-right" 410 -87 basechar 0
+AnchorPoint: "heb-point-abv" 286 563 basechar 0
 AnchorPoint: "heb-point-low" 215 -87 basechar 0
-AnchorPoint: "heb-point-left" 39 563 basechar 0
-AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 279 0 basechar 0
-AnchorPoint: "yid-low-vowel" 273 290 basechar 0
+AnchorPoint: "heb-point-left" 69 563 basechar 0
+AnchorPoint: "heb-point-right" 430 563 basechar 0
+AnchorPoint: "heb-vowel-low" 289 0 basechar 0
+AnchorPoint: "yid-low-vowel" 283 290 basechar 0
 LayerCount: 2
 Fore
-SplineSet
-472 468 m 0
- 472 368 407 301 394 301 c 0
- 390 301 380 305 380 319 c 0
- 380 344 407 364 407 391 c 0
- 407 462 266 412 266 562 c 0
- 266 627 299 645 307 645 c 0
- 331 645 316 607 382 592 c 0
- 448 579 472 518 472 468 c 0
-206 468 m 0
- 206 368 141 301 128 301 c 0
- 124 301 114 305 114 319 c 0
- 114 344 141 364 141 391 c 0
- 141 462 0 411 0 562 c 0
- 0 627 33 645 41 645 c 0
- 65 645 50 607 116 592 c 0
- 182 579 206 518 206 468 c 0
-EndSplineSet
-Validated: 3073
+Refer: 752 1497 N 1 0 0 1 260 0 2
+Refer: 752 1497 N 1 0 0 1 0 0 2
+Validated: 1146881
 EndChar
 
 StartChar: ZWNJ
@@ -37163,16 +37245,17 @@ Encoding: 64285 64285 1665
 Width: 266
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-vowel-abv" 98 563 basechar 0
+AnchorPoint: "heb-vowel-left" 98 563 basechar 0
 AnchorPoint: "heb-point-low" 115 -87 basechar 0
 AnchorPoint: "heb-point-left" 68 563 basechar 0
 AnchorPoint: "heb-point-right" 180 563 basechar 0
-AnchorPoint: "heb-low-vowel" 161 0 basechar 0
+AnchorPoint: "heb-vowel-low" 161 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1640 1460 N 1 0 0 1 -151 279 2
 Refer: 752 1497 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
+MultipleSubs2: "'ccmp' glyph decomp. in Hebrew-1" yodhebrew hiriqhebrew
 LCarets2: 1 0 
 Ligature2: "'ccmp' dotted glyph compos. in Hebrew for Yiddish-1" yodhebrew hiriqhebrew
 EndChar
@@ -37206,16 +37289,17 @@ Encoding: 64287 64287 1667
 Width: 532
 VWidth: 1200
 Flags: HMW
-AnchorPoint: "heb-vowel-abv" 68 563 basechar 0
+AnchorPoint: "heb-vowel-left" 68 563 basechar 0
 AnchorPoint: "heb-point-low" 205 -87 basechar 0
 AnchorPoint: "heb-point-left" 37 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 251 0 basechar 0
+AnchorPoint: "heb-vowel-low" 251 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1643 1463 N 1 0 0 1 -27 270 2
 Refer: 1658 1522 N 1 0 0 1 29 0 2
 Validated: 1146881
+MultipleSubs2: "'ccmp' glyph decomp. in Hebrew-1" yodyodhebrew patahhebrew
 Ligature2: "'ccmp' dotted glyph compos. in Hebrew for Yiddish-1" yodyodhebrew patahhebrew
 LCarets2: 1 0 
 EndChar
@@ -37224,13 +37308,14 @@ StartChar: ayinaltonehebrew
 Encoding: 64288 64288 1668
 Width: 552
 VWidth: 1200
-Flags: MW
-AnchorPoint: "heb-vowel-abv" 118 563 basechar 0
-AnchorPoint: "heb-vowel-left" 310 280 basechar 0
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 420 -87 basechar 0
+AnchorPoint: "heb-vowel-left" 118 563 basechar 0
+AnchorPoint: "heb-dagesh" 310 280 basechar 0
 AnchorPoint: "heb-point-low" 195 -87 basechar 0
 AnchorPoint: "heb-point-left" 80 563 basechar 0
 AnchorPoint: "heb-point-right" 459 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37270,7 +37355,7 @@ SplineSet
  430.965 440.861 353.098 419.41 323 505 c 0
  317 523 317 543 317 558 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1575937
 EndChar
 
 StartChar: uniFB29
@@ -37299,18 +37384,19 @@ Encoding: 64298 64298 1670
 Width: 716
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 590 -87 basechar 0
 AnchorPoint: "heb-point-abv" 266 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 464 563 basechar 0
-AnchorPoint: "heb-vowel-left" 382 274 basechar 0
+AnchorPoint: "heb-vowel-left" 464 563 basechar 0
+AnchorPoint: "heb-dagesh" 382 274 basechar 0
 AnchorPoint: "heb-point-low" 240 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 519 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1652 1473 N 1 0 0 1 0 0 2
 Refer: 768 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 EndChar
 
@@ -37319,18 +37405,19 @@ Encoding: 64299 64299 1671
 Width: 716
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 590 -87 basechar 0
 AnchorPoint: "heb-point-abv" 276 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 94 563 basechar 0
-AnchorPoint: "heb-vowel-left" 382 274 basechar 0
+AnchorPoint: "heb-vowel-left" 94 563 basechar 0
+AnchorPoint: "heb-dagesh" 382 274 basechar 0
 AnchorPoint: "heb-point-low" 240 -87 basechar 0
 AnchorPoint: "heb-point-left" 10 563 basechar 0
 AnchorPoint: "heb-point-right" 489 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1653 1474 N 1 0 0 1 0 0 2
 Refer: 768 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 EndChar
 
@@ -37339,18 +37426,19 @@ Encoding: 64300 64300 1672
 Width: 716
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 590 -87 basechar 0
 AnchorPoint: "heb-point-abv" 266 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 478 563 basechar 0
+AnchorPoint: "heb-vowel-left" 478 563 basechar 0
 AnchorPoint: "heb-point-low" 240 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 519 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1647 1468 N 1 0 0 1 232 -15 2
 Refer: 1652 1473 N 1 0 0 1 0 0 2
 Refer: 768 1513 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37359,18 +37447,19 @@ Encoding: 64301 64301 1673
 Width: 716
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 590 -87 basechar 0
 AnchorPoint: "heb-point-abv" 286 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 89 563 basechar 0
+AnchorPoint: "heb-vowel-left" 89 563 basechar 0
 AnchorPoint: "heb-point-low" 237 -87 basechar 0
 AnchorPoint: "heb-point-left" 10 563 basechar 0
 AnchorPoint: "heb-point-right" 519 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1653 1474 N 1 0 0 1 0 0 2
 Refer: 768 1513 N 1 0 0 1 0 0 2
-Refer: 1647 1468 S 1 0 0 1 232 -15 2
-Validated: 32769
+Refer: 1647 1468 N 1 0 0 1 232 -15 2
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37379,12 +37468,13 @@ Encoding: 64302 64302 1674
 Width: 593
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 510 -87 basechar 0
 AnchorPoint: "heb-point-abv" 186 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 84 563 basechar 0
+AnchorPoint: "heb-vowel-left" 84 563 basechar 0
 AnchorPoint: "heb-point-low" 112 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 491 0 basechar 0
+AnchorPoint: "heb-vowel-low" 491 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1643 1463 N 1 0 0 1 -3 0 2
@@ -37398,12 +37488,13 @@ Encoding: 64303 64303 1675
 Width: 593
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 510 -87 basechar 0
 AnchorPoint: "heb-point-abv" 196 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 88 563 basechar 0
+AnchorPoint: "heb-vowel-left" 88 563 basechar 0
 AnchorPoint: "heb-point-low" 120 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 491 0 basechar 0
+AnchorPoint: "heb-vowel-low" 491 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1644 1464 N 1 0 0 1 3 0 2
@@ -37417,15 +37508,16 @@ Encoding: 64304 64304 1676
 Width: 593
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 510 -87 basechar 0
 AnchorPoint: "heb-point-abv" 186 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 88 563 basechar 0
+AnchorPoint: "heb-vowel-left" 88 563 basechar 0
 AnchorPoint: "heb-point-low" 129 -87 basechar 0
 AnchorPoint: "heb-point-left" 40 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 401 0 basechar 0
+AnchorPoint: "heb-vowel-low" 401 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 136 -385 2
+Refer: 1647 1468 N 1 0 0 1 136 -385 2
 Refer: 743 1488 N 1 0 0 1 0 0 2
 Validated: 1146881
 LCarets2: 1 0 
@@ -37436,17 +37528,18 @@ Encoding: 64305 64305 1677
 Width: 498
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 420 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 62 563 basechar 0
+AnchorPoint: "heb-vowel-left" 62 563 basechar 0
 AnchorPoint: "heb-point-low" 225 -87 basechar 0
 AnchorPoint: "heb-point-left" 37 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 80 0 2
+Refer: 1647 1468 N 1 0 0 1 80 0 2
 Refer: 744 1489 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37455,17 +37548,18 @@ Encoding: 64306 64306 1678
 Width: 339
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 280 -87 basechar 0
 AnchorPoint: "heb-point-abv" 176 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 112 563 basechar 0
+AnchorPoint: "heb-vowel-left" 112 563 basechar 0
 AnchorPoint: "heb-point-low" 145 -87 basechar 0
 AnchorPoint: "heb-point-left" 80 563 basechar 0
 AnchorPoint: "heb-point-right" 200 563 basechar 0
-AnchorPoint: "heb-low-vowel" 201 0 basechar 0
+AnchorPoint: "heb-vowel-low" 201 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 -40 0 2
+Refer: 1647 1468 N 1 0 0 1 -40 0 2
 Refer: 745 1490 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37474,17 +37568,18 @@ Encoding: 64307 64307 1679
 Width: 523
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 420 -87 basechar 0
 AnchorPoint: "heb-point-abv" 246 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 48 563 basechar 0
+AnchorPoint: "heb-vowel-left" 48 563 basechar 0
 AnchorPoint: "heb-point-low" 245 -87 basechar 0
 AnchorPoint: "heb-point-left" 25 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 381 0 basechar 0
+AnchorPoint: "heb-vowel-low" 381 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 58 0 2
+Refer: 1647 1468 N 1 0 0 1 58 0 2
 Refer: 746 1491 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37493,17 +37588,18 @@ Encoding: 64308 64308 1680
 Width: 561
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 460 -87 basechar 0
 AnchorPoint: "heb-point-abv" 246 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 48 563 basechar 0
+AnchorPoint: "heb-vowel-left" 48 563 basechar 0
 AnchorPoint: "heb-point-low" 225 -87 basechar 0
 AnchorPoint: "heb-point-left" 20 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 104 0 2
+Refer: 1647 1468 N 1 0 0 1 104 0 2
 Refer: 747 1492 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37512,17 +37608,18 @@ Encoding: 64309 64309 1681
 Width: 266
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 200 -87 basechar 0
 AnchorPoint: "heb-point-abv" 156 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 88 563 basechar 0
+AnchorPoint: "heb-vowel-left" 88 563 basechar 0
 AnchorPoint: "heb-point-low" 145 -87 basechar 0
 AnchorPoint: "heb-point-left" 40 563 basechar 0
 AnchorPoint: "heb-point-right" 180 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 -102 0 2
+Refer: 1647 1468 N 1 0 0 1 -102 0 2
 Refer: 748 1493 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37531,17 +37628,18 @@ Encoding: 64310 64310 1682
 Width: 291
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 200 -87 basechar 0
 AnchorPoint: "heb-point-abv" 143 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 85 563 basechar 0
+AnchorPoint: "heb-vowel-left" 85 563 basechar 0
 AnchorPoint: "heb-point-low" 115 -87 basechar 0
 AnchorPoint: "heb-point-left" 40 563 basechar 0
 AnchorPoint: "heb-point-right" 200 563 basechar 0
-AnchorPoint: "heb-low-vowel" 161 0 basechar 0
+AnchorPoint: "heb-vowel-low" 161 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 -138 0 2
+Refer: 1647 1468 N 1 0 0 1 -138 0 2
 Refer: 749 1494 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37550,17 +37648,18 @@ Encoding: 64312 64312 1683
 Width: 576
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 500 -87 basechar 0
 AnchorPoint: "heb-point-abv" 246 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 68 563 basechar 0
+AnchorPoint: "heb-vowel-left" 68 563 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 479 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 193 -24 2
+Refer: 1647 1468 N 1 0 0 1 193 -24 2
 Refer: 751 1496 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37569,17 +37668,18 @@ Encoding: 64313 64313 1684
 Width: 266
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 190 -87 basechar 0
 AnchorPoint: "heb-point-abv" 156 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 98 563 basechar 0
-AnchorPoint: "heb-point-low" 125 -87 basechar 0
+AnchorPoint: "heb-vowel-left" 98 563 basechar 0
+AnchorPoint: "heb-point-low" 105 -87 basechar 0
 AnchorPoint: "heb-point-left" 60 563 basechar 0
 AnchorPoint: "heb-point-right" 180 563 basechar 0
-AnchorPoint: "heb-low-vowel" 151 0 basechar 0
+AnchorPoint: "heb-vowel-low" 151 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 -112 70 2
+Refer: 1647 1468 N 1 0 0 1 -112 70 2
 Refer: 752 1497 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37588,17 +37688,18 @@ Encoding: 64314 64314 1685
 Width: 496
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 530 -87 basechar 0
 AnchorPoint: "heb-point-abv" 248 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 68 563 basechar 0
+AnchorPoint: "heb-vowel-left" 68 563 basechar 0
 AnchorPoint: "heb-point-low" 205 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 54 0 2
+Refer: 1647 1468 N 1 0 0 1 54 0 2
 Refer: 753 1498 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37607,17 +37708,18 @@ Encoding: 64315 64315 1686
 Width: 501
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 60 563 basechar 0
+AnchorPoint: "heb-vowel-left" 60 563 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 33 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 251 0 basechar 0
+AnchorPoint: "heb-vowel-low" 251 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 78 0 2
+Refer: 1647 1468 N 1 0 0 1 78 0 2
 Refer: 754 1499 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37626,17 +37728,18 @@ Encoding: 64316 64316 1687
 Width: 510
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 316 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 188 563 basechar 0
+AnchorPoint: "heb-vowel-left" 188 563 basechar 0
 AnchorPoint: "heb-point-low" 215 -87 basechar 0
 AnchorPoint: "heb-point-left" 20 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 221 0 basechar 0
+AnchorPoint: "heb-vowel-low" 221 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 62 26 2
+Refer: 1647 1468 N 1 0 0 1 62 26 2
 Refer: 755 1500 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37645,17 +37748,18 @@ Encoding: 64318 64318 1688
 Width: 581
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 530 -87 basechar 0
 AnchorPoint: "heb-point-abv" 266 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 58 563 basechar 0
+AnchorPoint: "heb-vowel-left" 58 563 basechar 0
 AnchorPoint: "heb-point-low" 225 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 459 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 152 0 2
+Refer: 1647 1468 N 1 0 0 1 152 0 2
 Refer: 757 1502 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37664,17 +37768,18 @@ Encoding: 64320 64320 1689
 Width: 347
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 280 -87 basechar 0
 AnchorPoint: "heb-point-abv" 166 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 94 563 basechar 0
+AnchorPoint: "heb-vowel-left" 94 563 basechar 0
 AnchorPoint: "heb-point-low" 135 -87 basechar 0
 AnchorPoint: "heb-point-left" 60 563 basechar 0
 AnchorPoint: "heb-point-right" 200 563 basechar 0
-AnchorPoint: "heb-low-vowel" 151 0 basechar 0
+AnchorPoint: "heb-vowel-low" 151 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 -52 0 2
+Refer: 1647 1468 N 1 0 0 1 -52 0 2
 Refer: 759 1504 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37683,17 +37788,18 @@ Encoding: 64321 64321 1690
 Width: 512
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 440 -87 basechar 0
 AnchorPoint: "heb-point-abv" 266 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 64 563 basechar 0
+AnchorPoint: "heb-vowel-left" 64 563 basechar 0
 AnchorPoint: "heb-point-low" 245 -87 basechar 0
 AnchorPoint: "heb-point-left" 37 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 251 0 basechar 0
+AnchorPoint: "heb-vowel-low" 251 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 104 0 2
+Refer: 1647 1468 N 1 0 0 1 104 0 2
 Refer: 760 1505 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37702,17 +37808,18 @@ Encoding: 64323 64323 1691
 Width: 493
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 530 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 53 563 basechar 0
+AnchorPoint: "heb-vowel-left" 53 563 basechar 0
 AnchorPoint: "heb-point-low" 215 -87 basechar 0
 AnchorPoint: "heb-point-left" 20 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 116 40 2
+Refer: 1647 1468 S 1 0 0 1 155 -162 2
 Refer: 762 1507 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37721,17 +37828,18 @@ Encoding: 64324 64324 1692
 Width: 491
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 420 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 57 563 basechar 0
+AnchorPoint: "heb-vowel-left" 57 563 basechar 0
 AnchorPoint: "heb-point-low" 225 -87 basechar 0
 AnchorPoint: "heb-point-left" 25 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 163 46 2
+Refer: 1647 1468 N 1 0 0 1 163 46 2
 Refer: 763 1508 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37740,17 +37848,18 @@ Encoding: 64326 64326 1693
 Width: 561
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 470 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 51 563 basechar 0
+AnchorPoint: "heb-vowel-left" 51 563 basechar 0
 AnchorPoint: "heb-point-low" 225 -87 basechar 0
 AnchorPoint: "heb-point-left" 17 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 -8 -68 2
+Refer: 1647 1468 N 1 0 0 1 -8 -68 2
 Refer: 765 1510 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37759,17 +37868,18 @@ Encoding: 64327 64327 1694
 Width: 544
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 480 -87 basechar 0
 AnchorPoint: "heb-point-abv" 246 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 59 563 basechar 0
+AnchorPoint: "heb-vowel-left" 59 563 basechar 0
 AnchorPoint: "heb-point-low" 310 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 315 0 basechar 0
+AnchorPoint: "heb-vowel-low" 315 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 116 0 2
+Refer: 1647 1468 N 1 0 0 1 116 0 2
 Refer: 766 1511 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37778,17 +37888,18 @@ Encoding: 64328 64328 1695
 Width: 502
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 430 -87 basechar 0
 AnchorPoint: "heb-point-abv" 236 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 52 563 basechar 0
+AnchorPoint: "heb-vowel-left" 52 563 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 28 563 basechar 0
 AnchorPoint: "heb-point-right" 400 563 basechar 0
-AnchorPoint: "heb-low-vowel" 421 0 basechar 0
+AnchorPoint: "heb-vowel-low" 421 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 54 0 2
+Refer: 1647 1468 N 1 0 0 1 54 0 2
 Refer: 767 1512 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37797,17 +37908,18 @@ Encoding: 64329 64329 1696
 Width: 716
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 580 -87 basechar 0
 AnchorPoint: "heb-point-abv" 276 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 68 563 basechar 0
+AnchorPoint: "heb-vowel-left" 68 563 basechar 0
 AnchorPoint: "heb-point-low" 245 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 499 563 basechar 0
-AnchorPoint: "heb-low-vowel" 251 0 basechar 0
+AnchorPoint: "heb-vowel-low" 251 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 209 -16 2
+Refer: 1647 1468 N 1 0 0 1 209 -16 2
 Refer: 768 1513 N 1 0 0 1 -33 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37816,17 +37928,18 @@ Encoding: 64330 64330 1697
 Width: 571
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 500 -87 basechar 0
 AnchorPoint: "heb-point-abv" 276 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 73 563 basechar 0
+AnchorPoint: "heb-vowel-left" 73 563 basechar 0
 AnchorPoint: "heb-point-low" 275 -87 basechar 0
 AnchorPoint: "heb-point-left" 41 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 278 0 basechar 0
+AnchorPoint: "heb-vowel-low" 278 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1647 1468 S 1 0 0 1 138 0 2
+Refer: 1647 1468 N 1 0 0 1 138 0 2
 Refer: 769 1514 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37835,17 +37948,18 @@ Encoding: 64331 64331 1698
 Width: 266
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 220 -87 basechar 0
 AnchorPoint: "heb-point-abv" 220 563 basechar 0
-AnchorPoint: "heb-vowel-left" 70 280 basechar 0
+AnchorPoint: "heb-dagesh" 70 280 basechar 0
 AnchorPoint: "heb-point-low" 115 -87 basechar 0
 AnchorPoint: "heb-point-left" 29 563 basechar 0
 AnchorPoint: "heb-point-right" 220 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1645 1465 S 1 0 0 1 24 0 2
+Refer: 1645 1465 N 1 0 0 1 24 0 2
 Refer: 748 1493 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 LCarets2: 1 0 
 EndChar
 
@@ -37854,16 +37968,17 @@ Encoding: 64332 64332 1699
 Width: 498
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 430 -87 basechar 0
 AnchorPoint: "heb-point-abv" 236 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 59 563 basechar 0
-AnchorPoint: "heb-vowel-left" 260 280 basechar 0
+AnchorPoint: "heb-vowel-left" 59 563 basechar 0
+AnchorPoint: "heb-dagesh" 260 280 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 30 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
-Refer: 1650 1471 S 1 0 0 1 38 0 2
+Refer: 1650 1471 N 1 0 0 1 38 0 2
 Refer: 744 1489 N 1 0 0 1 0 0 2
 Validated: 98305
 LCarets2: 1 0 
@@ -37874,13 +37989,14 @@ Encoding: 64333 64333 1700
 Width: 501
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 430 -87 basechar 0
 AnchorPoint: "heb-point-abv" 236 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 58 563 basechar 0
-AnchorPoint: "heb-vowel-left" 260 280 basechar 0
+AnchorPoint: "heb-vowel-left" 58 563 basechar 0
+AnchorPoint: "heb-dagesh" 260 280 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 34 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1650 1471 N 1 0 0 1 55 0 2
@@ -37894,13 +38010,14 @@ Encoding: 64334 64334 1701
 Width: 491
 VWidth: 1200
 Flags: HMW
+AnchorPoint: "heb-point-low-right" 430 -87 basechar 0
 AnchorPoint: "heb-point-abv" 226 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 55 563 basechar 0
-AnchorPoint: "heb-vowel-left" 350 320 basechar 0
+AnchorPoint: "heb-vowel-left" 55 563 basechar 0
+AnchorPoint: "heb-dagesh" 350 320 basechar 0
 AnchorPoint: "heb-point-low" 225 -87 basechar 0
 AnchorPoint: "heb-point-left" 26 563 basechar 0
 AnchorPoint: "heb-point-right" 449 563 basechar 0
-AnchorPoint: "heb-low-vowel" 231 0 basechar 0
+AnchorPoint: "heb-vowel-low" 231 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 1650 1471 N 1 0 0 1 71 0 2
@@ -37913,14 +38030,15 @@ StartChar: aleflamedhebrew
 Encoding: 64335 64335 1702
 Width: 593
 VWidth: 1200
-Flags: MW
+Flags: HMW
+AnchorPoint: "heb-point-low-right" 480 -87 basechar 0
 AnchorPoint: "heb-point-abv" 256 563 basechar 0
-AnchorPoint: "heb-vowel-abv" 208 563 basechar 0
-AnchorPoint: "heb-vowel-left" 70 280 basechar 0
+AnchorPoint: "heb-vowel-left" 208 563 basechar 0
+AnchorPoint: "heb-dagesh" 70 280 basechar 0
 AnchorPoint: "heb-point-low" 235 -87 basechar 0
 AnchorPoint: "heb-point-left" 0 563 basechar 0
 AnchorPoint: "heb-point-right" 459 563 basechar 0
-AnchorPoint: "heb-low-vowel" 241 0 basechar 0
+AnchorPoint: "heb-vowel-low" 241 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -37954,7 +38072,7 @@ SplineSet
  58 892 66 899 79 899 c 0
  131 899 161 833 161 812 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Ligature2: "'dlig' discretionary ligatures in Hebrew-1" alefhebrew lamedhebrew
 LCarets2: 1 0 
 EndChar
@@ -40727,7 +40845,7 @@ TeX: 117 0
 LayerCount: 2
 Fore
 Refer: 744 1489 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: gimelmath
@@ -40738,7 +40856,7 @@ TeX: 117 0
 LayerCount: 2
 Fore
 Refer: 745 1490 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: dalethmath
@@ -40749,7 +40867,7 @@ TeX: 117 0
 LayerCount: 2
 Fore
 Refer: 746 1491 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: uni22C7
@@ -49225,19 +49343,9 @@ Width: 432
 Flags: HMW
 LayerCount: 2
 Fore
-SplineSet
-421 708 m 0
- 421 642 273.061 475 236 475 c 0
- 211.649 475 206 494.949 206 506 c 0
- 206 537 312 752 382 752 c 0
- 413.2 752 421 729.5 421 708 c 0
-246 708 m 0
- 246 642 98.0605 475 61 475 c 0
- 36.6494 475 31 494.949 31 506 c 0
- 31 537 137 752 207 752 c 0
- 238.2 752 246 729.5 246 708 c 0
-EndSplineSet
-Validated: 3073
+Refer: 2169 1523 N 1 0 0 1 100 0 2
+Refer: 2169 1523 N 1 0 0 1 -74 0 2
+Validated: 98305
 EndChar
 
 StartChar: gravetone.cmb
@@ -59425,7 +59533,7 @@ AnchorPoint: "heb-point-low" 300 -87 mark 0
 LayerCount: 2
 Fore
 Refer: 1606 1425 N -1 0 0 -1 602 -280 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: nunhafukhaheb
@@ -59496,7 +59604,7 @@ VWidth: 1200
 Flags: HMW
 AnchorPoint: "heb-low-mkmk" 433 -87 mark 0
 AnchorPoint: "heb-low-mkmk" 163 -87 basemark 0
-AnchorPoint: "heb-low-vowel" 300 0 mark 0
+AnchorPoint: "heb-vowel-low" 300 0 mark 0
 AnchorPoint: "yid-low-vowel" 300 0 mark 0
 LayerCount: 2
 Fore
@@ -59518,7 +59626,7 @@ SplineSet
  362 -130 l 2
  334 -130 324 -137 324 -158 c 0
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 EndChar
 
 StartChar: uni02F9
