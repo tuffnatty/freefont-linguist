@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1474122569
+ModificationTime: 1474228220
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -134,7 +133,7 @@ Lookup: 260 1 0 "'mark' marks below in Arabic"  {"'mark' ring in Arabic"  "'mark
 Lookup: 260 0 0 "'mark' marks middle in Arabic"  {"'mark' marks middle in Arabic-1"  "'mark' slash in Arabic-1"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks above in Arabic"  {"'mark' above in Arabic"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks in Arabic - hamza"  {"'mark' marks in Arabic - hamza-1"  } ['mark' ('arab' <'dflt' > ) ]
-Lookup: 260 0 0 "'mark' marks in Hebrew"  {"'mark' marks in Hebrew-1"  } ['mark' ('hebr' <'dflt' > ) ]
+Lookup: 260 1 0 "'mark' marks in Hebrew"  {"'mark' marks in Hebrew-1"  "'mark' marks in Hebrew-lam"  } ['mark' ('hebr' <'dflt' > ) ]
 Lookup: 260 0 0 "'abvm' above-base marks in Devanagari"  {"'abvm' above-base marks in Devanagari-1"  } ['abvm' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
 Lookup: 260 0 0 "'blwm' below-base marks in Devanagari"  {"'blwm' nukta in Devanagari"  "'blwm' below-base mark in Devanagari"  "'blwm' rakaar in Devanagari"  } ['blwm' ('dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' mark-to-mark generic"  {"'mkmk' mark-to-mark generic-high"  "'mkmk' mark-to-mark generic-low"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'dflt' > 'armn' <'dflt' > 'brai' <'dflt' > 'cher' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'dev2' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'deva' <'GUJ ' 'SAN ' 'SAT ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hani' <'dflt' > 'hebr' <'dflt' > 'ital' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > 'runr' <'dflt' > ) ]
@@ -197,6 +196,9 @@ ChainSub2: class "'mset' mark stretch in Arabic-1"  2 3 1 8
   FClsList:
  1
   SeqLookup: 0 "stretch 1dig in Arabic" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   Class: 523 tah_high_arabic.cmb uni0617 uni0618 uni0619 fathatan.cmb dammatan.cmb fatha.cmb damma.cmb shadda.cmb sukun.cmb hamzaabv.cmb dammainv.cmb noonghunnamark.cmb zwarakay.cmb vsmallvowelabv.cmb vsmallvowelinvabv.cmb dammarev.cmb fatha2dots.cmb alefsuperscriptarabic uni06D6 uni06D7 uni06D8 uni06D9 uni06DA uni06DB uni06DC uni06DF uni06E0 uni06E1 uni06E2 uni06E7 uni06EB uni06EC uni08E4 uni08E5 uni08E7 uni08E8 uni08EA uni08EB uni08EC uni08F0 uni08F1 uni08F3 uni08F4 uni08F5 uni08F7 uni08F8 uni08FB uni08FC uni08FD uni08FE uni08FF
@@ -291,6 +293,9 @@ ChainPos2: class "'mkmk' mark-to-mark chain in Arabic-1"  3 7 1 14
   FClsList:
  1
   SeqLookup: 0 "mark on ijam Arabic" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "0"  
 EndFPST
 ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   Class: 95 uni061A kasratan.cmb kasra.cmb hamzablw.cmb alefsubscript.cmb dotblwarabic.cmb hamzawavyblw.cmb
@@ -309,6 +314,9 @@ ChainPos2: class "'mkmk' mark-to-mark chain avoid in Arabic"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "don't move" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   Class: 3 i j
@@ -326,6 +334,9 @@ ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
   Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.psts dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
@@ -361,6 +372,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 
   FClsList:
  1
   SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -456,6 +470,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -551,6 +568,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   Class: 6 virama
@@ -590,6 +610,9 @@ ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "subst. openya for virama-ya in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' pre-base chain in Devanagari da+-half+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -615,6 +638,9 @@ ChainSub2: class "'cjct' avoid-vert conjunct forms in Devanagari2-1"  4 4 1 1
   BClsList: 2 1
   FClsList:
  0
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1 1
   Class: 6 virama
@@ -626,6 +652,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-rakaar in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 2 1 2
   Class: 10 dev_rakaar
@@ -644,6 +673,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 2 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-ra in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -696,14 +728,14 @@ LangName: 1027 "" "" "normal"
 LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA" 
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "Regular" "GNU: FreeMono Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3
+GaspTable: 3 9 2 21 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64240 16 11
+WinInfo: 1376 16 10
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 39 [-20 0 417 437 480 490 563 583 640 650]
@@ -722,7 +754,7 @@ Grid
  2000 300.5 l 0
 EndSplineSet
 TeXData: 1 0 0 629146 314573 209715 437256 1048576 209715 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "dagesh-heb"  "'mark' marks in Hebrew-1" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-above"  "'mark' above in Arabic" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-ijam-abv"  "'mark' above in Arabic" "far-right-dot"  "'mark' marks generic high-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "dev-abv-mark"  "'mkmk' mark-to-mark in Devanagari-1" "viet-hook"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-grave"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-acute"  "'mkmk' mark-to-mark in Latin-for Viet" "dev-above"  "'abvm' above-base marks in Devanagari-1" "dev-rakaar"  "'blwm' rakaar in Devanagari" "dev-below"  "'blwm' below-base mark in Devanagari" "dev-nukta"  "'blwm' nukta in Devanagari" "abovecyr"  "'mark' marks in Cyrillic subtable" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "abovegk"  "'mark' marks in Greek subtable" "below"  "'mark' marks generic low-1" "above"  "'mark' marks generic high-1" 
+AnchorClass2: "FreeSerifBold-heb-lam-above"  "'mark' marks in Hebrew-lam" "dagesh-heb"  "'mark' marks in Hebrew-1" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-above"  "'mark' above in Arabic" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-ijam-abv"  "'mark' above in Arabic" "far-right-dot"  "'mark' marks generic high-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "dev-abv-mark"  "'mkmk' mark-to-mark in Devanagari-1" "viet-hook"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-grave"  "'mkmk' mark-to-mark in Latin-for Viet" "viet-acute"  "'mkmk' mark-to-mark in Latin-for Viet" "dev-above"  "'abvm' above-base marks in Devanagari-1" "dev-rakaar"  "'blwm' rakaar in Devanagari" "dev-below"  "'blwm' below-base mark in Devanagari" "dev-nukta"  "'blwm' nukta in Devanagari" "abovecyr"  "'mark' marks in Cyrillic subtable" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "abovegk"  "'mark' marks in Greek subtable" "below"  "'mark' marks generic low-1" "above"  "'mark' marks generic high-1" 
 BeginChars: 131072 6000
 
 StartChar: space
@@ -27104,16 +27136,16 @@ StartChar: holamhebrew
 Encoding: 1465 1465 995
 Width: 0
 Flags: HMW
+AnchorPoint: "FreeSerifBold-heb-lam-above" 140 420 mark 0
 LayerCount: 2
 Fore
 SplineSet
-274 599 m 2
- 290 599 303 586 303 569 c 0
- 303 553 290 540 274 540 c 0
- 258 540 245 553 245 569 c 0
- 245 586 258 599 274 599 c 2
+134 599 m 0
+ 150 599 163 586 163 569 c 0
+ 163 553 150 540 134 540 c 0
+ 118 540 105 553 105 569 c 0
+ 105 586 118 599 134 599 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: qubutshebrew
@@ -27328,7 +27360,6 @@ SplineSet
  66 445 l 2
  62 449 60 454 60 460 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: bethebrew
@@ -27629,6 +27660,7 @@ StartChar: lamedhebrew
 Encoding: 1500 1500 1018
 Width: 600
 Flags: HMW
+AnchorPoint: "FreeSerifBold-heb-lam-above" 0 420 basechar 0
 AnchorPoint: "dagesh-heb" 250 270 basechar 0
 LayerCount: 2
 Fore
@@ -27650,7 +27682,6 @@ SplineSet
  278 6 l 2
  274 2 269 0 264 0 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: finalmemhebrew
@@ -27866,7 +27897,7 @@ SplineSet
  60 471 69 480 80 480 c 2
  381 480 l 2
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: pehebrew
@@ -28112,7 +28143,7 @@ LayerCount: 2
 Fore
 Refer: 1011 1493 N 1 0 0 1 130 0 2
 Refer: 1011 1493 N 1 0 0 1 -80 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: vavyodhebrew
@@ -28124,7 +28155,7 @@ LayerCount: 2
 Fore
 Refer: 1015 1497 N 1 0 0 1 -80 0 2
 Refer: 1011 1493 N 1 0 0 1 130 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: yodyodhebrew
@@ -28136,7 +28167,7 @@ LayerCount: 2
 Fore
 Refer: 1015 1497 N 1 0 0 1 130 0 2
 Refer: 1015 1497 N 1 0 0 1 -80 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: gereshhebrew
@@ -39236,7 +39267,6 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: onethird
@@ -57412,7 +57442,7 @@ LayerCount: 2
 Fore
 Refer: 990 1460 S 1 0 0 1 -60 216 2
 Refer: 1015 1497 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'ccmp' glyph compos. in Hebrew for Yiddish-1" yodhebrew hiriqhebrew
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" yodhebrew hiriqhebrew
@@ -57445,7 +57475,7 @@ LayerCount: 2
 Fore
 Refer: 993 1463 N 1 0 0 1 18 214 2
 Refer: 1035 1522 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 Ligature2: "'ccmp' glyph compos. in Hebrew for Yiddish-1" yodyodhebrew patahhebrew
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" yodyodhebrew patahhebrew
 LCarets2: 1 0 
@@ -57797,7 +57827,6 @@ LayerCount: 2
 Fore
 Refer: 993 1463 N 1 0 0 1 0 0 2
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: alefqamatshebrew
@@ -57808,7 +57837,6 @@ LayerCount: 2
 Fore
 Refer: 994 1464 N 1 0 0 1 0 0 2
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: alefmapiqhebrew
@@ -57819,7 +57847,6 @@ LayerCount: 2
 Fore
 Refer: 997 1468 N 1 0 0 1 1 -312 2
 Refer: 1006 1488 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: betdageshhebrew
@@ -57940,7 +57967,6 @@ LayerCount: 2
 Fore
 Refer: 997 1468 S 1 0 0 1 -21 48 2
 Refer: 1018 1500 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: memdageshhebrew
@@ -57984,7 +58010,7 @@ LayerCount: 2
 Fore
 Refer: 997 1468 S 1 0 0 1 32 -96 2
 Refer: 1025 1507 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: pedageshhebrew
@@ -58062,7 +58088,6 @@ LayerCount: 2
 Fore
 Refer: 995 1465 N 1 0 0 1 0 0 2
 Refer: 1011 1493 N 1 0 0 1 0 0 2
-Validated: 32769
 EndChar
 
 StartChar: betrafehebrew
@@ -84037,7 +84062,6 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 995 1465 S 1 0 0 1 -110 0 2
-Validated: 32769
 EndChar
 
 StartChar: zeroslashed
