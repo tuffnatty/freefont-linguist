@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1474650371
+ModificationTime: 1475325586
 PfmFamily: 33
 TTFWeight: 600
 TTFWidth: 5
@@ -76,7 +76,7 @@ Lookup: 1 0 0 "'c2sc' caps to small caps in Latin"  {"'c2sc' caps to small caps 
 Lookup: 1 0 0 "'smcp' small to small caps in Latin for Turkish"  {"'smcp' Lowercase to Small Capitals in Latin for Turkish subtable"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'KAZ ' 'TAT ' 'TRK ' > ) ]
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin - i"  {"'ccmp' glyph compos. in Latin - i-subtable"  } ['ccmp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 1 0 0 "subst. i,j with dotless form"  {"subst. i,j with dotless form-1"  } []
-Lookup: 6 0 0 "'RQD ' mark pos over dot in Latin"  {"'RQD ' mark pos over dot in Latin 1"  } ['RQD ' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' remove dot followed by mark in Latin"  {"'ccmp' remove dot followed by mark in Latin"  } ['ccmp' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 2 0 0 "glyph decompos. of iogonek"  {"Glyph Decomposition of iogonek-subtable"  } []
 Lookup: 6 0 0 "'ccmp' compos. chain in Latin - iogonek"  {"'ccmp' compos chain in Latin - iogonek-1"  } ['ccmp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Latin"  {"'liga' std. ligatures in Latin-commaright"  } ['liga' ('latn' <'dflt' > 'latn' <'CAT ' 'ESP ' 'ISM ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'VIT ' > ) ]
@@ -233,9 +233,9 @@ KernClass2: 15 13 "'kern' kerning in Latin-small"
  79 u uacute ugrave ucircumflex ubreve udieresis utilde umacron uring uhungarumlaut
  52 e eacute egrave ecircumflex edieresis ebreve emacron
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} -10 {} -10 {} -10 {} -10 {} -10 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -20 {} -10 {} -10 {} -10 {} -10 {} 0 {} -5 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} -10 {} 0 {} -5 {} 0 {} 0 {} -20 {} -20 {} 0 {} -20 {} -20 {} -40 {} -20 {} -10 {} -25 {} -30 {} -30 {} -10 {} 0 {} -10 {} 0 {} -20 {} -20 {} -20 {} -25 {} -20 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} -10 {} 0 {} -20 {} -20 {} -20 {} -25 {} -20 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} -20 {} 0 {} 0 {} -20 {} -10 {} 0 {} -20 {} -10 {} -20 {} -10 {} 0 {} -20 {} -20 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} -10 {} -20 {} -20 {} -40 {} -20 {} -10 {} -20 {} -20 {} -10 {} -15 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} -20 {} -10 {} -10 {} -15 {} -10 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} -10 {} -20 {} -30 {} -20 {} -10 {} -30 {} -20 {} -35 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} -60 {} -20 {} -20 {} -30 {} -40 {} -50 {} 0 {} -40 {} -40 {} -40 {} -60 {}
-ChainSub2: class "'RQD ' mark pos over dot in Latin 1"  2 1 3 2
+ChainSub2: class "'ccmp' remove dot followed by mark in Latin"  2 1 3 2
   Class: 3 i j
-  FClass: 164 grave.cmb acute.cmb circumflex.cmb tilde.cmb macron.cmb breve.cmb dotaccent.cmb dieresis.cmb acutedbl.cmb caron.cmb linevertabv.cmb linesvertdblabv.cmb gravedbl.cmb
+  FClass: 186 grave.cmb acute.cmb circumflex.cmb tilde.cmb macron.cmb breve.cmb dotaccent.cmb dieresis.cmb ring.cmb acutedbl.cmb caron.cmb linevertabv.cmb linesvertdblabv.cmb gravedbl.cmb breveinv.cmb
   FClass: 108 leftharpoonaccent rightharpoonaccent uni20D4 uni20D5 uni20D6 uni20D7 uni20DB uni20DC uni20E1 uni20E9 uni20F0
  1 0 1
   ClsList: 1
@@ -13537,7 +13537,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 606 1473 S 1 0 0 1 -313 79 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: alefhebrew
@@ -18904,7 +18904,7 @@ LayerCount: 2
 Fore
 Refer: 599 1465 N 1 0 0 1 0 0 2
 Refer: 615 1493 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: betrafehebrew
@@ -57725,7 +57725,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 599 1465 N 1 0 0 1 -120 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: lowerdothebrew
@@ -57736,7 +57736,7 @@ AnchorPoint: "heb-vowel-low" 290 0 basechar 0
 LayerCount: 2
 Fore
 Refer: 609 1476 S 1 0 0 1 -220 -1018 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: nunhafukhaheb
