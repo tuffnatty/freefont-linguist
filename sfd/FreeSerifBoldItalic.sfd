@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1475341468
+ModificationTime: 1475611840
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -499,6 +498,9 @@ ChainSub2: class "'ccmp' remove dot followed by mark in Latin"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   Class: 15 Alpha Eta Omega
@@ -546,6 +548,9 @@ ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   FClsList:
  1
   SeqLookup: 0 "positional forms in Greek" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   Class: 4 beta
@@ -583,6 +588,9 @@ ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   BClsList:
   FClsList: 2
  0
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   Class: 4 beta
@@ -606,6 +614,9 @@ ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   BClsList: 3
   FClsList:
  0
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -701,6 +712,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 parenleft parenright plus hyphen minus comma period zero one two three four five six seven eight nine
@@ -783,6 +797,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: glyph "'ccmp' glyph compos. in Latin - iogonek-1"  0 0 0 1
  String: 7 iogonek
@@ -820,16 +837,16 @@ LangName: 1027 "" "" "negreta it+AOAA-lica" "" "FreeSerif negreta it+AOAA-lica"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BD8EPgQ7BEMERwQ1BEAENQQ9 +BDoEQwRABEEEOAQyBDUEPQAA" 
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSerif Lodi etzana" 
 LangName: 1033 "" "" "Bold Italic" "" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3
-OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
-OtfFeatName: 'ss08' 1033 "Georgian Mtavruli" 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 
+GaspTable: 3 9 2 21 1 65535 3 0
+OtfFeatName: 'ss08' 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 1033 "Georgian Mtavruli" 
+OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1472 16 10
+WinInfo: 800 16 10
 BeginPrivate: 8
 UniqueID 7 5020939
 BlueValues 33 [-205 -200 -18 0 449 462 669 685]
@@ -10933,20 +10950,20 @@ StartChar: squareblw.cmb
 Encoding: 827 827 473
 Width: 0
 Flags: HMW
-AnchorPoint: "below" -182.787 1 mark 0
+AnchorPoint: "below" -195 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--300.864 -57 m 1
- -57.8643 -57 l 1
- -113.767 -300 l 1
- -356.767 -300 l 1
- -300.864 -57 l 1
--244.169 -129 m 1
- -269.463 -228 l 1
- -170.463 -228 l 1
- -145.169 -129 l 1
- -244.169 -129 l 1
+-342 -57 m 5
+ -53 -57 l 5
+ -103 -270 l 5
+ -391 -270 l 5
+ -342 -57 l 5
+-291 -129 m 5
+ -307 -198 l 5
+ -153 -198 l 5
+ -137 -129 l 5
+ -291 -129 l 5
 EndSplineSet
 Validated: 1
 EndChar
@@ -17360,6 +17377,7 @@ SplineSet
  239.803 430.73 201.821 420.418 169.8 446 c 0
  148.656 463.521 143.177 487.11 143.177 507.923 c 0
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: zayinhebrew
@@ -17396,6 +17414,7 @@ SplineSet
  316.699 422 308.612 431 284.612 431 c 0
  281.612 431 278.399 430 275.399 430 c 0
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: hethebrew
@@ -17516,6 +17535,7 @@ SplineSet
  231.099 645 208.021 607 270.834 592 c 0
  320.585 581.771 338.024 541.834 338.024 500.917 c 0
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: finalkafhebrew
@@ -17590,6 +17610,7 @@ SplineSet
  504.461 412.423 424.744 441 311.737 441 c 0
  233.952 441 169.362 445.583 169.362 517.505 c 0
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: lamedhebrew
@@ -17632,6 +17653,7 @@ SplineSet
  532.824 272.038 302.453 188.921 302.453 87.8691 c 0
  302.453 78.1318 306.305 69.6211 306.305 58.3408 c 0
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: finalmemhebrew
@@ -18164,6 +18186,7 @@ SplineSet
  201.524 440 l 2
  187.549 440 143.574 456.784 143.574 512.342 c 0
 EndSplineSet
+Validated: 524289
 EndChar
 
 StartChar: shinhebrew
@@ -34789,6 +34812,7 @@ LayerCount: 2
 Fore
 Refer: 722 1493 N 1 0 0 1 266 0 2
 Refer: 722 1493 N 1 0 0 1 0 0 2
+Validated: 1048577
 EndChar
 
 StartChar: vavyodhebrew
@@ -34808,6 +34832,7 @@ LayerCount: 2
 Fore
 Refer: 726 1497 N 1 0 0 1 0 0 2
 Refer: 722 1493 N 1 0 0 1 267 0 2
+Validated: 1
 EndChar
 
 StartChar: yodyodhebrew
@@ -34828,6 +34853,7 @@ LayerCount: 2
 Fore
 Refer: 726 1497 N 1 0 0 1 267 0 2
 Refer: 726 1497 N 1 0 0 1 1 0 2
+Validated: 1
 EndChar
 
 StartChar: gereshhebrew
@@ -46713,6 +46739,7 @@ SplineSet
  68 -172 77 -165 85 -165 c 2
  245 -165 l 1
 EndSplineSet
+Validated: 1048577
 EndChar
 
 StartChar: mahapakhhebrew
@@ -46934,6 +46961,7 @@ AnchorPoint: "heb-point-above" 350 570 mark 0
 LayerCount: 2
 Fore
 Refer: 2039 1443 N 1 0 0 1 221 885 2
+Validated: 1048577
 EndChar
 
 StartChar: dehihebrew
@@ -47090,6 +47118,7 @@ LayerCount: 2
 Fore
 Refer: 2041 1445 N 1 0 0 1 68 0 2
 Refer: 2054 1460 S 1 0 0 1 -95 0 2
+Validated: 1048577
 EndChar
 
 StartChar: shevahebrew
@@ -47135,6 +47164,7 @@ LayerCount: 2
 Fore
 Refer: 2054 1460 N 1 0 0 1 56 0 2
 Refer: 2054 1460 S 1 0 0 1 -49 0 2
+Validated: 1048577
 EndChar
 
 StartChar: segolhebrew
@@ -47150,6 +47180,7 @@ Fore
 Refer: 2054 1460 N 1 0 0 1 28 0 2
 Refer: 2054 1460 N 1 0 0 1 -88 0 2
 Refer: 2054 1460 N 1 0 0 1 -36 -95 2
+Validated: 1048577
 EndChar
 
 StartChar: patahhebrew
@@ -47173,6 +47204,7 @@ SplineSet
  188 -100 182 -95 182 -88 c 0
  182 -85 183 -81 188 -60 c 0
 EndSplineSet
+Validated: 1048577
 EndChar
 
 StartChar: qamatshebrew
@@ -47205,6 +47237,7 @@ SplineSet
  329 -100 l 2
  309 -100 283 -105 283 -114 c 0
 EndSplineSet
+Validated: 1572865
 EndChar
 
 StartChar: dageshhebrew
@@ -47427,6 +47460,7 @@ LayerCount: 2
 Fore
 Refer: 2059 1456 N 1 0 0 1 70 0 2
 Refer: 2063 1463 N 0.8 0 0 1 -38 0 2
+Validated: 1048577
 EndChar
 
 StartChar: hatafqamatshebrew
@@ -47441,6 +47475,7 @@ Fore
 Refer: 2054 1460 N 1 0 0 1 39 -88 2
 Refer: 2054 1460 N 1 0 0 1 59 12 2
 Refer: 2064 1464 N 1 0 0 1 -112 0 2
+Validated: 1048577
 EndChar
 
 StartChar: uniFB1E
@@ -47482,6 +47517,7 @@ LayerCount: 2
 Fore
 Refer: 726 1497 N 1 0 0 1 0 0 2
 Refer: 2054 1460 N 1 0 0 1 -128 279 2
+Validated: 1048577
 LCarets2: 1 0 
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew-1" yodhebrew hiriqhebrew
 Ligature2: "'ccmp' glyph compos. in Hebrew for Yiddish-1" yodhebrew hiriqhebrew
@@ -47502,6 +47538,7 @@ LayerCount: 2
 Fore
 Refer: 1603 1522 N 1 0 0 1 29 0 2
 Refer: 2063 1463 S 1 0 0 1 81 270 2
+Validated: 1048577
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew-1" yodyodhebrew patahhebrew
 Ligature2: "'ccmp' glyph compos. in Hebrew for Yiddish-1" yodyodhebrew patahhebrew
 LCarets2: 1 0 
@@ -47680,6 +47717,7 @@ LayerCount: 2
 Fore
 Refer: 717 1488 N 1 0 0 1 0 0 2
 Refer: 2063 1463 N 1 0 0 1 -3 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -47699,6 +47737,7 @@ LayerCount: 2
 Fore
 Refer: 717 1488 N 1 0 0 1 0 0 2
 Refer: 2064 1464 N 1 0 0 1 3 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -47818,6 +47857,7 @@ LayerCount: 2
 Fore
 Refer: 722 1493 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -266 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -47837,6 +47877,7 @@ LayerCount: 2
 Fore
 Refer: 723 1494 N 1 0 0 1 40 0 2
 Refer: 2065 1468 N 1 0 0 1 -261 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -47856,6 +47897,7 @@ LayerCount: 2
 Fore
 Refer: 725 1496 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 80 -24 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -47875,6 +47917,7 @@ LayerCount: 2
 Fore
 Refer: 726 1497 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -260 40 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -47914,6 +47957,7 @@ LayerCount: 2
 Fore
 Refer: 728 1499 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -81 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -47934,6 +47978,7 @@ LayerCount: 2
 Fore
 Refer: 729 1500 N 1 0 0 1 0 0 2
 Refer: 2065 1468 N 1 0 0 1 -103 26 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -48093,6 +48138,7 @@ LayerCount: 2
 Fore
 Refer: 2065 1468 N 1 0 0 1 -79 0 2
 Refer: 741 1512 N 1 0 0 1 0 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -48112,6 +48158,7 @@ LayerCount: 2
 Fore
 Refer: 2065 1468 N 1 0 0 1 53 0 2
 Refer: 742 1513 N 1 0 0 1 -33 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -48151,6 +48198,7 @@ LayerCount: 2
 Fore
 Refer: 2055 1465 S 1 0 0 1 30 0 2
 Refer: 722 1493 N 1 0 0 1 0 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 
@@ -48190,6 +48238,7 @@ LayerCount: 2
 Fore
 Refer: 728 1499 N 1 0 0 1 0 0 2
 Refer: 2069 1471 N 1 0 0 1 100 0 2
+Validated: 1048577
 LCarets2: 1 0 
 EndChar
 

@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1475325586
+ModificationTime: 1475612927
 PfmFamily: 33
 TTFWeight: 600
 TTFWidth: 5
@@ -249,6 +248,9 @@ ChainSub2: class "'ccmp' remove dot followed by mark in Latin"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -344,6 +346,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 zero one two three four five six seven eight nine comma period parenleft parenright plus hyphen minus
@@ -426,6 +431,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: glyph "'ccmp' compos chain in Latin - iogonek-1"  0 0 0 1
  String: 7 iogonek
@@ -481,14 +489,14 @@ LangName: 1027 "" "" "negreta cursiva" "" "FreeSans negreta cursiva"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" "" "FreeSans +BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" 
 LangName: 1069 "" "" "Lodi etzana" "" "FreeSans Lodi etzana" 
 LangName: 1033 "" "" "Bold Oblique" "GNU: FreeSans Bold Oblique: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 22 1 65535 3
+GaspTable: 3 9 2 22 1 65535 3 0
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1440 16 10
+WinInfo: 800 16 10
 BeginPrivate: 9
 UniqueID 7 5020910
 BlueValues 31 [-24 0 540 550 710 724 728 742]
@@ -14075,22 +14083,22 @@ SplineSet
  634 406 632 389 629 373 c 2
  507 -200 l 1
  368 -200 l 1
- 489 367 l 2
- 492.779 384.712 492 396 492 404 c 0
+ 489 367 l 6
+ 491.602 379.194 492 390.333 492 404 c 4
  492 432 471 458 439 476 c 0
  421 486 322 486 274 486 c 1
- 258 407 l 6
+ 258 407 l 2
  255 396 254 386 254 379 c 0
  254 360 267 356 301 356 c 2
  355 356 l 1
  330 241 l 1
  265 241 l 2
- 180.2 241 112 278.003 112 358 c 0
+ 180 241 112 278 112 358 c 0
  112 373 115 387 117 398 c 2
  160 601 l 1
  415 601 l 2
 EndSplineSet
-Validated: 3105
+Validated: 527361
 EndChar
 
 StartChar: pehebrew
@@ -14227,17 +14235,18 @@ LayerCount: 2
 Fore
 SplineSet
 357 600 m 2
- 444 590 570 562 570 406 c 0
- 570 396 571.488 385.781 569 374 c 6
+ 450 600 570 562 570 406 c 0
+ 570 396 570 374 569 371 c 2
  490 0 l 1
  351 0 l 1
  429 365 l 2
- 426 453 424 465 321 485 c 2
+ 431 375 432 384 432 393 c 0
+ 432 443 401 485 321 485 c 2
  126 485 l 1
  150 600 l 1
  357 600 l 2
 EndSplineSet
-Validated: 3105
+Validated: 3073
 EndChar
 
 StartChar: shinhebrew
@@ -18805,7 +18814,7 @@ LayerCount: 2
 Fore
 Refer: 629 1507 N 1 0 0 1 0 0 2
 Refer: 601 1468 N 1 0 0 1 103 69 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: pedageshhebrew
@@ -18861,7 +18870,7 @@ LayerCount: 2
 Fore
 Refer: 601 1468 N 1 0 0 1 -32 0 2
 Refer: 634 1512 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 1146881
 EndChar
 
 StartChar: shindageshhebrew
@@ -29651,16 +29660,16 @@ AnchorPoint: "below" -192 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--331 -39 m 1
- -70 -39 l 1
- -126 -300 l 1
- -387 -300 l 1
- -331 -39 l 1
--186 -224 m 1
- -162 -115 l 1
- -271 -115 l 1
- -295 -224 l 1
- -186 -224 l 1
+-338 -40 m 5
+ -64 -40 l 5
+ -117 -270 l 5
+ -391 -270 l 5
+ -338 -40 l 5
+-178 -194 m 5
+ -160 -116 l 5
+ -278 -116 l 5
+ -296 -194 l 5
+ -178 -194 l 5
 EndSplineSet
 Validated: 3073
 EndChar
