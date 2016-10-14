@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1476395514
+ModificationTime: 1476474377
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -219,6 +218,8 @@ Lookup: 1 0 0 "'fina' term. forms in Syriac"  {"'fina' term. forms in Syriac-1" 
 Lookup: 1 0 0 "'fin2' final form 2 for alaph in Syriac"  {"'fin2' final form 2 for alaph in Syriac-1"  } ['fin2' ('syrc' <'dflt' > ) ]
 Lookup: 1 0 0 "'fin3' final form 3 for alaph in Syriac"  {"'fin3' final form 3 for alaph in Syriac-1"  } ['fin3' ('syrc' <'dflt' > ) ]
 Lookup: 1 0 0 "'med2' medial forms 2 in Syriac"  {"'med2' medial forms 2 in Syriac-1"  } ['med2' ('syrc' <'dflt' > ) ]
+Lookup: 4 1 0 "'rlig' req. ligature in Syriac"  {"'rlig' req. ligature in Syriac-1"  } ['rlig' ('syrc' <'dflt' > ) ]
+Lookup: 4 9 0 "'dlig' discr. ligatures in Syriac"  {"'dlig' discr. ligatures in Syriac-1"  } ['dlig' ('syrc' <'dflt' > ) ]
 Lookup: 2 0 0 "'stch' stretch character in Syriac"  {"'stch' stretch character in Syriac-1"  } ['stch' ('syrc' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kerns in Cyrillic-small" [150,0,0] "'kern' kerns in Cyrillic-capital" [150,0,0] } ['kern' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin"  {"'kern' kerns in Latin-capital" [150,0,0] "'kern' kerns in Latin-small" [150,0,0] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
@@ -427,6 +428,9 @@ ChainSub2: class "'ccmp' remove dot followed by mark in Latin"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'blws' below-base smaller chain in Malayalam-1"  2 2 1 1
   Class: 892 mal_ka.blwf mal_ku.blwf mal_kuu.blwf mal_kri.blwf mal_kha.blwf mal_ga.blwf mal_gu.blwf mal_guu.blwf mal_gri.blwf mal_cha.blwf mal_chha.blwf mal_chhu.blwf mal_chhuu.blwf mal_chhri.blwf mal_ja.blwf mal_ju.blwf mal_juu.blwf mal_jri.blwf mal_sha.blwf mal_shu.blwf mal_shuu.blwf mal_shri.blwf mal_rrarra.blwf mal_ddha.blwf mal_nna.blwf mal_nnu.blwf mal_nnuu.blwf mal_ta.blwf mal_tu.blwf mal_tuu.blwf mal_tri.blwf mal_da.blwf mal_dri.blwf mal_dha.blwf mal_dhri.blwf mal_na.blwf mal_nu.blwf mal_nuu.blwf mal_pa.blwf mal_pri.blwf mal_pha.blwf mal_ba.blwf mal_ma.blwf mal_mri.blwf mal_sa.blwf mal_sri.blwf mal_tta.blwf mal_ttha.blwf mal_rra.blwf mal_va.blwf mal_sra.blwf mal_tra.blwf mal_pra.blwf mal_chhra.blwf mal_shra.blwf mal_kra.blwf mal_rrarrra.blwf mal_trr_voc.blwf mal_dhrr_voc.blwf mal_kka.blwf mal_kku.blwf mal_kkuu.blwf mal_kkri.blwf mal_tata.blwf mal_tatu.blwf mal_tatuu.blwf mal_tatr.blwf
@@ -437,6 +441,9 @@ ChainSub2: class "'blws' below-base smaller chain in Malayalam-1"  2 2 1 1
   FClsList:
  1
   SeqLookup: 0 "subst. smaller blwf in Malayalam" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 3
   Class: 203 dev_esign_reph.abvs dev_aisign_reph.abvs dev_ra.rphf dev_osign_reph.psts dev_ausign_reph.psts dev_oesign_reph.abvs dev_ooesign_reph.psts dev_aasign_reph.psts dev_oshortsign_reph.psts dev_iisign_reph.psts
@@ -472,6 +479,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-reph-candra"  6 6 6 
   FClsList:
  1
   SeqLookup: 0 "subst. anusvara for candrabindu in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'locl' local forms in Devanagari for Sanskrit-vocalic"  5 2 1 3
   Class: 6 virama
@@ -497,6 +507,9 @@ ChainSub2: class "'locl' local forms in Devanagari for Sanskrit-vocalic"  5 2 1 
   FClsList:
  1
   SeqLookup: 0 "subst. placeholder for vocalic-reph in Devanagari for Sanskrit" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'cjct' unpack nukta forms in Bengali-1"  3 3 3 1
   Class: 23 rra_bng rha_bng yya_bng
@@ -511,6 +524,9 @@ ChainSub2: class "'cjct' unpack nukta forms in Bengali-1"  3 3 3 1
   FClsList: 2
  1
   SeqLookup: 0 "unpack nukta forms in Bengali" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'pres' pre-base chain in Benglai-1"  3 3 3 1
   Class: 266 ka_bng kha_bng ga_bng gha_bng nga_bng ca_bng cha_bng ja_bng jha_bng nya_bng tta_bng ttha_bng dda_bng ddha_bng nna_bng ta_bng tha_bng da_bng dha_bng na_bng pa_bng pha_bng ba_bng bha_bng ma_bng ya_bng ra_bng la_bng sha_bng ssa_bng sa_bng ha_bng rra_bng rha_bng yya_bng
@@ -525,6 +541,9 @@ ChainSub2: class "'pres' pre-base chain in Benglai-1"  3 3 3 1
   FClsList: 2
  1
   SeqLookup: 0 "subst. half forms in Bengali" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'psts' post-base u,uu chain in Malay+AQEA-lam-1"  2 3 1 2
   Class: 12 u_mal uu_mal
@@ -542,6 +561,9 @@ ChainSub2: class "'psts' post-base u,uu chain in Malay+AQEA-lam-1"  2 3 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. below-base forms in Malay+AQEA-lam" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'psts' chain space candrakala in Malay+AQEA-lam-1"  0 0 0 1
  String: 10 candrakala
@@ -564,6 +586,9 @@ ChainSub2: class "'psts' chain avoid space candrakala in Malay+AQEA-lam"  2 1 3 
   BClsList:
   FClsList: 2
  0
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'psts' re-do stacked cons in Malayalam"  5 4 1 4
   Class: 7 nna_mal
@@ -597,6 +622,9 @@ ChainSub2: class "'psts' re-do stacked cons in Malayalam"  5 4 1 4
   FClsList:
  1
   SeqLookup: 0 "subst. below-base cons in Malay+AQEA-lam" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pstf' va,ya in Malay+AQEA-lam-1"  3 3 1 2
   Class: 13 va_mal ya_mal
@@ -615,6 +643,9 @@ ChainSub2: class "'pstf' va,ya in Malay+AQEA-lam-1"  3 3 1 2
   FClsList:
  1
   SeqLookup: 0 "subst. post-base candra-x in Malay+AQEA-lam" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'blwf' below-base la in Malay+AQEA-lam-1"  3 2 0 2
   Class: 10 candrakala
@@ -632,6 +663,8 @@ ChainSub2: class "'blwf' below-base la in Malay+AQEA-lam-1"  3 2 0 2
   FClsList:
  1
   SeqLookup: 0 "subst. below-base forms in Malay+AQEA-lam" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'blws' below-base chain. in Benglai-phala"  5 5 5 3
   Class: 246 bn_ka.half bn_ga.half bn_nga.half bn_ca.half bn_cha.half bn_ja.half bn_nya.half bn_tta.half bn_ttha.half bn_dda.half bn_ddha.half bn_nna.half bn_pha.half bn_bha.half bn_ma.half bn_ssa.half bn_sa.half bn_ha.half bn_rra.half bn_rha.half bn_ca1.half
@@ -664,6 +697,9 @@ ChainSub2: class "'blws' below-base chain. in Benglai-phala"  5 5 5 3
   FClsList:
  1
   SeqLookup: 0 "subst. phala form for stemmed in Bengali" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  
 EndFPST
 ChainSub2: class "'psts' post base substs. in Bengali-iikaar"  4 4 4 2
   Class: 16 ttha_bng tta_bng
@@ -687,6 +723,9 @@ ChainSub2: class "'psts' post base substs. in Bengali-iikaar"  4 4 4 2
   FClsList:
  1
   SeqLookup: 0 "subst. post base vowels in Bengali" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  "3"  
 EndFPST
 ChainSub2: class "'blws' below-base substs. in Benglai-rofola-1"  12 12 12 9
   Class: 104 kha_bng ga_bng gha_bng nna_bng tha_bng na_bng pa_bng pha_bng ma_bng ra_bng la_bng sha_bng ssa_bng sa_bng
@@ -776,6 +815,9 @@ ChainSub2: class "'blws' below-base substs. in Benglai-rofola-1"  12 12 12 9
   FClsList:
  1
   SeqLookup: 0 "subst. rofola short in Bengali" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10"  "11"  
 EndFPST
 ChainSub2: class "'psts' post-base substs. in Bengali-ikaar"  4 4 4 2
   Class: 9 ikaar_bng
@@ -799,6 +841,9 @@ ChainSub2: class "'psts' post-base substs. in Bengali-ikaar"  4 4 4 2
   FClsList:
  1
   SeqLookup: 0 "subst. tall cons. post ikaar in Bengali" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  "3"  
 EndFPST
 ChainSub2: class "'psts' post base substs. in Bengali-u-uu"  7 7 7 4
   Class: 20 ukaar_bng uukaar_bng
@@ -843,6 +888,9 @@ ChainSub2: class "'psts' post base substs. in Bengali-u-uu"  7 7 7 4
   FClsList:
  1
   SeqLookup: 0 "subst. post base vowels in Bengali" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  "6"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -938,6 +986,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 parenleft parenright plus hyphen minus comma period zero one two three four five six seven eight nine
@@ -1020,6 +1071,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1 1
   Class: 6 virama
@@ -1031,6 +1085,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari-non-half rak"  3 2 1
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-rakaar in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 3 1 3
   Class: 10 dev_rakaar
@@ -1056,6 +1113,9 @@ ChainSub2: class "'pres' pre-base subst chain in Devanagari caron-rak"  4 3 1 3
   FClsList:
  1
   SeqLookup: 0 "subst. rakaar.blwf for virama-ra in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   Class: 6 virama
@@ -1095,6 +1155,9 @@ ChainSub2: class "'pres' pre-base chain in Devanagari-openya"  3 6 1 5
   FClsList:
  1
   SeqLookup: 0 "subst. openya for virama-ya in Devanagari" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'pres' pre-base chain in Devanagari da+-half+-ya"  0 0 0 2
  String: 25 dadeva virama dev_va.half
@@ -1121,6 +1184,9 @@ ChainSub2: class "'cjct' avoid-vert conjunct forms in Devanagari2-1"  4 4 1 1
   FClsList:
  1
   SeqLookup: 0 "subst. ligature for da+-half in Devanagari" 
+  ClassNames: "0"  "1"  "2"  "3"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  
 EndFPST
 ChainSub2: glyph "'ccmp' decomp. chain in Latin - iogonek-subtable"  0 0 0 1
  String: 7 iogonek
@@ -1178,7 +1244,7 @@ LangName: 1027 "" "" "Normal"
 LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA" 
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "Regular" "GNU: FreeSans Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 22 1 65535 3
+GaspTable: 3 9 2 22 1 65535 3 0
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 900
@@ -1242,7 +1308,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 127264 16 10
+WinInfo: 752 16 10
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -1261,7 +1327,7 @@ Grid
 EndSplineSet
 TeXData: 3 0 0 262144 131072 87381 549454 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "goth-below"  "'mark' mark below in Gothic-2" "goth-above"  "'mark' mark above in Gothic-1" "far-right-dot"  "'mark' far right in Latin-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "ogonek"  "'mark' marks in Latin ogonek" "bng-stem-abv"  "'abvm' above-base mark in Bengali-1" "mlm-vowel-below"  "'blwm' vowel below in Malay+AQEA-lam-1" "dev-candrabindu-abv"  "'mkmk' mark-to-mark in Devanagari-above" "vedic-below"  "'mkmk' mark-to-mark in Devanagari Vedic" "vedic-above"  "'mkmk' mark-to-mark in Devanagari Vedic" "dev-mark-above"  "'mkmk' mark-to-mark in Devanagari-above" "below_gk"  "'mark' mark below in Greek and Coptic-1" "above_gk"  "'mark' mark above in Greek-1" "bng-phala"  "'mkmk' mark-to-mark in Bengali-1" "bng-round"  "'blwm' below-base round in Bengali" "bng-stem"  "'blwm' below-base stemmed in Bengali" "bng-rofola"  "'blwm' below-base rofola in Bengali" "abovemk"  "'mkmk' mark-to-mark generic" "viet_tilde"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_hook"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_grave"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_acute"  "'mkmk' mark-to-mark in Latin for Viet-1" "taml_above"  "'abvm' above-base mark in Tamil-1" "dev-candrabindu"  "'abvm' above-base mark in Devanagari-candrabindu" "dev-anusvara"  "'abvm' above-base mark in Devanagari-anusvara" "bng-vowel"  "'blwm' below-base vowel in Bengali" "bng-nukta"  "'blwm' below-base nukta in Bengali" "dev-rakaar"  "'blwm' below-base mark in Devanagari-1" "dev-belowmark"  "'mkmk' mark-to-mark in Devanagari-above" "mlm-reph"  "'abvm' above reph in Malayalam-1" "mal-below"  "'blwm' marks below in Malay+AQEA-lam-1" "gur-top-mid"  "'abvm' above-base mark in Gurmukhi-mid" "gur-nukta"  "'blwm' below-base mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' mark-to-mark in Gurmukhi" "gur-below-mid"  "'blwm' below-base mark in Gurmukhi mid" "guru_above"  "'abvm' above-base mark in Gurmukhi-general" "guru_below"  "'blwm' below-base mark in Gurmukhi-general" "syr_below"  "'mark' marks in Syriac 0" "syr_above"  "'mark' marks in Syriac 0" "heb-point-abv"  "'mark' marks in Hebrew 0" "heb-yid-vowel-low"  "'mark' marks in Yiddish below" "heb-vowel-left"  "'mark' marks in Hebrew 0" "heb-dagesh"  "'mark' marks in Hebrew 0" "heb-vowel-low"  "'mark' marks in Hebrew 2 subtable" "abovemk_cyr"  "'mkmk' mark-to-mark in Cyrillic 0" "topright"  "'mark' marks in Latin topright" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' marks middle" "dev-above"  "'abvm' above-base mark in Devanagari-1" "dev-below"  "'blwm' below-base mark in Devanagari-1" "above"  "'mark' marks generic above" "below"  "'mark' marks generic below" 
-BeginChars: 131072 7451
+BeginChars: 131072 7456
 
 StartChar: space
 Encoding: 32 32 0
@@ -20705,25 +20771,26 @@ EndChar
 
 StartChar: beth_syr
 Encoding: 1810 1810 909
-Width: 707
+Width: 682
 Flags: HMW
-AnchorPoint: "syr_below" 363 0 basechar 0
-AnchorPoint: "syr_above" 363 536 basechar 0
+AnchorPoint: "syr_below" 338 0 basechar 0
+AnchorPoint: "syr_above" 338 536 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-647 0 m 1
- 202 0 l 2
- 96 0 55 82.2998 55 145 c 1
- 145 145 l 1
- 145 113.3 178 82 200 82 c 2
- 554 82 l 1
- 554 345 l 1
- 262 345 l 1
- 262 427 l 1
- 647 427 l 1
- 647 0 l 1
+622 0 m 1
+ 177 0 l 2
+ 71 0 50 82.2998 50 145 c 1
+ 120 145 l 1
+ 120 113.3 153 82 175 82 c 2
+ 529 82 l 1
+ 529 345 l 1
+ 237 345 l 1
+ 237 427 l 1
+ 622 427 l 1
+ 622 0 l 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_beth.init
 Substitution2: "'medi' medial forms in Syriac-1" syr_beth.medi
 Substitution2: "'fina' term. forms in Syriac-1" syr_beth.fina
@@ -20731,30 +20798,30 @@ EndChar
 
 StartChar: gamal_syr
 Encoding: 1811 1811 910
-Width: 699
+Width: 694
 Flags: HMW
-AnchorPoint: "syr_below" 313 0 basechar 0
-AnchorPoint: "syr_above" 293 626 basechar 0
+AnchorPoint: "syr_below" 308 0 basechar 0
+AnchorPoint: "syr_above" 288 626 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-689 -178 m 1
- 689 -208 668 -231 643 -231 c 0
- 605 -231 588 -208 588 -181 c 0
- 588 -163 603 -147 613 -141 c 1
- 467 0 l 1
- 178.5 0 l 2
- 78 0 35 77 35 160 c 1
- 117 160 l 1
- 117 129 148 82 178.5 82 c 2
- 516 82 l 1
- 255 496 l 1
- 332 541 l 1
- 600 90 l 1
- 576.539 48.1045 558.409 25.8271 519 -10 c 1
- 621 -135 l 1
- 626 -134 631 -133 636 -133 c 0
- 670 -133 689 -154 689 -178 c 1
+684 -178 m 1
+ 684 -208 663 -231 638 -231 c 0
+ 600 -231 583 -208 583 -181 c 0
+ 583 -163 598 -147 608 -141 c 1
+ 462 0 l 1
+ 173.5 0 l 2
+ 73 0 50 77 50 160 c 1
+ 112 160 l 1
+ 112 129 143 82 173.5 82 c 2
+ 511 82 l 1
+ 250 496 l 1
+ 327 541 l 1
+ 595 90 l 1
+ 571.539 48.1045 553.409 25.8271 514 -10 c 1
+ 616 -135 l 1
+ 621 -134 626 -133 631 -133 c 0
+ 665 -133 684 -154 684 -178 c 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_gamal.init
@@ -20764,33 +20831,33 @@ EndChar
 
 StartChar: gamalgarshuni_syr
 Encoding: 1812 1812 911
-Width: 700
+Width: 694
 Flags: HMW
-AnchorPoint: "syr_below" 319 0 basechar 0
-AnchorPoint: "syr_above" 289 626 basechar 0
+AnchorPoint: "syr_below" 314 0 basechar 0
+AnchorPoint: "syr_above" 284 626 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-689 -178 m 0
- 689 -208 669 -231 643 -231 c 0
- 609 -231 588 -208 588 -181 c 0
- 588 -167 596 -155 613 -141 c 1
- 457 0 l 1
- 178.5 0 l 2
- 67 0 35 92.5 35 160 c 1
- 117 160 l 1
- 117 125.8 150.5 82 176.5 82 c 2
- 296 82 l 1
- 404 244 l 1
- 364 82 l 1
- 516 82 l 1
- 255 496 l 1
- 332 541 l 1
- 600 90 l 1
- 581.518 52.2314 555.35 23.0449 519 -10 c 1
- 621 -135 l 1
- 626 -134 634 -133 636 -133 c 0
- 666 -133 689 -147 689 -178 c 0
+684 -178 m 0
+ 684 -208 664 -231 638 -231 c 0
+ 604 -231 583 -208 583 -181 c 0
+ 583 -167 591 -155 608 -141 c 1
+ 452 0 l 1
+ 173.5 0 l 2
+ 62 0 50 92.5 50 160 c 1
+ 112 160 l 1
+ 112 125.8 145.5 82 171.5 82 c 2
+ 291 82 l 1
+ 399 244 l 1
+ 359 82 l 1
+ 511 82 l 1
+ 250 496 l 1
+ 327 541 l 1
+ 595 90 l 1
+ 576.518 52.2314 550.35 23.0449 514 -10 c 1
+ 616 -135 l 1
+ 621 -134 629 -133 631 -133 c 0
+ 661 -133 684 -147 684 -178 c 0
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_gamalgarshuni.init
@@ -20803,7 +20870,7 @@ Encoding: 1813 1813 912
 Width: 494
 Flags: HMW
 AnchorPoint: "syr_below" 211 -145 basechar 0
-AnchorPoint: "syr_above" 131 541 basechar 0
+AnchorPoint: "syr_above" 281 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20822,6 +20889,7 @@ SplineSet
  341 248 318 339 123 339 c 1
  123 429 l 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'fina' term. forms in Syriac-1" syr_daleth.fina
 EndChar
 
@@ -20829,8 +20897,8 @@ StartChar: dalath_rish_syr
 Encoding: 1814 1814 913
 Width: 494
 Flags: HMW
-AnchorPoint: "syr_below" 301 0 basechar 0
-AnchorPoint: "syr_above" 131 541 basechar 0
+AnchorPoint: "syr_below" 261 0 basechar 0
+AnchorPoint: "syr_above" 281 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -20903,51 +20971,52 @@ EndChar
 
 StartChar: zain_syr
 Encoding: 1817 1817 916
-Width: 310
+Width: 290
 Flags: HMW
-AnchorPoint: "syr_below" 146 -170 basechar 0
+AnchorPoint: "syr_below" 156 -173 basechar 0
 AnchorPoint: "syr_above" 116 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-139 -6 m 1
- 82 130 60 209 60 267 c 0
+159 -6 m 1
+ 102 130 60 209 60 267 c 0
  60 351 79 371 198 371 c 0
  229 371 230 227 230 164 c 0
  230 102 227 42 225 -8 c 1
  159 -170 l 1
- 81 -154 l 1
- 139 -6 l 1
+ 111 -154 l 1
+ 159 -6 l 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'fina' term. forms in Syriac-1" syr_zain.fina
 EndChar
 
 StartChar: heth_syr
 Encoding: 1818 1818 917
-Width: 809
+Width: 784
 Flags: HMW
-AnchorPoint: "syr_above" 446 541 basechar 0
-AnchorPoint: "syr_below" 446 -100 basechar 0
+AnchorPoint: "syr_above" 431 541 basechar 0
+AnchorPoint: "syr_below" 431 -100 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-759 90 m 1
- 759 0 l 1
- 715 0 l 1
- 588 112 l 1
- 588 0 l 1
- 514 0 l 1
- 392 115 l 1
- 392 0 l 1
- 201.5 0 l 2
- 109 0 45 102 45 180 c 1
- 128 180 l 1
- 128 137 168 82 202.5 82 c 2
- 336 82 l 1
- 336 279 l 1
- 531 84 l 1
- 531 158 533 214 537 290 c 1
- 759 90 l 1
+744 90 m 1
+ 744 0 l 1
+ 700 0 l 1
+ 573 112 l 1
+ 573 0 l 1
+ 499 0 l 1
+ 377 115 l 1
+ 377 0 l 1
+ 186.5 0 l 2
+ 94 0 50 102 50 180 c 1
+ 113 180 l 1
+ 113 137 153 82 187.5 82 c 2
+ 321 82 l 1
+ 321 279 l 1
+ 516 84 l 1
+ 516 158 518 214 522 290 c 1
+ 744 90 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_heth.init
@@ -20957,30 +21026,30 @@ EndChar
 
 StartChar: teth_syr
 Encoding: 1819 1819 918
-Width: 829
+Width: 789
 Flags: HMW
-AnchorPoint: "syr_below" 275 0 basechar 0
-AnchorPoint: "syr_above" 275 621 basechar 0
+AnchorPoint: "syr_below" 250 0 basechar 0
+AnchorPoint: "syr_above" 250 621 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-774 -7 m 1
- 609 -171 l 1
- 504 0 l 1
- 205 0 l 2
- 64 0 55 110 55 159 c 1
- 137 159 l 1
- 137 131 160 82 205 82 c 2
- 456 82 l 1
- 184 496 l 1
- 258 540 l 1
- 530 82 l 1
- 774 82 l 1
- 774 -7 l 1
-728 0 m 1
- 562 0 l 1
- 630 -95 l 1
- 728 0 l 1
+749 -7 m 1
+ 584 -171 l 1
+ 479 0 l 1
+ 180 0 l 6
+ 67.1 0 50 110 50 159 c 5
+ 112 159 l 5
+ 112 131 135 82 180 82 c 6
+ 431 82 l 1
+ 159 496 l 1
+ 233 540 l 1
+ 505 82 l 1
+ 749 82 l 1
+ 749 -7 l 1
+703 0 m 1
+ 537 0 l 1
+ 605 -95 l 1
+ 703 0 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_teth.init
@@ -20990,28 +21059,28 @@ EndChar
 
 StartChar: tethgarshuni_syr
 Encoding: 1820 1820 919
-Width: 824
+Width: 789
 Flags: HMW
-AnchorPoint: "syr_below" 263 0 basechar 0
-AnchorPoint: "syr_above" 273 621 basechar 0
+AnchorPoint: "syr_below" 238 0 basechar 0
+AnchorPoint: "syr_above" 248 621 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-774 -7 m 1
- 599 -161 l 1
- 504 0 l 1
- 205 0 l 2
- 64 0 55 110 55 159 c 1
- 137 159 l 1
- 137 131 160 82 205 82 c 2
- 456 82 l 1
- 184 496 l 1
- 258 540 l 1
- 530 82 l 1
- 774 82 l 1
- 774 -7 l 1
+749 -7 m 1
+ 574 -161 l 1
+ 479 0 l 1
+ 180 0 l 2
+ 77.1 0 50 110 50 159 c 1
+ 112 159 l 1
+ 112 131 135 82 180 82 c 2
+ 431 82 l 1
+ 159 496 l 1
+ 233 540 l 1
+ 505 82 l 1
+ 749 82 l 1
+ 749 -7 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 Substitution2: "'init' initial forms in Syriac-1" syr_tethgarshuni.init
 Substitution2: "'medi' medial forms in Syriac-1" syr_tethgarshuni.medi
 Substitution2: "'fina' term. forms in Syriac-1" syr_tethgarshuni.fina
@@ -21019,24 +21088,24 @@ EndChar
 
 StartChar: yudh_syr
 Encoding: 1821 1821 920
-Width: 618
+Width: 583
 Flags: HMW
-AnchorPoint: "syr_above" 365 541 basechar 0
-AnchorPoint: "syr_below" 365 0 basechar 0
+AnchorPoint: "syr_above" 340 541 basechar 0
+AnchorPoint: "syr_below" 340 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-568 80 m 1
- 568 17 l 1
- 462 96 l 1
- 455 0 l 1
- 216 0 l 2
- 112 0 55 72.5 55 165 c 1
- 137 165 l 1
- 137 122.5 175 82 215 82 c 2
- 405 82 l 1
- 405 273 l 1
- 568 80 l 1
+543 80 m 1
+ 543 17 l 1
+ 437 96 l 1
+ 430 0 l 1
+ 191 0 l 2
+ 87 0 50 72.5 50 165 c 1
+ 112 165 l 1
+ 112 122.5 150 82 190 82 c 2
+ 380 82 l 1
+ 380 273 l 1
+ 543 80 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_yudh.init
@@ -21046,7 +21115,7 @@ EndChar
 
 StartChar: yudh_he_syr
 Encoding: 1822 1822 921
-Width: 906
+Width: 905
 Flags: HMW
 AnchorPoint: "syr_above" 705 541 basechar 0
 AnchorPoint: "syr_below" 661 0 basechar 0
@@ -21131,23 +21200,23 @@ EndChar
 
 StartChar: lamdh_syr
 Encoding: 1824 1824 923
-Width: 680
+Width: 650
 Flags: HMW
-AnchorPoint: "syr_below" 293 0 basechar 0
-AnchorPoint: "syr_above" 253 661 basechar 0
+AnchorPoint: "syr_below" 273 0 basechar 0
+AnchorPoint: "syr_above" 233 661 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-620 0 m 1
- 231 0 l 2
- 111 0 50 85.5996 50 165 c 1
- 132 165 l 1
- 132 129.6 179 82 231 82 c 2
- 532 82 l 1
- 105 597 l 1
- 179 664 l 1
- 620 83 l 1
- 620 0 l 1
+600 0 m 1
+ 211 0 l 2
+ 91 0 50 85.5996 50 165 c 1
+ 112 165 l 1
+ 112 129.6 159 82 211 82 c 2
+ 512 82 l 1
+ 85 597 l 1
+ 159 664 l 1
+ 600 83 l 1
+ 600 0 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_lamdh.init
@@ -21157,7 +21226,7 @@ EndChar
 
 StartChar: mim_syr
 Encoding: 1825 1825 924
-Width: 668
+Width: 648
 Flags: HMW
 AnchorPoint: "syr_below" 396 0 basechar 0
 AnchorPoint: "syr_above" 306 541 basechar 0
@@ -21197,11 +21266,12 @@ SplineSet
 40 158 m 1
  155 259 l 1
  546 -254 l 1
- 485 -300 l 1
+ 505 -280 l 5
  218 41 l 1
  172 0 l 1
  40 158 l 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'fina' term. forms in Syriac-1" syr_nun.fina
 Substitution2: "'init' initial forms in Syriac-1" syr_nun.init
 Substitution2: "'medi' medial forms in Syriac-1" syr_nun.medi
@@ -21209,37 +21279,37 @@ EndChar
 
 StartChar: semkath_syr
 Encoding: 1827 1827 926
-Width: 799
+Width: 794
 Flags: HMW
-AnchorPoint: "syr_below" 443 0 basechar 0
-AnchorPoint: "syr_above" 523 541 basechar 0
+AnchorPoint: "syr_below" 428 0 basechar 0
+AnchorPoint: "syr_above" 508 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-369 424 m 0
- 462 424 503.5 381 521 332 c 1
- 543.5 356 588 367 619 367 c 0
- 714 367 749 259 749 168 c 0
- 749 65 688 -2 578 -2 c 0
- 488 -2 389.5 18 299 77 c 1
- 299 0 l 1
- 186.5 0 l 2
- 82.5 0 45 65.4004 45 145 c 1
- 127 145 l 1
- 127 116.4 157.5 82 190.5 82 c 2
- 287 82 l 1
- 250.5 112 217 175 217 230 c 0
- 217 376 298.5 424 369 424 c 0
-587 80 m 0
- 632 80 673 116 673 169 c 0
- 673 222 654 289 600 289 c 0
- 548.5 289 511.5 155 499 95 c 1
- 533 86 544 80 587 80 c 0
-376 352 m 0
- 325 352 291 310 291 245 c 0
- 291 176 359.5 140 434.5 110 c 1
- 446.5 140 460 204 460 242 c 0
- 460 303 443 352 376 352 c 0
+354 424 m 0
+ 447 424 488.5 381 506 332 c 1
+ 528.5 356 573 367 604 367 c 0
+ 699 367 734 259 734 168 c 0
+ 734 65 673 -2 563 -2 c 0
+ 473 -2 374.5 18 284 77 c 1
+ 284 0 l 1
+ 171.5 0 l 2
+ 67.5 0 50 65.4004 50 145 c 1
+ 112 145 l 1
+ 112 116.4 142.5 82 175.5 82 c 2
+ 272 82 l 1
+ 235.5 112 202 175 202 230 c 0
+ 202 376 283.5 424 354 424 c 0
+572 80 m 0
+ 617 80 658 116 658 169 c 0
+ 658 222 639 289 585 289 c 0
+ 533.5 289 496.5 155 484 95 c 1
+ 518 86 529 80 572 80 c 0
+361 352 m 0
+ 310 352 276 310 276 245 c 0
+ 276 176 344.5 140 419.5 110 c 1
+ 431.5 140 445 204 445 242 c 0
+ 445 303 428 352 361 352 c 0
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_semkath.init
@@ -21261,18 +21331,16 @@ SplineSet
  389 355 421 367 452 367 c 0
  547 367 582 259 582 168 c 0
  582 33 514 -1 411 -1 c 0
- 369 -1 328 -1 289 4 c 1
- 287 -2 285 -18 245 -72 c 0
- 145 -206 l 1
+ 369 -1 338 -1 299 4 c 5
+ 260.8 -75 180.975 -157.793 145 -206 c 1
  73 -156 l 1
- 227 24 l 1
- 148 45 60 109 60 230 c 0
+ 237 24 l 5
+ 158 45 60 109 60 230 c 0
  60 343 91 424 202 424 c 0
 420 80 m 0
  441 80 526 92 526 169 c 0
  526 222 487 289 433 289 c 0
- 394 289 372 258 351 226 c 0
- 339 203 332 125 332 89 c 1
+ 368.8 289 364.8 229 332 89 c 1
  358 82 386 80 420 80 c 0
 209 352 m 0
  158 352 124 310 124 245 c 0
@@ -21288,29 +21356,29 @@ EndChar
 
 StartChar: e_syr
 Encoding: 1829 1829 928
-Width: 791
+Width: 771
 Flags: HMW
-AnchorPoint: "syr_below" 283 0 basechar 0
-AnchorPoint: "syr_above" 273 531 basechar 0
+AnchorPoint: "syr_below" 268 0 basechar 0
+AnchorPoint: "syr_above" 258 531 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-746 75 m 1
- 675 34 616 13 569 13 c 0
- 494 13 451 51 420 107 c 1
- 399 67 388 46 382 0 c 1
- 215.5 0 l 2
- 105.5 0 45 62 45 165 c 1
- 127 165 l 1
- 127 123 176.5 82 215.5 82 c 2
- 292 82 l 2
- 329 82 363 105 392 132 c 1
- 192 377 l 1
- 257 420 l 1
- 425 220 l 2
- 474.776 160.743 513 91 578 91 c 0
- 634 91 680 129 721 166 c 1
- 746 75 l 1
+731 75 m 1
+ 660 34 601 13 554 13 c 0
+ 479 13 436 51 405 107 c 1
+ 384 67 373 46 367 0 c 1
+ 200.5 0 l 2
+ 90.5 0 50 62 50 165 c 1
+ 112 165 l 1
+ 112 123 161.5 82 200.5 82 c 2
+ 277 82 l 2
+ 314 82 348 105 377 132 c 1
+ 177 377 l 1
+ 242 420 l 1
+ 410 220 l 2
+ 459.776 160.743 498 91 563 91 c 0
+ 619 91 665 129 706 166 c 1
+ 731 75 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_e.init
@@ -21320,30 +21388,30 @@ EndChar
 
 StartChar: pe_syr
 Encoding: 1830 1830 929
-Width: 560
+Width: 550
 Flags: HMW
-AnchorPoint: "syr_below" 293 0 basechar 0
-AnchorPoint: "syr_above" 273 621 basechar 0
+AnchorPoint: "syr_below" 283 0 basechar 0
+AnchorPoint: "syr_above" 263 621 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-319 229 m 0
- 180 229 133 288 133 384 c 0
- 133 463 190 507 260 525 c 0
- 457 576 l 1
- 520 0 l 1
- 184.5 0 l 2
- 91.5 0 40 52 40 141 c 1
- 122 141 l 1
- 122 98 151.5 82 182.5 82 c 2
- 430 82 l 1
- 418 235 l 1
- 377 231 344 229 319 229 c 0
-390 472 m 1
- 254 443 213 434 213 369 c 0
- 213 322 250 299 301 299 c 0
- 345 299 376 300 412 307 c 1
- 390 472 l 1
+309 229 m 0
+ 170 229 123 288 123 384 c 0
+ 123 463 180 507 250 525 c 0
+ 447 576 l 1
+ 510 0 l 1
+ 174.5 0 l 2
+ 81.5 0 50 52 50 141 c 1
+ 112 141 l 1
+ 112 98 141.5 82 172.5 82 c 2
+ 420 82 l 1
+ 408 235 l 1
+ 367 231 334 229 309 229 c 0
+380 472 m 1
+ 244 443 203 434 203 369 c 0
+ 203 322 240 299 291 299 c 0
+ 335 299 366 300 402 307 c 1
+ 380 472 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_pe.init
@@ -21353,7 +21421,7 @@ EndChar
 
 StartChar: pe_rev_syr
 Encoding: 1831 1831 930
-Width: 564
+Width: 539
 Flags: HMW
 AnchorPoint: "syr_below" 275 0 basechar 0
 AnchorPoint: "syr_above" 295 611 basechar 0
@@ -21366,8 +21434,8 @@ SplineSet
  130 82 l 1
  338 82 l 2
  402 82 429 118.4 429 150 c 1
- 519 150 l 1
- 519 84.4004 436 0 340 0 c 2
+ 499 150 l 1
+ 499 84.4004 436 0 340 0 c 2
  40 0 l 1
  103 576 l 1
  300 525 l 1
@@ -21414,36 +21482,37 @@ SplineSet
  153 -96 575 -96 575 -219 c 0
  575 -237 554 -280 550 -292 c 1
 EndSplineSet
+Validated: 3073
 Substitution2: "'fina' term. forms in Syriac-1" syr_sadhe.fina
 EndChar
 
 StartChar: qaph_syr
 Encoding: 1833 1833 932
-Width: 755
+Width: 740
 Flags: HMW
-AnchorPoint: "syr_above" 493 541 basechar 0
-AnchorPoint: "syr_below" 498 0 basechar 0
+AnchorPoint: "syr_above" 478 541 basechar 0
+AnchorPoint: "syr_below" 483 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-625 82 m 1
- 625 345 l 1
- 372 345 l 1
- 372 82 l 1
- 625 82 l 1
-388 0 m 2
- 368 0 312 31 304 51 c 1
- 279 47 l 1
- 279 0 l 1
- 208 0 l 2
- 109 0 45 58.2998 45 160 c 1
- 137 160 l 1
- 137 122.3 176 82 212 82 c 2
- 297 82 l 1
- 297 427 l 1
- 695 427 l 1
- 695 0 l 1
- 388 0 l 2
+610 82 m 1
+ 610 345 l 1
+ 357 345 l 1
+ 357 82 l 1
+ 610 82 l 1
+373 0 m 2
+ 353 0 297 31 289 51 c 1
+ 264 47 l 1
+ 264 0 l 1
+ 193 0 l 2
+ 94 0 50 58.2998 50 160 c 1
+ 122 160 l 1
+ 122 122.3 161 82 197 82 c 2
+ 282 82 l 1
+ 282 427 l 1
+ 680 427 l 1
+ 680 0 l 1
+ 373 0 l 2
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_qaph.init
@@ -21481,31 +21550,31 @@ EndChar
 
 StartChar: shin_syr
 Encoding: 1835 1835 934
-Width: 659
+Width: 644
 Flags: HMW
-AnchorPoint: "syr_below" 373 0 basechar 0
-AnchorPoint: "syr_above" 383 541 basechar 0
+AnchorPoint: "syr_below" 358 0 basechar 0
+AnchorPoint: "syr_above" 368 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-599 0 m 1
- 440 0 l 2
- 403 0 383 20 372 51 c 1
- 348 0 l 1
- 191.5 0 l 2
- 102.5 0 45 59.2998 45 150 c 1
- 127 150 l 1
- 127 111.3 158.5 82 191.5 82 c 2
- 360 82 l 1
- 350 345 l 1
- 150 345 l 1
- 150 427 l 1
- 599 427 l 1
- 599 345 l 1
- 440 345 l 1
- 450 82 l 1
- 599 82 l 1
- 599 0 l 1
+584 0 m 1
+ 425 0 l 2
+ 388 0 368 20 357 51 c 1
+ 333 0 l 1
+ 176.5 0 l 2
+ 87.5 0 50 59.2998 50 150 c 1
+ 112 150 l 1
+ 112 111.3 143.5 82 176.5 82 c 2
+ 345 82 l 1
+ 335 345 l 1
+ 135 345 l 1
+ 135 427 l 1
+ 584 427 l 1
+ 584 345 l 1
+ 425 345 l 1
+ 435 82 l 1
+ 584 82 l 1
+ 584 0 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_shin.init
@@ -21860,6 +21929,7 @@ SplineSet
  152 -61 l 1
  152 -154 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: qushshaya_syr
@@ -54114,6 +54184,7 @@ SplineSet
  -723 -214 l 1
  274 -214 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: diamondaroundoverlay.cmb
@@ -77326,6 +77397,7 @@ Refer: 3211 -1 N 0.707107 -0.707107 0.707107 0.707107 -459 -104 2
 Refer: 3211 -1 N -0.707107 0.707107 -0.707107 -0.707107 -230 704 2
 Refer: 3211 -1 N 0 -1 1 0 -696 95 2
 Refer: 3211 -1 S 0 1 -1 -0 7 504 2
+Validated: 32769
 EndChar
 
 StartChar: Zecyr_obratnyj
@@ -133734,32 +133806,32 @@ EndChar
 
 StartChar: fe_sogd_syr
 Encoding: 1871 1871 5121
-Width: 660
+Width: 655
 Flags: HMW
-AnchorPoint: "syr_below" 333 0 basechar 0
-AnchorPoint: "syr_above" 373 711 basechar 0
+AnchorPoint: "syr_below" 314 0 basechar 0
+AnchorPoint: "syr_above" 354 711 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-448 547 m 0
- 403 547 361 507 361 465 c 0
- 361 417 406 380 452 380 c 0
- 498 380 537 418 537 462 c 0
- 537 507 492 547 448 547 c 0
-624 0 m 1
- 211 0 l 2
- 124.5 0 49 45.5996 49 152 c 1
- 131 152 l 1
- 131 108 173 82 211 82 c 2
- 542 82 l 1
- 115 597 l 1
- 189 664 l 1
- 308 511 l 1
- 327 568 380 609 450 609 c 0
- 540 609 598 541 598 463 c 0
- 598 383 540 321 456 318 c 1
- 624 101 l 1
- 624 0 l 1
+429 547 m 0
+ 384 547 342 507 342 465 c 0
+ 342 417 387 380 433 380 c 0
+ 479 380 518 418 518 462 c 0
+ 518 507 473 547 429 547 c 0
+605 0 m 1
+ 192 0 l 2
+ 105.5 0 50 45.5996 50 152 c 1
+ 112 152 l 1
+ 112 108 154 82 192 82 c 2
+ 523 82 l 1
+ 96 597 l 1
+ 170 664 l 1
+ 289 511 l 1
+ 308 568 361 609 431 609 c 0
+ 521 609 579 541 579 463 c 0
+ 579 383 521 321 437 318 c 1
+ 605 101 l 1
+ 605 0 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'fina' term. forms in Syriac-1" syr_fe_sogd.fina
@@ -133769,29 +133841,29 @@ EndChar
 
 StartChar: khaph_sogd_syr
 Encoding: 1870 1870 5122
-Width: 650
+Width: 635
 Flags: HMW
-AnchorPoint: "syr_below" 259 0 basechar 0
-AnchorPoint: "syr_above" 289 731 basechar 0
+AnchorPoint: "syr_below" 244 0 basechar 0
+AnchorPoint: "syr_above" 274 731 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-445 719 m 17
- 464 694 478 660 478 627 c 0
- 478 531.3 410 452 324 452 c 1
- 600 101 l 1
- 600 0 l 1
- 181 0 l 2
- 95 0 45 86.0996 45 142 c 1
- 127 142 l 1
- 127 104.1 161 82 181 82 c 2
- 518 82 l 1
- 91 597 l 1
- 165 664 l 1
- 194 626 263 533 309 533 c 0
- 355 533 394 561.3 394 615 c 0
- 394 635.333 375.75 664.25 371 670 c 1
- 445 719 l 17
+430 719 m 17
+ 449 694 463 660 463 627 c 0
+ 463 531.3 395 452 309 452 c 1
+ 585 101 l 1
+ 585 0 l 1
+ 166 0 l 2
+ 80 0 50 86.0996 50 142 c 1
+ 112 142 l 1
+ 112 104.1 146 82 166 82 c 2
+ 503 82 l 1
+ 76 597 l 1
+ 150 664 l 1
+ 179 626 248 533 294 533 c 0
+ 340 533 379 561.3 379 615 c 0
+ 379 635.333 360.75 664.25 356 670 c 1
+ 430 719 l 17
 EndSplineSet
 Validated: 3073
 Substitution2: "'fina' term. forms in Syriac-1" syr_khaph_sogd.fina
@@ -133801,36 +133873,36 @@ EndChar
 
 StartChar: ghamal_syr
 Encoding: 1838 1838 5123
-Width: 569
+Width: 553
 Flags: HMW
-AnchorPoint: "syr_below" 189 0 basechar 0
-AnchorPoint: "syr_above" 329 611 basechar 0
+AnchorPoint: "syr_below" 174 0 basechar 0
+AnchorPoint: "syr_above" 314 611 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-469 558 m 1
- 485 532 492 500 492 465 c 0
- 492 390 417 330 327 330 c 1
- 470 82 l 1
- 453.5 54 426.973 24.5206 389 -10 c 1
- 491 -135 l 1
- 496 -134 501 -133 506 -133 c 0
- 540 -133 559 -154 559 -178 c 0
- 559 -208 538 -231 513 -231 c 0
- 475 -231 458 -208 458 -181 c 0
- 458 -163 473 -147 483 -141 c 1
- 327 0 l 1
- 175 0 l 2
- 95 0 45 72 45 131 c 1
- 127 131 l 1
- 127 102 147 82 174 82 c 2
- 386 82 l 1
- 125 496 l 1
- 202 541 l 1
- 231 493 294 407 346 407 c 0
- 387 407 417 435 417 469 c 0
- 417 490 402 520 402 521 c 9
- 469 558 l 1
+454 558 m 1
+ 470 532 477 500 477 465 c 0
+ 477 390 402 330 312 330 c 1
+ 455 82 l 1
+ 438.5 54 411.973 24.5205 374 -10 c 1
+ 476 -135 l 1
+ 481 -134 486 -133 491 -133 c 0
+ 525 -133 544 -154 544 -178 c 0
+ 544 -208 523 -231 498 -231 c 0
+ 460 -231 443 -208 443 -181 c 0
+ 443 -163 458 -147 468 -141 c 1
+ 312 0 l 1
+ 160 0 l 2
+ 80 0 50 72 50 131 c 1
+ 112 131 l 1
+ 112 102 132 82 159 82 c 2
+ 371 82 l 1
+ 110 496 l 1
+ 187 541 l 1
+ 216 493 279 407 331 407 c 0
+ 372 407 402 435 402 469 c 0
+ 402 490 387 520 387 521 c 9
+ 454 558 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_ghamal.init
@@ -133840,28 +133912,28 @@ EndChar
 
 StartChar: bheth_pers_syr
 Encoding: 1837 1837 5124
-Width: 697
+Width: 682
 Flags: HMW
-AnchorPoint: "syr_below" 362 0 basechar 0
-AnchorPoint: "syr_above" 262 641 basechar 0
+AnchorPoint: "syr_below" 347 0 basechar 0
+AnchorPoint: "syr_above" 247 641 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-637 0 m 1
- 195 0 l 2
- 75 0 45 94 45 144 c 1
- 125 144 l 1
- 125 120 159 81 195 81 c 2
- 543 81 l 1
- 543 347 l 1
- 251 347 l 1
- 251 427 l 1
- 263 427 l 1
- 462 628 l 1
- 498 598 l 1
- 348 427 l 1
- 637 427 l 1
- 637 0 l 1
+622 0 m 1
+ 180 0 l 2
+ 60 0 50 94 50 144 c 1
+ 110 144 l 1
+ 110 120 144 81 180 81 c 2
+ 528 81 l 1
+ 528 347 l 1
+ 236 347 l 1
+ 236 427 l 1
+ 248 427 l 1
+ 447 628 l 1
+ 483 598 l 1
+ 333 427 l 1
+ 622 427 l 1
+ 622 0 l 1
 EndSplineSet
 Validated: 3073
 Substitution2: "'init' initial forms in Syriac-1" syr_bheth.init
@@ -167010,6 +167082,7 @@ LayerCount: 2
 Fore
 Refer: 2495 8414 S 1 0 0 1 770 50 2
 Refer: 33 65 N 1 0 0 1 210 0 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F131
@@ -167020,6 +167093,7 @@ LayerCount: 2
 Fore
 Refer: 34 66 N 1 0 0 1 210 0 2
 Refer: 2495 8414 S 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F132
@@ -167030,6 +167104,7 @@ LayerCount: 2
 Fore
 Refer: 35 67 N 1 0 0 1 200 0 2
 Refer: 2495 8414 S 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F133
@@ -167040,6 +167115,7 @@ LayerCount: 2
 Fore
 Refer: 36 68 N 1 0 0 1 200 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F134
@@ -167050,6 +167126,7 @@ LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 210 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F135
@@ -167060,6 +167137,7 @@ LayerCount: 2
 Fore
 Refer: 38 70 N 1 0 0 1 240 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F136
@@ -167070,6 +167148,7 @@ LayerCount: 2
 Fore
 Refer: 39 71 N 1 0 0 1 170 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F137
@@ -167080,6 +167159,7 @@ LayerCount: 2
 Fore
 Refer: 40 72 N 1 0 0 1 184 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F138
@@ -167090,6 +167170,7 @@ LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 400 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F139
@@ -167100,6 +167181,7 @@ LayerCount: 2
 Fore
 Refer: 42 74 N 1 0 0 1 270 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F13A
@@ -167110,6 +167192,7 @@ LayerCount: 2
 Fore
 Refer: 43 75 N 1 0 0 1 200 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F13B
@@ -167120,6 +167203,7 @@ LayerCount: 2
 Fore
 Refer: 44 76 N 1 0 0 1 250 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F13C
@@ -167130,6 +167214,7 @@ LayerCount: 2
 Fore
 Refer: 45 77 N 1 0 0 1 120 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F13D
@@ -167140,6 +167225,7 @@ LayerCount: 2
 Fore
 Refer: 46 78 N 1 0 0 1 180 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F13E
@@ -167150,6 +167236,7 @@ LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 150 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F13F
@@ -167160,6 +167247,7 @@ LayerCount: 2
 Fore
 Refer: 48 80 N 1 0 0 1 230 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F141
@@ -167170,6 +167258,7 @@ LayerCount: 2
 Fore
 Refer: 50 82 N 1 0 0 1 190 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F142
@@ -167180,6 +167269,7 @@ LayerCount: 2
 Fore
 Refer: 51 83 N 1 0 0 1 210 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F143
@@ -167190,6 +167280,7 @@ LayerCount: 2
 Fore
 Refer: 52 84 N 1 0 0 1 240 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F144
@@ -167200,6 +167291,7 @@ LayerCount: 2
 Fore
 Refer: 53 85 N 1 0 0 1 180 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F145
@@ -167210,6 +167302,7 @@ LayerCount: 2
 Fore
 Refer: 54 86 N 1 0 0 1 230 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F146
@@ -167220,6 +167313,7 @@ LayerCount: 2
 Fore
 Refer: 55 87 N 0.95 0 0 1 102 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F147
@@ -167230,6 +167324,7 @@ LayerCount: 2
 Fore
 Refer: 56 88 N 1 0 0 1 210 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F148
@@ -167240,6 +167335,7 @@ LayerCount: 2
 Fore
 Refer: 57 89 N 1 0 0 1 200 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F149
@@ -167250,6 +167346,7 @@ LayerCount: 2
 Fore
 Refer: 58 90 N 1 0 0 1 240 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: marque_de_commerce
@@ -167693,6 +167790,7 @@ Fore
 Refer: 2495 8414 N 1 0 0 1 770 50 2
 Refer: 4621 -1 N 0.9 0 0 1 545 40 2
 Refer: 4607 -1 N 0.9 0 0 1 119 40 2
+Validated: 32769
 EndChar
 
 StartChar: MV_sq
@@ -167704,6 +167802,7 @@ Fore
 Refer: 4621 -1 N 0.85 0 0 1 585 40 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
 Refer: 4612 -1 N 0.85 0 0 1 94 40 2
+Validated: 32769
 EndChar
 
 StartChar: SD_sq
@@ -167715,6 +167814,7 @@ Fore
 Refer: 2495 8414 N 1 0 0 1 770 50 2
 Refer: 4603 -1 N 0.95 0 0 1 505 50 2
 Refer: 4618 -1 N 0.95 0 0 1 86 50 2
+Validated: 32769
 EndChar
 
 StartChar: SS_sq
@@ -167726,6 +167826,7 @@ Fore
 Refer: 4618 -1 N 0.95 0 0 1 531 50 2
 Refer: 4618 -1 N 0.95 0 0 1 91 50 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: PPV_sq
@@ -167738,6 +167839,7 @@ Refer: 4615 -1 N 0.65 0 0 1 390 50 2
 Refer: 4621 -1 N 0.65 0 0 1 675 40 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
 Refer: 4615 -1 N 0.65 0 0 1 110 50 2
+Validated: 32769
 EndChar
 
 StartChar: WC_sq
@@ -167749,6 +167851,7 @@ Fore
 Refer: 2495 8414 N 1 0 0 1 770 50 2
 Refer: 4602 -1 N 0.75 0 0 1 590 50 2
 Refer: 4622 -1 N 0.75 0 0 1 110 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F140
@@ -167759,6 +167862,7 @@ LayerCount: 2
 Fore
 Refer: 49 81 N 1 0 0 1 150 0 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F190
@@ -167770,6 +167874,7 @@ Fore
 Refer: 4609 -1 N 1 0 0 1 600 49 2
 Refer: 4603 -1 N 1 0 0 1 115 50 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F191
@@ -167781,6 +167886,7 @@ Fore
 Refer: 4611 -1 N 1 0 0 1 580 50 2
 Refer: 4602 -1 N 1 0 0 1 100 50 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F192
@@ -167794,6 +167900,7 @@ Refer: 4614 -1 N 0.45 0 0 0.75 320 137 2
 Refer: 4611 -1 N 0.45 0 0 0.75 810 137 2
 Refer: 4602 -1 N 0.45 0 0 0.75 100 137 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F193
@@ -167807,6 +167914,7 @@ Refer: 4604 -1 N 0.55 0 0 0.55 532 220 2
 Refer: 4617 -1 N 0.55 0 0 0.55 285 220 2
 Refer: 4605 -1 N 0.55 0 0 0.55 81 220 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F194
@@ -167818,6 +167926,7 @@ Fore
 Refer: 4608 -1 N 1 0 0 1 210 50 2
 Refer: 4603 -1 N 1 0 0 1 435 50 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F195
@@ -167830,6 +167939,7 @@ Refer: 4622 -1 N 0.5625 0 0 0.75 611 130 2
 Refer: 4604 -1 N 0.5625 0 0 0.75 364 130 2
 Refer: 4613 -1 N 0.5625 0 0 0.75 94 130 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F196
@@ -167841,6 +167951,7 @@ Fore
 Refer: 4606 -1 N 0.9 0 0 0.9 502 54 2
 Refer: 4613 -1 N 0.9 0 0 0.9 79 54 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F197
@@ -167852,6 +167963,7 @@ Fore
 Refer: 4610 -1 N 0.9 0 0 0.9 549 50 2
 Refer: 4614 -1 N 0.9 0 0 0.9 81 50 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F198
@@ -167864,6 +167976,7 @@ Refer: 4618 -1 N 0.6375 0 0 0.765 699 132 2
 Refer: 4618 -1 N 0.6375 0 0 0.765 78 132 2
 Refer: 4614 -1 N 0.6375 0 0 0.765 360 132 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F199
@@ -167876,6 +167989,7 @@ Refer: 1 33 N 0.85 0 0 0.6375 780 80 2
 Refer: 4615 -1 N 0.85 0 0 0.85 476 90 2
 Refer: 4620 -1 N 0.85 0 0 0.85 76 90 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F19A
@@ -167887,6 +168001,7 @@ Fore
 Refer: 4618 -1 N 0.95 0 0 1 531 50 2
 Refer: 2495 8414 N 1 0 0 1 770 50 2
 Refer: 4621 -1 N 0.9 0 0 1 125 40 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F150
@@ -181882,6 +181997,7 @@ Refer: 7180 -1 N 0 1 -1 0 106 926 2
 Refer: 7180 -1 N 0 1 -1 0 853 175 2
 Refer: 7180 -1 N 0 1 -1 0 -50 551 2
 Refer: 7180 -1 N 0 1 -1 0 1009 549 2
+Validated: 32769
 EndChar
 
 StartChar: cyr_cross
@@ -181906,6 +182022,7 @@ SplineSet
  -160 856 l 1
  -196 820 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni20E2
@@ -181978,6 +182095,7 @@ SplineSet
  480 -57 l 2
  480 -232 410 -300 240 -300 c 2
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: circumflexdbl.cmb
@@ -183608,6 +183726,7 @@ Fore
 Refer: 7182 8419 N 1 0 0 1 799 0 2
 Refer: 17 49 S 1 0 0 1 79 0 2
 Refer: 16 48 S 1 0 0 1 459 0 2
+Validated: 32769
 EndChar
 
 StartChar: uni1F520
@@ -185009,27 +185128,27 @@ EndChar
 
 StartChar: syr_beth.fina
 Encoding: 60115 -1 7365
-Width: 698
+Width: 683
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 353 536 basechar 0
-AnchorPoint: "syr_below" 353 0 basechar 0
+AnchorPoint: "syr_above" 338 536 basechar 0
+AnchorPoint: "syr_below" 338 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-638 82 m 1
- 708 82 l 1
- 708 0 l 1
- 192 0 l 2
- 86 0 45 82 45 145 c 1
- 127 145 l 1
- 127 113 168 82 190 82 c 2
- 544 82 l 1
- 544 345 l 1
- 252 345 l 1
- 252 427 l 1
- 638 427 l 1
- 638 82 l 1
+623 82 m 1
+ 693 82 l 1
+ 693 0 l 1
+ 177 0 l 2
+ 71 0 50 82 50 145 c 1
+ 112 145 l 1
+ 112 113 153 82 175 82 c 2
+ 529 82 l 1
+ 529 345 l 1
+ 237 345 l 1
+ 237 427 l 1
+ 623 427 l 1
+ 623 82 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185099,36 +185218,36 @@ EndChar
 
 StartChar: syr_gamal.fina
 Encoding: 60118 -1 7368
-Width: 712
+Width: 697
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 353 616 basechar 0
-AnchorPoint: "syr_below" 373 0 basechar 0
+AnchorPoint: "syr_above" 338 616 basechar 0
+AnchorPoint: "syr_below" 358 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-699 -178 m 0
- 699 -208 678 -231 653 -231 c 0
- 615 -231 598 -208 598 -181 c 0
- 598 -163 613 -147 623 -141 c 1
- 467 0 l 1
- 188 0 l 2
- 88 0 45 77 45 160 c 1
- 127 160 l 1
- 127 129 158 82 188 82 c 2
- 526 82 l 1
- 265 496 l 1
- 342 541 l 1
- 610 82 l 1
- 722 82 l 1
- 722 0 l 1
- 699 0 l 2
- 642 0 619 12 611 42 c 1
- 587 48 l 1
- 577 32 551 10 529 -10 c 1
- 631 -135 l 1
- 636 -134 641 -133 646 -133 c 0
- 680 -133 699 -154 699 -178 c 0
+684 -178 m 0
+ 684 -208 663 -231 638 -231 c 0
+ 600 -231 583 -208 583 -181 c 0
+ 583 -163 598 -147 608 -141 c 1
+ 452 0 l 1
+ 173 0 l 2
+ 73 0 50 77 50 160 c 1
+ 112 160 l 1
+ 112 129 143 82 173 82 c 2
+ 511 82 l 1
+ 250 496 l 1
+ 327 541 l 1
+ 595 82 l 1
+ 707 82 l 1
+ 707 0 l 1
+ 684 0 l 2
+ 627 0 604 12 596 42 c 1
+ 572 48 l 1
+ 562 32 536 10 514 -10 c 1
+ 616 -135 l 1
+ 621 -134 626 -133 631 -133 c 0
+ 665 -133 684 -154 684 -178 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185204,39 +185323,39 @@ EndChar
 
 StartChar: syr_gamalgarshuni.fina
 Encoding: 60121 -1 7371
-Width: 709
+Width: 694
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 329 626 basechar 0
-AnchorPoint: "syr_below" 359 0 basechar 0
+AnchorPoint: "syr_above" 314 626 basechar 0
+AnchorPoint: "syr_below" 344 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-699 -178 m 0
- 699 -208 679 -231 653 -231 c 0
- 619 -231 598 -208 598 -181 c 0
- 598 -167 606 -155 623 -141 c 1
- 467 0 l 1
- 186 0 l 2
- 106 0 45 56 45 160 c 1
- 127 160 l 1
- 127 128 158 82 190 82 c 2
- 316 82 l 1
- 414 244 l 1
- 374 82 l 1
- 526 82 l 1
- 265 496 l 1
- 342 541 l 1
- 610 82 l 1
- 719 82 l 1
- 719 0 l 1
- 688 0 l 2
- 638 0 619 8 611 42 c 1
- 587 48 l 1
- 577 32 551 10 529 -10 c 1
- 631 -135 l 1
- 636 -134 644 -133 646 -133 c 0
- 676 -133 699 -147 699 -178 c 0
+684 -178 m 0
+ 684 -208 664 -231 638 -231 c 0
+ 604 -231 583 -208 583 -181 c 0
+ 583 -167 591 -155 608 -141 c 1
+ 452 0 l 1
+ 171 0 l 2
+ 91 0 50 56 50 160 c 1
+ 112 160 l 1
+ 112 128 143 82 175 82 c 2
+ 301 82 l 1
+ 399 244 l 1
+ 359 82 l 1
+ 511 82 l 1
+ 250 496 l 1
+ 327 541 l 1
+ 595 82 l 1
+ 704 82 l 1
+ 704 0 l 1
+ 673 0 l 2
+ 623 0 604 8 596 42 c 1
+ 572 48 l 1
+ 562 32 536 10 514 -10 c 1
+ 616 -135 l 1
+ 621 -134 629 -133 631 -133 c 0
+ 661 -133 684 -147 684 -178 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185246,7 +185365,7 @@ Encoding: 60122 -1 7372
 Width: 493
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 131 541 basechar 0
+AnchorPoint: "syr_above" 271 541 basechar 0
 AnchorPoint: "syr_below" 211 -144 basechar 0
 LayerCount: 2
 Fore
@@ -185268,6 +185387,7 @@ SplineSet
  189 -60 l 1
  189 -143 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_daleth_rish.fina
@@ -185275,7 +185395,7 @@ Encoding: 60123 -1 7373
 Width: 493
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 131 541 basechar 0
+AnchorPoint: "syr_above" 271 541 basechar 0
 AnchorPoint: "syr_below" 241 0 basechar 0
 LayerCount: 2
 Fore
@@ -185357,7 +185477,7 @@ EndChar
 
 StartChar: syr_zain.fina
 Encoding: 60126 -1 7376
-Width: 310
+Width: 290
 GlyphClass: 2
 Flags: HMW
 AnchorPoint: "syr_above" 116 541 basechar 0
@@ -185365,18 +185485,19 @@ AnchorPoint: "syr_below" 156 -180 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-139 -6 m 1
- 88 92 60 209 60 267 c 0
+159 -6 m 1
+ 108 92 60 209 60 267 c 0
  60 351 79 371 198 371 c 0
  229 371 230 227 230 164 c 0
  230 139 230 106 229 82 c 1
- 320 82 l 1
- 320 0 l 1
+ 300 82 l 1
+ 300 0 l 1
  225 0 l 1
  159 -170 l 1
- 81 -154 l 1
- 139 -6 l 1
+ 111 -154 l 1
+ 159 -6 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_heth.init
@@ -185405,6 +185526,7 @@ SplineSet
  371 158 373 214 377 290 c 1
  599 82 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_heth.medi
@@ -185434,37 +185556,39 @@ SplineSet
  371 158 373 214 377 290 c 1
  599 82 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_heth.fina
 Encoding: 60130 -1 7379
-Width: 787
+Width: 772
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_below" 506 0 basechar 0
-AnchorPoint: "syr_above" 506 541 basechar 0
+AnchorPoint: "syr_below" 491 0 basechar 0
+AnchorPoint: "syr_above" 491 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-759 82 m 1
- 797 82 l 1
- 797 0 l 1
- 715 0 l 1
- 588 112 l 1
- 588 0 l 1
- 514 0 l 1
- 392 115 l 1
- 392 0 l 1
- 202 0 l 2
- 110 0 45 102 45 180 c 1
- 127 180 l 1
- 127 137 168 82 202 82 c 2
- 336 82 l 1
- 336 279 l 1
- 531 84 l 1
- 531 158 533 214 537 290 c 1
- 759 82 l 1
+744 82 m 1
+ 782 82 l 1
+ 782 0 l 1
+ 700 0 l 1
+ 573 112 l 1
+ 573 0 l 1
+ 499 0 l 1
+ 377 115 l 1
+ 377 0 l 1
+ 187 0 l 2
+ 95 0 50 102 50 180 c 1
+ 112 180 l 1
+ 112 137 153 82 187 82 c 2
+ 321 82 l 1
+ 321 279 l 1
+ 516 84 l 1
+ 516 158 518 214 522 290 c 1
+ 744 82 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_teth.init
@@ -185528,40 +185652,40 @@ EndChar
 
 StartChar: syr_teth.fina
 Encoding: 60133 -1 7382
-Width: 819
+Width: 804
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 265 621 basechar 0
-AnchorPoint: "syr_below" 265 0 basechar 0
+AnchorPoint: "syr_above" 250 621 basechar 0
+AnchorPoint: "syr_below" 250 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-764 -7 m 1
- 599 -171 l 1
- 494 0 l 1
- 195 0 l 2
- 54 0 45 110 45 159 c 1
- 127 159 l 1
- 127 131 150 82 195 82 c 2
- 446 82 l 1
- 174 496 l 1
- 248 540 l 1
- 520 82 l 1
- 829 82 l 1
- 829 0 l 1
- 764 0 l 1
- 764 -7 l 1
-718 0 m 1
- 552 0 l 1
- 620 -95 l 1
- 718 0 l 1
+749 -7 m 1
+ 584 -171 l 1
+ 479 0 l 1
+ 180 0 l 2
+ 73.2998 0 50 110 50 159 c 1
+ 112 159 l 1
+ 112 131 135 82 180 82 c 2
+ 431 82 l 1
+ 159 496 l 1
+ 233 540 l 1
+ 505 82 l 1
+ 814 82 l 1
+ 814 0 l 1
+ 749 0 l 1
+ 749 -7 l 1
+703 0 m 1
+ 537 0 l 1
+ 605 -95 l 1
+ 703 0 l 1
 EndSplineSet
 Validated: 3073
 EndChar
 
 StartChar: syr_tethgarshuni.init
 Encoding: 60134 -1 7383
-Width: 737
+Width: 732
 GlyphClass: 2
 Flags: HMW
 AnchorPoint: "syr_above" 185 621 basechar 0
@@ -185612,29 +185736,29 @@ EndChar
 
 StartChar: syr_tethgarshuni.fina
 Encoding: 60136 -1 7385
-Width: 819
+Width: 804
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 265 621 basechar 0
-AnchorPoint: "syr_below" 265 0 basechar 0
+AnchorPoint: "syr_above" 250 621 basechar 0
+AnchorPoint: "syr_below" 250 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-764 -7 m 1
- 589 -161 l 1
- 494 0 l 1
- 195 0 l 2
- 54 0 45 110 45 159 c 1
- 127 159 l 1
- 127 131 150 82 195 82 c 2
- 446 82 l 1
- 174 496 l 1
- 248 540 l 1
- 520 82 l 1
- 829 82 l 1
- 829 0 l 1
- 764 0 l 1
- 764 -7 l 1
+749 -7 m 1
+ 574 -161 l 1
+ 479 0 l 1
+ 180 0 l 2
+ 63.2998 0 50 110 50 159 c 1
+ 112 159 l 1
+ 112 131 135 82 180 82 c 2
+ 431 82 l 1
+ 159 496 l 1
+ 233 540 l 1
+ 505 82 l 1
+ 814 82 l 1
+ 814 0 l 1
+ 749 0 l 1
+ 749 -7 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185689,27 +185813,27 @@ EndChar
 
 StartChar: syr_yudh.fina
 Encoding: 60139 -1 7388
-Width: 594
+Width: 579
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_below" 385 0 basechar 0
-AnchorPoint: "syr_above" 385 541 basechar 0
+AnchorPoint: "syr_below" 370 0 basechar 0
+AnchorPoint: "syr_above" 370 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-558 82 m 1
- 604 82 l 1
- 604 0 l 1
- 558 0 l 1
- 452 98 l 1
- 445 0 l 1
- 206 0 l 2
- 102 0 45 73 45 165 c 1
- 127 165 l 1
- 127 123 165 82 205 82 c 2
- 395 82 l 1
- 395 273 l 1
- 558 82 l 1
+543 82 m 1
+ 589 82 l 1
+ 589 0 l 1
+ 543 0 l 1
+ 437 98 l 1
+ 430 0 l 1
+ 191 0 l 2
+ 87 0 50 73 50 165 c 1
+ 112 165 l 1
+ 112 123 150 82 190 82 c 2
+ 380 82 l 1
+ 380 273 l 1
+ 543 82 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185826,27 +185950,27 @@ EndChar
 
 StartChar: syr_kaph.fina
 Encoding: 60143 -1 7392
-Width: 463
+Width: 453
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_below" 96 0 basechar 0
-AnchorPoint: "syr_above" 106 541 basechar 0
+AnchorPoint: "syr_below" 86 0 basechar 0
+AnchorPoint: "syr_above" 96 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-384 -135 m 1
- 384 -216 l 1
- 258 -216 217 -143 202 -101 c 2
- 50 362 l 1
- 403 475 l 1
- 403 82 l 1
- 473 82 l 1
- 473 0 l 1
- 333 0 l 1
- 333 362 l 1
- 158 308 l 1
- 282 -82 l 2
- 289.146 -104.291 312 -135 384 -135 c 1
+374 -135 m 1
+ 374 -216 l 1
+ 248 -216 207 -143 192 -101 c 2
+ 40 362 l 1
+ 393 475 l 1
+ 393 82 l 1
+ 463 82 l 1
+ 463 0 l 1
+ 323 0 l 1
+ 323 362 l 1
+ 148 308 l 1
+ 272 -82 l 2
+ 279.146 -104.291 302 -135 374 -135 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185898,50 +186022,50 @@ EndChar
 
 StartChar: syr_lamdh.fina
 Encoding: 60146 -1 7395
-Width: 650
+Width: 635
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 178 711 basechar 0
-AnchorPoint: "syr_below" 238 0 basechar 0
+AnchorPoint: "syr_above" 163 711 basechar 0
+AnchorPoint: "syr_below" 223 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-615 82 m 1
- 660 82 l 1
- 660 0 l 1
- 226 0 l 2
- 106 0 45 86 45 165 c 1
- 127 165 l 1
- 127 130 174 82 226 82 c 2
- 527 82 l 1
- 100 597 l 1
- 174 664 l 1
- 615 82 l 1
+600 82 m 1
+ 645 82 l 1
+ 645 0 l 1
+ 211 0 l 2
+ 91 0 50 86 50 165 c 1
+ 112 165 l 1
+ 112 130 159 82 211 82 c 2
+ 512 82 l 1
+ 85 597 l 1
+ 159 664 l 1
+ 600 82 l 1
 EndSplineSet
 Validated: 3073
 EndChar
 
 StartChar: syr_nun.fina
 Encoding: 60150 -1 7396
-Width: 487
+Width: 527
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 151 541 basechar 0
-AnchorPoint: "syr_below" 101 0 basechar 0
+AnchorPoint: "syr_above" 191 541 basechar 0
+AnchorPoint: "syr_below" 141 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
--20 158 m 1
- 91 254 l 1
- 235 82 l 1
- 497 82 l 1
- 497 0 l 1
- 300 0 l 1
- 482 -245 l 1
- 419 -290 l 1
- 191 2 l 1
- 117 0 l 1
- -20 158 l 1
+20 158 m 1
+ 131 254 l 1
+ 275 82 l 1
+ 537 82 l 1
+ 537 0 l 1
+ 340 0 l 1
+ 522 -245 l 1
+ 479 -280 l 1
+ 251 2 l 1
+ 157 0 l 1
+ 20 158 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185996,42 +186120,42 @@ EndChar
 
 StartChar: syr_semkath.fina
 Encoding: 60153 -1 7399
-Width: 798
+Width: 783
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 523 541 basechar 0
-AnchorPoint: "syr_below" 443 0 basechar 0
+AnchorPoint: "syr_above" 508 541 basechar 0
+AnchorPoint: "syr_below" 428 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-376 352 m 0
- 325 352 291 310 291 245 c 0
- 291 176 359 140 434 110 c 1
- 446 140 460 204 460 242 c 0
- 460 303 443 352 376 352 c 0
-587 80 m 0
- 632 80 673 116 673 169 c 0
- 673 222 654 289 600 289 c 0
- 548 289 511 155 499 95 c 1
- 533 86 544 80 587 80 c 0
-369 424 m 0
- 462 424 503 381 521 332 c 1
- 543 356 588 367 619 367 c 0
- 714 367 749 259 749 168 c 0
- 749 139 744 105 735 82 c 1
- 809 82 l 1
- 809 0 l 1
- 610 0 l 1
- 600 -1 589 -2 578 -2 c 0
- 488 -2 389 18 299 77 c 1
- 299 0 l 1
- 186 0 l 2
- 82 0 45 65 45 145 c 1
- 127 145 l 1
- 127 116 157 82 190 82 c 2
- 287 82 l 1
- 251 112 217 175 217 230 c 0
- 217 376 299 424 369 424 c 0
+361 352 m 0
+ 310 352 276 310 276 245 c 0
+ 276 176 344 140 419 110 c 1
+ 431 140 445 204 445 242 c 0
+ 445 303 428 352 361 352 c 0
+572 80 m 0
+ 617 80 658 116 658 169 c 0
+ 658 222 639 289 585 289 c 0
+ 533 289 496 155 484 95 c 1
+ 518 86 529 80 572 80 c 0
+354 424 m 0
+ 447 424 488 381 506 332 c 1
+ 528 356 573 367 604 367 c 0
+ 699 367 734 259 734 168 c 0
+ 734 139 729 105 720 82 c 1
+ 793 82 l 1
+ 793 0 l 1
+ 595 0 l 2
+ 585 -1 574 -2 563 -2 c 0
+ 473 -2 374 18 284 77 c 1
+ 284 0 l 1
+ 171 0 l 2
+ 67 0 50 65 50 145 c 1
+ 112 145 l 1
+ 112 116 142 82 175 82 c 2
+ 272 82 l 1
+ 236 112 202 175 202 230 c 0
+ 202 376 284 424 354 424 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -186150,15 +186274,14 @@ Fore
 SplineSet
 209 352 m 0
  158 352 124 310 124 245 c 0
- 124 156 191 125 266 95 c 1
- 278 125 293 204 293 242 c 0
+ 124 156 173 127 248 97 c 1
+ 260 127 293 204 293 242 c 0
  293 309 266 352 209 352 c 0
 420 80 m 0
  441 80 526 92 526 169 c 0
  526 222 487 289 433 289 c 0
- 394 289 372 258 351 226 c 1
- 339 203 332 125 332 89 c 1
- 358 82 386 80 420 80 c 0
+ 360.921 289 336.8 169 314 91 c 1
+ 340 84 386 80 420 80 c 0
 202 424 m 0
  295 424 319 382 354 332 c 1
  389 355 421 367 452 367 c 0
@@ -186169,8 +186292,7 @@ SplineSet
  440 0 l 2
  431 -1 421 -1 411 -1 c 0
  369 -1 328 -1 289 4 c 1
- 287 -2 285 -18 245 -72 c 2
- 145 -206 l 1
+ 254.8 -59 180.975 -157.793 145 -206 c 1
  73 -156 l 1
  227 24 l 1
  148 45 60 109 60 230 c 0
@@ -186334,30 +186456,30 @@ EndChar
 
 StartChar: syr_e.fina
 Encoding: 60162 -1 7410
-Width: 711
+Width: 696
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 273 531 basechar 0
-AnchorPoint: "syr_below" 283 0 basechar 0
+AnchorPoint: "syr_above" 258 531 basechar 0
+AnchorPoint: "syr_below" 268 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-721 0 m 1
- 599 0 l 2
- 524 0 455 61 424 117 c 1
- 403 77 388 46 382 0 c 1
- 216 0 l 2
- 106 0 45 62 45 165 c 1
- 127 165 l 1
- 127 123 177 82 216 82 c 2
- 292 82 l 2
- 329 82 363 105 392 132 c 1
- 192 377 l 1
- 257 420 l 1
- 425 220 l 2
- 475 161 535 82 580 82 c 2
- 721 82 l 1
- 721 0 l 1
+706 0 m 1
+ 584 0 l 2
+ 509 0 440 61 409 117 c 1
+ 388 77 373 46 367 0 c 1
+ 201 0 l 2
+ 91 0 50 62 50 165 c 1
+ 112 165 l 1
+ 112 123 162 82 201 82 c 2
+ 277 82 l 2
+ 314 82 348 105 377 132 c 1
+ 177 377 l 1
+ 242 420 l 1
+ 410 220 l 2
+ 460 161 520 82 565 82 c 2
+ 706 82 l 1
+ 706 0 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -186393,33 +186515,33 @@ EndChar
 
 StartChar: syr_pe.fina
 Encoding: 60165 -1 7412
-Width: 570
+Width: 555
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 263 621 basechar 0
-AnchorPoint: "syr_below" 303 0 basechar 0
+AnchorPoint: "syr_above" 248 621 basechar 0
+AnchorPoint: "syr_below" 288 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-400 472 m 1
- 264 443 223 434 223 369 c 0
- 223 322 260 299 311 299 c 0
- 355 299 386 300 422 307 c 1
- 400 472 l 1
-329 229 m 0
- 190 229 143 288 143 384 c 0
- 143 463 200 507 270 525 c 2
- 467 576 l 1
- 520 82 l 1
- 580 82 l 1
- 580 0 l 1
- 195 0 l 2
- 109 0 45 70 45 151 c 1
- 127 151 l 1
- 127 124 160 82 195 82 c 2
- 440 82 l 1
- 428 235 l 1
- 387 231 354 229 329 229 c 0
+385 472 m 1
+ 249 443 208 434 208 369 c 0
+ 208 322 245 299 296 299 c 0
+ 340 299 371 300 407 307 c 1
+ 385 472 l 1
+314 229 m 0
+ 175 229 128 288 128 384 c 0
+ 128 463 185 507 255 525 c 2
+ 452 576 l 1
+ 505 82 l 1
+ 565 82 l 1
+ 565 0 l 1
+ 180 0 l 2
+ 94 0 50 70 50 151 c 1
+ 112 151 l 1
+ 112 124 145 82 180 82 c 2
+ 425 82 l 1
+ 413 235 l 1
+ 372 231 339 229 314 229 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -186457,7 +186579,7 @@ EndChar
 
 StartChar: syr_pe_rev.init
 Encoding: 60166 -1 7414
-Width: 564
+Width: 549
 GlyphClass: 2
 Flags: HMW
 AnchorPoint: "syr_above" 295 631 basechar 0
@@ -186477,8 +186599,8 @@ SplineSet
  126 82 l 1
  340 82 l 2
  404 82 437 118 437 150 c 1
- 519 150 l 1
- 519 84 436 0 340 0 c 2
+ 499 150 l 1
+ 499 84 436 0 340 0 c 2
  340 0 106.667 0 -10 0 c 1
  -10 82 l 1
  48.9688 82 l 1
@@ -186486,6 +186608,7 @@ SplineSet
  300 525 l 1
  369 502 427 463 427 384 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_pe_rev.medi
@@ -186582,6 +186705,7 @@ SplineSet
  153 -96 575 -96 575 -219 c 0
  575 -237 554 -288 550 -300 c 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_qaph.init
@@ -186648,34 +186772,34 @@ EndChar
 
 StartChar: syr_qaph.fina
 Encoding: 60172 -1 7420
-Width: 755
+Width: 740
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_above" 503 541 basechar 0
-AnchorPoint: "syr_below" 498 0 basechar 0
+AnchorPoint: "syr_above" 488 541 basechar 0
+AnchorPoint: "syr_below" 483 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-625 82 m 1
- 625 345 l 1
- 372 345 l 1
- 372 82 l 1
- 625 82 l 1
-388 0 m 2
- 368 0 312 31 304 51 c 1
- 279 47 l 1
- 279 0 l 1
- 208 0 l 2
- 109 0 45 58 45 160 c 1
- 129 160 l 1
- 129 122 176 82 212 82 c 2
- 297 82 l 1
- 297 427 l 1
- 695 427 l 1
- 695 82 l 1
- 765 82 l 1
- 765 0 l 1
- 388 0 l 2
+610 82 m 1
+ 610 345 l 1
+ 357 345 l 1
+ 357 82 l 1
+ 610 82 l 1
+373 0 m 2
+ 353 0 297 31 289 51 c 1
+ 264 47 l 1
+ 264 0 l 1
+ 193 0 l 2
+ 94 0 50 58 50 160 c 1
+ 114 160 l 1
+ 114 122 161 82 197 82 c 2
+ 282 82 l 1
+ 282 427 l 1
+ 680 427 l 1
+ 680 82 l 1
+ 750 82 l 1
+ 750 0 l 1
+ 373 0 l 2
 EndSplineSet
 Validated: 3073
 EndChar
@@ -186772,32 +186896,32 @@ EndChar
 
 StartChar: syr_shin.fina
 Encoding: 60178 -1 7424
-Width: 682
+Width: 667
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "syr_below" 413 0 basechar 0
-AnchorPoint: "syr_above" 393 541 basechar 0
+AnchorPoint: "syr_below" 398 0 basechar 0
+AnchorPoint: "syr_above" 378 541 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-692 0 m 1
- 440 0 l 2
- 403 0 383 20 372 51 c 1
- 348 0 l 1
- 192 0 l 2
- 103 0 45 59 45 150 c 1
- 127 150 l 1
- 127 111 159 82 192 82 c 2
- 360 82 l 1
- 350 345 l 1
- 150 345 l 1
- 150 427 l 1
- 599 427 l 1
- 599 345 l 1
- 440 345 l 1
- 450 82 l 1
- 692 82 l 1
- 692 0 l 1
+677 0 m 1
+ 425 0 l 2
+ 388 0 368 20 357 51 c 1
+ 333 0 l 1
+ 177 0 l 2
+ 88 0 50 59 50 150 c 1
+ 112 150 l 1
+ 112 111 144 82 177 82 c 2
+ 345 82 l 1
+ 335 345 l 1
+ 135 345 l 1
+ 135 427 l 1
+ 584 427 l 1
+ 584 345 l 1
+ 425 345 l 1
+ 435 82 l 1
+ 677 82 l 1
+ 677 0 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -186816,19 +186940,20 @@ SplineSet
  282 40 199 -7 166 -7 c 0
  92 -7 55 43 55 117 c 0
  55 267 186 427 248 491 c 1
- 601 82 l 1
+ 591 82 l 1
  648 82 l 1
  648 0 l 1
- 565 0 l 1
- 565 -1 l 1
- 236 383 l 1
- 191.2 323.9 138 205 138 130 c 0
+ 569 0 l 5
+ 569 -1 l 5
+ 238 393 l 1
+ 193.2 333.9 138 205 138 130 c 0
  138 101 151 88 180 88 c 0
  234 88 288 131 315 131 c 0
  346 131 397 69 413 47 c 1
  373 -10 l 1
  354 15 325 40 304 40 c 0
 EndSplineSet
+Validated: 527361
 EndChar
 
 StartChar: questionarab
@@ -186892,6 +187017,7 @@ SplineSet
  -10 0 l 1
  -10 82 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: syr_abbr.left
@@ -187085,31 +187211,31 @@ EndChar
 
 StartChar: syr_bheth.fina
 Encoding: 60187 -1 7439
-Width: 717
+Width: 702
 GlyphClass: 2
 Flags: HW
-AnchorPoint: "syr_above" 293 641 basechar 0
-AnchorPoint: "syr_below" 393 0 basechar 0
+AnchorPoint: "syr_above" 278 641 basechar 0
+AnchorPoint: "syr_below" 378 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-637 82 m 1
- 727 82 l 1
- 727 0 l 1
- 195 0 l 2
- 75 0 45 94 45 144 c 1
- 125 144 l 1
- 125 120 159 81 195 81 c 2
- 543 81 l 1
- 543 347 l 1
- 251 347 l 1
- 251 427 l 1
- 263 427 l 1
- 462 628 l 1
- 498 598 l 1
- 348 427 l 1
- 637 427 l 1
- 637 82 l 1
+622 82 m 1
+ 712 82 l 1
+ 712 0 l 1
+ 180 0 l 2
+ 60 0 50 94 50 144 c 1
+ 110 144 l 1
+ 110 120 144 81 180 81 c 2
+ 528 81 l 1
+ 528 347 l 1
+ 236 347 l 1
+ 236 427 l 1
+ 248 427 l 1
+ 447 628 l 1
+ 483 598 l 1
+ 333 427 l 1
+ 622 427 l 1
+ 622 82 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -187191,44 +187317,44 @@ EndChar
 
 StartChar: syr_ghamal.fina
 Encoding: 60190 -1 7442
-Width: 529
+Width: 513
 GlyphClass: 2
-Flags: W
+Flags: HW
 HStem: -231 98<451.234 509.742> 0 82<136.51 287 444.261 539> 330 77<288.602 358.043>
 VStem: 45 82<91.3048 131> 377 75<424.45 530.52> 418 101<-222.831 -143.551>
-AnchorPoint: "syr_above" 289 611 basechar 0
-AnchorPoint: "syr_below" 189 0 basechar 0
+AnchorPoint: "syr_above" 274 611 basechar 0
+AnchorPoint: "syr_below" 174 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-429 558 m 1xf8
- 445 532 452 500 452 465 c 0xf8
- 452 390 377 330 287 330 c 1
- 430 82 l 1
- 539 82 l 1
- 539 0 l 1
- 519 0 l 2
- 471 0 439 16.0996 431 42 c 1
- 407 48 l 1
- 397 32 371 10 349 -10 c 1
- 451 -135 l 1
- 456 -134 461 -133 466 -133 c 0
- 500 -133 519 -154 519 -178 c 0
- 519 -208 498 -231 473 -231 c 0
- 435 -231 418 -208 418 -181 c 0xf4
- 418 -163 433 -147 443 -141 c 1
- 287 0 l 1
- 175 0 l 2
- 95 0 45 72 45 131 c 1
- 127 131 l 1
- 127 102 147 82 174 82 c 2
- 346 82 l 1
- 85 496 l 1
- 162 541 l 1
- 191 493 254 407 306 407 c 0
- 347 407 377 435 377 469 c 0
- 377 490 362 520 362 521 c 9
- 429 558 l 1xf8
+414 558 m 1xf8
+ 430 532 437 500 437 465 c 0xf8
+ 437 390 362 330 272 330 c 1
+ 415 82 l 1
+ 524 82 l 1
+ 524 0 l 1
+ 504 0 l 2
+ 456 0 424 16.0996 416 42 c 1
+ 392 48 l 1
+ 382 32 356 10 334 -10 c 1
+ 436 -135 l 1
+ 441 -134 446 -133 451 -133 c 0
+ 485 -133 504 -154 504 -178 c 0
+ 504 -208 483 -231 458 -231 c 0
+ 420 -231 403 -208 403 -181 c 0xf4
+ 403 -163 418 -147 428 -141 c 1
+ 272 0 l 1
+ 160 0 l 2
+ 80 0 50 72 50 131 c 1
+ 112 131 l 1
+ 112 102 132 82 159 82 c 2
+ 331 82 l 1
+ 70 496 l 1
+ 147 541 l 1
+ 176 493 239 407 291 407 c 0
+ 332 407 362 435 362 469 c 0
+ 362 490 347 520 347 521 c 9
+ 414 558 l 1xf8
 EndSplineSet
 Validated: 3073
 EndChar
@@ -187354,32 +187480,32 @@ EndChar
 
 StartChar: syr_khaph_sogd.fina
 Encoding: 60195 -1 7447
-Width: 674
+Width: 685
 GlyphClass: 2
 Flags: HW
-AnchorPoint: "syr_below" 283 0 basechar 0
-AnchorPoint: "syr_above" 313 731 basechar 0
+AnchorPoint: "syr_below" 294 0 basechar 0
+AnchorPoint: "syr_above" 324 731 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-469 719 m 1
- 488 694 502 660 502 627 c 0
- 502 531 434 452 348 452 c 1
- 624 101 l 1
- 624 82 l 1
- 684 82 l 1
- 684 0 l 1
- 155 0 l 2
- 69 0 19 86 19 142 c 1
- 101 142 l 1
- 101 104 135 82 155 82 c 2
- 542 82 l 1
- 115 597 l 1
- 189 664 l 1
- 218 626 287 533 333 533 c 0
- 379 533 418 561 418 615 c 0
- 418 635 400 664 395 670 c 1
- 469 719 l 1
+480 719 m 1
+ 499 694 513 660 513 627 c 0
+ 513 531 445 452 359 452 c 1
+ 635 101 l 1
+ 635 82 l 1
+ 695 82 l 1
+ 695 0 l 1
+ 166 0 l 2
+ 80 0 50 86 50 142 c 1
+ 112 142 l 1
+ 112 104 146 82 166 82 c 2
+ 553 82 l 1
+ 126 597 l 1
+ 200 664 l 1
+ 229 626 298 533 344 533 c 0
+ 390 533 429 561 429 615 c 0
+ 429 635 411 664 406 670 c 1
+ 480 719 l 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -187452,39 +187578,181 @@ EndChar
 
 StartChar: syr_fe_sogd.fina
 Encoding: 60198 -1 7450
-Width: 660
+Width: 641
 GlyphClass: 2
-Flags: W
+Flags: HW
 HStem: 0 82<153.948 542 624 670> 318 62<456 507.058> 547 62<392.45 504.173>
 VStem: 49 82<106.654 152> 537 61<409.552 513.703>
-AnchorPoint: "syr_above" 373 711 basechar 0
-AnchorPoint: "syr_below" 333 0 basechar 0
+AnchorPoint: "syr_above" 354 711 basechar 0
+AnchorPoint: "syr_below" 314 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-448 547 m 0
- 403 547 361 507 361 465 c 0
- 361 417 406 380 452 380 c 0
- 498 380 537 418 537 462 c 0
- 537 507 492 547 448 547 c 0
-624 82 m 1
- 670 82 l 1
- 670 0 l 1
- 211 0 l 2
- 125 0 49 46 49 152 c 1
- 131 152 l 1
- 131 108 173 82 211 82 c 2
- 542 82 l 1
- 115 597 l 1
- 189 664 l 1
- 308 511 l 1
- 327 568 380 609 450 609 c 0
- 540 609 598 541 598 463 c 0
- 598 383 540 321 456 318 c 1
- 624 101 l 1
- 624 82 l 1
+429 547 m 0
+ 384 547 342 507 342 465 c 0
+ 342 417 387 380 433 380 c 0
+ 479 380 518 418 518 462 c 0
+ 518 507 473 547 429 547 c 0
+605 82 m 1
+ 651 82 l 1
+ 651 0 l 1
+ 192 0 l 2
+ 106 0 50 46 50 152 c 1
+ 112 152 l 1
+ 112 108 154 82 192 82 c 2
+ 523 82 l 1
+ 96 597 l 1
+ 170 664 l 1
+ 289 511 l 1
+ 308 568 361 609 431 609 c 0
+ 521 609 579 541 579 463 c 0
+ 579 383 521 321 437 318 c 1
+ 605 101 l 1
+ 605 82 l 1
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: syr_taw_alaph
+Encoding: 60199 -1 7451
+Width: 931
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+703 308 m 4
+ 644 308 622 240 622 181 c 6
+ 622 0 l 1
+ 175 0 l 1
+ 57 -123 l 1
+ 10 -75 l 1
+ 307 258 l 1
+ 78 437 l 1
+ 123 501 l 1
+ 355 315 l 1
+ 362 336 365 362 365 393 c 0
+ 365 455 350 520 320 589 c 1
+ 410 588 l 1
+ 430 495 440 430 440 395 c 0
+ 440 346 428 307 404 279 c 1
+ 532 172 l 1
+ 532 306 590 403 708 403 c 0
+ 801 403 871 325 871 230 c 2
+ 871 0 l 1
+ 781 0 l 1
+ 781 181 l 6
+ 781 257 767 308 703 308 c 4
+532 90 m 1
+ 362 222 l 1
+ 251 90 l 1
+ 532 90 l 1
+EndSplineSet
+Validated: 3073
+Ligature2: "'dlig' discr. ligatures in Syriac-1" taw_syr alef_syr
+EndChar
+
+StartChar: NameMe.60201
+Encoding: 60201 -1 7452
+Width: 528
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+538 0 m 1
+ 490 0 l 1
+ 430 42 l 1
+ 352 -90 l 1
+ 195 0 l 1
+ 173 -48 145 -102 118 -137 c 1
+ 35 -137 l 1
+ 118 -22 160 104.996 160 246 c 0
+ 160 403.9 103 531 35 634 c 1
+ 120 634 l 1
+ 206 516 247 400 247 276 c 0
+ 247 198 234 131 228 74 c 1
+ 328 4 l 1
+ 372 82 l 1
+ 290 140 l 1
+ 317 230 l 1
+ 517 90 l 1
+ 538 90 l 1
+ 538 0 l 1
+EndSplineSet
+Validated: 527361
+EndChar
+
+StartChar: syr_rish_seyame
+Encoding: 60174 -1 7453
+Width: 494
+GlyphClass: 3
+Flags: HW
+AnchorPoint: "syr_below" 271 0 basechar 0
+LayerCount: 2
+Fore
+Refer: 103 168 N 1 0 0 1 90 -90 2
+Refer: 913 1814 N 1 0 0 1 0 0 2
+Validated: 1146881
+LCarets2: 1 0 
+Ligature2: "'rlig' req. ligature in Syriac-1" rish_syr dieresis.cmb
+EndChar
+
+StartChar: syr_rish_seyame.fina
+Encoding: 60175 -1 7454
+Width: 493
+GlyphClass: 3
+Flags: HW
+AnchorPoint: "syr_below" 271 0 basechar 0
+LayerCount: 2
+Fore
+Refer: 103 168 N 1 0 0 1 90 -90 2
+Refer: 7373 -1 N 1 0 0 1 0 0 2
+Validated: 1146881
+LCarets2: 1 0 
+Ligature2: "'rlig' req. ligature in Syriac-1" syr_rish.fina dieresis.cmb
+EndChar
+
+StartChar: syr_taw_alaph.fina
+Encoding: 60200 -1 7455
+Width: 931
+GlyphClass: 3
+Flags: W
+HStem: 0 90<251 532> 0 82<871 941> 308 95<655.869 755.467>
+VStem: 365 75<315.538 526.352> 532 90<172 269.825> 781 160<0 82> 781 90<82 281.242>
+LayerCount: 2
+Fore
+SplineSet
+532 90 m 1xb8
+ 362 222 l 1
+ 251 90 l 1
+ 532 90 l 1xb8
+703 308 m 0
+ 644 308 622 240 622 181 c 2
+ 622 0 l 1
+ 175 0 l 1
+ 57 -123 l 1
+ 10 -75 l 1
+ 307 258 l 1
+ 78 437 l 1
+ 123 501 l 1
+ 355 315 l 1
+ 362 336 365 362 365 393 c 0
+ 365 455 350 520 320 589 c 1
+ 410 588 l 1
+ 430 495 440 430 440 395 c 0
+ 440 346 428 307 404 279 c 1
+ 532 172 l 1
+ 532 306 590 403 708 403 c 0
+ 801 403 871 325 871 230 c 2
+ 871 82 l 1x7a
+ 941 82 l 1
+ 941 0 l 1
+ 781 0 l 1x7c
+ 781 181 l 2x7a
+ 781 257 767 308 703 308 c 0
+EndSplineSet
+Validated: 3073
+Ligature2: "'dlig' discr. ligatures in Syriac-1" syr_taw.fina alef_syr
 EndChar
 EndChars
 EndSplineFont
