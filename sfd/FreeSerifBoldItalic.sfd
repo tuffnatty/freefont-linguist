@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1477664222
+ModificationTime: 1477667968
 PfmFamily: 17
 TTFWeight: 700
 TTFWidth: 5
@@ -867,7 +867,7 @@ Grid
  897.8 175.071 l 4
 EndSplineSet
 AnchorClass2: "heb-lam-above"  "'mark' marks in Hebrew-lam" "heb-point-low-right"  "'mark' marks in Hebrew-1" "viet-hook"  "'mkmk' mark-to-mark for Viet" "viet-grave"  "'mkmk' mark-to-mark for Viet" "viet-acute"  "'mkmk' mark-to-mark for Viet" "far-right-dot"  "'mark' far right in Latin-1" "belowmk"  "'mkmk' mark-to-mark generic-below" "cyr-below"  "'mark' Mark Positioning in Cyrillic subtable" "abovemk"  "'mkmk' mark-to-mark generic-1" "below_gk"  "'mark' mark below in Greek and Coptic-1" "above_gk"  "'mark' mark above in Greek-1" "acute_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "grave_comb_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "arching_cyr"  "'mkmk' mark-to-mark in Cyrillic-1" "heb-top-mkmk"  "'mkmk' mark-to-mark in Hebrew-1" "heb-low-mkmk"  "'mkmk' mark-to-mark in Hebrew-1" "heb-point-right"  "'mark' marks in Hebrew-1" "heb-point-left"  "'mark' marks in Hebrew-1" "heb-point-low"  "'mark' marks in Hebrew-1" "heb-dagesh"  "'mark' marks in Hebrew-1" "heb-vowel-left"  "'mark' marks in Hebrew-1" "heb-point-above"  "'mark' marks in Hebrew-1" "heb-vowel-low"  "'mark' marks in Hebrew for Ivrit-1" "heb-yid-vowel-low"  "'mark' marks in Hebrew for Yiddish-1" "topright"  "'mark' marks-generic subtable" "abovecyr"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' marks-generic subtable" "ogonek"  "'mark' marks in Latin - ogonek" "thai_vowel_tone_right"  "'mkmk' mark-to-mark in Thai right-1" "thai_vowel_tone"  "'mkmk' mark-to-mark in Thai vowel-tone" "thai_tone"  "'mark' marks in Thai vowels,tones-1" "thai_vowel_centered"  "'mark' marks in Thai vowels,tones-1" "thai_vowel"  "'mark' marks in Thai vowels,tones-1" "thai_below"  "'mark' marks in Thai - low" "below"  "'mark' marks in Latin - below" "above"  "'mark' marks generic-high-1" 
-BeginChars: 66560 3637
+BeginChars: 66560 3638
 
 StartChar: space
 Encoding: 32 32 0
@@ -6921,7 +6921,7 @@ Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
 Refer: 42 74 N 1 0 0 1 334 0 0
 Validated: 1
-MultipleSubs2: "'c2sc' caps to small caps in Latin pre-decompose-A" I J
+Substitution2: "'c2sc' caps to small caps in Latin-1" sc.ij
 Ligature2: "'liga' std. ligatures in Latin for Dutch" I J
 LCarets2: 1 0 
 EndChar
@@ -6971,8 +6971,8 @@ SplineSet
  157 71 164 63 180 63 c 0
 EndSplineSet
 Validated: 1
+Substitution2: "'smcp' lowercase to small caps in Latin-1" sc.ij
 Ligature2: "'liga' std. ligatures in Latin for Dutch" ij acute.cmb
-MultipleSubs2: "'smcp' small caps in Latin pre-decompose-A" i j
 Ligature2: "'liga' std. ligatures in Latin for Dutch" i j
 LCarets2: 1 0 
 EndChar
@@ -81622,6 +81622,19 @@ EndSplineSet
 Validated: 1
 Ligature2: "'liga' std. ligatures in Latin for Dutch" iacute dotlessj acute.cmb
 LCarets2: 3 0 0 0 
+EndChar
+
+StartChar: sc.ij
+Encoding: 59479 -1 3637
+Width: 545
+VWidth: 670
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2685 -1 N 1 0 0 1 210 0 2
+Refer: 2684 -1 N 1 0 0 1 0 0 2
+Validated: 1
+LCarets2: 1 0 
 EndChar
 EndChars
 EndSplineFont
