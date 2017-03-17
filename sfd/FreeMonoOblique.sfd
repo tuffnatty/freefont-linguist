@@ -18,7 +18,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1489760249
+ModificationTime: 1489777524
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -43561,7 +43561,6 @@ Fore
 Refer: 541 658 N 1 0 0 1 0 0 0
 Validated: 32769
 Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.ezh
-Substitution2: "'c2sc' caps to small caps in Cyrillic-invariant" sc.ezh
 EndChar
 
 StartChar: primemod
@@ -63675,23 +63674,25 @@ EndChar
 StartChar: sc.cyr_dje
 Encoding: 59666 -1 2729
 Width: 600
-Flags: HW
+Flags: W
+HStem: -137 41<291.39 399.734> 0 41<169.523 225 267 323.404> 217 41<339.985 505.316> 318 101<167 190.473 449.155 480.476> 378 41<199 303 345 449>
+VStem: 521 43<105.92 199.329>
 LayerCount: 2
 Fore
 SplineSet
-169 15 m 0
+169 15 m 0xec
  169 33 182 41 201 41 c 2
  225 41 l 1
  303 378 l 1
- 199 378 l 1
+ 199 378 l 1xec
  192 345 l 2
  188 327 178 318 163 318 c 0
  153 318 148 323 148 333 c 0
  148 336 148 339 149 343 c 2
- 167 419 l 1
- 499 419 l 1
+ 167 419 l 1xf4
+ 499 419 l 1xec
  482 345 l 2
- 478 327 468 318 455 318 c 0
+ 478 327 468 318 455 318 c 0xf4
  445 318 440 324 440 334 c 0
  440 337 440 339 441 342 c 2
  449 378 l 1
@@ -63714,7 +63715,7 @@ SplineSet
  316 41 324 36 324 26 c 0
  324 9 311 0 292 0 c 2
  192 0 l 2
- 178 0 169 5 169 15 c 0
+ 178 0 169 5 169 15 c 0xec
 EndSplineSet
 Validated: 3073
 EndChar
@@ -64284,7 +64285,9 @@ StartChar: sc.ezh
 Encoding: 59461 -1 2744
 Width: 600
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: -21 41<215.158 395.556> 228 41<305.702 457.663> 376 41<258 411 468 538.525>
+VStem: 479 41<91.1576 207.672>
 LayerCount: 2
 Fore
 SplineSet
