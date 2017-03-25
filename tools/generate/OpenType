@@ -36,23 +36,25 @@ from sys import argv
 from buildutils import *
 #import uglify
 
+def build_otf_file( sfd_filename ):
+	f = fontforge.open( sfd_filename )
+	otfile = f.fontname + '.otf'
+	vstr = trim_version_str( f )
+	print( 'Generating OpenType file', otfile, vstr )
+	# Wanted to set to 'UniocdeBmp' if there were no high unicodes
+	# but all attemtps to determine that from Python failed.
+	f.encoding = 'UnicodeFull'
+	f.selection.all()
+	f.autoHint()	# because without gasp table, small sizes ugly
+	# 'old-kern' and 'dummy-dsig' are work-arounds for Windows
+	f.generate( otfile, flags=('opentype','round') )
+	f.close()
+
 scriptname = argv[0];
 argc = len( argv )
 
 if argc > 1:
 	for i in range( 1, argc ):
-		f = fontforge.open( argv[i] )
-		otfile = f.fontname + '.otf'
-		vstr = trim_version_str( f )
-		print( 'Generating OpenType file', otfile, vstr )
-		# Wanted to set to 'UniocdeBmp' if there were no high unicodes
-		# but all attemtps to determine that from Python failed.
-		f.encoding = 'UnicodeFull'
-		f.selection.all()
-		f.autoHint()	# because without gasp table, small sizes ugly
-		# 'old-kern' and 'dummy-dsig' are work-arounds for Windows
-		f.generate( otfile,
-			flags=('opentype','round') )
-		f.close()
+		build_otf_file( argv[i] )
 else:
 	print( 'Usage:', scriptname, 'font.sfd [font.sfd ...]' )
