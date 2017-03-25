@@ -51,6 +51,7 @@ ccmp	glyph decomposition (multiple replacement)
 
 aalt	access all alternates
 calt	contextual alternates
+salt	stylistic alternate
 
 	Arabic
 	------
@@ -73,6 +74,10 @@ blws	below base substitutions
 psts	post base substitutions
 haln	halant forms
 
+Character Variants
+==========
+cv00	Latin Alpha for Cameroon languages
+
 Style Sets
 ==========
 ss01	Bulgarian Cyrillic Alternate
@@ -94,6 +99,14 @@ mkmk	mark-to-mark
 dist	distance (similar to kern)
 abvm	above mark
 blwm	below mark
+
+Variation Selectors
+-------------------
+On systems that support Unicode Variation Selectors, alternate forms of math
+symbols, as listed in the Unicode document "Standardized Variants", are
+available by following the symbol with the variation selector character U+FE00.
+(While this isn't in itself strictly a font feature, it is implemented
+with a font feature.)
 
 Use of features
 ===============
