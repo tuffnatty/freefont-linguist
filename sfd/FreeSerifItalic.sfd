@@ -13,13 +13,12 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
-NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1491044282
+ModificationTime: 1491305854
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -525,6 +524,9 @@ ChainSub2: class "'ccmp' remove dot followed by mark in Latin"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   Class: 15 Alpha Eta Omega
@@ -572,6 +574,9 @@ ChainSub2: class "'ss06' style set in Greek-adscript iota-1"  6 6 6 5
   FClsList:
  1
   SeqLookup: 0 "positional forms in Greek" 
+  ClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  BClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
+  FClassNames: "0"  "1"  "2"  "3"  "4"  "5"  
 EndFPST
 ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   Class: 4 beta
@@ -611,6 +616,9 @@ ChainSub2: class "'cv03' char. var. in Greek-theta curly init-1"  3 4 3 5
   FClsList: 2
  1
   SeqLookup: 0 "positional forms in Greek" 
+  ClassNames: "0"  "1"  "2"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   Class: 4 beta
@@ -637,6 +645,9 @@ ChainSub2: class "'cv02' char. var. in Greek-beta curly non-init-1"  2 4 3 3
   FClsList:
  1
   SeqLookup: 0 "positional forms in Greek" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  "2"  "3"  
+  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus hyphen minus period comma zero one two three four five six seven eight nine
@@ -732,6 +743,9 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   Class: 101 parenleft parenright plus hyphen minus comma period zero one two three four five six seven eight nine
@@ -814,6 +828,9 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 8
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
+  ClassNames: "0"  "1"  
+  BClassNames: "0"  "1"  
+  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: glyph "'ccmp' contextual chain in Latin - iogonek-subtable"  0 0 0 1
  String: 7 iogonek
@@ -852,9 +869,9 @@ LangName: 1027 "" "" "it+AOAA-lica" "" "FreeSerif it+AOAA-lica"
 LangName: 1026 "" "" "+BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BDoEQwRABEEEOAQyBDUEPQAA" 
 LangName: 1069 "" "" "Etzana" "" "FreeSerif Etzana" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Italic: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3
-OtfFeatName: 'ss08' 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 1033 "Georgian Mtavruli" 
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+GaspTable: 3 9 2 21 1 65535 3 0
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
+OtfFeatName: 'ss08' 1033 "Georgian Mtavruli" 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 1500
@@ -918,7 +935,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 59408 16 11
+WinInfo: 1024 16 11
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -3091,7 +3108,7 @@ SplineSet
  110 68 144 25 201 25 c 0
  250 25 289 47 344 106 c 1
  360 96 l 1
- 300 20 245 -11 171 -11 c 0
+ 300 20 245 -11 171 -11 c 4
  78 -11 24 44 24 139 c 0
  24 295 164 441 314 441 c 0
  374 441 419 406 419 360 c 0
@@ -14304,7 +14321,7 @@ SplineSet
 254 230 m 1
  254 228 l 1
  330 228 369 208 369 148 c 0
- 369 57 281 -11 167 -11 c 0
+ 369 57 281 -11 167 -11 c 4
  47 -11 27 80 27 134 c 0
  27 297 174 441 309 441 c 0
  376 441 419 418 419 370 c 0
@@ -14453,16 +14470,16 @@ StartChar: zecyr
 Encoding: 1079 1079 603
 Width: 412
 Flags: HMW
-AnchorPoint: "cyr-below" 160 0 basechar 0
+AnchorPoint: "cyr-below" 180 0 basechar 0
 AnchorPoint: "abovecyr" 256 440 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-177 -9 m 0
- 71 -9 15.5 70 6 95 c 1
+177 -11 m 4
+ 71 -11 15.5 70 6 95 c 1
  19 103 l 1
- 44.5 60.5 108 27 161 27 c 0
- 240 27 277 73 277 130 c 0
+ 44.5 60.5 108 25 161 25 c 0
+ 240 25 277 73 277 130 c 0
  277 189 227 208 179 213 c 1
  186 238 l 1
  284 238 313 298.406 313 337 c 0
@@ -14477,7 +14494,7 @@ SplineSet
  389 272 317 232 263 226 c 1
  262 223 l 1
  306 218.5 358 183 358 132 c 0
- 358 32 267 -9 177 -9 c 0
+ 358 32 267 -11 177 -11 c 4
 EndSplineSet
 Validated: 524289
 EndChar
@@ -93557,16 +93574,16 @@ AnchorPoint: "cyr-below" -280 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
--194 -94 m 4
+-194 -94 m 0
  -194 -142 -228 -171 -270 -171 c 0
  -320 -171 -356 -141 -370 -106 c 1
  -356 -92 l 1
  -336 -115 -315 -121 -290 -121 c 0
- -263 -121 -244 -101 -244 -72 c 0
- -244 -44 -251 -18 -280 -18 c 1
+ -263 -121 -244 -101 -244 -72 c 4
+ -244 -31.7667 -258.667 -11 -280 -11 c 5
  -280 0 l 1
  -242 0 l 1
- -220.612 -23.1703 -194 -57.2444 -194 -94 c 4
+ -220.612 -23.1703 -194 -57.2444 -194 -94 c 0
 EndSplineSet
 Validated: 524289
 EndChar
@@ -97669,8 +97686,8 @@ SplineSet
  106 48 162 19 218 19 c 0
  269 19 310 42 366 88 c 1
  377 74 l 1
- 328 21 262 -10 193 -10 c 0
- 91 -10 25 54 25 155 c 0
+ 328 21 262 -15 193 -15 c 4
+ 91 -15 25 54 25 155 c 0
  25 326 166 442 290 442 c 0
 EndSplineSet
 Validated: 1048577
@@ -101260,11 +101277,11 @@ SplineSet
  401 429 l 1
  274 259 l 1
  324 259 340 216 340 175 c 0
- 340 66 248 -13 168 -13 c 0
- 96 -13 42 22 17 77 c 1
+ 340 66 248 -15 168 -15 c 0
+ 96 -15 42 22 17 77 c 1
  33 92 l 1
- 68 44 104 22 156 22 c 0
- 209 22 260 79 260 165 c 0
+ 68 44 104 21 156 21 c 0
+ 214 21 260 79 260 165 c 0
  260 204 230 220 170 220 c 1
  302 395 l 1
  254 395 l 2
@@ -102538,7 +102555,7 @@ AnchorPoint: "abovecyr" -126 450 mark 0
 LayerCount: 2
 Fore
 Refer: 613 1089 N 0.46 0 0 0.45 -202 484 2
-Validated: 1048577
+Validated: 1
 EndChar
 
 StartChar: tverdo_comb
