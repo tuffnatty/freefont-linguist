@@ -72,7 +72,7 @@ def add_text_decorated_with_divs( doc, parent, text ):
 			parent.appendChild( div )
 
 def fontInfo2WOFFxml( font ):
-	sfnt_strings = fontStrings2dict( f, 'English' )
+	sfnt_strings = fontStrings2dict( font, 'English' )
 	copyright = sfnt_strings['Copyright'].string
 	license = sfnt_strings['License'].string
 	licenseURL = sfnt_strings['License URL'].string
