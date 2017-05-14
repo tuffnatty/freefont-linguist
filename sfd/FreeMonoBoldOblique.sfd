@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1493576762
+ModificationTime: 1494775473
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -61,7 +61,7 @@ Lookup: 1 0 0 "subst. i,j with dotless form"  {"subst. i,j with dotless form-1" 
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin for Viet 1"  {"'ccmp' Glyph Composition in Latin for Viet horn"  "'ccmp' Glyph Composition in Latin for Viet 1 subtable"  } ['ccmp' ('latn' <'VIT ' > ) ]
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin for Viet 2"  {"'ccmp' Glyph Composition in Latin for Viet 2 subtable"  } ['ccmp' ('latn' <'VIT ' > ) ]
 Lookup: 1 0 0 "'locl' local. forms in Latin for Sami"  {"'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' 'LSM ' 'NSM ' 'SKS ' > ) ]
-Lookup: 4 1 0 "'liga' std. ligatures in Hebrew"  {"'liga' std. ligatures in Hebrew subtable"  } ['liga' ('hebr' <'dflt' > ) ]
+Lookup: 4 1 0 "'rlig' rqd. ligatures in Hebrew"  {"'rlig' rqd. ligatures in Hebrew 0"  } ['rlig' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'dlig' discr. ligatures in Hebrew"  {"'dlig' disc. ligatures in Hebrew subtable"  } ['dlig' ('hebr' <'dflt' > ) ]
 Lookup: 2 1 0 "'ccmp' glyph decomp. in Hebrew"  {"'ccmp' glyph decomp. in Hebrew subtable"  } ['ccmp' ('hebr' <'dflt' > ) ]
 Lookup: 4 1 0 "'ccmp' glyph compos. in Hebrew for Yiddish"  {"'ccmp' glyph compos. in Hebrew for Yiddish-1"  } ['ccmp' ('hebr' <'JII ' > ) ]
@@ -340,7 +340,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 64256 16 9
+WinInfo: 544 16 9
 BeginPrivate: 8
 UniqueID 7 5020948
 BlueValues 23 [-20 0 437 451 583 597]
@@ -357,7 +357,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 -562637 629146 314573 314573 458228 629146 629146 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "dagesh-heb"  "'mark' marks in Hebrew-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks in Latin high subtable" "abovecyr"  "'mark' marks in Cyrillic subtable" "below"  "'mark' marks in Latin low subtable" "above"  "'mark' marks in Latin high subtable" 
-BeginChars: 65536 2006
+BeginChars: 65536 2007
 
 StartChar: space
 Encoding: 32 32 0
@@ -21412,7 +21412,7 @@ Refer: 75 107 N -1 0 0 -1 684 435 0
 Validated: 32769
 EndChar
 
-StartChar: uni029F
+StartChar: Lsmallcap
 Encoding: 671 671 900
 Width: 600
 Flags: HMW
@@ -28473,7 +28473,7 @@ Width: 0
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 110 175 N 1 0 0 1 -678 -327 0
+Refer: 110 175 N 1 0 0 1 -698 -327 0
 Validated: 32769
 EndChar
 
@@ -28483,7 +28483,7 @@ Width: 0
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 13 45 N 1 0 0 1 -612 -24 2
+Refer: 13 45 N 1 0 0 1 -635 -24 2
 Validated: 32769
 EndChar
 
@@ -32094,7 +32094,7 @@ Validated: 32769
 Ligature2: "'ccmp' glyph compos. in Hebrew for Yiddish-1" yodyodhebrew patahhebrew
 MultipleSubs2: "'ccmp' glyph decomp. in Hebrew subtable" yodyodhebrew patahhebrew
 LCarets2: 1 0 
-Ligature2: "'liga' std. ligatures in Hebrew subtable" yodyodhebrew patahhebrew
+Ligature2: "'rlig' rqd. ligatures in Hebrew 0" yodyodhebrew patahhebrew
 EndChar
 
 StartChar: shinshindothebrew
@@ -43830,6 +43830,48 @@ SplineSet
  529.5 658 539.859 651 539.859 638.892 c 0
  539.859 588 473 550 396.978 550 c 0
 EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: Lbar
+Encoding: 573 573 2006
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+460 331 m 0
+ 460 297 432 279 396 279 c 2
+ 320 279 l 1
+ 279 100 l 1
+ 494 100 l 1
+ 515 192 l 2
+ 524 231 541 259 581 259 c 0
+ 610 259 620 245 620 223 c 0
+ 620 214 618 203 615 192 c 2
+ 571 0 l 1
+ 99 0 l 2
+ 54 0 43 19 43 37 c 0
+ 43 87 82 100 122 100 c 2
+ 179 100 l 1
+ 220 279 l 1
+ 152 279 l 2
+ 126 279 107 284 107 307 c 0
+ 107 341 134 359 171 359 c 2
+ 239 359 l 1
+ 268 483 l 1
+ 211 483 l 2
+ 179 483 154 490 154 518 c 0
+ 154 569 192 583 234 583 c 2
+ 448 583 l 2
+ 478 583 504 577 504 548 c 0
+ 504 497 465 483 425 483 c 2
+ 368 483 l 1
+ 339 359 l 1
+ 415 359 l 2
+ 441 359 460 354 460 331 c 0
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
