@@ -96,6 +96,13 @@ Indic typography.
 By specifying the language of the text, an appropriate glyph for 'danda'
 may be obtained, and Western punctuation may be better spaced.
 
+Vedic marks
+-----------
+
+Systems of marks used to annotate the text of the Vedas have been used 
+in Indic scripts.  Many of the Vedic marks defined by Unicode are 
+implemented for Devanagari, and some in other scripts as well (Oriya).
+
 Style sets
 ==========
 
@@ -118,6 +125,9 @@ Math            Calligraphic Latin letters (ss10 and bold ss11)
 Character variants
 ==================
 These are uaually a replacement for a single letter with another.
+
+Latin:
+	script alpha for languages of Cameroon (cv01)
 
 Greek: (Some of these are done already by the default 'locl' feature,
 	and are useful only when that feature is disabled);
@@ -211,6 +221,15 @@ Zero
 A slashed form of the numeral zero is available at discretion.
 Available in all faces with font feature setting 'zero' or with CSS
 	font-variant-numeric: slashed-zero;
+
+Underlines and Overlines
+------------------------
+
+In Latin, Cyrillic, and Coptic, overlines and underlines have been used to
+convey information.  Variable-width overlines and underlines for many letters
+may be produced by inserting U+0305 (combining overline), U+0332 (combining
+lowline), or in a different style with U+FE26 (combining conjoining macron),
+U+FE2D (combining conjoining macron below) directly after each letter.
 
 Alternative characters
 ======================
