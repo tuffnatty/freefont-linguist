@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1494872546
+ModificationTime: 1494937358
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -527,7 +527,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 59728 16 9
+WinInfo: 2208 16 9
 BeginPrivate: 9
 UniqueID 7 5020946
 BlueValues 23 [-16 0 437 451 583 597]
@@ -540,7 +540,7 @@ StemSnapV 5 [100]
 ForceBold 4 true
 EndPrivate
 AnchorClass2: "dagesh-heb"  "'mark' marks in Hebrew-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-above"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks generic above 1" "abovecyr"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
-BeginChars: 65536 2982
+BeginChars: 65536 2986
 
 StartChar: space
 Encoding: 32 32 0
@@ -60340,6 +60340,7 @@ SplineSet
  575 82.7709 574.459 76.1196 573.46 70 c 1
  600 70 l 2
 EndSplineSet
+Validated: 1575937
 EndChar
 
 StartChar: arab_kafswashfina
@@ -60377,6 +60378,7 @@ SplineSet
  575 82.7705 574.459 76.1191 573.46 70 c 1
  600 70 l 2
 EndSplineSet
+Validated: 1575937
 EndChar
 
 StartChar: arab_slashdbl_ijam
@@ -61406,12 +61408,15 @@ Width: 600
 VWidth: 800
 Flags: HW
 AnchorPoint: "arab-below" 306 -96 basechar 0
-AnchorPoint: "arab-above" 312 421 basechar 0
+AnchorPoint: "arab-above" 312 451 basechar 0
 LayerCount: 2
 Fore
+Refer: 2982 -1 N 1 0 0 1 140 -320 2
 Refer: 2836 -1 N 1 0 0 1 0 0 2
-Refer: 2257 1578 S 0.6 0 0 0.6 127 162 2
-Validated: 32769
+Validated: 1146881
+Substitution2: "'fina' terminal forms in Arabic 1" arab_teh_tehfina
+Substitution2: "'medi' medial forms in Arabic 1" arab_teh_tehmedi
+Substitution2: "'init' initial forms in Arabic 1" arab_teh_tehinit
 EndChar
 
 StartChar: uni08B9
@@ -63027,6 +63032,91 @@ SplineSet
  158.007 822 135.767 836.609 119.135 844.926 c 5
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: arab_teh_ijam
+Encoding: 59772 -1 2982
+Width: 0
+VWidth: 800
+Flags: HW
+AnchorPoint: "arab-mark-abv-ijam" 180 780 basemark 0
+AnchorPoint: "arab-ijam-abv" 155 447 mark 0
+LayerCount: 2
+Fore
+SplineSet
+230 775.2 m 4
+ 250.8 775.2 282 737.6 282 722.4 c 4
+ 282 704 247.6 671.2 230 671.2 c 4
+ 210.8 671.2 178 705.6 178 723.2 c 4
+ 178 741.6 213.2 775.2 230 775.2 c 4
+118 776.8 m 4
+ 138.8 776.8 170 739.2 170 724 c 4
+ 170 705.6 135.6 672.8 118 672.8 c 4
+ 98.7998 672.8 66 707.2 66 724.8 c 4
+ 66 743.2 101.2 776.8 118 776.8 c 4
+332 474 m 1
+ 8 474 l 1
+ 8 523 l 1
+ 33 589 l 2
+ 37.083 599.779 49 606 60 606 c 0
+ 72.75 606 81 598 81 590 c 0
+ 81 588 79.7852 582.094 79 580 c 2
+ 58 524 l 1
+ 58 521 l 1
+ 285 521 l 1
+ 285 655 l 2
+ 285 670 297 683 308 683 c 0
+ 319 683 332 671 332 655 c 2
+ 332 474 l 1
+EndSplineSet
+Validated: 1575937
+EndChar
+
+StartChar: arab_teh_tehmedi
+Encoding: 59773 -1 2983
+Width: 600
+VWidth: 800
+Flags: HW
+AnchorPoint: "arab-below" 286 -96 basechar 0
+AnchorPoint: "arab-above" 302 711 basechar 0
+AnchorPoint: "arab-ijam-blw" 290 -90 basechar 0
+AnchorPoint: "arab-ijam-abv" 300 710 basechar 0
+LayerCount: 2
+Fore
+Refer: 2982 -1 S 1 0 0 1 137 -70 2
+Refer: 2304 -1 N 1 0 0 1 0 0 2
+Validated: 98305
+EndChar
+
+StartChar: arab_teh_tehinit
+Encoding: 59774 -1 2984
+Width: 600
+VWidth: 800
+Flags: HW
+AnchorPoint: "arab-ijam-abv" 320 700 basechar 0
+AnchorPoint: "arab-ijam-blw" 330 -90 basechar 0
+AnchorPoint: "arab-above" 322 701 basechar 0
+AnchorPoint: "arab-below" 326 -96 basechar 0
+LayerCount: 2
+Fore
+Refer: 2982 -1 S 1 0 0 1 147 -70 2
+Refer: 2305 -1 N 1 0 0 1 0 0 2
+Validated: 98305
+EndChar
+
+StartChar: arab_teh_tehfina
+Encoding: 59775 -1 2985
+Width: 600
+VWidth: 800
+Flags: HW
+AnchorPoint: "arab-ijam-blw" 310 -104 basechar 0
+AnchorPoint: "arab-below" 316 -97 basechar 0
+AnchorPoint: "arab-above" 311 451 basechar 0
+LayerCount: 2
+Fore
+Refer: 2306 -1 N 1 0 0 1 0 0 2
+Refer: 2982 -1 S 1 0 0 1 136 -330 2
+Validated: 1146881
 EndChar
 EndChars
 EndSplineFont
