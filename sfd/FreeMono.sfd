@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1496269229
+ModificationTime: 1496386254
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -703,7 +703,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 1712 16 10
+WinInfo: 1744 16 10
 BeginPrivate: 9
 UniqueID 7 5020945
 BlueValues 39 [-20 0 417 437 480 490 563 583 640 650]
@@ -716,8 +716,6 @@ StemSnapV 4 [41]
 ForceBold 5 false
 EndPrivate
 Grid
--1000 826 m 0
- 2000 826 l 0
 -1000 209.6 m 0
  2000 209.6 l 0
 -1000 300.5 m 0
@@ -123302,36 +123300,37 @@ VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-above" 298 670 mark 0
 AnchorPoint: "arab-mark-abv-ijam" 297 702 mark 0
-AnchorPoint: "arab-harakat-abv" 300 696 mark 0
+AnchorPoint: "arab-harakat-abv" 302 702 mark 0
 LayerCount: 2
 Fore
 Refer: 4129 1566 N 0.5 0 0 0.5 150 672 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni06EC
 Encoding: 1772 1772 5524
 Width: 0
 Flags: HMW
-AnchorPoint: "arab-above" 298 630 mark 0
+AnchorPoint: "arab-above" 298 610 mark 0
 AnchorPoint: "arab-mark-abv-ijam" 287 642 mark 0
 AnchorPoint: "arab-harakat-abv" 300 642 mark 0
 LayerCount: 2
 Fore
 Refer: 14 46 N 1 0 0 1 0 684 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni06ED
 Encoding: 1773 1773 5525
 Width: 0
 Flags: HMW
-AnchorPoint: "arab-harakat-blw" 300 60 mark 0
-AnchorPoint: "arab-below" 300 60 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 288 61 mark 0
+AnchorPoint: "arab-harakat-blw" 300 61 mark 0
+AnchorPoint: "arab-below" 300 90 mark 0
 LayerCount: 2
 Fore
 Refer: 5535 1762 N 1 0 0 1 0 -749 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: noon_hi_arabic.cmb
@@ -123339,13 +123338,35 @@ Encoding: 1768 1768 5526
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 288 460 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 287 462 mark 0
-AnchorPoint: "arab-harakat-abv" 300 462 mark 0
+AnchorPoint: "arab-above" 288 450 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 287 467 mark 0
+AnchorPoint: "arab-harakat-abv" 300 467 mark 0
 LayerCount: 2
 Fore
-Refer: 3689 1606 N 0.5 0 0 0.5 152 592 2
-Validated: 98305
+SplineSet
+302 800 m 0
+ 311 800 330 779 330 772 c 0
+ 330 764 310 744 302 744 c 0
+ 294 744 274 764 274 772 c 0
+ 274 780 294 800 302 800 c 0
+213 651 m 2
+ 215 657 221 660 226 660 c 0
+ 232 660 240 656 240 648 c 0
+ 240 646 239 644 238 642 c 2
+ 220 594 l 1
+ 220 572 l 2
+ 220 539 261 526 298 526 c 0
+ 334 526 370 540 370 572 c 2
+ 370 696 l 2
+ 370 706 377 710 384 710 c 0
+ 391 710 397 706 397 696 c 2
+ 397 572 l 2
+ 397 520 343 500 296 500 c 0
+ 249 500 194 516 194 572 c 2
+ 194 602 l 1
+ 213 651 l 2
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni06E7
@@ -123353,13 +123374,13 @@ Encoding: 1767 1767 5527
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 298 610 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 287 612 mark 0
-AnchorPoint: "arab-harakat-abv" 300 613 mark 0
+AnchorPoint: "arab-above" 298 600 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 287 619 mark 0
+AnchorPoint: "arab-harakat-abv" 300 619 mark 0
 LayerCount: 2
 Fore
-Refer: 5528 1766 N 1 0 0 1 0 544 2
-Validated: 98305
+Refer: 5528 1766 N 1 0 0 1 0 542 2
+Validated: 32769
 EndChar
 
 StartChar: uni06E6
@@ -123370,8 +123391,24 @@ Flags: HMW
 AnchorPoint: "arab-ijam-abv" 270 300 basechar 0
 LayerCount: 2
 Fore
-Refer: 3745 1746 S 0.5 0 0 0.5 150 109 2
-Validated: 32769
+SplineSet
+420 132 m 6
+ 427 132 433 126 433 119 c 4
+ 433 112 427 106 420 106 c 6
+ 167 106 l 5
+ 167 130 l 5
+ 235 237 l 6
+ 243 249 255 258 273 258 c 4
+ 293 258 305 247 309 242 c 4
+ 311 239 312 237 312 233 c 4
+ 312 226 306 222 300 222 c 4
+ 298 222 295 223 293 225 c 4
+ 287 231 281 235 274 235 c 4
+ 269 235 261 229 257 223 c 6
+ 199 132 l 5
+ 420 132 l 6
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni06E5
@@ -123382,8 +123419,25 @@ Flags: HMW
 AnchorPoint: "arab-ijam-abv" 320 480 basechar 0
 LayerCount: 2
 Fore
-Refer: 3696 1608 N 0.5 0 0 0.5 153 340 2
-Validated: 32769
+SplineSet
+322 422 m 0
+ 305 422 288 408 288 390 c 0
+ 288 373 301 358 322 358 c 0
+ 341 358 354 373 354 389 c 0
+ 354 407 339 422 322 422 c 0
+212 270 m 0
+ 220 270 239 263 257 263 c 0
+ 314 263 354 290 354 339 c 1
+ 343 332 330 332 322 332 c 0
+ 286 332 262 360 262 390 c 0
+ 262 419 286 448 322 448 c 0
+ 356 448 381 421 381 389 c 2
+ 381 336 l 2
+ 381 274 329 237 256 237 c 0
+ 248 237 200 239 200 257 c 0
+ 200 264 205 270 212 270 c 0
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni06E4
@@ -123391,12 +123445,13 @@ Encoding: 1764 1764 5530
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-ijam-abv" 296 651.429 mark 0
-AnchorPoint: "arab-harakat-abv" 290 650 mark 0
+AnchorPoint: "arab-above" 288 650 mark 0
+AnchorPoint: "arab-ijam-abv" 296 670.429 mark 0
+AnchorPoint: "arab-harakat-abv" 290 670 mark 0
 LayerCount: 2
 Fore
 Refer: 3722 1619 N 0.66 0 0 0.66 102 272 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni06E3
@@ -123405,12 +123460,12 @@ Width: 0
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-below" 300 0 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 288 0 mark 0
-AnchorPoint: "arab-harakat-blw" 292 0 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 298 -10 mark 0
+AnchorPoint: "arab-harakat-blw" 302 -10 mark 0
 LayerCount: 2
 Fore
 Refer: 5534 1756 N 1 0 0 1 0 -822 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni06E0
@@ -123430,15 +123485,15 @@ SplineSet
  256.25 732.75 l 2
  256.25 772.5 275.25 799.5 303 799.5 c 0
  330.75 799.5 349.75 772.5 349.75 732.75 c 2
-303 775.475 m 0
- 283.8 775.475 273.8 752.475 273.8 729.275 c 2
- 273.8 711.475 l 2
- 273.8 685.875 285.2 665.275 303 665.275 c 0
- 322.2 665.275 332.2 688.275 332.2 711.475 c 2
- 332.2 729.275 l 2
- 332.2 754.875 320.8 775.475 303 775.475 c 0
+303 765.475 m 0
+ 283.8 765.475 283.8 752.475 283.8 729.275 c 2
+ 283.8 711.475 l 2
+ 283.8 685.875 285.2 675.275 303 675.275 c 0
+ 322.2 675.275 322.2 688.275 322.2 711.475 c 2
+ 322.2 729.275 l 2
+ 322.2 754.875 320.8 765.475 303 765.475 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni06D8
@@ -123446,13 +123501,29 @@ Encoding: 1752 1752 5533
 Width: 0
 VWidth: 800
 Flags: HM
-AnchorPoint: "arab-above" 288 620 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 287 652 mark 0
-AnchorPoint: "arab-harakat-abv" 300 657 mark 0
+AnchorPoint: "arab-above" 298 627 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 287 653 mark 0
+AnchorPoint: "arab-harakat-abv" 300 654 mark 0
 LayerCount: 2
 Fore
-Refer: 3919 65251 N 0.5 0 0 0.5 200 695 2
-Validated: 98305
+SplineSet
+289 742 m 0
+ 289 774 314 800 348 800 c 0
+ 380 800 408 775 408 742 c 0
+ 408 707 380 683 348 683 c 0
+ 326 683 308 692 299 703 c 1
+ 288 694 273 689 251 689 c 2
+ 197 689 l 1
+ 197 715 l 1
+ 251 715 l 2
+ 285 715 289 738 289 742 c 0
+316 742 m 0
+ 316 724 329 710 348 710 c 0
+ 367 710 382 723 382 742 c 0
+ 382 759 364 773 348 773 c 0
+ 332 773 316 758 316 742 c 0
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni06DC
@@ -123460,9 +123531,9 @@ Encoding: 1756 1756 5534
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 298 590 mark 0
+AnchorPoint: "arab-above" 298 580 mark 0
 AnchorPoint: "arab-mark-abv-ijam" 297 602 mark 0
-AnchorPoint: "arab-harakat-abv" 300 600 mark 0
+AnchorPoint: "arab-harakat-abv" 302 602 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -123473,9 +123544,9 @@ SplineSet
  184 622 140 643 140 684 c 2
  140 714 l 1
  162 769 l 2
- 164.92 776.299 173.333 779 178 779 c 0
- 185.667 779 193 774 193 767 c 0
- 193 765 192.969 761.446 192 759 c 2
+ 164.875 776.188 173.333 779 178 779 c 0
+ 185.667 779 193 774.062 193 767 c 0
+ 193 765 192.765 760.931 192 759 c 2
  171 706 l 1
  171 694 l 2
  171 669 194 656 224 656 c 0
@@ -123489,21 +123560,21 @@ SplineSet
  349 776 357 784 365 784 c 0
  374 784 380 776 380 768 c 2
  380 715 l 1
- 398 715 l 2
- 418 715 414 730 414 784 c 0
+ 398 715 l 6
+ 411.75 715 414 723.25 414 784 c 0
  414 791 420 800 430 800 c 0
  440 800 445 792 445 784 c 0
 EndSplineSet
-Validated: 527393
+Validated: 3073
 EndChar
 
 StartChar: meem_hi_arabic.cmb
 Encoding: 1762 1762 5535
 Width: 0
 Flags: HMW
-AnchorPoint: "arab-above" 298 530 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 297 542 mark 0
-AnchorPoint: "arab-harakat-abv" 300 541 mark 0
+AnchorPoint: "arab-above" 298 510 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 297 532 mark 0
+AnchorPoint: "arab-harakat-abv" 300 531 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -123522,7 +123593,7 @@ SplineSet
  378 704 l 1
  378 731 372 769 338 769 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni06DA
@@ -123530,13 +123601,35 @@ Encoding: 1754 1754 5536
 Width: 0
 VWidth: 1024
 Flags: HMW
-AnchorPoint: "arab-above" 308 490 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 287 492 mark 0
-AnchorPoint: "arab-harakat-abv" 300 492 mark 0
+AnchorPoint: "arab-above" 308 459 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 307 489 mark 0
+AnchorPoint: "arab-harakat-abv" 320 489 mark 0
 LayerCount: 2
 Fore
-Refer: 3671 1580 N 0.5 0 0 0.5 160 620 2
-Validated: 98305
+SplineSet
+310 663 m 0
+ 319 663 338 641 338 634 c 0
+ 338 626 318 607 310 607 c 0
+ 302 607 282 627 282 635 c 0
+ 282 643 302 663 310 663 c 0
+390 765 m 0
+ 396 765 403 761 403 752 c 0
+ 403 743 396 739 390 739 c 0
+ 365 739 339 745 315 751 c 1
+ 230 750 214 671 214 648 c 0
+ 214 590 265 542 322 542 c 0
+ 382 542 402 594 419 594 c 0
+ 427 594 432 589 432 581 c 0
+ 432 567 387 516 322 516 c 0
+ 245 516 188 573 188 653 c 0
+ 188 708 217 745 260 766 c 1
+ 240 771 220 774 200 774 c 0
+ 193 774 187 778 187 787 c 0
+ 187 796 194 800 200 800 c 0
+ 240 800 281 786 316 777 c 0
+ 341 770 365.125 765 390 765 c 0
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0750
@@ -124379,9 +124472,9 @@ Width: 0
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-harakat-abv" 390 800 basemark 0
-AnchorPoint: "arab-above" 378 440 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 300 440 mark 0
-AnchorPoint: "arab-harakat-abv" 287 439 mark 0
+AnchorPoint: "arab-above" 358 410 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 310 440 mark 0
+AnchorPoint: "arab-harakat-abv" 297 439 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -124440,9 +124533,9 @@ Width: 0
 VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-harakat-blw" 320 -160 basemark 0
-AnchorPoint: "arab-below" 300 -10 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 290 -8 mark 0
-AnchorPoint: "arab-harakat-blw" 300 -70 mark 0
+AnchorPoint: "arab-below" 300 -20 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 290 -68 mark 0
+AnchorPoint: "arab-harakat-blw" 300 -67 mark 0
 LayerCount: 2
 Fore
 Refer: 3716 1616 N 0.8 0 0 0.8 68 -40 2
@@ -124638,7 +124731,7 @@ SplineSet
  596 -60 579 -43 559 -43 c 0
  541 -43 520 -62 520 -81 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 Substitution2: "stretch 3dig in Arabic-1" arab_end_of_ayah_3dig
 Substitution2: "stretch 2dig in Arabic-1" arab_end_of_ayah_2dig
 Substitution2: "stretch 1dig in Arabic-1" arab_end_of_ayah_1dig
@@ -124650,33 +124743,33 @@ Width: 0
 VWidth: 1024
 Flags: HMW
 AnchorPoint: "arab-above" 288 690 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 287 702 mark 0
-AnchorPoint: "arab-harakat-abv" 300 701 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 287 712 mark 0
+AnchorPoint: "arab-harakat-abv" 300 711 mark 0
 LayerCount: 2
 Fore
 SplineSet
-228 750 m 0
- 252 750 276.5 760 296 769 c 1
- 279 773 242 783 224 783 c 0
- 220 783 216 786 216 791 c 0
- 216 796 220 798 224 798 c 0
- 253 798 281 789 310 781 c 0
- 329 776 347 772 366 772 c 0
- 370 772 374 769 374 764 c 0
- 374 759 370 757 366 757 c 0
- 347 757 342 757 331 760 c 1
- 258 735.5 246 735 228 735 c 0
- 223 735 221 739 221 743 c 0
- 221 747 223 750 228 750 c 0
+232 752 m 0
+ 255 752 269 755 287 760 c 1
+ 270 764 245 772 228 772 c 0
+ 222 772 215 778 215 785 c 0
+ 215 793 222 799 228 799 c 0
+ 257 799 281 790 310 782 c 0
+ 329 777 344 773 363 773 c 0
+ 371 773 375 766 375 760 c 0
+ 375 753 371 746 363 746 c 0
+ 344 746 342 746 331 749 c 1
+ 290 727 255 724 232 724 c 0
+ 224 724 220 732 220 738 c 0
+ 220 744 225 752 232 752 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni06D9
 Encoding: 1753 1753 5597
 Width: 0
 Flags: HMW
-AnchorPoint: "arab-above" 298 470 mark 0
+AnchorPoint: "arab-above" 298 460 mark 0
 AnchorPoint: "arab-mark-abv-ijam" 297 489 mark 0
 AnchorPoint: "arab-harakat-abv" 300 487 mark 0
 LayerCount: 2
@@ -124705,24 +124798,24 @@ SplineSet
  331 540 344 540 344 549 c 0
  344 563 331 577 309 592 c 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni06DF
 Encoding: 1759 1759 5598
 Width: 0
 Flags: HMW
-AnchorPoint: "arab-above" 298 570 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 297 582 mark 0
-AnchorPoint: "arab-harakat-abv" 300 580 mark 0
+AnchorPoint: "arab-above" 298 560 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 296 602 mark 0
+AnchorPoint: "arab-harakat-abv" 302 602 mark 0
 LayerCount: 2
 Fore
 SplineSet
-300 800 m 5
+300 800 m 1
  347 773 374 744 374 700 c 0
  374 665 342 638 300 638 c 0
  263 638 226 665 226 702 c 0
- 226 746 254 776 300 800 c 5
+ 226 746 254 776 300 800 c 1
 300 769 m 1
  265 751 256 730 256 702 c 0
  256 682 272 666 300 666 c 0
@@ -124737,9 +124830,9 @@ Encoding: 1770 1770 5599
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-below" 300 0 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 288 1 mark 0
-AnchorPoint: "arab-harakat-blw" 292 0 mark 0
+AnchorPoint: "arab-below" 300 10 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 298 0 mark 0
+AnchorPoint: "arab-harakat-blw" 302 0 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -124749,7 +124842,7 @@ SplineSet
  300 -150 l 1
  328 -113 l 1
 367 -113 m 1
- 300 -200 l 5
+ 300 -200 l 1
  234 -113 l 1
  300 -20 l 1
  367 -113 l 1
@@ -124762,13 +124855,13 @@ Encoding: 1771 1771 5600
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-above" 298 590 mark 0
+AnchorPoint: "arab-above" 298 580 mark 0
 AnchorPoint: "arab-mark-abv-ijam" 297 612 mark 0
 AnchorPoint: "arab-harakat-abv" 300 610 mark 0
 LayerCount: 2
 Fore
 Refer: 5599 1770 N 1 0 0 1 0 820 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni06D6
@@ -124776,8 +124869,8 @@ Encoding: 1750 1750 5601
 Width: 0
 Flags: HMW
 AnchorPoint: "arab-harakat-abv" 270 490 mark 0
-AnchorPoint: "arab-above" 288 480 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 277 492 mark 0
+AnchorPoint: "arab-above" 288 470 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 277 490 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -124814,16 +124907,16 @@ SplineSet
  396 659 359 626 341 599 c 1
  341 598 l 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni06D7
 Encoding: 1751 1751 5602
 Width: 0
 Flags: HMW
-AnchorPoint: "arab-above" 288 480 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 257 492 mark 0
-AnchorPoint: "arab-harakat-abv" 277 492 mark 0
+AnchorPoint: "arab-above" 288 470 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 277 492 mark 0
+AnchorPoint: "arab-harakat-abv" 297 492 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -131720,7 +131813,7 @@ Encoding: 2275 2275 5911
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "heb-lam-above" 270 -200 mark 0
+AnchorPoint: "arab-harakat-blw" 270 -200 basemark 0
 AnchorPoint: "arab-harakat-blw" 275 0 mark 0
 AnchorPoint: "arab-below" 276 30 mark 0
 AnchorPoint: "arab-mark-blw-ijam" 274 22 mark 0
@@ -131753,7 +131846,7 @@ SplineSet
  174.298 676.314 196.267 704.088 225.055 720.709 c 0
  262.294 742.209 330.461 726.14 355.576 740.64 c 0
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 EndChar
 
 StartChar: uni08E5
@@ -131789,7 +131882,7 @@ SplineSet
  185.5 672.5 187 644.75 220.75 644.75 c 0
  242.5 644.75 265 658.667 285 674 c 1
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 EndChar
 
 StartChar: uni08E6
@@ -131797,13 +131890,13 @@ Encoding: 2278 2278 5914
 Width: 0
 Flags: HMW
 AnchorPoint: "arab-harakat-blw" 295 0 mark 0
-AnchorPoint: "arab-harakat-blw" 320 -190 basemark 0
-AnchorPoint: "arab-below" 306 0 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 284 2 mark 0
+AnchorPoint: "arab-harakat-blw" 320 -200 basemark 0
+AnchorPoint: "arab-below" 296 20 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 284 0 mark 0
 LayerCount: 2
 Fore
 Refer: 5912 2276 N 1 0 0 1 0 -818 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08E7
@@ -131818,7 +131911,7 @@ LayerCount: 2
 Fore
 Refer: 5912 2276 N 1 0 0 1 0 -100 2
 Refer: 5912 2276 N 1 0 0 1 0 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08E8
@@ -131834,7 +131927,7 @@ LayerCount: 2
 Fore
 Refer: 5913 2277 N 1 0 0 1 48 -73 2
 Refer: 5913 2277 N -1 0 0 -1 522 1411 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08E9
@@ -131842,14 +131935,14 @@ Encoding: 2281 2281 5917
 Width: 0
 Flags: HMW
 AnchorPoint: "arab-harakat-blw" 295 80 mark 0
-AnchorPoint: "arab-harakat-blw" 300 -200 basemark 0
+AnchorPoint: "arab-harakat-blw" 310 -200 basemark 0
 AnchorPoint: "arab-below" 306 80 mark 0
 AnchorPoint: "arab-mark-blw-ijam" 294 82 mark 0
 LayerCount: 2
 Fore
 Refer: 5914 2278 N 1 0 0 1 0 92 2
 Refer: 5914 2278 N 1 0 0 1 0 -8 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08EA
@@ -131864,7 +131957,7 @@ AnchorPoint: "arab-mark-abv-ijam" 256 650 mark 0
 LayerCount: 2
 Fore
 Refer: 3656 64434 N 1 0 0 1 -50 240 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08EB
@@ -131880,7 +131973,7 @@ LayerCount: 2
 Fore
 Refer: 3656 64434 N 1 0 0 1 -50 240 2
 Refer: 3656 64434 N 1 0 0 1 70 250 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08EC
@@ -131895,7 +131988,7 @@ AnchorPoint: "arab-mark-abv-ijam" 296 630 mark 0
 LayerCount: 2
 Fore
 Refer: 3817 1615 N 0 1 -1 0 985 432 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: tone1arab
@@ -131910,7 +132003,7 @@ AnchorPoint: "arab-mark-blw-ijam" 257 -38 mark 0
 LayerCount: 2
 Fore
 Refer: 3656 64434 N 1 0 0 1 -50 -616 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: tone2arab
@@ -131920,13 +132013,13 @@ VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-harakat-blw" 295 -80 mark 0
 AnchorPoint: "arab-harakat-blw" 290 -200 basemark 0
-AnchorPoint: "arab-below" 286 -30 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 284 -48 mark 0
+AnchorPoint: "arab-below" 286 -40 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 284 -81 mark 0
 LayerCount: 2
 Fore
 Refer: 3656 64434 N 1 0 0 1 -70 -616 2
 Refer: 3656 64434 N 1 0 0 1 50 -606 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: tonelooparab
@@ -131934,14 +132027,14 @@ Encoding: 2287 2287 5923
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-blw" 295 -30 mark 0
+AnchorPoint: "arab-harakat-blw" 305 -20 mark 0
 AnchorPoint: "arab-harakat-blw" 290 -200 basemark 0
-AnchorPoint: "arab-below" 296 -10 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 294 -18 mark 0
+AnchorPoint: "arab-below" 296 0 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 294 -20 mark 0
 LayerCount: 2
 Fore
 Refer: 5920 2284 N 1 0 0 1 10 -849 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F0
@@ -131957,7 +132050,7 @@ LayerCount: 2
 Fore
 Refer: 3713 1614 N 1 0 0 1 -40 -115 2
 Refer: 3713 1614 N 1 0 0 1 50 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F1
@@ -131973,7 +132066,7 @@ LayerCount: 2
 Fore
 Refer: 3817 1615 N 1 0 0 1 0 0 2
 Refer: 3817 1615 N 1 0 0 1 150 0 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F2
@@ -131983,13 +132076,13 @@ VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-harakat-blw" 365 -40 mark 0
 AnchorPoint: "arab-harakat-blw" 360 -200 basemark 0
-AnchorPoint: "arab-below" 366 0 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 364 -14 mark 0
+AnchorPoint: "arab-below" 366 -20 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 354 -41 mark 0
 LayerCount: 2
 Fore
 Refer: 3713 1614 N 1 0 0 1 118 -895 2
 Refer: 3713 1614 N 1 0 0 1 -20 -863 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F3
@@ -132004,7 +132097,7 @@ AnchorPoint: "arab-mark-abv-ijam" 266 570 mark 0
 LayerCount: 2
 Fore
 Refer: 3696 1608 N 0.5 0 0 0.5 136 695 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F4
@@ -132012,10 +132105,10 @@ Encoding: 2292 2292 5928
 Width: 0
 VWidth: 761
 Flags: MW
-AnchorPoint: "arab-harakat-abv" 300 610 mark 0
+AnchorPoint: "arab-harakat-abv" 300 609 mark 0
 AnchorPoint: "arab-harakat-abv" 300 800 basemark 0
-AnchorPoint: "arab-above" 288 605 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 312 609 mark 0
+AnchorPoint: "arab-above" 298 589 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 302 609 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -132048,7 +132141,7 @@ SplineSet
  290.456 750.38 263.569 732.954 259.513 709.033 c 1
  331.459 734.669 l 1
 EndSplineSet
-Validated: 1575937
+Validated: 3073
 EndChar
 
 StartChar: uni08F5
@@ -132056,15 +132149,15 @@ Encoding: 2293 2293 5929
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-abv" 310 607 mark 0
+AnchorPoint: "arab-harakat-abv" 310 597 mark 0
 AnchorPoint: "arab-harakat-abv" 250 800 basemark 0
-AnchorPoint: "arab-above" 278 604 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 296 604 mark 0
+AnchorPoint: "arab-above" 298 574 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 296 598 mark 0
 LayerCount: 2
 Fore
 Refer: 3713 1614 N 1 0 0 1 -10 -86 2
 Refer: 3656 64434 N 1 0 0 1 -50 284 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F6
@@ -132072,15 +132165,15 @@ Encoding: 2294 2294 5930
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-blw" 295 0 mark 0
+AnchorPoint: "arab-harakat-blw" 295 19 mark 0
 AnchorPoint: "arab-harakat-blw" 340 -200 basemark 0
-AnchorPoint: "arab-below" 286 30 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 284 22 mark 0
+AnchorPoint: "arab-below" 286 40 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 284 20 mark 0
 LayerCount: 2
 Fore
 Refer: 3713 1614 N 1 0 0 1 10 -810 2
 Refer: 3656 64434 N 1 0 0 1 50 -616 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F7
@@ -132095,7 +132188,7 @@ AnchorPoint: "arab-mark-abv-ijam" 286 560 mark 0
 LayerCount: 2
 Fore
 Refer: 3805 -1 N 0 -1 1 0 -399.002 964.998 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F8
@@ -132110,7 +132203,7 @@ AnchorPoint: "arab-mark-abv-ijam" 306 560 mark 0
 LayerCount: 2
 Fore
 Refer: 3805 -1 N -0 1 -1 0 1005 366.002 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08F9
@@ -132118,14 +132211,14 @@ Encoding: 2297 2297 5933
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-blw" 255 0 mark 0
+AnchorPoint: "arab-harakat-blw" 255 10 mark 0
 AnchorPoint: "arab-harakat-blw" 250 -200 basemark 0
-AnchorPoint: "arab-below" 256 10 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 254 10 mark 0
+AnchorPoint: "arab-below" 256 30 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 264 10 mark 0
 LayerCount: 2
 Fore
 Refer: 3805 -1 N 0 -1 1 0 -450 202 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08FA
@@ -132133,14 +132226,14 @@ Encoding: 2298 2298 5934
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-blw" 285 0 mark 0
+AnchorPoint: "arab-harakat-blw" 295 20 mark 0
 AnchorPoint: "arab-harakat-blw" 280 -200 basemark 0
-AnchorPoint: "arab-below" 286 10 mark 0
-AnchorPoint: "arab-mark-blw-ijam" 284 10 mark 0
+AnchorPoint: "arab-below" 286 40 mark 0
+AnchorPoint: "arab-mark-blw-ijam" 284 20 mark 0
 LayerCount: 2
 Fore
 Refer: 3805 -1 N -0 1 -1 0 984 -398 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08FB
@@ -132150,13 +132243,13 @@ VWidth: 800
 Flags: HMW
 AnchorPoint: "arab-harakat-abv" 250 580 mark 0
 AnchorPoint: "arab-harakat-abv" 260 800 basemark 0
-AnchorPoint: "arab-above" 258 580 mark 0
+AnchorPoint: "arab-above" 258 560 mark 0
 AnchorPoint: "arab-mark-abv-ijam" 266 580 mark 0
 LayerCount: 2
 Fore
 Refer: 3805 -1 N -0 1 -1 0 934 398 2
 Refer: 3805 -1 N -0 1 -1 0 1065 398 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08FC
@@ -132164,16 +132257,16 @@ Encoding: 2300 2300 5936
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-abv" 300 580 mark 0
+AnchorPoint: "arab-harakat-abv" 300 583 mark 0
 AnchorPoint: "arab-harakat-abv" 300 800 basemark 0
-AnchorPoint: "arab-above" 275 573 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 263 574 mark 0
+AnchorPoint: "arab-above" 285 563 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 273 582 mark 0
 LayerCount: 2
 Fore
 Refer: 3805 -1 N -0 1 -1 0 1176 398 2
 Refer: 3805 -1 N -0 1 -1 0 1046 398 2
 Refer: 3656 64434 N 1 0 0 1 -110 230 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08FD
@@ -132181,15 +132274,15 @@ Encoding: 2301 2301 5937
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-abv" 290 590 mark 0
+AnchorPoint: "arab-harakat-abv" 300 582 mark 0
 AnchorPoint: "arab-harakat-abv" 290 800 basemark 0
-AnchorPoint: "arab-above" 281 579 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 289 579 mark 0
+AnchorPoint: "arab-above" 281 569 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 289 582 mark 0
 LayerCount: 2
 Fore
 Refer: 3805 -1 N -0 1 -1 0 1064 398 2
 Refer: 3656 64434 N 1 0 0 1 -90 232 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: uni08FE
@@ -132197,15 +132290,15 @@ Encoding: 2302 2302 5938
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-abv" 230 580 mark 0
+AnchorPoint: "arab-harakat-abv" 230 570 mark 0
 AnchorPoint: "arab-harakat-abv" 230 800 basemark 0
-AnchorPoint: "arab-above" 230 566 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 218 566 mark 0
+AnchorPoint: "arab-above" 230 546 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 218 570 mark 0
 LayerCount: 2
 Fore
-Refer: 3817 1615 S 1 0 0 1 0 0 2
-Refer: 3656 64434 S 1 0 0 1 -140 230 2
-Validated: 1146881
+Refer: 3817 1615 N 1 0 0 1 0 0 2
+Refer: 3656 64434 N 1 0 0 1 -140 230 2
+Validated: 32769
 EndChar
 
 StartChar: uni08FF
@@ -132213,14 +132306,14 @@ Encoding: 2303 2303 5939
 Width: 0
 VWidth: 800
 Flags: HMW
-AnchorPoint: "arab-harakat-abv" 280 590 mark 0
+AnchorPoint: "arab-harakat-abv" 280 570 mark 0
 AnchorPoint: "arab-harakat-abv" 270 800 basemark 0
-AnchorPoint: "arab-above" 287 566 mark 0
-AnchorPoint: "arab-mark-abv-ijam" 295 566 mark 0
+AnchorPoint: "arab-above" 287 546 mark 0
+AnchorPoint: "arab-mark-abv-ijam" 295 570 mark 0
 LayerCount: 2
 Fore
 Refer: 5940 1624 N 0 1 -1 0 972 409 2
-Validated: 1146881
+Validated: 32769
 EndChar
 
 StartChar: noonghunnamark.cmb
@@ -132360,7 +132453,7 @@ LayerCount: 2
 Fore
 Refer: 5535 1762 S 1 0 0 1 20 -330 2
 Refer: 3655 1576 N 1 0 0 1 0 0 2
-Validated: 1146881
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Arabic-ext" beharabic meem_hi_arabic.cmb
 EndChar
 
@@ -132375,7 +132468,7 @@ LayerCount: 2
 Fore
 Refer: 5535 1762 N 1 0 0 1 20 -330 2
 Refer: 3727 1662 N 1 0 0 1 0 0 2
-Validated: 1146881
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Arabic-ext" peharabic meem_hi_arabic.cmb
 EndChar
 
@@ -132407,7 +132500,7 @@ LayerCount: 2
 Fore
 Refer: 3676 1585 N 1 0 0 1 0 0 2
 Refer: 5526 1768 N 1 0 0 1 70 -230 2
-Validated: 1146881
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Arabic-ext" reharabic noon_hi_arabic.cmb
 EndChar
 
@@ -132422,7 +132515,7 @@ LayerCount: 2
 Fore
 Refer: 3701 1610 N 1 0 0 1 0 0 2
 Refer: 5526 1768 N 1 0 0 1 110 -140 2
-Validated: 1146881
+Validated: 32769
 MultipleSubs2: "'ccmp' glyph decomp. in Arabic-ext" yeharabic noon_hi_arabic.cmb
 EndChar
 
@@ -134104,7 +134197,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 5595 1757 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: arab_end_of_ayah_2dig
@@ -134166,24 +134259,24 @@ SplineSet
  1196 -60 1179 -43 1159 -43 c 0
  1141 -43 1120 -62 1120 -81 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: arab_end_of_ayah_3dig
 Encoding: 59778 -1 6033
-Width: 1800
+Width: 0
 VWidth: 800
 Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-1768 302 m 4
- 1768 603 1734 666 1506 666 c 6
+1768 302 m 0
+ 1768 603 1734 666 1506 666 c 2
  278 666 l 2
  66 666 29 589 29 302 c 0
  29 -10 63.9795 -77 280 -77 c 2
- 1510 -77 l 6
- 1750 -77 1768 -23 1768 302 c 4
+ 1510 -77 l 2
+ 1750 -77 1768 -23 1768 302 c 0
 38 703 m 0
  16 703 -1 686 -1 665 c 0
  -1 644 16 626 37 626 c 0
@@ -134194,15 +134287,15 @@ SplineSet
  -1 -102 16 -120 37 -120 c 0
  58 -120 75 -102 75 -81 c 0
  75 -60 59 -43 38 -43 c 0
-1759 744 m 4
- 1799 744 1835 708 1835 667 c 4
- 1835 631 1807 597 1772 590 c 5
- 1800 529 1801 407 1801 302 c 4
- 1801 187 1799 56 1772 -5 c 5
- 1807 -12 1835 -45 1835 -81 c 4
- 1835 -122 1799 -159 1758 -159 c 4
- 1718 -159 1681 -128 1681 -95 c 5
- 1643 -111 1576 -113 1510 -113 c 6
+1759 744 m 0
+ 1799 744 1835 708 1835 667 c 0
+ 1835 631 1807 597 1772 590 c 1
+ 1800 529 1801 407 1801 302 c 0
+ 1801 187 1799 56 1772 -5 c 1
+ 1807 -12 1835 -45 1835 -81 c 0
+ 1835 -122 1799 -159 1758 -159 c 0
+ 1718 -159 1681 -128 1681 -95 c 1
+ 1643 -111 1576 -113 1510 -113 c 2
  280 -113 l 2
  228 -113 160 -109 114 -93 c 1
  114 -124 77 -159 37 -159 c 0
@@ -134214,21 +134307,21 @@ SplineSet
  -40 706 -4 742 38 742 c 0
  77 742 114 709 114 677 c 1
  150 689 223.5 698 278 698 c 2
- 1506 698 l 6
- 1570 698 1641 695 1681 679 c 5
- 1681 705 1718 744 1759 744 c 4
-1759 705 m 4
- 1737 705 1720 688 1720 667 c 4
- 1720 648 1739 628 1758 628 c 4
- 1779 628 1796 646 1796 667 c 4
- 1796 688 1779 705 1759 705 c 4
-1720 -81 m 4
- 1720 -102 1737 -120 1758 -120 c 4
- 1779 -120 1796 -102 1796 -81 c 4
- 1796 -60 1779 -43 1759 -43 c 4
- 1741 -43 1720 -62 1720 -81 c 4
+ 1506 698 l 2
+ 1570 698 1641 695 1681 679 c 1
+ 1681 705 1718 744 1759 744 c 0
+1759 705 m 0
+ 1737 705 1720 688 1720 667 c 0
+ 1720 648 1739 628 1758 628 c 0
+ 1779 628 1796 646 1796 667 c 0
+ 1796 688 1779 705 1759 705 c 0
+1720 -81 m 0
+ 1720 -102 1737 -120 1758 -120 c 0
+ 1779 -120 1796 -102 1796 -81 c 0
+ 1796 -60 1779 -43 1759 -43 c 0
+ 1741 -43 1720 -62 1720 -81 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
