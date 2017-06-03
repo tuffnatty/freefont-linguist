@@ -34,7 +34,7 @@ def trim_version_str( font ):
 	Where n and m are decimal numbers.
 	"""
 	vstr_match = _re_vstr.match( font.version )
-	ot_stdized = ''
+	otstdized = ''
 	if vstr_match:
 		trimmed = vstr_match.group( 1 )
 		rest = vstr_match.group( 2 )
