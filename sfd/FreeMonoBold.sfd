@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1500650426
+ModificationTime: 1500852150
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -100,6 +100,7 @@ Lookup: 262 0 0 "'mkmk' mark-to-mark generic"  {"'mkmk' mark-to-mark generic-hig
 Lookup: 264 0 0 "'mkmk' mark-to-mark chain in Arabic"  {"'mkmk' mark-to-mark chain avoid in Arabic"  "'mkmk' mark-to-mark chain in Arabic-1"  } ['mkmk' ('arab' <'dflt' > ) ]
 Lookup: 262 0 0 "mark on ijam Arabic"  {"mark on ijam in Arabic-1"  } []
 Lookup: 262 0 0 "'mkmk' mark-to-mark in Arabic"  {"'mkmk' harakat in Arabic"  } ['mkmk' ('arab' <'dflt' > ) ]
+Lookup: 262 0 0 "'mkmk' mark to mark in Cyrillic"  {"'mkmk' mark to mark in Cyrillic-1"  "'mkmk' mark-to-mark in Cyrillic-2"  } ['mkmk' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
 ChainSub2: class "'mset' mark stretch in Arabic-1"  2 3 1 8
@@ -532,7 +533,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11648 16 9
+WinInfo: 800 16 9
 BeginPrivate: 9
 UniqueID 7 5020946
 BlueValues 23 [-16 0 437 451 583 597]
@@ -544,8 +545,8 @@ StemSnapH 8 [93 100]
 StemSnapV 5 [100]
 ForceBold 4 true
 EndPrivate
-AnchorClass2: "dagesh-heb"  "'mark' marks in Hebrew-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-above"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks generic above 1" "abovecyr"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
-BeginChars: 65536 3264
+AnchorClass2: "cyr-stacked"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-lateral"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-abovemk"  "'mkmk' mark to mark in Cyrillic-1" "dagesh-heb"  "'mark' marks in Hebrew-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-above"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks generic above 1" "cyr-above"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
+BeginChars: 65536 3282
 
 StartChar: space
 Encoding: 32 32 0
@@ -3386,22 +3387,22 @@ AnchorPoint: "above" 300 450 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-147 262 m 0
- 107 262 97 291 97 328 c 2
- 97 437 l 1
- 506 437 l 1
- 506 356 l 1
- 244 100 l 1
- 419 100 l 1
- 421 135 439 154 469 154 c 0
- 510 154 519 127 519 88 c 2
- 519 0 l 1
- 85 0 l 1
- 85 83 l 1
- 346 337 l 1
- 197 337 l 1
- 197 328 l 2
- 197 293 189 262 147 262 c 0
+147 262 m 4
+ 107 262 97 291 97 328 c 6
+ 97 437 l 5
+ 506 437 l 5
+ 506 356 l 5
+ 244 100 l 5
+ 419 100 l 5
+ 421 135 439 154 469 154 c 4
+ 510 154 519 127 519 88 c 6
+ 519 0 l 5
+ 85 0 l 5
+ 85 83 l 5
+ 346 337 l 5
+ 197 337 l 5
+ 197 328 l 6
+ 197 293 189 262 147 262 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -12852,12 +12853,14 @@ StartChar: grave.cmb
 Encoding: 768 768 528
 Width: 0
 Flags: HMW
+AnchorPoint: "cyr-lateral" -472 494 mark 0
+AnchorPoint: "cyr-lateral" -242 494 basemark 0
 AnchorPoint: "abovemk" -322 437 mark 0
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
-Refer: 64 96 N 1 0 0 1 -600 0 0
+Refer: 64 96 S 1 0 0 1 -600 0 0
 Validated: 32769
 EndChar
 
@@ -12865,8 +12868,10 @@ StartChar: acute.cmb
 Encoding: 769 769 529
 Width: 0
 Flags: HMW
+AnchorPoint: "cyr-lateral" -362 494 mark 0
+AnchorPoint: "cyr-lateral" -132 494 basemark 0
 AnchorPoint: "abovemk" -292 437 mark 0
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -12878,8 +12883,9 @@ StartChar: circumflex.cmb
 Encoding: 770 770 530
 Width: 0
 Flags: HMW
+AnchorPoint: "cyr-stacked" -288 477 mark 0
 AnchorPoint: "abovemk" -298 447 mark 0
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -12893,7 +12899,7 @@ Width: 0
 Flags: HMW
 AnchorPoint: "abovemk" -292 649 basemark 0
 AnchorPoint: "abovemk" -297 470.5 mark 0
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -12907,7 +12913,7 @@ Width: 0
 Flags: HMW
 AnchorPoint: "abovemk" -300 462 mark 0
 AnchorPoint: "abovemk" -300 626 basemark 0
-AnchorPoint: "abovecyr" -299 434 mark 0
+AnchorPoint: "cyr-above" -299 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -12938,7 +12944,7 @@ StartChar: breve.cmb
 Encoding: 774 774 534
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -12949,7 +12955,8 @@ EndChar
 StartChar: dotaccent.cmb
 Encoding: 775 775 535
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovemk" -300 654 basemark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -12960,7 +12967,8 @@ EndChar
 StartChar: diaeresis.cmb
 Encoding: 776 776 536
 Width: 0
-Flags: MW
+Flags: HMW
+AnchorPoint: "abovemk" -300 654 basemark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -12998,7 +13006,7 @@ Width: 0
 Flags: HMW
 AnchorPoint: "abovemk" -299 466 mark 0
 AnchorPoint: "abovemk" -300 675 basemark 0
-AnchorPoint: "abovecyr" -300 434 mark 0
+AnchorPoint: "cyr-above" -300 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -13021,7 +13029,7 @@ StartChar: caron.cmb
 Encoding: 780 780 540
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -13064,7 +13072,7 @@ StartChar: dblgrave.cmb
 Encoding: 783 783 543
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -260 435 mark 0
+AnchorPoint: "cyr-above" -260 435 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -13089,7 +13097,7 @@ StartChar: breveinvnosp
 Encoding: 785 785 545
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -14842,7 +14850,7 @@ StartChar: Iocyr
 Encoding: 1025 1025 633
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 279 699 basechar 0
+AnchorPoint: "cyr-above" 279 759 basechar 0
 LayerCount: 2
 Fore
 Refer: 653 1045 N 1 0 0 1 0 0 2
@@ -14854,7 +14862,7 @@ StartChar: Djecyr
 Encoding: 1026 1026 634
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 240 595 basechar 0
+AnchorPoint: "cyr-above" 240 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14905,7 +14913,7 @@ StartChar: Ecyrillic
 Encoding: 1028 1028 636
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14940,7 +14948,7 @@ StartChar: Dzecyrillic
 Encoding: 1029 1029 637
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 51 83 N 1 0 0 1 0 0 0
@@ -14951,7 +14959,7 @@ StartChar: Icyrillic
 Encoding: 1030 1030 638
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
@@ -14962,6 +14970,7 @@ StartChar: Yicyrillic
 Encoding: 1031 1031 639
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 755 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 110 0
@@ -14973,7 +14982,7 @@ StartChar: Jecyrillic
 Encoding: 1032 1032 640
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 350 595 basechar 0
+AnchorPoint: "cyr-above" 350 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 42 74 N 1 0 0 1 -27 0 2
@@ -14984,7 +14993,7 @@ StartChar: Ljecyrillic
 Encoding: 1033 1033 641
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 260 595 basechar 0
+AnchorPoint: "cyr-above" 260 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15022,7 +15031,7 @@ StartChar: Njecyrillic
 Encoding: 1034 1034 642
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 220 595 basechar 0
+AnchorPoint: "cyr-above" 220 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15067,7 +15076,7 @@ StartChar: Tshecyrillic
 Encoding: 1035 1035 643
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 213 595 basechar 0
+AnchorPoint: "cyr-above" 213 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15141,7 +15150,7 @@ StartChar: Dzhecyrillic
 Encoding: 1039 1039 647
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 310 595 basechar 0
+AnchorPoint: "cyr-above" 310 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15181,7 +15190,7 @@ StartChar: Acyrillic
 Encoding: 1040 1040 648
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
@@ -15192,7 +15201,7 @@ StartChar: Becyrillic
 Encoding: 1041 1041 649
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15229,7 +15238,7 @@ StartChar: Vecyrillic
 Encoding: 1042 1042 650
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 34 66 N 1 0 0 1 0 0 0
@@ -15240,7 +15249,7 @@ StartChar: Gecyrillic
 Encoding: 1043 1043 651
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15271,7 +15280,7 @@ StartChar: Decyrillic
 Encoding: 1044 1044 652
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 320 595 basechar 0
+AnchorPoint: "cyr-above" 320 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15309,7 +15318,7 @@ StartChar: Iecyrillic
 Encoding: 1045 1045 653
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
@@ -15320,7 +15329,7 @@ StartChar: Zhecyrillic
 Encoding: 1046 1046 654
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15371,7 +15380,7 @@ StartChar: Zecyrillic
 Encoding: 1047 1047 655
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15410,7 +15419,7 @@ StartChar: Iicyrillic
 Encoding: 1048 1048 656
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15468,7 +15477,7 @@ StartChar: Kacyrillic
 Encoding: 1050 1050 658
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15511,7 +15520,7 @@ StartChar: Elcyrillic
 Encoding: 1051 1051 659
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 340 595 basechar 0
+AnchorPoint: "cyr-above" 340 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15549,7 +15558,7 @@ StartChar: Emcyrillic
 Encoding: 1052 1052 660
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 45 77 N 1 0 0 1 0 0 0
@@ -15560,7 +15569,7 @@ StartChar: Encyrillic
 Encoding: 1053 1053 661
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 40 72 N 1 0 0 1 0 0 0
@@ -15571,7 +15580,7 @@ StartChar: Ocyrillic
 Encoding: 1054 1054 662
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
@@ -15582,7 +15591,7 @@ StartChar: Pecyrillic
 Encoding: 1055 1055 663
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15619,7 +15628,7 @@ StartChar: Ercyrillic
 Encoding: 1056 1056 664
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 48 80 N 1 0 0 1 0 0 0
@@ -15630,7 +15639,7 @@ StartChar: Escyrillic
 Encoding: 1057 1057 665
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 35 67 N 1 0 0 1 0 0 0
@@ -15641,7 +15650,7 @@ StartChar: Tecyrillic
 Encoding: 1058 1058 666
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 52 84 N 1 0 0 1 0 0 0
@@ -15652,7 +15661,7 @@ StartChar: Ucyrillic
 Encoding: 1059 1059 667
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15685,7 +15694,7 @@ StartChar: Efcyrillic
 Encoding: 1060 1060 668
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15728,7 +15737,7 @@ StartChar: Khacyrillic
 Encoding: 1061 1061 669
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 Refer: 56 88 N 1 0 0 1 0 0 0
@@ -15739,7 +15748,7 @@ StartChar: Tsecyrillic
 Encoding: 1062 1062 670
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15779,7 +15788,7 @@ StartChar: Checyrillic
 Encoding: 1063 1063 671
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15820,7 +15829,7 @@ StartChar: Shacyrillic
 Encoding: 1064 1064 672
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15861,7 +15870,7 @@ StartChar: Shchacyrillic
 Encoding: 1065 1065 673
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15905,7 +15914,7 @@ StartChar: Hardsigncyrillic
 Encoding: 1066 1066 674
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 310 595 basechar 0
+AnchorPoint: "cyr-above" 310 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15942,7 +15951,7 @@ StartChar: Yericyrillic
 Encoding: 1067 1067 675
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -15988,7 +15997,7 @@ StartChar: Softsigncyrillic
 Encoding: 1068 1068 676
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 320 595 basechar 0
+AnchorPoint: "cyr-above" 320 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16023,7 +16032,7 @@ StartChar: Ereversedcyrillic
 Encoding: 1069 1069 677
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16056,7 +16065,7 @@ StartChar: IUcyrillic
 Encoding: 1070 1070 678
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 330 595 basechar 0
+AnchorPoint: "cyr-above" 330 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16093,7 +16102,7 @@ StartChar: IAcyrillic
 Encoding: 1071 1071 679
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 595 basechar 0
+AnchorPoint: "cyr-above" 300 595 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16141,7 +16150,7 @@ StartChar: becyrillic
 Encoding: 1073 1073 681
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 655 basechar 0
+AnchorPoint: "cyr-above" 300 655 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -16677,7 +16686,7 @@ StartChar: efcyrillic
 Encoding: 1092 1092 700
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 655 basechar 0
+AnchorPoint: "cyr-above" 300 655 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17121,7 +17130,7 @@ StartChar: djecyrillic
 Encoding: 1106 1106 714
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 645 basechar 0
+AnchorPoint: "cyr-above" 300 645 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -17224,7 +17233,8 @@ EndChar
 StartChar: yicyrillic
 Encoding: 1111 1111 719
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -28 0
@@ -17329,7 +17339,7 @@ StartChar: tshecyrillic
 Encoding: 1115 1115 723
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 645 basechar 0
+AnchorPoint: "cyr-above" 300 685 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18419,6 +18429,7 @@ StartChar: uni04D2
 Encoding: 1234 1234 758
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 745 basechar 0
 LayerCount: 2
 Fore
 Refer: 648 1040 N 1 0 0 1 0 0 2
@@ -18430,6 +18441,7 @@ StartChar: uni04D3
 Encoding: 1235 1235 759
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 680 1072 N 1 0 0 1 0 0 2
@@ -18493,6 +18505,7 @@ StartChar: uni04DB
 Encoding: 1243 1243 765
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -28 0
@@ -18504,6 +18517,7 @@ StartChar: uni04DC
 Encoding: 1244 1244 766
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 765 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 110 0
@@ -18515,6 +18529,7 @@ StartChar: uni04DD
 Encoding: 1245 1245 767
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -31 0
@@ -18526,6 +18541,7 @@ StartChar: uni04DE
 Encoding: 1246 1246 768
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 745 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 89 0
@@ -18537,6 +18553,7 @@ StartChar: uni04DF
 Encoding: 1247 1247 769
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 4 -27 0
@@ -18570,6 +18587,7 @@ StartChar: uni04E4
 Encoding: 1252 1252 772
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 755 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 3 110 0
@@ -18581,6 +18599,7 @@ StartChar: uni04E5
 Encoding: 1253 1253 773
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -31 0
@@ -18592,6 +18611,7 @@ StartChar: uni04E6
 Encoding: 1254 1254 774
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 765 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 109 0
@@ -18603,6 +18623,7 @@ StartChar: uni04E7
 Encoding: 1255 1255 775
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -29 0
@@ -18614,7 +18635,7 @@ StartChar: uni04E8
 Encoding: 1256 1256 776
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 583 basechar 0
+AnchorPoint: "cyr-above" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -18663,6 +18684,7 @@ StartChar: uni04EA
 Encoding: 1258 1258 778
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 765 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 111 0
@@ -18673,7 +18695,8 @@ EndChar
 StartChar: uni04EB
 Encoding: 1259 1259 779
 Width: 600
-Flags: MW
+Flags: HMW
+AnchorPoint: "cyr-above" 300 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -29 0
@@ -18685,6 +18708,7 @@ StartChar: uni04EC
 Encoding: 1260 1260 780
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 765 basechar 0
 LayerCount: 2
 Fore
 Refer: 677 1069 N 1 0 0 1 0 0 2
@@ -18696,6 +18720,7 @@ StartChar: uni04ED
 Encoding: 1261 1261 781
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -26 0
@@ -18729,6 +18754,7 @@ StartChar: uni04F0
 Encoding: 1264 1264 784
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 755 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 110 0
@@ -18740,6 +18766,7 @@ StartChar: uni04F1
 Encoding: 1265 1265 785
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 699 1091 N 1 0 0 1 0 0 2
@@ -18773,6 +18800,7 @@ StartChar: uni04F4
 Encoding: 1268 1268 788
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 290 765 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 -15 109 0
@@ -18784,6 +18812,7 @@ StartChar: uni04F5
 Encoding: 1269 1269 789
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -28 0
@@ -18795,6 +18824,7 @@ StartChar: uni04F8
 Encoding: 1272 1272 790
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 755 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 109 0
@@ -18806,6 +18836,7 @@ StartChar: uni04F9
 Encoding: 1273 1273 791
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 310 625 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 -28 0
@@ -37180,7 +37211,7 @@ StartChar: uni04D8
 Encoding: 1240 1240 1625
 Width: 600
 Flags: HMW
-AnchorPoint: "abovecyr" 300 583 basechar 0
+AnchorPoint: "cyr-above" 300 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38811,6 +38842,7 @@ StartChar: uni04DA
 Encoding: 1242 1242 1726
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 300 765 basechar 0
 LayerCount: 2
 Fore
 Refer: 103 168 N 1 0 0 1 0 110 0
@@ -38995,7 +39027,8 @@ StartChar: uni0484
 Encoding: 1156 1156 1735
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-stacked" -298 477 mark 0
+AnchorPoint: "cyr-above" -296 434 mark 0
 LayerCount: 2
 Fore
 Refer: 545 785 N 1 0 0 1 12 0 2
@@ -39006,22 +39039,48 @@ StartChar: uni0485
 Encoding: 1157 1157 1736
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-lateral" -252 454 basemark 0
+AnchorPoint: "cyr-lateral" -392 454 mark 0
+AnchorPoint: "cyr-stacked" -320 672 basemark 0
+AnchorPoint: "cyr-above" -296 404 mark 0
 LayerCount: 2
 Fore
-Refer: 1690 788 N 1 0 0 1 37 0 2
-Validated: 32769
+SplineSet
+-282 660 m 1
+ -288 577 l 1
+ -268 486 l 2
+ -267.355 482.904 -267 477 -267 475 c 0
+ -267 464 -278 457 -290 457 c 0
+ -298 457 -310 463 -316 473 c 2
+ -370 577 l 1
+ -370 660 l 1
+ -282 660 l 1
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni0486
 Encoding: 1158 1158 1737
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -296 434 mark 0
+AnchorPoint: "cyr-lateral" -382 454 mark 0
+AnchorPoint: "cyr-lateral" -242 454 basemark 0
+AnchorPoint: "cyr-stacked" -302 664 basemark 0
+AnchorPoint: "cyr-above" -336 404 mark 0
 LayerCount: 2
 Fore
-Refer: 1689 787 S 1 0 0 1 -10 0 2
-Validated: 32769
+SplineSet
+-345 660 m 1
+ -257 660 l 1
+ -257 607 l 1
+ -311 473 l 2
+ -315.358 462.184 -329 457 -337 457 c 0
+ -349 457 -360 464 -360 475 c 0
+ -360 477 -359.5 482.878 -359 486 c 2
+ -339 607 l 1
+ -345 660 l 1
+EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: uni048A
@@ -43055,6 +43114,7 @@ StartChar: uni033E
 Encoding: 830 830 1911
 Width: 0
 Flags: HMW
+AnchorPoint: "cyr-above" -320 450 mark 0
 AnchorPoint: "above" -300 447 mark 0
 LayerCount: 2
 Fore
@@ -43069,7 +43129,7 @@ SplineSet
  -281 721.5 -269.5 713 -269.5 696.5 c 0
  -269.5 679.5 -293.5 673.5 -293.5 640.5 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: arrowboth
@@ -45532,6 +45592,7 @@ StartChar: Yatcyr
 Encoding: 1122 1122 2039
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 380 675 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -45568,13 +45629,14 @@ SplineSet
  113 460 l 2
  113 431.7 101 404 63 404 c 0
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: yatcyr
 Encoding: 1123 1123 2040
 Width: 600
 Flags: HMW
+AnchorPoint: "cyr-above" 410 585 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -46786,7 +46848,7 @@ Encoding: 59649 -1 2107
 Width: 600
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "abovecyr" 300 643 basechar 0
+AnchorPoint: "cyr-above" 300 643 basechar 0
 LayerCount: 2
 Fore
 Refer: 601 948 N 1 0 0 1 0 0 2
@@ -47645,7 +47707,7 @@ StartChar: koloda.cmb
 Encoding: 42609 42609 2168
 Width: 0
 Flags: HMW
-AnchorPoint: "abovecyr" -300 595 mark 0
+AnchorPoint: "cyr-above" -300 595 mark 0
 LayerCount: 2
 Fore
 Refer: 59 91 S 0 -1 1 0 -544 1050 2
@@ -58439,7 +58501,7 @@ StartChar: Omegha_shirokaja
 Encoding: 42572 42572 2750
 Width: 600
 Flags: HW
-AnchorPoint: "abovecyr" 305 583 basechar 0
+AnchorPoint: "cyr-above" 305 583 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -66926,10 +66988,12 @@ StartChar: buky_comb
 Encoding: 11744 11744 3239
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 734 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 681 1073 N 0.521542 0 0 0.455307 -446 487 2
+Refer: 681 1073 N 0.47 0 0 0.4 -446 487 2
 Validated: 32769
 EndChar
 
@@ -66937,10 +67001,12 @@ StartChar: vede_comb
 Encoding: 11745 11745 3240
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 684 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 682 1074 N 0.5 0 0 0.47 -448 481 2
+Refer: 682 1074 N 0.47 0 0 0.47 -448 481 2
 Validated: 32769
 EndChar
 
@@ -66948,10 +67014,12 @@ StartChar: glagol_comb
 Encoding: 11746 11746 3241
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 676 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 683 1075 N 0.51 0 0 0.47 -441 480 2
+Refer: 683 1075 N 0.47 0 0 0.47 -441 480 2
 Validated: 32769
 EndChar
 
@@ -66959,7 +67027,9 @@ StartChar: dobro_comb
 Encoding: 11747 11747 3242
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 684 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 684 1076 N 0.41 0 0 0.3675 -424 527 2
@@ -66970,7 +67040,9 @@ StartChar: zhivete_comb
 Encoding: 11748 11748 3243
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 684 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 686 1078 N 0.45 0 0 0.48 -430 478 2
@@ -66981,7 +67053,9 @@ StartChar: zemlja_comb
 Encoding: 11749 11749 3244
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 684 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 687 1079 N 0.45 0 0 0.4525 -435 486 2
@@ -66992,7 +67066,9 @@ StartChar: kako_comb
 Encoding: 11750 11750 3245
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -282 674 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 690 1082 N 0.47 0 0 0.47 -421 480 2
@@ -67003,7 +67079,9 @@ StartChar: ljudi_comb
 Encoding: 11751 11751 3246
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 677 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 691 1083 N 0.475 0 0 0.4675 -449 481 2
@@ -67014,7 +67092,9 @@ StartChar: myslete_comb
 Encoding: 11752 11752 3247
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 677 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 692 1084 N 0.51 0 0 0.4725 -450 481 2
@@ -67025,7 +67105,9 @@ StartChar: nash_comb
 Encoding: 11753 11753 3248
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 674 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 693 1085 N 0.46 0 0 0.47 -437 480 2
@@ -67036,10 +67118,12 @@ StartChar: on_comb
 Encoding: 11754 11754 3249
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 674 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 694 1086 N 0.455 0 0 0.45 -436 484 2
+Refer: 694 1086 S 0.455 0 0 0.45 -436 480 2
 Validated: 32769
 EndChar
 
@@ -67047,7 +67131,9 @@ StartChar: pokoj_comb
 Encoding: 11755 11755 3250
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 678 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 695 1087 N 0.44 0 0 0.47 -433 480 2
@@ -67058,10 +67144,12 @@ StartChar: rtsy_comb
 Encoding: 11756 11756 3251
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -272 726 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 696 1088 N 0.439604 0 0 0.4512 -418 578 2
+Refer: 696 1088 N 0.47 0 0 0.4 -418 548 2
 Validated: 32769
 EndChar
 
@@ -67069,7 +67157,9 @@ StartChar: slovo_comb
 Encoding: 11757 11757 3252
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 684 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 697 1089 N 0.46 0 0 0.45 -442 484 2
@@ -67080,7 +67170,9 @@ StartChar: tverdo_comb
 Encoding: 11758 11758 3253
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 677 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 698 1090 N 0.48 0 0 0.47 -443 480 2
@@ -67091,7 +67183,9 @@ StartChar: kher_comb
 Encoding: 11759 11759 3254
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 674 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 701 1093 N 0.47 0 0 0.47 -436 481 2
@@ -67102,10 +67196,12 @@ StartChar: tsy_comb
 Encoding: 11760 11760 3255
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -282 714 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 702 1094 N 0.432081 0 0 0.468937 -422 530 2
+Refer: 702 1094 N 0.47 0 0 0.45 -422 530 2
 Validated: 32769
 EndChar
 
@@ -67113,7 +67209,9 @@ StartChar: cherv_comb
 Encoding: 11761 11761 3256
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 674 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 703 1095 N 0.49 0 0 0.47 -442 480 2
@@ -67124,7 +67222,9 @@ StartChar: sha_comb
 Encoding: 11762 11762 3257
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 674 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 704 1096 N 0.46 0 0 0.47 -435 480 2
@@ -67135,10 +67235,12 @@ StartChar: shta_comb
 Encoding: 11763 11763 3258
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -302 717 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 705 1097 S 0.44 0 0 0.47 -433 521 2
+Refer: 705 1097 N 0.44 0 0 0.47 -433 521 2
 Validated: 32769
 EndChar
 
@@ -67146,7 +67248,9 @@ StartChar: fita_comb
 Encoding: 11764 11764 3259
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 684 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
 Refer: 2169 1139 N 0.45 0 0 0.45 -433 484 2
@@ -67157,10 +67261,12 @@ StartChar: az_comb
 Encoding: 11766 11766 3260
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 687 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 680 1072 N 0.4875 0 0 0.4475 -438 485 2
+Refer: 680 1072 N 0.47 0 0 0.47 -438 485 2
 Validated: 32769
 EndChar
 
@@ -67168,10 +67274,12 @@ StartChar: est_comb
 Encoding: 11767 11767 3261
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 687 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 685 1077 N 0.4675 0 0 0.45 -432 485 2
+Refer: 685 1077 N 0.47 0 0 0.47 -432 485 2
 Validated: 32769
 EndChar
 
@@ -67179,22 +67287,336 @@ StartChar: yat_comb
 Encoding: 11770 11770 3262
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -292 674 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 2040 1123 N 0.54 0 0 0.48 -434 480 2
-Validated: 32769
+Refer: 2040 1123 N 0.47 0 0 0.4 -434 480 2
+Validated: 1146881
 EndChar
 
 StartChar: yus_comb
 Encoding: 11771 11771 3263
 Width: 0
 Flags: HW
-AnchorPoint: "abovecyr" -300 450 mark 0
+AnchorPoint: "cyr-stacked" -282 684 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
 LayerCount: 2
 Fore
-Refer: 710 1102 N 0.48 0 0 0.48 -419 480 2
+Refer: 710 1102 N 0.47 0 0 0.47 -419 480 2
 Validated: 32769
+EndChar
+
+StartChar: est_shirokij.cmb
+Encoding: 42612 42612 3264
+Width: 0
+VWidth: 930
+Flags: HW
+AnchorPoint: "cyr-stacked" -292 694 basemark 0
+AnchorPoint: "cyr-stacked" -300 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
+LayerCount: 2
+Fore
+Refer: 716 1108 N 0.47 0 0 0.47 -440 476 2
+Validated: 32769
+EndChar
+
+StartChar: izhe.cmb
+Encoding: 42613 42613 3265
+Width: 0
+VWidth: 930
+Flags: HW
+AnchorPoint: "cyr-stacked" -302 664 basemark 0
+AnchorPoint: "cyr-stacked" -310 450 mark 0
+AnchorPoint: "cyr-above" -310 450 mark 0
+LayerCount: 2
+Fore
+Refer: 688 1080 N 0.47 0 0 0.47 -450 471 2
+Validated: 32769
+EndChar
+
+StartChar: yi.cmb
+Encoding: 42614 42614 3266
+Width: 0
+VWidth: 930
+Flags: HW
+AnchorPoint: "cyr-stacked" -292 754 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -290 450 mark 0
+LayerCount: 2
+Fore
+Refer: 719 1111 N 0.47 0 0 0.47 -430 471 2
+Validated: 32769
+EndChar
+
+StartChar: uk.cmb
+Encoding: 42615 42615 3267
+Width: 0
+VWidth: 930
+Flags: HW
+AnchorPoint: "cyr-stacked" -282 704 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -300 450 mark 0
+LayerCount: 2
+Fore
+Refer: 699 1091 N 0.47 0 0 0.36 -430 554 2
+Validated: 32769
+EndChar
+
+StartChar: hardsign.cmb
+Encoding: 42616 42616 3268
+Width: 0
+VWidth: 930
+Flags: HW
+AnchorPoint: "cyr-stacked" -252 674 basemark 0
+AnchorPoint: "cyr-stacked" -260 450 mark 0
+AnchorPoint: "cyr-above" -270 450 mark 0
+LayerCount: 2
+Fore
+Refer: 706 1098 N 0.47 0 0 0.47 -400 471 2
+Validated: 32769
+EndChar
+
+StartChar: ery.cmb
+Encoding: 42617 42617 3269
+Width: 0
+VWidth: 930
+Flags: HW
+AnchorPoint: "cyr-stacked" -282 664 basemark 0
+AnchorPoint: "cyr-stacked" -290 450 mark 0
+AnchorPoint: "cyr-above" -280 450 mark 0
+LayerCount: 2
+Fore
+Refer: 707 1099 N 0.47 0 0 0.47 -440 471 2
+Validated: 32769
+EndChar
+
+StartChar: eri.cmb
+Encoding: 42618 42618 3270
+Width: 0
+VWidth: 930
+Flags: HW
+AnchorPoint: "cyr-stacked" -252 674 basemark 0
+AnchorPoint: "cyr-stacked" -260 450 mark 0
+AnchorPoint: "cyr-above" -270 450 mark 0
+LayerCount: 2
+Fore
+Refer: 708 1100 N 0.47 0 0 0.47 -400 471 2
+Validated: 32769
+EndChar
+
+StartChar: uniA69C
+Encoding: 42652 42652 3271
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 706 1098 N 0.47 0 0 0.47 142 476 2
+Validated: 32769
+EndChar
+
+StartChar: uniA69D
+Encoding: 42653 42653 3272
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 708 1100 N 0.47 0 0 0.47 151 476 2
+Validated: 32769
+EndChar
+
+StartChar: ef.cmb
+Encoding: 42654 42654 3273
+Width: 0
+Flags: HW
+AnchorPoint: "cyr-stacked" -304 744 basemark 0
+AnchorPoint: "cyr-stacked" -310 450 mark 0
+AnchorPoint: "cyr-above" -312 430 mark 0
+LayerCount: 2
+Fore
+Refer: 700 1092 N 0.47 0 0 0.36 -446 530 2
+Validated: 32769
+EndChar
+
+StartChar: uniA66F
+Encoding: 42607 42607 3274
+Width: 0
+Flags: HW
+AnchorPoint: "cyr-above" -300 584 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-247 697 m 1
+ -247 664 l 2
+ -247 648 -269 627 -289 627 c 0
+ -309 627 -329 645 -329 664 c 2
+ -329 780 l 1
+ 329 780 l 5
+ 329 664 l 6
+ 329 645 311 627 289 627 c 4
+ 268 627 247 648 247 664 c 6
+ 247 697 l 5
+ -247 697 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: kavyka
+Encoding: 42622 42622 3275
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+476 664 m 1
+ 545 664 l 1
+ 533 558 410 507 300 507 c 0
+ 202 507 69 542.6 55 664 c 1
+ 124 664 l 1
+ 164 608 236 597 300 597 c 0
+ 358 597 432 602 476 664 c 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: pajerok
+Encoding: 42623 42623 3276
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+206 739 m 1
+ 228 691.3 253 676 292 676 c 0
+ 318 676 354.639 695.658 363 712 c 2
+ 385 755 l 2
+ 389.055 762.925 398 767 412 767 c 0
+ 423 767 438 757 438 747 c 0
+ 438 744.25 438.544 736.706 435 730 c 2
+ 333 537 l 2
+ 323.64 519.28 307.5 515 293 515 c 4
+ 282 515 270 521.75 270 537 c 4
+ 270 541.25 271.973 546.014 273 548 c 2
+ 315 627 l 1
+ 305.5 622.5 297 620 273 620 c 0
+ 226 620 169 653 148 722 c 1
+ 148 734 167 752 180 752 c 0
+ 186 752 202 743 206 739 c 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: kavyka.cmb
+Encoding: 42620 42620 3277
+Width: 0
+Flags: HW
+AnchorPoint: "cyr-above" -264 624 mark 0
+LayerCount: 2
+Fore
+Refer: 3275 42622 N 1 0 0 1 -561 130 2
+Validated: 32769
+EndChar
+
+StartChar: pajerok.cmb
+Encoding: 42621 42621 3278
+Width: 0
+Flags: HW
+AnchorPoint: "cyr-above" -138 466 mark 0
+LayerCount: 2
+Fore
+Refer: 3276 42623 S 1 0 0 1 -430 0 2
+Validated: 32769
+EndChar
+
+StartChar: Zemlja
+Encoding: 42560 42560 3279
+Width: 600
+Flags: HW
+AnchorPoint: "cyr-above" 305 583 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+527 100 m 1
+ 527 -4 l 2
+ 527 -140.3 444 -200 323 -200 c 2
+ 171 -200 l 6
+ 142 -200 122 -173.5 122 -154 c 0
+ 122 -134 142.5 -109 171 -109 c 6
+ 325 -109 l 2
+ 393 -109 428 -76.3 428 -22 c 2
+ 428 0 l 1
+ 73 0 l 1
+ 73 100 l 1
+ 171.901 228.099 375 483 375 483 c 1
+ 196 483 l 1
+ 196 394 l 2
+ 196 372 178 346 147 346 c 0
+ 116 346 96 372 96 394 c 2
+ 96 583 l 1
+ 504 583 l 1
+ 504 485 l 1
+ 403.917 356.083 201 100 201 100 c 1
+ 527 100 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: zemlja
+Encoding: 42561 42561 3280
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+506 437 m 1
+ 506 355 l 1
+ 244 100 l 1
+ 519 100 l 1
+ 519 0 l 2
+ 519 -105.916 426.692 -200 315 -200 c 2
+ 171 -200 l 2
+ 140 -200 118 -171 118 -149 c 0
+ 118 -129.5 146 -95 171 -95 c 2
+ 317 -95 l 2
+ 378 -95 418 -66 418 0 c 1
+ 85 0 l 1
+ 85 83 l 1
+ 346 337 l 1
+ 197 337 l 1
+ 197 319 l 2
+ 197 277 175 262 145 262 c 0
+ 117 262 97 281 97 319 c 2
+ 97 437 l 1
+ 506 437 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: titlocyr.cmb
+Encoding: 1155 1155 3281
+Width: 0
+Flags: HW
+AnchorPoint: "cyr-above" -300 580 mark 0
+AnchorPoint: "abovemk" -300 780 basemark 0
+AnchorPoint: "abovemk" -130 580 mark 0
+LayerCount: 2
+Fore
+SplineSet
+-164 703 m 1
+ -482 603 l 1
+ -482 743 l 0
+ -482 764 -473 780 -452 780 c 0
+ -433 780 -420 763 -420 743 c 0
+ -420 684 l 1
+ -102 785 l 1
+ -102 645 l 0
+ -102 624 -111 608 -132 608 c 0
+ -151 608 -164 625 -164 645 c 0
+ -164 703 l 1
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
