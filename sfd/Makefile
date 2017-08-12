@@ -29,6 +29,7 @@ GENOT=../tools/generate/OpenType
 GENWO=../tools/generate/WOFF
 # FIXME logic of setting FixedPitch is poor.  
 IFP=../tools/generate/tweeks/set_isFixedPitch.py
+CFS=../tools/generate/tweeks/correct_fsSelection.py
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf .woff
 
@@ -36,11 +37,13 @@ IFP=../tools/generate/tweeks/set_isFixedPitch.py
 	@ $(TESTFF)
 	@ ( $(FFPY) ${GENOT} $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
 	@ ( $(IFP) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
+	@ ( $(CFS) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
 
 %.ttf : %.sfd
 	@ $(TESTFF)
 	@ ( $(FFPY) $(GENTT) $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
 	@ ( $(IFP) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
+	@ ( $(CFS) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
 
 %.woff : %.sfd
 	@ $(TESTFF)
