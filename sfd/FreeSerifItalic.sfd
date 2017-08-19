@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1502614870
+ModificationTime: 1503178298
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -126,7 +126,7 @@ Lookup: 4 0 0 "'pres' pre-base khanda ta in Bengali"  {"form khanda ta in Bengal
 Lookup: 4 0 0 "'cjct' conjunct forms in Bengali"  {"'cjct' conjunct forms in Bengali-3"  "'cjct' conjunct forms in Bengali-2"  } ['cjct' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' Reph Form in Bengali"  {"'rphf' Reph Form in Bengali subtable"  } ['rphf' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' ba,ra below-base forms in Bengali2"  {"'blwf' ba,ra below-base forms in Bengali2-1"  } ['blwf' ('bng2' <'dflt' > ) ]
-Lookup: 4 0 0 "'blwf' Below Base Forms in Bengali"  {"'blwf' Below Base Forms in Bengali subtable"  } ['blwf' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
+Lookup: 4 0 0 "'blwf' Below Base Forms in Bengali"  {"'blwf' Below Base Forms in Bengali subtable"  } ['blwf' ('beng' <'dflt' > ) ]
 Lookup: 4 0 0 "'half' Half Forms in Bengali"  {"'half' Half Forms in Bengali subtable"  } ['half' ('beng' <'dflt' > 'bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' ya post-base form in Bengali2"  {"'pstf' ya post-base form in Bengali2-1"  } ['pstf' ('bng2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' Post Base Forms in Bengali"  {"'pstf' Post Base Forms in Bengali subtable"  } ['pstf' ('beng' <'dflt' > ) ]
@@ -857,8 +857,8 @@ LangName: 1026 "" "" "+BDoEQwRABEEEOAQyBDUEPQAA" "" "FreeSerif +BDoEQwRABEEEOAQy
 LangName: 1069 "" "" "Etzana" "" "FreeSerif Etzana" 
 LangName: 1033 "" "" "" "GNU: FreeSerif Italic: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 21 1 65535 3
-OtfFeatName: 'ss08' 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 1033 "Georgian Mtavruli" 
-OtfFeatName: 'ss01' 1033 "Bulgarian Alternate" 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 
+OtfFeatName: 'ss01' 1026 "+BBAEOwRCBDUEQAQ9BDAEQgQ4BDIENQQ9" 1033 "Bulgarian Alternate" 
+OtfFeatName: 'ss08' 1033 "Georgian Mtavruli" 1079 "+ENsQ1xDQENUQ4BDjENoQ2AAA" 
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 1500
@@ -922,7 +922,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 65504 16 11
+WinInfo: 60928 16 11
 BeginPrivate: 9
 UniqueID 7 5020937
 BlueValues 23 [-18 0 428 442 652 666]
@@ -52442,7 +52442,8 @@ StartChar: bn_k_ra
 Encoding: 60651 -1 2190
 Width: 723
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 361 47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52490,7 +52491,7 @@ SplineSet
  605 276 603 264 593 249 c 1
  594 248 596 248 597 248 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'vatu' vattu variants in Bengali-1" ka_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ka_bng bn_raphala
@@ -52500,7 +52501,8 @@ StartChar: bn_k_ra1
 Encoding: 60652 -1 2191
 Width: 628
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 311 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52546,14 +52548,15 @@ SplineSet
  235 280 286 263 327 139 c 1
  400 401 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_kh_ra
 Encoding: 60653 -1 2192
 Width: 511
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 331 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52598,7 +52601,7 @@ SplineSet
  491 649 l 1
  515 631 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" kha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" kha_bng bn_raphala
@@ -52608,7 +52611,8 @@ StartChar: bn_g_ra
 Encoding: 60654 -1 2193
 Width: 500
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 321 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52658,7 +52662,7 @@ SplineSet
  143 365 107 349 99 349 c 0
  72 349 59 375 59 401 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" ga_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ga_bng bn_raphala
@@ -52668,7 +52672,8 @@ StartChar: bn_gh_ra
 Encoding: 60655 -1 2194
 Width: 481
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 301 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52713,7 +52718,7 @@ SplineSet
  207 363 193 360 179 360 c 0
  128 360 101 398 101 438 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" gha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" gha_bng bn_raphala
@@ -52723,7 +52728,8 @@ StartChar: bn_c_ra
 Encoding: 60656 -1 2195
 Width: 460
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 261 -103 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52762,7 +52768,7 @@ SplineSet
  -52 77 -21 130 -4 155 c 1
  8 135 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" ca_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ca_bng bn_raphala
@@ -52772,7 +52778,8 @@ StartChar: bn_ch_ra
 Encoding: 60657 -1 2196
 Width: 452
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 321 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52823,7 +52830,7 @@ SplineSet
  333 439 337 441 354 441 c 0
  397 441 444 403 444 337 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'vatu' vattu variants in Bengali-1" cha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" cha_bng bn_raphala
@@ -52833,7 +52840,8 @@ StartChar: bn_j_ra
 Encoding: 60658 -1 2197
 Width: 591
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 421 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52885,7 +52893,7 @@ SplineSet
  181 -44 l 2
  101 -44 53 -4 53 61 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'vatu' vattu variants in Bengali-1" ja_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ja_bng bn_raphala
@@ -52895,7 +52903,8 @@ StartChar: bn_tt_ra
 Encoding: 60659 -1 2198
 Width: 480
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 251 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -52948,7 +52957,7 @@ SplineSet
  181 781 l 1
  181 778 180 775 180 772 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" tta_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" tta_bng bn_raphala
@@ -52958,7 +52967,8 @@ StartChar: bn_tth_ra
 Encoding: 60660 -1 2199
 Width: 462
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 221 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53004,7 +53014,7 @@ SplineSet
  -31 122 l 1
  -38 108 -53 81 -53 54 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" ttha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ttha_bng bn_raphala
@@ -53014,7 +53024,8 @@ StartChar: bn_dd_ra
 Encoding: 60661 -1 2200
 Width: 516
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 321 -103 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53056,7 +53067,7 @@ SplineSet
  130 442 124 401 124 356 c 0
  124 262 148 148 267 148 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" dda_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" dda_bng bn_raphala
@@ -53066,7 +53077,8 @@ StartChar: bn_ddh_ra
 Encoding: 60662 -1 2201
 Width: 528
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 321 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53104,7 +53116,7 @@ SplineSet
  -34 86 -3 135 14 155 c 1
  28 135 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" ddha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ddha_bng bn_raphala
@@ -53114,7 +53126,8 @@ StartChar: bn_t_ra
 Encoding: 60663 -1 2202
 Width: 499
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 351 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53149,7 +53162,7 @@ SplineSet
  50 508 l 1
  64 558 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" ta_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ta_bng bn_raphala
@@ -53159,7 +53172,8 @@ StartChar: bn_t_ra1
 Encoding: 60664 -1 2203
 Width: 551
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 351 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53201,14 +53215,15 @@ SplineSet
  69 508 l 1
  83 558 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_th_ra
 Encoding: 60665 -1 2204
 Width: 477
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 291 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53252,7 +53267,7 @@ SplineSet
  457 651 l 1
  475 619 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" tha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" tha_bng bn_raphala
@@ -53262,7 +53277,7 @@ StartChar: bn_d_ra
 Encoding: 60666 -1 2205
 Width: 478
 GlyphClass: 3
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -53298,7 +53313,7 @@ SplineSet
  -10 212 -9 214 -7 217 c 1
  20 198 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" da_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" da_bng bn_raphala
@@ -53308,7 +53323,8 @@ StartChar: bn_dh_ra
 Encoding: 60667 -1 2206
 Width: 449
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 271 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53352,7 +53368,7 @@ SplineSet
  279 506 267 485 221 485 c 0
  210 485 202 493 197 497 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" dha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" dha_bng bn_raphala
@@ -53362,7 +53378,8 @@ StartChar: bn_n_ra
 Encoding: 60668 -1 2207
 Width: 511
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 331 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53396,7 +53413,7 @@ SplineSet
  -18 156 -5 206 30 249 c 1
  44 229 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" na_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" na_bng bn_raphala
@@ -53455,7 +53472,8 @@ StartChar: bn_p_ra
 Encoding: 60670 -1 2209
 Width: 535
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 361 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53502,7 +53520,7 @@ SplineSet
  149 387 140 379 93 368 c 0
  81 368 63 379 63 398 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" pa_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" pa_bng bn_raphala
@@ -53512,7 +53530,8 @@ StartChar: bn_ph_ra
 Encoding: 60671 -1 2210
 Width: 616
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 321 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53555,7 +53574,7 @@ SplineSet
  -33 155 -3 212 9 233 c 1
  31 197 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" pha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" pha_bng bn_raphala
@@ -53565,7 +53584,8 @@ StartChar: bn_b_ra
 Encoding: 60672 -1 2211
 Width: 443
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 271 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53598,7 +53618,7 @@ SplineSet
  -35 154 -4 205 12 229 c 1
  23 209 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Ligature2: "'vatu' vattu variants in Bengali-1" ba_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ba_bng bn_raphala
@@ -53651,7 +53671,8 @@ StartChar: bn_bh_ra1
 Encoding: 60674 -1 2213
 Width: 534
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 321 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -53693,7 +53714,7 @@ SplineSet
  66 508 l 1
  79 558 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_m_ra
@@ -54021,6 +54042,7 @@ Encoding: 60681 -1 2220
 Width: 419
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 331 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54062,7 +54084,7 @@ SplineSet
  302 480.709 303.762 475.769 307 472.568 c 1
  370 463 419 423.73 419 353 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'vatu' vattu variants in Bengali-1" ha_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ha_bng bn_raphala
@@ -54072,7 +54094,8 @@ StartChar: bn_asamir_ra
 Encoding: 60682 -1 2221
 Width: 535
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 351 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54110,7 +54133,7 @@ SplineSet
  -8 160 16 211 28 230 c 1
  58 198 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_asamib_ra
@@ -54118,6 +54141,7 @@ Encoding: 60683 -1 2222
 Width: 527
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 331 -153 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54154,7 +54178,7 @@ SplineSet
  -23 41 -3 90 7 109 c 1
  44 76 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'vatu' vattu variants in Bengali-1" ba_asami_bng bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" ba_asami_bng bn_raphala
@@ -54165,6 +54189,7 @@ Encoding: 60684 -1 2223
 Width: 655
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 341 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54226,7 +54251,7 @@ SplineSet
  96.8433 317 82.4356 336.678 82.4356 361.066 c 0
  82.4356 400.082 119.31 451.154 163 453 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'vatu' vattu variants in Bengali-1" bn_k_ssa bn_raphala
 LCarets2: 1 0 
 Ligature2: "'vatu' Vattu Variants in Bengali subtable" bn_k_ssa bn_raphala
@@ -54237,6 +54262,7 @@ Encoding: 60685 -1 2224
 Width: 568
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 251 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54285,7 +54311,7 @@ SplineSet
  474 146 444 84 392 84 c 0
  380 85 349 89 349 122 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka ka_bng
 EndChar
@@ -54295,6 +54321,7 @@ Encoding: 60686 -1 2225
 Width: 440
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 231 37 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54346,7 +54373,7 @@ SplineSet
  270 664 281 666 316 666 c 0
  378 666 414 641 414 603 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka tta_bng
 EndChar
@@ -54356,6 +54383,7 @@ Encoding: 60687 -1 2226
 Width: 504
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 271 -143 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54420,7 +54448,7 @@ SplineSet
  408 666 l 2
  449 666 506 653 506 604 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka bn_tt_ra
 EndChar
@@ -54430,6 +54458,7 @@ Encoding: 60688 -1 2227
 Width: 750
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 471 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54472,7 +54501,7 @@ SplineSet
  276 316.698 270.862 263 211 263 c 0
  178 263 160 282 160 312 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka ta_bng
 EndChar
@@ -54649,6 +54678,7 @@ Encoding: 60692 -1 2231
 Width: 750
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 321 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54704,7 +54734,7 @@ SplineSet
  -36 42 -5 92 12 113 c 1
  26 93 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka bn_t_ra
 EndChar
@@ -54714,6 +54744,7 @@ Encoding: 60693 -1 2232
 Width: 468
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 231 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54764,14 +54795,15 @@ SplineSet
  187.916 322.61 208.019 323.491 238 239 c 1
  287 415 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_k_t_ra2
 Encoding: 60694 -1 2233
 Width: 495
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 261 -243 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54832,14 +54864,15 @@ SplineSet
  236 320 258 316 283 239 c 1
  331 415 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_k_na
 Encoding: 60695 -1 2234
 Width: 570
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 241 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54880,7 +54913,8 @@ SplineSet
  552 197 459 175 436 175 c 0
  412 175 388 194 388 225 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka na_bng
 EndChar
 
@@ -54888,7 +54922,8 @@ StartChar: bn_k_ma
 Encoding: 60696 -1 2235
 Width: 660
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 491 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54932,7 +54967,7 @@ SplineSet
  398 -22 369 -52 337 -52 c 0
  326 -52 293 -44 293 -9 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka ma_bng
 EndChar
@@ -54941,7 +54976,8 @@ StartChar: bn_k_la
 Encoding: 60697 -1 2236
 Width: 570
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 231 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -54990,7 +55026,7 @@ SplineSet
  549 198 457 175 434 175 c 0
  401 175 386 202 386 227 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka la_bng
 EndChar
@@ -54999,7 +55035,8 @@ StartChar: bn_k_ssa
 Encoding: 60698 -1 2237
 Width: 652
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 361 47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55053,7 +55090,8 @@ SplineSet
  81 317 70 339 70 363 c 0
  70 396 90 437 141 448 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 2 0 0 
 Ligature2: "'akhn' Akhand in Bengali subtable" ka_bng hasanta_bng ssa_bng
 EndChar
 
@@ -55061,7 +55099,8 @@ StartChar: bn_k_ss_nna
 Encoding: 60699 -1 2238
 Width: 636
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 341 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55121,7 +55160,7 @@ SplineSet
  495 269 506 315 560 315 c 0
  570 315 599 311 601 287 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 LCarets2: 2 0 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_k_ssa hasanta_bng nna_bng
 EndChar
@@ -55130,7 +55169,7 @@ StartChar: bn_k_ss_ma
 Encoding: 60700 -1 2239
 Width: 757
 GlyphClass: 3
-Flags: MW
+Flags: HMW
 AnchorPoint: "beng-vowel" 681 -43 basechar 0
 LayerCount: 2
 Fore
@@ -55196,7 +55235,8 @@ SplineSet
  87 397 110 436 143 448 c 1
  159 448 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 2 0 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_k_ssa hasanta_bng ma_bng
 EndChar
 
@@ -55251,6 +55291,7 @@ SplineSet
  138 148 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ka sa_bng
 EndChar
 
@@ -55258,7 +55299,8 @@ StartChar: bn_g_ga
 Encoding: 60702 -1 2241
 Width: 484
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 291 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55311,7 +55353,8 @@ SplineSet
  133 424 150 427 169 427 c 0
  188 427 257 419 257 373 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ga ga_bng
 EndChar
 
@@ -55358,6 +55401,7 @@ SplineSet
  744 382 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ga da_bng
 EndChar
 
@@ -55425,7 +55469,8 @@ StartChar: bn_g_dh_ba
 Encoding: 60705 -1 2244
 Width: 563
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 261 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55491,7 +55536,7 @@ SplineSet
  190 391 125 349 103 349 c 0
  76 349 64 376 64 402 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_g_na
@@ -55603,6 +55648,7 @@ SplineSet
  54 447 127 552 241 552 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ga ma_bng
 EndChar
 
@@ -55667,6 +55713,7 @@ Encoding: 60709 -1 2248
 Width: 471
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 281 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55703,7 +55750,7 @@ SplineSet
  194.25 360.25 179 359 171 359 c 0
  137 359 92 385 92 432 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_gha na_bng
 EndChar
@@ -55712,7 +55759,8 @@ StartChar: bn_ng_ka
 Encoding: 60710 -1 2249
 Width: 528
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 241 37 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55772,7 +55820,7 @@ SplineSet
  473 127 395 106 375 106 c 0
  359 106 335 111 335 138 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nga ka_bng
 EndChar
@@ -55781,7 +55829,8 @@ StartChar: bn_ng_k_ra
 Encoding: 60711 -1 2250
 Width: 581
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 281 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55847,7 +55896,7 @@ SplineSet
  -27 124 3 178 20 201 c 1
  32 181 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nga bn_k_ra
 EndChar
@@ -55856,7 +55905,8 @@ StartChar: bn_ng_k_ssa
 Encoding: 60712 -1 2251
 Width: 917
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 621 47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -55930,7 +55980,7 @@ SplineSet
  282 273 256 257 228 257 c 0
  179 257 153 287 153 333 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nga bn_k_ssa
 EndChar
@@ -55939,7 +55989,8 @@ StartChar: bn_ng_k_ss_ra
 Encoding: 60713 -1 2252
 Width: 917
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 601 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56033,7 +56084,7 @@ SplineSet
  319 299 282 257 237 257 c 0
  206 257 162 269 162 328 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nga bn_k_ss_ra
 EndChar
@@ -56042,7 +56093,8 @@ StartChar: bn_ng_kha
 Encoding: 60714 -1 2253
 Width: 765
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 581 47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56112,7 +56164,7 @@ SplineSet
  293 284 263 257 225 257 c 0
  178 257 148 284 148 328 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nga kha_bng
 EndChar
@@ -56122,6 +56174,7 @@ Encoding: 60715 -1 2254
 Width: 513
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 411 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56166,7 +56219,7 @@ SplineSet
  192.953 365.16 179 324 128 324 c 0
  106 324 77 331 77 366 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nga ga_bng
 EndChar
@@ -56175,7 +56228,7 @@ StartChar: bn_ng_gha
 Encoding: 60716 -1 2255
 Width: 766
 GlyphClass: 3
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -56257,7 +56310,8 @@ SplineSet
  140 211 176 166 224 166 c 0
  225 166 227 166 231 167 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nga gha_bng
 EndChar
 
@@ -56265,7 +56319,8 @@ StartChar: bn_ng_gh_ra
 Encoding: 60717 -1 2256
 Width: 771
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 571 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56368,7 +56423,7 @@ SplineSet
  280 184 l 1
  274 181 269 176 265 169 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_ng_ma
@@ -56598,6 +56653,7 @@ Encoding: 60722 -1 2261
 Width: 659
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 501 -193 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56653,7 +56709,7 @@ SplineSet
  538.5 434.866 559 441 564 441 c 0
  642.475 441 666 382.375 666 341 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_c_cha bn_baphala
 EndChar
@@ -56663,6 +56719,7 @@ Encoding: 60723 -1 2262
 Width: 659
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 541 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56724,7 +56781,7 @@ SplineSet
  268 -71 l 1
  256 -71 175 -68 175 26 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ca bn_ch_ra
 EndChar
@@ -56734,6 +56791,7 @@ Encoding: 60724 -1 2263
 Width: 774
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 401 57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56799,7 +56857,7 @@ SplineSet
  142.354 367.341 117.096 396.316 102 426 c 1
  65 297 l 2
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_c_na
@@ -56807,6 +56865,7 @@ Encoding: 60725 -1 2264
 Width: 408
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 181 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56841,7 +56900,7 @@ SplineSet
  77.75 -43 65 -47.5 53 -56 c 1
  70 -70 74 -82 74 -91 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ca na_bng
 EndChar
@@ -56905,9 +56964,9 @@ SplineSet
  266 314 235 289 206 289 c 0
  178 289 138 304 138 358 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'cjct' conjunct forms in Bengali-2" ja_bng hasanta_bng ja_bng
-LCarets2: 1 0 
+LCarets2: 2 0 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ja ja_bng
 EndChar
 
@@ -56916,7 +56975,7 @@ Encoding: 60727 -1 2266
 Width: 775
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "beng-vowel" 681 -113 basechar 0
+AnchorPoint: "beng-vowel" 571 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -56974,9 +57033,9 @@ SplineSet
  288 314 257 289 228 289 c 0
  200 289 160 304 160 358 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'cjct' conjunct forms in Bengali-3" ja_bng hasanta_bng ja_bng hasanta_bng ba_bng
-LCarets2: 1 0 
+LCarets2: 4 0 0 0 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_j_ja bn_baphala
 EndChar
 
@@ -56985,7 +57044,7 @@ Encoding: 60728 -1 2267
 Width: 599
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 481 -103 basechar 0
+AnchorPoint: "beng-vowel" 391 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57087,7 +57146,8 @@ SplineSet
  235 255 l 2
  207 258 169 287 169 338 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 2 0 0 
 Ligature2: "'cjct' conjunct forms in Bengali-2" ja_bng hasanta_bng jha_bng
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ja jha_bng
 EndChar
@@ -57097,6 +57157,7 @@ Encoding: 60729 -1 2268
 Width: 671
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 451 67 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57143,9 +57204,9 @@ SplineSet
  303 283 278 247 211 247 c 0
  154 247 131 270.2 131 327 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'akhn' Akhand in Bengali subtable" ja_bng hasanta_bng nya_bng
-LCarets2: 1 0 
+LCarets2: 2 0 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ja nya_bng
 EndChar
 
@@ -57153,7 +57214,8 @@ StartChar: bn_ny_ca
 Encoding: 60730 -1 2269
 Width: 625
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 241 57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57211,7 +57273,8 @@ SplineSet
  645 422 621 360 573 329 c 1
  587 314 593 293 593 269 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nya ca_bng
 EndChar
 
@@ -57220,7 +57283,7 @@ Encoding: 60731 -1 2270
 Width: 545
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 491 -123 basechar 0
+AnchorPoint: "beng-vowel" 391 -163 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57323,7 +57386,7 @@ SplineSet
  273 523 205 505 178 465 c 1
  186 460 190 457 190 455 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nya cha_bng
 EndChar
@@ -57333,6 +57396,7 @@ Encoding: 60732 -1 2271
 Width: 570
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 381 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57384,7 +57448,7 @@ SplineSet
  219 376 136 359 136 359 c 1
  109 359 93 374 93 398 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nya ja_bng
 EndChar
@@ -57393,7 +57457,8 @@ StartChar: bn_ny_jha
 Encoding: 60733 -1 2272
 Width: 644
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 481 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57514,7 +57579,7 @@ SplineSet
  682 463 l 2
  682 462 682 460 682 458 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nya jha_bng
 EndChar
@@ -57523,7 +57588,8 @@ StartChar: bn_tt_tta
 Encoding: 60734 -1 2273
 Width: 451
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 231 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57599,7 +57665,7 @@ SplineSet
  34 136 l 2
  71 95 109 94 123 94 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_tta tta_bng
 EndChar
@@ -57608,7 +57674,8 @@ StartChar: bn_tt_tt_ra
 Encoding: 60735 -1 2274
 Width: 520
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 261 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57710,7 +57777,7 @@ SplineSet
  132 136 l 2
  169 95 207 94 221 94 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_tta bn_tt_ra
 EndChar
@@ -57719,7 +57786,8 @@ StartChar: bn_tt_ma
 Encoding: 60736 -1 2275
 Width: 512
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 311 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -57790,13 +57858,14 @@ SplineSet
  148 690 l 1
  317 699 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_tta ma_bng
 EndChar
 
 StartChar: bn_dd_ga
 Encoding: 60737 -1 2276
-Width: 522
+Width: 815
 GlyphClass: 3
 Flags: MW
 LayerCount: 2
@@ -57873,7 +57942,8 @@ SplineSet
  416 284 416 288 416 292 c 0
  416 305 414 323 404 338 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_dda ga_bng
 EndChar
 
@@ -57949,7 +58019,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'cjct' conjunct forms in Bengali-2" dda_bng hasanta_bng dda_bng
-LCarets2: 1 0 
+LCarets2: 2 0 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_dda dda_bng
 EndChar
 
@@ -57957,7 +58027,8 @@ StartChar: bn_dd_ma
 Encoding: 60739 -1 2278
 Width: 621
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 441 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -58021,7 +58092,8 @@ SplineSet
  449 284 449 288 449 292 c 0
  449 305 446 323 437 338 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_dda ma_bng
 EndChar
 
@@ -58098,6 +58170,7 @@ SplineSet
  258 443 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nna tta_bng
 EndChar
 
@@ -58105,7 +58178,8 @@ StartChar: bn_nn_tt_ra
 Encoding: 60741 -1 2280
 Width: 613
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 311 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -58201,7 +58275,8 @@ SplineSet
  109 19 111 19 113 19 c 2
  133 19 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nna bn_tt_ra
 EndChar
 
@@ -58289,6 +58364,7 @@ SplineSet
  403 802 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nna ttha_bng
 EndChar
 
@@ -58419,6 +58495,7 @@ Encoding: 60745 -1 2284
 Width: 434
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 281 -103 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -58469,7 +58546,7 @@ SplineSet
  -44 52 -36 116 4 164 c 1
  16 144 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nna bn_dd_ra
 EndChar
@@ -58478,7 +58555,8 @@ StartChar: bn_nn_dd_ra1
 Encoding: 60746 -1 2285
 Width: 624
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 371 -143 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -58570,7 +58648,7 @@ SplineSet
  551 197 l 2
  560 207 581 250 585 267 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_nn_ddha
@@ -58626,6 +58704,7 @@ SplineSet
  108 437 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nna ddha_bng
 EndChar
 
@@ -58680,7 +58759,7 @@ Encoding: 60749 -1 2288
 Width: 581
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 501 -43 basechar 0
+AnchorPoint: "beng-vowel" 401 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -58747,7 +58826,8 @@ SplineSet
  250 290 207 249 153 249 c 2
  143 249 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_nna ma_bng
 EndChar
 
@@ -58815,6 +58895,7 @@ SplineSet
  75 558 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" ta_khanda_bng ta_bng
 EndChar
 
@@ -58822,7 +58903,8 @@ StartChar: bn_t_t_ba
 Encoding: 60751 -1 2290
 Width: 508
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 281 -103 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -58895,7 +58977,8 @@ SplineSet
  184 401 328 486 432 486 c 0
  495 486 526 438 526 395 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_t_ta bn_baphala
 EndChar
 
@@ -58951,7 +59034,7 @@ Encoding: 60753 -1 2292
 Width: 551
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 421 -83 basechar 0
+AnchorPoint: "beng-vowel" 331 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59020,7 +59103,7 @@ SplineSet
  129 -134 l 2
  108 -134 80 -111 80 -75 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" ta_khanda_bng na_bng
 EndChar
@@ -59030,7 +59113,7 @@ Encoding: 60754 -1 2293
 Width: 673
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 591 -43 basechar 0
+AnchorPoint: "beng-vowel" 501 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59106,7 +59189,8 @@ SplineSet
  643 508 l 1
  77 508 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" ta_khanda_bng ma_bng
 EndChar
 
@@ -59115,7 +59199,7 @@ Encoding: 60755 -1 2294
 Width: 634
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 551 -43 basechar 0
+AnchorPoint: "beng-vowel" 461 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59154,7 +59238,7 @@ SplineSet
  396 366 368 299 313 299 c 0
  274 299 257 330 257 358 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_t_la
@@ -59162,7 +59246,7 @@ Encoding: 60756 -1 2295
 Width: 551
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "beng-vowel" 441 -123 basechar 0
+AnchorPoint: "beng-vowel" 331 -143 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59205,7 +59289,7 @@ SplineSet
  207 -138 181 -172 134 -172 c 0
  79 -172 64 -138 64 -103 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" ta_khanda_bng la_bng
 EndChar
@@ -59326,6 +59410,7 @@ SplineSet
  303 283 314 301 338 347 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_da gha_bng
 EndChar
 
@@ -59384,6 +59469,7 @@ SplineSet
  101 316 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_da da_bng
 EndChar
 
@@ -59391,7 +59477,8 @@ StartChar: bn_d_d_ba
 Encoding: 60760 -1 2299
 Width: 561
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 311 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59454,7 +59541,8 @@ SplineSet
  313 -161 l 1
  299 -123 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_d_da bn_baphala
 EndChar
 
@@ -59462,7 +59550,8 @@ StartChar: bn_d_d_ra
 Encoding: 60761 -1 2300
 Width: 561
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 331 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59536,7 +59625,8 @@ SplineSet
  331 -61 l 1
  356 12 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_da bn_d_ra
 EndChar
 
@@ -59703,6 +59793,7 @@ SplineSet
  335 457 355 462 371 462 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_d_dha bn_baphala
 EndChar
 
@@ -59710,7 +59801,8 @@ StartChar: bn_d_na
 Encoding: 60764 -1 2303
 Width: 478
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 241 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59744,7 +59836,7 @@ SplineSet
  59 -27 l 2
  44 -27 9 -18 9 21 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_d_bha
@@ -59827,6 +59919,7 @@ SplineSet
  291 290 296 289 299 288 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_da bha_bng
 EndChar
 
@@ -59834,7 +59927,8 @@ StartChar: bn_d_bh_ra
 Encoding: 60766 -1 2305
 Width: 451
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 291 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -59897,7 +59991,8 @@ SplineSet
  339 333 330 286 322 257 c 1
  340 274 354 288 362 288 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_da bn_bh_ra
 EndChar
 
@@ -59905,7 +60000,8 @@ StartChar: bn_d_bh_ra1
 Encoding: 60767 -1 2306
 Width: 547
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 331 -193 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60003,7 +60099,7 @@ SplineSet
  134 -88 136 -88 138 -88 c 2
  158 -88 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_d_ma
@@ -60011,7 +60107,7 @@ Encoding: 60768 -1 2307
 Width: 600
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 521 -43 basechar 0
+AnchorPoint: "beng-vowel" 431 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60066,7 +60162,8 @@ SplineSet
  307 240 l 2
  319 283 330 301 354 347 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_da ma_bng
 EndChar
 
@@ -60075,7 +60172,7 @@ Encoding: 60769 -1 2308
 Width: 449
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 361 -43 basechar 0
+AnchorPoint: "beng-vowel" 271 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60129,7 +60226,8 @@ SplineSet
  213 486 211 487 209 489 c 2
  201 497 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_dha na_bng
 EndChar
 
@@ -60138,7 +60236,7 @@ Encoding: 60770 -1 2309
 Width: 585
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 511 -43 basechar 0
+AnchorPoint: "beng-vowel" 421 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60198,7 +60296,8 @@ SplineSet
  216 486 214 487 212 489 c 2
  204 497 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_dha ma_bng
 EndChar
 
@@ -60268,6 +60367,7 @@ SplineSet
  67 307 51 337 51 359 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na tta_bng
 EndChar
 
@@ -60275,7 +60375,8 @@ StartChar: bn_n_tt_ra
 Encoding: 60772 -1 2311
 Width: 655
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 371 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60362,7 +60463,8 @@ SplineSet
  208 345 171 307 128 307 c 0
  94 307 79 337 79 359 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na bn_tt_ra
 EndChar
 
@@ -60480,6 +60582,7 @@ SplineSet
  495 322 495 317 495 313 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na dda_bng
 EndChar
 
@@ -60487,7 +60590,8 @@ StartChar: bn_n_dd_ra
 Encoding: 60775 -1 2314
 Width: 551
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 331 -103 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60579,7 +60683,8 @@ SplineSet
  129 9 131 9 134 10 c 1
  154 10 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na bn_dd_ra
 EndChar
 
@@ -60628,6 +60733,7 @@ SplineSet
  99 307 84 337 84 359 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na ddha_bng
 EndChar
 
@@ -60680,6 +60786,7 @@ Encoding: 60778 -1 2317
 Width: 566
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 321 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60722,7 +60829,7 @@ SplineSet
  515 508 l 1
  520 495 527 472 527 447 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_n_ta bn_baphala
 EndChar
@@ -60732,6 +60839,7 @@ Encoding: 60779 -1 2318
 Width: 463
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 311 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60776,7 +60884,7 @@ SplineSet
  98 376 115 462 212 462 c 0
  274 462 342 399 342 378 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na bn_t_ra
 EndChar
@@ -60786,6 +60894,7 @@ Encoding: 60780 -1 2319
 Width: 566
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 361 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60832,14 +60941,15 @@ SplineSet
  4 34 12 89 51 136 c 1
  65 116 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_n_tha
 Encoding: 60781 -1 2320
 Width: 474
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 371 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -60894,7 +61004,7 @@ SplineSet
  470 508 l 1
  474 495 481 472 481 447 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na tha_bng
 EndChar
@@ -61013,6 +61123,7 @@ SplineSet
  112 307 97 337 97 359 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_n_da bn_baphala
 EndChar
 
@@ -61112,7 +61223,7 @@ Encoding: 60786 -1 2325
 Width: 549
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "beng-vowel" 321 -73 basechar 0
+AnchorPoint: "beng-vowel" 221 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61155,7 +61266,7 @@ SplineSet
  200 354 172 315 128 315 c 0
  116 315 82 325 82 360 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_n_dh_ra
@@ -61163,7 +61274,7 @@ Encoding: 60787 -1 2326
 Width: 590
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "beng-vowel" 361 -23 basechar 0
+AnchorPoint: "beng-vowel" 271 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61212,7 +61323,7 @@ SplineSet
  234 348 203 315 163 315 c 0
  151 315 117 325 117 360 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na bn_dh_ra
 EndChar
@@ -61222,7 +61333,7 @@ Encoding: 60788 -1 2327
 Width: 448
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "beng-vowel" 371 -43 basechar 0
+AnchorPoint: "beng-vowel" 281 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61254,7 +61365,7 @@ SplineSet
  146 168 l 1
  153 154 156 141 156 129 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na na_bng
 EndChar
@@ -61264,7 +61375,7 @@ Encoding: 60789 -1 2328
 Width: 588
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 511 -43 basechar 0
+AnchorPoint: "beng-vowel" 421 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61317,7 +61428,8 @@ SplineSet
  41 256 42 263 42 267 c 2
  46 288 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na ma_bng
 EndChar
 
@@ -61388,6 +61500,7 @@ SplineSet
  382 353 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_na sa_bng
 EndChar
 
@@ -61473,6 +61586,7 @@ SplineSet
  44 373 25 385 25 404 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pa tta_bng
 EndChar
 
@@ -61565,6 +61679,7 @@ SplineSet
  276 134 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pa ta_bng
 EndChar
 
@@ -61630,6 +61745,7 @@ SplineSet
  421 294 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pa na_bng
 EndChar
 
@@ -61711,6 +61827,7 @@ SplineSet
  356 464 354 468 349 472 c 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pa pa_bng
 EndChar
 
@@ -61719,7 +61836,7 @@ Encoding: 60795 -1 2334
 Width: 684
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 601 -43 basechar 0
+AnchorPoint: "beng-vowel" 511 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61789,7 +61906,8 @@ SplineSet
  366 69 366 70 370 72 c 1
  432 294 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pa ma_bng
 EndChar
 
@@ -61798,7 +61916,7 @@ Encoding: 60796 -1 2335
 Width: 535
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 451 -13 basechar 0
+AnchorPoint: "beng-vowel" 351 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61868,7 +61986,7 @@ SplineSet
  346 118 357 91 359 63 c 1
  423 294 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pa la_bng
 EndChar
@@ -61956,6 +62074,7 @@ SplineSet
  508 353 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pa sa_bng
 EndChar
 
@@ -62025,6 +62144,7 @@ Encoding: 60799 -1 2338
 Width: 611
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 291 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62074,7 +62194,7 @@ SplineSet
  428.448 473.579 435.965 475 481 475 c 0
  508 475 603 450 603 356 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_pha la_bng
 EndChar
@@ -62166,6 +62286,7 @@ SplineSet
  250 145 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ba ja_bng
 EndChar
 
@@ -62211,6 +62332,7 @@ Encoding: 60802 -1 2341
 Width: 558
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 361 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62250,7 +62372,7 @@ SplineSet
  381 44 381 68.5 381 106 c 0
  381 215 409 265 457 347 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ba bn_d_ra
 EndChar
@@ -62333,7 +62455,8 @@ StartChar: bn_b_na
 Encoding: 60804 -1 2343
 Width: 443
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 261 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62371,14 +62494,15 @@ SplineSet
  210 262 260 212 290 131 c 1
  363 394 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_b_bha
 Encoding: 60805 -1 2344
 Width: 537
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 421 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62416,7 +62540,8 @@ SplineSet
  407 112 350 49 285 49 c 0
  220 49 204 82 204 115 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ba bha_bng
 EndChar
 
@@ -62425,6 +62550,7 @@ Encoding: 60806 -1 2345
 Width: 443
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 251 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62462,7 +62588,7 @@ SplineSet
  131 -54.1094 103.279 -96 57 -96 c 0
  3 -96 -13 -62 -13 -27 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ba la_bng
 EndChar
@@ -62471,7 +62597,8 @@ StartChar: bn_bh_la
 Encoding: 60807 -1 2346
 Width: 534
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 301 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62539,7 +62666,7 @@ SplineSet
  155 -135 137 -152 106 -152 c 0
  51 -152 36 -117 36 -83 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_bha la_bng
 EndChar
@@ -62659,6 +62786,7 @@ SplineSet
  776 619 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma tha_bng
 EndChar
 
@@ -62780,6 +62908,7 @@ SplineSet
  110 424 111 424 114 425 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma na_bng
 EndChar
 
@@ -62787,7 +62916,8 @@ StartChar: bn_m_na1
 Encoding: 60812 -1 2351
 Width: 492
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 301 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -62833,7 +62963,7 @@ SplineSet
  440 508 l 1
  208 508 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_m_pa
@@ -62909,6 +63039,7 @@ SplineSet
  107 424 108 424 111 425 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma pa_bng
 EndChar
 
@@ -62916,7 +63047,8 @@ StartChar: bn_m_p_ra
 Encoding: 60814 -1 2353
 Width: 824
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 651 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63005,7 +63137,8 @@ SplineSet
  48 370 66 412 115 422 c 0
  116 422 117 422 121 423 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma bn_p_ra
 EndChar
 
@@ -63014,6 +63147,7 @@ Encoding: 60815 -1 2354
 Width: 830
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 651 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63078,7 +63212,7 @@ SplineSet
  641.106 118 651.779 94.096 654 63 c 1
  718 294 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma bn_p_la
 EndChar
@@ -63087,7 +63221,8 @@ StartChar: bn_m_pha
 Encoding: 60816 -1 2355
 Width: 874
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 561 47 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63154,7 +63289,8 @@ SplineSet
  47 372 65 414 114 424 c 0
  115 424 116 424 119 425 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma pha_bng
 EndChar
 
@@ -63163,6 +63299,7 @@ Encoding: 60817 -1 2356
 Width: 844
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 551 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63214,7 +63351,7 @@ SplineSet
  211 477 187 441 231 405 c 0
  250 389 286 373 307 373 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma bn_ph_ra
 EndChar
@@ -63223,7 +63360,7 @@ StartChar: bn_m_bha
 Encoding: 60818 -1 2357
 Width: 597
 GlyphClass: 3
-Flags: MW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -63299,7 +63436,7 @@ SplineSet
  391 304 l 1
  393 300 394 293 394 286 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma bha_bng
 EndChar
@@ -63308,7 +63445,8 @@ StartChar: bn_m_bh_ra
 Encoding: 60819 -1 2358
 Width: 456
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 261 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63386,7 +63524,8 @@ SplineSet
  263 377 l 2
  293 358 305 355 319 355 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma bn_bh_ra
 EndChar
 
@@ -63394,7 +63533,8 @@ StartChar: bn_m_bh_ra1
 Encoding: 60820 -1 2359
 Width: 597
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 391 -163 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63488,14 +63628,15 @@ SplineSet
  440 354 444 357 462 365 c 2
  479 376 l 2
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_m_ma
 Encoding: 60821 -1 2360
 Width: 571
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 391 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63561,7 +63702,8 @@ SplineSet
  59 372 78 414 127 424 c 0
  128 424 129 424 132 425 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma ma_bng
 EndChar
 
@@ -63623,7 +63765,8 @@ StartChar: bn_m_la1
 Encoding: 60823 -1 2362
 Width: 492
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 301 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63680,7 +63823,7 @@ SplineSet
  442 508 l 1
  210 508 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_m_sa
@@ -63760,6 +63903,7 @@ SplineSet
  119 424 120 424 123 425 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma sa_bng
 EndChar
 
@@ -63767,7 +63911,8 @@ StartChar: bn_m_s_ra
 Encoding: 60825 -1 2364
 Width: 805
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 611 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63861,7 +64006,8 @@ SplineSet
  64 372 82 414 131 424 c 0
  132 424 133 424 137 425 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ma bn_s_ra
 EndChar
 
@@ -63870,6 +64016,7 @@ Encoding: 60826 -1 2365
 Width: 584
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 301 27 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -63918,7 +64065,7 @@ SplineSet
  112 319 125 355 173 355 c 0
  205 355 214 340 214 324 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la ka_bng
 EndChar
@@ -64074,6 +64221,7 @@ SplineSet
  47 200 1 237 1 301 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la tta_bng
 EndChar
 
@@ -64081,7 +64229,8 @@ StartChar: bn_l_tt_ra
 Encoding: 60829 -1 2368
 Width: 752
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 441 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -64178,7 +64327,8 @@ SplineSet
  219 214 136 200 116 200 c 0
  76 200 30 237 30 301 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la bn_tt_ra
 EndChar
 
@@ -64266,6 +64416,7 @@ SplineSet
  190 355 199 340 199 324 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la dda_bng
 EndChar
 
@@ -64273,7 +64424,8 @@ StartChar: bn_l_dd_ra
 Encoding: 60831 -1 2370
 Width: 618
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 401 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -64377,7 +64529,8 @@ SplineSet
  126 319 138 355 186 355 c 0
  219 355 228 340 228 324 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la bn_dd_ra
 EndChar
 
@@ -64626,6 +64779,7 @@ SplineSet
  225 321 232 288 232 263 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la dha_bng
 EndChar
 
@@ -64778,6 +64932,7 @@ SplineSet
  74 200 30 236 30 300 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la pha_bng
 EndChar
 
@@ -64786,6 +64941,7 @@ Encoding: 60837 -1 2376
 Width: 834
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 511 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -64845,7 +65001,7 @@ SplineSet
  231 214 146 200 128 200 c 0
  88 200 43 236 43 300 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la bn_ph_ra
 EndChar
@@ -64855,7 +65011,7 @@ Encoding: 60838 -1 2377
 Width: 679
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "beng-vowel" 601 -43 basechar 0
+AnchorPoint: "beng-vowel" 501 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -64899,7 +65055,7 @@ SplineSet
  158 294 204 321 231 321 c 0
  266 321 274 288 274 263 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_la ma_bng
 EndChar
@@ -64998,7 +65154,8 @@ StartChar: bn_sh_ta
 Encoding: 60840 -1 2379
 Width: 520
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 371 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65080,7 +65237,7 @@ SplineSet
  341 173 l 1
  347 163 350 152 350 140 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sha ta_bng
 EndChar
@@ -65239,6 +65396,7 @@ SplineSet
  272 466 314 441 314 404 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sha cha_bng
 EndChar
 
@@ -65321,7 +65479,8 @@ StartChar: bn_sh_ma
 Encoding: 60844 -1 2383
 Width: 669
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 491 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65397,7 +65556,7 @@ SplineSet
  319 48 332 59 347 68 c 1
  427 359 l 2
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sha ma_bng
 EndChar
@@ -65407,6 +65566,7 @@ Encoding: 60845 -1 2384
 Width: 507
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 341 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65486,7 +65646,7 @@ SplineSet
  141 85 118 56 118 37 c 0
  118 22 122 7 134 2 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sha la_bng
 EndChar
@@ -65496,6 +65656,7 @@ Encoding: 60846 -1 2385
 Width: 508
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 231 37 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65543,7 +65704,7 @@ SplineSet
  401 420 371.928 394.277 351 370 c 1
  390 368 466 326 466 252 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ssa ka_bng
 EndChar
@@ -65553,6 +65714,7 @@ Encoding: 60847 -1 2386
 Width: 666
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 311 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65631,7 +65793,7 @@ SplineSet
  192 298 189 299 186 300 c 1
  169 300 116 315 116 374 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ssa bn_k_ra
 EndChar
@@ -65738,6 +65900,7 @@ Encoding: 60849 -1 2388
 Width: 506
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 281 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65820,7 +65983,7 @@ SplineSet
  87 3 89 3 91 4 c 1
  111 4 l 2
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ssa bn_tt_ra
 EndChar
@@ -65916,6 +66079,7 @@ Encoding: 60851 -1 2390
 Width: 652
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 301 57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -65992,7 +66156,7 @@ SplineSet
  623 278 623 277 623 275 c 0
  623 273 623 270 623 266 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ssa nna_bng
 EndChar
@@ -66305,7 +66469,7 @@ Encoding: 60856 -1 2395
 Width: 525
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "beng-vowel" 431 -13 basechar 0
+AnchorPoint: "beng-vowel" 351 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -66347,7 +66511,7 @@ SplineSet
  230 309 188 298 170 298 c 0
  145.19 298 88 309.69 88 374 c 0
 EndSplineSet
-Validated: 1
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ssa ma_bng
 EndChar
@@ -66420,7 +66584,8 @@ StartChar: bn_s_k_ra
 Encoding: 60858 -1 2397
 Width: 844
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 501 -43 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -66532,7 +66697,7 @@ SplineSet
  102.639 400.472 102.764 401.82 103 403 c 1
  122 427 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa bn_k_ra
 EndChar
@@ -66542,7 +66707,7 @@ Encoding: 60859 -1 2398
 Width: 640
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 551 -3 basechar 0
+AnchorPoint: "beng-vowel" 451 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -66617,7 +66782,7 @@ SplineSet
  278 249 269 243 244 243 c 0
  197 243 187 270 187 284 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa kha_bng
 EndChar
@@ -66726,7 +66891,8 @@ StartChar: bn_s_tt_ra
 Encoding: 60861 -1 2400
 Width: 553
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 311 -93 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -66839,7 +67005,7 @@ SplineSet
  107 -49 100 -49 95 -49 c 0
  89 -50 85 -50 83 -50 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa bn_tt_ra
 EndChar
@@ -66928,7 +67094,8 @@ StartChar: bn_s_t_ba
 Encoding: 60863 -1 2402
 Width: 564
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 341 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67009,7 +67176,7 @@ SplineSet
  425 292 l 1
  431 282 434 271 434 259 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_s_ta bn_baphala
 EndChar
@@ -67117,7 +67284,8 @@ StartChar: bn_s_t_ra1
 Encoding: 60865 -1 2404
 Width: 564
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 341 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67204,14 +67372,15 @@ SplineSet
  395 454 410 420 455 408 c 2
  475 408 l 2
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_s_tha
 Encoding: 60866 -1 2405
 Width: 498
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 361 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67280,7 +67449,7 @@ SplineSet
  41 177 l 1
  63 158 103 139 204 139 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa tha_bng
 EndChar
@@ -67552,7 +67721,8 @@ StartChar: bn_s_p_la
 Encoding: 60870 -1 2409
 Width: 890
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 711 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67651,7 +67821,7 @@ SplineSet
  701 118 712 91 714 63 c 1
  778 294 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa bn_p_la
 EndChar
@@ -67660,7 +67830,8 @@ StartChar: bn_s_pha
 Encoding: 60871 -1 2410
 Width: 954
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 651 37 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67731,7 +67902,7 @@ SplineSet
  807 475 l 2
  835 475 930 450 930 356 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa pha_bng
 EndChar
@@ -67740,7 +67911,8 @@ StartChar: bn_s_ph_ra
 Encoding: 60872 -1 2411
 Width: 916
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 621 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -67839,7 +68011,7 @@ SplineSet
  768 473 l 2
  892 473 927 416 927 357 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa bn_ph_ra
 EndChar
@@ -67930,7 +68102,8 @@ StartChar: bn_s_la
 Encoding: 60874 -1 2413
 Width: 523
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 331 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68005,7 +68178,7 @@ SplineSet
  189 -38 166 -63 132 -63 c 0
  73 -63 62 -22 62 6 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_sa la_bng
 EndChar
@@ -68090,7 +68263,8 @@ StartChar: bn_h_nna
 Encoding: 60876 -1 2415
 Width: 419
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 221 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68148,7 +68322,8 @@ SplineSet
  304 467 315 469 318 467 c 1
  343 467 420 430 420 353 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ha nna_bng
 EndChar
 
@@ -68157,6 +68332,7 @@ Encoding: 60877 -1 2416
 Width: 663
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 361 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68196,7 +68372,7 @@ SplineSet
  549 277 544 257 534 249 c 1
  536 248 538 248 539 248 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_ha na_bng
 EndChar
@@ -68359,7 +68535,8 @@ StartChar: bn_h_la1
 Encoding: 60880 -1 2419
 Width: 419
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 281 -133 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68430,7 +68607,7 @@ SplineSet
  305 467 315 469 319 467 c 1
  343 467 420 430 420 353 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_rr_ga
@@ -68534,6 +68711,7 @@ SplineSet
  849 610 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 2 0 0 
 Ligature2: "'cjct' conjunct forms in Bengali-2" rra_bng hasanta_bng ga_bng
 Ligature2: "'pres' Pre Base Substitutions in Bengali subtable" bn_half_rra ga_bng
 EndChar
@@ -68542,7 +68720,8 @@ StartChar: bn_k_ba
 Encoding: 60882 -1 2421
 Width: 570
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 231 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68601,7 +68780,8 @@ SplineSet
  434 472 l 2
  492 472 561 414 561 322 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ka_bng bn_baphala
 EndChar
 
@@ -68610,6 +68790,7 @@ Encoding: 60883 -1 2422
 Width: 484
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 281 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68645,7 +68826,7 @@ SplineSet
  174 391 109 349 87 349 c 0
  69 349 47 368 47 399 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ga_bng bn_baphala
 EndChar
@@ -68654,7 +68835,8 @@ StartChar: bn_gh_ba
 Encoding: 60884 -1 2423
 Width: 471
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 271 -123 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68697,7 +68879,8 @@ SplineSet
  198 362 l 1
  179 360 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" gha_bng bn_baphala
 EndChar
 
@@ -68705,7 +68888,8 @@ StartChar: bn_c_ba
 Encoding: 60885 -1 2424
 Width: 408
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 201 -113 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68756,7 +68940,8 @@ SplineSet
  202 370 187 396 180 426 c 1
  102 143 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ca_bng bn_baphala
 EndChar
 
@@ -68764,7 +68949,8 @@ StartChar: bn_ch_ba
 Encoding: 60886 -1 2425
 Width: 452
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 301 -203 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68846,7 +69032,8 @@ SplineSet
  356 441 l 1
  366 441 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" cha_bng bn_baphala
 EndChar
 
@@ -68854,7 +69041,8 @@ StartChar: bn_j_ba
 Encoding: 60887 -1 2426
 Width: 591
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 391 -173 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -68940,7 +69128,8 @@ SplineSet
  122 300 l 2
  126 234 179 167 244 167 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ja_bng bn_baphala
 EndChar
 
@@ -68948,7 +69137,8 @@ StartChar: bn_tt_ba
 Encoding: 60888 -1 2427
 Width: 414
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 171 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69006,7 +69196,8 @@ SplineSet
  239 397 271 409 297 409 c 0
  332 409 358 384 358 342 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" tta_bng bn_baphala
 EndChar
 
@@ -69014,7 +69205,8 @@ StartChar: bn_dd_ba
 Encoding: 60889 -1 2428
 Width: 522
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 261 -63 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69066,7 +69258,8 @@ SplineSet
  447 284 447 288 447 292 c 0
  447 305 445 323 436 338 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" dda_bng bn_baphala
 EndChar
 
@@ -69132,6 +69325,7 @@ SplineSet
  134 249 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" nna_bng bn_baphala
 EndChar
 
@@ -69139,7 +69333,8 @@ StartChar: bn_t_ba
 Encoding: 60891 -1 2430
 Width: 551
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 321 -53 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69208,7 +69403,7 @@ SplineSet
  495 443 534 389 534 316 c 0
  534 297 531 276 525 255 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ta_bng bn_baphala
 EndChar
@@ -69217,7 +69412,8 @@ StartChar: bn_th_ba
 Encoding: 60892 -1 2431
 Width: 477
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 271 -143 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69268,7 +69464,7 @@ SplineSet
  473 651 l 1
  491 619 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_d_ba
@@ -69317,6 +69513,7 @@ SplineSet
  121 346 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" da_bng bn_baphala
 EndChar
 
@@ -69384,6 +69581,7 @@ SplineSet
  190 497 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" dha_bng bn_baphala
 EndChar
 
@@ -69442,7 +69640,7 @@ Encoding: 60896 -1 2435
 Width: 535
 GlyphClass: 3
 Flags: MW
-AnchorPoint: "beng-vowel" 451 -13 basechar 0
+AnchorPoint: "beng-vowel" 351 -23 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69498,7 +69696,8 @@ SplineSet
  405 228 l 1
  424 294 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" pa_bng bn_baphala
 EndChar
 
@@ -69561,6 +69760,7 @@ SplineSet
  295 363 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ba_bng bn_baphala
 EndChar
 
@@ -69568,7 +69768,8 @@ StartChar: bn_bh_ba
 Encoding: 60898 -1 2437
 Width: 534
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 311 -33 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69610,7 +69811,8 @@ SplineSet
  59 508 l 1
  73 558 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bha_bng bn_baphala
 EndChar
 
@@ -69664,7 +69866,8 @@ StartChar: bn_m_b_ra
 Encoding: 60900 -1 2439
 Width: 504
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 281 -83 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69745,14 +69948,15 @@ SplineSet
  315 296 290.5 312.5 277 326 c 0
  249 363 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 EndChar
 
 StartChar: bn_l_ba
 Encoding: 60901 -1 2440
 Width: 543
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 351 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -69805,7 +70009,8 @@ SplineSet
  147 294 193 321 220 321 c 0
  256 321 263 288 263 263 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" la_bng bn_baphala
 EndChar
 
@@ -70002,6 +70207,7 @@ SplineSet
  199 240 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ha_bng bn_baphala
 EndChar
 
@@ -70009,7 +70215,8 @@ StartChar: bn_h_ba1
 Encoding: 60905 -1 2444
 Width: 419
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 231 -163 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -70070,7 +70277,7 @@ SplineSet
  309 467 320 469 323 467 c 1
  348 467 425 430 425 353 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_kh_r_ukaar
@@ -70171,6 +70378,7 @@ SplineSet
  499 334 482 347 482 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_kh_ra ukaar_bng
 EndChar
 
@@ -70689,6 +70897,7 @@ SplineSet
  661 334 645 348 645 370 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_j_ra ukaar_bng
 EndChar
 
@@ -71085,6 +71294,7 @@ SplineSet
  499 334 482 347 482 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_th_ra ukaar_bng
 EndChar
 
@@ -71661,6 +71871,7 @@ SplineSet
  300 462 365 400 369 378 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_n_ta ukaar_bng
 EndChar
 
@@ -71955,6 +72166,7 @@ SplineSet
  554 326 538 340 538 362 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_p_ra ukaar_bng
 EndChar
 
@@ -72332,6 +72544,7 @@ SplineSet
  478 334 455 343 455 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_b_ra ukaar_bng
 EndChar
 
@@ -72821,6 +73034,7 @@ SplineSet
  847 333 830 347 830 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_m_p_ra ukaar_bng
 EndChar
 
@@ -72934,6 +73148,7 @@ SplineSet
  116 422 117 422 121 423 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_m_p_ra uukaar_bng
 EndChar
 
@@ -73039,6 +73254,7 @@ SplineSet
  548 334 531 347 531 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_m_ra ukaar_bng
 EndChar
 
@@ -73208,6 +73424,7 @@ SplineSet
  437 334 420 347 420 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ra_bng ukaar_bng
 EndChar
 
@@ -73494,106 +73711,64 @@ StartChar: bn_sh_r_ukaar
 Encoding: 60945 -1 2484
 Width: 726
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 341 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 522 369 m 0
- 522 386 535 438 619 448 c 0
- 638 448 653 442 663 431 c 2
- 681 414 l 2
- 687 407 694 395 694 373 c 0
- 694 325 669 274 628 251 c 2
- 598 237 l 1
- 572 233 l 2
- 559 233 549 235 540 239 c 2
- 513 260 l 2
- 503 268 489 282 476 300 c 2
- 462 320 l 1
+ 522 386 535 438 619 448 c 1
+ 659.407 448 694 416.991 694 373 c 0
+ 694 299.697 641.1 233 572 233 c 0
+ 516.9 233 487.956 282.92 462 320 c 1
  358 -54 l 1
  342 -38 l 1
- 330 0 l 2
- 319 19 302 29 278 29 c 2
- 194 29 l 2
- 185 29 177 29 168 28 c 0
- 159 28 151 28 142 27 c 0
- 135 27 128 27 122 26 c 2
- 110 26 l 2
- 11 26 -14 72 -14 118 c 0
- -14 140 -2 193 21 229 c 2
- 34 245 l 1
- 48 225 l 1
- 47 224 43 218 38 208 c 2
- 30 183 l 2
- 27 173 25 164 25 156 c 0
- 25 135 34 118 61 108 c 2
- 105 97 l 2
- 119 95 130 94 135 94 c 1
- 138 95 140 95 142 95 c 2
- 162 95 l 2
- 205 95 210 93 241 93 c 2
- 264 93 l 2
+ 330 0 l 1
+ 319 19 302 29 278 29 c 0
+ 224.187 29 172.91 26 122 26 c 0
+ 18.2232 26 -14 65.7188 -14 118 c 0
+ -14 138.201 5 225 48 225 c 1
+ 37.9629 214.963 25 176.321 25 156 c 0
+ 25 111.491 86.5762 91 135 91 c 0
+ 171.444 91 228.853 93 264 93 c 0
  279 93 317 87 331 44 c 1
  418 359 l 2
  419 363 420 368 420 373 c 0
  420 412 390 477 354 477 c 0
  314 477 294 446 292 438 c 1
- 298 435 305 430 311 421 c 2
- 322 408 l 2
- 339 392 344 375 344 361 c 0
- 344 347 337 330 334 326 c 2
- 323 308 l 2
- 303 280 272 277 259 277 c 0
- 236 277 217 288 203 311 c 2
- 197 327 l 1
- 188 314 l 2
- 164 290 119 277 103 277 c 0
- 69 277 61 313 60 324 c 2
- 63 349 l 2
- 68 367 69 369 95 395 c 2
- 123 418 l 1
- 155 439 l 2
- 162 444 169 447 176 448 c 1
- 160 490 l 1
- 147 499 l 2
- 139 504 130 507 123 507 c 2
+ 313.267 427.367 344 385.298 344 361 c 0
+ 344 309.657 291.609 277 259 277 c 0
+ 229.031 277 208.348 296.74 197 327 c 1
+ 176.721 297.708 125.784 277 103 277 c 0
+ 69 277 60 312.955 60 324 c 0
+ 60 377.9 122.336 440.334 176 448 c 1
+ 165.943 474.399 158.104 507 123 507 c 2
  58 507 l 1
  22 557 l 1
  125 557 l 2
- 148 557 168 551 181 539 c 2
- 198 515 l 1
- 208 491 l 2
+ 176.889 557 192.588 527.989 208 491 c 0
  210.469 482.771 212.26 475.22 212.26 468.345 c 0
  212.26 466.865 212.177 465.417 212 464 c 1
- 233 491 258 530 337 554 c 2
- 362 559 l 2
- 377 559 395 538 416 490 c 2
- 429 451 l 2
- 438 426 444 404 446 391 c 1
+ 235.112 493.715 329.1 559 362 559 c 0
+ 395.786 559 439.012 436.425 446 391 c 1
  466 530 l 1
  498 647 l 1
- 509 635 l 1
- 521 614 l 2
- 522.236 610.292 523.09 606.584 523.09 602.639 c 0
+ 507.565 636.566 523.09 621.456 523.09 602.639 c 4
  523.09 600.202 522.764 597.674 522 595 c 2
  519 580 l 1
- 520 573 526 563 547 558 c 2
+ 520 573 526 563 547 558 c 1
  815 558 l 1
  801 508 l 1
  514 508 l 1
  474 365 l 1
- 483 348 l 2
- 492 329 519 291 560 283 c 0
- 598 283 619 306 633 330 c 2
- 641 348 l 2
- 643 354 644 360 644 365 c 0
+ 488.916 336.826 507.297 283 560 283 c 0
+ 607.1 283 644 321.879 644 365 c 0
  644 381 637 395 625 403 c 1
- 621 378 l 2
- 616 360 607 345 558 334 c 2
- 553 334 l 2
- 539 334 522 347 522 369 c 0
+ 621 378 l 1
+ 616 360 607 345 558 334 c 1
+ 540.126 334 522 343.957 522 369 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_sh_ra ukaar_bng
 EndChar
@@ -73602,101 +73777,63 @@ StartChar: bn_sh_r_uukaar
 Encoding: 60946 -1 2485
 Width: 660
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 341 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-531 174 m 0
- 523.316 145.184 511.941 69.3164 511.941 58.9398 c 0
- 511.941 58.5133 511.961 58.1974 512 58 c 2
+512 58 m 0
  511 5 l 1
  463 42 l 1
  467 78 l 2
- 470 103 475 124 479 137 c 2
- 517 274 l 2
+ 476.004 153.03 498.375 206.853 517 274 c 0
  520.137 286.547 521.634 294.174 521.634 298.882 c 0
  521.634 303.18 520.386 305.046 518 306 c 1
  507 297 480 285 450 278 c 1
  358 -54 l 1
  342 -38 l 1
- 330 0 l 2
- 319 19 302 29 278 29 c 2
- 194 29 l 2
- 185 29 177 29 168 28 c 0
- 159 28 151 28 142 27 c 0
- 135 27 128 27 122 26 c 2
- 110 26 l 2
+ 330 0 l 1
+ 319 19 302 29 278 29 c 0
+ 220.294 29 164.733 26 110 26 c 0
  11 26 -14 72 -14 118 c 0
- -14 140 -2 193 21 229 c 2
- 34 245 l 1
+ -14 147.355 7.66128 212.583 34 245 c 1
  48 225 l 1
- 47 224 43 218 38 208 c 2
- 30 183 l 2
- 27 173 25 164 25 156 c 0
- 25 135 34 118 61 108 c 2
- 105 97 l 2
- 119 95 130 94 135 94 c 1
- 138 95 140 95 142 95 c 2
- 162 95 l 2
- 205 95 210 93 241 93 c 2
- 264 93 l 2
+ 37.9629 214.963 25 176.321 25 156 c 0
+ 25 111.491 86.5765 94 135 94 c 0
+ 172.566 94 228.53 93 264 93 c 0
  279 93 317 87 331 44 c 1
  418 359 l 2
  419 363 420 368 420 373 c 0
  420 412 390 477 354 477 c 0
  314 477 294 446 292 438 c 1
- 298 435 305 430 311 421 c 2
- 322 408 l 2
- 339 392 344 375 344 361 c 0
- 344 347 337 330 334 326 c 2
- 323 308 l 2
- 303 280 272 277 259 277 c 0
- 236 277 217 288 203 311 c 2
- 197 327 l 1
- 188 314 l 2
- 164 290 119 277 103 277 c 0
- 69 277 61 313 60 324 c 2
- 63 349 l 2
- 68 367 69 369 95 395 c 2
- 123 418 l 1
- 155 439 l 2
- 162 444 169 447 176 448 c 1
- 160 490 l 1
- 147 499 l 2
- 139 504 130 507 123 507 c 2
+ 313.267 427.367 344 385.298 344 361 c 0
+ 344 309.657 291.609 277 259 277 c 0
+ 229.031 277 208.348 296.74 197 327 c 1
+ 176.721 297.708 125.784 277 103 277 c 0
+ 69 277 60 312.955 60 324 c 0
+ 60 375.9 122.336 440.334 176 448 c 1
+ 165.943 474.399 158.104 507 123 507 c 2
  58 507 l 1
  22 557 l 1
  125 557 l 2
- 148 557 168 551 181 539 c 2
- 198 515 l 1
- 208 491 l 2
- 210.469 482.771 212.26 475.22 212.26 468.345 c 0
- 212.26 466.865 212.177 465.417 212 464 c 1
- 233 491 258 530 337 554 c 2
- 362 559 l 2
- 377 559 395 538 416 490 c 2
- 429 451 l 2
- 438 426 444 404 446 391 c 1
+ 174.637 557 212 511.9 212 464 c 1
+ 235.112 493.715 338 559 362 559 c 4
+ 395.786 559 439.012 436.425 446 391 c 1
  466 530 l 1
  498 647 l 1
- 509 635 l 1
- 521 614 l 2
- 522.236 610.292 523.09 606.584 523.09 602.639 c 0
+ 507.565 636.566 523.09 621.456 523.09 602.639 c 0
  523.09 600.202 522.764 597.674 522 595 c 2
  519 580 l 1
- 520 573 526 563 547 558 c 2
+ 520 573 526 563 547 558 c 1
  746 558 l 1
  732 508 l 1
  514 508 l 1
  471 355 l 1
  527 378 l 1
- 544 372 l 1
- 566 359 l 2
- 573 354 577 347 579 336 c 2
- 583 311 l 1
- 564 267 548 220 531 174 c 0
+ 559.011 368.84 583 351.9 583 311 c 1
+ 559.011 255.447 512 136 512 58 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_sh_ra uukaar_bng
 EndChar
@@ -73705,7 +73842,8 @@ StartChar: bn_sh_l_ukaar
 Encoding: 60947 -1 2486
 Width: 719
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 341 -3 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -73810,7 +73948,7 @@ SplineSet
  141 85 118 56 118 37 c 0
  118 22 122 7 134 2 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_sh_la ukaar_bng
 EndChar
@@ -73819,7 +73957,8 @@ StartChar: bn_sh_l_uukaar
 Encoding: 60948 -1 2487
 Width: 666
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 341 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -73918,7 +74057,7 @@ SplineSet
  141 85 118 56 118 37 c 0
  118 22 122 7 134 2 c 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_sh_la uukaar_bng
 EndChar
@@ -73928,6 +74067,7 @@ Encoding: 60949 -1 2488
 Width: 981
 GlyphClass: 3
 Flags: HMW
+AnchorPoint: "beng-vowel" 611 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -74001,7 +74141,7 @@ SplineSet
  881 369 871 333 815 333 c 0
  799 333 783 347 783 369 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_ss_p_ra ukaar_bng
 EndChar
@@ -74086,7 +74226,7 @@ SplineSet
  291 335 232 297 176 297 c 0
  151 297 94 309 94 373 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_ss_p_ra uukaar_bng
 EndChar
@@ -74275,6 +74415,7 @@ SplineSet
  546 334 523 343 523 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" bn_s_ra ukaar_bng
 EndChar
 
@@ -75152,6 +75293,7 @@ SplineSet
  96 558 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ha_bng ukaar_bng
 EndChar
 
@@ -75288,6 +75430,7 @@ SplineSet
  473 334 449 343 449 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ra_asami_bng ukaar_bng
 EndChar
 
@@ -75425,6 +75568,7 @@ SplineSet
  465 334 448 347 448 369 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'blws' Below Base Substitutions in Bengali subtable" ba_asami_bng ukaar_bng
 EndChar
 
@@ -75610,7 +75754,8 @@ StartChar: bn_d_ya
 Encoding: 60968 -1 2507
 Width: 709
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 491 57 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -75646,8 +75791,8 @@ SplineSet
  164 233 l 2
  103 233 69 269 69 324 c 0
 EndSplineSet
-Validated: 3073
-LCarets2: 2 0 0 
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'dlig' discr. ligatures in Bengali-1" da_bng bn_yaphala
 EndChar
 
@@ -75718,6 +75863,7 @@ SplineSet
  98 309 83 341 83 362 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'dlig' discr. ligatures in Bengali-1" na_bng bn_yaphala
 EndChar
 
@@ -75806,6 +75952,7 @@ SplineSet
  266 464 308 439 308 402 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'dlig' discr. ligatures in Bengali-1" sha_bng bn_yaphala
 EndChar
 
@@ -75894,7 +76041,7 @@ SplineSet
  132 300 78 315 78 374 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 0 
 Ligature2: "'dlig' discr. ligatures in Bengali-1" ssa_bng bn_yaphala
 EndChar
 
@@ -75971,7 +76118,7 @@ SplineSet
  748 508 l 2
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 0 
 Ligature2: "'dlig' discr. ligatures in Bengali-1" sa_bng bn_yaphala
 EndChar
 
@@ -75979,7 +76126,8 @@ StartChar: bn_h_ya
 Encoding: 60973 -1 2512
 Width: 669
 GlyphClass: 3
-Flags: MW
+Flags: HMW
+AnchorPoint: "beng-vowel" 381 -13 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -76027,7 +76175,8 @@ SplineSet
  667 508 606 493 601 406 c 2
  601 320 l 2
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Ligature2: "'dlig' discr. ligatures in Bengali-1" ha_bng bn_yaphala
 EndChar
 
@@ -76087,6 +76236,7 @@ SplineSet
  492 472 562 414 562 322 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ka_bng hasanta_bng
 EndChar
 
@@ -76151,6 +76301,7 @@ SplineSet
  99 517 132 521 144 521 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" kha_bng hasanta_bng
 EndChar
 
@@ -76242,6 +76393,7 @@ SplineSet
  181 360 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" gha_bng hasanta_bng
 EndChar
 
@@ -76312,6 +76464,7 @@ SplineSet
  113 213 138 97 253 97 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" nga_bng hasanta_bng
 EndChar
 
@@ -76366,6 +76519,7 @@ SplineSet
  205 508 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ca_bng hasanta_bng
 EndChar
 
@@ -76557,6 +76711,7 @@ SplineSet
  441 69 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" jha_bng hasanta_bng
 EndChar
 
@@ -76713,6 +76868,7 @@ SplineSet
  323 699 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" tta_bng hasanta_bng
 EndChar
 
@@ -76827,6 +76983,7 @@ SplineSet
  483 358 490 333 490 305 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" dda_bng hasanta_bng
 EndChar
 
@@ -76870,6 +77027,7 @@ SplineSet
  115 172 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ddha_bng hasanta_bng
 EndChar
 
@@ -76929,6 +77087,7 @@ SplineSet
  149 249 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" nna_bng hasanta_bng
 EndChar
 
@@ -77052,6 +77211,7 @@ SplineSet
  489 619 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" tha_bng hasanta_bng
 EndChar
 
@@ -77098,6 +77258,7 @@ SplineSet
  325 283 336 301 361 347 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" da_bng hasanta_bng
 EndChar
 
@@ -77151,6 +77312,7 @@ SplineSet
  215 497 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" dha_bng hasanta_bng
 EndChar
 
@@ -77196,6 +77358,7 @@ SplineSet
  56 288 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" na_bng hasanta_bng
 EndChar
 
@@ -77255,6 +77418,7 @@ SplineSet
  441 294 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" pa_bng hasanta_bng
 EndChar
 
@@ -77316,6 +77480,7 @@ SplineSet
  520 475 615 450 615 356 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" pha_bng hasanta_bng
 EndChar
 
@@ -77359,6 +77524,7 @@ SplineSet
  314 -9 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ba_bng hasanta_bng
 EndChar
 
@@ -77412,6 +77578,7 @@ SplineSet
  488 342 483 356 475 374 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" bha_bng hasanta_bng
 EndChar
 
@@ -77473,6 +77640,7 @@ SplineSet
  358 -3 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ma_bng hasanta_bng
 EndChar
 
@@ -77523,6 +77691,7 @@ SplineSet
  338 -5 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ya_bng hasanta_bng
 EndChar
 
@@ -77576,6 +77745,7 @@ SplineSet
  305 1 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ra_bng hasanta_bng
 EndChar
 
@@ -77633,6 +77803,7 @@ SplineSet
  245 321 253 288 253 263 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" la_bng hasanta_bng
 EndChar
 
@@ -77823,6 +77994,7 @@ SplineSet
  259 353 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" sa_bng hasanta_bng
 EndChar
 
@@ -77881,6 +78053,7 @@ SplineSet
  342 467 419 430 419 353 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ha_bng hasanta_bng
 EndChar
 
@@ -77948,6 +78121,7 @@ SplineSet
  478 417 506 363 506 300 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" rra_bng hasanta_bng
 EndChar
 
@@ -77994,6 +78168,7 @@ SplineSet
  125 182 l 2
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" rha_bng hasanta_bng
 EndChar
 
@@ -78041,6 +78216,7 @@ SplineSet
  338 -8 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" yya_bng hasanta_bng
 EndChar
 
@@ -78092,6 +78268,7 @@ SplineSet
  314 -9 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ra_asami_bng hasanta_bng
 EndChar
 
@@ -78148,6 +78325,7 @@ SplineSet
  315 -9 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'haln' halant forms in Bengali 1" ba_asami_bng hasanta_bng
 EndChar
 
@@ -78384,6 +78562,7 @@ SplineSet
  202 202 230 176 230 141 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 2 0 0 
 Ligature2: "'frac' Diagonal Fractions in Bengali subtable" one_bng slash four_bng
 EndChar
 
