@@ -13,12 +13,13 @@ Descent: 200
 LayerCount: 2
 Layer: 0 0 "Back"  1
 Layer: 1 0 "Fore"  0
+NeedsXUIDChange: 1
 FSType: 0
 OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1503270483
+ModificationTime: 1503731723
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -95,9 +96,6 @@ ChainSub2: class "'ccmp' remove dot followed by mark in Latin"  2 1 3 2
   FClsList: 1
  1
   SeqLookup: 0 "subst. i,j with dotless form" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  
-  FClassNames: "0"  "1"  "2"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -193,9 +191,6 @@ ChainSub2: class "'frac' diagonal fractions - denominators 1"  2 2 2 9
   FClsList:
  1
   SeqLookup: 0 "'dnom' denominators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   Class: 101 parenleft parenright plus minus hyphen comma period zero one two three four five six seven eight nine
@@ -291,9 +286,6 @@ ChainSub2: class "'frac' diagonal fractions - numerators 1"  2 2 2 9
   FClsList: 1
  1
   SeqLookup: 0 "'numr' numerators" 
-  ClassNames: "0"  "1"  
-  BClassNames: "0"  "1"  
-  FClassNames: "0"  "1"  
 EndFPST
 ShortTable: maxp 16
   0
@@ -345,14 +337,14 @@ LangName: 1027 "" "" "Negreta cursiva" "" "FreeMono negreta cursiva"
 LangName: 1026 "" "" "+BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" "" "FreeMono +BD8EPgQ7BEMERwQ1BEAENQQ9 +BD0EMAQ6BDsEPgQ9BDUEPQAA" 
 LangName: 1069 "" "" "Lodi etzana" "" "FreeMono Lodi etzana" 
 LangName: 1033 "" "" "Bold Oblique" "GNU: FreeMono Bold Oblique: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
-GaspTable: 3 9 2 21 1 65535 3 0
+GaspTable: 3 9 2 21 1 65535 3
 Encoding: Custom
 UnicodeInterp: none
 NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 11776 16 9
+WinInfo: 8352 16 9
 BeginPrivate: 8
 UniqueID 7 5020948
 BlueValues 23 [-20 0 437 451 583 597]
@@ -369,7 +361,7 @@ Grid
 EndSplineSet
 TeXData: 1 0 -562637 629146 314573 314573 458228 629146 629146 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "cyr-lateral"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-stacked"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-abovemk"  "'mkmk' mark to mark in Cyrillic-1" "dagesh-heb"  "'mark' marks in Hebrew-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks in Latin high subtable" "cyr-above"  "'mark' marks in Cyrillic subtable" "below"  "'mark' marks in Latin low subtable" "above"  "'mark' marks in Latin high subtable" 
-BeginChars: 65536 2284
+BeginChars: 65536 2285
 
 StartChar: space
 Encoding: 32 32 0
@@ -39924,7 +39916,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1301 8253 S -1 0 0 -1 630 392 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni2E1A
@@ -47378,6 +47370,59 @@ LayerCount: 2
 Fore
 Refer: 2282 42571 N 0.47 0 0 0.4 -443 475 2
 Validated: 32769
+EndChar
+
+StartChar: Bitcoin
+Encoding: 8383 8383 2284
+Width: 600
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+134 518 m 0
+ 134 571 176 583 214 583 c 2
+ 395 583 l 1
+ 403 618 l 2
+ 412 656 427 684 468 684 c 4
+ 496 684 506 670 506 648 c 0
+ 506 639 505 629 502 618 c 2
+ 493 582 l 1
+ 576 573 629 523 629 453 c 0
+ 629 382 594 344 535 305 c 1
+ 587 276 612 240 612 194 c 0
+ 612 64 490 0 359 0 c 1
+ 346 -56 l 2
+ 337 -94 323 -123 282 -123 c 0
+ 252 -123 243 -108 243 -87 c 0
+ 243 -78 244 -67 247 -56 c 2
+ 260 0 l 1
+ 79 0 l 2
+ 34 0 23 19 23 37 c 0
+ 23 87 64 100 102 100 c 2
+ 117 100 l 1
+ 206 483 l 1
+ 191 483 l 2
+ 159 483 134 490 134 518 c 0
+283 100 m 1
+ 316 242 l 1
+ 250 242 l 1
+ 217 100 l 1
+ 283 100 l 1
+382 100 m 1
+ 458 100 508 114 508 169 c 0
+ 508 207 473 234 414 240 c 1
+ 382 100 l 1
+372 483 m 1
+ 306 483 l 1
+ 273 342 l 1
+ 339 342 l 1
+ 372 483 l 1
+470 481 m 1
+ 439 348 l 1
+ 486 359 526 388 526 432 c 0
+ 526 458 506 475 470 481 c 1
+EndSplineSet
+Validated: 3073
 EndChar
 EndChars
 EndSplineFont
