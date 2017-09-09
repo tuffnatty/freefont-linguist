@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1504979176
+ModificationTime: 1504998093
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -128,7 +128,7 @@ Lookup: 1 0 0 "'cjct' va-work-around in Bengali for Sanskrit"  {"'cjct' va-work-
 Lookup: 1 0 0 "'init' initial vowel forms in Bengali"  {"'init' initial e,ai in Bengali-1"  } ['init' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pres' conjuncts in Bengali for Sanskrit"  {"'pres' conjunct triple in Bengali for Sanskrit"  "'pres' conjunct pair in Bengali for Sanskrit"  "'pres' work-around in Bengali for Sanskrit"  } ['pres' ('beng' <'SAN ' > 'bng2' <'SAN ' > ) ]
 Lookup: 4 0 0 "'pres' conjuncts in Bengali"  {"'pres' conjunct trio in Bengali-3"  "'pres' conjunct rofola triple in Bengali"  "'pres' conjunct rofola pair in Bengali"  "'pres' conjunct blwf in Bengali"  "'pres' conjunct half in Bengali"  "'pres' conjunct phala in Bengali"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
-Lookup: 6 0 0 "'pres' blwf chain in Bengali"  {"'pres' blwf nna chain in Bengali-1"  "'pres' blwf after ma chain in Bengali"  "'pres' blwf after ny chain in Bengali"  "'pres' blwf after ga chain in Bengali"  "'pres' blwf after pa chain in Bengali"  "'pres' blwf after la chain in Bengali"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
+Lookup: 6 0 0 "'pres' blwf chain in Bengali"  {"'pres' blwf nna chain in Bengali-1"  "'pres' blwf after ma chain in Bengali"  "'pres' blwf after ny chain in Bengali"  "'pres' blwf after ga chain in Bengali"  "'pres' blwf after pa chain in Bengali"  "'pres' blwf after la chain in Bengali"  "'pres' blwf after ka_ssa chain in Bengali"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'pres' blwf chain in Bengali for Sanskrit"  {"'pres' blwf tha,nna chain in Bengali for Sanskrit"  } ['pres' ('beng' <'SAN ' > 'bng2' <'SAN ' > ) ]
 Lookup: 6 0 0 "'pres' half-blwf chain in Benglai"  {"'pres' half-blwf before nna chain in Benglai"  "'pres' half-blwf before ra chain in Benglai"  "'pres' half-blwf before la chain in Benglai"  "'pres' half-blwf before ta chain in Benglai"  "'pres' half-blwf before ba chain in Benglai"  "'pres' half-blwf before na chain in Benglai"  "'pres' half-blwf full-tta chain in Benglai"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'pres' top forms in Bengali"  {"'pres' top form ga in Bengali"  "'pres' top form nna in Bengali"  "'pres' top form to proud ba in Bengali"  "'pres' top form pa in Bengali"  "'pres' top form sa in Bengali"  "'pres' top form la in Bengali"  "'pres' top forms in Bengali-1"  "'pres' above-falaa chain in Bengali-1"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
@@ -462,6 +462,13 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: coverage "'pres' blwf after ka_ssa chain in Bengali"  0 0 0 1
+ 1 1 0
+  Coverage: 7 nna_bng
+  BCoverage: 13 bn_k_ssa.half
+ 1
+  SeqLookup: 0 "subst. below form in Bengali" 
+EndFPST
 ChainSub2: class "'pres' above-falaa chain in Bengali-1"  3 0 2 2
   Class: 292 ka_bng kha_bng ga_bng gha_bng nga_bng ca_bng cha_bng ja_bng jha_bng nya_bng tta_bng ttha_bng dda_bng ddha_bng nna_bng ta_bng tha_bng da_bng dha_bng na_bng pa_bng pha_bng ba_bng bha_bng ma_bng ya_bng ra_bng la_bng sha_bng ssa_bng sa_bng ha_bng rra_bng rha_bng yya_bng ra_asami_bng ba_asami_bng
   Class: 377 bn_k.half bn_kh.half bn_g.half bn_gh.half bn_ng.half bn_c.half bn_ch.half bn_j.half bn_jh.half bn_ny.half bn_tt.half bn_tth.half bn_dd.half bn_ddh.half bn_nn.half bn_th.half bn_d.half bn_dh.half bn_n.half bn_p.half bn_ph.half bn_b.half bn_bh.half bn_m.half bn_y.half bn_t.half bn_l.half bn_sh.half bn_ss.half bn_s.half bn_h.half bn_rr.half bn_rh.half bn_yy.half bn_b_asami.half
@@ -1478,7 +1485,7 @@ LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA"
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "Regular" "GNU: FreeSans Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 22 1 65535 3
-OtfFeatName: 'ss07' 1097 "+C6QLrgu/C7QLzQAA +C6gLtQvAC6kA" 1033 "Tamil Modern" 
+OtfFeatName: 'ss07' 1033 "Tamil Modern" 1097 "+C6QLrgu/C7QLzQAA +C6gLtQvAC6kA" 
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 900
@@ -1542,7 +1549,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 59776 16 11
+WinInfo: 59936 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -59039,11 +59046,11 @@ Fore
 SplineSet
 89 217 m 4
  89 178 118 51 184 51 c 4
- 222.4 51 220.865 54.0508 248 87 c 5
+ 222 51 221 54 248 87 c 5
  257 79 271 69 288 58 c 5
  272 24 247 0 194 0 c 4
  91 0 38 106 38 243 c 4
- 38 382.807 156.527 538.135 288 561 c 5
+ 38 383 157 538 288 561 c 5
  288 510 l 5
  124 440 89 326 89 217 c 4
 EndSplineSet
@@ -59072,7 +59079,7 @@ SplineSet
  -417 85 -422 64 -422 52 c 0
  -422 -9 -394 -49 -322 -49 c 0
  -297 -49 -238 -29 -207 -29 c 0
- -186 -29 -137 -39.5 -100 -79 c 1
+ -186 -29 -137 -39 -100 -79 c 1
  -100 128 l 1
  -50 128 l 1
  -50 -199 l 1
@@ -59096,7 +59103,7 @@ Encoding: 59813 -1 2738
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "bng-phala" -75 -64.7 basemark 0
+AnchorPoint: "bng-phala" -75 -65 basemark 0
 AnchorPoint: "bng-stem" -46 200 mark 0
 LayerCount: 2
 Fore
@@ -59123,8 +59130,8 @@ Width: 0
 GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-rofola" -109 -61 basechar 0
-AnchorPoint: "bng-phala" -227.5 137 mark 0
-AnchorPoint: "bng-phala" -246 -116.7 basemark 0
+AnchorPoint: "bng-phala" -228 137 mark 0
+AnchorPoint: "bng-phala" -246 -117 basemark 0
 AnchorPoint: "bng-round" -240 149 mark 0
 LayerCount: 2
 Fore
@@ -59168,7 +59175,7 @@ SplineSet
  -403 -58 l 1
  -403 -7 l 1
  -368 -11 -339 -13 -317 -13 c 0
- -166.886 -13 -138 47 -138 87 c 0
+ -167 -13 -138 47 -138 87 c 0
  -138 136 -170 160 -235 160 c 0
  -278 160 -313 134 -336 67 c 1
  -385 79 l 1
@@ -59190,7 +59197,7 @@ LayerCount: 2
 Fore
 Refer: 7482 -1 N 1 0 0 1 0 0 2
 Refer: 1010 2492 N 1 0 0 1 330 200 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'half' half forms in Bengali-1" rra_bng hasanta_bng
 LCarets2: 1 0 
 EndChar
@@ -59206,7 +59213,7 @@ LayerCount: 2
 Fore
 Refer: 7483 -1 S 1 0 0 1 0 0 2
 Refer: 1010 2492 N 1 0 0 1 330 140 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'half' half forms in Bengali-1" rha_bng hasanta_bng
 LCarets2: 1 0 
 EndChar
@@ -59319,7 +59326,7 @@ SplineSet
  395 507 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "subst. top forms for lig in Bengali" bn_k_ssa.top
+Substitution2: "subst. top forms for lig in Bengali" bn_k_ssa.half
 Ligature2: "'akhn' akhand in Bengali-1" ka_bng ssa_bng hasanta_bng
 LCarets2: 2 0 0 
 Ligature2: "'akhn' akhand in Bengali2-1" ka_bng hasanta_bng ssa_bng
@@ -150310,7 +150317,7 @@ Width: 0
 GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-rofola" 75 -33 basechar 0
-AnchorPoint: "bng-phala" -76 -187.7 basemark 0
+AnchorPoint: "bng-phala" -76 -188 basemark 0
 AnchorPoint: "bng-stem" -50 206 mark 0
 LayerCount: 2
 Fore
@@ -150320,7 +150327,7 @@ SplineSet
  -50 -190 l 5
  -100 -190 l 5
  -100 -169 l 5
- -144.427 -94.4258 -179.991 -82.4961 -273 -41 c 5
+ -144 -94 -180 -82 -273 -41 c 5
  -283 8 l 5
  -100 126 l 5
  -100 207 l 5
@@ -150328,11 +150335,11 @@ SplineSet
  -50 141 l 5
  -13 158 13 167 30 167 c 4
  50 167 79 154 79 80 c 4
- 79 6.2002 75 6.2002 75 -43 c 4
+ 79 6 75 6 75 -43 c 4
  75 -93 86 -130 105 -174 c 5
  61 -192 l 5
  30 -110 25 -77 25 -50 c 4
- 25 -38.2002 28 12 28 68 c 4
+ 25 -38 28 12 28 68 c 4
  28 88 25 107 22 117 c 5
 -100 62 m 5
  -216 -9 l 5
@@ -151024,7 +151031,7 @@ LayerCount: 2
 Fore
 Refer: 6024 -1 S 1 0 0 1 0 0 2
 Refer: 963 2433 N 0.8 0 0 0.8 -40 262 2
-Validated: 32769
+Validated: 98305
 Substitution2: "subst. rofola bracing in Bengali-1" bn_ra_folaa_bracing
 Substitution2: "subst. rofola short in Bengali-1" bn_ra_folaa_short
 Substitution2: "subst. rofola narrow in Bengali-1" bn_ra_folaa_narrow
@@ -151797,22 +151804,22 @@ LayerCount: 2
 Fore
 SplineSet
 190 575 m 2
- 190 599.659 183.5 637.787 137.63 637.787 c 0
- 81.6953 637.787 73.8467 624.794 18.5771 624.794 c 0
- -13.1592 624.794 -78 642.554 -78 729 c 0
+ 190 600 184 638 138 638 c 0
+ 82 638 74 625 19 625 c 0
+ -13 625 -78 643 -78 729 c 0
  -78 750 -67 774 -45 801 c 1
  -3 772 l 1
  -19 751 -27 733 -27 717 c 0
- -27 694.5 -13.5 675.981 25.7441 675.981 c 0
- 84.6201 675.981 95.0322 688.315 153.128 688.315 c 0
- 200.891 688.315 244 656.307 244 558 c 2
+ -27 695 -13 676 26 676 c 0
+ 85 676 95 688 153 688 c 0
+ 201 688 244 656 244 558 c 2
  244 512 l 1
  141 451 70 347 70 237 c 0
- 70 157 91.5 51 141 51 c 0
+ 70 157 91 51 141 51 c 0
  166 51 179 54 204 87 c 1
  244 58 l 1
- 226 25 201.5 0 150 0 c 0
- 27.5 0 19 157.9 19 231 c 0
+ 226 25 202 0 150 0 c 0
+ 28 0 19 158 19 231 c 0
  19 349 86 477 190 546 c 1
  190 575 l 2
 EndSplineSet
@@ -151825,7 +151832,7 @@ Width: 0
 GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-rofola" -50 117 basechar 0
-AnchorPoint: "bng-phala" -77 -92.7 basemark 0
+AnchorPoint: "bng-phala" -77 -93 basemark 0
 AnchorPoint: "bng-stem" -53 207 mark 0
 LayerCount: 2
 Fore
@@ -151834,21 +151841,21 @@ SplineSet
  -176 91 -232 45 -258 20 c 1
  -225 16 -164 11 -100 -66 c 1
  -100 110 l 1
--53 157.626 m 1
- 46.0703 144.122 119 90.8213 119 11 c 0
+-53 158 m 1
+ 46 144 119 91 119 11 c 0
  119 -71 44 -82 27 -85 c 1
  -2 -45 l 1
- 30.0596 -45 68 -24.4033 68 14 c 0
+ 30 -45 68 -24 68 14 c 0
  68 65 7 92 -50 92 c 1
  -50 -179 l 1
  -100 -179 l 1
  -100 -158 l 1
- -155.69 -45.6074 -216.5 -25 -298 -25 c 1
+ -156 -46 -216 -25 -298 -25 c 1
  -331 23 l 1
- -245.918 97.7061 -223.939 118.211 -100 161 c 1
+ -246 98 -224 118 -100 161 c 1
  -100 207 l 1
  -53 207 l 1
- -53 157.626 l 1
+ -53 158 l 1
 EndSplineSet
 Validated: 3073
 LCarets2: 1 0 
@@ -152063,13 +152070,13 @@ Width: 0
 GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-rofola" -50 27 basechar 0
-AnchorPoint: "bng-phala" -76 -94.7 basemark 0
+AnchorPoint: "bng-phala" -76 -95 basemark 0
 AnchorPoint: "bng-stem" -50 140 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -255 94 m 0
- -190 94 -134 65.2998 -100 -5 c 1
+ -190 94 -134 65 -100 -5 c 1
  -100 180 l 1
  -50 180 l 1
  -50 -152 l 1
@@ -155414,7 +155421,7 @@ GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-stem" -60 160 mark 0
 AnchorPoint: "bng-rofola" -14 -13 basechar 0
-AnchorPoint: "bng-phala" -206 -156.7 basemark 0
+AnchorPoint: "bng-phala" -206 -157 basemark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -155423,11 +155430,11 @@ SplineSet
  -13 -90 -93 -163 -212 -163 c 0
  -323 -163 -437 -16 -465 106 c 1
  -414 106 l 1
- -398 50 -321.5 -112 -199 -112 c 0
- -159.5 -112 -64 -87 -64 11 c 0
- -64 22 -66 37.75 -74 55 c 1
+ -398 50 -321 -112 -199 -112 c 0
+ -159 -112 -64 -87 -64 11 c 0
+ -64 22 -66 38 -74 55 c 1
  -122 7 l 2
- -150.019 -21.0186 -174 -22 -186 -22 c 0
+ -150 -21 -174 -22 -186 -22 c 0
  -246 -22 -258 38 -258 53 c 0
  -258 87 -241 109 -191 109 c 1
  -181 71 l 1
@@ -155445,23 +155452,23 @@ Encoding: 59822 -1 6027
 Width: 0
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "bng-phala" -73 -86.7 basemark 0
+AnchorPoint: "bng-phala" -73 -87 basemark 0
 AnchorPoint: "bng-stem" -49 200 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -50 -87 m 1
  -19 -87 79 -9 79 54 c 0
- 79 70 52.2637 77.4658 22 82.4111 c 0
- -4.48242 86.7373 -33.666 92.3994 -50 112 c 1
+ 79 70 52 77 22 82 c 0
+ -4 86 -34 92 -50 112 c 1
  -50 -87 l 1
 -55 -138 m 0
- -87 -138 -100 -115.8 -100 -103 c 2
+ -87 -138 -100 -116 -100 -103 c 2
  -100 207 l 1
  -50 207 l 1
  -50 178 l 1
- -19.5 138.1 25.6514 125.617 56 122.141 c 0
- 118.729 114.957 130 79.4561 130 55 c 0
+ -20 138 26 125 56 122 c 0
+ 119 115 130 79 130 55 c 0
  130 -15 18 -138 -55 -138 c 0
 EndSplineSet
 Validated: 3073
@@ -155474,29 +155481,29 @@ GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-stem" -49 120 mark 0
 AnchorPoint: "bng-rofola" 128 -183 basechar 0
-AnchorPoint: "bng-phala" 142 -74.7 basemark 0
+AnchorPoint: "bng-phala" 142 -75 basemark 0
 AnchorPoint: "bng-phala" -77 110 mark 0
 LayerCount: 2
 Fore
 SplineSet
 172 -31 m 0
  172 -105 100 -140 74 -148 c 1
- 158.808 -190.404 153.2 -181.439 228 -249 c 1
+ 159 -190 153 -181 228 -249 c 1
  204 -300 l 5
- 171.906 -261.666 71.0596 -175 -62 -175 c 1
+ 172 -262 71 -175 -62 -175 c 1
  -62 -124 l 1
  -11 -124 l 2
  71 -119 121 -67 121 -29 c 0
- 121 10.541 97.6143 9.87695 77 14 c 1
+ 121 11 98 10 77 14 c 1
  71 -46 15 -84 -30 -84 c 0
  -46 -84 -100 -64 -100 -35 c 2
  -100 132 l 1
  -49 132 l 1
  -49 111 l 1
- -32 83 -22.1377 67 36 67 c 0
- 120.8 67 172 62.2002 172 -31 c 0
+ -32 83 -22 67 36 67 c 0
+ 121 67 172 62 172 -31 c 0
 -7 23 m 2
- -24.667 23 -36 33 -50 50 c 1
+ -25 23 -36 33 -50 50 c 1
  -50 -16 l 1
  -45 -24 -38 -32 -29 -32 c 0
  1 -32 25 -14 25 10 c 0
@@ -181737,7 +181744,7 @@ LayerCount: 2
 Fore
 Refer: 2737 -1 S 1 0 0 1 0 0 2
 Refer: 1010 2492 N 1 0 0 1 -170 -120 2
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 Ligature2: "'cjct' conjunct nukta-rofola in Bengali" nukta_bng bn_ra_folaa
 EndChar
@@ -181791,7 +181798,7 @@ EndChar
 StartChar: bn_pha.falaa
 Encoding: 59839 -1 7415
 Width: 421
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 AnchorPoint: "bng-phala" 183 -7 basemark 0
 AnchorPoint: "bng-rofola" 210 187 basechar 0
@@ -181805,7 +181812,7 @@ SplineSet
  431 507 l 1
  -19 507 l 1
 342 315 m 0
- 342 387.353 249 395 208 395 c 1
+ 342 387 249 395 208 395 c 1
  208 -7 l 1
  157 -7 l 1
  157 48 l 1
@@ -183728,7 +183735,7 @@ LayerCount: 2
 Fore
 Refer: 7484 -1 N 1 0 0 1 0 0 2
 Refer: 1010 2492 N 1 0 0 1 330 270 2
-Validated: 32769
+Validated: 98305
 Ligature2: "'half' half forms in Bengali-1" yya_bng hasanta_bng
 LCarets2: 1 0 
 EndChar
@@ -183737,7 +183744,7 @@ StartChar: bn_b_asami.half
 Encoding: 59875 -1 7452
 Width: 306
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem" 256 175 basechar 0
 AnchorPoint: "bng-round" 202 145 basechar 0
 LayerCount: 2
@@ -183759,8 +183766,8 @@ SplineSet
  257 160 l 1
  207 160 l 1
  207 208 l 2
- 207 245.363 101 338 43 338 c 0
- 37.8125 338 36 337.75 33 337 c 1
+ 207 245 101 338 43 338 c 0
+ 38 338 36 338 33 337 c 1
  9 376 l 1
 80 369 m 1
  128 366 195 311 207 286 c 1
@@ -183835,19 +183842,19 @@ StartChar: bn_k.half
 Encoding: 59840 -1 7454
 Width: 438
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 263 250 basechar 0
 AnchorPoint: "bng-stem" 285 250 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 363 322 m 0
- 376.5 322 387 344.245 387 350 c 0
- 387 406.75 324 431 285 431 c 1
+ 377 322 387 344 387 350 c 0
+ 387 407 324 431 285 431 c 1
  285 218 l 1
  234 218 l 1
  234 256 l 1
- 185 319.667 168.333 323 69 323 c 1
+ 185 320 168 323 69 323 c 1
  29 376 l 1
  98 434 148 452 234 482 c 1
  234 507 l 1
@@ -183857,15 +183864,15 @@ SplineSet
  448 507 l 1
  285 507 l 1
  285 482 l 1
- 397 482 438 396.751 438 352 c 0
- 438 287.25 386 271 368 271 c 0
+ 397 482 438 397 438 352 c 0
+ 438 287 386 271 368 271 c 0
  342 271 306 291 297 330 c 1
  337 346 l 1
  342 330 355 322 363 322 c 0
 90 367 m 1
  196 367 219 339 234 318 c 1
  234 431 l 1
- 210.397 431 99.8866 376.887 90 367 c 1
+ 210 431 100 377 90 367 c 1
 EndSplineSet
 Validated: 3073
 Substitution2: "subst. top forms for half in Bengali" bn_k.top
@@ -183883,9 +183890,9 @@ Fore
 SplineSet
 220 461 m 0
  220 406 156 373 132 368 c 1
- 188 347 276 317.333 309 303 c 5
+ 188 347 276 317 309 303 c 5
  309 303 309 281 309 253 c 1
- 291.333 258 268.419 266.438 260 269 c 0
+ 291 258 268 266 260 269 c 0
  237 276 147 324 79 335 c 1
  49 385 l 1
  121 396 169 431 169 461 c 0
@@ -183914,9 +183921,9 @@ LayerCount: 2
 Fore
 SplineSet
 181 561 m 0
- 296 561 341 465.5 397.2 321.5 c 5
- 397.2 301.5 376.667 295.5 361.2 295.5 c 5
- 307.2 439.5 249 510 184 510 c 0
+ 296 561 341 466 397 322 c 5
+ 397 302 376 296 361 296 c 5
+ 307 440 249 510 184 510 c 0
  138 510 74 470 74 397 c 1
  89 402 142 435 187 435 c 0
  229 435 262 397 262 359 c 0
@@ -183947,8 +183954,8 @@ SplineSet
 128 447 m 0
  137 447 160 448 173 470 c 1
  197 430 l 1
- 170.403 403.403 145.733 379.733 120 354 c 1
- 166.825 337.416 193.508 333.562 236 285 c 1
+ 170 403 146 380 120 354 c 1
+ 167 337 194 334 236 285 c 1
  236 507 l 1
  87 507 l 1
  82 504 73 496 73 482 c 0
@@ -183965,8 +183972,8 @@ SplineSet
  236 206 l 1
  208 270 139 315 69 325 c 1
  58 354 l 1
- 111 409.002 l 1
- 66.333 409.002 22 435.459 22 477 c 0
+ 111 409 l 1
+ 66 409 22 435 22 477 c 0
 EndSplineSet
 Validated: 3073
 Substitution2: "subst. top forms for half in Bengali" bn_gh.top
@@ -183978,7 +183985,7 @@ StartChar: bn_ng.half
 Encoding: 59844 -1 7458
 Width: 398
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 263 160 basechar 0
 AnchorPoint: "bng-stem" 380 164 basechar 0
 LayerCount: 2
@@ -184029,8 +184036,8 @@ Fore
 SplineSet
 104 203 m 1
  135 203 233 281 233 344 c 0
- 233 360 206.264 377.466 176 382.411 c 0
- 149.518 386.737 120.334 392.399 104 412 c 1
+ 233 360 206 377 176 382 c 0
+ 150 386 120 392 104 412 c 1
  104 203 l 1
 99 152 m 0
  67 152 60 162 53 177 c 1
@@ -184041,8 +184048,8 @@ SplineSet
  294 507 l 1
  104 507 l 1
  104 478 l 1
- 134.5 438.1 179.651 425.617 210 422.141 c 0
- 272.729 414.957 284 369.456 284 345 c 0
+ 134 438 180 425 210 422 c 0
+ 273 415 284 369 284 345 c 0
  284 275 172 152 99 152 c 0
 EndSplineSet
 Validated: 3073
@@ -184055,7 +184062,7 @@ StartChar: bn_ch.half
 Encoding: 59846 -1 7460
 Width: 373
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 273 170 basechar 0
 AnchorPoint: "bng-stem" 331 181 basechar 0
 LayerCount: 2
@@ -184063,13 +184070,13 @@ Fore
 SplineSet
 323 365 m 0
  323 291 251 256 225 248 c 1
- 309.808 205.596 304.2 214.561 379 147 c 1
+ 310 206 304 215 379 147 c 1
  355 96 l 1
- 322.906 134.334 222.06 221 89 221 c 1
+ 323 134 222 221 89 221 c 1
  89 272 l 1
  140 272 l 2
  222 277 272 329 272 367 c 0
- 272 406.541 248.614 405.877 228 410 c 1
+ 272 407 249 406 228 410 c 1
  222 350 166 312 121 312 c 0
  105 312 50 332 50 361 c 2
  50 507 l 1
@@ -184078,8 +184085,8 @@ SplineSet
  383 558 l 5
  383 507 l 5
  102 507 l 1
- 119 479 128.862 463 187 463 c 0
- 218 463 242.667 459 247 459 c 1
+ 119 479 129 463 187 463 c 0
+ 218 463 243 459 247 459 c 1
  266 459 323 440 323 365 c 0
 144 419 m 2
  120 419 115 429 101 446 c 1
@@ -184116,7 +184123,7 @@ SplineSet
  405 383 l 1
  369 383 259 391 211 480 c 1
  173 437 160 424 160 386 c 0
- 160 365 176.5 355 196 355 c 0
+ 160 365 176 355 196 355 c 0
  213 355 239 365 276 386 c 1
  333 361 337 294 337 268 c 0
  337 204 287 151 208 151 c 0
@@ -184138,7 +184145,7 @@ StartChar: bn_jh.half
 Encoding: 59848 -1 7462
 Width: 428
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 245 190 basechar 0
 AnchorPoint: "bng-stem" 378 201 basechar 0
 LayerCount: 2
@@ -184182,7 +184189,7 @@ StartChar: bn_ny.half
 Encoding: 59849 -1 7463
 Width: 550
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem" 360 220 basechar 0
 AnchorPoint: "bng-round" 341 200 basechar 0
 LayerCount: 2
@@ -184202,7 +184209,7 @@ SplineSet
  84 452 l 1
  74 421 70 398 70 361 c 0
  70 327 88 305 134 305 c 0
- 165.5 305 176 307 239 307 c 0
+ 166 305 176 307 239 307 c 0
  268 307 297 279 312 267 c 1
  312 494 l 2
  312 503 301 519 292 519 c 0
@@ -184219,13 +184226,13 @@ SplineSet
 471 471 m 0
  448 471 412 446 363 385 c 1
  363 365 l 1
- 413 308.5 444.5 288 468 288 c 0
+ 413 309 444 288 468 288 c 0
  486 288 499 294 499 311 c 0
  499 346 480 355 450 355 c 0
- 438.667 355 429.718 354.615 421 353 c 1
+ 439 355 430 355 421 353 c 1
  421 409 l 1
- 429.528 407.528 439.667 407 449 407 c 0
- 481.667 407 496 414 496 445 c 0
+ 430 408 440 407 449 407 c 0
+ 482 407 496 414 496 445 c 0
  496 461 486 471 471 471 c 0
 EndSplineSet
 Validated: 3073
@@ -184271,8 +184278,8 @@ SplineSet
  -27 700 -19 717 -3 736 c 1
  42 715 l 1
  30 700 24 687 24 676 c 0
- 24 668.4 31 657 78 657 c 0
- 122.374 657.626 160.968 664.032 203 667 c 0
+ 24 668 31 657 78 657 c 0
+ 122 658 161 664 203 667 c 0
 EndSplineSet
 Validated: 3073
 LCarets2: 1 0 
@@ -184306,7 +184313,7 @@ SplineSet
  65 611 57 649 57 675 c 0
  57 704 70 735 96 768 c 1
  138 748 l 1
- 111.5 715.167 108 694.914 108 685 c 0
+ 112 715 108 695 108 685 c 0
 135 198 m 0
  174 198 224 252 224 330 c 0
  224 357 221 394 182 451 c 1
@@ -184327,7 +184334,7 @@ LayerCount: 2
 Fore
 SplineSet
 180 556 m 0
- 249 556 314 521 371.7 321.5 c 1
+ 249 556 314 522 372 322 c 1
  326 295 l 1
  297 406 248 505 185 505 c 0
  128 505 63 477 63 421 c 0
@@ -184348,7 +184355,7 @@ StartChar: bn_th.half
 Encoding: 59855 -1 7467
 Width: 267
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 279 252 basechar 0
 AnchorPoint: "bng-stem" 276 311 basechar 0
 LayerCount: 2
@@ -184356,16 +184363,16 @@ Fore
 SplineSet
 218 462 m 0
  218 398 158 364 136 360 c 1
- 187 349 219.667 339 276 312 c 1
- 291.38 302.696 296.393 292.051 296.393 282.371 c 0
- 296.393 269.164 287.06 257.753 282 254 c 1
+ 187 349 220 339 276 312 c 1
+ 291 303 296 292 296 282 c 0
+ 296 269 287 258 282 254 c 1
  246 292 182 306 60 324 c 1
  28 379 l 1
  143 394 167 431 167 467 c 0
  167 490 146 507 113 507 c 0
  84 507 60 497 60 482 c 0
  60 471 70 469 78 469 c 0
- 78.7949 469 84.5596 470.28 86 471 c 1
+ 79 469 85 470 86 471 c 1
  86 418 l 1
  60 418 l 2
  38 418 9 441 9 474 c 0
@@ -184398,9 +184405,9 @@ SplineSet
  378 507 l 1
  105 507 l 1
  105 368 l 1
- 159 418 203.934 435.071 297 454 c 1
+ 159 418 204 435 297 454 c 1
  328 424 l 1
- 326.378 412.647 315 337.857 315 302 c 0
+ 326 413 315 338 315 302 c 0
  315 270 320 210 324 191 c 1
  273 191 l 1
  269 210 263 274 263 309 c 0
@@ -184415,7 +184422,7 @@ StartChar: bn_dh.half
 Encoding: 59857 -1 7469
 Width: 332
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 232 215 basechar 0
 AnchorPoint: "bng-stem" 283 201 basechar 0
 LayerCount: 2
@@ -184434,14 +184441,14 @@ SplineSet
  232 216 l 1
  173 275 130 312 50 336 c 1
  30 366 l 1
- 54 387.667 76.3333 405 100 423 c 1
+ 54 388 76 405 100 423 c 1
  72 430 43 455 43 496 c 0
  43 533 73 558 119 558 c 0
  147 558 164 534 169 523 c 1
  141 486 l 1
  134 502 126 507 115 507 c 0
 232 444 m 1
- 176 425 146.109 403.095 100 363 c 1
+ 176 425 146 403 100 363 c 1
  168 333 188 321 232 281 c 1
  232 444 l 1
 EndSplineSet
@@ -184466,8 +184473,8 @@ SplineSet
  84 276 l 1
  57 295 44 318 44 345 c 0
  44 423 121 438 141 438 c 0
- 203.282 438 255.5 390.5 296 323.2 c 5
- 296 304 266.5 296 254 296 c 5
+ 203 438 256 390 296 323 c 5
+ 296 304 266 296 254 296 c 5
 -10 507 m 1
  -10 558 l 1
  264 558 l 1
@@ -184490,9 +184497,9 @@ Fore
 SplineSet
 21 451 m 1
  28 482 74 558 163 558 c 0
- 242.2 558 318.2 519.5 430 328 c 1
+ 242 558 318 520 430 328 c 1
  430 312 411 295 386 295 c 1
- 363 345.5 337.508 392.297 298 434 c 1
+ 363 345 338 392 298 434 c 1
  141 291 l 1
  112 323 l 1
  120 328 138 342 138 371 c 0
@@ -184501,7 +184508,7 @@ SplineSet
  21 451 l 1
 85 468 m 1
  164 468 177 405 179 388 c 1
- 208.781 414.318 235.614 440.499 267 466 c 1
+ 209 414 236 440 267 466 c 1
  230 497 200 513 177 513 c 0
  134 513 104 498 85 468 c 1
 EndSplineSet
@@ -184566,8 +184573,8 @@ Fore
 SplineSet
 85 369 m 1
  133 366 196 310 208 287 c 1
- 208 423.14 l 1
- 155.181 411.956 103.075 387.075 85 369 c 1
+ 208 423 l 1
+ 155 412 103 387 85 369 c 1
 259 507 m 1
  259 218 l 1
  259 218 215 218 209 218 c 1
@@ -184610,9 +184617,9 @@ SplineSet
  330 425 l 2
  379 387 382 324 382 303 c 0
  382 217 321 150 245 150 c 0
- 88 150 25.8 328.2 -1 465 c 1
+ 88 150 26 328 -1 465 c 1
  50 455 l 1
- 95.8 268.2 163 201 242 201 c 0
+ 96 268 163 201 242 201 c 0
  297 201 331 256 331 314 c 0
  331 322 327 360 307 378 c 1
  296 359 268 314 210 314 c 0
@@ -184633,7 +184640,7 @@ StartChar: bn_m.half
 Encoding: 59863 -1 7475
 Width: 400
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 273 300 basechar 0
 AnchorPoint: "bng-stem" 321 298 basechar 0
 LayerCount: 2
@@ -184642,9 +184649,9 @@ SplineSet
 348 411 m 0
  348 445 337 477 313 507 c 1
  135 507 l 1
- 146.75 491.25 151.744 473.236 154.499 458.2 c 0
- 156.704 446.167 159.097 434.095 169.429 420 c 0
- 190.352 391.454 263.598 345 290 345 c 0
+ 147 491 151 473 154 458 c 0
+ 156 446 159 434 169 420 c 0
+ 190 391 264 345 290 345 c 0
  329 345 348 367 348 411 c 0
 78 507 m 1
  -10 507 l 1
@@ -184657,12 +184664,12 @@ SplineSet
  219 294 161 376 123 376 c 0
  102 376 91 370 91 358 c 0
  91 342 99 334 115 334 c 0
- 118.833 334 121.667 334 124 335 c 1
+ 119 334 122 334 124 335 c 1
  119 284 l 1
- 115.667 282.833 109.833 282 105 282 c 0
+ 116 283 110 282 105 282 c 0
  64 282 40 325 40 355 c 0
  40 395 76 417 110 422 c 1
- 110 458.265 85.0669 497.023 78 507 c 1
+ 110 458 85 497 78 507 c 1
 EndSplineSet
 Validated: 3073
 Substitution2: "subst. top forms for half in Bengali" bn_m.top
@@ -184674,7 +184681,7 @@ StartChar: bn_t.half
 Encoding: 59865 -1 7476
 Width: 501
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem" 450 193 basechar 0
 AnchorPoint: "bng-round" 323 152 basechar 0
 LayerCount: 2
@@ -184719,9 +184726,9 @@ SplineSet
  454 507 l 1
  -10 507 l 1
 305 454 m 0
- 372.035 454 438 386.642 438 249 c 1
+ 372 454 438 387 438 249 c 1
  387 249 l 1
- 387 327.745 345.233 403 304 403 c 0
+ 387 328 345 403 304 403 c 0
  288 403 259 392 259 378 c 0
  259 368 273 345 280 339 c 1
  242 310 l 1
@@ -184751,8 +184758,8 @@ SplineSet
 16 558 m 2
  67 558 111 532 154 469 c 1
  173 518 194 542 217 542 c 0
- 274.79 542 326 465 395 327 c 5
- 395 308.2 374.5 296 355 296 c 5
+ 275 542 326 465 395 327 c 5
+ 395 308 375 296 355 296 c 5
  311 403 248 491 222 491 c 1
  201 491 188 432 188 416 c 0
  188 405 196 376 224 368 c 0
@@ -184780,7 +184787,7 @@ StartChar: bn_ss.half
 Encoding: 59868 -1 7479
 Width: 313
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 198 320 basechar 0
 AnchorPoint: "bng-stem" 281 351 basechar 0
 LayerCount: 2
@@ -184788,12 +184795,12 @@ Fore
 SplineSet
 100 398 m 0
  100 375 118 341 150 341 c 0
- 168.5 341 193.5 345 217 362 c 1
+ 168 341 193 345 217 362 c 1
  119 451 l 1
  112 441 100 421 100 398 c 0
 241 384 m 1
  254 400 262 417 262 437 c 0
- 262 450 256.107 493 214 493 c 0
+ 262 450 256 493 214 493 c 0
  195 493 166 487 146 473 c 1
  241 384 l 1
 49 396 m 0
@@ -184804,7 +184811,7 @@ SplineSet
  323 507 l 5
  294 507 l 1
  303 495 313 476 313 437 c 0
- 313 353 229.333 290 151 290 c 0
+ 313 353 229 290 151 290 c 0
  114 290 49 311 49 396 c 0
 EndSplineSet
 Validated: 3073
@@ -184818,7 +184825,7 @@ StartChar: bn_s.half
 Encoding: 59869 -1 7480
 Width: 450
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 318 355 basechar 0
 AnchorPoint: "bng-stem" 421 376 basechar 0
 LayerCount: 2
@@ -184831,9 +184838,9 @@ SplineSet
  191 366 160 330 119 330 c 0
  83 330 41 381 33 400 c 1
  66 439 l 1
- 76.5244 420.582 104.667 381 115 381 c 0
+ 77 421 105 381 115 381 c 0
  134 381 167 427 167 487 c 0
- 167 491 165.48 505.081 165 507 c 1
+ 167 491 165 505 165 507 c 1
  -10 507 l 1
  -10 558 l 1
  460 558 l 1
@@ -184842,7 +184849,7 @@ SplineSet
 246 507 m 1
  246 462 288 394 338 394 c 0
  379 394 399 418 399 455 c 0
- 399 463 391.003 479.999 373 508 c 1
+ 399 463 391 480 373 508 c 1
  246 507 l 1
 EndSplineSet
 Validated: 3073
@@ -184863,11 +184870,11 @@ Fore
 SplineSet
 287 390 m 0
  287 304 212 285 181 275 c 1
- 205.333 259.333 298.056 197.113 348 130 c 1
+ 205 259 298 197 348 130 c 1
  321 91 l 1
  240 180 148 242 45 276 c 1
  29 331 l 1
- 59.5276 321.233 86 316 120 316 c 0
+ 60 321 86 316 120 316 c 0
  218 316 236 375 236 390 c 0
  236 423 188 443 156 443 c 0
  126 443 103 429 103 408 c 0
@@ -184944,8 +184951,8 @@ SplineSet
  299 507 l 1
  99 507 l 1
  99 237 l 2
- 99 221 111.667 198 124 198 c 0
- 182.5 198 237 319.333 237 360 c 0
+ 99 221 112 198 124 198 c 0
+ 182 198 237 319 237 360 c 0
  237 382 227 387 216 387 c 0
  209 387 200 383 188 375 c 1
  166 415 l 1
@@ -184978,14 +184985,14 @@ SplineSet
  236 199 l 1
  193 270 103 305 62 312 c 1
  29 353 l 1
- 89.7734 408.249 90.0137 408.488 134 441 c 1
- 129.928 449.145 47.6699 507 39 507 c 2
+ 90 408 90 408 134 441 c 1
+ 130 449 48 507 39 507 c 2
  -10 507 l 1
  -10 558 l 1
 126 507 m 1
  144 496 176 472 197 437 c 1
- 157.256 406.289 138.918 388.926 94 348 c 1
- 156.627 334.355 202.206 305.486 236 263 c 1
+ 157 406 139 389 94 348 c 1
+ 157 334 202 305 236 263 c 1
  236 507 l 1
  126 507 l 1
 EndSplineSet
@@ -185009,7 +185016,7 @@ Fore
 SplineSet
 -194 -18 m 1
  -189 -9 -174 14 -144 14 c 0
- -131 14 -110.5 8 -100 -9 c 1
+ -131 14 -110 8 -100 -9 c 1
  -100 130 l 1
  -50 130 l 1
  -50 -135 l 1
@@ -185021,9 +185028,9 @@ SplineSet
  -197 -110 l 1
  -203 -89 -229 -15 -285 -15 c 0
  -336 -15 -346 -60 -346 -72 c 0
- -346 -108 -321.5 -119 -286 -120 c 1
+ -346 -108 -322 -119 -286 -120 c 1
  -270 -165 l 1
- -279.167 -167.833 -286.833 -169 -294 -169 c 0
+ -279 -168 -287 -169 -294 -169 c 0
  -356 -169 -397 -128 -397 -70 c 0
  -397 -11 -337 36 -291 36 c 0
  -269 36 -220 28 -194 -18 c 1
@@ -185041,7 +185048,7 @@ GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-stem" -50 129 mark 0
 AnchorPoint: "bng-rofola" -50 -123 basechar 0
-AnchorPoint: "bng-phala" -76 -244.7 basemark 0
+AnchorPoint: "bng-phala" -76 -245 basemark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -185075,7 +185082,7 @@ Width: 0
 GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-stem" -50 99 mark 0
-AnchorPoint: "bng-phala" -76 -154.7 basemark 0
+AnchorPoint: "bng-phala" -76 -155 basemark 0
 AnchorPoint: "bng-rofola" -50 -33 basechar 0
 LayerCount: 2
 Fore
@@ -185092,9 +185099,9 @@ SplineSet
  -383 -56 -379 -61 -372 -61 c 0
  -346 -61 -302 -30 -276 -30 c 0
  -232 -30 -198 -64 -198 -110 c 0
- -198 -148 -246.5 -202.5 -309 -252 c 1
+ -198 -148 -247 -202 -309 -252 c 1
  -351 -220 l 1
- -303 -182 -249 -127.5 -249 -108 c 0
+ -303 -182 -249 -128 -249 -108 c 0
  -249 -93 -250 -81 -276 -81 c 0
  -295 -81 -346 -112 -376 -112 c 0
  -412 -112 -434 -84 -434 -47 c 0
@@ -185107,7 +185114,7 @@ StartChar: bn_c1.half
 Encoding: 59826 -1 7488
 Width: 362
 GlyphClass: 4
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-round" 163 100 basechar 0
 AnchorPoint: "bng-stem" 280 150 basechar 0
 LayerCount: 2
@@ -185143,7 +185150,7 @@ LayerCount: 2
 Fore
 Refer: 1022 2509 N 1 0 0 1 570 0 2
 Refer: 993 2468 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 LCarets2: 1 0 
 EndChar
 
@@ -185153,22 +185160,22 @@ Width: 0
 GlyphClass: 4
 Flags: HMW
 AnchorPoint: "bng-rofola" -49 30 basechar 0
-AnchorPoint: "bng-phala" -76 -86.7 basemark 0
+AnchorPoint: "bng-phala" -76 -87 basemark 0
 AnchorPoint: "bng-stem" -50 196 mark 0
 LayerCount: 2
 Fore
 SplineSet
 -237 147 m 4
- -161 147 -114 90.2998 -100 69 c 5
+ -161 147 -114 90 -100 69 c 5
  -100 197 l 5
  -50 197 l 5
  -50 -107 l 5
  -100 -107 l 5
  -100 -40 l 6
- -100 10.2998 -190 96 -232 96 c 4
+ -100 10 -190 96 -232 96 c 4
  -271 96 -323 75 -323 -3 c 4
  -323 -60 -297 -79 -257 -79 c 4
- -253.562 -79 -250.125 -78.875 -247 -78 c 5
+ -254 -79 -250 -79 -247 -78 c 5
  -229 -126 l 5
  -237 -128 -252 -130 -267 -130 c 4
  -291 -130 -374 -105 -374 -3 c 4
@@ -185181,7 +185188,7 @@ EndChar
 StartChar: bn_ya_falaa
 Encoding: 59830 -1 7491
 Width: 241
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 LayerCount: 2
 Fore
@@ -185209,7 +185216,7 @@ EndChar
 StartChar: bn_ka.falaa
 Encoding: 59831 -1 7492
 Width: 385
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 LayerCount: 2
 Fore
@@ -185222,7 +185229,7 @@ SplineSet
  273 370 372 313 372 220 c 0
  372 138 297 127 280 124 c 1
  251 164 l 1
- 253.305 163.217 255.087 163 257 163 c 0
+ 253 163 255 163 257 163 c 0
  285 163 321 188 321 223 c 0
  321 274 260 301 203 301 c 1
  203 -20 l 1
@@ -185231,7 +185238,7 @@ SplineSet
  98 162 36 184 -42 184 c 2
  -45 184 l 1
  -78 232 l 1
- 7.08203 306.706 25.0605 327.211 149 370 c 1
+ 7 307 25 327 149 370 c 1
 226 507 m 1
  226 558 l 1
  395 558 l 1
@@ -185244,7 +185251,7 @@ EndChar
 StartChar: bn_kha.falaa
 Encoding: 59832 -1 7493
 Width: 463
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 AnchorPoint: "bng-phala" 388 -25 basemark 0
 AnchorPoint: "bng-rofola" 415 197 basechar 0
@@ -185264,13 +185271,13 @@ SplineSet
  363 13 l 1
  292 76 250 86 132 108 c 1
  100 169 l 1
- 173.05 169 260 200.89 260 251 c 0
+ 173 169 260 201 260 251 c 0
  260 268 250 286 245 294 c 1
- 214.7 235.8 147 220 119 220 c 0
+ 215 236 147 220 119 220 c 0
  37 220 0 266 0 362 c 1
  50 362 l 1
  50 292 86 271 111 271 c 0
- 178.7 271 203 330 203 345 c 0
+ 179 271 203 330 203 345 c 0
  203 354 195 383 192 397 c 1
  254 375 311 308 311 242 c 0
  311 178 253 154 206 141 c 1
@@ -185281,18 +185288,18 @@ EndChar
 StartChar: bn_kha.falaa_blw
 Encoding: 59833 -1 7494
 Width: 152
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
--135.664 163.994 m 1
- -141.148 155.613 -143 150.584 -143 140 c 0
+-136 164 m 1
+ -141 156 -143 151 -143 140 c 0
  -143 129 -131 121 -122 121 c 0
  -94 121 -67 133 -48 174 c 1
  -16 161 13 120 13 82 c 0
  13 27 -41 -6 -65 -11 c 1
- -17.667 -21.333 20 -33.333 52 -50 c 1
+ -18 -21 20 -33 52 -50 c 1
  52 644 l 1
  102 644 l 1
  102 558 l 1
@@ -185305,12 +185312,12 @@ SplineSet
  18 -83 -50 -55 -118 -44 c 1
  -148 6 l 1
  -76 17 -32 50 -32 80 c 0
- -32 88.667 -34.667 102.333 -42 111 c 1
+ -32 89 -35 102 -42 111 c 1
  -44 92 -75 70 -128 70 c 0
  -167 70 -194 110 -194 137 c 0
- -194 146.416 -192.466 155.219 -189.229 163.237 c 1
- -189.229 179.871 -173.77 190.455 -159.462 190.455 c 0
- -147.136 190.455 -135.664 182.601 -135.664 163.994 c 1
+ -194 146 -192 155 -189 163 c 1
+ -189 180 -173 190 -159 190 c 0
+ -147 190 -136 183 -136 164 c 1
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185318,7 +185325,7 @@ EndChar
 StartChar: bn_ba.falaa1
 Encoding: 59834 -1 7495
 Width: 309
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 AnchorPoint: "bng-vowel" 233 26 basechar 0
 AnchorPoint: "bng-phala" 236 0 basemark 0
@@ -185351,17 +185358,17 @@ EndChar
 StartChar: bn_ma.falaa_blw
 Encoding: 59835 -1 7496
 Width: 152
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 AnchorPoint: "bng-vowel" 77 26 basechar 0
-AnchorPoint: "bng-phala" 76 0.299999 basemark 0
+AnchorPoint: "bng-phala" 76 0 basemark 0
 AnchorPoint: "bng-rofola" 101 157 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 51 11 m 6
  51 68 -91 114 -134 114 c 0
- -169 114 -185 103.833 -185 89 c 0
+ -169 114 -185 104 -185 89 c 0
  -185 76 -161 66 -146 66 c 1
  -163 26 l 1
  -204 26 -236 55 -236 92 c 0
@@ -185389,36 +185396,36 @@ EndChar
 StartChar: bn_ma.falaa_side
 Encoding: 59836 -1 7497
 Width: 312
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
-AnchorPoint: "bng-phala" 235 0.299999 basemark 0
+AnchorPoint: "bng-phala" 235 0 basemark 0
 AnchorPoint: "bng-vowel" 236 52 basechar 0
 AnchorPoint: "bng-rofola" 262 197 basechar 0
 LayerCount: 2
 Fore
 SplineSet
--7 200 m 0
- -7 240 33 270 84 270 c 1
- 72 292 49 301 23 301 c 0
- -3 301 -29 294 -52 281 c 1
- -52 328 l 1
- -31 338 -5 345 23 345 c 0
- 68 345 115 325 136 263 c 1
- 143 260 202 213 212 200 c 1
- 212 507 l 1
- -8 507 l 1
- -8 558 l 1
- 322 558 l 1
- 322 507 l 1
- 262 507 l 1
- 262 0 l 1
- 212 0 l 1
- 212 111 l 2
- 212 133 139 223 75 223 c 0
- 55 223 44 204 44 198 c 0
- 44 181 57 171 83 166 c 1
- 66 126 l 1
- 25 126 -7 154 -7 200 c 0
+-7 200 m 4
+ -7 240 33 270 84 270 c 5
+ 72 292 49 301 23 301 c 4
+ -3 301 -29 294 -52 281 c 5
+ -52 328 l 5
+ -31 338 -5 345 23 345 c 4
+ 68 345 115 325 136 263 c 5
+ 143 260 202 213 212 200 c 5
+ 212 507 l 5
+ -8 507 l 5
+ -8 558 l 5
+ 322 558 l 5
+ 322 507 l 5
+ 262 507 l 5
+ 262 0 l 5
+ 212 0 l 5
+ 212 111 l 6
+ 212 133 139 223 75 223 c 4
+ 55 223 44 204 44 198 c 4
+ 44 181 57 171 83 166 c 5
+ 66 126 l 5
+ 25 126 -7 154 -7 200 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185426,7 +185433,7 @@ EndChar
 StartChar: bn_ma.stem_falaa_full
 Encoding: 59837 -1 7498
 Width: 248
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 AnchorPoint: "bng-phala" 173 -5 basemark 0
 AnchorPoint: "bng-vowel" 175 38 basechar 0
@@ -185448,15 +185455,15 @@ SplineSet
  148 -5 l 1
  148 69 l 2
  148 110 76 162 33 162 c 0
- 14.333 162 2 151.833 2 137 c 0
+ 14 162 2 152 2 137 c 0
  2 124 26 114 41 114 c 1
  24 74 l 1
  -17 74 -49 103 -49 140 c 0
- -49 161.973 -30.4111 189.472 0 203.624 c 1
+ -49 162 -30 190 0 204 c 1
  0 507 l 1
 50 507 m 1
- 50 212.729 l 1
- 74 212.729 128 188 148 158 c 1
+ 50 213 l 1
+ 74 213 128 188 148 158 c 1
  148 507 l 1
  50 507 l 1
 EndSplineSet
@@ -185466,7 +185473,7 @@ EndChar
 StartChar: bn_tha.falaa_UNUSED
 Encoding: 59838 -1 7499
 Width: 162
-GlyphClass: 4
+GlyphClass: 2
 Flags: HMW
 AnchorPoint: "bng-rofola" 112 197 basechar 0
 AnchorPoint: "bng-vowel" 89 8 basechar 0
@@ -185496,9 +185503,9 @@ SplineSet
  -28 297 -65 306 -90 306 c 0
  -151 306 -163 269 -163 259 c 0
  -163 239 -151 238 -144 238 c 0
- -141.545 238 -137.182 238.818 -135 240 c 1
+ -142 238 -137 239 -135 240 c 1
  -135 197 l 1
- -205.368 197 -214 238.603 -214 256 c 0
+ -205 197 -214 239 -214 256 c 0
  -214 342 -115 358 -88 358 c 0
  6 358 23 265 23 242 c 0
 EndSplineSet
@@ -185570,7 +185577,7 @@ StartChar: bn_b_proud
 Encoding: 59871 -1 7502
 Width: 379
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-rofola" 330 227 basechar 0
 AnchorPoint: "bng-vowel" 303 26 basechar 0
 LayerCount: 2
@@ -185719,7 +185726,7 @@ Ligature2: "'cjct' conjunct pair-half in Bengali" bn_s.half tha_bng
 Ligature2: "'pres' conjunct half in Bengali" bn_s.half tha_bng
 EndChar
 
-StartChar: bn_k_ssa.top
+StartChar: bn_k_ssa.half
 Encoding: 59901 -1 7506
 Width: 664
 GlyphClass: 2
@@ -185773,6 +185780,7 @@ SplineSet
  395 507 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'half' half forms in Bengali-1" bn_k_ssa.akhn hasanta_bng
 EndChar
 
 StartChar: overline250
@@ -186521,13 +186529,13 @@ Encoding: 59829 -1 7553
 Width: 0
 Flags: HMW
 AnchorPoint: "bng-stem" -214 157 mark 0
-AnchorPoint: "bng-phala" -263 -167.7 basemark 0
+AnchorPoint: "bng-phala" -263 -168 basemark 0
 AnchorPoint: "bng-rofola" -62 -73 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 -372 50 m 4
- -372 83 -336.994 143.994 -318 157 c 5
+ -372 83 -337 144 -318 157 c 5
  -214 157 l 5
  -200 97 -76 84 -23 84 c 5
  -58 12 -62 -33 -62 -82 c 4
@@ -186535,7 +186543,7 @@ SplineSet
  -81 -213 l 5
  -101 -160 -113 -118 -113 -79 c 4
  -113 -37 -110 -1 -96 42 c 5
- -147 47 -234.5 61.5 -269 144 c 5
+ -147 47 -235 62 -269 144 c 5
  -307 101 -320 74 -320 36 c 4
  -320 15 -304 5 -284 5 c 4
  -267 5 -241 15 -204 36 c 5
@@ -186558,7 +186566,7 @@ Width: 0
 Flags: HMW
 AnchorPoint: "bng-vowel" -85 -99 basechar 0
 AnchorPoint: "bng-stem" -60 200 mark 0
-AnchorPoint: "bng-phala" -86 -98.7 basemark 0
+AnchorPoint: "bng-phala" -86 -99 basemark 0
 AnchorPoint: "bng-rofola" -60 147 basechar 0
 LayerCount: 2
 Fore
@@ -186598,14 +186606,14 @@ AnchorPoint: "bng-round" 262 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 7468 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_dh.top
 Encoding: 59794 -1 7556
-Width: 333
+Width: 332
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 282 558 basechar 0
 AnchorPoint: "bng-stem" 282 201 basechar 0
 AnchorPoint: "bng-round" 232 215 basechar 0
@@ -186617,22 +186625,22 @@ SplineSet
  94 474 103 463 146 452 c 1
  232 500 l 1
  232 558 l 1
- 343 558 l 1
- 343 507 l 1
+ 342 558 l 1
+ 342 507 l 1
  282 507 l 1
  282 160 l 1
  232 160 l 1
  232 216 l 1
  173 275 130 312 50 336 c 1
  30 366 l 1
- 54 387.667 76.3333 405 100 423 c 1
+ 54 388 76 405 100 423 c 1
  72 430 43 455 43 496 c 0
  43 533 73 558 119 558 c 0
  147 558 164 534 169 523 c 1
  141 486 l 1
  134 502 126 507 115 507 c 0
 232 444 m 1
- 176 425 146.109 403.095 100 363 c 1
+ 176 425 146 403 100 363 c 1
  168 333 188 321 232 281 c 1
  232 444 l 1
 EndSplineSet
@@ -186643,39 +186651,39 @@ StartChar: bn_n.top
 Encoding: 59795 -1 7557
 Width: 355
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 305 558 basechar 0
-AnchorPoint: "bng-stem" 304 201 basechar 0
-AnchorPoint: "bng-round" 255 200 basechar 0
+AnchorPoint: "bng-stem" 305 201 basechar 0
+AnchorPoint: "bng-round" 256 200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-254 268 m 1
- 223 329 186 386 140 386 c 0
+255 268 m 1
+ 224 329 178.5 386 140 386 c 0
  113 386 95 366 95 340 c 0
  95 331 102 319 117 304 c 1
  84 276 l 1
  57 295 44 318 44 345 c 0
  44 423 121 438 141 438 c 0
- 176 438 214 412 254 361 c 1
- 254 507 l 1
+ 176 438 215 412 255 361 c 1
+ 255 507 l 1
  -10 507 l 1
  -10 558 l 1
  365 558 l 1
  365 507 l 1
- 304 507 l 1
- 304 177 l 1
- 254 177 l 1
- 254 268 l 1
+ 305 507 l 1
+ 305 177 l 1
+ 255 177 l 1
+ 255 268 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: bn_th.top
 Encoding: 59792 -1 7558
 Width: 374
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 324 558 basechar 0
 AnchorPoint: "bng-stem" 324 290 basechar 0
 AnchorPoint: "bng-round" 269 250 basechar 0
@@ -186690,21 +186698,21 @@ SplineSet
  324 507 l 1
  324 210 l 1
  274 210 l 1
- 274 250.507 l 1
- 235.627 281.503 173.974 308.808 71 324 c 1
+ 274 251 l 1
+ 236 282 174 309 71 324 c 1
  39 379 l 1
  154 394 178 431 178 467 c 0
  178 490 157 507 124 507 c 0
  95 507 71 497 71 482 c 0
  71 471 81 469 89 469 c 0
- 89.7949 469 95.5596 470.28 97 471 c 1
+ 90 469 96 470 97 471 c 1
  97 418 l 1
  71 418 l 2
  49 418 20 441 20 474 c 0
  20 523 66 558 126 558 c 0
  183 558 229 520 229 462 c 0
  229 398 169 364 147 360 c 1
- 193.948 349.874 225.36 340.596 274 318.123 c 1
+ 194 350 225 340 274 318 c 1
  274 646 l 1
 EndSplineSet
 Validated: 3073
@@ -186740,7 +186748,7 @@ SplineSet
  20 451 l 1
 84 468 m 1
  163 468 176 405 178 388 c 1
- 207.781 414.318 234.614 440.499 266 466 c 1
+ 208 414 235 440 266 466 c 1
  229 497 199 513 176 513 c 0
  133 513 103 498 84 468 c 1
 EndSplineSet
@@ -186757,27 +186765,27 @@ AnchorPoint: "bng-round" 232 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 7472 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_k.top
 Encoding: 59776 -1 7561
 Width: 438
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem" 285 284 basechar 0
 AnchorPoint: "bng-round" 235 253 basechar 0
 LayerCount: 2
 Fore
 Refer: 7454 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_kh.top
 Encoding: 59777 -1 7562
 Width: 361
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 310 558 basechar 0
 AnchorPoint: "bng-stem" 310 241 basechar 0
 AnchorPoint: "bng-round" 281 200 basechar 0
@@ -186816,7 +186824,7 @@ StartChar: bn_g.top
 Encoding: 59778 -1 7563
 Width: 462
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 412 558 basechar 0
 AnchorPoint: "bng-round" 362 210 basechar 0
 AnchorPoint: "bng-stem" 412 241 basechar 0
@@ -186853,7 +186861,7 @@ StartChar: bn_gh.top
 Encoding: 59779 -1 7564
 Width: 336
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 287 558 basechar 0
 AnchorPoint: "bng-rofola" 287 309 basechar 0
 AnchorPoint: "bng-stem" 287 280 basechar 0
@@ -186864,8 +186872,8 @@ SplineSet
 128 447 m 0
  137 447 160 448 173 470 c 1
  197 430 l 1
- 170.403 403.403 145.733 379.733 120 354 c 1
- 166.825 337.416 193.508 333.562 236 285 c 1
+ 170 403 146 380 120 354 c 1
+ 167 337 194 334 236 285 c 1
  236 507 l 1
  87 507 l 1
  82 504 73 496 73 482 c 0
@@ -186882,8 +186890,8 @@ SplineSet
  236 206 l 1
  208 270 139 315 69 325 c 1
  58 354 l 1
- 111 409.002 l 1
- 66.333 409.002 22 435.459 22 477 c 0
+ 111 409 l 1
+ 66 409 22 435 22 477 c 0
 EndSplineSet
 Validated: 3073
 EndChar
@@ -186898,7 +186906,7 @@ AnchorPoint: "bng-round" 272 160 basechar 0
 LayerCount: 2
 Fore
 Refer: 7458 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_c.top
@@ -186911,7 +186919,7 @@ AnchorPoint: "bng-round" 152 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 7459 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_ch.top
@@ -186930,22 +186938,22 @@ SplineSet
  398 507 l 1
  111 507 l 1
  111 486 l 1
- 128 458 137.862 442 196 442 c 0
- 280.8 442 332 437.2 332 344 c 0
+ 128 458 138 442 196 442 c 0
+ 281 442 332 437 332 344 c 0
  332 270 260 235 234 227 c 1
- 318.808 184.596 313.2 193.561 388 126 c 1
+ 319 185 313 194 388 126 c 1
  364 75 l 1
- 331.906 113.334 231.06 200 98 200 c 1
+ 332 113 231 200 98 200 c 1
  98 251 l 1
  149 251 l 1
  231 256 281 308 281 346 c 0
- 281 385.541 257.614 384.877 237 389 c 1
+ 281 386 258 385 237 389 c 1
  231 329 175 291 130 291 c 0
  114 291 60 311 60 340 c 2
  60 507 l 1
  -10 507 l 1
 153 398 m 2
- 135.333 398 124 408 110 425 c 1
+ 135 398 124 408 110 425 c 1
  110 359 l 1
  115 351 122 343 131 343 c 0
  161 343 185 361 185 385 c 0
@@ -186959,7 +186967,7 @@ StartChar: bn_jh.top
 Encoding: 59784 -1 7568
 Width: 429
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 378 558 basechar 0
 AnchorPoint: "bng-stem" 267 201 basechar 0
 AnchorPoint: "bng-round" 245 190 basechar 0
@@ -187007,7 +187015,7 @@ AnchorPoint: "bng-round" 232 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 7461 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_ny.top
@@ -187020,7 +187028,7 @@ AnchorPoint: "bng-round" 322 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 7463 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_tt.top
@@ -187033,7 +187041,7 @@ AnchorPoint: "bng-round" 172 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 7464 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_tth.top
@@ -187046,7 +187054,7 @@ AnchorPoint: "bng-round" 142 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 7465 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_dd.top
@@ -187059,7 +187067,7 @@ AnchorPoint: "bng-round" 242 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 7482 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_ddh.top
@@ -187072,14 +187080,14 @@ AnchorPoint: "bng-round" 132 190 basechar 0
 LayerCount: 2
 Fore
 Refer: 7483 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_nn.top
 Encoding: 59790 -1 7575
 Width: 426
 GlyphClass: 2
-Flags: MW
+Flags: HMW
 AnchorPoint: "bng-stem-abv" 376 558 basechar 0
 AnchorPoint: "bng-stem" 376 285 basechar 0
 AnchorPoint: "bng-round" 273 260 basechar 0
@@ -187087,7 +187095,7 @@ LayerCount: 2
 Fore
 SplineSet
 326 382 m 1
- 311.5 418 257 507 185 507 c 0
+ 312 418 257 507 185 507 c 0
  128 507 63 477 63 421 c 0
  63 382 85 344 130 344 c 0
  150 344 163 346 173 349 c 1
@@ -187119,7 +187127,7 @@ AnchorPoint: "bng-round" 339 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 7476 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_b.top
@@ -187144,8 +187152,8 @@ SplineSet
  259 160 l 1
  209 160 l 1
  209 208 l 2
- 209 245.363 105 338 47 338 c 0
- 43.167 338 40.833 338 37 337 c 1
+ 209 245 105 338 47 338 c 0
+ 43 338 41 338 37 337 c 1
  13 376 l 1
 85 369 m 1
  133 366 197 312 209 287 c 1
@@ -187166,7 +187174,7 @@ AnchorPoint: "bng-round" 242 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 7474 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_m.top
@@ -187179,7 +187187,7 @@ AnchorPoint: "bng-round" 302 310 basechar 0
 LayerCount: 2
 Fore
 Refer: 7475 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_y.top
@@ -187192,7 +187200,7 @@ AnchorPoint: "bng-round" 236 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 7484 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: bn_l.top
@@ -187207,7 +187215,7 @@ LayerCount: 2
 Fore
 SplineSet
 387 249 m 2
- 387 327.745 345.233 403 304 403 c 0
+ 387 328 345 403 304 403 c 0
  288 403 259 392 259 378 c 0
  259 368 273 345 280 339 c 1
  242 310 l 1
@@ -187219,15 +187227,15 @@ SplineSet
  11 371 36 460 134 460 c 0
  152 460 183 453 221 413 c 1
  236 437 279 454 305 454 c 0
- 334.355 454 363.505 441.083 387 415.004 c 1
+ 334 454 364 441 387 415 c 1
  387 507 l 1
  -10 507 l 1
  -10 558 l 1
  497 558 l 1
  497 507 l 1
  437 507 l 1
- 437 170 l 5
- 387 170 l 5
+ 437 170 l 1
+ 387 170 l 1
  387 249 l 2
 EndSplineSet
 Validated: 3073
@@ -187247,21 +187255,21 @@ SplineSet
 15 558 m 2
  107 558 154 539 192 459 c 1
  218 541 255 557 289 557 c 0
- 325 557 362 529 385 477 c 1
- 385 645 l 1
- 435 645 l 1
- 435 558 l 1
+ 325 557 362 529 385 477 c 5
+ 385 645 l 5
+ 435 645 l 5
+ 435 558 l 5
  495 558 l 5
  495 507 l 5
- 435 507 l 1
- 435 160 l 1
- 385 160 l 1
- 385 366 l 1
+ 435 507 l 5
+ 435 160 l 5
+ 385 160 l 5
+ 385 366 l 5
  357 473 314 506 288 506 c 0
  258 506 235 448 235 416 c 0
  235 383 251 338 284 338 c 0
- 296 338 324 344 331 355 c 1
- 351 312 l 1
+ 296 338 324 344 331 355 c 5
+ 351 312 l 5
  345 302 316 287 285 287 c 0
  255 287 217 307 199 346 c 1
  193 318 151 279 109 279 c 0
@@ -187289,25 +187297,25 @@ LayerCount: 2
 Fore
 SplineSet
 134 442 m 1
- 105.5 467 93.5 476 41 507 c 1
+ 106 467 93 476 41 507 c 1
  -10 507 l 1
  -10 558 l 1
  346 558 l 1
  346 507 l 1
  286 507 l 1
- 286 150 l 1
- 236 150 l 1
- 236 196 l 1
+ 286 150 l 5
+ 236 150 l 5
+ 236 196 l 5
  194 254 157 293 61 311 c 1
  29 353 l 1
- 61.5 383 75 395 134 442 c 1
+ 61 383 75 395 134 442 c 1
 236 344 m 1
- 222 363 194.5 397 172 416 c 1
+ 222 363 194 397 172 416 c 1
  131 386 116 368 95 349 c 1
  172 323 191 311 236 264 c 1
  236 344 l 1
 126 507 m 1
- 177.5 470.5 193 458.5 236 413 c 1
+ 178 471 193 459 236 413 c 1
  236 507 l 1
  126 507 l 1
 EndSplineSet
@@ -187330,7 +187338,7 @@ SplineSet
  289 427 313 408 340 370 c 1
  340 507 l 1
  109 507 l 1
- 177 487.5 207.516 442.832 222 403 c 1
+ 177 487 208 443 222 403 c 1
 177 361 m 0
  166 442 142 454 33 479 c 1
  33 507 l 1
@@ -187346,7 +187354,7 @@ SplineSet
  215 376 196 236 124 236 c 0
  88 236 55 283 29 326 c 1
  66 353 l 1
- 78.2752 332.541 108 287 121 287 c 0
+ 78 333 108 287 121 287 c 0
  144 287 174 343 177 361 c 0
 EndSplineSet
 Validated: 3073
@@ -187362,7 +187370,7 @@ AnchorPoint: "bng-round" 282 130 basechar 0
 LayerCount: 2
 Fore
 Refer: 7481 -1 N 1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 EndChars
 EndSplineFont

@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1504980354
+ModificationTime: 1504998960
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -86,7 +86,7 @@ Lookup: 1 0 0 "'cjct' va-work-around in Bengali for Sanskrit"  {"'cjct' va-work-
 Lookup: 1 0 0 "'init' initial vowel forms in Bengali"  {"'init' initial e,ai in Bengali-1"  } ['init' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pres' conjuncts in Bengali for Sanskrit"  {"'pres' conjunct triple in Bengali for Sanskrit"  "'pres' conjunct pair in Bengali for Sanskrit"  "'pres' work-around in Bengali for Sanskrit"  } ['pres' ('beng' <'SAN ' > 'bng2' <'SAN ' > ) ]
 Lookup: 4 0 0 "'pres' conjuncts in Bengali"  {"'pres' conjunct trio in Bengali-3"  "'pres' conjunct rofola triple in Bengali"  "'pres' conjunct rofola pair in Bengali"  "'pres' conjunct blwf in Bengali"  "'pres' conjunct half in Bengali"  "'pres' conjunct phala in Bengali"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
-Lookup: 6 0 0 "'pres' blwf chain in Bengali"  {"'pres' blwf nna chain in Bengali-1"  "'pres' blwf after ma chain in Bengali"  "'pres' blwf after ny chain in Bengali"  "'pres' blwf after ga chain in Bengali"  "'pres' blwf after pa chain in Bengali"  "'pres' blwf after la chain in Bengali"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
+Lookup: 6 0 0 "'pres' blwf chain in Bengali"  {"'pres' blwf nna chain in Bengali-1"  "'pres' blwf after ma chain in Bengali"  "'pres' blwf after ny chain in Bengali"  "'pres' blwf after ga chain in Bengali"  "'pres' blwf after pa chain in Bengali"  "'pres' blwf after la chain in Bengali"  "'pres' blwf after ka_ssa chain in Bengali"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'pres' blwf chain in Bengali for Sanskrit"  {"'pres' blwf tha,nna chain in Bengali for Sanskrit"  } ['pres' ('beng' <'SAN ' > 'bng2' <'SAN ' > ) ]
 Lookup: 6 0 0 "'pres' half-blwf chain in Benglai"  {"'pres' half-blwf before nna chain in Benglai"  "'pres' half-blwf before ra chain in Benglai"  "'pres' half-blwf before la chain in Benglai"  "'pres' half-blwf before ta chain in Benglai"  "'pres' half-blwf before ba chain in Benglai"  "'pres' half-blwf before na chain in Benglai"  "'pres' half-blwf full-tta chain in Benglai"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'pres' top forms in Bengali"  {"'pres' top form ga in Bengali"  "'pres' top form nna in Bengali"  "'pres' top form to proud ba in Bengali"  "'pres' top form pa in Bengali"  "'pres' top form sa in Bengali"  "'pres' top form la in Bengali"  "'pres' top forms in Bengali-1"  "'pres' above-falaa chain in Bengali-1"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
@@ -704,6 +704,13 @@ ChainSub2: class "'pres' blwf tha,nna chain in Bengali for Sanskrit"  3 3 1 2
  1
   SeqLookup: 0 "subst. below form in Bengali" 
 EndFPST
+ChainSub2: coverage "'pres' blwf after ka_ssa chain in Bengali"  0 0 0 1
+ 1 1 0
+  Coverage: 7 nna_bng
+  BCoverage: 13 bn_k_ssa.half
+ 1
+  SeqLookup: 0 "subst. below form in Bengali" 
+EndFPST
 ChainSub2: coverage "'pres' blwf after la chain in Bengali"  0 0 0 1
  1 1 0
   Coverage: 20 ka_bng ga_bng pa_bng
@@ -1058,7 +1065,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60112 16 11
+WinInfo: 59760 16 11
 BeginPrivate: 8
 UniqueID 7 5020908
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -60555,6 +60562,7 @@ SplineSet
  -343.995 -47.5258 -348.769 -31.0515 -348.769 -13.8423 c 0
  -348.769 59.9428 -274.234 109 -199.831 109 c 0
 EndSplineSet
+Validated: 1
 Ligature2: "'blwf' below-base forms in Bengali-1" ta_bng hasanta_bng
 Ligature2: "'blwf' below-base forms in Bengali2-1" hasanta_bng ta_bng
 LCarets2: 1 0 
@@ -60887,6 +60895,7 @@ SplineSet
  326 431 l 1
  302 431 180 377 168 367 c 1
 EndSplineSet
+Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_k.top
 Ligature2: "'half' half forms in Bengali-1" ka_bng hasanta_bng
 LCarets2: 1 0 
@@ -61702,6 +61711,7 @@ SplineSet
  402 347 l 1
  405 343 409 341 414 341 c 0
 EndSplineSet
+Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_ph.top
 Ligature2: "'half' half forms in Bengali-1" pha_bng hasanta_bng
 LCarets2: 1 0 
@@ -61736,6 +61746,7 @@ SplineSet
  303 425 l 1
  252 413 188 386 167 369 c 1
 EndSplineSet
+Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_b.top
 Substitution2: "subst. full form for half in Bengali-1" bn_b_proud
 Ligature2: "'half' half forms in Bengali-1" ba_bng hasanta_bng
@@ -61778,6 +61789,7 @@ SplineSet
  513 507 l 1
  98 507 l 1
 EndSplineSet
+Validated: 33
 Substitution2: "subst. top forms for half in Bengali" bn_bh.top
 Ligature2: "'half' half forms in Bengali-1" bha_bng hasanta_bng
 LCarets2: 1 0 
@@ -61821,6 +61833,7 @@ SplineSet
  465 312 381 294 361 294 c 0
  281 294 241 376 203 376 c 0
 EndSplineSet
+Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_m.top
 Ligature2: "'half' half forms in Bengali-1" ma_bng hasanta_bng
 LCarets2: 1 0 
@@ -61856,6 +61869,7 @@ SplineSet
  344 507 l 1
  234 507 l 1
 EndSplineSet
+Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_y.top
 Ligature2: "'half' half forms in Bengali-1" ya_bng hasanta_bng
 LCarets2: 1 0 
@@ -62300,7 +62314,7 @@ SplineSet
  -165 75 -145 66 -131 66 c 1
  -157 26 l 1
  -193 26 -216 48 -216 78 c 0
- -216 122 -167 165 -86 165 c 4
+ -216 122 -167 165 -86 165 c 0
  -44 165 52 133 74 100 c 1
  168 507 l 1
  102 507 l 1
@@ -62318,42 +62332,45 @@ Substitution2: "subst. falaa form side in Bengali-1" bn_ma.falaa_side
 Substitution2: "subst. falaa form full in Bengali-1" bn_ma.stem_falaa_full
 Ligature2: "'blwf' below-base forms in Bengali-1" ma_bng hasanta_bng
 Ligature2: "'blwf' below-base forms in Bengali2-1" hasanta_bng ma_bng
+LCarets2: 1 0 
 EndChar
 
 StartChar: bn_ma.falaa_side
 Encoding: 59815 -1 2964
-Width: 150
+Width: 312
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "bng-phala" 83.706 33.2998 basemark 0
-AnchorPoint: "bng-vowel" 72.9424 -2 basechar 0
-AnchorPoint: "bng-rofola" 143 197 basechar 0
+AnchorPoint: "bng-rofola" 297 197 basechar 0
+AnchorPoint: "bng-vowel" 238 52 basechar 0
+AnchorPoint: "bng-phala" 225 0 basemark 0
 LayerCount: 2
 Fore
 SplineSet
--127 181 m 0
- -127 234.614 -75.3633 270 -19 270 c 1
- -31 303 -42 326 -54 339 c 1
- -15 371 l 1
- 14 338 28 301 32 263 c 1
- 38 260 87 213 94 200 c 1
- 159 507 l 1
- 40 507 l 1
- 51 558 l 1
- 288 558 l 1
- 277 507 l 1
- 210 507 l 1
- 102 0 l 1
- 51 0 l 1
- 75 111 l 2
- 75.2157 111.949 76.3213 117.025 76.3213 118.215 c 0
- 76.3213 144.599 23.2387 223 -38 223 c 0
- -60.9242 223 -75 202.815 -75 192 c 0
- -75 179 -64 170 -42 166 c 1
- -67 126 l 1
- -102 126 -127 146 -127 181 c 0
+136 270 m 1
+ 129 292 108 301 82 301 c 0
+ 56 301 29 294 3 281 c 1
+ 14 328 l 1
+ 37 338 65 345 93 345 c 0
+ 138 345 180 325 187 263 c 1
+ 193 260 241 213 248 200 c 1
+ 319 507 l 1
+ 99 507 l 1
+ 111 558 l 1
+ 441 558 l 1
+ 429 507 l 1
+ 369 507 l 1
+ 252 0 l 1
+ 202 0 l 1
+ 228 111 l 2
+ 228 112 228 113 228 114 c 0
+ 228 141 177 223 116 223 c 0
+ 93 223 79 204 79 192 c 0
+ 79 179 89 170 111 166 c 1
+ 85 126 l 1
+ 50 126 27 146 27 180 c 0
+ 27 235 79 270 136 270 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ya_falaa
@@ -62386,40 +62403,40 @@ EndChar
 
 StartChar: bn_ma.stem_falaa_full
 Encoding: 59818 -1 2966
-Width: 297
+Width: 256
 GlyphClass: 2
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-148.767 507 m 1
- 97.7666 507 l 1
- 108.606 558 l 1
- 159.606 558 l 1
- 175.974 635 l 1
- 226.974 635 l 1
- 210.606 558 l 1
- 425.606 558 l 1
- 414.767 507 l 1
- 347.767 507 l 1
- 238.938 -5 l 1
- 187.938 -5 l 1
- 203.666 69 l 2
- 204.234 71.6743 204.507 74.3954 204.507 77.1458 c 0
- 204.507 116.562 148.63 162 108.435 162 c 0
- 90.6542 162 71.8819 151.344 71.8819 134.761 c 0
- 71.8819 122.869 92.105 114 106.231 114 c 1
- 80.7295 74 l 1
- 44.6769 74 20.3504 96.4225 20.3504 126.99 c 0
- 20.3504 159.976 47.0763 187.868 84.2813 203.624 c 1
- 148.767 507 l 1
-199.767 507 m 1
- 137.217 212.729 l 1
- 174.899 210.122 201.078 188.876 222.584 158 c 1
- 296.767 507 l 1
- 199.767 507 l 1
+107.767 507 m 1
+ 56.7666 507 l 1
+ 67.6064 558 l 1
+ 118.606 558 l 1
+ 134.974 635 l 1
+ 185.974 635 l 1
+ 169.606 558 l 1
+ 384.606 558 l 1
+ 373.767 507 l 1
+ 306.767 507 l 1
+ 197.938 -5 l 1
+ 146.938 -5 l 1
+ 162.666 69 l 2
+ 163.234 71.6738 163.507 74.3955 163.507 77.1455 c 0
+ 163.507 116.562 107.63 162 67.4346 162 c 0
+ 49.6543 162 30.8818 151.344 30.8818 134.761 c 0
+ 30.8818 122.869 51.1055 114 65.2314 114 c 1
+ 39.7295 74 l 1
+ 3.67676 74 -20.6494 96.4229 -20.6494 126.99 c 0
+ -20.6494 159.976 6.07617 187.868 43.2812 203.624 c 1
+ 107.767 507 l 1
+158.767 507 m 1
+ 96.2168 212.729 l 1
+ 133.899 210.122 160.078 188.876 181.584 158 c 1
+ 255.767 507 l 1
+ 158.767 507 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_k_ssa.akhn
@@ -62479,7 +62496,7 @@ SplineSet
  503 507 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "subst. top forms for lig in Bengali" bn_k_ssa.top
+Substitution2: "subst. top forms for lig in Bengali" bn_k_ssa.half
 Ligature2: "'akhn' akhand in Bengali-1" ka_bng ssa_bng hasanta_bng
 Ligature2: "'akhn' akhand in Bengali2-1" ka_bng hasanta_bng ssa_bng
 EndChar
@@ -62927,6 +62944,7 @@ SplineSet
  236 266 210 302 210 339 c 0
  210 412 276 479 301 507 c 1
 EndSplineSet
+Validated: 1
 Ligature2: "'pres' conjunct half in Bengali" bn_ng.half kha_bng
 Ligature2: "'cjct' conjunct pair-half in Bengali" bn_ng.half kha_bng
 LCarets2: 1 0 
@@ -81831,6 +81849,7 @@ EndChar
 StartChar: bn_kha.falaa_blw
 Encoding: 59810 -1 3775
 Width: 152
+GlyphClass: 2
 Flags: HW
 LayerCount: 2
 Fore
@@ -82063,6 +82082,7 @@ SplineSet
  -288.742 124 -325.243 137.522 -325.243 187.982 c 4
  -325.243 241.745 -274.706 307.961 -242.506 327 c 5
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_d_d_ya_trad
@@ -82257,9 +82277,10 @@ Ligature2: "'cjct' conjunct pair-half in Bengali" bn_ny.half nya_bng
 LCarets2: 1 0 
 EndChar
 
-StartChar: bn_k_ssa.top
+StartChar: bn_k_ssa.half
 Encoding: 59820 -1 3785
 Width: 664
+GlyphClass: 2
 Flags: HW
 HStem: 209 51<516.158 578.177> 367 51<339.215 395 446 553.028> 412 49<151.039 206.625> 507 51<-10 90.5659 130 256 312 395 446 674>
 VStem: 45 53<366 408.839> 169 44<227.843 239.651> 251 49<291.755 369.655> 256 56<444.462 507> 395 51<112 157.231 201 367 418 507> 581 51<262.185 341.654>
@@ -82315,6 +82336,7 @@ SplineSet
  502.05 507 l 5
 EndSplineSet
 Validated: 1
+Ligature2: "'half' half forms in Bengali-1" bn_k_ssa.akhn hasanta_bng
 EndChar
 
 StartChar: bn_t.half
@@ -82346,6 +82368,7 @@ SplineSet
  618.05 507 l 1
  97.0498 507 l 1
 EndSplineSet
+Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_t.top
 Ligature2: "'half' half forms in Bengali-1" ta_bng hasanta_bng
 LCarets2: 1 0 
@@ -82627,6 +82650,7 @@ SplineSet
  308.641 254 285.564 258 275.564 258 c 0
  249.778 258 222.426 244.83 222.426 219.874 c 0
 EndSplineSet
+Validated: 1
 Ligature2: "'hlig' traditional vowel ligs in Bengali" sa_bng ukaar_bng
 Ligature2: "'blws' vowel in Bengali for Sanskrit" sa_bng ukaar_bng
 LCarets2: 1 0 
@@ -82641,6 +82665,7 @@ AnchorPoint: "bng-round" 235 253 basechar 0
 LayerCount: 2
 Fore
 Refer: 2926 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_kh.top
@@ -82679,6 +82704,7 @@ SplineSet
  201.508 470 226.279 495 266.67 553 c 5
  292.129 541.587 318.001 508.591 318.001 474.992 c 4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_g.top
@@ -82715,6 +82741,7 @@ SplineSet
  120.351 348 105.672 362.12 105.672 389.879 c 4
  105.672 444.276 174.872 561 300.517 561 c 4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_gh.top
@@ -82752,6 +82779,7 @@ SplineSet
  155.451 409.002 120.637 430.191 120.637 464.419 c 4
  120.637 483.888 128.134 495.693 142.05 507 c 5
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_ng.top
@@ -82763,6 +82791,7 @@ AnchorPoint: "bng-round" 272 160 basechar 0
 LayerCount: 2
 Fore
 Refer: 2930 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_c.top
@@ -82774,45 +82803,48 @@ AnchorPoint: "bng-round" 152 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 2931 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_ch.top
 Encoding: 60118 -1 3799
 Width: 388
 Flags: HW
-AnchorPoint: "bng-stem" 366.861 151 basechar 0
-AnchorPoint: "bng-round" 279.704 120 basechar 0
+AnchorPoint: "bng-stem" 367 151 basechar 0
+AnchorPoint: "bng-round" 280 120 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-97.0498 507 m 5
- 108.824 558 l 5
- 516.824 558 l 5
- 505.05 507 l 5
- 218.05 507 l 5
- 213.202 486 l 5
- 223.737 458 229.905 442 288.044 442 c 4
- 372.844 442 422.936 437.2 401.419 344 c 4
- 384.334 270 304.254 235 276.407 227 c 5
- 351.426 184.596 347.887 193.561 407.09 126 c 5
- 371.315 75 l 5
- 348.071 113.334 267.233 200 134.174 200 c 5
- 145.948 251 l 5
- 196.948 251 l 5
- 280.103 256 342.107 308 350.881 346 c 4
- 360.009 385.541 336.47 384.877 316.808 389 c 5
- 296.956 329 232.183 291 187.183 291 c 4
- 171.183 291 121.8 311 128.495 340 c 6
- 167.05 507 l 5
- 97.0498 507 l 5
-234.886 398 m 6
- 217.219 398 208.194 408 198.119 425 c 5
- 182.882 359 l 5
- 186.035 351 191.188 343 200.188 343 c 4
- 230.188 343 258.344 361 263.884 385 c 4
- 265.5 392 262.654 397 254.886 398 c 5
- 234.886 398 l 6
+97 507 m 5
+ 109 558 l 5
+ 517 558 l 5
+ 505 507 l 5
+ 218 507 l 5
+ 213 486 l 5
+ 224 458 230 442 288 442 c 4
+ 360 442 406 439 406 382 c 4
+ 406 287 313 238 276 227 c 5
+ 351 185 348 194 407 126 c 5
+ 371 75 l 5
+ 348 113 267 200 134 200 c 5
+ 146 251 l 5
+ 197 251 l 5
+ 284 256 353 309 353 361 c 4
+ 353 385 334 386 317 389 c 5
+ 297 329 232 291 187 291 c 4
+ 172 291 128 309 128 335 c 4
+ 128 337 128 338 128 340 c 6
+ 167 507 l 5
+ 97 507 l 5
+235 398 m 6
+ 217 398 208 408 198 425 c 5
+ 183 359 l 5
+ 186 351 191 343 200 343 c 4
+ 228 343 264 371 264 389 c 4
+ 264 394 261 397 255 398 c 5
+ 235 398 l 6
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_j.top
@@ -82824,6 +82856,7 @@ AnchorPoint: "bng-round" 232 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 2934 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_jh.top
@@ -82865,6 +82898,7 @@ SplineSet
  248.574 362 270.108 321 276.799 298 c 5
  309.352 439 l 5
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_ny.top
@@ -82876,6 +82910,7 @@ AnchorPoint: "bng-round" 312 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 2936 -1 S 1 0 0 1 -10 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_tt.top
@@ -82887,6 +82922,7 @@ AnchorPoint: "bng-round" 172 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 2937 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_tth.top
@@ -82898,6 +82934,7 @@ AnchorPoint: "bng-round" 142 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 2938 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_dd.top
@@ -82909,6 +82946,7 @@ AnchorPoint: "bng-round" 242 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 2939 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_ddh.top
@@ -82920,6 +82958,7 @@ AnchorPoint: "bng-round" 132 190 basechar 0
 LayerCount: 2
 Fore
 Refer: 2940 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_nn.top
@@ -82953,6 +82992,7 @@ SplineSet
  404.191 382 l 5
  398.003 418 363.589 505 291.589 505 c 4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_t.top
@@ -82964,43 +83004,45 @@ AnchorPoint: "bng-round" 339 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 3786 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_th.top
 Encoding: 60128 -1 3809
 Width: 374
 Flags: HW
-AnchorPoint: "bng-round" 316.717 250 basechar 0
-AnchorPoint: "bng-stem" 380.952 290 basechar 0
-AnchorPoint: "bng-stem-abv" 442.824 558 basechar 0
+AnchorPoint: "bng-round" 317 250 basechar 0
+AnchorPoint: "bng-stem" 381 290 basechar 0
+AnchorPoint: "bng-stem-abv" 443 558 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-413.141 646 m 5
- 463.141 646 l 5
- 442.824 558 l 5
- 502.824 558 l 5
- 491.05 507 l 5
- 431.05 507 l 5
- 362.482 210 l 5
- 312.482 210 l 5
- 321.834 250.507 l 5
- 290.617 281.503 235.268 308.808 135.802 324 c 5
- 116.499 379 l 5
- 234.962 394 267.504 431 275.815 467 c 4
- 281.125 490 264.05 507 231.05 507 c 4
- 202.05 507 175.741 497 172.278 482 c 4
- 169.739 471 179.277 469 187.277 469 c 4
- 188.072 469 194.132 470.28 195.739 471 c 5
- 183.503 418 l 5
- 157.503 418 l 6
- 135.503 418 111.812 441 119.432 474 c 4
- 130.744 523 184.824 558 244.824 558 c 4
- 301.824 558 339.052 520 325.661 462 c 4
- 310.886 398 243.036 364 220.112 360 c 5
- 264.723 349.874 293.993 340.596 337.444 318.123 c 5
- 413.141 646 l 5
+413 646 m 1
+ 463 646 l 1
+ 443 558 l 1
+ 503 558 l 1
+ 491 507 l 1
+ 431 507 l 1
+ 362 210 l 1
+ 312 210 l 1
+ 322 251 l 1
+ 291 282 235 309 136 324 c 1
+ 116 379 l 1
+ 234 394 277 431 277 475 c 0
+ 277 494 260 507 231 507 c 0
+ 202 507 172 498 172 479 c 0
+ 172 471 180 469 187 469 c 0
+ 188 469 194 470 196 471 c 1
+ 184 418 l 1
+ 158 418 l 2
+ 139 418 118 436 118 462 c 0
+ 118 521 185 558 245 558 c 0
+ 294 558 328 530 328 485 c 0
+ 328 409 246 364 220 360 c 1
+ 265 350 294 340 337 318 c 1
+ 413 646 l 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_d.top
@@ -83012,6 +83054,7 @@ AnchorPoint: "bng-round" 262 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 2944 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_dh.top
@@ -83049,6 +83092,7 @@ SplineSet
  224.879 333 242.108 321 276.874 281 c 5
  314.506 444 l 5
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_n.top
@@ -83080,6 +83124,7 @@ SplineSet
  284.863 177 l 5
  305.873 268 l 5
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_p.top
@@ -83117,6 +83162,7 @@ SplineSet
  334.741 497 308.436 513 285.436 513 c 4
  242.436 513 208.973 498 183.046 468 c 5
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_ph.top
@@ -83128,6 +83174,7 @@ AnchorPoint: "bng-round" 232 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 2947 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_b.top
@@ -83161,6 +83208,7 @@ SplineSet
  297.119 425 l 5
  246.349 413 181.115 386 160.19 369 c 5
 EndSplineSet
+Validated: 1
 Substitution2: "subst. full form for half in Bengali-1" bn_b_proud
 EndChar
 
@@ -83173,6 +83221,7 @@ AnchorPoint: "bng-round" 242 200 basechar 0
 LayerCount: 2
 Fore
 Refer: 2949 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_m.top
@@ -83184,6 +83233,7 @@ AnchorPoint: "bng-round" 302 310 basechar 0
 LayerCount: 2
 Fore
 Refer: 2950 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_y.top
@@ -83195,6 +83245,7 @@ AnchorPoint: "bng-round" 236 210 basechar 0
 LayerCount: 2
 Fore
 Refer: 2951 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 
 StartChar: bn_l.top
@@ -83233,6 +83284,7 @@ SplineSet
  423.174 200 l 5
  434.486 249 l 6
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_sh.top
@@ -83276,6 +83328,7 @@ SplineSet
  140.573 349 l 5
  144.188 343 157.187 330 172.187 330 c 4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_ss.top
@@ -83311,6 +83364,7 @@ SplineSet
  343.05 507 l 5
  233.05 507 l 5
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_s.top
@@ -83349,6 +83403,7 @@ SplineSet
  155.049 332.541 174.259 287 187.259 287 c 0
  210.259 287 253.188 343 260.344 361 c 1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: bn_h.top
@@ -83360,6 +83415,7 @@ AnchorPoint: "bng-round" 282 130 basechar 0
 LayerCount: 2
 Fore
 Refer: 2956 -1 N 1 0 0 1 0 0 2
+Validated: 1
 EndChar
 EndChars
 EndSplineFont
