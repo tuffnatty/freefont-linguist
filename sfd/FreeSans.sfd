@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1505000303
+ModificationTime: 1505011420
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -310,7 +310,7 @@ KernClass2: 3 5 "'dist' distances top+- in Bengali"
  142 bn_kh.top bn_g.top bn_gh.top bn_jh.top bn_nn.top bn_th.top bn_dh.top bn_n.top bn_p.top bn_b.top bn_y.top bn_l.top bn_sh.top bn_ss.top bn_s.top
  8 bn_k.top
  29 ga_bng nna_bng tha_bng pa_bng
- 23 ca_bng tta_bng ddha_bng
+ 31 ca_bng tta_bng ddha_bng rha_bng
  12 bn_kha.falaa
  21 bn_ma.stem_falaa_full
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -180 {} -100 {} -100 {} 0 {} -40 {} -120 {} -50 {} 0 {}
@@ -325,7 +325,7 @@ KernClass2: 8 11 "'dist' distances half+- in Bengali"
  7 kha_bng
  29 ga_bng nna_bng tha_bng pa_bng
  15 gha_bng pha_bng
- 23 ca_bng tta_bng ddha_bng
+ 31 ca_bng tta_bng ddha_bng rha_bng
  7 dda_bng
  6 da_bng
  7 dha_bng
@@ -1053,8 +1053,8 @@ EndFPST
 ChainSub2: class "'blws' falaa chain. in Benglai"  2 4 1 3
   Class: 15 bn_ma.falaa_blw
   BClass: 142 bn_kh.top bn_g.top bn_gh.top bn_jh.top bn_nn.top bn_th.top bn_dh.top bn_n.top bn_p.top bn_b.top bn_y.top bn_l.top bn_sh.top bn_ss.top bn_s.top
-  BClass: 46 bn_tt.top bn_dd.top bn_t.top bn_d.top bn_h.top
-  BClass: 28 bn_k.top bn_ng.top bn_ph.top
+  BClass: 26 bn_d.top bn_m.top bn_h.top
+  BClass: 108 bn_k.top bn_ng.top bn_c.top bn_j.top bn_tt.top bn_tth.top bn_dd.top bn_ddh.top bn_t.top bn_ph.top bn_bh.top 
  1 1 0
   ClsList: 1
   BClsList: 1
@@ -1485,7 +1485,7 @@ LangName: 1026 "" "" "+BD0EPgRABDwEMAQ7BDUEPQAA"
 LangName: 1069 "" "" "Arrunta" 
 LangName: 1033 "" "" "Regular" "GNU: FreeSans Normal: 2012" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html" 
 GaspTable: 3 9 2 22 1 65535 3
-OtfFeatName: 'ss07' 1097 "+C6QLrgu/C7QLzQAA +C6gLtQvAC6kA" 1033 "Tamil Modern" 
+OtfFeatName: 'ss07' 1033 "Tamil Modern" 1097 "+C6QLrgu/C7QLzQAA +C6gLtQvAC6kA" 
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 900
@@ -155097,7 +155097,7 @@ SplineSet
  -111 -68.2934 l 1
  -133.962 -48.7589 -171.138 -29.0524 -217.297 -19.6334 c 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: bn_sk_b_ja_kludge.cjct
@@ -183300,7 +183300,7 @@ SplineSet
  670 507 l 1
  -10 507 l 1
 EndSplineSet
-Validated: 527361
+Validated: 3073
 Ligature2: "'hlig' traditional pair in Bengali" bn_k.half bn_ta.blwf
 Ligature2: "'hlig' traditional pair in Bengali" ka_bng bn_ta.blwf
 Ligature2: "'pres' conjunct pair in Bengali for Sanskrit" ka_bng bn_ta.blwf
@@ -187190,7 +187190,7 @@ AnchorPoint: "bng-round" 302 310 basechar 0
 LayerCount: 2
 Fore
 Refer: 7475 -1 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: bn_y.top
@@ -187237,7 +187237,7 @@ SplineSet
  497 558 l 1
  497 507 l 1
  437 507 l 1
- 437 170 l 1
+ 437 170 l 5
  387 170 l 1
  387 249 l 2
 EndSplineSet
@@ -187251,28 +187251,28 @@ GlyphClass: 2
 Flags: HMW
 AnchorPoint: "bng-stem-abv" 435 558 basechar 0
 AnchorPoint: "bng-stem" 435 281 basechar 0
-AnchorPoint: "bng-round" 384 270 basechar 0
+AnchorPoint: "bng-round" 384 230 basechar 0
 LayerCount: 2
 Fore
 SplineSet
 15 558 m 2
  107 558 154 539 192 459 c 1
  218 541 255 557 289 557 c 0
- 325 557 362 529 385 477 c 5
- 385 645 l 5
- 435 645 l 5
- 435 558 l 5
- 495 558 l 5
- 495 507 l 5
- 435 507 l 5
- 435 160 l 5
- 385 160 l 5
- 385 366 l 5
+ 325 557 362 529 385 477 c 1
+ 385 645 l 1
+ 435 645 l 1
+ 435 558 l 1
+ 495 558 l 1
+ 495 507 l 1
+ 435 507 l 1
+ 435 170 l 5
+ 385 170 l 5
+ 385 366 l 1
  357 473 314 506 288 506 c 0
  258 506 235 448 235 416 c 0
  235 383 251 338 284 338 c 0
- 296 338 324 344 331 355 c 5
- 351 312 l 5
+ 296 338 324 344 331 355 c 1
+ 351 312 l 1
  345 302 316 287 285 287 c 0
  255 287 217 307 199 346 c 1
  193 318 151 279 109 279 c 0
@@ -187285,7 +187285,6 @@ SplineSet
  -1 558 l 1
  15 558 l 2
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: bn_ss.top
