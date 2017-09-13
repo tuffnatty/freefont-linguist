@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1505252897
+ModificationTime: 1505340901
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -54,7 +54,7 @@ OS2Vendor: 'GNU '
 OS2CodePages: 600001bf.00000000
 OS2UnicodeRanges: e4010eff.4240e5ff.08401020.00000004
 Lookup: 1 0 0 "subst. tall cons. post ikaar in Bengali"  {"subst. tall cons. post ikaar in Bengali-1"  } []
-Lookup: 1 0 0 "subst. post base vowels in Bengali"  {"subst. post base vowels in Bengali-1"  } []
+Lookup: 4 0 0 "subst. post base vowels in Bengali"  {"subst. post base ZWJ-vowels in Bengali"  "subst. post base vowels simple in Bengali"  } []
 Lookup: 1 0 0 "subst. rofola short in Bengali"  {"subst. rofola short in Bengali-1"  } []
 Lookup: 1 0 0 "subst. rofola bracing in Bengali"  {"subst. rofola bracing in Bengali-1"  } []
 Lookup: 1 0 0 "subst. rofola narrow in Bengali"  {"subst. rofola narrow in Bengali-1"  } []
@@ -93,7 +93,7 @@ Lookup: 6 0 0 "'pres' half-blwf chain in Benglai"  {"'pres' half-blwf before nna
 Lookup: 6 0 0 "'pres' top forms in Bengali"  {"'pres' top form ga in Bengali"  "'pres' top form nna in Bengali"  "'pres' top form to proud ba in Bengali"  "'pres' top form pa in Bengali"  "'pres' top form sa in Bengali"  "'pres' top form la in Bengali"  "'pres' top forms in Bengali-1"  "'pres' above-falaa chain in Bengali-1"  } ['pres' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'abvs' above base subst. in Bengali"  {"'abvs' above base subst. in Bengali-1"  } ['abvs' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'blws' falaa chain in Benglai"  {"'blws' falaa chain. in Benglai"  "'blws' kha falaa chain in Benglai"  } ['blws' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
-Lookup: 4 0 0 "'blws' vowel ligatures traditional in Bengali"  {"'blws' vowel in Bengali for Sanskrit"  } ['blws' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
+Lookup: 4 0 0 "'blws' vowel ligatures traditional in Bengali"  {"'blws' vowel in Bengali"  "'blws' ZWJ vowel in Bengali"  } ['blws' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'blws' rofola chain in Benglai"  {"'blws' rofola horiz cjct chain in Benglai"  "'blws' rofola vert. in Benglai"  } ['blws' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 6 0 0 "'psts' vowels chain in Bengali"  {"'psts' post-base u-uu in Bengali"  "'psts' post-base ikaar in Bengali"  "'psts' post base iikaar in Bengali"  } ['psts' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 2 0 0 "'dlig' transparent style ligatures in Bengali"  {"'dlig' re-do u,uu subscripts in Bengali-1"  "'dlig' decompose vowel conjuncts in Bengali-1"  "'dlig' replace consonant conjuncts in Bengali"  "'dlig' decompose conjunct ligatures in Bengali"  "'dlig' unpack -ya forms in Bengali"  } ['dlig' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
@@ -351,8 +351,9 @@ KernClass2: 22 5 "'kern' kerns in Latin-rightpunct"
  37 quoteright quotedblright quotedblleft
  29 guillemotright guilsinglright
  0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -60 {} -20 {} -60 {} -20 {} 0 {} -30 {} 0 {} -40 {} -20 {} 0 {} -60 {} -30 {} 0 {} -50 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -100 {} -80 {} -20 {} -60 {} 0 {} -60 {} -30 {} -70 {} -30 {} 0 {} -60 {} -60 {} 0 {} -40 {} 0 {} -60 {} -60 {} 0 {} -80 {} 0 {} -40 {} -60 {} -30 {} -40 {} 0 {} -20 {} -60 {} -60 {} -40 {} 0 {} -20 {} 0 {} -40 {} -20 {} 0 {} -60 {} -60 {} 0 {} -20 {} 0 {} -30 {} -20 {} -20 {} -40 {} 0 {} -30 {} -60 {} -60 {} -30 {} 0 {} -40 {} -60 {} -40 {} -30 {} 0 {} -40 {} -60 {} -60 {} -60 {} 0 {} -60 {} -60 {} 0 {} -30 {} 0 {} -40 {} -40 {} -80 {} -30 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -40 {} -70 {} -40 {} -60 {}
-ChainSub2: class "'psts' post base iikaar in Bengali"  2 3 0 2
+ChainSub2: class "'psts' post base iikaar in Bengali"  3 3 0 4
   Class: 10 iikaar_bng
+  Class: 3 ZWJ
   BClass: 16 ttha_bng tta_bng
   BClass: 69 bn_k_tta bn_nn_ttha bn_n_tta bn_n_ttha bn_ph_tta bn_ss_tta bn_ss_ttha
  1 1 0
@@ -363,6 +364,18 @@ ChainSub2: class "'psts' post base iikaar in Bengali"  2 3 0 2
   SeqLookup: 0 "subst. post base vowels in Bengali" 
  1 1 0
   ClsList: 1
+  BClsList: 2
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. post base vowels in Bengali" 
+ 2 1 0
+  ClsList: 2 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. post base vowels in Bengali" 
+ 2 1 0
+  ClsList: 2 1
   BClsList: 2
   FClsList:
  1
@@ -385,13 +398,14 @@ ChainSub2: class "'psts' post-base ikaar in Bengali"  3 2 1 2
  1
   SeqLookup: 0 "subst. tall cons. post ikaar in Bengali" 
 EndFPST
-ChainSub2: class "'psts' post-base u-uu in Bengali"  2 6 1 4
+ChainSub2: class "'psts' post-base u-uu in Bengali"  3 6 1 8
   Class: 20 ukaar_bng uukaar_bng
+  Class: 3 ZWJ
   BClass: 19 ra_bng ra_asami_bng
   BClass: 68 bn_d_bh_rofola bn_m_bh_rofola bn_s_t_rofola bn_t_rofola bn_bh_rofola
   BClass: 180 bn_ra_folaa bn_ra_folaa_nukta bn_ra_folaa_short bn_ra_folaa_narrow bn_ra_folaa_nostem bn_ra_folaa_bracing bn_ra_folaa_nostem_w bn_ra_folaa_alt_ka bn_t_rofola.blwf bn_bh_rofola.blwf
   BClass: 154 kha_bng ga_bng gha_bng ja_bng jha_bng nna_bng tha_bng da_bng dha_bng na_bng pa_bng ba_bng ma_bng ya_bng la_bng sha_bng ssa_bng sa_bng yya_bng ba_asami_bng
-  BClass: 483 bn_la.blwf bn_ba_falaa bn_ba_asami.blwf bn_dha.blwf bn_na.blwf bn_ba.blwf bn_pa.blwf bn_ga.blwf bn_c1.half bn_t.haln bn_nna.blwf bn_ja.blwf bn_ka.falaa bn_kha.falaa bn_kha.falaa_blw bn_ba.falaa1 bn_ma.falaa_blw bn_ma.falaa_side bn_ma.stem_falaa_full bn_tha.falaa_UNUSED bn_gh.half bn_dh.half bn_b.half bn_y.half bn_b_proud bn_yy.half bn_b_asami.half bn_kh.top bn_g.top bn_jh.top bn_nn.top bn_th.top bn_dh.top bn_n.top bn_p.top bn_s.top bn_b.top bn_l.top bn_sh.top bn_gh.top bn_ss.top
+  BClass: 451 bn_kh.top bn_g.top bn_gh.top bn_jh.top bn_nn.top bn_th.top bn_dh.top bn_n.top bn_p.top bn_b.top bn_l.top bn_sh.top bn_ss.top bn_s.top bn_la.blwf bn_ba_falaa bn_ba_asami.blwf bn_dha.blwf bn_na.blwf bn_ba.blwf bn_pa.blwf bn_ga.blwf bn_c1.half bn_t.haln bn_nna.blwf bn_ja.blwf bn_kha.falaa bn_kha.falaa_blw bn_ba.falaa1 bn_ma.falaa_blw bn_ma.falaa_side bn_ma.stem_falaa_full bn_gh.half bn_dh.half bn_b.half bn_y.half bn_b_proud bn_yy.half bn_b_asami.half
  1 1 0
   ClsList: 1
   BClsList: 1
@@ -412,6 +426,30 @@ ChainSub2: class "'psts' post-base u-uu in Bengali"  2 6 1 4
   SeqLookup: 0 "subst. post base vowels in Bengali" 
  1 2 0
   ClsList: 1
+  BClsList: 3 5
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. post base vowels in Bengali" 
+ 2 1 0
+  ClsList: 2 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. post base vowels in Bengali" 
+ 2 1 0
+  ClsList: 2 1
+  BClsList: 2
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. post base vowels in Bengali" 
+ 2 2 0
+  ClsList: 2 1
+  BClsList: 3 4
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. post base vowels in Bengali" 
+ 2 2 0
+  ClsList: 2 1
   BClsList: 3 5
   FClsList:
  1
@@ -29323,7 +29361,6 @@ SplineSet
  -21 543 l 1
 EndSplineSet
 Validated: 3073
-Substitution2: "subst. post base vowels in Bengali-1" bn_iikaar_cut
 EndChar
 
 StartChar: ukaar_bng
@@ -29355,7 +29392,6 @@ SplineSet
  -128 -34 -151 -30 -161 -30 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "subst. post base vowels in Bengali-1" bn_ukaar.psts
 EndChar
 
 StartChar: uukaar_bng
@@ -29384,7 +29420,6 @@ SplineSet
  -74 -57 -86 -55 -95 -55 c 0
 EndSplineSet
 Validated: 3073
-Substitution2: "subst. post base vowels in Bengali-1" bn_uukaar.psts
 EndChar
 
 StartChar: rikaar_bng
@@ -67970,7 +68005,8 @@ SplineSet
  98 507 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'blws' vowel in Bengali for Sanskrit" ha_bng rikaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" ha_bng ZWJ rikaar_bng
+Ligature2: "'blws' vowel in Bengali" ha_bng rikaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -68058,7 +68094,8 @@ SplineSet
  409 266 422 264 434 264 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'blws' vowel in Bengali for Sanskrit" ga_bng ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" ga_bng ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" ga_bng ukaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -68195,7 +68232,8 @@ SplineSet
  549 496 554 475 554 451 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'blws' vowel in Bengali for Sanskrit" bn_n_ta ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" bn_n_ta ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" bn_n_ta ukaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -68266,7 +68304,8 @@ SplineSet
  305 359 306 350 306 343 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'blws' vowel in Bengali for Sanskrit" bn_l_ga ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" bn_l_ga ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" bn_l_ga ukaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -68318,7 +68357,8 @@ SplineSet
  206.417 505.324 158.108 507 107.767 507 c 1,0,0
 EndSplineSet
 Validated: 3073
-Ligature2: "'blws' vowel in Bengali for Sanskrit" sha_bng ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" sha_bng ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" sha_bng ukaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -68370,7 +68410,8 @@ SplineSet
  364 507 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'blws' vowel in Bengali for Sanskrit" bn_s_ta ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" bn_s_ta ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" bn_s_ta ukaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -68427,7 +68468,8 @@ SplineSet
 EndSplineSet
 Validated: 3073
 MultipleSubs2: "'dlig' decompose vowel conjuncts in Bengali-1" bn_bh_rofola ukaar_bng
-Ligature2: "'blws' vowel in Bengali for Sanskrit" bn_bh_rofola ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" bha_bng ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" bn_bh_rofola ukaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -68467,7 +68509,8 @@ SplineSet
  98 507 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'blws' vowel in Bengali for Sanskrit" ha_bng ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" ha_bng ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" ha_bng ukaar_bng
 LCarets2: 1 0 
 EndChar
 
@@ -69653,6 +69696,8 @@ SplineSet
 EndSplineSet
 Validated: 3073
 MultipleSubs2: "'dlig' re-do u,uu subscripts in Bengali-1" ukaar_bng
+Ligature2: "subst. post base vowels simple in Bengali" ukaar_bng
+Ligature2: "subst. post base ZWJ-vowels in Bengali" ZWJ ukaar_bng
 EndChar
 
 StartChar: bn_uukaar.psts
@@ -69680,6 +69725,8 @@ SplineSet
 EndSplineSet
 Validated: 3073
 MultipleSubs2: "'dlig' re-do u,uu subscripts in Bengali-1" uukaar_bng
+Ligature2: "subst. post base vowels simple in Bengali" uukaar_bng
+Ligature2: "subst. post base ZWJ-vowels in Bengali" ZWJ uukaar_bng
 EndChar
 
 StartChar: glyph600
@@ -69808,6 +69855,8 @@ SplineSet
  -259 770 -153 800 -39 800 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. post base vowels simple in Bengali" ikaar_bng
+Ligature2: "subst. post base ZWJ-vowels in Bengali" ZWJ iikaar_bng
 EndChar
 
 StartChar: bn_candrabindu_iikaar.abvs
@@ -82659,7 +82708,8 @@ SplineSet
  249.778 258 222.426 244.83 222.426 219.874 c 0
 EndSplineSet
 Validated: 1
-Ligature2: "'blws' vowel in Bengali for Sanskrit" sa_bng ukaar_bng
+Ligature2: "'blws' ZWJ vowel in Bengali" sa_bng ZWJ ukaar_bng
+Ligature2: "'blws' vowel in Bengali" sa_bng ukaar_bng
 LCarets2: 1 0 
 EndChar
 
