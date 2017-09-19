@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1505600648
+ModificationTime: 1505843664
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -70,14 +70,13 @@ Lookup: 1 0 0 "subst. full form for half in Bengali"  {"subst. full form for hal
 Lookup: 1 0 0 "subst. below form in Bengali"  {"subst. below form in Bengali-1"  } []
 Lookup: 2 0 0 "unpack nukta forms in Bengali"  {"unpack nukta forms in Bengali-1"  } []
 Lookup: 1 0 0 "'locl' local. punct in Bengali"  {"'locl' local. punct in Bengali-1"  } ['locl' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
-Lookup: 4 0 0 "'nukt' nukta forms in Bengali"  {"'nukt' nukta forms in Bengali-1"  } ['nukt' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' akhand in Bengali2"  {"'akhn' akhand in Bengali2-1"  } ['akhn' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'akhn' akhand in Bengali"  {"'akhn' akhand in Bengali-1"  } ['akhn' ('beng' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'rphf' reph form in Bengali"  {"'rphf' reph form in Bengali-1"  } ['rphf' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' below-base forms in Bengali2"  {"'blwf' below-base forms in Bengali2-1"  } ['blwf' ('bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' below-base forms in Bengali"  {"'blwf' below-base forms in Bengali-1"  } ['blwf' ('beng' <'SAN ' 'dflt' > ) ]
-Lookup: 4 0 0 "'half' half forms in Bengali"  {"'half' half forms in Bengali-1"  } ['half' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
-Lookup: 1 0 0 "'half' half forms in Bengali for Sanskrit"  {"'half' half forms in Bengali for Sanskrit-work-around"  } ['half' ('beng' <'SAN ' > 'bng2' <'SAN ' > ) ]
+Lookup: 4 16 0 "'half' half forms in Bengali"  {"'half' half forms in Bengali-1"  } ['half' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
+Lookup: 1 16 0 "'half' half forms in Bengali for Sanskrit"  {"'half' half forms in Bengali for Sanskrit-work-around"  } ['half' ('beng' <'SAN ' > 'bng2' <'SAN ' > ) ]
 Lookup: 4 0 0 "'pstf' post-base forms in Bengali"  {"'pstf' post-base ya in Bengali"  } ['pstf' ('beng' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' post base forms in Bengali2"  {"'pstf' post base ya in Bengali2"  } ['pstf' ('bng2' <'SAN ' 'dflt' > ) ]
 Lookup: 4 0 0 "'vatu' vattu variants in Bengali"  {"'vatu' vattu variants in Bengali-1"  } ['vatu' ('beng' <'SAN ' 'dflt' > 'bng2' <'SAN ' 'dflt' > ) ]
@@ -172,6 +171,8 @@ Lookup: 262 0 0 "'mkmk' mark-to-mark in Cyrillic"  {"'mkmk' mark-to-mark in Cyri
 Lookup: 262 0 0 "'mkmk' mark-to-mark in Latin"  {"'mkmk' mark-to-mark in Latin-1"  } ['mkmk' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 262 0 0 "'mkmk' mark-to-mark in Latin for Viet"  {"'mkmk' mark-to-mark in Latin for Viet-1"  } ['mkmk' ('latn' <'VIT ' > ) ]
 MarkAttachClasses: 1
+MarkAttachSets: 1
+"bng_hasanta" 11 hasanta_bng
 DEI: 91125
 KernClass2: 2 2 "'dist' distances full+- in Bengali" 
  6 ka_bng
@@ -1124,7 +1125,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60064 16 11
+WinInfo: 59712 16 11
 BeginPrivate: 8
 UniqueID 7 5020908
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -29617,7 +29618,6 @@ Validated: 32769
 Substitution2: "subst. top forms for full in Bengali" bn_rr.half
 Substitution2: "subst. half for full in Bengali-1" bn_rr.half
 MultipleSubs2: "unpack nukta forms in Bengali-1" dda_bng nukta_bng
-Ligature2: "'nukt' nukta forms in Bengali-1" dda_bng nukta_bng
 LCarets2: 1 0 
 EndChar
 
@@ -29636,7 +29636,6 @@ Validated: 32769
 Substitution2: "subst. top forms for full in Bengali" bn_rh.half
 Substitution2: "subst. half for full in Bengali-1" bn_rh.half
 MultipleSubs2: "unpack nukta forms in Bengali-1" ddha_bng nukta_bng
-Ligature2: "'nukt' nukta forms in Bengali-1" ddha_bng nukta_bng
 LCarets2: 1 0 
 EndChar
 
@@ -29655,7 +29654,6 @@ Validated: 32769
 Substitution2: "subst. top forms for full in Bengali" bn_yy.half
 Substitution2: "subst. half for full in Bengali-1" bn_yy.half
 MultipleSubs2: "unpack nukta forms in Bengali-1" ya_bng nukta_bng
-Ligature2: "'nukt' nukta forms in Bengali-1" ya_bng nukta_bng
 LCarets2: 1 0 
 EndChar
 
@@ -60919,6 +60917,7 @@ Encoding: 59774 -1 2926
 Width: 438
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 250 110 basechar 0
 AnchorPoint: "bng-round" 313 250 basechar 0
 AnchorPoint: "bng-stem" 287 229 basechar 0
 LayerCount: 2
@@ -60950,7 +60949,7 @@ SplineSet
  326 431 l 1
  302 431 180 377 168 367 c 1
 EndSplineSet
-Validated: 1
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_k.top
 Ligature2: "'half' half forms in Bengali-1" ka_bng hasanta_bng
 LCarets2: 1 0 
@@ -60961,6 +60960,7 @@ Encoding: 59775 -1 2927
 Width: 361
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 140 110 basechar 0
 AnchorPoint: "bng-stem" 311 201 basechar 0
 LayerCount: 2
 Fore
@@ -60991,7 +60991,8 @@ SplineSet
  205 470 230 495 269 553 c 1
  295 541 321 508 321 474 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
+LCarets2: 1 0 
 Substitution2: "subst. top forms for half in Bengali" bn_kh.top
 Ligature2: "'half' half forms in Bengali-1" kha_bng hasanta_bng
 EndChar
@@ -61001,6 +61002,7 @@ Encoding: 59776 -1 2928
 Width: 313
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 140 110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61023,7 +61025,8 @@ SplineSet
  123 344 96 354 96 393 c 0
  96 470 181 558 280 558 c 0
 EndSplineSet
-Validated: 3073
+Validated: 1
+LCarets2: 1 0 
 Substitution2: "subst. top forms for half in Bengali" bn_g.top
 Ligature2: "'half' half forms in Bengali-1" ga_bng hasanta_bng
 EndChar
@@ -61033,6 +61036,7 @@ Encoding: 59777 -1 2929
 Width: 336
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 160 110 basechar 0
 AnchorPoint: "bng-stem" 290 201 basechar 0
 LayerCount: 2
 Fore
@@ -61062,7 +61066,8 @@ SplineSet
  200 411 196 411 190 411 c 0
  163 411 126 433 126 467 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
+LCarets2: 1 0 
 Substitution2: "subst. top forms for half in Bengali" bn_gh.top
 Ligature2: "'half' half forms in Bengali-1" gha_bng hasanta_bng
 EndChar
@@ -61072,6 +61077,7 @@ Encoding: 59778 -1 2930
 Width: 398
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 220 110 basechar 0
 AnchorPoint: "bng-stem" 394 201 basechar 0
 LayerCount: 2
 Fore
@@ -61104,7 +61110,8 @@ SplineSet
  381.5 515 356 498 330 475 c 1
  352 452 373 450 385 450 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
+LCarets2: 1 0 
 Substitution2: "subst. top forms for half in Bengali" bn_ng.top
 Ligature2: "'half' half forms in Bengali-1" nga_bng hasanta_bng
 EndChar
@@ -61114,6 +61121,7 @@ Encoding: 59779 -1 2931
 Width: 284
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 130 110 basechar 0
 AnchorPoint: "bng-stem" 261 240 basechar 0
 LayerCount: 2
 Fore
@@ -61136,7 +61144,8 @@ SplineSet
  348 410 361 390 361 369 c 0
  361 289.29 203.683 162 133 162 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
+LCarets2: 1 0 
 Substitution2: "subst. top forms for half in Bengali" bn_c.top
 Ligature2: "'half' half forms in Bengali-1" ca_bng hasanta_bng
 EndChar
@@ -61171,7 +61180,7 @@ SplineSet
  426 314 425 306 424 301 c 0
  403 200 266 56 150 56 c 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 EndChar
 
 StartChar: bn_ch.half
@@ -61179,6 +61188,7 @@ Encoding: 59781 -1 2933
 Width: 382
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 150 110 basechar 0
 AnchorPoint: "bng-stem" 331 181 basechar 0
 LayerCount: 2
 Fore
@@ -61212,7 +61222,8 @@ SplineSet
  263 414 259 418 253 419 c 1
  233 419 l 2
 EndSplineSet
-Validated: 3073
+Validated: 524289
+LCarets2: 1 0 
 Substitution2: "subst. top forms for half in Bengali" bn_ch.top
 Ligature2: "'half' half forms in Bengali-1" cha_bng hasanta_bng
 EndChar
@@ -61222,6 +61233,7 @@ Encoding: 59782 -1 2934
 Width: 337
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 190 110 basechar 0
 AnchorPoint: "bng-rofola" 370 230 basechar 0
 AnchorPoint: "bng-stem" 331 231 basechar 0
 LayerCount: 2
@@ -61252,7 +61264,7 @@ SplineSet
  227 304 190 318 190 370 c 0
  190 423.367 238.046 488.118 270 507 c 1
 EndSplineSet
-Validated: 1
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_j.top
 Ligature2: "'half' half forms in Bengali-1" ja_bng hasanta_bng
 LCarets2: 1 0 
@@ -61263,6 +61275,7 @@ Encoding: 59783 -1 2935
 Width: 419
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 260 110 basechar 0
 AnchorPoint: "bng-stem" 378 201 basechar 0
 LayerCount: 2
 Fore
@@ -61295,7 +61308,7 @@ SplineSet
  249 362 271 321 278 298 c 1
  308 439 l 1
 EndSplineSet
-Validated: 3073
+Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_jh.top
 Ligature2: "'half' half forms in Bengali-1" jha_bng hasanta_bng
 LCarets2: 1 0 
@@ -61306,6 +61319,7 @@ Encoding: 59784 -1 2936
 Width: 550
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 350 110 basechar 0
 AnchorPoint: "bng-stem" 363 201 basechar 0
 LayerCount: 2
 Fore
@@ -61356,7 +61370,7 @@ SplineSet
  508 409 l 1
  516 408 527 407 536 407 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_ny.top
 Ligature2: "'half' half forms in Bengali-1" nya_bng hasanta_bng
 LCarets2: 1 0 
@@ -61367,6 +61381,7 @@ Encoding: 59785 -1 2937
 Width: 301
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 130 110 basechar 0
 AnchorPoint: "bng-rofola" 310 260 basechar 0
 AnchorPoint: "bng-stem" 284 240 basechar 0
 LayerCount: 2
@@ -61405,7 +61420,7 @@ SplineSet
  103 558 l 1
  366 558 l 1
 EndSplineSet
-Validated: 1
+Validated: 524289
 Ligature2: "'half' half forms in Bengali-1" tta_bng hasanta_bng
 LCarets2: 1 0 
 EndChar
@@ -61415,6 +61430,7 @@ Encoding: 59786 -1 2938
 Width: 289
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 110 110 basechar 0
 AnchorPoint: "bng-rofola" 290 220 basechar 0
 AnchorPoint: "bng-stem" 259 210 basechar 0
 LayerCount: 2
@@ -61445,7 +61461,7 @@ SplineSet
  118 269 117 260 117 252 c 0
  117 206 151 198 177 198 c 0
 EndSplineSet
-Validated: 1
+Validated: 524289
 Ligature2: "'half' half forms in Bengali-1" ttha_bng hasanta_bng
 LCarets2: 1 0 
 EndChar
@@ -61455,35 +61471,36 @@ Encoding: 59787 -1 2939
 Width: 334
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "bng-rofola" 400 240 basechar 0
-AnchorPoint: "bng-stem" 368 241 basechar 0
+AnchorPoint: "bng-nukta" 130 110 basechar 0
+AnchorPoint: "bng-rofola" 350 240 basechar 0
+AnchorPoint: "bng-stem" 318 241 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-290 314 m 0
- 257 314 239 338 239 358 c 0
- 239 360 239 362 239 364 c 2
- 270 507 l 1
- 78 507 l 1
- 89 558 l 1
- 476 558 l 1
- 465 507 l 1
- 321 507 l 1
- 294 382 l 2
- 292 371 296 365 305 365 c 0
- 325 365 380 411 413 450 c 1
- 443 426 456 388 456 349 c 0
- 456 260.404 367.271 163 260 163 c 0
- 131 163 111 304 111 401 c 0
- 111 432 113 459 114 475 c 1
- 165 475 l 1
- 164 463 163 443 163 419 c 0
- 163 338 178 214 272 214 c 0
- 337.38 214 406 280.866 406 339 c 0
- 406 349 403 362 395 378 c 1
- 357 329 309 314 290 314 c 0
+240 314 m 4
+ 207 314 189 338 189 358 c 4
+ 189 360 189 362 189 364 c 6
+ 220 507 l 5
+ 28 507 l 5
+ 39 558 l 5
+ 426 558 l 5
+ 415 507 l 5
+ 271 507 l 5
+ 244 382 l 6
+ 242 371 246 365 255 365 c 4
+ 275 365 330 411 363 450 c 5
+ 393 426 406 388 406 349 c 4
+ 406 260.404 317.271 163 210 163 c 4
+ 81 163 61 304 61 401 c 4
+ 61 432 63 459 64 475 c 5
+ 115 475 l 5
+ 114 463 113 443 113 419 c 4
+ 113 338 128 214 222 214 c 4
+ 287.38 214 356 280.866 356 339 c 4
+ 356 349 353 362 345 378 c 5
+ 307 329 259 314 240 314 c 4
 EndSplineSet
-Validated: 1
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_dd.top
 Ligature2: "'half' half forms in Bengali-1" dda_bng hasanta_bng
 LCarets2: 1 0 
@@ -61494,6 +61511,7 @@ Encoding: 59788 -1 2940
 Width: 291
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 120 110 basechar 0
 AnchorPoint: "bng-rofola" 304 250 basechar 0
 AnchorPoint: "bng-stem" 266 271 basechar 0
 LayerCount: 2
@@ -61532,6 +61550,7 @@ Encoding: 59789 -1 2941
 Width: 226
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 80 110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -61547,7 +61566,7 @@ SplineSet
  159 293 98 313 98 387 c 0
  98 442.276 144.018 571 271 571 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_nn.top
 Ligature2: "'half' half forms in Bengali-1" nna_bng hasanta_bng
 LCarets2: 1 0 
@@ -61558,6 +61577,7 @@ Encoding: 59790 -1 2942
 Width: 355
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 110 110 basechar 0
 AnchorPoint: "bng-stem" 309 201 basechar 0
 LayerCount: 2
 Fore
@@ -61576,8 +61596,7 @@ SplineSet
  301 212 l 1
  273 250 249 306 131 324 c 1
  111 379 l 1
- 229 394 260 431 268 467 c 0
- 269 470 269 472 269 474 c 0
+ 227.623 393.825 269 431.031 269 474 c 4
  269 493 252 507 223 507 c 0
  194 507 167 497 164 482 c 0
  162 471 172 469 180 469 c 0
@@ -61585,11 +61604,10 @@ SplineSet
  177 418 l 1
  151 418 l 2
  132 418 111 436 111 463 c 0
- 111 467 111 470 112 474 c 0
- 122 523 176 558 236 558 c 0
+ 111 520.841 176.07 558 236 558 c 0
  286 558 321 529 321 483 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_th.top
 Ligature2: "'half' half forms in Bengali-1" tha_bng hasanta_bng
 LCarets2: 1 0 
@@ -61600,6 +61618,7 @@ Encoding: 59791 -1 2943
 Width: 333
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 110 110 basechar 0
 AnchorPoint: "bng-stem" 286 201 basechar 0
 LayerCount: 2
 Fore
@@ -61628,7 +61647,7 @@ SplineSet
  242 338 260 326 295 286 c 1
  329 449 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_dh.top
 Ligature2: "'half' half forms in Bengali-1" dha_bng hasanta_bng
 LCarets2: 1 0 
@@ -61639,30 +61658,31 @@ Encoding: 59792 -1 2944
 Width: 314
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "bng-stem" 323 231 basechar 0
+AnchorPoint: "bng-nukta" 50 110 basechar 0
+AnchorPoint: "bng-stem" 263 231 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-357 395 m 1
- 230 380 206 329 158 298 c 1
- 120 317 l 1
- 161 507 l 1
- 98 507 l 1
- 109 558 l 1
- 443 558 l 1
- 432 507 l 1
- 213 507 l 1
- 183 368 l 1
- 243 411 269 430 332 442 c 2
- 394 454 l 1
- 418 424 l 1
- 416 417 396 367 386 335 c 1
- 381 312 l 2
- 374 280 373 250 373 231 c 1
- 322 231 l 1
- 322 285.555 330.104 344.569 357 395 c 1
+297 395 m 5
+ 170 380 146 329 98 298 c 5
+ 60 317 l 5
+ 101 507 l 5
+ 38 507 l 5
+ 49 558 l 5
+ 383 558 l 5
+ 372 507 l 5
+ 153 507 l 5
+ 123 368 l 5
+ 183 411 209 430 272 442 c 6
+ 334 454 l 5
+ 358 424 l 5
+ 356 417 336 367 326 335 c 5
+ 321 312 l 6
+ 314 280 313 250 313 231 c 5
+ 262 231 l 5
+ 262 285.555 270.104 344.569 297 395 c 5
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Ligature2: "'half' half forms in Bengali-1" da_bng hasanta_bng
 LCarets2: 1 0 
 EndChar
@@ -61672,23 +61692,24 @@ Encoding: 59793 -1 2945
 Width: 254
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 120 110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-312 296 m 5
- 295 357 265 386 219 386 c 4
- 194 386 163 364 163 335 c 4
- 163 327 167 317 177 304 c 5
- 138 276 l 5
- 120 291 112 308 112 328 c 4
- 112 416 213 438 232 438 c 4
- 294 438 336 390 361 323 c 5
- 357 304 324 296 312 296 c 5
-97 507 m 5
- 109 558 l 5
- 383 558 l 5
- 371 507 l 5
- 97 507 l 5
+312 296 m 1
+ 295 357 265 386 219 386 c 0
+ 194 386 163 364 163 335 c 0
+ 163 327 167 317 177 304 c 1
+ 138 276 l 1
+ 120 291 112 308 112 328 c 0
+ 112 416 213 438 232 438 c 0
+ 294 438 336 390 361 323 c 1
+ 357 304 324 296 312 296 c 1
+97 507 m 1
+ 109 558 l 1
+ 383 558 l 1
+ 371 507 l 1
+ 97 507 l 1
 EndSplineSet
 Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_n.top
@@ -61701,26 +61722,27 @@ Encoding: 59794 -1 2946
 Width: 386
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 110 110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-85 451 m 5
- 99 482 163 558 252 558 c 4
- 331 558 398 520 466 328 c 5
- 462 312 439 295 414 295 c 5
- 403 345 388 392 358 434 c 5
- 168 291 l 5
- 147 323 l 5
- 156 328 185 347 185 381 c 4
- 185 398 178 426 148 426 c 4
- 135 426 126 423 112 415 c 5
- 85 451 l 5
-153 468 m 5
- 220 468 229 422 229 398 c 4
- 229 394 229 391 229 388 c 5
- 265 414 298 440 335 466 c 5
- 305 497 278 513 255 513 c 4
- 212 513 179 498 153 468 c 5
+85 451 m 1
+ 99 482 163 558 252 558 c 0
+ 331 558 398 520 466 328 c 1
+ 462 312 439 295 414 295 c 1
+ 403 345 388 392 358 434 c 1
+ 168 291 l 1
+ 147 323 l 1
+ 156 328 185 347 185 381 c 0
+ 185 398 178 426 148 426 c 0
+ 135 426 126 423 112 415 c 1
+ 85 451 l 1
+153 468 m 1
+ 220 468 229 422 229 398 c 0
+ 229 394 229 391 229 388 c 1
+ 265 414 298 440 335 466 c 1
+ 305 497 278 513 255 513 c 0
+ 212 513 179 498 153 468 c 1
 EndSplineSet
 Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_p.top
@@ -61733,6 +61755,7 @@ Encoding: 59795 -1 2947
 Width: 417
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 160 110 basechar 0
 AnchorPoint: "bng-rofola" 332 230 basechar 0
 AnchorPoint: "bng-stem" 282 191 basechar 0
 LayerCount: 2
@@ -61766,7 +61789,7 @@ SplineSet
  402 347 l 1
  405 343 409 341 414 341 c 0
 EndSplineSet
-Validated: 1
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_ph.top
 Ligature2: "'half' half forms in Bengali-1" pha_bng hasanta_bng
 LCarets2: 1 0 
@@ -61777,6 +61800,7 @@ Encoding: 59796 -1 2948
 Width: 310
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 90 110 basechar 0
 AnchorPoint: "bng-rofola" 310 220 basechar 0
 AnchorPoint: "bng-stem" 265 201 basechar 0
 LayerCount: 2
@@ -61813,34 +61837,35 @@ Encoding: 59797 -1 2949
 Width: 395
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 160 110 basechar 0
 AnchorPoint: "bng-rofola" 410 250 basechar 0
 AnchorPoint: "bng-stem" 367 251 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-202 390 m 4
- 202 438 236 472 268 472 c 4
- 278 472 289 467 316 451 c 5
- 295 402 l 5
- 282 419 280 421 275 421 c 4
- 254 421 252 402 252 387 c 4
- 252 371 261 365 285 365 c 4
- 337 365 372 427 389 452 c 5
- 420 425 l 5
- 447 400 454 373 454 351 c 4
- 454 248 362 180 283 180 c 4
- 152 180 98 320 98 465 c 5
- 147 455 l 5
- 153 311 214 231 291 231 c 4
- 341 231 403 279 403 341 c 4
- 403 350 399 364 387 378 c 5
- 372 359 335 314 277 314 c 4
- 230 314 202 347 202 390 c 4
-98 507 m 5
- 109 558 l 5
- 524 558 l 5
- 513 507 l 5
- 98 507 l 5
+202 390 m 0
+ 202 438 236 472 268 472 c 0
+ 278 472 289 467 316 451 c 1
+ 295 402 l 1
+ 282 419 280 421 275 421 c 0
+ 254 421 252 402 252 387 c 0
+ 252 371 261 365 285 365 c 0
+ 337 365 372 427 389 452 c 1
+ 420 425 l 1
+ 447 400 454 373 454 351 c 0
+ 454 248 362 180 283 180 c 0
+ 152 180 98 320 98 465 c 1
+ 147 455 l 1
+ 153 311 214 231 291 231 c 0
+ 341 231 403 279 403 341 c 0
+ 403 350 399 364 387 378 c 1
+ 372 359 335 314 277 314 c 0
+ 230 314 202 347 202 390 c 0
+98 507 m 1
+ 109 558 l 1
+ 524 558 l 1
+ 513 507 l 1
+ 98 507 l 1
 EndSplineSet
 Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_bh.top
@@ -61853,6 +61878,7 @@ Encoding: 59798 -1 2950
 Width: 406
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 150 110 basechar 0
 AnchorPoint: "bng-rofola" 450 340 basechar 0
 AnchorPoint: "bng-stem" 411 311 basechar 0
 LayerCount: 2
@@ -61882,11 +61908,10 @@ SplineSet
  524 507 l 1
  480 507 l 1
  487 487 490 469 490 449 c 0
- 490 434 488 419 484 402 c 0
- 465 312 381 294 361 294 c 0
+ 490 340.729 423 294 361 294 c 0
  281 294 241 376 203 376 c 0
 EndSplineSet
-Validated: 1
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_m.top
 Ligature2: "'half' half forms in Bengali-1" ma_bng hasanta_bng
 LCarets2: 1 0 
@@ -61897,6 +61922,7 @@ Encoding: 59799 -1 2951
 Width: 333
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 120 110 basechar 0
 AnchorPoint: "bng-rofola" 342 260 basechar 0
 AnchorPoint: "bng-stem" 287 199 basechar 0
 LayerCount: 2
@@ -61933,6 +61959,7 @@ Encoding: 59801 -1 2952
 Width: 444
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 110 110 basechar 0
 AnchorPoint: "bng-stem" 391 341 basechar 0
 LayerCount: 2
 Fore
@@ -61942,8 +61969,7 @@ SplineSet
  130 298 136 283 157 276 c 1
  113 242 l 1
  86 260 80 288 80 310 c 0
- 80 323 81 334 83 341 c 0
- 89 371 134 460 232 460 c 0
+ 80 364.679 121.237 460 232 460 c 4
  250 460 280 453 309 413 c 1
  329 437 356 454 382 454 c 0
  404 454 421 439 430 417 c 1
@@ -61962,7 +61988,7 @@ SplineSet
  308 310 l 1
  272 394 257 409 210 409 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_l.top
 Ligature2: "'half' half forms in Bengali-1" la_bng hasanta_bng
 LCarets2: 1 0 
@@ -61973,30 +61999,31 @@ Encoding: 59802 -1 2953
 Width: 355
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 110 110 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-115 558 m 6
- 166 558 204 532 232 469 c 5
- 262 518 289 542 312 542 c 4
- 370 542 403 465 440 327 c 5
- 436 308 413 296 393 296 c 5
- 374 403 331 491 305 491 c 4
- 283 491 253 427 253 407 c 4
- 253 394 258 374 279 368 c 4
- 292 368 303 377 312 395 c 5
- 322 352 l 5
- 314 342 289 317 258 317 c 4
- 249 317 225 323 216 376 c 5
- 207 360 173 312 131 312 c 4
- 113 312 100 330 95 336 c 5
- 116 385 l 5
- 120 379 133 363 139 363 c 4
- 165 363 186 402 186 428 c 4
- 186 470 152 507 103 507 c 6
- 103 507 89 507 87 507 c 5
- 99 558 l 5
- 115 558 l 6
+115 558 m 2
+ 166 558 204 532 232 469 c 1
+ 262 518 289 542 312 542 c 0
+ 370 542 403 465 440 327 c 1
+ 436 308 413 296 393 296 c 1
+ 374 403 331 491 305 491 c 0
+ 283 491 253 427 253 407 c 0
+ 253 394 258 374 279 368 c 0
+ 292 368 303 377 312 395 c 1
+ 322 352 l 1
+ 314 342 289 317 258 317 c 0
+ 249 317 225 323 216 376 c 1
+ 207 360 173 312 131 312 c 0
+ 113 312 100 330 95 336 c 1
+ 116 385 l 1
+ 120 379 133 363 139 363 c 0
+ 165 363 186 402 186 428 c 0
+ 186 470 152 507 103 507 c 2
+ 103 507 89 507 87 507 c 1
+ 99 558 l 1
+ 115 558 l 2
 EndSplineSet
 Validated: 1
 Substitution2: "subst. top forms for half in Bengali" bn_sh.top
@@ -62009,6 +62036,7 @@ Encoding: 59803 -1 2954
 Width: 360
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 250 110 basechar 0
 AnchorPoint: "bng-stem" 281 351 basechar 0
 LayerCount: 2
 Fore
@@ -62020,14 +62048,13 @@ SplineSet
  215 451 l 1
 323 384 m 1
  341.968 402.968 356 420.539 356 451 c 0
- 356 468 350 491 319 493 c 0
- 305 493 276 484 247 473 c 1
+ 356 468 350.064 493 319 493 c 0
+ 299.5 493 272.5 486 247 473 c 1
  323 384 l 1
 410 471 m 0
  410 364.019 289.928 290 213 290 c 0
  195 290 130 307 130 372 c 0
- 130 379 131 387 133 396 c 0
- 147 463 187 494 209 507 c 1
+ 130 446.047 187.805 494.476 209 507 c 1
  98 507 l 1
  109 558 l 1
  489 558 l 1
@@ -62035,7 +62062,7 @@ SplineSet
  402 507 l 1
  406 499 410 488 410 471 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_ss.top
 Substitution2: "subst. full form for half in Bengali-1" ssa_bng
 Ligature2: "'half' half forms in Bengali-1" ssa_bng hasanta_bng
@@ -62047,6 +62074,7 @@ Encoding: 59804 -1 2955
 Width: 482
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 150 110 basechar 0
 AnchorPoint: "bng-round" 388 355 basechar 0
 AnchorPoint: "bng-stem" 481 381 basechar 0
 LayerCount: 2
@@ -62073,7 +62101,7 @@ SplineSet
  496 468 491 484 481 508 c 1
  354 507 l 1
 EndSplineSet
-Validated: 1
+Validated: 524289
 Substitution2: "subst. top forms for half in Bengali" bn_s.top
 Ligature2: "'half' half forms in Bengali-1" sa_bng hasanta_bng
 LCarets2: 1 0 
@@ -62084,6 +62112,7 @@ Encoding: 59805 -1 2956
 Width: 314
 GlyphClass: 2
 Flags: HMW
+AnchorPoint: "bng-nukta" 90 110 basechar 0
 AnchorPoint: "bng-stem" 294 171 basechar 0
 LayerCount: 2
 Fore
@@ -62091,18 +62120,15 @@ SplineSet
 137 393 m 0
  137 455.82 217.5 494 262 494 c 0
  290 494 372 477 372 410 c 0
- 372 404 371 397 370 390 c 0
- 352 304 272 285 239 275 c 1
+ 372 312.233 271.09 284.724 239 275 c 1
  260 259 340 197 376 130 c 1
  340 91 l 1
  278 180 200 242 104 276 c 1
  99 331 l 1
  127 321 153 316 187 316 c 0
- 285 316 316 375 319 390 c 0
- 320 392 320 395 320 397 c 0
+ 287.277 316 320 375.12 320 397 c 4
  320 426 280 443 250 443 c 0
- 220 443 194 429 190 408 c 0
- 190 406 189 405 189 403 c 0
+ 219.574 443 189 427.944 189 403 c 0
  189 393 196 386 203 378 c 1
  160 348 l 1
  142 362 137 379 137 393 c 0
@@ -62112,7 +62138,8 @@ SplineSet
  433 507 l 1
  98 507 l 1
 EndSplineSet
-Validated: 3073
+Validated: 524289
+LCarets2: 1 0 
 Substitution2: "subst. top forms for half in Bengali" bn_h.top
 Substitution2: "subst. full form for half in Bengali-1" ha_bng
 Ligature2: "'half' half forms in Bengali-1" ha_bng hasanta_bng
@@ -62140,15 +62167,13 @@ SplineSet
  274 355 280 352 288 350 c 1
  309 356 367 420 383 443 c 1
  414 422 440 384 440 343 c 0
- 440 336 438 329 437 322 c 0
- 410 197 307 164 241 164 c 0
+ 440 206.386 299.934 164 241 164 c 0
  123 164 99 290 99 388 c 0
  99 431 104 469 107 488 c 1
  156 478 l 1
  151 449 148 422 148 398 c 0
  148 280 205 215 259 215 c 0
- 322 215 376 272 385 314 c 0
- 386 320 387 326 387 332 c 0
+ 326.267 215 387 276.869 387 332 c 0
  387 348 381 361 372 374 c 1
  356 351 320 299 265 299 c 0
 185 80 m 0
@@ -62157,7 +62182,8 @@ SplineSet
  267 69.4414 243.455 50 218 50 c 0
  198 50 185 62 185 80 c 0
 EndSplineSet
-Validated: 3073
+Validated: 524289
+LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" rra_bng hasanta_bng
 EndChar
 
@@ -62197,6 +62223,7 @@ SplineSet
  113 17 101 37 101 54 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" rha_bng hasanta_bng
 EndChar
 
@@ -62235,6 +62262,7 @@ SplineSet
  222 507 l 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Ligature2: "'half' half forms in Bengali-1" yya_bng hasanta_bng
 EndChar
 
@@ -72177,6 +72205,7 @@ SplineSet
  252 413 187 386 166 369 c 1
 EndSplineSet
 Validated: 3073
+LCarets2: 1 0 
 Substitution2: "'half' half forms in Bengali for Sanskrit-work-around" bn_sk_ba_kludge.half
 Ligature2: "'half' half forms in Bengali-1" ba_asami_bng hasanta_bng
 EndChar
