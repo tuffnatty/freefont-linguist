@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1504604639
+ModificationTime: 1505941055
 PfmFamily: 49
 TTFWeight: 700
 TTFWidth: 5
@@ -58,6 +58,7 @@ Lookup: 1 0 0 "stretch 2dig in Arabic"  {"stretch 2dig in Arabic-1"  } []
 Lookup: 1 0 0 "stretch 3dig in Arabic"  {"stretch 3dig in Arabic-1"  } []
 Lookup: 1 0 0 "stretch 4dig in Arabic"  {"stretch 4dig in Arabic-1"  } []
 Lookup: 1 0 0 "'locl' locl. forms in Greek"  {"'locl' local. forms in Greek-1"  } ['locl' ('grek' <'COP ' 'ELL ' 'PGR ' > ) ]
+Lookup: 2 0 0 "'locl' local forms in Greek-multiple"  {"'locl' local forms in Greek Extended-accent+-Upsilon"  "'locl' local forms in Greek Extended-Upsilon+-cmb"  } ['locl' ('grek' <'ELL ' 'PGR ' > ) ]
 Lookup: 1 0 0 "'dnom' denominators"  {"'dnom' denominators-1"  } []
 Lookup: 1 0 0 "'numr' numerators"  {"'numr' numerators-1"  } []
 Lookup: 1 0 0 "subst. i,j with dotless form"  {"subst. i,j with dotless form-1"  } []
@@ -80,14 +81,10 @@ Lookup: 4 0 0 "'liga' std. ligatures in Arabic"  {"'liga' word ligatures in Arab
 Lookup: 4 0 0 "'dlig' discr. ligatures in Arabic"  {"'dlig' discr. ligatures in Arabic-1"  } ['dlig' ('arab' <'dflt' > ) ]
 Lookup: 4 0 0 "'rlig' req. ligatures in Arabic"  {"'rlig' req. ligatures in Arabic 1"  "'rlig' mark ligatures in Arabic"  } ['rlig' ('arab' <'dflt' > ) ]
 Lookup: 6 0 0 "'mset' mark stretch in Arabic"  {"'mset' mark stretch in Arabic-1"  } [' RQD' ('arab' <'dflt' > ) ]
-Lookup: 2 0 0 "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota"  {"FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota"  } ['c2sc' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
-Lookup: 2 0 0 "FreeMono-'smcp' small caps in Greek-pre-decompose"  {"FreeMono-'smcp' small caps in Greek-pre-decompose-extended"  } ['smcp' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
-Lookup: 2 0 0 "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose"  {"FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended"  } ['c2sc' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
-Lookup: 1 0 0 "FreeMono-'locl' locl. forms in Greek"  {"FreeMono-'locl' localized forms in Greek-1"  } ['locl' ('grek' <'COP ' 'ELL ' 'PGR ' > ) ]
-Lookup: 2 0 0 "FreeMono-'locl' local forms in Greek-multiple"  {"FreeMono-'locl' local forms in Greek Extended-accent+-Upsilon"  "FreeMono-'locl' local forms in Greek Extended-Upsilon+-cmb"  } ['locl' ('grek' <'ELL ' 'PGR ' > ) ]
 Lookup: 257 0 0 "don't move"  {"don't move-1"  } []
 Lookup: 260 0 0 "'mark' marks generic low"  {"'mark' marks generic below"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks generic high"  {"'mark' marks generic above 1"  } ['mark' ('DFLT' <'dflt' > 'arab' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
+Lookup: 260 0 0 "'mark' marks in Greek"  {"'mark' marks in Greek subtable"  } ['mark' ('grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks below in Arabic"  {"'mark' ring in Arabic"  "'mark' below in Arabic-1"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks middle in Arabic"  {"'mark' marks middle in Arabic-1"  "'mark' slash in Arabic-1"  } ['mark' ('arab' <'dflt' > ) ]
 Lookup: 260 1 0 "'mark' marks above in Arabic"  {"'mark' above in Arabic"  } ['mark' ('arab' <'dflt' > ) ]
@@ -531,7 +528,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 832 16 8
+WinInfo: 59392 16 11
 BeginPrivate: 9
 UniqueID 7 5020946
 BlueValues 23 [-16 0 437 451 583 597]
@@ -543,8 +540,8 @@ StemSnapH 8 [93 100]
 StemSnapV 5 [100]
 ForceBold 4 true
 EndPrivate
-AnchorClass2: "cyr-stacked"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-lateral"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-abovemk"  "'mkmk' mark to mark in Cyrillic-1" "dagesh-heb"  "'mark' marks in Hebrew-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-above"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks generic above 1" "cyr-above"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
-BeginChars: 65536 3285
+AnchorClass2: "abovegk"  "'mark' marks in Greek subtable" "cyr-stacked"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-lateral"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-abovemk"  "'mkmk' mark to mark in Cyrillic-1" "dagesh-heb"  "'mark' marks in Hebrew-1" "arab-harakat-abv"  "'mkmk' harakat in Arabic" "arab-harakat-blw"  "'mkmk' harakat in Arabic" "arab-mark-blw-ijam"  "mark on ijam in Arabic-1" "arab-mark-abv-ijam"  "mark on ijam in Arabic-1" "arab-hamza-blw"  "'mark' marks in Arabic - hamza-1" "arab-hamza-abv"  "'mark' marks in Arabic - hamza-1" "arab-ijam-abv"  "'mark' above in Arabic" "arab-above"  "'mark' above in Arabic" "arab-slash"  "'mark' slash in Arabic-1" "arab-mid-ijam"  "'mark' marks middle in Arabic-1" "arab-ijam-blw"  "'mark' below in Arabic-1" "arab-below"  "'mark' below in Arabic-1" "arab-ring"  "'mark' ring in Arabic" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks generic above 1" "cyr-above"  "'mark' marks in Cyrillic 1" "above"  "'mark' marks generic above 1" "below"  "'mark' marks generic below" 
+BeginChars: 65536 3299
 
 StartChar: space
 Encoding: 32 32 0
@@ -12851,6 +12848,7 @@ StartChar: grave.cmb
 Encoding: 768 768 528
 Width: 0
 Flags: HMW
+AnchorPoint: "abovegk" -296 444 mark 0
 AnchorPoint: "cyr-lateral" -472 494 mark 0
 AnchorPoint: "cyr-lateral" -242 494 basemark 0
 AnchorPoint: "abovemk" -322 437 mark 0
@@ -12866,6 +12864,7 @@ StartChar: acute.cmb
 Encoding: 769 769 529
 Width: 0
 Flags: HMW
+AnchorPoint: "abovegk" -296 444 mark 0
 AnchorPoint: "cyr-lateral" -362 494 mark 0
 AnchorPoint: "cyr-lateral" -132 494 basemark 0
 AnchorPoint: "abovemk" -292 437 mark 0
@@ -12895,6 +12894,7 @@ StartChar: tilde.cmb
 Encoding: 771 771 531
 Width: 0
 Flags: HMW
+AnchorPoint: "abovegk" -296 444 mark 0
 AnchorPoint: "abovemk" -292 649 basemark 0
 AnchorPoint: "abovemk" -297 470.5 mark 0
 AnchorPoint: "cyr-above" -296 434 mark 0
@@ -13394,6 +13394,7 @@ StartChar: Alpha
 Encoding: 913 913 567
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 30 482 basechar 0
 LayerCount: 2
 Fore
 Refer: 33 65 N 1 0 0 1 0 0 0
@@ -13451,6 +13452,7 @@ StartChar: Epsilon
 Encoding: 917 917 571
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 0 482 basechar 0
 LayerCount: 2
 Fore
 Refer: 37 69 N 1 0 0 1 0 0 0
@@ -13471,6 +13473,7 @@ StartChar: Eta
 Encoding: 919 919 573
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 5 482 basechar 0
 LayerCount: 2
 Fore
 Refer: 40 72 N 1 0 0 1 0 0 0
@@ -13519,6 +13522,7 @@ StartChar: Iota
 Encoding: 921 921 575
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 30 482 basechar 0
 LayerCount: 2
 Fore
 Refer: 41 73 N 1 0 0 1 0 0 0
@@ -13643,6 +13647,7 @@ StartChar: Omicron
 Encoding: 927 927 581
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 30 482 basechar 0
 LayerCount: 2
 Fore
 Refer: 47 79 N 1 0 0 1 0 0 0
@@ -13689,6 +13694,7 @@ StartChar: Rho
 Encoding: 929 929 583
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 300 580 basechar 0
 LayerCount: 2
 Fore
 Refer: 48 80 N 1 0 0 1 0 0 0
@@ -13719,6 +13725,7 @@ StartChar: Upsilon
 Encoding: 933 933 586
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" -2 482 basechar 0
 LayerCount: 2
 Fore
 Refer: 57 89 N 1 0 0 1 0 0 0
@@ -13792,6 +13799,7 @@ StartChar: Omega
 Encoding: 937 937 590
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 41 482 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -13908,6 +13916,7 @@ StartChar: alpha
 Encoding: 945 945 598
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 284 439 basechar 0
 LayerCount: 2
 Fore
 Refer: 464 593 S 1 0 0 1 -13 0 0
@@ -14022,6 +14031,7 @@ StartChar: epsilon
 Encoding: 949 949 602
 Width: 600
 Flags: MW
+AnchorPoint: "abovegk" 314 439 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14099,6 +14109,7 @@ StartChar: eta
 Encoding: 951 951 604
 Width: 600
 Flags: MW
+AnchorPoint: "abovegk" 324 439 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14159,6 +14170,7 @@ StartChar: iota
 Encoding: 953 953 606
 Width: 600
 Flags: MW
+AnchorPoint: "abovegk" 284 439 basechar 0
 LayerCount: 2
 Fore
 Refer: 481 617 N 1 0 0 1 0 0 0
@@ -14326,6 +14338,7 @@ StartChar: omicron
 Encoding: 959 959 612
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 297 439 basechar 0
 LayerCount: 2
 Fore
 Refer: 79 111 N 1 0 0 1 0 0 0
@@ -14465,6 +14478,7 @@ StartChar: upsilon
 Encoding: 965 965 618
 Width: 600
 Flags: MW
+AnchorPoint: "abovegk" 305 439 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -14612,6 +14626,7 @@ StartChar: omega
 Encoding: 969 969 622
 Width: 600
 Flags: MW
+AnchorPoint: "abovegk" 304 439 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -34302,6 +34317,7 @@ StartChar: Upsilonhook
 Encoding: 978 978 1503
 Width: 600
 Flags: HMW
+AnchorPoint: "abovegk" 0 482 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -38382,10 +38398,11 @@ Refer: 110 175 N 1 0 0 1 -600 -685 0
 Validated: 32769
 EndChar
 
-StartChar: perispomenigreekcmb
+StartChar: perispomeni_gk.cmb
 Encoding: 834 834 1687
 Width: 0
 Flags: HMW
+AnchorPoint: "abovegk" -296 460 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -38408,6 +38425,7 @@ StartChar: commaabove.cmb
 Encoding: 787 787 1689
 Width: 0
 Flags: HMW
+AnchorPoint: "abovegk" -292 444 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -38419,6 +38437,7 @@ StartChar: commareversedabove.cmb
 Encoding: 788 788 1690
 Width: 0
 Flags: HMW
+AnchorPoint: "abovegk" -283 441 mark 0
 LayerCount: 2
 Fore
 Refer: 1536 701 N 1 0 0 1 -626 17 0
@@ -38619,7 +38638,7 @@ Refer: 1547 714 N 1 0 0 1 -584 0 0
 Validated: 32769
 EndChar
 
-StartChar: koroniscmb
+StartChar: koronis_gk.cmb
 Encoding: 835 835 1708
 Width: 0
 Flags: HMW
@@ -38630,10 +38649,11 @@ Refer: 1689 787 S 1 0 0 1 6 0 2
 Validated: 32769
 EndChar
 
-StartChar: dialytikatonoscmb
+StartChar: dialytikatonos_gk.cmb
 Encoding: 836 836 1709
 Width: 0
 Flags: HMW
+AnchorPoint: "abovegk" -296 444 mark 0
 AnchorPoint: "above" -300 444 mark 0
 LayerCount: 2
 Fore
@@ -43070,7 +43090,7 @@ Refer: 1542 707 N 1 0 0 1 -600 -111 2
 Validated: 32769
 EndChar
 
-StartChar: ypogegrammenigreekcmb
+StartChar: ypogegrammeni_gk.cmb
 Encoding: 837 837 1909
 Width: 0
 Flags: HMW
@@ -43768,7 +43788,7 @@ AnchorPoint: "abovemk" 0 800 basemark 0
 LayerCount: 2
 Fore
 Refer: 1952 860 N 1 0 0 1 0 870 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni0361
@@ -43779,7 +43799,7 @@ AnchorPoint: "abovemk" 0 800 basemark 0
 LayerCount: 2
 Fore
 Refer: 1952 860 N -1 0 0 -1 1 600 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni035E
@@ -43790,7 +43810,7 @@ AnchorPoint: "abovemk" 0 800 basemark 0
 LayerCount: 2
 Fore
 Refer: 63 95 N 1 0 0 1 -300 900 2
-Validated: 98305
+Validated: 32769
 EndChar
 
 StartChar: uni035F
@@ -43985,7 +44005,7 @@ SplineSet
  -302 745 -250 800 -120 800 c 0
  -16 800 48 753 116 753 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 EndChar
 
 StartChar: uni0362
@@ -64163,7 +64183,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3182 8127 N 1 0 0 1 -4 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psili.cmb
 EndChar
 
 StartChar: uni1F01
@@ -64175,7 +64194,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 -14 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasia.cmb
 EndChar
 
 StartChar: uni1F02
@@ -64187,7 +64205,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3195 8141 S 1 0 0 1 -16 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psilivaria.cmb
 EndChar
 
 StartChar: uni1F03
@@ -64199,7 +64216,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3208 8157 N 1 0 0 1 -36 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasiavaria.cmb
 EndChar
 
 StartChar: uni1F04
@@ -64211,7 +64227,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3196 8142 N 1 0 0 1 13 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psilioxia.cmb
 EndChar
 
 StartChar: uni1F05
@@ -64223,7 +64238,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3209 8158 N 1 0 0 1 25 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasiaoxia.cmb
 EndChar
 
 StartChar: uni1F06
@@ -64235,7 +64249,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3197 8143 S 1 0 0 1 -1 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: uni1F07
@@ -64247,7 +64260,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3210 8159 N 1 0 0 1 -21 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: Alphapsili
@@ -64259,7 +64271,6 @@ Fore
 Refer: 3182 8127 N 1 0 0 1 -211 0 0
 Refer: 567 913 S 0.85 0 0 1 55 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_psili.cmb
 EndChar
 
 StartChar: Alphadasia
@@ -64271,7 +64282,6 @@ Fore
 Refer: 3238 8190 N 1 0 0 1 -243 0 0
 Refer: 567 913 S 0.85 0 0 1 55 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasia.cmb
 EndChar
 
 StartChar: Alphapsilivaria
@@ -64283,7 +64293,6 @@ Fore
 Refer: 3195 8141 S 1 0 0 1 -229 0 0
 Refer: 567 913 N 0.85 0 0 1 145 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_psilivaria.cmb
 EndChar
 
 StartChar: Alphadasiavaria
@@ -64295,7 +64304,6 @@ Fore
 Refer: 3208 8157 S 1 0 0 1 -217 0 0
 Refer: 567 913 N 0.85 0 0 1 135 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasiavaria.cmb
 EndChar
 
 StartChar: Alphapsilioxia
@@ -64307,7 +64315,6 @@ Fore
 Refer: 3196 8142 N 1 0 0 1 -188 0 0
 Refer: 567 913 S 0.85 0 0 1 115 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_psilioxia.cmb
 EndChar
 
 StartChar: Alphadasiaoxia
@@ -64319,7 +64326,6 @@ Fore
 Refer: 3209 8158 S 1 0 0 1 -179 0 0
 Refer: 567 913 S 0.85 0 0 1 115 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasiaoxia.cmb
 EndChar
 
 StartChar: Alphapsiliperispomeni
@@ -64331,7 +64337,6 @@ Fore
 Refer: 3197 8143 N 1 0 0 1 -185 -58 0
 Refer: 567 913 S 0.85 0 0 1 127 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: Alphadasiaperispomeni
@@ -64343,7 +64348,6 @@ Fore
 Refer: 3210 8159 N 1 0 0 1 -191 -42 0
 Refer: 567 913 S 0.85 0 0 1 117 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: uni1F10
@@ -64355,7 +64359,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3182 8127 N 1 0 0 1 26 3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_psili.cmb
 EndChar
 
 StartChar: uni1F11
@@ -64367,7 +64370,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 6 3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_dasia.cmb
 EndChar
 
 StartChar: uni1F12
@@ -64379,7 +64381,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3195 8141 N 1 0 0 1 -16 6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_psilivaria.cmb
 EndChar
 
 StartChar: uni1F13
@@ -64391,7 +64392,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3208 8157 N 1 0 0 1 -16 6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_dasiavaria.cmb
 EndChar
 
 StartChar: uni1F14
@@ -64403,7 +64403,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3196 8142 N 1 0 0 1 47 6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_psilioxia.cmb
 EndChar
 
 StartChar: uni1F15
@@ -64415,7 +64414,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3209 8158 N 1 0 0 1 46 6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_dasiaoxia.cmb
 EndChar
 
 StartChar: Epsilonpsili
@@ -64427,7 +64425,6 @@ Fore
 Refer: 571 917 N 0.85 0 0 1 82.9 0 0
 Refer: 3182 8127 S 1 0 0 1 -237 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_psili.cmb
 EndChar
 
 StartChar: Epsilondasia
@@ -64439,7 +64436,6 @@ Fore
 Refer: 3238 8190 S 1 0 0 1 -237 0 0
 Refer: 571 917 N 0.85 0 0 1 102.9 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_dasia.cmb
 EndChar
 
 StartChar: Epsilonpsilivaria
@@ -64451,7 +64447,6 @@ Fore
 Refer: 3195 8141 S 1 0 0 1 -260 0 0
 Refer: 571 917 N 0.85 0 0 1 157.9 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_psilivaria.cmb
 EndChar
 
 StartChar: Epsilondasiavaria
@@ -64463,7 +64458,6 @@ Fore
 Refer: 3208 8157 S 1 0 0 1 -239 0 0
 Refer: 571 917 N 0.85 0 0 1 157.9 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_dasiavaria.cmb
 EndChar
 
 StartChar: Epsilonpsilioxia
@@ -64475,7 +64469,6 @@ Fore
 Refer: 3196 8142 S 1 0 0 1 -196 0 0
 Refer: 571 917 N 0.85 0 0 1 157.9 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_psilioxia.cmb
 EndChar
 
 StartChar: Epsilondasiaoxia
@@ -64487,7 +64480,6 @@ Fore
 Refer: 3209 8158 S 1 0 0 1 -180 0 0
 Refer: 571 917 N 0.85 0 0 1 157.9 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_dasiaoxia.cmb
 EndChar
 
 StartChar: uni1F20
@@ -64499,7 +64491,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3182 8127 N 1 0 0 1 30 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psili.cmb
 EndChar
 
 StartChar: uni1F21
@@ -64511,7 +64502,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 38 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasia.cmb
 EndChar
 
 StartChar: uni1F22
@@ -64523,7 +64513,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3195 8141 N 1 0 0 1 16 -3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psilivaria.cmb
 EndChar
 
 StartChar: uni1F23
@@ -64535,7 +64524,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3208 8157 N 1 0 0 1 16 -3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasiavaria.cmb
 EndChar
 
 StartChar: uni1F24
@@ -64547,7 +64535,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3196 8142 N 1 0 0 1 16 -3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psilioxia.cmb
 EndChar
 
 StartChar: uni1F25
@@ -64559,7 +64546,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3209 8158 N 1 0 0 1 16 -3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasiaoxia.cmb
 EndChar
 
 StartChar: uni1F26
@@ -64571,7 +64557,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3197 8143 N 1 0 0 1 31 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: uni1F27
@@ -64583,7 +64568,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3210 8159 N 1 0 0 1 9 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: Etapsili
@@ -64595,7 +64579,6 @@ Fore
 Refer: 3182 8127 S 1 0 0 1 -237 0 0
 Refer: 573 919 N 0.85 0 0 1 45.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psili.cmb
 EndChar
 
 StartChar: Etadasia
@@ -64607,7 +64590,6 @@ Fore
 Refer: 3238 8190 N 1 0 0 1 -237 0 0
 Refer: 573 919 S 0.85 0 0 1 85.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasia.cmb
 EndChar
 
 StartChar: Etapsilivaria
@@ -64619,7 +64601,6 @@ Fore
 Refer: 3195 8141 S 1 0 0 1 -219 0 0
 Refer: 573 919 N 0.85 0 0 1 170.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psilivaria.cmb
 EndChar
 
 StartChar: Etadasiavaria
@@ -64631,7 +64612,6 @@ Fore
 Refer: 3208 8157 S 1 0 0 1 -214 -38 0
 Refer: 573 919 N 0.85 0 0 1 151.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasiavaria.cmb
 EndChar
 
 StartChar: Etapsilioxia
@@ -64643,7 +64623,6 @@ Fore
 Refer: 3196 8142 N 1 0 0 1 -184 0 0
 Refer: 573 919 S 0.85 0 0 1 141.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psilioxia.cmb
 EndChar
 
 StartChar: Etadasiaoxia
@@ -64655,7 +64634,6 @@ Fore
 Refer: 3209 8158 S 1 0 0 1 -178 0 0
 Refer: 573 919 N 0.85 0 0 1 141.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasiaoxia.cmb
 EndChar
 
 StartChar: Etapsiliperispomeni
@@ -64667,7 +64645,6 @@ Fore
 Refer: 3197 8143 S 1 0 0 1 -175 0 0
 Refer: 573 919 N 0.85 0 0 1 120.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: Etadasiaperispomeni
@@ -64679,7 +64656,6 @@ Fore
 Refer: 3210 8159 S 1 0 0 1 -186 0 0
 Refer: 573 919 N 0.85 0 0 1 146.3 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: uni1F30
@@ -64691,7 +64667,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3182 8127 N 1 0 0 1 -40 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_psili.cmb
 EndChar
 
 StartChar: uni1F31
@@ -64703,7 +64678,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 -42 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_dasia.cmb
 EndChar
 
 StartChar: uni1F32
@@ -64715,7 +64689,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3195 8141 N 1 0 0 1 -64 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_psilivaria.cmb
 EndChar
 
 StartChar: uni1F33
@@ -64727,7 +64700,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3208 8157 N 1 0 0 1 -64 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_dasiavaria.cmb
 EndChar
 
 StartChar: uni1F34
@@ -64739,7 +64711,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3196 8142 N 1 0 0 1 18 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_psilioxia.cmb
 EndChar
 
 StartChar: uni1F35
@@ -64751,7 +64722,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3209 8158 N 1 0 0 1 13 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_dasiaoxia.cmb
 EndChar
 
 StartChar: uni1F36
@@ -64763,7 +64733,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3197 8143 N 1 0 0 1 -49 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: uni1F37
@@ -64775,7 +64744,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3210 8159 N 1 0 0 1 -49 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: Iotapsili
@@ -64787,7 +64755,6 @@ Fore
 Refer: 575 921 S 0.85 0 0 1 64 0 0
 Refer: 3182 8127 N 1 0 0 1 -199 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psili.cmb
 EndChar
 
 StartChar: Iotadasia
@@ -64799,7 +64766,6 @@ Fore
 Refer: 3238 8190 N 1 0 0 1 -224 0 0
 Refer: 575 921 S 0.85 0 0 1 64 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasia.cmb
 EndChar
 
 StartChar: Iotapsilivaria
@@ -64811,7 +64777,6 @@ Fore
 Refer: 3195 8141 S 1 0 0 1 -187 0 0
 Refer: 575 921 N 0.85 0 0 1 174 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psilivaria.cmb
 EndChar
 
 StartChar: Iotadasiavaria
@@ -64823,7 +64788,6 @@ Fore
 Refer: 3208 8157 S 1 0 0 1 -180 -46 0
 Refer: 575 921 N 0.85 0 0 1 158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasiavaria.cmb
 EndChar
 
 StartChar: Iotapsilioxia
@@ -64835,7 +64799,6 @@ Fore
 Refer: 3196 8142 N 1 0 0 1 -174 -43 0
 Refer: 575 921 S 0.85 0 0 1 132 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psilioxia.cmb
 EndChar
 
 StartChar: Iotadasiaoxia
@@ -64847,7 +64810,6 @@ Fore
 Refer: 3209 8158 N 1 0 0 1 -158 -43 0
 Refer: 575 921 S 0.85 0 0 1 152 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasiaoxia.cmb
 EndChar
 
 StartChar: Iotapsiliperispomeni
@@ -64859,7 +64821,6 @@ Fore
 Refer: 3197 8143 S 1 0 0 1 -172 -44 0
 Refer: 575 921 N 0.85 0 0 1 124 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: Iotadasiaperispomeni
@@ -64871,7 +64832,6 @@ Fore
 Refer: 3210 8159 S 1 0 0 1 -164 -42 0
 Refer: 575 921 N 0.85 0 0 1 124 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: uni1F40
@@ -64883,7 +64843,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3182 8127 N 1 0 0 1 -2 -10 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_psili.cmb
 EndChar
 
 StartChar: uni1F41
@@ -64895,7 +64854,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 6 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_dasia.cmb
 EndChar
 
 StartChar: uni1F42
@@ -64907,7 +64865,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3195 8141 N 1 0 0 1 -15 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_psilivaria.cmb
 EndChar
 
 StartChar: uni1F43
@@ -64919,7 +64876,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3208 8157 N 1 0 0 1 -15 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_dasiavaria.cmb
 EndChar
 
 StartChar: uni1F44
@@ -64931,7 +64887,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3196 8142 N 1 0 0 1 29 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_psilioxia.cmb
 EndChar
 
 StartChar: uni1F45
@@ -64943,7 +64898,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3209 8158 N 1 0 0 1 47 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_dasiaoxia.cmb
 EndChar
 
 StartChar: Omicronpsili
@@ -64955,7 +64909,6 @@ Fore
 Refer: 581 927 S 0.85 0 0 1 74 0 0
 Refer: 3182 8127 N 1 0 0 1 -222 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_psili.cmb
 EndChar
 
 StartChar: Omicrondasia
@@ -64967,7 +64920,6 @@ Fore
 Refer: 3238 8190 N 1 0 0 1 -231 0 0
 Refer: 581 927 S 0.85 0 0 1 74 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_dasia.cmb
 EndChar
 
 StartChar: Omicronpsilivaria
@@ -64979,7 +64931,6 @@ Fore
 Refer: 3195 8141 S 1 0 0 1 -220 0 0
 Refer: 581 927 N 0.85 0 0 1 133 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_psilivaria.cmb
 EndChar
 
 StartChar: Omicrondasiavaria
@@ -64991,7 +64942,6 @@ Fore
 Refer: 3208 8157 S 1 0 0 1 -201 0 0
 Refer: 581 927 N 0.85 0 0 1 133 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_dasiavaria.cmb
 EndChar
 
 StartChar: Omicronpsilioxia
@@ -65003,7 +64953,6 @@ Fore
 Refer: 3196 8142 S 1 0 0 1 -174 0 0
 Refer: 581 927 S 0.85 0 0 1 90 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_psilioxia.cmb
 EndChar
 
 StartChar: Omicrondasiaoxia
@@ -65015,7 +64964,6 @@ Fore
 Refer: 3209 8158 S 1 0 0 1 -155 0 0
 Refer: 581 927 S 0.85 0 0 1 104 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_dasiaoxia.cmb
 EndChar
 
 StartChar: uni1F50
@@ -65027,7 +64975,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3182 8127 N 1 0 0 1 -6 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_psili.cmb
 EndChar
 
 StartChar: uni1F51
@@ -65039,7 +64986,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 4 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dasia.cmb
 EndChar
 
 StartChar: uni1F52
@@ -65051,7 +64997,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3195 8141 N 1 0 0 1 -17 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_psilivaria.cmb
 EndChar
 
 StartChar: uni1F53
@@ -65063,7 +65008,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3208 8157 N 1 0 0 1 -17 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dasiavaria.cmb
 EndChar
 
 StartChar: uni1F54
@@ -65075,7 +65019,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3196 8142 N 1 0 0 1 3 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_psilioxia.cmb
 EndChar
 
 StartChar: uni1F55
@@ -65087,7 +65030,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3209 8158 N 1 0 0 1 19 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dasiaoxia.cmb
 EndChar
 
 StartChar: uni1F56
@@ -65099,7 +65041,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3197 8143 N 1 0 0 1 -2 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: uni1F57
@@ -65111,7 +65052,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3210 8159 N 1 0 0 1 -9 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: Upsilondasia
@@ -65123,8 +65063,7 @@ Fore
 Refer: 586 933 S 0.85 0 0 1 100 0 0
 Refer: 3238 8190 N 1 0 0 1 -244 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasia.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasia.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasia.cmb
 EndChar
 
 StartChar: Upsilondasiavaria
@@ -65136,8 +65075,7 @@ Fore
 Refer: 3208 8157 N 1 0 0 1 -232 0 0
 Refer: 586 933 S 0.85 0 0 1 157 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasiavaria.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasiavaria.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasiavaria.cmb
 EndChar
 
 StartChar: Upsilondasiaoxia
@@ -65149,8 +65087,7 @@ Fore
 Refer: 3209 8158 S 1 0 0 1 -175 0 0
 Refer: 586 933 S 0.85 0 0 1 160 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasiaoxia.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasiaoxia.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasiaoxia.cmb
 EndChar
 
 StartChar: Upsilondasiaperispomeni
@@ -65162,8 +65099,7 @@ Fore
 Refer: 3210 8159 N 1 0 0 1 -181 -42 0
 Refer: 586 933 S 0.85 0 0 1 153 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasiaperispomeni.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_dasiaperispomeni.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: uni1F60
@@ -65175,7 +65111,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3182 8127 N 1 0 0 1 0 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psili.cmb
 EndChar
 
 StartChar: uni1F61
@@ -65187,7 +65122,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 12 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasia.cmb
 EndChar
 
 StartChar: uni1F62
@@ -65199,7 +65133,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3195 8141 N 1 0 0 1 -9 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilivaria.cmb
 EndChar
 
 StartChar: uni1F63
@@ -65211,7 +65144,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3208 8157 N 1 0 0 1 -13 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiavaria.cmb
 EndChar
 
 StartChar: uni1F64
@@ -65223,7 +65155,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3196 8142 N 1 0 0 1 4 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilioxia.cmb
 EndChar
 
 StartChar: uni1F65
@@ -65235,7 +65166,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3209 8158 N 1 0 0 1 47 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaoxia.cmb
 EndChar
 
 StartChar: uni1F66
@@ -65247,7 +65177,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3197 8143 N 1 0 0 1 6 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: uni1F67
@@ -65259,7 +65188,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3210 8159 N 1 0 0 1 2 -9 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: Omegapsili
@@ -65271,7 +65199,6 @@ Fore
 Refer: 590 937 N 1 0 0 1 25 0 0
 Refer: 3182 8127 N 1 0 0 1 -229 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psili.cmb
 EndChar
 
 StartChar: Omegadasia
@@ -65283,7 +65210,6 @@ Fore
 Refer: 3238 8190 N 1 0 0 1 -225 0 0
 Refer: 590 937 S 0.85 0 0 1 45 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasia.cmb
 EndChar
 
 StartChar: Omegapsilivaria
@@ -65295,7 +65221,6 @@ Fore
 Refer: 3195 8141 S 1 0 0 1 -231 0 0
 Refer: 590 937 S 0.85 0 0 1 114 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psilivaria.cmb
 EndChar
 
 StartChar: Omegadasiavaria
@@ -65307,7 +65232,6 @@ Fore
 Refer: 3208 8157 S 1 0 0 1 -214 0 0
 Refer: 590 937 S 0.85 0 0 1 114 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasiavaria.cmb
 EndChar
 
 StartChar: Omegapsilioxia
@@ -65319,7 +65243,6 @@ Fore
 Refer: 3196 8142 N 1 0 0 1 -174 0 0
 Refer: 590 937 S 0.85 0 0 1 115 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psilioxia.cmb
 EndChar
 
 StartChar: Omegadasiaoxia
@@ -65331,7 +65254,6 @@ Fore
 Refer: 3209 8158 S 1 0 0 1 -179 0 0
 Refer: 590 937 S 0.85 0 0 1 114 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasiaoxia.cmb
 EndChar
 
 StartChar: Omegapsiliperispomeni
@@ -65343,7 +65265,6 @@ Fore
 Refer: 3197 8143 S 1 0 0 1 -169 0 0
 Refer: 590 937 S 0.85 0 0 1 114 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_psiliperispomeni.cmb
 EndChar
 
 StartChar: Omegadasiaperispomeni
@@ -65355,7 +65276,6 @@ Fore
 Refer: 3210 8159 S 1 0 0 1 -179 0 0
 Refer: 590 937 S 0.85 0 0 1 114 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_dasiaperispomeni.cmb
 EndChar
 
 StartChar: uni1F70
@@ -65367,7 +65287,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3226 8175 N 1 0 0 1 -7 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_varia.cmb
 EndChar
 
 StartChar: uni1F71
@@ -65379,7 +65298,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3237 8189 N 1 0 0 1 -7 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_oxia.cmb
 EndChar
 
 StartChar: uni1F72
@@ -65391,7 +65309,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3226 8175 N 1 0 0 1 13 6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_varia.cmb
 EndChar
 
 StartChar: uni1F73
@@ -65403,7 +65320,6 @@ Fore
 Refer: 602 949 N 1 0 0 1 0 0 0
 Refer: 3237 8189 N 1 0 0 1 13 6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" epsilon gk_oxia.cmb
 EndChar
 
 StartChar: uni1F74
@@ -65415,7 +65331,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3226 8175 N 1 0 0 1 17 -3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_varia.cmb
 EndChar
 
 StartChar: uni1F75
@@ -65427,7 +65342,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3237 8189 N 1 0 0 1 45 -3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_oxia.cmb
 EndChar
 
 StartChar: uni1F76
@@ -65439,7 +65353,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3226 8175 N 1 0 0 1 -35 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_varia.cmb
 EndChar
 
 StartChar: uni1F77
@@ -65451,7 +65364,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3237 8189 N 1 0 0 1 -35 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_oxia.cmb
 EndChar
 
 StartChar: uni1F78
@@ -65463,7 +65375,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3226 8175 N 1 0 0 1 -6 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_varia.cmb
 EndChar
 
 StartChar: uni1F79
@@ -65475,7 +65386,6 @@ Fore
 Refer: 612 959 N 1 0 0 1 0 0 0
 Refer: 3237 8189 N 1 0 0 1 14 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omicron gk_oxia.cmb
 EndChar
 
 StartChar: uni1F7A
@@ -65487,7 +65397,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3226 8175 N 1 0 0 1 -8 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_varia.cmb
 EndChar
 
 StartChar: uni1F7B
@@ -65499,7 +65408,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3237 8189 N 1 0 0 1 12 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_oxia.cmb
 EndChar
 
 StartChar: uni1F7C
@@ -65511,7 +65419,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3226 8175 N 1 0 0 1 -4 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_varia.cmb
 EndChar
 
 StartChar: uni1F7D
@@ -65523,7 +65430,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3237 8189 N 1 0 0 1 16 -6 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_oxia.cmb
 EndChar
 
 StartChar: uni1F80
@@ -65535,7 +65441,6 @@ Fore
 Refer: 3006 7936 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psili.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F81
@@ -65547,7 +65452,6 @@ Fore
 Refer: 3007 7937 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F82
@@ -65559,7 +65463,6 @@ Fore
 Refer: 3008 7938 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psilivaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F83
@@ -65571,7 +65474,6 @@ Fore
 Refer: 3009 7939 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasiavaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F84
@@ -65583,7 +65485,6 @@ Fore
 Refer: 3010 7940 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psilioxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F85
@@ -65595,7 +65496,6 @@ Fore
 Refer: 3011 7941 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasiaoxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F86
@@ -65607,7 +65507,6 @@ Fore
 Refer: 3012 7942 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_psiliperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F87
@@ -65619,7 +65518,6 @@ Fore
 Refer: 3013 7943 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -40 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_dasiaperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: Alphapsiliiota
@@ -65632,7 +65530,6 @@ Refer: 567 913 N 0.85 0 0 1 45 0 2
 Refer: 3182 8127 N 1 0 0 1 -226 0 2
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphapsili prosgegrammeni
 EndChar
 
 StartChar: Alphadasiaiota
@@ -65645,7 +65542,6 @@ Refer: 567 913 N 0.85 0 0 1 55 0 2
 Refer: 3238 8190 N 1 0 0 1 -237 0 2
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphadasia prosgegrammeni
 EndChar
 
 StartChar: Alphapsilivariaiota
@@ -65658,7 +65554,6 @@ Refer: 567 913 N 0.85 0 0 1 125 0 2
 Refer: 3195 8141 N 1 0 0 1 -242 0 2
 Refer: 554 890 S 1 0 0 1 70 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphapsilivaria prosgegrammeni
 EndChar
 
 StartChar: Alphadasiavariaiota
@@ -65671,7 +65566,6 @@ Refer: 3208 8157 N 1 0 0 1 -220 0 2
 Refer: 567 913 N 0.85 0 0 1 125 0 2
 Refer: 554 890 S 1 0 0 1 70 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphadasiavaria prosgegrammeni
 EndChar
 
 StartChar: Alphapsilioxiaiota
@@ -65684,7 +65578,6 @@ Refer: 3196 8142 N 1 0 0 1 -200 0 2
 Refer: 567 913 N 0.85 0 0 1 105 0 2
 Refer: 554 890 S 1 0 0 1 50 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphapsilioxia prosgegrammeni
 EndChar
 
 StartChar: Alphadasiaoxiaiota
@@ -65697,7 +65590,6 @@ Refer: 3209 8158 N 1 0 0 1 -180 0 2
 Refer: 567 913 N 0.85 0 0 1 105 0 2
 Refer: 554 890 S 1 0 0 1 50 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphadasiaoxia prosgegrammeni
 EndChar
 
 StartChar: Alphapsiliperispomeniiota
@@ -65710,7 +65602,6 @@ Refer: 3197 8143 N 1 0 0 1 -170 0 2
 Refer: 567 913 N 0.85 0 0 1 105 0 2
 Refer: 554 890 S 1 0 0 1 50 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphapsiliperispomeni prosgegrammeni
 EndChar
 
 StartChar: Alphadasiaperispomeniiota
@@ -65723,7 +65614,6 @@ Refer: 3210 8159 N 1 0 0 1 -180 0 2
 Refer: 567 913 N 0.85 0 0 1 115 0 2
 Refer: 554 890 S 1 0 0 1 60 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alphadasiaperispomeni prosgegrammeni
 EndChar
 
 StartChar: uni1F90
@@ -65735,7 +65625,6 @@ Fore
 Refer: 3034 7968 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psili.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F91
@@ -65747,7 +65636,6 @@ Fore
 Refer: 3035 7969 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F92
@@ -65759,7 +65647,6 @@ Fore
 Refer: 3036 7970 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psilivaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F93
@@ -65771,7 +65658,6 @@ Fore
 Refer: 3037 7971 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasiavaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F94
@@ -65783,7 +65669,6 @@ Fore
 Refer: 3038 7972 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psilioxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F95
@@ -65795,7 +65680,6 @@ Fore
 Refer: 3039 7973 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasiaoxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F96
@@ -65807,7 +65691,6 @@ Fore
 Refer: 3040 7974 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_psiliperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1F97
@@ -65819,7 +65702,6 @@ Fore
 Refer: 3041 7975 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_dasiaperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: Etapsiliiota
@@ -65832,7 +65714,6 @@ Refer: 573 919 S 0.85 0 0 1 65.3 0 2
 Refer: 3182 8127 N 1 0 0 1 -229 0 2
 Refer: 554 890 S 1 0 0 1 20 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etapsili prosgegrammeni
 EndChar
 
 StartChar: Etadasiaiota
@@ -65845,7 +65726,6 @@ Refer: 573 919 S 0.85 0 0 1 75.3 0 2
 Refer: 3238 8190 N 1 0 0 1 -244 0 2
 Refer: 554 890 S 1 0 0 1 30 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etadasia prosgegrammeni
 EndChar
 
 StartChar: Etapsilivariaiota
@@ -65858,7 +65738,6 @@ Refer: 573 919 N 0.85 0 0 1 155.3 0 2
 Refer: 3195 8141 S 1 0 0 1 -240 0 2
 Refer: 554 890 N 1 0 0 1 100 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etapsilivaria prosgegrammeni
 EndChar
 
 StartChar: Etadasiavariaiota
@@ -65871,7 +65750,6 @@ Refer: 573 919 N 0.85 0 0 1 165.3 0 2
 Refer: 3208 8157 S 1 0 0 1 -210 0 2
 Refer: 554 890 N 1 0 0 1 130 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etadasiavaria prosgegrammeni
 EndChar
 
 StartChar: Etapsilioxiaiota
@@ -65884,7 +65762,6 @@ Refer: 573 919 N 0.85 0 0 1 131.3 0 2
 Refer: 3196 8142 N 1 0 0 1 -174 0 2
 Refer: 554 890 S 1 0 0 1 90 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etapsilioxia prosgegrammeni
 EndChar
 
 StartChar: Etadasiaoxiaiota
@@ -65897,7 +65774,6 @@ Refer: 573 919 N 0.85 0 0 1 145.3 0 2
 Refer: 3209 8158 N 1 0 0 1 -170 0 2
 Refer: 554 890 S 1 0 0 1 100 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etadasiaoxia prosgegrammeni
 EndChar
 
 StartChar: Etapsiliperispomeniiota
@@ -65910,7 +65786,6 @@ Refer: 573 919 N 0.85 0 0 1 130.3 0 2
 Refer: 3197 8143 S 1 0 0 1 -165 0 2
 Refer: 554 890 N 1 0 0 1 90 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etapsiliperispomeni prosgegrammeni
 EndChar
 
 StartChar: Etadasiaperispomeniiota
@@ -65923,7 +65798,6 @@ Refer: 573 919 N 0.85 0 0 1 131.3 0 2
 Refer: 3210 8159 N 1 0 0 1 -190 0 2
 Refer: 554 890 S 1 0 0 1 80 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Etadasiaperispomeni prosgegrammeni
 EndChar
 
 StartChar: uni1FA0
@@ -65935,7 +65809,6 @@ Fore
 Refer: 3090 8032 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psili.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FA1
@@ -65947,7 +65820,6 @@ Fore
 Refer: 3091 8033 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FA2
@@ -65959,7 +65831,6 @@ Fore
 Refer: 3092 8034 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilivaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FA3
@@ -65971,7 +65842,6 @@ Fore
 Refer: 3093 8035 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiavaria.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FA4
@@ -65983,7 +65853,6 @@ Fore
 Refer: 3094 8036 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psilioxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FA5
@@ -65995,7 +65864,6 @@ Fore
 Refer: 3095 8037 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaoxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FA6
@@ -66007,7 +65875,6 @@ Fore
 Refer: 3096 8038 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_psiliperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FA7
@@ -66019,7 +65886,6 @@ Fore
 Refer: 3097 8039 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_dasiaperispomeni.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: Omegapsiliiota
@@ -66032,7 +65898,6 @@ Refer: 590 937 N 0.85 0 0 1 45 0 2
 Refer: 3182 8127 N 1 0 0 1 -200 0 2
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegapsili prosgegrammeni
 EndChar
 
 StartChar: Omegadasiaiota
@@ -66045,7 +65910,6 @@ Refer: 590 937 N 0.85 0 0 1 45 0 2
 Refer: 3238 8190 N 1 0 0 1 -230 0 2
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegadasia prosgegrammeni
 EndChar
 
 StartChar: Omegapsilivariaiota
@@ -66058,7 +65922,6 @@ Refer: 590 937 S 0.85 0 0 1 119 0 2
 Refer: 3195 8141 S 1 0 0 1 -227 0 2
 Refer: 554 890 S 1 0 0 1 60 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegapsilivaria prosgegrammeni
 EndChar
 
 StartChar: Omegadasiavariaiota
@@ -66071,7 +65934,6 @@ Refer: 590 937 S 0.85 0 0 1 119 0 2
 Refer: 3208 8157 S 1 0 0 1 -210 0 2
 Refer: 554 890 S 1 0 0 1 80 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegadasiavaria prosgegrammeni
 EndChar
 
 StartChar: Omegapsilioxiaiota
@@ -66084,7 +65946,6 @@ Refer: 590 937 N 0.85 0 0 1 95 0 2
 Refer: 3196 8142 N 1 0 0 1 -174 0 2
 Refer: 554 890 S 1 0 0 1 50 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegapsilioxia prosgegrammeni
 EndChar
 
 StartChar: Omegadasiaoxiaiota
@@ -66097,7 +65958,6 @@ Refer: 590 937 S 0.85 0 0 1 107 0 2
 Refer: 3209 8158 S 1 0 0 1 -178 0 2
 Refer: 554 890 S 1 0 0 1 60 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegadasiaoxia prosgegrammeni
 EndChar
 
 StartChar: Omegapsiliperispomeniiota
@@ -66110,7 +65970,6 @@ Refer: 590 937 N 0.85 0 0 1 110 0 2
 Refer: 3197 8143 N 1 0 0 1 -145 0 2
 Refer: 554 890 S 1 0 0 1 70 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegapsiliperispomeni prosgegrammeni
 EndChar
 
 StartChar: Omegadasiaperispomeniiota
@@ -66123,7 +65982,6 @@ Refer: 590 937 S 0.85 0 0 1 110 0 2
 Refer: 3210 8159 S 1 0 0 1 -165 0 2
 Refer: 554 890 S 1 0 0 1 70 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omegadasiaperispomeni prosgegrammeni
 EndChar
 
 StartChar: uni1FB0
@@ -66135,7 +65993,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 522 728 N 1 0 0 1 -21 -19 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha breve.cmb
 EndChar
 
 StartChar: uni1FB1
@@ -66147,7 +66004,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 110 175 N 1 0 0 1 -21 -38 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha macron.cmb
 EndChar
 
 StartChar: uni1FB2
@@ -66159,7 +66015,6 @@ Fore
 Refer: 3106 8048 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_varia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FB3
@@ -66171,7 +66026,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FB4
@@ -66183,7 +66037,6 @@ Fore
 Refer: 593 940 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha gk_oxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FB6
@@ -66195,7 +66048,6 @@ Fore
 Refer: 598 945 N 1 0 0 1 0 0 0
 Refer: 3183 8128 N 1 0 0 1 3 -32 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha perispomeni_gk.cmb
 EndChar
 
 StartChar: uni1FB7
@@ -66207,7 +66059,6 @@ Fore
 Refer: 3173 8118 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -37 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" alpha perispomeni_gk.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: Alphabreve
@@ -66219,7 +66070,6 @@ Fore
 Refer: 567 913 N 1 0 0 1 0 0 0
 Refer: 522 728 S 1 0 0 1 -12 126 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha breve.cmb
 EndChar
 
 StartChar: Alphamacron
@@ -66231,7 +66081,6 @@ Fore
 Refer: 567 913 N 1 0 0 1 0 0 0
 Refer: 110 175 S 1 0 0 1 -52 80 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha macron.cmb
 EndChar
 
 StartChar: Alphavaria
@@ -66243,7 +66092,6 @@ Fore
 Refer: 3226 8175 S 1 0 0 1 -218 -49 0
 Refer: 567 913 S 0.85 0 0 1 90 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_varia.cmb
 EndChar
 
 StartChar: Alphaoxia
@@ -66255,7 +66103,6 @@ Fore
 Refer: 3237 8189 N 1 0 0 1 -211 -52 0
 Refer: 567 913 S 0.85 0 0 1 90 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Alpha gk_oxia.cmb
 EndChar
 
 StartChar: Alphaiota
@@ -66267,7 +66114,6 @@ Fore
 Refer: 567 913 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -10 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Alpha prosgegrammeni
 EndChar
 
 StartChar: lenis
@@ -66298,7 +66144,7 @@ LayerCount: 2
 Fore
 Refer: 606 953 S 1 0 0 1 -100 0 2
 Validated: 33281
-Substitution2: "FreeMono-'locl' localized forms in Greek-1" ypogegrammeni_gk.cmb
+Substitution2: "'locl' local. forms in Greek-1" ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: psili
@@ -66361,7 +66207,6 @@ Fore
 Refer: 3110 8052 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_varia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FC3
@@ -66373,7 +66218,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FC4
@@ -66385,7 +66229,6 @@ Fore
 Refer: 595 942 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta gk_oxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FC6
@@ -66397,7 +66240,6 @@ Fore
 Refer: 604 951 N 1 0 0 1 0 0 0
 Refer: 3183 8128 N 1 0 0 1 16 -28 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta perispomeni_gk.cmb
 EndChar
 
 StartChar: uni1FC7
@@ -66409,7 +66251,6 @@ Fore
 Refer: 3188 8134 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 -158 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" eta perispomeni_gk.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: Epsilonvaria
@@ -66421,7 +66262,6 @@ Fore
 Refer: 571 917 S 1 0 0 1 70 0 0
 Refer: 3226 8175 S 1 0 0 1 -281 -46 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_varia.cmb
 EndChar
 
 StartChar: Epsilonoxia
@@ -66433,7 +66273,6 @@ Fore
 Refer: 571 917 S 1 0 0 1 60 0 0
 Refer: 3237 8189 S 1 0 0 1 -269 -52 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Epsilon gk_oxia.cmb
 EndChar
 
 StartChar: Etavaria
@@ -66445,7 +66284,6 @@ Fore
 Refer: 573 919 S 1 0 0 1 29 0 0
 Refer: 3226 8175 S 1 0 0 1 -291 -49 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_varia.cmb
 EndChar
 
 StartChar: Etaoxia
@@ -66457,7 +66295,6 @@ Fore
 Refer: 573 919 S 1 0 0 1 19 0 0
 Refer: 3237 8189 S 1 0 0 1 -274 -52 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Eta gk_oxia.cmb
 EndChar
 
 StartChar: Etaiota
@@ -66469,7 +66306,6 @@ Fore
 Refer: 573 919 N 1 0 0 1 -2 0 0
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Eta prosgegrammeni
 EndChar
 
 StartChar: psilivaria
@@ -66514,7 +66350,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 522 728 N 1 0 0 1 -49 -19 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota breve.cmb
 EndChar
 
 StartChar: uni1FD1
@@ -66526,7 +66361,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 110 175 N 1 0 0 1 -49 -38 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota macron.cmb
 EndChar
 
 StartChar: uni1FD2
@@ -66538,7 +66372,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3224 8173 N 1 0 0 1 -48 -2 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_dialytikavaria.cmb
 EndChar
 
 StartChar: uni1FD3
@@ -66550,7 +66383,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3225 8174 N 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_dialytikaoxia.cmb
 EndChar
 
 StartChar: uni1FD6
@@ -66562,7 +66394,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3183 8128 N 1 0 0 1 -49 -45 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota perispomeni_gk.cmb
 EndChar
 
 StartChar: uni1FD7
@@ -66574,7 +66405,6 @@ Fore
 Refer: 606 953 N 1 0 0 1 0 0 0
 Refer: 3184 8129 N 1 0 0 1 -50 -40 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" iota gk_dialytikaperispomeni.cmb
 EndChar
 
 StartChar: Iotabreve
@@ -66586,7 +66416,6 @@ Fore
 Refer: 575 921 N 1 0 0 1 0 0 0
 Refer: 522 728 N 1 0 0 1 0 126 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota breve.cmb
 EndChar
 
 StartChar: Iotamacron
@@ -66598,7 +66427,6 @@ Fore
 Refer: 575 921 N 1 0 0 1 0 0 0
 Refer: 110 175 N 1 0 0 1 0 80 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota macron.cmb
 EndChar
 
 StartChar: Iotavaria
@@ -66610,7 +66438,6 @@ Fore
 Refer: 575 921 S 1 0 0 1 67 0 0
 Refer: 3226 8175 N 1 0 0 1 -209 -53 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_varia.cmb
 EndChar
 
 StartChar: Iotaoxia
@@ -66622,7 +66449,6 @@ Fore
 Refer: 575 921 N 1 0 0 1 52 0 0
 Refer: 3237 8189 N 1 0 0 1 -208 -52 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Iota gk_oxia.cmb
 EndChar
 
 StartChar: dasiavaria
@@ -66667,7 +66493,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 522 728 N 1 0 0 1 -2 -19 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon breve.cmb
 EndChar
 
 StartChar: uni1FE1
@@ -66679,7 +66504,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 110 175 N 1 0 0 1 -2 -41 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon macron.cmb
 EndChar
 
 StartChar: uni1FE2
@@ -66691,7 +66515,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3224 8173 N 1 0 0 1 -2 -3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dialytikavaria.cmb
 EndChar
 
 StartChar: uni1FE3
@@ -66703,7 +66526,6 @@ Fore
 Refer: 618 965 S 1 0 0 1 0 0 0
 Refer: 3225 8174 S 1 0 0 1 0 0 2
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dialytikaoxia.cmb
 EndChar
 
 StartChar: uni1FE4
@@ -66715,7 +66537,6 @@ Fore
 Refer: 614 961 N 1 0 0 1 0 0 0
 Refer: 3182 8127 S 1 0 0 1 44 3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" rho gk_psili.cmb
 EndChar
 
 StartChar: uni1FE5
@@ -66727,7 +66548,6 @@ Fore
 Refer: 614 961 N 1 0 0 1 0 0 0
 Refer: 3238 8190 N 1 0 0 1 24 3 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" rho gk_dasia.cmb
 EndChar
 
 StartChar: uni1FE6
@@ -66739,7 +66559,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3183 8128 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon perispomeni_gk.cmb
 EndChar
 
 StartChar: uni1FE7
@@ -66751,7 +66570,6 @@ Fore
 Refer: 618 965 N 1 0 0 1 0 0 0
 Refer: 3184 8129 N 1 0 0 1 -2 -40 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" upsilon gk_dialytikaperispomeni.cmb
 EndChar
 
 StartChar: Upsilonbreve
@@ -66763,8 +66581,7 @@ Fore
 Refer: 586 933 N 1 0 0 1 0 0 0
 Refer: 522 728 N 1 0 0 1 0 126 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-Upsilon+-cmb" Upsilonhook breve.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon breve.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-Upsilon+-cmb" Upsilonhook breve.cmb
 EndChar
 
 StartChar: Upsilonmacron
@@ -66776,8 +66593,7 @@ Fore
 Refer: 586 933 N 1 0 0 1 0 0 0
 Refer: 110 175 N 1 0 0 1 0 80 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-Upsilon+-cmb" Upsilonhook macron.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon macron.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-Upsilon+-cmb" Upsilonhook macron.cmb
 EndChar
 
 StartChar: Upsilonvaria
@@ -66789,8 +66605,7 @@ Fore
 Refer: 3226 8175 N 1 0 0 1 -211 -55 0
 Refer: 586 933 S 0.85 0 0 1 130 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_varia.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_varia.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_varia.cmb
 EndChar
 
 StartChar: Upsilonoxia
@@ -66802,8 +66617,7 @@ Fore
 Refer: 3237 8189 S 1 0 0 1 -226 -55 0
 Refer: 586 933 S 0.85 0 0 1 107 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_oxia.cmb
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Upsilon gk_oxia.cmb
+MultipleSubs2: "'locl' local forms in Greek Extended-accent+-Upsilon" Upsilonhook gk_oxia.cmb
 EndChar
 
 StartChar: Rho_dasia
@@ -66815,7 +66629,6 @@ Fore
 Refer: 583 929 N 1 0 0 1 71 0 0
 Refer: 3238 8190 S 1 0 0 1 -257 -43 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Rho gk_dasia.cmb
 EndChar
 
 StartChar: dialytikavaria
@@ -66866,7 +66679,6 @@ Fore
 Refer: 3118 8060 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_varia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FF3
@@ -66878,7 +66690,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FF4
@@ -66890,7 +66701,6 @@ Fore
 Refer: 627 974 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega gk_oxia.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: uni1FF6
@@ -66902,7 +66712,6 @@ Fore
 Refer: 622 969 N 1 0 0 1 0 0 0
 Refer: 3183 8128 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega perispomeni_gk.cmb
 EndChar
 
 StartChar: uni1FF7
@@ -66914,7 +66723,6 @@ Fore
 Refer: 3230 8182 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'smcp' small caps in Greek-pre-decompose-extended" omega perispomeni_gk.cmb ypogegrammeni_gk.cmb
 EndChar
 
 StartChar: Omicronvaria
@@ -66926,7 +66734,6 @@ Fore
 Refer: 3226 8175 N 1 0 0 1 -211 -49 0
 Refer: 581 927 S 0.85 0 0 1 106 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_varia.cmb
 EndChar
 
 StartChar: Omicronoxia
@@ -66938,7 +66745,6 @@ Fore
 Refer: 3237 8189 S 1 0 0 1 -221 -55 0
 Refer: 581 927 S 0.85 0 0 1 94 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omicron gk_oxia.cmb
 EndChar
 
 StartChar: Omegavaria
@@ -66950,7 +66756,6 @@ Fore
 Refer: 590 937 S 1 0 0 1 40 0 0
 Refer: 3226 8175 S 1 0 0 1 -265 -52 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_varia.cmb
 EndChar
 
 StartChar: Omegaoxia
@@ -66962,7 +66767,6 @@ Fore
 Refer: 590 937 S 1 0 0 1 29 0 0
 Refer: 3237 8189 N 1 0 0 1 -231 -55 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' caps to small caps in Greek-pre-decompose-extended" Omega gk_oxia.cmb
 EndChar
 
 StartChar: Omegaiota
@@ -66974,7 +66778,6 @@ Fore
 Refer: 590 937 N 1 0 0 1 0 0 0
 Refer: 554 890 S 1 0 0 1 0 0 0
 Validated: 32769
-MultipleSubs2: "FreeMono-'c2sc' glyph decomp. in Greek-caps w/iota" Omega prosgegrammeni
 EndChar
 
 StartChar: oxia
@@ -67746,6 +67549,146 @@ SplineSet
  95 483 l 5
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: gk_tonos.cmb
+Encoding: 59408 -1 3285
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 556 900 N 1 0 0 1 -570 0 2
+EndChar
+
+StartChar: gk_dialytikaperispomeni.cmb
+Encoding: 59410 -1 3286
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -302 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3184 8129 N 1 0 0 1 -601 0 2
+EndChar
+
+StartChar: gk_psili.cmb
+Encoding: 59411 -1 3287
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3182 8127 N 1 0 0 1 -558 0 2
+EndChar
+
+StartChar: gk_psilivaria.cmb
+Encoding: 59412 -1 3288
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -312 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3195 8141 N 1 0 0 1 -606 0 2
+EndChar
+
+StartChar: gk_psilioxia.cmb
+Encoding: 59413 -1 3289
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -312 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3196 8142 N 1 0 0 1 -599 0 2
+EndChar
+
+StartChar: gk_psiliperispomeni.cmb
+Encoding: 59414 -1 3290
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3197 8143 N 1 0 0 1 -582 0 2
+EndChar
+
+StartChar: gk_dasiavaria.cmb
+Encoding: 59415 -1 3291
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3208 8157 N 1 0 0 1 -596 0 2
+EndChar
+
+StartChar: gk_dasiaoxia.cmb
+Encoding: 59416 -1 3292
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -312 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3209 8158 N 1 0 0 1 -589 0 2
+EndChar
+
+StartChar: gk_dasiaperispomeni.cmb
+Encoding: 59417 -1 3293
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3210 8159 N 1 0 0 1 -623 0 2
+EndChar
+
+StartChar: gk_dialytikavaria.cmb
+Encoding: 59418 -1 3294
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -312 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3224 8173 N 1 0 0 1 -621 0 2
+EndChar
+
+StartChar: gk_dialytikaoxia.cmb
+Encoding: 59419 -1 3295
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -322 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3225 8174 N 1 0 0 1 -621 0 2
+EndChar
+
+StartChar: gk_varia.cmb
+Encoding: 59420 -1 3296
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3226 8175 N 1 0 0 1 -623 0 2
+EndChar
+
+StartChar: gk_oxia.cmb
+Encoding: 59421 -1 3297
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3237 8189 N 1 0 0 1 -591 0 2
+EndChar
+
+StartChar: gk_dasia.cmb
+Encoding: 59422 -1 3298
+Width: 0
+Flags: HW
+AnchorPoint: "abovegk" -292 444 mark 0
+LayerCount: 2
+Fore
+Refer: 3238 8190 N 1 0 0 1 -612 0 2
 EndChar
 EndChars
 EndSplineFont
