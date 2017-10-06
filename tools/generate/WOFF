@@ -33,12 +33,12 @@ The settings should otherwise be like those for generic OpenType fonts.
 """
 
 import fontforge
-import sys
+from sys import argv
 import xml.dom.minidom
 from buildutils import *
 
-scriptname = sys.argv[0];
-argc = len( sys.argv )
+scriptname = argv[0];
+argc = len( argv )
 
 class SFNT_name:
 	def __init__( self, lang, string ):
@@ -174,6 +174,6 @@ def build_WOFF_file( sfd_filename ):
 
 if argc > 1:
 	for i in range( 1, argc ):
-		build_WOFF_file( sys.argv[i] )
+		build_WOFF_file( argv[i] )
 else:
 	print( 'Usage:', scriptname, 'font.sfd [font.sfd ...]' )
