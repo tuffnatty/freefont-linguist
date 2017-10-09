@@ -117,5 +117,5 @@ def get_file32Bit_checkSumAdjustment( f ):
 		s += v
 	cs = 0xFFFFFFFF & int( s )
 	checkSumAdjustment = 0xB1B0AFBA - cs
-	return checkSumAdjustment
+	return 0xFFFFFFFF & checkSumAdjustment
 
