@@ -55,8 +55,12 @@ class DirectoryEntry( Table ):
 	def getTagStr( self ):
 		return int_to_tag( self.tag )
 
-	def __init__( self, buf, entrynum ):
-		offset = OffsetTable._size + entrynum * DirectoryEntry._size
+	def getIndex( self ):
+		return self._index
+
+	def __init__( self, buf, entryIndex ):
+		self._index = entryIndex
+		offset = OffsetTable._size + self._index * DirectoryEntry._size
 		Table.__init__( self, buf, offset )
 
 def getDirectoryEntriesByTag( filebuf ):

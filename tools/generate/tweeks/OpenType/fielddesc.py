@@ -37,6 +37,24 @@ import re
 	byte	byte
 	char[]	(signed byte... used for strings)
 """
+"""
+Regarding PANOSE
+
+The OpenType Standard explains:
+"The PANOSE definition contains ten digits each of which currently describes up to sixteen variations."
+
+"digits:?  But it's a 10-*byte* field?  Want to call a byte a digit?
+OK, but then it would take up to 2^8 = 256 values.
+Well, if only half of the bits of each byte are used, that would amount
+to 2^4 = 16 different values.
+OK, so each byte of this 10-byte field takes hex values 0 through 0xF, and no others.
+Still, a funny sort of "digit".
+
+If that is the case, there's no need to worry about the sign bit,
+although the OpenType standard says Panose is a uint8[10].
+The unsigned-byte and signed-byte interpretation would always be the same.
+"""
+
 _pytype_structsym = {
 	'byte':    'b',
 	'char':    'c',

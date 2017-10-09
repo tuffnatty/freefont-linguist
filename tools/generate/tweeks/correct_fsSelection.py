@@ -28,59 +28,80 @@ __doc__ = """Sets the OpenType 'OS/2' table fsSelection bitfield:
 
 	A cludge to work around some misunderstandings in FontForge.
 """
-from sys import argv, stdout, stderr
+from sys import argv, stdout as out, stderr as err, exit
 from OpenType.fontdirectory import getDirectoryEntriesByTag
-from OpenType.requiredtables import OS_2Table
+from OpenType.requiredtables import OS_2Table, headTable
+from OpenType.checksum import get_file32Bit_checkSumAdjustment
 
 argc = len( argv )
 
 if argc > 1:
 	filePath = argv[argc - 1]
 	if not filePath:
-		print( "Usage: python correct_fsSelection <filename>", file=stdout )
-		sys.exit( 1 )
+		print( "Usage: python correct_fsSelection <filename>", file=err )
+		exit( 1 )
 
 try:
 	#FIXME this is very clumsy, reading the whole file in and writing it
 	# to set a single bit.  The structure is there to do it better,
-	# I just ran out of time.
 
 	infile = open( filePath, 'r+b' )
 	buf = bytearray( infile.read() )
 
 	entries_by_tag = getDirectoryEntriesByTag( buf )
 
-
 	entry = entries_by_tag[ 'OS/2' ]
-	pt = OS_2Table( buf, entry.offset )
+	t = OS_2Table( buf, entry.offset )	# read table from font buffer
+	# ======================= TEST
+	print( "OS/2 checksum-orig", hex( entry.checkSum ) )
+	cs = t.getChecksum()
+	print( "OS/2 checksum-calc", hex( cs ) )
+	# =======================
 	# big-endian: bit 0 is at the beginning
 	ITALIC           = 0b0000000000000001
 	USE_TYPO_METRICS = 0b0000000010000000
 	OBLIQUE          = 0b0000001000000000
-	pt.fsSelection = pt.fsSelection | USE_TYPO_METRICS
+	t.fsSelection = t.fsSelection | USE_TYPO_METRICS
 	# Offical OpenType docs say of the ITALIC flag:
 	# "Font contains italic or oblique characters"
 	if "Italic" in filePath or "Oblique" in filePath:
-		pt.fsSelection = pt.fsSelection | ITALIC
+		t.fsSelection = t.fsSelection | ITALIC
 	# "Font contains oblique characters"
 	if "Oblique" in filePath:
-		pt.fsSelection = pt.fsSelection | OBLIQUE
-	ts = pt.getTableSize()
-	ptbuf = bytearray( ts )
-	pt.writeInto( ptbuf )
-	pt = OS_2Table( ptbuf, 0 )
-	off = entry.offset
+		t.fsSelection = t.fsSelection | OBLIQUE
 
-	pt.writeInto( buf, off )
+	t.writeInto( buf, entry.offset )	# write into font buffer
+	# =======================
+
+	entry.checkSum = t.getChecksum()
+	entry_off = entry.getOffset()	# offset to directory entry itself
+	entry.writeInto( buf, entry_off )	# write into dir. entry buffer
 
 	infile.close()
 
+	print( "Correcting OS/2 fsSelection bits in file", filePath )
+
+	entry = entries_by_tag[ 'head' ]
+	ht = headTable( buf, entry.offset )
+	ht.checkSumAdjustment = 0
+	entry.checkSum = ht.getChecksum()
+	ht.writeInto( buf, entry.offset )
+
 	outfile = open( filePath, 'wb' )
-	#print( "Correcting OS/2 fsSelection bits in file", filePath )
 	outfile.write( str( buf ) )
 	outfile.flush()
+
+	csa = get_file32Bit_checkSumAdjustment( filePath )
+	outfile = open( filePath, 'wb' )
+	ht.checkSumAdjustment = csa
+	ht.writeInto( buf, entry.offset )
+	outfile.write( str( buf ) )
+	outfile.flush()
+
 except Exception as e:
-	print( "correct_fsSelection, file ", filePath, file=stderr )
-	print( e, file=stderr )
+	print( "correct_fsSelection, file ", filePath, file=err )
+	print( e, file=err )
+	print( "correct_fsSelection, file ", filePath, file=out )
+	print( e, file=out )
 	exit( 1 )
 exit( 0 )

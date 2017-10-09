@@ -24,50 +24,71 @@ __version__ = "$Revision: 1.9 $"
 __doc__ = """Sets the OpenType 'post' table flag 'isFixedPitch' to True.
 	A cludge to work around some misunderstandings in FontForge.
 """
-from sys import argv, stdout, stderr
+from sys import argv, stdout as out, stderr as err, exit
 from OpenType.fontdirectory import getDirectoryEntriesByTag
-from OpenType.requiredtables import postTable
+from OpenType.requiredtables import postTable, headTable
+from OpenType.checksum import get_file32Bit_checkSumAdjustment
 
 argc = len( argv )
 
 if argc > 1:
 	filePath = argv[argc - 1]
 	if not filePath:
-		print( "Usage: python set_isfixedpitch <filename>", file=stdout )
-		sys.exit( 1 )
+		print( "Usage: python set_isfixedpitch <filename>", file=err )
+		exit( 1 )
 
 try:
 	#FIXME this is very clumsy, reading the whole file in and writing it
 	# to set a single bit.  The structure is there to do it better,
-	# I just ran out of time.
 	if not "Mono" in filePath:
-		sys.exit( 1 )
+		exit( 1 )
 
 	infile = open( filePath, 'r+b' )
 	buf = bytearray( infile.read() )
 
 	entries_by_tag = getDirectoryEntriesByTag( buf )
 
-
 	entry = entries_by_tag[ 'post' ]
-	pt = postTable( buf, entry.offset )
-	pt.isFixedPitch = True
-	ts = pt.getTableSize()
-	ptbuf = bytearray( ts )
-	pt.writeInto( ptbuf )
-	pt = postTable( ptbuf, 0 )
-	off = entry.offset
+	t = postTable( buf, entry.offset )
+	# ======================= TEST
+	print( "post checksum-orig", hex( entry.checkSum ) )
+	cs = t.getChecksum()
+	print( "post checksum-calc", hex( cs ) )
+	# =======================
+	t.isFixedPitch = True
 
-	pt.writeInto( buf, off )
+	t.writeInto( buf, entry.offset )
+	# =======================
+
+	entry.checkSum = t.getChecksum()
+	entry_off = entry.getOffset()	# offset to directory entry itself
+	entry.writeInto( buf, entry_off )	# write into dir. entry buffer
 
 	infile.close()
 
+	print( "Setting 'post' flag 'isFixedPitch'", filePath )
+
+	entry = entries_by_tag[ 'head' ]
+	ht = headTable( buf, entry.offset )
+	ht.checkSumAdjustment = 0
+	entry.checkSum = ht.getChecksum()
+	ht.writeInto( buf, entry.offset )
+
 	outfile = open( filePath, 'wb' )
-	#print( "Setting POST isFixedPitch bit in file", filePath )
 	outfile.write( str( buf ) )
 	outfile.flush()
+
+	csa = get_file32Bit_checkSumAdjustment( filePath )
+	outfile = open( filePath, 'wb' )
+	ht.checkSumAdjustment = csa
+	ht.writeInto( buf, entry.offset )
+	outfile.write( str( buf ) )
+	outfile.flush()
+
 except Exception as e:
-	print( "set_isfixedpitch, file ", filePath, file=stderr )
-	print( e, file=stderr )
+	print( "set_isfixedpitch, file ", filePath, file=err )
+	print( e, file=err )
+	print( "set_isfixedpitch, file ", filePath, file=out )
+	print( e, file=out )
 	exit( 1 )
 exit( 0 )

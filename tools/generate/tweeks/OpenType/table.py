@@ -16,7 +16,7 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2012, 2015 Stevan White"
+__copyright__ = "Copyright 2012, 2015, 2017 Stevan White"
 __date__ = "$Date: 2015/06/02 21:02:24 $"
 __version__ = "$Revision: 1.12 $"
 
@@ -25,12 +25,11 @@ implementing automatic generation of internal named structures and code
 format strings for output.
 """
 
-
 from .typeutils import fixed_str
 from .fielddesc import FieldDesc
 from struct import Struct, calcsize
 from collections import namedtuple
-
+from checksum import BigEndian32BitList
 
 def registerStructFields( cls ):
 	""" Decorator for subclasses of Table; associates members of the
@@ -148,6 +147,16 @@ class BaseTable( object ):
 		vals = [ self.__getattr__( i.name  ) for i in self._fdlist ]
 		res = thestruct.pack_into( buf, offset, *vals )
 		return res
+
+	def getChecksum( self ):
+		wL = BigEndian32BitList()
+		for desc in self._field_desc:
+			key = desc[0]
+			val = self.__getattr__( key )
+			size = FieldDesc.size_OT_type( desc[1] )
+			#print( "size val key", size, val, key )
+			wL.accumVal( val, size )
+		return wL.get32BitSum()
 
 class Table( BaseTable ):
 
