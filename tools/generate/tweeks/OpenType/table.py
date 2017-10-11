@@ -25,7 +25,6 @@ implementing automatic generation of internal named structures and code
 format strings for output.
 """
 
-from .typeutils import fixed_str
 from .fielddesc import FieldDesc
 from struct import Struct, calcsize
 from collections import namedtuple

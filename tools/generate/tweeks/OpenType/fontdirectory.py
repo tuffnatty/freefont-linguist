@@ -22,10 +22,8 @@ __version__ = "$Revision: 1.7 $"
 __doc__ = """ Classes representing the basic OpenType/TrueType Font
 	Directory tables.
 """
-import struct
 from .table import Table, registerStructFields, _setup_structs
 from .typeutils import int_to_tag
-from collections import namedtuple
 
 """ OpenType/TrueType font directory tables.
 """
