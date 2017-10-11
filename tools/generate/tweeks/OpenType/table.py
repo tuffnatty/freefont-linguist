@@ -28,7 +28,8 @@ format strings for output.
 from .fielddesc import FieldDesc
 from struct import Struct, calcsize
 from collections import namedtuple
-from checksum import BigEndian32BitList
+from .checksum import BigEndian32BitList
+from .typeutils import fixed_str, panose_str, bitfield2str, int_to_tag
 
 def registerStructFields( cls ):
 	""" Decorator for subclasses of Table; associates members of the

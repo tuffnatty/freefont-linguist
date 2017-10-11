@@ -51,5 +51,5 @@ def bitfield2str( val, fieldlen = 16 ):
 
 def panose_str( val ):
 	v = str( val )
-	s = [ str( ord( v[i] ) ) for i in range( 0, 10 ) ]
+	s = [ "{:X}".format( ord( v[i] ) ) for i in range( 0, 10 ) ]
 	return '|'.join( s ) 
