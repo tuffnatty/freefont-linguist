@@ -61,16 +61,7 @@ class BigEndian32BitList:
 				shift = 8 * ( size - b - 1 )
 				self.accumByte( 0xFF & ( v >> shift ) )
 		elif size == 10:
-			#print( "val type", type( val ) ) 
-			# FIXME I don't know what is meant by endian-ness here.
-			# Just know I'm getting a wrong checksum
-			# But is the problem really the PANOSE field itself?
-			# Could it be the alignment of following fields?
-			a = ( 3, 2, 1, 0, 7, 6, 5, 4, 9, 8 )
-			a = ( 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 )
-			a = ( 0, 1, 2, 3, 4, 5, 3, 7, 8, 9 )
-			for b in range( 0, size ):
-				i = a[b]
+			for i in range( 0, size ):
 				v = ord( val[i] )
 				#print( "FLAG",  "{0:d}".format( v ) )
 				self.accumByte( 0xFF & v )

@@ -51,9 +51,9 @@ try:
 	entry = entries_by_tag[ 'post' ]
 	t = postTable( buf, entry.offset )
 	# ======================= TEST
-	print( "post checksum-orig", hex( entry.checkSum ) )
+	#print( "post checksum-orig", hex( entry.checkSum ) )
 	cs = t.getChecksum()
-	print( "post checksum-calc", hex( cs ) )
+	#print( "post checksum-calc", hex( cs ) )
 	# =======================
 	t.isFixedPitch = True
 

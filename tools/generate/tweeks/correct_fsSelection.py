@@ -32,6 +32,7 @@ from sys import argv, stdout as out, stderr as err, exit
 from OpenType.fontdirectory import getDirectoryEntriesByTag
 from OpenType.requiredtables import OS_2Table, headTable
 from OpenType.checksum import get_file32Bit_checkSumAdjustment
+import traceback
 
 argc = len( argv )
 
@@ -53,9 +54,10 @@ try:
 	entry = entries_by_tag[ 'OS/2' ]
 	t = OS_2Table( buf, entry.offset )	# read table from font buffer
 	# ======================= TEST
-	print( "OS/2 checksum-orig", hex( entry.checkSum ) )
+	#print( "OS/2 checksum-orig", hex( entry.checkSum ) )
 	cs = t.getChecksum()
-	print( "OS/2 checksum-calc", hex( cs ) )
+	#print( "OS/2 checksum-calc", hex( cs ) )
+	#print( "OS/2 Table -------------------", t )
 	# =======================
 	# big-endian: bit 0 is at the beginning
 	ITALIC           = 0b0000000000000001
@@ -101,6 +103,7 @@ try:
 except Exception as e:
 	print( "correct_fsSelection, file ", filePath, file=err )
 	print( e, file=err )
+	traceback.print_exc()
 	print( "correct_fsSelection, file ", filePath, file=out )
 	print( e, file=out )
 	exit( 1 )

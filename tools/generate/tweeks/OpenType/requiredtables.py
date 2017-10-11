@@ -15,7 +15,7 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2012, 2015 Stevan White"
+__copyright__ = "Copyright 2012, 2015, 2017 Stevan White"
 __date__ = "$Date: 2015/06/02 21:02:23 $"
 __version__ = "$Revision: 1.7 $"
 
@@ -128,8 +128,15 @@ class maxpTable( ReferredTable ):
 @_setup_structs
 @registerStructFields
 class OS_2Table( ReferredTable ):
+	""" See https://www.microsoft.com/typography/otspec/os2.htm
+	The table changes size depending on its "version" entry.
+	This very much complicates reading it.
+	Even messier: the names of the fields changes between versions.
+	That means, code that refers to the table has to check the version,
+	and/or check that it has a given field, in order to use it.
+	"""
 	_name = 'OS/2'
-	_field_desc = [
+	_field_desc_0 = [
 	( 'version', 'uint16', 'Fixed',         
 		'(always 0)' ),
 	( 'xAvgCharWidth', 'uint16', None,   
@@ -176,9 +183,47 @@ class OS_2Table( ReferredTable ):
 		'Font vendor ID' ),
 	( 'fsSelection', 'uint16', 'bitfield',     
 		'Font patterns info' ),
-	( 'fsFirstCharIndex', 'uint16', None,
+	( 'usFirstCharIndex', 'uint16', None,
 		'Minimum Unicode value in font' ),
+	( 'usLastCharIndex', 'uint16', None,
+		'Maximum Unicode value in font' ),
+	( 'sTypoAscender', 'int16', None,
+		'' ),
+	( 'sTypoDescender', 'int16', None,
+		'' ),
+	( 'sTypoLineGap', 'int16', None,
+		'' ),
+	( 'usWinAscent', 'uint16', None,
+		'' ),
+	( 'usWinDescent', 'uint16', None,
+		'' ),
 	]
+	_field_desc_0_1 = [
+	( 'ulCodePageRange1', 'uint32', 'bitfield',    
+		'' ),
+	( 'ulCodePageRange2', 'uint32', 'bitfield',    
+		'' ),
+	]
+	_field_desc_1_2 = [
+	( 'sxHeight', 'int16', None,
+		'' ),
+	( 'sxCapHeight', 'int16', None,
+		'' ),
+	( 'usDefaultChar', 'uint16', None,
+		'' ),
+	( 'usBreakChar', 'uint16', None,
+		'' ),
+	( 'usMaxContext', 'uint16', None,
+		'' ),
+	]
+	_field_desc_2_5 = [
+	( 'usLowerOpticalPointSize', 'uint16', None,
+		'' ),
+	( 'usUpperOpticalPointSize', 'uint16', None,
+		'' ),
+	]
+	#FIXME this is valid only for versions 2, 3 and 4 of the OS/2 table
+	_field_desc = _field_desc_0 + _field_desc_0_1 + _field_desc_1_2 
 
 @_setup_structs
 @registerStructFields
