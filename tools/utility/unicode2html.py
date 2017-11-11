@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from __future__ import print_function
-from sys import argv, exit, stdout
+from sys import argv, exit, stdout, stderr
 import codecs
 __license__ = """
 This file is part of GNU FreeFont.
@@ -35,10 +35,11 @@ This is a hack.
 
 def explain_error_and_quit( e = False ):
 	if e:
-		print( 'Error:', e )
-	print( "Usage:" )
-	print( "       unicode2html filename" )
-	print( "       where filename is the name of a UTF8-encoded text file" )
+		print( 'Error:', e, file=sterr )
+	print( "Usage:", file=stderr )
+	print( "       unicode2html filename", file=stderr )
+	print( "       where filename is the name of a UTF8-encoded text file",
+		file=stderr )
 	exit( 1 )
 
 def formatted_hex_value( n ):

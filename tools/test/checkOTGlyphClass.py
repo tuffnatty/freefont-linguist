@@ -37,6 +37,14 @@ import sys
 
 problem = False
 
+def isException( glyph ):
+	e = glyph.encoding
+	# Malayalam vowels are Mark to allow positioning of subsequent marks.
+	return ( e in range( 0x0D3E, 0X0D40 +1 )
+                or e in range( 0x0D46, 0x0D4C + 1 ) 
+                or e in range( 0x0D57, 0x0D57 + 1 )
+                )
+
 def inPrivateUseRange( glyph ):
 	e = glyph.encoding
 
@@ -80,8 +88,14 @@ def checkOTGlyphClass( fontDir, fontFile ):
 				problem = True
 		else:
 			if glyph.glyphclass != 'automatic':
-				print( "Glyph at slot " + str( glyph.encoding )
-					+ " has non-automatic Glyph Class" )
+				if isException( glyph ):
+					print( "Glyph at slot",
+						str( glyph.encoding ),
+						"has exceptonal Glyph Class" )
+				else:
+					print( "Glyph at slot",
+						str( glyph.encoding ),
+						"has non-automatic Glyph Class" )
 				problem = True
 
 # --------------------------------------------------------------------------
