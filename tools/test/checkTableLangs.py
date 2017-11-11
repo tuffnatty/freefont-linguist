@@ -19,7 +19,7 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2013 Stevan White"
+__copyright__ = "Copyright 2013, 2017 Stevan White"
 __date__ = "$Date:: 2013-04-09 12:58:21 +0200#$"
 __version__ = "$Revision: 2527 $"
 
@@ -75,9 +75,9 @@ import re
 
 def explain_error_and_quit( e='' ):
 	if e:
-		stderrr.write( 'Error: ' + str( e ) + '\n' )
-	stderr.write( 'Usage: \n' )
-	stderr.write( '       checkTableLangs sfd-file-path\n' )
+		print( 'Error:', e, file=stderr )
+	print( 'Usage:', file=stderr )
+	print( '       checkTableLangs sfd-file-path', file=stderr )
 	exit( 1 )
 
 """
