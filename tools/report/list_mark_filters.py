@@ -38,7 +38,7 @@ From the FontForge SFD file format doc:
 "the lookup flags field is now a 32 bit number, the low order 16 bits being the traditional flags, and the high order being the mark attachment set index, if any"
 
 The term "traditional flags" means the "lookupFlag" field of the
-OpenType Lookup table structure.  The LookupFlag big enumeration is
+OpenType Lookup table structure.  The LookupFlag bit enumeration is
 
 	0x0001   rightToLeft
 	0x0002   ignoreBaseGlyphs

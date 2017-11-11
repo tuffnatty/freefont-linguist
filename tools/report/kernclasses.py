@@ -4,7 +4,7 @@ from __future__ import print_function
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 
 import fontforge
-from sys import stdout, stderr
+from sys import stdout as out, stderr as err
 from OpenType.UnicodeRanges import *
 
 def get_kern_subtables( font ):
@@ -18,9 +18,9 @@ def get_kern_subtables( font ):
 						tables.append( st )
 		return tables
 	except EnvironmentError as e:
-		print( 'EnvironmentError', e, file=stderr )
+		print( 'EnvironmentError', e, file=err )
 	except TypeError as t:
-		print( 'TypeError', t, file=stderr )
+		print( 'TypeError', t, file=err )
 	return None
 preamble = """
 <html>
@@ -61,7 +61,7 @@ def print_kerns( fontPath ):
 		print( '<h3>Subtable ' + st + '</h3>' )
 		printKernsOfSubtable( font, st )
 	print( '</div>' )
-	stdout.flush()
+	out.flush()
 
 def printKernsOfSubtable( font, subtable ):
 	kclass = font.getKerningClass( subtable )
@@ -94,15 +94,13 @@ def printKernsOfSubtable( font, subtable ):
 	print( "<th></th>" )
 	for rc in rightclasses:
 		if rc:
-			stdout.write( "<th>" + entitystr( font, rc[0] )
-					+ "</th>" )
+			out.write( "<th>" + entitystr( font, rc[0] ) + "</th>" )
 	print( "</tr>" )
 	for lc in leftclasses:
 		m = 0
 		if lc:
 			print( "<tr>" )
-			stdout.write( "<th>" + entitystr( font, lc[0] )
-					+ "</th>" )
+			out.write( "<th>" + entitystr( font, lc[0] ) + "</th>" )
 			for rc in rightclasses:
 				kern = kerns[ n * nr + m ]
 				if rc:
@@ -112,36 +110,36 @@ def printKernsOfSubtable( font, subtable ):
 						ncolor = ' class="pos"'
 					if kern == 0:
 						ccolor = ' class="zero"'
-					stdout.write( '<td' + ccolor + '><span' + ncolor + '>' )
+					out.write( '<td' + ccolor + '><span' + ncolor + '>' )
 					if kern == 0:
-						stdout.write( '&nbsp;' )
+						out.write( '&nbsp;' )
 					else:
-						stdout.write( str( kern ) )
-					stdout.write( '</span><br />' )
+						out.write( str( kern ) )
+					out.write( '</span><br />' )
 					printpair( font, lc[0], rc[0] )
-					stdout.write( '</td>' )
+					out.write( '</td>' )
 				m += 1
 			print( "</tr>" )
 		n += 1
 	print( "</table>" )
 
 def writeentity( font, a ):
-	stdout.write( entitystr( font, a ) )
+	out.write( entitystr( font, a ) )
 
 def entitystr( font, a ):
 	s = font.findEncodingSlot( a )
 	v = formatted_hex_value( s )
 	if s == -1:
 		v = '<span class="nonexistent">&nbsp;</span>'
-		print( font.fullname, 'Missing glyph: ' + a, file=stderr )
+		print( font.fullname, 'Missing glyph: ' + a, file=err )
 	elif not codepointIsInSomeRange( s ):
-		print( font.fullname, 'Non-unicode: ' + v, file=stderr )
+		print( font.fullname, 'Non-unicode: ' + v, file=err )
 	return v 
 
 def printpair( font, p, q ):
 	writeentity( font, p )
 	writeentity( font, q )
-	stdout.write( ' ' )
+	out.write( ' ' )
 
 def formatted_hex_value( n ):
 	return '%s%0.4x%s' %( "&#x", n, ";" )

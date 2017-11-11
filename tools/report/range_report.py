@@ -96,10 +96,12 @@ class FontSupport:
 
 		r = font.os2_unicoderanges
 
-		# print >> stderr, font.fontname, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] );
+		# print( font.fontname, hex( r[0] ), hex( r[1] ),hex( r[2] ),hex( r[3] ) file=stderr );
 
 		nRanges = len( ulUnicodeRange )
 
+		# FIXME this is a really bad way to index the entries.
+		# only works if indexes start at 0
 		for index in range( 0, nRanges ):
 			byte = index / 32
 			bit = index % 32
