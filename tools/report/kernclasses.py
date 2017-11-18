@@ -22,9 +22,12 @@ def get_kern_subtables( font ):
 	except TypeError as t:
 		print( 'TypeError', t, file=err )
 	return None
-preamble = """
-<html>
+preamble = """<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
+<meta charset="UTF-8" />
+<title>glyph kerning classes in GNU FreeFont
+</title>
 <style type="text/css">
 	.nonexistent { background-color: red; }
 	td { text-align: right; font-family: inherit; }

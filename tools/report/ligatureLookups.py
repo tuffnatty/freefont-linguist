@@ -17,7 +17,7 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2009, 2010, 2012 Stevan White"
+__copyright__ = "Copyright 2009, 2010, 2012, 2017 Stevan White"
 __date__ = "$Date::                           $"
 __version__ = "$Revision$"
 
@@ -67,20 +67,24 @@ def get_ligature_lookups( font ):
 		print( 'TypeError', t, file=stderr )
 	return None
 
-_preamble= """<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+_preamble= """<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
+<meta charset="UTF-8" />
 <title>Ligatures</title>
 <style type="text/css">
 	.nonchar { background-color: red; }
+	table { padding: 0; border: thin black solid; 
+		 border-collapse: collapse; }
+	thead { border-bottom: medium black solid;
+		border-top: medium black solid; }
 	table, tr, td { font-family: inherit; }
 	table, tr, td { font-style: inherit; }
 	table, tr, td { font-weight: inherit; }
 	td { text-align: right; }
 	td { line-height: 1; }
-	.ligatures td { width: 2em; }
+	td { border-right: thin black solid; }
+	.ligatures td { width: 4em; }
 	.ligatures th { text-align: left; font-family: freemono, monospace; }
 </style>
 </head>
@@ -196,13 +200,16 @@ def makeLigatureSubtable( font, subtable_name ):
 			subtable.append( ligature )
 	return subtable
 
-_table_head_html =  '''<table class="ligatures" rules="groups">
+_table_head_html =  '''<table class="ligatures">
 <caption>%s</caption>
 <colgroup>
 <col style="width: 50ex" />
 </colgroup>
 <colgroup>
 <col style="width: 4ex" />
+</colgroup>
+<colgroup>
+<col />
 </colgroup>
 '''
 
@@ -225,10 +232,13 @@ def htmlListOfLigSubtable( font, subtable, subtables ):
 			out += [ nestedEntity( font, subtable, p, subtables ) ]
 		out += [ '</td>' ]
 
+		out += [ '<td>' ]
+		delim = []
 		for p in lig.parts:
-			out += [ '<td>' ]
 			out += [ nestedEntity( font, subtable, p, subtables ) ]
-			out += [ '</td>' ]
+			out += delim
+			delim = [ '\t' ]
+		out += [ '</td>' ]
 		out += [ '</tr>\n' ]
 	out += [ "</table>" ]
 	return out
