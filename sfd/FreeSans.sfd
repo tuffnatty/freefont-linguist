@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1510412832
+ModificationTime: 1511001321
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -53,6 +53,7 @@ OS2FamilyClass: 2053
 OS2Vendor: 'GNU '
 OS2CodePages: 600001bf.dff70000
 OS2UnicodeRanges: e493beff.4640fdff.0a4030a1.0200058c
+Lookup: 1 0 0 "subst. contextual shape in Tifinagh"  {"subst. contextual shape in Tifinagh-1"  } []
 Lookup: 4 0 0 "subst. below-base cons in Malay+AQEA-lam"  {"subst. below-base combo cons in Malay+AQEA-lam"  "subst. below-base simple cons in Malay+AQEA-lam"  } []
 Lookup: 4 0 0 "subst. below-base cons in Malay+AQEA-lam2"  {"subst. below-base combo cons in Malay+AQEA-lam2"  "subst. below-base simple cons in Malay+AQEA-lam2"  } []
 Lookup: 4 0 0 "subst. below-base forms in Malay+AQEA-lam"  {"subst. below-base u,uu in Malay+AQEA-lam-1"  "subst. below-base candra-x in Malay+AQEA-lam-1"  "subst. below-base x-candra in Malay+AQEA-lam-1"  } []
@@ -270,6 +271,8 @@ Lookup: 1 0 0 "stretch700"  {"stretch700-1"  } []
 Lookup: 1 0 0 "stretch800"  {"stretch800-1"  } []
 Lookup: 1 0 0 "stretch900"  {"stretch900-1"  } []
 Lookup: 1 0 0 "stretch1000"  {"stretch1000-1"  } []
+Lookup: 4 0 0 "'liga' std. ligatures in Tifinagh"  {"'liga' std. ligatures in Tifinagh"  } ['liga' ('tfng' <'dflt' > ) ]
+Lookup: 6 0 0 "' RQD' contextual forms in Tifinagh"  {"'RQD ' contextual forms in Tifinagh-1"  } [' RQD' ('tfng' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kerns in Cyrillic-small" [150,0,0] "'kern' kerns in Cyrillic-capital" [150,0,0] } ['kern' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin"  {"'kern' kerns in Latin-capital" [150,0,0] "'kern' kerns in Latin-small" [150,0,0] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin for Catalan"  {"'kern' kerning in Latin for Catalan-1" [150,0,6] } ['kern' ('latn' <'CAT ' > ) ]
@@ -488,6 +491,16 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'RQD ' contextual forms in Tifinagh-1"  2 2 0 1
+  Class: 15 yan_tif yal_tif
+  BClass: 15 yan_tif yal_tif
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. contextual shape in Tifinagh" 
+EndFPST
 ChainSub2: coverage "'blwf' below-base ta clscl in Malayalam"  0 0 0 1
  1 1 0
   Coverage: 17 ta_mal candrakala
@@ -2103,7 +2116,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60736 16 12
+WinInfo: 61872 16 12
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -2122,7 +2135,7 @@ Grid
 EndSplineSet
 TeXData: 2 0 0 262144 131072 87381 549454 1048576 87381 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "mlm-vowel-blw-small"  "'mkmk' u,uu on subscript in Malayalam" "dev-nukta"  "'blwm' nukta in Devanagari" "tam-ii"  "'abvm' ii in Tamil" "stem-vert"  "'mark' marks 2-1" "syr-above"  "'mark' marks in Syriac 0" "syr-rukkakha"  "'mark' marks in Syriac 0" "syr-qassaya"  "'mark' marks in Syriac 0" "goth-below"  "'mark' mark below in Gothic-2" "goth-above"  "'mark' mark above in Gothic-1" "far-right-dot"  "'mark' far right in Latin-1" "cyr-stacked"  "'mkmk' mark-to-mark in Cyrillic-1" "cyr-lateral"  "'mkmk' mark-to-mark in Cyrillic-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "ogonek"  "'mark' marks in Latin ogonek" "bng-stem-abv"  "'abvm' above-base mark in Bengali-1" "mlm-vowel-below"  "'blwm' vowel below in Malay+AQEA-lam-1" "dev-candrabindu-abv"  "'mkmk' mark-to-mark in Devanagari-above" "vedic-below"  "'mkmk' mark-to-mark in Devanagari Vedic" "vedic-above"  "'mkmk' mark-to-mark in Devanagari Vedic" "dev-mark-above"  "'mkmk' mark-to-mark in Devanagari-above" "below_gk"  "'mark' mark below in Greek and Coptic-1" "above_gk"  "'mark' mark above in Greek-1" "bng-phala"  "'mkmk' mark-to-mark in Bengali-1" "bng-round"  "'blwm' below-base round in Bengali" "bng-stem"  "'blwm' below-base stemmed in Bengali" "bng-rofola"  "'blwm' below-base rofola in Bengali" "abovemk"  "'mkmk' mark-to-mark generic" "viet_tilde"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_hook"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_grave"  "'mkmk' mark-to-mark in Latin for Viet-1" "viet_acute"  "'mkmk' mark-to-mark in Latin for Viet-1" "taml_above"  "'abvm' above-base mark in Tamil-1" "dev-candrabindu"  "'abvm' above-base mark in Devanagari-candrabindu" "dev-anusvara"  "'abvm' above-base mark in Devanagari-anusvara" "bng-vowel"  "'blwm' below-base vowel in Bengali" "bng-nukta"  "'blwm' below-base nukta in Bengali" "dev-rakar"  "'blwm' below-base mark in Devanagari-1" "dev-belowmark"  "'mkmk' mark-to-mark in Devanagari-above" "mlm-reph"  "'abvm' above reph in Malayalam-1" "mal-below"  "'blwm' marks below in Malay+AQEA-lam-1" "gur-top-mid"  "'abvm' above-base mark in Gurmukhi-mid" "gur-nukta"  "'blwm' below-base mark in Gurmukhi-nukta" "gur-top-mkmk"  "'mkmk' mark-to-mark in Gurmukhi" "gur-below-mid"  "'blwm' below-base mark in Gurmukhi mid" "guru_above"  "'abvm' above-base mark in Gurmukhi-general" "guru_below"  "'blwm' below-base mark in Gurmukhi-general" "syr-vowel-blw"  "'mark' marks in Syriac 0" "syr-vowel-abv"  "'mark' marks in Syriac 0" "heb-point-abv"  "'mark' marks in Hebrew 0" "heb-vowel-left"  "'mark' marks in Hebrew 0" "heb-dagesh"  "'mark' marks in Hebrew 0" "heb-vowel-low"  "'mark' marks in Hebrew 2 subtable" "cyr-abovemk"  "'mkmk' mark-to-mark in Cyrillic 0" "topright"  "'mark' marks in Latin topright" "cyr-above"  "'mark' Mark Positioning in Cyrillic subtable" "middle"  "'mark' marks middle" "dev-above"  "'abvm' above-base mark in Devanagari-1" "dev-below"  "'blwm' below-base mark in Devanagari-1" "above"  "'mark' marks generic above" "below"  "'mark' marks generic below" 
-BeginChars: 131072 7894
+BeginChars: 131072 7970
 
 StartChar: space
 Encoding: 32 32 0
@@ -38295,21 +38308,21 @@ GlyphCompositionHorizontal: 2  arrowdblleft(⇐)%0,0,500,754 math_dblarrowhoriz.
 LayerCount: 2
 Fore
 SplineSet
-774 382 m 1
- 774 329 l 1
- 185 329 l 1
- 104 249 l 1
- 185 169 l 1
- 774 169 l 1
- 774 116 l 1
- 233 116 l 1
- 310 18 l 1
- 269 -15 l 1
- 179 96 138 138 20 249 c 1
- 138 360 179 402 269 513 c 1
- 310 480 l 1
- 233 382 l 1
- 774 382 l 1
+774 382 m 5
+ 774 329 l 5
+ 185 329 l 5
+ 104 249 l 5
+ 185 169 l 5
+ 774 169 l 5
+ 774 116 l 5
+ 233 116 l 5
+ 310 18 l 5
+ 269 -15 l 5
+ 179 96 138 138 20 249 c 5
+ 138 360 179 402 269 513 c 5
+ 310 480 l 5
+ 233 382 l 5
+ 774 382 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -59129,26 +59142,26 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-350 831 m 0
- 379 831 406 808 406 775 c 0
- 406 746 382 720 350 720 c 0
- 329 720 309 733 300 753 c 1
- 111 753 l 1
- 104 738 92 726 75 722 c 1
- 75 -1 l 1
- 45 -1 l 1
- 45 722 l 1
- 30 727 17 738 10 753 c 1
- -178 753 l 1
- -187 734 -205 720 -229 720 c 0
- -257 720 -284 743 -284 775 c 0
- -284 804 -261 831 -229 831 c 0
- -208 831 -188 819 -179 800 c 1
- 11 800 l 1
- 20 818 38 831 60 831 c 0
- 81 831 101 819 110 800 c 1
- 301 800 l 1
- 310 818 328 831 350 831 c 0
+350 831 m 4
+ 379 831 406 808 406 775 c 4
+ 406 746 382 720 350 720 c 4
+ 329 720 309 733 300 753 c 5
+ 111 753 l 5
+ 104 738 92 726 75 722 c 5
+ 75 -1 l 5
+ 45 -1 l 5
+ 45 722 l 5
+ 30 727 17 738 10 753 c 5
+ -178 753 l 5
+ -187 734 -205 720 -229 720 c 4
+ -257 720 -284 743 -284 775 c 4
+ -284 804 -261 831 -229 831 c 4
+ -208 831 -188 819 -179 800 c 5
+ 11 800 l 5
+ 20 818 38 831 60 831 c 4
+ 81 831 101 819 110 800 c 5
+ 301 800 l 5
+ 310 818 328 831 350 831 c 4
 EndSplineSet
 Validated: 3073
 MultipleSubs2: "'stch' stretch character in Syriac-1" syr_abbr_dot syr_abbr_con syr_abbr_dot syr_abbr_con syr_abbr_dot
@@ -99878,7 +99891,7 @@ Refer: 4151 9720 N -1 0 0 -1 585 697 2
 Validated: 32769
 EndChar
 
-StartChar: uni2D30
+StartChar: ya_tif
 Encoding: 11568 11568 4155
 Width: 352
 VWidth: 0
@@ -99900,7 +99913,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D31
+StartChar: yab_tif
 Encoding: 11569 11569 4156
 Width: 872
 VWidth: 0
@@ -99925,7 +99938,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D32
+StartChar: yabh_tif
 Encoding: 11570 11570 4157
 Width: 872
 VWidth: 0
@@ -99958,7 +99971,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D33
+StartChar: yag_tif
 Encoding: 11571 11571 4158
 Width: 720
 VWidth: 0
@@ -99984,7 +99997,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D34
+StartChar: yaghh_tif
 Encoding: 11572 11572 4159
 Width: 720
 VWidth: 0
@@ -100010,7 +100023,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D35
+StartChar: ya_berb_tif
 Encoding: 11573 11573 4160
 Width: 720
 VWidth: 0
@@ -100037,7 +100050,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D36
+StartChar: yaj_tif
 Encoding: 11574 11574 4161
 Width: 544
 VWidth: 0
@@ -100064,7 +100077,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D37
+StartChar: yad_tif
 Encoding: 11575 11575 4162
 Width: 709
 VWidth: 0
@@ -100084,7 +100097,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D38
+StartChar: yadh_tif
 Encoding: 11576 11576 4163
 Width: 709
 VWidth: 0
@@ -100104,7 +100117,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D39
+StartChar: yadd_tif
 Encoding: 11577 11577 4164
 Width: 720
 VWidth: 0
@@ -100129,7 +100142,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D3A
+StartChar: yaddh_tif
 Encoding: 11578 11578 4165
 Width: 720
 VWidth: 0
@@ -100154,7 +100167,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D3B
+StartChar: yey_tif
 Encoding: 11579 11579 4166
 Width: 596
 VWidth: 0
@@ -100191,7 +100204,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D3C
+StartChar: yaf_tif
 Encoding: 11580 11580 4167
 Width: 698
 VWidth: 0
@@ -100224,7 +100237,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D3D
+StartChar: yak_tif
 Encoding: 11581 11581 4168
 Width: 742
 VWidth: 0
@@ -100248,7 +100261,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D3E
+StartChar: yak_tuar_tif
 Encoding: 11582 11582 4169
 Width: 574
 VWidth: 0
@@ -100275,7 +100288,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D3F
+StartChar: yakhh_tif
 Encoding: 11583 11583 4170
 Width: 742
 VWidth: 0
@@ -100299,7 +100312,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D40
+StartChar: yah_tif
 Encoding: 11584 11584 4171
 Width: 872
 VWidth: 0
@@ -100324,7 +100337,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D41
+StartChar: yah_berb_tif
 Encoding: 11585 11585 4172
 Width: 872
 VWidth: 0
@@ -100359,7 +100372,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D42
+StartChar: yah_tuar_tif
 Encoding: 11586 11586 4173
 Width: 292
 VWidth: 0
@@ -100391,7 +100404,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D43
+StartChar: yahh_tif
 Encoding: 11587 11587 4174
 Width: 696
 VWidth: 0
@@ -100412,7 +100425,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D44
+StartChar: yaa_tif
 Encoding: 11588 11588 4175
 Width: 696
 VWidth: 0
@@ -100437,7 +100450,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D45
+StartChar: yakh_tif
 Encoding: 11589 11589 4176
 Width: 720
 VWidth: 0
@@ -100465,7 +100478,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D46
+StartChar: yakh_tuar_tif
 Encoding: 11590 11590 4177
 Width: 544
 VWidth: 0
@@ -100497,7 +100510,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D47
+StartChar: yaq_tif
 Encoding: 11591 11591 4178
 Width: 724
 VWidth: 0
@@ -100521,7 +100534,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D48
+StartChar: yaq_tuar_tif
 Encoding: 11592 11592 4179
 Width: 756
 VWidth: 0
@@ -100548,7 +100561,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D49
+StartChar: yi_tif
 Encoding: 11593 11593 4180
 Width: 600
 VWidth: 0
@@ -100574,7 +100587,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D4A
+StartChar: yazh_tif
 Encoding: 11594 11594 4181
 Width: 672
 VWidth: 0
@@ -100599,7 +100612,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D4B
+StartChar: yazh_ahag_tif
 Encoding: 11595 11595 4182
 Width: 888
 VWidth: 0
@@ -100625,7 +100638,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D4C
+StartChar: yazh_tuar_tif
 Encoding: 11596 11596 4183
 Width: 836
 VWidth: 0
@@ -100671,7 +100684,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D4D
+StartChar: yal_tif
 Encoding: 11597 11597 4184
 Width: 524
 VWidth: 0
@@ -100694,9 +100707,10 @@ SplineSet
  152 0 l 1
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. contextual shape in Tifinagh-1" tif_yal_slant
 EndChar
 
-StartChar: uni2D4E
+StartChar: yam_tif
 Encoding: 11598 11598 4185
 Width: 720
 VWidth: 0
@@ -100717,7 +100731,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D4F
+StartChar: yan_tif
 Encoding: 11599 11599 4186
 Width: 260
 VWidth: 0
@@ -100732,9 +100746,10 @@ SplineSet
  170 0 l 25
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. contextual shape in Tifinagh-1" tif_yan_slant
 EndChar
 
-StartChar: uni2D50
+StartChar: yagn_tuar_tif
 Encoding: 11600 11600 4187
 Width: 836
 VWidth: 0
@@ -100767,7 +100782,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D51
+StartChar: yagn_yang_tif
 Encoding: 11601 11601 4188
 Width: 224
 VWidth: 0
@@ -100789,7 +100804,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D52
+StartChar: yap_tif
 Encoding: 11602 11602 4189
 Width: 678
 VWidth: 0
@@ -100817,7 +100832,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D53
+StartChar: yu_tif
 Encoding: 11603 11603 4190
 Width: 380
 VWidth: 0
@@ -100849,7 +100864,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D54
+StartChar: yar_tif
 Encoding: 11604 11604 4191
 Width: 872
 VWidth: 0
@@ -100871,7 +100886,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D55
+StartChar: yarr_tif
 Encoding: 11605 11605 4192
 Width: 872
 VWidth: 0
@@ -100901,7 +100916,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D56
+StartChar: yagh_tif
 Encoding: 11606 11606 4193
 Width: 720
 VWidth: 0
@@ -100926,7 +100941,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D57
+StartChar: yag_tuar_tif
 Encoding: 11607 11607 4194
 Width: 268
 VWidth: 0
@@ -100953,7 +100968,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D58
+StartChar: yagh_ayer_tif
 Encoding: 11608 11608 4195
 Width: 640
 VWidth: 0
@@ -100990,7 +101005,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D59
+StartChar: yas_tif
 Encoding: 11609 11609 4196
 Width: 872
 VWidth: 0
@@ -101017,7 +101032,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D5A
+StartChar: yass_tif
 Encoding: 11610 11610 4197
 Width: 872
 VWidth: 0
@@ -101047,7 +101062,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D5B
+StartChar: yash_tif
 Encoding: 11611 11611 4198
 Width: 770
 VWidth: 0
@@ -101084,7 +101099,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D5C
+StartChar: yat_tif
 Encoding: 11612 11612 4199
 Width: 424
 VWidth: 0
@@ -101109,7 +101124,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D5D
+StartChar: yath_tif
 Encoding: 11613 11613 4200
 Width: 720
 VWidth: 0
@@ -101134,7 +101149,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D5E
+StartChar: yach_tif
 Encoding: 11614 11614 4201
 Width: 770
 VWidth: 0
@@ -101182,7 +101197,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D5F
+StartChar: yatt_tif
 Encoding: 11615 11615 4202
 Width: 720
 VWidth: 0
@@ -101215,7 +101230,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D60
+StartChar: yav_tif
 Encoding: 11616 11616 4203
 Width: 709
 VWidth: 0
@@ -101236,7 +101251,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D61
+StartChar: yaw_tif
 Encoding: 11617 11617 4204
 Width: 720
 VWidth: 0
@@ -101257,7 +101272,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D62
+StartChar: yay_tif
 Encoding: 11618 11618 4205
 Width: 541
 VWidth: 0
@@ -101278,7 +101293,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D63
+StartChar: yaz_tif
 Encoding: 11619 11619 4206
 Width: 828
 VWidth: 0
@@ -101311,7 +101326,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D64
+StartChar: yaz_tawl_tif
 Encoding: 11620 11620 4207
 Width: 454
 VWidth: 0
@@ -101331,7 +101346,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D65
+StartChar: yazz_tif
 Encoding: 11621 11621 4208
 Width: 828
 VWidth: 0
@@ -101372,7 +101387,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D6F
+StartChar: z_lab_tif
 Encoding: 11631 11631 4209
 Width: 442
 VWidth: 0
@@ -112636,6 +112651,7 @@ SplineSet
  377 259 319 220 319 157 c 0
  319 108 352 55 400 55 c 256
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ka_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ka_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -112782,6 +112798,7 @@ SplineSet
  1294 271 1282 322 1259 362 c 1
  1250 363 1242 364 1233 364 c 0
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" cha_mal candrakala ra_mal
 EndChar
@@ -112851,6 +112868,7 @@ SplineSet
  176 106.5 210 94 325 94 c 0
  440 94 517 132 559 207 c 1
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' u,uu in Malay+AQEA-lam" ja_mal u_mal
 LCarets2: 1 0 
 EndChar
@@ -113135,6 +113153,7 @@ SplineSet
  337 72 386 55 485 55 c 0
  605 55 685 93 723 170 c 1
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ja_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ja_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -113327,6 +113346,7 @@ SplineSet
  562 383 528 313 528 224 c 0
  528 142.471 560.283 55 632 55 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres jha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" jha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -113446,6 +113466,7 @@ SplineSet
  352 334 393 308 473 308 c 2
  579 308 l 2
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres tta_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" tta_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -113543,6 +113564,7 @@ SplineSet
  1058 198 l 2
  1058 124 1123 61 1198 61 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres dda_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" dda_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -113654,6 +113676,7 @@ SplineSet
  1232 488 1194 442 1194 387 c 0
  1194 331.169 1229.51 282 1286 282 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ddha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ddha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -114012,6 +114035,7 @@ SplineSet
  615 399 564 313 564 215 c 0
  564 109 603 55 680 55 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ta_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ta_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -114053,6 +114077,7 @@ SplineSet
  421 -186 454 -174 454 -151 c 0
  454 -118.53 364.603 -93 326 -93 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' r-voc ligatures in Malay+AQEA-lam" da_mal r_voc_mal
 LCarets2: 1 0 
 EndChar
@@ -114138,6 +114163,7 @@ SplineSet
  687 558 780 495 780 361 c 0
  780 293.861 748.832 233.944 701 218 c 1
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres da_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" da_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -114273,6 +114299,7 @@ SplineSet
  362 455 318 380 318 271 c 0
  318 157.75 383.598 60 492 60 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres dha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" dha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -114313,6 +114340,7 @@ SplineSet
  757.667 342 696 275.266 696 198 c 0
  696 122 734 61 809 61 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' u,uu in Malay+AQEA-lam" na_mal u_mal
 LCarets2: 1 0 
 EndChar
@@ -114485,6 +114513,7 @@ SplineSet
  707 527 761 558 830 558 c 0
  999 558 1096 402 1096 225 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres na_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" na_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -114614,6 +114643,7 @@ SplineSet
  279 33 242 92 242 172 c 0
  242 286 343 373 457 373 c 0
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" pa_mal candrakala ra_mal
 EndChar
@@ -114660,6 +114690,7 @@ SplineSet
  1224 319 l 2
  1224 411 1152 488 1060 488 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres pha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" pha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -114767,6 +114798,7 @@ SplineSet
  369 261 333 215 333 158 c 0
  333 104 369 60 423 60 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ba_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ba_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -115005,6 +115037,7 @@ SplineSet
  488 171 504 160 552 160 c 2
  620 160 l 2
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres bha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" bha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -115137,6 +115170,7 @@ SplineSet
  335 71 l 1
  476 160 546 258 546 364 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ma_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ma_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -115454,6 +115488,7 @@ SplineSet
  1029 550 l 1
  1029 1 l 1
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres va_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" va_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -115666,6 +115701,7 @@ SplineSet
  933.801 355 845 284.609 845 180 c 0
  845 114 888 64 954 64 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres sha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" sha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -115777,6 +115813,7 @@ SplineSet
  743 322 819 276 894 269 c 1
  894 408 l 2
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ssa_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ssa_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -115932,6 +115969,7 @@ SplineSet
  1076 229 l 2
  1076 135 1124 61 1214 61 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres sa_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" sa_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -115978,6 +116016,7 @@ SplineSet
  392 151 415 184 415 234 c 0
  415 295 352 340 287 340 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' u,uu in Malay+AQEA-lam" ha_mal u_mal
 LCarets2: 1 0 
 EndChar
@@ -116119,6 +116158,7 @@ SplineSet
  289 29 252 90 252 173 c 0
  252 284 356 378 467 378 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -116194,6 +116234,7 @@ SplineSet
  198 259 157 227 157 164 c 0
  157 105 191 55 245 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ka_mal candrakala ssa_mal
 LCarets2: 2 0 0 
 EndChar
@@ -116340,6 +116381,7 @@ SplineSet
  198 259 157 227 157 164 c 0
  157 106 191 55 245 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" ka_mal candrakala ka_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" ka_mal candrakala ka_mal
 LCarets2: 2 0 0 
@@ -116409,6 +116451,7 @@ SplineSet
  198 259 157 227 157 164 c 0
  157 106 191 55 245 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' u,uu in Malay+AQEA-lam" mal_kaka u_mal
 LCarets2: 1 0 
 EndChar
@@ -116618,6 +116661,7 @@ SplineSet
  360 259 319 227 319 164 c 0
  319 106 351 55 406 55 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_kaka
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_kaka candrakala ra_mal
 LCarets2: 2 0 0 
@@ -116694,6 +116738,7 @@ SplineSet
  198 259 157 227 157 164 c 0
  157 106 189 55 244 55 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ka_mal candrakala ta_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ka_mal candrakala ta_mal
 LCarets2: 2 0 0 
@@ -117106,6 +117151,7 @@ SplineSet
  360 259 319 227 319 164 c 0
  319 105 350 55 406 55 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_kata
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_kata candrakala ra_mal
 LCarets2: 2 0 0 
@@ -117161,6 +117207,7 @@ SplineSet
  1399 308 l 2
  1399 413 1338 487 1233 487 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal candrakala gha_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ga_mal candrakala gha_mal
 LCarets2: 2 0 0 
@@ -117267,6 +117314,7 @@ SplineSet
  907 337 868 291 824 279 c 1
  879 261 907 218 907 147 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal candrakala da_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ga_mal candrakala da_mal
 LCarets2: 2 0 0 
@@ -117372,6 +117420,7 @@ SplineSet
  1140 204 l 2
  1140 137.777 1184.85 58 1246 58 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-3" ga_mal candrakala da_mal candrakala dha_mal
 Ligature2: "'akhn' cons trio in Malay+AQEA-lam-clscl" ga_mal candrakala da_mal candrakala dha_mal
 LCarets2: 4 0 0 0 0 
@@ -117503,6 +117552,7 @@ SplineSet
  1298 204 l 2
  1298 123 1339 58 1416 58 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-3" mal_ra.pres mal_gadadha
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_gadadha candrakala ra_mal
 LCarets2: 2 0 0 
@@ -117545,6 +117595,7 @@ SplineSet
  582 488 544 384 544 288 c 2
  544 208 l 2
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal candrakala na_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ga_mal candrakala na_mal
 LCarets2: 2 0 0 
@@ -117686,6 +117737,7 @@ SplineSet
  961 401.015 915.72 463.738 804 483 c 1
  845 468 865 427 865 358 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal candrakala ma_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ga_mal candrakala ma_mal
 LCarets2: 2 0 0 
@@ -117753,6 +117805,7 @@ SplineSet
  220 261 161 228 161 164 c 0
  161 93 191 58 250 58 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" nga_mal candrakala la_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" nga_mal candrakala ka_mal
 LCarets2: 2 0 0 
@@ -118043,6 +118096,7 @@ SplineSet
  205 253 173 213 173 161 c 0
  173 107 204 57 253 57 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" nga_mal candrakala nga_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" nga_mal candrakala nga_mal
 LCarets2: 2 0 0 
@@ -118086,6 +118140,7 @@ SplineSet
  526 -140 l 1
  785 -140 l 1
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" ca_mal candrakala ca_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" ca_mal candrakala ca_mal
@@ -118178,6 +118233,7 @@ SplineSet
  240 297 259 316 259 355 c 0
  259 388 234 415 202 415 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ja_mal candrakala ja_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ja_mal candrakala ja_mal
 LCarets2: 2 0 0 
@@ -118578,6 +118634,7 @@ SplineSet
  240 297 259 316 259 355 c 0
  259 388 234 415 202 415 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ja_mal candrakala nya_mal
 LCarets2: 2 0 0 
 EndChar
@@ -118638,6 +118695,7 @@ SplineSet
  212 265 175 217 175 161 c 0
  175 103 211 57 268 57 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" nya_mal candrakala ca_mal
 LCarets2: 2 0 0 
 EndChar
@@ -118781,6 +118839,7 @@ SplineSet
  212 265 175 217 175 161 c 0
  175 103 211 57 268 57 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" nya_mal candrakala ca_mal
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nya_mal candrakala ca_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" nya_mal candrakala cha_mal
@@ -118867,6 +118926,7 @@ SplineSet
  212 265 175 217 175 161 c 0
  175 103 211 57 268 57 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' u,uu in Malay+AQEA-lam" mal_nyacha u_mal
 LCarets2: 1 0 
 EndChar
@@ -119122,6 +119182,7 @@ SplineSet
  215 263 178 218 178 161 c 0
  178 104 215 57 272 57 c 256
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nya_mal candrakala ja_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" nya_mal candrakala ja_mal
 LCarets2: 2 0 0 
@@ -119380,6 +119441,7 @@ SplineSet
  212 257 176 220 176 161 c 0
  176 104 214 60 271 60 c 256
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" nya_mal candrakala nya_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" nya_mal candrakala nya_mal
 LCarets2: 2 0 0 
@@ -119422,6 +119484,7 @@ SplineSet
  170 334 211 308 291 308 c 2
  395 308 l 2
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" tta_mal candrakala tta_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" tta_mal candrakala tta_mal
 LCarets2: 2 0 0 
@@ -119485,6 +119548,7 @@ SplineSet
  209 263 173 218 173 161 c 0
  173 106 210 57 265 57 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" nna_mal candrakala tta_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" nna_mal candrakala tta_mal
 LCarets2: 2 0 0 
@@ -119551,6 +119615,7 @@ SplineSet
  371 263 334 216 334 161 c 0
  334 106 370 57 426 57 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_nnatta candrakala ra_mal
 LCarets2: 2 0 0 
 EndChar
@@ -119612,6 +119677,7 @@ SplineSet
  209 263 173 218 173 161 c 0
  173 106 210 57 265 57 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nna_mal candrakala da_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" nna_mal candrakala dda_mal
 LCarets2: 2 0 0 
@@ -119753,6 +119819,7 @@ SplineSet
  371 263 336 217 336 161 c 0
  336 106 372 57 427 57 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_nnadda
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_nnadda candrakala ra_mal
 LCarets2: 2 0 0 
@@ -119821,6 +119888,7 @@ SplineSet
  209 263 173 218 173 161 c 0
  173 106 210 57 265 57 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nna_mal candrakala dha_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" nna_mal candrakala ddha_mal
 LCarets2: 2 0 0 
@@ -119952,6 +120020,7 @@ SplineSet
  209 263 173 218 173 161 c 0
  173 106 210 57 265 57 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nna_mal candrakala ma_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" nna_mal candrakala ma_mal
 LCarets2: 2 0 0 
@@ -120014,6 +120083,7 @@ SplineSet
  457 399 405 312 405 215 c 0
  405 109 444 55 522 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" ta_mal candrakala ta_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ta_mal candrakala ta_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" ta_mal candrakala ta_mal
@@ -120361,6 +120431,7 @@ SplineSet
  620 400 569 312 569 215 c 0
  569 109 607 55 685 55 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_tata
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_tata candrakala ra_mal
 LCarets2: 2 0 0 
@@ -120415,6 +120486,7 @@ SplineSet
  458 399 405 312 405 215 c 0
  405 109 444 55 522 55 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ta_mal candrakala tha_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ta_mal candrakala tha_mal
 LCarets2: 2 0 0 
@@ -120525,6 +120597,7 @@ SplineSet
  443 384 405 310 405 215 c 0
  405 109 444 55 522 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ta_mal candrakala na_mal
 LCarets2: 2 0 0 
 EndChar
@@ -120587,6 +120660,7 @@ SplineSet
  458 399 405 312 405 215 c 0
  405 109 444 55 522 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ta_mal candrakala bha_mal
 LCarets2: 2 0 0 
 EndChar
@@ -120723,6 +120797,7 @@ SplineSet
  622 398 572 314 572 215 c 0
  572 109 610 55 688 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_tabha candrakala ra_mal
 LCarets2: 2 0 0 
 EndChar
@@ -120842,6 +120917,7 @@ SplineSet
  459 394 405 311 405 215 c 0
  405 109 444 55 522 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ta_mal candrakala ma_mal
 LCarets2: 2 0 0 
 EndChar
@@ -120958,6 +121034,7 @@ SplineSet
  457 399 405 312 405 215 c 0
  405 109 444 55 522 55 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ta_mal candrakala sa_mal
 LCarets2: 2 0 0 
 EndChar
@@ -121156,6 +121233,7 @@ SplineSet
  1300 226 l 2
  1300 131 1349 60 1441 60 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-3" ta_mal candrakala sa_mal candrakala tha_mal
 Ligature2: "'akhn' cons trio in Malay+AQEA-lam-clscl" ta_mal candrakala sa_mal candrakala tha_mal
 LCarets2: 4 0 0 0 0 
@@ -121293,6 +121371,7 @@ SplineSet
  616 399 566 312 566 215 c 0
  566 109 604 55 680 55 c 0
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 EndChar
 
@@ -121337,6 +121416,7 @@ SplineSet
  621 120 600 86 559 71 c 1
  600 49 621 6 621 -58 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" da_mal candrakala da_mal
 LCarets2: 2 0 0 
 EndChar
@@ -121490,6 +121570,7 @@ SplineSet
  1143 381 1097 460 1007 503 c 1
  1049 563 l 1
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" da_mal candrakala dha_mal
 LCarets2: 2 0 0 
 EndChar
@@ -121547,6 +121628,7 @@ SplineSet
  660 -163.504 749.838 -186 791 -186 c 0
  862 -186 897 -174 897 -150 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' r-voc ligatures in Malay+AQEA-lam" mal_dadha r_voc_mal
 LCarets2: 1 0 
 EndChar
@@ -121674,6 +121756,7 @@ SplineSet
  1291 386 1245 466 1153 506 c 1
  1198 563 l 1
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_dadha
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_dadha candrakala ra_mal
 LCarets2: 2 0 0 
@@ -121723,6 +121806,7 @@ SplineSet
  761 387 724 313 724 215 c 0
  724 112 762 61 839 61 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" na_mal candrakala ta_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" na_mal candrakala ta_mal
 LCarets2: 2 0 0 
@@ -122003,6 +122087,7 @@ SplineSet
  885 112 923 61 999 61 c 0
  1070.15 61 1110 139.784 1110 215 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_nata
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_nata candrakala ra_mal
 LCarets2: 2 0 0 
@@ -122051,6 +122136,7 @@ SplineSet
  1446 323 l 2
  1446 411 1373 488 1284 488 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" na_mal candrakala tha_mal
 LCarets2: 2 0 0 
 EndChar
@@ -122211,6 +122297,7 @@ SplineSet
  163 33 89 134 89 273 c 0
  89 428 193 558 349 558 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" na_mal candrakala da_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" na_mal candrakala da_mal
 LCarets2: 2 0 0 
@@ -122304,6 +122391,7 @@ SplineSet
  328 33 253 136 253 273 c 0
  253 429 356 558 512 558 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_nada candrakala ra_mal
 LCarets2: 2 0 0 
 EndChar
@@ -122352,6 +122440,7 @@ SplineSet
  1582 381 1536 458 1443 497 c 1
  1483 558 l 1
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" na_mal candrakala dha_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" na_mal candrakala dha_mal
 LCarets2: 2 0 0 
@@ -122463,6 +122552,7 @@ SplineSet
  1443 198 l 2
  1443 130 1489 58 1553 58 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_nadha
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_nadha candrakala ra_mal
 LCarets2: 2 0 0 
@@ -122506,6 +122596,7 @@ SplineSet
  170 162 216 83 307 42 c 1
  262 -14 l 1
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" na_mal candrakala na_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" na_mal candrakala na_mal
 LCarets2: 2 0 0 
@@ -122700,6 +122791,7 @@ SplineSet
  330 162 375 83 465 42 c 1
  422 -14 l 1
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" na_mal candrakala ra_mal
 EndChar
@@ -122741,6 +122833,7 @@ SplineSet
  552 72 l 1
  693 161 763 259 763 364 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" na_mal candrakala ma_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" na_mal candrakala ma_mal
 LCarets2: 2 0 0 
@@ -122838,6 +122931,7 @@ SplineSet
  705 72 l 1
  846 161 916 259 916 364 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_nama
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_nama candrakala ra_mal
 LCarets2: 2 0 0 
@@ -122893,6 +122987,7 @@ SplineSet
  209 261 173 215 173 158 c 0
  173 102 207 60 263 60 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ba_mal candrakala ba_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ba_mal candrakala ba_mal
 LCarets2: 2 0 0 
@@ -122941,6 +123036,7 @@ SplineSet
  161 72 l 1
  302 161 372 259 372 364 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" ma_mal candrakala ma_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" ma_mal candrakala ma_mal
 LCarets2: 2 0 0 
@@ -123037,6 +123133,7 @@ SplineSet
  170 162 216 83 307 42 c 1
  262 -14 l 1
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" ma_mal candrakala pa_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" ma_mal candrakala pa_mal
 LCarets2: 2 0 0 
@@ -123132,6 +123229,7 @@ SplineSet
  333 162 378 83 468 42 c 1
  423 -14 l 1
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-2" mal_ra.pres mal_mapa
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-complex" mal_mapa candrakala ra_mal
 LCarets2: 2 0 0 
@@ -123186,6 +123284,7 @@ SplineSet
  368 429 336 488 271 488 c 0
  205 488 169 387 169 317 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" ya_mal candrakala ya_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" ya_mal candrakala ya_mal
 LCarets2: 2 0 0 
@@ -123228,6 +123327,7 @@ SplineSet
  555 -140 l 1
  799 -140 l 1
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malay+AQEA-lam-rfmd" va_mal candrakala va_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" va_mal candrakala va_mal
 Ligature2: "'akhn' lla,va in Malay+AQEA-lam-1" va_mal va_mal candrakala
@@ -123284,6 +123384,7 @@ SplineSet
  752 265 779 211 831 211 c 0
  884 211 910 264 910 324 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" sha_mal candrakala ca_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" sha_mal candrakala ca_mal
 LCarets2: 2 0 0 
@@ -123414,6 +123515,7 @@ SplineSet
  779 416 750 372 750 317 c 0
  750 260 781 205 834 205 c 0
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" sha_mal candrakala cha_mal
 EndChar
@@ -123712,6 +123814,7 @@ SplineSet
  917 229 l 2
  917 134 965 61 1056 61 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" sa_mal candrakala tha_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" sa_mal candrakala tha_mal
 LCarets2: 2 0 0 
@@ -123822,6 +123925,7 @@ SplineSet
  125 29 89 90 89 173 c 0
  89 284.236 190.829 378 302 378 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ha_mal candrakala na_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ha_mal candrakala na_mal
 LCarets2: 2 0 0 
@@ -123980,6 +124084,7 @@ SplineSet
  736 77 l 1
  878 165 948 261 948 364 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ha_mal candrakala ma_mal
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam-clscl" ha_mal candrakala ma_mal
 LCarets2: 2 0 0 
@@ -124112,6 +124217,7 @@ SplineSet
  209 311 175 282 175 240 c 0
  175 196 210 164 254 164 c 0
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 Ligature2: "'akhn' cons pair in Malay+AQEA-lam" lla_mal candrakala lla_mal
 Ligature2: "'akhn' lla,va in Malay+AQEA-lam-1" lla_mal lla_mal candrakala
@@ -132766,7 +132872,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D66
+StartChar: ye_tif
 Encoding: 11622 11622 5174
 Width: 728
 VWidth: 0
@@ -132786,7 +132892,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D67
+StartChar: yo_tif
 Encoding: 11623 11623 5175
 Width: 618
 Flags: HMW
@@ -141718,7 +141824,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D70
+StartChar: tazarast_tif
 Encoding: 11632 11632 5480
 Width: 488
 Flags: HMW
@@ -141736,7 +141842,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: uni2D7F
+StartChar: cons_join_tif
 Encoding: 11647 11647 5481
 Width: 0
 VWidth: 0
@@ -141744,26 +141850,26 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
--667 -88 m 0
- -667 -47 -641 -14 -608 -14 c 0
- -575 -14 -549 -47 -549 -88 c 0
- -549 -129 -575 -162 -608 -162 c 0
- -641 -162 -667 -129 -667 -88 c 0
--487 -88 m 0
- -487 -47 -461 -14 -428 -14 c 0
- -395 -14 -369 -47 -369 -88 c 0
- -369 -129 -395 -162 -428 -162 c 0
- -461 -162 -487 -129 -487 -88 c 0
--307 -88 m 0
- -307 -47 -281 -14 -248 -14 c 0
- -215 -14 -189 -47 -189 -88 c 0
- -189 -129 -215 -162 -248 -162 c 0
- -281 -162 -307 -129 -307 -88 c 0
--127 -88 m 0
- -127 -47 -101 -14 -68 -14 c 0
- -35 -14 -9 -47 -9 -88 c 0
- -9 -129 -35 -162 -68 -162 c 0
- -101 -162 -127 -129 -127 -88 c 0
+-327 -88 m 4
+ -327 -47 -301 -14 -268 -14 c 4
+ -235 -14 -209 -47 -209 -88 c 4
+ -209 -129 -235 -162 -268 -162 c 4
+ -301 -162 -327 -129 -327 -88 c 4
+-147 -88 m 4
+ -147 -47 -121 -14 -88 -14 c 4
+ -55 -14 -29 -47 -29 -88 c 4
+ -29 -129 -55 -162 -88 -162 c 4
+ -121 -162 -147 -129 -147 -88 c 4
+33 -88 m 4
+ 33 -47 59 -14 92 -14 c 4
+ 125 -14 151 -47 151 -88 c 4
+ 151 -129 125 -162 92 -162 c 4
+ 59 -162 33 -129 33 -88 c 4
+213 -88 m 4
+ 213 -47 239 -14 272 -14 c 4
+ 305 -14 331 -47 331 -88 c 4
+ 331 -129 305 -162 272 -162 c 4
+ 239 -162 213 -129 213 -88 c 4
 EndSplineSet
 Validated: 3073
 EndChar
@@ -149922,6 +150028,7 @@ SplineSet
  374 465 330 388 330 280 c 0
  330 172.497 383.329 64 483 64 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres ga_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" ga_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -149978,6 +150085,7 @@ SplineSet
  1157 -119 1054 -102 1010 -102 c 0
  969.502 -102 902 -109.545 902 -138 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' r-voc ligatures in Malay+AQEA-lam" gha_mal r_voc_mal
 LCarets2: 1 0 
 EndChar
@@ -150099,6 +150207,7 @@ SplineSet
  1182 324 l 2
  1182 426 1118 488 1016 488 c 0
 EndSplineSet
+Validated: 3073
 MultipleSubs2: "'psts' un-do clscl ra in Malayalam-1" mal_ra.pres gha_mal
 Ligature2: "'psts' ra-tail in Malay+AQEA-lam-simple" gha_mal candrakala ra_mal
 LCarets2: 2 0 0 
@@ -153875,6 +153984,7 @@ SplineSet
  716 234 l 2
  716 166.127 704.966 112.297 683.036 72.3734 c 1
 EndSplineSet
+Validated: 3073
 Ligature2: "'psts' l-voc ligatures in Malay+AQEA-lam" ka_mal l_voc_mal
 LCarets2: 1 0 
 EndChar
@@ -191774,6 +191884,7 @@ SplineSet
  26 -146 41 -132 53 -76 c 2
  180 524 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: cornertopleft
@@ -192656,8 +192767,8 @@ Width: 826
 Flags: HW
 LayerCount: 2
 Fore
-Refer: 2320 8254 S 1.32 0 0 1 50 -6 2
-Refer: 2406 8598 N 1 0 0 1 0 -70 2
+Refer: 2320 8254 N 1.32 0 0 1 50 -6 2
+Refer: 2406 8598 N 1 0 0 1 2 -80 2
 Validated: 32769
 EndChar
 
@@ -194091,6 +194202,1141 @@ SplineSet
  177 524 l 1
  261 524 l 1
 EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni2B57
+Encoding: 11095 11095 7894
+Width: 792
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7159 11096 N 1 0 0 1 0 0 2
+Refer: 7071 9900 S 1 0 0 1 154 -2 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B56
+Encoding: 11094 11094 7895
+Width: 792
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7071 9900 S 1 0 0 0.75 154 85.25 2
+Refer: 7159 11096 S 1 0 0 0.75 0 86.75 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B40
+Encoding: 11072 11072 7896
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1761 8592 N 1 0 0 1 0 0 2
+Refer: 29 61 S 0.66 0 0 0.66 418 336 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B41
+Encoding: 11073 11073 7897
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1761 8592 N 1 0 0 1 0 0 2
+Refer: 2437 8765 S 0.66 0 0 0.66 419 290 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B42
+Encoding: 11074 11074 7898
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1761 8592 N 1 0 0 1 0 0 2
+Refer: 2437 8765 S 0.66 0 0 0.66 415 -200 2
+Refer: 2437 8765 S 0.66 0 0 0.66 415 -90 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B47
+Encoding: 11079 11079 7899
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1763 8594 N 1 0 0 1 0 0 2
+Refer: 2437 8765 S 0.66 0 0 0.66 -5 290 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B48
+Encoding: 11080 11080 7900
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1763 8594 N 1 0 0 1 0 0 2
+Refer: 2437 8765 S 0.66 0 0 0.66 -13 -200 2
+Refer: 2437 8765 S 0.66 0 0 0.66 -13 -90 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B49
+Encoding: 11081 11081 7901
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1761 8592 N 1 0 0 1 0 0 2
+Refer: 1800 8764 S 0.66 0 0 0.66 415.88 271.43 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B4A
+Encoding: 11082 11082 7902
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1800 8764 S 0.66 0 0 0.66 420.88 -88.57 2
+Refer: 1761 8592 N 1 0 0 1 0 0 2
+Refer: 1800 8764 S 0.66 0 0 0.66 420.88 -195.57 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B4B
+Encoding: 11083 11083 7903
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1761 8592 N 1 0 0 1 0 0 2
+Refer: 2437 8765 S 0.66 0 0 0.66 421 -140 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B4C
+Encoding: 11084 11084 7904
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1763 8594 N 1 0 0 1 0 0 2
+Refer: 2437 8765 S 0.66 0 0 0.66 -13 -140 2
+Validated: 32769
+EndChar
+
+StartChar: starmedwhite
+Encoding: 11088 11088 7905
+Width: 670
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+651 363 m 5
+ 456 221 l 5
+ 530 -9 l 5
+ 335 133 l 5
+ 140 -9 l 5
+ 214 221 l 5
+ 19 363 l 5
+ 260 363 l 5
+ 335 592 l 5
+ 410 363 l 5
+ 651 363 l 5
+480 307 m 5
+ 368 307 l 5
+ 335 412 l 5
+ 302 307 l 5
+ 190 307 l 5
+ 281 241 l 5
+ 246 138 l 5
+ 335 202 l 5
+ 424 138 l 5
+ 389 241 l 5
+ 480 307 l 5
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: starsmallblack
+Encoding: 11089 11089 7906
+Width: 540
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+510 360 m 1
+ 361 251 l 1
+ 418 76 l 1
+ 269 184 l 1
+ 121 76 l 1
+ 177 251 l 1
+ 29 360 l 1
+ 213 360 l 1
+ 269 534 l 1
+ 326 360 l 1
+ 510 360 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: starsmallwhite
+Encoding: 11090 11090 7907
+Width: 540
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+510 360 m 1
+ 361 251 l 1
+ 418 76 l 1
+ 269 184 l 1
+ 121 76 l 1
+ 177 251 l 1
+ 29 360 l 1
+ 213 360 l 1
+ 269 534 l 1
+ 326 360 l 1
+ 510 360 l 1
+338 304 m 1
+ 285 304 l 1
+ 269 352 l 1
+ 254 304 l 1
+ 200 304 l 1
+ 244 272 l 1
+ 228 223 l 1
+ 269 253 l 1
+ 311 223 l 1
+ 295 272 l 1
+ 338 304 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni2B60
+Encoding: 11104 11104 7908
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+760 222 m 1
+ 239 222 l 1
+ 239 72 l 1
+ 40 259 l 1
+ 239 445 l 1
+ 239 298 l 5
+ 760 298 l 5
+ 760 222 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni2B61
+Encoding: 11105 11105 7909
+Width: 470
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7908 11104 N 0 -1 1 0 -24 760 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B62
+Encoding: 11106 11106 7910
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7908 11104 S -1 0 0 -1 800 517 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B63
+Encoding: 11107 11107 7911
+Width: 470
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7908 11104 N 0 1 -1 0 493 -73 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B64
+Encoding: 11108 11108 7912
+Width: 920
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+219 222 m 1
+ 219 72 l 1
+ 20 259 l 1
+ 219 445 l 1
+ 219 298 l 5
+ 701 298 l 5
+ 701 448 l 1
+ 900 261 l 1
+ 701 75 l 1
+ 701 222 l 1
+ 219 222 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni2B65
+Encoding: 11109 11109 7913
+Width: 540
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7912 11108 N 0 -1 1 0 10 890 2
+Validated: 32769
+EndChar
+
+StartChar: uni2B66
+Encoding: 11110 11110 7914
+Width: 650
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7908 11104 N 0.707107 -0.707107 0.707107 0.707107 -145 458 0
+Validated: 32769
+EndChar
+
+StartChar: uni2B67
+Encoding: 11111 11111 7915
+Width: 650
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7908 11104 N -0.707107 -0.707107 0.707107 -0.707107 430 825 0
+Validated: 32769
+EndChar
+
+StartChar: uni2B68
+Encoding: 11112 11112 7916
+Width: 650
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7908 11104 N -0.707107 0.707107 -0.707107 -0.707107 797 240 0
+Validated: 32769
+EndChar
+
+StartChar: uni2B69
+Encoding: 11113 11113 7917
+Width: 650
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7908 11104 N 0.707107 0.707107 -0.707107 0.707107 220 -117 0
+Validated: 32769
+EndChar
+
+StartChar: arrowopenleft
+Encoding: 8701 8701 7918
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+218 172 m 1
+ 218 342 l 1
+ 116 256 l 1
+ 218 172 l 1
+770 219 m 5
+ 274 219 l 5
+ 274 52 l 1
+ 30 256 l 1
+ 274 462 l 1
+ 274 295 l 1
+ 770 295 l 1
+ 770 219 l 5
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: arrowopenright
+Encoding: 8702 8702 7919
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7918 8701 N -1 0 0 -1 800 514 2
+Validated: 32769
+EndChar
+
+StartChar: arrowopenboth
+Encoding: 8703 8703 7920
+Width: 900
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+682 342 m 1
+ 682 172 l 1
+ 784 258 l 1
+ 682 342 l 1
+218 172 m 1
+ 218 342 l 1
+ 116 256 l 1
+ 218 172 l 1
+626 295 m 1
+ 626 462 l 1
+ 870 258 l 1
+ 626 52 l 1
+ 626 219 l 5
+ 274 219 l 5
+ 274 52 l 1
+ 30 256 l 1
+ 274 462 l 1
+ 274 295 l 1
+ 626 295 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: arrowdashleft
+Encoding: 8672 8672 7921
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+774 229 m 5
+ 626 229 l 5
+ 626 285 l 5
+ 774 285 l 5
+ 774 229 l 5
+522 229 m 5
+ 379 229 l 5
+ 379 285 l 5
+ 522 285 l 5
+ 522 229 l 5
+265 229 m 5
+ 136 229 l 5
+ 199 159 251 97 306 29 c 5
+ 270 -5 l 5
+ 191 91 106 173 20 258 c 5
+ 105 340 192 423 270 521 c 5
+ 306 485 l 5
+ 251 414 191 345 136 285 c 5
+ 265 285 l 5
+ 265 229 l 5
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uni21E1
+Encoding: 8673 8673 7922
+Width: 566
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7921 8672 S 0 -1 1 0 25 760 2
+Validated: 32769
+EndChar
+
+StartChar: uni21E2
+Encoding: 8674 8674 7923
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7921 8672 N -1 0 0 -1 800 514 2
+Validated: 32769
+EndChar
+
+StartChar: uni21E3
+Encoding: 8675 8675 7924
+Width: 566
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7921 8672 S 0 1 -1 0 541 -46 2
+Validated: 32769
+EndChar
+
+StartChar: arrowleftwhite
+Encoding: 8678 8678 7925
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+718 336 m 5
+ 250 336 l 5
+ 250 406 l 5
+ 203.05 349.796 153.883 301.603 104 256 c 5
+ 157.837 207.39 206.439 157.275 251 106 c 5
+ 251 176 l 5
+ 718 176 l 5
+ 718 336 l 5
+774 123 m 5
+ 310 123 l 5
+ 310 25 l 5
+ 269 -8 l 5
+ 179 103 138 145 20 256 c 5
+ 138 367 179 409 269 520 c 5
+ 310 487 l 5
+ 310 389 l 5
+ 774 389 l 5
+ 774 123 l 5
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: arrowupwhite
+Encoding: 8679 8679 7926
+Width: 565
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7925 8678 N 0 -1 1 0 25 760 2
+Validated: 32769
+EndChar
+
+StartChar: arrowrightwhite
+Encoding: 8680 8680 7927
+Width: 800
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7925 8678 N -1 0 0 -1 800 515 2
+Validated: 32769
+EndChar
+
+StartChar: arrowdownwhite
+Encoding: 8681 8681 7928
+Width: 565
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7925 8678 N 0 1 -1 0 540 -82 2
+Validated: 32769
+EndChar
+
+StartChar: uni21F3
+Encoding: 8691 8691 7929
+Width: 566
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+416 511 m 1
+ 416 119 l 1
+ 514 119 l 1
+ 547 78 l 1
+ 436 -12 394 -53 283 -171 c 1
+ 172 -53 130 -12 19 78 c 1
+ 52 119 l 1
+ 150 119 l 1
+ 150 511 l 1
+ 52 511 l 1
+ 19 552 l 1
+ 130 642 172 683 283 801 c 1
+ 394 683 436 642 547 552 c 1
+ 514 511 l 1
+ 416 511 l 1
+203 59 m 1
+ 133 59 l 1
+ 189 12 237 -37 283 -87 c 1
+ 332 -33 382 15 433 60 c 1
+ 363 60 l 1
+ 363 571 l 1
+ 433 571 l 1
+ 377 618 329 667 283 717 c 1
+ 234 663 184 615 133 570 c 1
+ 203 570 l 1
+ 203 59 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uniA700
+Encoding: 42752 42752 7930
+Width: 318
+VWidth: 380
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1915 8834 N 0.5 0 0 0.5 0 -138 2
+Validated: 32769
+EndChar
+
+StartChar: uniA701
+Encoding: 42753 42753 7931
+Width: 318
+VWidth: 380
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2332 8838 N 0.5 0 0 0.5 0 -161 2
+Validated: 32769
+EndChar
+
+StartChar: uniA702
+Encoding: 42754 42754 7932
+Width: 318
+VWidth: 1030
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1915 8834 S 0.5 0 0 0.5 0 500 2
+Validated: 32769
+EndChar
+
+StartChar: uniA703
+Encoding: 42755 42755 7933
+Width: 318
+VWidth: 1030
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2332 8838 S 0.5 0 0 0.5 0 451 2
+Validated: 32769
+EndChar
+
+StartChar: uniA704
+Encoding: 42756 42756 7934
+Width: 318
+VWidth: 1030
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1916 8835 S 0.5 0 0 0.5 10 500 2
+Validated: 32769
+EndChar
+
+StartChar: uniA705
+Encoding: 42757 42757 7935
+Width: 318
+VWidth: 1030
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2333 8839 S 0.5 0 0 0.5 0 452 2
+Validated: 32769
+EndChar
+
+StartChar: uniA706
+Encoding: 42758 42758 7936
+Width: 318
+VWidth: 380
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1916 8835 N 0.5 0 0 0.5 0 -138 2
+Validated: 32769
+EndChar
+
+StartChar: uniA707
+Encoding: 42759 42759 7937
+Width: 318
+VWidth: 380
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2333 8839 N 0.5 0 0 0.5 0 -162 2
+Validated: 32769
+EndChar
+
+StartChar: uniA708
+Encoding: 42760 42760 7938
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 14 46 N 1 0 0 1 -60 610 2
+Refer: 7956 -1 S 1 0 0 1 0 -1 3
+Validated: 32769
+EndChar
+
+StartChar: uniA709
+Encoding: 42761 42761 7939
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7956 -1 N 1 0 0 1 0 -1 3
+Refer: 14 46 S 1 0 0 1 -60 444 2
+Validated: 32769
+EndChar
+
+StartChar: uniA70A
+Encoding: 42762 42762 7940
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7956 -1 N 1 0 0 1 0 -1 3
+Refer: 14 46 S 1 0 0 1 -60 316 2
+Validated: 32769
+EndChar
+
+StartChar: uniA70B
+Encoding: 42763 42763 7941
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7956 -1 N 1 0 0 1 0 -1 3
+Refer: 14 46 S 1 0 0 1 -60 158 2
+Validated: 32769
+EndChar
+
+StartChar: uniA70C
+Encoding: 42764 42764 7942
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7956 -1 N 1 0 0 1 0 -1 3
+Refer: 14 46 S 1 0 0 1 -60 -16 2
+Validated: 32769
+EndChar
+
+StartChar: uniA70D
+Encoding: 42765 42765 7943
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7942 42764 S -1 0 0 -1 400 699 2
+Validated: 32769
+EndChar
+
+StartChar: uniA70E
+Encoding: 42766 42766 7944
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7941 42763 S -1 0 0 -1 400 699 2
+Validated: 32769
+EndChar
+
+StartChar: uniA70F
+Encoding: 42767 42767 7945
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7940 42762 S -1 0 0 -1 400 699 2
+Validated: 32769
+EndChar
+
+StartChar: uniA710
+Encoding: 42768 42768 7946
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7939 42761 S -1 0 0 -1 400 699 2
+Validated: 32769
+EndChar
+
+StartChar: uniA711
+Encoding: 42769 42769 7947
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7938 42760 S -1 0 0 -1 400 700 2
+Validated: 32769
+EndChar
+
+StartChar: uniA712
+Encoding: 42770 42770 7948
+Width: 526
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2596 745 S -1 0 0 -1 526 700 2
+Validated: 32769
+EndChar
+
+StartChar: uniA713
+Encoding: 42771 42771 7949
+Width: 526
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2595 744 N -1 0 0 -1 526 700 2
+Validated: 32769
+EndChar
+
+StartChar: uniA714
+Encoding: 42772 42772 7950
+Width: 526
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2594 743 S -1 0 0 -1 526 700 2
+Validated: 32769
+EndChar
+
+StartChar: uniA715
+Encoding: 42773 42773 7951
+Width: 526
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2592 742 S -1 0 0 -1 526 700 2
+Validated: 32769
+EndChar
+
+StartChar: uniA716
+Encoding: 42774 42774 7952
+Width: 526
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 2593 741 S -1 0 0 -1 526 710 2
+Validated: 32769
+EndChar
+
+StartChar: uniA71D
+Encoding: 42781 42781 7953
+Width: 240
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1 33 S 0.65 0 0 0.65 12 326 2
+Validated: 32769
+EndChar
+
+StartChar: uniA71E
+Encoding: 42782 42782 7954
+Width: 240
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1 33 S -0.65 0 0 -0.65 228 800 2
+Validated: 32769
+EndChar
+
+StartChar: uniA71F
+Encoding: 42783 42783 7955
+Width: 240
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1 33 N -0.65 0 0 -0.65 221 523 2
+Validated: 32769
+EndChar
+
+StartChar: mod_tone_bar
+Encoding: 59706 -1 7956
+Width: 400
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+236 700 m 17
+ 236 0 l 9
+ 164 0 l 9
+ 164 700 l 9
+ 236 700 l 17
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uniA717
+Encoding: 42775 42775 7957
+Width: 380
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4949 8760 S 0 1 -1 0 527 266 2
+Validated: 32769
+EndChar
+
+StartChar: uniA718
+Encoding: 42776 42776 7958
+Width: 460
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1784 8722 S 0.707107 0.707107 -0.707107 0.707107 196 220 2
+Refer: 118 183 S 1 0 0 1 -29 307 2
+Validated: 32769
+EndChar
+
+StartChar: uniA719
+Encoding: 42777 42777 7959
+Width: 564
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4949 8760 N 1 0 0 1 -10 306 2
+Validated: 32769
+EndChar
+
+StartChar: uniA71B
+Encoding: 42779 42779 7960
+Width: 354
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+135 335 m 1
+ 135 668 l 1
+ 44 668 l 1
+ 177 801 l 1
+ 310 668 l 1
+ 221 668 l 5
+ 221 335 l 5
+ 135 335 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: uniA71C
+Encoding: 42780 42780 7961
+Width: 354
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 7960 42779 N -1 0 0 -1 354 1136 2
+Validated: 32769
+EndChar
+
+StartChar: uniA71A
+Encoding: 42778 42778 7962
+Width: 584
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+40 511 m 1
+ 40 581 l 1
+ 474 581 l 1
+ 474 800 l 1
+ 544 800 l 1
+ 544 511 l 1
+ 40 511 l 1
+EndSplineSet
+Validated: 3073
+EndChar
+
+StartChar: tif_yam_yat
+Encoding: 61888 -1 7963
+Width: 720
+VWidth: 0
+GlyphClass: 3
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+648 80 m 1
+ 648 0 l 1
+ 72 0 l 1
+ 72 728 l 1
+ 648 728 l 1
+ 648 648 l 1
+ 432 648 l 1
+ 432 404 l 1
+ 550 404 l 1
+ 550 324 l 1
+ 432 324 l 1
+ 432 80 l 1
+ 648 80 l 1
+352 80 m 1
+ 352 324 l 1
+ 234 324 l 1
+ 234 404 l 1
+ 352 404 l 1
+ 352 648 l 1
+ 152 648 l 1
+ 152 80 l 1
+ 352 80 l 1
+EndSplineSet
+Validated: 3073
+LCarets2: 2 0 0 
+Ligature2: "'liga' std. ligatures in Tifinagh" yam_tif cons_join_tif yat_tif
+EndChar
+
+StartChar: tif_yal_slant
+Encoding: 61905 -1 7964
+Width: 670
+VWidth: 0
+GlyphClass: 2
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 4184 11597 N 1 0 -0.267949 1 177.534 0 2
+Validated: 32769
+EndChar
+
+StartChar: tif_yan_yak
+Encoding: 61889 -1 7965
+Width: 548
+VWidth: 0
+GlyphClass: 3
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+313 0 m 25
+ 233 0 l 25
+ 233 728 l 25
+ 313 728 l 25
+ 313 0 l 25
+212 -100 m 0
+ 212 -67 238 -41 271 -41 c 0
+ 304 -41 330 -67 330 -100 c 0
+ 330 -133 304 -159 271 -159 c 0
+ 238 -159 212 -133 212 -100 c 0
+370 50 m 0
+ 370 83 396 109 429 109 c 0
+ 462 109 488 83 488 50 c 0
+ 488 17 462 -9 429 -9 c 0
+ 396 -9 370 17 370 50 c 0
+60 50 m 0
+ 60 83 86 109 119 109 c 0
+ 152 109 178 83 178 50 c 0
+ 178 17 152 -9 119 -9 c 0
+ 86 -9 60 17 60 50 c 0
+370 680 m 0
+ 370 713 396 739 429 739 c 0
+ 462 739 488 713 488 680 c 0
+ 488 647 462 621 429 621 c 0
+ 396 621 370 647 370 680 c 0
+60 680 m 0
+ 60 713 86 739 119 739 c 0
+ 152 739 178 713 178 680 c 0
+ 178 647 152 621 119 621 c 0
+ 86 621 60 647 60 680 c 0
+212 840 m 0
+ 212 873 238 899 271 899 c 0
+ 304 899 330 873 330 840 c 0
+ 330 807 304 781 271 781 c 0
+ 238 781 212 807 212 840 c 0
+EndSplineSet
+Validated: 3073
+LCarets2: 2 0 0 
+Ligature2: "'liga' std. ligatures in Tifinagh" yan_tif cons_join_tif yak_tuar_tif
+EndChar
+
+StartChar: tif_yan_yat
+Encoding: 61890 -1 7966
+Width: 344
+VWidth: 0
+GlyphClass: 3
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+172 0 m 1
+ 92 0 l 1
+ 92 728 l 1
+ 172 728 l 1
+ 172 404 l 1
+ 290 404 l 1
+ 290 324 l 1
+ 172 324 l 1
+ 172 0 l 1
+EndSplineSet
+Validated: 3073
+LCarets2: 2 0 0 
+Ligature2: "'liga' std. ligatures in Tifinagh" yan_tif cons_join_tif yat_tif
+EndChar
+
+StartChar: tif_yar_yat
+Encoding: 61891 -1 7967
+Width: 872
+VWidth: 0
+GlyphClass: 3
+Flags: MW
+LayerCount: 2
+Fore
+SplineSet
+396 661 m 1
+ 249 642 136 516 136 364 c 0
+ 136 212 249 86 396 67 c 1
+ 396 324 l 1
+ 278 324 l 1
+ 278 404 l 1
+ 396 404 l 1
+ 396 661 l 1
+476 661 m 1
+ 476 404 l 1
+ 594 404 l 1
+ 594 324 l 1
+ 476 324 l 1
+ 476 67 l 1
+ 623 86 736 212 736 364 c 0
+ 736 516 623 642 476 661 c 1
+436 -16 m 0
+ 226 -16 56 154 56 364 c 0
+ 56 574 226 744 436 744 c 0
+ 646 744 816 574 816 364 c 0
+ 816 154 646 -16 436 -16 c 0
+EndSplineSet
+Validated: 3073
+LCarets2: 2 0 0 
+Ligature2: "'liga' std. ligatures in Tifinagh" yar_tif cons_join_tif yat_tif
+EndChar
+
+StartChar: tif_yas_yat
+Encoding: 61892 -1 7968
+Width: 872
+VWidth: 0
+GlyphClass: 3
+Flags: HMW
+LayerCount: 2
+Fore
+SplineSet
+56 364 m 0
+ 56 574 226 744 436 744 c 0
+ 646 744 816 574 816 364 c 0
+ 816 154 646 -16 436 -16 c 0
+ 226 -16 56 154 56 364 c 0
+482 234 m 0
+ 482 275 515 308 556 308 c 0
+ 597 308 630 275 630 234 c 0
+ 630 193 597 160 556 160 c 0
+ 515 160 482 193 482 234 c 0
+356 653 m 1
+ 229 618 136 502 136 364 c 0
+ 136 226 229 110 356 75 c 1
+ 356 364 l 1
+ 238 364 l 1
+ 238 444 l 1
+ 356 444 l 1
+ 356 653 l 1
+436 664 m 1
+ 436 444 l 1
+ 554 444 l 1
+ 554 364 l 1
+ 436 364 l 1
+ 436 64 l 1
+ 602 64 736 198 736 364 c 0
+ 736 530 601 664 436 664 c 1
+EndSplineSet
+Validated: 3073
+Ligature2: "'liga' std. ligatures in Tifinagh" yas_tif cons_join_tif yat_tif
+EndChar
+
+StartChar: tif_yan_slant
+Encoding: 61904 -1 7969
+Width: 350
+VWidth: 0
+GlyphClass: 2
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 4186 11599 N 1 0 -0.267949 1 147.534 0 2
+Validated: 32769
 EndChar
 EndChars
 EndSplineFont
