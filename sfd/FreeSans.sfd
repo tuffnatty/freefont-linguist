@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1511006503
+ModificationTime: 1511025072
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -271,6 +271,7 @@ Lookup: 1 0 0 "stretch700"  {"stretch700-1"  } []
 Lookup: 1 0 0 "stretch800"  {"stretch800-1"  } []
 Lookup: 1 0 0 "stretch900"  {"stretch900-1"  } []
 Lookup: 1 0 0 "stretch1000"  {"stretch1000-1"  } []
+Lookup: 4 0 0 "'rlig' rqd. ligatures in Tifinagh"  {"'rlig' rqd. ligatures in Tifinagh"  } ['rlig' ('tfng' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Tifinagh"  {"'liga' std. ligatures in Tifinagh"  } ['liga' ('tfng' <'dflt' > ) ]
 Lookup: 6 0 0 "' RQD' contextual forms in Tifinagh"  {"'RQD ' contextual forms in Tifinagh-1"  } [' RQD' ('tfng' <'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kerns in Cyrillic-small" [150,0,0] "'kern' kerns in Cyrillic-capital" [150,0,0] } ['kern' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
@@ -2116,7 +2117,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 59760 16 12
+WinInfo: 11552 16 12
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -62161,7 +62162,7 @@ EndSplineSet
 Validated: 3073
 EndChar
 
-StartChar: bn_UNKNOWN1.half
+StartChar: bn_na_alt_UNUSED.half
 Encoding: 60054 -1 2787
 Width: 523
 GlyphClass: 4
@@ -195162,8 +195163,9 @@ SplineSet
  352 80 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'rlig' rqd. ligatures in Tifinagh" yam_tif cons_join_tif yat_tif
 LCarets2: 2 0 0 
-Ligature2: "'liga' std. ligatures in Tifinagh" yam_tif cons_join_tif yat_tif
+Ligature2: "'liga' std. ligatures in Tifinagh" yam_tif ZWJ yat_tif
 EndChar
 
 StartChar: tif_yal_slant
@@ -195224,8 +195226,9 @@ SplineSet
  238 781 212 807 212 840 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'rlig' rqd. ligatures in Tifinagh" yan_tif cons_join_tif yak_tuar_tif
 LCarets2: 2 0 0 
-Ligature2: "'liga' std. ligatures in Tifinagh" yan_tif cons_join_tif yak_tuar_tif
+Ligature2: "'liga' std. ligatures in Tifinagh" yan_tif ZWJ yak_tuar_tif
 EndChar
 
 StartChar: tif_yan_yat
@@ -195248,8 +195251,9 @@ SplineSet
  172 0 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'rlig' rqd. ligatures in Tifinagh" yan_tif cons_join_tif yat_tif
 LCarets2: 2 0 0 
-Ligature2: "'liga' std. ligatures in Tifinagh" yan_tif cons_join_tif yat_tif
+Ligature2: "'liga' std. ligatures in Tifinagh" yan_tif ZWJ yat_tif
 EndChar
 
 StartChar: tif_yar_yat
@@ -195284,8 +195288,9 @@ SplineSet
  816 154 646 -16 436 -16 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'rlig' rqd. ligatures in Tifinagh" yar_tif cons_join_tif yat_tif
 LCarets2: 2 0 0 
-Ligature2: "'liga' std. ligatures in Tifinagh" yar_tif cons_join_tif yat_tif
+Ligature2: "'liga' std. ligatures in Tifinagh" yar_tif ZWJ yat_tif
 EndChar
 
 StartChar: tif_yas_yat
@@ -195325,7 +195330,8 @@ SplineSet
  736 530 601 664 436 664 c 1
 EndSplineSet
 Validated: 3073
-Ligature2: "'liga' std. ligatures in Tifinagh" yas_tif cons_join_tif yat_tif
+Ligature2: "'rlig' rqd. ligatures in Tifinagh" yas_tif cons_join_tif yat_tif
+Ligature2: "'liga' std. ligatures in Tifinagh" yas_tif ZWJ yat_tif
 EndChar
 
 StartChar: tif_yan_slant
