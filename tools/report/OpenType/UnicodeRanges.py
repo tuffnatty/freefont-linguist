@@ -347,7 +347,10 @@ ulUnicodeRange = [
 	]],
 [43,	'Box Drawing',     [interval(0x2500, 0x257F)]],
 [44,	'Block Elements',     [interval(0x2580, 0x259F)]],
-[45,	'Geometric Shapes',     [interval(0x25A0, 0x25FF)]],
+[45,	'Geometric Shapes',     [interval(0x25A0, 0x25FF),
+			interval(0x1F780, 0x1F7D4),
+			]
+			],
 [46,	'Miscellaneous Symbols',     [
 			interval(0x2600, 0x26FF),
 			interval(0x1F300, 0x1F5FF),	# Miscellaneous Symbols and Pictographs
