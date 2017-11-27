@@ -34,6 +34,7 @@ and that a zero-width glyph in any other block is *not* "automatic".
 
 import fontforge
 import sys
+import unicodedata
 
 problem = False
 
@@ -60,6 +61,11 @@ def isSpecialTrueType( glyph ):
 
 	return e == 0 or e == 1 or e == 0xD
 
+def rprt( glyph, problem ):
+	print( "Glyph at slot", glyph.encoding, problem )
+markanch = ( 'mark', 'basemark' )
+baseanch = ( 'base', 'ligature' )
+
 from os import path
 def checkOTGlyphClass( fontDir, fontFile ):
 	if isinstance( fontFile, ( list, tuple ) ):
@@ -76,25 +82,45 @@ def checkOTGlyphClass( fontDir, fontFile ):
 
 	valid = True
 	for glyph in g:
+		gclass = glyph.glyphclass
 		if inPrivateUseRange( glyph ):
-			if glyph.glyphclass == 'automatic':
-				print( "Glyph at slot " + str( glyph.encoding )
-					+ " in private use range, marked 'automatic'." )
+			if gclass == 'automatic':
+				rprt( glyph,
+					" in private use range, marked 'automatic'." )
 				problem = True
 			elif( glyph.width == 0
-			and not glyph.glyphclass in ('mark', 'component', 'noclass' ) ):
-				print( "Glyph at slot " + str( glyph.encoding )
-					+ " is zero width but isn't a mark or component" )
+			and not gclass in ('mark', 'component', 'noclass' ) ):
+				rprt( glyph,
+					" is zero width but isn't a mark or component" )
 				problem = True
 		else:
-			if glyph.glyphclass != 'automatic':
+			if gclass == 'automatic':
+				guni = glyph.unicode
+				comb = False
+				if guni > 32:
+					gu = unichr( guni )
+					comb = unicodedata.combining( gu )
+				for a in glyph.anchorPoints:
+					atype = a[1]
+					if comb:
+						if atype in baseanch:
+							rprt( glyph,
+							"is combining but has base anchor"
+							+ a[0] )
+							problem = True
+					else:
+						if atype in markanch:
+							rprt( glyph,
+							"isn't combining but has a mark anchor"
+							+ a[0] )
+							problem = True
+
+			else:
 				if isException( glyph ):
-					print( "Glyph at slot",
-						str( glyph.encoding ),
+					rprt( glyph,
 						"has exceptonal Glyph Class" )
 				else:
-					print( "Glyph at slot",
-						str( glyph.encoding ),
+					rprt( glyph,
 						"has non-automatic Glyph Class" )
 				problem = True
 
