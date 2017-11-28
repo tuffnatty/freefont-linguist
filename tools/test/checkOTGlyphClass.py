@@ -17,7 +17,7 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2016 Stevan White"
+__copyright__ = "Copyright 2016, 2017 Stevan White"
 __date__ = "$Date:: 2015-05-17 14:48:22 +0200#$"
 __version__ = "$Revision: 3050 $"
 
@@ -30,18 +30,20 @@ For glyphs in non-Unicode blocks, it may be important to set the Glyph Class.
 
 This script checks that Unicode glyphs all have Glyph Class "automatic",
 and that a zero-width glyph in any other block is *not* "automatic".
+Then it checks that mark anchors belong to glyphs meant to be combining
+and that base anchors belown to base glyphs.
 """
 
 import fontforge
 import sys
-import unicodedata
+import unicode_data
 
 problem = False
 
 def isException( glyph ):
 	e = glyph.encoding
 	# Malayalam vowels are Mark to allow positioning of subsequent marks.
-	return ( e in range( 0x0D3E, 0X0D40 +1 )
+	return ( e in range( 0x0D3E, 0X0D40 + 1 )
                 or e in range( 0x0D46, 0x0D4C + 1 ) 
                 or e in range( 0x0D57, 0x0D57 + 1 )
                 )
@@ -65,6 +67,7 @@ def rprt( glyph, problem ):
 	print( "Glyph at slot", glyph.encoding, problem )
 markanch = ( 'mark', 'basemark' )
 baseanch = ( 'base', 'ligature' )
+zeroWidthOK = ('mark', 'component', 'noclass' )
 
 from os import path
 def checkOTGlyphClass( fontDir, fontFile ):
@@ -83,46 +86,56 @@ def checkOTGlyphClass( fontDir, fontFile ):
 	valid = True
 	for glyph in g:
 		gclass = glyph.glyphclass
+		comb = False
 		if inPrivateUseRange( glyph ):
+			comb = ( gclass == "mark" )
 			if gclass == 'automatic':
 				rprt( glyph,
 					" in private use range, marked 'automatic'." )
 				problem = True
-			elif( glyph.width == 0
-			and not gclass in ('mark', 'component', 'noclass' ) ):
+			if glyph.width == 0 and not gclass in zeroWidthOK:
 				rprt( glyph,
 					" is zero width but isn't a mark or component" )
 				problem = True
 		else:
-			if gclass == 'automatic':
-				guni = glyph.unicode
-				comb = False
-				if guni > 32:
-					gu = unichr( guni )
-					comb = unicodedata.combining( gu )
-				for a in glyph.anchorPoints:
-					atype = a[1]
-					if comb:
-						if atype in baseanch:
-							rprt( glyph,
-							"is combining but has base anchor"
-							+ a[0] )
-							problem = True
-					else:
-						if atype in markanch:
-							rprt( glyph,
-							"isn't combining but has a mark anchor"
-							+ a[0] )
-							problem = True
-
-			else:
+			guni = glyph.unicode
+			if guni > 32:	# bug in unichr() ?
+				gu = unichr( guni )
+				try:
+					#unicode_data.name( gu )
+					comb = unicode_data.is_combining_character( gu )
+				except Exception as e:
+					#FIXME unicodedata woefully out of date
+					#print( "NOT FOUND in unicodedata", glyph.glyphname )
+					gclass = glyph.glyphclass
+					comb = ( gclass == "mark" )
+					print( "WOHAH", e )
+					raise( e)
+					
+			if gclass != 'automatic':
 				if isException( glyph ):
-					rprt( glyph,
-						"has exceptonal Glyph Class" )
+					#rprt( glyph,
+					#	"has exceptonal Glyph Class" )
+					pass
 				else:
 					rprt( glyph,
 						"has non-automatic Glyph Class" )
 				problem = True
+		for a in glyph.anchorPoints:
+			aname = a[0]
+			atype = a[1]
+			if comb:
+				if atype in baseanch:
+					rprt( glyph,
+					"is combining but has base anchor "
+					+ aname )
+					problem = True
+			else:
+				if atype in markanch:
+					rprt( glyph,
+					"isn't combining but has mark anchor "
+					+ aname )
+					problem = True
 
 # --------------------------------------------------------------------------
 args = sys.argv[1:]
@@ -138,5 +151,6 @@ if len( args ) < 1 or len( args[0].strip() ) == 0:
 else:
 	checkOTGlyphClass( args[0], args[1:] )
 
+#print( unicode_data.unidata_version )
 if problem:
 	sys.exit( 1 )
