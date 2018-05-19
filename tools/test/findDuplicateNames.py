@@ -29,10 +29,9 @@ This is a hack.
 """
 
 import fontforge
-import sys
-
-
+from sys import argv
 from os import path
+
 def findDuplicateNames( fontDir, fontFile ):
 	if isinstance( fontFile, ( list, tuple ) ):
 		print( "In directory", fontDir )
@@ -61,7 +60,7 @@ def findDuplicateNames( fontDir, fontFile ):
 
 
 # --------------------------------------------------------------------------
-args = sys.argv[1:]
+args = argv[1:]
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
 	findDuplicateNames( '../../sfd/',

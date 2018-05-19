@@ -28,10 +28,10 @@ Returns 1 if problems found 0 otherwise.
 """
 
 import fontforge
-import sys
+from sys import argv, exit
+from os import path
 
 problem = False
-
 
 """ Haven't really figured out why TT limit warniings are turndd on,
 	or where the limits are set.
@@ -85,9 +85,10 @@ def dealWithValidationState( state, e ):
 		print e.glyphname + "fpgm or prep tables longer than allowed" )
 	"""
 
-def validate( dir, fontFile ):
+def validate( directory, fontFile ):
+	fontpath = path.join( directory, fontFile )
 	try:
-		font = fontforge.open( dir + fontFile )
+		font = fontforge.open( fontpath )
 		print( "Validating", fontFile )
 
 		g = font.selection.all()
@@ -101,48 +102,29 @@ def validate( dir, fontFile ):
 		font.validate
 	except Exception as e:
 		problem = True
-		print( "Problem validating", fontFile )
+		print( "Problem validating", fontpath )
 		print( e )
 
-validate( '../../sfd/', 'FreeSerif.sfd' )
-validate( '../../sfd/', 'FreeSerifItalic.sfd' )
-validate( '../../sfd/', 'FreeSerifBold.sfd' )
-validate( '../../sfd/', 'FreeSerifBoldItalic.sfd' )
-validate( '../../sfd/', 'FreeSans.sfd' )
-validate( '../../sfd/', 'FreeSansOblique.sfd' )
-validate( '../../sfd/', 'FreeSansBold.sfd' )
-validate( '../../sfd/', 'FreeSansBoldOblique.sfd' )
-validate( '../../sfd/', 'FreeMono.sfd' )
-validate( '../../sfd/', 'FreeMonoOblique.sfd' )
-validate( '../../sfd/', 'FreeMonoBold.sfd' )
-validate( '../../sfd/', 'FreeMonoBoldOblique.sfd' )
+def validateFiles( directory, filelist ):
+	for f in filelist:
+		filename, extension = path.splitext( f )
+		for ext in ( '.sfd', '.otf', '.ttf', '.woff' ):
+			validate( directory, filename + ext )
+# --------------------------------------------------------------------------
+args = argv[1:]
 
-validate( '../../sfd/', 'FreeSerif.ttf' )
-validate( '../../sfd/', 'FreeSerifItalic.ttf' )
-validate( '../../sfd/', 'FreeSerifBold.ttf' )
-validate( '../../sfd/', 'FreeSerifBoldItalic.ttf' )
-validate( '../../sfd/', 'FreeSans.ttf' )
-validate( '../../sfd/', 'FreeSansOblique.ttf' )
-validate( '../../sfd/', 'FreeSansBold.ttf' )
-validate( '../../sfd/', 'FreeSansBoldOblique.ttf' )
-validate( '../../sfd/', 'FreeMono.ttf' )
-validate( '../../sfd/', 'FreeMonoOblique.ttf' )
-validate( '../../sfd/', 'FreeMonoBold.ttf' )
-validate( '../../sfd/', 'FreeMonoBoldOblique.ttf' )
-
-validate( '../../sfd/', 'FreeSerif.otf' )
-validate( '../../sfd/', 'FreeSerifItalic.otf' )
-validate( '../../sfd/', 'FreeSerifBold.otf' )
-validate( '../../sfd/', 'FreeSerifBoldItalic.otf' )
-validate( '../../sfd/', 'FreeSans.otf' )
-validate( '../../sfd/', 'FreeSansOblique.otf' )
-validate( '../../sfd/', 'FreeSansBold.otf' )
-validate( '../../sfd/', 'FreeSansBoldOblique.otf' )
-validate( '../../sfd/', 'FreeMono.otf' )
-validate( '../../sfd/', 'FreeMonoOblique.otf' )
-validate( '../../sfd/', 'FreeMonoBold.otf' )
-validate( '../../sfd/', 'FreeMonoBoldOblique.otf' )
+if len( args ) < 1 or len( args[0].strip() ) == 0:
+	validateFiles( '../../sfd/',
+		( 'FreeSerif.sfd', 'FreeSerifItalic.sfd',
+		'FreeSerifBold.sfd', 'FreeSerifBoldItalic.sfd',
+		'FreeSans.sfd', 'FreeSansOblique.sfd',
+		'FreeSansBold.sfd', 'FreeSansBoldOblique.sfd',
+		'FreeMono.sfd', 'FreeMonoOblique.sfd',
+		'FreeMonoBold.sfd', 'FreeMonoBoldOblique.sfd' )
+		)
+else:
+	validateFiles( args[0], args[1:] )
 
 
 if problem:
-	sys.exit( 1 )
+	exit( 1 )

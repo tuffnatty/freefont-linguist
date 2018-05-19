@@ -32,7 +32,7 @@ whenever it isn't.
 """
 
 import fontforge
-import sys
+from sys import argv, exit
 
 problem = False
 
@@ -82,7 +82,7 @@ def checkGlyphNumbers( fontDir, fontFile ):
 				problem = True
 
 # --------------------------------------------------------------------------
-args = sys.argv[1:]
+args = argv[1:]
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
 	checkGlyphNumbers( '../../sfd/',
@@ -96,4 +96,4 @@ else:
 	checkGlyphNumbers( args[0], args[1:] )
 
 if problem:
-	sys.exit( 1 )
+	exit( 1 )

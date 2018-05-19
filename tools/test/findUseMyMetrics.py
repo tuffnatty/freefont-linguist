@@ -43,9 +43,8 @@ rotated composite components.
 # for that reference.
 # Therefore this script parses the SFD file directly.
 
-import sys
+from sys import argv, exit
 import re
-
 from os import path
 
 problem = False
@@ -95,7 +94,7 @@ def checkUseMyMetrics( fontDir, fontFile ):
 				checkUseMyMetrics( fontDir, fontName )
 			else:
 				print( "Argument must be a FontForge SFD file." )
-				sys.exit( 1 )
+				exit( 1 )
 		return
 
 	print( "Checking for rotated references with use_my_metrics in "
@@ -154,7 +153,7 @@ def collectGlyphsAndRefs( sfd_file ):
 
 
 # --------------------------------------------------------------------------
-args = sys.argv[1:]
+args = argv[1:]
 
 if len( args ) < 1 or len( args[0].strip() ) == 0:
 	checkUseMyMetrics( '../../sfd/',
@@ -168,4 +167,4 @@ else:
 	checkUseMyMetrics( args[0], args[1:] )
 
 if problem:
-	sys.exit( 1 )
+	exit( 1 )

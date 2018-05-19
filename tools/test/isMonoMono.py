@@ -30,7 +30,7 @@ important that the glyphs all lie between 800 and -200EM vertically.
 """
 
 import fontforge
-import sys
+from sys import argv, exit
 
 problem = False
 
@@ -80,14 +80,14 @@ def ismonomono( fontfilename ):
 	or font[0x000D].width != nonzero:
 		print( 'Should be full-width "nonmarkingreturn" glyph at 0x000D.' )
 
-scriptname = sys.argv[0];
-argc = len( sys.argv )
+scriptname = argv[0];
+argc = len( argv )
 
 if argc > 1:
 	for i in range( 1, argc ):
-		ismonomono( sys.argv[i] )
+		ismonomono( argv[i] )
 
 if problem:
-	sys.exit( 1 )
+	exit( 1 )
 else:
-	sys.exit( 0 )
+	exit( 0 )
