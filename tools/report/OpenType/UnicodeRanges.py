@@ -325,7 +325,8 @@ ulUnicodeRange = [
 	interval(0x2B76, 0x2B95),	# "
 	interval(0x2B98, 0x2BB9),	# "
 	interval(0x2BBD, 0x2BC8),	# "
-	interval(0x2BCA, 0x2BD1)	# "
+	interval(0x2BCA, 0x2BD1),	# "
+	interval(0x2BEC, 0x2BEF)	# "
 	]],
 [38,	'Mathematical Operators',     [ 
 	interval(0x2200, 0x22FF),
@@ -334,7 +335,7 @@ ulUnicodeRange = [
 	interval(0x2980, 0x29FF)	# Miscellaneous Mathematical Symbols-B
 	]
 		],
-[39,	'Miscellaneous Technical',     [interval(0x2300, 0x23FE)]],
+[39,	'Miscellaneous Technical',     [interval(0x2300, 0x23FF)]],
 [40,	'Control Pictures',     [interval(0x2400, 0x2426)]],
 [41,	'Optical Character Recognition',     [interval(0x2440, 0x244A)]],
 [42,	'Enclosed Alphanumerics',     [
