@@ -28,7 +28,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1527699583
+ModificationTime: 1527710739
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -279,7 +279,7 @@ Lookup: 2 9 0 "'stch' stretch character in Syriac"  {"'stch' stretch character i
 Lookup: 2 0 0 "'ccmp' glyph decomp. in Syriac"  {"'ccmp' glyph decomp. in Syriac-1"  } ['ccmp' ('syrc' <'dflt' > ) ]
 Lookup: 4 0 0 "'rlig' rqd. ligatures in Tifinagh"  {"'rlig' rqd. ligatures in Tifinagh"  } ['rlig' ('tfng' <'dflt' > ) ]
 Lookup: 4 0 0 "'liga' std. ligatures in Tifinagh"  {"'liga' std. ligatures in Tifinagh"  } ['liga' ('tfng' <'dflt' > ) ]
-Lookup: 6 0 0 "'locl' mark posit. by subst. in Latin"  {"'locl' mark posit. by subst. in Latin-1"  } ['locl' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
+Lookup: 6 0 0 "'locl' mark stretching in Latin"  {"'locl' mark stretching in Latin-1"  } ['locl' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Cyrillic"  {"'kern' kerns in Cyrillic-small" [150,0,0] "'kern' kerns in Cyrillic-capital" [150,0,0] } ['kern' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin"  {"'kern' kerns in Latin-capital" [150,0,0] "'kern' kerns in Latin-small" [150,0,0] } ['kern' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 258 0 0 "'kern' kerning in Latin for Catalan"  {"'kern' kerning in Latin for Catalan-1" [150,0,6] } ['kern' ('latn' <'CAT ' > ) ]
@@ -498,8 +498,8 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
-ChainSub2: class "'locl' mark posit. by subst. in Latin-1"  12 12 1 10
-  Class: 41 comb_conj_macron.cmb comb_conj_macron_blw
+ChainSub2: class "'locl' mark stretching in Latin-1"  12 12 1 10
+  Class: 66 overline.cmb lowline.cmb comb_conj_macron.cmb comb_conj_macron_blw
   Class: 27 w wacute wcircumflex wgrave
   Class: 1 m
   Class: 85 f i j l t iacute igrave icircumflex icaron ibreve iogonek lslash tcommabelow dotlessi
@@ -510,7 +510,7 @@ ChainSub2: class "'locl' mark posit. by subst. in Latin-1"  12 12 1 10
   Class: 3 M W
   Class: 5 ae oe
   Class: 49 zero one two three four five six seven eight nine
-  BClass: 41 comb_conj_macron.cmb comb_conj_macron_blw
+  BClass: 66 overline.cmb lowline.cmb comb_conj_macron.cmb comb_conj_macron_blw
   BClass: 27 w wacute wcircumflex wgrave
   BClass: 1 m
   BClass: 85 f i j l t iacute igrave icircumflex icaron ibreve iogonek lslash tcommabelow dotlessi
@@ -2197,7 +2197,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 8464 16 12
+WinInfo: 57472 16 12
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 31 [-24 0 524 540 700 709 729 741]
@@ -40133,12 +40133,12 @@ Encoding: 773 773 1839
 Width: 0
 Flags: HMW
 TeX: 117 0
-TopAccentHorizontal: -300
+TopAccentHorizontal: -250
 GlyphCompositionHorizontal: 3  overline.cmb%0,500,0,500 overline.cmb%1,500,500,500 overline.cmb%0,0,500,500
 LayerCount: 2
 Fore
-Refer: 63 95 N 1 0 0 1 -578 926 2
-Validated: 32769
+Refer: 63 95 N 1 0 0 1 -500 976 2
+Validated: 98305
 Substitution2: "stretch800-1" overline800
 Substitution2: "stretch1000-1" overline1000
 Substitution2: "stretch900-1" overline900
@@ -40670,17 +40670,16 @@ Refer: 110 175 N 1 0 0 1 -396 -784 0
 Validated: 32769
 EndChar
 
-StartChar: underscore.cmb
+StartChar: lowline.cmb
 Encoding: 818 818 1870
 Width: 0
 VWidth: 200
 Flags: HMW
 TeX: 117 0
-AnchorPoint: "below" -243 0 mark 0
 LayerCount: 2
 Fore
 Refer: 63 95 N 1 0 0 1 -500 0 2
-Validated: 32769
+Validated: 98305
 Substitution2: "stretch800-1" underline800
 Substitution2: "stretch1000-1" underline1000
 Substitution2: "stretch900-1" underline900
@@ -40696,12 +40695,11 @@ Width: 0
 VWidth: 200
 Flags: HMW
 TeX: 117 0
-AnchorPoint: "below" -302 0 mark 0
 LayerCount: 2
 Fore
 Refer: 63 95 S 1 0 0 1 -500 -102 2
-Refer: 63 95 S 1 0 0 1 -500 0 2
-Validated: 32769
+Refer: 63 95 N 1 0 0 1 -500 0 2
+Validated: 98305
 EndChar
 
 StartChar: ringhalfleftabv.cmb
@@ -52923,9 +52921,9 @@ VWidth: 200
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 1 0 0 1 78 100 2
-Refer: 1839 773 S 1 0 0 1 78 0 2
-Validated: 32769
+Refer: 1839 773 S 1 0 0 1 -2 50 2
+Refer: 1839 773 S 1 0 0 1 -2 -50 2
+Validated: 98305
 EndChar
 
 StartChar: equalsblw.cmb
@@ -73367,6 +73365,7 @@ SplineSet
  338 715 259 660 195 602 c 5
  195 374 l 5
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: Psicyr
@@ -171351,8 +171350,8 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1776 8709 N 0.9 0 0 0.9 0.100006 3.80002 2
-Refer: 1839 773 N 1 0 0 1 649 1 2
-Validated: 32769
+Refer: 1839 773 S 1 0 0 1 649 1 2
+Validated: 98305
 EndChar
 
 StartChar: uni29B2
@@ -185674,8 +185673,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 0.5 0 0 1 39 0 2
-Validated: 32769
+Refer: 1839 773 S 0.5 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline300
@@ -185685,8 +185684,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 0.6 0 0 1 47 0 2
-Validated: 32769
+Refer: 1839 773 S 0.6 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline400
@@ -185696,8 +185695,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 0.8 0 0 1 62 0 2
-Validated: 32769
+Refer: 1839 773 S 0.8 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline450
@@ -185707,8 +185706,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 0.9 0 0 1 70 0 2
-Validated: 32769
+Refer: 1839 773 S 0.9 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline550
@@ -185718,8 +185717,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 1.1 0 0 1 86 0 2
-Validated: 32769
+Refer: 1839 773 S 1.1 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline600
@@ -185729,8 +185728,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 1.2 0 0 1 94 0 2
-Validated: 32769
+Refer: 1839 773 S 1.2 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline700
@@ -185740,8 +185739,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 1.4 0 0 1 109 0 2
-Validated: 32769
+Refer: 1839 773 S 1.4 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline800
@@ -185751,8 +185750,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 1.6 0 0 1 125 0 2
-Validated: 32769
+Refer: 1839 773 S 1.6 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline900
@@ -185762,8 +185761,8 @@ GlyphClass: 4
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1839 773 S 1.8 0 0 1 140 0 2
-Validated: 32769
+Refer: 1839 773 S 1.8 0 0 1 0 0 2
+Validated: 98305
 EndChar
 
 StartChar: overline1000
@@ -185774,11 +185773,11 @@ Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-0 750 m 1
- -1000 750 l 1
+0 800 m 5
  -1000 800 l 5
- 0 800 l 1
- 0 750 l 1
+ -1000 850 l 5
+ 0 850 l 5
+ 0 800 l 5
 EndSplineSet
 Validated: 3073
 EndChar
@@ -185791,7 +185790,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 0.5 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline300
@@ -185802,7 +185801,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 0.6 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline400
@@ -185813,7 +185812,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 S 0.8 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline450
@@ -185824,7 +185823,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 0.9 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline550
@@ -185835,7 +185834,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 1.1 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline600
@@ -185846,7 +185845,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 1.2 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline700
@@ -185857,7 +185856,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 1.4 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline800
@@ -185868,7 +185867,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 1.6 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline900
@@ -185879,7 +185878,7 @@ Flags: HMW
 LayerCount: 2
 Fore
 Refer: 1870 818 N 1.8 0 0 1 0 0 2
-Validated: 32769
+Validated: 98305
 EndChar
 
 StartChar: underline1000
@@ -186012,6 +186011,7 @@ SplineSet
  -1000 800 l 1
  -1000 870 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: macronlow250
@@ -186127,6 +186127,7 @@ SplineSet
  -1000 -164 l 1
  -1000 -94 l 1
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: bn_s_ta
