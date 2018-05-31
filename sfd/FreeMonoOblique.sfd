@@ -19,7 +19,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1527699412
+ModificationTime: 1527780397
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -88,7 +88,6 @@ Lookup: 1 0 0 "'c2sc' caps to small caps in Cyrillic"  {"'c2sc' caps to small ca
 Lookup: 2 0 0 "'smcp' small caps in Cyrillic pre-decompose"  {"'smcp' small caps in Cyrillic pre-decompose-1"  } ['smcp' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 1 0 0 "'smcp' lowercase to small caps in Cyrillic"  {"'smcp' lowercase to small caps in Cyrillic-1"  "'smcp' lowercase to small caps in Cyrillic-B"  } ['smcp' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 4 0 0 "'dlig' discr. ligatures in Latin for Catalan"  {"'dlig' std. ligatures in Latin for Catalan-1"  } ['dlig' ('latn' <'CAT ' > ) ]
-Lookup: 1 0 0 "FreeMono-'c2sc' caps to small caps in Cyrillic"  {"FreeMono-'c2sc' caps to small caps in Cyrillic-invariant"  } ['c2sc' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks generic above"  {"'mark' marks in Latin above subtable"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks generic below"  {"'mark' marks in Latin below"  } ['mark' ('DFLT' <'dflt' > 'armn' <'dflt' > 'cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > 'geor' <'dflt' > 'grek' <'COP ' 'ELL ' 'PGR ' 'dflt' > 'hebr' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 260 0 0 "'mark' marks in Cyrillic"  {"'mark' Mark Positioning in Cyrillic subtable"  } ['mark' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
@@ -375,7 +374,7 @@ StemSnapH 4 [41]
 ForceBold 5 false
 EndPrivate
 AnchorClass2: "cyr-stacked"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-lateral"  "'mkmk' mark-to-mark in Cyrillic-2" "cyr-abovemk"  "'mkmk' mark to mark in Cyrillic-1" "abovegk"  "'mark' marks in Greek subtable" "dagesh-heb"  "'mark' marks in Hebrew-1" "belowmk"  "'mkmk' mark-to-mark generic-low" "abovemk"  "'mkmk' mark-to-mark generic-high" "far-right-dot"  "'mark' marks in Latin above subtable" "cyr-above"  "'mark' Mark Positioning in Cyrillic subtable" "below"  "'mark' marks in Latin below" "above"  "'mark' marks in Latin above subtable" 
-BeginChars: 131072 3289
+BeginChars: 131072 3292
 
 StartChar: space
 Encoding: 32 32 0
@@ -43276,7 +43275,7 @@ SplineSet
  470 272 l 5
 EndSplineSet
 Validated: 3073
-Substitution2: "FreeMono-'c2sc' caps to small caps in Cyrillic-invariant" entailcyr
+Substitution2: "'c2sc' caps to small caps in Cyrillic-invariant" entailcyr
 EndChar
 
 StartChar: entailcyr
@@ -43376,7 +43375,7 @@ SplineSet
  355 169 l 5
 EndSplineSet
 Validated: 3073
-Substitution2: "FreeMono-'c2sc' caps to small caps in Cyrillic-invariant" emtailcyr
+Substitution2: "'c2sc' caps to small caps in Cyrillic-invariant" emtailcyr
 EndChar
 
 StartChar: emtailcyr
@@ -59130,10 +59129,10 @@ GlyphClass: 3
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 1015 8320 N 0.85 0 0 0.85 160 -20 2
+Refer: 1015 8320 S 0.85 0 0 0.85 160 -20 2
 Refer: 120 185 N 0.85 0 0 0.85 59 90 2
-Refer: 63 95 N 1 0 0 1 70 400 2
-Refer: 1016 8321 N 0.85 0 0 0.85 -70 -20 2
+Refer: 63 95 S 1 0 0 1 70 400 2
+Refer: 1016 8321 S 0.85 0 0 0.85 -70 -20 2
 Validated: 32769
 LCarets2: 3 0 0 0 
 Ligature2: "'afrc' stacked fractions-1" one slash one zero
@@ -75462,6 +75461,51 @@ SplineSet
  284.594 353.433 265.365 390 218.039 390 c 0
 EndSplineSet
 Validated: 3073
+EndChar
+
+StartChar: stk_threetenths
+Encoding: 59628 -1 3289
+Width: 600
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1015 8320 N 0.85 0 0 0.85 160 -20 2
+Refer: 63 95 N 1 0 0 1 70 400 2
+Refer: 1016 8321 N 0.85 0 0 0.85 -70 -20 2
+Refer: 114 179 S 0.85 0 0 0.85 45 90 2
+Ligature2: "'afrc' stacked fractions-1" three slash one zero
+LCarets2: 3 0 0 0 
+EndChar
+
+StartChar: stk_seventenths
+Encoding: 59629 -1 3290
+Width: 600
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1015 8320 N 0.85 0 0 0.85 160 -20 2
+Refer: 63 95 N 1 0 0 1 70 400 2
+Refer: 1016 8321 N 0.85 0 0 0.85 -70 -20 2
+Refer: 1012 8311 S 0.85 0 0 0.85 20 90 2
+Ligature2: "'afrc' stacked fractions-1" seven slash one zero
+LCarets2: 3 0 0 0 
+EndChar
+
+StartChar: stk_ninetenths
+Encoding: 59630 -1 3291
+Width: 600
+GlyphClass: 3
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 1015 8320 N 0.85 0 0 0.85 160 -20 2
+Refer: 63 95 N 1 0 0 1 70 400 2
+Refer: 1016 8321 N 0.85 0 0 0.85 -70 -20 2
+Refer: 1014 8313 S 0.85 0 0 0.85 10 90 2
+Ligature2: "'afrc' stacked fractions-1" nine slash one zero
+LCarets2: 3 0 0 0 
 EndChar
 EndChars
 EndSplineFont
