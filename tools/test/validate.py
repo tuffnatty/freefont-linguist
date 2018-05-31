@@ -109,7 +109,11 @@ def validateFiles( directory, filelist ):
 	for f in filelist:
 		filename, extension = path.splitext( f )
 		for ext in ( '.sfd', '.otf', '.ttf', '.woff' ):
-			validate( directory, filename + ext )
+			fontfilename = filename + ext
+			if path.isfile( fontfilename ):
+				validate( directory, fontfilename )
+			else:
+				print( "File", fontfilename, "not found." )
 # --------------------------------------------------------------------------
 args = argv[1:]
 
