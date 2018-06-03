@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.8 2010-04-06 19:33:54 Stevan_White Exp $
+# $Id$
 
 SFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd \
 FreeSansBoldOblique.sfd FreeSansBold.sfd FreeSansOblique.sfd FreeSans.sfd \
