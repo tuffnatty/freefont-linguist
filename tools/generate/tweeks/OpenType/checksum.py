@@ -17,8 +17,8 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2017, 2018 Stevan White"
-__date__ = "$Date: 2015/06/02 21:02:24 $"
-__version__ = "$Revision: 1.12 $"
+__date__ = "$Date$"
+__version__ = "$Revision$"
 
 __doc__ = """ Utilities for calculating 32-bit checksums of table fields.
 This assumes the tables are padded with zeros to 32 bits.
