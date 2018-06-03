@@ -17,8 +17,8 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2010, 2018 Stevan White"
-__date__ = "$Date:: 2013-04-09 12:44:41 +0200#$"
-__version__ = "$Revision: 1.6 $"
+__date__ = "$Date::                           $"
+__version__ = "$Revision$"
 
 import fontforge
 import psMat
