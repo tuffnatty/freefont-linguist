@@ -18,8 +18,8 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, 2011, 2017, 2018 Stevan White"
-__date__ = "$Date:: 2013-04-09 12:44:41 +0200#$"
-__version__ = "$Revision: 1.9 $"
+__date__ = "$Date: 2013-04-09 12:44:41 +0200#$"
+__version__ = "$Revision$"
 __doc__ = """
 Makes an HTML table showing how many glyphs are in each range in each font,
 and tries to collate that with the OS/2 character range support bit flags.

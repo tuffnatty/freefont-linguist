@@ -12,7 +12,7 @@ Also reports whether glyphs have references, or if they are ligatures.
 """
 __author__ = "Stevan White <stevan.white@googlemail.com>"
 __date__ = "Dec 2009"
-__version__ = "$Revision: 1.2 $"
+__version__ = "$Revision$"
 
 import fontforge
 from sys import argv, exit, stdout, stderr
