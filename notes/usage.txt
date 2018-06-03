@@ -33,11 +33,16 @@ Language-specific features
 ==========================
 
 Some OpenType font features are activated only when the text is specified to
-be of a certain language. 
+be of a certain language.  For font features appropriate for a given language
+to be activated, it is crucial that the application environment knows what
+language the text represents (not just what writing script it is.)
 
 This is done in HTML by enclosing the text with a tag whose 'lang' attribute
 is set to the appropriate ISO 632.2 language code.  In a word processor, 
-any block of text can be given a language setting.
+any block of text can be given a language setting -- for example in LibreOffice
+Writer, for the selected text, the dialog brought up by the menu item 
+Format -> Character allows the language to be specified.  In LaTeX, this
+is done by invoking commands from special packages.
 
 Latin
 -----
@@ -417,4 +422,4 @@ fonts, very high precomposed symbols are used.
 limited to font height.
 
 
-$Id: usage.txt,v 1.10 2011-07-16 08:38:06 Stevan_White Exp $
+$Id$
