@@ -26,7 +26,7 @@ Then clean up clean up clean up.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2008, 2011, 2018 Stevan White"
-__date__ = "$Date: 2013-04-09 12:44:41 +0200#$"
+__date__ = "$Date: 2013-04-09 12:44:41 +0200$"
 __version__ = "$Revision$"
 
 import fontforge
