@@ -17,7 +17,7 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
-__copyright__ = "Copyright 2009, 2010, 2011, 2017 Stevan White"
+__copyright__ = "Copyright 2009, 2010, 2011, 2017, 2018 Stevan White"
 __date__ = "$Date:: 2013-04-09 12:44:41 +0200#$"
 __version__ = "$Revision: 1.9 $"
 __doc__ = """
@@ -195,7 +195,7 @@ def print_font_range_table( fontSupportList ):
 				rowclass = ' class="private"'
 			
 		print( '<tr%s><td>%s</td>' % ( rowclass, range_name ) )
-		print( '<td class="num">%i</td>' % (
+		print( '<td>%i</td>' % (
 				total_intervals( intervals ) ) )
 		for fsl in fontSupportList:
 			supportInfo = fsl.getInfo( idx )
@@ -206,23 +206,23 @@ def print_font_range_table( fontSupportList ):
 			if supportInfo.total:
 				totalStr = str( supportInfo.total )
 
-			print( '<td class="num">%s</td><td>%s</td>' % (
+			print( '<td>%s</td><td>%s</td>' % (
 					totalStr, supportString ) )
 
 		print( '</tr>' )
 	print( '<tr><th colspan="2">total in Unicode ranges</th>' )
 	for fsl in fontSupportList:
-		print( '<td class="num" colspan="2">%i&nbsp;</td>' % (
+		print( '<td colspan="2">%i&nbsp;</td>' % (
 					fsl.totalGlyphs ) )
 	print( '</tr>' )
 	print( '<tr><th colspan="2">total in font</th>' )
 	for fsl in fontSupportList:
-		print( '<td class="num" colspan="2">%i&nbsp;</td>' % (
+		print( '<td colspan="2">%i&nbsp;</td>' % (
 					fsl.fontTotalGlyphs ) )
 	print( '</tr>' )
 	print( '<tr><th colspan="2">total in Private Use</th>' )
 	for fsl in fontSupportList:
-		print( '<td class="num" colspan="2">%i&nbsp;</td>' % (
+		print( '<td colspan="2">%i&nbsp;</td>' % (
 					fsl.privateUseGlyphs ) )
 	print( '</tr>' )
 	# Would also like to total glyphs in ranges for each font,
@@ -287,7 +287,8 @@ GNU FreeFont character range support
 	tr.high { color: #555 }
 	tr.private { background-color: silver; }
 	tr.other { background-color: #CCF; }
-	td.num { text-align: right }
+	td { text-align: right; }
+	td:first-child { text-align: left; }
 	td { padding-right: 0.25ex }
 	th { padding: 0.25ex }
 	.roman { border-left: medium black solid; }
