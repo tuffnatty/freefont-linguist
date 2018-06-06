@@ -17,7 +17,7 @@ GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
 __copyright__ = "Copyright 2009, 2010, 2018 Stevan White"
-__date__ = "$Date: 2010-09-14 13:02:02 $"
+__date__ = "$Date: $"
 __version__ = "$Revision: 1.3 $"
 
 __doc__ = """
