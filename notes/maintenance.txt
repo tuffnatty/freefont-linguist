@@ -32,6 +32,9 @@
 
     Several further FreeFont checks are executed by 
     	make tests
+    Some FontForge consistency tests aren't available via scripts.
+    These tests must be run by hand for each font face.  In particular,
+    the ATT tests must be run by hand.
 
     Note that failure of some of these will result in visible problems
     when the font is used.  For example, failure of some of the "ATT"
@@ -46,7 +49,7 @@
 
     Requires 'ncftp'
 
-    /bin/sh ~/bin/gnupload --to ftp.gnu.org:freefont freefont-otf-20080324.zip
+    /bin/sh ~/bin/gnupload --to ftp.gnu.org:freefont freefont-otf-20180608.zip
 
     It prompts for a PGP password, creates the signature files required
     by the Savannah upload procedures, and uploads all of them.
@@ -55,7 +58,7 @@
 
     http://www.gnu.org/prep/maintain/maintain.html#Automated-Upload-Registration
 
-    gpg -b freefont-ttf-20060126.zip
+    gpg -b freefont-ttf-20180608.zip
 
     This creates a "detached GPD binary signature" file freefont-ttf.tar.gz.sig
 
@@ -69,7 +72,7 @@
 6)  a) Tagging a release in SVN
 
     svn copy svn+ssh://UNAME@svn.savannah.gnu.org/freefont/trunk \
-        svn+ssh://UNAME@svn.savannah.gnu.org/freefont/tags/RELEASE_20120503 \
+        svn+ssh://UNAME@svn.savannah.gnu.org/freefont/tags/RELEASE_20180608 \
 	             -m "Tagging the 03.05.2012 release."
     where UNAME is a Savannah admin user name.
 

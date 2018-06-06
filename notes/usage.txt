@@ -279,10 +279,10 @@ With CSS, the "font-family" property can be specified as one of
 and several other properties influencing typographic presentation can
 also be set: "font-weight", "font-style", etc.
 In CSS 3, a special property 'font-feature-settings' that gives explicit
-control of OpenType font features was introduced.  Several browsers
-now have experimental implementations of this feature.  For example,
-Mozilla Firefox has "font-feature-settings"; see
+control of OpenType font features was introduced. 
 	https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
+It is usually more appropriateto use explicit CSS 'font-variant' properties
+to reach these features.
 
 These explicit features are specific to particular fonts.  So this 
 technology is meant to work with "web fonts", a means of delivering
@@ -409,17 +409,19 @@ Use with MATHML
 
 FreeSerif and FreeSans function, with some limitations, with MATHML.
 
-In Mozilla Firefox, it suffices to specify in CSS style:
-	body, math { font-family: freeserif }
-However, any missing symbols will be taken from the Firefox 'about:config'
-list 'font.mathfont-family'.
+Mozilla Firefox supports MATHML.  To use it with GNU FreeFont, it is
+necessary to specify FreeSerif or FreeSans in the 'about:config' setting
+'font.name-list.serif.x-math'.  Note that the first font found in the list
+is the one used for math.
 
 Limitations include: 
 1) vertical extension of symbols such as the integral
 and brackets begins when font height is reached---whereas in many math
 fonts, very high precomposed symbols are used.
-2) The height of summation, slashes, other variable sized symbols is 
+2) The height of the summation and some other variable sized symbols is 
 limited to font height.
+3) A few extensible arrows don't extend correctly, although others do.
+What triggers this is unknown.
 
 
 $Id$
