@@ -281,11 +281,12 @@ ulUnicodeRange = [
 [27,	'Balinese', [interval(0x1B00, 0x1B7F)]],
 #	'Batak', [interval(0x1BC0, 0x1BFF)]],
 [28,	'Hangul Jamo',     [interval(0x1100, 0x11FF)]],
-[29,	'Latin Extended (Additional,C,D)',     [
+[29,	'Latin Extended (Additional,C,D,E)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
 		interval(0x2C60, 0x2C7F),	# C
 		interval(0xA720, 0xA7B7),	# D
-		interval(0xA7F7, 0xA7FF)	# D
+		interval(0xA7F7, 0xA7FF),	# D
+		interval(0xAB30, 0xAB65)	# E
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
 		interval(0x1F18, 0x1F1D),
@@ -341,9 +342,8 @@ ulUnicodeRange = [
 [42,	'Enclosed Alphanumerics',     [
 	interval(0x2460, 0x24FF),
 	interval(0x1F100, 0x1F10C),	# Supplement
-	interval(0x1F110, 0x1F12E),	# Supplement
-	interval(0x1F130, 0x1F16B),	# Supplement
-	interval(0x1F170, 0x1F19A),	# Supplement
+	interval(0x1F110, 0x1F16B),	# Supplement
+	interval(0x1F170, 0x1F1AC),	# Supplement
 	interval(0x1F1E6, 0x1F1FF)	# Supplement
 	]],
 [43,	'Box Drawing',     [interval(0x2500, 0x257F)]],
