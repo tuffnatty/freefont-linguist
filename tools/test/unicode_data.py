@@ -112,12 +112,13 @@ class characters:
 		self._charsByUnicode = None
 
 	def _build( self, filename='UnicodeData.txt' ):
-		f = open( filename )
-		if not f:
-			print( 'UnicodeData.txt should be in current directory.'
-					, file=err )
+		try:
+			f = open( filename )
+			self._charsByUnicode = build_charsByUnicode( f )
+		except:
+			print( 'UnicodeData.txt from latest Unicode specs '
+				'should be in current directory.', file=err )
 			exit( 1 )
-		self._charsByUnicode = build_charsByUnicode( f )
 
 	def byUnicode( self ):
 		if not self._charsByUnicode:
