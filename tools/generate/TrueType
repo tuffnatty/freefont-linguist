@@ -49,10 +49,9 @@ def build_ttf_file( sfd_filename ):
 	f.autoHint()
 	f.autoInstr()
 	# 'old-kern' and 'dummy-dsig' are work-arounds for Windows
-	#FIXME why no-hints?  Doesn't Windows use hints?
-	f.generate( ttfile,
-		flags=('opentype','no-hints',
-		'old-kern','dummy-dsig','round') )
+	# 'no-hints' means no PS (old-style) hints -- there are also TTF hints.
+	fl = ('opentype','no-hints','old-kern','dummy-dsig','round')
+	f.generate( ttfile, flags = fl )
 	f.close()
 
 scriptname = argv[0];
