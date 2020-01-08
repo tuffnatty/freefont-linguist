@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1578499084
+ModificationTime: 1578525388
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -55,7 +55,6 @@ OS2FamilyClass: 2053
 OS2Vendor: 'GNU '
 OS2CodePages: 600001bf.dff70000
 OS2UnicodeRanges: e493beff.4640fdff.0a4030a1.0200058c
-Lookup: 2 0 0 "FreeSans-subst. open ra for ra-tail in Malayalam" { "FreeSans-ra-tail to open ra in Malayalam-3"  "FreeSans-ra-tail to open ra in Malayalam-2"  "FreeSans-ra-tail to open ra in Malayalam-1"  } []
 Lookup: 1 0 0 "subst. candrakala by spacing glyph in Malay+AQEA-lam" { "subst. candrakala by spacing glyph Malay+AQEA-lam-1"  } []
 Lookup: 1 0 0 "subst. smaller blwf in Malayalam" { "subst. smaller u,uu in Malay+AQEA-lam-1"  } []
 Lookup: 2 0 0 "subst. open ra for ra-tail in Malayalam" { "ra-tail to open ra in Malayalam-3"  "ra-tail to open ra in Malayalam-2"  "ra-tail to open ra in Malayalam-1"  } []
@@ -515,13 +514,13 @@ ContextSub2: class "'ss19' open ra pass 2 in Malayalam Reformed" 3 1 1 2
   BClsList:
   FClsList:
  1
-  SeqLookup: 0 "FreeSans-subst. open ra for ra-tail in Malayalam"
+  SeqLookup: 0 "subst. open ra for ra-tail in Malayalam"
  1 0 0
   ClsList: 2
   BClsList:
   FClsList:
  1
-  SeqLookup: 0 "FreeSans-subst. open ra for ra-tail in Malayalam"
+  SeqLookup: 0 "subst. open ra for ra-tail in Malayalam"
   ClassNames: "0" "1" "2"
   BClassNames: "0"
   FClassNames: "0"
@@ -2278,7 +2277,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60864 16 11
+WinInfo: 59984 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -2291,6 +2290,9 @@ StemSnapV 4 [93]
 ForceBold 5 false
 EndPrivate
 Grid
+-1000 558 m 4
+ 2000 558 l 1028
+  Named: "round top"
 -1000 -204 m 0
  2000 -204 l 1024
   Named: "bottom-line-bottom"
@@ -110030,10 +110032,9 @@ SplineSet
  169 171 229 61 332 61 c 0
  421 61 465 123 465 246 c 2
  464 340 l 2
- 464 460 546 557 666 557 c 0
- 825 557 910 428 910 263 c 0
+ 464 460 546 558 666 558 c 0
+ 825 558 910 428 910 263 c 0
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: gha_mal
@@ -110143,8 +110144,8 @@ Fore
 SplineSet
 865 0 m 1
  90 0 l 1
- 90 65 l 5
- 417 65 l 6
+ 90 65 l 1
+ 417 65 l 2
  480 65 540 123 540 185 c 0
  540 245 487 294 426 294 c 0
  364 294 311 245 311 183 c 0
@@ -110153,8 +110154,8 @@ SplineSet
  241 146 237 165 237 183 c 0
  237 286 327 368 430 368 c 0
  531 368 615 286 615 185 c 0
- 615 135 596 93 559 65 c 5
- 782 65 l 5
+ 615 135 596 93 559 65 c 1
+ 782 65 l 1
  782 544 l 1
  865 544 l 1
  865 0 l 1
@@ -110184,8 +110185,8 @@ SplineSet
  819 59 835 54 858 50 c 1
  858 0 l 1
  90 0 l 1
- 90 65 l 5
- 417 65 l 6
+ 90 65 l 1
+ 417 65 l 2
  480 65 542 123 542 185 c 0
  542 248 489 298 426 298 c 256
  362 298 307 248 307 183 c 0
@@ -111032,8 +111033,8 @@ SplineSet
  172 178 l 1
  172 65 l 1
  772 65 l 1
- 772 539 l 5
- 855 539 l 5
+ 772 539 l 1
+ 855 539 l 1
  855 0 l 1
 510 243 m 1
  510 308 l 2
@@ -111065,8 +111066,8 @@ SplineSet
  698 -208 l 1
  262 -208 l 2
  173 -208 104 -160 104 -72 c 0
- 104 21 158 65 265 65 c 6
- 520 65 l 6
+ 104 21 158 65 265 65 c 2
+ 520 65 l 2
  594 65 631 95 631 151 c 0
  631 206 601 234 541 234 c 2
  501 234 l 1
@@ -111304,8 +111305,8 @@ SplineSet
  1064 384 988 488 874 488 c 0
  758 488 674 396 674 278 c 0
  674 182 722 75 788 50 c 1
- 788 0 l 5
- 369 0 l 5
+ 788 0 l 1
+ 369 0 l 1
  369 43 l 1
  417 64 441 107 441 169 c 0
  441 244 377 302 301 302 c 0
@@ -111812,27 +111813,23 @@ EndChar
 
 StartChar: zero_mal
 Encoding: 3430 3430 4610
-Width: 687
+Width: 520
 VWidth: 1454
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-687 472 m 1
- 303 472 l 2
- 200 472 144 374 144 267 c 0
- 144 159 201 58 303 58 c 0
- 407 58 464 158 464 267 c 0
- 464 341 437 401 384 445 c 1
- 481 445 l 1
- 514 395 531 335 531 267 c 0
- 531 116 450 -14 305 -14 c 256
- 160 -14 77 115 77 267 c 0
- 77 428 167 545 322 545 c 2
- 687 545 l 1
- 687 472 l 1
+300 -15 m 256
+ 153 -15 80 80 80 272 c 128
+ 80 464 153 560 300 560 c 256
+ 447 560 520 464 520 272 c 128
+ 520 80 447 -15 300 -15 c 256
+445 272 m 128
+ 445 424 397 500 300 500 c 256
+ 203 500 155 424 155 272 c 128
+ 155 120 203 45 298 45 c 0
+ 396 45 445 120 445 272 c 128
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: one_mal
@@ -111886,7 +111883,7 @@ SplineSet
  148 34 77 131 77 266 c 0
  77 428 192 558 352 558 c 0
  510 558 614 431 614 271 c 0
- 614 181 586 106 536 65 c 5
+ 614 181 586 106 536 65 c 1
  764 65 l 1
  764 0 l 1
 EndSplineSet
@@ -112077,7 +112074,7 @@ SplineSet
  471 -217 439 -210 402 -196 c 1
  423 -127 l 1
  450 -136 478 -141 510 -141 c 0
- 627 -141 731 -93 745 0 c 5
+ 627 -141 731 -93 745 0 c 1
  436 0 l 1
  436 58 l 1
  512 104 551 173 551 268 c 0
@@ -112654,7 +112651,6 @@ SplineSet
  319 108 352 55 400 55 c 256
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ka_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ka_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ka_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ka_mal ZWJ mal_ra.pstf
@@ -112731,8 +112727,8 @@ SplineSet
  230 0 182 -27 182 -72 c 0
  182 -116 228 -140 275 -140 c 2
  823 -140 l 1
- 823 -205 l 5
- 262 -205 l 6
+ 823 -205 l 1
+ 262 -205 l 2
  173 -205 104 -160 104 -72 c 0
  104 16 174 65 262 65 c 2
  525 65 l 2
@@ -112774,8 +112770,8 @@ SplineSet
  343 146 340 164 340 183 c 0
  340 288 429 368 534 368 c 0
  631 368 715 292 715 195 c 0
- 715 132 697 90 661 65 c 5
- 818 65 l 5
+ 715 132 697 90 661 65 c 1
+ 818 65 l 1
  788 111 774 168 774 241 c 0
  774 406 887 558 1067 558 c 0
  1174 558 1262 501 1303 429 c 1
@@ -112797,8 +112793,8 @@ SplineSet
  843 153 882 49 962 43 c 1
  961 0 l 1
  267 0 l 1
- 267 65 l 5
- 520 65 l 6
+ 267 65 l 1
+ 520 65 l 2
  583 65 646 122 646 185 c 0
  646 248 593 298 529 298 c 0
 1233 364 m 0
@@ -112809,7 +112805,6 @@ SplineSet
  1250 363 1242 364 1233 364 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres cha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres cha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" cha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" cha_mal ZWJ mal_ra.pstf
@@ -112833,9 +112828,9 @@ SplineSet
  839 350 832 323 815 300 c 1
  915 281 964 220 964 119 c 0
  964 12 886 -58 780 -58 c 2
- 239 -58 l 6
- 194 -58 171 -72 171 -100 c 4
- 171 -127 194 -140 239 -140 c 6
+ 239 -58 l 2
+ 194 -58 171 -72 171 -100 c 0
+ 171 -127 194 -140 239 -140 c 2
  948 -140 l 1
  948 -205 l 1
  233 -204 l 2
@@ -112911,8 +112906,8 @@ SplineSet
  197 -58 178 -72 178 -100 c 0
  178 -128 197 -141 237 -141 c 2
  980 -141 l 1
- 980 -205 l 5
- 226 -205 l 6
+ 980 -205 l 1
+ 226 -205 l 2
  142 -205 100 -173 100 -103 c 0
  100 -38 158 -1 226 -1 c 2
  891 -1 l 2
@@ -113177,7 +113172,6 @@ SplineSet
  605 55 685 93 723 170 c 1
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ja_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ja_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ja_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ja_mal ZWJ mal_ra.pstf
@@ -113378,7 +113372,6 @@ SplineSet
  528 142 560 55 632 55 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres jha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres jha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" jha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" jha_mal ZWJ mal_ra.pstf
@@ -113506,7 +113499,6 @@ SplineSet
  579 308 l 2
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres tta_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres tta_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" tta_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" tta_mal ZWJ mal_ra.pstf
@@ -113610,7 +113602,6 @@ SplineSet
  1058 124 1123 61 1198 61 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres dda_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres dda_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" dda_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" dda_mal ZWJ mal_ra.pstf
@@ -113728,7 +113719,6 @@ SplineSet
  1194 331 1230 282 1286 282 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ddha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ddha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ddha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ddha_mal ZWJ mal_ra.pstf
@@ -113871,8 +113861,8 @@ SplineSet
  907 -205 l 1
  256 -205 l 2
  168 -205 99 -152 99 -65 c 0
- 99 16 170 65 256 65 c 6
- 627 65 l 6
+ 99 16 170 65 256 65 c 2
+ 627 65 l 2
  759 65 840 153 840 286 c 0
  840 405 759 488 641 488 c 0
  617 488 595 483 576 477 c 1
@@ -113924,8 +113914,8 @@ SplineSet
  204 0 175 -21 175 -65 c 0
  175 -112 217 -140 263 -140 c 2
  911 -140 l 1
- 911 -204 l 5
- 250 -204 l 6
+ 911 -204 l 1
+ 250 -204 l 2
  164 -204 93 -150 93 -67 c 0
  93 14 166 65 250 65 c 2
  706 65 l 2
@@ -114099,7 +114089,6 @@ SplineSet
  564 109 603 55 680 55 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ta_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ta_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ta_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ta_mal ZWJ mal_ra.pstf
@@ -114235,7 +114224,6 @@ SplineSet
  780 294 749 234 701 218 c 1
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres da_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres da_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" da_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" da_mal ZWJ mal_ra.pstf
@@ -114377,7 +114365,6 @@ SplineSet
  318 158 384 60 492 60 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres dha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres dha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" dha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" dha_mal ZWJ mal_ra.pstf
@@ -114603,7 +114590,6 @@ SplineSet
  999 558 1096 402 1096 225 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres na_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres na_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" na_mal ZWNJ mal_ra.pstf
 LCarets2: 2 0 0
@@ -114741,7 +114727,6 @@ SplineSet
  242 286 343 373 457 373 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres pa_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres pa_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" pa_mal ZWNJ mal_ra.pstf
 LCarets2: 2 0 0
@@ -114793,7 +114778,6 @@ SplineSet
  1216 411 1152 488 1060 488 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres pha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres pha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" pha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" pha_mal ZWJ mal_ra.pstf
@@ -114815,8 +114799,8 @@ SplineSet
  894 558 977 442 977 269 c 0
  977 189 953 121 906 65 c 1
  1119 65 l 1
- 1119 541 l 5
- 1202 541 l 5
+ 1119 541 l 1
+ 1202 541 l 1
  1202 0 l 2
  1202 -162 1097 -255 932 -255 c 0
  831 -255 719 -220 719 -132 c 0
@@ -114907,7 +114891,6 @@ SplineSet
  333 104 369 60 423 60 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ba_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ba_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ba_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ba_mal ZWJ mal_ra.pstf
@@ -115158,7 +115141,6 @@ SplineSet
  620 160 l 2
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres bha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres bha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" bha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" bha_mal ZWJ mal_ra.pstf
@@ -115183,7 +115165,7 @@ SplineSet
  86 253 l 2
  86 457 179 558 365 558 c 0
  545 558 635 458 635 257 c 2
- 635 0 l 6
+ 635 0 l 2
  635 -153 528 -255 374 -255 c 0
  282 -255 173 -216 173 -135 c 0
  173 -70 266 -42 340 -42 c 0
@@ -115299,7 +115281,6 @@ SplineSet
  479 162 546 258 546 364 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ma_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ma_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ma_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ma_mal ZWJ mal_ra.pstf
@@ -115526,12 +115507,12 @@ SplineSet
  769 65 l 1
  769 540 l 1
  852 540 l 1
- 852 0 l 6
+ 852 0 l 2
  852 -150 752 -255 602 -255 c 0
  508 -255 390 -217 390 -132 c 0
  390 -64 480 -34 557 -34 c 0
- 635 -34 730 -63 752 -115 c 5
- 766 -84 770 -47 770 0 c 5
+ 635 -34 730 -63 752 -115 c 1
+ 766 -84 770 -47 770 0 c 1
  86 0 l 1
  86 330 l 2
  86 459 207 558 337 558 c 0
@@ -115633,7 +115614,6 @@ SplineSet
  1029 1 l 2
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres va_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres va_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" va_mal ZWNJ mal_ra.pstf
 LCarets2: 2 0 0
@@ -115668,8 +115648,8 @@ SplineSet
  223 0 174 -27 174 -71 c 0
  174 -116 222 -140 267 -140 c 2
  1034 -140 l 1
- 1034 -204 l 5
- 255 -204 l 6
+ 1034 -204 l 1
+ 255 -204 l 2
  165 -204 98 -157 98 -71 c 256
  98 17 167 65 255 65 c 2
  768 65 l 2
@@ -115714,8 +115694,8 @@ SplineSet
  934 452 1056 391 1056 304 c 256
  1056 261 1042 233 1013 219 c 1
  1041 202 1055 172 1055 130 c 0
- 1055 57 998 0 925 0 c 6
- 268 0 l 6
+ 1055 57 998 0 925 0 c 2
+ 268 0 l 2
  221 0 175 -26 175 -72 c 0
  175 -116 221 -140 268 -140 c 2
  1043 -140 l 1
@@ -115856,7 +115836,6 @@ SplineSet
  845 114 888 64 954 64 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres sha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres sha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" sha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" sha_mal ZWJ mal_ra.pstf
@@ -115974,7 +115953,6 @@ SplineSet
  895 408 l 2
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ssa_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ssa_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ssa_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ssa_mal ZWJ mal_ra.pstf
@@ -116137,7 +116115,6 @@ SplineSet
  1070 135 1124 61 1214 61 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres sa_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres sa_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" sa_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" sa_mal ZWJ mal_ra.pstf
@@ -116166,7 +116143,7 @@ SplineSet
  634 160 l 1
  596 201 577 256 577 326 c 0
  577 471 693 558 845 558 c 0
- 1013 558 1117 451 1117 281 c 4
+ 1013 558 1117 451 1117 281 c 0
  1117 114 1019 0 853 0 c 2
  268 0 l 2
  212 0 183 -23 183 -68 c 0
@@ -116210,12 +116187,12 @@ SplineSet
  1101 229 1119 191 1119 143 c 0
  1119 44 1041 0 937 0 c 2
  268 0 l 2
- 212 0 183 -27 183 -71 c 4
+ 212 0 183 -27 183 -71 c 0
  183 -115 224 -140 268 -140 c 2
  1098 -140 l 1
  1098 -204 l 1
  255 -204 l 2
- 170 -204 98 -156 98 -71 c 4
+ 170 -204 98 -156 98 -71 c 0
  98 12 171 65 255 65 c 2
  915 65 l 2
  976 65 1037 92 1037 151 c 0
@@ -116268,8 +116245,8 @@ SplineSet
  1068 381 1001 488 871 488 c 0
  755 488 671 394 671 278 c 0
  671 185 718 74 785 53 c 1
- 785 0 l 5
- 366 0 l 5
+ 785 0 l 1
+ 366 0 l 1
  366 39 l 1
  414 58 438 102 438 169 c 0
  438 243 373 302 298 302 c 256
@@ -116336,7 +116313,6 @@ SplineSet
  252 284 356 378 467 378 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ha_mal ZWJ mal_ra.pstf
@@ -116853,7 +116829,6 @@ SplineSet
  319 106 351 55 406 55 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres mal_kaka
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_kaka
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" ka_mal ZWNJ mal_ka.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ka_mal ZWJ mal_ta.pstf mal_ra.pstf
@@ -117354,7 +117329,6 @@ SplineSet
  319 105 350 55 406 55 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres ka_mal mal_ta.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres ka_mal mal_ta.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" ka_mal ZWNJ mal_ta.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ka_mal ZWJ mal_ta.pstf mal_ra.pstf
@@ -117767,7 +117741,6 @@ SplineSet
  1294 123 1339 58 1416 58 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-3" mal_ra.pres ga_mal mal_da.pstf mal_dha.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-3" mal_ra.pres ga_mal mal_da.pstf mal_dha.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" ga_mal ZWNJ mal_da.pstf mal_dha.pstf mal_ra.pstf
 Ligature2: "'ss19' ra-tail in Malayalam1-complex Reformed" ga_mal mal_ra.pstf mal_dha.pstf
@@ -119478,8 +119451,8 @@ SplineSet
  765 427 783 450 819 480 c 1
  807 485 792 488 777 488 c 0
  698 488 622 442 622 365 c 2
- 622 0 l 5
- 539 0 l 5
+ 622 0 l 1
+ 539 0 l 1
  539 365 l 2
  539 440 451 488 371 488 c 0
  252 488 169 377 161 259 c 1
@@ -119707,7 +119680,7 @@ AnchorPoint: "mlm-vowel-below" 460 -210 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-395 305 m 6
+395 305 m 2
  502 305 589 260 589 158 c 0
  589 99 566 59 522 38 c 1
  555 25 589 -23 589 -68 c 0
@@ -119729,8 +119702,8 @@ SplineSet
  540 412 l 1
  495 461 424 488 330 488 c 0
  252 488 170 456 170 386 c 0
- 170 334 211 305 291 305 c 6
- 395 305 l 6
+ 170 334 211 305 291 305 c 2
+ 395 305 l 2
 EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligatures in Malayalam Reformed" tta_mal mal_tta.pstf
@@ -119863,7 +119836,6 @@ SplineSet
  371 263 334 216 334 161 c 0
  334 106 370 57 426 57 c 0
 EndSplineSet
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nnatta
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nnatta
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" nna_mal ZWNJ mal_tta.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" nna_mal ZWJ mal_tta.pstf mal_ra.pstf
@@ -120075,7 +120047,6 @@ SplineSet
  336 106 372 57 427 57 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres nna_mal mal_dda.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres nna_mal mal_dda.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" nna_mal ZWNJ mal_dda.pstf mal_ra.pstf
 Ligature2: "'ss19' ra-tail in Malayalam1-complex Reformed" nna_mal mal_ra.pstf mal_dda.pstf
@@ -120624,8 +120595,8 @@ SplineSet
  1253 -190 1308 -176 1350 -146 c 1
  1345 -105 1327 -84 1296 -84 c 0
  1264 -84 1239 -118 1239 -151 c 2
- 1239 -158 l 5
- 1182 -158 l 5
+ 1239 -158 l 1
+ 1182 -158 l 1
  1182 -144 l 2
  1182 -114 1142 -86 1110 -86 c 0
 522 55 m 0
@@ -120702,7 +120673,6 @@ SplineSet
  569 109 607 55 685 55 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres mal_tata
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_tata
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" ta_mal ZWNJ mal_ta.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ta_mal ZWJ mal_ta.pstf mal_ra.pstf
@@ -120955,8 +120925,8 @@ LayerCount: 2
 Fore
 SplineSet
 1204 132 m 0
- 1204 51 1145 0 1064 0 c 6
- 266 0 l 6
+ 1204 51 1145 0 1064 0 c 2
+ 266 0 l 2
  221 0 173 -27 173 -72 c 0
  173 -115 219 -140 266 -140 c 2
  1191 -140 l 1
@@ -121080,7 +121050,6 @@ SplineSet
  572 109 610 55 688 55 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres ta_mal mal_bha.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres ta_mal mal_bha.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" ta_mal ZWNJ mal_bha.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ta_mal ZWJ mal_bha.pstf mal_ra.pstf
@@ -121673,7 +121642,6 @@ SplineSet
  566 109 604 55 680 55 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres ta_mal mal_sa.pstf mal_tha.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres ta_mal mal_sa.pstf mal_tha.pstf
 LCarets2: 2 0 0
 EndChar
@@ -122069,7 +122037,6 @@ SplineSet
  1198 563 l 1
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres da_mal mal_dha.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres da_mal mal_dha.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" da_mal ZWNJ mal_ddha.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" da_mal ZWJ mal_dha.pstf mal_ra.pstf
@@ -122412,7 +122379,6 @@ SplineSet
  1070 61 1110 140 1110 215 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nata
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nata
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" na_mal ZWNJ mal_ta.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_ta.pstf mal_ra.pstf
@@ -122727,7 +122693,6 @@ SplineSet
  253 429 356 558 512 558 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres da_mal mal_da.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres da_mal mal_da.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" na_mal ZWNJ mal_da.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_da.pstf mal_ra.pstf
@@ -122896,7 +122861,6 @@ SplineSet
  1443 130 1489 58 1553 58 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres na_mal mal_dha.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres na_mal mal_dha.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" na_mal ZWNJ mal_dha.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_dha.pstf mal_ra.pstf
@@ -123144,7 +123108,6 @@ SplineSet
  422 -14 l 1
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nana
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nana
 LCarets2: 1 0
 Ligature2: "'ss19' ra-tail in Malayalam1-complex Reformed" mal_ra.pres mal_nana
@@ -123211,7 +123174,7 @@ SplineSet
  676 -255 557 -217 557 -132 c 0
  557 -63 648 -34 725 -34 c 0
  803 -34 897 -63 919 -115 c 1
- 938 -86 939 -47 939 0 c 5
+ 938 -86 939 -47 939 0 c 1
  479 0 l 1
  479 352 l 2
  479 425 421 488 347 488 c 0
@@ -123288,7 +123251,6 @@ SplineSet
  855 165 916 259 916 364 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres na_mal mal_ma.pstf
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres na_mal mal_ma.pstf
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" na_mal ZWNJ mal_ma.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_ma.pstf mal_ra.pstf
@@ -123414,15 +123376,15 @@ LayerCount: 2
 Fore
 SplineSet
 800 -34 m 0
- 876 -34 970 -64 992 -115 c 5
- 1006 -83 1010 -47 1010 0 c 5
+ 876 -34 970 -64 992 -115 c 1
+ 1006 -83 1010 -47 1010 0 c 1
  87 0 l 1
  87 251 l 2
  87 455 179 558 361 558 c 0
  470 558 548 519 594 442 c 1
  638 519 716 558 826 558 c 0
  1004 558 1093 458 1093 257 c 2
- 1093 0 l 6
+ 1093 0 l 2
  1093 -154 992 -255 841 -255 c 0
  748 -255 630 -217 630 -132 c 0
  630 -62 720 -34 800 -34 c 0
@@ -123597,7 +123559,6 @@ SplineSet
  423 -14 l 1
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-2" mal_ra.pres mal_mapa
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_mapa
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-complex" ma_mal ZWNJ mal_pa.pstf mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ma_mal ZWJ mal_pa.pstf mal_ra.pstf
@@ -123845,8 +123806,8 @@ SplineSet
  781 558 821 546 843 523 c 1
  868 545 912 558 974 558 c 0
  1123 558 1235 418 1235 266 c 256
- 1235 189 1211 121 1162 65 c 5
- 1387 65 l 5
+ 1235 189 1211 121 1162 65 c 1
+ 1387 65 l 1
  1357 113 1342 173 1342 245 c 0
  1342 419 1473 558 1646 558 c 0
  1819 558 1952 403 1952 229 c 0
@@ -123860,8 +123821,8 @@ SplineSet
  1491 59 1506 54 1529 50 c 1
  1529 0 l 1
  644 0 l 1
- 644 65 l 5
- 980 65 l 6
+ 644 65 l 1
+ 980 65 l 2
  1077 65 1160 161 1160 259 c 0
  1160 378 1077 488 961 488 c 0
  950 488 938 484 923 480 c 1
@@ -123999,8 +123960,8 @@ SplineSet
  817 -47 795 -62 795 -94 c 0
  795 -126 829 -147 861 -147 c 2
  2101 -147 l 1
- 2101 -205 l 5
- 846 -204 l 6
+ 2101 -205 l 1
+ 846 -204 l 2
  777 -204 713 -161 713 -93 c 0
  713 -27 779 11 846 11 c 2
  1995 11 l 2
@@ -124084,8 +124045,8 @@ SplineSet
  781 558 821 546 843 523 c 1
  868 545 912 558 974 558 c 0
  1123 558 1235 418 1235 266 c 0
- 1235 190 1211 122 1162 67 c 5
- 1351 67 l 5
+ 1235 190 1211 122 1162 67 c 1
+ 1351 67 l 1
  1320 114 1304 177 1304 251 c 0
  1304 424 1425 558 1598 558 c 0
  1706 558 1791 501 1835 429 c 1
@@ -124106,7 +124067,7 @@ SplineSet
  1492 0 l 1
  637 0 l 1
  637 67 l 1
- 980 67 l 6
+ 980 67 l 2
  1078 67 1160 161 1160 259 c 0
  1160 378 1077 488 961 488 c 0
  950 488 938 484 923 480 c 1
@@ -128298,10 +128259,10 @@ SplineSet
  505 -182 489 -216 458 -236 c 1
  528 -216 564 -171 564 -100 c 0
  564 -56 524 9 444 95 c 0
- 364 181 330 309 330 481 c 6
+ 364 181 330 309 330 481 c 2
  330 481 330 514 330 550 c 1
  413 550 l 1
- 413 448 l 6
+ 413 448 l 2
  413 263 458 185 524 105 c 0
  581 36 629 -2 629 -98 c 0
 249 -140 m 2
@@ -128700,29 +128661,26 @@ EndChar
 
 StartChar: one_quarter_mal
 Encoding: 3443 3443 4913
-Width: 874
+Width: 666
 VWidth: 1454
 Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
-874 524 m 1
- 874 459 l 1
- 236 457 l 2
- 175 457 136 416 136 354 c 1
- 157 378 180 388 206 388 c 0
- 260 388 310 340 310 286 c 0
- 310 227 259 176 200 176 c 0
- 113 176 62 254 62 348 c 0
- 62 464 117 522 230 522 c 2
- 874 524 l 1
-162 286 m 0
- 162 256 173 240 198 240 c 256
- 223 240 236 256 236 286 c 0
- 236 315 223 330 198 330 c 256
- 173 330 162 315 162 286 c 0
+304 141 m 128
+ 304 190 264 230 215 230 c 128
+ 166 230 128 190 128 141 c 128
+ 128 92 166 53 215 53 c 128
+ 264 53 304 92 304 141 c 128
+323 249 m 1
+ 353 219 368 183 368 141 c 128
+ 368 58 299 -11 216 -11 c 128
+ 133 -11 63 58 63 141 c 128
+ 63 226 139 294 223 294 c 2
+ 666 293 l 1
+ 666 249 l 1
+ 323 249 l 1
 EndSplineSet
-Validated: 3073
 EndChar
 
 StartChar: l_voc_mal
@@ -150299,8 +150257,8 @@ SplineSet
  228 0 182 -25 182 -71 c 256
  182 -116 227 -140 275 -140 c 2
  824 -140 l 1
- 824 -205 l 5
- 262 -205 l 6
+ 824 -205 l 1
+ 262 -205 l 2
  173 -205 104 -160 104 -71 c 0
  104 13 176 65 262 65 c 2
  656 65 l 2
@@ -150452,7 +150410,6 @@ SplineSet
  330 172 383 64 483 64 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres ga_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ga_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" ga_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ga_mal ZWJ mal_ra.pstf
@@ -150476,8 +150433,8 @@ SplineSet
  694 186 l 1
  694 65 l 1
  1260 65 l 1
- 1260 541 l 5
- 1343 541 l 5
+ 1260 541 l 1
+ 1343 541 l 1
  1343 0 l 2
  1343 -151 1216 -255 1057 -255 c 0
  958 -255 810 -217 810 -132 c 0
@@ -150529,7 +150486,7 @@ Fore
 SplineSet
 1085 -25 m 0
  1144 -25 1194 -68 1210 -114 c 1
- 1244 -80 1260 -45 1260 0 c 5
+ 1244 -80 1260 -45 1260 0 c 1
  616 0 l 1
  616 186 l 1
  368 186 l 1
@@ -150550,10 +150507,10 @@ SplineSet
  1117 186 l 1
  699 186 l 1
  699 65 l 1
- 1258 65 l 5
- 1258 540 l 5
- 1341 540 l 5
- 1341 0 l 6
+ 1258 65 l 1
+ 1258 540 l 1
+ 1341 540 l 1
+ 1341 0 l 2
  1341 -156 1168 -256 1002 -256 c 0
  829 -256 721 -225 721 -129 c 0
  721 -64 790 -26 859 -26 c 0
@@ -150599,8 +150556,8 @@ SplineSet
  841 170 l 1
  841 65 l 1
  1403 65 l 1
- 1403 540 l 5
- 1486 540 l 5
+ 1403 540 l 1
+ 1486 540 l 1
  1486 -1 l 2
  1486 -83 1443 -156 1356 -185 c 0
  1298 -204 1201 -214 1065 -214 c 0
@@ -150637,7 +150594,6 @@ SplineSet
  1180 426 1118 488 1016 488 c 0
 EndSplineSet
 Validated: 3073
-MultipleSubs2: "FreeSans-ra-tail to open ra in Malayalam-1" mal_ra.pres gha_mal
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres gha_mal
 Ligature2: "'psts' ZWNJ ra-tail in Malayalam-simple" gha_mal ZWNJ mal_ra.pstf
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" gha_mal ZWJ mal_ra.pstf
@@ -150673,8 +150629,8 @@ SplineSet
  192 0 164 -22 164 -67 c 0
  164 -112 205 -140 250 -140 c 2
  1358 -140 l 1
- 1358 -205 l 5
- 240 -205 l 6
+ 1358 -205 l 1
+ 240 -205 l 2
  155 -205 86 -152 86 -67 c 0
  86 17 156 65 240 65 c 2
  1138 65 l 2
@@ -150736,8 +150692,8 @@ SplineSet
  1417 55 1361 0 1290 0 c 2
  250 0 l 2
  192 0 164 -23 164 -67 c 0
- 164 -112 205 -140 250 -140 c 6
- 1408 -140 l 5
+ 164 -112 205 -140 250 -140 c 2
+ 1408 -140 l 1
  1408 -207 l 1
  240 -207 l 2
  154 -207 86 -150 86 -67 c 0
@@ -150790,8 +150746,8 @@ SplineSet
 199 183 m 0
  199 288 285 368 390 368 c 0
  488 368 572 292 572 195 c 0
- 572 131 554 90 518 65 c 5
- 676 65 l 5
+ 572 131 554 90 518 65 c 1
+ 676 65 l 1
  646 111 630 167 630 241 c 0
  630 407 743 558 924 558 c 0
  1031 558 1118 501 1160 429 c 1
@@ -150811,8 +150767,8 @@ SplineSet
  700 153 740 48 819 42 c 1
  818 0 l 1
  50 0 l 1
- 50 65 l 5
- 377 65 l 6
+ 50 65 l 1
+ 377 65 l 2
  441 65 502 121 502 185 c 0
  502 249 450 298 386 298 c 256
  322 298 268 247 268 183 c 0
@@ -193931,7 +193887,6 @@ LayerCount: 2
 Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 4559 3351 S 1 0 0 1 0 0 1
-Validated: 32769
 Ligature2: "'pstf' post-base consonants in Malayalam" ga_mal candrakala
 Substitution2: "subst single below-base in Malayalam-1" mal_ga.blwf
 Ligature2: "'pstf' post-base cons in Malayalam" candrakala ga_mal
