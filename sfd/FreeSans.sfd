@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1578595616
+ModificationTime: 1578596223
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -67,7 +67,7 @@ Lookup: 4 0 0 "'blwf' below-base cons in Malayalam 'mlym'"  {"'blwf' below-base 
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlm2'"  {"'pstf' post-base cons in Malayalam"  "'pstf' ya,va,la in Malayalam"  } ['pstf' ('mlm2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlym'"  {"'pstf' post-base consonants in Malayalam"  "'pstf' post-base ya,va,la in Malayalam 'mlym'"  } ['pstf' ('mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base cons conj in Malayalam"  {"'blws' below-base cons conj in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 6 0 0 "'blws' below-base cons chain in Malayalam"  {"'blws' below-base ka in Malayalam"  "'blws' below-base ga in Malayalam"  "'blws' below-base ca in Malayalam"  "'blws' below-base cha in Malayalam"  "'blws' below-base tta in Malayalam"  "'blws' below-base ttha in Malayalam"  "'blws' below-base dda in Malayalam"  "'blws' below-base ddha in Malayalam"  "'blws' below-base nna in Malayalam"  "'blws' below-base ta in Malayalam"  "'blws' below-base da in Malayalam"  "'blws' below-base na in Malayalam"  "'blws' below-base pa in Malayalam"  "'blws' below-base ma in Malayalam"  "'blws' below-base rra in Malayalam"  "'blws' below-base sha in Malayalam"  "'blws' below-base sa in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 0 0 "'blws' below-base cons chain in Malayalam"  {"'blws' below-base ba in Malayalam"  "'blws' below-base ka in Malayalam"  "'blws' below-base ga in Malayalam"  "'blws' below-base ca in Malayalam"  "'blws' below-base cha in Malayalam"  "'blws' below-base tta in Malayalam"  "'blws' below-base ttha in Malayalam"  "'blws' below-base dda in Malayalam"  "'blws' below-base ddha in Malayalam"  "'blws' below-base nna in Malayalam"  "'blws' below-base ta in Malayalam"  "'blws' below-base da in Malayalam"  "'blws' below-base na in Malayalam"  "'blws' below-base pa in Malayalam"  "'blws' below-base ma in Malayalam"  "'blws' below-base rra in Malayalam"  "'blws' below-base sha in Malayalam"  "'blws' below-base sa in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base la,va in Malayalam"  {"'blwf' below-base la in Malayalam"  "'blws' below-base va in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base voc conj in Malay+AQEA-lam"  {"'blws' rr-voc in Malay+AQEA-lam"  "'blws' r_voc in Malay+AQEA-lam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' ZWNJ ra-tail in Malayalam"  {"'psts' ZWNJ ra-tail in Malayalam-complex"  "'psts' ZWNJ ra-tail in Malayalam-below"  "'psts' ZWNJ ra-tail in Malayalam-simple"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -506,6 +506,16 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'blws' below-base ba in Malayalam"  2 2 0 1
+  Class: 11 mal_ba.pstf
+  BClass: 6 la_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "repl. post- by below-base cons in Malayalam" 
+EndFPST
 ChainSub2: class "'blws' below-base dda in Malayalam"  2 2 0 1
   Class: 12 mal_dda.pstf
   BClass: 7 dda_mal
@@ -686,7 +696,7 @@ EndFPST
 ChainSub2: coverage "'blws' below-base na in Malayalam"  0 0 0 1
  1 1 0
   Coverage: 11 mal_na.pstf
-  BCoverage: 38 gha_mal pa_mal ssa_mal sa_mal mal_tasa
+  BCoverage: 46 gha_mal dha_mal pa_mal ssa_mal sa_mal mal_tasa
  1
   SeqLookup: 0 "repl. post- by below-base cons in Malayalam" 
 EndFPST
