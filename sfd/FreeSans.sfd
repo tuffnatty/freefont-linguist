@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1579274986
+ModificationTime: 1579282495
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -74,7 +74,8 @@ Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlm2'" { "'pstf' ya,va,la in 
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlym'" { "'pstf' post-base ya,va,la in Malayalam 'mlym'"  } ['pstf' ('mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base la,va in Malayalam" { "'blwf' below-base la in Malayalam"  "'blws' below-base va in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base voc conj in Malay+AQEA-lam" { "'blws' rr-voc in Malay+AQEA-lam"  "'blws' r_voc in Malay+AQEA-lam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 6 0 0 "'psts' ZWNJ cons+-ra chain in Malayalam" { "'psts' ZWNJ half-form to ra-tail in Malayalam"  "'psts' ZWNJ subscript kra in Malayalam"  "'psts' ZWNJ subscript gra in Malayalam"  "'psts' ZWNJ subscript ttra in Malayalam"  "'psts' ZWNJ subscript sra in Malayalam"  "'psts' ZWNJ subscript chra in Malayalam"  "'psts' ZWNJ subscript tra in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 0 0 "'psts' ZWNJ cons+-ra to ra-tail chain in Malayalam" { "'psts' ZWNJ subscript kra in Malayalam"  "'psts' ZWNJ subscript gra in Malayalam"  "'psts' ZWNJ subscript ttra in Malayalam"  "'psts' ZWNJ subscript sra in Malayalam"  "'psts' ZWNJ subscript chra in Malayalam"  "'psts' ZWNJ subscript tra in Malayalam"  "'psts' ZWNJ half-form to ra-tail in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 4 0 0 "'psts' ZWNJ below-form hack" { "'psts' below-form hack"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 5 0 0 "'psts' ZWNJ ra-tail to open-ra in Malayalam" { "'psts' ZWNJ ra-tail blwf to open-ra in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' ra-tail in Malayalam" { "'psts' ra-tail in Malayalam-below"  "'psts' ra-tail in Malayalam-simple"  "'psts' ra-tail in Malayalam-complex"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' vowel ligatures in Malayalam" { "'psts' l-voc ligatures in Malayalam"  "'psts' r-voc ligatures in Malayalam"  "'psts' rr-voc ligatures in Malayalam"  "'psts' u,uu in Malayalam"  "'psts' u,uu blwf in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -564,9 +565,9 @@ ChainSub2: class "'psts' ZWNJ half-form to ra-tail in Malayalam" 7 1 1 3
   FClsList:
  1
   SeqLookup: 0 "subst. ZWNJ ra-tail forms in Malayalam"
-  ClassNames: "All_Others" "1" "2" "3" "4" "5" "6"
-  BClassNames: "All_Others"
-  FClassNames: "All_Others"
+  ClassNames: "0" "1" "2" "3" "4" "5" "6"
+  BClassNames: "0"
+  FClassNames: "0"
 EndFPST
 ChainSub2: class "'psts' ZWNJ subscript tra in Malayalam" 3 3 3 1
   Class: 11 mal_ta.half
@@ -630,19 +631,19 @@ ChainSub2: class "'psts' ZWNJ subscript sra in Malayalam" 3 3 1 1
   BClassNames: "0" "1" "2"
   FClassNames: "0"
 EndFPST
-ChainSub2: class "'psts' ZWNJ subscript kra in Malayalam" 3 3 1 1
+ChainSub2: class "'psts' ZWNJ subscript kra in Malayalam" 4 2 1 1
+  Class: 4 ZWNJ
   Class: 11 mal_ka.half
   Class: 11 mal_ra.half
-  BClass: 21 la_mal sa_mal ssa_mal
-  BClass: 4 ZWNJ
- 2 2 0
-  ClsList: 1 2
-  BClsList: 2 1
+  BClass: 21 la_mal ssa_mal sa_mal
+ 3 0 0
+  ClsList: 1 2 3
+  BClsList:
   FClsList:
  1
   SeqLookup: 0 "subst. ZWNJ ra-tail forms in Malayalam"
-  ClassNames: "0" "1" "2"
-  BClassNames: "0" "1" "2"
+  ClassNames: "0" "1" "2" "3"
+  BClassNames: "0" "1"
   FClassNames: "0"
 EndFPST
 ChainSub2: class "'psts' ZWNJ subscript ttra in Malayalam" 3 3 1 1
@@ -125396,9 +125397,10 @@ SplineSet
  -205 79 -188 104 -188 152 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' below-form hack" ZWNJ mal_ta.half mal_ra.half
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres ta_mal
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres ta_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_ta.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_ta.half mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres ta_mal
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_ta.blwf mal_ra.half
 LCarets2: 2 0 0
@@ -125656,7 +125658,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres sha_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_sha.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_sha.half mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres sha_mal
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_sha.blwf mal_ra.half
 LCarets2: 2 0 0
@@ -125953,9 +125955,10 @@ SplineSet
  -162 73 -146 96 -146 142 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' below-form hack" ZWNJ mal_cha.half mal_ra.half
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres cha_mal
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres cha_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_cha.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_cha.half mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres cha_mal
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_cha.blwf mal_ra.half
 LCarets2: 1 0
@@ -126095,9 +126098,10 @@ SplineSet
  -403 320 -374 332 -337 332 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' below-form hack" ZWNJ mal_sa.half mal_ra.half
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres sa_mal
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres sa_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_sa.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_sa.half mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres sa_mal
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_sa.blwf mal_ra.half
 LCarets2: 2 0 0
@@ -126256,9 +126260,10 @@ SplineSet
  -278.76 114 -338 147.957 -338 219 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' below-form hack" ZWNJ mal_tta.half mal_ra.half
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres tta_mal
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres tta_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_tta.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_tta.half mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres tta_mal
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_tta.blwf mal_ra.half
 LCarets2: 2 0 0
@@ -126344,9 +126349,10 @@ SplineSet
  -688 259 -616 334 -524 334 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' below-form hack" ZWNJ candrakala mal_rrarra mal_ra.half
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres mal_rrarra
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres mal_rrarra
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" candrakala mal_rrarra mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ candrakala mal_rrarra mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres mal_rrarra
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_rrarra.blwf mal_ra.half
 LCarets2: 2 0 0
@@ -127653,7 +127659,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres pa_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_pa.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_pa.half mal_ra.half
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_pa.blwf mal_ra.half
 LCarets2: 2 0 0
 EndChar
@@ -163333,9 +163339,10 @@ SplineSet
  -421 275.533 -367.856 335 -283 335 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' below-form hack" ZWNJ mal_ka.half mal_ra.half
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres ka_mal
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres ka_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_ka.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_ka.half mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres ka_mal
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_ka.blwf mal_ra.half
 LCarets2: 2 0 0
@@ -204514,9 +204521,10 @@ SplineSet
  -327 21 -301 58 -301 130 c 2
  -301 189 l 2
 EndSplineSet
+Ligature2: "'psts' below-form hack" ZWNJ mal_ga.half mal_ra.half
 Ligature2: "subst. blwf for ZWJ half-ra in Malayalam" ZWJ candrakala mal_ra.pres ga_mal
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres ga_mal
-Ligature2: "subst. ZWNJ below-base for half form in Malayalam" mal_ga.half mal_ra.half
+Ligature2: "subst. ZWNJ below-base for half form in Malayalam" ZWNJ mal_ga.half mal_ra.half
 MultipleSubs2: "'ss19' un-stack ra-cons in Malayalam Reformed" candrakala mal_ra.pres ga_mal
 Ligature2: "'psts' ra-tail in Malayalam-below" mal_ga.blwf mal_ra.half
 EndChar
