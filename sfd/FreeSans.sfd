@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1579349634
+ModificationTime: 1579354668
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -87,7 +87,7 @@ Lookup: 2 0 0 "'ss19' un-stack cons in Malayalam Reformed"  {"'ss19' un-stack co
 Lookup: 6 0 0 "'ss19' ZWJ+-clscl stacked in Malayalam Reformed"  {"'ss19' undo ZWJ+-clscl ligs in Malayalam Reformed-1"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'ss19' ZWJ in Malayalam Reformed"  {"'ss19' ZWJ ra conj in Malayalam Reformed"  "'ss19' ZWJ ra conj-lig in Malayalam Reformed"  "'ss19' ZWJ ra simple in Malayalam Reformed"  "'ss19' ZWJ conj u,uu in Malayalam Reformed"  "'ss19' ZWJ simple u,uu in Malayalam Reformed"  "'ss19' ZWJ voc conj in Malayalam Reformed"  "'ss19' ZWJ voc simple in Malayalam Reformed"  "'ss19' ZWJ conj in Malayalam Reformed"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'ss19' re-do cjct ligatures in Malayalam Reformed"  {"'psts' re-do cjct ligs (govt. order) in Malayalam Reformed"  "'ss19' re-do cjct ligs additional in Malayalam Reformed"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 6 0 0 "'ss19' re-stack cons in Malayalam Reformed"  {"'psts' re-do stacked cons in Malayalam"  "'psts' re-do la blwf in Malayalam"  "'psts' re-do va blwf in Malayalam"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 0 0 "'ss19' re-stack cons in Malayalam Reformed"  {"'psts' re-do stacked cons in Malayalam"  "'ss19' re-stack dha in Malayalam Reformed-1"  "'ss19' re-stack tta in Malayalam Reformed"  "'ss19' re-stack pa in Malayalam Reformed-1"  "'ss19' re-stack tha in Malayalam Reformed-1"  "'ss19' re-stack sa in Malayalam Reformed-1"  "'psts' re-do la blwf in Malayalam"  "'psts' re-do va blwf in Malayalam"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'psts' post-base u,uu chain in Malayalam"  {"'psts' post-base u,uu chain in Malay+AQEA-lam-1"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'psts' u,uu smaller in Malayalam"  {"'psts' u,uu smaller in Malayalam-1"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'psts' space candrakala chain in Malayalam"  {"'psts' chain avoid space candrakala in Malayalam"  "'psts' chain space candrakala in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -511,6 +511,56 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'ss19' re-stack dha in Malayalam Reformed-1"  2 2 1 1
+  Class: 12 mal_dha.half
+  BClass: 6 na_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+EndFPST
+ChainSub2: class "'ss19' re-stack sa in Malayalam Reformed-1"  2 2 0 1
+  Class: 11 mal_sa.half
+  BClass: 11 mal_sa.half
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+EndFPST
+ChainSub2: class "'ss19' re-stack pa in Malayalam Reformed-1"  2 2 1 1
+  Class: 11 mal_pa.half
+  BClass: 6 pa_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+EndFPST
+ChainSub2: class "'ss19' re-stack tha in Malayalam Reformed-1"  2 2 0 1
+  Class: 12 mal_tha.half
+  BClass: 6 na_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+EndFPST
+ChainSub2: class "'ss19' re-stack tta in Malayalam Reformed"  2 2 1 1
+  Class: 12 mal_tta.half
+  BClass: 7 ssa_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+EndFPST
 ChainSub2: class "'psts' re-do va blwf in Malayalam"  4 2 1 2
   Class: 10 candrakala
   Class: 6 va_mal
@@ -2359,7 +2409,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60864 16 11
+WinInfo: 61136 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -124684,6 +124734,7 @@ SplineSet
  -508 38 -493 18 -461 18 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_ka.half
 Ligature2: "form subscript cons in Malayalam" candrakala ka_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_ka.half
 LCarets2: 1 0 
@@ -125076,6 +125127,7 @@ SplineSet
  -352 49 -330 18 -286 18 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_ta.half
 Ligature2: "form subscript cons in Malayalam" candrakala ta_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_ta.half
 LCarets2: 1 0 
@@ -125376,6 +125428,7 @@ SplineSet
  -200 51 -180 21 -139 21 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_sha.half
 Ligature2: "form subscript cons in Malayalam" candrakala sha_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_sha.half
 LCarets2: 1 0 
@@ -125643,6 +125696,7 @@ SplineSet
  -210 61 -184 20 -140 20 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_cha.half
 Ligature2: "form subscript cons in Malayalam" candrakala cha_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_cha.half
 LCarets2: 1 0 
@@ -125936,6 +125990,7 @@ SplineSet
  -488 317 -455 336 -404 336 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_sa.half
 Ligature2: "form subscript cons in Malayalam" candrakala sa_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_sa.half
 LCarets2: 1 0 
@@ -126073,6 +126128,7 @@ SplineSet
  -274 114 -333 148 -333 219 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_tta.half
 Ligature2: "form subscript cons in Malayalam" candrakala tta_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_tta.half
 LCarets2: 1 0 
@@ -126318,6 +126374,7 @@ SplineSet
  -386 248 -301 335 -192 335 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_rra.half
 Ligature2: "form subscript cons in Malayalam" candrakala rra_mal
 LCarets2: 1 0 
 EndChar
@@ -127316,6 +127373,7 @@ SplineSet
  -246 57 -214 21 -173 21 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_dha.half
 Ligature2: "form subscript cons in Malayalam" candrakala dha_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_dha.half
 LCarets2: 1 0 
@@ -127448,6 +127506,7 @@ SplineSet
  -416 169 -357 223 -286 223 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_ca.half
 Ligature2: "form subscript cons in Malayalam" candrakala ca_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_ca.half
 LCarets2: 1 0 
@@ -127489,6 +127548,7 @@ SplineSet
  -63 232 -106 274 -161 274 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_pha.half
 Ligature2: "form subscript cons in Malayalam" candrakala pha_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_pha.half
 LCarets2: 1 0 
@@ -127666,6 +127726,7 @@ SplineSet
  -268 12 -217 33 -192 76 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_ja.half
 Ligature2: "form subscript cons in Malayalam" candrakala ja_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_ja.half
 LCarets2: 1 0 
@@ -127918,6 +127979,7 @@ SplineSet
  -348 250 -274 335 -149 335 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_da.half
 Ligature2: "form subscript cons in Malayalam" candrakala da_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_da.half
 LCarets2: 1 0 
@@ -128003,6 +128065,7 @@ SplineSet
  -138.5 120 -116.636 121 -90 121 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_bha.half
 LCarets2: 1 0 
 EndChar
 
