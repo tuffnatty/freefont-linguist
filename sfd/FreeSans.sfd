@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1579442547
+ModificationTime: 1579465965
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -87,7 +87,7 @@ Lookup: 2 0 0 "'ss19' un-stack cons in Malayalam Reformed" { "'ss19' un-stack co
 Lookup: 6 0 0 "'ss19' ZWJ+-clscl stacked in Malayalam Reformed" { "'ss19' undo ZWJ+-clscl ligs in Malayalam Reformed-1"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'ss19' ZWJ in Malayalam Reformed" { "'ss19' ZWJ ra conj in Malayalam Reformed"  "'ss19' ZWJ ra conj-lig in Malayalam Reformed"  "'ss19' ZWJ ra simple in Malayalam Reformed"  "'ss19' ZWJ conj u,uu in Malayalam Reformed"  "'ss19' ZWJ simple u,uu in Malayalam Reformed"  "'ss19' ZWJ voc conj in Malayalam Reformed"  "'ss19' ZWJ voc simple in Malayalam Reformed"  "'ss19' ZWJ conj in Malayalam Reformed"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'ss19' re-do cjct ligatures in Malayalam Reformed" { "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed"  "'ss19' re-do cjct ligs additional in Malayalam Reformed"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 6 0 0 "'ss19' re-stack cons in Malayalam Reformed" { "'ss19' re-stack tta in Malayalam Reformed"  "'ss19' re-stack dda in Malayalam Reformed"  "'ss19' re-stack nna in Malayalam Reformed"  "'ss19' re-stack tha in Malayalam Reformed-1"  "'ss19' re-stack dha in Malayalam Reformed-1"  "'ss19' re-stack na in Malayalam Reformed"  "'ss19' re-stack ba in Malayalam Reformed"  "'ss19' re-stack pa in Malayalam Reformed-1"  "'ss19' re-stack ma in Malayalam Reformed"  "'ss19' re-stack sha in Malayalam Reformed"  "'ss19' re-stack sa in Malayalam Reformed-1"  "'psts' re-do stacked cons in Malayalam"  "'psts' re-do la blwf in Malayalam"  "'psts' re-do va blwf in Malayalam"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 0 0 "'ss19' re-stack cons in Malayalam Reformed" { "'ss19' re-stack ga in Malayalam Reformed"  "'ss19' re-stack tta in Malayalam Reformed"  "'ss19' re-stack dda in Malayalam Reformed"  "'ss19' re-stack nna in Malayalam Reformed"  "'ss19' re-stack tha in Malayalam Reformed"  "'ss19' re-stack dha in Malayalam Reformed"  "'ss19' re-stack na in Malayalam Reformed"  "'ss19' re-stack ba in Malayalam Reformed"  "'ss19' re-stack pa in Malayalam Reformed"  "'ss19' re-stack ma in Malayalam Reformed"  "'ss19' re-stack sha in Malayalam Reformed"  "'ss19' re-stack sa in Malayalam Reformed"  "'psts' re-do stacked cons in Malayalam"  "'psts' re-do la blwf in Malayalam"  "'psts' re-do va blwf in Malayalam"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'psts' post-base u,uu chain in Malayalam" { "'psts' post-base u,uu chain in Malay+AQEA-lam-1"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'psts' u,uu smaller in Malayalam" { "'psts' u,uu smaller in Malayalam-1"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'psts' space candrakala chain in Malayalam" { "'psts' chain avoid space candrakala in Malayalam"  "'psts' chain space candrakala in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -512,6 +512,19 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'ss19' re-stack ga in Malayalam Reformed" 2 2 1 1
+  Class: 11 mal_ga.half
+  BClass: 6 ga_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam"
+  ClassNames: "0" "1"
+  BClassNames: "0" "1"
+  FClassNames: "0"
+EndFPST
 ChainSub2: class "'ss19' re-stack ba in Malayalam Reformed" 2 2 0 1
   Class: 11 mal_ba.half
   BClass: 6 la_mal
@@ -589,7 +602,7 @@ ChainSub2: class "'ss19' re-stack nna in Malayalam Reformed" 2 3 1 1
   BClassNames: "0" "1" "2"
   FClassNames: "0"
 EndFPST
-ChainSub2: class "'ss19' re-stack dha in Malayalam Reformed-1" 2 2 1 1
+ChainSub2: class "'ss19' re-stack dha in Malayalam Reformed" 2 2 1 1
   Class: 12 mal_dha.half
   BClass: 21 na_mal ba_mal sha_mal
  1 1 0
@@ -602,7 +615,7 @@ ChainSub2: class "'ss19' re-stack dha in Malayalam Reformed-1" 2 2 1 1
   BClassNames: "0" "1"
   FClassNames: "0"
 EndFPST
-ChainSub2: class "'ss19' re-stack sa in Malayalam Reformed-1" 2 2 0 1
+ChainSub2: class "'ss19' re-stack sa in Malayalam Reformed" 2 2 0 1
   Class: 11 mal_sa.half
   BClass: 22 ka_mal llla_mal sa_mal
  1 1 0
@@ -614,7 +627,7 @@ ChainSub2: class "'ss19' re-stack sa in Malayalam Reformed-1" 2 2 0 1
   ClassNames: "0" "1"
   BClassNames: "0" "1"
 EndFPST
-ChainSub2: class "'ss19' re-stack pa in Malayalam Reformed-1" 2 2 1 1
+ChainSub2: class "'ss19' re-stack pa in Malayalam Reformed" 2 2 1 1
   Class: 11 mal_pa.half
   BClass: 20 pa_mal sa_mal ya_mal
  1 1 0
@@ -627,7 +640,7 @@ ChainSub2: class "'ss19' re-stack pa in Malayalam Reformed-1" 2 2 1 1
   BClassNames: "0" "1"
   FClassNames: "0"
 EndFPST
-ChainSub2: class "'ss19' re-stack tha in Malayalam Reformed-1" 2 2 0 1
+ChainSub2: class "'ss19' re-stack tha in Malayalam Reformed" 2 2 0 1
   Class: 12 mal_tha.half
   BClass: 6 na_mal
  1 1 0
@@ -1154,17 +1167,24 @@ ChainSub2: coverage "'akhn' subscript ka in Malayalam" 0 0 0 1
  1
   SeqLookup: 0 "repl. half form by below-base cons in Malayalam"
 EndFPST
-ChainSub2: class "'blwf' below-base la in Malayalam" 2 2 1 1
+ChainSub2: class "'blwf' below-base la in Malayalam" 2 3 1 2
   Class: 11 mal_la.half
   BClass: 277 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
+  BClass: 8 mal_mapa
  1 1 0
   ClsList: 1
   BClsList: 1
   FClsList:
  1
   SeqLookup: 0 "repl. half form by below-base cons in Malayalam"
+ 1 1 0
+  ClsList: 1
+  BClsList: 2
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam"
   ClassNames: "0" "1"
-  BClassNames: "0" "1"
+  BClassNames: "0" "1" "2"
   FClassNames: "0"
 EndFPST
 ChainSub2: class "'psts' post-base u,uu chain in Malay+AQEA-lam-1" 2 4 1 3
@@ -2609,8 +2629,8 @@ LangName: 1093 "" "" "+CbgJvgmnCb4JsAmj"
 LangName: 1069 "" "" "Arrunta"
 LangName: 1033 "" "" "Regular" "GNU: FreeSans Normal: 2018" "" "" "" "" "GNU" "" "" "https://savannah.gnu.org/projects/freefont/" "" "This computer font is part of GNU FreeFont.  It is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.+AAoACgAA-This font is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.+AAoACgAA-You should have received a copy of the GNU General Public License along with this font.  If not, see +AAoA    http://www.gnu.org/licenses/+AAoACgAA-As a special exception, if you create a document which uses this font, and embed this font or unaltered portions of this font into the document, this font does not by itself cause the resulting document to be covered by the GNU General Public License. This exception does not however invalidate any other reasons why the document might be covered by the GNU General Public License. If you modify this font, you may extend this exception to your version of the font, but you are not obligated to do so. If you do not wish to do so, delete this exception statement from your version." "http://www.gnu.org/copyleft/gpl.html"
 GaspTable: 3 9 2 22 1 65535 3 0
-OtfFeatName: 'ss07' 1033 "Tamil Modern" 1097 "+C6QLrgu/C7QLzQAA +C6gLtQvAC6kA"
-OtfFeatName: 'ss19' 1033 "Malayalam Reformed" 1100 "+DSoNQQ0kDT8NLwAA +DTINPw0qDT8A"
+OtfFeatName: 'ss19' 1100 "+DSoNQQ0kDT8NLwAA +DTINPw0qDT8A" 1033 "Malayalam Reformed"
+OtfFeatName: 'ss07' 1097 "+C6QLrgu/C7QLzQAA +C6gLtQvAC6kA" 1033 "Tamil Modern"
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
 MATH:DelimitedSubFormulaMinHeight: 1800
@@ -2674,7 +2694,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60640 16 11
+WinInfo: 60880 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -2712,6 +2732,8 @@ Encoding: 32 32 0
 Width: 250
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: exclam
@@ -50807,6 +50829,8 @@ Encoding: 8203 8203 2261
 Width: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: ccurl
@@ -52723,6 +52747,8 @@ Width: 500
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: enquad
@@ -52731,6 +52757,8 @@ Width: 500
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: emspace
@@ -52739,6 +52767,8 @@ Width: 1000
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: emquad
@@ -52747,6 +52777,8 @@ Width: 1000
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: threeperemspace
@@ -52755,6 +52787,8 @@ Width: 333
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: fourperemspace
@@ -52763,6 +52797,8 @@ Width: 250
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: sixperemspace
@@ -52771,6 +52807,8 @@ Width: 167
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: thinspace
@@ -52779,6 +52817,8 @@ Width: 167
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: notsubset
@@ -57294,6 +57334,8 @@ Width: 556
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: punctuationspace
@@ -57302,6 +57344,8 @@ Width: 278
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: LRM
@@ -57310,6 +57354,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: RLM
@@ -57318,6 +57364,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: hairspace
@@ -57326,6 +57374,8 @@ Width: 100
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: uni2060
@@ -57334,6 +57384,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: uni2061
@@ -57342,6 +57394,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: uni2062
@@ -57350,6 +57404,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: uni2063
@@ -57358,6 +57414,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: lineseparator
@@ -57366,6 +57424,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: paragraphseparator
@@ -57374,6 +57434,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: lre
@@ -57382,6 +57444,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: rle
@@ -57390,6 +57454,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: pdf
@@ -57398,6 +57464,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: lro
@@ -57406,6 +57474,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: rlo
@@ -57414,6 +57484,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: nbspnarrow
@@ -57422,6 +57494,8 @@ Width: 167
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: uni204E
@@ -57653,6 +57727,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: CGJ
@@ -57661,6 +57737,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: dblprimemod
@@ -59574,6 +59652,8 @@ Width: 0
 VWidth: 0
 Flags: MW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: uni204A
@@ -105992,6 +106072,8 @@ Encoding: 1 -1 4354
 Width: 0
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: nonmarkingreturn
@@ -105999,6 +106081,8 @@ Encoding: 13 -1 4355
 Width: 600
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: tenge
@@ -111597,6 +111681,7 @@ SplineSet
  685 111 736 61 810 61 c 0
  888 61 927 127 927 202 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: ssa_mal
@@ -127131,6 +127216,7 @@ SplineSet
  -301 189 l 6
 EndSplineSet
 Validated: 3073
+Ligature2: "subst. below-base for half form in Malayalam" mal_ga.half
 Ligature2: "form subscript cons in Malayalam" candrakala ga_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_ga.half
 LCarets2: 1 0
@@ -150786,6 +150872,7 @@ SplineSet
  374 465 330 388 330 280 c 0
  330 172 383 64 483 64 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ga_mal ZWNJ mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ga_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ga_mal ZWJ mal_ra.half
@@ -175528,6 +175615,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS2
@@ -175536,6 +175625,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS3
@@ -175544,6 +175635,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS4
@@ -175552,6 +175645,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS5
@@ -175560,6 +175655,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS6
@@ -175568,6 +175665,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS7
@@ -175576,6 +175675,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS8
@@ -175584,6 +175685,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS9
@@ -175592,6 +175695,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS10
@@ -175600,6 +175705,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS11
@@ -175608,6 +175715,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS12
@@ -175616,6 +175725,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS13
@@ -175624,6 +175735,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS14
@@ -175632,6 +175745,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS15
@@ -175640,6 +175755,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: VS16
@@ -175648,6 +175765,8 @@ Width: 0
 VWidth: 2048
 Flags: HMW
 LayerCount: 2
+Fore
+Validated: 1
 EndChar
 
 StartChar: fastforward
@@ -194229,6 +194348,7 @@ LayerCount: 2
 Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 4557 3349 N 1 0 0 1 0 0 1
+Validated: 98305
 Ligature2: "'half' half cons in Malayalam 'mlym'" ka_mal candrakala
 Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ka_mal
 Substitution2: "repl. half form by below-base in Malayalam-1" mal_ka.blwf
@@ -194701,6 +194821,7 @@ LayerCount: 2
 Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 4589 3382 S 1 0 0 1 0 0 1
+Validated: 98305
 Ligature2: "'half' half cons in Malayalam 'mlym'" sha_mal candrakala
 Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala sha_mal
 Substitution2: "repl. half form by below-base in Malayalam-1" mal_sha.blwf
@@ -204588,6 +204709,7 @@ LayerCount: 2
 Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 4583 3376 N 1 0 0 1 0 0 2
+Validated: 98305
 LCarets2: 1 0
 Ligature2: "'pstf' post-base ya,va,la in Malayalam 'mlym'" ra_mal candrakala
 Ligature2: "'pstf' ya,va,la in Malayalam" candrakala ra_mal
@@ -204749,6 +204871,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 0 0 2
 Refer: 4562 3354 N 1 0 0 1 198 0 2
+Validated: 98305
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ca_mal
 EndChar
 
@@ -204765,6 +204888,7 @@ LayerCount: 2
 Fore
 Refer: 4585 3378 N 1 0 0 1 222 0 2
 Refer: 4621 -1 N 1 0 0 1 0 0 2
+Validated: 98305
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres la_mal
 EndChar
 
@@ -204803,6 +204927,7 @@ SplineSet
  -327 21 -301 58 -301 130 c 2
  -301 189 l 2
 EndSplineSet
+Validated: 527361
 Ligature2: "'psts' below-form hack" ZWNJ mal_ga.half mal_ra.half
 Ligature2: "form ZWJ subscript for half-ra in Malayalam" ZWJ candrakala mal_ra.pres ga_mal
 MultipleSubs2: "ra-tail blwf to open ra in Malayalam" candrakala mal_ra.pres ga_mal
@@ -204867,6 +204992,7 @@ SplineSet
  614 399 564 312 564 215 c 0
  564 109 602 55 678 55 c 0
 EndSplineSet
+Validated: 527361
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" ta_mal ZWNJ mal_sa.half mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ta_mal ZWJ mal_sa.half mal_ra.half
 Ligature2: "'psts' ra-tail in Malayalam-complex" mal_tasa mal_ra.half
@@ -204912,6 +205038,7 @@ SplineSet
  145 -10 355 -154 777 -154 c 0
  1135.42 -154 1387 0 1387 259 c 0
 EndSplineSet
+Validated: 527361
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_rrarra ZWJ mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" rra_mal ZWNJ mal_rra.half mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_rrarra
