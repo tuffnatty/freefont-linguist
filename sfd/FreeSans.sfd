@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1579479182
+ModificationTime: 1579515768
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -64,13 +64,13 @@ Lookup: 2 0 0 "decomp. ra-tail to open-ra in Malayalam"  {"ra-tail to open ra in
 Lookup: 4 0 0 "form ZWJ subscript for half-ra in Malayalam"  {"form ZWJ subscript for half-ra in Malayalam"  } []
 Lookup: 4 0 0 "subst. below- for post-base forms in Malayalam"  {"subst. below-base u,uu in Malayalam"  "subst. below-base for half form in Malayalam"  } []
 Lookup: 4 0 0 "'akhn' lla,va in Malayalam 'mlym'"  {"'akhn' lla,va in Malayalam 'mlym'"  } ['akhn' ('mlym' <'dflt' > ) ]
-Lookup: 4 0 0 "'akhn' conjunct ligs in Malayalam"  {"'akhn' cons trio in Malayalam"  "'akhn' cons pair in Malayalam"  "'akhn' cons pair in Malayalam-clscl"  "'akhn' chillu 5 legacy in Malayalam"  } ['akhn' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 4 0 0 "'akhn' conjunct ligs in Malayalam"  {"'akhn' cons trio in Malayalam"  "'akhn' cons pair in Malayalam"  "'akhn' cons pair in Malayalam-clscl"  "'akhn' non-std legacy pair in Malayalam"  "'akhn' chillu 5 legacy in Malayalam"  } ['akhn' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'half' half cons in Malayalam 'mlym'"  {"'half' half cons in Malayalam 'mlym'"  } ['half' ('mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'half' subscript cons conj in Malayalam"  {"'akhn' subscript cons conj in Malayalam"  } ['half' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' subscript cons cjct in Malayalam 'mlm2'"  {"'akhn' subscript cons conj in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' subscript cons cjct in Malayalam 'mlym'"  {"'akhn' subscript cons conj in Malayalam 'mlym'"  } ['blwf' ('mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' half cons in Malayalam 'mlm2'"  {"'akhn' half cons in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'dflt' > ) ]
-Lookup: 6 0 0 "'blwf' subscript cons chain in Malayalam 'mlm2'"  {"'akhn' subscript ba in Malayalam"  "'akhn' subscript ka in Malayalam"  "'akhn' subscript ga in Malayalam"  "'akhn' subscript ca in Malayalam"  "'akhn' subscript cha in Malayalam"  "'akhn' subscript tta in Malayalam"  "'akhn' subscript ttha in Malayalam"  "'akhn' subscript dda in Malayalam"  "'akhn' subscript ddha in Malayalam"  "'akhn' subscript nna in Malayalam"  "'akhn' subscript ta in Malayalam"  "'akhn' subscript da in Malayalam"  "'akhn' subscript dha in Malayalam"  "'akhn' subscript na in Malayalam"  "'akhn' subscript pa in Malayalam"  "'akhn' subscript pha in Malayalam"  "'akhn' subscript ma in Malayalam"  "'akhn' subscript rra in Malayalam"  "'akhn' subscript sha in Malayalam"  "'akhn' subscript sa in Malayalam"  } ['blwf' ('mlm2' <'dflt' > ) ]
+Lookup: 6 0 0 "'blwf' subscript cons chain in Malayalam 'mlm2'"  {"'akhn' subscript ba in Malayalam"  "'akhn' subscript ka in Malayalam"  "'akhn' subscript ga in Malayalam"  "'akhn' subscript ca in Malayalam"  "'akhn' subscript cha in Malayalam"  "'blwf' subscript ja in Malayalam 'mlm2'"  "'akhn' subscript tta in Malayalam"  "'akhn' subscript ttha in Malayalam"  "'akhn' subscript dda in Malayalam"  "'akhn' subscript ddha in Malayalam"  "'akhn' subscript nna in Malayalam"  "'akhn' subscript ta in Malayalam"  "'akhn' subscript da in Malayalam"  "'akhn' subscript dha in Malayalam"  "'akhn' subscript na in Malayalam"  "'akhn' subscript pa in Malayalam"  "'akhn' subscript pha in Malayalam"  "'akhn' subscript ma in Malayalam"  "'akhn' subscript rra in Malayalam"  "'akhn' subscript sha in Malayalam"  "'akhn' subscript sa in Malayalam"  } ['blwf' ('mlm2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlm2'"  {"'pstf' ya,va,la in Malayalam"  } ['pstf' ('mlm2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlym'"  {"'pstf' post-base ya,va,la in Malayalam 'mlym'"  } ['pstf' ('mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base la,va in Malayalam"  {"'blwf' below-base la in Malayalam"  "'blws' below-base va in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -512,6 +512,16 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'blwf' subscript ja in Malayalam 'mlm2'"  2 2 0 1
+  Class: 11 mal_ja.half
+  BClass: 6 ba_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+EndFPST
 ChainSub2: class "'ss19' re-stack ga in Malayalam Reformed"  2 2 1 1
   Class: 11 mal_ga.half
   BClass: 6 ga_mal
@@ -2488,7 +2498,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 3312 16 11
+WinInfo: 61232 16 11
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -127898,66 +127908,65 @@ AnchorPoint: "mal-below" 0 335 mark 0
 LayerCount: 2
 Fore
 SplineSet
--242 335 m 0
- -168 335 -117 292 -117 220 c 0
- -117 193 -120 172 -128 156 c 1
- -90 153 l 2
- -44.7422 149.427 0 116 0 67 c 0
- 0 43 -10 25 -29 12 c 1
- -11 1 -2 -18 -2 -43 c 0
- -2 -105 -38 -144 -110 -162 c 0
- -154 -174 -237 -180 -359 -180 c 0
- -572.245 -180 -734 -59.8926 -734 146 c 0
- -734 217 -709 283 -657 341 c 1
- -614 302 l 1
- -660 263 -683 205 -683 128 c 0
- -683 -36 -521 -127 -350 -127 c 0
- -154 -127 -55 -100 -55 -46 c 0
- -55 -26 -62 -16 -75 -16 c 2
- -95 -16 l 1
- -95 33 l 1
- -80 33 l 2
- -64 33 -55 44 -55 66 c 0
- -55 84 -67 95 -90 98 c 2
- -132 102 l 1
- -122 86 -117 68 -117 50 c 0
- -117 -6 -155 -41 -212 -41 c 0
- -256 -41 -285 -22 -301 15 c 1
- -331 -23 -384 -43 -462 -43 c 0
- -560 -43 -609 -17 -609 34 c 0
- -609 93 -555 124 -445 127 c 0
- -413 127 -366 128 -303 130 c 1
- -241 133 -179 164 -179 224 c 0
- -179 264 -203 284 -250 284 c 0
- -295 284 -318 263 -318 219 c 2
- -318 159 l 1
- -382 159 l 1
- -382 216 l 2
- -382 261 -412 284 -471 284 c 0
- -484 284 -496 283 -509 281 c 1
- -472 275 -454 253 -454 213 c 0
- -454 171 -492 143 -535 143 c 0
- -589 143 -616 170 -616 223 c 0
- -616 300 -550 335 -469 335 c 0
- -415 335 -377 323 -352 299 c 1
- -332 323 -295 335 -242 335 c 0
--173 50 m 0
- -173 75 -185 88 -212 88 c 0
- -239 88 -253 75 -253 50 c 0
- -253 24 -239 12 -212 12 c 0
- -185 12 -173 24 -173 50 c 0
--504 216 m 256
- -504 234 -515 243 -535 243 c 256
- -555 243 -565 235 -565 217 c 0
- -565 198 -555 188 -535 188 c 256
- -515 188 -504 198 -504 216 c 256
--313 79 m 1
- -438 78 l 2
- -471.347 78 -548 68.4939 -548 35 c 0
- -548 18 -518 11 -457 11 c 0
- -389 11 -341 33 -313 79 c 1
+-151 163 m 1
+ -47.4 163 0 137 0 75 c 0
+ 0 56 -13.5 36 -24 31 c 1
+ -13.5 25 0 4 0 -10 c 0
+ 0 -58.5 -23.4004 -85 -129 -85 c 2
+ -519 -85 l 2
+ -550 -85 -566 -93 -566 -109 c 0
+ -566 -122 -550 -129 -519 -129 c 2
+ -51 -129 l 1
+ -51 -180 l 1
+ -528 -180 l 2
+ -594 -180 -627 -156 -627 -110 c 0
+ -627 -60 -594 -36 -528 -36 c 2
+ -129 -36 l 2
+ -59.4004 -36 -55 -27 -55 -13 c 0
+ -55 -4 -71.5 8 -97 8 c 1
+ -97 53 l 1
+ -72 53 -54 59 -54 75 c 0
+ -54 96.5 -72.4 110 -145 110 c 1
+ -141.667 103.333 -140 89 -140 70 c 0
+ -140 23 -180 -7 -230 -7 c 0
+ -274 -7 -303 11 -319 47 c 1
+ -360 11 -414 -8 -482 -8 c 0
+ -580 -8 -629 13 -629 57 c 0
+ -629 106 -574 132 -464 135 c 0
+ -431 135 -383 136 -320 137 c 1
+ -239 141 -198 169 -198 219 c 0
+ -198 261 -222 281 -269 281 c 0
+ -318 281 -343 261 -343 219 c 2
+ -343 163 l 1
+ -397 163 l 1
+ -397 216 l 2
+ -397 260 -428 281 -490 281 c 0
+ -503 281 -516 280 -529 278 c 1
+ -492 271 -473 249 -473 211 c 0
+ -473 169 -510 139 -554 139 c 0
+ -607 139 -634 166 -634 221 c 0
+ -634 296 -568 334 -489 334 c 0
+ -427 334 -388 316 -371 281 c 1
+ -357 316 -320 334 -261 334 c 0
+ -186 334 -115 288 -115 214 c 0
+ -115 195 -140 178 -151 163 c 1
+-189 73 m 0
+ -189 98 -203 110 -230 110 c 0
+ -257 110 -271 98 -271 73 c 0
+ -271 51 -257 40 -230 40 c 0
+ -203 40 -189 51 -189 73 c 0
+-523 213 m 0
+ -523 232 -534 242 -553 242 c 0
+ -574 242 -584 232 -584 214 c 0
+ -584 195 -574 185 -554 185 c 256
+ -534 185 -523 195 -523 213 c 0
+-330 94 m 1
+ -448 92 l 2
+ -479 92 -567 84 -567 59 c 0
+ -567 45 -537 38 -476 38 c 0
+ -407 38 -358 57 -330 94 c 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" mal_ja.half uu_mal
 Ligature2: "'psts' u,uu blwf in Malayalam" mal_ja.blwf uu_mal
 LCarets2: 1 0 
@@ -154473,7 +154482,7 @@ Fore
 Refer: 4861 -1 N 0.7 0 0 0.7 990 -267 2
 Refer: 4909 3451 N 1 0 0 1 0 0 2
 Validated: 32769
-Ligature2: "'akhn' cons pair in Malayalam-clscl" na_mal candrakala rra_mal
+Ligature2: "'akhn' non-std legacy pair in Malayalam" na_mal candrakala rra_mal
 EndChar
 
 StartChar: mal_kala
