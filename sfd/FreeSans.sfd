@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1579955559
+ModificationTime: 1579978801
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -55,9 +55,9 @@ OS2FamilyClass: 2053
 OS2Vendor: 'GNU '
 OS2CodePages: 600001bf.dff70000
 OS2UnicodeRanges: e493beff.4640fdff.0a4030a1.0200058c
+Lookup: 1 0 0 "subst. smaller blwf in Malayalam"  {"subst. smaller u,uu in Malay+AQEA-lam-1"  } []
 Lookup: 4 0 0 "form subscript cons in Malayalam"  {"form subscript cons in Malayalam"  "form subscript cons in Malayalam-2"  } []
 Lookup: 1 0 0 "subst. candrakala by spacing glyph in Malay+AQEA-lam"  {"subst. candrakala by spacing glyph Malay+AQEA-lam-1"  } []
-Lookup: 1 0 0 "subst. smaller blwf in Malayalam"  {"subst. smaller u,uu in Malay+AQEA-lam-1"  } []
 Lookup: 1 0 0 "repl. half form by below-base cons in Malayalam"  {"repl. half form by below-base in Malayalam-2"  } []
 Lookup: 4 0 0 "form ZWNJ ra-tail in Malayalam"  {"form ZWNJ below-base from half form in Malayalam"  "form ZWNJ ra-tail complex in Malayalam"  "form ZWNJ ra-tail simple in Malayalam"  } []
 Lookup: 2 0 0 "decomp. ra-tail to open-ra in Malayalam"  {"ra-tail to open ra in Malayalam-3"  "ra-tail to open ra in Malayalam-2"  "ra-tail to open ra in Malayalam-1"  "ra-tail blwf to open ra in Malayalam"  } []
@@ -75,8 +75,10 @@ Lookup: 4 0 0 "'psts' ZWNJ below-form hack"  {"'psts' below-form hack"  } ['psts
 Lookup: 5 0 0 "'psts' ZWNJ ra-tail to open-ra in Malayalam"  {"'psts' ZWNJ ra-tail blwf to open-ra in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'psts' ra-tail subscript in Malayalam"  {"'psts' ra-tail subscript in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 458768 0 "'psts' ra-tail in Malayalam"  {"'psts' ra-tail in Malayalam-single"  "'psts' ra-tail in Malayalam-conj"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 4 16 0 "'psts' vowel ligatures in Malayalam"  {"'psts' l-voc ligatures in Malayalam"  "'psts' r-voc ligatures in Malayalam"  "'psts' rr-voc ligatures in Malayalam"  "'psts' u,uu subscript ligatures in Malayalam"  "'psts' u,uu ligatures in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 6 524304 0 "'psts' post-base u,uu chain in Malayalam"  {"'psts' post-base u,uu chain in Malay+AQEA-lam-1"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 4 524304 0 "'psts' vowel subscript ligatures in Malayalam"  {"'psts' r-voc subscript ligatures in Malayalam"  "'psts' rr-voc subscript ligatures in Malayalam"  "'psts' u,uu subscript ligatures in Malayalam1"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 4 458768 0 "'psts' vowel ligatures in Malayalam"  {"'psts' l-voc ligatures in Malayalam"  "'psts' r-voc ligatures in Malayalam"  "'psts' rr-voc ligatures in Malayalam"  "'psts' u,uu ligatures in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 0 0 "'psts' subscript smaller u,uu chain in Malayalam"  {"'psts' subscript smaller u,uu chain in Malay+AQEA-lam-1"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 8 0 "'psts' subscript u,uu chain in Malayalam"  {"'psts' subscript u,uu chain in Malay+AQEA-lam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'psts' space candrakala chain in Malayalam"  {"'psts' chain avoid space candrakala in Malayalam"  "'psts' chain space candrakala in Malayalam"  } ['psts' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'ss19' form half cons in Malayalam"  {"'blws' form half cons in Malayalam"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 2 0 0 "'ss19' un-do clscl ligs in Malayalam Reformed"  {"'ss19' un-do clscl vocalic in Malayalam Reformed-1"  "'ss19' un-do clscl vocalic in Malayalam Reformed-2"  "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-3"  "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -330,8 +332,8 @@ MarkAttachSets: 9
 "dev_virama_rakar" 16 virama dev_rakar
 "bng_hasanta" 11 hasanta_bng
 "mal_virama" 10 candrakala
-"mal_virama_sub" 382 candrakala mal_ka.blwf mal_ta.blwf mal_sha.blwf mal_cha.blwf mal_sa.blwf mal_tta.blwf mal_rrarra.blwf mal_rra.blwf mal_na.blwf mal_ma.blwf mal_nna.blwf mal_dda.blwf mal_la.blwf mal_ga.blwf mal_ddha.blwf mal_ba.blwf mal_kha.blwf mal_nana.blwf mal_va.blwf mal_ttha.blwf mal_dha.blwf mal_ca.blwf mal_pha.blwf mal_pa.blwf mal_ja.blwf mal_da.blwf mal_bha.blwf mal_caca.blwf mal_tata.blwf
-"mal_diacritic" 73 anusvara_mal.cmb candrabindu_mal virama_vert_mal virama_circ_mal reph_mal
+"mal_subscript_vowel" 405 u_mal uu_mal r_voc_mal rr_voc_mal mal_ka.blwf mal_ta.blwf mal_sha.blwf mal_cha.blwf mal_sa.blwf mal_tta.blwf mal_rrarra.blwf mal_rra.blwf mal_na.blwf mal_ma.blwf mal_nna.blwf mal_dda.blwf mal_la.blwf mal_ga.blwf mal_ddha.blwf mal_ba.blwf mal_kha.blwf mal_nana.blwf mal_va.blwf mal_ttha.blwf mal_dha.blwf mal_ca.blwf mal_pha.blwf mal_pa.blwf mal_ja.blwf mal_da.blwf mal_bha.blwf mal_caca.blwf mal_tata.blwf
+"mal_vowel" 33 u_mal uu_mal r_voc_mal rr_voc_mal
 DEI: 91125
 KernClass2: 6 10 "'dist' distance in Malay+AQEA-lam2-1" 
  8 llla_mal
@@ -509,6 +511,54 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'psts' subscript u,uu chain in Malay+AQEA-lam"  2 5 1 4
+  Class: 12 u_mal uu_mal
+  BClass: 292 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal ra_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
+  BClass: 879 mal_rrarrara mal_rrarra mal_kra mal_kala mal_gra mal_ghra mal_chra mal_jra mal_jhra mal_ttra mal_ddra mal_ddhra mal_tra mal_dra mal_dhra mal_nra mal_pra mal_phra mal_bra mal_bhra mal_mra mal_vra mal_shra mal_ssra mal_sra mal_hra mal_kassa mal_kaka mal_kakra mal_kata mal_katra mal_gagha mal_gada mal_gadadha mal_gadadhra mal_gana mal_gama mal_ngaka mal_nganga mal_caca mal_jaja mal_janya mal_nyaca mal_nyacha mal_nyaja mal_nyanya mal_ttatta mal_nnatta mal_nnattra mal_nnadda mal_nnaddra mal_nnaddha mal_nnama mal_tata mal_tatra mal_tatha mal_tana mal_tabha mal_tabhra mal_tama mal_tasa mal_tasra mal_tasatha mal_dada mal_dadha mal_dadhra mal_nata mal_natra mal_natha mal_nada mal_nadra mal_nadha mal_nadhra mal_nana mal_nanra mal_nama mal_namra mal_baba mal_mama mal_mapa mal_mapra mal_yaya mal_vava mal_shaca mal_shacha mal_satha mal_hana mal_hama mal_llalla mal_gadha mal_jajha
+  BClass: 23 mal_ya.pstf mal_va.pstf
+  BClass: 508 mal_kra.blwf mal_ka.blwf mal_kka.blwf mal_ta.blwf mal_tra.blwf mal_sha.blwf mal_shra.blwf mal_cha.blwf mal_chra.blwf mal_sa.blwf mal_sra.blwf mal_tta.blwf mal_ttra.blwf mal_rrarra.blwf mal_rrarrra.blwf mal_rra.blwf mal_na.blwf mal_ma.blwf mal_nna.blwf mal_dda.blwf mal_la.blwf mal_gra.blwf mal_ga.blwf mal_ddha.blwf mal_ba.blwf mal_kha.blwf mal_nana.blwf mal_va.blwf mal_ttha.blwf mal_dha.blwf mal_ca.blwf mal_pha.blwf mal_pa.blwf mal_pra.blwf mal_ja.blwf mal_da.blwf mal_bha.blwf mal_caca.blwf mal_tata.blwf
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+ 1 1 0
+  ClsList: 1
+  BClsList: 2
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+ 1 1 0
+  ClsList: 1
+  BClsList: 3
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
+ 1 1 0
+  ClsList: 1
+  BClsList: 4
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. smaller blwf in Malayalam" 
+EndFPST
+ChainSub2: class "'psts' subscript smaller u,uu chain in Malay+AQEA-lam-1"  2 3 1 2
+  Class: 12 u_mal uu_mal
+  BClass: 508 mal_kra.blwf mal_ka.blwf mal_kka.blwf mal_ta.blwf mal_tra.blwf mal_sha.blwf mal_shra.blwf mal_cha.blwf mal_chra.blwf mal_sa.blwf mal_sra.blwf mal_tta.blwf mal_ttra.blwf mal_rrarra.blwf mal_rrarrra.blwf mal_rra.blwf mal_na.blwf mal_ma.blwf mal_nna.blwf mal_dda.blwf mal_la.blwf mal_gra.blwf mal_ga.blwf mal_ddha.blwf mal_ba.blwf mal_kha.blwf mal_nana.blwf mal_va.blwf mal_ttha.blwf mal_dha.blwf mal_ca.blwf mal_pha.blwf mal_pa.blwf mal_pra.blwf mal_ja.blwf mal_da.blwf mal_bha.blwf mal_caca.blwf mal_tata.blwf
+  BClass: 73 anusvara_mal.cmb candrabindu_mal virama_vert_mal virama_circ_mal reph_mal
+ 1 2 0
+  ClsList: 1
+  BClsList: 2 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. smaller blwf in Malayalam" 
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "subst. smaller blwf in Malayalam" 
+EndFPST
 ChainSub2: class "'blwf' subscript ca in Malayalam 'mlm2'"  3 3 0 2
   Class: 10 candrakala
   Class: 6 ca_mal
@@ -1300,62 +1350,6 @@ ChainSub2: class "'blwf' below-base la in Malayalam"  2 3 1 2
  1 1 0
   ClsList: 1
   BClsList: 2
-  FClsList:
- 1
-  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
-EndFPST
-ChainSub2: class "'psts' post-base u,uu chain in Malay+AQEA-lam-1"  2 6 1 8
-  Class: 12 u_mal uu_mal
-  BClass: 292 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal ra_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
-  BClass: 1440 mal_rrarrara mal_rrarra mal_kri mal_krri mal_kra mal_kala mal_khri mal_gri mal_gra mal_ghri mal_ghra mal_chra mal_ju mal_juu mal_jri mal_jra mal_jhri mal_jhra mal_ttri mal_ttra mal_ddri mal_ddra mal_ddhri mal_ddhra mal_tri mal_tra mal_dri mal_dra mal_dhri mal_dhra mal_nri mal_nra mal_pri mal_pra mal_phra mal_bri mal_bra mal_bhri mal_bhra mal_mri mal_mra mal_yri mal_rri mal_lri mal_vri mal_vra mal_shri mal_shra mal_ssri mal_ssra mal_sri mal_sra mal_hri mal_hra mal_kassa mal_kassri mal_kaka mal_kakri mal_kakra mal_kata mal_katri mal_katra mal_gagha mal_gaghri mal_gada mal_gadri mal_gadadha mal_gadadhri mal_gadadhra mal_gana mal_gama mal_ngaka mal_ngakri mal_nganga mal_caca mal_jaja mal_jajri mal_janya mal_nyaca mal_nyacri mal_nyacha mal_nyachri mal_nyaja mal_nyanya mal_ttatta mal_nnatta mal_nnattra mal_nnadda mal_nnaddri mal_nnaddra mal_nnaddha mal_nnaddhri mal_nnama mal_tata mal_tatri mal_tatra mal_tatha mal_tathri mal_tana mal_tabha mal_tabhra mal_tabhri mal_tama mal_tamri mal_tasa mal_tasri mal_tasra mal_tasatha mal_tasathri mal_dada mal_dadri mal_dadha mal_dadhri mal_dadhra mal_nata mal_natri mal_natra mal_natha mal_nathri mal_nada mal_nadra mal_nadha mal_nadhri mal_nadhra mal_nana mal_nanri mal_nanra mal_nama mal_namri mal_namra mal_baba mal_mama mal_mapa mal_mapri mal_mapra mal_yaya mal_vava mal_shaca mal_shacri mal_shacha mal_shachri mal_satha mal_sathri mal_hana mal_hama mal_hamri mal_llalla mal_gadha mal_jajha
-  BClass: 23 mal_ya.pstf mal_va.pstf
-  BClass: 508 mal_kra.blwf mal_ka.blwf mal_kka.blwf mal_ta.blwf mal_tra.blwf mal_sha.blwf mal_shra.blwf mal_cha.blwf mal_chra.blwf mal_sa.blwf mal_sra.blwf mal_tta.blwf mal_ttra.blwf mal_rrarra.blwf mal_rrarrra.blwf mal_rra.blwf mal_na.blwf mal_ma.blwf mal_nna.blwf mal_dda.blwf mal_la.blwf mal_gra.blwf mal_ga.blwf mal_ddha.blwf mal_ba.blwf mal_kha.blwf mal_nana.blwf mal_va.blwf mal_ttha.blwf mal_dha.blwf mal_ca.blwf mal_pha.blwf mal_pa.blwf mal_pra.blwf mal_ja.blwf mal_da.blwf mal_bha.blwf mal_caca.blwf mal_tata.blwf
-  BClass: 73 anusvara_mal.cmb candrabindu_mal virama_vert_mal virama_circ_mal reph_mal
- 1 1 0
-  ClsList: 1
-  BClsList: 1
-  FClsList:
- 1
-  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
- 1 1 0
-  ClsList: 1
-  BClsList: 2
-  FClsList:
- 1
-  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
- 1 1 0
-  ClsList: 1
-  BClsList: 3
-  FClsList:
- 1
-  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
- 1 1 0
-  ClsList: 1
-  BClsList: 4
-  FClsList:
- 1
-  SeqLookup: 0 "subst. smaller blwf in Malayalam" 
- 1 2 0
-  ClsList: 1
-  BClsList: 5 1
-  FClsList:
- 1
-  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
- 1 2 0
-  ClsList: 1
-  BClsList: 5 2
-  FClsList:
- 1
-  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
- 1 2 0
-  ClsList: 1
-  BClsList: 5 3
-  FClsList:
- 1
-  SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
- 1 2 0
-  ClsList: 1
-  BClsList: 5 4
   FClsList:
  1
   SeqLookup: 0 "subst. below- for post-base forms in Malayalam" 
@@ -112747,9 +112741,9 @@ SplineSet
  -259 -190 -215 -234 -163 -234 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_u_small.blwf
 Ligature2: "subst. below-base u,uu in Malayalam" u_mal
 MultipleSubs2: "'ss19' undo u-uu blwf in Malayalam Reformed" u_mal
-Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_u_small.blwf
 EndChar
 
 StartChar: mal_uu.blwf
@@ -112781,9 +112775,9 @@ SplineSet
  -294 -181 -241 -234 -180 -234 c 0
 EndSplineSet
 Validated: 3073
+Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_uu_small.blwf
 Ligature2: "subst. below-base u,uu in Malayalam" uu_mal
 MultipleSubs2: "'ss19' undo u-uu blwf in Malayalam Reformed" uu_mal
-Substitution2: "subst. smaller u,uu in Malay+AQEA-lam-1" mal_uu_small.blwf
 EndChar
 
 StartChar: mal_candrakala_spacing
@@ -112815,6 +112809,7 @@ Encoding: 60752 -1 4627
 Width: 942
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 525 565 basechar 0
 AnchorPoint: "mal-below" 944 -22 basechar 0
@@ -112874,7 +112869,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ka_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ka_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ka_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 777 
 EndChar
 
 StartChar: mal_kuu
@@ -112942,7 +112937,7 @@ SplineSet
  273 154 300 186 300 224 c 1
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 1 699 
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ka_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ka_mal uu_mal
 EndChar
@@ -112952,6 +112947,7 @@ Encoding: 60754 -1 4629
 Width: 954
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 525 565 basechar 0
 LayerCount: 2
@@ -112999,7 +112995,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ka_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ka_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ka_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 768 
 EndChar
 
 StartChar: mal_krri
@@ -113007,6 +113003,7 @@ Encoding: 60755 -1 4630
 Width: 957
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 525 565 basechar 0
 LayerCount: 2
@@ -113058,7 +113055,7 @@ SplineSet
  295 60 326 100 326 148 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 779 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ka_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ka_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" ka_mal rr_voc_mal
@@ -113066,9 +113063,10 @@ EndChar
 
 StartChar: mal_kra
 Encoding: 60756 -1 4631
-Width: 1110
+Width: 1113
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1000 -140 basechar 0
@@ -113123,7 +113121,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ka_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ka_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ka_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ka_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 939 
 EndChar
 
 StartChar: mal_khri
@@ -113131,6 +113129,7 @@ Encoding: 60758 -1 4632
 Width: 910
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 525 565 basechar 0
 LayerCount: 2
@@ -113175,7 +113174,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" kha_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" kha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" kha_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 763 
 EndChar
 
 StartChar: mal_gu
@@ -113183,6 +113182,7 @@ Encoding: 60762 -1 4633
 Width: 836
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 485 565 basechar 0
 LayerCount: 2
@@ -113218,7 +113218,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ga_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ga_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ga_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 669 
 EndChar
 
 StartChar: mal_chra
@@ -113226,6 +113226,7 @@ Encoding: 60776 -1 4634
 Width: 1537
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 834 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1410 -100 basechar 0
@@ -113278,7 +113279,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" cha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala cha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres cha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" cha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1373 
 EndChar
 
 StartChar: mal_ju
@@ -113286,6 +113287,7 @@ Encoding: 60778 -1 4635
 Width: 964
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 484 565 basechar 0
 LayerCount: 2
@@ -113350,7 +113352,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ja_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ja_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ja_mal u_mal
-LCarets2: 1 0 
+LCarets2: 1 818 
 EndChar
 
 StartChar: mal_juu
@@ -113358,6 +113360,7 @@ Encoding: 60779 -1 4636
 Width: 991
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 484 565 basechar 0
 LayerCount: 2
@@ -113431,7 +113434,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ja_mal ZWJ uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ja_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ja_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 841 
 EndChar
 
 StartChar: mal_jri
@@ -113439,6 +113442,7 @@ Encoding: 60780 -1 4637
 Width: 999
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 484 565 basechar 0
 LayerCount: 2
@@ -113501,7 +113505,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ja_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ja_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ja_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 836 
 EndChar
 
 StartChar: mal_jrii
@@ -113509,6 +113513,7 @@ Encoding: 60781 -1 4638
 Width: 1001
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 484 565 basechar 0
 LayerCount: 2
@@ -113575,7 +113580,7 @@ SplineSet
  439 50 517 91 558 172 c 1
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 843 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ja_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ja_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" ja_mal rr_voc_mal
@@ -113586,6 +113591,7 @@ Encoding: 60782 -1 4639
 Width: 1143
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 644 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1010 -160 basechar 0
@@ -113647,7 +113653,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ja_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ja_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ja_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ja_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1001 
 EndChar
 
 StartChar: mal_jhri
@@ -113655,6 +113661,7 @@ Encoding: 60784 -1 4640
 Width: 1533
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 844 565 basechar 0
 LayerCount: 2
@@ -113712,7 +113719,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" jha_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" jha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" jha_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1314 
 EndChar
 
 StartChar: mal_jhrii
@@ -113720,6 +113727,7 @@ Encoding: 60785 -1 4641
 Width: 1533
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 834 565 basechar 0
 LayerCount: 2
@@ -113781,7 +113789,7 @@ SplineSet
  370 143 404 55 476 55 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 1321 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" jha_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" jha_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" jha_mal rr_voc_mal
@@ -113792,6 +113800,7 @@ Encoding: 60786 -1 4642
 Width: 1690
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 994 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1550 -100 basechar 0
@@ -113848,7 +113857,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" jha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala jha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres jha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" jha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1457 
 EndChar
 
 StartChar: mal_ttri
@@ -113856,6 +113865,7 @@ Encoding: 60789 -1 4643
 Width: 586
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 334 565 basechar 0
 LayerCount: 2
@@ -113889,7 +113899,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" tta_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" tta_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" tta_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 463 
 EndChar
 
 StartChar: mal_ttrii
@@ -113897,6 +113907,7 @@ Encoding: 60790 -1 4644
 Width: 587
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 334 565 basechar 0
 LayerCount: 2
@@ -113933,7 +113944,7 @@ SplineSet
  288 89 l 2
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 465 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" tta_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" tta_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" tta_mal rr_voc_mal
@@ -113944,6 +113955,7 @@ Encoding: 60791 -1 4645
 Width: 775
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 484 565 basechar 0
 AnchorPoint: "mal-below" 774 -22 basechar 0
@@ -113976,7 +113988,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" tta_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala tta_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres tta_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" tta_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 637 
 EndChar
 
 StartChar: mal_ddri
@@ -113984,6 +113996,7 @@ Encoding: 60794 -1 4646
 Width: 1286
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 684 565 basechar 0
 LayerCount: 2
@@ -114028,7 +114041,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" dda_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" dda_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" dda_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1062 
 EndChar
 
 StartChar: mal_ddra
@@ -114036,6 +114049,7 @@ Encoding: 60795 -1 4647
 Width: 1441
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 844 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1300 -140 basechar 0
@@ -114079,7 +114093,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" dda_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala dda_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres dda_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" dda_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1241 
 EndChar
 
 StartChar: mal_ddhri
@@ -114087,6 +114101,7 @@ Encoding: 60797 -1 4648
 Width: 1328
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 LayerCount: 2
@@ -114138,7 +114153,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ddha_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ddha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ddha_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1094 
 EndChar
 
 StartChar: mal_ddhra
@@ -114146,6 +114161,7 @@ Encoding: 60798 -1 4649
 Width: 1479
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 804 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1340 -100 basechar 0
@@ -114196,7 +114212,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ddha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ddha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ddha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ddha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1219 
 EndChar
 
 StartChar: mal_nnu
@@ -114204,6 +114220,7 @@ Encoding: 60800 -1 4650
 Width: 1425
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 744 565 basechar 0
 LayerCount: 2
@@ -114251,7 +114268,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" nna_mal ZWJ u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" nna_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1217 
 EndChar
 
 StartChar: mal_nnuu
@@ -114259,6 +114276,7 @@ Encoding: 60801 -1 4651
 Width: 1562
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 744 565 basechar 0
 LayerCount: 2
@@ -114313,7 +114331,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" nna_mal ZWJ uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" nna_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1267 
 EndChar
 
 StartChar: mal_tu
@@ -114321,6 +114339,7 @@ Encoding: 60804 -1 4652
 Width: 920
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 504 565 basechar 0
 LayerCount: 2
@@ -114363,7 +114382,7 @@ Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ta_mal u_mal
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ta_mal ZWJ u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ta_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 763 
 EndChar
 
 StartChar: mal_tuu
@@ -114371,6 +114390,7 @@ Encoding: 60805 -1 4653
 Width: 926
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 524 565 basechar 0
 LayerCount: 2
@@ -114420,7 +114440,7 @@ Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ta_mal uu_mal
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ta_mal ZWJ uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ta_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 721 
 EndChar
 
 StartChar: mal_tri
@@ -114428,6 +114448,7 @@ Encoding: 60806 -1 4654
 Width: 953
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 534 565 basechar 0
 LayerCount: 2
@@ -114469,7 +114490,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ta_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ta_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ta_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 794 
 EndChar
 
 StartChar: mal_trii
@@ -114477,6 +114498,7 @@ Encoding: 60807 -1 4655
 Width: 953
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 534 565 basechar 0
 LayerCount: 2
@@ -114522,7 +114544,7 @@ SplineSet
  521 -144 l 2
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 791 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ta_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ta_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" ta_mal rr_voc_mal
@@ -114533,6 +114555,7 @@ Encoding: 60808 -1 4656
 Width: 1111
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 684 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1000 -140 basechar 0
@@ -114573,7 +114596,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ta_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ta_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ta_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ta_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 939 
 EndChar
 
 StartChar: mal_dri
@@ -114581,6 +114604,7 @@ Encoding: 60810 -1 4657
 Width: 650
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 374 565 basechar 0
 LayerCount: 2
@@ -114616,7 +114640,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" da_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" da_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" da_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 505 
 EndChar
 
 StartChar: mal_drii
@@ -114624,6 +114648,7 @@ Encoding: 60811 -1 4658
 Width: 650
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 394 565 basechar 0
 LayerCount: 2
@@ -114663,7 +114688,7 @@ SplineSet
  484 -114 467 -99 436 -99 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 475 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" da_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" da_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" da_mal rr_voc_mal
@@ -114674,6 +114699,7 @@ Encoding: 60812 -1 4659
 Width: 788
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 670 -190 basechar 0
@@ -114708,7 +114734,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" da_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala da_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres da_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" da_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 602 
 EndChar
 
 StartChar: mal_dhri
@@ -114717,7 +114743,7 @@ Width: 926
 VWidth: 1454
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "mlm-reph" 514 565 basechar 0
+AnchorPoint: "mlm-reph" 510 565 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -114753,7 +114779,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" dha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" dha_mal r_voc_mal
-LCarets2: 1 0 
+LCarets2: 1 717 
 EndChar
 
 StartChar: mal_dhrii
@@ -114762,7 +114788,7 @@ Width: 926
 VWidth: 1454
 GlyphClass: 3
 Flags: HMW
-AnchorPoint: "mlm-reph" 504 565 basechar 0
+AnchorPoint: "mlm-reph" 509 565 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -114803,7 +114829,7 @@ SplineSet
  484 -119 443 -93 414 -93 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 1 718 
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" dha_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" dha_mal rr_voc_mal
 EndChar
@@ -114813,6 +114839,7 @@ Encoding: 60818 -1 4662
 Width: 1077
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 960 -122 basechar 0
@@ -114850,7 +114877,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" dha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala dha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres dha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" dha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 883 
 EndChar
 
 StartChar: mal_nu
@@ -114858,6 +114885,7 @@ Encoding: 60820 -1 4663
 Width: 1027
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -114893,7 +114921,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" na_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" na_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" na_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 833 
 EndChar
 
 StartChar: mal_nuu
@@ -114901,6 +114929,7 @@ Encoding: 60821 -1 4664
 Width: 1183
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -114943,7 +114972,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" na_mal ZWJ uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" na_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" na_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 899 
 EndChar
 
 StartChar: mal_nri
@@ -114951,6 +114980,7 @@ Encoding: 60822 -1 4665
 Width: 961
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -114986,7 +115016,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" na_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" na_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" na_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 809 
 EndChar
 
 StartChar: mal_nrii
@@ -114994,6 +115024,7 @@ Encoding: 60823 -1 4666
 Width: 961
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -115033,7 +115064,7 @@ SplineSet
  515 -108 474 -92 444 -92 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 834 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" na_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" na_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" na_mal rr_voc_mal
@@ -115044,6 +115075,7 @@ Encoding: 60824 -1 4667
 Width: 1096
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 674 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 970 -140 basechar 0
@@ -115077,7 +115109,7 @@ Validated: 3073
 Ligature2: "'psts' ra-tail in Malayalam-single" na_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala na_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres na_mal
-LCarets2: 2 0 0 
+LCarets2: 1 957 
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" na_mal ZWJ mal_ra.half
 EndChar
 
@@ -115086,6 +115118,7 @@ Encoding: 60826 -1 4668
 Width: 852
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -115122,7 +115155,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" pa_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" pa_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" pa_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 694 
 EndChar
 
 StartChar: mal_prii
@@ -115130,6 +115163,7 @@ Encoding: 60827 -1 4669
 Width: 852
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -115170,7 +115204,7 @@ SplineSet
  516 -114 476 -87 445 -87 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 737 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" pa_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" pa_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" pa_mal rr_voc_mal
@@ -115181,6 +115215,7 @@ Encoding: 60828 -1 4670
 Width: 1008
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 634 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 900 -170 basechar 0
@@ -115215,7 +115250,7 @@ Validated: 3073
 Ligature2: "'psts' ra-tail in Malayalam-single" pa_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala pa_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres pa_mal
-LCarets2: 2 0 0 
+LCarets2: 1 845 
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" pa_mal ZWJ mal_ra.half
 EndChar
 
@@ -115224,6 +115259,7 @@ Encoding: 60830 -1 4671
 Width: 1299
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 744 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1170 -170 basechar 0
@@ -115266,7 +115302,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" pha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala pha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres pha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" pha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1157 
 EndChar
 
 StartChar: mal_bri
@@ -115274,6 +115310,7 @@ Encoding: 60832 -1 4672
 Width: 1202
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 724 565 basechar 0
 LayerCount: 2
@@ -115323,7 +115360,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ba_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ba_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ba_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1088 
 EndChar
 
 StartChar: mal_bra
@@ -115331,6 +115368,7 @@ Encoding: 60833 -1 4673
 Width: 1364
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 914 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1240 -160 basechar 0
@@ -115379,7 +115417,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ba_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ba_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ba_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ba_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1215 
 EndChar
 
 StartChar: mal_bhu
@@ -115387,6 +115425,7 @@ Encoding: 60835 -1 4674
 Width: 626
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 384 565 basechar 0
 LayerCount: 2
@@ -115428,7 +115467,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" bha_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" bha_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" bha_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 480 
 EndChar
 
 StartChar: mal_bhuu
@@ -115436,6 +115475,7 @@ Encoding: 60836 -1 4675
 Width: 791
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 544 565 basechar 0
 LayerCount: 2
@@ -115482,7 +115522,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" bha_mal ZWJ uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" bha_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" bha_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 611 
 EndChar
 
 StartChar: mal_bhri
@@ -115490,6 +115530,7 @@ Encoding: 60837 -1 4676
 Width: 647
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 394 565 basechar 0
 LayerCount: 2
@@ -115530,7 +115571,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" bha_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" bha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" bha_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 509 
 EndChar
 
 StartChar: mal_bhrii
@@ -115538,6 +115579,7 @@ Encoding: 60838 -1 4677
 Width: 647
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 394 565 basechar 0
 LayerCount: 2
@@ -115582,7 +115624,7 @@ SplineSet
  486 -105 469 -86 438 -86 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 2 0 0 
+LCarets2: 1 529 
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" bha_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" bha_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" bha_mal rr_voc_mal
@@ -115593,6 +115635,7 @@ Encoding: 60839 -1 4678
 Width: 757
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 484 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 630 -200 basechar 0
@@ -115632,7 +115675,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" bha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala bha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres bha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" bha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 643 
 EndChar
 
 StartChar: mal_mri
@@ -115640,6 +115683,7 @@ Encoding: 60841 -1 4679
 Width: 635
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 364 565 basechar 0
 LayerCount: 2
@@ -115677,7 +115721,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ma_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ma_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ma_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 517 
 EndChar
 
 StartChar: mal_mrii
@@ -115685,6 +115729,7 @@ Encoding: 60842 -1 4680
 Width: 627
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 354 565 basechar 0
 LayerCount: 2
@@ -115729,7 +115774,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ma_mal ZWJ rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ra_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" ma_mal rr_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 510 
 EndChar
 
 StartChar: mal_mra
@@ -115737,6 +115782,7 @@ Encoding: 60843 -1 4681
 Width: 808
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 690 -190 basechar 0
@@ -115773,7 +115819,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ma_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ma_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ma_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ma_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 666 
 EndChar
 
 StartChar: mal_yri
@@ -115781,6 +115827,7 @@ Encoding: 60845 -1 4682
 Width: 1017
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 594 565 basechar 0
 LayerCount: 2
@@ -115827,7 +115874,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ya_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ya_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ya_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 836 
 EndChar
 
 StartChar: mal_ru
@@ -115835,6 +115882,7 @@ Encoding: 60848 -1 4683
 Width: 983
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -115878,7 +115926,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ra_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ra_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ra_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 839 
 EndChar
 
 StartChar: mal_ruu
@@ -115886,6 +115934,7 @@ Encoding: 60849 -1 4684
 Width: 1130
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 674 565 basechar 0
 LayerCount: 2
@@ -115931,7 +115980,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ra_mal ZWJ uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ra_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ra_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 945 
 EndChar
 
 StartChar: mal_rri
@@ -115939,6 +115988,7 @@ Encoding: 60850 -1 4685
 Width: 876
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 404 565 basechar 0
 LayerCount: 2
@@ -115978,7 +116028,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" rra_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ra_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ra_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 720 
 EndChar
 
 StartChar: mal_lri
@@ -115986,6 +116036,7 @@ Encoding: 60852 -1 4686
 Width: 852
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -116024,7 +116075,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" la_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" la_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" la_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 752 
 EndChar
 
 StartChar: mal_vri
@@ -116032,6 +116083,7 @@ Encoding: 60854 -1 4687
 Width: 878
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -116068,7 +116120,6 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" va_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" va_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" va_mal r_voc_mal
-LCarets2: 2 0 0 
 EndChar
 
 StartChar: mal_vra
@@ -116076,6 +116127,7 @@ Encoding: 60855 -1 4688
 Width: 1029
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 554 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 910 -170 basechar 0
@@ -116110,7 +116162,7 @@ Validated: 3073
 Ligature2: "'psts' ra-tail in Malayalam-single" va_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala va_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres va_mal
-LCarets2: 2 0 0 
+LCarets2: 1 913 
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" va_mal ZWJ mal_ra.half
 EndChar
 
@@ -116119,6 +116171,7 @@ Encoding: 60857 -1 4689
 Width: 1043
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -116166,7 +116219,6 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" sha_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" sha_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" sha_mal u_mal
-LCarets2: 2 0 0 
 EndChar
 
 StartChar: mal_shuu
@@ -116174,6 +116226,7 @@ Encoding: 60858 -1 4690
 Width: 1056
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -116228,7 +116281,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" sha_mal ZWJ uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" sha_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" sha_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 908 
 EndChar
 
 StartChar: mal_shri
@@ -116236,6 +116289,7 @@ Encoding: 60859 -1 4691
 Width: 1192
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 514 565 basechar 0
 LayerCount: 2
@@ -116282,7 +116336,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" sha_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" sha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" sha_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1048 
 EndChar
 
 StartChar: mal_shra
@@ -116290,6 +116344,7 @@ Encoding: 60860 -1 4692
 Width: 1337
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 694 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1202 -130 basechar 0
@@ -116335,7 +116390,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" sha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala sha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres sha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" sha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1197 
 EndChar
 
 StartChar: mal_ssri
@@ -116343,6 +116398,7 @@ Encoding: 60862 -1 4693
 Width: 1108
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 654 565 basechar 0
 LayerCount: 2
@@ -116394,7 +116450,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ssa_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ssa_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ssa_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 999 
 EndChar
 
 StartChar: mal_ssra
@@ -116402,6 +116458,7 @@ Encoding: 60863 -1 4694
 Width: 1252
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 804 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1140 -160 basechar 0
@@ -116452,7 +116509,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ssa_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ssa_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ssa_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ssa_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1150 
 EndChar
 
 StartChar: mal_sri
@@ -116460,6 +116517,7 @@ Encoding: 60864 -1 4695
 Width: 1292
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 704 565 basechar 0
 LayerCount: 2
@@ -116505,7 +116563,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" sa_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" sa_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" sa_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1079 
 EndChar
 
 StartChar: mal_srii
@@ -116513,6 +116571,7 @@ Encoding: 60865 -1 4696
 Width: 1292
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 694 565 basechar 0
 LayerCount: 2
@@ -116562,7 +116621,7 @@ SplineSet
  761 -90 727 -107 727 -133 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 1 1067 
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" sa_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" sa_mal rr_voc_mal
 EndChar
@@ -116572,6 +116631,7 @@ Encoding: 60866 -1 4697
 Width: 1447
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 834 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1330 -100 basechar 0
@@ -116615,7 +116675,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" sa_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala sa_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres sa_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" sa_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1231 
 EndChar
 
 StartChar: mal_hu
@@ -116664,7 +116724,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ha_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ha_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ha_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 2 934 0 
 EndChar
 
 StartChar: mal_huu
@@ -116720,7 +116780,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" ha_mal ZWJ uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ha_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ha_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 2 929 0 
 EndChar
 
 StartChar: mal_hri
@@ -116768,7 +116828,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc simple in Malayalam Reformed" ha_mal ZWJ r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ha_mal r_voc_mal
-LCarets2: 2 0 0 
+LCarets2: 2 994 0 
 EndChar
 
 StartChar: mal_hra
@@ -116815,7 +116875,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 3 1163 0 0 
 EndChar
 
 StartChar: mal_kassa
@@ -116823,6 +116883,7 @@ Encoding: 60880 -1 4702
 Width: 1461
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 AnchorPoint: "mal-below" 1461 -22 basechar 0
@@ -116893,7 +116954,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ka_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ka_mal ZWJ mal_ssa.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ka_mal mal_ssa.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ka_mal candrakala ssa_mal
-LCarets2: 2 0 0 
+LCarets2: 1 896 
 EndChar
 
 StartChar: mal_kassri
@@ -116901,6 +116962,7 @@ Encoding: 60881 -1 4703
 Width: 1461
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -116978,7 +117040,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ka_mal ZWJ mal_ssa.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ka_mal mal_ssa.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_kassa r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 897 1347 
 EndChar
 
 StartChar: mal_kaka
@@ -116986,6 +117048,7 @@ Encoding: 60884 -1 4704
 Width: 1194
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 804 565 basechar 0
 AnchorPoint: "mal-below" 1194 -22 basechar 0
@@ -117045,7 +117108,7 @@ Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" ka_mal mal_ka.half
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ka_mal ZWJ mal_ka.half
 Ligature2: "'akhn' cons pair in Malayalam" ka_mal candrakala ka_mal
-LCarets2: 2 0 0 
+LCarets2: 1 693 
 EndChar
 
 StartChar: mal_kaku
@@ -117053,6 +117116,7 @@ Encoding: 60885 -1 4705
 Width: 1217
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 834 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1130 0 basechar 0
@@ -117117,7 +117181,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ka_mal ZWJ mal_ka.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" mal_kaka u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_kaka u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 708 1008 
 EndChar
 
 StartChar: mal_kakuu
@@ -117125,6 +117189,7 @@ Encoding: 60886 -1 4706
 Width: 1104
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 744 565 basechar 0
 LayerCount: 2
@@ -117194,7 +117259,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ka_mal ZWJ mal_ka.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_kaka uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 639 920 
 EndChar
 
 StartChar: mal_kakri
@@ -117202,6 +117267,7 @@ Encoding: 60887 -1 4707
 Width: 1200
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 804 565 basechar 0
 LayerCount: 2
@@ -117265,7 +117331,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ka_mal ZWJ mal_ka.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ka_mal mal_ra.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_kaka r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 708 1037 
 EndChar
 
 StartChar: mal_kakra
@@ -117273,6 +117339,7 @@ Encoding: 60888 -1 4708
 Width: 1356
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 964 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1220 -122 basechar 0
@@ -117336,7 +117403,7 @@ Ligature2: "form ZWNJ ra-tail complex in Malayalam" ka_mal ZWNJ candrakala ka_ma
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ka_mal ZWJ mal_ka.half mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_kaka ZWJ mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_kaka
-LCarets2: 3 0 0 0 
+LCarets2: 2 674 1221 
 EndChar
 
 StartChar: mal_kata
@@ -117344,6 +117411,7 @@ Encoding: 60890 -1 4709
 Width: 1673
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 914 565 basechar 0
 AnchorPoint: "mal-below" 1574 -22 basechar 0
@@ -117415,7 +117483,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ka_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ka_mal ZWJ mal_ta.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ka_mal mal_ta.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ka_mal candrakala ta_mal
-LCarets2: 2 0 0 
+LCarets2: 1 882 
 EndChar
 
 StartChar: mal_katu
@@ -117423,6 +117491,7 @@ Encoding: 60891 -1 4710
 Width: 1510
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 834 565 basechar 0
 LayerCount: 2
@@ -117499,7 +117568,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ka_mal ZWJ mal_ta.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ka_mal mal_ta.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_kata u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 797 1368 
 EndChar
 
 StartChar: mal_katuu
@@ -117507,6 +117576,7 @@ Encoding: 60892 -1 4711
 Width: 1506
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 794 565 basechar 0
 LayerCount: 2
@@ -117588,7 +117658,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ka_mal ZWJ mal_ta.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ka_mal mal_ta.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_kata uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 743 1317 
 EndChar
 
 StartChar: mal_katri
@@ -117596,6 +117666,7 @@ Encoding: 60893 -1 4712
 Width: 1673
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -117670,7 +117741,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ka_mal mal_ta.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_kata r_voc_mal
-LCarets2: 1 0 
+LCarets2: 2 872 1518 
 EndChar
 
 StartChar: mal_katrii
@@ -117678,6 +117749,7 @@ Encoding: 60894 -1 4713
 Width: 1675
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -117755,7 +117827,7 @@ SplineSet
  157 106 190 55 244 55 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 2 875 1506 
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ka_mal mal_ta.half rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_kata rr_voc_mal
 EndChar
@@ -117765,6 +117837,7 @@ Encoding: 60895 -1 4714
 Width: 1815
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1044 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1690 -90 basechar 0
@@ -117840,7 +117913,7 @@ Ligature2: "'psts' ra-tail in Malayalam-conj" mal_kata mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" ka_mal ZWNJ candrakala ta_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_kata
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ka_mal ZWJ mal_ta.half mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 1040 1647 
 EndChar
 
 StartChar: mal_gagha
@@ -117848,6 +117921,7 @@ Encoding: 60896 -1 4715
 Width: 1704
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1024 565 basechar 0
 AnchorPoint: "mal-below" 1704 -22 basechar 0
@@ -117897,7 +117971,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ga_mal ZWJ mal_gha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal mal_gha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ga_mal candrakala gha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 888 
 EndChar
 
 StartChar: mal_gaghri
@@ -117905,6 +117979,7 @@ Encoding: 60897 -1 4716
 Width: 1704
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1054 565 basechar 0
 LayerCount: 2
@@ -117962,7 +118037,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ga_mal ZWJ mal_gha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ga_mal mal_gha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_gagha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 882 1602 
 EndChar
 
 StartChar: mal_gada
@@ -117970,6 +118045,7 @@ Encoding: 60899 -1 4717
 Width: 908
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 524 565 basechar 0
 AnchorPoint: "mal-below" 907 -22 basechar 0
@@ -118008,14 +118084,15 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ga_mal ZWJ mal_da.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal mal_da.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ga_mal candrakala da_mal
-LCarets2: 2 0 0 
+LCarets2: 1 591 
 EndChar
 
 StartChar: mal_gadri
 Encoding: 60900 -1 4718
-Width: 932
+Width: 935
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 524 565 basechar 0
 LayerCount: 2
@@ -118057,7 +118134,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ga_mal ZWJ mal_da.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ga_mal mal_da.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_gada r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 596 767 
 EndChar
 
 StartChar: mal_gadadha
@@ -118065,6 +118142,7 @@ Encoding: 60902 -1 4719
 Width: 1507
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 744 565 basechar 0
 AnchorPoint: "mal-below" 1504 -22 basechar 0
@@ -118117,7 +118195,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-3" ga_mal mal_da.half mal_dha.half
 Ligature2: "'akhn' cons trio in Malayalam" ga_mal candrakala da_mal candrakala dha_mal
-LCarets2: 4 0 0 0 0 
+LCarets2: 2 626 950 
 EndChar
 
 StartChar: mal_gadadhri
@@ -118125,6 +118203,7 @@ Encoding: 60903 -1 4720
 Width: 1505
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 744 565 basechar 0
 LayerCount: 2
@@ -118186,7 +118265,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ga_mal ZWJ mal_da.half mal_dha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ga_mal mal_da.half mal_dha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_gadadha r_voc_mal
-LCarets2: 4 0 0 0 0 
+LCarets2: 3 623 954 1289 
 EndChar
 
 StartChar: mal_gadadhra
@@ -118194,6 +118273,7 @@ Encoding: 60904 -1 4721
 Width: 1666
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 884 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1540 -100 basechar 0
@@ -118254,7 +118334,7 @@ Ligature2: "'psts' ra-tail in Malayalam-conj" mal_gadadha mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" ga_mal ZWNJ candrakala mal_dadha mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ga_mal ZWJ candrakala da_mal mal_dha.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-3" mal_ra.pres mal_gadadha
-LCarets2: 4 0 0 0 0 
+LCarets2: 3 774 1107 1458 
 EndChar
 
 StartChar: mal_gana
@@ -118262,6 +118342,7 @@ Encoding: 60906 -1 4722
 Width: 1255
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 674 565 basechar 0
 AnchorPoint: "mal-below" 1254 -22 basechar 0
@@ -118299,14 +118380,15 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ga_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ga_mal ZWJ mal_na.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal mal_na.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ga_mal candrakala na_mal
-LCarets2: 2 0 0 
+LCarets2: 1 633 
 EndChar
 
 StartChar: mal_ganu
 Encoding: 60907 -1 4723
-Width: 1341
+Width: 1343
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 674 565 basechar 0
 LayerCount: 2
@@ -118348,7 +118430,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ga_mal ZWJ mal_na.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ga_mal mal_na.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_gana u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 626 1167 
 EndChar
 
 StartChar: mal_ganuu
@@ -118356,6 +118438,7 @@ Encoding: 60908 -1 4724
 Width: 1472
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 LayerCount: 2
@@ -118404,7 +118487,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ga_mal ZWJ mal_na.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ga_mal mal_na.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_gana uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 602 1323 
 EndChar
 
 StartChar: mal_gama
@@ -118412,6 +118495,7 @@ Encoding: 60910 -1 4725
 Width: 1041
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 564 565 basechar 0
 AnchorPoint: "mal-below" 1041 -22 basechar 0
@@ -118448,7 +118532,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ga_mal ZWJ mal_ma.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal mal_ma.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ga_mal candrakala ma_mal
-LCarets2: 2 0 0 
+LCarets2: 1 546 
 EndChar
 
 StartChar: mal_ngaka
@@ -118456,6 +118540,7 @@ Encoding: 60912 -1 4726
 Width: 958
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 434 565 basechar 0
 AnchorPoint: "mal-below" 954 -22 basechar 0
@@ -118516,7 +118601,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" nga_mal mal_ka.half
 Ligature2: "'akhn' cons pair in Malayalam" nga_mal candrakala ka_mal
-LCarets2: 2 0 0 
+LCarets2: 1 445 
 EndChar
 
 StartChar: mal_ngaku
@@ -118524,6 +118609,7 @@ Encoding: 60913 -1 4727
 Width: 966
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 424 565 basechar 0
 LayerCount: 2
@@ -118591,7 +118677,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" nga_mal ZWJ mal_ka.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" mal_ngaka u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_ngaka u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 435 786 
 EndChar
 
 StartChar: mal_ngakuu
@@ -118599,6 +118685,7 @@ Encoding: 60914 -1 4728
 Width: 941
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 414 565 basechar 0
 LayerCount: 2
@@ -118671,7 +118758,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" nga_mal ZWJ mal_ka.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" mal_ngaka uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_ngaka uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 434 769 
 EndChar
 
 StartChar: mal_ngakri
@@ -118679,6 +118766,7 @@ Encoding: 60915 -1 4729
 Width: 960
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 414 565 basechar 0
 LayerCount: 2
@@ -118743,7 +118831,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" nga_mal ZWJ mal_ka.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_ngaka r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_ngaka r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 431 818 
 EndChar
 
 StartChar: mal_nganga
@@ -118751,6 +118839,7 @@ Encoding: 60917 -1 4730
 Width: 1399
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 754 565 basechar 0
 AnchorPoint: "mal-below" 1394 -22 basechar 0
@@ -118763,7 +118852,7 @@ SplineSet
  146 -11 90 70 90 233 c 0
  90 438 250 558 461 558 c 0
  553 558 618 548 655 529 c 1
- 684 547 728 558 787 558 c 0
+ 684 547.265 729.5 558 787 558 c 0
  877 558 943 532 986 483 c 1
  1021 533 1086 558 1182 558 c 0
  1292 558 1399 491 1399 386 c 0
@@ -118780,7 +118869,7 @@ SplineSet
  1192 298 l 2
  1279 298 1322 327 1322 383 c 0
  1322 447 1253 488 1184 488 c 0
- 1098 488 1026 449 1026 369 c 2
+ 1098 488 1026 448.667 1026 369 c 2
  1026 0 l 1
  943 0 l 1
  943 369 l 2
@@ -118815,7 +118904,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" nga_mal mal_nga.half
 Ligature2: "'akhn' cons pair in Malayalam" nga_mal candrakala nga_mal
-LCarets2: 2 0 0 
+LCarets2: 1 713 
 EndChar
 
 StartChar: mal_caca
@@ -118823,6 +118912,7 @@ Encoding: 60919 -1 4731
 Width: 865
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 474 565 basechar 0
 AnchorPoint: "mal-below" 865 -207 basechar 0
@@ -118859,7 +118949,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" ca_mal mal_ca.half
 Ligature2: "'akhn' cons pair in Malayalam" ca_mal candrakala ca_mal
-LCarets2: 2 0 0 
+LCarets2: 1 603 
 EndChar
 
 StartChar: mal_jaja
@@ -118867,6 +118957,7 @@ Encoding: 60921 -1 4732
 Width: 1636
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 914 565 basechar 0
 AnchorPoint: "mal-below" 1624 -22 basechar 0
@@ -118954,7 +119045,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ja_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ja_mal ZWJ mal_ja.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ja_mal mal_ja.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ja_mal candrakala ja_mal
-LCarets2: 2 0 0 
+LCarets2: 1 899 
 EndChar
 
 StartChar: mal_jaju
@@ -118962,6 +119053,7 @@ Encoding: 60922 -1 4733
 Width: 1762
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -119060,14 +119152,15 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ja_mal ZWJ mal_ja.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ja_mal mal_ja.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_jaja u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 890 1644 
 EndChar
 
 StartChar: mal_jajuu
 Encoding: 60923 -1 4734
-Width: 1784
+Width: 1787
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -119175,7 +119268,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ja_mal ZWJ mal_ja.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ja_mal mal_ja.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_jaja uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 882 1637 
 EndChar
 
 StartChar: mal_jajri
@@ -119183,6 +119276,7 @@ Encoding: 60924 -1 4735
 Width: 1800
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -119277,7 +119371,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ja_mal ZWJ mal_ja.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ja_mal mal_ja.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_jaja r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 885 1638 
 EndChar
 
 StartChar: mal_janya
@@ -119285,6 +119379,7 @@ Encoding: 60926 -1 4736
 Width: 2114
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 994 565 basechar 0
 AnchorPoint: "mal-below" 2114 -22 basechar 0
@@ -119366,7 +119461,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ja_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ja_mal ZWJ mal_nya.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ja_mal mal_nya.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ja_mal candrakala nya_mal
-LCarets2: 2 0 0 
+LCarets2: 1 869 
 EndChar
 
 StartChar: mal_nyaca
@@ -119374,6 +119469,7 @@ Encoding: 60928 -1 4737
 Width: 1504
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 814 565 basechar 0
 AnchorPoint: "mal-below" 1504 -22 basechar 0
@@ -119428,7 +119524,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" nya_mal ZWJ mal_ca.half
 Ligature2: "'akhn' cons pair in Malayalam" nya_mal candrakala ca_mal
-LCarets2: 2 0 0 
+LCarets2: 1 900 
 EndChar
 
 StartChar: mal_nyacri
@@ -119436,6 +119532,7 @@ Encoding: 60929 -1 4738
 Width: 1504
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 804 565 basechar 0
 LayerCount: 2
@@ -119499,7 +119596,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" nya_mal ZWJ mal_ca.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" nya_mal mal_ca.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nyaca r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 903 1394 
 EndChar
 
 StartChar: mal_nyacha
@@ -119507,6 +119604,7 @@ Encoding: 60931 -1 4739
 Width: 2017
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1014 565 basechar 0
 AnchorPoint: "mal-below" 2014 -22 basechar 0
@@ -119578,7 +119676,7 @@ Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" nya_mal 
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" nya_mal ZWJ mal_cha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nya_mal mal_cha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" nya_mal candrakala cha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 963 
 EndChar
 
 StartChar: mal_nyachu
@@ -119586,6 +119684,7 @@ Encoding: 60932 -1 4740
 Width: 2155
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1034 565 basechar 0
 LayerCount: 2
@@ -119665,7 +119764,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" nya_mal ZWJ mal_cha.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nyacha u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 963 1989 
 EndChar
 
 StartChar: mal_nyachuu
@@ -119673,6 +119772,7 @@ Encoding: 60933 -1 4741
 Width: 2180
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1024 565 basechar 0
 LayerCount: 2
@@ -119761,7 +119861,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" nya_mal ZWJ mal_cha.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nyacha uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 955 2022 
 EndChar
 
 StartChar: mal_nyachri
@@ -119769,6 +119869,7 @@ Encoding: 60934 -1 4742
 Width: 2148
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1024 565 basechar 0
 LayerCount: 2
@@ -119848,7 +119949,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" nya_mal ZWJ mal_cha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_nyacha r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nyacha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 950 1989 
 EndChar
 
 StartChar: mal_nyaja
@@ -119856,6 +119957,7 @@ Encoding: 60936 -1 4743
 Width: 1541
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 894 565 basechar 0
 AnchorPoint: "mal-below" 1534 -22 basechar 0
@@ -119928,7 +120030,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" nya_mal ZWJ mal_ja.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nya_mal mal_ja.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" nya_mal candrakala ja_mal
-LCarets2: 2 0 0 
+LCarets2: 1 888 
 EndChar
 
 StartChar: mal_nyaju
@@ -119936,6 +120038,7 @@ Encoding: 60937 -1 4744
 Width: 1668
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -120018,7 +120121,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" nya_mal ZWJ mal_ja.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nyaja u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 893 1539 
 EndChar
 
 StartChar: mal_nyajuu
@@ -120026,6 +120129,7 @@ Encoding: 60938 -1 4745
 Width: 1695
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 894 565 basechar 0
 LayerCount: 2
@@ -120115,7 +120219,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" nya_mal ZWJ mal_ja.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nyaja uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 894 1566 
 EndChar
 
 StartChar: mal_nyanya
@@ -120123,6 +120227,7 @@ Encoding: 60940 -1 4746
 Width: 2021
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1054 565 basechar 0
 AnchorPoint: "mal-below" 2014 -22 basechar 0
@@ -120191,7 +120296,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" nya_mal mal_nya.half
 Ligature2: "'akhn' cons pair in Malayalam" nya_mal candrakala nya_mal
-LCarets2: 2 0 0 
+LCarets2: 1 989 
 EndChar
 
 StartChar: mal_ttatta
@@ -120199,6 +120304,7 @@ Encoding: 60942 -1 4747
 Width: 589
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 324 565 basechar 0
 AnchorPoint: "mal-below" 589 -202 basechar 0
@@ -120234,7 +120340,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" tta_mal mal_tta.half
 Ligature2: "'akhn' cons pair in Malayalam" tta_mal candrakala tta_mal
-LCarets2: 2 0 0 
+LCarets2: 1 353 
 EndChar
 
 StartChar: mal_nnatta
@@ -120242,6 +120348,7 @@ Encoding: 60944 -1 4748
 Width: 1354
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 924 565 basechar 0
 AnchorPoint: "mal-below" 1354 -22 basechar 0
@@ -120298,7 +120405,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" nna_mal mal_tta.half
 Ligature2: "'akhn' cons pair in Malayalam" nna_mal candrakala tta_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1025 
 EndChar
 
 StartChar: mal_nnattra
@@ -120306,6 +120413,7 @@ Encoding: 60945 -1 4749
 Width: 1515
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1084 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1380 -170 basechar 0
@@ -120368,7 +120476,7 @@ Ligature2: "form ZWNJ ra-tail complex in Malayalam" nna_mal ZWNJ candrakala tta_
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_nnatta ZWJ mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nnatta
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" nna_mal ZWJ mal_tta.half mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 1193 1410 
 EndChar
 
 StartChar: mal_nnadda
@@ -120376,6 +120484,7 @@ Encoding: 60947 -1 4750
 Width: 2044
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1244 565 basechar 0
 AnchorPoint: "mal-below" 2044 -22 basechar 0
@@ -120433,7 +120542,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" nna_mal mal
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" nna_mal ZWJ mal_dda.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nna_mal mal_dda.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" nna_mal candrakala dda_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1257 
 EndChar
 
 StartChar: mal_nnaddri
@@ -120441,6 +120550,7 @@ Encoding: 60948 -1 4751
 Width: 2043
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1254 565 basechar 0
 LayerCount: 2
@@ -120505,7 +120615,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" nna_mal ZWJ mal_dda.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" nna_mal mal_dda.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nnadda r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 1257 1845 
 EndChar
 
 StartChar: mal_nnaddra
@@ -120513,6 +120623,7 @@ Encoding: 60949 -1 4752
 Width: 2212
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1414 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 2070 -80 basechar 0
@@ -120577,7 +120688,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'psts' ra-tail in Malayalam-conj" mal_nnadda mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 1419 2009 
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" nna_mal ZWNJ candrakala dda_mal mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" nna_mal ZWJ mal_dda.half mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nnadda
@@ -120588,6 +120699,7 @@ Encoding: 60951 -1 4753
 Width: 2119
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1264 565 basechar 0
 AnchorPoint: "mal-below" 2104 -22 basechar 0
@@ -120650,7 +120762,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" nna_mal ZWJ mal_ddha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nna_mal mal_ddha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" nna_mal candrakala ddha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1274 
 EndChar
 
 StartChar: mal_nnaddhri
@@ -120658,6 +120770,7 @@ Encoding: 60952 -1 4754
 Width: 2094
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1254 565 basechar 0
 LayerCount: 2
@@ -120699,7 +120812,7 @@ SplineSet
  600 532 659 558 748 558 c 0
  835 558 893 532 922 471 c 1
  953 530 1011 558 1095 558 c 0
- 1225 558 1290 487 1291 343 c 1
+ 1225 558 1290 487 1291 343 c 2
  1291 218 l 2
  1291 133 1354 71 1440 71 c 0
  1517 71 1575 127 1575 204 c 2
@@ -120728,7 +120841,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" nna_mal ZWJ mal_ddha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" nna_mal mal_ddha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nnaddha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 1250 1944 
 EndChar
 
 StartChar: mal_nnama
@@ -120736,6 +120849,7 @@ Encoding: 60954 -1 4755
 Width: 1440
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 934 565 basechar 0
 AnchorPoint: "mal-below" 1440 -22 basechar 0
@@ -120786,14 +120900,15 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" nna_mal mal
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" nna_mal ZWJ mal_ma.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" nna_mal mal_ma.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" nna_mal candrakala ma_mal
-LCarets2: 2 0 0 
+LCarets2: 1 930 
 EndChar
 
 StartChar: mal_tata
 Encoding: 60960 -1 4756
-Width: 1604
+Width: 1605
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 854 565 basechar 0
 AnchorPoint: "mal-below" 1604 -22 basechar 0
@@ -120851,7 +120966,7 @@ Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" ta_mal m
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ta_mal ZWJ mal_ta.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ta_mal candrakala ta_mal
 Ligature2: "'akhn' cons pair in Malayalam" ta_mal candrakala ta_mal
-LCarets2: 2 0 0 
+LCarets2: 1 843 
 EndChar
 
 StartChar: mal_tatu
@@ -120859,6 +120974,7 @@ Encoding: 60961 -1 4757
 Width: 1463
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 774 565 basechar 0
 LayerCount: 2
@@ -120921,7 +121037,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ta_mal ZWJ mal_ta.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ta_mal mal_ta.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_tata u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 774 1311 
 EndChar
 
 StartChar: mal_tatuu
@@ -120929,6 +121045,7 @@ Encoding: 60962 -1 4758
 Width: 1479
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 774 565 basechar 0
 LayerCount: 2
@@ -120998,7 +121115,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ta_mal ZWJ mal_ta.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ta_mal mal_ta.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_tata uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 771 1284 
 EndChar
 
 StartChar: mal_tatri
@@ -121006,6 +121123,7 @@ Encoding: 60963 -1 4759
 Width: 1612
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 844 565 basechar 0
 LayerCount: 2
@@ -121067,7 +121185,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_ta.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_tata r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tata r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 846 1439 
 EndChar
 
 StartChar: mal_tatrii
@@ -121075,6 +121193,7 @@ Encoding: 60964 -1 4760
 Width: 1612
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 844 565 basechar 0
 LayerCount: 2
@@ -121141,7 +121260,7 @@ SplineSet
  405 109 444 55 522 55 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 3 0 0 0 
+LCarets2: 2 846 1400 
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_ta.half rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_tata rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_tata rr_voc_mal
@@ -121152,6 +121271,7 @@ Encoding: 60965 -1 4761
 Width: 1774
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1014 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1620 -100 basechar 0
@@ -121213,7 +121333,7 @@ Ligature2: "form ZWNJ ra-tail complex in Malayalam" ta_mal ZWNJ candrakala ta_ma
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ta_mal ZWJ mal_ta.half mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_tata ZWJ mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_tata
-LCarets2: 3 0 0 0 
+LCarets2: 2 1008 1605 
 EndChar
 
 StartChar: mal_tatha
@@ -121221,6 +121341,7 @@ Encoding: 60967 -1 4762
 Width: 1534
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 834 565 basechar 0
 AnchorPoint: "mal-below" 1534 -22 basechar 0
@@ -121270,7 +121391,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ta_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ta_mal ZWJ mal_tha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ta_mal mal_tha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ta_mal candrakala tha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 900 
 EndChar
 
 StartChar: mal_tathri
@@ -121278,6 +121399,7 @@ Encoding: 60968 -1 4763
 Width: 1534
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 834 565 basechar 0
 LayerCount: 2
@@ -121334,7 +121456,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_tha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ta_mal mal_tha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tatha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 894 1416 
 EndChar
 
 StartChar: mal_tana
@@ -121342,6 +121464,7 @@ Encoding: 60970 -1 4764
 Width: 1278
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 674 565 basechar 0
 AnchorPoint: "mal-below" 1274 -22 basechar 0
@@ -121384,14 +121507,15 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ta_mal ZWJ mal_na.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ta_mal candrakala na_mal
-LCarets2: 2 0 0 
+LCarets2: 1 732 
 EndChar
 
 StartChar: mal_tabha
 Encoding: 60972 -1 4765
-Width: 1375
+Width: 1379
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 854 565 basechar 0
 AnchorPoint: "mal-below" 1374 -22 basechar 0
@@ -121449,14 +121573,15 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ta_mal ZWJ mal_bha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ta_mal mal_bha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ta_mal candrakala bha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 864 
 EndChar
 
 StartChar: mal_tabhu
 Encoding: 60973 -1 4766
-Width: 1200
+Width: 1204
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 754 565 basechar 0
 LayerCount: 2
@@ -121518,14 +121643,15 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ta_mal ZWJ mal_bha.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ta_mal mal_bha.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_tabha u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 765 1099 
 EndChar
 
 StartChar: mal_tabhra
 Encoding: 60974 -1 4767
-Width: 1500
+Width: 1504
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1044 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1390 -180 basechar 0
@@ -121592,14 +121718,15 @@ Ligature2: "'psts' ra-tail in Malayalam-conj" mal_tabha mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" ta_mal ZWNJ candrakala bha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_tabha
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ta_mal ZWJ mal_bha.half mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 1029 1393 
 EndChar
 
 StartChar: mal_tabhri
 Encoding: 60975 -1 4768
-Width: 1386
+Width: 1384
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 854 565 basechar 0
 LayerCount: 2
@@ -121660,7 +121787,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_bha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ta_mal mal_bha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tabha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 870 1262 
 EndChar
 
 StartChar: mal_tama
@@ -121668,6 +121795,7 @@ Encoding: 60976 -1 4769
 Width: 1390
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 874 565 basechar 0
 AnchorPoint: "mal-below" 1390 -22 basechar 0
@@ -121718,7 +121846,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ta_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ta_mal ZWJ mal_ma.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ta_mal mal_ma.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ta_mal candrakala ma_mal
-LCarets2: 2 0 0 
+LCarets2: 1 873 
 EndChar
 
 StartChar: mal_tamri
@@ -121726,6 +121854,7 @@ Encoding: 60977 -1 4770
 Width: 1390
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 884 565 basechar 0
 LayerCount: 2
@@ -121783,7 +121912,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_ma.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ta_mal mal_ma.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tama r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 888 1272 
 EndChar
 
 StartChar: mal_tasa
@@ -121791,6 +121920,7 @@ Encoding: 60979 -1 4771
 Width: 1678
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 AnchorPoint: "mal-below" 1674 -22 basechar 0
@@ -121841,7 +121971,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ta_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ta_mal ZWJ mal_sa.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ta_mal mal_sa.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ta_mal candrakala sa_mal
-LCarets2: 2 0 0 
+LCarets2: 1 900 
 EndChar
 
 StartChar: mal_tasri
@@ -121849,6 +121979,7 @@ Encoding: 60980 -1 4772
 Width: 1686
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -121906,7 +122037,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_sa.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ta_mal mal_sa.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tasa r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 900 1467 
 EndChar
 
 StartChar: mal_tasrii
@@ -121914,6 +122045,7 @@ Encoding: 60981 -1 4773
 Width: 1686
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
@@ -121975,7 +122107,7 @@ SplineSet
  405 112 444 61 522 61 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 3 0 0 0 
+LCarets2: 2 900 1459 
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_sa.half rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ta_mal mal_sa.half rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_tasa rr_voc_mal
@@ -121986,6 +122118,7 @@ Encoding: 60983 -1 4774
 Width: 2260
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1244 565 basechar 0
 AnchorPoint: "mal-below" 2260 -22 basechar 0
@@ -122047,7 +122180,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-3" ta_mal mal_sa.half mal_tha.half
 Ligature2: "'akhn' cons trio in Malayalam" ta_mal candrakala sa_mal candrakala tha_mal
-LCarets2: 4 0 0 0 0 
+LCarets2: 1 900 
 EndChar
 
 StartChar: mal_tasathri
@@ -122055,6 +122188,7 @@ Encoding: 60984 -1 4775
 Width: 2260
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1244 565 basechar 0
 LayerCount: 2
@@ -122125,7 +122259,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ta_mal ZWJ mal_sa.half mal_tha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ta_mal mal_sa.half mal_tha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tasatha r_voc_mal
-LCarets2: 4 0 0 0 0 
+LCarets2: 3 900 1602 2148 
 EndChar
 
 StartChar: mal_dada
@@ -122133,6 +122267,7 @@ Encoding: 60987 -1 4776
 Width: 621
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 374 565 basechar 0
 AnchorPoint: "mal-below" 621 -222 basechar 0
@@ -122174,7 +122309,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" da_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" da_mal ZWJ mal_da.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" da_mal mal_da.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" da_mal candrakala da_mal
-LCarets2: 2 0 0 
+LCarets2: 1 351 
 EndChar
 
 StartChar: mal_dadri
@@ -122182,6 +122317,7 @@ Encoding: 60988 -1 4777
 Width: 621
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 384 565 basechar 0
 LayerCount: 2
@@ -122225,7 +122361,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" da_mal ZWJ mal_da.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" da_mal mal_da.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_dada r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 339 506 
 EndChar
 
 StartChar: mal_dadrii
@@ -122233,6 +122369,7 @@ Encoding: 60989 -1 4778
 Width: 624
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 384 565 basechar 0
 LayerCount: 2
@@ -122277,7 +122414,7 @@ SplineSet
  389 -198 439 -182 481 -151 c 1
 EndSplineSet
 Validated: 3073
-LCarets2: 3 0 0 0 
+LCarets2: 2 354 509 
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" da_mal ZWJ mal_da.half rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" da_mal mal_da.half rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_dada rr_voc_mal
@@ -122288,6 +122425,7 @@ Encoding: 60992 -1 4779
 Width: 1217
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 644 565 basechar 0
 AnchorPoint: "mal-below" 1214 -22 basechar 0
@@ -122337,7 +122475,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" da_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" da_mal ZWJ mal_dha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" da_mal mal_dha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" da_mal candrakala dha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 609 
 EndChar
 
 StartChar: mal_dadhri
@@ -122345,6 +122483,7 @@ Encoding: 60993 -1 4780
 Width: 1221
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 644 565 basechar 0
 LayerCount: 2
@@ -122397,7 +122536,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" da_mal mal_dha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_dadha r_voc_mal
-LCarets2: 1 0 
+LCarets2: 2 618 1008 
 EndChar
 
 StartChar: mal_dadhrii
@@ -122405,6 +122544,7 @@ Encoding: 60994 -1 4781
 Width: 1221
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 634 565 basechar 0
 LayerCount: 2
@@ -122465,7 +122605,7 @@ SplineSet
  782 -111 740 -90 711 -90 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 2 621 1016 
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" da_mal mal_dha.half rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_dadha rr_voc_mal
 EndChar
@@ -122475,6 +122615,7 @@ Encoding: 60995 -1 4782
 Width: 1367
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 804 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1240 -100 basechar 0
@@ -122529,7 +122670,7 @@ Ligature2: "'psts' ra-tail in Malayalam-conj" mal_dadha mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" da_mal ZWNJ candrakala dha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_dadha
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" da_mal ZWJ mal_dha.half mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 783 1154 
 EndChar
 
 StartChar: mal_nata
@@ -122537,6 +122678,7 @@ Encoding: 60997 -1 4783
 Width: 1269
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 704 565 basechar 0
 AnchorPoint: "mal-below" 1269 -22 basechar 0
@@ -122578,7 +122720,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" na_mal mal_ta.half
-LCarets2: 2 0 0 
+LCarets2: 1 720 
 Ligature2: "'akhn' cons pair in Malayalam" na_mal candrakala ta_mal
 EndChar
 
@@ -122587,6 +122729,7 @@ Encoding: 60998 -1 4784
 Width: 1274
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 714 565 basechar 0
 LayerCount: 2
@@ -122636,7 +122779,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" na_mal ZWJ mal_ta.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" mal_nata u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nata u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 735 1119 
 EndChar
 
 StartChar: mal_natuu
@@ -122644,6 +122787,7 @@ Encoding: 60999 -1 4785
 Width: 1265
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 704 565 basechar 0
 LayerCount: 2
@@ -122700,7 +122844,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" na_mal ZWJ mal_ta.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" mal_nata uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nata uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 738 1073 
 EndChar
 
 StartChar: mal_natri
@@ -122708,6 +122852,7 @@ Encoding: 61000 -1 4786
 Width: 1278
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 704 565 basechar 0
 LayerCount: 2
@@ -122725,7 +122870,7 @@ SplineSet
  744 -256 628 -216 628 -129 c 0
  628 -57 718 -29 801 -29 c 0
  889 -29 1009 -66 1021 -131 c 1
- 1106 -72 1197 86 1197 225 c 0
+ 1106 -72 1197 37.5 1197 225 c 4
  1197 363 1109 488 977 488 c 0
  951 488 928 481 910 475 c 1
  970 434 1034 313 1034 217 c 0
@@ -122756,7 +122901,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" na_mal ZWJ mal_ta.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_nata r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nata r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 735 1096 
 EndChar
 
 StartChar: mal_natrii
@@ -122764,6 +122909,7 @@ Encoding: 61001 -1 4787
 Width: 1278
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 704 565 basechar 0
 LayerCount: 2
@@ -122816,7 +122962,7 @@ SplineSet
  834 -111 791 -93 760 -93 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 3 0 0 0 
+LCarets2: 2 720 1102 
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" na_mal ZWJ mal_ta.half rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_nata rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_nata rr_voc_mal
@@ -122827,6 +122973,7 @@ Encoding: 61002 -1 4788
 Width: 1435
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 864 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1300 -100 basechar 0
@@ -122875,7 +123022,7 @@ Ligature2: "form ZWNJ ra-tail complex in Malayalam" na_mal ZWNJ candrakala ta_ma
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_ta.half mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_nata ZWJ mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nata
-LCarets2: 3 0 0 0 
+LCarets2: 2 885 1279 
 EndChar
 
 StartChar: mal_natha
@@ -122883,6 +123030,7 @@ Encoding: 61004 -1 4789
 Width: 1525
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 864 565 basechar 0
 AnchorPoint: "mal-below" 1525 -22 basechar 0
@@ -122925,7 +123073,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" na_mal ZWJ mal_tha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" na_mal mal_tha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" na_mal candrakala tha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 819 
 EndChar
 
 StartChar: mal_nathri
@@ -122933,6 +123081,7 @@ Encoding: 61005 -1 4790
 Width: 1525
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 874 565 basechar 0
 LayerCount: 2
@@ -122982,7 +123131,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" na_mal mal_tha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_natha r_voc_mal
-LCarets2: 1 0 
+LCarets2: 2 813 1412 
 EndChar
 
 StartChar: mal_nathrii
@@ -122990,6 +123139,7 @@ Encoding: 61006 -1 4791
 Width: 1525
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 884 565 basechar 0
 LayerCount: 2
@@ -123044,7 +123194,7 @@ SplineSet
  1140 -113 1090 -87 1057 -87 c 0
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 2 816 1398 
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" na_mal mal_tha.half rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_natha rr_voc_mal
 EndChar
@@ -123054,6 +123204,7 @@ Encoding: 61008 -1 4792
 Width: 970
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 624 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 850 0 basechar 0
@@ -123093,7 +123244,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" na_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" na_mal ZWJ mal_da.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" na_mal mal_da.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" na_mal candrakala da_mal
-LCarets2: 2 0 0 
+LCarets2: 1 657 
 EndChar
 
 StartChar: mal_nadri
@@ -123101,6 +123252,7 @@ Encoding: 61009 -1 4793
 Width: 1003
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 634 565 basechar 0
 LayerCount: 2
@@ -123143,7 +123295,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" na_mal ZWJ mal_da.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" na_mal mal_da.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nada r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 672 872 
 EndChar
 
 StartChar: mal_nadra
@@ -123151,6 +123303,7 @@ Encoding: 61010 -1 4794
 Width: 1140
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 804 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1010 -170 basechar 0
@@ -123192,7 +123345,7 @@ Ligature2: "'psts' ra-tail in Malayalam-conj" mal_nada mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" na_mal ZWNJ candrakala da_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_dada
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_da.half mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 819 998 
 EndChar
 
 StartChar: mal_nadha
@@ -123200,6 +123353,7 @@ Encoding: 61012 -1 4795
 Width: 1655
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 884 565 basechar 0
 AnchorPoint: "mal-below" 1644 -22 basechar 0
@@ -123244,7 +123398,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" na_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" na_mal ZWJ mal_dha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" na_mal mal_dha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" na_mal candrakala dha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 876 
 EndChar
 
 StartChar: mal_nadhri
@@ -123252,6 +123406,7 @@ Encoding: 61013 -1 4796
 Width: 1655
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 874 565 basechar 0
 LayerCount: 2
@@ -123303,7 +123458,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" na_mal ZWJ mal_dha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" na_mal mal_dha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nadha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 864 1445 
 EndChar
 
 StartChar: mal_nadhra
@@ -123311,6 +123466,7 @@ Encoding: 61014 -1 4797
 Width: 1811
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1044 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1680 -100 basechar 0
@@ -123361,7 +123517,7 @@ Ligature2: "'psts' ra-tail in Malayalam-conj" mal_nadha mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" na_mal ZWNJ candrakala dha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nadha
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_dha.half mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 1044 1603 
 EndChar
 
 StartChar: mal_nana
@@ -123369,6 +123525,7 @@ Encoding: 61015 -1 4798
 Width: 1264
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 684 565 basechar 0
 AnchorPoint: "mal-below" 1264 -22 basechar 0
@@ -123405,7 +123562,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" na_mal mal_na.half
 Ligature2: "'akhn' cons pair in Malayalam" na_mal candrakala na_mal
-LCarets2: 2 0 0 
+LCarets2: 1 684 
 EndChar
 
 StartChar: mal_nanu
@@ -123413,6 +123570,7 @@ Encoding: 61016 -1 4799
 Width: 1365
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 684 565 basechar 0
 LayerCount: 2
@@ -123455,7 +123613,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" na_mal ZWJ mal_na.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" mal_nana u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nana u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 678 1235 
 EndChar
 
 StartChar: mal_nanuu
@@ -123463,6 +123621,7 @@ Encoding: 61017 -1 4800
 Width: 1522
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 684 565 basechar 0
 LayerCount: 2
@@ -123512,7 +123671,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" na_mal ZWJ mal_na.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" mal_nana uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_nana uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 690 1230 
 EndChar
 
 StartChar: mal_nanri
@@ -123520,6 +123679,7 @@ Encoding: 61018 -1 4801
 Width: 1267
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 684 565 basechar 0
 LayerCount: 2
@@ -123561,7 +123721,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" na_mal ZWJ mal_na.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nana r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 678 1109 
 EndChar
 
 StartChar: mal_nanra
@@ -123569,6 +123729,7 @@ Encoding: 61019 -1 4802
 Width: 1450
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 844 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1320 -100 basechar 0
@@ -123611,7 +123772,7 @@ Ligature2: "form ZWNJ ra-tail complex in Malayalam" na_mal ZWNJ candrakala na_ma
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_na.half mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_nana ZWJ mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nana
-LCarets2: 3 0 0 0 
+LCarets2: 2 846 1309 
 EndChar
 
 StartChar: mal_nama
@@ -123619,6 +123780,7 @@ Encoding: 61021 -1 4803
 Width: 1020
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 564 565 basechar 0
 AnchorPoint: "mal-below" 1020 -22 basechar 0
@@ -123656,7 +123818,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" na_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" na_mal ZWJ mal_ma.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" na_mal mal_ma.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" na_mal candrakala ma_mal
-LCarets2: 2 0 0 
+LCarets2: 1 615 
 EndChar
 
 StartChar: mal_namri
@@ -123664,6 +123826,7 @@ Encoding: 61022 -1 4804
 Width: 1020
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 574 565 basechar 0
 LayerCount: 2
@@ -123707,7 +123870,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" na_mal ZWJ mal_ma.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_nama r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 621 917 
 EndChar
 
 StartChar: mal_namra
@@ -123715,6 +123878,7 @@ Encoding: 61023 -1 4805
 Width: 1172
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 724 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1080 -160 basechar 0
@@ -123758,7 +123922,7 @@ Ligature2: "'psts' ra-tail in Malayalam-conj" mal_nama mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" na_mal ZWNJ candrakala ma_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_nama
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" na_mal ZWJ mal_ma.half mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 756 1037 
 EndChar
 
 StartChar: mal_baba
@@ -123766,6 +123930,7 @@ Encoding: 61024 -1 4806
 Width: 1201
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 724 565 basechar 0
 AnchorPoint: "mal-below" 1202 -212 basechar 0
@@ -123816,7 +123981,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ba_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ba_mal ZWJ mal_ba.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ba_mal mal_ba.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ba_mal candrakala ba_mal
-LCarets2: 2 0 0 
+LCarets2: 1 768 
 EndChar
 
 StartChar: mal_mama
@@ -123824,6 +123989,7 @@ Encoding: 61026 -1 4807
 Width: 1093
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 604 565 basechar 0
 AnchorPoint: "mal-below" 1093 -22 basechar 0
@@ -123866,7 +124032,7 @@ Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" ma_mal mal_ma.half
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ma_mal ZWJ mal_ma.half
 Ligature2: "'akhn' cons pair in Malayalam" ma_mal candrakala ma_mal
-LCarets2: 2 0 0 
+LCarets2: 1 597 
 EndChar
 
 StartChar: mal_mamri
@@ -123874,6 +124040,7 @@ Encoding: 61027 -1 4808
 Width: 1093
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 604 565 basechar 0
 LayerCount: 2
@@ -123924,7 +124091,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ma_mal ZWJ mal_ma.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_mama r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_mama r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 594 962 
 EndChar
 
 StartChar: mal_mapa
@@ -123932,6 +124099,7 @@ Encoding: 61029 -1 4809
 Width: 1169
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 694 565 basechar 0
 AnchorPoint: "mal-below" 1169 -22 basechar 0
@@ -123967,7 +124135,7 @@ Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" ma_mal mal_pa.half
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ma_mal ZWJ mal_pa.half
 Ligature2: "'akhn' cons pair in Malayalam" ma_mal candrakala pa_mal
-LCarets2: 2 0 0 
+LCarets2: 1 747 
 EndChar
 
 StartChar: mal_mapri
@@ -123975,6 +124143,7 @@ Encoding: 61030 -1 4810
 Width: 1169
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 694 565 basechar 0
 LayerCount: 2
@@ -124018,7 +124187,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ma_mal ZWJ mal_pa.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" mal_mapa r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_mapa r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 744 1058 
 EndChar
 
 StartChar: mal_mapra
@@ -124026,6 +124195,7 @@ Encoding: 61031 -1 4811
 Width: 1331
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 854 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1200 -160 basechar 0
@@ -124069,7 +124239,7 @@ Ligature2: "form ZWNJ ra-tail complex in Malayalam" ma_mal ZWNJ candrakala pa_ma
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ma_mal ZWJ mal_pa.half mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_mapa ZWJ mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_mapa
-LCarets2: 3 0 0 0 
+LCarets2: 2 900 1187 
 EndChar
 
 StartChar: mal_yaya
@@ -124077,6 +124247,7 @@ Encoding: 61033 -1 4812
 Width: 1020
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 604 565 basechar 0
 AnchorPoint: "mal-below" 1014 -242 basechar 0
@@ -124124,7 +124295,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" ya_mal mal_ya.pstf
 Ligature2: "'akhn' cons pair in Malayalam" ya_mal candrakala ya_mal
-LCarets2: 2 0 0 
+LCarets2: 1 609 
 EndChar
 
 StartChar: mal_vava
@@ -124132,6 +124303,7 @@ Encoding: 61035 -1 4813
 Width: 878
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 554 565 basechar 0
 AnchorPoint: "mal-below" 878 -222 basechar 0
@@ -124166,7 +124338,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'psts' re-do cjct ligs (govt. order) in Malayalam Reformed" va_mal mal_va.pstf
-LCarets2: 2 0 0 
+LCarets2: 1 540 
 Ligature2: "'akhn' cons pair in Malayalam" va_mal candrakala va_mal
 EndChar
 
@@ -124175,6 +124347,7 @@ Encoding: 61037 -1 4814
 Width: 1438
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 824 565 basechar 0
 AnchorPoint: "mal-below" 1438 -22 basechar 0
@@ -124225,7 +124398,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" sha_mal mal
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" sha_mal ZWJ mal_ca.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" sha_mal mal_ca.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" sha_mal candrakala ca_mal
-LCarets2: 2 0 0 
+LCarets2: 1 837 
 EndChar
 
 StartChar: mal_shacri
@@ -124233,6 +124406,7 @@ Encoding: 61038 -1 4815
 Width: 1438
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 824 565 basechar 0
 LayerCount: 2
@@ -124289,7 +124463,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" sha_mal ZWJ mal_ca.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" sha_mal mal_ca.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_shaca r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 831 1335 
 EndChar
 
 StartChar: mal_shacha
@@ -124297,8 +124471,9 @@ Encoding: 61040 -1 4816
 Width: 1951
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
-AnchorPoint: "mlm-reph" 1044 565 basechar 0
+AnchorPoint: "mlm-reph" 854 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1810 10 basechar 0
 AnchorPoint: "mal-below" 1944 -22 basechar 0
 LayerCount: 2
@@ -124360,7 +124535,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" sha_mal ZWJ mal_cha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" sha_mal mal_cha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" sha_mal candrakala cha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 828 
 EndChar
 
 StartChar: mal_shachu
@@ -124368,8 +124543,9 @@ Encoding: 61041 -1 4817
 Width: 2092
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
-AnchorPoint: "mlm-reph" 1054 565 basechar 0
+AnchorPoint: "mlm-reph" 904 565 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -124443,16 +124619,17 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" sha_mal ZWJ mal_cha.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" sha_mal mal_cha.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_shacha u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 858 1951 
 EndChar
 
 StartChar: mal_shachuu
 Encoding: 61042 -1 4818
-Width: 2112
+Width: 2116
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
-AnchorPoint: "mlm-reph" 1024 565 basechar 0
+AnchorPoint: "mlm-reph" 944 565 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -124533,16 +124710,17 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" sha_mal ZWJ mal_cha.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" sha_mal mal_cha.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_shacha uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 852 1965 
 EndChar
 
 StartChar: mal_shachri
 Encoding: 61043 -1 4819
-Width: 2081
+Width: 2084
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
-AnchorPoint: "mlm-reph" 1034 565 basechar 0
+AnchorPoint: "mlm-reph" 944 565 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -124613,7 +124791,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" sha_mal ZWJ mal_cha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" sha_mal mal_cha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_shacha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 864 1932 
 EndChar
 
 StartChar: mal_satha
@@ -124621,6 +124799,7 @@ Encoding: 61045 -1 4820
 Width: 1930
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1164 565 basechar 0
 AnchorPoint: "mal-below" 1930 -22 basechar 0
@@ -124671,7 +124850,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" sa_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" sa_mal ZWJ mal_tha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" sa_mal mal_tha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" sa_mal candrakala tha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1176 
 EndChar
 
 StartChar: mal_sathri
@@ -124679,6 +124858,7 @@ Encoding: 61046 -1 4821
 Width: 1929
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1164 565 basechar 0
 LayerCount: 2
@@ -124736,7 +124916,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" sa_mal ZWJ mal_tha.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" sa_mal mal_tha.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_satha r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 1179 1823 
 EndChar
 
 StartChar: mal_hana
@@ -124744,8 +124924,9 @@ Encoding: 61048 -1 4822
 Width: 1432
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
-AnchorPoint: "mlm-reph" 974 565 basechar 0
+AnchorPoint: "mlm-reph" 894 565 basechar 0
 AnchorPoint: "mal-below" 1424 -22 basechar 0
 AnchorPoint: "mlm-vowel-below" 1300 10 basechar 0
 LayerCount: 2
@@ -124787,7 +124968,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ha_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ha_mal ZWJ mal_na.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ha_mal mal_na.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ha_mal candrakala na_mal
-LCarets2: 2 0 0 
+LCarets2: 1 918 
 EndChar
 
 StartChar: mal_hanu
@@ -124795,8 +124976,9 @@ Encoding: 61049 -1 4823
 Width: 1533
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
-AnchorPoint: "mlm-reph" 974 565 basechar 0
+AnchorPoint: "mlm-reph" 884 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1400 0 basechar 0
 LayerCount: 2
 Fore
@@ -124843,7 +125025,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ha_mal ZWJ mal_na.half u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ha_mal mal_na.half u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_hana u_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 923 1408 
 EndChar
 
 StartChar: mal_hanuu
@@ -124851,8 +125033,9 @@ Encoding: 61050 -1 4824
 Width: 1691
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
-AnchorPoint: "mlm-reph" 974 565 basechar 0
+AnchorPoint: "mlm-reph" 884 565 basechar 0
 LayerCount: 2
 Fore
 SplineSet
@@ -124905,7 +125088,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ conj u,uu in Malayalam Reformed" ha_mal ZWJ mal_na.half uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu conj in Malayalam Reformed-1" ha_mal mal_na.half uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" mal_hana uu_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 924 1537 
 EndChar
 
 StartChar: mal_hama
@@ -124913,6 +125096,7 @@ Encoding: 61052 -1 4825
 Width: 1208
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 704 565 basechar 0
 AnchorPoint: "mal-below" 1208 -22 basechar 0
@@ -124954,7 +125138,7 @@ Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ha_mal mal_
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ha_mal ZWJ mal_ma.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ha_mal mal_ma.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ha_mal candrakala ma_mal
-LCarets2: 2 0 0 
+LCarets2: 1 738 
 EndChar
 
 StartChar: mal_hamri
@@ -124962,6 +125146,7 @@ Encoding: 61053 -1 4826
 Width: 1208
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 704 565 basechar 0
 LayerCount: 2
@@ -125010,7 +125195,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ voc conj in Malayalam Reformed" ha_mal ZWJ mal_ma.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-2" ha_mal mal_ma.half r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" mal_hama r_voc_mal
-LCarets2: 3 0 0 0 
+LCarets2: 2 747 1101 
 EndChar
 
 StartChar: mal_llalla
@@ -125018,6 +125203,7 @@ Encoding: 61055 -1 4827
 Width: 1379
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 764 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1230 -206 basechar 0
@@ -125091,7 +125277,7 @@ Validated: 3073
 Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" lla_mal mal_lla.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" lla_mal mal_lla.half
 Ligature2: "'akhn' cons pair in Malayalam" lla_mal candrakala lla_mal
-LCarets2: 2 0 0 
+LCarets2: 1 735 
 EndChar
 
 StartChar: mal_l_voc.blwf
@@ -125240,8 +125426,8 @@ SplineSet
  -509 37 -492 16 -458 16 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ka.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_ka.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ka.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -125298,8 +125484,8 @@ SplineSet
  -489 130 -514 110 -514 70 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ka.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" mal_ka.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ka.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -125349,7 +125535,7 @@ SplineSet
  -338 -110 -357 -116 -357 -127 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' r-voc ligatures in Malayalam" mal_ka.blwf r_voc_mal
+Ligature2: "'psts' r-voc subscript ligatures in Malayalam" mal_ka.blwf r_voc_mal
 MultipleSubs2: "'ss19' un-stack vocalic-cons in Malayalam Reformed" mal_ka.half r_voc_mal
 Ligature2: "'blws' r_voc in Malay+AQEA-lam" mal_ka.blwf r_voc_mal
 LCarets2: 1 0 
@@ -125468,8 +125654,8 @@ SplineSet
  -629 18 -615 34 -615 67 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_kka.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" candrakala mal_kaka u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_kka.blwf u_mal
 EndChar
 
 StartChar: mal_kkuu.blwf
@@ -125533,8 +125719,8 @@ SplineSet
  -589 15 -575 32 -575 67 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_kka.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" candrakala mal_kaka uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_kka.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -125625,8 +125811,8 @@ SplineSet
  -226 203 -244 230 -282 248 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ta.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_ta.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ta.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -125681,8 +125867,8 @@ SplineSet
  -251 102 -236 127 -236 163 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ta.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" mal_ta.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ta.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -125931,8 +126117,8 @@ SplineSet
  -172 215 -174 216 -176 216 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_sha.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_sha.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_sha.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -125991,8 +126177,8 @@ SplineSet
  -235 210 -279 182 -279 128 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_sha.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" mal_sha.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_sha.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -126206,8 +126392,8 @@ SplineSet
  -192 209 l 2
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_cha.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_cha.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_cha.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -126274,8 +126460,8 @@ SplineSet
  -195 177.095 -196.105 209.184 -200 216 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_cha.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" mal_cha.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_cha.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -126616,9 +126802,9 @@ SplineSet
  -156 5 -139 10 -139 20 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' r-voc subscript ligatures in Malayalam" mal_tta.blwf r_voc_mal
 MultipleSubs2: "'ss19' un-stack vocalic-cons in Malayalam Reformed" mal_tta.half r_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" mal_tta.half r_voc_mal
-Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tta.blwf r_voc_mal
 LCarets2: 1 0 
 EndChar
 
@@ -126663,9 +126849,9 @@ SplineSet
  -153 -1 -119 7 -93 24 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' rr-voc subscript ligatures in Malayalam" mal_tta.blwf rr_voc_mal
 MultipleSubs2: "'ss19' un-stack vocalic-cons in Malayalam Reformed" mal_tta.half rr_voc_mal
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" mal_tta.half rr_voc_mal
-Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_tta.blwf rr_voc_mal
 LCarets2: 1 0 
 EndChar
 
@@ -126901,8 +127087,8 @@ SplineSet
  -164.001 180 -201 137.156 -201 99 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_na.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_na.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_na.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -126950,8 +127136,8 @@ SplineSet
  -262 194 -298 143 -298 92 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_na.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" mal_na.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_na.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127134,8 +127320,8 @@ SplineSet
  -727 18 -709 37 -709 74 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_nna.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_nna.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_nna.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127195,8 +127381,8 @@ SplineSet
  -817 13 -800 33 -800 72 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_nna.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" mal_nna.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_nna.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127359,8 +127545,8 @@ SplineSet
  -279 290 -232 335 -154 335 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ga.blwf u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_ga.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ga.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127408,8 +127594,8 @@ SplineSet
  -282 286 -224 335 -148 335 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ga.blwf uu_mal
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" mal_ga.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ga.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127674,7 +127860,7 @@ SplineSet
  -72 171 -84 174 -103 174 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_nana.blwf u_mal
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_nana.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127729,7 +127915,7 @@ SplineSet
  -198 172 -220 110 -220 67 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_nana.blwf uu_mal
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_nana.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127923,8 +128109,8 @@ SplineSet
  -247 -158 -214 -149 -189 -131 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' rr-voc subscript ligatures in Malayalam" mal_dha.blwf rr_voc_mal
 MultipleSubs2: "'ss19' un-stack vocalic-cons in Malayalam Reformed" mal_dha.half rr_voc_mal
-Ligature2: "'psts' rr-voc ligatures in Malayalam" mal_dha.blwf rr_voc_mal
 LCarets2: 1 0 
 EndChar
 
@@ -127957,6 +128143,7 @@ SplineSet
  -414 69 -416 83 -416 98 c 0
  -416 169 -357 223 -286 223 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "subst. subscript for half form in Malayalam-1" mal_ca.half
 Ligature2: "form subscript cons in Malayalam" candrakala ca_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_ca.half
@@ -128034,6 +128221,7 @@ SplineSet
  -480 -12 -507 29 -507 84 c 0
  -507 160 -439 219 -362 219 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "form subscript cons in Malayalam" candrakala pa_mal
 MultipleSubs2: "'ss19' un-stack cons blwf in Malayalam Reformed" mal_pa.half
 Ligature2: "subst. subscript for half form in Malayalam-1" mal_pa.half
@@ -128246,9 +128434,9 @@ SplineSet
  -353 38 -304 57 -276 94 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ja.blwf u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" mal_ja.half u_mal
 MultipleSubs2: "'ss19' undo simple u in Malayalam Reformed" mal_ja.half u_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ja.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -128321,8 +128509,8 @@ SplineSet
  -407 38 -358 57 -330 94 c 1
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ja.blwf uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" mal_ja.half uu_mal
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_ja.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -128642,7 +128830,7 @@ SplineSet
  -626 91 -608 115 -608 163 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_tata.blwf u_mal
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_tata.blwf u_mal
 LCarets2: 1 0 
 EndChar
 
@@ -128717,7 +128905,7 @@ SplineSet
  -638 91 -620 115 -620 162 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' u,uu subscript ligatures in Malayalam" mal_tata.blwf uu_mal
+Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_tata.blwf uu_mal
 LCarets2: 1 0 
 EndChar
 
@@ -128784,8 +128972,8 @@ SplineSet
  -737 48 -716 15 -674 15 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "'psts' r-voc subscript ligatures in Malayalam" mal_tata.blwf r_voc_mal
 MultipleSubs2: "'ss19' un-stack vocalic-cons in Malayalam Reformed" candrakala mal_tata r_voc_mal
-Ligature2: "'psts' r-voc ligatures in Malayalam" mal_tata.blwf r_voc_mal
 LCarets2: 1 0 
 EndChar
 
@@ -128928,6 +129116,7 @@ SplineSet
  160 106 192 56 248 56 c 0
  296 56 327 98 327 148 c 0
 EndSplineSet
+Validated: 3073
 LCarets2: 2 0 0 
 EndChar
 
@@ -128973,6 +129162,7 @@ SplineSet
  709 143 746 59 817 59 c 0
  888 59 922 142 922 220 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' chillu 5 legacy in Malayalam" lla_mal candrakala ZWJ
 LCarets2: 2 0 0 
 EndChar
@@ -129026,6 +129216,7 @@ SplineSet
  406 109 446 56 523 56 c 0
  595 56 634 135 634 215 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' chillu 5 legacy in Malayalam" la_mal candrakala ZWJ
 LCarets2: 2 0 0 
 EndChar
@@ -129066,6 +129257,7 @@ SplineSet
  415 144 448 58 517 58 c 128
  587 58 620 141 620 220 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' chillu 5 legacy in Malayalam" ra_mal candrakala ZWJ
 LCarets2: 2 0 0 
 EndChar
@@ -129113,6 +129305,7 @@ SplineSet
  698 143 734 58 806 58 c 0
  875 58 912 142 912 220 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' chillu 5 legacy in Malayalam" na_mal candrakala ZWJ
 LCarets2: 2 0 0 
 EndChar
@@ -129173,6 +129366,7 @@ SplineSet
  174 107 210 57 265 57 c 128
  319 57 357 105 357 158 c 0
 EndSplineSet
+Validated: 3073
 Ligature2: "'akhn' chillu 5 legacy in Malayalam" nna_mal candrakala ZWJ
 LCarets2: 2 0 0 
 EndChar
@@ -133911,6 +134105,7 @@ SplineSet
  95 741 109 782 152 782 c 4
  196 782 209 743 209 698 c 260
 EndSplineSet
+Validated: 3073
 LCarets2: 1 0 
 EndChar
 
@@ -150837,7 +151032,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" ga_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" ga_mal uu_mal
-LCarets2: 1 0 
+LCarets2: 1 643 
 EndChar
 
 StartChar: mal_gri
@@ -150878,7 +151073,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ga_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" ga_mal r_voc_mal
-LCarets2: 1 0 
+LCarets2: 1 751 
 EndChar
 
 StartChar: mal_grii
@@ -150925,7 +151120,7 @@ SplineSet
  457 -144 l 2
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 1 751 
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" ga_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" ga_mal rr_voc_mal
 EndChar
@@ -150935,6 +151130,7 @@ Encoding: 60766 -1 5806
 Width: 1083
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 960 -122 basechar 0
@@ -150968,7 +151164,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" ga_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala ga_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres ga_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" ga_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 914 
 EndChar
 
 StartChar: mal_ghri
@@ -151026,7 +151222,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" gha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" gha_mal r_voc_mal
-LCarets2: 1 0 
+LCarets2: 1 1189 
 EndChar
 
 StartChar: mal_ghrii
@@ -151034,6 +151230,7 @@ Encoding: 60769 -1 5808
 Width: 1341
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 LayerCount: 2
@@ -151089,7 +151286,7 @@ SplineSet
  954 -144 l 2
 EndSplineSet
 Validated: 3073
-LCarets2: 1 0 
+LCarets2: 1 1180 
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" gha_mal rr_voc_mal
 Ligature2: "'psts' rr-voc ligatures in Malayalam" gha_mal rr_voc_mal
 EndChar
@@ -151099,6 +151296,7 @@ Encoding: 60770 -1 5809
 Width: 1486
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 824 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1360 -180 basechar 0
@@ -151153,7 +151351,7 @@ Ligature2: "'psts' ra-tail in Malayalam-single" gha_mal mal_ra.half
 Ligature2: "form ZWNJ ra-tail simple in Malayalam" ZWNJ candrakala gha_mal mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-1" mal_ra.pres gha_mal
 Ligature2: "'ss19' ZWJ ra simple in Malayalam Reformed" gha_mal ZWJ mal_ra.half
-LCarets2: 2 0 0 
+LCarets2: 1 1333 
 EndChar
 
 StartChar: mal_chu
@@ -151161,6 +151359,7 @@ Encoding: 60773 -1 5810
 Width: 1373
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 LayerCount: 2
@@ -151216,7 +151415,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" cha_mal ZWJ u_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" cha_mal u_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" cha_mal u_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1181 
 EndChar
 
 StartChar: mal_chuu
@@ -151224,6 +151423,7 @@ Encoding: 60774 -1 5811
 Width: 1417
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 664 565 basechar 0
 LayerCount: 2
@@ -151287,7 +151487,7 @@ Validated: 3073
 Ligature2: "'ss19' ZWJ simple u,uu in Malayalam Reformed" cha_mal ZWJ uu_mal
 MultipleSubs2: "'ss19' un-do clscl u-uu simple in Malayalam Reformed-1" cha_mal uu_mal
 Ligature2: "'psts' u,uu ligatures in Malayalam" cha_mal uu_mal
-LCarets2: 2 0 0 
+LCarets2: 1 1261 
 EndChar
 
 StartChar: mal_chri
@@ -151347,7 +151547,7 @@ EndSplineSet
 Validated: 3073
 MultipleSubs2: "'ss19' un-do clscl vocalic in Malayalam Reformed-1" cha_mal r_voc_mal
 Ligature2: "'psts' r-voc ligatures in Malayalam" cha_mal r_voc_mal
-LCarets2: 1 0 
+LCarets2: 1 1254 
 EndChar
 
 StartChar: bn_ss_tta_post_ikaar.pstf
@@ -154836,6 +155036,8 @@ LayerCount: 2
 Fore
 Refer: 4861 -1 N 0.7 0 0 0.7 990 -267 2
 Refer: 4909 3451 N 1 0 0 1 0 0 2
+Validated: 32769
+LCarets2: 2 0 0 
 Ligature2: "'akhn' non-std legacy pair in Malayalam" na_mal candrakala rra_mal
 EndChar
 
@@ -154844,6 +155046,7 @@ Encoding: 60757 -1 5951
 Width: 954
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 524 565 basechar 0
 LayerCount: 2
@@ -154916,7 +155119,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'psts' l-voc ligatures in Malayalam" ka_mal l_voc_mal
-LCarets2: 1 0 
+LCarets2: 1 757 
 EndChar
 
 StartChar: vertical_ext
@@ -155659,6 +155862,7 @@ Fore
 Refer: 4584 3377 N 1 0 0 1 0 0 2
 Refer: 4584 3377 N 1 0 0 1 662 0 2
 Validated: 32769
+LCarets2: 2 711 0 
 Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" rra_mal mal_rra.half
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" rra_mal ZWJ mal_rra.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" rra_mal mal_rra.half
@@ -194333,7 +194537,7 @@ SplineSet
  -688 37 -666 8 -630 8 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "'psts' r-voc ligatures in Malayalam" mal_kka.blwf r_voc_mal
+Ligature2: "'psts' r-voc subscript ligatures in Malayalam" mal_kka.blwf r_voc_mal
 MultipleSubs2: "'ss19' un-stack vocalic-cons in Malayalam Reformed" candrakala mal_kaka r_voc_mal
 LCarets2: 1 0 
 EndChar
@@ -204599,7 +204803,7 @@ StartChar: mal_UNUSED3.blwm
 Encoding: 61072 -1 8277
 Width: 0
 VWidth: 1454
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -204625,7 +204829,7 @@ StartChar: mal_UNUSED4.blwm
 Encoding: 61073 -1 8278
 Width: 0
 VWidth: 1454
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -204650,7 +204854,7 @@ StartChar: mal_UNUSED1.blwm
 Encoding: 61074 -1 8279
 Width: 0
 VWidth: 1454
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -204684,7 +204888,7 @@ StartChar: mal_UNUSED2.blwm
 Encoding: 61075 -1 8280
 Width: 0
 VWidth: 1454
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 SplineSet
@@ -204715,7 +204919,7 @@ EndChar
 StartChar: mal_ya1.pstf
 Encoding: 61076 -1 8281
 Width: 250
-Flags: HW
+Flags: HMW
 AnchorPoint: "mlm-vowel-below" 143 -240 basechar 0
 LayerCount: 2
 Fore
@@ -204753,6 +204957,7 @@ LayerCount: 2
 Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 4583 3376 N 1 0 0 1 0 0 2
+Validated: 32769
 LCarets2: 1 0 
 Ligature2: "'pstf' ya,va,ra in Malayalam" candrakala ra_mal
 EndChar
@@ -204762,7 +204967,8 @@ Encoding: 61057 -1 8283
 Width: 1675
 VWidth: 1454
 GlyphClass: 3
-Flags: MW
+LigCaretCntFixed: 1
+Flags: HMW
 AnchorPoint: "mlm-reph" 902 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1550 20 basechar 0
 AnchorPoint: "mal-below" 1662 -22 basechar 0
@@ -204801,7 +205007,7 @@ EndSplineSet
 Validated: 3073
 Ligature2: "'ss19' re-do cjct ligs additional in Malayalam Reformed" ga_mal mal_dha.half
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ga_mal candrakala dha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 876 
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ga_mal ZWJ mal_dha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ga_mal mal_dha.half
 EndChar
@@ -204811,7 +205017,8 @@ Encoding: 61058 -1 8284
 Width: 2199
 VWidth: 1454
 GlyphClass: 2
-Flags: MW
+LigCaretCntFixed: 1
+Flags: HMW
 AnchorPoint: "mlm-reph" 1140 565 basechar 0
 AnchorPoint: "mal-below" 2201 -22 basechar 0
 AnchorPoint: "mlm-vowel-below" 2066 10 basechar 0
@@ -204895,7 +205102,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'akhn' cons pair in Malayalam-clscl" ja_mal candrakala jha_mal
-LCarets2: 2 0 0 
+LCarets2: 1 948 
 Ligature2: "'ss19' ZWJ conj in Malayalam Reformed" ja_mal ZWJ mal_jha.half
 MultipleSubs2: "'ss19' un-do clscl cjcts in Malay+AQEA-lam Reformed-2" ja_mal mal_jha.half
 EndChar
@@ -204939,9 +205146,7 @@ Encoding: 61175 -1 8287
 Width: 0
 VWidth: 1789
 GlyphClass: 4
-Flags: W
-HStem: -161 47<-503.905 -254.641> -41 62<-433.4 -325.308> 274 61<-210.454 -104.769>
-VStem: -684 51<14.1921 221.152> -543 69<67.1888 235.312> -301 67<46.3281 249.672> -63 63<54.5649 229.341>
+Flags: MW
 AnchorPoint: "mal-below" 0 335 mark 0
 AnchorPoint: "mlm-vowel-blw-small" -69 -41 basemark 0
 LayerCount: 2
@@ -204980,9 +205185,10 @@ EndChar
 
 StartChar: mal_tasra
 Encoding: 60982 -1 8288
-Width: 1800
+Width: 1798
 VWidth: 1454
 GlyphClass: 3
+LigCaretCntFixed: 1
 Flags: HMW
 AnchorPoint: "mlm-reph" 1052 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1558 -130 basechar 0
@@ -205036,7 +205242,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Ligature2: "'psts' ra-tail in Malayalam-conj" mal_tasa mal_ra.half
-LCarets2: 3 0 0 0 
+LCarets2: 2 1053 1593 
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" ta_mal ZWNJ candrakala sa_mal mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj in Malayalam Reformed" ta_mal ZWJ mal_sa.half mal_ra.half
 MultipleSubs2: "ra-tail to open ra in Malayalam-2" mal_ra.pres mal_tasa
@@ -205046,9 +205252,7 @@ StartChar: mal_rrarrara
 Encoding: 60749 -1 8289
 Width: 1462
 GlyphClass: 3
-Flags: W
-HStem: -221 67<548.689 991.479> -13 21G<357.5 421.379 602.966 666 1019.5 1083.38> 488 70<420.018 601.544 1082.02 1263.54>
-VStem: 74 71<138.365 402.495> 227 71<153.663 359.478> 725 75<152.016 356.387> 889 71<153.663 359.478> 1387 75<135.262 356.387>
+Flags: MW
 AnchorPoint: "mlm-reph" 846 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 1430 -122 basechar 0
 LayerCount: 2
@@ -205082,6 +205286,7 @@ SplineSet
  1135.42 -154 1387 0 1387 259 c 0
 EndSplineSet
 Validated: 3073
+LCarets2: 4 843 0 0 0 
 Ligature2: "'psts' ra-tail in Malayalam-conj" mal_rrarra mal_ra.half
 Ligature2: "'ss19' ZWJ ra conj-lig in Malayalam Reformed" mal_rrarra ZWJ mal_ra.half
 Ligature2: "form ZWNJ ra-tail complex in Malayalam" rra_mal ZWNJ candrakala rra_mal mal_ra.half
