@@ -17,17 +17,18 @@ supports the largest number of writing scripts.  However there are writing
 scripts supported by the sans-serif but not by serif.
 
 For an overview of which scripts and sets of symbols are supported by
-which face, see the FreeFont 'coverage' web page.
+which face, see the GNU FreeFont 'coverage' web page.
 
 Font features
 =============
 
-FreeFont has numerous font "features" that perform alterations to the basic
+The fonts have numerous font "features" that perform alterations to the basic
 letters of the font, replacing them with other letters, or positioning them
 with respect to other letters.
 
 Many features are activated automatically, but in some environments, they
 present some user control.  This documents those features with user control.
+The file "features.txt" goes into more detail.
 
 Language-specific features
 ==========================
@@ -73,6 +74,10 @@ Hebrew
 ------
 Yiddish	raised vowels under yo
 
+Thai
+----
+Proportional and fixed-width numerals: 'tnum', 'lnum', 'pnum'.
+
 Devanagari
 ----------
 Sanskrit	much larger, different set of ligatures
@@ -83,6 +88,11 @@ Gujarati
 
 'hist' feature	 [optional historic ligatures: for ligatures of Old Hindi]
 
+Bengali
+-------
+'hlig' feature	 [optional ligatures with -ya]
+'dlig' feature	 [optional "transparent" forms]
+
 Gujarati
 --------
 Sanskrit	larger and different set of ligatures
@@ -90,8 +100,8 @@ Sanskrit	larger and different set of ligatures
 Malayalam
 ---------
 Both the classical and reformed scripts are supported.  The default 
-is the classical script.  The reformed script is enabled by setting the
-OpenType language tag 'MLR '.
+is the classical script.  The reformed script is enabled by specifying
+the OpenType Style Set 'ss19'.
 
 Indic languages
 ---------------
@@ -105,6 +115,12 @@ Indic typography.
 
 By specifying the language of the text, an appropriate glyph for 'danda'
 may be obtained, and Western punctuation may be better spaced.
+
+Likewise, a space mark of appropriate width, as well as better punctuation
+marks, may be obtained by specifying the language of the text.
+
+Fixed-width numerals are available in all the Indic scripts, via the 'tnum'
+or 'lnum' features.  Proportional-width numerals are enforced with 'pnum'.
 
 Vedic marks
 -----------
@@ -262,7 +278,7 @@ marks such as bullets and stars (ornm).
 
 Use in HTML with CSS
 ====================
-Some web browsers have lately become very typography-savvy, having long
+Most web browsers have lately become very typography-savvy, having long
 outstripped word processors in this regard.
 
 In basic HTML, it is most important to properly specify the langugage of
@@ -278,10 +294,12 @@ With CSS, the "font-family" property can be specified as one of
 	'freeserif', 'freesans' or 'freemono',
 and several other properties influencing typographic presentation can
 also be set: "font-weight", "font-style", etc.
+The standards documents are at
+	https://www.w3.org/TR/css-fonts-3/
 In CSS 3, a special property 'font-feature-settings' that gives explicit
 control of OpenType font features was introduced. 
 	https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings
-It is usually more appropriateto use explicit CSS 'font-variant' properties
+It is usually more appropriate to use explicit CSS 'font-variant' properties
 to reach these features.
 
 These explicit features are specific to particular fonts.  So this 
