@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1581543075
+ModificationTime: 1581545349
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -1223,25 +1223,23 @@ ChainSub2: class "'ss19' re-stack ga in Malayalam Reformed"  3 2 1 1
  1
   SeqLookup: 0 "form subscript cons in Malayalam" 
 EndFPST
-ChainSub2: class "'ss19' ZWJ remove pfx-ra from stacked in Malayalam Reformed"  3 0 2 1
-  Class: 11 mal_ra.pref
-  Class: 292 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal ra_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
+ChainSub2: class "'ss19' ZWJ remove pfx-ra from stacked in Malayalam Reformed"  2 0 2 1
+  Class: 64 mal_r_ka mal_r_ga mal_r_ssa mal_r_ca mal_r_pha mal_r_la mal_r_sa
   FClass: 123 mal_kra.blwf mal_tra.blwf mal_shra.blwf mal_chra.blwf mal_sra.blwf mal_ttra.blwf mal_rrarrra.blwf mal_gra.blwf mal_pra.blwf
- 2 0 1
-  ClsList: 1 2
+ 1 0 1
+  ClsList: 1
   BClsList:
   FClsList: 1
  1
   SeqLookup: 0 "absorb pfx-ra into cons in Malayalam Reformed" 
 EndFPST
-ChainSub2: class "'ss19' ZWJ put ra on subcript Malayalam Reformed"  3 3 1 1
+ChainSub2: class "'ss19' ZWJ put ra on subcript Malayalam Reformed"  3 2 1 1
   Class: 3 ZWJ
   Class: 114 mal_ka.blwf mal_ta.blwf mal_sha.blwf mal_cha.blwf mal_sa.blwf mal_tta.blwf mal_rrarra.blwf mal_ga.blwf mal_pa.blwf
-  BClass: 11 mal_ra.pref
-  BClass: 292 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal ra_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
- 2 2 0
+  BClass: 64 mal_r_ka mal_r_ga mal_r_ca mal_r_la mal_r_ssa mal_r_sa mal_r_pha
+ 2 1 0
   ClsList: 1 2
-  BClsList: 2 1
+  BClsList: 1
   FClsList:
  1
   SeqLookup: 0 "form ra-tail from ZWJ blwf in Malayalam Reformed" 
@@ -110458,7 +110456,7 @@ EndSplineSet
 Validated: 3073
 Substitution2: "subst. subscript for cons in Malayalam" mal_ka.blwf
 LCarets2: 1 0 
-Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_ra.pref ka_mal
+Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_r_ka
 EndChar
 
 StartChar: kha_mal
@@ -110532,7 +110530,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "subst. subscript for cons in Malayalam" mal_ga.blwf
-Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_ra.pref ga_mal
+Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_r_ga
 EndChar
 
 StartChar: gha_mal
@@ -110663,7 +110661,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "subst. subscript for cons in Malayalam" mal_ca.blwf
-Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_ra.pref ca_mal
+Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_r_ca
 EndChar
 
 StartChar: cha_mal
@@ -111327,7 +111325,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "subst. subscript for cons in Malayalam" mal_pha.blwf
-Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_ra.pref pha_mal
+Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_r_pha
 EndChar
 
 StartChar: ba_mal
@@ -111588,7 +111586,7 @@ SplineSet
  510 243 l 1
 EndSplineSet
 Validated: 3073
-Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_ra.pref la_mal
+Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_r_la
 EndChar
 
 StartChar: lla_mal
@@ -111797,7 +111795,7 @@ SplineSet
  741 408 l 2
 EndSplineSet
 Validated: 3073
-Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_ra.pref ssa_mal
+Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_r_ssa
 EndChar
 
 StartChar: sa_mal
@@ -111839,7 +111837,7 @@ SplineSet
 EndSplineSet
 Validated: 3073
 Substitution2: "subst. subscript for cons in Malayalam" mal_sa.blwf
-Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_ra.pref sa_mal
+Ligature2: "absorb pfx-ra into cons in Malayalam Reformed-1" mal_r_sa
 EndChar
 
 StartChar: ha_mal
@@ -194750,7 +194748,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4557 3349 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ka_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ka_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref ka_mal
@@ -194772,7 +194770,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 N 1 0 0 1 -2 0 2
 Refer: 4558 3350 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" kha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" kha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" kha_mal
@@ -194793,7 +194791,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4559 3351 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ga_mal
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref ga_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ga_mal ZWNJ candrakala mal_ra.pref
@@ -194814,7 +194812,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4560 3352 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" gha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" gha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" gha_mal
@@ -194834,7 +194832,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4561 3353 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" nga_mal
 Ligature2: "form ra-pfx +- cons lig in Malayalam" nga_mal
 Ligature2: "form ra-pfx +- cons lig ZWNJ in Malayalam" nga_mal ZWNJ candrakala
@@ -194853,7 +194851,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4562 3354 S 1 0 0 1 178 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ca_mal
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref ca_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ca_mal ZWNJ candrakala mal_ra.pref
@@ -194874,7 +194872,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -1.99988 -1.49997 2
 Refer: 4563 3355 S 1 0 0 1 173 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" cha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" cha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" cha_mal
@@ -194894,7 +194892,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -12 0 2
 Refer: 4564 3356 S 1 0 0 1 218 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ja_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ja_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ja_mal
@@ -194914,7 +194912,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4565 3357 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" jha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" jha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" jha_mal
@@ -194934,7 +194932,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4566 3358 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" nya_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" nya_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" nya_mal
@@ -194955,7 +194953,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4567 3359 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" tta_mal
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref tta_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" tta_mal ZWNJ candrakala mal_ra.pref
@@ -194977,7 +194975,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4568 3360 S 1 0 0 1 228 1.50003 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ttha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ttha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ttha_mal
@@ -194997,7 +194995,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4569 3361 S 1 0 0 1 228 -10.5 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" dda_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" dda_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" dda_mal
@@ -195018,7 +195016,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4570 3362 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ddha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ddha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ddha_mal
@@ -195039,7 +195037,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4571 3363 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" nna_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" nna_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" nna_mal
@@ -195060,7 +195058,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 N 1 0 0 1 -2 0 2
 Refer: 4572 3364 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ta_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ta_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ta_mal
@@ -195080,7 +195078,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4573 3365 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" tha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" tha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" tha_mal
@@ -195101,7 +195099,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4574 3366 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" da_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" da_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" da_mal
@@ -195122,7 +195120,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4575 3367 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" dha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" dha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" dha_mal
@@ -195143,7 +195141,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4576 3368 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" na_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" na_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" na_mal
@@ -195163,7 +195161,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 5175 3369 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" nnna_mal
 Ligature2: "form ra-pfx +- cons lig in Malayalam" nnna_mal
 Ligature2: "form ra-pfx +- cons lig ZWNJ in Malayalam" nnna_mal ZWNJ candrakala
@@ -195183,7 +195181,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4577 3370 S 1 0 0 1 198 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" pa_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" pa_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" pa_mal
@@ -195204,7 +195202,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4578 3371 S 1 0 0 1 198 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" pha_mal
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref pha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" pha_mal ZWNJ candrakala mal_ra.pref
@@ -195226,7 +195224,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 8 0 2
 Refer: 4579 3372 S 1 0 0 1 238 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ba_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ba_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ba_mal
@@ -195246,7 +195244,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4580 3373 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" bha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" bha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" bha_mal
@@ -195267,7 +195265,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4581 3374 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ma_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ma_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ma_mal
@@ -195288,7 +195286,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4584 3377 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" rra_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" rra_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" rra_mal
@@ -195309,7 +195307,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4586 3379 S 1 0 0 1 328 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" lla_mal
 Ligature2: "form ra-pfx +- cons lig in Malayalam" lla_mal
 Ligature2: "form ra-pfx +- cons lig ZWNJ in Malayalam" lla_mal ZWNJ candrakala
@@ -195328,7 +195326,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4587 3380 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" llla_mal
 Ligature2: "form ra-pfx +- cons lig in Malayalam" llla_mal
 Ligature2: "form ra-pfx +- cons lig ZWNJ in Malayalam" llla_mal ZWNJ candrakala
@@ -195348,7 +195346,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4589 3382 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" sha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" sha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" sha_mal
@@ -195368,7 +195366,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4590 3383 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ssa_mal
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref ssa_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ssa_mal ZWNJ candrakala mal_ra.pref
@@ -195390,7 +195388,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4591 3384 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" sa_mal
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref sa_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" sa_mal ZWNJ candrakala mal_ra.pref
@@ -195411,7 +195409,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4592 3385 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ha_mal
 Ligature2: "'psts' ZWNJ pre-base ra to front-1" ha_mal ZWNJ candrakala mal_ra.pref
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ha_mal
@@ -195431,7 +195429,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 5174 3386 S 1 0 0 1 137 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" ttta_mal
 Ligature2: "form ra-pfx +- cons lig in Malayalam" ttta_mal
 MultipleSubs2: "decomp. pfx_ra +- cons-1" mal_ra.pref ttta_mal
@@ -205110,7 +205108,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 S 1 0 0 1 -2 0 2
 Refer: 4585 3378 S 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "FreeSans-form ra-pfx +- cons lig in Malayalam" la_mal
 LCarets2: 3 0 0 0 
 Ligature2: "'psts' Post Base Substitutions lookup 242-1" mal_ra.pref la_mal
@@ -205283,7 +205281,7 @@ LayerCount: 2
 Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 4583 3376 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 LCarets2: 1 0 
 EndChar
 
@@ -206038,7 +206036,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1110 2662 S 1 0 0 1 -25 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" zero_gur
 EndChar
 
@@ -206051,7 +206049,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1111 2663 S 1 0 0 1 40 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" one_gur
 EndChar
 
@@ -206064,7 +206062,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1112 2664 S 1 0 0 1 10 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" two_gur
 EndChar
 
@@ -206077,7 +206075,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1113 2665 S 1 0 0 1 10 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" three_gur
 EndChar
 
@@ -206090,7 +206088,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1114 2666 S 0.92 0 0 1 54.36 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" four_gur
 EndChar
 
@@ -206103,7 +206101,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1115 2667 N 1 0 0 1 40 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" five_gur
 EndChar
 
@@ -206116,7 +206114,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1116 2668 N 1 0 0 1 40 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" six_gur
 EndChar
 
@@ -206129,7 +206127,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1117 2669 N 1 0 0 1 0 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" seven_gur
 EndChar
 
@@ -206142,7 +206140,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1118 2670 N 1 0 0 1 -20 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" eight_gur
 EndChar
 
@@ -206155,7 +206153,7 @@ Flags: HW
 LayerCount: 2
 Fore
 Refer: 1119 2671 S 0.95 0 0 1 -1 0 2
-Validated: 98305
+Validated: 32769
 Substitution2: "'pnum' proportional figures in Gurmukhi" nine_gur
 EndChar
 
