@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1582217715
+ModificationTime: 1582228972
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -61,7 +61,7 @@ Lookup: 4 0 0 "form ra-tail from ZWJ blwf in Malayalam Reformed"  {"form ra-tail
 Lookup: 4 0 0 "subst ra-tail subscrtpt with plain in Malayalam Reformed"  {"subst ra-tail subscript with plain in Malayalam Reformed"  } []
 Lookup: 4 0 0 "form subscript ra-tail cons in Malayalam"  {"form subscript ra-tail rrarra in Malayalam"  "form subscript ra-tail cons in Malayalam"  "form subscript ra-tail rrarra with candrakala in Malayalam"  "form subscript ra-tail cons with candrakala in Malayalam"  } []
 Lookup: 4 0 0 "form ra-pfx +- cons lig in Malayalam"  {"form ra-pfx +- cons lig ZWNJ in Malayalam"  "form ra-pfx +- cons lig in Malayalam"  } []
-Lookup: 4 0 0 "form subscript cons in Malayalam"  {"form subscript cons from candrakala in Malayalam"  "form ZWNJ subscript rrarra in Malayalam"  "form ZWNJ subscript cons in Malayalam"  "form subscript rrarra in Malayalam"  "subst half with subscript in Malayalam"  } []
+Lookup: 4 0 0 "form subscript cons in Malayalam"  {"form subscript cons from candrakala in Malayalam"  "form subscript lig from candrakala in Malayalam"  "form ZWNJ subscript rrarra in Malayalam"  "form ZWNJ subscript cons in Malayalam"  "subst half with subscript in Malayalam"  } []
 Lookup: 1 0 0 "subst. smaller blwf in Malayalam"  {"subst. smaller u,uu in Malay+AQEA-lam"  } []
 Lookup: 1 0 0 "repl. va post-base by below-base in Malayalam"  {"repl. va post-base by below-base in Malayalam"  } []
 Lookup: 4 0 0 "form below- from post-base forms in Malayalam"  {"subst. below-base u,uu in Malayalam"  "subscript cons conj in Malayalam 'mlm2'"  "subst. below- rrarra in Malayalam"  "subst. subscript for candrakala rrarra in Malayalam-2"  "subst. subscript for candrakala-cons in Malayalam"  } []
@@ -75,7 +75,7 @@ Lookup: 6 0 0 "'blwf' subscript cons chain in Malayalam 'mlm2'"  {"'blwf' subscr
 Lookup: 4 0 0 "'blwf' subscript la in Malayalam 'mlm2'"  {"'blwf' subscript la in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlm2'"  {"'pstf' ya,va in Malayalam"  } ['pstf' ('mlm2' <'dflt' > ) ]
 Lookup: 6 393232 0 "'cjct' ra-tail on single consonant in Malayalam"  {"'cjct' ra-tail on single consonant in Malayalam"  } ['cjct' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 4 0 0 "'cjct' half cons in Malayalam 'mlm2'"  {"'akhn' half cons in Malayalam 'mlm2'"  } ['cjct' ('mlm2' <'dflt' > ) ]
+Lookup: 4 0 0 "'cjct' half cons in Malayalam 'mlm2'"  {"'cjct' half cons in Malayalam 'mlm2'"  } ['cjct' ('mlm2' <'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base chain in Malayalam"  {"'blwf' below-base la in Malayalam"  "'blws' below-base va in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base voc conj in Malay+AQEA-lam"  {"'blws' rr-voc in Malay+AQEA-lam"  "'blws' r_voc in Malay+AQEA-lam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 393232 0 "ra-tail in Malayalam"  {"ra-tail in Malayalam-conj"  "ra-tail in Malayalam-single"  } []
@@ -877,7 +877,7 @@ EndFPST
 ChainSub2: class "'blwf' subscript ma in Malayalam 'mlm2'"  3 3 1 2
   Class: 10 candrakala
   Class: 6 ma_mal
-  BClass: 29 ya_mal sha_mal sa_mal ssa_mal
+  BClass: 49 ya_mal sha_mal sa_mal ssa_mal mal_kassa mal_dadha
   BClass: 8 ZWJ ZWNJ
  2 1 0
   ClsList: 1 2
@@ -949,7 +949,7 @@ EndFPST
 ChainSub2: class "'blwf' subscript na in Malayalam 'mlm2'"  3 3 1 2
   Class: 10 candrakala
   Class: 6 na_mal
-  BClass: 66 gha_mal dha_mal pa_mal sha_mal ssa_mal sa_mal nn_chil_mal mal_tasa
+  BClass: 76 gha_mal dha_mal pa_mal sha_mal ssa_mal sa_mal nn_chil_mal mal_tasa mal_dadha
   BClass: 8 ZWJ ZWNJ
  2 1 0
   ClsList: 1 2
@@ -1021,7 +1021,7 @@ EndFPST
 ChainSub2: class "'blwf' subscript nna in Malayalam 'mlm2'"  3 3 1 2
   Class: 10 candrakala
   Class: 7 nna_mal
-  BClass: 22 ka_mal ssa_mal nna_mal
+  BClass: 32 ka_mal ssa_mal nna_mal mal_kassa
   BClass: 8 ZWJ ZWNJ
  2 1 0
   ClsList: 1 2
@@ -1217,20 +1217,20 @@ ChainSub2: class "'blwf' subscript rrarra in Malayalam 'mlm2'"  4 3 1 2
  1
   SeqLookup: 0 "form subscript cons in Malayalam" 
 EndFPST
-ChainSub2: class "'blwf' subscript cons combos in Malayalam 'mlm2'"  4 2 1 2
+ChainSub2: class "'blwf' subscript cons combos in Malayalam 'mlm2'"  3 3 1 2
   Class: 10 candrakala
   Class: 46 mal_kaka mal_caca mal_nana mal_tata mal_rrarra
-  Class: 11 mal_ra.pref
-  BClass: 292 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal ra_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
- 3 1 0
-  ClsList: 1 2 3
+  BClass: 285 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
+  BClass: 8 ZWJ ZWNJ
+ 2 1 0
+  ClsList: 1 2
   BClsList: 1
   FClsList:
  1
   SeqLookup: 0 "form subscript cons in Malayalam" 
- 2 1 0
+ 2 2 0
   ClsList: 1 2
-  BClsList: 1
+  BClsList: 2 1
   FClsList:
  1
   SeqLookup: 0 "form subscript cons in Malayalam" 
@@ -2676,7 +2676,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60896 16 9
+WinInfo: 3360 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -125638,6 +125638,7 @@ SplineSet
  -591 18 -577 34 -577 67 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "form subscript lig from candrakala in Malayalam" candrakala mal_kaka
 Ligature2: "subscript cons conj in Malayalam 'mlm2'" candrakala mal_kaka
 LCarets2: 1 0 
 EndChar
@@ -126977,7 +126978,7 @@ Ligature2: "form ZWNJ subscript rrarra in Malayalam" ZWNJ candrakala mal_rrarra
 Ligature2: "subst. subscript for candrakala rrarra in Malayalam-2" candrakala rra_mal candrakala rra_mal
 Ligature2: "subst. below- rrarra in Malayalam" mal_rra.blwf candrakala rra_mal
 Ligature2: "subst. below- rrarra in Malayalam" candrakala mal_ra.pref mal_rra.blwf
-Ligature2: "form subscript rrarra in Malayalam" candrakala mal_rrarra
+Ligature2: "form subscript lig from candrakala in Malayalam" candrakala mal_rrarra
 EndChar
 
 StartChar: mal_rrarrra.blwf
@@ -127865,6 +127866,7 @@ SplineSet
  -217 321 -188 338 -152 338 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "form subscript lig from candrakala in Malayalam" candrakala mal_nana
 Ligature2: "subscript cons conj in Malayalam 'mlm2'" candrakala mal_nana
 LCarets2: 1 0 
 EndChar
@@ -128823,6 +128825,7 @@ SplineSet
  -741 45 -720 12 -677 12 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "form subscript lig from candrakala in Malayalam" candrakala mal_tata
 Ligature2: "subscript cons conj in Malayalam 'mlm2'" candrakala mal_tata
 EndChar
 
@@ -194542,6 +194545,7 @@ SplineSet
  -53.5498 -125.45 l 1
 EndSplineSet
 Validated: 3073
+Ligature2: "form subscript lig from candrakala in Malayalam" candrakala mal_caca
 Ligature2: "subscript cons conj in Malayalam 'mlm2'" candrakala mal_caca
 LCarets2: 1 0 
 EndChar
@@ -206134,7 +206138,7 @@ Fore
 Refer: 4557 3349 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ka_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ka_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206149,7 +206153,7 @@ Fore
 Refer: 4558 3350 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala kha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala kha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206164,7 +206168,7 @@ Fore
 Refer: 4559 3351 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ga_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ga_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206179,7 +206183,7 @@ Fore
 Refer: 4560 3352 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala gha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala gha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206194,7 +206198,7 @@ Fore
 Refer: 4561 3353 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala nga_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala nga_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206208,7 +206212,7 @@ Fore
 Refer: 4562 3354 N 1 0 0 1 -50 0 0
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ca_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ca_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206222,7 +206226,7 @@ Fore
 Refer: 4563 3355 N 1 0 0 1 -55 0 0
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala cha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala cha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206237,7 +206241,7 @@ Fore
 Refer: 4564 3356 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ja_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ja_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206252,7 +206256,7 @@ Fore
 Refer: 4565 3357 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala jha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala jha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206267,7 +206271,7 @@ Fore
 Refer: 4566 3358 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala nya_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala nya_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206282,7 +206286,7 @@ Fore
 Refer: 4567 3359 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala tta_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala tta_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206297,7 +206301,7 @@ Fore
 Refer: 4568 3360 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ttha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ttha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206312,7 +206316,7 @@ Fore
 Refer: 4569 3361 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala dda_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala dda_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206327,7 +206331,7 @@ Fore
 Refer: 4570 3362 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ddha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ddha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206342,7 +206346,7 @@ Fore
 Refer: 4571 3363 S 1 0 0 1 0 -3 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala nna_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala nna_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206357,7 +206361,7 @@ Fore
 Refer: 4572 3364 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ta_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ta_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206372,7 +206376,7 @@ Fore
 Refer: 4573 3365 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala tha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala tha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206387,7 +206391,7 @@ Fore
 Refer: 4574 3366 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala da_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala da_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206402,7 +206406,7 @@ Fore
 Refer: 4575 3367 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala dha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala dha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206417,7 +206421,7 @@ Fore
 Refer: 4576 3368 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala na_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala na_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206432,7 +206436,7 @@ Fore
 Refer: 5175 3369 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala nnna_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala nnna_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206447,7 +206451,7 @@ Fore
 Refer: 4577 3370 N 1 0 0 1 -30 0 0
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala pa_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala pa_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206462,7 +206466,7 @@ Fore
 Refer: 4578 3371 N 1 0 0 1 -30 0 0
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala pha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala pha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206477,7 +206481,7 @@ Fore
 Refer: 4579 3372 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ba_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ba_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206492,7 +206496,7 @@ Fore
 Refer: 4580 3373 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala bha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala bha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206507,7 +206511,7 @@ Fore
 Refer: 4581 3374 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ma_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ma_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206522,7 +206526,7 @@ Fore
 Refer: 4584 3377 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala rra_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala rra_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206550,7 +206554,7 @@ Fore
 Refer: 4586 3379 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala lla_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala lla_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206565,7 +206569,7 @@ Fore
 Refer: 4587 3380 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala llla_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala llla_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206580,7 +206584,7 @@ Fore
 Refer: 4589 3382 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala sha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala sha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206595,7 +206599,7 @@ Fore
 Refer: 4590 3383 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ssa_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ssa_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206610,7 +206614,7 @@ Fore
 Refer: 4591 3384 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala sa_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala sa_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206625,7 +206629,7 @@ Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 4592 3385 S 1 0 0 1 0 0 1
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ha_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ha_mal
 LCarets2: 1 0 
 EndChar
 
@@ -206639,7 +206643,7 @@ Fore
 Refer: 4606 3405 N 1 0 0 1 -60 0 2
 Refer: 5174 3386 N 1 0 0 1 -91 0 0
 Validated: 32769
-Ligature2: "'akhn' half cons in Malayalam 'mlm2'" candrakala ttta_mal
+Ligature2: "'cjct' half cons in Malayalam 'mlm2'" candrakala ttta_mal
 LCarets2: 1 0 
 EndChar
 
