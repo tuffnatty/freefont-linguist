@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1582407827
+ModificationTime: 1582457035
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -94,7 +94,7 @@ Lookup: 4 0 0 "'ss19' ZWJ lig. in Malayalam Reformed"  {"'ss19' ZWJ ra conj 3 in
 Lookup: 6 0 0 "'ss19' ZWJ put ra on subscripts in Malayalam Reformed"  {"'ss19' ZWJ put ra on subcript Malayalam Reformed"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 6 0 0 "'ss19' ZWJ remove pfx-ra from stacked in Malayalam Reformed"  {"'ss19' ZWJ remove pfx-ra from stacked in Malayalam Reformed"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'ss19' re-do cjct ligatures in Malayalam Reformed"  {"'ss19' re-do cjct ligs (govt. order) in Malayalam Reformed"  "'ss19' re-do cjct ligs additional in Malayalam Reformed"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
-Lookup: 6 0 0 "'ss19' re-stack cons in Malayalam Reformed"  {"'ss19' re-stack ga in Malayalam Reformed"  "'ss19' re-stack cha in Malayalam Reformed"  "'ss19' re-stack ka in Malayalam Reformed"  "'ss19' re-stack tta in Malayalam Reformed"  "'ss19' re-stack dda in Malayalam Reformed"  "'ss19' re-stack nna in Malayalam Reformed"  "'ss19' re-stack ta in Malayalam Reformed"  "'ss19' re-stack tha in Malayalam Reformed"  "'ss19' re-stack dha in Malayalam Reformed"  "'ss19' re-stack na in Malayalam Reformed"  "'ss19' re-stack ba in Malayalam Reformed"  "'ss19' re-stack pa in Malayalam Reformed"  "'ss19' re-stack ma in Malayalam Reformed"  "'ss19' re-stack sha in Malayalam Reformed"  "'ss19' re-stack sa in Malayalam Reformed"  "'ss19' re-stack rrarra in Malayalam Reformed"  "'psts' re-do stacked cons in Malayalam"  "'psts' re-do la blwf in Malayalam"  "'psts' re-do va blwf in Malayalam"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
+Lookup: 6 0 0 "'ss19' re-stack cons in Malayalam Reformed"  {"'ss19' re-stack ga in Malayalam Reformed"  "'ss19' re-stack cha in Malayalam Reformed"  "'ss19' re-stack ka in Malayalam Reformed"  "'ss19' re-stack tta in Malayalam Reformed"  "'ss19' re-stack dda in Malayalam Reformed"  "'ss19' re-stack nna in Malayalam Reformed"  "'ss19' re-stack ta in Malayalam Reformed"  "'ss19' re-stack tha in Malayalam Reformed"  "'ss19' re-stack dha in Malayalam Reformed"  "'ss19' re-stack na in Malayalam Reformed"  "'ss19' re-stack ba in Malayalam Reformed"  "'ss19' re-stack pa in Malayalam Reformed"  "'ss19' re-stack ma in Malayalam Reformed"  "'ss19' re-stack sha in Malayalam Reformed"  "'ss19' re-stack sa in Malayalam Reformed"  "'ss19' re-stack rra in Malayalam Reformed"  "'ss19' re-stack rrarra in Malayalam Reformed"  "'psts' re-do stacked cons in Malayalam"  "'psts' re-do la blwf in Malayalam"  "'psts' re-do va blwf in Malayalam"  } ['ss19' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'rclt' joined ligs in Malayalam"  {"'rclt' ZWJ ra ligs in Malayalam Reformed"  "'rclt' ZWJ ra ligatures in Malyalam"  "'rclt' ZWJ ligs in Malayalam"  "'rclt' ZWNJ cons trios in Malayalam"  "'rclt' ZWNJ cons pair in Malayalam"  "'rclt' ZWNJ cons pair in Malayalam-clscl"  } ['rclt' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 2 0 0 "subst. i-ogonek with dotless-i+-ogonek"  {"subst. i-ogonek with dotless-i+-ogonek"  } []
 Lookup: 4 0 0 "ordinal symbols in Latin"  {"ordinal symbols in Latin-3"  "ordinal symbols in Latin-2"  "ordinal symbols in Latin-1"  } []
@@ -520,6 +520,16 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'ss19' re-stack rra in Malayalam Reformed"  2 2 1 1
+  Class: 12 mal_rra.half
+  BClass: 18 rra_mal n_chil_mal
+ 1 1 0
+  ClsList: 1
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "form subscript cons in Malayalam" 
+EndFPST
 ChainSub2: class "'blwf' subscript kha in Malayalam 'mlm2'"  3 3 1 2
   Class: 10 candrakala
   Class: 7 kha_mal
@@ -876,7 +886,7 @@ EndFPST
 ChainSub2: class "'blwf' subscript rra in Malayalam 'mlm2'"  3 3 1 2
   Class: 10 candrakala
   Class: 7 rra_mal
-  BClass: 41 ka_mal ta_mal rra_mal n_chil_mal mal_kata
+  BClass: 18 rra_mal n_chil_mal
   BClass: 8 ZWJ ZWNJ
  2 1 0
   ClsList: 1 2
