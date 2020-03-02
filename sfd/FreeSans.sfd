@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1583097516
+ModificationTime: 1583153340
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -58,7 +58,7 @@ OS2UnicodeRanges: e493beff.4640fdff.0a4030a1.0200058c
 Lookup: 4 0 0 "do_nothing_ligature"  {"do_nothing_ligature-1"  } []
 Lookup: 4 0 0 "form ra-tail lig in Malayalam"  {"ra-tail in Malayalam-conj"  "ra-tail in Malayalam-single"  } []
 Lookup: 4 0 0 "form subscript ra-tail cons in Malayalam"  {"form subscript ra-tail rrarra with candrakala in Malayalam"  "form subscript ra-tail cons with candrakala in Malayalam"  "form subscript ra-tail rrarra in Malayalam"  "form subscript ra-tail cons in Malayalam"  } []
-Lookup: 4 0 0 "form subscript cons in Malayalam"  {"form subscript cons from candrakala in Malayalam"  "form subscript lig from candrakala in Malayalam"  "form ZWJ subscript rrarra in Malayalam"  "form ZWJ subscript cons in Malayalam"  } []
+Lookup: 4 0 0 "form subscript cons in Malayalam"  {"form ZWJ subscript rrarra in Malayalam"  "form subscript lig from candrakala in Malayalam"  "form subscript cons from candrakala in Malayalam"  "form ZWJ subscript cons in Malayalam"  } []
 Lookup: 1 0 0 "repl. va post-base by below-base in Malayalam"  {"repl. va post-base by below-base in Malayalam"  } []
 Lookup: 1 0 0 "subst. smaller blwf in Malayalam"  {"subst. smaller u,uu in Malay+AQEA-lam"  } []
 Lookup: 4 0 0 "form below- from post-base forms in Malayalam"  {"subst. below-base u,uu in Malayalam"  "subscript cons conj in Malayalam"  "subst. below- rrarra in Malayalam"  "subst. subscript for candrakala rrarra in Malayalam"  "subst. subscript for candrakala-cons in Malayalam"  } []
@@ -519,7 +519,7 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
-ChainSub2: class "'rclt' ZWJ stacking in Malayalam"  5 0 0 1
+ChainSub2: class "'rclt' ZWJ stacking in Malayalam"  5 1 1 1
   Class: 11 mal_ra.pref
   Class: 285 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
   Class: 3 ZWJ
@@ -1332,10 +1332,12 @@ ChainSub2: class "'blwf' subscript ka in Malayalam 'mlm2'"  3 3 1 2
  1
   SeqLookup: 0 "form subscript cons in Malayalam" 
 EndFPST
-ChainSub2: class "'blwf' subscript rrarra in Malayalam 'mlm2'"  4 3 1 2
+ChainSub2: class "'blwf' subscript rrarra in Malayalam 'mlm2'"  6 3 1 4
   Class: 10 candrakala
   Class: 10 mal_rrarra
   Class: 11 mal_ra.pref
+  Class: 7 rra_mal
+  Class: 3 ZWJ
   BClass: 14 sa_mal pha_mal
   BClass: 8 ZWJ ZWNJ
  2 1 0
@@ -1346,6 +1348,18 @@ ChainSub2: class "'blwf' subscript rrarra in Malayalam 'mlm2'"  4 3 1 2
   SeqLookup: 0 "form subscript cons in Malayalam" 
  2 2 0
   ClsList: 1 2
+  BClsList: 2 1
+  FClsList:
+ 1
+  SeqLookup: 0 "form subscript cons in Malayalam" 
+ 6 1 0
+  ClsList: 5 1 4 5 1 4
+  BClsList: 1
+  FClsList:
+ 1
+  SeqLookup: 0 "form subscript cons in Malayalam" 
+ 6 2 0
+  ClsList: 5 1 4 5 1 4
   BClsList: 2 1
   FClsList:
  1
@@ -127006,6 +127020,8 @@ SplineSet
  -791 248 -705 335 -596 335 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "form ZWJ subscript rrarra in Malayalam" ZWJ candrakala rra_mal candrakala rra_mal
+Ligature2: "form ZWJ subscript rrarra in Malayalam" ZWJ candrakala rra_mal ZWJ candrakala rra_mal
 LCarets2: 3 0 0 0 
 Ligature2: "subst ra-tail subscript with plain in Malayalam Reformed" mal_rrarrra.blwf
 Ligature2: "form ZWJ subscript rrarra in Malayalam" ZWJ candrakala mal_rrarra
@@ -127054,6 +127070,7 @@ SplineSet
  -688 259 -616 334 -524 334 c 0
 EndSplineSet
 Validated: 3073
+Ligature2: "form subscript ra-tail rrarra in Malayalam" ZWJ candrakala mal_rrarrara
 Ligature2: "form subscript ra-tail rrarra in Malayalam" mal_rrarra.blwf mal_ra.pref
 Ligature2: "form subscript ra-tail rrarra with candrakala in Malayalam" candrakala mal_rrarra mal_ra.pref
 LCarets2: 2 0 0 
