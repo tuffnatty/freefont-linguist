@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1583162900
+ModificationTime: 1583193271
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -1089,11 +1089,12 @@ ChainSub2: class "'blwf' subscript pha in Malayalam 'mlm2'"  3 3 1 2
  1
   SeqLookup: 0 "form subscript cons in Malayalam" 
 EndFPST
-ChainSub2: class "'blwf' subscript pa in Malayalam 'mlm2'"  3 3 1 2
+ChainSub2: class "'blwf' subscript pa in Malayalam 'mlm2'"  3 4 1 4
   Class: 10 candrakala
   Class: 6 pa_mal
   BClass: 76 nna_mal pa_mal pha_mal ya_mal la_mal llla_mal ssa_mal l_chil_mal ll_chil_mal
   BClass: 8 ZWJ ZWNJ
+  BClass: 11 mal_pa.blwf
  2 1 0
   ClsList: 1 2
   BClsList: 1
@@ -1103,6 +1104,18 @@ ChainSub2: class "'blwf' subscript pa in Malayalam 'mlm2'"  3 3 1 2
  2 2 0
   ClsList: 1 2
   BClsList: 2 1
+  FClsList:
+ 1
+  SeqLookup: 0 "form subscript cons in Malayalam" 
+ 2 1 0
+  ClsList: 1 2
+  BClsList: 3
+  FClsList:
+ 1
+  SeqLookup: 0 "form subscript cons in Malayalam" 
+ 2 2 0
+  ClsList: 1 2
+  BClsList: 2 3
   FClsList:
  1
   SeqLookup: 0 "form subscript cons in Malayalam" 
@@ -1395,7 +1408,7 @@ EndFPST
 ChainSub2: class "'blwf' subscript cons combos in Malayalam 'mlm2'"  3 3 1 2
   Class: 10 candrakala
   Class: 46 mal_kaka mal_caca mal_nana mal_tata mal_rrarra
-  BClass: 285 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
+  BClass: 354 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal nn_chil_mal n_chil_mal rr_chil_mal l_chil_mal ll_chil_mal k_chil_mal
   BClass: 3 ZWJ
  2 1 0
   ClsList: 1 2
@@ -2848,7 +2861,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 61200 16 9
+WinInfo: 61248 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -125611,7 +125624,7 @@ SplineSet
  -439 130 l 2
  -489 130 -514 110 -514 70 c 0
 EndSplineSet
-Validated: 527361
+Validated: 3073
 MultipleSubs2: "'ss19' undo simple uu blwf in Malayalam Reformed" candrakala ka_mal uu_mal
 Ligature2: "'psts' u,uu subscript ligatures in Malayalam1" mal_ka.blwf uu_mal
 LCarets2: 1 0 
@@ -128285,7 +128298,7 @@ Validated: 3073
 Ligature2: "form subscript cons from candrakala in Malayalam" candrakala ca_mal
 Ligature2: "form ZWJ subscript cons in Malayalam" ZWJ candrakala ca_mal
 Ligature2: "subst. subscript for candrakala-cons in Malayalam" candrakala ca_mal
-LCarets2: 1 0 
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: mal_pha.blwf
@@ -128336,6 +128349,7 @@ Width: 0
 VWidth: 1789
 GlyphClass: 4
 Flags: HMW
+AnchorPoint: "mlm-vowel-blw-small" -102 275 mark 0
 AnchorPoint: "mlm-vowel-blw-small" -107 -34 basemark 0
 AnchorPoint: "mal-below" 0 304 mark 0
 LayerCount: 2
@@ -128364,7 +128378,7 @@ Ligature2: "subst ra-tail subscript with plain in Malayalam Reformed" mal_pra.bl
 Ligature2: "form subscript cons from candrakala in Malayalam" candrakala pa_mal
 Ligature2: "form ZWJ subscript cons in Malayalam" ZWJ candrakala pa_mal
 Ligature2: "subst. subscript for candrakala-cons in Malayalam" candrakala pa_mal
-LCarets2: 1 0 
+LCarets2: 2 0 0 
 EndChar
 
 StartChar: mal_pri.blwf
@@ -194789,7 +194803,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 N 1 0 0 1 -2 0 2
 Refer: 4557 3349 N 1 0 0 1 228 0 0
-Validated: 98305
+Validated: 32769
 Ligature2: "repl. ra-pfx +- cons lig in Malayalam Reformed" ka_mal
 LCarets2: 1 0 
 EndChar
@@ -206382,7 +206396,7 @@ Encoding: 61340 -1 8332
 Width: 1291
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: W
 LayerCount: 2
 Fore
 Refer: 4569 3361 N 1 0 0 1 0 0 1
