@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1583239162
+ModificationTime: 1583274614
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -77,7 +77,6 @@ Lookup: 4 0 0 "'pref' pre-base ra in Malayalam"  {"'pref' pre-base ra in Malayal
 Lookup: 6 0 0 "'blwf' subscript cons chain in Malayalam 'mlm2'"  {"'blwf' avoid subscript chain in Malayalam 'mlm2'"  "'blwf' subscript cons combos in Malayalam 'mlm2'"  "'blwf' subscript rrarra in Malayalam 'mlm2'"  "'blwf' subscript ka in Malayalam 'mlm2'"  "'blwf' subscript kha in Malayalam 'mlm2'"  "'blwf' subscript ga in Malayalam 'mlm2'"  "'blwf' subscript ca in Malayalam 'mlm2'"  "'blwf' subscript cha in Malayalam 'mlm2'"  "'blwf' subscript ja in Malayalam 'mlm2'"  "'blwf' subscript tta in Malayalam 'mlm2'"  "'blwf' subscript ttha in Malayalam 'mlm2'"  "'blwf' subscript dda in Malayalam 'mlm2'"  "'blwf' subscript ddha in Malayalam 'mlm2'"  "'blwf' subscript nna in Malayalam 'mlm2'"  "'blwf' subscript ta in Malayalam 'mlm2'"  "'blwf' subscript da in Malayalam 'mlm2'"  "'blwf' subscript dha in Malayalam 'mlm2'"  "'blwf' subscript na in Malayalam 'mlm2'"  "'blwf' subscript pa in Malayalam 'mlm2'"  "'blwf' subscript pha in Malayalam 'mlm2'"  "'blwf' subscript ba in Malayalam 'mlm2'"  "'blwf' subscript ma in Malayalam 'mlm2'"  "'blwf' subscript rra in Malayalam 'mlm2'"  "'blwf' subscript sha in Malayalam 'mlm2'"  "'blwf' subscript sa in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' subscript la in Malayalam 'mlm2'"  {"'blwf' subscript la in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlm2'"  {"'pstf' ya,va in Malayalam"  } ['pstf' ('mlm2' <'dflt' > ) ]
-Lookup: 4 0 0 "'cjct' dead cons in Malayalam 'mlm2'"  {"'cjct' dead cons in Malayalam"  } ['cjct' ('mlm2' <'dflt' > ) ]
 Lookup: 6 393232 0 "'cjct' ra-tail on simple subscript in Malayalam 'mlm2'"  {"'cjct' ra-tail on single consonant in Malayalam"  } ['cjct' ('mlm2' <'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base chain in Malayalam"  {"'blwf' below-base la in Malayalam"  "'blws' below-base va in Malayalam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
 Lookup: 4 0 0 "'blws' below-base voc conj in Malay+AQEA-lam"  {"'blws' rr-voc in Malay+AQEA-lam"  "'blws' r_voc in Malay+AQEA-lam"  } ['blws' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -523,14 +522,22 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
-ChainSub2: class "'rclt' ZWJ stacking ra in Malayalam"  6 1 1 1
+ChainSub2: class "'rclt' ZWJ stacking ra in Malayalam"  7 1 1 2
   Class: 11 mal_ra.pref
   Class: 285 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
   Class: 9 mal_kassa
   Class: 3 ZWJ
-  Class: 114 mal_ka.blwf mal_ta.blwf mal_sa.blwf mal_sha.blwf mal_cha.blwf mal_tta.blwf mal_rrarra.blwf mal_ga.blwf mal_ca.blwf
+  Class: 98 mal_ka.blwf mal_ta.blwf mal_sa.blwf mal_sha.blwf mal_cha.blwf mal_tta.blwf mal_ga.blwf mal_ca.blwf
+  Class: 15 mal_rrarra.blwf
  5 0 0
   ClsList: 1 2 4 5 4
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 2 "form subscript ra-tail cons in Malayalam" 
+  SeqLookup: 0 "absorb pfx-ra into cons in Malayalam Reformed" 
+ 4 0 0
+  ClsList: 1 2 6 4
   BClsList:
   FClsList:
  2
@@ -584,12 +591,11 @@ ChainSub2: class "'ss19' avoid non-ZWJ ra lig. in Malayalam Reformed"  2 1 1 1
  1
   SeqLookup: 0 "do_nothing_ligature" 
 EndFPST
-ChainSub2: class "'cjct' ra-tail on single consonant in Malayalam"  4 4 1 4
-  Class: 328 mal_ka.blwf mal_ta.blwf mal_sha.blwf mal_cha.blwf mal_sa.blwf mal_tta.blwf mal_na.blwf mal_ma.blwf mal_nna.blwf mal_dda.blwf mal_la.blwf mal_ga.blwf mal_ddha.blwf mal_ba.blwf mal_kha.blwf mal_nana.blwf mal_va.blwf mal_ttha.blwf mal_dha.blwf mal_ca.blwf mal_pha.blwf mal_pa.blwf mal_ja.blwf mal_da.blwf mal_bha.blwf mal_tata.blwf
+ChainSub2: class "'cjct' ra-tail on single consonant in Malayalam"  3 4 1 2
+  Class: 344 mal_ka.blwf mal_ta.blwf mal_sha.blwf mal_cha.blwf mal_sa.blwf mal_tta.blwf mal_rrarra.blwf mal_na.blwf mal_ma.blwf mal_nna.blwf mal_dda.blwf mal_la.blwf mal_ga.blwf mal_ddha.blwf mal_ba.blwf mal_kha.blwf mal_nana.blwf mal_va.blwf mal_ttha.blwf mal_dha.blwf mal_ca.blwf mal_pha.blwf mal_pa.blwf mal_ja.blwf mal_da.blwf mal_bha.blwf mal_tata.blwf
   Class: 11 mal_ra.pref
-  Class: 15 mal_rrarra.blwf
   BClass: 285 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal rra_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal ttta_mal
-  BClass: 8 ZWNJ ZWJ
+  BClass: 3 ZWJ
   BClass: 10 candrakala
  2 3 0
   ClsList: 1 2
@@ -597,20 +603,8 @@ ChainSub2: class "'cjct' ra-tail on single consonant in Malayalam"  4 4 1 4
   FClsList:
  1
   SeqLookup: 0 "do_nothing_ligature" 
- 2 3 0
-  ClsList: 3 2
-  BClsList: 1 3 2
-  FClsList:
- 1
-  SeqLookup: 0 "do_nothing_ligature" 
  2 1 0
   ClsList: 1 2
-  BClsList: 1
-  FClsList:
- 1
-  SeqLookup: 0 "form subscript ra-tail cons in Malayalam" 
- 2 1 0
-  ClsList: 3 2
   BClsList: 1
   FClsList:
  1
@@ -2863,7 +2857,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 61312 16 9
+WinInfo: 60704 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -127134,7 +127128,7 @@ SplineSet
  -688 259 -616 334 -524 334 c 0
 EndSplineSet
 Validated: 3073
-Ligature2: "form subscript ZWJ ra-tail cons in Malayalam" ZWJ mal_rrarra.blwf ZWJ
+Ligature2: "form subscript ZWJ ra-tail cons in Malayalam" mal_rrarra.blwf ZWJ
 Ligature2: "form subscript ra-tail rrarra in Malayalam" ZWJ candrakala mal_rrarrara
 Ligature2: "form subscript ra-tail rrarra in Malayalam" mal_rrarra.blwf mal_ra.pref
 Ligature2: "form subscript ra-tail rrarra with candrakala in Malayalam" candrakala mal_rrarra mal_ra.pref
@@ -205071,7 +205065,7 @@ Encoding: 61309 -1 8274
 Width: 1103
 VWidth: 1454
 GlyphClass: 2
-Flags: W
+Flags: MW
 AnchorPoint: "mlm-reph" 734 565 basechar 0
 AnchorPoint: "mal-below" 1102 -22 basechar 0
 AnchorPoint: "mlm-vowel-below" 958 0 basechar 0
@@ -205540,7 +205534,7 @@ Encoding: 60746 -1 8285
 Width: 400
 VWidth: 0
 GlyphClass: 1
-Flags: W
+Flags: MW
 LayerCount: 2
 EndChar
 
@@ -206111,7 +206105,7 @@ Encoding: 60748 -1 8316
 Width: 666
 VWidth: 1454
 GlyphClass: 2
-Flags: HW
+Flags: MW
 AnchorPoint: "mlm-vowel-below" 500 -272 basechar 0
 AnchorPoint: "mal-below-centr" 364 -300 basechar 0
 LayerCount: 2
@@ -206129,7 +206123,7 @@ Encoding: 61312 -1 8317
 Width: 1109
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 AnchorPoint: "mlm-reph" 744 565 basechar 0
 AnchorPoint: "mlm-vowel-below" 965 0 basechar 0
 AnchorPoint: "mal-below" 1109 -22 basechar 0
@@ -206234,13 +206228,12 @@ Encoding: 61328 -1 8320
 Width: 954
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4557 3349 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 896 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ka_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206249,13 +206242,12 @@ Encoding: 61329 -1 8321
 Width: 910
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4558 3350 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 850 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" kha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206264,13 +206256,12 @@ Encoding: 61330 -1 8322
 Width: 910
 VWidth: 1454
 GlyphClass: 3
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 4559 3351 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 850 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ga_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206279,13 +206270,12 @@ Encoding: 61331 -1 8323
 Width: 1343
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4560 3352 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1280 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" gha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206294,13 +206284,12 @@ Encoding: 61332 -1 8324
 Width: 1002
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4561 3353 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 940 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" nga_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206309,13 +206298,12 @@ Encoding: 61333 -1 8325
 Width: 865
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4562 3354 S 1 0 0 1 0 0 1
 Refer: 4606 3405 N 1 0 0 1 760 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ca_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206324,13 +206312,12 @@ Encoding: 61334 -1 8326
 Width: 1281
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4563 3355 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1220 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" cha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206339,13 +206326,12 @@ Encoding: 61335 -1 8327
 Width: 841
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4564 3356 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 779 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ja_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206354,13 +206340,12 @@ Encoding: 61336 -1 8328
 Width: 1536
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4565 3357 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1480 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" jha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206369,13 +206354,12 @@ Encoding: 61337 -1 8329
 Width: 1342
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4566 3358 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1280 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" nya_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206384,13 +206368,12 @@ Encoding: 61338 -1 8330
 Width: 589
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4567 3359 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 528 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" tta_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206399,13 +206382,12 @@ Encoding: 61339 -1 8331
 Width: 666
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4568 3360 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 600 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ttha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206414,13 +206396,12 @@ Encoding: 61340 -1 8332
 Width: 1291
 VWidth: 1454
 GlyphClass: 3
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 4569 3361 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1220 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" dda_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206429,13 +206410,12 @@ Encoding: 61341 -1 8333
 Width: 1332
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4570 3362 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1270 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ddha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206444,13 +206424,12 @@ Encoding: 61342 -1 8334
 Width: 1326
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4571 3363 N 1 0 0 1 0 -3 1
 Refer: 4606 3405 S 1 0 0 1 1260 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" nna_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206459,13 +206438,12 @@ Encoding: 61343 -1 8335
 Width: 954
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4572 3364 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 890 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ta_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206474,13 +206452,12 @@ Encoding: 61344 -1 8336
 Width: 823
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4573 3365 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 760 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" tha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206489,13 +206466,12 @@ Encoding: 61345 -1 8337
 Width: 618
 VWidth: 1454
 GlyphClass: 3
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 4574 3366 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 550 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" da_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206504,13 +206480,12 @@ Encoding: 61346 -1 8338
 Width: 928
 VWidth: 1454
 GlyphClass: 3
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 4575 3367 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 863 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" dha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206519,13 +206494,12 @@ Encoding: 61347 -1 8339
 Width: 928
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4576 3368 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 860 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" na_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206534,13 +206508,12 @@ Encoding: 61348 -1 8340
 Width: 928
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 5175 3369 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 860 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" nnna_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206549,13 +206522,12 @@ Encoding: 61349 -1 8341
 Width: 825
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4577 3370 N 1 0 0 1 -30 0 0
 Refer: 4606 3405 S 1 0 0 1 760 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" pa_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206564,13 +206536,12 @@ Encoding: 61350 -1 8342
 Width: 1143
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4578 3371 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1080 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" pha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206579,13 +206550,12 @@ Encoding: 61351 -1 8343
 Width: 1203
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4579 3372 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1140 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ba_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206594,13 +206564,12 @@ Encoding: 61352 -1 8344
 Width: 644
 VWidth: 1454
 GlyphClass: 3
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 4580 3373 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 590 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" bha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206609,13 +206578,12 @@ Encoding: 61353 -1 8345
 Width: 628
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4581 3374 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 570 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ma_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206624,13 +206592,12 @@ Encoding: 61356 -1 8346
 Width: 662
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4584 3377 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 600 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" rra_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206639,7 +206606,7 @@ Encoding: 61357 -1 8347
 Width: 855
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4585 3378 N 1 0 0 1 0 0 1
@@ -206652,13 +206619,12 @@ Encoding: 61358 -1 8348
 Width: 714
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4586 3379 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 650 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" lla_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206667,13 +206633,12 @@ Encoding: 61359 -1 8349
 Width: 641
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4587 3380 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 580 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" llla_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206682,13 +206647,12 @@ Encoding: 61361 -1 8350
 Width: 1009
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4589 3382 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 940 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" sha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206697,13 +206661,12 @@ Encoding: 61362 -1 8351
 Width: 1098
 VWidth: 1454
 GlyphClass: 3
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 4590 3383 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1036 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ssa_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206712,13 +206675,12 @@ Encoding: 61363 -1 8352
 Width: 1282
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4591 3384 N 1 0 0 1 0 0 1
 Refer: 4606 3405 S 1 0 0 1 1220 0 2
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" sa_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206727,13 +206689,12 @@ Encoding: 61364 -1 8353
 Width: 1147
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4606 3405 S 1 0 0 1 1080 0 2
 Refer: 4592 3385 N 1 0 0 1 0 0 1
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ha_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206742,13 +206703,12 @@ Encoding: 61365 -1 8354
 Width: 855
 VWidth: 1454
 GlyphClass: 3
-Flags: W
+Flags: MW
 LayerCount: 2
 Fore
 Refer: 4606 3405 S 1 0 0 1 790 0 2
 Refer: 5174 3386 N 1 0 0 1 0 0 1
 Validated: 32769
-Ligature2: "'cjct' dead cons in Malayalam" ttta_mal candrakala
 LCarets2: 1 0 
 EndChar
 
@@ -206776,7 +206736,7 @@ Encoding: 61354 -1 8357
 Width: 1022
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4606 3405 S 1 0 0 1 960 0 2
@@ -206789,7 +206749,7 @@ Encoding: 61360 -1 8358
 Width: 878
 VWidth: 1454
 GlyphClass: 3
-Flags: HW
+Flags: HMW
 LayerCount: 2
 Fore
 Refer: 4606 3405 S 1 0 0 1 820 0 2
@@ -206802,22 +206762,20 @@ Encoding: 61059 -1 8359
 Width: 1324
 VWidth: 2048
 GlyphClass: 3
-Flags: W
-HStem: -13 71<1080.93 1191.11> 0 21G<473 556 803 886> 488 70<267.205 412.443 615.682 742.443 939.007 1082.09> 699 72<1030.78 1149.07>
-VStem: 89 82<167.774 379.273> 473 83<0 423.352> 803 83<0 425.549> 951 77<121.975 316.959> 1179 75<548.757 668.75> 1242 82<121.621 336.327>
+Flags: MW
 AnchorPoint: "mlm-vowel-below" 1210 10 basechar 0
 AnchorPoint: "mal-below" 1324 -22 basechar 0
 AnchorPoint: "mlm-reph" 854 565 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-1242 220 m 0xbf40
+1242 220 m 0
  1242 313 1210 385 1148 438 c 1
  1067 372 1028 299 1028 222 c 0
  1028 143 1064 58 1136 58 c 0
- 1205 58 1242 142 1242 220 c 0xbf40
+ 1205 58 1242 142 1242 220 c 0
 1324 219 m 0
- 1324 98 1250 -13 1136 -13 c 0xbf40
+ 1324 98 1250 -13 1136 -13 c 0
  1020 -13 951 97 951 220 c 0
  951 313 996 397 1083 473 c 1
  1071 480 1043 488 997 488 c 0
@@ -206846,7 +206804,7 @@ SplineSet
  1061 699 1023 680 987 641 c 1
  941 686 l 1
  977 743 1033 771 1107 771 c 0
- 1204 771 1254 703 1254 605 c 0x7f80
+ 1204 771 1254 703 1254 605 c 0
  1254 569 1239 531 1209 492 c 1
  1285 427 1324 337 1324 219 c 0
 EndSplineSet
