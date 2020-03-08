@@ -103,6 +103,9 @@ Both the classical and reformed scripts are supported.  The default
 is the classical script.  The reformed script is enabled by specifying
 the OpenType Style Set 'ss19'.
 
+In LaTeX fontspec package, reformed orthography is available as 
+"Language=Malayalam Reformed".  See below.
+
 Indic languages
 ---------------
 
@@ -306,6 +309,11 @@ These explicit features are specific to particular fonts.  So this
 technology is meant to work with "web fonts", a means of delivering
 a font with your web page.  See the document "webfont_guidelines.txt"
 for more information about this.
+
+A new propperty is slated to come with CSS4: font-language-override.
+This should permit the font's language tags to be accessed directly.
+However, as of this writing, few browsers have implemented it.
+
 
 Use in LaTeX
 ============
