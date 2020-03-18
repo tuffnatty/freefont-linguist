@@ -21,7 +21,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1584381672
+ModificationTime: 1584528293
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -77,8 +77,8 @@ Lookup: 4 0 0 "'akhn' conjunct ligs etc. in Malayalam 'mlm2'"  {"'akhn' non-std 
 Lookup: 4 0 0 "'akhn' ZWJ conjunct ligs in Malayalam 'mlm2'"  {"'akhn' ZWJ lig trio in Malayalam"  "'akhn' ZWJ lig pair govt. order in Malayalam"  "'akhn' ZWJ lig pairs traditional in Malayalam"  } ['akhn' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pref' pre-base ra in Malayalam"  {"'pref' pre-base ra in Malayalam"  } ['pref' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 6 0 0 "'blwf' subscript cons chain in Malayalam 'mlm2'"  {"'blwf' avoid subscript chain in Malayalam 'mlm2'"  "'blwf' subscript kaka in Malayalam 'mlm2'"  "'blwf' subscript tata in Malayalam 'mlm2'"  "'blwf' subscript nana in Malayalam 'mlm2'"  "'blwf' subscript rrarra in Malayalam 'mlm2'"  "'blwf' subscript ka in Malayalam 'mlm2'"  "'blwf' subscript kha in Malayalam 'mlm2'"  "'blwf' subscript ga in Malayalam 'mlm2'"  "'blwf' subscript ca in Malayalam 'mlm2'"  "'blwf' subscript cha in Malayalam 'mlm2'"  "'blwf' subscript ja in Malayalam 'mlm2'"  "'blwf' subscript tta in Malayalam 'mlm2'"  "'blwf' subscript ttha in Malayalam 'mlm2'"  "'blwf' subscript dda in Malayalam 'mlm2'"  "'blwf' subscript ddha in Malayalam 'mlm2'"  "'blwf' subscript nna in Malayalam 'mlm2'"  "'blwf' subscript ta in Malayalam 'mlm2'"  "'blwf' subscript da in Malayalam 'mlm2'"  "'blwf' subscript dha in Malayalam 'mlm2'"  "'blwf' subscript na in Malayalam 'mlm2'"  "'blwf' subscript pa in Malayalam 'mlm2'"  "'blwf' subscript pha in Malayalam 'mlm2'"  "'blwf' subscript ba in Malayalam 'mlm2'"  "'blwf' subscript ma in Malayalam 'mlm2'"  "'blwf' subscript rra in Malayalam 'mlm2'"  "'blwf' subscript sha in Malayalam 'mlm2'"  "'blwf' subscript sa in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
-Lookup: 6 0 0 "'blwf' rare subscript cons chain in Malayalam 'mlm2'"  {"'blwf' rare subscript cons in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 4 0 0 "'blwf' subscript la in Malayalam 'mlm2'"  {"'blwf' subscript la in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
+Lookup: 6 0 0 "'blwf' ZWJ subscript cons chain in Malayalam 'mlm2'"  {"'blwf' ZWJ subscript cons in Malayalam 'mlm2'"  } ['blwf' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 4 0 0 "'pstf' post-base cons in Malayalam 'mlm2'"  {"'pstf' ya,va in Malayalam 'mlm2'"  } ['pstf' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 6 393232 0 "'cjct' ra-tail on simple subscript in Malayalam 'mlm2'"  {"'cjct' ra-tail on single consonant in Malayalam"  } ['cjct' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base chain in Malayalam"  {"'blwf' below-base la in Malayalam"  "'blws' below-base va in Malayalam"  } ['blws' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
@@ -529,7 +529,7 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
-ChainSub2: class "'blwf' rare subscript cons in Malayalam 'mlm2'"  4 4 1 4
+ChainSub2: class "'blwf' ZWJ subscript cons in Malayalam 'mlm2'"  4 4 1 4
   Class: 10 candrakala
   Class: 193 ka_mal kha_mal ga_mal ca_mal cha_mal ja_mal tta_mal ttha_mal dda_mal nna_mal ta_mal da_mal dha_mal na_mal pa_mal pha_mal ba_mal bha_mal ma_mal ra_mal rra_mal la_mal va_mal sha_mal sa_mal ha_mal
   Class: 17 mal_kaka mal_tata
@@ -2737,7 +2737,7 @@ NameList: Adobe Glyph List
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 61104 16 9
+WinInfo: 3312 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -112925,6 +112925,7 @@ SplineSet
  242 745 l 1
  243 740 244 733 244 724 c 0
 EndSplineSet
+Validated: 3073
 EndChar
 
 StartChar: mal_ku
@@ -134293,25 +134294,37 @@ Width: 855
 VWidth: 1454
 GlyphClass: 2
 Flags: HMW
-AnchorPoint: "mlm-reph" 495 565 basechar 0
+AnchorPoint: "mlm-reph" 545 565 basechar 0
 AnchorPoint: "mal-below" 855 -202 basechar 0
-AnchorPoint: "mlm-vowel-below" 519 -200 basechar 0
+AnchorPoint: "mlm-vowel-below" 579 -200 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-101 0 m 1
- 451 544 l 1
- 533 544 l 1
- 233 65 l 1
+535 408 m 2
+ 535 450 497 488 457 488 c 0
+ 415 488 383 448.2 383 368 c 0
+ 383 292 460 216 535 209 c 1
+ 535 408 l 2
+618 65 m 1
  855 65 l 1
  855 0 l 1
- 527 0 l 1
- 527 -200 l 1
- 444 -200 l 1
- 444 0 l 1
+ 618 0 l 1
+ 617 0 l 1
+ 617 -200 l 1
+ 534 -200 l 1
+ 534 0 l 1
  101 0 l 1
+ 101 544 l 1
+ 184 544 l 1
+ 184 65 l 1
+ 535 65 l 1
+ 535 135 l 1
+ 417 152 310 246 310 370 c 0
+ 310 494.2 381 558 464 558 c 0
+ 567 558 618 502 618 393 c 2
+ 618 65 l 1
 EndSplineSet
-Validated: 3073
+Validated: 527361
 EndChar
 
 StartChar: nnna_mal
@@ -195398,7 +195411,7 @@ LayerCount: 2
 Fore
 Refer: 4621 -1 N 1 0 0 1 -2 0 2
 Refer: 5174 3386 N 1 0 0 1 197 0 0
-Validated: 32769
+Validated: 98305
 Ligature2: "repl. ra-pfx +- cons lig in Malayalam Reformed" ttta_mal
 LCarets2: 1 0 
 EndChar
@@ -206329,6 +206342,7 @@ SplineSet
  -374.364 52.6117 -387 91.8388 -387 139 c 0
  -387 248 -302 335 -193 335 c 0
 EndSplineSet
+Validated: 527361
 Ligature2: "form subscript cons from candrakala in Malayalam" candrakala ha_mal
 Ligature2: "form ZWJ subscript cons in Malayalam" ZWJ candrakala ha_mal
 Ligature2: "subst. subscript for candrakala-cons in Malayalam" candrakala ha_mal
