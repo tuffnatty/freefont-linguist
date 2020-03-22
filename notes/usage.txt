@@ -99,12 +99,21 @@ Sanskrit	larger and different set of ligatures
 
 Malayalam
 ---------
-Both the classical and reformed scripts are supported.  The default 
-is the classical script.  The reformed script is enabled by specifying
-the OpenType Style Set 'ss19'.
+Both the classical and reformed scripts are supported.  The default is the
+classical script.  The reformed script is enabled by specifying the
+OpenType Style Set 'ss19'.
 
 In LaTeX fontspec package, reformed orthography is available as 
 "Language=Malayalam Reformed".  See below.
+
+Many consonant conjunct forms that are not displayed by default are 
+available using the ZWJ character as described in the Unicode standard.
+These extra forms are of the subscript fashion, where the subscript is one
+of the letters 
+	ka kha ga ca cha ja tta ttha dda nna ta da dha
+	na pa pha ba bha ma ra rra la va sha sa ha_mal
+ro the ligatures
+	kaka tata 
 
 The feature "cv20" produces a post-base -ya that extends beneath preceeding 
 letter, if the letter permits it.  The feature "cv21" produces alternative
