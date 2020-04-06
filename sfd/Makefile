@@ -7,22 +7,38 @@ MSFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd
 TTFS=$(SFDS:.sfd=.ttf)
 OTFS=$(SFDS:.sfd=.otf)
 WOFFS=$(SFDS:.sfd=.woff)
+FFBIN=/usr/local/bin/fontforge
 FFLIBS=/usr/local/lib/fontforge_22_02_2011
 FFBIN=/usr/local/bin/fontforge_22_02_2011
-#FIXME newer versions need flag --quiet for pretty output
+FFLIBS=/usr/local/lib/fontforge-new
+FFBIN=/usr/local/bin/fontforge-new
+FFBIN=/usr/bin/fontforge
+FFLIBS=/usr/lib/fontforge
+FFLIBS=/usr/local/lib/fontforge_31_07_2012
+FFBIN=/usr/local/bin/fontforge_31_07_2012
 FF=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN}
+# newer versions need flag --quiet for pretty output, but others choke on it
 FFFF=$(FF) -lang=ff -script 
+FFPY=$(FF) --quiet -lang=py -script 
 FFPY=$(FF) -lang=py -script 
 
-ffversion=`${FF} --version 2> /dev/null | grep '^libfontforge' | sed -e 's/^libfontforge //'`
+# my distro version perversely lost the Version line!
+ffver=`${FF} --version 2>&1 \
+	| grep -E "Version|libfontforge" \
+	| sed -e "s/^libfontforge //" \
+	| sed -e "s/^ Version: //" \
+	2>/dev/null`
 
-TESTFFEXIST=if test -z "$(ffversion)"; then echo FontForge program is required to build FreeFont; exit 1; fi
+TESTFFVER=if test -z "$(ffver)"; then \
+	echo Could not find version of FontForge program; exit 1; fi
 
-TESTFFOLD=if test ${ffversion} -lt 20080429 ; then echo FontForge version too old; exit 0; fi
+TESTFFEXIST=if [ ! -f "$(FFBIN)" ] && [ ! -h "$(FFBIN)" ]; then \
+	echo Fontforge program not found at $(FFBIN); exit 1; fi
 
-TESTFF2012=if test "${ffversion}" -ge 20120731 ; then echo FontForge versions since 20120731 screw up Arabic kerning tables.  \\nPlease use a different version when building FreeFont for distribution.; fi
+TESTFFOLD=if [ "${ffver}" -lt 20080429 ]; then \
+	echo FontForge version $(ffver) too old; exit 0; fi
 
-TESTFF=${TESTFFEXIST}; ${TESTFFOLD}; ${TESTFF2012}
+TESTFF=${TESTFFVER}; ${TESTFFEXIST}; ${TESTFFOLD}
 
 GENTT=../tools/generate/TrueType
 GENOT=../tools/generate/OpenType
