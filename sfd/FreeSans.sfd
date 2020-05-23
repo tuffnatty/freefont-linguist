@@ -21,7 +21,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1203284335
-ModificationTime: 1590192007
+ModificationTime: 1590220539
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -84,10 +84,10 @@ Lookup: 4 0 0 "'cjct' conjunct ligs in Malayalam 'mlm2'"  {"'cjct' subscript rra
 Lookup: 4 0 0 "'cjct' ZWJ conjunct ligs in Malayalam 'mlm2'"  {"'cjct' ZWJ lig. trio in Malayalam 'mlm2'"  "'cjct' ZWJ lig. from subs. in Malayalam 'mlm2'"  "'cjct' ZWJ lig. pair in Malayalam 'mlm2'"  } ['cjct' ('mlm2' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 4 393232 0 "'blws' lig from temp subscr in Malayalam"  {"'blws' lig from temp subscr in Malayalam"  "'blws' lig from temp ZWJ subscr in Malayalam"  } ['blws' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 6 0 0 "'blws' below-base chain in Malayalam"  {"'blws' below-base va in Malayalam"  } ['blws' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
-Lookup: 6 393232 0 "'blws' ra-tail on subscript in Malayalam"  {"'blws' ra-tail on conj. subs. in Malayalam"  "'blws' ra-tail on single subs. in Malayalam"  } ['blws' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
+Lookup: 6 393232 0 "'blws' ra-tail on subscript in Malayalam"  {"'blws' ra-tail on double-pa subs. in Malayalam-1"  "'blws' ra-tail on conj. subs. in Malayalam"  "'blws' ra-tail on single subs. in Malayalam"  } ['blws' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 6 393232 0 "'psts' ra-tail on conj and cons in Malayalam"  {"'psts' avoid ra-tail in Malayalam"  "'psts' ra-tail on conj in Malayalam"  } ['psts' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 4 393232 0 "'psts' ra_tail on subs. from pre-base ra in Malayalam"  {"'psts' ra_tail on subs. from pre-base ra in Malayalam"  } ['psts' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
-Lookup: 4 458768 0 "'psts' vowel/voc subscript ligs in Malayalam"  {"'psts' r-voc subscript ligatures in Malayalam"  "'psts' rr-voc subscript ligatures in Malayalam"  "'psts' u,uu subscript ligatures in Malayalam1"  } ['psts' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
+Lookup: 4 0 0 "'psts' vowel/voc subscript ligs in Malayalam"  {"'psts' r-voc subscript ligatures in Malayalam"  "'psts' rr-voc subscript ligatures in Malayalam"  "'psts' u,uu subscript ligatures in Malayalam1"  } ['psts' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 4 0 0 "'psts' vowel ligatures in Malayalam"  {"'psts' l-voc ligatures in Malayalam"  "'psts' r-voc ligatures in Malayalam"  "'psts' rr-voc ligatures in Malayalam"  "'psts' u ligatures in Malayalam"  "'psts' uu ligatures in Malayalam"  } ['psts' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 6 458768 0 "'psts' subscript u,uu chain in Malayalam"  {"'psts' subscript u,uu chain in Malay+AQEA-lam"  } ['psts' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
 Lookup: 2 0 0 "'ss19' un-do vocalic ligs in Malayalam Reformed"  {"'ss19' un-do vocalic single in Malayalam Reformed"  "'ss19' un-do vocalic conj in Malayalam Reformed"  "'ss19' un-do subscript vocalics in Malayalam Reformed"  } ['rclt' ('mlm2' <'MLR ' > 'mlym' <'MLR ' > ) 'ss19' ('mlm2' <'MAL ' 'MLR ' 'dflt' > 'mlym' <'MAL ' 'MLR ' 'dflt' > ) ]
@@ -547,6 +547,26 @@ KernClass2: 3 2 "'kern' kerns in Cyrillic-small"
  14 ucyr ushortcyr
  5 decyr
  0 {} 0 {} 0 {} -10 {} 0 {} -5 {}
+ChainSub2: class "'blws' ra-tail on double-pa subs. in Malayalam-1"  5 1 1 2
+  Class: 11 mal_ra.pref
+  Class: 268 ka_mal kha_mal ga_mal gha_mal nga_mal ca_mal cha_mal ja_mal jha_mal nya_mal tta_mal ttha_mal dda_mal ddha_mal nna_mal ta_mal tha_mal da_mal dha_mal na_mal nnna_mal pa_mal pha_mal ba_mal bha_mal ma_mal ya_mal la_mal lla_mal llla_mal va_mal sha_mal ssa_mal sa_mal ha_mal
+  Class: 3 ZWJ
+  Class: 11 mal_pa.blwf
+ 6 0 0
+  ClsList: 1 2 3 4 3 4
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 0 "absorb pfx-ra into cons in Malayalam Reformed" 
+  SeqLookup: 3 "subst. subs. cons with ra-tail in Malayalam" 
+ 4 0 0
+  ClsList: 1 2 4 4
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 0 "absorb pfx-ra into cons in Malayalam Reformed" 
+  SeqLookup: 2 "subst. subs. cons with ra-tail in Malayalam" 
+EndFPST
 ChainSub2: class "'blwf' subscript nata in Malayalam 'mlm2'"  5 3 1 2
   Class: 10 candrakala
   Class: 6 na_mal
@@ -2964,7 +2984,7 @@ NameList: FreeSerif
 DisplaySize: -36
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 60928 16 9
+WinInfo: 61216 16 9
 BeginPrivate: 9
 UniqueID 7 5020902
 BlueValues 55 [-24 0 524 540 558 560 591 593 613 615 700 709 729 741]
@@ -128623,7 +128643,8 @@ Width: 0
 VWidth: 1789
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "mal-below" 0 325 mark 0
+AnchorPoint: "mlm-vowel-blw-small" -107 275 mark 0
+AnchorPoint: "mal-below" 0 306 mark 0
 LayerCount: 2
 Fore
 SplineSet
@@ -128631,8 +128652,8 @@ SplineSet
  -278 217 -214 162 -214 81 c 0
  -214 54 -217 32 -225 18 c 1
  -65 18 l 1
- -65 334 l 1
- 0 334 l 1
+ -65 315 l 1
+ 0 315 l 1
  0 -33 l 2
  0 -135 -70 -202 -174 -202 c 0
  -237 -202 -313 -174 -313 -120 c 0
@@ -128654,7 +128675,6 @@ SplineSet
  -120.5 -112.9 -159 -104 -204 -104 c 0
  -238 -104 -256 -110 -256 -123 c 0
 EndSplineSet
-Validated: 3073
 Ligature2: "'rclt' ZWJ vocalic subscripts in Malayalam" mal_pa.blwf ZWJ r_voc_mal
 Ligature2: "'psts' r-voc subscript ligatures in Malayalam" mal_pa.blwf r_voc_mal
 MultipleSubs2: "'ss19' un-do subscript vocalics in Malayalam Reformed" mal_pa.blwf r_voc_mal
@@ -128667,36 +128687,36 @@ Width: 0
 VWidth: 1789
 GlyphClass: 4
 Flags: HMW
-AnchorPoint: "mlm-vowel-blw-small" -107 -81 basemark 0
-AnchorPoint: "mal-below" 0 335 mark 0
+AnchorPoint: "mlm-vowel-blw-small" -107 275 mark 0
+AnchorPoint: "mlm-vowel-blw-small" -107 -131 basemark 0
+AnchorPoint: "mal-below" 0 325 mark 0
 LayerCount: 2
 Fore
 SplineSet
--301 233 m 0
- -234 233 -184 187 -184 121 c 0
- -184 114 -188 81 -202 66 c 1
- -66 66 l 1
- -66 335 l 1
- 0 335 l 1
- 0 25 l 2
- 0 -55 -98 -95 -236 -95 c 0
- -395.7 -95 -517 -37.4004 -517 160 c 0
- -517 224 -487 290 -446 339 c 1
- -407 314 l 1
- -443 273 -471 216 -471 160 c 0
- -471 7.59961 -389.783 -48 -243 -48 c 0
- -148 -48 -70 -25 -66 20 c 1
- -278 20 l 1
- -278 45 l 1
- -254 58 -242 83 -242 120 c 0
- -242 151 -271 177 -301 177 c 0
- -334 177 -360 153 -360 121 c 0
- -360 93 -347 72 -321 57 c 1
- -350 13 l 1
- -394 35 -416 71 -416 121 c 0
- -416 185 -364 233 -301 233 c 0
+-363 219 m 0
+ -285.8 219 -215 165 -215 91 c 0
+ -215 76.3333 -221.667 34 -233 21 c 1
+ -65 21 l 1
+ -65 325 l 1
+ 0 325 l 1
+ 0 -25 l 2
+ 0 -105 -163 -145 -301 -145 c 0
+ -460.7 -145 -607 -87.4004 -607 110 c 0
+ -607 174 -577 240 -536 289 c 1
+ -497 264 l 1
+ -533 223 -561 166 -561 110 c 0
+ -561 -42.4004 -454.783 -98 -308 -98 c 0
+ -213 -98 -70 -78 -66 -33 c 1
+ -327 -33 l 1
+ -327 -1 l 1
+ -282.8 26 -277 52 -277 84 c 0
+ -277 125.667 -321.8 159 -362 159 c 0
+ -404.5 159 -446 127 -446 91 c 0
+ -446 63 -440.8 34 -397 12 c 1
+ -426 -37 l 1
+ -495.8 0 -507 43 -507 93 c 0
+ -507 161.5 -432 219 -363 219 c 0
 EndSplineSet
-Validated: 1
 Ligature2: "'psts' ra_tail on subs. from pre-base ra in Malayalam" mal_ra.pref mal_pa.blwf
 Ligature2: "form subs. ZWJ ra-tail cons. in Malayalam" ZWJ mal_pa.blwf ZWJ
 LCarets2: 2 0 0 
