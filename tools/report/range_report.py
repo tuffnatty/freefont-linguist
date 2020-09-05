@@ -103,7 +103,7 @@ class FontSupport:
 		# FIXME this is a really bad way to index the entries.
 		# only works if indexes start at 0
 		for index in range( 0, nRanges ):
-			byte = index / 32
+			byte = index // 32
 			bit = index % 32
 
 			self.collectRangeInfo( font, r[byte], bit, index )
