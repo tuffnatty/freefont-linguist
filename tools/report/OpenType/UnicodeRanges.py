@@ -135,14 +135,14 @@ ulUnicodeRange = [
 			interval(0x0750, 0x077F),	# Supplement
 			interval(0x08A0, 0x08B4),	# Extended-A
 			interval(0x08B6, 0x08BD),	# Extended-A
-			interval(0x08D4, 0x08FF),	# Extended-A
+			interval(0x08D3, 0x08FF),	# Extended-A
 	]
 	],
 [14,	"N'Ko", [interval(0x07C0, 0x07FF)]],
 [15,	'Devanagari (+ext.)',     [ interval(0x0900, 0x097F),
-			interval(0xA8E0, 0xA8FD),	# Extended
-			interval(0x1CD0, 0x1CF6),	# Vedic Extensions
-			interval(0x1CF8, 0x1CF9)
+			interval(0xA830, 0xA839),	# Indic numeric forms
+			interval(0xA8E0, 0xA8FF),	# Extended
+			interval(0x1CD0, 0x1CFA)	# Vedic Extensions
 			]],
 [16,	'Bengali',     [interval(0x0980, 0x0983),
 		interval(0x0985, 0x098C),
@@ -222,7 +222,8 @@ ulUnicodeRange = [
 		interval(0x0BCA, 0x0BCD),
 		interval(0x0BD0, 0x0BD0),
 		interval(0x0BD7, 0x0BD7),
-		interval(0x0BE6, 0x0BFA)
+		interval(0x0BE6, 0x0BFA),
+		interval(0x11FC0, 0x11FF1)	#Supplement
 	]],
 [21,	'Telugu',     [interval(0x0C01, 0x0C03),
 		interval(0x0C05, 0x0C0C),
@@ -308,7 +309,7 @@ ulUnicodeRange = [
 [31,	'General Punctuation (+suppl.)',     [interval(0x2000, 0x2064),
 		interval(0x2066, 0x2069),
 		# interval(0x206A, 0x206F),	# deprecated
-		interval(0x2E00, 0x2E49),	# Supplemental
+		interval(0x2E00, 0x2E4E),	# Supplemental
 	]],
 [32,	'Superscripts and Subscripts',     [interval(0x2070, 0x2071),
 		interval(0x2074, 0x208E),
