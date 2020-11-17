@@ -41,6 +41,6 @@ try:
 	for g in glyphs:
 		print( "setting", g.glyphname, 'glyph class to', 'automatic' )
 		g.glyphclass = 'automatic'
-except ValueError, e:
+except ValueError as e:
 	explain_error_and_quit( e )
 

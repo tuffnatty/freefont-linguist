@@ -58,6 +58,6 @@ try:
 		print( "naming", g.glyphname, 'as', newname )
 		g.glyphname = newname
 		g.unicode = g.encoding
-except ValueError, e:
+except ValueError as e:
 	explain_error_and_quit( e )
 
