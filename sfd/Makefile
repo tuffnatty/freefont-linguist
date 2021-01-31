@@ -7,15 +7,8 @@ MSFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd
 TTFS=$(SFDS:.sfd=.ttf)
 OTFS=$(SFDS:.sfd=.otf)
 WOFFS=$(SFDS:.sfd=.woff)
-FFBIN=/usr/local/bin/fontforge
-FFLIBS=/usr/local/lib/fontforge_22_02_2011
-FFBIN=/usr/local/bin/fontforge_22_02_2011
-FFLIBS=/usr/local/lib/fontforge-new
-FFBIN=/usr/local/bin/fontforge-new
 FFBIN=/usr/bin/fontforge
 FFLIBS=/usr/lib/fontforge
-FFLIBS=/usr/local/lib/fontforge_31_07_2012
-FFBIN=/usr/local/bin/fontforge_31_07_2012
 FF=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN}
 # newer versions need flag --quiet for pretty output, but others choke on it
 FFFF=$(FF) -lang=ff -script 
