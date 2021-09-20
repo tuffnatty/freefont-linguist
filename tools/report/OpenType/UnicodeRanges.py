@@ -95,7 +95,7 @@ ulUnicodeRange = [
 [6,	'Combining Diacritical Marks (+suppl.)',     [interval(0x0300, 0x036F),
 			interval(0x1DC0, 0x1DF9),	# Supplement
 			interval(0x1DFB, 0x1DFF),	# Supplement
-			interval(0x1AB0, 0x1ABE)	# Extended
+			interval(0x1AB0, 0x1ACE)	# Extended
 			] ],
 [7,	'Greek and Coptic',     [interval(0x0370, 0x0377),
 			interval(0x037A, 0x037F),
@@ -285,9 +285,15 @@ ulUnicodeRange = [
 [29,	'Latin Extended (Additional,C,D,E)',     [
 		interval(0x1E00, 0x1EFF),	# Additional
 		interval(0x2C60, 0x2C7F),	# C
-		interval(0xA720, 0xA7B7),	# D
-		interval(0xA7F7, 0xA7FF),	# D
-		interval(0xAB30, 0xAB65)	# E
+		interval(0xA720, 0xA7CA),	# D
+		interval(0xA7D0, 0xA7D1),	# D
+		interval(0xA7D3, 0xA7D3),	# D
+		interval(0xA7D5, 0xA7D9),	# D
+		interval(0xA7F2, 0xA7FF),	# D
+		interval(0xAB30, 0xAB6B),	# E
+		interval(0x10780, 0x10785),	# F
+		interval(0x10787, 0x107B0),	# F
+		interval(0x107B2, 0x107BA),	# F
 		]],
 [30,	'Greek Extended',     [interval(0x1F00, 0x1F15),
 		interval(0x1F18, 0x1F1D),
@@ -342,9 +348,7 @@ ulUnicodeRange = [
 [41,	'Optical Character Recognition',     [interval(0x2440, 0x244A)]],
 [42,	'Enclosed Alphanumerics',     [
 	interval(0x2460, 0x24FF),
-	interval(0x1F100, 0x1F10C),	# Supplement
-	interval(0x1F110, 0x1F16B),	# Supplement
-	interval(0x1F170, 0x1F1AC),	# Supplement
+	interval(0x1F100, 0x1F1AD),	# Supplement
 	interval(0x1F1E6, 0x1F1FF)	# Supplement
 	]],
 [43,	'Box Drawing',     [interval(0x2500, 0x257F)]],
@@ -361,6 +365,9 @@ ulUnicodeRange = [
 			interval(0x1F910, 0x1F93E),	# Supplemental Symbols and Pictographs
 			interval(0x1F940, 0x1F94E),
 			interval(0x1F950, 0x1F96B),
+			interval(0x1F680, 0x1F6D7),	# Transport and Map Symbols
+			interval(0x1F6DD, 0x1F6EC),	# ""
+			interval(0x1F6F0, 0x1F6EC),	# ""
 			interval(0x1F980, 0x1F997),
 			interval(0x1F9C0, 0x1F9C0),
 			interval(0x1F9D0, 0x1F9E6),
