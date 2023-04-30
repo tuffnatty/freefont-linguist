@@ -106,7 +106,7 @@ Lookup: 1 0 0 "subst. i,j with dotless form" { "subst i,j with dotless form 1"  
 Lookup: 4 0 0 "'liga' std. ligatures in Latin for Dutch" { "'liga' std. ligatures in Latin for Dutch"  } ['liga' ('latn' <'NLD ' > ) ]
 Lookup: 1 0 0 "'smcp' lowercase to small caps in Latin for Turkish" { "'smcp' lowercase to small caps in Latin for Turkish-1"  } ['smcp' ('latn' <'AZE ' 'CRT ' 'KAZ ' 'TAT ' 'TRK ' > ) ]
 Lookup: 6 0 0 "'ccmp' iogonek glyph decompos. in Latin" { "'ccmp' iogonek glyph decomp in Latin-1"  } ['ccmp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
-Lookup: 6 0 0 "'ccmp' remove dot followed by mark in Latin" { "'ccmp' remove dot followed by mark in Latin"  } ['ccmp' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' remove dot followed by mark in Latin" { "'ccmp' remove dot followed by mark in Latin"  } ['ccmp' ('cyrl' <'ABK ' 'AZE ' 'BEL ' 'BGR ' 'BOS ' 'CHE ' 'CHK ' 'CHU ' 'CRT ' 'CSL ' 'EVK ' 'EVN ' 'ING ' 'KAB ' 'KAR ' 'KAZ ' 'KHA ' 'KHK ' 'KHS ' 'KHV ' 'KLM ' 'KOP ' 'KOZ ' 'KRK ' 'KRL ' 'MKD ' 'MNG ' 'MOL ' 'OSS ' 'RBU ' 'RSY ' 'RUS ' 'SRB ' 'TAJ ' 'TNE ' 'TUV ' 'UDM ' 'UKR ' 'UZB ' 'YAK ' 'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin - i" { "'ccmp' glyph compos. in Latin - i-subtable"  } ['ccmp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 2 0 0 "'smcp' small to small caps in Latin mult pre-decomp" { "'smcp' small to small caps in Latin mult pre-decomp-1"  "'smcp' small caps Roman Numerals-1"  } ['smcp' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 2 0 0 "'smcp' small caps in Latin pre-decompose" { "'smcp' small caps in Latin pre-decompose-basic"  "'smcp' small caps in Latin pre-decompose-A"  "'smcp' small caps in Latin pre-decompose-B"  "'smcp' small caps in Latin pre-decompose-B-2"  "'smcp' small caps in Latin pre-decompose-C"  "'smcp' small caps in Latin pre-decompose-additional"  "'smcp' small caps in Latin pre-decompose-additional-2"  "'smcp' small caps in Latin pre-decompose-viet"  } ['smcp' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
@@ -844,8 +844,8 @@ ChainSub2: class "'locl' stretching in Latin-1" 11 11 1 9
   FClassNames: "0"
 EndFPST
 ChainSub2: class "'ccmp' remove dot followed by mark in Latin" 2 1 3 2
-  Class: 3 i j
-  FClass: 172 grave.cmb acute.cmb circumflex.cmb tilde.cmb macron.cmb breve.cmb dieresis.cmb ring.cmb acutedbl.cmb hacek.cmb linevertabv.cmb linesvertdblabv.cmb gravedbl.cmb breveinv.cmb
+  Class: 14 i j icyr jecyr
+  FClass: 228 grave.cmb acute.cmb circumflex.cmb tilde.cmb macron.cmb breve.cmb dotaccent.cmb dieresis.cmb ring.cmb acutedbl.cmb hacek.cmb linevertabv.cmb linesvertdblabv.cmb gravedbl.cmb breveinv.cmb dasiapneumatacyr.cmb psilipneumatacyr.cmb
   FClass: 126 leftharpoonaccent rightharpoonaccent uni20D4 uni20D5 uni20D6 uni20D7 uni20DB uni20DC uni20E1 bridgewideabv.cmb asteriskabv.cmb
  1 0 1
   ClsList: 1
@@ -1221,7 +1221,7 @@ Grid
  897.8 175.071 l 1028
 EndSplineSet
 AnchorClass2: "stem-vert" "'mark' marks 2-1" "heb-lam-above" "'mark' marks in Hebrew-lam" "heb-point-low-right" "'mark' marks in Hebrew-1" "viet-hook" "'mkmk' mark-to-mark for Viet" "viet-grave" "'mkmk' mark-to-mark for Viet" "viet-acute" "'mkmk' mark-to-mark for Viet" "far-right-dot" "'mark' far right in Latin-1" "belowmk" "'mkmk' mark-to-mark generic-below" "cyr-below" "'mark' marks in Cyrillic 1" "abovemk" "'mkmk' mark-to-mark generic-1" "below_gk" "'mark' mark below in Greek and Coptic-1" "above_gk" "'mark' mark above in Greek-1" "cyr-lateral" "'mkmk' mark-to-mark in Cyrillic-1" "cyr-stacking" "'mkmk' mark-to-mark in Cyrillic-1" "heb-top-mkmk" "'mkmk' mark-to-mark in Hebrew-1" "heb-low-mkmk" "'mkmk' mark-to-mark in Hebrew-1" "heb-point-right" "'mark' marks in Hebrew-1" "heb-point-left" "'mark' marks in Hebrew-1" "heb-point-low" "'mark' marks in Hebrew-1" "heb-dagesh" "'mark' marks in Hebrew-1" "heb-vowel-left" "'mark' marks in Hebrew-1" "heb-point-above" "'mark' marks in Hebrew-1" "heb-vowel-low" "'mark' marks in Hebrew for Ivrit-1" "heb-yid-vowel-low" "'mark' marks in Hebrew for Yiddish-1" "topright" "'mark' marks-generic subtable" "cyr-above" "'mark' marks in Cyrillic 1" "middle" "'mark' marks-generic subtable" "ogonek" "'mark' marks in Latin - ogonek" "thai_vowel_tone_right" "'mkmk' mark-to-mark in Thai right-1" "thai_vowel_tone" "'mkmk' mark-to-mark in Thai vowel-tone" "thai_tone" "'mark' marks in Thai vowels,tones-1" "thai_vowel_centered" "'mark' marks in Thai vowels,tones-1" "thai_vowel" "'mark' marks in Thai vowels,tones-1" "thai_below" "'mark' marks in Thai - low" "below" "'mark' marks generic-low-1" "above" "'mark' marks generic-high-1"
-BeginChars: 131072 3998
+BeginChars: 131072 4000
 
 StartChar: space
 Encoding: 32 32 0
@@ -15626,6 +15626,7 @@ LayerCount: 2
 Fore
 Refer: 73 105 N 1 0 0 1 0 0 3
 Validated: 1
+Substitution2: "subst i,j with dotless form 1" icyr.dotless
 Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.i
 EndChar
 
@@ -15651,6 +15652,7 @@ LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 0 0 3
 Validated: 1
+Substitution2: "subst i,j with dotless form 1" jecyr.dotless
 Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.j
 EndChar
 
@@ -91879,5 +91881,32 @@ EndSplineSet
 Validated: 1
 Substitution2: "'hist' historical forms in Cyrillic-jest" eiotifiedcyr
 EndChar
+
+StartChar: icyr.dotless
+Encoding: 13476 -1 3998
+Width: 292
+VWidth: 0
+Flags: W
+AnchorPoint: "cyr-above" 201 449 basechar 0
+AnchorPoint: "cyr-below" 111 0 basechar 0
+LayerCount: 2
+Fore
+Refer: 238 305 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: jecyr.dotless
+Encoding: 13477 -1 3999
+Width: 353
+VWidth: 0
+Flags: W
+AnchorPoint: "cyr-above" 271 481 basechar 0
+AnchorPoint: "cyr-below" 121 -201 basechar 0
+LayerCount: 2
+Fore
+Refer: 1587 567 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
 EndChars
 EndSplineFont
