@@ -13,7 +13,7 @@ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
+GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
@@ -90,14 +90,14 @@ try:
 	ht.writeInto( buf, entry.offset )
 
 	outfile = open( filePath, 'wb' )
-	outfile.write( str( buf ) )
+	outfile.write( buf )
 	outfile.flush()
 
 	csa = get_file32Bit_checkSumAdjustment( filePath )
 	outfile = open( filePath, 'wb' )
 	ht.checkSumAdjustment = csa
 	ht.writeInto( buf, entry.offset )
-	outfile.write( str( buf ) )
+	outfile.write( buf )
 	outfile.flush()
 
 except Exception as e:

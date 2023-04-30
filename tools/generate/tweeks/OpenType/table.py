@@ -12,7 +12,7 @@ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
-GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>. 
+GNU FreeFont.  If not, see <http://www.gnu.org/licenses/>.
 """
 __author__ = "Stevan White"
 __email__ = "stevan.white@googlemail.com"
@@ -42,10 +42,10 @@ def registerStructFields( cls ):
 def _setup_structs( cls ):
 	#FIXME REALLY need to warn programmer if decorator is not present
 	# otherwise they get nasty recursions
-	""" Decorator for all basic subclasses of Table. 
+	""" Decorator for all basic subclasses of Table.
 	    Initializes class internal variables based on the class variables
 	    _name (must be unique to class) and
-	    _fdlist, a list of FieldDesc constructor argument lists. 
+	    _fdlist, a list of FieldDesc constructor argument lists.
 	    Seems to run *after* the rest of the class members are initialized.
 	    1) makes class members _layout, _size, _structtype if not present.
 	    2) from class' _fdlist member, entry in a _layout entry for this
@@ -85,7 +85,7 @@ class BaseTable( object ):
 	def __init__( self, buf, offset = 0 ):
 		""" Idea is to override the member access functions, so that
 		font structure fields come from an implementation struct,
-		which can be replaced on the fly. 
+		which can be replaced on the fly.
 		"""
 		self._offset = offset
 		#print self.__class__
@@ -103,15 +103,15 @@ class BaseTable( object ):
 			return self.__dict__[name]
 		if not '_struct' in self.__dict__:
 			raise Exception( "No _struct member: " + str( self ) )
-		if name in self._struct.__dict__:
-			return self._struct.__dict__[name]
+		if hasattr(self._struct, name):
+			return getattr(self._struct, name)
 		else:
 			raise KeyError( "item " + name + " not found" )
 
 	def __setattr__( self, name, value ):
 		if( '_struct' in self.__dict__
 		and name in self.__dict__['_struct'] ):
-			self._struct.name = value
+			setattr(self._struct, name,  value)
 		else:
 			self.__dict__[name] = value
 
@@ -202,7 +202,7 @@ class TableRecord( Table ):
 		return self._parent
 
 class StructArrayTable( VariableSizedTable ):
-	"""Table that contains a variable-sized array of other tables. 
+	"""Table that contains a variable-sized array of other tables.
 	The "size" of such a table is thus more complex:
 	Has "getHeaderSize", "getTotalSize"
 	"""
@@ -243,7 +243,7 @@ class StructArrayTable( VariableSizedTable ):
 		return cls.getTableSize()
 
 class NestedStructTable( BaseTable ):
-	"""Table that contains a fixed mixture of primitive and named structs. 
+	"""Table that contains a fixed mixture of primitive and named structs.
 	I think in OpenType, the structs always appear last in such a mixed
 	situation, so that assumption is reflected here.
 
@@ -252,7 +252,7 @@ class NestedStructTable( BaseTable ):
 	def __init__( self, buf, offset = 0 ):
 		""" Idea is to override the member access functions, so that
 		font structure fields come from an implementation struct,
-		which can be replaced on the fly. 
+		which can be replaced on the fly.
 		"""
 		raise Exception( "Not implemented" )
 		self._offset = offset
@@ -317,9 +317,8 @@ class TableOffsetArrayTable( SimpleArrayTable ):
 
 	def getReferencedItems( self, filebuf ):
 		return [ self.getReferencedItem( filebuf, i )
-				for i in range( self.getNumItems() ) ]	
+				for i in range( self.getNumItems() ) ]
 
 	def getReferencedItem( self, filebuf, idx ):
 		off = self.getItem( filebuf, idx )
 		return self._reference_type( filebuf, self._offset + off )
-

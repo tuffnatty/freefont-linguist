@@ -7,13 +7,13 @@ MSFDS=FreeMonoBoldOblique.sfd FreeMonoBold.sfd FreeMonoOblique.sfd FreeMono.sfd
 TTFS=$(SFDS:.sfd=.ttf)
 OTFS=$(SFDS:.sfd=.otf)
 WOFFS=$(SFDS:.sfd=.woff)
-FFBIN=/usr/bin/fontforge
+FFBIN?=/usr/bin/fontforge
 FFLIBS=/usr/lib/fontforge
-FF=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN}
+FF?=LD_LIBRARY_PATH=${FFLIBS} ${FFBIN}
 # newer versions need flag --quiet for pretty output, but others choke on it
-FFFF=$(FF) -lang=ff -script 
-FFPY=$(FF) --quiet -lang=py -script 
-FFPY=$(FF) -lang=py -script 
+FFFF=$(FF) -lang=ff -script
+FFPY?=$(FF) -lang=py -script
+FFPY?=$(FF) -lang=py -script
 
 # my distro version perversely lost the Version line!
 ffver=`${FF} --version 2>&1 \
@@ -36,27 +36,31 @@ TESTFF=${TESTFFVER}; ${TESTFFEXIST}; ${TESTFFOLD}
 GENTT=../tools/generate/TrueType
 GENOT=../tools/generate/OpenType
 GENWO=../tools/generate/WOFF
-# FIXME logic of setting FixedPitch is poor.  
+# FIXME logic of setting FixedPitch is poor.
 IFP=../tools/generate/tweeks/set_isFixedPitch.py
 CFS=../tools/generate/tweeks/correct_fsSelection.py
 
 .SUFFIXES: $(SUFFIXES) .sfd .ttf .otf .woff
 
 %.otf : %.sfd
-	@ $(TESTFF)
-	@ ( $(FFPY) ${GENOT} $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
-	@ ( $(IFP) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 
-	@ ( $(CFS) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 
+	$(TESTFF)
+	$(FFPY) ${GENOT} $<
+	ls -l $@
+	$(IFP) $@ || true
+	ls -l $@
+	$(CFS) $@
 
 %.ttf : %.sfd
-	@ $(TESTFF)
-	@ ( $(FFPY) $(GENTT) $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
-	@ ( $(IFP) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 
-	@ ( $(CFS) $@ 3>&1 1>&2 2>&3 | tail -n +4 ) 
+	$(TESTFF)
+	$(FFPY) $(GENTT) $<
+	ls -l $@
+	$(IFP) $@ || true
+	ls -l $@
+	$(CFS) $@
 
 %.woff : %.sfd
-	@ $(TESTFF)
-	@ ( $(FFPY) $(GENWO) $< 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1 
+	$(TESTFF)
+	$(FFPY) $(GENWO) $<
 
 all: ttf otf woff
 
@@ -67,11 +71,11 @@ otf: $(OTFS)
 woff: $(WOFFS)
 
 tests:
-	@ $(TESTFF)
-	@ ( $(FFPY) ../tools/test/isMonoMono.py $(MSFDS) 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
-	@ $(FFPY) ../tools/test/checkGlyphNumbers.py `pwd` $(SFDS) 2>&1
-	@ $(FFPY) ../tools/test/checkOTGlyphClass.py `pwd` $(SFDS) 2>&1
-	@ $(FFPY) ../tools/test/validate.py `pwd` $(SFDS) 2>&1
+	$(TESTFF)
+	( $(FFPY) ../tools/test/isMonoMono.py $(MSFDS) 3>&1 1>&2 2>&3 | tail -n +4 ) 3>&1 1>&2 2>&3 2>&1
+	$(FFPY) ../tools/test/checkGlyphNumbers.py `pwd` $(SFDS) 2>&1
+	$(FFPY) ../tools/test/checkOTGlyphClass.py `pwd` $(SFDS) 2>&1
+	$(FFPY) ../tools/test/validate.py `pwd` $(SFDS) 2>&1
 
 clean:
 	rm -f $(TTFS) $(OTFS) $(WOFFS) build.log
