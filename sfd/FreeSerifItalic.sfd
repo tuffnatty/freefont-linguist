@@ -148,7 +148,7 @@ Lookup: 4 0 0 "'dlig' discr. ligatures in Latin for Spanish" { "'dlig' discr. li
 Lookup: 4 0 0 "'liga' std. ligatures in Latin for Catalan" { "'liga' std. ligatures in Latin for Catalan-1"  } ['liga' ('latn' <'CAT ' > ) ]
 Lookup: 1 0 0 "'locl' local. forms in Latin for Sami" { "'locl' Localized Forms for Sami-1"  } ['locl' ('latn' <'ISM ' > 'latn' <'LSM ' > 'latn' <'NSM ' > 'latn' <'SKS ' > ) ]
 Lookup: 6 0 0 "'ccmp' iogonek glyph decompos. in Latin" { "'ccmp' iogonek glyph decomp in Latin-1"  } ['ccmp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
-Lookup: 6 0 0 "'ccmp' remove dot followed by mark in Latin" { "'ccmp' remove dot followed by mark in Latin"  } ['ccmp' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' remove dot followed by mark in Latin"  {"'ccmp' remove dot followed by mark in Latin"  } ['ccmp' ('cyrl' <'ABK ' 'AZE ' 'BEL ' 'BGR ' 'BOS ' 'CHE ' 'CHK ' 'CHU ' 'CRT ' 'CSL ' 'EVK ' 'EVN ' 'ING ' 'KAB ' 'KAR ' 'KAZ ' 'KHA ' 'KHK ' 'KHS ' 'KHV ' 'KLM ' 'KOP ' 'KOZ ' 'KRK ' 'KRL ' 'MKD ' 'MNG ' 'MOL ' 'OSS ' 'RBU ' 'RSY ' 'RUS ' 'SRB ' 'TAJ ' 'TNE ' 'TUV ' 'UDM ' 'UKR ' 'UZB ' 'YAK ' 'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 4 0 0 "'ccmp' glyph compos. in Latin - i" { "'ccmp' glyph compos. in Latin - i-subtable"  } ['ccmp' ('latn' <'dflt' > 'latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' > ) ]
 Lookup: 2 0 0 "'ccmp' saraam decomp. for Thai" { "'ccmp' saraam decomp. for Thai-1"  } ['ccmp' ('thai' <'dflt' > ) ]
 Lookup: 4 0 0 "'rlig' rqd. ligatures in Thai" { "'rlig' rqd. ligatures in Thai 0"  } ['rlig' ('thai' <'dflt' > ) ]
@@ -1129,7 +1129,7 @@ ChainSub2: class "'locl' mark stretching in Latin-1" 12 12 1 10
   FClassNames: "0"
 EndFPST
 ChainSub2: class "'ccmp' remove dot followed by mark in Latin" 2 1 3 2
-  Class: 3 i j
+  Class: 14 i j icyr jecyr
   FClass: 172 grave.cmb acute.cmb circumflex.cmb tilde.cmb macron.cmb breve.cmb dieresis.cmb ring.cmb acutedbl.cmb hacek.cmb linevertabv.cmb linesvertdblabv.cmb gravedbl.cmb breveinv.cmb
   FClass: 108 leftharpoonaccent rightharpoonaccent uni20D4 uni20D5 uni20D6 uni20D7 uni20DB uni20DC uni20E1 uni20E9 uni20F0
  1 0 1
@@ -16058,6 +16058,7 @@ LayerCount: 2
 Fore
 Refer: 73 105 N 1 0 0 1 0 0 3
 Validated: 1
+Substitution2: "subst i,j with dotless form 1" icyr.dotless
 Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.i
 EndChar
 
@@ -16083,6 +16084,7 @@ LayerCount: 2
 Fore
 Refer: 74 106 N 1 0 0 1 0 0 3
 Validated: 1
+Substitution2: "subst i,j with dotless form 1" jecyr.dotless
 Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.j
 EndChar
 
@@ -129041,5 +129043,32 @@ EndSplineSet
 Validated: 1
 Substitution2: "'hist' historical forms in Cyrillic-jest" eiotifiedcyr
 EndChar
+
+StartChar: icyr.dotless
+Encoding: 13476 -1 5103
+Width: 246
+VWidth: 0
+Flags: W
+AnchorPoint: "cyr-above" 189 472 basechar 0
+AnchorPoint: "cyr-below" 95 -14 basechar 0
+LayerCount: 2
+Fore
+Refer: 238 305 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
+StartChar: jecyr.dotless
+Encoding: 13477 -1 5104
+Width: 300
+VWidth: 0
+Flags: W
+AnchorPoint: "cyr-above" 255 472 basechar 0
+AnchorPoint: "cyr-below" 70 -200 basechar 0
+LayerCount: 2
+Fore
+Refer: 1647 567 N 1 0 0 1 0 0 2
+Validated: 1
+EndChar
+
 EndChars
 EndSplineFont
