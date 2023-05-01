@@ -2,19 +2,19 @@
 
 ADMIN=README AUTHORS CREDITS COPYING ChangeLog INSTALL
 DATE=$(shell date +"%Y%m%d")
-RELEASE=freefont-$(DATE)
+RELEASE=freeseriflinguist-$(DATE)
 BUILDDIR=$(PWD)
 TMPDIR=$(BUILDDIR)/$(RELEASE)
-OTFZIPFILE=freefont-otf-$(DATE).zip
-TTFZIPFILE=freefont-ttf-$(DATE).zip
-WOFFZIPFILE=freefont-woff-$(DATE).zip
-OTFTARFILE=freefont-otf-$(DATE).tar.gz
-TTFTARFILE=freefont-ttf-$(DATE).tar.gz
-WOFFTARFILE=freefont-woff-$(DATE).tar.gz
-SRCTARFILE=freefont-src-$(DATE).tar.gz
-ZIPSIG=freefont-ttf-$(DATE).zip.sig
-TARSIG=freefont-ttf-$(DATE).tar.gz.sig
-SRCTARSIG=freefont-src-$(DATE).tar.gz.sig
+OTFZIPFILE=freeseriflinguist-otf-$(DATE).zip
+TTFZIPFILE=freeseriflinguist-ttf-$(DATE).zip
+WOFFZIPFILE=freeseriflinguist-woff-$(DATE).zip
+OTFTARFILE=freeseriflinguist-otf-$(DATE).tar.gz
+TTFTARFILE=freeseriflinguist-ttf-$(DATE).tar.gz
+WOFFTARFILE=freeseriflinguist-woff-$(DATE).tar.gz
+SRCTARFILE=freeseriflinguist-src-$(DATE).tar.gz
+ZIPSIG=freeseriflinguist-ttf-$(DATE).zip.sig
+TARSIG=freeseriflinguist-ttf-$(DATE).tar.gz.sig
+SRCTARSIG=freeseriflinguist-src-$(DATE).tar.gz.sig
 SIGS=$(ZIPSIG) $(TARSIG) $(SRCTARSIG)
 
 all: ttf otf woff
@@ -29,32 +29,31 @@ woff:
 	@ ( cd sfd; $(MAKE) woff )
 
 
-package: ttftar otfzip otftar woffzip wofftar srctar
+package: ttftar otfzip otftar woffzip wofftar
+# srctar
 
 ttfzip: ttf
 	rm -rf $(TMPDIR) $(TTFZIPFILE)
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
+	cp -a $(ADMIN) sfd/FreeSerifLinguist*.ttf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
 	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
 	cp -a notes/features.txt $(TMPDIR)/FEATURES
-	cp -a notes/webfont_guidelines.txt $(TMPDIR)/WEBFONTS
 	zip -r $(TTFZIPFILE) $(RELEASE)/
 
 otfzip: otf
 	rm -rf $(TMPDIR) $(OTFZIPFILE)
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
+	cp -a $(ADMIN) sfd/FreeSerifLinguist*.otf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
 	cp -a notes/features.txt $(TMPDIR)/FEATURES
 	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
-	cp -a notes/webfont_guidelines.txt $(TMPDIR)/WEBFONTS
 	zip -r $(OTFZIPFILE) $(RELEASE)/
 
 woffzip: woff
 	rm -rf $(TMPDIR) $(WOFFZIPFILE)
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/*.woff $(TMPDIR)
+	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/FreeSerifLinguist*.woff $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
 	cp -a notes/features.txt $(TMPDIR)/FEATURES
 	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
@@ -64,27 +63,25 @@ woffzip: woff
 ttftar: ttf
 	rm -rf $(TMPDIR) $(TTFTARFILE)
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) sfd/*.ttf $(TMPDIR)
+	cp -a $(ADMIN) sfd/FreeSerifLinguist*.ttf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
 	cp -a notes/features.txt $(TMPDIR)/FEATURES
 	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
-	cp -a notes/webfont_guidelines.txt $(TMPDIR)/WEBFONTS
 	tar czvf $(TTFTARFILE) $(RELEASE)/
 
 otftar: otf
 	rm -rf $(TMPDIR) $(OTFTARFILE)
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) sfd/*.otf $(TMPDIR)
+	cp -a $(ADMIN) sfd/FreeSerifLinguist*.otf $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
 	cp -a notes/features.txt $(TMPDIR)/FEATURES
 	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
-	cp -a notes/webfont_guidelines.txt $(TMPDIR)/WEBFONTS
 	tar czvf $(OTFTARFILE) $(RELEASE)/
 
 wofftar: woff
 	rm -rf $(TMPDIR) $(WOFFTARFILE)
 	mkdir $(TMPDIR)
-	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/*.woff $(TMPDIR)
+	cp -a $(ADMIN) notes/webfont_guidelines.txt sfd/FreeSerifLinguist*.woff $(TMPDIR)
 	cp -a notes/usage.txt $(TMPDIR)/USAGE
 	cp -a notes/features.txt $(TMPDIR)/FEATURES
 	cp -a notes/troubleshooting.txt $(TMPDIR)/TROUBLESHOOTING
