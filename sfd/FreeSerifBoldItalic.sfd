@@ -53,6 +53,7 @@ OS2FamilyClass: 261
 OS2Vendor: 'GNU '
 OS2CodePages: 600101bf.00000000
 OS2UnicodeRanges: e5000eff.4200e5ff.08001020.00000040
+Lookup: 3 0 0 "'aalt' Access All Alternates in Latin" { "'aalt' Access All Alternates in Latin-1"  } ['aalt' ('latn' <'AZE ' 'CAT ' 'CRT ' 'DEU ' 'ESP ' 'ISM ' 'KAZ ' 'LSM ' 'NLD ' 'NSM ' 'SKS ' 'TAT ' 'TRK ' 'VIT ' 'dflt' > ) ]
 Lookup: 2 0 0 "subst. i-ogonek with dotless-i+-ogonek" { "subst. i-ogonek with dotless-i+-ogonek"  } []
 Lookup: 4 0 0 "ordinal symbols in Latin" { "ordinal symbols in Latin-3"  "ordinal symbols in Latin-2"  "ordinal symbols in Latin-1"  } []
 Lookup: 1 0 0 "stretch1300" { "stretch1300"  } []
@@ -135,6 +136,7 @@ Lookup: 4 0 0 "'rlig' req. ligatures in Hebrew for Yiddish" { "'rlig' req. ligat
 Lookup: 4 0 0 "'dlig' discr. ligatures in Armenian" { "'dlig' discr. ligatures in Armenian 1"  } ['dlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 0 "'hlig' hist. ligatures in Armenian" { "'hlig' hist. ligatures in Armenian 1"  } ['hlig' ('armn' <'dflt' > ) ]
 Lookup: 4 0 1 "'liga' std. ligatures in Armenian" { "'liga' std. ligatures in Armenian 1"  } ['liga' ('armn' <'dflt' > ) ]
+Lookup: 3 0 0 "'aalt' Access All Alternates in Cyrillic" { "'aalt' Access All Alternates in Cyrillic-1"  } ['aalt' ('cyrl' <'ABK ' 'AZE ' 'BEL ' 'BGR ' 'BOS ' 'CHE ' 'CHK ' 'CHU ' 'CRT ' 'CSL ' 'EVK ' 'EVN ' 'ING ' 'KAB ' 'KAR ' 'KAZ ' 'KHA ' 'KHK ' 'KHS ' 'KHV ' 'KLM ' 'KOP ' 'KOZ ' 'KRK ' 'KRL ' 'MKD ' 'MNG ' 'MOL ' 'OSS ' 'RBU ' 'RSY ' 'RUS ' 'SRB ' 'TAJ ' 'TNE ' 'TUV ' 'UDM ' 'UKR ' 'UZB ' 'YAK ' 'dflt' > ) ]
 Lookup: 2 0 0 "'c2sc' caps to small caps in Cyrillic pre-decompose" { "'c2sc' caps to small caps in Cyrillic pre-decompose-1"  } ['c2sc' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 1 0 0 "'c2sc' caps to small caps in Cyrillic" { "'c2sc' caps to small caps in Cyrillic-1"  "'c2sc' caps to small caps in Cyrillic-invariant"  "'c2sc' caps to small caps in Cyrillic-invariant-B"  "'c2sc' caps to small caps in Cyrillic-invar-suppl-B"  } ['c2sc' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
 Lookup: 2 0 0 "'smcp' small caps in Cyrillic pre-decompose" { "'smcp' small caps in Cyrillic pre-decompose-1"  } ['smcp' ('cyrl' <'BGR ' 'BOS ' 'MKD ' 'SRB ' 'dflt' > ) ]
@@ -1223,7 +1225,7 @@ Grid
  897.8 175.071 l 1028
 EndSplineSet
 AnchorClass2: "stem-vert" "'mark' marks 2-1" "heb-lam-above" "'mark' marks in Hebrew-lam" "heb-point-low-right" "'mark' marks in Hebrew-1" "viet-hook" "'mkmk' mark-to-mark for Viet" "viet-grave" "'mkmk' mark-to-mark for Viet" "viet-acute" "'mkmk' mark-to-mark for Viet" "far-right-dot" "'mark' far right in Latin-1" "belowmk" "'mkmk' mark-to-mark generic-below" "cyr-below" "'mark' marks in Cyrillic 1" "abovemk" "'mkmk' mark-to-mark generic-1" "below_gk" "'mark' mark below in Greek and Coptic-1" "above_gk" "'mark' mark above in Greek-1" "cyr-lateral" "'mkmk' mark-to-mark in Cyrillic-1" "cyr-stacking" "'mkmk' mark-to-mark in Cyrillic-1" "heb-top-mkmk" "'mkmk' mark-to-mark in Hebrew-1" "heb-low-mkmk" "'mkmk' mark-to-mark in Hebrew-1" "heb-point-right" "'mark' marks in Hebrew-1" "heb-point-left" "'mark' marks in Hebrew-1" "heb-point-low" "'mark' marks in Hebrew-1" "heb-dagesh" "'mark' marks in Hebrew-1" "heb-vowel-left" "'mark' marks in Hebrew-1" "heb-point-above" "'mark' marks in Hebrew-1" "heb-vowel-low" "'mark' marks in Hebrew for Ivrit-1" "heb-yid-vowel-low" "'mark' marks in Hebrew for Yiddish-1" "topright" "'mark' marks-generic subtable" "cyr-above" "'mark' marks in Cyrillic 1" "middle" "'mark' marks-generic subtable" "ogonek" "'mark' marks in Latin - ogonek" "thai_vowel_tone_right" "'mkmk' mark-to-mark in Thai right-1" "thai_vowel_tone" "'mkmk' mark-to-mark in Thai vowel-tone" "thai_tone" "'mark' marks in Thai vowels,tones-1" "thai_vowel_centered" "'mark' marks in Thai vowels,tones-1" "thai_vowel" "'mark' marks in Thai vowels,tones-1" "thai_below" "'mark' marks in Thai - low" "below" "'mark' marks generic-low-1" "above" "'mark' marks generic-high-1"
-BeginChars: 131072 4003
+BeginChars: 131072 4010
 
 StartChar: space
 Encoding: 32 32 0
@@ -5794,7 +5796,7 @@ MultipleSubs2: "'smcp' small caps in Latin pre-decompose-basic" a ring.cmb
 EndChar
 
 StartChar: ae
-Encoding: 230 230 163
+Encoding: 230 -1 163
 Width: 697
 Flags: HMW
 AnchorPoint: "above" 439 449 basechar 0
@@ -5832,6 +5834,7 @@ SplineSet
  438 214 l 1
 EndSplineSet
 Validated: 1
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" ae.twostory
 Ligature2: "'dlig' discr. ligatures in Latin-1" a e
 Substitution2: "'smcp' lowercase to small caps in Latin-1" sc.ae
 EndChar
@@ -9566,14 +9569,15 @@ MultipleSubs2: "'c2sc' caps to small caps in Latin pre-decompose-B" AE acute.cmb
 EndChar
 
 StartChar: aeacute
-Encoding: 509 509 356
+Encoding: 509 -1 356
 Width: 698
 Flags: HMW
 LayerCount: 2
 Fore
 Refer: 113 180 N 1 0 0 1 263 -14 0
-Refer: 163 230 N 1 0 0 1 0 0 0
+Refer: 163 -1 N 1 0 0 1 0 0 0
 Validated: 1
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" aeacute.twostory
 MultipleSubs2: "'smcp' small caps in Latin pre-decompose-B" ae acute.cmb
 EndChar
 
@@ -17200,13 +17204,14 @@ Substitution2: "'c2sc' caps to small caps in Cyrillic-1" sc.ae
 EndChar
 
 StartChar: a_iecyr
-Encoding: 1237 1237 686
+Encoding: 1237 -1 686
 Width: 646
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 163 230 N 1 0 0 1 0 0 0
+Refer: 163 -1 N 1 0 0 1 0 0 0
 Validated: 1
+AlternateSubs2: "'aalt' Access All Alternates in Cyrillic-1" a_iecyr.twostory
 Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.ae
 EndChar
 
@@ -26716,7 +26721,7 @@ MultipleSubs2: "'c2sc' caps to small caps in Latin pre-decompose-B" AE macron.cm
 EndChar
 
 StartChar: aemacron
-Encoding: 483 483 1243
+Encoding: 483 -1 1243
 Width: 697
 Flags: HMW
 AnchorPoint: "below" 303 0 basechar 0
@@ -26724,8 +26729,8 @@ AnchorPoint: "above" 449 684 basechar 0
 LayerCount: 2
 Fore
 Refer: 108 175 N 1 0 0 1 219 -20 0
-Refer: 163 230 N 1 0 0 1 0 0 0
-Validated: 1
+Refer: 163 -1 N 1 0 0 1 0 0 0
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" aemacron.twostory
 MultipleSubs2: "'smcp' small caps in Latin pre-decompose-B" ae macron.cmb
 EndChar
 
@@ -63200,15 +63205,16 @@ LCarets2: 2 0 0
 EndChar
 
 StartChar: uni1D02
-Encoding: 7426 7426 2664
+Encoding: 7426 -1 2664
 Width: 683
 Flags: HMW
 AnchorPoint: "below" 276 0 basechar 0
 AnchorPoint: "above" 399 449 basechar 0
 LayerCount: 2
 Fore
-Refer: 163 230 N -1 0 0 -1 717 450 2
+Refer: 163 -1 N -1 0 0 -1 717 450 2
 Validated: 1
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" uni1D02.twostory
 Substitution2: "'sups' superscript-phonetic" aeturnsup
 EndChar
 
@@ -66535,14 +66541,15 @@ Validated: 1
 EndChar
 
 StartChar: aeturnsup
-Encoding: 7494 7494 2808
+Encoding: 7494 -1 2808
 Width: 432
 VWidth: 890
 Flags: HMW
 LayerCount: 2
 Fore
-Refer: 2664 7426 N 0.67 0 0 0.67 70 349 2
+Refer: 2664 -1 N 0.67 0 0 0.67 70 349 2
 Validated: 1
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" aeturnsup.twostory
 EndChar
 
 StartChar: bsup
@@ -81920,14 +81927,15 @@ Validated: 1
 EndChar
 
 StartChar: ae.cmb
-Encoding: 7636 7636 3578
+Encoding: 7636 -1 3578
 Width: 0
 Flags: HMW
 AnchorPoint: "above" -189 460 mark 0
 LayerCount: 2
 Fore
-Refer: 163 230 N 0.44 0 0 0.44 -317 500 2
+Refer: 163 -1 N 0.44 0 0 0.44 -317 500 2
 Validated: 1
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" ae.cmb.twostory
 EndChar
 
 StartChar: uni1DD7
@@ -92164,5 +92172,178 @@ Validated: 1
 Ligature2: "'rlig' req. mark ligatures in Cyrillic-1" psilipneumatacyr.cmb grave.cmb
 EndChar
 
+StartChar: ae.twostory
+Encoding: 59666 230 4003
+Width: 697
+VWidth: 2048
+Flags: HW
+AnchorPoint: "below" 301 0 basechar 0
+AnchorPoint: "above" 439 449 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+411 183 m 1
+ 410 174 408 165 408 158 c 128
+ 408 151 408 144 408 138 c 0
+ 408 110 416 88 432 72 c 0
+ 448 56 468 48 492 48 c 0
+ 543 48 595 74 645 128 c 1
+ 659 113 l 1
+ 621 68 583 36 547 16 c 0
+ 511 -4 473 -14 433 -14 c 0
+ 397 -14 367 -8 344 5 c 0
+ 321 18 305 34 295 55 c 0
+ 291 64 288 73 285 84 c 1
+ 261 67 l 1
+ 260 67 l 1
+ 225 42 193 23 165 8 c 128
+ 137 -7 111 -14 89 -14 c 0
+ 68 -14 52 -8 39 3 c 128
+ 26 14 20 29 20 49 c 0
+ 20 75 24 98 32 118 c 128
+ 40 138 53 155 67 170 c 128
+ 81 185 98 198 117 209 c 128
+ 136 220 158 230 180 239 c 128
+ 202 248 226 256 250 264 c 128
+ 274 272 299 281 323 289 c 1
+ 336 334 l 2
+ 338 341 340 348 341 354 c 128
+ 342 360 343 366 343 372 c 0
+ 343 378 342 384 340 389 c 128
+ 338 394 335 399 331 403 c 128
+ 327 407 320 410 313 412 c 128
+ 306 414 296 416 285 416 c 0
+ 278 416 271 414 262 413 c 128
+ 253 412 246 409 238 406 c 128
+ 230 403 223 399 218 394 c 128
+ 213 389 210 382 210 375 c 0
+ 210 371 211 368 213 364 c 128
+ 215 360 216 355 218 351 c 128
+ 220 347 221 343 223 339 c 128
+ 225 335 226 331 226 327 c 0
+ 226 317 223 309 218 302 c 128
+ 213 295 206 290 198 286 c 128
+ 190 282 181 279 171 277 c 128
+ 161 275 152 275 143 275 c 0
+ 136 275 128 276 121 278 c 128
+ 114 280 108 283 103 287 c 128
+ 98 291 94 296 91 302 c 128
+ 88 308 86 314 86 321 c 0
+ 86 339 90 355 99 368 c 128
+ 108 381 119 392 133 402 c 128
+ 147 412 163 421 181 427 c 128
+ 199 433 217 438 235 442 c 128
+ 253 446 271 448 289 450 c 128
+ 307 452 322 453 335 453 c 0
+ 373 453 402 447 421 436 c 128
+ 440 425 453 410 458 392 c 1
+ 459 394 l 2
+ 475 405 490 414 504 422 c 128
+ 518 430 531 436 542 440 c 0
+ 565 448 590 453 616 453 c 0
+ 647 453 670 447 684 434 c 128
+ 698 421 705 405 705 385 c 0
+ 705 339 682 296 635 256 c 0
+ 588 215 513 191 411 183 c 1
+416 209 m 1
+ 456 214 488 225 510 239 c 0
+ 532 253 552 274 569 304 c 256
+ 586 334 594 360 594 382 c 0
+ 594 393 591 402 585 409 c 128
+ 579 416 572 419 563 419 c 0
+ 546 419 527 408 506 385 c 0
+ 470 346 440 287 416 209 c 1
+314 256 m 1
+ 304 251 292 246 280 240 c 128
+ 268 234 255 228 243 221 c 128
+ 231 214 219 206 207 198 c 128
+ 195 190 186 181 177 172 c 128
+ 168 163 160 153 155 142 c 128
+ 150 131 147 118 147 105 c 0
+ 147 92 151 83 159 77 c 128
+ 167 71 178 69 190 69 c 0
+ 197 69 204 70 212 72 c 128
+ 220 74 227 76 234 79 c 128
+ 241 82 249 85 255 89 c 128
+ 261 93 267 98 271 103 c 1
+ 314 256 l 1
+ 314 256 l 1
+EndSplineSet
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" ae
+EndChar
+
+StartChar: aemacron.twostory
+Encoding: 59667 483 4004
+Width: 697
+Flags: HW
+AnchorPoint: "below" 303 0 basechar 0
+AnchorPoint: "above" 449 684 basechar 0
+LayerCount: 2
+Fore
+Refer: 4003 230 S 1 0 0 1 0 0 2
+Refer: 108 175 N 1 0 0 1 219 -20 0
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" aemacron
+MultipleSubs2: "'smcp' small caps in Latin pre-decompose-B" ae.twostory macron.cmb
+EndChar
+
+StartChar: aeacute.twostory
+Encoding: 59668 509 4005
+Width: 697
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4003 230 S 1 0 0 1 0 0 2
+Refer: 113 180 N 1 0 0 1 263 -14 0
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" aeacute
+MultipleSubs2: "'smcp' small caps in Latin pre-decompose-B" ae.twostory acute.cmb
+EndChar
+
+StartChar: uni1D02.twostory
+Encoding: 59669 7426 4006
+Width: 683
+Flags: HMW
+AnchorPoint: "below" 276 0 basechar 0
+AnchorPoint: "above" 399 449 basechar 0
+LayerCount: 2
+Fore
+Refer: 4003 230 N -1 0 0 -1 717 450 2
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" uni1D02
+Substitution2: "'sups' superscript-phonetic" aeturnsup.twostory
+EndChar
+
+StartChar: aeturnsup.twostory
+Encoding: 59670 7494 4007
+Width: 432
+VWidth: 890
+Flags: HMW
+LayerCount: 2
+Fore
+Refer: 4006 7426 N 0.67 0 0 0.67 70 349 2
+Validated: 1
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" aeturnsup
+EndChar
+
+StartChar: ae.cmb.twostory
+Encoding: 59671 7636 4008
+Width: 0
+Flags: HMW
+AnchorPoint: "above" -189 460 mark 0
+LayerCount: 2
+Fore
+Refer: 4003 230 N 0.44 0 0 0.44 -317 500 2
+AlternateSubs2: "'aalt' Access All Alternates in Latin-1" ae.cmb
+EndChar
+
+StartChar: a_iecyr.twostory
+Encoding: 59672 1237 4009
+Width: 697
+VWidth: 2048
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 4003 230 S 1 0 0 1 0 0 2
+AlternateSubs2: "'aalt' Access All Alternates in Cyrillic-1" a_iecyr
+Substitution2: "'smcp' lowercase to small caps in Cyrillic-1" sc.ae
+EndChar
 EndChars
 EndSplineFont
