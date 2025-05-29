@@ -22,9 +22,13 @@ __doc__ = """
 Common tools used by the generate scripts.
 """
 
+import os
 import re
 
-_re_vstr = re.compile( '\$Revision: (\d*)\s*\$(.*)' )
+import fontforge
+
+
+_re_vstr = re.compile( r'\$Revision: (\d*)\s*\$(.*)' )
 
 def trim_version_str( font ):
 	""" SVN automatically puts a revision number between dollar signs
@@ -44,3 +48,47 @@ def trim_version_str( font ):
 		return trimmed
 	return otstdized
 
+
+def init_hinting():
+	fontforge.setPrefs( 'HintBoundingBoxes', 1 )
+	fontforge.setPrefs( 'DetectDiagonalStems', 1 )
+	fontforge.setPrefs( 'HintDiagonalEnds', 1 )
+	fontforge.setPrefs( 'HintDiagonalInter', 1 )
+
+
+def rehint( f, sfd_filename ):
+	# BlueFuzz is not recommended by Adobe but used by FontForge's autohinter
+	f.private['BlueFuzz'] = 1
+
+	f.selection.all()
+	f.autoHint()
+
+	# Now guess the magic values and autohint again
+	f.private.guess( 'StemSnapH' )
+	f.private.guess( 'StemSnapV' )
+	f.private.guess( 'StdHW' )
+	f.private.guess( 'StdVW' )
+
+	# Some fonts don't have OtherBlues specified
+	if 'OtherBlues' not in f.private:
+		f.private.guess( 'OtherBlues' )
+
+	# At this moment, makes sense to save and re-open the file. The results are
+	# better in this case, probably due to some memory corruption in FontForge.
+	tmp_name = 'hinted0-' + sfd_filename
+	f.save( tmp_name )
+	f.close()
+	f = fontforge.open( tmp_name )
+	os.unlink( tmp_name )
+
+	f.selection.all()
+	f.autoHint()
+
+	# Again, save and re-open the file.
+	tmp_name = 'hinted1-' + sfd_filename
+	f.save( tmp_name )
+	f.close()
+	f = fontforge.open( tmp_name )
+	os.unlink( tmp_name )
+
+	return f

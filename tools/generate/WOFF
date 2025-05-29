@@ -150,16 +150,20 @@ def fontInfo2WOFFxml( font ):
 	return stripmeta( strrep )
 
 def build_WOFF_file( sfd_filename ):
+	init_hinting()
+
 	f = fontforge.open( sfd_filename )
 	woff_file = f.fontname + '.woff'
 	print( 'Generating WOFF file', woff_file )
 	# Wanted to set to 'UniocdeBmp' if there were no high unicodes
 	# but all attemtps to determine that from Python failed.
 	f.encoding = 'UnicodeFull'
+
 	f.layers['Fore'].is_quadratic = True
-	f.selection.all()
-	f.autoHint()
+
+	f = rehint( f, sfd_filename )
 	f.autoInstr()
+
 	# Copy copyright info etc from the tt tables into the WOFF XML section.
 	xml = fontInfo2WOFFxml( f )
 	f.woffMajor = 1

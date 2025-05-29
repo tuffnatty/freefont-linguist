@@ -36,7 +36,9 @@ from sys import argv
 from buildutils import *
 
 def build_ttf_file( sfd_filename ):
-	f = fontforge.open( argv[i] )
+	init_hinting()
+
+	f = fontforge.open( sfd_filename )
 	ttfile = f.fontname + '.ttf'
 	vstr = trim_version_str( f )
 	print( 'Generating TrueType file', ttfile, vstr )
@@ -45,9 +47,10 @@ def build_ttf_file( sfd_filename ):
 	f.encoding = 'UnicodeFull'
 
 	f.layers['Fore'].is_quadratic = True
-	f.selection.all()
-	f.autoHint()
+
+	f = rehint( f, sfd_filename )
 	f.autoInstr()
+
 	# 'old-kern' and 'dummy-dsig' are work-arounds for Windows
 	# 'no-hints' means no PS (old-style) hints -- there are also TTF hints.
 	fl = ('opentype','no-hints','old-kern','dummy-dsig','round')
