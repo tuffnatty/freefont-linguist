@@ -22,6 +22,7 @@ __doc__ = """
 Common tools used by the generate scripts.
 """
 
+from datetime import date
 import os
 import re
 import string
@@ -49,6 +50,13 @@ def trim_version_str( font ):
 		font.version = otstdized
 		#font.appendSFNTName( n[0], n[1], otstdized )
 		return trimmed
+	elif font.version == "$Revision$":
+		font.version = date.today().strftime('%Y%m%d')
+		font.sfnt_names = tuple(tuple((__.replace('$Revision$', font.version)
+									   if isinstance(__, str) else __)
+									  for __ in _)
+								for _ in font.sfnt_names)
+		return font.version
 	return otstdized
 
 
