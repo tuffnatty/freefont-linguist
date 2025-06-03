@@ -46,8 +46,7 @@ if argc > 1:
 		ttfile = f.fontname + '.mac.ttf'
 		vstr = trim_version_str( f )
 		print( 'Generating Mac TrueType file', ttfile, vstr )
-		f = rehint( f, argv[i] )
-		f.autoInstr()
+		f = rehint( f, True, argv[i] )
 		# Mac OS Font Book doesn't like the old-kern flag
 		#f.generate( ttfile, flags=('opentype','old-kern') )
 		f.close()

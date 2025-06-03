@@ -48,8 +48,7 @@ def build_ttf_file( sfd_filename ):
 
 	f.layers['Fore'].is_quadratic = True
 
-	f = rehint( f, sfd_filename )
-	f.autoInstr()
+	f = rehint( f, True, sfd_filename )
 
 	# 'old-kern' and 'dummy-dsig' are work-arounds for Windows
 	# 'no-hints' means no PS (old-style) hints -- there are also TTF hints.

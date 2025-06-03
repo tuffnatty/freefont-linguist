@@ -49,7 +49,7 @@ def build_otf_file( sfd_filename ):
 	# but all attemtps to determine that from Python failed.
 	f.encoding = 'UnicodeFull'
 
-	f = rehint( f, sfd_filename )
+	f = rehint( f, False, sfd_filename )
 
 	# 'old-kern' and 'dummy-dsig' are work-arounds for Windows
 	f.generate( otfile, flags=('opentype','round') )

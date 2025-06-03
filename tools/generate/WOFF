@@ -161,8 +161,7 @@ def build_WOFF_file( sfd_filename ):
 
 	f.layers['Fore'].is_quadratic = True
 
-	f = rehint( f, sfd_filename )
-	f.autoInstr()
+	f = rehint( f, True, sfd_filename )
 
 	# Copy copyright info etc from the tt tables into the WOFF XML section.
 	xml = fontInfo2WOFFxml( f )
